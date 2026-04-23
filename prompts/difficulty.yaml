@@ -1,0 +1,55 @@
+A:
+  name: Basic
+  name_kz: "Негізгі"
+  percentage: 26
+  bloom_levels: "Remember, Understand"
+  description: >
+    Tests recall of definitions, standard formulas, and simple one-step procedures.
+    The student should directly apply a known rule or formula with minimal transformation.
+    No multi-step reasoning or unfamiliar contexts required.
+  characteristics:
+    - "Single-step calculation or direct recall"
+    - "Recognition of definitions and standard forms"
+    - "Substitution into a given formula"
+    - "Identification of geometric shapes or properties by name"
+  distractor_guidance: >
+    Distractors should reflect common misconceptions or sign/arithmetic errors
+    that a student who partially knows the material would make.
+
+B:
+  name: Medium
+  name_kz: "Орта"
+  percentage: 60
+  bloom_levels: "Apply, Analyze"
+  description: >
+    Tests ability to apply knowledge in moderately unfamiliar contexts, perform
+    multi-step calculations with a clear structure, analyze relationships between
+    concepts, or compare solution methods. Requires 2-4 logical steps.
+  characteristics:
+    - "2-4 step problems with clear logical chain"
+    - "Applying formulas in context requiring setup"
+    - "Comparing or selecting between methods"
+    - "Working with composite figures or combined concepts"
+  distractor_guidance: >
+    Distractors should reflect errors in intermediate steps, incorrect formula
+    selection, or incomplete reasoning that stops one step short of the solution.
+
+C:
+  name: Hard
+  name_kz: "Қиын"
+  percentage: 14
+  bloom_levels: "Evaluate, Synthesize"
+  description: >
+    Tests multi-step non-routine reasoning, synthesis of concepts from different
+    topics, optimization, proof construction, or working with abstract/general cases.
+    Requires genuine problem-solving, not just procedure application.
+  characteristics:
+    - "Non-routine or unfamiliar problem setup"
+    - "Combining concepts from 2+ different topics"
+    - "Optimization, extrema, or boundary analysis"
+    - "Constructing or verifying mathematical arguments"
+    - "Working backwards or considering multiple cases"
+  distractor_guidance: >
+    Distractors should be numerically plausible results from plausible but
+    incorrect approaches. All wrong answers should be reachable by a specific
+    identifiable error in reasoning.

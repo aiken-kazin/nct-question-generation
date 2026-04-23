@@ -1,0 +1,130 @@
+topics:
+  - id: phonetics
+    name_en: "Phonetics"
+    name_kz: "Фонетика"
+    keywords: ["vowels", "consonants", "syllable", "stress", "synharmonism", "transcription"]
+    subtopics:
+      - "Vowel and consonant system of Kazakh"
+      - "Synharmonism (vowel harmony)"
+      - "Syllable structure and division"
+      - "Phonetic transcription"
+      - "Assimilation and other phonetic processes"
+      - "Stress patterns in Kazakh"
+
+  - id: morphology
+    name_en: "Morphology"
+    name_kz: "Морфология"
+    keywords: ["noun", "verb", "adjective", "case endings", "plural", "tense", "aspect", "particles"]
+    subtopics:
+      - "Parts of speech: noun, verb, adjective, numeral, pronoun, adverb"
+      - "Noun cases: nominative, genitive, dative, accusative, locative, ablative, instrumental"
+      - "Verb tenses and aspects in Kazakh"
+      - "Verb moods: indicative, imperative, conditional, subjunctive"
+      - "Suffixes and agglutination"
+      - "Particles, conjunctions, postpositions"
+
+  - id: word_formation
+    name_en: "Word Formation"
+    name_kz: "Сөзжасам"
+    keywords: ["derivation", "compound words", "suffixes", "prefixes", "word-formation methods"]
+    subtopics:
+      - "Derivational suffixes for nouns, verbs, adjectives"
+      - "Compound word formation"
+      - "Conversion between parts of speech"
+      - "Productive vs. unproductive word-formation models"
+      - "Borrowed words and their adaptation"
+
+  - id: syntax
+    name_en: "Syntax"
+    name_kz: "Синтаксис"
+    keywords: ["sentence structure", "subject", "predicate", "object", "modifier", "clause", "compound sentence", "complex sentence"]
+    subtopics:
+      - "Simple sentence structure: subject, predicate, secondary members"
+      - "Types of predicates in Kazakh"
+      - "Compound sentences and conjunctions"
+      - "Complex sentences with subordinate clauses"
+      - "Participial and gerundial phrases"
+      - "Word order and emphasis"
+
+  - id: lexicology
+    name_en: "Lexicology"
+    name_kz: "Лексикология"
+    keywords: ["synonyms", "antonyms", "homonyms", "phraseology", "loanwords", "terminological vocabulary"]
+    subtopics:
+      - "Synonyms and their stylistic differences"
+      - "Antonyms: lexical and contextual"
+      - "Homonyms and polysemy"
+      - "Phraseological units (idioms, proverbs)"
+      - "Loanwords: Russian, Arabic, Persian, international"
+      - "Active vs. passive vocabulary"
+      - "Terminological vocabulary by field"
+
+  - id: orthography
+    name_en: "Orthography and Spelling"
+    name_kz: "Орфография"
+    keywords: ["spelling rules", "vowel harmony", "consonant assimilation", "word boundaries", "hyphenation"]
+    subtopics:
+      - "Spelling rules for borrowed words"
+      - "Writing of compound and derived words"
+      - "Capital letters: proper nouns, titles"
+      - "Hyphenation rules"
+      - "New Kazakh Latin-based alphabet rules (if applicable)"
+
+  - id: punctuation
+    name_en: "Punctuation"
+    name_kz: "Пунктуация"
+    keywords: ["comma", "period", "colon", "semicolon", "dash", "direct speech", "quotation marks"]
+    subtopics:
+      - "Comma placement in compound and complex sentences"
+      - "Colon and semicolon usage"
+      - "Direct speech and quotation marks"
+      - "Dash usage"
+      - "Parenthetical expressions"
+
+  - id: text_analysis
+    name_en: "Text Analysis and Comprehension"
+    name_kz: "Мәтін талдау"
+    keywords: ["text structure", "topic", "main idea", "style", "genre", "cohesion", "discourse"]
+    subtopics:
+      - "Text structure: introduction, body, conclusion"
+      - "Topic, main idea, theme identification"
+      - "Functional styles: scientific, official, journalistic, artistic, conversational"
+      - "Text cohesion: reference, substitution, conjunction"
+      - "Inference and implicit meaning"
+
+  - id: literature
+    name_en: "Kazakh Literature"
+    name_kz: "Қазақ әдебиеті"
+    keywords: ["poetry", "prose", "oral literature", "epic", "authors", "literary devices", "genres"]
+    subtopics:
+      - "Oral Kazakh literature: epics (жыр), tales (ертегі), proverbs (мақал-мәтел)"
+      - "Classical Kazakh poets: Abai, Shakarim, Akhmet Baitursynov"
+      - "20th century Kazakh literature"
+      - "Literary genres: lyric, epic, dramatic"
+      - "Literary devices: metaphor, simile, alliteration, repetition"
+      - "Analysis of poetic forms in Kazakh"
+
+  - id: teaching_methodology
+    name_en: "Kazakh Language Teaching Methodology"
+    name_kz: "Қазақ тілін оқыту әдістемесі"
+    keywords: ["teaching methods", "lesson planning", "communicative approach", "assessment", "curriculum", "differentiation"]
+    subtopics:
+      - "Principles of communicative language teaching"
+      - "Lesson structure and planning"
+      - "Teaching vocabulary and grammar"
+      - "Reading and writing skills development"
+      - "Formative and summative assessment"
+      - "Differentiated instruction"
+      - "Using authentic materials"
+
+  - id: language_history
+    name_en: "History of the Kazakh Language"
+    name_kz: "Қазақ тілінің тарихы"
+    keywords: ["Turkic languages", "historical development", "dialects", "writing systems", "standardization"]
+    subtopics:
+      - "Kazakh within the Turkic language family"
+      - "Historical stages of Kazakh language development"
+      - "Old Turkic written monuments"
+      - "Writing systems: Arabic, Latin (1929-1940), Cyrillic, new Latin"
+      - "Dialectal variation in Kazakh"
+      - "Language standardization and Kazakh as state language"

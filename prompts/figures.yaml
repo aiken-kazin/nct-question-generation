@@ -1,0 +1,227 @@
+# Figure type schemas — injected into generator prompt when --format image.
+# The generator MUST populate figure_spec.parameters with specific measurement values
+# (lengths, angles, coordinates) that are DRAWN on the figure and needed to solve the question.
+# The question text must reference the figure ("Суреттегі...", "Берілген үшбұрышта...").
+
+triangle:
+  description: "Geometric triangle with labeled vertices, side lengths, and angles"
+  use_for: ["triangles", "perpendicularity_3d"]
+  parameters:
+    vertices:
+      description: "List of 3 [x, y] coordinates. Choose to geometrically match the given measurements."
+      example: [[0, 0], [8, 0], [3, 6]]
+    labels:
+      description: "Vertex labels in order A, B, C"
+      example: ["A", "B", "C"]
+    side_lengths:
+      description: >
+        Dict mapping side name to numeric length value to draw on the figure.
+        Use null to leave a side unlabeled (it is what the student must find).
+        Side names must be two-character pairs of vertex labels, e.g. 'AB'.
+      example: {"AB": 10, "BC": 6, "AC": null}
+    angles:
+      description: >
+        Dict mapping vertex label to angle in degrees to draw on the figure.
+        Use null to leave an angle unlabeled.
+      example: {"A": 30, "B": 90, "C": null}
+    right_angle_vertex:
+      description: "Vertex label with right angle; draws the small square marker. null if none."
+      example: "B"
+    show_height:
+      description: "Vertex label to draw altitude from (dashed line to opposite side). null if not needed."
+      example: "C"
+    height_foot_label:
+      description: "Label for the foot of the altitude. null if no altitude."
+      example: "H"
+    show_incircle:
+      description: "Draw the inscribed circle of the triangle."
+      example: false
+    incircle_radius_label:
+      description: "Label to show near the inradius line, e.g. 'r'. null if no incircle."
+      example: "r"
+    show_circumcircle:
+      description: "Draw the circumscribed circle of the triangle."
+      example: false
+    caption:
+      description: "Caption text in Kazakh"
+      example: "ABC үшбұрышы"
+
+circle:
+  description: "Circle with labeled center, radius, optional chord, arc, tangent, or inscribed angle"
+  use_for: ["polygons_circles", "triangles"]
+  parameters:
+    radius:
+      description: "Numeric radius value to draw and label on the figure."
+      example: 5
+    radius_label:
+      description: "Text label for the radius line, e.g. 'R = 5'. null to just show a line."
+      example: "R = 5"
+    chord_endpoints_deg:
+      description: "Two angles in degrees (0-360) on the circle for chord endpoints. null if no chord."
+      example: [40, 160]
+    chord_labels:
+      description: "Labels [start, end] for chord endpoints."
+      example: ["A", "B"]
+    chord_length_label:
+      description: "Text to display along the chord, e.g. 'AB = 8'. null if not labeled."
+      example: "AB = 8"
+    inscribed_angle_deg:
+      description: "Angle in degrees (0-360) on circle for inscribed angle vertex C. null if none."
+      example: 280
+    central_angle_label:
+      description: "Degrees label for the central angle arc, e.g. '120°'. null if not shown."
+      example: "120°"
+    tangent_at_deg:
+      description: "Angle in degrees where tangent line touches the circle. null if no tangent."
+      example: 0
+    tangent_point_label:
+      description: "Label for tangent point, e.g. 'T'. null if no tangent."
+      example: "T"
+    caption:
+      description: "Caption text in Kazakh"
+      example: "O центрлі шеңбер"
+
+function_graph:
+  description: "Graph of a mathematical function — for derivative, integral, root, extremum questions"
+  use_for: ["functions_limits", "derivatives", "polynomials", "exponential_logarithmic_functions",
+            "exponential_log_equations", "integrals", "quadratic_irrational"]
+  parameters:
+    function_str:
+      description: >
+        Python/numpy expression for f(x). Allowed names: x, sin, cos, tan, exp, log, sqrt, abs, pi, e.
+        Do NOT use ** for display — the rendered label will use this string directly.
+      example: "x**2 - 4*x + 3"
+    x_range:
+      description: "[x_min, x_max] for the plot domain."
+      example: [-1, 5]
+    y_range:
+      description: "[y_min, y_max] for the plot range. null for automatic."
+      example: null
+    shade_area:
+      description: >
+        Shade the area under (or between) the curve. Provide [a, b] to shade between x=a and x=b.
+        The question can ask the student to compute this area. null if no shading.
+      example: [1, 3]
+    mark_points:
+      description: >
+        List of x-values to mark with dots and coordinate labels.
+        Include roots, extrema, intersection points — values the student must identify or use.
+      example: [1, 3]
+    tangent_at_x:
+      description: "Draw tangent line at this x-value. null if not needed."
+      example: null
+    second_function_str:
+      description: "Optional second function to draw on the same axes (dashed). null if only one curve."
+      example: null
+    function_label:
+      description: "Short label for the curve, e.g. 'f(x)'. null for no label."
+      example: "f(x)"
+    caption:
+      description: "Caption text in Kazakh"
+      example: "f(x) функциясының графигі"
+
+trig_graph:
+  description: "Graph of a trigonometric function — for reading period, amplitude, phase questions"
+  use_for: ["trigonometry"]
+  parameters:
+    function:
+      description: "One of: sin, cos, tan, cot"
+      example: "sin"
+    amplitude:
+      description: "Amplitude A in y = A·f(Bx + C) + D. This value appears on the y-axis."
+      example: 2
+    frequency_mult:
+      description: "Frequency multiplier B."
+      example: 1
+    phase_shift:
+      description: "Phase shift C in radians."
+      example: 0
+    vertical_shift:
+      description: "Vertical shift D."
+      example: 0
+    x_periods:
+      description: "Number of periods to show."
+      example: 2
+    mark_x_values:
+      description: "List of x-values to mark with dashed drop lines and labels."
+      example: [1.5707963]
+    caption:
+      description: "Caption text in Kazakh"
+      example: "y = 2sin(x) функциясының графигі"
+
+vector_diagram:
+  description: "2D vector diagram — for angle between vectors, dot product, resultant questions"
+  use_for: ["vectors"]
+  parameters:
+    vectors:
+      description: "List of vectors: each with name, start [x,y], end [x,y]."
+      example: [{"name": "a", "start": [0,0], "end": [4,0]}, {"name": "b", "start": [0,0], "end": [2,3]}]
+    show_angle:
+      description: "Show the angle between the first two vectors with an arc and degree label. true/false."
+      example: true
+    angle_label:
+      description: "Text label for the angle, e.g. '60°' or 'α'. null if show_angle is false."
+      example: "α"
+    show_sum:
+      description: "Draw the resultant (sum) vector as a dashed arrow."
+      example: false
+    caption:
+      description: "Caption text in Kazakh"
+      example: "Екі вектор арасындағы бұрыш"
+
+sequence_plot:
+  description: "Scatter plot of sequence terms — for finding the pattern or sum"
+  use_for: ["sequences"]
+  parameters:
+    terms:
+      description: "List of numeric sequence values to plot (first N terms)."
+      example: [3, 7, 11, 15, 19]
+    caption:
+      description: "Caption text in Kazakh"
+      example: "Арифметикалық прогрессия"
+
+solid_3d:
+  description: "Wireframe 3D solid with labeled vertices and dimensions"
+  use_for: ["polyhedra", "solids_of_revolution", "perpendicularity_3d", "coordinate_3d"]
+  parameters:
+    solid_type:
+      description: "One of: cube, rectangular_prism, pyramid, cylinder, cone"
+      example: "pyramid"
+    dimensions:
+      description: "Solid-specific dict of dimensions to label on the figure."
+      example: {"base": 6, "height": 8}
+    dimension_labels:
+      description: "Dict mapping dimension name to display string, e.g. 'base' -> 'a = 6'."
+      example: {"base": "a = 6", "height": "h = 8"}
+    labels:
+      description: "Labels for key vertices."
+      example: {"apex": "S", "base_vertices": ["A","B","C","D"]}
+    caption:
+      description: "Caption text in Kazakh"
+      example: "Дұрыс төртбұрышты пирамида"
+
+coordinate_plane:
+  description: "Clean 2D coordinate plane with labeled points and segments"
+  use_for: ["vectors", "coordinate_3d", "polygons_circles", "complex_numbers", "triangles"]
+  parameters:
+    points:
+      description: "List of {label, x, y} dicts to mark with dots."
+      example: [{"label": "A", "x": 1, "y": 3}, {"label": "B", "x": 5, "y": 1}]
+    segments:
+      description: "List of [label1, label2] pairs to connect with lines."
+      example: [["A","B"]]
+    polygon:
+      description: "Ordered list of point labels to draw as a polygon. null if not a polygon."
+      example: null
+    segment_labels:
+      description: "Dict mapping 'P1P2' to display string. null if no labels on segments."
+      example: {"AB": "5"}
+    x_range:
+      description: "[x_min, x_max]"
+      example: [-1, 7]
+    y_range:
+      description: "[y_min, y_max]"
+      example: [-1, 5]
+    caption:
+      description: "Caption text in Kazakh"
+      example: "Координаталар жазықтығы"

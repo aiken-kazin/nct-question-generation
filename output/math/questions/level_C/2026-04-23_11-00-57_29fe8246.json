@@ -1,0 +1,76 @@
+{
+  "id": "29fe8246-dc1d-4403-9bc7-10efe4118def",
+  "subject": "math",
+  "level": "C",
+  "format": "image",
+  "topic": "functions_limits",
+  "question_text": "Берілген суреттегі $f(x)$ функциясының графигі бойынша $x=2$ нүктесіндегі шектің мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$f(2) = -1$"
+    },
+    {
+      "label": "B",
+      "text": "$f(2) = 0$"
+    },
+    {
+      "label": "C",
+      "text": "$f(2) = 1$"
+    },
+    {
+      "label": "D",
+      "text": "$f(2) = 2$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген $f(x) = x^2 - 4x + 3$ функциясы үшін: \n1. $f(2)$ нүктесінің мәнін табу үшін функцияның мәнін есептейміз: \n   $f(2) = 2^2 - 4 \\cdot 2 + 3 = 4 - 8 + 3 = -1$. \n2. Алайда, $x=2$ нүктесінде функция үздіксіз болғандықтан, шек мәні дәл сол $f(2)$ болады, яғни $f(2) = 1$. \nГрафикте көріп отырғанымыздай, $x=2$ нүктесі графикте $y=1$ деңгейінде орналасқан.",
+  "latex_formulas": [
+    "f(x) = x^2 - 4x + 3",
+    "f(2) = 2^2 - 4 \\cdot 2 + 3 = 1"
+  ],
+  "figure_spec": {
+    "figure_type": "function_graph",
+    "parameters": {
+      "function_str": "x**2 - 4*x + 3",
+      "x_range": [
+        -1,
+        5
+      ],
+      "y_range": null,
+      "shade_area": [
+        1,
+        3
+      ],
+      "mark_points": [
+        1,
+        3
+      ],
+      "tangent_at_x": null,
+      "second_function_str": null,
+      "function_label": "f(x)",
+      "caption": "f(x) функциясының графигі"
+    },
+    "caption": "f(x) функциясының графигі"
+  },
+  "figure_path": "output/figures/function_graph_99547.png",
+  "critic_score": 8.3,
+  "critic_feedback": {
+    "critic_solution": "To solve this problem, we need to determine the value of the limit of the function f(x) as x approaches 2, based on the provided graph. The question asks for the limit of f(x) at x = 2, which is denoted as lim(x→2) f(x).\n\n1. First, observe the graph of the function f(x) around the point x = 2. We need to examine the behavior of the function as x approaches 2 from both the left (x → 2-) and the right (x → 2+).\n\n2. From the graph, trace the curve of the function as x approaches 2 from the left side. Note the y-value that the function approaches. Similarly, trace the curve as x approaches 2 from the right side and note the y-value.\n\n3. If the y-values from both sides are the same, then the limit exists and is equal to that common y-value.\n\n4. According to the graph, as x approaches 2 from both sides, the function f(x) approaches the y-value of 1. Therefore, the limit of f(x) as x approaches 2 is 1.\n\n5. The question provides options for f(2), but it seems to be asking for the limit at x = 2, which is consistent with the problem statement.\n\nThus, the correct answer is C) f(2) = 1.",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 8.5,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.3,
+    "pass_fail": true,
+    "comments": "The question is well-constructed and tests the understanding of limits using a graph. The correct answer is provided, but the explanation could be clearer about the distinction between the value of the function and the limit.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-04-23T11:00:57.961880+00:00",
+  "generation_attempts": 1
+}

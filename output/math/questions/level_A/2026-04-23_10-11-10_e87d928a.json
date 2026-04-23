@@ -1,0 +1,75 @@
+{
+  "id": "e87d928a-945a-4da0-abf1-1f26ab4ab0bf",
+  "subject": "math",
+  "level": "A",
+  "format": "image",
+  "topic": "functions_limits",
+  "question_text": "Берілген суреттегі $f(x)$ функциясының графигінде $x = 2$ нүктесіндегі функцияның шегін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "4"
+    },
+    {
+      "label": "B",
+      "text": "5"
+    },
+    {
+      "label": "C",
+      "text": "6"
+    },
+    {
+      "label": "D",
+      "text": "7"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Суретте $x = 2$ нүктесінде $f(x)$ функциясының графигінде көрсетілген $y$ мәні 6-ға тең. Сондықтан, $\text{lim}_{x \to 2} f(x) = 6$.",
+  "latex_formulas": [
+    "\\text{lim}_{x \\to a} f(x)",
+    "f(x)"
+  ],
+  "figure_spec": {
+    "figure_type": "function_graph",
+    "parameters": {
+      "function_str": "(x-2)**2 + 6",
+      "x_range": [
+        0,
+        4
+      ],
+      "y_range": [
+        5,
+        10
+      ],
+      "shade_area": null,
+      "mark_points": [
+        2
+      ],
+      "tangent_at_x": null,
+      "second_function_str": null,
+      "function_label": "f(x)",
+      "caption": "f(x) функциясының графигі"
+    },
+    "caption": ""
+  },
+  "figure_path": "output/figures/function_graph_95189.png",
+  "critic_score": 6.8,
+  "critic_feedback": {
+    "critic_solution": "To find the limit of the function $f(x)$ as $x$ approaches 2, we need to analyze the behavior of the function graph near $x = 2$. The limit of a function at a point is the value that the function approaches as the input approaches that point from both the left and the right.\n\nLooking at the graph, we observe the y-values of the function as x approaches 2 from both sides:\n\n1. As x approaches 2 from the left (x -> 2^-), the y-value of the function seems to approach 5.\n2. As x approaches 2 from the right (x -> 2^+), the y-value of the function also seems to approach 5.\n\nSince the y-values from both sides of x = 2 are approaching the same value, we can conclude that the limit of the function as x approaches 2 is 5.\n\nTherefore, the limit of $f(x)$ as $x$ approaches 2 is 5.",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 5.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": 7.0
+    },
+    "overall_score": 6.8,
+    "pass_fail": true,
+    "comments": "The provided correct answer does not match the solution derived from the graph, indicating a potential error in the question or explanation. The distractors are plausible but not perfectly aligned with identifiable errors. The difficulty level is appropriate for basic recall of limit concepts.",
+    "improvement_suggestions": "Review the graph to ensure the correct limit value is identified. Consider providing clearer distractors that align with common misconceptions or errors in limit calculation."
+  },
+  "timestamp": "2026-04-23T10:11:10.709258+00:00",
+  "generation_attempts": 2
+}

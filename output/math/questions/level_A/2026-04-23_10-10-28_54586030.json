@@ -1,0 +1,75 @@
+{
+  "id": "54586030-cc7e-4f6a-bb3b-4e9ec8ebbed9",
+  "subject": "math",
+  "level": "A",
+  "format": "image",
+  "topic": "inequalities",
+  "question_text": "Берілген суреттегі $f(x)$ функциясының графигіне қарап, теңсіздіктің шешімін табыңыз: $f(x) > 0$.",
+  "options": [
+    {
+      "label": "A",
+      "text": "(2, 5)"
+    },
+    {
+      "label": "B",
+      "text": "(-1, 4)"
+    },
+    {
+      "label": "C",
+      "text": "(0, 3)"
+    },
+    {
+      "label": "D",
+      "text": "(4, 6)"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Суреттегі $f(x)$ функциясының графигіне қарағанда, функция $x = 2$ мен $x = 5$ аралығында 0-ден жоғары мәндер қабылдайды. Осылайша, $f(x) > 0$ теңсіздігінің шешімі $x \\in (2, 5)$ аралығы.",
+  "latex_formulas": [
+    "f(x) > 0"
+  ],
+  "figure_spec": {
+    "figure_type": "function_graph",
+    "parameters": {
+      "function_str": "-(x-3)^2 + 4",
+      "x_range": [
+        0,
+        6
+      ],
+      "y_range": [
+        -1,
+        5
+      ],
+      "shade_area": null,
+      "mark_points": [
+        2,
+        5
+      ],
+      "tangent_at_x": null,
+      "second_function_str": null,
+      "function_label": "f(x)",
+      "caption": "f(x) функциясының графигі"
+    },
+    "caption": ""
+  },
+  "figure_path": "output/figures/function_graph_19085.png",
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "To solve the inequality $f(x) > 0$ using the graph of the function $f(x)$, we need to identify the intervals where the graph of $f(x)$ is above the x-axis. This is because $f(x) > 0$ indicates that the function values are positive, which corresponds to the graph being above the x-axis.\n\nLooking at the graph, we observe the following:\n- The graph is above the x-axis between the x-values 2 and 5. This means that for $x$ in the interval (2, 5), the function $f(x)$ is positive.\n- Outside this interval, the graph is either on or below the x-axis, which means $f(x) \\leq 0$.\n\nTherefore, the solution to the inequality $f(x) > 0$ is the interval (2, 5).\n\nChecking the options provided:\nA) (2, 5) - This matches the interval where $f(x) > 0$.\nB) (-1, 4) - This interval includes parts where the graph is below the x-axis.\nC) (0, 3) - This interval includes parts where the graph is below the x-axis.\nD) (4, 6) - This interval includes parts where the graph is below the x-axis.\n\nThus, the correct answer is option A.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": 10.0
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "The question is well-constructed with a clear correct answer and plausible distractors. The difficulty level is appropriate for basic recall and application of graph analysis. The Kazakh language is mostly correct, and the LaTeX is properly formatted.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-04-23T10:10:28.681385+00:00",
+  "generation_attempts": 3
+}

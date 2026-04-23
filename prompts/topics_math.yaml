@@ -1,0 +1,257 @@
+topics:
+  - id: triangles
+    name_en: "Triangles"
+    name_kz: "Үшбұрыштар"
+    keywords: ["triangle", "similarity", "congruence", "Pythagorean theorem", "median", "altitude", "angle bisector", "area", "perimeter", "cosine rule", "sine rule"]
+    subtopics:
+      - "Types: equilateral, isosceles, right-angle, scalene"
+      - "Pythagorean theorem and its converse"
+      - "Similarity criteria (AA, SAS, SSS)"
+      - "Congruence criteria (SAS, ASA, SSS, AAS)"
+      - "Area formulas: base×height/2, Heron's formula, (1/2)ab·sinC"
+      - "Median, altitude, angle bisector lengths"
+      - "Law of sines, Law of cosines"
+      - "Triangle inequality"
+      - "Inscribed and circumscribed circles"
+
+  - id: polygons_circles
+    name_en: "Polygons and Circles"
+    name_kz: "Көпбұрыштар және шеңберлер"
+    keywords: ["polygon", "quadrilateral", "circle", "chord", "tangent", "arc", "sector", "inscribed angle", "central angle"]
+    subtopics:
+      - "Regular polygons: interior/exterior angles, diagonal count"
+      - "Quadrilaterals: parallelogram, rectangle, rhombus, trapezoid properties"
+      - "Circle: chord, diameter, radius, tangent, secant"
+      - "Inscribed and central angles"
+      - "Arc length and sector area"
+      - "Inscribed and circumscribed polygons"
+      - "Power of a point"
+
+  - id: vectors
+    name_en: "Vectors"
+    name_kz: "Векторлар"
+    keywords: ["vector", "dot product", "cross product", "magnitude", "collinear", "coplanar", "angle between vectors"]
+    subtopics:
+      - "Vector arithmetic: addition, subtraction, scalar multiplication"
+      - "Dot product and its geometric meaning"
+      - "Angle between vectors"
+      - "Vector projections"
+      - "Collinearity and coplanarity conditions"
+      - "Position vectors and section formula"
+      - "Vector equations of lines and planes"
+
+  - id: quadratic_irrational
+    name_en: "Quadratic and Irrational Equations"
+    name_kz: "Квадраттық және иррационал теңдеулер"
+    keywords: ["quadratic", "irrational", "discriminant", "roots", "Vieta's formulas", "radical", "extraneous roots"]
+    subtopics:
+      - "Quadratic formula and discriminant"
+      - "Vieta's formulas"
+      - "Factoring quadratics"
+      - "Completing the square"
+      - "Irrational equations: squaring both sides, checking extraneous roots"
+      - "Equations reducible to quadratic"
+      - "Parametric quadratic equations"
+
+  - id: inequalities
+    name_en: "Inequalities"
+    name_kz: "Теңсіздіктер"
+    keywords: ["inequality", "linear inequality", "quadratic inequality", "rational inequality", "interval method", "system of inequalities"]
+    subtopics:
+      - "Linear inequalities and systems"
+      - "Quadratic inequalities: parabola sign analysis"
+      - "Interval (sign chart) method"
+      - "Rational inequalities"
+      - "Absolute value inequalities"
+      - "Inequalities with parameters"
+
+  - id: coordinate_3d
+    name_en: "3D Coordinate Geometry"
+    name_kz: "Кеңістіктік координаталар геометриясы"
+    keywords: ["3D coordinates", "distance formula", "midpoint", "plane equation", "line in space", "direction vector", "normal vector"]
+    subtopics:
+      - "Cartesian coordinates in 3D space"
+      - "Distance between two points in space"
+      - "Midpoint and section formulas"
+      - "Equation of a plane (general and intercept forms)"
+      - "Parametric and symmetric equations of a line"
+      - "Distance from point to plane"
+      - "Angle between planes and between line and plane"
+
+  - id: sequences
+    name_en: "Sequences"
+    name_kz: "Прогрессиялар"
+    keywords: ["arithmetic sequence", "geometric sequence", "common difference", "common ratio", "sum formula", "nth term"]
+    subtopics:
+      - "Arithmetic progression: nth term, sum formula"
+      - "Geometric progression: nth term, sum formula"
+      - "Infinite geometric series and convergence"
+      - "Inserting means between terms"
+      - "Mixed progression problems"
+      - "Recurrence relations"
+
+  - id: trigonometry
+    name_en: "Trigonometry"
+    name_kz: "Тригонометрия"
+    keywords: ["sine", "cosine", "tangent", "cotangent", "unit circle", "trigonometric identities", "equations", "graphs"]
+    subtopics:
+      - "Trigonometric functions on the unit circle"
+      - "Fundamental identities: Pythagorean, reciprocal, quotient"
+      - "Sum and difference formulas"
+      - "Double-angle and half-angle formulas"
+      - "Product-to-sum and sum-to-product formulas"
+      - "Graphs and transformations of trig functions"
+      - "Inverse trigonometric functions"
+      - "Basic trigonometric equations"
+
+  - id: combinatorics_probability
+    name_en: "Combinatorics and Probability"
+    name_kz: "Комбинаторика және ықтималдық теориясы"
+    keywords: ["permutation", "combination", "factorial", "probability", "Bernoulli", "conditional probability", "independence"]
+    subtopics:
+      - "Multiplication and addition principles"
+      - "Permutations (with and without repetition)"
+      - "Combinations and binomial coefficients"
+      - "Binomial theorem"
+      - "Classical probability model"
+      - "Conditional probability and independence"
+      - "Bernoulli trials"
+      - "Geometric probability"
+
+  - id: perpendicularity_3d
+    name_en: "3D Perpendicularity and Parallelism"
+    name_kz: "Кеңістіктегі перпендикулярлық және параллельдік"
+    keywords: ["perpendicular lines", "parallel planes", "dihedral angle", "orthogonal projection", "three perpendiculars theorem"]
+    subtopics:
+      - "Perpendicularity of a line to a plane"
+      - "Parallel planes: conditions and properties"
+      - "Dihedral angles: definition and measurement"
+      - "Theorem of three perpendiculars"
+      - "Orthogonal projections"
+      - "Cross-sections of 3D figures"
+
+  - id: polyhedra
+    name_en: "Polyhedra"
+    name_kz: "Көпжақтар"
+    keywords: ["prism", "pyramid", "cube", "cuboid", "Euler formula", "surface area", "volume", "truncated pyramid"]
+    subtopics:
+      - "Prisms: right and oblique, surface area, volume"
+      - "Pyramids: regular, surface area, volume"
+      - "Truncated pyramid"
+      - "Platonic solids properties"
+      - "Euler's formula: V - E + F = 2"
+      - "Cross-sections of prisms and pyramids"
+
+  - id: solids_of_revolution
+    name_en: "Solids of Revolution"
+    name_kz: "Айналу денелері"
+    keywords: ["cylinder", "cone", "sphere", "frustum", "surface area", "volume", "revolution"]
+    subtopics:
+      - "Cylinder: lateral surface area, total surface area, volume"
+      - "Cone: slant height, lateral surface area, total surface area, volume"
+      - "Frustum (truncated cone)"
+      - "Sphere and hemisphere: surface area, volume"
+      - "Inscribed and circumscribed spheres"
+      - "Composite solids"
+
+  - id: exponential_logarithmic_functions
+    name_en: "Exponential and Logarithmic Functions"
+    name_kz: "Көрсеткіштік және логарифмдік функциялар"
+    keywords: ["exponential function", "logarithm", "natural log", "graph transformations", "domain", "range", "asymptote"]
+    subtopics:
+      - "Properties of exponential function a^x"
+      - "Natural exponential e^x"
+      - "Logarithm definition and basic properties"
+      - "Change of base formula"
+      - "Graphs: exponential growth/decay, logarithmic"
+      - "Domain and range of log/exp functions"
+      - "Transformations: shifts, reflections, stretches"
+
+  - id: exponential_log_equations
+    name_en: "Exponential and Logarithmic Equations"
+    name_kz: "Көрсеткіштік және логарифмдік теңдеулер"
+    keywords: ["exponential equation", "logarithmic equation", "substitution", "domain check", "log properties"]
+    subtopics:
+      - "Exponential equations: same base, substitution"
+      - "Logarithmic equations: using log properties, checking domain"
+      - "Mixed exponential-logarithmic equations"
+      - "Equations with parameters"
+      - "Systems of exponential/logarithmic equations"
+
+  - id: derivatives
+    name_en: "Derivatives"
+    name_kz: "Туындылар"
+    keywords: ["derivative", "differentiation rules", "chain rule", "product rule", "quotient rule", "tangent line", "extrema", "monotonicity"]
+    subtopics:
+      - "Definition of derivative as limit"
+      - "Differentiation rules: power, sum, product, quotient"
+      - "Chain rule for composite functions"
+      - "Derivatives of elementary functions"
+      - "Equation of tangent and normal lines"
+      - "Monotonicity: increasing/decreasing intervals"
+      - "Local extrema: critical points, first/second derivative tests"
+      - "Absolute extrema on closed intervals"
+
+  - id: integrals
+    name_en: "Integrals"
+    name_kz: "Интегралдар"
+    keywords: ["indefinite integral", "definite integral", "antiderivative", "area", "fundamental theorem of calculus", "substitution"]
+    subtopics:
+      - "Indefinite integral and antiderivatives"
+      - "Basic integration rules"
+      - "Integration by substitution"
+      - "Definite integral and Fundamental Theorem of Calculus"
+      - "Area between a curve and the x-axis"
+      - "Area between two curves"
+      - "Volume of solids of revolution (disk/washer method)"
+
+  - id: powers_roots
+    name_en: "Powers and Roots"
+    name_kz: "Дәреже және түбірлер"
+    keywords: ["exponent rules", "rational exponent", "nth root", "simplification", "radical expressions"]
+    subtopics:
+      - "Integer and rational exponent rules"
+      - "Definition and properties of nth roots"
+      - "Simplifying radical expressions"
+      - "Rationalizing denominators"
+      - "Solving equations with rational exponents"
+
+  - id: polynomials
+    name_en: "Polynomials"
+    name_kz: "Көпмүшелер"
+    keywords: ["polynomial division", "factor theorem", "remainder theorem", "roots", "factoring", "Horner's method"]
+    subtopics:
+      - "Polynomial long division and synthetic division"
+      - "Remainder theorem and Factor theorem"
+      - "Roots: rational root theorem, Vieta's formulas"
+      - "Factoring polynomials completely"
+      - "Greatest common divisor of polynomials"
+      - "Polynomial identities"
+
+  - id: functions_limits
+    name_en: "Functions and Limits"
+    name_kz: "Функциялар және шектер"
+    keywords: ["domain", "range", "inverse function", "composite function", "limit", "continuity", "asymptote", "infinity"]
+    subtopics:
+      - "Domain and range of functions"
+      - "Even, odd, periodic functions"
+      - "Composite and inverse functions"
+      - "Limit of a function at a point"
+      - "Limits at infinity and horizontal asymptotes"
+      - "One-sided limits"
+      - "Continuity: definition and types of discontinuity"
+      - "Vertical asymptotes"
+
+  - id: complex_numbers
+    name_en: "Complex Numbers"
+    name_kz: "Кешен сандар"
+    keywords: ["complex number", "real part", "imaginary part", "modulus", "argument", "polar form", "conjugate", "De Moivre"]
+    subtopics:
+      - "Definition, real and imaginary parts"
+      - "Arithmetic: addition, subtraction, multiplication, division"
+      - "Complex conjugate"
+      - "Modulus and argument"
+      - "Polar and exponential form"
+      - "De Moivre's theorem"
+      - "nth roots of complex numbers"
+      - "Complex roots of quadratic equations"
