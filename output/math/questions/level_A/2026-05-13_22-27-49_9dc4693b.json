@@ -1,0 +1,55 @@
+{
+  "id": "9dc4693b-b91f-45c8-876d-33feed54034f",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "quadratic_irrational",
+  "question_text": "Келесі квадраттық теңдеудің түбірлерін табыңыз: $x^2 - 5x + 6 = 0$.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$x = 2 \\text{ және } x = 3$"
+    },
+    {
+      "label": "B",
+      "text": "$x = -2 \\text{ және } x = -3$"
+    },
+    {
+      "label": "C",
+      "text": "$x = 1 \\text{ және } x = 6$"
+    },
+    {
+      "label": "D",
+      "text": "$x = -1 \\text{ және } x = -6$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген теңдеу $x^2 - 5x + 6 = 0$. Бұл квадраттық теңдеуді шешу үшін оны көбейткіштерге жіктейміз: \n$$x^2 - 5x + 6 = (x - 2)(x - 3) = 0.$$ \nЕнді әрбір жақшаны $0$-ге теңестіреміз: \n$x - 2 = 0$ немесе $x - 3 = 0$. \nСонымен, $x = 2$ және $x = 3$. Демек, дұрыс жауап: $x = 2 \\text{ және } x = 3$.",
+  "latex_formulas": [
+    "x^2 - 5x + 6 = 0",
+    "(x - 2)(x - 3) = 0",
+    "x - 2 = 0",
+    "x - 3 = 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.14,
+  "critic_feedback": {
+    "critic_solution": "To solve the quadratic equation x^2 - 5x + 6 = 0, we use factoring. The equation can be rewritten as (x - 2)(x - 3) = 0. Setting each factor equal to zero gives x - 2 = 0 or x - 3 = 0. Solving these, we find x = 2 and x = 3. Therefore, the roots of the equation are x = 2 and x = 3.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.14,
+    "pass_fail": true,
+    "comments": "The question is well-constructed, with a correct solution and appropriate difficulty level for basic quadratic equations. The Kazakh language is clear and professional, and the LaTeX formatting is flawless.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-05-13T22:27:49.095760+00:00",
+  "generation_attempts": 1
+}

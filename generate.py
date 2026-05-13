@@ -29,6 +29,12 @@ from src.output import save_question
 
 console = Console()
 
+API_CHOICES = {
+    "gpt-4o-2024-11-20": "openai/gpt-4o-2024-11-20",
+    "Qwen/Qwen2.5-72B-Instruct": "qwen/qwen-2.5-72b-instruct",
+}
+DEFAULT_API = "gpt-4o-2024-11-20"
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -43,8 +49,10 @@ def parse_args() -> argparse.Namespace:
                         dest="fmt", help="Question format")
     parser.add_argument("--topic", default=None,
                         help="Topic ID (from topics_math/kazakh.yaml). Random if omitted.")
+    parser.add_argument("--api", default=DEFAULT_API, choices=list(API_CHOICES.keys()),
+                        help=f"API model to use (default: {DEFAULT_API})")
     parser.add_argument("--model", default=None,
-                        help="OpenRouter model ID (overrides OPENROUTER_MODEL env var)")
+                        help="OpenRouter model ID (overrides --api and OPENROUTER_MODEL env var)")
     parser.add_argument("--output-dir", default="output",
                         help="Output directory (default: output/)")
     parser.add_argument("--count", type=int, default=1,
@@ -61,6 +69,8 @@ def main() -> None:
         sys.exit(1)
     if args.model:
         config.model = args.model
+    else:
+        config.model = API_CHOICES[args.api]
 
     topics_available = config.get_topics(args.subject)
 
@@ -162,6 +172,15 @@ def main() -> None:
 
         if last_raw is None:
             console.print("[red]Skipping — no output from generator.[/red]")
+            continue
+
+        if last_critique is None or not last_critique.pass_fail or last_critique.dimensions.correctness < 7:
+            score_str = (
+                f"overall {last_critique.overall_score:.1f}/10, "
+                f"correctness {last_critique.dimensions.correctness:.1f}/10"
+                if last_critique else "no critique"
+            )
+            console.print(f"[red]REJECTED[/red] — {score_str}. Not saving.")
             continue
 
         question = Question(

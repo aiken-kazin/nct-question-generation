@@ -46,7 +46,8 @@ python generate.py --subject <subject> --level <level> --format <format> [option
 | `--format` | yes | `text`, `image` | Output format |
 | `--count` | no | integer | Number of questions to generate (default: 1) |
 | `--topic` | no | topic ID | Specific topic (random if omitted) |
-| `--model` | no | model ID | Override the OpenRouter model |
+| `--api` | no | `gpt-4o-2024-11-20`, `Qwen/Qwen2.5-72B-Instruct` | API model (default: `gpt-4o-2024-11-20`) |
+| `--model` | no | model ID | Raw OpenRouter model ID (overrides `--api`) |
 | `--output-dir` | no | path | Output directory (default: `output/`) |
 
 ### Examples
@@ -61,7 +62,10 @@ python generate.py --subject kazakh --level B --format image --count 3
 # Specific topic, hard difficulty
 python generate.py --subject math --level C --format image --topic triangles
 
-# Use a different model
+# Use Qwen instead of GPT
+python generate.py --subject math --level B --format text --api Qwen/Qwen2.5-72B-Instruct
+
+# Use a fully custom OpenRouter model ID
 python generate.py --subject math --level B --format text --model anthropic/claude-3.5-sonnet
 ```
 
