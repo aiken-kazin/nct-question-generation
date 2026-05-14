@@ -6,9 +6,19 @@ from pathlib import Path
 from .models import Question
 
 
+def _model_slug(model_id: str) -> str:
+    """Filesystem-safe slug from an OpenRouter model ID like 'openai/gpt-4o-2024-11-20'."""
+    return model_id.split("/")[-1].replace(":", "_")
+
+
 def save_question(question: Question, output_dir: Path) -> dict[str, Path]:
     output_dir = Path(output_dir).resolve()
-    q_dir = output_dir / question.subject / "questions" / f"level_{question.level}"
+    q_dir = (
+        output_dir
+        / question.subject
+        / _model_slug(question.model_id)
+        / f"level_{question.level}"
+    )
     q_dir.mkdir(parents=True, exist_ok=True)
 
     stem = f"{question.timestamp[:19].replace(':', '-').replace('T', '_')}_{question.id[:8]}"

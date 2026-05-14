@@ -1,0 +1,257 @@
+================================================================================
+IMAGE-GENERATION PROMPTS — NTC QUESTION-GENERATION PIPELINE DIAGRAMS
+================================================================================
+
+Use these with DALL·E 3, GPT-Image, Midjourney, or any text-to-image model that
+handles diagram text well. For Midjourney add `--ar 16:9 --style raw --v 6`. For
+DALL·E use the prompt as-is.
+
+Style guidance applied to every prompt:
+- Clean academic-paper figure style (publishable in IEEE/Springer/Elsevier).
+- Flat 2D vector look, no 3D, no shadows, no gradients, no glow.
+- White or off-white background (#FFFFFF or #FAFAFA).
+- Monospace or clean sans-serif labels (Inter / Helvetica / IBM Plex).
+- Boxes: rounded corners, 2px borders. Decisions: diamond shapes.
+- Color palette: deep blue (#1F4E79) for agents, soft green (#5A8F69) for
+  artifacts/outputs, amber (#D9A441) for retry/feedback, neutral gray (#4B4B4B)
+  for arrows, light fills (10–15% opacity tints of the same hues).
+- All text in English (research paper figures).
+- No emojis. No decorative icons. No watermark.
+
+NOTE FOR ALL PROMPTS: AI image generators frequently misspell or rearrange text
+in diagrams. For a publishable final figure, prefer rebuilding the diagram in
+Mermaid / draw.io / TikZ once you've chosen a layout. These prompts are useful
+for early concept rendering and slide decks.
+
+================================================================================
+PROMPT 1 — HIGH-LEVEL TWO-AGENT PIPELINE (PRIMARY FIGURE)
+================================================================================
+
+A clean horizontal flowchart titled "NTC Kazakh-Language MCQ Generation
+Pipeline", drawn as a publication-quality academic figure on a white background.
+
+Layout (left to right):
+
+1. An input block on the far left labeled "Inputs" containing three small
+   stacked tags: "Subject (math / kazakh)", "Level (A / B / C)", "Topic".
+
+2. An arrow flows right into a rounded rectangle labeled "Generator Agent"
+   in deep blue. Beneath the title, in smaller text: "LLM via OpenRouter
+   (GPT-4o / Claude Sonnet 4.6 / Qwen-2.5-72B)" and "temperature 0.8".
+
+3. A short downward branch from the Generator block opens an optional
+   rounded rectangle labeled "Figure Generator (Matplotlib)" in green,
+   marked "image-format only".
+
+4. The main horizontal arrow continues to the right into a larger rounded
+   rectangle labeled "Critic Agent" in deep blue, with two stacked
+   sub-boxes inside:
+     • "Step 1: Independent Solve" — temperature 0.2
+     • "Step 2: Evaluate (5 dims + weighted overall)" — temperature 0.1
+
+5. After the Critic block, a diamond decision node: "Pass? overall ≥ 6.0
+   AND correctness ≥ 7".
+
+6. From the diamond:
+     • A green arrow labeled "Yes" continues right into a green rounded
+       rectangle labeled "Save (JSON + Markdown) under
+       output/<subject>/<model>/level_<X>/".
+     • An amber arrow labeled "No" curves back to the Generator block,
+       labeled "Feedback (improvement_suggestions)". This is the retry
+       loop. A small note next to the loop reads "up to 4 attempts".
+
+A small legend at the bottom: blue = LLM agent, green = artifact, amber =
+feedback path, diamond = decision. Use a thin neutral-gray border, no
+shadow. The figure should look like it belongs in a methods section of an
+IEEE/Springer journal.
+
+================================================================================
+PROMPT 2 — CRITIC AGENT INTERNALS (TWO-STEP EVALUATION)
+================================================================================
+
+A detailed vertical diagram titled "Critic Agent: Two-Step Evaluation" on a
+white background, academic-paper style.
+
+Top of the figure: an input rectangle labeled "Generated Question" with
+small tags showing: stem, 4 options (A/B/C/D), correct_answer, optional
+figure.
+
+Below that, two stacked boxes connected by arrows:
+
+Box 1 — "Step 1: Independent Solve". Inside, smaller annotations:
+   "Critic does NOT see the provided correct answer."
+   "Outputs: critic_solution (step-by-step) + critic_answer (A–D)."
+   "Temperature 0.2."
+
+An arrow flows into Box 2 — "Step 2: Multi-Dimensional Evaluation".
+Inside, list five horizontal sub-rows, each one a small bar showing the
+dimension name and its weight:
+   • Correctness          — weight 3
+   • Distractor quality   — weight 2
+   • Difficulty alignment — weight 2
+   • Kazakh language      — weight 2
+   • LaTeX validity       — weight 1
+   • Figure relevance     — weight 1  (italicized "image format only")
+
+To the right of Box 2, an output card labeled "CriticFeedback":
+   "overall_score (weighted, 0–10)"
+   "pass_fail (bool)"
+   "comments + improvement_suggestions"
+
+Use deep blue for the agent boxes, light-blue tinted fills for the
+dimension rows, dark gray arrows. No background, no shadows. Should look
+like a figure from a peer-reviewed CS-education journal.
+
+================================================================================
+PROMPT 3 — ITERATIVE REFINEMENT (RETRY LOOP DETAIL)
+================================================================================
+
+A circular / loop diagram titled "Iterative Refinement Loop" on a white
+background, designed for a research paper.
+
+Place four nodes arranged around a circle, connected by directional arrows
+forming a clockwise cycle:
+
+   Top:    "Generator Agent — produces draft question"
+   Right:  "Critic Agent — scores 5 dimensions"
+   Bottom: "Decision — pass / fail"
+   Left:   "Feedback — improvement_suggestions"
+
+Arrows:
+   Top → Right: solid arrow labeled "draft"
+   Right → Bottom: solid arrow labeled "scores"
+   Bottom → Save (small green box outside the circle): arrow labeled
+       "PASS (overall ≥ 6.0 AND correctness ≥ 7) → save"
+   Bottom → Left: amber arrow labeled "FAIL"
+   Left → Top: amber arrow labeled "regenerate with feedback"
+
+A small counter inside the circle reads "max 4 attempts". Title sub-line:
+"Component-level feedback drives targeted regeneration".
+
+Style: clean flat vector, academic-figure look, deep blue for agents,
+amber for feedback path, soft green for the save terminus. Sans-serif
+labels. No 3D effects.
+
+================================================================================
+PROMPT 4 — MULTI-MODEL CORPUS GENERATION (BATCH RUN)
+================================================================================
+
+A horizontal swimlane diagram titled "Multi-Model Corpus Generation
+(3 × 2 × 50 = 300 Items)" on a white background, publication-ready.
+
+Left side: a single input block labeled "NTC Topic Bank + Difficulty Mix
+(A 26% / B 60% / C 14%)".
+
+From this block, three horizontal swimlanes extend to the right. Each
+lane is shaded a very light tint and labeled at the left edge:
+
+   Lane 1: "GPT-4o-2024-11-20"           (blue tint)
+   Lane 2: "Claude Sonnet 4.6"           (green tint)
+   Lane 3: "Qwen-2.5-72B-Instruct"       (purple tint)
+
+Inside each lane, draw the same compact 3-step sub-pipeline horizontally:
+
+   [Generator] → [Critic Loop] → [50 Saved Items]
+
+Below the three lanes, a merge block labeled "Per-Model Corpus
+(output/<subject>/<model_slug>/level_<X>/)" gathering everything.
+
+Two parallel rows above the lanes indicate the two subjects: "Math"
+and "Kazakh Language", each yielding 150 items.
+
+Annotate at the bottom: "Total: 300 saved items across 2 subjects × 3
+models, ready for expert evaluation."
+
+Flat 2D style, no shadows, no 3D, sans-serif labels, neutral gray arrows.
+Looks like a figure from Computers & Education or IEEE TLT.
+
+================================================================================
+PROMPT 5 — CRITIC SELF-VALIDATION METHODOLOGY (NO EXPERT NEEDED)
+================================================================================
+
+A two-column comparison diagram titled "Critic Self-Validation Against
+Real NTC Items" on a white background, academic-paper style.
+
+Top-center: an input block labeled "40 Real NTC Math Items (Kazakh,
+human-authored, with ground-truth answer)".
+
+Two arrows fork down from this block:
+
+LEFT COLUMN — labeled "Test A: Real Questions":
+   1. "Real Item (unchanged)" box
+   2. Arrow down to "Critic Agent" box
+   3. Arrow down to an output card "Expected: high score, pass=true,
+      critic_answer = ground truth"
+
+RIGHT COLUMN — labeled "Test B: Degraded Variants":
+   Two parallel sub-boxes inside this column:
+     • "Variant 1: Wrong Answer Key — relabel correct option to a
+        random distractor"
+     • "Variant 2: Weak Distractors — replace 2 wrong options with
+        implausible fillers (e.g. 'Жоқ', '0')"
+   Both arrows flow down into the same "Critic Agent" box, then down
+   to an output card "Expected: materially lower score".
+
+Bottom: a comparison block titled "Discrimination Gap = mean(real) −
+mean(degraded)" with a small horizontal bar chart placeholder showing
+two bars: a tall green bar labeled "real" and a short red bar labeled
+"degraded".
+
+Style: deep blue agent boxes, soft green for positive expectation, soft
+red for degraded, neutral gray arrows. Sans-serif. Flat 2D vector.
+
+================================================================================
+PROMPT 6 — FULL RESEARCH METHODOLOGY (5-STEP PROJECT WORKFLOW)
+================================================================================
+
+A horizontal 5-stage workflow diagram titled "Research Methodology:
+AI-Generated Kazakh NTC Questions" on a white background, designed for
+the opening of a methods section.
+
+Five large rounded rectangles arranged left to right, connected by thick
+gray arrows. Each box contains a header and 2 short bullet lines:
+
+   1. "Literature Review"
+        • 23 papers across MCQ generation, LLM eval, low-resource NLP
+        • Method + gap synthesis
+
+   2. "Critic Calibration"
+        • 40 real NTC items + degraded variants
+        • Self-validation without experts
+
+   3. "Multi-Model Generation"
+        • 3 LLMs × 2 subjects × 50 items = 300 total
+        • Generator + Critic loop
+
+   4. "Expert Evaluation"
+        • 2–3 subject experts per subject
+        • Rubric: clarity, correctness, difficulty, language, alignment
+        • Inter-rater reliability (Cohen's κ / Krippendorff's α)
+
+   5. "Statistical Analysis & Publication"
+        • Model comparison (Friedman / Welch's ANOVA)
+        • Critic-vs-expert correlation
+        • Target venue: Journal of Advances in Information Technology
+
+Below the workflow, a slim horizontal bar with five color-coded segments
+indicating proportional effort/time per stage. Above each box, a small
+numbered circle (1–5).
+
+Style: deep blue numbered circles, light blue fills for boxes, neutral
+gray arrows, sans-serif labels. Flat 2D vector. Clean publishable look.
+
+================================================================================
+USAGE TIPS
+================================================================================
+
+1. For each prompt, generate 3–4 variants and pick the cleanest layout.
+2. AI image generators routinely misspell technical terms ("Kazakh",
+   "Krippendorff", "OpenRouter"). Always proofread the output.
+3. For the final paper submission, rebuild the chosen layout in:
+     • Mermaid (good for Prompts 1, 3, 6) — copy-pasteable into LaTeX/Markdown
+     • draw.io / diagrams.net (good for Prompts 2, 4, 5)
+     • TikZ (best journal-ready quality, slowest to author)
+4. Keep the visual style consistent across all figures in the paper —
+   one color palette, one font family, one corner-radius.
+5. If submitting to JAIT, check their figure-resolution requirements
+   (typically 300 DPI minimum for raster, vector preferred).

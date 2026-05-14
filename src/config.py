@@ -5,6 +5,8 @@ from pathlib import Path
 from string import Template
 import yaml
 
+from .exemplars import ExemplarBank
+
 _PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
 
 
@@ -20,9 +22,30 @@ def _load_yaml(name: str) -> dict:
 class Config:
     def __init__(self) -> None:
         self.model: str = os.environ.get("OPENROUTER_MODEL", "openai/gpt-4o")
+        # Critic can use a *different* OpenRouter model than the generator.
+        # This reduces self-evaluation bias (Yao et al. 2025; AI-Literacy
+        # multi-agent paper). Defaults to the generator model — when unset,
+        # behavior is identical to the pre-existing pipeline.
+        self.critic_model: str = os.environ.get("OPENROUTER_CRITIC_MODEL", "") or self.model
+
+        # Vision-capable critic: used ONLY for image-format questions (where
+        # `figure_path` is provided to CriticAgent.evaluate). For the typical
+        # 50-question batch, ~8-10 image questions × vision cost dominates,
+        # but the remaining 40+ text questions still use the cheaper text
+        # critic above. Default falls back to GPT-4o, which is vision-capable
+        # and always available on OpenRouter.
+        self.vision_critic_model: str = (
+            os.environ.get("OPENROUTER_VISION_CRITIC_MODEL", "")
+            or "openai/gpt-4o-2024-11-20"
+        )
         self.api_key: str = os.environ.get("OPENROUTER_API_KEY", "")
         self.pass_threshold: float = 6.0
         self.max_retries: int = 3
+
+        # Number of few-shot exemplars injected into the generator prompt.
+        # 2 is a good sweet spot: meaningful style transfer without flooding
+        # the context. Set FEWSHOT_K=0 to disable.
+        self.fewshot_k: int = int(os.environ.get("FEWSHOT_K", "2"))
 
         self._difficulty: dict = _load_yaml("difficulty.yaml")
         self._topics_math: list[dict] = _load_yaml("topics_math.yaml")["topics"]
@@ -33,6 +56,9 @@ class Config:
         self._gen_kazakh_tpl: str = _load_text("generator_kazakh.md")
         self._critic_solve_tpl: str = _load_text("critic_solve.md")
         self._critic_eval_tpl: str = _load_text("critic_eval.md")
+
+        # Shared exemplar bank for few-shot prompting. Loaded once.
+        self.exemplars = ExemplarBank()
 
     # ── Topics ──────────────────────────────────────────────────────────────
 
@@ -164,7 +190,20 @@ class Config:
                 "Regenerate the question, fixing every issue the critic raised."
             )
 
+        # Few-shot exemplars from real NTC items. We query the bank by the
+        # Kazakh topic name (that's what the real-question metadata uses) and
+        # by the requested difficulty level. Only injected for text format —
+        # image-format generation has its own figure schema and we don't want
+        # to mix the two prompts.
         examples_block = ""
+        if self.fewshot_k > 0 and fmt == "text" and self.exemplars.has_data(subject):
+            exemplars = self.exemplars.select(
+                subject=subject,
+                topic_kz=topic.get("name_kz", ""),
+                level=level,
+                k=self.fewshot_k,
+            )
+            examples_block = self.exemplars.format_for_prompt(exemplars)
 
         tpl = self._gen_math_tpl if subject == "math" else self._gen_kazakh_tpl
         return Template(tpl).safe_substitute(

@@ -1,0 +1,638 @@
+[
+  {
+    "row": {
+      "idx": 0,
+      "variant": "real",
+      "topic": "triangles",
+      "level": "A",
+      "overall": 9.29,
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 9.667,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    "ensemble": {
+      "aggregated": {
+        "critic_solution": "[openai/gpt-4o-2024-11-20] answered A: We are given a right triangle where one of the angles is 60° and the side opposite this angle (one of the legs) is 3 cm. We are tasked with finding the length of the other leg.\n\nStep 1: Recall the properties of a 30°-60°-90° triangle. In such a triangle, the side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is √3 times the side opposite the 30° angle.\n\nStep 2:\n\n[anthropic/claude-sonnet-4.6] answered A: In a right triangle, the angles are 90°, 60°, and 30°. The side opposite the 60° angle is given as 3 cm. Using the 30-60-90 triangle ratios: sides are in ratio 1 : √3 : 2 (opposite 30°, opposite 60°, hypotenuse respectively). The side opposite 60° = √3 · (side opposite 30°). So: 3 = √3 · (side opposite 30°), meaning the side opposite 30° = 3/√3 = √3. The second cathetus (the one opposite 30°) = 3/\n\n[qwen/qwen-2.5-72b-instruct] answered A: Given a right-angled triangle with a 60° angle, the side opposite to the 60° angle (one of the legs) is 3 cm. In a 30°-60°-90° triangle, the sides are in the ratio 1 : √3 : 2. The side opposite the 60° angle is √3 times the length of the side opposite the 30° angle. Let the side opposite the 30° angle be x. Therefore, 3 = x√3. Solving for x, we get x = 3 / √3 = √3. The second leg (the side opposit",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 10.0,
+          "distractor_quality": 8.5,
+          "difficulty_alignment": 9.667,
+          "kazakh_language_quality": 9.0,
+          "latex_validity": 9.667,
+          "figure_relevance": null
+        },
+        "overall_score": 9.29,
+        "pass_fail": true,
+        "comments": "[openai/gpt-4o-2024-11-20] The question is well-constructed, with a clear and unambiguous correct answer. It aligns perfectly with the requested difficulty level and uses proper Kazakh language and LaTeX formatting. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: in a 30-60-90 triangle, the leg opposite 60° is √3 times the leg opposite 30°, so the second cathetus is 3/√3 = √3 cm (option A). Distractors correspond to plausible errors (confusing ratios, using hypotenuse formula, or multiplying instead of dividing). Kazakh phrasing is natural and uses standard terminology. | [qwen/qwen-2.5-72b-instruct] The question is well-constructed, aligns with the difficulty level, and is free of language and LaTeX errors. The distractors are plausible and cover common mistakes.",
+        "improvement_suggestions": null
+      },
+      "per_critic": [
+        {
+          "model_id": "openai/gpt-4o-2024-11-20",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are given a right triangle where one of the angles is 60° and the side opposite this angle (one of the legs) is 3 cm. We are tasked with finding the length of the other leg.\n\nStep 1: Recall the properties of a 30°-60°-90° triangle. In such a triangle, the side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is √3 times the side opposite the 30° angle.\n\nStep 2: Let the side opposite the 30° angle be x. Then the side opposite the 60° angle is √3 * x. From the problem, the side opposite the 60° angle is given as 3 cm. Therefore, we can write:\n\n√3 * x = 3\n\nStep 3: Solve for x:\n\nx = 3 / √3\n\nStep 4: Rationalize the denominator:\n\nx = (3 / √3) * (√3 / √3) = 3√3 / 3 = √3\n\nStep 5: The side opposite the 30° angle (the other leg) is √3 cm. Thus, the correct answer is A) √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 9.0,
+              "difficulty_alignment": 10.0,
+              "kazakh_language_quality": 10.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 9.57,
+            "pass_fail": true,
+            "comments": "The question is well-constructed, with a clear and unambiguous correct answer. It aligns perfectly with the requested difficulty level and uses proper Kazakh language and LaTeX formatting.",
+            "improvement_suggestions": null
+          }
+        },
+        {
+          "model_id": "anthropic/claude-sonnet-4.6",
+          "error": null,
+          "feedback": {
+            "critic_solution": "In a right triangle, the angles are 90°, 60°, and 30°. The side opposite the 60° angle is given as 3 cm. Using the 30-60-90 triangle ratios: sides are in ratio 1 : √3 : 2 (opposite 30°, opposite 60°, hypotenuse respectively). The side opposite 60° = √3 · (side opposite 30°). So: 3 = √3 · (side opposite 30°), meaning the side opposite 30° = 3/√3 = √3. The second cathetus (the one opposite 30°) = 3/√3 = √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 8.0,
+              "difficulty_alignment": 9.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 9.0,
+            "pass_fail": true,
+            "comments": "The question is factually correct and well-keyed: in a 30-60-90 triangle, the leg opposite 60° is √3 times the leg opposite 30°, so the second cathetus is 3/√3 = √3 cm (option A). Distractors correspond to plausible errors (confusing ratios, using hypotenuse formula, or multiplying instead of dividing). Kazakh phrasing is natural and uses standard terminology.",
+            "improvement_suggestions": null
+          }
+        },
+        {
+          "model_id": "qwen/qwen-2.5-72b-instruct",
+          "error": null,
+          "feedback": {
+            "critic_solution": "Given a right-angled triangle with a 60° angle, the side opposite to the 60° angle (one of the legs) is 3 cm. In a 30°-60°-90° triangle, the sides are in the ratio 1 : √3 : 2. The side opposite the 60° angle is √3 times the length of the side opposite the 30° angle. Let the side opposite the 30° angle be x. Therefore, 3 = x√3. Solving for x, we get x = 3 / √3 = √3. The second leg (the side opposite the 30° angle) is √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 8.5,
+              "difficulty_alignment": 10.0,
+              "kazakh_language_quality": 9.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 9.3,
+            "pass_fail": true,
+            "comments": "The question is well-constructed, aligns with the difficulty level, and is free of language and LaTeX errors. The distractors are plausible and cover common mistakes.",
+            "improvement_suggestions": null
+          }
+        }
+      ],
+      "answer_agreement": 1.0,
+      "unanimous": true,
+      "n_critics_responded": 3,
+      "n_critics_failed": 0
+    }
+  },
+  {
+    "row": {
+      "idx": 0,
+      "variant": "wrong_key",
+      "topic": "triangles",
+      "level": "A",
+      "overall": 6.07,
+      "correctness": 1.333,
+      "distractor_quality": 6.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 8.5,
+      "latex_validity": 9.333,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    "ensemble": {
+      "aggregated": {
+        "critic_solution": "[openai/gpt-4o-2024-11-20] answered A: We are solving for the length of the second leg of a right triangle where one of the angles is 60° and the side opposite this angle is given as 3 cm. \n\nStep 1: Recall the properties of a 30°-60°-90° triangle. In such a triangle:\n- The side opposite the 30° angle is half the hypotenuse.\n- The side opposite the 60° angle is equal to the side opposite the 30° angle multiplied by √3.\n\nStep 2: Identify\n\n[anthropic/claude-sonnet-4.6] answered A: In a right triangle, the angles are 90°, 60°, and 30°. The side opposite the 60° angle is given as 3 cm. We need to find the other leg (the side opposite the 30° angle).\n\nUsing the 30-60-90 triangle ratios: sides are in ratio 1 : √3 : 2 (opposite 30°, opposite 60°, hypotenuse).\n\nSide opposite 60° = √3 · x = 3, where x is the side opposite 30°.\nSo x = 3/√3 = 3/√3 · (√3/√3) = 3√3/3 = √3.\n\nThe other \n\n[qwen/qwen-2.5-72b-instruct] answered A: Given a right-angled triangle with a 60° angle, we need to find the length of the second leg (cathetus) when the first leg (cathetus) opposite the 60° angle is 3 cm. In a right-angled triangle with a 60° angle, the angles are 30°, 60°, and 90°. The sides of such a triangle are in the ratio 1 : √3 : 2. The side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is √3",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 1.333,
+          "distractor_quality": 6.667,
+          "difficulty_alignment": 9.333,
+          "kazakh_language_quality": 8.5,
+          "latex_validity": 9.333,
+          "figure_relevance": null
+        },
+        "overall_score": 6.07,
+        "pass_fail": false,
+        "comments": "[openai/gpt-4o-2024-11-20] The provided correct answer (D) is demonstrably wrong. The correct answer is A, as shown in the independent solution. This invalidates the question. | [anthropic/claude-sonnet-4.6] The answer key is wrong. The side opposite 60° in a 30-60-90 triangle is √3 times the shorter leg; if that side equals 3 cm, the other leg (opposite 30°) is 3/√3 = √3 cm (option A), not 3√3 cm (option D). The author appears to have swapped the given and unknown sides. | [qwen/qwen-2.5-72b-instruct] The provided correct answer (D) is incorrect. The correct answer should be A (sqrt(3) см). The distractors are generally well-constructed, and the question aligns with the difficulty level A. The Kazakh language and LaTeX are of good quality.",
+        "improvement_suggestions": "[openai/gpt-4o-2024-11-20] Correct the provided answer key to A. Ensure that the solution process is verified for accuracy before finalizing the question. | [anthropic/claude-sonnet-4.6] Fix the answer key to A (√3 см). Alternatively, rewrite the question so the side opposite 30° is given as 3 cm, making the side opposite 60° equal to 3√3 cm — then D would be correct. Also add a brief explanation to the answer key showing the ratio derivation. | [qwen/qwen-2.5-72b-instruct] Correct the provided answer to A (sqrt(3) см) and ensure the explanation matches the correct answer."
+      },
+      "per_critic": [
+        {
+          "model_id": "openai/gpt-4o-2024-11-20",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are solving for the length of the second leg of a right triangle where one of the angles is 60° and the side opposite this angle is given as 3 cm. \n\nStep 1: Recall the properties of a 30°-60°-90° triangle. In such a triangle:\n- The side opposite the 30° angle is half the hypotenuse.\n- The side opposite the 60° angle is equal to the side opposite the 30° angle multiplied by √3.\n\nStep 2: Identify the given information. The side opposite the 60° angle is given as 3 cm. Let the side opposite the 30° angle be x. Then, according to the properties of a 30°-60°-90° triangle:\n  x√3 = 3.\n\nStep 3: Solve for x. Divide both sides of the equation by √3:\n  x = 3 / √3.\n\nStep 4: Rationalize the denominator:\n  x = (3 / √3) × (√3 / √3) = 3√3 / 3 = √3.\n\nStep 5: Interpret the result. The side opposite the 30° angle (the second leg of the triangle) is √3 cm.\n\nStep 6: Match the result to the options. The correct answer is A) √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 0.0,
+              "distractor_quality": 6.0,
+              "difficulty_alignment": 10.0,
+              "kazakh_language_quality": 9.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 5.71,
+            "pass_fail": false,
+            "comments": "The provided correct answer (D) is demonstrably wrong. The correct answer is A, as shown in the independent solution. This invalidates the question.",
+            "improvement_suggestions": "Correct the provided answer key to A. Ensure that the solution process is verified for accuracy before finalizing the question."
+          }
+        },
+        {
+          "model_id": "anthropic/claude-sonnet-4.6",
+          "error": null,
+          "feedback": {
+            "critic_solution": "In a right triangle, the angles are 90°, 60°, and 30°. The side opposite the 60° angle is given as 3 cm. We need to find the other leg (the side opposite the 30° angle).\n\nUsing the 30-60-90 triangle ratios: sides are in ratio 1 : √3 : 2 (opposite 30°, opposite 60°, hypotenuse).\n\nSide opposite 60° = √3 · x = 3, where x is the side opposite 30°.\nSo x = 3/√3 = 3/√3 · (√3/√3) = 3√3/3 = √3.\n\nThe other leg (opposite 30°) = √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 2.0,
+              "distractor_quality": 7.0,
+              "difficulty_alignment": 9.0,
+              "kazakh_language_quality": 8.5,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 5.8,
+            "pass_fail": false,
+            "comments": "The answer key is wrong. The side opposite 60° in a 30-60-90 triangle is √3 times the shorter leg; if that side equals 3 cm, the other leg (opposite 30°) is 3/√3 = √3 cm (option A), not 3√3 cm (option D). The author appears to have swapped the given and unknown sides.",
+            "improvement_suggestions": "Fix the answer key to A (√3 см). Alternatively, rewrite the question so the side opposite 30° is given as 3 cm, making the side opposite 60° equal to 3√3 cm — then D would be correct. Also add a brief explanation to the answer key showing the ratio derivation."
+          }
+        },
+        {
+          "model_id": "qwen/qwen-2.5-72b-instruct",
+          "error": null,
+          "feedback": {
+            "critic_solution": "Given a right-angled triangle with a 60° angle, we need to find the length of the second leg (cathetus) when the first leg (cathetus) opposite the 60° angle is 3 cm. In a right-angled triangle with a 60° angle, the angles are 30°, 60°, and 90°. The sides of such a triangle are in the ratio 1 : √3 : 2. The side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is √3 times the side opposite the 30° angle. Let's denote the side opposite the 30° angle as x. Then, the side opposite the 60° angle is x√3. Given that the side opposite the 60° angle is 3 cm, we have: 3 = x√3. Solving for x, we get: x = 3 / √3 = 3 * √3 / 3 = √3. Therefore, the side opposite the 30° angle is √3 cm. The second leg (cathetus) is the side opposite the 30° angle, which is √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 2.0,
+              "distractor_quality": 7.0,
+              "difficulty_alignment": 9.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 6.7,
+            "pass_fail": true,
+            "comments": "The provided correct answer (D) is incorrect. The correct answer should be A (sqrt(3) см). The distractors are generally well-constructed, and the question aligns with the difficulty level A. The Kazakh language and LaTeX are of good quality.",
+            "improvement_suggestions": "Correct the provided answer to A (sqrt(3) см) and ensure the explanation matches the correct answer."
+          }
+        }
+      ],
+      "answer_agreement": 1.0,
+      "unanimous": true,
+      "n_critics_responded": 3,
+      "n_critics_failed": 0
+    }
+  },
+  {
+    "row": {
+      "idx": 0,
+      "variant": "weak_distractors",
+      "topic": "triangles",
+      "level": "A",
+      "overall": 8.0,
+      "correctness": 10.0,
+      "distractor_quality": 4.667,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 9.667,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    "ensemble": {
+      "aggregated": {
+        "critic_solution": "[openai/gpt-4o-2024-11-20] answered A: We are solving for the length of the second leg of a right triangle where one of the angles is 60° and the side opposite this angle (the first leg) is given as 3 cm. \n\n1. In a 30°-60°-90° triangle, the sides have a specific ratio: the side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is √3 times the side opposite the 30° angle.\n\n2. Here, the side opposite the \n\n[anthropic/claude-sonnet-4.6] answered A: In a right triangle, the angles are 90°, 60°, and 30°. The side opposite the 60° angle is given as 3 cm. We need to find the other leg (the side opposite the 30° angle).\n\nUsing the 30-60-90 triangle ratios:\n- Side opposite 30° = x\n- Side opposite 60° = x√3\n- Hypotenuse = 2x\n\nGiven: side opposite 60° = 3 cm\nSo: x√3 = 3\nx = 3/√3 = 3√3/3 = √3\n\nThe other leg (opposite 30°) = √3 cm.\n\nThis matches optio\n\n[qwen/qwen-2.5-72b-instruct] answered A: We are given a right-angled triangle with one angle of 60 degrees. The side opposite the 60-degree angle (one of the legs) is 3 cm. In a right-angled triangle with a 60-degree angle, the other non-right angle must be 30 degrees, making it a 30-60-90 triangle. In a 30-60-90 triangle, the sides are in the ratio 1 : √3 : 2. The side opposite the 30-degree angle is half the hypotenuse, and the side op",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 10.0,
+          "distractor_quality": 4.667,
+          "difficulty_alignment": 8.667,
+          "kazakh_language_quality": 8.0,
+          "latex_validity": 9.667,
+          "figure_relevance": null
+        },
+        "overall_score": 8.0,
+        "pass_fail": true,
+        "comments": "[openai/gpt-4o-2024-11-20] The question is mathematically correct and aligns well with the requested difficulty level. The Kazakh language is clear and accurate, and the LaTeX formatting is flawless. | [anthropic/claude-sonnet-4.6] The correct answer is mathematically sound and well-reasoned, but two distractors (C: 100, D: 0) are completely implausible and trivially eliminable, reducing this to essentially a binary choice. The question stem is also grammatically incomplete in Kazakh. | [qwen/qwen-2.5-72b-instruct] The question is correct, well-aligned with the difficulty level, and the language is clear. The distractors are generally good but could be more plausible.",
+        "improvement_suggestions": "[openai/gpt-4o-2024-11-20] Improve distractor quality by ensuring all options are plausible errors or misconceptions. For example, replace '100' and '0' with values that could arise from common calculation mistakes. | [anthropic/claude-sonnet-4.6] Replace options C and D with mathematically plausible distractors: e.g., C) 3√3 см (error of multiplying instead of dividing by √3) and D) √3/3 см or 2√3 см (hypotenuse-related error). Also complete the question stem with 'неге тең?' or 'табыңыз' to make it grammatically complete. | [qwen/qwen-2.5-72b-instruct] Consider making the distractors more plausible by including common errors or misconceptions that students might make."
+      },
+      "per_critic": [
+        {
+          "model_id": "openai/gpt-4o-2024-11-20",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are solving for the length of the second leg of a right triangle where one of the angles is 60° and the side opposite this angle (the first leg) is given as 3 cm. \n\n1. In a 30°-60°-90° triangle, the sides have a specific ratio: the side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is √3 times the side opposite the 30° angle.\n\n2. Here, the side opposite the 60° angle is given as 3 cm. Let the side opposite the 30° angle be x. Then, based on the ratio, the side opposite the 60° angle is √3 times x:\n   3 = √3 * x.\n\n3. Solve for x:\n   x = 3 / √3.\n\n4. Simplify x:\n   x = √3 (after rationalizing the denominator).\n\n5. Therefore, the second leg (opposite the 30° angle) is √3 cm.\n\nThe correct answer is A.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 6.0,
+              "difficulty_alignment": 10.0,
+              "kazakh_language_quality": 10.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 8.8,
+            "pass_fail": true,
+            "comments": "The question is mathematically correct and aligns well with the requested difficulty level. The Kazakh language is clear and accurate, and the LaTeX formatting is flawless.",
+            "improvement_suggestions": "Improve distractor quality by ensuring all options are plausible errors or misconceptions. For example, replace '100' and '0' with values that could arise from common calculation mistakes."
+          }
+        },
+        {
+          "model_id": "anthropic/claude-sonnet-4.6",
+          "error": null,
+          "feedback": {
+            "critic_solution": "In a right triangle, the angles are 90°, 60°, and 30°. The side opposite the 60° angle is given as 3 cm. We need to find the other leg (the side opposite the 30° angle).\n\nUsing the 30-60-90 triangle ratios:\n- Side opposite 30° = x\n- Side opposite 60° = x√3\n- Hypotenuse = 2x\n\nGiven: side opposite 60° = 3 cm\nSo: x√3 = 3\nx = 3/√3 = 3√3/3 = √3\n\nThe other leg (opposite 30°) = √3 cm.\n\nThis matches option A.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 1.0,
+              "difficulty_alignment": 7.0,
+              "kazakh_language_quality": 6.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 6.5,
+            "pass_fail": true,
+            "comments": "The correct answer is mathematically sound and well-reasoned, but two distractors (C: 100, D: 0) are completely implausible and trivially eliminable, reducing this to essentially a binary choice. The question stem is also grammatically incomplete in Kazakh.",
+            "improvement_suggestions": "Replace options C and D with mathematically plausible distractors: e.g., C) 3√3 см (error of multiplying instead of dividing by √3) and D) √3/3 см or 2√3 см (hypotenuse-related error). Also complete the question stem with 'неге тең?' or 'табыңыз' to make it grammatically complete."
+          }
+        },
+        {
+          "model_id": "qwen/qwen-2.5-72b-instruct",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are given a right-angled triangle with one angle of 60 degrees. The side opposite the 60-degree angle (one of the legs) is 3 cm. In a right-angled triangle with a 60-degree angle, the other non-right angle must be 30 degrees, making it a 30-60-90 triangle. In a 30-60-90 triangle, the sides are in the ratio 1 : √3 : 2. The side opposite the 30-degree angle is half the hypotenuse, and the side opposite the 60-degree angle is √3 times the side opposite the 30-degree angle. Let the side opposite the 30-degree angle be x. Then, the side opposite the 60-degree angle is x√3. Given that the side opposite the 60-degree angle is 3 cm, we have: 3 = x√3. Solving for x, we get: x = 3 / √3 = 3 * √3 / 3 = √3. Therefore, the side opposite the 30-degree angle (the second leg) is √3 cm.",
+            "critic_answer": "A",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 7.0,
+              "difficulty_alignment": 9.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 8.7,
+            "pass_fail": true,
+            "comments": "The question is correct, well-aligned with the difficulty level, and the language is clear. The distractors are generally good but could be more plausible.",
+            "improvement_suggestions": "Consider making the distractors more plausible by including common errors or misconceptions that students might make."
+          }
+        }
+      ],
+      "answer_agreement": 1.0,
+      "unanimous": true,
+      "n_critics_responded": 3,
+      "n_critics_failed": 0
+    }
+  },
+  {
+    "row": {
+      "idx": 1,
+      "variant": "real",
+      "topic": "triangles",
+      "level": "A",
+      "overall": 8.047,
+      "correctness": 7.333,
+      "distractor_quality": 6.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 8.667,
+      "latex_validity": 9.333,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null,
+      "ensemble_agreement": 0.667,
+      "ensemble_unanimous": false
+    },
+    "ensemble": {
+      "aggregated": {
+        "critic_solution": "[openai/gpt-4o-2024-11-20] answered D: We are solving a problem involving a triangle with angles of 30°, 45°, and 105° (since the sum of the angles in a triangle is always 180°). The side opposite the 30° angle is given as 4, and we need to find the side opposite the 45° angle.\n\n### Step 1: Use the Law of Sines\nThe Law of Sines states:\n\n\\[\n\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\n\\]\n\nHere:\n- \\(a\\) is the side opposite ang\n\n[anthropic/claude-sonnet-4.6] answered D: We have a triangle with angles 30°, 45°, and the third angle = 180° - 30° - 45° = 105°.\n\nUsing the Law of Sines: a/sin(A) = b/sin(B)\n\nThe side opposite 30° has length 4.\nWe need the side opposite 45°.\n\na/sin(30°) = b/sin(45°)\n4/sin(30°) = b/sin(45°)\n4/(1/2) = b/(√2/2)\n8 = b/(√2/2)\nb = 8 × (√2/2) = 4√2\n\nSo the side opposite 45° is 4√2.\n\n[qwen/qwen-2.5-72b-instruct] answered C: We are given a triangle with a 30° angle and the side opposite to it is 4 units. We need to find the length of the side opposite to a 45° angle. Using the Law of Sines, we have: sin(30°) / 4 = sin(45°) / x. Substituting the values, we get: 1/2 / 4 = √2/2 / x. Simplifying, we get: 1/8 = √2/2x. Solving for x, we get: x = 4√2 / 2 = 2√2. Therefore, the length of the side opposite to the 45° angle is 2",
+        "critic_answer": "D",
+        "dimensions": {
+          "correctness": 7.333,
+          "distractor_quality": 6.667,
+          "difficulty_alignment": 9.0,
+          "kazakh_language_quality": 8.667,
+          "latex_validity": 9.333,
+          "figure_relevance": null
+        },
+        "overall_score": 8.047,
+        "pass_fail": true,
+        "comments": "[openai/gpt-4o-2024-11-20] The question is mathematically correct, well-aligned with the requested difficulty level, and uses proper Kazakh language and LaTeX formatting. Distractor quality could be slightly improved. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-keyed (D = 4√2 via Law of Sines). The Kazakh phrasing is natural and uses standard terminology. Distractor B (3√2) lacks a clear error pathway, slightly weakening the distractor set. | [qwen/qwen-2.5-72b-instruct] The provided correct answer (D) is incorrect. The correct answer based on the Law of Sines is C (2√2).",
+        "improvement_suggestions": "[openai/gpt-4o-2024-11-20] Consider refining the distractors to ensure all are plausible and derived from common errors or misconceptions, as some may be less likely to occur naturally. | [anthropic/claude-sonnet-4.6] Replace distractor B (3√2) with a value reachable by a specific student error, e.g., 4/√2 = 2√2 is already C, so consider 4·cos(45°)/sin(30°) = 4√2 (same as answer — avoid) or use 4·sin(45°) = 2√2 (already C). A better distractor might be 4√3 (using 60° instead of 45°) — but that's already A. Consider replacing B with something like √2 or 2 to represent a simpler arithmetic mistake. | [qwen/qwen-2.5-72b-instruct] Re-evaluate the correct answer and ensure it matches the provided explanation. The correct answer should be C (2√2)."
+      },
+      "per_critic": [
+        {
+          "model_id": "openai/gpt-4o-2024-11-20",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are solving a problem involving a triangle with angles of 30°, 45°, and 105° (since the sum of the angles in a triangle is always 180°). The side opposite the 30° angle is given as 4, and we need to find the side opposite the 45° angle.\n\n### Step 1: Use the Law of Sines\nThe Law of Sines states:\n\n\\[\n\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\n\\]\n\nHere:\n- \\(a\\) is the side opposite angle \\(A\\),\n- \\(b\\) is the side opposite angle \\(B\\),\n- \\(c\\) is the side opposite angle \\(C\\).\n\nLet:\n- \\(a = 4\\), the side opposite the 30° angle,\n- \\(b\\), the side opposite the 45° angle (this is what we are solving for),\n- \\(c\\), the side opposite the 105° angle (not needed for this calculation).\n\n### Step 2: Write the Law of Sines for the given triangle\n\\[\n\\frac{4}{\\sin 30°} = \\frac{b}{\\sin 45°}\n\\]\n\n### Step 3: Substitute the known values of \\(\\sin 30°\\) and \\(\\sin 45°\\)\n- \\(\\sin 30° = \\frac{1}{2}\\),\n- \\(\\sin 45° = \\frac{\\sqrt{2}}{2}\\).\n\nSubstitute these into the equation:\n\\[\n\\frac{4}{\\frac{1}{2}} = \\frac{b}{\\frac{\\sqrt{2}}{2}}\n\\]\n\n### Step 4: Simplify the equation\n\\[\n4 \\times 2 = b \\times \\frac{2}{\\sqrt{2}}\n\\]\n\\[\n8 = b \\times \\frac{2}{\\sqrt{2}}\n\\]\n\nMultiply both sides by \\(\\sqrt{2}\\):\n\\[\n8 \\sqrt{2} = 2b\n\\]\n\nDivide both sides by 2:\n\\[\nb = \\frac{8 \\sqrt{2}}{2} = 4 \\sqrt{2}\n\\]\n\n### Step 5: Final Answer\nThe length of the side opposite the 45° angle is \\(4 \\sqrt{2}\\).",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 7.0,
+              "difficulty_alignment": 10.0,
+              "kazakh_language_quality": 10.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 9.14,
+            "pass_fail": true,
+            "comments": "The question is mathematically correct, well-aligned with the requested difficulty level, and uses proper Kazakh language and LaTeX formatting. Distractor quality could be slightly improved.",
+            "improvement_suggestions": "Consider refining the distractors to ensure all are plausible and derived from common errors or misconceptions, as some may be less likely to occur naturally."
+          }
+        },
+        {
+          "model_id": "anthropic/claude-sonnet-4.6",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We have a triangle with angles 30°, 45°, and the third angle = 180° - 30° - 45° = 105°.\n\nUsing the Law of Sines: a/sin(A) = b/sin(B)\n\nThe side opposite 30° has length 4.\nWe need the side opposite 45°.\n\na/sin(30°) = b/sin(45°)\n4/sin(30°) = b/sin(45°)\n4/(1/2) = b/(√2/2)\n8 = b/(√2/2)\nb = 8 × (√2/2) = 4√2\n\nSo the side opposite 45° is 4√2.",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 6.0,
+              "difficulty_alignment": 8.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 8.3,
+            "pass_fail": true,
+            "comments": "The question is mathematically correct and well-keyed (D = 4√2 via Law of Sines). The Kazakh phrasing is natural and uses standard terminology. Distractor B (3√2) lacks a clear error pathway, slightly weakening the distractor set.",
+            "improvement_suggestions": "Replace distractor B (3√2) with a value reachable by a specific student error, e.g., 4/√2 = 2√2 is already C, so consider 4·cos(45°)/sin(30°) = 4√2 (same as answer — avoid) or use 4·sin(45°) = 2√2 (already C). A better distractor might be 4√3 (using 60° instead of 45°) — but that's already A. Consider replacing B with something like √2 or 2 to represent a simpler arithmetic mistake."
+          }
+        },
+        {
+          "model_id": "qwen/qwen-2.5-72b-instruct",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are given a triangle with a 30° angle and the side opposite to it is 4 units. We need to find the length of the side opposite to a 45° angle. Using the Law of Sines, we have: sin(30°) / 4 = sin(45°) / x. Substituting the values, we get: 1/2 / 4 = √2/2 / x. Simplifying, we get: 1/8 = √2/2x. Solving for x, we get: x = 4√2 / 2 = 2√2. Therefore, the length of the side opposite to the 45° angle is 2√2.",
+            "critic_answer": "C",
+            "dimensions": {
+              "correctness": 2.0,
+              "distractor_quality": 7.0,
+              "difficulty_alignment": 9.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 6.7,
+            "pass_fail": false,
+            "comments": "The provided correct answer (D) is incorrect. The correct answer based on the Law of Sines is C (2√2).",
+            "improvement_suggestions": "Re-evaluate the correct answer and ensure it matches the provided explanation. The correct answer should be C (2√2)."
+          }
+        }
+      ],
+      "answer_agreement": 0.667,
+      "unanimous": false,
+      "n_critics_responded": 3,
+      "n_critics_failed": 0
+    }
+  },
+  {
+    "row": {
+      "idx": 1,
+      "variant": "wrong_key",
+      "topic": "triangles",
+      "level": "A",
+      "overall": 5.3,
+      "correctness": 1.333,
+      "distractor_quality": 5.667,
+      "difficulty_alignment": 6.333,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 9.333,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    "ensemble": {
+      "aggregated": {
+        "critic_solution": "[openai/gpt-4o-2024-11-20] answered D: We are solving a problem involving a triangle with angles of 30°, 45°, and 105° (since the sum of angles in a triangle is 180°). The side opposite the 30° angle is given as 4, and we need to find the side opposite the 45° angle.\n\nStep 1: Recognize the triangle type.\nThis is not a special right triangle (like a 30°-60°-90° or 45°-45°-90° triangle) because one of the angles is 105°. Therefore, we mu\n\n[anthropic/claude-sonnet-4.6] answered D: We have a triangle with angles 30°, 45°, and the third angle = 180° - 30° - 45° = 105°.\n\nUsing the Law of Sines: a/sin(A) = b/sin(B)\n\nThe side opposite 30° has length 4.\nThe side opposite 45° has length x.\n\nSo: 4/sin(30°) = x/sin(45°)\n\nsin(30°) = 1/2\nsin(45°) = √2/2\n\n4/(1/2) = x/(√2/2)\n8 = x/(√2/2)\nx = 8 × (√2/2) = 4√2\n\nThe answer is 4√2.\n\n[qwen/qwen-2.5-72b-instruct] answered D: We are given a triangle with one angle of 30° and the side opposite to this angle is 4 units. We need to find the length of the side opposite to a 45° angle. Using the Law of Sines, we have: sin(30°) / 4 = sin(45°) / x. Substituting the values, we get: (1/2) / 4 = (√2/2) / x. Simplifying, we get: 1/8 = (√2/2) / x. Cross-multiplying, we get: x = 8 * (√2/2). Simplifying further, we get: x = 4√2. The",
+        "critic_answer": "D",
+        "dimensions": {
+          "correctness": 1.333,
+          "distractor_quality": 5.667,
+          "difficulty_alignment": 6.333,
+          "kazakh_language_quality": 8.0,
+          "latex_validity": 9.333,
+          "figure_relevance": null
+        },
+        "overall_score": 5.3,
+        "pass_fail": false,
+        "comments": "[openai/gpt-4o-2024-11-20] The provided correct answer is demonstrably wrong. The problem involves a triangle with angles 30°, 45°, and 105°, requiring the Law of Sines to solve. The correct answer is D, not C. Additionally, the question is too complex for level A difficulty. | [anthropic/claude-sonnet-4.6] The provided correct answer C) 2√2 is mathematically wrong. By the Law of Sines, the side opposite 45° in a triangle where the side opposite 30° equals 4 is 4√2 (option D). The question is otherwise well-formed with good Kazakh terminology. | [qwen/qwen-2.5-72b-instruct] The provided correct answer (C) is incorrect. The correct answer should be D (4√2). The distractors are generally well-designed, and the question aligns with the difficulty level A. The Kazakh language and LaTeX are of good quality.",
+        "improvement_suggestions": "[openai/gpt-4o-2024-11-20] Ensure the correct answer is properly calculated and matches the provided solution. Simplify the question to align with level A difficulty by focusing on standard triangle types (e.g., 30°-60°-90° or 45°-45°-90° triangles) and avoid requiring multi-step reasoning or the Law of Sines. | [anthropic/claude-sonnet-4.6] Fix the keyed answer from C to D. Verify all answer options by independently solving before publishing. Consider also whether the question intends a right triangle (30-60-90 or 45-45-90) rather than a 30-45-105 triangle, as that might simplify to level A more cleanly. | [qwen/qwen-2.5-72b-instruct] Correct the provided correct answer to D (4√2) and update the explanation accordingly."
+      },
+      "per_critic": [
+        {
+          "model_id": "openai/gpt-4o-2024-11-20",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are solving a problem involving a triangle with angles of 30°, 45°, and 105° (since the sum of angles in a triangle is 180°). The side opposite the 30° angle is given as 4, and we need to find the side opposite the 45° angle.\n\nStep 1: Recognize the triangle type.\nThis is not a special right triangle (like a 30°-60°-90° or 45°-45°-90° triangle) because one of the angles is 105°. Therefore, we must use the Law of Sines to solve this problem.\n\nStep 2: Write the Law of Sines.\nThe Law of Sines states:\n  \\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} \\)\nwhere \\(a, b, c\\) are the sides opposite angles \\(A, B, C\\), respectively.\n\nStep 3: Assign known values.\nLet the side opposite the 30° angle (A = 30°) be \\(a = 4\\). Let the side opposite the 45° angle (B = 45°) be \\(b\\), which we are solving for. The remaining angle is \\(C = 105°\\).\n\nStep 4: Use the Law of Sines to relate \\(a\\) and \\(b\\).\nFrom the Law of Sines:\n  \\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} \\)\nSubstitute the known values:\n  \\( \\frac{4}{\\sin 30°} = \\frac{b}{\\sin 45°} \\)\n\nStep 5: Simplify trigonometric values.\n\\( \\sin 30° = 0.5 \\) and \\( \\sin 45° = \\frac{\\sqrt{2}}{2} \\).\nSubstitute these values:\n  \\( \\frac{4}{0.5} = \\frac{b}{\\frac{\\sqrt{2}}{2}} \\)\n\nStep 6: Solve for \\(b\\).\n\\( \\frac{4}{0.5} = 8 \\), so:\n  \\( 8 = \\frac{b}{\\frac{\\sqrt{2}}{2}} \\)\nMultiply both sides by \\( \\frac{\\sqrt{2}}{2} \\):\n  \\( b = 8 \\cdot \\frac{\\sqrt{2}}{2} \\)\nSimplify:\n  \\( b = 4\\sqrt{2} \\)\n\nStep 7: Match the result to the options.\nThe side opposite the 45° angle is \\(4\\sqrt{2}\\), which corresponds to option D.\n\nFinal Answer: D",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 0.0,
+              "distractor_quality": 4.0,
+              "difficulty_alignment": 3.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 3.9,
+            "pass_fail": false,
+            "comments": "The provided correct answer is demonstrably wrong. The problem involves a triangle with angles 30°, 45°, and 105°, requiring the Law of Sines to solve. The correct answer is D, not C. Additionally, the question is too complex for level A difficulty.",
+            "improvement_suggestions": "Ensure the correct answer is properly calculated and matches the provided solution. Simplify the question to align with level A difficulty by focusing on standard triangle types (e.g., 30°-60°-90° or 45°-45°-90° triangles) and avoid requiring multi-step reasoning or the Law of Sines."
+          }
+        },
+        {
+          "model_id": "anthropic/claude-sonnet-4.6",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We have a triangle with angles 30°, 45°, and the third angle = 180° - 30° - 45° = 105°.\n\nUsing the Law of Sines: a/sin(A) = b/sin(B)\n\nThe side opposite 30° has length 4.\nThe side opposite 45° has length x.\n\nSo: 4/sin(30°) = x/sin(45°)\n\nsin(30°) = 1/2\nsin(45°) = √2/2\n\n4/(1/2) = x/(√2/2)\n8 = x/(√2/2)\nx = 8 × (√2/2) = 4√2\n\nThe answer is 4√2.",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 2.0,
+              "distractor_quality": 6.0,
+              "difficulty_alignment": 7.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 5.3,
+            "pass_fail": false,
+            "comments": "The provided correct answer C) 2√2 is mathematically wrong. By the Law of Sines, the side opposite 45° in a triangle where the side opposite 30° equals 4 is 4√2 (option D). The question is otherwise well-formed with good Kazakh terminology.",
+            "improvement_suggestions": "Fix the keyed answer from C to D. Verify all answer options by independently solving before publishing. Consider also whether the question intends a right triangle (30-60-90 or 45-45-90) rather than a 30-45-105 triangle, as that might simplify to level A more cleanly."
+          }
+        },
+        {
+          "model_id": "qwen/qwen-2.5-72b-instruct",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are given a triangle with one angle of 30° and the side opposite to this angle is 4 units. We need to find the length of the side opposite to a 45° angle. Using the Law of Sines, we have: sin(30°) / 4 = sin(45°) / x. Substituting the values, we get: (1/2) / 4 = (√2/2) / x. Simplifying, we get: 1/8 = (√2/2) / x. Cross-multiplying, we get: x = 8 * (√2/2). Simplifying further, we get: x = 4√2. Therefore, the length of the side opposite to the 45° angle is 4√2.",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 2.0,
+              "distractor_quality": 7.0,
+              "difficulty_alignment": 9.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 6.7,
+            "pass_fail": false,
+            "comments": "The provided correct answer (C) is incorrect. The correct answer should be D (4√2). The distractors are generally well-designed, and the question aligns with the difficulty level A. The Kazakh language and LaTeX are of good quality.",
+            "improvement_suggestions": "Correct the provided correct answer to D (4√2) and update the explanation accordingly."
+          }
+        }
+      ],
+      "answer_agreement": 1.0,
+      "unanimous": true,
+      "n_critics_responded": 3,
+      "n_critics_failed": 0
+    }
+  },
+  {
+    "row": {
+      "idx": 1,
+      "variant": "weak_distractors",
+      "topic": "triangles",
+      "level": "A",
+      "overall": 6.8,
+      "correctness": 6.667,
+      "distractor_quality": 5.167,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 8.333,
+      "latex_validity": 9.667,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    "ensemble": {
+      "aggregated": {
+        "critic_solution": "[openai/gpt-4o-2024-11-20] answered D: We are tasked with finding the length of the side opposite the 45° angle in a triangle where the side opposite the 30° angle is given as 4. This implies we are working with a 30°-45°-105° triangle, which is not a standard special triangle. However, the problem seems to assume a right triangle (30°-60°-90° or 45°-45°-90° triangle), so we will proceed under this assumption.\n\nStep 1: Analyze the tria\n\n[anthropic/claude-sonnet-4.6] answered D: We have a triangle with angles 30°, 45°, and the third angle = 180° - 30° - 45° = 105°.\n\nUsing the Law of Sines: a/sin(A) = b/sin(B) = c/sin(C)\n\nThe side opposite 30° has length 4.\nSo: 4/sin(30°) = b/sin(45°)\n\nsin(30°) = 1/2, sin(45°) = √2/2\n\n4/(1/2) = b/(√2/2)\n8 = b/(√2/2)\nb = 8 × (√2/2) = 4√2\n\nThe side opposite 45° has length 4√2.\n\n[qwen/qwen-2.5-72b-instruct] answered D: Given a triangle with a 30° angle and the side opposite to it is 4 units. We need to find the length of the side opposite to a 45° angle. Using the Law of Sines, we have: \n\n\\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} \\)\n\nHere, let's denote the side opposite to the 30° angle as a = 4, and the side opposite to the 45° angle as b. The angles are A = 30° and B = 45°. We can set up the eq",
+        "critic_answer": "D",
+        "dimensions": {
+          "correctness": 6.667,
+          "distractor_quality": 5.167,
+          "difficulty_alignment": 6.0,
+          "kazakh_language_quality": 8.333,
+          "latex_validity": 9.667,
+          "figure_relevance": null
+        },
+        "overall_score": 6.8,
+        "pass_fail": true,
+        "comments": "[openai/gpt-4o-2024-11-20] The question is fundamentally flawed because it assumes a triangle with both a 30° and a 45° angle, which is geometrically impossible. This makes the question invalid and unanswerable. | [anthropic/claude-sonnet-4.6] The correct answer D=4√2 is mathematically sound and well-keyed. However, having both B ('Undefined') and C ('No correct answer') as distractors is redundant and weakens the distractor set — two escape options reduce discrimination quality. | [qwen/qwen-2.5-72b-instruct] The question is well-constructed, with correct and clear mathematical content, appropriate difficulty level, and high-quality language and LaTeX usage.",
+        "improvement_suggestions": "[openai/gpt-4o-2024-11-20] Ensure that the triangle described in the question is geometrically valid. If the intention was to test knowledge of specific triangle properties (e.g., 30°-60°-90° or 45°-45°-90° triangles), clearly state the type of triangle and ensure the angles and sides are consistent with that type. | [anthropic/claude-sonnet-4.6] Replace one of the two escape distractors (B or C) with a numerically plausible wrong answer, e.g., 2√2 (from dividing instead of multiplying) or 4√6 (from using sin(105°) incorrectly). Also consider explicitly stating the triangle has angles 30°, 45°, and 105° to remove any perceived ambiguity."
+      },
+      "per_critic": [
+        {
+          "model_id": "openai/gpt-4o-2024-11-20",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We are tasked with finding the length of the side opposite the 45° angle in a triangle where the side opposite the 30° angle is given as 4. This implies we are working with a 30°-45°-105° triangle, which is not a standard special triangle. However, the problem seems to assume a right triangle (30°-60°-90° or 45°-45°-90° triangle), so we will proceed under this assumption.\n\nStep 1: Analyze the triangle type.\n- In a 30°-60°-90° triangle, the side opposite the 30° angle is half the hypotenuse, and the side opposite the 60° angle is \\( \\sqrt{3} \\) times the side opposite the 30° angle.\n- In a 45°-45°-90° triangle, the two legs are equal, and the hypotenuse is \\( \\sqrt{2} \\) times the length of a leg.\n\nStep 2: Use the given information.\n- The problem states that the side opposite the 30° angle is 4. In a 30°-60°-90° triangle, this side is half the hypotenuse. Therefore, the hypotenuse is \\( 4 \\times 2 = 8 \\).\n- The side opposite the 60° angle is \\( 4 \\sqrt{3} \\), as it is \\( \\sqrt{3} \\) times the side opposite the 30° angle.\n\nStep 3: Address the 45° angle.\n- A 30°-60°-90° triangle does not have a 45° angle. Thus, the problem is inconsistent. However, if we interpret the problem as referring to a 45°-45°-90° triangle, the side opposite the 45° angle would be \\( 4 \\sqrt{2} \\), as the hypotenuse would be \\( 4 \\sqrt{2} \\) times the leg.\n\nStep 4: Evaluate the options.\n- Option A: \\( 4 \\sqrt{3} \\) is incorrect because it corresponds to the side opposite the 60° angle in a 30°-60°-90° triangle.\n- Option B: \"Undefined\" could be correct if the problem is interpreted as inconsistent.\n- Option C: \"No correct answer\" could also be valid if the problem is inconsistent.\n- Option D: \\( 4 \\sqrt{2} \\) is correct if we assume the problem refers to a 45°-45°-90° triangle.\n\nStep 5: Choose the best answer.\n- Given the ambiguity in the problem, the best interpretation is that the problem refers to a 45°-45°-90° triangle. Thus, the correct answer is D.",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 0.0,
+              "distractor_quality": 2.0,
+              "difficulty_alignment": 0.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 3.0,
+            "pass_fail": false,
+            "comments": "The question is fundamentally flawed because it assumes a triangle with both a 30° and a 45° angle, which is geometrically impossible. This makes the question invalid and unanswerable.",
+            "improvement_suggestions": "Ensure that the triangle described in the question is geometrically valid. If the intention was to test knowledge of specific triangle properties (e.g., 30°-60°-90° or 45°-45°-90° triangles), clearly state the type of triangle and ensure the angles and sides are consistent with that type."
+          }
+        },
+        {
+          "model_id": "anthropic/claude-sonnet-4.6",
+          "error": null,
+          "feedback": {
+            "critic_solution": "We have a triangle with angles 30°, 45°, and the third angle = 180° - 30° - 45° = 105°.\n\nUsing the Law of Sines: a/sin(A) = b/sin(B) = c/sin(C)\n\nThe side opposite 30° has length 4.\nSo: 4/sin(30°) = b/sin(45°)\n\nsin(30°) = 1/2, sin(45°) = √2/2\n\n4/(1/2) = b/(√2/2)\n8 = b/(√2/2)\nb = 8 × (√2/2) = 4√2\n\nThe side opposite 45° has length 4√2.",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 5.0,
+              "difficulty_alignment": 8.0,
+              "kazakh_language_quality": 8.0,
+              "latex_validity": 9.0,
+              "figure_relevance": null
+            },
+            "overall_score": 7.9,
+            "pass_fail": true,
+            "comments": "The correct answer D=4√2 is mathematically sound and well-keyed. However, having both B ('Undefined') and C ('No correct answer') as distractors is redundant and weakens the distractor set — two escape options reduce discrimination quality.",
+            "improvement_suggestions": "Replace one of the two escape distractors (B or C) with a numerically plausible wrong answer, e.g., 2√2 (from dividing instead of multiplying) or 4√6 (from using sin(105°) incorrectly). Also consider explicitly stating the triangle has angles 30°, 45°, and 105° to remove any perceived ambiguity."
+          }
+        },
+        {
+          "model_id": "qwen/qwen-2.5-72b-instruct",
+          "error": null,
+          "feedback": {
+            "critic_solution": "Given a triangle with a 30° angle and the side opposite to it is 4 units. We need to find the length of the side opposite to a 45° angle. Using the Law of Sines, we have: \n\n\\( \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} \\)\n\nHere, let's denote the side opposite to the 30° angle as a = 4, and the side opposite to the 45° angle as b. The angles are A = 30° and B = 45°. We can set up the equation:\n\n\\( \\frac{4}{\\sin 30°} = \\frac{b}{\\sin 45°} \\)\n\nWe know that \\( \\sin 30° = \\frac{1}{2} \\) and \\( \\sin 45° = \\frac{\\sqrt{2}}{2} \\). Substituting these values in, we get:\n\n\\( \\frac{4}{\\frac{1}{2}} = \\frac{b}{\\frac{\\sqrt{2}}{2}} \\)\n\nSimplifying the left side:\n\n\\( 4 \\times 2 = 8 \\)\n\nSo the equation becomes:\n\n\\( 8 = \\frac{b}{\\frac{\\sqrt{2}}{2}} \\)\n\nMultiplying both sides by \\( \\frac{\\sqrt{2}}{2} \\):\n\n\\( b = 8 \\times \\frac{\\sqrt{2}}{2} \\)\n\nSimplifying further:\n\n\\( b = 4\\sqrt{2} \\)\n\nThus, the length of the side opposite to the 45° angle is \\( 4\\sqrt{2} \\).",
+            "critic_answer": "D",
+            "dimensions": {
+              "correctness": 10.0,
+              "distractor_quality": 8.5,
+              "difficulty_alignment": 10.0,
+              "kazakh_language_quality": 9.0,
+              "latex_validity": 10.0,
+              "figure_relevance": null
+            },
+            "overall_score": 9.5,
+            "pass_fail": true,
+            "comments": "The question is well-constructed, with correct and clear mathematical content, appropriate difficulty level, and high-quality language and LaTeX usage.",
+            "improvement_suggestions": null
+          }
+        }
+      ],
+      "answer_agreement": 1.0,
+      "unanimous": true,
+      "n_critics_responded": 3,
+      "n_critics_failed": 0
+    }
+  }
+]

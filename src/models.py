@@ -51,6 +51,7 @@ class Question(BaseModel):
     level: str
     format: str
     topic: str
+    model_id: str
     question_text: str
     options: list[QuestionOption]
     correct_answer: str
@@ -60,5 +61,10 @@ class Question(BaseModel):
     figure_path: Optional[str] = None
     critic_score: Optional[float] = None
     critic_feedback: Optional[CriticFeedback] = None
+    # When ensemble mode is on, the full per-critic breakdown is preserved
+    # here. Shape: {"aggregated": CriticFeedback, "per_critic": [...],
+    # "answer_agreement": float, "unanimous": bool, ...}. Optional so
+    # single-critic runs serialize identically to before.
+    ensemble: Optional[dict] = None
     timestamp: str
     generation_attempts: int = 1

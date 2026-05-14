@@ -1,0 +1,55 @@
+{
+  "id": "5bd6347b-cc7f-4db4-be7c-51fa58d98fff",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "functions_limits",
+  "model_id": "openai/gpt-4o-2024-11-20",
+  "question_text": "$\\lim_{x \\to 2} (x^2 - 3x + 2)$ шегінің мәнін табыңыз:",
+  "options": [
+    {
+      "label": "A",
+      "text": "0"
+    },
+    {
+      "label": "B",
+      "text": "2"
+    },
+    {
+      "label": "C",
+      "text": "4"
+    },
+    {
+      "label": "D",
+      "text": "1"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген функция $f(x) = x^2 - 3x + 2$. Функция шегін табу үшін $x = 2$ мәнін функцияға қоямыз: \n$f(2) = 2^2 - 3 \\cdot 2 + 2 = 4 - 6 + 2 = 0$. Сондықтан, $\\lim_{x \\to 2} (x^2 - 3x + 2) = 0$.",
+  "latex_formulas": [
+    "\\lim_{x \\to 2} (x^2 - 3x + 2)",
+    "f(x) = x^2 - 3x + 2",
+    "f(2) = 2^2 - 3 \\cdot 2 + 2"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 10.0,
+  "critic_feedback": {
+    "critic_solution": "To solve the given limit problem, we need to evaluate the limit of the function as x approaches 2. The function is f(x) = x^2 - 3x + 2.\n\nStep 1: Write the limit expression:\nlim_{x → 2} (x^2 - 3x + 2).\n\nStep 2: Since this is a polynomial function, it is continuous everywhere. Therefore, we can directly substitute x = 2 into the function to find the limit.\n\nStep 3: Substitute x = 2 into the function:\n(2)^2 - 3(2) + 2 = 4 - 6 + 2.\n\nStep 4: Simplify the expression:\n4 - 6 + 2 = 0.\n\nThus, the value of the limit is 0.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 10.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 10.0,
+    "pass_fail": true,
+    "comments": "The question is well-constructed, unambiguous, and matches the requested difficulty level. The distractors are plausible, and the language and LaTeX are flawless.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-05-14T14:08:34.919436+00:00",
+  "generation_attempts": 1
+}
