@@ -278,14 +278,17 @@ A question passes only when weighted overall ≥ 6.0 **and** correctness ≥ 7.
 ozp_project/
 ├── generate.py                       # Entry point 1 — single question(s)
 ├── scripts/
-│   ├── run_batch.py                  # Entry point 2 — full corpus generation
-│   └── calibrate_critic.py           # Critic self-validation on real items
+│   ├── run_batch.py                  # Entry point 2 — full corpus generation (ensemble-aware)
+│   ├── calibrate_critic.py           # Critic self-validation on real items (emits CDI + κ)
+│   └── compute_cdi.py                # Post-hoc CDI re-analysis from saved CSV (no API calls)
 ├── src/
-│   ├── agents.py                     # GeneratorAgent + CriticAgent (cross-model aware)
+│   ├── agents.py                     # GeneratorAgent + CriticAgent (cross-model + vision aware)
+│   ├── cdi.py                        # Critic Discrimination Index — paper novelty #1
 │   ├── config.py                     # Config, prompt rendering, exemplar wiring
+│   ├── ensemble.py                   # EnsembleCriticAgent — paper novelty #2
 │   ├── exemplars.py                  # Few-shot retrieval from real NTC data
 │   ├── figure_gen.py                 # Matplotlib figure renderer
-│   ├── models.py                     # Pydantic models (Question now carries model_id)
+│   ├── models.py                     # Pydantic models (Question carries model_id + ensemble)
 │   └── output.py                     # JSON + Markdown writer (per-model paths)
 ├── prompts/
 │   ├── generator_math.md             # Now consumes ${examples_block}
