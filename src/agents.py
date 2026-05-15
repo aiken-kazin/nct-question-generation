@@ -10,7 +10,11 @@ from typing import Any
 from openai import OpenAI
 
 from .config import Config
-from .models import CriticFeedback, DimensionScores, GeneratedQuestion, QuestionOption, FigureSpec
+from .models import (
+    CriticFeedback, DimensionScores, GeneratedQuestion, QuestionOption,
+    FigureSpec, VerificationSpec,
+)
+from .symbolic import verify as run_symbolic_verify, Verdict
 
 _BASE_URL = "https://openrouter.ai/api/v1"
 
@@ -188,6 +192,19 @@ class CriticAgent:
             question, include_answer=False, figure_path=path_for_prompt
         )
 
+        # ── Step 0: Symbolic verification (math only) ─────────────────────
+        # Run BEFORE the LLM critic so the verdict can be injected into the
+        # eval prompt. Verification is cheap (~1s subprocess), deterministic,
+        # and LLM-independent — the most reliable signal we have.
+        verdict: Verdict | None = None
+        if question.verification is not None and subject == "math":
+            try:
+                verdict = run_symbolic_verify(
+                    question.verification.model_dump(), timeout_s=5.0
+                )
+            except Exception:
+                verdict = None  # never let sandbox issues abort the critic
+
         # ── Step 1: Independent solve ─────────────────────────────────────
         solve_prompt = self._cfg.render_critic_solve(
             subject=subject,
@@ -215,6 +232,12 @@ class CriticAgent:
         question_block_full = _format_question_block(
             question, include_answer=True, figure_path=path_for_prompt
         )
+        # Append the symbolic verdict to the question block so the LLM critic
+        # sees it as authoritative context. We feed it through the existing
+        # question_block placeholder rather than adding a new prompt slot —
+        # keeps render_critic_eval's signature stable.
+        if verdict is not None and verdict.applicable:
+            question_block_full += "\n\n" + _format_verification_for_prompt(verdict)
         eval_prompt = self._cfg.render_critic_eval(
             subject=subject,
             level=level,
@@ -240,10 +263,106 @@ class CriticAgent:
         eval_content = eval_resp.choices[0].message.content or "{}"
         eval_data = _parse_json(eval_content)
 
-        return _build_critic_feedback(eval_data, critic_solution, critic_answer)
+        feedback = _build_critic_feedback(eval_data, critic_solution, critic_answer)
+        # Apply verification overrides to correctness:
+        #   * code-vs-expected mismatch → correctness=0 (catches arithmetic
+        #     hallucinations the LLM critic might miss)
+        #   * matches_option ≠ correct_answer → also a contradiction; the
+        #     generator's own verification labels a different option as right
+        #   * passed AND matches_option agrees → raise correctness floor to 9
+        # Either way, persist the verdict on the feedback for downstream
+        # analysis (CDI per-dim columns, ensemble post-hoc).
+        if verdict is not None:
+            feedback.verification = verdict.to_dict()
+
+            # Check #1: code output disagrees with claimed expected_output
+            hard_contradiction = verdict.contradicted
+
+            # Check #2: matches_option disagrees with the question's
+            # correct_answer. Only consider this if the verification ran
+            # cleanly AND the generator labeled an option; otherwise we'd
+            # be over-eager when the field is empty.
+            ver_spec = question.verification
+            if (
+                verdict.passed
+                and ver_spec is not None
+                and ver_spec.matches_option
+                and ver_spec.matches_option != question.correct_answer
+            ):
+                hard_contradiction = True
+                feedback.verification["self_inconsistency"] = (
+                    f"verification says option {ver_spec.matches_option} but "
+                    f"correct_answer says {question.correct_answer}"
+                )
+
+            if hard_contradiction:
+                feedback.dimensions.correctness = 0.0
+                feedback.pass_fail = False
+                feedback.comments = (
+                    "[SYMBOLIC VERIFICATION CONTRADICTED] " + feedback.comments
+                )
+                feedback.overall_score = _recompute_overall(feedback.dimensions)
+            elif verdict.passed:
+                if feedback.dimensions.correctness < 9.0:
+                    feedback.dimensions.correctness = 9.0
+                    feedback.overall_score = _recompute_overall(feedback.dimensions)
+        return feedback
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
+
+
+def _format_verification_for_prompt(verdict: Verdict) -> str:
+    """Render the symbolic verdict as a context block for the LLM critic.
+
+    The LLM critic should treat this as authoritative — it's the output of
+    actual symbolic code, not another model's guess. We label it clearly
+    so the model doesn't mistake it for our own reasoning.
+    """
+    if verdict.passed:
+        head = "✓ SYMBOLIC VERIFICATION (sandbox executed the generator's check)"
+        body = (
+            "The generator emitted a Python snippet that re-derives the answer.\n"
+            f"Sandbox stdout matches the generator's expected_output.\n"
+            f"Detail: {verdict.note}\n"
+            "→ Treat correctness ≥ 9 as objectively supported. If your independent\n"
+            "  reasoning agrees, score correctness accordingly."
+        )
+    elif verdict.contradicted:
+        head = "✗ SYMBOLIC VERIFICATION CONTRADICTED THE CLAIMED ANSWER"
+        body = (
+            "The sandbox executed the generator's own verification snippet and\n"
+            "got a DIFFERENT answer than the generator claims.\n"
+            f"Detail: {verdict.note}\n"
+            "→ The question is almost certainly wrong-keyed or arithmetically\n"
+            "  broken. Score correctness ≤ 2."
+        )
+    elif verdict.ran:
+        head = "(Symbolic verification ran but result was inconclusive)"
+        body = verdict.note
+    else:
+        head = "(Symbolic verification did not run — see note)"
+        body = verdict.note
+    return f"--- {head} ---\n{body}"
+
+
+def _recompute_overall(dims: DimensionScores) -> float:
+    """Weighted-average overall score, mirroring _compute_weighted below.
+
+    Kept as a separate function because we need to call it from inside the
+    critic after mutating dimensions; _compute_weighted is used by the
+    builder. Duplicating two lines is cheaper than refactoring callers.
+    """
+    weights = {
+        "correctness": 3, "distractor_quality": 2, "difficulty_alignment": 2,
+        "kazakh_language_quality": 2, "latex_validity": 1,
+    }
+    total_w = sum(weights.values())
+    score = sum(getattr(dims, k) * w for k, w in weights.items())
+    if dims.figure_relevance is not None:
+        score += dims.figure_relevance * 1
+        total_w += 1
+    return round(score / total_w, 2)
 
 
 def _user_message(text: str, image_data_url: str | None) -> dict:
@@ -305,6 +424,17 @@ def _build_generated_question(data: dict[str, Any]) -> GeneratedQuestion:
             caption=str(fig_data.get("caption", "")),
         )
 
+    # Optional verification block — only the math generator emits it.
+    ver_data = data.get("verification")
+    verification: VerificationSpec | None = None
+    if isinstance(ver_data, dict):
+        verification = VerificationSpec(
+            applicable=bool(ver_data.get("applicable", False)),
+            code=str(ver_data.get("code", "") or ""),
+            expected_output=str(ver_data.get("expected_output", "") or ""),
+            matches_option=str(ver_data.get("matches_option", "") or "").upper(),
+        )
+
     return GeneratedQuestion(
         topic=str(data.get("topic", "unknown")),
         question_text=str(data.get("question_text", "")),
@@ -313,6 +443,7 @@ def _build_generated_question(data: dict[str, Any]) -> GeneratedQuestion:
         explanation=str(data.get("explanation", "")),
         latex_formulas=[str(f) for f in data.get("latex_formulas", [])],
         figure_spec=figure_spec,
+        verification=verification,
     )
 
 

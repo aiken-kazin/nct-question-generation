@@ -14,6 +14,23 @@ class FigureSpec(BaseModel):
     caption: str
 
 
+class VerificationSpec(BaseModel):
+    """Symbolic-verification block that the math generator emits.
+
+    The generator promises that running `code` in a SymPy-equipped sandbox
+    will print exactly `expected_output` to stdout, and that the answer
+    labeled `matches_option` is the one corresponding to that output.
+
+    When `applicable` is False (e.g. for geometry items where SymPy can't
+    help), `code` may be empty — the critic will skip verification and
+    fall back to LLM-only correctness scoring.
+    """
+    applicable: bool
+    code: str = ""
+    expected_output: str = ""
+    matches_option: str = ""  # "A" / "B" / "C" / "D"
+
+
 class GeneratedQuestion(BaseModel):
     """Raw structured output from the Generator Agent."""
     topic: str
@@ -23,6 +40,8 @@ class GeneratedQuestion(BaseModel):
     explanation: str
     latex_formulas: list[str] = Field(default_factory=list)
     figure_spec: Optional[FigureSpec] = None
+    # Math generator emits this when applicable. Kazakh generator never does.
+    verification: Optional[VerificationSpec] = None
 
 
 class DimensionScores(BaseModel):
@@ -42,6 +61,11 @@ class CriticFeedback(BaseModel):
     pass_fail: bool
     comments: str
     improvement_suggestions: Optional[str] = None
+    # Populated when the math generator emitted a verification block and the
+    # critic ran it through the sandbox. Shape from src/symbolic.py::Verdict.
+    # Keys: applicable, ran, passed, contradicted, note, raw. None means
+    # verification was not attempted (non-math, or generator omitted block).
+    verification: Optional[dict] = None
 
 
 class Question(BaseModel):

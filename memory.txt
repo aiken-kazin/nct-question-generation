@@ -1,0 +1,448 @@
+================================================================================
+                        NTC QUESTION GENERATION — MEMORY
+                  Read this first if you're a new Claude session
+================================================================================
+
+Last updated: 2026-05-15
+User: aikenkazin@gmail.com
+Repo: /Users/aikenkazin/all_projects/ntc_project/ozp_project
+Origin: github.com/aiken-kazin/nct-question-generation
+
+================================================================================
+1. WHAT THIS PROJECT IS
+================================================================================
+
+An AI-powered MCQ generator for Kazakhstan's National Testing Center (NTC,
+Ұлттық тестілеу орталығы / ҰТО). Questions are written in Kazakh for
+TEACHER CERTIFICATION exams (NOT student admissions — that's a DIFFERENT
+exam called UNT). Two subjects:
+  - Mathematics (in Kazakh + LaTeX)
+  - Kazakh language / literature
+
+Research goal: generate 300 questions total = 3 LLMs × 50 questions × 2
+subjects. The 3 chosen LLMs:
+  - openai/gpt-4o-2024-11-20
+  - anthropic/claude-sonnet-4.6   (slug unverified against OpenRouter; the
+                                  --model flag is the escape hatch if 404)
+  - qwen/qwen-2.5-72b-instruct
+
+Generated questions will be expert-evaluated and submitted to a journal.
+
+================================================================================
+2. TARGET JOURNAL
+================================================================================
+
+Journal of Advances in Information Technology (JAIT, ETP Publishing, Scopus
+Q3-ish, ESCI). Realistic given the three methodology novelties below. Expert
+evaluation with inter-rater reliability (Cohen's κ ≥ 0.6) is non-negotiable
+for acceptance — that work has NOT been done yet.
+
+================================================================================
+3. PAPER NOVELTIES (the differentiators reviewers will ask about)
+================================================================================
+
+Three contributions agreed with user, all implemented:
+
+(1) CRITIC DISCRIMINATION INDEX (CDI) — src/cdi.py + scripts/compute_cdi.py
+    Metric that validates a critic agent WITHOUT expert grading. Compares
+    critic scores on real NTC items vs. programmatically-degraded variants
+    (wrong-answer-key relabel, weak-distractor substitution). Reports per-
+    dimension mean gap, Wilcoxon signed-rank p-value, Cohen's d for paired
+    samples. Renders Markdown + LaTeX + JSON. Not in the 23-paper lit review;
+    publishable as named contribution.
+
+(2) MULTI-CRITIC ENSEMBLE — src/ensemble.py
+    EnsembleCriticAgent runs N critics in parallel (default: GPT-4o + Claude
+    Sonnet 4.6 + Qwen-2.5-72B, three vendors) via ThreadPoolExecutor.
+    Aggregates: majority-vote answer, mean per-dimension scores, agreement
+    fraction. Calibration script reports pairwise Cohen's κ across critics
+    as inter-rater-reliability-among-models (paper claim).
+
+(3) SYMBOLIC SELF-VERIFICATION — src/symbolic.py + tests/test_symbolic.py
+    Math generator emits a Python snippet that re-derives the answer with
+    SymPy. Critic runs it in a hardened subprocess sandbox before scoring.
+    Three outcomes:
+      - Code stdout ≠ expected_output → correctness=0, hard reject
+      - matches_option ≠ correct_answer → same hard reject
+      - applicable=false or sandbox error → fall back to LLM-only
+    Catches arithmetic hallucinations. Extends Kadyrov et al. 2025 (+27%
+    UNT accuracy with SymPy) to the GENERATION side. 28 unit tests pass.
+
+================================================================================
+4. BRANCH STATE
+================================================================================
+
+Current branch: feature/symbolic-verification (CHECKED OUT NOW)
+  - Adds src/symbolic.py, tests/test_symbolic.py
+  - Modifies src/agents.py, src/models.py, prompts/generator_math.md, README.md
+  - All unstaged. Tests pass. Live smokes work.
+
+Parent branch: feature/batch-generation-and-critic-validation
+  - Has scripts/run_batch.py, scripts/calibrate_critic.py, scripts/compute_cdi.py
+  - Has src/cdi.py, src/ensemble.py, src/exemplars.py
+  - Per-model output paths, vision-aware critic, cross-model critic
+  - All unstaged on that branch too
+
+main: unchanged from upstream
+remotes/origin: has feature/batch-... pushed at some point
+
+NOTHING has been committed by me. User has not asked for commits. Many
+__pycache__/*.pyc files and output/*.json are auto-staged on the parent
+branch — should be cleaned via .gitignore before any commit.
+
+User said "every change in a new branch" at the start. I've stacked
+related work on branches; user has not objected. Ask before creating new
+branches for unrelated work.
+
+================================================================================
+5. TWO ENTRY POINTS (the user-facing CLIs)
+================================================================================
+
+(a) Single-question mode:
+    python generate.py --subject math --level A --format text [--ensemble]
+
+(b) Full-batch mode (50 questions, distributed 26/60/14 across A/B/C):
+    python scripts/run_batch.py --subject both --api gpt-4o-2024-11-20 \
+        --count 50 --ensemble
+
+Both accept: --critic-api / --critic-model (text critic),
+             --vision-critic-api / --vision-critic-model (image questions),
+             --ensemble / --ensemble-critics / --ensemble-strict.
+
+Calibration:
+    python scripts/calibrate_critic.py --subject math --limit 5 [--ensemble]
+    python scripts/compute_cdi.py output/_critic_validation/<csv> \
+        --markdown paper/cdi.md --latex paper/cdi.tex --json paper/cdi.json
+
+================================================================================
+6. REAL BENCHMARK DATA (files/)
+================================================================================
+
+files/mathematics_questions_kz.json
+    40 real NTC math items in Kazakh + LaTeX. metadata.correct_answer + topic
+    + difficulty (A/B/C, with one item using Cyrillic "А" — normalize_level
+    handles this). 3 items reference images in metadata.context.
+
+files/kazakh_questions_no_context.json    — 20 standalone Kazakh-LITERATURE items
+files/kazakh_questions_with_context.json  — 5 items sharing one reading passage
+                                            (NOT used as exemplars; context-block
+                                             generation isn't implemented yet)
+
+files/mathematics_images/   — 3 PNG/JPEG figures for the image-anchored math items
+files/qazaq_language_topics.xlsx  — 10 official Kazakh-language topic bundles
+                                    (themed: phonetics + theme, morphology + theme...)
+files/test_specific/        — Official Math + Qazaq tіlі spec docs (.docx)
+files/literature_review.xlsx — 23-paper lit review (already analyzed)
+files/diagram_prompts.txt    — Image-gen prompts for paper figures (6 diagrams)
+
+CRITICAL MISMATCH: topics_kazakh.yaml lists PURE LINGUISTICS (phonetics,
+morphology, syntax). But the real Kazakh items are LITERATURE questions
+about authors, works, devices. The few-shot retrieval falls back to
+generic examples when topics don't overlap. Reconciling to the 10 themed
+bundles is a clean follow-up.
+
+================================================================================
+7. ARCHITECTURE & KEY FILES
+================================================================================
+
+generate.py                       Entry point 1 — single question(s)
+scripts/run_batch.py              Entry point 2 — 50-question batches
+scripts/calibrate_critic.py       Critic self-validation (emits CDI + κ)
+scripts/compute_cdi.py            Post-hoc CDI from saved CSV (no API)
+scripts/_smoke_vision.py          Diagnostic: image critic on real NTC item
+scripts/_smoke_verification.py    Diagnostic: tampered question → catch contradiction
+
+src/agents.py                     GeneratorAgent + CriticAgent
+                                  Critic instance accepts text_model_override
+                                  and vision_model_override for ensemble use.
+                                  Verification runs BEFORE LLM critic; verdict
+                                  is injected into eval prompt AND overrides
+                                  correctness.
+src/cdi.py                        CDI math (Wilcoxon, Cohen's d, formatters)
+src/config.py                     Config + prompt rendering + ExemplarBank
+src/ensemble.py                   EnsembleCriticAgent (parallel via ThreadPoolExecutor)
+src/exemplars.py                  ExemplarBank — few-shot retrieval from real items
+src/figure_gen.py                 Matplotlib figure renderer (unchanged)
+src/models.py                     Pydantic: Question, GeneratedQuestion,
+                                  CriticFeedback (now has .verification),
+                                  VerificationSpec, DimensionScores
+src/output.py                     JSON+MD writer; per-model output paths
+src/symbolic.py                   Sandboxed SymPy runner
+tests/test_symbolic.py            28 unit tests for the sandbox
+
+prompts/generator_math.md         Math generator prompt (now requires verification block)
+prompts/generator_kazakh.md       Kazakh generator (no verification, framed for teacher cert)
+prompts/critic_solve.md           Step-1 critic (independent solve, English chain-of-thought)
+prompts/critic_eval.md            Step-2 critic (scoring, anchored numeric rubric)
+prompts/difficulty.yaml           A/B/C with NTC mix 26/60/14, Bloom levels
+prompts/topics_math.yaml          20 math topic IDs (English ids, Kazakh names_kz)
+prompts/topics_kazakh.yaml        OUT OF SYNC with the real Kazakh benchmark; uses
+                                  pure linguistics IDs while data is literature
+prompts/figures.yaml              Figure-spec schemas for image-format generation
+
+================================================================================
+8. CRITICAL DESIGN DECISIONS
+================================================================================
+
+Cross-model critic:
+  CriticAgent uses self._text_model / self._vision_model, set at init time
+  from config OR via per-instance override (EnsembleCriticAgent uses this).
+  Default: critic_model mirrors config.model (zero regression).
+
+Vision routing:
+  Critic uses config.vision_critic_model (default GPT-4o) ONLY when
+  figure_path is set AND that model is in VISION_CAPABLE_MODELS allowlist
+  in src/agents.py. Otherwise text path. Image is base64'd as data: URL.
+  Cost saver: ~8-10 image questions per 50-batch pay vision premium; the
+  rest stay cheap.
+
+Symbolic sandbox (THIS IS RESEARCH-GRADE, NOT AIRTIGHT):
+  - subprocess isolation via `python -I -c ...`
+  - Denylist (not allowlist) — too many SymPy transitives for allowlist
+  - Pre-import sympy/numpy BEFORE installing hook → their deps bind once
+  - sys.modules['subprocess'] etc. set to None after pre-import
+  - os.system / os.popen / os.remove / etc. set to None on os module
+  - importlib.import_module patched to enforce the hook
+  - 5-second wall-clock timeout
+  - `open` is NOT blocked (mpmath needs it) → file writes possible
+  - `breakpoint` IS blocked
+  - 11 attack vectors tested in tests/test_symbolic.py — all blocked
+  - Documented as needing Docker/firejail for production
+
+Per-model output paths:
+  output/<subject>/<model_slug>/level_<X>/<timestamp>_<id>.{json,md}
+  model_slug = config.model.split("/")[-1] (e.g. "gpt-4o-2024-11-20")
+
+Ensemble persistence:
+  Question.ensemble (Optional[dict]) carries the full per-critic breakdown:
+  {aggregated, per_critic, answer_agreement, unanimous, n_critics_*}.
+  Single-critic runs leave it null — serializes identically to before.
+
+Critic verification persistence:
+  CriticFeedback.verification (Optional[dict]) carries the Verdict.to_dict()
+  output: {applicable, ran, passed, contradicted, note, raw, [self_inconsistency]}.
+
+Pass thresholds:
+  overall_score >= 6.0 AND correctness >= 7 → question saved
+  (the correctness hard rule is enforced in generate.py:177 / run_batch.py)
+  Symbolic verification can OVERRIDE: contradiction → correctness=0 (always fail);
+  pass → correctness floor=9 (don't let hedging LLM critic reject)
+
+================================================================================
+9. THE LITERATURE LANDSCAPE (must-know-papers)
+================================================================================
+
+Abdrasilov et al. 2026 (paper 21 in lit review):
+  CLOSEST COMPETITOR. Same country, same testing center ecosystem.
+  BUT: targets STUDENT UNT exam, not TEACHER NTC. One hybrid model
+  pipeline (GPT-Oss 120B + Gemini 2.5 Pro), not 3-model comparison.
+  Human-in-loop only, no critic agent.
+  Differentiation: NTC vs UNT, multi-model, automated critic + CDI +
+  symbolic verification.
+
+  IMPORTANT: Bolatbek Abdrasilov also co-authored Kadyrov et al. 2025
+  (paper 1). So he's an active researcher at NCT — be careful with
+  positioning. If user is affiliated with him, this becomes "extension
+  of our prior work" rather than "competitor."
+
+Kadyrov et al. 2025 (paper 1):
+  Evaluates 6 LLMs on 139 UNT math items in Russian. Showed SymPy
+  augmentation gives +27% on Claude, +40% on Llama. Direct cite for
+  our novelty #3 (symbolic verification).
+
+He et al. 2023 (paper 6):
+  Chinese ChatGLM for National Teacher Certification Exam. STRUCTURAL
+  SIBLING — same target (teacher cert) but different language. Cite as
+  methodological precedent.
+
+Yao et al. 2025 (MCQG-SRefine, paper 12):
+  4-step iterative self-refine with LLM-as-judge. Direct precedent for
+  novelty #2 (ensemble). Their Cohen's κ between expert raters was 0.667;
+  our pairwise-κ among models is the analog.
+
+Byun & Choi 2025 (D-GEN, paper 9):
+  Notes LLM-as-judge is unreliable for fine-grained dims. Motivates our
+  ensemble + CDI as alternatives to single-LLM-judge.
+
+Lu et al. 2025 (TCM-Align, paper 5):
+  Dual-summary self-consistency filter. Inspired our verification design.
+
+KazMMLU (Togmanov et al. 2025) + Maxutov et al. 2024 + Toleu 2025 +
+Muhetaer 2025: low-resource Kazakh background. Cite to motivate the
+language difficulty.
+
+PersianMCQ-Instruct (Zeinalipour et al. 2025):
+  Closest low-resource generation pipeline (Persian, Wikipedia-sourced).
+  Different in that they FINE-TUNED on their generated dataset; we don't.
+
+================================================================================
+10. WHAT IS UNDONE / KNOWN LIMITATIONS
+================================================================================
+
+Expert evaluation:
+  ZERO expert grades exist. Required for publication. User explicitly
+  said "ignore expert grades and analysis for now" — they will arrange
+  after generation pipeline is stable.
+
+Full 300-item generation:
+  Not yet run. Tier 8 of the test ladder (see section 12 below). Cost
+  estimate: $15-40 total, several hours. User wants step-by-step testing
+  first.
+
+Topic taxonomy mismatch (Kazakh):
+  prompts/topics_kazakh.yaml uses pure-linguistics IDs; real Kazakh items
+  are literature. Few-shot retrieval falls back to generic examples for
+  most queries. Should be reconciled against files/qazaq_language_topics.xlsx.
+
+Context-block questions:
+  10 of 50 NTC questions are tied to a shared passage (kazakh_questions_with_context).
+  Pipeline only does standalone items.
+
+Real-Kazakh-questions JSON:
+  User originally said "I will provide a JSON file" for Kazakh. They have
+  since provided BOTH kazakh_questions_no_context.json and kazakh_questions_with_context.json
+  in files/. But DATASET_FILES in scripts/calibrate_critic.py still points
+  to "files/kazakh_language_questions_kz.json" which doesn't exist —
+  calibration of Kazakh subject silently skips. Bug to fix.
+
+Symbolic verification applicability:
+  Only ~50-60% of math items (limits, derivatives, integrals, algebra,
+  combinatorics, sequences). Geometry usually sets applicable=false.
+
+Sandbox limitations (documented in src/symbolic.py threat model):
+  - Not certified against unknown attack vectors
+  - sympy.printing.gtk holds a closure reference to subprocess that's
+    NOT nulled (defender against LLM hallucination, not adversarial code)
+  - open() is allowed → filesystem writes possible
+  - No rlimit on macOS → resource exhaustion possible
+
+Branch hygiene:
+  .pyc files, __pycache__/, output/<live runs>, scripts/_smoke_*.py are
+  unstaged. Add `__pycache__/`, `*.pyc`, `output/`, `scripts/_smoke_*.py`
+  to .gitignore before any commit.
+
+================================================================================
+11. USER PREFERENCES & CORRECTIONS (re-read these every session)
+================================================================================
+
+Communication style:
+  - Terse responses preferred. Tight technical prose. No excessive headers.
+  - "Be clear. Do not break anything. Criticize what you have done.
+     Comment everything." — quoted instruction.
+  - Self-critique in EVERY substantial deliverable. List limitations
+    honestly. Don't sandbag.
+  - Always tell user what's NOT done and what NEEDS to be done before
+    next step.
+
+Branching:
+  - "Every change must be on a new branch" — quoted instruction.
+  - I have stacked related work on feature branches without objection.
+  - When in doubt, create a new branch. NEVER touch main without permission.
+
+Commits:
+  - NEVER commit without explicit "commit it" from user.
+  - User reviews diffs before staging.
+
+API spend:
+  - User is cost-aware. Never run full 300-item generation without
+    explicit go-ahead. Smoke tests are OK (Tier 1-4 of the test ladder).
+  - State expected cost before suggesting any non-trivial API run.
+
+Code style:
+  - Comment WHY, not WHAT. Brief inline explanation when non-obvious.
+  - Pydantic models, type hints, dataclasses where appropriate.
+  - Defensive: silent fallback for missing optional data (e.g. ExemplarBank
+    returns [] if file missing). Never crash the pipeline on a missing nice-to-have.
+
+Tasks:
+  - Use TaskCreate/TaskUpdate for multi-step work. Mark completed
+    immediately on finish. Clean up stale tasks proactively.
+  - System reminder will nag if tasks go stale — ignore-mention rule applies.
+
+================================================================================
+12. TEST LADDER (cheapest → most expensive)
+================================================================================
+
+Pre-flight (no API cost):
+  python -c "from src.config import Config; c = Config(); print(c.model)"
+  python -m unittest tests.test_symbolic -v
+
+Tier 1 — single question, single critic (~$0.01-0.05):
+  python generate.py --subject math --level A --format text
+
+Tier 2 — single question, ensemble (~$0.03-0.15):
+  python generate.py --subject math --level B --format text --ensemble
+
+Tier 3 — image-format with vision critic (~$0.10-0.30):
+  python generate.py --subject math --level A --format image --topic triangles
+
+Tier 4 — calibration smoke (~$0.20-0.50):
+  python scripts/calibrate_critic.py --subject math --limit 5
+
+Tier 5 — calibration ensemble (~$0.60-1.50):
+  python scripts/calibrate_critic.py --subject math --limit 5 --ensemble
+
+Tier 6 — small batch (~$0.15-0.50):
+  python scripts/run_batch.py --subject math --count 3 [--ensemble]
+
+Tier 7 — full CDI report (no API cost):
+  python scripts/compute_cdi.py output/_critic_validation/<csv> ...
+
+Tier 8 — THE PAPER RUN (~$15-40, hours):
+  python scripts/calibrate_critic.py --subject both --ensemble
+  python scripts/run_batch.py --subject both --api gpt-4o-2024-11-20 --count 50 --ensemble
+  python scripts/run_batch.py --subject both --api claude-sonnet-4.6 --count 50 --ensemble
+  python scripts/run_batch.py --subject both --api Qwen/Qwen2.5-72B-Instruct --count 50 --ensemble
+
+================================================================================
+13. SCHEMA CHEATSHEET
+================================================================================
+
+GeneratedQuestion (raw LLM output):
+  topic, question_text, options [4×{label,text}], correct_answer,
+  explanation, latex_formulas [list], figure_spec [opt],
+  verification [opt] = {applicable, code, expected_output, matches_option}
+
+CriticFeedback:
+  critic_solution, critic_answer, dimensions {6 floats 0-10},
+  overall_score, pass_fail, comments, improvement_suggestions [opt],
+  verification [opt] = {applicable, ran, passed, contradicted, note, raw,
+                        [self_inconsistency]}
+
+Question (saved JSON):
+  Everything above + id, subject, level, format, topic, model_id,
+  figure_path, critic_score, ensemble [opt dict], timestamp,
+  generation_attempts
+
+EnsembleCriticFeedback (in-memory only):
+  aggregated: CriticFeedback (synthesized verdict the pipeline uses)
+  per_critic: list[PerCriticResult]
+  answer_agreement: float [0-1]
+  unanimous: bool
+  n_critics_responded / n_critics_failed
+
+CDI output:
+  {summary: {n_real_items, n_critic_failures},
+   wrong_key: {dim: DimensionCDI {...}},
+   weak_distractors: {dim: DimensionCDI {...}}}
+  DimensionCDI: dimension, variant, n_pairs, mean_real, mean_degraded,
+                sd_real, sd_degraded, gap, wilcoxon_p, cohens_d, interpretation
+
+================================================================================
+14. THINGS A NEW SESSION SHOULD DO FIRST
+================================================================================
+
+1. Read this file.
+2. Run `git status` and `git branch --show-current`. If not on
+   feature/symbolic-verification, ask user before switching.
+3. Run `python -m unittest tests.test_symbolic` to confirm the sandbox
+   still works after any environmental changes.
+4. Read README.md for the latest user-facing docs (kept in sync with code).
+5. Ask the user what step of section 12's test ladder they want to be at.
+6. DON'T regenerate files that exist. DON'T commit anything.
+7. If asked to do anything that costs API credits, state the expected
+   cost first.
+
+================================================================================
+END OF MEMORY
+================================================================================

@@ -9,6 +9,7 @@ The pipeline is calibrated against **real, published NTC items** (40 math + 25 K
 ### Paper-level methodology contributions
 - **Critic Discrimination Index (CDI)** — formalized metric that validates a critic agent *without* expert grading. We score real NTC items vs. programmatically-degraded variants (wrong-key, weak-distractors) and report the per-dimension gap, Wilcoxon p-value, and Cohen's d. See `src/cdi.py`, `scripts/compute_cdi.py`. This is **paper novelty #1**.
 - **Multi-critic ensemble** — `EnsembleCriticAgent` runs N critics (default: GPT-4o + Claude Sonnet 4.6 + Qwen-2.5-72B from three different vendors) in parallel on every question. Disagreement is preserved as a per-item uncertainty signal; pairwise Cohen's κ across critics is reported as inter-rater reliability *among models*. See `src/ensemble.py`. This is **paper novelty #2**.
+- **Symbolic self-verification (math only)** — the math generator emits a Python snippet that re-derives the answer with SymPy. The critic runs it in a hardened subprocess sandbox (denylist for `subprocess`/`socket`/`urllib`/…, neutered `os.system`/`os.popen`/`os.remove`, 5-second timeout). When the sandbox's output contradicts the generator's claimed answer, correctness is clamped to 0 regardless of what the LLM critic thinks. This catches arithmetic hallucinations that all three LLM critics in the ensemble can miss. See `src/symbolic.py`, `tests/test_symbolic.py`. Directly extends Kadyrov et al. 2025 (+27% UNT math accuracy with SymPy assistance) to the *generation* side of the loop. This is **paper novelty #3**.
 
 ### Pipeline improvements
 - **Few-shot exemplars from real NTC questions.** The generator sees 1–3 real published items (matched by topic + level) alongside its instructions. Style and difficulty transfer noticeably.
@@ -207,6 +208,40 @@ python scripts/run_batch.py --subject math --count 10 --ensemble \
 
 **Cost note.** Ensemble = N× critic calls per question. Default N=3, so a text question that previously cost ≈1 critic call now costs ≈3. The generator side is unchanged. With `--ensemble`, expect ~3× critic-side cost for the batch.
 
+### 3. Symbolic self-verification (math)
+
+The math generator now emits a `verification` JSON block alongside every question — a Python snippet plus the expected stdout. The critic runs that snippet in a hardened subprocess sandbox before scoring. Three outcomes:
+
+| Sandbox result | Effect on the critic |
+|---|---|
+| Snippet output matches `expected_output` AND `matches_option == correct_answer` | Correctness floor raised to 9; LLM critic still scores other dimensions |
+| Snippet output ≠ `expected_output` (generator's own check disagrees) | **Correctness clamped to 0; question rejected** regardless of LLM verdict |
+| `matches_option ≠ correct_answer` (verification labels a different option) | **Same hard reject** — catches answer-key hallucinations |
+| `applicable: false` or sandbox errors / times out | Skipped, falls back to LLM-only correctness |
+
+The verdict is persisted on `CriticFeedback.verification` for downstream analysis.
+
+**Sandbox threat model.** The sandbox is "defense in depth for the LLM-hallucination threat model," not airtight. Defenses:
+
+- Subprocess isolation via `python -I -c ...` (no env, no user-site packages).
+- Hard wall-clock timeout (default 5s).
+- Import denylist for the dangerous standard-library: `subprocess`, `multiprocessing`, `socket`, `urllib`, `http`, `https`, `requests`, `ftplib`, `telnetlib`, `smtplib`, `poplib`, `imaplib`, `ssl`, `cffi`, `pty`, `tty`, `termios`, `fcntl`, `resource`, `syslog`, `webbrowser`, `ensurepip`, `venv`, `runpy`. Plus `importlib.import_module` is patched so it can't bypass the hook.
+- Pre-imported SymPy/NumPy bind their needed transitives once, then those modules are blanked out of `sys.modules` so user code can't reach them via `sys.modules['subprocess']`.
+- `os.system`, `os.popen`, `os.exec*`, `os.spawn*`, `os.remove`, `os.unlink`, `os.rmdir`, `os.chmod`, `os.chown`, `os.fork`, `os.kill`, `os.startfile` are set to `None` on the `os` module so calls fail with `TypeError`.
+- `open` and `breakpoint` builtins are kept (sympy needs `open`); `breakpoint` is removed.
+
+NOT defended against:
+- Resource exhaustion (no `rlimit` enforced on macOS).
+- An adversarial payload that reaches the *already-imported* `subprocess` through `sympy.printing.gtk.subprocess` (sympy holds a closure reference).
+- Filesystem reads / writes via `open()` (used by sympy's mpmath for precision tables).
+- Anything ctypes-based that bypasses Python's import system.
+
+For a production deployment, run the verification subprocess inside Docker with `--network=none --read-only` or a WASM runtime. Documented as self-critique item #13.
+
+The full set of attack vectors I tested (`tests/test_symbolic.py`) and confirmed blocked: `subprocess`, `socket`, `urllib`, `multiprocessing`, `importlib.import_module('subprocess')`, `sys.modules['subprocess'].run(...)`, `os.system`, `os.remove`, `breakpoint`, infinite loop. All 28 tests pass.
+
+Set `FEWSHOT_K=0` and remove `--ensemble` to compare a baseline run against verification-enabled. The CDI columns `verified_passed` / `verified_contradicted` on the calibration CSV let you quantify how often verification fires.
+
 ## Output Structure
 
 ```
@@ -282,14 +317,17 @@ ozp_project/
 │   ├── calibrate_critic.py           # Critic self-validation on real items (emits CDI + κ)
 │   └── compute_cdi.py                # Post-hoc CDI re-analysis from saved CSV (no API calls)
 ├── src/
-│   ├── agents.py                     # GeneratorAgent + CriticAgent (cross-model + vision aware)
+│   ├── agents.py                     # GeneratorAgent + CriticAgent (cross-model + vision + symbolic-verify aware)
 │   ├── cdi.py                        # Critic Discrimination Index — paper novelty #1
 │   ├── config.py                     # Config, prompt rendering, exemplar wiring
 │   ├── ensemble.py                   # EnsembleCriticAgent — paper novelty #2
 │   ├── exemplars.py                  # Few-shot retrieval from real NTC data
 │   ├── figure_gen.py                 # Matplotlib figure renderer
-│   ├── models.py                     # Pydantic models (Question carries model_id + ensemble)
-│   └── output.py                     # JSON + Markdown writer (per-model paths)
+│   ├── models.py                     # Pydantic models (Question + VerificationSpec)
+│   ├── output.py                     # JSON + Markdown writer (per-model paths)
+│   └── symbolic.py                   # Sandboxed SymPy verification — paper novelty #3
+└── tests/
+    └── test_symbolic.py              # 28 unit tests for the sandbox
 ├── prompts/
 │   ├── generator_math.md             # Now consumes ${examples_block}
 │   ├── generator_kazakh.md           # Now consumes ${examples_block}
@@ -310,6 +348,10 @@ A few things the current pipeline does **not** yet do well, and a few things I a
 0. **CDI is a one-operationalization metric.** We define CDI in terms of two specific degradation strategies (wrong-key relabel, weak-distractor injection). Reviewers may ask whether other degradations (paraphrase noise, format corruption, dimension-swap) would tell the same story. Honest answer: probably similar trends but not identical. The metric is defensible as defined; calling it *the* discrimination index would be overreach. Future work: report CDI under at least 4 degradation modes and average.
 
 0a. **Ensemble agreement ≠ correctness.** Pairwise Cohen's κ across critic models tells us *whether the critics agree with each other*, not whether they're collectively right. Three confused critics can unanimously agree on a wrong answer. We still need expert grading on a subset to anchor "correctness" — the ensemble just gives us a free, cheap proxy for confidence. In the paper, present κ and CDI together; do NOT present κ alone as a quality claim.
+
+0b. **Symbolic verification is generator-honest, not adversarial-safe.** The LLM that generates the question also writes its own verification snippet. If it hallucinates the answer AND writes a snippet that confirms its hallucination, verification passes a wrong answer. The contradiction-catching case fires only when the generator is *internally inconsistent* (math says X, claimed answer says Y). This is still useful — most LLM math errors come from arithmetic mistakes, not coordinated self-deception. But reviewers should not be told "SymPy verifies all our math items"; the honest claim is "SymPy catches generator-internal inconsistencies on ~the subset of items where verification.applicable is true (estimated 50-60% of math items)."
+
+0c. **Sandbox is research-grade.** See the "Sandbox threat model" section above. Verified against 11 attack vectors in `tests/test_symbolic.py`; not certified against unknown ones. For deployment, swap in a real container. Documented prominently because reviewers will ask.
 
 1. **Self-evaluation bias is only partly mitigated.** Cross-model critic is *available* but it's still an LLM judging another LLM. Even with different vendors, both models share broad training-data distributions. Human expert evaluation remains required for any paper claim about quality. The literature review specifically flags LLM-as-judge as unreliable for fine-grained dimensions (see Yao et al. 2025, Byun & Choi 2025).
 
