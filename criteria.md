@@ -5,33 +5,54 @@
 
 ---
 
-## 1. Критерии генерации (Generator)
+## 1. Как и по каким критериям генерируется задача
 
-### Общие требования (math + kazakh)
-- Все содержимое — на казахском (literary norm, без русизмов/калек).
-- Ровно 4 варианта `A / B / C / D`, один правильный, label рандомизирован.
-- Все 4 опции примерно одной длины и формата.
-- Запрещено: `«all of the above»`, `«none of the above»`, дубликаты.
-- Дистракторы должны быть достижимы конкретной идентифицируемой ошибкой (формула, знак, off-by-one, типичное заблуждение).
-- Полное `explanation` со step-by-step решением на казахском.
+### Вход (что подаётся в `GeneratorAgent`)
+Пользователь указывает 3 параметра + опционально 4-й:
+- `subject` — `math` или `kazakh`
+- `level` — `A` / `B` / `C`
+- `format` — `text` или `image` (image только для math)
+- `topic` — конкретный ID или random из YAML
 
-### Математика (дополнительно)
-- Любая формула — в LaTeX (`$...$`, `$$...$$`, `\frac`, `\sqrt`, `\vec`, `\lim`).
-- Дроби в прозе писать нельзя через `/` — только `\frac`.
-- **Обязательно** verification-блок с SymPy-сниппетом:
-  - `applicable: true` → код печатает ровно одно значение, `expected_output` совпадает byte-for-byte, `matches_option` указывает букву.
-  - `applicable: false` — только если задача не верифицируется символьно (геометрия по чертежу, текстовая задача).
-  - Разрешённые импорты: `sympy, math, cmath, fractions, decimal, numpy, itertools, functools, operator, statistics, os.path`. Network/process — заблокированы.
+### Сборка промпта (`src/config.py::render_generator`)
+Из этих 4 параметров автоматически собирается промпт из **5 блоков**:
 
-### Уровень сложности (из `prompts/difficulty.yaml`)
-| Level | Bloom | Признаки |
+| Блок | Источник | Что даёт генератору |
 |---|---|---|
-| `A` (26%) | Remember, Understand | 1 шаг, подстановка в формулу, узнавание определения |
-| `B` (60%) | Apply, Analyze | 2–4 шага, выбор формулы, составные фигуры |
-| `C` (14%) | Evaluate, Synthesize | Нестандартное, синтез ≥2 тем, оптимизация, обратная задача |
+| 1. **Topic info** | `prompts/topics_<subject>.yaml` | EN/KZ название топика + subtopics + keywords (= о чём писать) |
+| 2. **Difficulty** | `prompts/difficulty.yaml` | Bloom-уровень + characteristics + distractor_guidance (= какой уровень сложности и каких ошибок ждать от дистракторов) |
+| 3. **Format instructions** | inline | Для `text` — figure_spec=null. Для `image` — обязательно figure-dependent question («Суреттегі...»), figure_spec.parameters содержит все измерения, текст вопроса их **не** дублирует |
+| 4. **Few-shot exemplars** | `files/mathematics_questions_kz.json` / `files/kazakh_questions_no_context.json` | 1–3 реальных НТЦ-задачи по тому же топику+уровню (`FEWSHOT_K=2` по умолчанию). Это стилевой и difficulty якорь. Только для text format |
+| 5. **Feedback (retry)** | `CriticAgent` предыдущей попытки | Если предыдущий ран reject — конкретные замечания критика, которые надо исправить |
 
-### Few-shot anchoring
-- Генератор видит 1–3 реальных НТЦ-задачи (по топику + уровню) из `files/mathematics_questions_kz.json` / `files/kazakh_questions_no_context.json`. Это стилевой и difficulty-якорь.
+### Уровни (из `prompts/difficulty.yaml`)
+| Level | Доля | Bloom | Когнитивная операция |
+|---|---|---|---|
+| `A` | 26% | Remember, Understand | 1 шаг, подстановка в формулу, узнавание определения |
+| `B` | 60% | Apply, Analyze | 2–4 шага с понятной логической цепочкой, выбор формулы, составные фигуры |
+| `C` | 14% | Evaluate, Synthesize | Нестандартная постановка, синтез ≥2 тем, оптимизация, обратная задача |
+
+### Что генератор обязан вернуть (JSON-схема)
+
+**Общие правила (math + kazakh):**
+- Всё на казахском (literary norm, без русизмов/калек, official terminology).
+- Ровно 4 опции `A/B/C/D`, один правильный, label рандомизирован.
+- Опции примерно одной длины и формата.
+- Запрещено: `«all of the above»`, `«none of the above»`, дубликаты.
+- **Дистракторы по правилу:** каждый достижим **конкретной идентифицируемой ошибкой** (wrong формула, знак, off-by-one, типичное заблуждение). Не «случайные неправильные числа».
+- Полное `explanation` со step-by-step решением.
+
+**Math — дополнительно:**
+- Вся математика — в LaTeX (`$...$`, `$$...$$`, `\frac`, `\sqrt`, `\vec`, `\lim`). Дроби в прозе через `/` запрещены.
+- **Обязательный `verification` блок** (новелла #3): SymPy-сниппет, который независимо пересчитывает ответ:
+  - `applicable: true` → код печатает ровно одно значение, `expected_output` совпадает byte-for-byte, `matches_option` указывает букву.
+  - `applicable: false` — только если задача символьно не верифицируется (геометрия по чертежу, текстовая задача).
+  - Разрешённые импорты: `sympy, math, cmath, fractions, decimal, numpy, itertools, functools, operator, statistics, os.path`. Network/process заблокированы.
+
+**Image (math) — дополнительно:**
+- Вопрос обязан быть **figure-dependent**: начинается с «Суреттегі...» / «Берілген суреттегі...».
+- Все измерения (стороны, углы, координаты) лежат в `figure_spec.parameters`, **не** в тексте вопроса.
+- Топик-зависимый figure_type (triangle / circle / function_graph / vector_diagram / ...).
 
 ---
 
