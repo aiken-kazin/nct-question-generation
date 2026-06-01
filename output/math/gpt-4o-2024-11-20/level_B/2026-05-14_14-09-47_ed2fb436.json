@@ -1,0 +1,54 @@
+{
+  "id": "ed2fb436-098b-47c1-b5dc-5d7178c836f1",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polyhedra",
+  "model_id": "openai/gpt-4o-2024-11-20",
+  "question_text": "Тікбұрышты параллелепипедтің ұзындығы 8 см, ені 6 см, ал биіктігі 5 см. Оның көлемін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "240 см^3"
+    },
+    {
+      "label": "B",
+      "text": "210 см^3"
+    },
+    {
+      "label": "C",
+      "text": "280 см^3"
+    },
+    {
+      "label": "D",
+      "text": "300 см^3"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Тікбұрышты параллелепипедтің көлемі мына формула бойынша табылады: \n\\[ V = a \\cdot b \\cdot h \\]\nМұндағы:\n\\( a = 8 \\), \\( b = 6 \\), \\( h = 5 \\).\n\nЕсептеу:\n\\[ V = 8 \\cdot 6 \\cdot 5 = 240 \\text{ см}^3 \\]\nСондықтан дұрыс жауап: \\( \\mathbf{A: 240 \\text{ см}^3} \\).",
+  "latex_formulas": [
+    "V = a \\cdot b \\cdot h",
+    "V = 8 \\cdot 6 \\cdot 5 = 240"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.0,
+  "critic_feedback": {
+    "critic_solution": "To find the volume of a rectangular parallelepiped, we use the formula:\n\nVolume = length × width × height.\n\nHere, the given dimensions are:\n- Length = 8 cm,\n- Width = 6 cm,\n- Height = 5 cm.\n\nStep 1: Substitute the values into the formula:\nVolume = 8 × 6 × 5.\n\nStep 2: Perform the multiplication step by step:\n8 × 6 = 48,\n48 × 5 = 240.\n\nStep 3: The volume of the rectangular parallelepiped is 240 cubic centimeters (cm³).\n\nThus, the correct answer is A) 240 cm³.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.0,
+    "pass_fail": true,
+    "comments": "The question is clear, correctly keyed, and well-structured. It tests the application of the volume formula for a rectangular parallelepiped effectively.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-05-14T14:09:47.665819+00:00",
+  "generation_attempts": 2
+}

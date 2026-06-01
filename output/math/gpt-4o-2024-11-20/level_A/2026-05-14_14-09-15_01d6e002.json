@@ -1,0 +1,58 @@
+{
+  "id": "01d6e002-f030-4697-b972-8a5b210950c0",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "quadratic_irrational",
+  "model_id": "openai/gpt-4o-2024-11-20",
+  "question_text": "Теңдеуді шешіңіз: $x^2 - 5x + 6 = 0$.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$x = 2$ және $x = 3$"
+    },
+    {
+      "label": "B",
+      "text": "$x = -2$ және $x = -3$"
+    },
+    {
+      "label": "C",
+      "text": "$x = 5$ және $x = -6$"
+    },
+    {
+      "label": "D",
+      "text": "$x = 1$ және $x = 6$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген теңдеу квадраттық теңдеу болып табылады: $x^2 - 5x + 6 = 0$. Бұл теңдеуді шешу үшін оны көбейткіштерге жіктейік: $(x - 2)(x - 3) = 0$. Осыдан $x - 2 = 0$ немесе $x - 3 = 0$, сондықтан $x = 2$ және $x = 3$.",
+  "latex_formulas": [
+    "x^2 - 5x + 6 = 0",
+    "(x - 2)(x - 3) = 0",
+    "x - 2 = 0",
+    "x - 3 = 0",
+    "x = 2",
+    "x = 3"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 10.0,
+  "critic_feedback": {
+    "critic_solution": "We are tasked with solving the quadratic equation x^2 - 5x + 6 = 0. To solve this, we use factoring.\n\nStep 1: Write the equation in standard form (already done):\n  x^2 - 5x + 6 = 0\n\nStep 2: Factorize the quadratic expression. We look for two numbers that multiply to 6 (the constant term) and add to -5 (the coefficient of x). These numbers are -2 and -3.\n  So, we can write:\n  x^2 - 5x + 6 = (x - 2)(x - 3)\n\nStep 3: Solve for x by setting each factor equal to 0:\n  (x - 2) = 0  or  (x - 3) = 0\n  x = 2       or  x = 3\n\nStep 4: Verify the solutions by substituting them back into the original equation:\n  For x = 2: (2)^2 - 5(2) + 6 = 4 - 10 + 6 = 0 (correct)\n  For x = 3: (3)^2 - 5(3) + 6 = 9 - 15 + 6 = 0 (correct)\n\nThus, the solutions are x = 2 and x = 3.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 10.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 10.0,
+    "pass_fail": true,
+    "comments": "The question is clear, unambiguous, and correctly keyed. It matches the requested difficulty level and uses proper Kazakh language and LaTeX formatting.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-05-14T14:09:15.930828+00:00",
+  "generation_attempts": 1
+}

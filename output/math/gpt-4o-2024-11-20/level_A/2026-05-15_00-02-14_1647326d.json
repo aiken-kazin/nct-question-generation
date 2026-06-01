@@ -1,0 +1,69 @@
+{
+  "id": "1647326d-3d43-424b-9b42-52f2b938f3a6",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "trigonometry",
+  "model_id": "openai/gpt-4o-2024-11-20",
+  "question_text": "$\\sin x = \\frac{1}{2}$ теңдеуін $0 \\leq x \\leq 2\\pi$ аралығында шешіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$"
+    },
+    {
+      "label": "B",
+      "text": "$x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}$"
+    },
+    {
+      "label": "C",
+      "text": "$x = \\frac{\\pi}{3}, \\frac{2\\pi}{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$x = \\frac{\\pi}{6}, \\frac{7\\pi}{6}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген $\\sin x = \\frac{1}{2}$ теңдеуінің шешімдерін табу үшін бірлік шеңберді қолданамыз. Бірлік шеңберде $\\sin x = \\frac{1}{2}$ мәнін $x = \\frac{\\pi}{6}$ және $x = \\frac{5\\pi}{6}$ бұрыштарында алады, өйткені $\\sin$ оң болған кезде $I$ және $II$ ширектерде болады. Сол себепті нақты аралықта шешімдер: $x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$.",
+  "latex_formulas": [
+    "\\sin x = \\frac{1}{2}",
+    "x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 10.0,
+  "critic_feedback": {
+    "critic_solution": "To solve the equation \\( \\sin x = \\frac{1}{2} \\) in the interval \\( 0 \\leq x \\leq 2\\pi \\), we proceed as follows:\n\n1. Recall that the sine function is positive in the first and second quadrants.\n2. The reference angle for \\( \\sin x = \\frac{1}{2} \\) is \\( \\frac{\\pi}{6} \\), because \\( \\sin \\frac{\\pi}{6} = \\frac{1}{2} \\).\n3. In the first quadrant, \\( x = \\frac{\\pi}{6} \\).\n4. In the second quadrant, \\( x = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6} \\).\n5. Therefore, the solutions to \\( \\sin x = \\frac{1}{2} \\) in the interval \\( 0 \\leq x \\leq 2\\pi \\) are \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{5\\pi}{6} \\).\n\nThus, the correct answer is A.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 10.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 10.0,
+    "pass_fail": true,
+    "comments": "The question is well-constructed, unambiguous, and matches the requested difficulty level. The distractors are plausible and the language is clear and accurate.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='[0.523598775598299, 2.61799387799149]' expected='[0.523598775598299, 2.61799387799149]'",
+      "raw": {
+        "ok": true,
+        "stdout": "[0.523598775598299, 2.61799387799149]",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": null,
+  "timestamp": "2026-05-15T00:02:14.230954+00:00",
+  "generation_attempts": 1
+}

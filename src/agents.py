@@ -1,15 +1,64 @@
 from __future__ import annotations
+import base64
 import json
+import mimetypes
 import re
 import textwrap
+from pathlib import Path
 from typing import Any
 
 from openai import OpenAI
 
 from .config import Config
-from .models import CriticFeedback, DimensionScores, GeneratedQuestion, QuestionOption, FigureSpec
+from .models import (
+    CriticFeedback, DimensionScores, GeneratedQuestion, QuestionOption,
+    FigureSpec, VerificationSpec,
+)
+from .symbolic import verify as run_symbolic_verify, Verdict
 
 _BASE_URL = "https://openrouter.ai/api/v1"
+
+# OpenRouter model IDs that accept multimodal `image_url` payloads.
+# This is intentionally a denylist-by-default safety net: routing an image
+# to a text-only model produces opaque API errors, so we'd rather refuse
+# and fall back to text-only than risk a confusing 400.
+VISION_CAPABLE_MODELS: set[str] = {
+    "openai/gpt-4o",
+    "openai/gpt-4o-2024-11-20",
+    "openai/gpt-4o-mini",
+    "openai/gpt-4o-mini-2024-07-18",
+    "anthropic/claude-sonnet-4.6",
+    "anthropic/claude-3.5-sonnet",
+    "anthropic/claude-3-opus",
+    "anthropic/claude-3-haiku",
+    "google/gemini-2.5-pro",
+    "google/gemini-pro-1.5",
+    "google/gemini-flash-1.5",
+    "qwen/qwen-2.5-vl-72b-instruct",
+    "qwen/qwen-2.5-vl-7b-instruct",
+}
+
+
+def _encode_image_data_url(path: str) -> str | None:
+    """Read a local image file and return it as a data: URL ready for the OpenAI
+    `image_url` content block. Returns None if the path is missing or unreadable
+    so callers can fall back to text-only without crashing the run.
+
+    Note: OpenRouter accepts data URLs and ordinary https URLs both. Files live
+    locally on the generation machine, so data URLs are simplest.
+    """
+    try:
+        p = Path(path)
+        if not p.is_file():
+            return None
+        mime, _ = mimetypes.guess_type(str(p))
+        if not mime:
+            # Pillow/Matplotlib output is almost always PNG. Default to it.
+            mime = "image/png"
+        b64 = base64.b64encode(p.read_bytes()).decode("ascii")
+        return f"data:{mime};base64,{b64}"
+    except OSError:
+        return None
 
 
 def _extract_json(text: str) -> str:
@@ -87,12 +136,35 @@ class GeneratorAgent:
 
 
 class CriticAgent:
-    def __init__(self, config: Config) -> None:
+    def __init__(
+        self,
+        config: Config,
+        text_model_override: str | None = None,
+        vision_model_override: str | None = None,
+    ) -> None:
+        """Construct a critic.
+
+        By default the critic reads `config.critic_model` and
+        `config.vision_critic_model`. Pass overrides to pin this *instance*
+        to a specific model regardless of config — this is what
+        EnsembleCriticAgent uses to spin up multiple critics with different
+        model IDs sharing a single config object.
+        """
         self._cfg = config
+        self._text_model = text_model_override or config.critic_model
+        self._vision_model = vision_model_override or config.vision_critic_model
         self._client = OpenAI(
             api_key=config.api_key,
             base_url=_BASE_URL,
         )
+
+    @property
+    def text_model(self) -> str:
+        return self._text_model
+
+    @property
+    def vision_model(self) -> str:
+        return self._vision_model
 
     def evaluate(
         self,
@@ -101,7 +173,37 @@ class CriticAgent:
         subject: str,
         figure_path: str | None = None,
     ) -> CriticFeedback:
-        question_block = _format_question_block(question, include_answer=False, figure_path=figure_path)
+        # Vision routing: only when an image is actually attached AND the
+        # configured vision model can accept multimodal input. This is the
+        # cost-saver: text-format questions (the majority of a 50-Q batch)
+        # keep using the cheaper text critic.
+        image_data_url = _encode_image_data_url(figure_path) if figure_path else None
+        use_vision = image_data_url is not None and (
+            self._vision_model in VISION_CAPABLE_MODELS
+        )
+        active_model = self._vision_model if use_vision else self._text_model
+
+        # If we're sending the image as a multimodal payload, don't ALSO embed
+        # the file path in the system prompt text — it's redundant and would
+        # confuse the model into looking for a local file it cannot access.
+        path_for_prompt = None if use_vision else figure_path
+
+        question_block = _format_question_block(
+            question, include_answer=False, figure_path=path_for_prompt
+        )
+
+        # ── Step 0: Symbolic verification (math only) ─────────────────────
+        # Run BEFORE the LLM critic so the verdict can be injected into the
+        # eval prompt. Verification is cheap (~1s subprocess), deterministic,
+        # and LLM-independent — the most reliable signal we have.
+        verdict: Verdict | None = None
+        if question.verification is not None and subject == "math":
+            try:
+                verdict = run_symbolic_verify(
+                    question.verification.model_dump(), timeout_s=5.0
+                )
+            except Exception:
+                verdict = None  # never let sandbox issues abort the critic
 
         # ── Step 1: Independent solve ─────────────────────────────────────
         solve_prompt = self._cfg.render_critic_solve(
@@ -110,10 +212,13 @@ class CriticAgent:
             question_block=question_block,
         )
         solve_resp = self._client.chat.completions.create(
-            model=self._cfg.model,
+            model=active_model,
             messages=[
                 {"role": "system", "content": solve_prompt},
-                {"role": "user", "content": "Solve the question independently and return your JSON response."},
+                _user_message(
+                    "Solve the question independently and return your JSON response.",
+                    image_data_url if use_vision else None,
+                ),
             ],
             response_format={"type": "json_object"},
             temperature=0.2,
@@ -124,7 +229,15 @@ class CriticAgent:
         critic_answer = solve_data.get("critic_answer", "")
 
         # ── Step 2: Full evaluation ───────────────────────────────────────
-        question_block_full = _format_question_block(question, include_answer=True, figure_path=figure_path)
+        question_block_full = _format_question_block(
+            question, include_answer=True, figure_path=path_for_prompt
+        )
+        # Append the symbolic verdict to the question block so the LLM critic
+        # sees it as authoritative context. We feed it through the existing
+        # question_block placeholder rather than adding a new prompt slot —
+        # keeps render_critic_eval's signature stable.
+        if verdict is not None and verdict.applicable:
+            question_block_full += "\n\n" + _format_verification_for_prompt(verdict)
         eval_prompt = self._cfg.render_critic_eval(
             subject=subject,
             level=level,
@@ -136,10 +249,13 @@ class CriticAgent:
             critic_answer=critic_answer,
         )
         eval_resp = self._client.chat.completions.create(
-            model=self._cfg.model,
+            model=active_model,
             messages=[
                 {"role": "system", "content": eval_prompt},
-                {"role": "user", "content": "Evaluate the question and return your JSON scoring."},
+                _user_message(
+                    "Evaluate the question and return your JSON scoring.",
+                    image_data_url if use_vision else None,
+                ),
             ],
             response_format={"type": "json_object"},
             temperature=0.1,
@@ -147,10 +263,125 @@ class CriticAgent:
         eval_content = eval_resp.choices[0].message.content or "{}"
         eval_data = _parse_json(eval_content)
 
-        return _build_critic_feedback(eval_data, critic_solution, critic_answer)
+        feedback = _build_critic_feedback(eval_data, critic_solution, critic_answer)
+        # Apply verification overrides to correctness:
+        #   * code-vs-expected mismatch → correctness=0 (catches arithmetic
+        #     hallucinations the LLM critic might miss)
+        #   * matches_option ≠ correct_answer → also a contradiction; the
+        #     generator's own verification labels a different option as right
+        #   * passed AND matches_option agrees → raise correctness floor to 9
+        # Either way, persist the verdict on the feedback for downstream
+        # analysis (CDI per-dim columns, ensemble post-hoc).
+        if verdict is not None:
+            feedback.verification = verdict.to_dict()
+
+            # Check #1: code output disagrees with claimed expected_output
+            hard_contradiction = verdict.contradicted
+
+            # Check #2: matches_option disagrees with the question's
+            # correct_answer. Only consider this if the verification ran
+            # cleanly AND the generator labeled an option; otherwise we'd
+            # be over-eager when the field is empty.
+            ver_spec = question.verification
+            if (
+                verdict.passed
+                and ver_spec is not None
+                and ver_spec.matches_option
+                and ver_spec.matches_option != question.correct_answer
+            ):
+                hard_contradiction = True
+                feedback.verification["self_inconsistency"] = (
+                    f"verification says option {ver_spec.matches_option} but "
+                    f"correct_answer says {question.correct_answer}"
+                )
+
+            if hard_contradiction:
+                feedback.dimensions.correctness = 0.0
+                feedback.pass_fail = False
+                feedback.comments = (
+                    "[SYMBOLIC VERIFICATION CONTRADICTED] " + feedback.comments
+                )
+                feedback.overall_score = _recompute_overall(feedback.dimensions)
+            elif verdict.passed:
+                if feedback.dimensions.correctness < 9.0:
+                    feedback.dimensions.correctness = 9.0
+                    feedback.overall_score = _recompute_overall(feedback.dimensions)
+        return feedback
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
+
+
+def _format_verification_for_prompt(verdict: Verdict) -> str:
+    """Render the symbolic verdict as a context block for the LLM critic.
+
+    The LLM critic should treat this as authoritative — it's the output of
+    actual symbolic code, not another model's guess. We label it clearly
+    so the model doesn't mistake it for our own reasoning.
+    """
+    if verdict.passed:
+        head = "✓ SYMBOLIC VERIFICATION (sandbox executed the generator's check)"
+        body = (
+            "The generator emitted a Python snippet that re-derives the answer.\n"
+            f"Sandbox stdout matches the generator's expected_output.\n"
+            f"Detail: {verdict.note}\n"
+            "→ Treat correctness ≥ 9 as objectively supported. If your independent\n"
+            "  reasoning agrees, score correctness accordingly."
+        )
+    elif verdict.contradicted:
+        head = "✗ SYMBOLIC VERIFICATION CONTRADICTED THE CLAIMED ANSWER"
+        body = (
+            "The sandbox executed the generator's own verification snippet and\n"
+            "got a DIFFERENT answer than the generator claims.\n"
+            f"Detail: {verdict.note}\n"
+            "→ The question is almost certainly wrong-keyed or arithmetically\n"
+            "  broken. Score correctness ≤ 2."
+        )
+    elif verdict.ran:
+        head = "(Symbolic verification ran but result was inconclusive)"
+        body = verdict.note
+    else:
+        head = "(Symbolic verification did not run — see note)"
+        body = verdict.note
+    return f"--- {head} ---\n{body}"
+
+
+def _recompute_overall(dims: DimensionScores) -> float:
+    """Weighted-average overall score, mirroring _compute_weighted below.
+
+    Kept as a separate function because we need to call it from inside the
+    critic after mutating dimensions; _compute_weighted is used by the
+    builder. Duplicating two lines is cheaper than refactoring callers.
+    """
+    weights = {
+        "correctness": 3, "distractor_quality": 2, "difficulty_alignment": 2,
+        "kazakh_language_quality": 2, "latex_validity": 1,
+    }
+    total_w = sum(weights.values())
+    score = sum(getattr(dims, k) * w for k, w in weights.items())
+    if dims.figure_relevance is not None:
+        score += dims.figure_relevance * 1
+        total_w += 1
+    return round(score / total_w, 2)
+
+
+def _user_message(text: str, image_data_url: str | None) -> dict:
+    """Build a chat user-message. If `image_data_url` is set, the content is a
+    multimodal list (OpenAI vision format); otherwise plain text.
+
+    Returning a single dict keeps the call sites symmetrical between text and
+    vision paths.
+    """
+    if image_data_url is None:
+        return {"role": "user", "content": text}
+    return {
+        "role": "user",
+        "content": [
+            {"type": "text", "text": text},
+            {"type": "image_url", "image_url": {"url": image_data_url}},
+        ],
+    }
+
 
 def _format_question_block(
     q: GeneratedQuestion,
@@ -193,6 +424,17 @@ def _build_generated_question(data: dict[str, Any]) -> GeneratedQuestion:
             caption=str(fig_data.get("caption", "")),
         )
 
+    # Optional verification block — only the math generator emits it.
+    ver_data = data.get("verification")
+    verification: VerificationSpec | None = None
+    if isinstance(ver_data, dict):
+        verification = VerificationSpec(
+            applicable=bool(ver_data.get("applicable", False)),
+            code=str(ver_data.get("code", "") or ""),
+            expected_output=str(ver_data.get("expected_output", "") or ""),
+            matches_option=str(ver_data.get("matches_option", "") or "").upper(),
+        )
+
     return GeneratedQuestion(
         topic=str(data.get("topic", "unknown")),
         question_text=str(data.get("question_text", "")),
@@ -201,6 +443,7 @@ def _build_generated_question(data: dict[str, Any]) -> GeneratedQuestion:
         explanation=str(data.get("explanation", "")),
         latex_formulas=[str(f) for f in data.get("latex_formulas", [])],
         figure_spec=figure_spec,
+        verification=verification,
     )
 
 

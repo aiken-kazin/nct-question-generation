@@ -23,6 +23,7 @@ from rich.table import Table
 
 from src.config import Config
 from src.agents import GeneratorAgent, CriticAgent
+from src.ensemble import EnsembleCriticAgent
 from src.figure_gen import FigureGenerator
 from src.models import Question
 from src.output import save_question
@@ -30,10 +31,37 @@ from src.output import save_question
 console = Console()
 
 API_CHOICES = {
-    "gpt-4o-2024-11-20": "openai/gpt-4o-2024-11-20",
-    "Qwen/Qwen2.5-72B-Instruct": "qwen/qwen-2.5-72b-instruct",
+    "gpt-5.5": "openai/gpt-5.5",
+    "claude-sonnet-4.6": "anthropic/claude-sonnet-4.6",
+    "gemini-3.1-pro": "google/gemini-3.1-pro-preview",
 }
-DEFAULT_API = "gpt-4o-2024-11-20"
+DEFAULT_API = "gemini-3.1-pro"
+
+# Default ensemble = the three models we're comparing in the paper. The user
+# can override with --ensemble-critics for ablations.
+DEFAULT_ENSEMBLE = [
+    "openai/gpt-5.5",
+    "anthropic/claude-sonnet-4.6",
+    "google/gemini-3.1-pro-preview",
+]
+
+
+def _resolve_ensemble_list(raw: str | None) -> list[str]:
+    """Parse --ensemble-critics value. Accepts either:
+       * comma-separated API shortcuts ('gpt-5.5,claude-sonnet-4.6')
+       * comma-separated raw OpenRouter IDs ('openai/gpt-4o,anthropic/claude-...')
+       * a mix
+       * None → DEFAULT_ENSEMBLE
+    """
+    if not raw:
+        return list(DEFAULT_ENSEMBLE)
+    out: list[str] = []
+    for item in raw.split(","):
+        s = item.strip()
+        if not s:
+            continue
+        out.append(API_CHOICES.get(s, s))
+    return out
 
 
 def parse_args() -> argparse.Namespace:
@@ -50,9 +78,34 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--topic", default=None,
                         help="Topic ID (from topics_math/kazakh.yaml). Random if omitted.")
     parser.add_argument("--api", default=DEFAULT_API, choices=list(API_CHOICES.keys()),
-                        help=f"API model to use (default: {DEFAULT_API})")
+                        help=f"API model to use for the GENERATOR (default: {DEFAULT_API})")
     parser.add_argument("--model", default=None,
-                        help="OpenRouter model ID (overrides --api and OPENROUTER_MODEL env var)")
+                        help="OpenRouter model ID for the GENERATOR (overrides --api and OPENROUTER_MODEL env var)")
+    # Critic-specific model selection. If neither is set, the critic uses the
+    # same model as the generator (current behavior, no regression). Setting
+    # a different critic model reduces self-evaluation bias — the literature
+    # repeatedly flags this as a quality lever.
+    parser.add_argument("--critic-api", default=None, choices=list(API_CHOICES.keys()),
+                        help="API model to use for the CRITIC on text-format questions (default: same as --api)")
+    parser.add_argument("--critic-model", default=None,
+                        help="OpenRouter model ID for the CRITIC on text-format questions (overrides --critic-api)")
+    # Vision critic: only consulted when figure_path is set (image-format
+    # questions, or real items with an attached image). Default is GPT-4o.
+    parser.add_argument("--vision-critic-api", default=None, choices=list(API_CHOICES.keys()),
+                        help="API model for the CRITIC on IMAGE-format questions (default: gpt-4o)")
+    parser.add_argument("--vision-critic-model", default=None,
+                        help="OpenRouter model ID for the CRITIC on IMAGE-format questions (overrides --vision-critic-api)")
+    # Ensemble — paper novelty #1. Runs N critics in parallel (default: 3
+    # different vendors) and votes on the answer. Costs N× per-critic but
+    # gives a free inter-rater agreement signal.
+    parser.add_argument("--ensemble", action="store_true",
+                        help="Use a multi-critic ensemble instead of a single critic")
+    parser.add_argument("--ensemble-critics", default=None,
+                        help="Comma-separated critic models for the ensemble "
+                             "(API shortcuts or raw OpenRouter IDs). "
+                             "Default: GPT-5.5, Claude Sonnet 4.6, Gemini 3.1 Pro")
+    parser.add_argument("--ensemble-strict", action="store_true",
+                        help="Require ALL critics to pass (default: majority)")
     parser.add_argument("--output-dir", default="output",
                         help="Output directory (default: output/)")
     parser.add_argument("--count", type=int, default=1,
@@ -72,17 +125,57 @@ def main() -> None:
     else:
         config.model = API_CHOICES[args.api]
 
+    # Resolve critic model. Priority: --critic-model > --critic-api >
+    # mirror the generator model (so the default path is unchanged).
+    if args.critic_model:
+        config.critic_model = args.critic_model
+    elif args.critic_api:
+        config.critic_model = API_CHOICES[args.critic_api]
+    else:
+        config.critic_model = config.model
+
+    # Vision critic. Priority: --vision-critic-model > --vision-critic-api >
+    # leave the default (GPT-4o set in Config). Vision critic is only invoked
+    # when an image is attached, so the override only matters for image-format
+    # generation or for calibration against real items with images.
+    if args.vision_critic_model:
+        config.vision_critic_model = args.vision_critic_model
+    elif args.vision_critic_api:
+        config.vision_critic_model = API_CHOICES[args.vision_critic_api]
+
     topics_available = config.get_topics(args.subject)
 
     generator = GeneratorAgent(config)
-    critic = CriticAgent(config)
+    # Critic is either a single CriticAgent or an EnsembleCriticAgent. We
+    # keep them behind a thin façade `_run_critic` so the loop below doesn't
+    # branch on mode every iteration.
+    ensemble_models: list[str] = []
+    if args.ensemble:
+        ensemble_models = _resolve_ensemble_list(args.ensemble_critics)
+        critic_runner = EnsembleCriticAgent(
+            config, model_ids=ensemble_models, strict_pass=args.ensemble_strict,
+        )
+    else:
+        critic_runner = CriticAgent(config)
     fig_gen = FigureGenerator()
     output_dir = Path(args.output_dir)
 
+    if args.ensemble:
+        critic_line = f"Critic ensemble: [cyan]{', '.join(ensemble_models)}[/cyan] (strict={args.ensemble_strict})"
+    elif config.critic_model != config.model:
+        critic_line = f"Critic: [cyan]{config.critic_model}[/cyan]"
+    else:
+        critic_line = "Critic: [dim]same as generator[/dim]"
+    vision_line = (
+        f"Vision-critic: [magenta]{config.vision_critic_model}[/magenta] (image-only)"
+        if args.fmt == "image"
+        else ""
+    )
     console.print(Panel(
         f"[bold]NTC Question Generator[/bold]\n"
-        f"Model: [cyan]{config.model}[/cyan]  "
-        f"Subject: [yellow]{args.subject}[/yellow]  "
+        f"Generator: [cyan]{config.model}[/cyan]\n{critic_line}\n"
+        + (vision_line + "\n" if vision_line else "")
+        + f"Subject: [yellow]{args.subject}[/yellow]  "
         f"Level: [green]{args.level}[/green]  "
         f"Format: [blue]{args.fmt}[/blue]  "
         f"Count: [magenta]{args.count}[/magenta]",
@@ -97,6 +190,7 @@ def main() -> None:
 
         last_raw = None
         last_critique = None
+        last_ensemble = None
         last_figure_path = None
         feedback: str | None = None
 
@@ -148,7 +242,7 @@ def main() -> None:
 
             with console.status(f"Critic Agent {attempt_label}..."):
                 try:
-                    last_critique = critic.evaluate(
+                    raw_critique = critic_runner.evaluate(
                         question=last_raw,
                         level=args.level,
                         subject=args.subject,
@@ -157,6 +251,22 @@ def main() -> None:
                 except Exception as exc:
                     console.print(f"[red]Critic error:[/red] {exc}")
                     break
+
+            # Unwrap ensemble vs single. Ensemble exposes .aggregated which
+            # matches the CriticFeedback shape the rest of the loop expects;
+            # we also stash the full per-critic detail for persistence.
+            if args.ensemble:
+                last_ensemble = raw_critique
+                last_critique = raw_critique.aggregated
+                console.print(
+                    f"  [dim]ensemble:[/dim] "
+                    f"answer_agreement=[cyan]{raw_critique.answer_agreement:.0%}[/cyan]  "
+                    f"unanimous=[{'green' if raw_critique.unanimous else 'yellow'}]{raw_critique.unanimous}[/]  "
+                    f"responded={raw_critique.n_critics_responded}/{raw_critique.n_critics_responded + raw_critique.n_critics_failed}"
+                )
+            else:
+                last_ensemble = None
+                last_critique = raw_critique
 
             _display_critic_table(last_critique)
 
@@ -189,6 +299,7 @@ def main() -> None:
             level=args.level,
             format=args.fmt,
             topic=topic,
+            model_id=config.model,
             question_text=last_raw.question_text,
             options=last_raw.options,
             correct_answer=last_raw.correct_answer,
@@ -198,6 +309,7 @@ def main() -> None:
             figure_path=str(last_figure_path) if last_figure_path else None,
             critic_score=last_critique.overall_score if last_critique else None,
             critic_feedback=last_critique,
+            ensemble=last_ensemble.to_dict() if last_ensemble is not None else None,
             timestamp=datetime.now(timezone.utc).isoformat(),
             generation_attempts=attempt + 1,
         )

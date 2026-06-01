@@ -1,0 +1,55 @@
+{
+  "id": "8db2e086-8721-4516-ac47-a0129d9e7056",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "exponential_logarithmic_functions",
+  "model_id": "openai/gpt-4o-2024-11-20",
+  "question_text": "$\\log_{2} 16$ мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "2"
+    },
+    {
+      "label": "B",
+      "text": "4"
+    },
+    {
+      "label": "C",
+      "text": "8"
+    },
+    {
+      "label": "D",
+      "text": "16"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Логарифмнің анықтамасына сәйкес, егер $\\log_{a} b = c$, онда $a^c = b$. Бұл жағдайда, $\\log_{2} 16 = c$, сондықтан $2^c = 16$. $2^4 = 16$ болғандықтан, $c = 4$. Осылайша, $\\log_{2} 16 = 4$.",
+  "latex_formulas": [
+    "\\log_{a} b = c \\iff a^c = b",
+    "2^c = 16",
+    "2^4 = 16"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 10.0,
+  "critic_feedback": {
+    "critic_solution": "To solve for \\( \\log_{2} 16 \\), we need to determine the power to which the base 2 must be raised to produce 16. This can be expressed as:\n\n\\[ 2^x = 16 \\]\n\nStep 1: Rewrite 16 as a power of 2. Since \\( 16 = 2^4 \\), we can substitute this into the equation:\n\n\\[ 2^x = 2^4 \\]\n\nStep 2: Since the bases are the same, the exponents must be equal:\n\n\\[ x = 4 \\]\n\nThus, \\( \\log_{2} 16 = 4 \\).\n\nThe correct answer is B) 4.",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 10.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 10.0,
+    "pass_fail": true,
+    "comments": "The question is clear, concise, and correctly keyed. It aligns perfectly with the requested difficulty level and tests a basic understanding of logarithms.",
+    "improvement_suggestions": null
+  },
+  "timestamp": "2026-05-14T14:55:48.924264+00:00",
+  "generation_attempts": 1
+}

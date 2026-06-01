@@ -1,0 +1,36 @@
+{
+  "subject": "math",
+  "model_id": "openai/gpt-4o-2024-11-20",
+  "model_slug": "gpt-4o-2024-11-20",
+  "intended_count": 2,
+  "saved_count": 2,
+  "rejected_count": 0,
+  "per_level_intended": {
+    "A": 1,
+    "B": 1,
+    "C": 0
+  },
+  "format": "text",
+  "seed": 0,
+  "finished_at": "2026-05-14T14:09:47.672683+00:00",
+  "attempts": [
+    {
+      "topic": "quadratic_irrational",
+      "level": "A",
+      "format": "text",
+      "attempts": 1,
+      "saved": true,
+      "id": "01d6e002-f030-4697-b972-8a5b210950c0",
+      "overall_score": 10.0
+    },
+    {
+      "topic": "polyhedra",
+      "level": "B",
+      "format": "text",
+      "attempts": 2,
+      "saved": true,
+      "id": "ed2fb436-098b-47c1-b5dc-5d7178c836f1",
+      "overall_score": 9.0
+    }
+  ]
+}
