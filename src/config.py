@@ -21,7 +21,7 @@ def _load_yaml(name: str) -> dict:
 
 class Config:
     def __init__(self) -> None:
-        self.model: str = os.environ.get("OPENROUTER_MODEL", "openai/gpt-4o")
+        self.model: str = os.environ.get("OPENROUTER_MODEL", "google/gemini-3.1-pro-preview")
         # Critic can use a *different* OpenRouter model than the generator.
         # This reduces self-evaluation bias (Yao et al. 2025; AI-Literacy
         # multi-agent paper). Defaults to the generator model — when unset,

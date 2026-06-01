@@ -21,7 +21,7 @@ Outputs (under output/_critic_validation/):
   <subject>_<model_slug>_details.json    — full critic feedback per row
 
 Usage:
-    python scripts/calibrate_critic.py --subject math --limit 5 --api gpt-4o-2024-11-20
+    python scripts/calibrate_critic.py --subject math --limit 5 --api gpt-5.5
     python scripts/calibrate_critic.py --subject both --api claude-sonnet-4.6 --no-degrade
 """
 from __future__ import annotations
@@ -53,16 +53,16 @@ from src.models import CriticFeedback, GeneratedQuestion, QuestionOption
 from src.output import _model_slug
 
 API_CHOICES = {
-    "gpt-4o-2024-11-20": "openai/gpt-4o-2024-11-20",
-    "Qwen/Qwen2.5-72B-Instruct": "qwen/qwen-2.5-72b-instruct",
+    "gpt-5.5": "openai/gpt-5.5",
     "claude-sonnet-4.6": "anthropic/claude-sonnet-4.6",
+    "gemini-3.1-pro": "google/gemini-3.1-pro-preview",
 }
-DEFAULT_API = "gpt-4o-2024-11-20"
+DEFAULT_API = "gemini-3.1-pro"
 
 DEFAULT_ENSEMBLE = [
-    "openai/gpt-4o-2024-11-20",
+    "openai/gpt-5.5",
     "anthropic/claude-sonnet-4.6",
-    "qwen/qwen-2.5-72b-instruct",
+    "google/gemini-3.1-pro-preview",
 ]
 
 

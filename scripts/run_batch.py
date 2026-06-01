@@ -8,7 +8,7 @@ topics round-robin. Only critic-passing questions are saved; everything attempte
 (saved + rejected + errored) is recorded in a per-run manifest.
 
 Usage:
-    python scripts/run_batch.py --subject math   --api gpt-4o-2024-11-20 --count 50
+    python scripts/run_batch.py --subject math   --api gpt-5.5 --count 50
     python scripts/run_batch.py --subject kazakh --api claude-sonnet-4.6 --count 50
     python scripts/run_batch.py --subject math   --model anthropic/claude-sonnet-4.6 --count 5
 """
@@ -43,16 +43,16 @@ from src.output import save_question, _model_slug
 
 # Same mapping the CLI uses — kept in sync with generate.py
 API_CHOICES = {
-    "gpt-4o-2024-11-20": "openai/gpt-4o-2024-11-20",
-    "Qwen/Qwen2.5-72B-Instruct": "qwen/qwen-2.5-72b-instruct",
+    "gpt-5.5": "openai/gpt-5.5",
     "claude-sonnet-4.6": "anthropic/claude-sonnet-4.6",
+    "gemini-3.1-pro": "google/gemini-3.1-pro-preview",
 }
-DEFAULT_API = "gpt-4o-2024-11-20"
+DEFAULT_API = "gemini-3.1-pro"
 
 DEFAULT_ENSEMBLE = [
-    "openai/gpt-4o-2024-11-20",
+    "openai/gpt-5.5",
     "anthropic/claude-sonnet-4.6",
-    "qwen/qwen-2.5-72b-instruct",
+    "google/gemini-3.1-pro-preview",
 ]
 
 
@@ -89,7 +89,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ensemble", action="store_true",
                         help="Use multi-critic ensemble instead of a single critic")
     parser.add_argument("--ensemble-critics", default=None,
-                        help="Comma-separated critic model IDs/shortcuts (default: GPT-4o, Claude Sonnet 4.6, Qwen-2.5-72B)")
+                        help="Comma-separated critic model IDs/shortcuts (default: GPT-5.5, Claude Sonnet 4.6, Gemini 3.1 Pro)")
     parser.add_argument("--ensemble-strict", action="store_true",
                         help="Require ALL critics to pass (default: majority)")
     parser.add_argument("--count", type=int, default=50, help="Questions to produce per subject (default 50)")

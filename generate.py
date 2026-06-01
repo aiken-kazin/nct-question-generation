@@ -31,24 +31,24 @@ from src.output import save_question
 console = Console()
 
 API_CHOICES = {
-    "gpt-4o-2024-11-20": "openai/gpt-4o-2024-11-20",
-    "Qwen/Qwen2.5-72B-Instruct": "qwen/qwen-2.5-72b-instruct",
+    "gpt-5.5": "openai/gpt-5.5",
     "claude-sonnet-4.6": "anthropic/claude-sonnet-4.6",
+    "gemini-3.1-pro": "google/gemini-3.1-pro-preview",
 }
-DEFAULT_API = "gpt-4o-2024-11-20"
+DEFAULT_API = "gemini-3.1-pro"
 
 # Default ensemble = the three models we're comparing in the paper. The user
 # can override with --ensemble-critics for ablations.
 DEFAULT_ENSEMBLE = [
-    "openai/gpt-4o-2024-11-20",
+    "openai/gpt-5.5",
     "anthropic/claude-sonnet-4.6",
-    "qwen/qwen-2.5-72b-instruct",
+    "google/gemini-3.1-pro-preview",
 ]
 
 
 def _resolve_ensemble_list(raw: str | None) -> list[str]:
     """Parse --ensemble-critics value. Accepts either:
-       * comma-separated API shortcuts ('gpt-4o-2024-11-20,claude-sonnet-4.6')
+       * comma-separated API shortcuts ('gpt-5.5,claude-sonnet-4.6')
        * comma-separated raw OpenRouter IDs ('openai/gpt-4o,anthropic/claude-...')
        * a mix
        * None → DEFAULT_ENSEMBLE
@@ -103,7 +103,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ensemble-critics", default=None,
                         help="Comma-separated critic models for the ensemble "
                              "(API shortcuts or raw OpenRouter IDs). "
-                             "Default: GPT-4o, Claude Sonnet 4.6, Qwen-2.5-72B")
+                             "Default: GPT-5.5, Claude Sonnet 4.6, Gemini 3.1 Pro")
     parser.add_argument("--ensemble-strict", action="store_true",
                         help="Require ALL critics to pass (default: majority)")
     parser.add_argument("--output-dir", default="output",
