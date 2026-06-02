@@ -1,0 +1,208 @@
+{
+  "id": "29afd23f-e508-4abf-b166-77994777dab9",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "trigonometry",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Егер $\\sin x + \\cos x = \\frac{\\sqrt{6}}{2}$ болса, $\\sin x \\cdot \\cos x$ мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{\\sqrt{6}}{4}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{1}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{\\sqrt{6}}{2}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген шарт: $\\sin x + \\cos x = \\frac{\\sqrt{6}}{2}$.\n\nЕкі жағын да квадратқа көтереміз:\n$$\\left(\\sin x + \\cos x\\right)^2 = \\left(\\frac{\\sqrt{6}}{2}\\right)^2$$\n$$\\sin^2 x + 2\\sin x \\cos x + \\cos^2 x = \\frac{6}{4}$$\n\nПифагор тепе-теңдігіне сәйкес $\\sin^2 x + \\cos^2 x = 1$ болғандықтан:\n$$1 + 2\\sin x \\cos x = \\frac{6}{4} = \\frac{3}{2}$$\n$$2\\sin x \\cos x = \\frac{3}{2} - 1 = \\frac{1}{2}$$\n$$\\sin x \\cos x = \\frac{1}{4}$$\n\nДемек, жауабы $\\frac{1}{4}$.",
+  "latex_formulas": [
+    "\\sin^2 x + \\cos^2 x = 1",
+    "(\\sin x + \\cos x)^2 = 1 + 2\\sin x \\cos x"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.267,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Let s = sin x and c = cos x. Given s + c = sqrt(6)/2. Square both sides: (s + c)^2 = (sqrt(6)/2)^2. Expanding the left side gives s^2 + 2sc + c^2. Since sin^2 x + cos^2 x = 1, we get 1 + 2 sin x cos x = 6/4 = 3/2. Therefore 2 sin x cos x = 3/2 - 1 = 1/2, so sin x cos x = 1/4. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: Given: sin x + cos x = √6/2\n\nSquare both sides:\n(sin x + cos x)² = (√6/2)² = 6/4 = 3/2\n\nExpand the left side:\nsin²x + 2·sin x·cos x + cos²x = 3/2\n\nSince sin²x + cos²x = 1:\n1 + 2·sin x·cos x = 3/2\n\n2·sin x·cos x = 3/2 - 1 = 1/2\n\nsin x·cos x = 1/4\n\nThe answer is 1/4, which corresponds to option A.\n\n[google/gemini-3.1-pro-preview] answered A: Given the equation $\\sin x + \\cos x = \\frac{\\sqrt{6}}{2}$, we need to find the value of $\\sin x \\cdot \\cos x$.\n\nStep 1: Square both sides of the given equation.\n$(\\sin x + \\cos x)^2 = \\left(\\frac{\\sqrt{6}}{2}\\right)^2$\n\nStep 2: Expand the left side using the binomial square formula.\n$\\sin^2 x + 2 \\sin x \\cos x + \\cos^2 x = \\frac{6}{4}$\n\nStep 3: Apply the Pythagorean identity $\\sin^2 x + \\cos^2 x =",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.267,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct and has a unique answer obtained by squaring the given sum and using the Pythagorean identity. However, it is a very standard two-step identity application, so it feels slightly easier than a true medium-level certification item. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a clean 3-step solution path appropriate for Level B. The correct answer is unambiguous and verified. Distractors B and D include √6 terms that could trap students who forget to divide by 2 or confuse intermediate steps, while C (1/2) traps students who stop at 2·sin x·cos x = 1/2 without the final division. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is mathematically sound, perfectly aligned with the requested difficulty level, and features highly plausible distractors based on common student errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='1/4' expected='1/4'",
+      "raw": {
+        "ok": true,
+        "stdout": "1/4",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Let s = sin x and c = cos x. Given s + c = sqrt(6)/2. Square both sides: (s + c)^2 = (sqrt(6)/2)^2. Expanding the left side gives s^2 + 2sc + c^2. Since sin^2 x + cos^2 x = 1, we get 1 + 2 sin x cos x = 6/4 = 3/2. Therefore 2 sin x cos x = 3/2 - 1 = 1/2, so sin x cos x = 1/4. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: Given: sin x + cos x = √6/2\n\nSquare both sides:\n(sin x + cos x)² = (√6/2)² = 6/4 = 3/2\n\nExpand the left side:\nsin²x + 2·sin x·cos x + cos²x = 3/2\n\nSince sin²x + cos²x = 1:\n1 + 2·sin x·cos x = 3/2\n\n2·sin x·cos x = 3/2 - 1 = 1/2\n\nsin x·cos x = 1/4\n\nThe answer is 1/4, which corresponds to option A.\n\n[google/gemini-3.1-pro-preview] answered A: Given the equation $\\sin x + \\cos x = \\frac{\\sqrt{6}}{2}$, we need to find the value of $\\sin x \\cdot \\cos x$.\n\nStep 1: Square both sides of the given equation.\n$(\\sin x + \\cos x)^2 = \\left(\\frac{\\sqrt{6}}{2}\\right)^2$\n\nStep 2: Expand the left side using the binomial square formula.\n$\\sin^2 x + 2 \\sin x \\cos x + \\cos^2 x = \\frac{6}{4}$\n\nStep 3: Apply the Pythagorean identity $\\sin^2 x + \\cos^2 x =",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.267,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct and has a unique answer obtained by squaring the given sum and using the Pythagorean identity. However, it is a very standard two-step identity application, so it feels slightly easier than a true medium-level certification item. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a clean 3-step solution path appropriate for Level B. The correct answer is unambiguous and verified. Distractors B and D include √6 terms that could trap students who forget to divide by 2 or confuse intermediate steps, while C (1/2) traps students who stop at 2·sin x·cos x = 1/2 without the final division. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is mathematically sound, perfectly aligned with the requested difficulty level, and features highly plausible distractors based on common student errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='1/4' expected='1/4'",
+        "raw": {
+          "ok": true,
+          "stdout": "1/4",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let s = sin x and c = cos x. Given s + c = sqrt(6)/2. Square both sides: (s + c)^2 = (sqrt(6)/2)^2. Expanding the left side gives s^2 + 2sc + c^2. Since sin^2 x + cos^2 x = 1, we get 1 + 2 sin x cos x = 6/4 = 3/2. Therefore 2 sin x cos x = 3/2 - 1 = 1/2, so sin x cos x = 1/4. This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct and has a unique answer obtained by squaring the given sum and using the Pythagorean identity. However, it is a very standard two-step identity application, so it feels slightly easier than a true medium-level certification item.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='1/4' expected='1/4'",
+            "raw": {
+              "ok": true,
+              "stdout": "1/4",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given: sin x + cos x = √6/2\n\nSquare both sides:\n(sin x + cos x)² = (√6/2)² = 6/4 = 3/2\n\nExpand the left side:\nsin²x + 2·sin x·cos x + cos²x = 3/2\n\nSince sin²x + cos²x = 1:\n1 + 2·sin x·cos x = 3/2\n\n2·sin x·cos x = 3/2 - 1 = 1/2\n\nsin x·cos x = 1/4\n\nThe answer is 1/4, which corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a clean 3-step solution path appropriate for Level B. The correct answer is unambiguous and verified. Distractors B and D include √6 terms that could trap students who forget to divide by 2 or confuse intermediate steps, while C (1/2) traps students who stop at 2·sin x·cos x = 1/2 without the final division. Kazakh phrasing is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='1/4' expected='1/4'",
+            "raw": {
+              "ok": true,
+              "stdout": "1/4",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given the equation $\\sin x + \\cos x = \\frac{\\sqrt{6}}{2}$, we need to find the value of $\\sin x \\cdot \\cos x$.\n\nStep 1: Square both sides of the given equation.\n$(\\sin x + \\cos x)^2 = \\left(\\frac{\\sqrt{6}}{2}\\right)^2$\n\nStep 2: Expand the left side using the binomial square formula.\n$\\sin^2 x + 2 \\sin x \\cos x + \\cos^2 x = \\frac{6}{4}$\n\nStep 3: Apply the Pythagorean identity $\\sin^2 x + \\cos^2 x = 1$.\n$1 + 2 \\sin x \\cos x = \\frac{3}{2}$\n\nStep 4: Isolate the term with $\\sin x \\cos x$.\n$2 \\sin x \\cos x = \\frac{3}{2} - 1$\n$2 \\sin x \\cos x = \\frac{1}{2}$\n\nStep 5: Divide by 2 to find $\\sin x \\cos x$.\n$\\sin x \\cos x = \\frac{1}{4}$\n\nComparing this result to the given options, it matches Option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, perfectly aligned with the requested difficulty level, and features highly plausible distractors based on common student errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='1/4' expected='1/4'",
+            "raw": {
+              "ok": true,
+              "stdout": "1/4",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:39:59.845710+00:00",
+  "generation_attempts": 1
+}

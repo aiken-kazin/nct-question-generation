@@ -1,0 +1,177 @@
+{
+  "id": "421b7729-896a-4c24-98cb-0e63752c713a",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "perpendicularity_3d",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Егер түзу $l$ $\\alpha$ жазықтығына перпендикуляр болса, онда $l$ түзуі $\\alpha$ жазықтығындағы кез келген түзуге қалай орналасады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Параллель орналасады"
+    },
+    {
+      "label": "B",
+      "text": "Перпендикуляр орналасады"
+    },
+    {
+      "label": "C",
+      "text": "Қиылысады, бірақ перпендикуляр болмайды"
+    },
+    {
+      "label": "D",
+      "text": "Айқас орналасады"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Анықтама бойынша: егер $l$ түзуі $\\alpha$ жазықтығына перпендикуляр болса, онда $l$ түзуі $\\alpha$ жазықтығындағы барлық түзулерге перпендикуляр болады. Бұл — кеңістіктегі перпендикулярлықтың негізгі анықтамасы. Яғни $l \\perp \\alpha$ болса, $\\alpha$ жазықтығындағы кез келген $m$ түзуі үшін $l \\perp m$ болады.",
+  "latex_formulas": [
+    "l \\perp \\alpha \\Rightarrow l \\perp m, \\quad \\forall m \\subset \\alpha"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.833,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: A line l perpendicular to a plane alpha meets alpha at a foot point P. By the standard theorem/definition of a line perpendicular to a plane, l is perpendicular to every line in alpha that passes through P. In many school formulations this is stated as: if a line is perpendicular to a plane, then it is perpendicular to any line lying in that plane. Therefore among the given options the intended an\n\n[anthropic/claude-sonnet-4.6] answered B: By definition, a line l is perpendicular to a plane α if and only if l is perpendicular to EVERY line in plane α that passes through the foot of the perpendicular. In fact, the theorem states more strongly: if l ⊥ α, then l is perpendicular to every line lying in α (not just those through the foot). This is the fundamental theorem of 3D perpendicularity: a line perpendicular to a plane is perpendi\n\n[google/gemini-3.1-pro-preview] answered B: By the definition of a line perpendicular to a plane in solid geometry, a line is perpendicular to a plane if and only if it is perpendicular to every line lying in that plane. Therefore, if line l is perpendicular to plane α, it must be perpendicular to any line in plane α. This corresponds to option B ('Перпендикуляр орналасады').",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.0,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.833,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The intended answer B follows the standard school theorem that a line perpendicular to a plane is perpendicular to lines in that plane. However, the wording “any line” and “how is it located” can create ambiguity because lines in the plane not passing through the foot of the perpendicular are also spatially skew relative to l. | [anthropic/claude-sonnet-4.6] The question correctly tests the fundamental definition of a line perpendicular to a plane, and the keyed answer B is unambiguously correct. Distractor quality is moderate — option A (parallel) and B (perpendicular) are plausible misconceptions, but option C is somewhat awkward and option D (skew/айқас) is easily eliminated by most teachers since a line in the plane and the perpendicular line share a common point. | [google/gemini-3.1-pro-preview] The question perfectly tests the basic definition of a line perpendicular to a plane. The distractors are well-chosen and the language is accurate.",
+    "improvement_suggestions": "[openai/gpt-5.5] To remove ambiguity, specify “the lines in the plane passing through the intersection point” or phrase the question as a direct recall theorem: “l түзуі α жазықтығындағы барлық түзулермен қандай бұрыш жасайды?” | [anthropic/claude-sonnet-4.6] Replace distractor D ('Айқас орналасады') with something more tempting, e.g., 'Тек жазықтықтың негізіне өтетін түзулерге перпендикуляр болады' (perpendicular only to lines through the foot), which targets a very common student misconception and is harder to eliminate.",
+    "verification": {
+      "applicable": false,
+      "ran": false,
+      "passed": false,
+      "contradicted": false,
+      "note": "generator marked verification not applicable",
+      "raw": null
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: A line l perpendicular to a plane alpha meets alpha at a foot point P. By the standard theorem/definition of a line perpendicular to a plane, l is perpendicular to every line in alpha that passes through P. In many school formulations this is stated as: if a line is perpendicular to a plane, then it is perpendicular to any line lying in that plane. Therefore among the given options the intended an\n\n[anthropic/claude-sonnet-4.6] answered B: By definition, a line l is perpendicular to a plane α if and only if l is perpendicular to EVERY line in plane α that passes through the foot of the perpendicular. In fact, the theorem states more strongly: if l ⊥ α, then l is perpendicular to every line lying in α (not just those through the foot). This is the fundamental theorem of 3D perpendicularity: a line perpendicular to a plane is perpendi\n\n[google/gemini-3.1-pro-preview] answered B: By the definition of a line perpendicular to a plane in solid geometry, a line is perpendicular to a plane if and only if it is perpendicular to every line lying in that plane. Therefore, if line l is perpendicular to plane α, it must be perpendicular to any line in plane α. This corresponds to option B ('Перпендикуляр орналасады').",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.833,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The intended answer B follows the standard school theorem that a line perpendicular to a plane is perpendicular to lines in that plane. However, the wording “any line” and “how is it located” can create ambiguity because lines in the plane not passing through the foot of the perpendicular are also spatially skew relative to l. | [anthropic/claude-sonnet-4.6] The question correctly tests the fundamental definition of a line perpendicular to a plane, and the keyed answer B is unambiguously correct. Distractor quality is moderate — option A (parallel) and B (perpendicular) are plausible misconceptions, but option C is somewhat awkward and option D (skew/айқас) is easily eliminated by most teachers since a line in the plane and the perpendicular line share a common point. | [google/gemini-3.1-pro-preview] The question perfectly tests the basic definition of a line perpendicular to a plane. The distractors are well-chosen and the language is accurate.",
+      "improvement_suggestions": "[openai/gpt-5.5] To remove ambiguity, specify “the lines in the plane passing through the intersection point” or phrase the question as a direct recall theorem: “l түзуі α жазықтығындағы барлық түзулермен қандай бұрыш жасайды?” | [anthropic/claude-sonnet-4.6] Replace distractor D ('Айқас орналасады') with something more tempting, e.g., 'Тек жазықтықтың негізіне өтетін түзулерге перпендикуляр болады' (perpendicular only to lines through the foot), which targets a very common student misconception and is harder to eliminate.",
+      "verification": {
+        "applicable": false,
+        "ran": false,
+        "passed": false,
+        "contradicted": false,
+        "note": "generator marked verification not applicable",
+        "raw": null
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A line l perpendicular to a plane alpha meets alpha at a foot point P. By the standard theorem/definition of a line perpendicular to a plane, l is perpendicular to every line in alpha that passes through P. In many school formulations this is stated as: if a line is perpendicular to a plane, then it is perpendicular to any line lying in that plane. Therefore among the given options the intended answer is that l is perpendicular.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 7.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.9,
+          "pass_fail": true,
+          "comments": "The intended answer B follows the standard school theorem that a line perpendicular to a plane is perpendicular to lines in that plane. However, the wording “any line” and “how is it located” can create ambiguity because lines in the plane not passing through the foot of the perpendicular are also spatially skew relative to l.",
+          "improvement_suggestions": "To remove ambiguity, specify “the lines in the plane passing through the intersection point” or phrase the question as a direct recall theorem: “l түзуі α жазықтығындағы барлық түзулермен қандай бұрыш жасайды?”",
+          "verification": {
+            "applicable": false,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "generator marked verification not applicable",
+            "raw": null
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "By definition, a line l is perpendicular to a plane α if and only if l is perpendicular to EVERY line in plane α that passes through the foot of the perpendicular. In fact, the theorem states more strongly: if l ⊥ α, then l is perpendicular to every line lying in α (not just those through the foot). This is the fundamental theorem of 3D perpendicularity: a line perpendicular to a plane is perpendicular to any line contained in that plane. Therefore, line l is perpendicular to every line in plane α.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The question correctly tests the fundamental definition of a line perpendicular to a plane, and the keyed answer B is unambiguously correct. Distractor quality is moderate — option A (parallel) and B (perpendicular) are plausible misconceptions, but option C is somewhat awkward and option D (skew/айқас) is easily eliminated by most teachers since a line in the plane and the perpendicular line share a common point.",
+          "improvement_suggestions": "Replace distractor D ('Айқас орналасады') with something more tempting, e.g., 'Тек жазықтықтың негізіне өтетін түзулерге перпендикуляр болады' (perpendicular only to lines through the foot), which targets a very common student misconception and is harder to eliminate.",
+          "verification": {
+            "applicable": false,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "generator marked verification not applicable",
+            "raw": null
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "By the definition of a line perpendicular to a plane in solid geometry, a line is perpendicular to a plane if and only if it is perpendicular to every line lying in that plane. Therefore, if line l is perpendicular to plane α, it must be perpendicular to any line in plane α. This corresponds to option B ('Перпендикуляр орналасады').",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question perfectly tests the basic definition of a line perpendicular to a plane. The distractors are well-chosen and the language is accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": false,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "generator marked verification not applicable",
+            "raw": null
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:32:36.468553+00:00",
+  "generation_attempts": 1
+}

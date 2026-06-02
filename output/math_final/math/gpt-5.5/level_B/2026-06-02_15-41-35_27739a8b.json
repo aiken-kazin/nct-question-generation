@@ -1,0 +1,210 @@
+{
+  "id": "27739a8b-1f9a-49fb-90cb-60552425490a",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "exponential_log_equations",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Теңдеудің түбірін табыңыз: $\\log_2(4^x-3\\cdot 2^x)=x+1$",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{\\ln 3}{\\ln 2}$"
+    },
+    {
+      "label": "B",
+      "text": "$2$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{\\ln 8}{\\ln 2}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{\\ln 5}{\\ln 2}$"
+    }
+  ],
+  "correct_answer": "D",
+  "explanation": "Анықталу облысы: $4^x-3\\cdot 2^x>0$. $t=2^x$ деп алайық, онда $t>0$ және $t^2-3t>0$, яғни $t>3$. Оң жақ бөлікті логарифм арқылы жазамыз: $x+1=\\log_2 2^x+\\log_2 2=\\log_2(2\\cdot 2^x)=\\log_2(2t)$. Сонда теңдеу $\\log_2(t^2-3t)=\\log_2(2t)$ түріне келеді. Логарифм негіздері бірдей болғандықтан, $t^2-3t=2t$. Бұдан $t^2-5t=0$, яғни $t(t-5)=0$. Анықталу облысы бойынша $t>3$, сондықтан $t=5$. Демек, $2^x=5$, осыдан $x=\\log_2 5=\\frac{\\ln 5}{\\ln 2}$.",
+  "latex_formulas": [
+    "$t=2^x$",
+    "$x+1=\\log_2(2\\cdot 2^x)$",
+    "$\\log_a M=\\log_a N \\Rightarrow M=N$",
+    "$\\log_2 5=\\frac{\\ln 5}{\\ln 2}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered D: Let t = 2^x. Then t > 0 and 4^x = (2^x)^2 = t^2. The equation becomes log_2(t^2 - 3t) = x + 1. Since x = log_2 t, the right side is log_2 t + 1 = log_2 t + log_2 2 = log_2(2t). The logarithm argument must be positive: t^2 - 3t = t(t - 3) > 0. Since t > 0, this gives t > 3. Now log_2(t^2 - 3t) = log_2(2t), so by injectivity of the logarithm, t^2 - 3t = 2t. Hence t^2 - 5t = 0, so t(t - 5) = 0. Becau\n\n[anthropic/claude-sonnet-4.6] answered D: We need to solve: log₂(4^x - 3·2^x) = x + 1\n\nStep 1: Rewrite the equation in exponential form.\nlog₂(4^x - 3·2^x) = x + 1 means:\n4^x - 3·2^x = 2^(x+1) = 2·2^x\n\nStep 2: Substitute t = 2^x (where t > 0).\n4^x = (2^x)² = t²\nSo: t² - 3t = 2t\nt² - 3t - 2t = 0\nt² - 5t = 0\nt(t - 5) = 0\n\nStep 3: Solve for t.\nt = 0 or t = 5\nSince t = 2^x > 0, we discard t = 0.\nSo t = 5, meaning 2^x = 5.\n\nStep 4: Solve for x.\n\n[google/gemini-3.1-pro-preview] answered D: Given the equation: $\\log_2(4^x - 3 \\cdot 2^x) = x + 1$.\n\nFirst, we use the definition of a logarithm to rewrite the equation in exponential form:\n$4^x - 3 \\cdot 2^x = 2^{x+1}$\n\nNext, we can simplify the right side of the equation using the property of exponents $2^{x+1} = 2 \\cdot 2^x$:\n$4^x - 3 \\cdot 2^x = 2 \\cdot 2^x$\n\nNow, subtract $2 \\cdot 2^x$ from both sides to set the equation to zero:\n$4^x",
+    "critic_answer": "D",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the equation has a unique valid solution after applying the domain condition. The item fits level B well, though some distractors are only moderately plausible and option C is unnecessarily disguised as 3. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (D) confirmed by independent verification. The solution requires 3-4 logical steps (substitution, domain analysis, solving quadratic in t, back-substitution), well-matching level B. Kazakh phrasing is natural and terminology is appropriate. | [google/gemini-3.1-pro-preview] The question is well-constructed, mathematically sound, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor A (ln3/ln2) is reachable via t=3 (boundary of domain, not a valid solution), which is plausible. Distractor C (ln8/ln2 = 3) is somewhat reachable but less natural. Distractor B (2) is a clean integer that could arise from a careless error. Overall distractors are reasonable but could be made slightly more systematically motivated — e.g., B=2 could be more explicitly tied to a specific error path. | [google/gemini-3.1-pro-preview] To make the options perfectly uniform, option B could be written as $\\frac{\\ln 4}{\\ln 2}$, though leaving it as 2 is also acceptable.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='log(5)/log(2)' expected='log(5)/log(2)'",
+      "raw": {
+        "ok": true,
+        "stdout": "log(5)/log(2)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered D: Let t = 2^x. Then t > 0 and 4^x = (2^x)^2 = t^2. The equation becomes log_2(t^2 - 3t) = x + 1. Since x = log_2 t, the right side is log_2 t + 1 = log_2 t + log_2 2 = log_2(2t). The logarithm argument must be positive: t^2 - 3t = t(t - 3) > 0. Since t > 0, this gives t > 3. Now log_2(t^2 - 3t) = log_2(2t), so by injectivity of the logarithm, t^2 - 3t = 2t. Hence t^2 - 5t = 0, so t(t - 5) = 0. Becau\n\n[anthropic/claude-sonnet-4.6] answered D: We need to solve: log₂(4^x - 3·2^x) = x + 1\n\nStep 1: Rewrite the equation in exponential form.\nlog₂(4^x - 3·2^x) = x + 1 means:\n4^x - 3·2^x = 2^(x+1) = 2·2^x\n\nStep 2: Substitute t = 2^x (where t > 0).\n4^x = (2^x)² = t²\nSo: t² - 3t = 2t\nt² - 3t - 2t = 0\nt² - 5t = 0\nt(t - 5) = 0\n\nStep 3: Solve for t.\nt = 0 or t = 5\nSince t = 2^x > 0, we discard t = 0.\nSo t = 5, meaning 2^x = 5.\n\nStep 4: Solve for x.\n\n[google/gemini-3.1-pro-preview] answered D: Given the equation: $\\log_2(4^x - 3 \\cdot 2^x) = x + 1$.\n\nFirst, we use the definition of a logarithm to rewrite the equation in exponential form:\n$4^x - 3 \\cdot 2^x = 2^{x+1}$\n\nNext, we can simplify the right side of the equation using the property of exponents $2^{x+1} = 2 \\cdot 2^x$:\n$4^x - 3 \\cdot 2^x = 2 \\cdot 2^x$\n\nNow, subtract $2 \\cdot 2^x$ from both sides to set the equation to zero:\n$4^x",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the equation has a unique valid solution after applying the domain condition. The item fits level B well, though some distractors are only moderately plausible and option C is unnecessarily disguised as 3. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (D) confirmed by independent verification. The solution requires 3-4 logical steps (substitution, domain analysis, solving quadratic in t, back-substitution), well-matching level B. Kazakh phrasing is natural and terminology is appropriate. | [google/gemini-3.1-pro-preview] The question is well-constructed, mathematically sound, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor A (ln3/ln2) is reachable via t=3 (boundary of domain, not a valid solution), which is plausible. Distractor C (ln8/ln2 = 3) is somewhat reachable but less natural. Distractor B (2) is a clean integer that could arise from a careless error. Overall distractors are reasonable but could be made slightly more systematically motivated — e.g., B=2 could be more explicitly tied to a specific error path. | [google/gemini-3.1-pro-preview] To make the options perfectly uniform, option B could be written as $\\frac{\\ln 4}{\\ln 2}$, though leaving it as 2 is also acceptable.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='log(5)/log(2)' expected='log(5)/log(2)'",
+        "raw": {
+          "ok": true,
+          "stdout": "log(5)/log(2)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let t = 2^x. Then t > 0 and 4^x = (2^x)^2 = t^2. The equation becomes log_2(t^2 - 3t) = x + 1. Since x = log_2 t, the right side is log_2 t + 1 = log_2 t + log_2 2 = log_2(2t). The logarithm argument must be positive: t^2 - 3t = t(t - 3) > 0. Since t > 0, this gives t > 3. Now log_2(t^2 - 3t) = log_2(2t), so by injectivity of the logarithm, t^2 - 3t = 2t. Hence t^2 - 5t = 0, so t(t - 5) = 0. Because t > 3, the valid solution is t = 5. Therefore 2^x = 5, so x = log_2 5 = ln 5 / ln 2. This corresponds to option D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the equation has a unique valid solution after applying the domain condition. The item fits level B well, though some distractors are only moderately plausible and option C is unnecessarily disguised as 3.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='log(5)/log(2)' expected='log(5)/log(2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "log(5)/log(2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve: log₂(4^x - 3·2^x) = x + 1\n\nStep 1: Rewrite the equation in exponential form.\nlog₂(4^x - 3·2^x) = x + 1 means:\n4^x - 3·2^x = 2^(x+1) = 2·2^x\n\nStep 2: Substitute t = 2^x (where t > 0).\n4^x = (2^x)² = t²\nSo: t² - 3t = 2t\nt² - 3t - 2t = 0\nt² - 5t = 0\nt(t - 5) = 0\n\nStep 3: Solve for t.\nt = 0 or t = 5\nSince t = 2^x > 0, we discard t = 0.\nSo t = 5, meaning 2^x = 5.\n\nStep 4: Solve for x.\n2^x = 5\nx = log₂(5) = ln5/ln2\n\nStep 5: Verify the domain condition.\n4^x - 3·2^x = 25 - 15 = 10 > 0 ✓\n\nStep 6: Verify the equation.\nlog₂(10) = x + 1?\nx + 1 = log₂(5) + 1 = log₂(5) + log₂(2) = log₂(10) ✓\n\nThe answer is x = ln5/ln2, which corresponds to option D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a unique correct answer (D) confirmed by independent verification. The solution requires 3-4 logical steps (substitution, domain analysis, solving quadratic in t, back-substitution), well-matching level B. Kazakh phrasing is natural and terminology is appropriate.",
+          "improvement_suggestions": "Distractor A (ln3/ln2) is reachable via t=3 (boundary of domain, not a valid solution), which is plausible. Distractor C (ln8/ln2 = 3) is somewhat reachable but less natural. Distractor B (2) is a clean integer that could arise from a careless error. Overall distractors are reasonable but could be made slightly more systematically motivated — e.g., B=2 could be more explicitly tied to a specific error path.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='log(5)/log(2)' expected='log(5)/log(2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "log(5)/log(2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given the equation: $\\log_2(4^x - 3 \\cdot 2^x) = x + 1$.\n\nFirst, we use the definition of a logarithm to rewrite the equation in exponential form:\n$4^x - 3 \\cdot 2^x = 2^{x+1}$\n\nNext, we can simplify the right side of the equation using the property of exponents $2^{x+1} = 2 \\cdot 2^x$:\n$4^x - 3 \\cdot 2^x = 2 \\cdot 2^x$\n\nNow, subtract $2 \\cdot 2^x$ from both sides to set the equation to zero:\n$4^x - 5 \\cdot 2^x = 0$\n\nWe can rewrite $4^x$ as $(2^x)^2$. Let $y = 2^x$. Since $2^x > 0$ for all real $x$, we must have $y > 0$. Substituting $y$ into the equation gives:\n$y^2 - 5y = 0$\n$y(y - 5) = 0$\n\nThis yields two possible solutions for $y$: $y = 0$ or $y = 5$. Since $y$ must be strictly greater than 0, we discard $y = 0$ and keep $y = 5$.\n\nSubstituting back $2^x$ for $y$, we get:\n$2^x = 5$\n\nTo solve for $x$, we can take the natural logarithm (ln) of both sides:\n$\\ln(2^x) = \\ln(5)$\n$x \\ln(2) = \\ln(5)$\n$x = \\frac{\\ln 5}{\\ln 2}$\n\nFinally, we verify that the argument of the original logarithm is positive for this value of $x$:\n$4^x - 3 \\cdot 2^x = 5^2 - 3(5) = 25 - 15 = 10 > 0$. The solution is valid.\n\nComparing this result to the given options, it matches option D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically sound, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+          "improvement_suggestions": "To make the options perfectly uniform, option B could be written as $\\frac{\\ln 4}{\\ln 2}$, though leaving it as 2 is also acceptable.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='log(5)/log(2)' expected='log(5)/log(2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "log(5)/log(2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:41:35.075916+00:00",
+  "generation_attempts": 1
+}

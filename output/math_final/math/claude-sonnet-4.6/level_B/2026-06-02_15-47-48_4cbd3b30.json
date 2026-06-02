@@ -1,0 +1,209 @@
+{
+  "id": "4cbd3b30-3232-4d99-b2b6-776cc0420faf",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polyhedra",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Дұрыс төртбұрышты пирамиданың табанының қабырғасы $6$ см, ал бүйір қырының ұзындығы $5$ см. Пирамиданың толық бетінің ауданын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$84$ см$^2$"
+    },
+    {
+      "label": "B",
+      "text": "$96$ см$^2$"
+    },
+    {
+      "label": "C",
+      "text": "$60$ см$^2$"
+    },
+    {
+      "label": "D",
+      "text": "$72$ см$^2$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Дұрыс төртбұрышты пирамиданың толық бетінің ауданы: $S = S_{\\text{таб}} + S_{\\text{бүйір}}$.\n\n**1-қадам: Табанның ауданы.**\nТабан — қабырғасы $a = 6$ см болатын квадрат:\n$S_{\\text{таб}} = a^2 = 6^2 = 36$ см$^2$.\n\n**2-қадам: Бүйір жақтың апофемасын табу.**\nБүйір қыры $l = 5$ см, табанның жарты диагоналі $\\frac{a\\sqrt{2}}{2} = \\frac{6\\sqrt{2}}{2} = 3\\sqrt{2}$ см.\nАпофема (бүйір үшбұрыштың биіктігі):\n$h_{\\text{ап}} = \\sqrt{l^2 - \\left(\\frac{a}{2}\\right)^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$ см.\n\n**3-қадам: Бүйір бетінің ауданы.**\nПирамидада 4 бүйір үшбұрыш бар, әрқайсысының негізі $a = 6$ см, биіктігі $h_{\\text{ап}} = 4$ см:\n$S_{\\text{бүйір}} = 4 \\cdot \\frac{1}{2} \\cdot a \\cdot h_{\\text{ап}} = 4 \\cdot \\frac{1}{2} \\cdot 6 \\cdot 4 = 48$ см$^2$.\n\n**4-қадам: Толық бетінің ауданы.**\n$S = 36 + 48 = 84$ см$^2$.",
+  "latex_formulas": [
+    "S = S_{\\text{таб}} + S_{\\text{бүйір}}",
+    "h_{\\text{ап}} = \\sqrt{l^2 - \\left(\\frac{a}{2}\\right)^2}",
+    "S_{\\text{бүйір}} = 4 \\cdot \\frac{1}{2} \\cdot a \\cdot h_{\\text{ап}}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: A regular square pyramid has a square base with side length 6 cm. The base area is 6^2 = 36 cm^2. Each lateral face is an isosceles triangle with equal sides equal to the lateral edge, 5 cm, and base 6 cm. The altitude of one lateral triangular face splits the base into two segments of length 3 cm each. By the Pythagorean theorem, the face altitude is sqrt(5^2 - 3^2) = sqrt(25 - 9) = sqrt(16) = 4 \n\n[anthropic/claude-sonnet-4.6] answered A: We have a regular quadrilateral pyramid (square base) with base edge a = 6 cm and lateral edge (slant edge from apex to base corner) l = 5 cm.\n\nStep 1: Find the slant height of a lateral face.\nThe base is a square with side 6 cm. The center of the base is at distance (half the diagonal)/... wait, let me use the apothem of the base.\n\nThe apothem of the base (distance from center to midpoint of a si\n\n[google/gemini-3.1-pro-preview] answered A: To find the total surface area of a regular quadrangular pyramid, we need to calculate the area of its base and the area of its lateral surface.\n\n1. Area of the base:\nThe base is a square with side length a = 6 cm.\nS_base = a^2 = 6^2 = 36 cm^2.\n\n2. Area of the lateral surface:\nThe lateral surface consists of 4 congruent isosceles triangles. Each triangle has a base of a = 6 cm and two lateral edge",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a unique keyed answer, and fits the requested medium level with a clear multi-step surface-area computation. The distractors are generally plausible, though not all correspond to equally common errors. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically correct, and appropriately challenging for level B. The answer A=84 cm² is verified by independent calculation. Distractors are plausible (e.g., 96 could come from using wrong apothem, 60 from omitting base, 72 from a calculation error), though not all are immediately traceable to a single specific misconception. | [google/gemini-3.1-pro-preview] The question is well-structured, unambiguous, and perfectly aligns with the requested difficulty level B. The distractors are carefully chosen to reflect common student mistakes, such as confusing the lateral edge with the apothem.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='84' expected='84'",
+      "raw": {
+        "ok": true,
+        "stdout": "84",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: A regular square pyramid has a square base with side length 6 cm. The base area is 6^2 = 36 cm^2. Each lateral face is an isosceles triangle with equal sides equal to the lateral edge, 5 cm, and base 6 cm. The altitude of one lateral triangular face splits the base into two segments of length 3 cm each. By the Pythagorean theorem, the face altitude is sqrt(5^2 - 3^2) = sqrt(25 - 9) = sqrt(16) = 4 \n\n[anthropic/claude-sonnet-4.6] answered A: We have a regular quadrilateral pyramid (square base) with base edge a = 6 cm and lateral edge (slant edge from apex to base corner) l = 5 cm.\n\nStep 1: Find the slant height of a lateral face.\nThe base is a square with side 6 cm. The center of the base is at distance (half the diagonal)/... wait, let me use the apothem of the base.\n\nThe apothem of the base (distance from center to midpoint of a si\n\n[google/gemini-3.1-pro-preview] answered A: To find the total surface area of a regular quadrangular pyramid, we need to calculate the area of its base and the area of its lateral surface.\n\n1. Area of the base:\nThe base is a square with side length a = 6 cm.\nS_base = a^2 = 6^2 = 36 cm^2.\n\n2. Area of the lateral surface:\nThe lateral surface consists of 4 congruent isosceles triangles. Each triangle has a base of a = 6 cm and two lateral edge",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a unique keyed answer, and fits the requested medium level with a clear multi-step surface-area computation. The distractors are generally plausible, though not all correspond to equally common errors. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically correct, and appropriately challenging for level B. The answer A=84 cm² is verified by independent calculation. Distractors are plausible (e.g., 96 could come from using wrong apothem, 60 from omitting base, 72 from a calculation error), though not all are immediately traceable to a single specific misconception. | [google/gemini-3.1-pro-preview] The question is well-structured, unambiguous, and perfectly aligns with the requested difficulty level B. The distractors are carefully chosen to reflect common student mistakes, such as confusing the lateral edge with the apothem.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='84' expected='84'",
+        "raw": {
+          "ok": true,
+          "stdout": "84",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A regular square pyramid has a square base with side length 6 cm. The base area is 6^2 = 36 cm^2. Each lateral face is an isosceles triangle with equal sides equal to the lateral edge, 5 cm, and base 6 cm. The altitude of one lateral triangular face splits the base into two segments of length 3 cm each. By the Pythagorean theorem, the face altitude is sqrt(5^2 - 3^2) = sqrt(25 - 9) = sqrt(16) = 4 cm. The area of one lateral face is (1/2) * 6 * 4 = 12 cm^2. There are 4 lateral faces, so the lateral surface area is 4 * 12 = 48 cm^2. The total surface area is 36 + 48 = 84 cm^2.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a unique keyed answer, and fits the requested medium level with a clear multi-step surface-area computation. The distractors are generally plausible, though not all correspond to equally common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='84' expected='84'",
+            "raw": {
+              "ok": true,
+              "stdout": "84",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We have a regular quadrilateral pyramid (square base) with base edge a = 6 cm and lateral edge (slant edge from apex to base corner) l = 5 cm.\n\nStep 1: Find the slant height of a lateral face.\nThe base is a square with side 6 cm. The center of the base is at distance (half the diagonal)/... wait, let me use the apothem of the base.\n\nThe apothem of the base (distance from center to midpoint of a side) = a/2 = 6/2 = 3 cm.\n\nThe lateral edge goes from apex to a corner of the base. Distance from center to corner = (a√2)/2 = 6√2/2 = 3√2 cm.\n\nStep 2: Find the height of the pyramid.\nUsing the lateral edge: l² = h² + (3√2)²\n5² = h² + 18\n25 = h² + 18\nh² = 7\nh = √7 cm\n\nStep 3: Find the slant height of a lateral face (apothem of pyramid).\nSlant height m = √(h² + (a/2)²) = √(7 + 9) = √16 = 4 cm\n\nStep 4: Calculate the lateral surface area.\nEach triangular face has base 6 cm and height (slant height) 4 cm.\nArea of one triangle = (1/2) × 6 × 4 = 12 cm²\nTotal lateral area = 4 × 12 = 48 cm²\n\nStep 5: Calculate the base area.\nBase area = 6² = 36 cm²\n\nStep 6: Total surface area.\nTotal = 48 + 36 = 84 cm²\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically correct, and appropriately challenging for level B. The answer A=84 cm² is verified by independent calculation. Distractors are plausible (e.g., 96 could come from using wrong apothem, 60 from omitting base, 72 from a calculation error), though not all are immediately traceable to a single specific misconception.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='84' expected='84'",
+            "raw": {
+              "ok": true,
+              "stdout": "84",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the total surface area of a regular quadrangular pyramid, we need to calculate the area of its base and the area of its lateral surface.\n\n1. Area of the base:\nThe base is a square with side length a = 6 cm.\nS_base = a^2 = 6^2 = 36 cm^2.\n\n2. Area of the lateral surface:\nThe lateral surface consists of 4 congruent isosceles triangles. Each triangle has a base of a = 6 cm and two lateral edges of l = 5 cm.\nTo find the area of one such triangle, we first need to find its height (the apothem of the pyramid, h_a). We can use the Pythagorean theorem on the right triangle formed by the apothem, half of the base, and the lateral edge:\nh_a^2 + (a/2)^2 = l^2\nh_a^2 + (6/2)^2 = 5^2\nh_a^2 + 3^2 = 25\nh_a^2 + 9 = 25\nh_a^2 = 16\nh_a = 4 cm.\n\nNow, the area of one lateral triangle is:\nS_triangle = (1/2) * a * h_a = (1/2) * 6 * 4 = 12 cm^2.\n\nSince there are 4 such triangles, the total lateral surface area is:\nS_lateral = 4 * S_triangle = 4 * 12 = 48 cm^2.\n\n3. Total surface area:\nThe total surface area is the sum of the base area and the lateral surface area:\nS_total = S_base + S_lateral = 36 + 48 = 84 cm^2.\n\nComparing this result to the given options, 84 cm^2 corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, unambiguous, and perfectly aligns with the requested difficulty level B. The distractors are carefully chosen to reflect common student mistakes, such as confusing the lateral edge with the apothem.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='84' expected='84'",
+            "raw": {
+              "ok": true,
+              "stdout": "84",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:47:48.323425+00:00",
+  "generation_attempts": 1
+}

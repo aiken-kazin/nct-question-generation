@@ -1,0 +1,208 @@
+{
+  "id": "38a78f3b-ddd1-4cd9-a969-9dbdd6c8ac87",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "perpendicularity_3d",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Ұзындығы $8$-ге тең кесінді жазықтықпен $30^\\circ$ бұрыш жасайды. Осы кесіндінің жазықтықтағы ортогональ проекциясының ұзындығын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$4$"
+    },
+    {
+      "label": "B",
+      "text": "$8\\sqrt{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$4\\sqrt{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$8$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Кесіндінің жазықтықтағы ортогональ проекциясының ұзындығы кесінді ұзындығын жазықтықпен жасайтын бұрыштың косинусына көбейткенге тең: $l_{\\text{пр}}=l\\cos\\varphi$. Мұнда $l=8$, $\\varphi=30^\\circ$. Сондықтан $l_{\\text{пр}}=8\\cos30^\\circ=8\\cdot\\frac{\\sqrt{3}}{2}=4\\sqrt{3}$. Дұрыс жауап: $4\\sqrt{3}$.",
+  "latex_formulas": [
+    "$l_{\\text{пр}}=l\\cos\\varphi$",
+    "$\\cos30^\\circ=\\frac{\\sqrt{3}}{2}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.667,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: A segment of length L = 8 makes an angle of 30° with a plane. The length of the orthogonal projection of the segment onto the plane equals L cos(alpha), where alpha is the angle between the segment and the plane. Therefore, projection length = 8 cos 30° = 8 · (sqrt(3)/2) = 4sqrt(3). This matches option C.\n\n[anthropic/claude-sonnet-4.6] answered C: The projection of a line segment onto a plane: if the segment makes an angle θ with the plane, then the length of its orthogonal projection onto the plane is L·cos(θ), where L is the length of the segment.\n\nGiven: L = 8, θ = 30°\n\nProjection length = 8 · cos(30°) = 8 · (√3/2) = 4√3\n\n[google/gemini-3.1-pro-preview] answered C: Let the length of the line segment be L = 8. The angle between the line segment and the plane is given as θ = 30°. The orthogonal projection of the line segment onto the plane forms a right-angled triangle where the segment itself is the hypotenuse, the projection is the adjacent side to the angle θ, and the perpendicular from the end of the segment to the plane is the opposite side. \n\nThe length ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.667,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution using the standard projection formula. The task aligns well with basic difficulty, and the distractors reflect common errors such as using sine, no projection change, or mishandling the cosine value. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed (C = 4√3), and perfectly matches Level A difficulty — a single direct application of the projection formula l·cos(θ). Distractors cover common errors: A=4 (using sin instead of cos), B=8√3 (forgetting to multiply by 1/2), D=8 (no projection applied). Kazakh is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level, has plausible distractors based on common trigonometric errors, and uses correct Kazakh mathematical terminology.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='4*sqrt(3)' expected='4*sqrt(3)'",
+      "raw": {
+        "ok": true,
+        "stdout": "4*sqrt(3)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: A segment of length L = 8 makes an angle of 30° with a plane. The length of the orthogonal projection of the segment onto the plane equals L cos(alpha), where alpha is the angle between the segment and the plane. Therefore, projection length = 8 cos 30° = 8 · (sqrt(3)/2) = 4sqrt(3). This matches option C.\n\n[anthropic/claude-sonnet-4.6] answered C: The projection of a line segment onto a plane: if the segment makes an angle θ with the plane, then the length of its orthogonal projection onto the plane is L·cos(θ), where L is the length of the segment.\n\nGiven: L = 8, θ = 30°\n\nProjection length = 8 · cos(30°) = 8 · (√3/2) = 4√3\n\n[google/gemini-3.1-pro-preview] answered C: Let the length of the line segment be L = 8. The angle between the line segment and the plane is given as θ = 30°. The orthogonal projection of the line segment onto the plane forms a right-angled triangle where the segment itself is the hypotenuse, the projection is the adjacent side to the angle θ, and the perpendicular from the end of the segment to the plane is the opposite side. \n\nThe length ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.667,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution using the standard projection formula. The task aligns well with basic difficulty, and the distractors reflect common errors such as using sine, no projection change, or mishandling the cosine value. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed (C = 4√3), and perfectly matches Level A difficulty — a single direct application of the projection formula l·cos(θ). Distractors cover common errors: A=4 (using sin instead of cos), B=8√3 (forgetting to multiply by 1/2), D=8 (no projection applied). Kazakh is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level, has plausible distractors based on common trigonometric errors, and uses correct Kazakh mathematical terminology.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='4*sqrt(3)' expected='4*sqrt(3)'",
+        "raw": {
+          "ok": true,
+          "stdout": "4*sqrt(3)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A segment of length L = 8 makes an angle of 30° with a plane. The length of the orthogonal projection of the segment onto the plane equals L cos(alpha), where alpha is the angle between the segment and the plane. Therefore, projection length = 8 cos 30° = 8 · (sqrt(3)/2) = 4sqrt(3). This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single unambiguous solution using the standard projection formula. The task aligns well with basic difficulty, and the distractors reflect common errors such as using sine, no projection change, or mishandling the cosine value.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='4*sqrt(3)' expected='4*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "4*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The projection of a line segment onto a plane: if the segment makes an angle θ with the plane, then the length of its orthogonal projection onto the plane is L·cos(θ), where L is the length of the segment.\n\nGiven: L = 8, θ = 30°\n\nProjection length = 8 · cos(30°) = 8 · (√3/2) = 4√3",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-keyed (C = 4√3), and perfectly matches Level A difficulty — a single direct application of the projection formula l·cos(θ). Distractors cover common errors: A=4 (using sin instead of cos), B=8√3 (forgetting to multiply by 1/2), D=8 (no projection applied). Kazakh is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='4*sqrt(3)' expected='4*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "4*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the length of the line segment be L = 8. The angle between the line segment and the plane is given as θ = 30°. The orthogonal projection of the line segment onto the plane forms a right-angled triangle where the segment itself is the hypotenuse, the projection is the adjacent side to the angle θ, and the perpendicular from the end of the segment to the plane is the opposite side. \n\nThe length of the orthogonal projection (let's call it P) can be calculated using the cosine function:\nP = L * cos(θ)\nP = 8 * cos(30°)\nSince cos(30°) = √3 / 2, we have:\nP = 8 * (√3 / 2) = 4√3.\n\nComparing this result with the given options, it matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the requested difficulty level, has plausible distractors based on common trigonometric errors, and uses correct Kazakh mathematical terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='4*sqrt(3)' expected='4*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "4*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:30:41.278447+00:00",
+  "generation_attempts": 1
+}

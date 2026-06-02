@@ -1,0 +1,209 @@
+{
+  "id": "ad007097-6566-4642-8948-654992bd1797",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "functions_limits",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$f(x) = \\frac{x^2 - 9}{x - 3}$ функциясы үшін $\\lim_{x \\to 3} f(x)$ мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$0$"
+    },
+    {
+      "label": "B",
+      "text": "$3$"
+    },
+    {
+      "label": "C",
+      "text": "$6$"
+    },
+    {
+      "label": "D",
+      "text": "$9$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген функция: $f(x) = \\frac{x^2 - 9}{x - 3}$.\n\n**1-қадам:** Алымды жіктейміз:\n$x^2 - 9 = (x-3)(x+3)$\n\n**2-қадам:** Функцияны жеңілдетеміз ($x \\neq 3$ болғанда):\n$f(x) = \\frac{(x-3)(x+3)}{x-3} = x + 3$\n\n**3-қадам:** Шекті есептейміз:\n$\\lim_{x \\to 3} f(x) = \\lim_{x \\to 3} (x + 3) = 3 + 3 = 6$\n\nДемек, жауап $6$.",
+  "latex_formulas": [
+    "\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}",
+    "x^2 - 9 = (x-3)(x+3)",
+    "\\lim_{x \\to 3}(x+3) = 6"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We need to find lim_{x -> 3} f(x), where f(x) = (x^2 - 9)/(x - 3). Factor the numerator using the difference of squares: x^2 - 9 = (x - 3)(x + 3). Thus, for x != 3, f(x) = ((x - 3)(x + 3))/(x - 3) = x + 3. Therefore, lim_{x -> 3} f(x) = lim_{x -> 3} (x + 3) = 3 + 3 = 6. The correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find lim_{x→3} f(x) where f(x) = (x² - 9)/(x - 3).\n\nStep 1: Factor the numerator.\nx² - 9 = (x - 3)(x + 3)\n\nStep 2: Simplify the expression (for x ≠ 3).\nf(x) = (x - 3)(x + 3)/(x - 3) = x + 3\n\nStep 3: Take the limit as x → 3.\nlim_{x→3} (x + 3) = 3 + 3 = 6\n\nThe answer is 6.\n\n[google/gemini-3.1-pro-preview] answered C: To find the limit of the function f(x) = (x^2 - 9) / (x - 3) as x approaches 3, we first substitute x = 3 into the expression. This gives (3^2 - 9) / (3 - 3) = 0 / 0, which is an indeterminate form. To resolve this, we can factor the numerator, which is a difference of squares: x^2 - 9 = (x - 3)(x + 3). Substituting this back into the limit expression, we get \\lim_{x \\to 3} (x - 3)(x + 3) / (x - 3",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.667,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is mathematically unambiguous with exactly one correct option. The question is well written, but it is somewhat routine and may be slightly easier than a true medium-level teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-structured. The classic removable discontinuity limit problem is appropriate for teacher certification. Distractors are plausible (0 from direct substitution giving 0/0, 3 from partial evaluation, 9 from squaring), though D=9 is somewhat less reachable. The difficulty is slightly easy for level B as the factoring step is very standard. | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-formatted, but it is too basic for a Level B teacher certification exam.",
+    "improvement_suggestions": "[google/gemini-3.1-pro-preview] To better align with Level B difficulty for practicing teachers, increase the complexity of the limit (e.g., include radicals requiring rationalization, or use trigonometric limits).",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='6' expected='6'",
+      "raw": {
+        "ok": true,
+        "stdout": "6",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We need to find lim_{x -> 3} f(x), where f(x) = (x^2 - 9)/(x - 3). Factor the numerator using the difference of squares: x^2 - 9 = (x - 3)(x + 3). Thus, for x != 3, f(x) = ((x - 3)(x + 3))/(x - 3) = x + 3. Therefore, lim_{x -> 3} f(x) = lim_{x -> 3} (x + 3) = 3 + 3 = 6. The correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find lim_{x→3} f(x) where f(x) = (x² - 9)/(x - 3).\n\nStep 1: Factor the numerator.\nx² - 9 = (x - 3)(x + 3)\n\nStep 2: Simplify the expression (for x ≠ 3).\nf(x) = (x - 3)(x + 3)/(x - 3) = x + 3\n\nStep 3: Take the limit as x → 3.\nlim_{x→3} (x + 3) = 3 + 3 = 6\n\nThe answer is 6.\n\n[google/gemini-3.1-pro-preview] answered C: To find the limit of the function f(x) = (x^2 - 9) / (x - 3) as x approaches 3, we first substitute x = 3 into the expression. This gives (3^2 - 9) / (3 - 3) = 0 / 0, which is an indeterminate form. To resolve this, we can factor the numerator, which is a difference of squares: x^2 - 9 = (x - 3)(x + 3). Substituting this back into the limit expression, we get \\lim_{x \\to 3} (x - 3)(x + 3) / (x - 3",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is mathematically unambiguous with exactly one correct option. The question is well written, but it is somewhat routine and may be slightly easier than a true medium-level teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-structured. The classic removable discontinuity limit problem is appropriate for teacher certification. Distractors are plausible (0 from direct substitution giving 0/0, 3 from partial evaluation, 9 from squaring), though D=9 is somewhat less reachable. The difficulty is slightly easy for level B as the factoring step is very standard. | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-formatted, but it is too basic for a Level B teacher certification exam.",
+      "improvement_suggestions": "[google/gemini-3.1-pro-preview] To better align with Level B difficulty for practicing teachers, increase the complexity of the limit (e.g., include radicals requiring rationalization, or use trigonometric limits).",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='6' expected='6'",
+        "raw": {
+          "ok": true,
+          "stdout": "6",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find lim_{x -> 3} f(x), where f(x) = (x^2 - 9)/(x - 3). Factor the numerator using the difference of squares: x^2 - 9 = (x - 3)(x + 3). Thus, for x != 3, f(x) = ((x - 3)(x + 3))/(x - 3) = x + 3. Therefore, lim_{x -> 3} f(x) = lim_{x -> 3} (x + 3) = 3 + 3 = 6. The correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item is mathematically unambiguous with exactly one correct option. The question is well written, but it is somewhat routine and may be slightly easier than a true medium-level teacher-certification item.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find lim_{x→3} f(x) where f(x) = (x² - 9)/(x - 3).\n\nStep 1: Factor the numerator.\nx² - 9 = (x - 3)(x + 3)\n\nStep 2: Simplify the expression (for x ≠ 3).\nf(x) = (x - 3)(x + 3)/(x - 3) = x + 3\n\nStep 3: Take the limit as x → 3.\nlim_{x→3} (x + 3) = 3 + 3 = 6\n\nThe answer is 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-structured. The classic removable discontinuity limit problem is appropriate for teacher certification. Distractors are plausible (0 from direct substitution giving 0/0, 3 from partial evaluation, 9 from squaring), though D=9 is somewhat less reachable. The difficulty is slightly easy for level B as the factoring step is very standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the limit of the function f(x) = (x^2 - 9) / (x - 3) as x approaches 3, we first substitute x = 3 into the expression. This gives (3^2 - 9) / (3 - 3) = 0 / 0, which is an indeterminate form. To resolve this, we can factor the numerator, which is a difference of squares: x^2 - 9 = (x - 3)(x + 3). Substituting this back into the limit expression, we get \\lim_{x \\to 3} (x - 3)(x + 3) / (x - 3). Since x is approaching 3 but not equal to 3, we can cancel the common factor (x - 3) from the numerator and the denominator. This leaves us with \\lim_{x \\to 3} (x + 3). Now, we can evaluate the limit by direct substitution: 3 + 3 = 6. Therefore, the limit is 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 4.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-formatted, but it is too basic for a Level B teacher certification exam.",
+          "improvement_suggestions": "To better align with Level B difficulty for practicing teachers, increase the complexity of the limit (e.g., include radicals requiring rationalization, or use trigonometric limits).",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:50:20.768339+00:00",
+  "generation_attempts": 1
+}

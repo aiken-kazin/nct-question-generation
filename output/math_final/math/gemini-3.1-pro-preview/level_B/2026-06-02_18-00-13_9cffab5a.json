@@ -1,0 +1,210 @@
+{
+  "id": "9cffab5a-1a2b-4434-9876-e39e1f4d3077",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polyhedra",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Дұрыс үшбұрышты пирамиданың табан қабырғасы $6\\sqrt{3}$, ал бүйір қыры $10$ болса, пирамиданың көлемі",
+  "options": [
+    {
+      "label": "A",
+      "text": "$144\\sqrt{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$216\\sqrt{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$72\\sqrt{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$108\\sqrt{3}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1. Пирамиданың табаны – қабырғасы $a = 6\\sqrt{3}$ болатын дұрыс үшбұрыш. Оның ауданы:\n$S_{\\text{таб}} = \\frac{a^2\\sqrt{3}}{4} = \\frac{(6\\sqrt{3})^2\\sqrt{3}}{4} = \\frac{108\\sqrt{3}}{4} = 27\\sqrt{3}$.\n\n2. Дұрыс үшбұрышқа сырттай сызылған шеңбердің радиусы (бұл пирамида биіктігінің табанынан табанының төбесіне дейінгі қашықтық):\n$R = \\frac{a}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{\\sqrt{3}} = 6$.\n\n3. Пирамиданың биіктігін ($h$) тікбұрышты үшбұрыштан Пифагор теоремасы арқылы табамыз:\n$h = \\sqrt{l^2 - R^2} = \\sqrt{10^2 - 6^2} = \\sqrt{100 - 36} = \\sqrt{64} = 8$.\n\n4. Пирамиданың көлемін есептейміз:\n$V = \\frac{1}{3} S_{\\text{таб}} \\cdot h = \\frac{1}{3} \\cdot 27\\sqrt{3} \\cdot 8 = 72\\sqrt{3}$.",
+  "latex_formulas": [
+    "S_{\\text{таб}} = \\frac{a^2\\sqrt{3}}{4}",
+    "R = \\frac{a}{\\sqrt{3}}",
+    "h = \\sqrt{l^2 - R^2}",
+    "V = \\frac{1}{3} S_{\\text{таб}} \\cdot h"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: A regular triangular pyramid has an equilateral triangle as its base, and the apex is directly above the center of the base. The base side is a = 6√3. The base area is S = (a^2√3)/4 = ((6√3)^2√3)/4 = (108√3)/4 = 27√3. In an equilateral triangle, the distance from the center to a vertex is the circumradius R = a/√3 = (6√3)/√3 = 6. The lateral edge is 10, so the pyramid height h forms a right triang\n\n[anthropic/claude-sonnet-4.6] answered C: We have a regular triangular pyramid with base edge a = 6√3 and lateral edge l = 10.\n\nStep 1: Find the circumradius of the equilateral triangular base.\nFor an equilateral triangle with side a, the circumradius R = a/√3.\nR = 6√3/√3 = 6.\n\nStep 2: Find the height of the pyramid.\nThe apex is directly above the centroid of the base. The distance from centroid to vertex is R = 6.\nUsing the lateral edge \n\n[google/gemini-3.1-pro-preview] answered C: To find the volume of a regular triangular pyramid, we use the formula V = (1/3) * A * h, where A is the area of the base and h is the height of the pyramid.\n\n1. Calculate the area of the base (A):\nThe base is an equilateral triangle with side length a = 6√3.\nThe formula for the area of an equilateral triangle is A = (√3 / 4) * a^2.\na^2 = (6√3)^2 = 36 * 3 = 108.\nA = (√3 / 4) * 108 = 27√3.\n\n2. Calc",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 8.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a single unambiguous solution using the base area, circumradius, pyramid height, and volume formula. The item is appropriately medium-level, though the distractors are mostly simple multiples of the correct value rather than all being tied to highly common misconceptions. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a clear 4-step solution path matching Level B difficulty. The correct answer is unambiguously C=72√3, verified independently and by sandbox. Distractors B (missing 1/3 factor) is excellent, but D=108√3 has a less obvious error path. The question stem lacks a closing question phrase ('неге тең?' or similar), which is a minor Kazakh language issue. | [google/gemini-3.1-pro-preview] The question is perfectly structured, mathematically correct, and aligns well with the requested difficulty level B. The distractors represent common student mistakes, such as omitting the 1/3 factor in the volume formula.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] 1) Add a closing question phrase to the stem, e.g., 'пирамиданың көлемін табыңыз' or append 'неге тең?' for grammatical completeness. 2) Make distractor D more clearly reachable by a specific student error — consider replacing it with a value derived from a well-known misconception (e.g., using the slant height as pyramid height).",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+      "raw": {
+        "ok": true,
+        "stdout": "72*sqrt(3)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: A regular triangular pyramid has an equilateral triangle as its base, and the apex is directly above the center of the base. The base side is a = 6√3. The base area is S = (a^2√3)/4 = ((6√3)^2√3)/4 = (108√3)/4 = 27√3. In an equilateral triangle, the distance from the center to a vertex is the circumradius R = a/√3 = (6√3)/√3 = 6. The lateral edge is 10, so the pyramid height h forms a right triang\n\n[anthropic/claude-sonnet-4.6] answered C: We have a regular triangular pyramid with base edge a = 6√3 and lateral edge l = 10.\n\nStep 1: Find the circumradius of the equilateral triangular base.\nFor an equilateral triangle with side a, the circumradius R = a/√3.\nR = 6√3/√3 = 6.\n\nStep 2: Find the height of the pyramid.\nThe apex is directly above the centroid of the base. The distance from centroid to vertex is R = 6.\nUsing the lateral edge \n\n[google/gemini-3.1-pro-preview] answered C: To find the volume of a regular triangular pyramid, we use the formula V = (1/3) * A * h, where A is the area of the base and h is the height of the pyramid.\n\n1. Calculate the area of the base (A):\nThe base is an equilateral triangle with side length a = 6√3.\nThe formula for the area of an equilateral triangle is A = (√3 / 4) * a^2.\na^2 = (6√3)^2 = 36 * 3 = 108.\nA = (√3 / 4) * 108 = 27√3.\n\n2. Calc",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 8.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a single unambiguous solution using the base area, circumradius, pyramid height, and volume formula. The item is appropriately medium-level, though the distractors are mostly simple multiples of the correct value rather than all being tied to highly common misconceptions. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a clear 4-step solution path matching Level B difficulty. The correct answer is unambiguously C=72√3, verified independently and by sandbox. Distractors B (missing 1/3 factor) is excellent, but D=108√3 has a less obvious error path. The question stem lacks a closing question phrase ('неге тең?' or similar), which is a minor Kazakh language issue. | [google/gemini-3.1-pro-preview] The question is perfectly structured, mathematically correct, and aligns well with the requested difficulty level B. The distractors represent common student mistakes, such as omitting the 1/3 factor in the volume formula.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] 1) Add a closing question phrase to the stem, e.g., 'пирамиданың көлемін табыңыз' or append 'неге тең?' for grammatical completeness. 2) Make distractor D more clearly reachable by a specific student error — consider replacing it with a value derived from a well-known misconception (e.g., using the slant height as pyramid height).",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+        "raw": {
+          "ok": true,
+          "stdout": "72*sqrt(3)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A regular triangular pyramid has an equilateral triangle as its base, and the apex is directly above the center of the base. The base side is a = 6√3. The base area is S = (a^2√3)/4 = ((6√3)^2√3)/4 = (108√3)/4 = 27√3. In an equilateral triangle, the distance from the center to a vertex is the circumradius R = a/√3 = (6√3)/√3 = 6. The lateral edge is 10, so the pyramid height h forms a right triangle with hypotenuse 10 and one leg R = 6. Thus h = √(10^2 - 6^2) = √(100 - 36) = √64 = 8. The volume is V = (1/3)Sh = (1/3)(27√3)(8) = 72√3. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the problem has a single unambiguous solution using the base area, circumradius, pyramid height, and volume formula. The item is appropriately medium-level, though the distractors are mostly simple multiples of the correct value rather than all being tied to highly common misconceptions.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "72*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We have a regular triangular pyramid with base edge a = 6√3 and lateral edge l = 10.\n\nStep 1: Find the circumradius of the equilateral triangular base.\nFor an equilateral triangle with side a, the circumradius R = a/√3.\nR = 6√3/√3 = 6.\n\nStep 2: Find the height of the pyramid.\nThe apex is directly above the centroid of the base. The distance from centroid to vertex is R = 6.\nUsing the lateral edge l = 10:\nh² + R² = l²\nh² + 36 = 100\nh² = 64\nh = 8.\n\nStep 3: Find the area of the base.\nArea of equilateral triangle with side a = 6√3:\nS = (√3/4) × a² = (√3/4) × (6√3)² = (√3/4) × 108 = 27√3.\n\nStep 4: Find the volume.\nV = (1/3) × S × h = (1/3) × 27√3 × 8 = (1/3) × 216√3 = 72√3.\n\nThe answer is 72√3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 7.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a clear 4-step solution path matching Level B difficulty. The correct answer is unambiguously C=72√3, verified independently and by sandbox. Distractors B (missing 1/3 factor) is excellent, but D=108√3 has a less obvious error path. The question stem lacks a closing question phrase ('неге тең?' or similar), which is a minor Kazakh language issue.",
+          "improvement_suggestions": "1) Add a closing question phrase to the stem, e.g., 'пирамиданың көлемін табыңыз' or append 'неге тең?' for grammatical completeness. 2) Make distractor D more clearly reachable by a specific student error — consider replacing it with a value derived from a well-known misconception (e.g., using the slant height as pyramid height).",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "72*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the volume of a regular triangular pyramid, we use the formula V = (1/3) * A * h, where A is the area of the base and h is the height of the pyramid.\n\n1. Calculate the area of the base (A):\nThe base is an equilateral triangle with side length a = 6√3.\nThe formula for the area of an equilateral triangle is A = (√3 / 4) * a^2.\na^2 = (6√3)^2 = 36 * 3 = 108.\nA = (√3 / 4) * 108 = 27√3.\n\n2. Calculate the height of the pyramid (h):\nIn a regular triangular pyramid, the height drops to the circumcenter of the base. The distance from the circumcenter to any vertex of the base is the circumradius (R).\nFor an equilateral triangle, R = a / √3.\nR = 6√3 / √3 = 6.\n\nUsing the Pythagorean theorem with the lateral edge (l = 10), the height (h), and the circumradius (R):\nl^2 = h^2 + R^2\n10^2 = h^2 + 6^2\n100 = h^2 + 36\nh^2 = 64\nh = 8.\n\n3. Calculate the volume (V):\nV = (1/3) * A * h\nV = (1/3) * 27√3 * 8\nV = 9√3 * 8 = 72√3.\n\nThe calculated volume matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly structured, mathematically correct, and aligns well with the requested difficulty level B. The distractors represent common student mistakes, such as omitting the 1/3 factor in the volume formula.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "72*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:00:13.889106+00:00",
+  "generation_attempts": 1
+}

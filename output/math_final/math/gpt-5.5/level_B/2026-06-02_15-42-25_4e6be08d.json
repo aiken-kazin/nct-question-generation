@@ -1,0 +1,209 @@
+{
+  "id": "4e6be08d-7073-4e6d-a678-6ee5c73bd371",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "integrals",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$y=4-x^2$ параболасы мен $y=x+2$ түзуімен шектелген фигураның ауданын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{7}{2}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{9}{2}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{11}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$9$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Алдымен қиылысу нүктелерін табамыз: $4-x^2=x+2$. Бұдан $x^2+x-2=0$, яғни $(x+2)(x-1)=0$. Сондықтан $x=-2$ және $x=1$. Осы аралықта парабола түзуінен жоғары орналасқан, себебі $4-x^2-(x+2)=2-x-x^2$. Аудан формуласы: $S=\\int_{-2}^{1}\\left(4-x^2-(x+2)\\right)\\,dx=\\int_{-2}^{1}(2-x-x^2)\\,dx$. Есептейміз: $S=\\left(2x-\\frac{x^2}{2}-\\frac{x^3}{3}\\right)\\bigg|_{-2}^{1}=\\left(2-\\frac{1}{2}-\\frac{1}{3}\\right)-\\left(-4-2+\\frac{8}{3}\\right)=\\frac{7}{6}+\\frac{10}{3}=\\frac{9}{2}$. Демек, фигураның ауданы $\\frac{9}{2}$.",
+  "latex_formulas": [
+    "$S=\\int_a^b\\left(f(x)-g(x)\\right)\\,dx$",
+    "$4-x^2=x+2$",
+    "$\\int_{-2}^{1}(2-x-x^2)\\,dx=\\frac{9}{2}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Find the intersection points of the parabola and the line: 4 - x^2 = x + 2. Move all terms to one side: 4 - x^2 - x - 2 = 0, so 2 - x - x^2 = 0. Equivalently x^2 + x - 2 = 0. Factor: (x + 2)(x - 1) = 0, hence x = -2 and x = 1. On the interval [-2, 1], the parabola y = 4 - x^2 is above the line y = x + 2, for example at x = 0: 4 > 2. Therefore the area is the integral of top minus bottom: ∫ from -2\n\n[anthropic/claude-sonnet-4.6] answered B: Find the area between the parabola y = 4 - x² and the line y = x + 2.\n\nStep 1: Find intersection points.\nSet 4 - x² = x + 2\n4 - x² - x - 2 = 0\n2 - x - x² = 0\nx² + x - 2 = 0\n(x + 2)(x - 1) = 0\nx = -2 or x = 1\n\nStep 2: Determine which function is on top.\nAt x = 0: parabola gives y = 4, line gives y = 2. So parabola is above the line on [-2, 1].\n\nStep 3: Compute the integral.\nArea = ∫ from -2 to 1 of\n\n[google/gemini-3.1-pro-preview] answered B: To find the area of the figure bounded by the parabola $y = 4 - x^2$ and the line $y = x + 2$, we first need to find their points of intersection by setting the equations equal to each other:\n\n$4 - x^2 = x + 2$\n$x^2 + x - 2 = 0$\n\nFactoring the quadratic equation gives:\n$(x + 2)(x - 1) = 0$\nSo, the points of intersection are $x = -2$ and $x = 1$.\n\nNext, we determine which function is the upper curv",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: intersections are at x = -2 and x = 1, and the area is 9/2. The item fits medium difficulty, though some distractors are only numerically close rather than clearly tied to specific common errors. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (B = 9/2), and requires the standard multi-step process of finding intersection points, setting up the integral, and evaluating — well-aligned with level B. Kazakh phrasing is natural and uses correct mathematical terminology. Distractors A (7/2) and C (11/2) are plausible nearby fractions, while D (9) could arise from forgetting to divide (e.g., doubling the answer or an antiderivative error), making all distractors reasonably reachable. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically correct, and perfectly aligned with the requested difficulty level. Distractors are plausible and based on common errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='9/2' expected='9/2'",
+      "raw": {
+        "ok": true,
+        "stdout": "9/2",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Find the intersection points of the parabola and the line: 4 - x^2 = x + 2. Move all terms to one side: 4 - x^2 - x - 2 = 0, so 2 - x - x^2 = 0. Equivalently x^2 + x - 2 = 0. Factor: (x + 2)(x - 1) = 0, hence x = -2 and x = 1. On the interval [-2, 1], the parabola y = 4 - x^2 is above the line y = x + 2, for example at x = 0: 4 > 2. Therefore the area is the integral of top minus bottom: ∫ from -2\n\n[anthropic/claude-sonnet-4.6] answered B: Find the area between the parabola y = 4 - x² and the line y = x + 2.\n\nStep 1: Find intersection points.\nSet 4 - x² = x + 2\n4 - x² - x - 2 = 0\n2 - x - x² = 0\nx² + x - 2 = 0\n(x + 2)(x - 1) = 0\nx = -2 or x = 1\n\nStep 2: Determine which function is on top.\nAt x = 0: parabola gives y = 4, line gives y = 2. So parabola is above the line on [-2, 1].\n\nStep 3: Compute the integral.\nArea = ∫ from -2 to 1 of\n\n[google/gemini-3.1-pro-preview] answered B: To find the area of the figure bounded by the parabola $y = 4 - x^2$ and the line $y = x + 2$, we first need to find their points of intersection by setting the equations equal to each other:\n\n$4 - x^2 = x + 2$\n$x^2 + x - 2 = 0$\n\nFactoring the quadratic equation gives:\n$(x + 2)(x - 1) = 0$\nSo, the points of intersection are $x = -2$ and $x = 1$.\n\nNext, we determine which function is the upper curv",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: intersections are at x = -2 and x = 1, and the area is 9/2. The item fits medium difficulty, though some distractors are only numerically close rather than clearly tied to specific common errors. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (B = 9/2), and requires the standard multi-step process of finding intersection points, setting up the integral, and evaluating — well-aligned with level B. Kazakh phrasing is natural and uses correct mathematical terminology. Distractors A (7/2) and C (11/2) are plausible nearby fractions, while D (9) could arise from forgetting to divide (e.g., doubling the answer or an antiderivative error), making all distractors reasonably reachable. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically correct, and perfectly aligned with the requested difficulty level. Distractors are plausible and based on common errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='9/2' expected='9/2'",
+        "raw": {
+          "ok": true,
+          "stdout": "9/2",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find the intersection points of the parabola and the line: 4 - x^2 = x + 2. Move all terms to one side: 4 - x^2 - x - 2 = 0, so 2 - x - x^2 = 0. Equivalently x^2 + x - 2 = 0. Factor: (x + 2)(x - 1) = 0, hence x = -2 and x = 1. On the interval [-2, 1], the parabola y = 4 - x^2 is above the line y = x + 2, for example at x = 0: 4 > 2. Therefore the area is the integral of top minus bottom: ∫ from -2 to 1 [(4 - x^2) - (x + 2)] dx = ∫ from -2 to 1 (2 - x - x^2) dx. An antiderivative is 2x - x^2/2 - x^3/3. Evaluate at x = 1: 2(1) - 1^2/2 - 1^3/3 = 2 - 1/2 - 1/3 = 7/6. Evaluate at x = -2: 2(-2) - (-2)^2/2 - (-2)^3/3 = -4 - 4/2 + 8/3 = -4 - 2 + 8/3 = -6 + 8/3 = -10/3. The area is 7/6 - (-10/3) = 7/6 + 20/6 = 27/6 = 9/2. Thus the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous: intersections are at x = -2 and x = 1, and the area is 9/2. The item fits medium difficulty, though some distractors are only numerically close rather than clearly tied to specific common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='9/2' expected='9/2'",
+            "raw": {
+              "ok": true,
+              "stdout": "9/2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find the area between the parabola y = 4 - x² and the line y = x + 2.\n\nStep 1: Find intersection points.\nSet 4 - x² = x + 2\n4 - x² - x - 2 = 0\n2 - x - x² = 0\nx² + x - 2 = 0\n(x + 2)(x - 1) = 0\nx = -2 or x = 1\n\nStep 2: Determine which function is on top.\nAt x = 0: parabola gives y = 4, line gives y = 2. So parabola is above the line on [-2, 1].\n\nStep 3: Compute the integral.\nArea = ∫ from -2 to 1 of [(4 - x²) - (x + 2)] dx\n= ∫ from -2 to 1 of [2 - x - x²] dx\n\nAntiderivative: 2x - x²/2 - x³/3\n\nAt x = 1: 2(1) - (1)²/2 - (1)³/3 = 2 - 1/2 - 1/3 = 12/6 - 3/6 - 2/6 = 7/6\n\nAt x = -2: 2(-2) - (-2)²/2 - (-2)³/3 = -4 - 4/2 - (-8)/3 = -4 - 2 + 8/3 = -6 + 8/3 = -18/3 + 8/3 = -10/3\n\nArea = 7/6 - (-10/3) = 7/6 + 20/6 = 27/6 = 9/2",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed (B = 9/2), and requires the standard multi-step process of finding intersection points, setting up the integral, and evaluating — well-aligned with level B. Kazakh phrasing is natural and uses correct mathematical terminology. Distractors A (7/2) and C (11/2) are plausible nearby fractions, while D (9) could arise from forgetting to divide (e.g., doubling the answer or an antiderivative error), making all distractors reasonably reachable.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='9/2' expected='9/2'",
+            "raw": {
+              "ok": true,
+              "stdout": "9/2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the area of the figure bounded by the parabola $y = 4 - x^2$ and the line $y = x + 2$, we first need to find their points of intersection by setting the equations equal to each other:\n\n$4 - x^2 = x + 2$\n$x^2 + x - 2 = 0$\n\nFactoring the quadratic equation gives:\n$(x + 2)(x - 1) = 0$\nSo, the points of intersection are $x = -2$ and $x = 1$.\n\nNext, we determine which function is the upper curve on the interval $[-2, 1]$. Testing $x = 0$:\nParabola: $y = 4 - 0^2 = 4$\nLine: $y = 0 + 2 = 2$\nSince $4 > 2$, the parabola is above the line.\n\nThe area $A$ is the integral of the upper curve minus the lower curve from $x = -2$ to $x = 1$:\n$A = \\int_{-2}^{1} [(4 - x^2) - (x + 2)] \\, dx$\n$A = \\int_{-2}^{1} (2 - x - x^2) \\, dx$\n\nNow, we find the antiderivative and evaluate it at the limits:\n$\\int (2 - x - x^2) \\, dx = 2x - \\frac{x^2}{2} - \\frac{x^3}{3}$\n\nEvaluating at the upper limit ($x = 1$):\n$2(1) - \\frac{1^2}{2} - \\frac{1^3}{3} = 2 - \\frac{1}{2} - \\frac{1}{3} = \\frac{12}{6} - \\frac{3}{6} - \\frac{2}{6} = \\frac{7}{6}$\n\nEvaluating at the lower limit ($x = -2$):\n$2(-2) - \\frac{(-2)^2}{2} - \\frac{(-2)^3}{3} = -4 - \\frac{4}{2} - \\left(-\\frac{8}{3}\\right) = -4 - 2 + \\frac{8}{3} = -6 + \\frac{8}{3} = -\\frac{18}{3} + \\frac{8}{3} = -\\frac{10}{3}$\n\nSubtracting the lower limit value from the upper limit value:\n$A = \\frac{7}{6} - \\left(-\\frac{10}{3}\\right) = \\frac{7}{6} + \\frac{20}{6} = \\frac{27}{6}$\n\nSimplifying the fraction gives:\n$A = \\frac{9}{2}$",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, mathematically correct, and perfectly aligned with the requested difficulty level. Distractors are plausible and based on common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='9/2' expected='9/2'",
+            "raw": {
+              "ok": true,
+              "stdout": "9/2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:42:25.142663+00:00",
+  "generation_attempts": 1
+}

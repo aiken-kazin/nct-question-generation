@@ -1,0 +1,751 @@
+{
+  "id": "b37ae8a6ff8b482d997348945e10903f",
+  "subject": "math",
+  "level": "B",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T18:52:43.121938+00:00",
+  "passage": "Бір қалада жаңа тұрғын үй кешені салынуда. Құрылыс компаниясы 5 жыл ішінде пәтер сатудан түскен табысты есептеп шықты. Төмендегі кестеде әр жылдағы сатылған пәтер саны мен бір пәтердің орташа бағасы берілген.\n\n| Жыл | Сатылған пәтер саны (дана) | Бір пәтердің орташа бағасы (млн теңге) |\n|-----|--------------------------|----------------------------------------|\n| 2019 | 120 | 8,5 |\n| 2020 | 95 | 9,0 |\n| 2021 | 150 | 9,5 |\n| 2022 | 180 | 10,0 |\n| 2023 | 160 | 11,5 |\n\nКомпанияның жалпы шығыны 5 жыл ішінде барлығы 3 500 млн теңгені құрады. Таза пайда = Жалпы табыс − Жалпы шығын деп есептеледі.",
+  "questions": [
+    {
+      "question_text": "2022 жылы сатылған пәтерлерден түскен жалпы табыс қанша млн теңге болды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$1\\,800$ млн теңге"
+        },
+        {
+          "label": "B",
+          "text": "$1\\,600$ млн теңге"
+        },
+        {
+          "label": "C",
+          "text": "$1\\,900$ млн теңге"
+        },
+        {
+          "label": "D",
+          "text": "$1\\,700$ млн теңге"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "2022 жылы: 180 × 10,0 = 1 800 млн теңге. Дұрыс жауап — A. B нұсқасы: 160 × 10,0 = 1 600 (2023 жылдың санын қолданған қате). C нұсқасы: 180 × 10,5 ≈ 1 890 (бағаны дұрыс оқымаған қате). D нұсқасы: 170 × 10,0 = 1 700 (санды дұрыс оқымаған қате).",
+      "critic_score": 7.967,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.333,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: To find the total revenue from apartments sold in 2022, use: revenue = number of apartments sold × average price per apartment. From the table for 2022: number sold = 180, average price = 10.0 million tenge. Therefore, revenue = 180 × 10.0 = 1800 million tenge. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: For 2022: number of apartments sold = 180, average price per apartment = 10.0 million tenge. Total revenue = 180 × 10.0 = 1,800 million tenge.\n\n[google/gemini-3.1-pro-preview] answered A: To find the total revenue from apartments sold in 2022, we need to multiply the number of apartments sold that year by the average price per apartment.\n\nFrom the table, for the year 2022:\n- Number of apartments sold = 180\n- Average price per apartment = 10.0 million tenge\n\nTotal revenue for 2022 = 180 * 10.0 = 1800 million tenge.\n\nComparing this result to the given options, 1800 million tenge corr",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.333,
+            "difficulty_alignment": 4.0,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.967,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined: 2022 revenue is 180 × 10.0 = 1800 million tenge. However, the item is substantially easier than level B because it only requires reading one table row and performing a single multiplication; the extra expense/net profit information is unused. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguous (180 × 10.0 = 1800) and well-keyed. However, the question is essentially a single table lookup and one multiplication — this is Level A difficulty, not Level B. Distractors are plausible but the explanation for option C uses 10.5 which doesn't appear in the table, making that distractor slightly artificial. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but it is too easy for a Level B teacher certification exam. It only requires a single-step multiplication, ignoring the extraneous information provided.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To reach Level B difficulty, ask a multi-step question such as computing total 5-year revenue and then net profit (requiring summing all five year revenues and subtracting total costs). The current question requires only one multiplication step. Also fix the distractor C explanation — 10.5 is not in the table; a more natural error would be using 2021's price (9.5) with 2022's quantity: 180 × 9.5 = 1710, which could replace option D. | [google/gemini-3.1-pro-preview] To align with Level B difficulty, change the question to ask for the total net profit over the 5 years. This would require calculating the revenue for each year, summing them, and subtracting the total expenses, which perfectly fits the multi-step calculation requirement.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the total revenue from apartments sold in 2022, use: revenue = number of apartments sold × average price per apartment. From the table for 2022: number sold = 180, average price = 10.0 million tenge. Therefore, revenue = 180 × 10.0 = 1800 million tenge. This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely determined: 2022 revenue is 180 × 10.0 = 1800 million tenge. However, the item is substantially easier than level B because it only requires reading one table row and performing a single multiplication; the extra expense/net profit information is unused.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "For 2022: number of apartments sold = 180, average price per apartment = 10.0 million tenge. Total revenue = 180 × 10.0 = 1,800 million tenge.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.5,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguous (180 × 10.0 = 1800) and well-keyed. However, the question is essentially a single table lookup and one multiplication — this is Level A difficulty, not Level B. Distractors are plausible but the explanation for option C uses 10.5 which doesn't appear in the table, making that distractor slightly artificial.",
+              "improvement_suggestions": "To reach Level B difficulty, ask a multi-step question such as computing total 5-year revenue and then net profit (requiring summing all five year revenues and subtracting total costs). The current question requires only one multiplication step. Also fix the distractor C explanation — 10.5 is not in the table; a more natural error would be using 2021's price (9.5) with 2022's quantity: 180 × 9.5 = 1710, which could replace option D.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the total revenue from apartments sold in 2022, we need to multiply the number of apartments sold that year by the average price per apartment.\n\nFrom the table, for the year 2022:\n- Number of apartments sold = 180\n- Average price per apartment = 10.0 million tenge\n\nTotal revenue for 2022 = 180 * 10.0 = 1800 million tenge.\n\nComparing this result to the given options, 1800 million tenge corresponds to option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-written, but it is too easy for a Level B teacher certification exam. It only requires a single-step multiplication, ignoring the extraneous information provided.",
+              "improvement_suggestions": "To align with Level B difficulty, change the question to ask for the total net profit over the 5 years. This would require calculating the revenue for each year, summing them, and subtracting the total expenses, which perfectly fits the multi-step calculation requirement.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "5 жыл ішіндегі барлық жылдардың жалпы табысы қанша млн теңге?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$6\\,967,5$ млн теңге"
+        },
+        {
+          "label": "B",
+          "text": "$7\\,320$ млн теңге"
+        },
+        {
+          "label": "C",
+          "text": "$6\\,500$ млн теңге"
+        },
+        {
+          "label": "D",
+          "text": "$7\\,150$ млн теңге"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Әр жылдың табысы:\n2019: 120 × 8,5 = 1 020\n2020: 95 × 9,0 = 855\n2021: 150 × 9,5 = 1 425\n2022: 180 × 10,0 = 1 800\n2023: 160 × 11,5 = 1 840\nЖиыны: 1 020 + 855 + 1 425 + 1 800 + 1 840 = 6 940 млн теңге.\nДұрыс жауап — A (6 967,5 емес, нақты есептеу: 1020+855=1875, 1875+1425=3300, 3300+1800=5100, 5100+1840=6940). Қайта тексерейік: A нұсқасындағы 6 967,5 дұрыс емес, нақты жауап 6 940. Опцияларды түзетейік: дұрыс жауап D = 6 940 млн теңге болсын.\nТүзетілген түсіндірме: Жалпы табыс = 1 020 + 855 + 1 425 + 1 800 + 1 840 = 6 940 млн теңге. Дұрыс жауап — D. A нұсқасы: 2019 жылды 120 × 9,0 = 1 080 деп қателескен жағдай (жиыны 6 967,5 шамасы). B нұсқасы: барлық бағаларды дөңгелектеп алған қате. C нұсқасы: кейбір жылдарды есептемей қалған қате.",
+      "critic_score": 4.433,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": false,
+      "dimensions": {
+        "correctness": 0.0,
+        "distractor_quality": 1.667,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: Compute total revenue for each year as (number of apartments sold) × (average price per apartment), in million tenge. 2019: 120 × 8.5 = 1020. 2020: 95 × 9.0 = 855. 2021: 150 × 9.5 = 1425. 2022: 180 × 10.0 = 1800. 2023: 160 × 11.5 = 1840. Total revenue over 5 years = 1020 + 855 + 1425 + 1800 + 1840 = 6940 million tenge. The given total expense of 3500 million tenge is not needed because the questio\n\n[anthropic/claude-sonnet-4.6] answered A: Calculate revenue for each year (apartments sold × average price):\n\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nTotal = 1,020 + 855 + 1,425 + 1,800 + 1,840\n= 1,020 + 855 = 1,875\n= 1,875 + 1,425 = 3,300\n= 3,300 + 1,800 = 5,100\n= 5,100 + 1,840 = 6,940\n\nWait, let me recheck:\n1\n\n[google/gemini-3.1-pro-preview] answered A: To find the total revenue (жалпы табыс) over the 5 years, we need to calculate the revenue for each year by multiplying the number of apartments sold by the average price per apartment, and then sum these yearly revenues.\n\nCalculations per year:\n- 2019: 120 apartments * 8.5 mln tenge = 1,020 mln tenge\n- 2020: 95 apartments * 9.0 mln tenge = 855 mln tenge\n- 2021: 150 apartments * 9.5 mln tenge = 1,",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 0.0,
+            "distractor_quality": 1.667,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 9.667,
+            "figure_relevance": null
+          },
+          "overall_score": 4.433,
+          "pass_fail": false,
+          "comments": "[openai/gpt-5.5] The item is wrongly keyed and has no correct option: the total revenue is 6,940 million tenge, while the provided answer A is 6,967.5. The provided explanation is also internally contradictory, acknowledging that A is not correct. | [anthropic/claude-sonnet-4.6] The arithmetically correct answer (6,940 млн теңге) does not appear among the four options. The keyed answer A (6,967.5) is wrong, and the explanation itself acknowledges this error while suggesting D should be 6,940 — but D in the options is 7,150. The question is fatally flawed with no correct option available. | [google/gemini-3.1-pro-preview] The question has a fatal flaw: the correct calculated sum (6940) is not present among the options. The explanation even points out this error, but the options were not updated accordingly.",
+          "improvement_suggestions": "[openai/gpt-5.5] Add 6,940 млн теңге as the correct option and key it accordingly. Remove the total expense sentence unless asking for net profit, or change the question to ask for net profit; also ensure the explanation does not contain contradictory correction notes. | [anthropic/claude-sonnet-4.6] Recalculate all yearly revenues (2019: 1020, 2020: 855, 2021: 1425, 2022: 1800, 2023: 1840; total = 6940) and replace one of the options with 6,940 млн теңге as the correct answer. Redesign the three distractors to correspond to specific identifiable errors: e.g., omitting one year, using wrong prices, or arithmetic mistakes in partial sums. | [google/gemini-3.1-pro-preview] Update the options so that one of them is exactly 6940. Ensure the distractors are derived from plausible calculation errors (e.g., subtracting the total expenses, miscalculating one of the years, etc.).",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute total revenue for each year as (number of apartments sold) × (average price per apartment), in million tenge. 2019: 120 × 8.5 = 1020. 2020: 95 × 9.0 = 855. 2021: 150 × 9.5 = 1425. 2022: 180 × 10.0 = 1800. 2023: 160 × 11.5 = 1840. Total revenue over 5 years = 1020 + 855 + 1425 + 1800 + 1840 = 6940 million tenge. The given total expense of 3500 million tenge is not needed because the question asks for total revenue, not net profit.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 2.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 4.4,
+              "pass_fail": false,
+              "comments": "The item is wrongly keyed and has no correct option: the total revenue is 6,940 million tenge, while the provided answer A is 6,967.5. The provided explanation is also internally contradictory, acknowledging that A is not correct.",
+              "improvement_suggestions": "Add 6,940 млн теңге as the correct option and key it accordingly. Remove the total expense sentence unless asking for net profit, or change the question to ask for net profit; also ensure the explanation does not contain contradictory correction notes.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Calculate revenue for each year (apartments sold × average price):\n\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nTotal = 1,020 + 855 + 1,425 + 1,800 + 1,840\n= 1,020 + 855 = 1,875\n= 1,875 + 1,425 = 3,300\n= 3,300 + 1,800 = 5,100\n= 5,100 + 1,840 = 6,940\n\nWait, let me recheck:\n1,020 + 855 = 1,875\n1,875 + 1,425 = 3,300\n3,300 + 1,800 = 5,100\n5,100 + 1,840 = 6,940\n\nHmm, 6,940 doesn't match any option exactly. Let me recheck each calculation:\n\n2019: 120 × 8.5 = 1,020 ✓\n2020: 95 × 9.0 = 855 ✓\n2021: 150 × 9.5 = 1,425 ✓\n2022: 180 × 10.0 = 1,800 ✓\n2023: 160 × 11.5 = 1,840 ✓\n\nSum = 1,020 + 855 + 1,425 + 1,800 + 1,840 = 6,940\n\nThe closest answer is A) 6,967.5. Let me check if I misread the table. Perhaps 2019 price is 8.5 but quantity differs, or 2023 quantity is different.\n\nIf 2023 were 165 apartments: 165 × 11.5 = 1,897.5, total = 6,940 - 1,840 + 1,897.5 = 6,997.5. Not matching.\n\nIf 2020 were 97.5 apartments (unlikely)... \n\nLet me try: what if 2019 price is 8.5 and quantity 120, but 2020 quantity is 97.5? That gives 97.5 × 9 = 877.5, total = 6,940 - 855 + 877.5 = 6,962.5. Still not matching.\n\nWhat if 2021 quantity is 152.5? 152.5 × 9.5 = 1,448.75. Not clean.\n\nLet me try option A: 6,967.5. Difference from my answer: 6,967.5 - 6,940 = 27.5.\n\nWhat if 2020 price is 9.5 instead of 9.0? 95 × 9.5 = 902.5, total = 6,940 - 855 + 902.5 = 6,987.5. No.\n\nWhat if 2019 quantity is 125? 125 × 8.5 = 1,062.5, total = 6,940 - 1,020 + 1,062.5 = 6,982.5. No.\n\nWhat if 2022 price is 10.5? 180 × 10.5 = 1,890, total = 6,940 - 1,800 + 1,890 = 7,030. No.\n\nMy calculation gives 6,940 which doesn't match any option. The closest is A) 6,967.5. Given the options, A is the most reasonable answer as it's closest to my computed value, and there may be a slight difference in the table values as presented.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 3.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 9.0,
+                "figure_relevance": null
+              },
+              "overall_score": 4.5,
+              "pass_fail": false,
+              "comments": "The arithmetically correct answer (6,940 млн теңге) does not appear among the four options. The keyed answer A (6,967.5) is wrong, and the explanation itself acknowledges this error while suggesting D should be 6,940 — but D in the options is 7,150. The question is fatally flawed with no correct option available.",
+              "improvement_suggestions": "Recalculate all yearly revenues (2019: 1020, 2020: 855, 2021: 1425, 2022: 1800, 2023: 1840; total = 6940) and replace one of the options with 6,940 млн теңге as the correct answer. Redesign the three distractors to correspond to specific identifiable errors: e.g., omitting one year, using wrong prices, or arithmetic mistakes in partial sums.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the total revenue (жалпы табыс) over the 5 years, we need to calculate the revenue for each year by multiplying the number of apartments sold by the average price per apartment, and then sum these yearly revenues.\n\nCalculations per year:\n- 2019: 120 apartments * 8.5 mln tenge = 1,020 mln tenge\n- 2020: 95 apartments * 9.0 mln tenge = 855 mln tenge\n- 2021: 150 apartments * 9.5 mln tenge = 1,425 mln tenge\n- 2022: 180 apartments * 10.0 mln tenge = 1,800 mln tenge\n- 2023: 160 apartments * 11.5 mln tenge = 1,840 mln tenge\n\nTotal Revenue = 1,020 + 855 + 1,425 + 1,800 + 1,840 = 6,940 mln tenge.\n\nThe exact calculated sum is 6,940 mln tenge. However, this exact number is not among the given options. The closest option, and the only one containing a decimal (which is typical when multiplying by .5 values in such problems, suggesting a slight typo in the problem's provided numbers or options), is 6,967.5 mln tenge. Assuming a minor typo in the source table (e.g., if 2021 had 153 apartments, the sum would be 6,968.5; or if 2020 had a price of 9.25, etc.), Option A is the intended answer.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 0.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 4.4,
+              "pass_fail": false,
+              "comments": "The question has a fatal flaw: the correct calculated sum (6940) is not present among the options. The explanation even points out this error, but the options were not updated accordingly.",
+              "improvement_suggestions": "Update the options so that one of them is exactly 6940. Ensure the distractors are derived from plausible calculation errors (e.g., subtracting the total expenses, miscalculating one of the years, etc.).",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "5 жыл ішіндегі барлық жылдардың жалпы табысы қанша млн теңге? (Кестедегі деректер бойынша дәл есептеңіз.)",
+      "options": [
+        {
+          "label": "A",
+          "text": "$6\\,500$ млн теңге"
+        },
+        {
+          "label": "B",
+          "text": "$7\\,200$ млн теңге"
+        },
+        {
+          "label": "C",
+          "text": "$6\\,940$ млн теңге"
+        },
+        {
+          "label": "D",
+          "text": "$7\\,050$ млн теңге"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Әр жылдың табысы:\n2019: 120 × 8,5 = 1 020 млн теңге\n2020: 95 × 9,0 = 855 млн теңге\n2021: 150 × 9,5 = 1 425 млн теңге\n2022: 180 × 10,0 = 1 800 млн теңге\n2023: 160 × 11,5 = 1 840 млн теңге\nЖалпы табыс = 1 020 + 855 + 1 425 + 1 800 + 1 840 = 6 940 млн теңге.\nДұрыс жауап — C.\nA нұсқасы: кейбір жылдарды есепке алмаған қате (мысалы, 2023 жылды өткізіп жіберген).\nB нұсқасы: бағаларды жуықтап алған қате (мысалы, 8,5 орнына 9,0 қолданған).\nD нұсқасы: 2020 жылды 95 × 10,0 = 950 деп қателескен жағдай.",
+      "critic_score": 8.867,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.833,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: Compute total revenue for each year as (number of apartments sold) × (average price per apartment), in million tenge. 2019: 120 × 8.5 = 1020. 2020: 95 × 9.0 = 855. 2021: 150 × 9.5 = 1425. 2022: 180 × 10.0 = 1800. 2023: 160 × 11.5 = 1840. Sum of all 5 years: 1020 + 855 + 1425 + 1800 + 1840 = 6940 million tenge. Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: Calculate revenue for each year (apartments sold × average price):\n\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nTotal = 1,020 + 855 + 1,425 + 1,800 + 1,840\n= 1,020 + 855 = 1,875\n= 1,875 + 1,425 = 3,300\n= 3,300 + 1,800 = 5,100\n= 5,100 + 1,840 = 6,940 млн теңге\n\nThe total rev\n\n[google/gemini-3.1-pro-preview] answered C: To find the total revenue (жалпы табыс) over the 5 years, we need to calculate the revenue for each year by multiplying the number of apartments sold by the average price per apartment, and then sum these yearly revenues.\n\nCalculations per year:\n- 2019: 120 apartments * 8.5 million tenge = 1020 million tenge\n- 2020: 95 apartments * 9.0 million tenge = 855 million tenge\n- 2021: 150 apartments * 9.5",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.833,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.867,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the computation is unambiguous. However, the item is closer to a straightforward arithmetic/table-reading task than a true medium-level teacher-certification item, and the distractors are not well justified by clear common errors. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, the correct answer (C: 6,940 млн теңге) is verified by straightforward multi-step calculation, and each distractor corresponds to a plausible arithmetic error. Kazakh language is natural and terminology is appropriate for the context. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and appropriately tests multi-step calculation and reading comprehension (distinguishing between total revenue and net profit).",
+          "improvement_suggestions": "[openai/gpt-5.5] Revise distractors so each corresponds to a realistic, exactly reproducible mistake, and consider asking for net profit or a comparative analysis if the intended level is B. Remove irrelevant expense information if the question only asks for total revenue. | [google/gemini-3.1-pro-preview] To improve the distractor quality, consider adding the net profit (3 440 млн теңге) as one of the options, as it directly tests whether the candidate correctly identified what was being asked.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute total revenue for each year as (number of apartments sold) × (average price per apartment), in million tenge. 2019: 120 × 8.5 = 1020. 2020: 95 × 9.0 = 855. 2021: 150 × 9.5 = 1425. 2022: 180 × 10.0 = 1800. 2023: 160 × 11.5 = 1840. Sum of all 5 years: 1020 + 855 + 1425 + 1800 + 1840 = 6940 million tenge. Therefore the correct option is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.5,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the computation is unambiguous. However, the item is closer to a straightforward arithmetic/table-reading task than a true medium-level teacher-certification item, and the distractors are not well justified by clear common errors.",
+              "improvement_suggestions": "Revise distractors so each corresponds to a realistic, exactly reproducible mistake, and consider asking for net profit or a comparative analysis if the intended level is B. Remove irrelevant expense information if the question only asks for total revenue.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Calculate revenue for each year (apartments sold × average price):\n\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nTotal = 1,020 + 855 + 1,425 + 1,800 + 1,840\n= 1,020 + 855 = 1,875\n= 1,875 + 1,425 = 3,300\n= 3,300 + 1,800 = 5,100\n= 5,100 + 1,840 = 6,940 млн теңге\n\nThe total revenue over 5 years is 6,940 млн теңге, which matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound, the correct answer (C: 6,940 млн теңге) is verified by straightforward multi-step calculation, and each distractor corresponds to a plausible arithmetic error. Kazakh language is natural and terminology is appropriate for the context.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the total revenue (жалпы табыс) over the 5 years, we need to calculate the revenue for each year by multiplying the number of apartments sold by the average price per apartment, and then sum these yearly revenues.\n\nCalculations per year:\n- 2019: 120 apartments * 8.5 million tenge = 1020 million tenge\n- 2020: 95 apartments * 9.0 million tenge = 855 million tenge\n- 2021: 150 apartments * 9.5 million tenge = 1425 million tenge\n- 2022: 180 apartments * 10.0 million tenge = 1800 million tenge\n- 2023: 160 apartments * 11.5 million tenge = 1840 million tenge\n\nNow, we sum the revenues from all 5 years:\nTotal Revenue = 1020 + 855 + 1425 + 1800 + 1840\nTotal Revenue = 1875 + 1425 + 1800 + 1840\nTotal Revenue = 3300 + 1800 + 1840\nTotal Revenue = 5100 + 1840 = 6940 million tenge.\n\nThe question specifically asks for the total revenue (жалпы табыс), so we do not need to subtract the expenses (which would be used to find the net profit). The total revenue is 6940 million tenge, which matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.6,
+              "pass_fail": true,
+              "comments": "The question is well-structured, factually correct, and appropriately tests multi-step calculation and reading comprehension (distinguishing between total revenue and net profit).",
+              "improvement_suggestions": "To improve the distractor quality, consider adding the net profit (3 440 млн теңге) as one of the options, as it directly tests whether the candidate correctly identified what was being asked.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Компанияның 5 жылдағы таза пайдасы қанша млн теңге болды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$2\\,940$ млн теңге"
+        },
+        {
+          "label": "B",
+          "text": "$3\\,440$ млн теңге"
+        },
+        {
+          "label": "C",
+          "text": "$3\\,000$ млн теңге"
+        },
+        {
+          "label": "D",
+          "text": "$4\\,500$ млн теңге"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Таза пайда = Жалпы табыс − Жалпы шығын = 6 940 − 3 500 = 3 440 млн теңге.\nДұрыс жауап — B.\nA нұсқасы: жалпы табысты 6 440 деп қателескен жағдай (6 440 − 3 500 = 2 940).\nC нұсқасы: жалпы табысты 6 500 деп жуықтаған қате (6 500 − 3 500 = 3 000).\nD нұсқасы: шығынды 2 500 деп қателескен жағдай (6 940 − 2 500 = 4 440 ≈ 4 500).",
+      "critic_score": 9.3,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: Compute total revenue for each year as (number of apartments sold) × (average price per apartment), in million tenge. 2019: 120 × 8.5 = 1020. 2020: 95 × 9.0 = 855. 2021: 150 × 9.5 = 1425. 2022: 180 × 10.0 = 1800. 2023: 160 × 11.5 = 1840. Total revenue over 5 years = 1020 + 855 + 1425 + 1800 + 1840 = 6940 million tenge. Total expenses = 3500 million tenge. Net profit = total revenue − total expense\n\n[anthropic/claude-sonnet-4.6] answered B: Calculate revenue for each year (units × price per unit):\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nTotal revenue = 1,020 + 855 + 1,425 + 1,800 + 1,840\n= 1,020 + 855 = 1,875\n1,875 + 1,425 = 3,300\n3,300 + 1,800 = 5,100\n5,100 + 1,840 = 6,940 млн теңге\n\nNet profit = Total re\n\n[google/gemini-3.1-pro-preview] answered B: To find the net profit, we first need to calculate the total revenue over the 5 years by multiplying the number of apartments sold by the average price per apartment for each year, and then summing these amounts.\n\nRevenue for 2019: 120 * 8.5 = 1,020 million tenge\nRevenue for 2020: 95 * 9.0 = 855 million tenge\nRevenue for 2021: 150 * 9.5 = 1,425 million tenge\nRevenue for 2022: 180 * 10.0 = 1,800 mi",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined by the table. The item is clear, but it is a straightforward revenue-sum calculation and does not really match the stated style/text-analysis topic. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (B = 3,440 млн теңге). The distractors are mostly plausible — A and C represent realistic arithmetic errors, but D's explanation (6,940 − 2,500 = 4,440 ≈ 4,500) is a weak distractor since 4,440 ≠ 4,500 and the approximation is unjustified. Kazakh language is natural and terminology is appropriate for the context. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically accurate, and perfectly aligned with the requested difficulty level. The distractors are plausible and based on common calculation errors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Fix distractor D so it corresponds to a clean arithmetic error (e.g., 6,940 − 2,440 = 4,500 or similar) rather than an approximation, to make it a more credible trap. This would raise distractor quality to 9+.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute total revenue for each year as (number of apartments sold) × (average price per apartment), in million tenge. 2019: 120 × 8.5 = 1020. 2020: 95 × 9.0 = 855. 2021: 150 × 9.5 = 1425. 2022: 180 × 10.0 = 1800. 2023: 160 × 11.5 = 1840. Total revenue over 5 years = 1020 + 855 + 1425 + 1800 + 1840 = 6940 million tenge. Total expenses = 3500 million tenge. Net profit = total revenue − total expenses = 6940 − 3500 = 3440 million tenge. This matches option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely determined by the table. The item is clear, but it is a straightforward revenue-sum calculation and does not really match the stated style/text-analysis topic.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Calculate revenue for each year (units × price per unit):\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nTotal revenue = 1,020 + 855 + 1,425 + 1,800 + 1,840\n= 1,020 + 855 = 1,875\n1,875 + 1,425 = 3,300\n3,300 + 1,800 = 5,100\n5,100 + 1,840 = 6,940 млн теңге\n\nNet profit = Total revenue − Total costs = 6,940 − 3,500 = 3,440 млн теңге\n\nThis matches option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound with a unique correct answer (B = 3,440 млн теңге). The distractors are mostly plausible — A and C represent realistic arithmetic errors, but D's explanation (6,940 − 2,500 = 4,440 ≈ 4,500) is a weak distractor since 4,440 ≠ 4,500 and the approximation is unjustified. Kazakh language is natural and terminology is appropriate for the context.",
+              "improvement_suggestions": "Fix distractor D so it corresponds to a clean arithmetic error (e.g., 6,940 − 2,440 = 4,500 or similar) rather than an approximation, to make it a more credible trap. This would raise distractor quality to 9+.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the net profit, we first need to calculate the total revenue over the 5 years by multiplying the number of apartments sold by the average price per apartment for each year, and then summing these amounts.\n\nRevenue for 2019: 120 * 8.5 = 1,020 million tenge\nRevenue for 2020: 95 * 9.0 = 855 million tenge\nRevenue for 2021: 150 * 9.5 = 1,425 million tenge\nRevenue for 2022: 180 * 10.0 = 1,800 million tenge\nRevenue for 2023: 160 * 11.5 = 1,840 million tenge\n\nTotal Revenue = 1,020 + 855 + 1,425 + 1,800 + 1,840 = 6,940 million tenge.\n\nThe total cost over the 5 years is given as 3,500 million tenge.\n\nNet Profit = Total Revenue - Total Cost\nNet Profit = 6,940 - 3,500 = 3,440 million tenge.\n\nThis matches option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured, mathematically accurate, and perfectly aligned with the requested difficulty level. The distractors are plausible and based on common calculation errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "2021 жылғы табыс 2019 жылғы табыстан қанша пайызға артық?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$\\approx 28\\%$"
+        },
+        {
+          "label": "B",
+          "text": "$\\approx 40\\%$"
+        },
+        {
+          "label": "C",
+          "text": "$\\approx 35\\%$"
+        },
+        {
+          "label": "D",
+          "text": "$\\approx 25\\%$"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "2019 жылғы табыс: 120 × 8,5 = 1 020 млн теңге.\n2021 жылғы табыс: 150 × 9,5 = 1 425 млн теңге.\nАйырма: 1 425 − 1 020 = 405 млн теңге.\nПайыз: $\\frac{405}{1020} \\times 100\\% \\approx 39{,}7\\% \\approx 40\\%$.\nДұрыс жауап — B.\nA нұсқасы: айырманы 1 020-ға емес, 1 425-ке бөлген қате ($\\frac{405}{1425} \\approx 28\\%$).\nC нұсқасы: санды 1 020 орнына 1 200 деп алған қате ($\\frac{405}{1200} \\approx 33{,}75\\% \\approx 35\\%$).\nD нұсқасы: тек пәтер санының өзгерісін есептеген қате ($\\frac{30}{120} \\times 100 = 25\\%$).",
+      "critic_score": 9.567,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.667,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: Compute revenue for each relevant year as: revenue = number of apartments sold × average price per apartment. For 2019: 120 × 8.5 = 1020 million tenge. For 2021: 150 × 9.5 = 1425 million tenge. Difference: 1425 − 1020 = 405 million tenge. Percentage increase relative to 2019: (405 / 1020) × 100% = 39.705882...%, which is approximately 40%. Therefore, the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: Calculate revenue for 2019 and 2021:\n\n2019 revenue = 120 × 8.5 = 1020 млн теңге\n2021 revenue = 150 × 9.5 = 1425 млн теңге\n\nPercentage increase = (1425 - 1020) / 1020 × 100%\n= 405 / 1020 × 100%\n= 0.39706... × 100%\n≈ 39.7%\n≈ 40%\n\nThis matches option B.\n\n[google/gemini-3.1-pro-preview] answered B: To find out by what percentage the revenue in 2021 is greater than the revenue in 2019, we first need to calculate the revenue for both years.\n\nRevenue is calculated by multiplying the number of apartments sold by the average price per apartment.\n\nFor 2019:\nNumber of apartments sold = 120\nAverage price = 8.5 million tenge\nRevenue for 2019 = 120 * 8.5 = 1020 million tenge.\n\nFor 2021:\nNumber of apar",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.667,
+            "difficulty_alignment": 8.667,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.567,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation is numerically precise. Distractors are well designed around identifiable common errors, though the task is somewhat closer to straightforward data-interpretation arithmetic than a strong medium-level item. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a clearly correct answer (B ≈ 40%), and each distractor corresponds to a specific identifiable error (dividing by wrong base, using wrong number, or computing only quantity change). The Kazakh is natural and terminology is appropriate for the context. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically correct, and perfectly aligned with the requested difficulty level. The distractors are based on common student errors, and the extra information in the text effectively tests reading comprehension.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute revenue for each relevant year as: revenue = number of apartments sold × average price per apartment. For 2019: 120 × 8.5 = 1020 million tenge. For 2021: 150 × 9.5 = 1425 million tenge. Difference: 1425 − 1020 = 405 million tenge. Percentage increase relative to 2019: (405 / 1020) × 100% = 39.705882...%, which is approximately 40%. Therefore, the correct option is B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.4,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the explanation is numerically precise. Distractors are well designed around identifiable common errors, though the task is somewhat closer to straightforward data-interpretation arithmetic than a strong medium-level item.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Calculate revenue for 2019 and 2021:\n\n2019 revenue = 120 × 8.5 = 1020 млн теңге\n2021 revenue = 150 × 9.5 = 1425 млн теңге\n\nPercentage increase = (1425 - 1020) / 1020 × 100%\n= 405 / 1020 × 100%\n= 0.39706... × 100%\n≈ 39.7%\n≈ 40%\n\nThis matches option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.3,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound with a clearly correct answer (B ≈ 40%), and each distractor corresponds to a specific identifiable error (dividing by wrong base, using wrong number, or computing only quantity change). The Kazakh is natural and terminology is appropriate for the context.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find out by what percentage the revenue in 2021 is greater than the revenue in 2019, we first need to calculate the revenue for both years.\n\nRevenue is calculated by multiplying the number of apartments sold by the average price per apartment.\n\nFor 2019:\nNumber of apartments sold = 120\nAverage price = 8.5 million tenge\nRevenue for 2019 = 120 * 8.5 = 1020 million tenge.\n\nFor 2021:\nNumber of apartments sold = 150\nAverage price = 9.5 million tenge\nRevenue for 2021 = 150 * 9.5 = 1425 million tenge.\n\nNow, we find the difference in revenue between the two years:\nDifference = 1425 - 1020 = 405 million tenge.\n\nTo find the percentage increase relative to the 2019 revenue, we divide the difference by the 2019 revenue and multiply by 100:\nPercentage increase = (405 / 1020) * 100% \nPercentage increase = 0.39705... * 100% \nPercentage increase ≈ 39.7%\n\nRounding to the nearest whole number given in the options, we get approximately 40%.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured, mathematically correct, and perfectly aligned with the requested difficulty level. The distractors are based on common student errors, and the extra information in the text effectively tests reading comprehension.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Ең көп табыс алынған жылды және сол жылдың табысын дұрыс көрсеткен жауапты таңдаңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2022 жыл, $1\\,800$ млн теңге"
+        },
+        {
+          "label": "B",
+          "text": "2021 жыл, $1\\,425$ млн теңге"
+        },
+        {
+          "label": "C",
+          "text": "2023 жыл, $1\\,840$ млн теңге"
+        },
+        {
+          "label": "D",
+          "text": "2023 жыл, $1\\,920$ млн теңге"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Әр жылдың табысы:\n2019: 1 020, 2020: 855, 2021: 1 425, 2022: 1 800, 2023: 160 × 11,5 = 1 840 млн теңге.\nЕң үлкен мән — 2023 жылдың 1 840 млн теңгесі.\nДұрыс жауап — C.\nA нұсқасы: 2022 жылдың табысы (1 800) шынымен екінші орында, бірақ ең үлкен емес.\nB нұсқасы: 2021 жылдың табысы үшінші орында.\nD нұсқасы: 2023 жылы дұрыс анықталған, бірақ баға 12,0 деп қателесіп 160 × 12 = 1 920 шыққан жағдай.",
+      "critic_score": 9.2,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: Compute revenue for each year as: revenue = number of apartments sold × average price per apartment. Prices are in million tenge, so revenues are also in million tenge. 2019: 120 × 8.5 = 1020 million tenge. 2020: 95 × 9.0 = 855 million tenge. 2021: 150 × 9.5 = 1425 million tenge. 2022: 180 × 10.0 = 1800 million tenge. 2023: 160 × 11.5 = 1840 million tenge. The maximum revenue is 1840 million tenge\n\n[anthropic/claude-sonnet-4.6] answered C: Calculate revenue for each year (units sold × price per unit):\n\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nComparing all years:\n- 2019: 1,020\n- 2020: 855\n- 2021: 1,425\n- 2022: 1,800\n- 2023: 1,840\n\nThe highest revenue is in 2023 with 1,840 млн теңге.\n\nChecking options:\nA) 2\n\n[google/gemini-3.1-pro-preview] answered C: To find the year with the highest revenue (табыс) and its amount, we need to calculate the revenue for each year by multiplying the number of apartments sold by the average price per apartment.\n\nCalculations for each year:\n- 2019: 120 apartments * 8.5 million tenge = 1020 million tenge\n- 2020: 95 apartments * 9.0 million tenge = 855 million tenge\n- 2021: 150 apartments * 9.5 million tenge = 1425 m",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined: 2023 revenue is 160 × 11.5 = 1840 million tenge. The item is clear, but it is closer to routine table arithmetic than a strong medium-level task, and the total expense/net profit information is irrelevant to the asked question. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: 2023 yields 1,840 млн теңге, the highest revenue. Each distractor targets a specific error — wrong year (A picks 2022, B picks 2021), or correct year with arithmetic error (D uses 1,920 instead of 1,840). Language is natural and terminology is appropriate. The task is slightly below true B-level since it reduces to straightforward multiplication and comparison with no conceptual ambiguity, but the multi-row table comparison and the presence of the irrelevant 'total cost' information add mild cognitive load. | [google/gemini-3.1-pro-preview] The question is well-structured and perfectly tests mathematical literacy and reading comprehension by including extraneous information (expenses and net profit formula) that the candidate must filter out. The calculations are straightforward but require multiple steps, fitting the Level B difficulty perfectly.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with B-level difficulty, consider asking a follow-up that requires using the total cost figure (e.g., computing net profit or identifying the year with the highest profit margin), which would make the extra information in the text functionally necessary rather than a red herring.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute revenue for each year as: revenue = number of apartments sold × average price per apartment. Prices are in million tenge, so revenues are also in million tenge. 2019: 120 × 8.5 = 1020 million tenge. 2020: 95 × 9.0 = 855 million tenge. 2021: 150 × 9.5 = 1425 million tenge. 2022: 180 × 10.0 = 1800 million tenge. 2023: 160 × 11.5 = 1840 million tenge. The maximum revenue is 1840 million tenge in 2023. This matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely determined: 2023 revenue is 160 × 11.5 = 1840 million tenge. The item is clear, but it is closer to routine table arithmetic than a strong medium-level task, and the total expense/net profit information is irrelevant to the asked question.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Calculate revenue for each year (units sold × price per unit):\n\n2019: 120 × 8.5 = 1,020 млн теңге\n2020: 95 × 9.0 = 855 млн теңге\n2021: 150 × 9.5 = 1,425 млн теңге\n2022: 180 × 10.0 = 1,800 млн теңге\n2023: 160 × 11.5 = 1,840 млн теңге\n\nComparing all years:\n- 2019: 1,020\n- 2020: 855\n- 2021: 1,425\n- 2022: 1,800\n- 2023: 1,840\n\nThe highest revenue is in 2023 with 1,840 млн теңге.\n\nChecking options:\nA) 2022, 1,800 — incorrect year\nB) 2021, 1,425 — incorrect year\nC) 2023, 1,840 — correct year and correct amount\nD) 2023, 1,920 — correct year but wrong amount (160 × 11.5 = 1,840, not 1,920)\n\nAnswer: C",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.7,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-keyed: 2023 yields 1,840 млн теңге, the highest revenue. Each distractor targets a specific error — wrong year (A picks 2022, B picks 2021), or correct year with arithmetic error (D uses 1,920 instead of 1,840). Language is natural and terminology is appropriate. The task is slightly below true B-level since it reduces to straightforward multiplication and comparison with no conceptual ambiguity, but the multi-row table comparison and the presence of the irrelevant 'total cost' information add mild cognitive load.",
+              "improvement_suggestions": "To better align with B-level difficulty, consider asking a follow-up that requires using the total cost figure (e.g., computing net profit or identifying the year with the highest profit margin), which would make the extra information in the text functionally necessary rather than a red herring.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the year with the highest revenue (табыс) and its amount, we need to calculate the revenue for each year by multiplying the number of apartments sold by the average price per apartment.\n\nCalculations for each year:\n- 2019: 120 apartments * 8.5 million tenge = 1020 million tenge\n- 2020: 95 apartments * 9.0 million tenge = 855 million tenge\n- 2021: 150 apartments * 9.5 million tenge = 1425 million tenge\n- 2022: 180 apartments * 10.0 million tenge = 1800 million tenge\n- 2023: 160 apartments * 11.5 million tenge = 1840 million tenge\n\nComparing the revenues, the highest revenue was generated in 2023, amounting to 1840 million tenge. This matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured and perfectly tests mathematical literacy and reading comprehension by including extraneous information (expenses and net profit formula) that the candidate must filter out. The calculations are straightforward but require multiple steps, fitting the Level B difficulty perfectly.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

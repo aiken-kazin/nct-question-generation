@@ -1,0 +1,207 @@
+{
+  "id": "c91692ed-82cd-4b41-8205-f8423554f81e",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "triangles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Үшбұрыштың қабырғалары 5 см, 7 см және 8 см-ге тең. Ұзындығы 8 см болатын қабырғасына түсірілген медиананың ұзындығын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$2\\sqrt{21}$ см"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{\\sqrt{21}}{2}$ см"
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{21}$ см"
+    },
+    {
+      "label": "D",
+      "text": "$2\\sqrt{14}$ см"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілгені: үшбұрыштың қабырғалары $a = 5$ см, $b = 7$ см, $c = 8$ см. Медиана $c$ қабырғасына түсірілген.\n\nҮшбұрыштың қабырғасына түсірілген медиананың ұзындығын табу формуласы:\n$m_c = \\frac{1}{2} \\sqrt{2a^2 + 2b^2 - c^2}$\n\nФормулаға белгілі мәндерді қоямыз:\n$m_c = \\frac{1}{2} \\sqrt{2 \\cdot 5^2 + 2 \\cdot 7^2 - 8^2}$\n\nКөбейтінділер мен дәрежелерді есептейміз:\n$m_c = \\frac{1}{2} \\sqrt{2 \\cdot 25 + 2 \\cdot 49 - 64}$\n$m_c = \\frac{1}{2} \\sqrt{50 + 98 - 64}$\n$m_c = \\frac{1}{2} \\sqrt{148 - 64}$\n\nАйырманы табамыз:\n$m_c = \\frac{1}{2} \\sqrt{84}$\n\nТүбірден шығарамыз:\n$\\sqrt{84} = \\sqrt{4 \\cdot 21} = 2\\sqrt{21}$\n\nОлай болса:\n$m_c = \\frac{1}{2} \\cdot 2\\sqrt{21} = \\sqrt{21}$ см.",
+  "latex_formulas": [
+    "m_c = \\frac{1}{2} \\sqrt{2a^2 + 2b^2 - c^2}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Let the side to which the median is drawn be a = 8 cm, and the other two sides be b = 5 cm and c = 7 cm. The length of the median to side a is given by Apollonius' theorem: m_a = (1/2) * sqrt(2b^2 + 2c^2 - a^2). Substitute the values: m_a = (1/2) * sqrt(2*5^2 + 2*7^2 - 8^2). Compute the squares: 5^2 = 25, 7^2 = 49, 8^2 = 64. Then m_a = (1/2) * sqrt(2*25 + 2*49 - 64) = (1/2) * sqrt(50 + 98 - 64) = \n\n[anthropic/claude-sonnet-4.6] answered C: We need to find the median to the side of length 8 cm in a triangle with sides a=5, b=7, c=8.\n\nThe median formula to side c is:\nm_c = (1/2) * sqrt(2a² + 2b² - c²)\n\nHere, the median is drawn to the side of length 8 cm, so c = 8, a = 5, b = 7.\n\nm_c = (1/2) * sqrt(2(5²) + 2(7²) - 8²)\n= (1/2) * sqrt(2(25) + 2(49) - 64)\n= (1/2) * sqrt(50 + 98 - 64)\n= (1/2) * sqrt(84)\n= (1/2) * 2*sqrt(21)\n= sqrt(21)\n\nTh\n\n[google/gemini-3.1-pro-preview] answered C: To find the length of the median drawn to the side of length 8 cm, we can use the median formula: $m_c = \\frac{1}{2} \\sqrt{2a^2 + 2b^2 - c^2}$, where $a$, $b$, and $c$ are the lengths of the sides of the triangle, and $m_c$ is the median to side $c$.\n\nGiven the sides:\n$a = 5$ cm\n$b = 7$ cm\n$c = 8$ cm\n\nSubstitute these values into the formula:\n$m_c = \\frac{1}{2} \\sqrt{2(5)^2 + 2(7)^2 - (8)^2}$\n$m_c",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: applying the median formula gives sqrt(21) cm. The task is somewhat formulaic but still fits level B as a short multi-step application. | [anthropic/claude-sonnet-4.6] Well-constructed question with correct answer, natural Kazakh phrasing, and mostly plausible distractors. Distractor D (2√14) is slightly harder to trace to a natural student error compared to A and B. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The correct answer is accurate, the distractors represent common calculation errors (such as forgetting to divide by 2), and the difficulty aligns well with Level B.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='sqrt(21)' expected='sqrt(21)'",
+      "raw": {
+        "ok": true,
+        "stdout": "sqrt(21)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Let the side to which the median is drawn be a = 8 cm, and the other two sides be b = 5 cm and c = 7 cm. The length of the median to side a is given by Apollonius' theorem: m_a = (1/2) * sqrt(2b^2 + 2c^2 - a^2). Substitute the values: m_a = (1/2) * sqrt(2*5^2 + 2*7^2 - 8^2). Compute the squares: 5^2 = 25, 7^2 = 49, 8^2 = 64. Then m_a = (1/2) * sqrt(2*25 + 2*49 - 64) = (1/2) * sqrt(50 + 98 - 64) = \n\n[anthropic/claude-sonnet-4.6] answered C: We need to find the median to the side of length 8 cm in a triangle with sides a=5, b=7, c=8.\n\nThe median formula to side c is:\nm_c = (1/2) * sqrt(2a² + 2b² - c²)\n\nHere, the median is drawn to the side of length 8 cm, so c = 8, a = 5, b = 7.\n\nm_c = (1/2) * sqrt(2(5²) + 2(7²) - 8²)\n= (1/2) * sqrt(2(25) + 2(49) - 64)\n= (1/2) * sqrt(50 + 98 - 64)\n= (1/2) * sqrt(84)\n= (1/2) * 2*sqrt(21)\n= sqrt(21)\n\nTh\n\n[google/gemini-3.1-pro-preview] answered C: To find the length of the median drawn to the side of length 8 cm, we can use the median formula: $m_c = \\frac{1}{2} \\sqrt{2a^2 + 2b^2 - c^2}$, where $a$, $b$, and $c$ are the lengths of the sides of the triangle, and $m_c$ is the median to side $c$.\n\nGiven the sides:\n$a = 5$ cm\n$b = 7$ cm\n$c = 8$ cm\n\nSubstitute these values into the formula:\n$m_c = \\frac{1}{2} \\sqrt{2(5)^2 + 2(7)^2 - (8)^2}$\n$m_c",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: applying the median formula gives sqrt(21) cm. The task is somewhat formulaic but still fits level B as a short multi-step application. | [anthropic/claude-sonnet-4.6] Well-constructed question with correct answer, natural Kazakh phrasing, and mostly plausible distractors. Distractor D (2√14) is slightly harder to trace to a natural student error compared to A and B. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The correct answer is accurate, the distractors represent common calculation errors (such as forgetting to divide by 2), and the difficulty aligns well with Level B.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='sqrt(21)' expected='sqrt(21)'",
+        "raw": {
+          "ok": true,
+          "stdout": "sqrt(21)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the side to which the median is drawn be a = 8 cm, and the other two sides be b = 5 cm and c = 7 cm. The length of the median to side a is given by Apollonius' theorem: m_a = (1/2) * sqrt(2b^2 + 2c^2 - a^2). Substitute the values: m_a = (1/2) * sqrt(2*5^2 + 2*7^2 - 8^2). Compute the squares: 5^2 = 25, 7^2 = 49, 8^2 = 64. Then m_a = (1/2) * sqrt(2*25 + 2*49 - 64) = (1/2) * sqrt(50 + 98 - 64) = (1/2) * sqrt(84). Since sqrt(84) = sqrt(4*21) = 2sqrt(21), we get m_a = (1/2) * 2sqrt(21) = sqrt(21) cm. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item is unambiguous: applying the median formula gives sqrt(21) cm. The task is somewhat formulaic but still fits level B as a short multi-step application.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(21)' expected='sqrt(21)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(21)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the median to the side of length 8 cm in a triangle with sides a=5, b=7, c=8.\n\nThe median formula to side c is:\nm_c = (1/2) * sqrt(2a² + 2b² - c²)\n\nHere, the median is drawn to the side of length 8 cm, so c = 8, a = 5, b = 7.\n\nm_c = (1/2) * sqrt(2(5²) + 2(7²) - 8²)\n= (1/2) * sqrt(2(25) + 2(49) - 64)\n= (1/2) * sqrt(50 + 98 - 64)\n= (1/2) * sqrt(84)\n= (1/2) * 2*sqrt(21)\n= sqrt(21)\n\nThe answer is sqrt(21) cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "Well-constructed question with correct answer, natural Kazakh phrasing, and mostly plausible distractors. Distractor D (2√14) is slightly harder to trace to a natural student error compared to A and B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(21)' expected='sqrt(21)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(21)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the length of the median drawn to the side of length 8 cm, we can use the median formula: $m_c = \\frac{1}{2} \\sqrt{2a^2 + 2b^2 - c^2}$, where $a$, $b$, and $c$ are the lengths of the sides of the triangle, and $m_c$ is the median to side $c$.\n\nGiven the sides:\n$a = 5$ cm\n$b = 7$ cm\n$c = 8$ cm\n\nSubstitute these values into the formula:\n$m_c = \\frac{1}{2} \\sqrt{2(5)^2 + 2(7)^2 - (8)^2}$\n$m_c = \\frac{1}{2} \\sqrt{2(25) + 2(49) - 64}$\n$m_c = \\frac{1}{2} \\sqrt{50 + 98 - 64}$\n$m_c = \\frac{1}{2} \\sqrt{148 - 64}$\n$m_c = \\frac{1}{2} \\sqrt{84}$\n\nSimplify the square root:\n$\\sqrt{84} = \\sqrt{4 \\times 21} = 2\\sqrt{21}$\n\nNow, substitute this back into the equation for $m_c$:\n$m_c = \\frac{1}{2} (2\\sqrt{21}) = \\sqrt{21}$ cm.\n\nAlternatively, using the Law of Cosines to find the angle opposite the side of 7 cm:\n$7^2 = 5^2 + 8^2 - 2(5)(8)\\cos(\\theta)$\n$49 = 25 + 64 - 80\\cos(\\theta)$\n$49 = 89 - 80\\cos(\\theta) \\implies 80\\cos(\\theta) = 40 \\implies \\cos(\\theta) = 0.5$ (so $\\theta = 60^\\circ$).\n\nNow apply the Law of Cosines again on the smaller triangle formed by the median, side 5, and half of side 8 (which is 4):\n$m_c^2 = 5^2 + 4^2 - 2(5)(4)\\cos(60^\\circ)$\n$m_c^2 = 25 + 16 - 40(0.5)$\n$m_c^2 = 41 - 20 = 21$\n$m_c = \\sqrt{21}$ cm.\n\nBoth methods confirm the median length is $\\sqrt{21}$ cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The correct answer is accurate, the distractors represent common calculation errors (such as forgetting to divide by 2), and the difficulty aligns well with Level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(21)' expected='sqrt(21)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(21)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:43:35.314680+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,208 @@
+{
+  "id": "6f67807b-dc8c-4f7f-9648-91d059c4fec9",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "exponential_log_equations",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\log_2 (9 - 2^x) = 3 - x$ теңдеуінің түбірлерінің қосындысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$4$"
+    },
+    {
+      "label": "B",
+      "text": "$9$"
+    },
+    {
+      "label": "C",
+      "text": "$3$"
+    },
+    {
+      "label": "D",
+      "text": "$8$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Логарифмнің анықтамасы бойынша теңдеуді түрлендіреміз:\n$9 - 2^x = 2^{3 - x}$\nДәреженің қасиеттерін қолданамыз:\n$9 - 2^x = \\frac{2^3}{2^x}$\n$9 - 2^x = \\frac{8}{2^x}$\n$2^x = y \\quad (y > 0)$ жаңа айнымалысын енгіземіз:\n$9 - y = \\frac{8}{y}$\nТеңдеудің екі жағын $y$-ке көбейтіп, квадрат теңдеу аламыз:\n$y^2 - 9y + 8 = 0$\nВиет теоремасы бойынша түбірлері: $y_1 = 1$, $y_2 = 8$.\nЕкі түбір де $y > 0$ шартын қанағаттандырады.\nБастапқы айнымалыға қайта ораламыз:\n1) $2^x = 1 \\implies 2^x = 2^0 \\implies x_1 = 0$\n2) $2^x = 8 \\implies 2^x = 2^3 \\implies x_2 = 3$\nТабылған мәндердің логарифмнің анықталу облысына ($9 - 2^x > 0$) тиісті екенін тексереміз:\n$x_1 = 0$ үшін: $9 - 2^0 = 8 > 0$ (қанағаттандырады).\n$x_2 = 3$ үшін: $9 - 2^3 = 1 > 0$ (қанағаттандырады).\nТүбірлерінің қосындысы: $0 + 3 = 3$.",
+  "latex_formulas": [
+    "\\log_a x = b \\iff x = a^b",
+    "a^{m-n} = \\frac{a^m}{a^n}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We solve log_2(9 - 2^x) = 3 - x. The domain requires 9 - 2^x > 0, so 2^x < 9. Rewrite the right-hand side: 3 - x = log_2 8 - log_2(2^x) = log_2(8 / 2^x). Let y = 2^x, where y > 0. Then the equation becomes log_2(9 - y) = log_2(8 / y). Since logarithm base 2 is one-to-one, 9 - y = 8 / y. Multiply by y: y(9 - y) = 8, so 9y - y^2 = 8, hence y^2 - 9y + 8 = 0. Factoring gives (y - 1)(y - 8) = 0, so y =\n\n[anthropic/claude-sonnet-4.6] answered C: We need to solve log₂(9 - 2^x) = 3 - x.\n\nRewrite the right side: 3 - x = log₂(2^(3-x)) = log₂(8/2^x).\n\nSo the equation becomes:\nlog₂(9 - 2^x) = log₂(8/2^x)\n\nThis means:\n9 - 2^x = 8/2^x\n\nLet t = 2^x (where t > 0):\n9 - t = 8/t\n\nMultiply both sides by t:\nt(9 - t) = 8\n9t - t² = 8\nt² - 9t + 8 = 0\n(t - 1)(t - 8) = 0\n\nSo t = 1 or t = 8.\n\nCase 1: 2^x = 1 → x = 0\nCheck domain: 9 - 2^0 = 9 - 1 = 8 > 0 ✓\nChe\n\n[google/gemini-3.1-pro-preview] answered C: Given the equation: \\(\\log_2 (9 - 2^x) = 3 - x\\).\n\nFirst, we use the definition of a logarithm to rewrite the equation in exponential form:\n\\(9 - 2^x = 2^{3 - x}\\)\n\nUsing the properties of exponents, we can rewrite the right side:\n\\(9 - 2^x = \\frac{2^3}{2^x}\\)\n\\(9 - 2^x = \\frac{8}{2^x}\\)\n\nLet \\(y = 2^x\\). Since \\(2^x > 0\\), we have \\(y > 0\\). Also, the domain of the logarithm requires \\(9 - 2^x > ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous with exactly one correct option. The item fits level B well, requiring logarithmic transformation, substitution, quadratic solving, and domain checking. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (C=3), verified independently. The solution requires 3-4 logical steps (logarithm definition, substitution, quadratic, back-substitution), perfectly matching level B. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are based on common student errors (e.g., summing the values of the substituted variable y instead of x). The difficulty aligns well with level B.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor analysis: A=4 could be the product of roots (by Vieta's), B=9 could be the sum of y-values (1+8), D=8 could be the product of y-values — these are plausible misconceptions. However, D=8 is somewhat close to B=9 and both could arise from confusion about y vs x values. Consider replacing one distractor with x₁·x₂=0 (product of x-roots) or x₂-x₁=3 to better differentiate error types.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='3' expected='3'",
+      "raw": {
+        "ok": true,
+        "stdout": "3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We solve log_2(9 - 2^x) = 3 - x. The domain requires 9 - 2^x > 0, so 2^x < 9. Rewrite the right-hand side: 3 - x = log_2 8 - log_2(2^x) = log_2(8 / 2^x). Let y = 2^x, where y > 0. Then the equation becomes log_2(9 - y) = log_2(8 / y). Since logarithm base 2 is one-to-one, 9 - y = 8 / y. Multiply by y: y(9 - y) = 8, so 9y - y^2 = 8, hence y^2 - 9y + 8 = 0. Factoring gives (y - 1)(y - 8) = 0, so y =\n\n[anthropic/claude-sonnet-4.6] answered C: We need to solve log₂(9 - 2^x) = 3 - x.\n\nRewrite the right side: 3 - x = log₂(2^(3-x)) = log₂(8/2^x).\n\nSo the equation becomes:\nlog₂(9 - 2^x) = log₂(8/2^x)\n\nThis means:\n9 - 2^x = 8/2^x\n\nLet t = 2^x (where t > 0):\n9 - t = 8/t\n\nMultiply both sides by t:\nt(9 - t) = 8\n9t - t² = 8\nt² - 9t + 8 = 0\n(t - 1)(t - 8) = 0\n\nSo t = 1 or t = 8.\n\nCase 1: 2^x = 1 → x = 0\nCheck domain: 9 - 2^0 = 9 - 1 = 8 > 0 ✓\nChe\n\n[google/gemini-3.1-pro-preview] answered C: Given the equation: \\(\\log_2 (9 - 2^x) = 3 - x\\).\n\nFirst, we use the definition of a logarithm to rewrite the equation in exponential form:\n\\(9 - 2^x = 2^{3 - x}\\)\n\nUsing the properties of exponents, we can rewrite the right side:\n\\(9 - 2^x = \\frac{2^3}{2^x}\\)\n\\(9 - 2^x = \\frac{8}{2^x}\\)\n\nLet \\(y = 2^x\\). Since \\(2^x > 0\\), we have \\(y > 0\\). Also, the domain of the logarithm requires \\(9 - 2^x > ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous with exactly one correct option. The item fits level B well, requiring logarithmic transformation, substitution, quadratic solving, and domain checking. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (C=3), verified independently. The solution requires 3-4 logical steps (logarithm definition, substitution, quadratic, back-substitution), perfectly matching level B. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are based on common student errors (e.g., summing the values of the substituted variable y instead of x). The difficulty aligns well with level B.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor analysis: A=4 could be the product of roots (by Vieta's), B=9 could be the sum of y-values (1+8), D=8 could be the product of y-values — these are plausible misconceptions. However, D=8 is somewhat close to B=9 and both could arise from confusion about y vs x values. Consider replacing one distractor with x₁·x₂=0 (product of x-roots) or x₂-x₁=3 to better differentiate error types.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='3' expected='3'",
+        "raw": {
+          "ok": true,
+          "stdout": "3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We solve log_2(9 - 2^x) = 3 - x. The domain requires 9 - 2^x > 0, so 2^x < 9. Rewrite the right-hand side: 3 - x = log_2 8 - log_2(2^x) = log_2(8 / 2^x). Let y = 2^x, where y > 0. Then the equation becomes log_2(9 - y) = log_2(8 / y). Since logarithm base 2 is one-to-one, 9 - y = 8 / y. Multiply by y: y(9 - y) = 8, so 9y - y^2 = 8, hence y^2 - 9y + 8 = 0. Factoring gives (y - 1)(y - 8) = 0, so y = 1 or y = 8. Since y = 2^x, we get x = 0 or x = 3. Both satisfy the domain. The sum of the roots is 0 + 3 = 3. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous with exactly one correct option. The item fits level B well, requiring logarithmic transformation, substitution, quadratic solving, and domain checking.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve log₂(9 - 2^x) = 3 - x.\n\nRewrite the right side: 3 - x = log₂(2^(3-x)) = log₂(8/2^x).\n\nSo the equation becomes:\nlog₂(9 - 2^x) = log₂(8/2^x)\n\nThis means:\n9 - 2^x = 8/2^x\n\nLet t = 2^x (where t > 0):\n9 - t = 8/t\n\nMultiply both sides by t:\nt(9 - t) = 8\n9t - t² = 8\nt² - 9t + 8 = 0\n(t - 1)(t - 8) = 0\n\nSo t = 1 or t = 8.\n\nCase 1: 2^x = 1 → x = 0\nCheck domain: 9 - 2^0 = 9 - 1 = 8 > 0 ✓\nCheck: log₂(8) = 3, and 3 - 0 = 3 ✓\n\nCase 2: 2^x = 8 → x = 3\nCheck domain: 9 - 2^3 = 9 - 8 = 1 > 0 ✓\nCheck: log₂(1) = 0, and 3 - 3 = 0 ✓\n\nBoth solutions are valid: x = 0 and x = 3.\n\nSum of roots = 0 + 3 = 3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a unique correct answer (C=3), verified independently. The solution requires 3-4 logical steps (logarithm definition, substitution, quadratic, back-substitution), perfectly matching level B. Kazakh terminology is standard and natural.",
+          "improvement_suggestions": "Distractor analysis: A=4 could be the product of roots (by Vieta's), B=9 could be the sum of y-values (1+8), D=8 could be the product of y-values — these are plausible misconceptions. However, D=8 is somewhat close to B=9 and both could arise from confusion about y vs x values. Consider replacing one distractor with x₁·x₂=0 (product of x-roots) or x₂-x₁=3 to better differentiate error types.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given the equation: \\(\\log_2 (9 - 2^x) = 3 - x\\).\n\nFirst, we use the definition of a logarithm to rewrite the equation in exponential form:\n\\(9 - 2^x = 2^{3 - x}\\)\n\nUsing the properties of exponents, we can rewrite the right side:\n\\(9 - 2^x = \\frac{2^3}{2^x}\\)\n\\(9 - 2^x = \\frac{8}{2^x}\\)\n\nLet \\(y = 2^x\\). Since \\(2^x > 0\\), we have \\(y > 0\\). Also, the domain of the logarithm requires \\(9 - 2^x > 0\\), which means \\(y < 9\\). Substituting \\(y\\) into the equation gives:\n\\(9 - y = \\frac{8}{y}\\)\n\nMultiply the entire equation by \\(y\\) (since \\(y \\neq 0\\)):\n\\(9y - y^2 = 8\\)\n\nRearrange the terms to form a standard quadratic equation:\n\\(y^2 - 9y + 8 = 0\\)\n\nFactor the quadratic equation:\n\\((y - 1)(y - 8) = 0\\)\n\nThis gives two possible values for \\(y\\):\n\\(y_1 = 1\\)\n\\(y_2 = 8\\)\n\nBoth values satisfy the condition \\(0 < y < 9\\). Now, substitute back \\(y = 2^x\\) to find \\(x\\):\nFor \\(y_1 = 1\\): \\(2^x = 1 \\implies x_1 = 0\\)\nFor \\(y_2 = 8\\): \\(2^x = 8 \\implies x_2 = 3\\)\n\nChecking the roots in the original equation:\nIf \\(x = 0\\): \\(\\log_2(9 - 2^0) = \\log_2(8) = 3\\), and \\(3 - 0 = 3\\). (Valid)\nIf \\(x = 3\\): \\(\\log_2(9 - 2^3) = \\log_2(1) = 0\\), and \\(3 - 3 = 0\\). (Valid)\n\nThe roots are \\(0\\) and \\(3\\). The question asks for the sum of the roots:\n\\(0 + 3 = 3\\).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors are based on common student errors (e.g., summing the values of the substituted variable y instead of x). The difficulty aligns well with level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:57:45.692831+00:00",
+  "generation_attempts": 1
+}

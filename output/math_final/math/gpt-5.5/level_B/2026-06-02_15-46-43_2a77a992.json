@@ -1,0 +1,209 @@
+{
+  "id": "2a77a992-2500-470c-8e41-e4f47be25390",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polynomials",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$P(x)=x^4+ax^3+bx^2-5x+6$ көпмүшесі $x^2-3x+2$ көпмүшесіне қалдықсыз бөлінеді. Бөліндіні табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$x^2+2x+3$"
+    },
+    {
+      "label": "B",
+      "text": "$x^2-2x+3$"
+    },
+    {
+      "label": "C",
+      "text": "$x^2+2x-3$"
+    },
+    {
+      "label": "D",
+      "text": "$x^2+x+3$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "$x^2-3x+2=(x-1)(x-2)$ болғандықтан, көбейткіштер теоремесі бойынша $P(1)=0$ және $P(2)=0$. Есептейік: $P(1)=1+a+b-5+6=a+b+2=0$, сондықтан $a+b=-2$. Екінші шарт: $P(2)=16+8a+4b-10+6=12+8a+4b=0$, яғни $2a+b=-3$. Жүйені шешсек, $a=-1$, $b=-1$. Онда $P(x)=x^4-x^3-x^2-5x+6$. Енді бөлеміз: $x^4-x^3-x^2-5x+6=(x^2-3x+2)(x^2+2x+3)$. Сондықтан бөлінді $x^2+2x+3$.",
+  "latex_formulas": [
+    "$x^2-3x+2=(x-1)(x-2)$",
+    "$P(1)=0,\\quad P(2)=0$",
+    "$P(x)=(x^2-3x+2)(x^2+2x+3)$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Since P(x) is divisible by x^2 - 3x + 2, write P(x) = (x^2 - 3x + 2)Q(x). Because P(x) has leading term x^4 and the divisor has leading term x^2, the quotient must be a monic quadratic: Q(x) = x^2 + cx + d. Now multiply: (x^2 - 3x + 2)(x^2 + cx + d) = x^4 + cx^3 + dx^2 - 3x^3 - 3cx^2 - 3dx + 2x^2 + 2cx + 2d = x^4 + (c - 3)x^3 + (d - 3c + 2)x^2 + (-3d + 2c)x + 2d. Compare with P(x)=x^4+ax^3+bx^2-5x\n\n[anthropic/claude-sonnet-4.6] answered A: The polynomial x²-3x+2 = (x-1)(x-2). Since P(x) is divisible by this, x=1 and x=2 are roots.\n\nP(1) = 1 + a + b - 5 + 6 = 0 → a + b = -2 ... (1)\nP(2) = 16 + 8a + 4b - 10 + 6 = 0 → 8a + 4b = -12 → 2a + b = -3 ... (2)\n\n(2)-(1): a = -1, then b = -1.\n\nSo P(x) = x⁴ - x³ - x² - 5x + 6.\n\nDivide by x²-3x+2:\n- x⁴ ÷ x² = x²; multiply: x⁴-3x³+2x²; subtract: 2x³-3x²-5x+6\n- 2x³ ÷ x² = 2x; multiply: 2x³-6x²+4x; \n\n[google/gemini-3.1-pro-preview] answered A: The polynomial $P(x) = x^4 + ax^3 + bx^2 - 5x + 6$ is divisible by $D(x) = x^2 - 3x + 2$ without a remainder. \nFirst, we factor the divisor: $D(x) = (x-1)(x-2)$. \nSince $P(x)$ is divisible by $D(x)$, it must be that $P(1) = 0$ and $P(2) = 0$.\n\nEvaluating $P(1)$:\n$P(1) = 1^4 + a(1)^3 + b(1)^2 - 5(1) + 6 = 1 + a + b - 5 + 6 = a + b + 2 = 0 \\implies a + b = -2$.\n\nEvaluating $P(2)$:\n$P(2) = 2^4 + a(2)",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a unique quotient. The item is concise, linguistically clear, and fits medium difficulty through coefficient comparison or factor theorem plus division. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately challenging for level B. It requires finding two unknowns via the factor theorem and then performing polynomial long division — exactly 3-4 logical steps. The correct answer is unambiguously A, verified both symbolically and manually. Distractors are plausible sign/coefficient variants, though option D (x²+x+3) is slightly less motivated by a clear error path compared to B and C. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligns with the requested difficulty level. The distractors are plausible and represent common calculation errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='x**2 + 2*x + 3' expected='x**2 + 2*x + 3'",
+      "raw": {
+        "ok": true,
+        "stdout": "x**2 + 2*x + 3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Since P(x) is divisible by x^2 - 3x + 2, write P(x) = (x^2 - 3x + 2)Q(x). Because P(x) has leading term x^4 and the divisor has leading term x^2, the quotient must be a monic quadratic: Q(x) = x^2 + cx + d. Now multiply: (x^2 - 3x + 2)(x^2 + cx + d) = x^4 + cx^3 + dx^2 - 3x^3 - 3cx^2 - 3dx + 2x^2 + 2cx + 2d = x^4 + (c - 3)x^3 + (d - 3c + 2)x^2 + (-3d + 2c)x + 2d. Compare with P(x)=x^4+ax^3+bx^2-5x\n\n[anthropic/claude-sonnet-4.6] answered A: The polynomial x²-3x+2 = (x-1)(x-2). Since P(x) is divisible by this, x=1 and x=2 are roots.\n\nP(1) = 1 + a + b - 5 + 6 = 0 → a + b = -2 ... (1)\nP(2) = 16 + 8a + 4b - 10 + 6 = 0 → 8a + 4b = -12 → 2a + b = -3 ... (2)\n\n(2)-(1): a = -1, then b = -1.\n\nSo P(x) = x⁴ - x³ - x² - 5x + 6.\n\nDivide by x²-3x+2:\n- x⁴ ÷ x² = x²; multiply: x⁴-3x³+2x²; subtract: 2x³-3x²-5x+6\n- 2x³ ÷ x² = 2x; multiply: 2x³-6x²+4x; \n\n[google/gemini-3.1-pro-preview] answered A: The polynomial $P(x) = x^4 + ax^3 + bx^2 - 5x + 6$ is divisible by $D(x) = x^2 - 3x + 2$ without a remainder. \nFirst, we factor the divisor: $D(x) = (x-1)(x-2)$. \nSince $P(x)$ is divisible by $D(x)$, it must be that $P(1) = 0$ and $P(2) = 0$.\n\nEvaluating $P(1)$:\n$P(1) = 1^4 + a(1)^3 + b(1)^2 - 5(1) + 6 = 1 + a + b - 5 + 6 = a + b + 2 = 0 \\implies a + b = -2$.\n\nEvaluating $P(2)$:\n$P(2) = 2^4 + a(2)",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a unique quotient. The item is concise, linguistically clear, and fits medium difficulty through coefficient comparison or factor theorem plus division. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately challenging for level B. It requires finding two unknowns via the factor theorem and then performing polynomial long division — exactly 3-4 logical steps. The correct answer is unambiguously A, verified both symbolically and manually. Distractors are plausible sign/coefficient variants, though option D (x²+x+3) is slightly less motivated by a clear error path compared to B and C. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligns with the requested difficulty level. The distractors are plausible and represent common calculation errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='x**2 + 2*x + 3' expected='x**2 + 2*x + 3'",
+        "raw": {
+          "ok": true,
+          "stdout": "x**2 + 2*x + 3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Since P(x) is divisible by x^2 - 3x + 2, write P(x) = (x^2 - 3x + 2)Q(x). Because P(x) has leading term x^4 and the divisor has leading term x^2, the quotient must be a monic quadratic: Q(x) = x^2 + cx + d. Now multiply: (x^2 - 3x + 2)(x^2 + cx + d) = x^4 + cx^3 + dx^2 - 3x^3 - 3cx^2 - 3dx + 2x^2 + 2cx + 2d = x^4 + (c - 3)x^3 + (d - 3c + 2)x^2 + (-3d + 2c)x + 2d. Compare with P(x)=x^4+ax^3+bx^2-5x+6. From the constant term: 2d = 6, so d = 3. From the x coefficient: -3d + 2c = -5. Substitute d = 3: -9 + 2c = -5, so 2c = 4, hence c = 2. Therefore Q(x) = x^2 + 2x + 3, which matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the problem has a unique quotient. The item is concise, linguistically clear, and fits medium difficulty through coefficient comparison or factor theorem plus division.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='x**2 + 2*x + 3' expected='x**2 + 2*x + 3'",
+            "raw": {
+              "ok": true,
+              "stdout": "x**2 + 2*x + 3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The polynomial x²-3x+2 = (x-1)(x-2). Since P(x) is divisible by this, x=1 and x=2 are roots.\n\nP(1) = 1 + a + b - 5 + 6 = 0 → a + b = -2 ... (1)\nP(2) = 16 + 8a + 4b - 10 + 6 = 0 → 8a + 4b = -12 → 2a + b = -3 ... (2)\n\n(2)-(1): a = -1, then b = -1.\n\nSo P(x) = x⁴ - x³ - x² - 5x + 6.\n\nDivide by x²-3x+2:\n- x⁴ ÷ x² = x²; multiply: x⁴-3x³+2x²; subtract: 2x³-3x²-5x+6\n- 2x³ ÷ x² = 2x; multiply: 2x³-6x²+4x; subtract: 3x²-9x+6\n- 3x² ÷ x² = 3; multiply: 3x²-9x+6; subtract: 0\n\nQuotient = x²+2x+3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately challenging for level B. It requires finding two unknowns via the factor theorem and then performing polynomial long division — exactly 3-4 logical steps. The correct answer is unambiguously A, verified both symbolically and manually. Distractors are plausible sign/coefficient variants, though option D (x²+x+3) is slightly less motivated by a clear error path compared to B and C.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='x**2 + 2*x + 3' expected='x**2 + 2*x + 3'",
+            "raw": {
+              "ok": true,
+              "stdout": "x**2 + 2*x + 3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The polynomial $P(x) = x^4 + ax^3 + bx^2 - 5x + 6$ is divisible by $D(x) = x^2 - 3x + 2$ without a remainder. \nFirst, we factor the divisor: $D(x) = (x-1)(x-2)$. \nSince $P(x)$ is divisible by $D(x)$, it must be that $P(1) = 0$ and $P(2) = 0$.\n\nEvaluating $P(1)$:\n$P(1) = 1^4 + a(1)^3 + b(1)^2 - 5(1) + 6 = 1 + a + b - 5 + 6 = a + b + 2 = 0 \\implies a + b = -2$.\n\nEvaluating $P(2)$:\n$P(2) = 2^4 + a(2)^3 + b(2)^2 - 5(2) + 6 = 16 + 8a + 4b - 10 + 6 = 8a + 4b + 12 = 0 \\implies 2a + b = -3$.\n\nSubtracting the first equation from the second gives:\n$(2a + b) - (a + b) = -3 - (-2) \\implies a = -1$.\nSubstituting $a = -1$ into the first equation gives:\n$-1 + b = -2 \\implies b = -1$.\n\nSo, the polynomial is $P(x) = x^4 - x^3 - x^2 - 5x + 6$.\n\nNow, we find the quotient $Q(x)$ such that $P(x) = D(x)Q(x)$. Since $P(x)$ is of degree 4 and $D(x)$ is of degree 2, $Q(x)$ must be a quadratic polynomial of the form $x^2 + cx + d$.\nMultiplying $D(x)$ and $Q(x)$:\n$(x^2 - 3x + 2)(x^2 + cx + d) = x^4 + cx^3 + dx^2 - 3x^3 - 3cx^2 - 3dx + 2x^2 + 2cx + 2d$\n$= x^4 + (c - 3)x^3 + (d - 3c + 2)x^2 + (2c - 3d)x + 2d$.\n\nBy comparing the coefficients with $P(x) = x^4 - x^3 - x^2 - 5x + 6$, we get:\nFor $x^3$: $c - 3 = -1 \\implies c = 2$.\nFor the constant term: $2d = 6 \\implies d = 3$.\n\nLet's verify with the $x$ coefficient:\n$2c - 3d = 2(2) - 3(3) = 4 - 9 = -5$, which matches the $-5x$ term in $P(x)$.\n\nThus, the quotient is $Q(x) = x^2 + 2x + 3$. This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, factually correct, and perfectly aligns with the requested difficulty level. The distractors are plausible and represent common calculation errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='x**2 + 2*x + 3' expected='x**2 + 2*x + 3'",
+            "raw": {
+              "ok": true,
+              "stdout": "x**2 + 2*x + 3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:46:43.458049+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,51 @@
+{
+  "subject": "math",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "model_slug": "gemini-3.1-pro-preview",
+  "intended_count": 3,
+  "saved_count": 3,
+  "rejected_count": 0,
+  "per_level_intended": {
+    "A": 1,
+    "B": 2,
+    "C": 0
+  },
+  "format": "image",
+  "seed": 0,
+  "finished_at": "2026-06-02T18:22:08.614385+00:00",
+  "attempts": [
+    {
+      "topic": "trigonometry",
+      "level": "A",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "d9432510-3ba3-4877-88ce-20fcb4ffcf23",
+      "overall_score": 9.5,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "vectors",
+      "level": "B",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "20bb0f4a-abc5-46c5-96fa-1ddb2a37cc11",
+      "overall_score": 9.433,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "polygons_circles",
+      "level": "B",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "5b03def1-4174-4c8c-b3fc-3b43863939ea",
+      "overall_score": 9.4,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": "e09dca0d-83ae-44d7-a139-1850be468773",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "quadratic_irrational",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Иррационал теңдеудің түбірлер жиынын табыңыз: $\\sqrt{x+4}+\\sqrt{2x-1}=5$",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\{80+10\\sqrt{59}\\}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\{80-10\\sqrt{59};\\,80+10\\sqrt{59}\\}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\{80-10\\sqrt{59}\\}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\{80-5\\sqrt{59}\\}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Анықталу облысы: $x\\ge \\frac{1}{2}$. Бір түбірді оқшаулаймыз: $\\sqrt{2x-1}=5-\\sqrt{x+4}$. Квадраттасақ, $2x-1=25-10\\sqrt{x+4}+x+4$, сондықтан $10\\sqrt{x+4}=30-x$. Енді қайта квадраттаймыз: $100(x+4)=(30-x)^2$. Бұдан $100x+400=x^2-60x+900$, яғни $x^2-160x+500=0$. Квадрат теңдеудің түбірлері: $x=\\frac{160\\pm\\sqrt{160^2-4\\cdot500}}{2}=80\\pm10\\sqrt{59}$. Тексеру кезінде $80+10\\sqrt{59}$ бастапқы теңдеуді қанағаттандырмайды, ал $80-10\\sqrt{59}$ қанағаттандырады. Сондықтан түбірлер жиыны $\\{80-10\\sqrt{59}\\}$.",
+  "latex_formulas": [
+    "$\\sqrt{x+4}+\\sqrt{2x-1}=5$",
+    "$100(x+4)=(30-x)^2$",
+    "$x^2-160x+500=0$",
+    "$x=80\\pm10\\sqrt{59}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Solve sqrt(x+4) + sqrt(2x-1) = 5. Domain: x+4 >= 0 and 2x-1 >= 0, so x >= 1/2. Square both sides: (sqrt(x+4) + sqrt(2x-1))^2 = 25. This gives (x+4) + (2x-1) + 2sqrt((x+4)(2x-1)) = 25, so 3x + 3 + 2sqrt((x+4)(2x-1)) = 25. Hence 2sqrt((x+4)(2x-1)) = 22 - 3x; therefore 22 - 3x must be nonnegative, so x <= 22/3. Square again: 4(x+4)(2x-1) = (22-3x)^2. Expand: 4(2x^2+7x-4) = 484 - 132x + 9x^2, so 8x^2 \n\n[anthropic/claude-sonnet-4.6] answered C: Solve √(x+4) + √(2x-1) = 5. Step 1: Isolate one radical: √(x+4) = 5 - √(2x-1). Step 2: Square both sides: x+4 = 25 - 10√(2x-1) + 2x-1 = 24 + 2x - 10√(2x-1). Rearrange: -x - 20 = -10√(2x-1), so x + 20 = 10√(2x-1). Step 3: Square again: (x+20)² = 100(2x-1), giving x² + 40x + 400 = 200x - 100, so x² - 160x + 500 = 0. Step 4: Quadratic formula: x = (160 ± √(25600-2000))/2 = (160 ± √23600)/2 = (160 ± 2\n\n[google/gemini-3.1-pro-preview] answered C: To solve the irrational equation \\(\\sqrt{x+4} + \\sqrt{2x-1} = 5\\), we first determine the domain by setting the expressions under the square roots to be non-negative:\n\\(x + 4 \\ge 0 \\implies x \\ge -4\\)\n\\(2x - 1 \\ge 0 \\implies x \\ge \\frac{1}{2}\\)\nThus, the domain is \\(x \\ge \\frac{1}{2}\\).\n\nNext, we square both sides of the equation:\n\\((\\sqrt{x+4} + \\sqrt{2x-1})^2 = 5^2\\)\n\\(x + 4 + 2\\sqrt{(x+4)(2x-1)",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The key is correct and the equation has exactly one valid root after excluding the extraneous root from squaring. The item fits level B well, requiring domain consideration, squaring, solving a quadratic, and checking extraneous solutions. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer, all distractors reachable by identifiable errors, appropriate difficulty for level B, and clean Kazakh mathematical language. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multiple steps (squaring twice, solving a quadratic equation, and checking for extraneous roots), which perfectly aligns with the requested difficulty level. The distractors are well-designed based on common student errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='[80 - 10*sqrt(59)]' expected='[80 - 10*sqrt(59)]'",
+      "raw": {
+        "ok": true,
+        "stdout": "[80 - 10*sqrt(59)]",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Solve sqrt(x+4) + sqrt(2x-1) = 5. Domain: x+4 >= 0 and 2x-1 >= 0, so x >= 1/2. Square both sides: (sqrt(x+4) + sqrt(2x-1))^2 = 25. This gives (x+4) + (2x-1) + 2sqrt((x+4)(2x-1)) = 25, so 3x + 3 + 2sqrt((x+4)(2x-1)) = 25. Hence 2sqrt((x+4)(2x-1)) = 22 - 3x; therefore 22 - 3x must be nonnegative, so x <= 22/3. Square again: 4(x+4)(2x-1) = (22-3x)^2. Expand: 4(2x^2+7x-4) = 484 - 132x + 9x^2, so 8x^2 \n\n[anthropic/claude-sonnet-4.6] answered C: Solve √(x+4) + √(2x-1) = 5. Step 1: Isolate one radical: √(x+4) = 5 - √(2x-1). Step 2: Square both sides: x+4 = 25 - 10√(2x-1) + 2x-1 = 24 + 2x - 10√(2x-1). Rearrange: -x - 20 = -10√(2x-1), so x + 20 = 10√(2x-1). Step 3: Square again: (x+20)² = 100(2x-1), giving x² + 40x + 400 = 200x - 100, so x² - 160x + 500 = 0. Step 4: Quadratic formula: x = (160 ± √(25600-2000))/2 = (160 ± √23600)/2 = (160 ± 2\n\n[google/gemini-3.1-pro-preview] answered C: To solve the irrational equation \\(\\sqrt{x+4} + \\sqrt{2x-1} = 5\\), we first determine the domain by setting the expressions under the square roots to be non-negative:\n\\(x + 4 \\ge 0 \\implies x \\ge -4\\)\n\\(2x - 1 \\ge 0 \\implies x \\ge \\frac{1}{2}\\)\nThus, the domain is \\(x \\ge \\frac{1}{2}\\).\n\nNext, we square both sides of the equation:\n\\((\\sqrt{x+4} + \\sqrt{2x-1})^2 = 5^2\\)\n\\(x + 4 + 2\\sqrt{(x+4)(2x-1)",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The key is correct and the equation has exactly one valid root after excluding the extraneous root from squaring. The item fits level B well, requiring domain consideration, squaring, solving a quadratic, and checking extraneous solutions. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer, all distractors reachable by identifiable errors, appropriate difficulty for level B, and clean Kazakh mathematical language. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multiple steps (squaring twice, solving a quadratic equation, and checking for extraneous roots), which perfectly aligns with the requested difficulty level. The distractors are well-designed based on common student errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='[80 - 10*sqrt(59)]' expected='[80 - 10*sqrt(59)]'",
+        "raw": {
+          "ok": true,
+          "stdout": "[80 - 10*sqrt(59)]",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Solve sqrt(x+4) + sqrt(2x-1) = 5. Domain: x+4 >= 0 and 2x-1 >= 0, so x >= 1/2. Square both sides: (sqrt(x+4) + sqrt(2x-1))^2 = 25. This gives (x+4) + (2x-1) + 2sqrt((x+4)(2x-1)) = 25, so 3x + 3 + 2sqrt((x+4)(2x-1)) = 25. Hence 2sqrt((x+4)(2x-1)) = 22 - 3x; therefore 22 - 3x must be nonnegative, so x <= 22/3. Square again: 4(x+4)(2x-1) = (22-3x)^2. Expand: 4(2x^2+7x-4) = 484 - 132x + 9x^2, so 8x^2 + 28x - 16 = 9x^2 - 132x + 484. Move all terms to one side: x^2 - 160x + 500 = 0. Solve: x = (160 ± sqrt(160^2 - 4*500))/2 = (160 ± sqrt(25600 - 2000))/2 = (160 ± sqrt23600)/2 = (160 ± 20sqrt59)/2 = 80 ± 10sqrt59. Check restrictions: 80 + 10sqrt59 is greater than 22/3, so it is extraneous. 80 - 10sqrt59 is approximately 3.19, which satisfies x >= 1/2 and x <= 22/3, and substitution gives the required sum 5. Therefore the root set is {80 - 10sqrt59}.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The key is correct and the equation has exactly one valid root after excluding the extraneous root from squaring. The item fits level B well, requiring domain consideration, squaring, solving a quadratic, and checking extraneous solutions.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='[80 - 10*sqrt(59)]' expected='[80 - 10*sqrt(59)]'",
+            "raw": {
+              "ok": true,
+              "stdout": "[80 - 10*sqrt(59)]",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Solve √(x+4) + √(2x-1) = 5. Step 1: Isolate one radical: √(x+4) = 5 - √(2x-1). Step 2: Square both sides: x+4 = 25 - 10√(2x-1) + 2x-1 = 24 + 2x - 10√(2x-1). Rearrange: -x - 20 = -10√(2x-1), so x + 20 = 10√(2x-1). Step 3: Square again: (x+20)² = 100(2x-1), giving x² + 40x + 400 = 200x - 100, so x² - 160x + 500 = 0. Step 4: Quadratic formula: x = (160 ± √(25600-2000))/2 = (160 ± √23600)/2 = (160 ± 20√59)/2 = 80 ± 10√59. Step 5: Check validity. We need x ≤ 13 (from 5 - √(2x-1) ≥ 0). √59 ≈ 7.681, so x₁ = 80 - 10√59 ≈ 3.19 (valid, satisfies all conditions), x₂ = 80 + 10√59 ≈ 156.81 (invalid, exceeds 13). Step 6: Verify x₁ ≈ 3.19: √7.19 + √5.38 ≈ 2.68 + 2.32 = 5 ✓. Therefore the solution set is {80 - 10√59}.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "Well-constructed question with a unique correct answer, all distractors reachable by identifiable errors, appropriate difficulty for level B, and clean Kazakh mathematical language.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='[80 - 10*sqrt(59)]' expected='[80 - 10*sqrt(59)]'",
+            "raw": {
+              "ok": true,
+              "stdout": "[80 - 10*sqrt(59)]",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the irrational equation \\(\\sqrt{x+4} + \\sqrt{2x-1} = 5\\), we first determine the domain by setting the expressions under the square roots to be non-negative:\n\\(x + 4 \\ge 0 \\implies x \\ge -4\\)\n\\(2x - 1 \\ge 0 \\implies x \\ge \\frac{1}{2}\\)\nThus, the domain is \\(x \\ge \\frac{1}{2}\\).\n\nNext, we square both sides of the equation:\n\\((\\sqrt{x+4} + \\sqrt{2x-1})^2 = 5^2\\)\n\\(x + 4 + 2\\sqrt{(x+4)(2x-1)} + 2x - 1 = 25\\)\n\\(3x + 3 + 2\\sqrt{2x^2 + 7x - 4} = 25\\)\n\nIsolate the square root term:\n\\(2\\sqrt{2x^2 + 7x - 4} = 22 - 3x\\)\n\nFor this equation to have a real solution, the right side must be non-negative:\n\\(22 - 3x \\ge 0 \\implies x \\le \\frac{22}{3} \\approx 7.33\\)\n\nNow, square both sides again:\n\\(4(2x^2 + 7x - 4) = (22 - 3x)^2\\)\n\\(8x^2 + 28x - 16 = 484 - 132x + 9x^2\\)\n\nMove all terms to one side to form a standard quadratic equation:\n\\(x^2 - 160x + 500 = 0\\)\n\nSolve for \\(x\\) using the quadratic formula:\n\\(x = \\frac{160 \\pm \\sqrt{(-160)^2 - 4(1)(500)}}{2}\\)\n\\(x = \\frac{160 \\pm \\sqrt{25600 - 2000}}{2}\\)\n\\(x = \\frac{160 \\pm \\sqrt{23600}}{2}\\)\n\\(x = \\frac{160 \\pm 20\\sqrt{59}}{2}\\)\n\\(x = 80 \\pm 10\\sqrt{59}\\)\n\nNow we check the roots against the condition \\(x \\le \\frac{22}{3}\\):\n1) \\(x_1 = 80 + 10\\sqrt{59}\\). Since \\(\\sqrt{59} \\approx 7.68\\), \\(x_1 \\approx 80 + 76.8 = 156.8\\). This is much greater than \\(7.33\\), so it is an extraneous root.\n2) \\(x_2 = 80 - 10\\sqrt{59}\\). \\(x_2 \\approx 80 - 76.8 = 3.2\\). This satisfies both \\(x \\ge \\frac{1}{2}\\) and \\(x \\le \\frac{22}{3}\\).\n\nTherefore, the only valid solution is \\(80 - 10\\sqrt{59}\\).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It requires multiple steps (squaring twice, solving a quadratic equation, and checking for extraneous roots), which perfectly aligns with the requested difficulty level. The distractors are well-designed based on common student errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='[80 - 10*sqrt(59)]' expected='[80 - 10*sqrt(59)]'",
+            "raw": {
+              "ok": true,
+              "stdout": "[80 - 10*sqrt(59)]",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:41:42.542928+00:00",
+  "generation_attempts": 1
+}

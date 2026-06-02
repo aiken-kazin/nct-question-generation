@@ -1,0 +1,208 @@
+{
+  "id": "c44ff030-6bf9-41ef-81e3-6f6b62a5d304",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "coordinate_3d",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$A(1;-2;3)$ нүктесі арқылы өтетін және $\\frac{x-2}{1}=\\frac{y-1}{-2}=\\frac{z-4}{2}$ түзуіне перпендикуляр болатын жазықтықтан $P(4;0;-1)$ нүктесіне дейінгі қашықтықты табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\sqrt{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{9}{\\sqrt{5}}$"
+    },
+    {
+      "label": "C",
+      "text": "$3$"
+    },
+    {
+      "label": "D",
+      "text": "$9$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген түзуге перпендикуляр жазықтықтың нормаль векторы осы түзудің бағыттаушы векторына параллель болады. Түзудің бағыттаушы векторы: $\\vec{n}=(1;-2;2)$. Сондықтан жазықтық теңдеуі $A(1;-2;3)$ нүктесі арқылы өтеді: $1(x-1)-2(y+2)+2(z-3)=0$. Оны ықшамдасақ, $x-2y+2z-11=0$. Нүктеден жазықтыққа дейінгі қашықтық формуласы: $d=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$. Мұнда $P(4;0;-1)$, сондықтан $d=\\frac{|4-2\\cdot 0+2\\cdot(-1)-11|}{\\sqrt{1^2+(-2)^2+2^2}}=\\frac{9}{3}=3$.",
+  "latex_formulas": [
+    "$A(x-x_0)+B(y-y_0)+C(z-z_0)=0$",
+    "$d=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The given line is (x-2)/1 = (y-1)/(-2) = (z-4)/2, so its direction vector is v = (1, -2, 2). A plane perpendicular to this line has a normal vector parallel to the line direction, so the plane's normal vector can be n = (1, -2, 2). The plane passes through A(1, -2, 3), so its equation is n · ((x, y, z) - (1, -2, 3)) = 0. Thus: 1(x-1) - 2(y+2) + 2(z-3) = 0. Expanding: x - 1 - 2y - 4 + 2z - 6 = 0, s\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find the distance from point P(4,0,-1) to the plane that passes through A(1,-2,3) and is perpendicular to the line (x-2)/1 = (y-1)/(-2) = (z-4)/2.\n\nStep 1: Find the normal vector of the plane.\nSince the plane is perpendicular to the given line, the direction vector of the line is the normal vector of the plane.\nDirection vector of line: n = (1, -2, 2)\n\nStep 2: Write the equation of the \n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Find the equation of the plane.\nThe plane is perpendicular to the given line, so the direction vector of the line serves as the normal vector to the plane. From the line's equation $\\frac{x-2}{1}=\\frac{y-1}{-2}=\\frac{z-4}{2}$, the direction vector is $\\vec{n} = (1, -2, 2)$.\nThe plane passes through the point $A(1, -2, 3)$. Using the point-normal form of the plane equation $A(x-x_0) + B(y-y",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the plane normal is the line direction vector and the point-to-plane distance is 3. The item fits level B well, requiring a clear multi-step application of 3D coordinate geometry. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. The solution requires 3-4 clear steps (identify normal vector, write plane equation, apply distance formula), fitting level B perfectly. Kazakh terminology is appropriate and natural. | [google/gemini-3.1-pro-preview] The question is perfectly structured, mathematically correct, and aligns well with the requested difficulty level B. The distractors represent common student mistakes.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor A (√3) is somewhat weak as it doesn't correspond to a clear identifiable error path. Consider replacing it with a value like 9/√9=3 variant or a result from using the wrong point, to make all distractors more pedagogically motivated.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='3' expected='3'",
+      "raw": {
+        "ok": true,
+        "stdout": "3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The given line is (x-2)/1 = (y-1)/(-2) = (z-4)/2, so its direction vector is v = (1, -2, 2). A plane perpendicular to this line has a normal vector parallel to the line direction, so the plane's normal vector can be n = (1, -2, 2). The plane passes through A(1, -2, 3), so its equation is n · ((x, y, z) - (1, -2, 3)) = 0. Thus: 1(x-1) - 2(y+2) + 2(z-3) = 0. Expanding: x - 1 - 2y - 4 + 2z - 6 = 0, s\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find the distance from point P(4,0,-1) to the plane that passes through A(1,-2,3) and is perpendicular to the line (x-2)/1 = (y-1)/(-2) = (z-4)/2.\n\nStep 1: Find the normal vector of the plane.\nSince the plane is perpendicular to the given line, the direction vector of the line is the normal vector of the plane.\nDirection vector of line: n = (1, -2, 2)\n\nStep 2: Write the equation of the \n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Find the equation of the plane.\nThe plane is perpendicular to the given line, so the direction vector of the line serves as the normal vector to the plane. From the line's equation $\\frac{x-2}{1}=\\frac{y-1}{-2}=\\frac{z-4}{2}$, the direction vector is $\\vec{n} = (1, -2, 2)$.\nThe plane passes through the point $A(1, -2, 3)$. Using the point-normal form of the plane equation $A(x-x_0) + B(y-y",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the plane normal is the line direction vector and the point-to-plane distance is 3. The item fits level B well, requiring a clear multi-step application of 3D coordinate geometry. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. The solution requires 3-4 clear steps (identify normal vector, write plane equation, apply distance formula), fitting level B perfectly. Kazakh terminology is appropriate and natural. | [google/gemini-3.1-pro-preview] The question is perfectly structured, mathematically correct, and aligns well with the requested difficulty level B. The distractors represent common student mistakes.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor A (√3) is somewhat weak as it doesn't correspond to a clear identifiable error path. Consider replacing it with a value like 9/√9=3 variant or a result from using the wrong point, to make all distractors more pedagogically motivated.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='3' expected='3'",
+        "raw": {
+          "ok": true,
+          "stdout": "3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given line is (x-2)/1 = (y-1)/(-2) = (z-4)/2, so its direction vector is v = (1, -2, 2). A plane perpendicular to this line has a normal vector parallel to the line direction, so the plane's normal vector can be n = (1, -2, 2). The plane passes through A(1, -2, 3), so its equation is n · ((x, y, z) - (1, -2, 3)) = 0. Thus: 1(x-1) - 2(y+2) + 2(z-3) = 0. Expanding: x - 1 - 2y - 4 + 2z - 6 = 0, so x - 2y + 2z - 11 = 0. Now find the distance from P(4, 0, -1) to this plane. The distance formula is |Ax0 + By0 + Cz0 + D| / sqrt(A^2 + B^2 + C^2). Here A=1, B=-2, C=2, D=-11. Substitute P: |1*4 + (-2)*0 + 2*(-1) - 11| / sqrt(1^2 + (-2)^2 + 2^2) = |4 + 0 - 2 - 11| / sqrt(1 + 4 + 4) = |-9| / 3 = 3. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous: the plane normal is the line direction vector and the point-to-plane distance is 3. The item fits level B well, requiring a clear multi-step application of 3D coordinate geometry.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the distance from point P(4,0,-1) to the plane that passes through A(1,-2,3) and is perpendicular to the line (x-2)/1 = (y-1)/(-2) = (z-4)/2.\n\nStep 1: Find the normal vector of the plane.\nSince the plane is perpendicular to the given line, the direction vector of the line is the normal vector of the plane.\nDirection vector of line: n = (1, -2, 2)\n\nStep 2: Write the equation of the plane.\nThe plane passes through A(1,-2,3) with normal n = (1,-2,2):\n1(x-1) + (-2)(y-(-2)) + 2(z-3) = 0\n(x-1) - 2(y+2) + 2(z-3) = 0\nx - 1 - 2y - 4 + 2z - 6 = 0\nx - 2y + 2z - 11 = 0\n\nStep 3: Find the distance from P(4,0,-1) to this plane.\nDistance = |1(4) + (-2)(0) + 2(-1) - 11| / sqrt(1² + (-2)² + 2²)\n= |4 + 0 - 2 - 11| / sqrt(1 + 4 + 4)\n= |-9| / sqrt(9)\n= 9/3\n= 3\n\nThe distance is 3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, well-structured, and correctly keyed. The solution requires 3-4 clear steps (identify normal vector, write plane equation, apply distance formula), fitting level B perfectly. Kazakh terminology is appropriate and natural.",
+          "improvement_suggestions": "Distractor A (√3) is somewhat weak as it doesn't correspond to a clear identifiable error path. Consider replacing it with a value like 9/√9=3 variant or a result from using the wrong point, to make all distractors more pedagogically motivated.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Find the equation of the plane.\nThe plane is perpendicular to the given line, so the direction vector of the line serves as the normal vector to the plane. From the line's equation $\\frac{x-2}{1}=\\frac{y-1}{-2}=\\frac{z-4}{2}$, the direction vector is $\\vec{n} = (1, -2, 2)$.\nThe plane passes through the point $A(1, -2, 3)$. Using the point-normal form of the plane equation $A(x-x_0) + B(y-y_0) + C(z-z_0) = 0$, we get:\n$1(x - 1) - 2(y - (-2)) + 2(z - 3) = 0$\n$x - 1 - 2(y + 2) + 2(z - 3) = 0$\n$x - 1 - 2y - 4 + 2z - 6 = 0$\n$x - 2y + 2z - 11 = 0$\n\nStep 2: Find the distance from the point $P(4, 0, -1)$ to the plane.\nThe formula for the distance from a point $(x_0, y_0, z_0)$ to a plane $Ax + By + Cz + D = 0$ is:\n$d = \\frac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$\n\nSubstitute the coordinates of $P$ and the coefficients of the plane:\n$d = \\frac{|1(4) - 2(0) + 2(-1) - 11|}{\\sqrt{1^2 + (-2)^2 + 2^2}}$\n$d = \\frac{|4 - 0 - 2 - 11|}{\\sqrt{1 + 4 + 4}}$\n$d = \\frac{|-9|}{\\sqrt{9}}$\n$d = \\frac{9}{3} = 3$\n\nThe distance is 3, which matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly structured, mathematically correct, and aligns well with the requested difficulty level B. The distractors represent common student mistakes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:40:06.000733+00:00",
+  "generation_attempts": 1
+}

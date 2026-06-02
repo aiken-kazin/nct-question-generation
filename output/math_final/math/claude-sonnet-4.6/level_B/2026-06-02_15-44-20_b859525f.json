@@ -1,0 +1,208 @@
+{
+  "id": "b859525f-7bcd-45ae-9c5f-963857dc4392",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "inequalities",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$\\frac{x^2 - x - 6}{x + 1} \\leq 0$ теңсіздігінің шешімін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$(-\\infty; -2] \\cup (-1; 3]$"
+    },
+    {
+      "label": "B",
+      "text": "$[-2; -1) \\cup [3; +\\infty)$"
+    },
+    {
+      "label": "C",
+      "text": "$(-\\infty; -2] \\cup [3; +\\infty)$"
+    },
+    {
+      "label": "D",
+      "text": "$(-\\infty; -1) \\cup [-2; 3]$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген теңсіздік: $\\frac{x^2 - x - 6}{x + 1} \\leq 0$.\n\n**1-қадам: Алымды жіктейміз.**\n$x^2 - x - 6 = (x - 3)(x + 2)$.\n\nСонда теңсіздік мынадай түрге келеді:\n$$\\frac{(x-3)(x+2)}{x+1} \\leq 0$$\n\n**2-қадам: Нөлдерді табамыз.**\nАлым нөлге тең болғанда: $x = 3$ немесе $x = -2$.\nБөлім нөлге тең болғанда: $x = -1$ (бұл нүкте ОА-ға кірмейді).\n\n**3-қадам: Аралық әдісін қолданамыз.**\nСан осінде нүктелерді орналастырамыз: $-2, -1, 3$.\n\nТексеру аралықтары:\n- $x < -2$, мысалы $x = -3$: $\\frac{(-6)(-1)}{(-2)} = \\frac{6}{-2} = -3 < 0$ ✓\n- $-2 < x < -1$, мысалы $x = -1{,}5$: $\\frac{(-4{,}5)(-0{,}5)}{(-0{,}5)} = \\frac{2{,}25}{-0{,}5} < 0$ — жоқ, $\\frac{(-4{,}5)(0{,}5)}{(-0{,}5)}$... қайта есептейік: $x=-1{,}5$: $(x-3)=-4{,}5$, $(x+2)=0{,}5$, $(x+1)=-0{,}5$; көбейтінді: $\\frac{(-4{,}5)(0{,}5)}{-0{,}5} = \\frac{-2{,}25}{-0{,}5} = 4{,}5 > 0$ ✗\n- $-1 < x < 3$, мысалы $x = 0$: $\\frac{(-3)(2)}{1} = -6 < 0$ ✓\n- $x > 3$, мысалы $x = 4$: $\\frac{(1)(6)}{5} = 1{,}2 > 0$ ✗\n\n**4-қадам: Теңдік жағдайын тексереміз.**\n$x = -2$: $\\frac{0}{-1} = 0 \\leq 0$ ✓ (кіреді)\n$x = -1$: бөлім нөл, кірмейді.\n$x = 3$: $\\frac{0}{4} = 0 \\leq 0$ ✓ (кіреді)\n\n**Жауап:** $x \\in (-\\infty; -2] \\cup (-1; 3]$.",
+  "latex_formulas": [
+    "\\frac{(x-3)(x+2)}{x+1} \\leq 0",
+    "x \\in (-\\infty; -2] \\cup (-1; 3]"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Factor the numerator: x^2 - x - 6 = (x - 3)(x + 2). The inequality becomes ((x - 3)(x + 2))/(x + 1) <= 0. Critical points are x = -2 and x = 3 from the numerator, and x = -1 from the denominator. x = -1 is excluded from the domain. Check signs on intervals: for x < -2, for example x = -3, numerator is positive and denominator is negative, so the fraction is negative; include this interval and incl\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve (x² - x - 6)/(x + 1) ≤ 0.\n\nStep 1: Factor the numerator.\nx² - x - 6 = (x - 3)(x + 2)\n\nSo the inequality becomes: (x - 3)(x + 2)/(x + 1) ≤ 0\n\nStep 2: Find critical points.\nNumerator zeros: x = 3 and x = -2\nDenominator zero (excluded): x = -1\n\nStep 3: Place critical points on number line in order: -2, -1, 3\n\nStep 4: Analyze sign in each interval.\n\nInterval (-∞, -2): pick x = -3\n(x-3\n\n[google/gemini-3.1-pro-preview] answered A: To solve the inequality \\(\\frac{x^2 - x - 6}{x + 1} \\leq 0\\), we first factor the numerator.\nThe quadratic expression \\(x^2 - x - 6\\) factors into \\((x - 3)(x + 2)\\).\nSo the inequality becomes \\(\\frac{(x - 3)(x + 2)}{x + 1} \\leq 0\\).\n\nNext, we find the critical points by setting the numerator and denominator to zero:\nNumerator: \\(x - 3 = 0 \\implies x = 3\\) and \\(x + 2 = 0 \\implies x = -2\\).\nDenomi",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution set is unambiguous. The item is a standard rational inequality appropriate for level B, though one distractor is somewhat malformed due to overlapping intervals and inclusion of the excluded point. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed. The solution requires factoring, identifying critical points, sign analysis across intervals, and handling the excluded point — exactly 4 logical steps appropriate for level B. All distractors correspond to identifiable errors: B swaps the solution (wrong inequality direction), C ignores the open interval around x=-1, D mixes up interval boundaries. | [google/gemini-3.1-pro-preview] The question is mathematically sound, correctly formatted, and perfectly aligned with the requested difficulty level. The distractors represent common student errors, such as solving for the opposite inequality or ignoring the denominator.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": false,
+      "passed": false,
+      "contradicted": false,
+      "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_ration",
+      "raw": {
+        "ok": false,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_rational_inequalities\n    _sol &= solve_rational_inequalities([_eqs])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 162, in solve_rational_inequalities\n    numer_intervals = solve_poly_inequality(numer*denom, rel)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 87, in solve_poly_inequality\n    raise ValueError(\"'%s' is not a valid relation\" % rel)\nValueError: '<= 0' is not a valid relation",
+        "timed_out": false,
+        "exit_code": 1
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Factor the numerator: x^2 - x - 6 = (x - 3)(x + 2). The inequality becomes ((x - 3)(x + 2))/(x + 1) <= 0. Critical points are x = -2 and x = 3 from the numerator, and x = -1 from the denominator. x = -1 is excluded from the domain. Check signs on intervals: for x < -2, for example x = -3, numerator is positive and denominator is negative, so the fraction is negative; include this interval and incl\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve (x² - x - 6)/(x + 1) ≤ 0.\n\nStep 1: Factor the numerator.\nx² - x - 6 = (x - 3)(x + 2)\n\nSo the inequality becomes: (x - 3)(x + 2)/(x + 1) ≤ 0\n\nStep 2: Find critical points.\nNumerator zeros: x = 3 and x = -2\nDenominator zero (excluded): x = -1\n\nStep 3: Place critical points on number line in order: -2, -1, 3\n\nStep 4: Analyze sign in each interval.\n\nInterval (-∞, -2): pick x = -3\n(x-3\n\n[google/gemini-3.1-pro-preview] answered A: To solve the inequality \\(\\frac{x^2 - x - 6}{x + 1} \\leq 0\\), we first factor the numerator.\nThe quadratic expression \\(x^2 - x - 6\\) factors into \\((x - 3)(x + 2)\\).\nSo the inequality becomes \\(\\frac{(x - 3)(x + 2)}{x + 1} \\leq 0\\).\n\nNext, we find the critical points by setting the numerator and denominator to zero:\nNumerator: \\(x - 3 = 0 \\implies x = 3\\) and \\(x + 2 = 0 \\implies x = -2\\).\nDenomi",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution set is unambiguous. The item is a standard rational inequality appropriate for level B, though one distractor is somewhat malformed due to overlapping intervals and inclusion of the excluded point. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed. The solution requires factoring, identifying critical points, sign analysis across intervals, and handling the excluded point — exactly 4 logical steps appropriate for level B. All distractors correspond to identifiable errors: B swaps the solution (wrong inequality direction), C ignores the open interval around x=-1, D mixes up interval boundaries. | [google/gemini-3.1-pro-preview] The question is mathematically sound, correctly formatted, and perfectly aligned with the requested difficulty level. The distractors represent common student errors, such as solving for the opposite inequality or ignoring the denominator.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": false,
+        "passed": false,
+        "contradicted": false,
+        "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_ration",
+        "raw": {
+          "ok": false,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_rational_inequalities\n    _sol &= solve_rational_inequalities([_eqs])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 162, in solve_rational_inequalities\n    numer_intervals = solve_poly_inequality(numer*denom, rel)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 87, in solve_poly_inequality\n    raise ValueError(\"'%s' is not a valid relation\" % rel)\nValueError: '<= 0' is not a valid relation",
+          "timed_out": false,
+          "exit_code": 1
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Factor the numerator: x^2 - x - 6 = (x - 3)(x + 2). The inequality becomes ((x - 3)(x + 2))/(x + 1) <= 0. Critical points are x = -2 and x = 3 from the numerator, and x = -1 from the denominator. x = -1 is excluded from the domain. Check signs on intervals: for x < -2, for example x = -3, numerator is positive and denominator is negative, so the fraction is negative; include this interval and include x = -2 because the fraction equals 0 there. For -2 < x < -1, numerator is negative and denominator is negative, so the fraction is positive; exclude. For -1 < x < 3, numerator is negative and denominator is positive, so the fraction is negative; include, but exclude x = -1. At x = 3 the fraction equals 0, so include x = 3. For x > 3, numerator and denominator are positive, so the fraction is positive; exclude. Therefore the solution is (-infinity, -2] union (-1, 3], which matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution set is unambiguous. The item is a standard rational inequality appropriate for level B, though one distractor is somewhat malformed due to overlapping intervals and inclusion of the excluded point.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_ration",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_rational_inequalities\n    _sol &= solve_rational_inequalities([_eqs])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 162, in solve_rational_inequalities\n    numer_intervals = solve_poly_inequality(numer*denom, rel)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 87, in solve_poly_inequality\n    raise ValueError(\"'%s' is not a valid relation\" % rel)\nValueError: '<= 0' is not a valid relation",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve (x² - x - 6)/(x + 1) ≤ 0.\n\nStep 1: Factor the numerator.\nx² - x - 6 = (x - 3)(x + 2)\n\nSo the inequality becomes: (x - 3)(x + 2)/(x + 1) ≤ 0\n\nStep 2: Find critical points.\nNumerator zeros: x = 3 and x = -2\nDenominator zero (excluded): x = -1\n\nStep 3: Place critical points on number line in order: -2, -1, 3\n\nStep 4: Analyze sign in each interval.\n\nInterval (-∞, -2): pick x = -3\n(x-3) = -6 (neg), (x+2) = -1 (neg), (x+1) = -2 (neg)\nProduct/quotient: (neg)(neg)/(neg) = (pos)/(neg) = neg ✓ (≤ 0)\n\nAt x = -2: numerator = 0, denominator = -1 ≠ 0, so expression = 0 ✓ (included)\n\nInterval (-2, -1): pick x = -1.5\n(x-3) = -4.5 (neg), (x+2) = 0.5 (pos), (x+1) = -0.5 (neg)\n(neg)(pos)/(neg) = (neg)/(neg) = pos > 0 ✗\n\nAt x = -1: excluded (denominator = 0)\n\nInterval (-1, 3): pick x = 0\n(x-3) = -3 (neg), (x+2) = 2 (pos), (x+1) = 1 (pos)\n(neg)(pos)/(pos) = neg ✓ (≤ 0)\n\nAt x = 3: numerator = 0, denominator = 4 ≠ 0, so expression = 0 ✓ (included)\n\nInterval (3, +∞): pick x = 4\n(x-3) = 1 (pos), (x+2) = 6 (pos), (x+1) = 5 (pos)\n(pos)(pos)/(pos) = pos > 0 ✗\n\nStep 5: Combine solution sets.\nSolution: (-∞, -2] ∪ (-1, 3]\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound and correctly keyed. The solution requires factoring, identifying critical points, sign analysis across intervals, and handling the excluded point — exactly 4 logical steps appropriate for level B. All distractors correspond to identifiable errors: B swaps the solution (wrong inequality direction), C ignores the open interval around x=-1, D mixes up interval boundaries.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_ration",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_rational_inequalities\n    _sol &= solve_rational_inequalities([_eqs])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 162, in solve_rational_inequalities\n    numer_intervals = solve_poly_inequality(numer*denom, rel)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 87, in solve_poly_inequality\n    raise ValueError(\"'%s' is not a valid relation\" % rel)\nValueError: '<= 0' is not a valid relation",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the inequality \\(\\frac{x^2 - x - 6}{x + 1} \\leq 0\\), we first factor the numerator.\nThe quadratic expression \\(x^2 - x - 6\\) factors into \\((x - 3)(x + 2)\\).\nSo the inequality becomes \\(\\frac{(x - 3)(x + 2)}{x + 1} \\leq 0\\).\n\nNext, we find the critical points by setting the numerator and denominator to zero:\nNumerator: \\(x - 3 = 0 \\implies x = 3\\) and \\(x + 2 = 0 \\implies x = -2\\).\nDenominator: \\(x + 1 = 0 \\implies x = -1\\).\n\nThese critical points divide the real number line into four intervals: \\((-\\infty, -2)\\), \\((-2, -1)\\), \\((-1, 3)\\), and \\((3, +\\infty)\\).\nWe test the sign of the expression in each interval:\n- For \\(x < -2\\) (e.g., \\(x = -3\\)): \\(\\frac{(-)(-)}{(-)} = -\\) (Negative)\n- For \\(-2 < x < -1\\) (e.g., \\(x = -1.5\\)): \\(\\frac{(-)(+)}{(-)} = +\\) (Positive)\n- For \\(-1 < x < 3\\) (e.g., \\(x = 0\\)): \\(\\frac{(-)(+)}{(+)} = -\\) (Negative)\n- For \\(x > 3\\) (e.g., \\(x = 4\\)): \\(\\frac{(+)(+)}{(+)} = +\\) (Positive)\n\nWe want the expression to be less than or equal to zero, which corresponds to the negative intervals: \\((-\\infty, -2)\\) and \\((-1, 3)\\).\nNow we check the endpoints:\n- \\(x = -2\\) makes the numerator zero, so it is included: \\([-2]\\).\n- \\(x = -1\\) makes the denominator zero, so it is excluded: \\((-1)\\).\n- \\(x = 3\\) makes the numerator zero, so it is included: \\([3]\\).\n\nCombining these, the solution set is \\((-\\infty, -2] \\cup (-1, 3]\\).\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly formatted, and perfectly aligned with the requested difficulty level. The distractors represent common student errors, such as solving for the opposite inequality or ignoring the denominator.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_ration",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 89, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 271, in reduce_rational_inequalities\n    _sol &= solve_rational_inequalities([_eqs])\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 162, in solve_rational_inequalities\n    numer_intervals = solve_poly_inequality(numer*denom, rel)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 87, in solve_poly_inequality\n    raise ValueError(\"'%s' is not a valid relation\" % rel)\nValueError: '<= 0' is not a valid relation",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:44:20.078385+00:00",
+  "generation_attempts": 1
+}

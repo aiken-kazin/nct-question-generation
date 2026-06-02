@@ -1,0 +1,210 @@
+{
+  "id": "10e75385-1120-4035-95bd-066cd87be883",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polygons_circles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Шеңберге сырттай сызылған теңбүйірлі трапецияның табандары $2$ см және $18$ см. Осы шеңбердің радиусын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$5$ см"
+    },
+    {
+      "label": "B",
+      "text": "$6$ см"
+    },
+    {
+      "label": "C",
+      "text": "$3$ см"
+    },
+    {
+      "label": "D",
+      "text": "$4$ см"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1. Трапеция шеңберге сырттай сызылғандықтан, оның қарама-қарсы қабырғаларының қосындысы тең болады: $a + b = c + c \\Rightarrow a + b = 2c$, мұндағы $a$ және $b$ — табандары, $c$ — бүйір қабырғасы.\n2. $2 + 18 = 2c \\Rightarrow 2c = 20 \\Rightarrow c = 10$ см.\n3. Теңбүйірлі трапецияның биіктігін $h$ деп белгілейік. Жоғарғы табанының төбесінен түсірілген биіктік төменгі табанда тікбұрышты үшбұрыш құрайды. Бұл үшбұрыштың төменгі катеті табандарының айырмасының жартысына тең: $x = \\frac{18 - 2}{2} = 8$ см.\n4. Пифагор теоремасы бойынша биіктікті табамыз: $h = \\sqrt{c^2 - x^2} = \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6$ см.\n5. Шеңбер трапецияға іштей сызылғандықтан, трапецияның биіктігі шеңбердің диаметріне тең болады ($h = d = 2r$). Ендеше, ізделінді радиус $r = \\frac{h}{2} = \\frac{6}{2} = 3$ см.",
+  "latex_formulas": [
+    "a + b = 2c",
+    "x = \\frac{b - a}{2}",
+    "h = \\sqrt{c^2 - x^2}",
+    "r = \\frac{h}{2}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: An isosceles trapezoid is circumscribed about a circle, so it is a tangential quadrilateral. For any tangential quadrilateral, the sums of lengths of opposite sides are equal. Let the bases be 2 cm and 18 cm, and let each equal leg be x. Then x + x = 2 + 18 = 20, so 2x = 20 and x = 10 cm. In an isosceles trapezoid, dropping perpendiculars from the shorter base to the longer base leaves two right t\n\n[anthropic/claude-sonnet-4.6] answered C: We have an isosceles trapezoid circumscribed about a circle (the circle is inscribed in the trapezoid), with bases a = 2 cm and b = 18 cm.\n\nFor a tangential polygon (one circumscribed about a circle), the sum of opposite sides are equal:\na + b = c + d\nwhere a, b are the parallel sides (bases) and c, d are the legs.\n\nSince it's isosceles, c = d (equal legs).\nSo: 2 + 18 = 2c\n20 = 2c\nc = 10 cm\n\nFor a\n\n[google/gemini-3.1-pro-preview] answered C: Let the bases of the isosceles trapezoid be a = 2 cm and b = 18 cm. Since the trapezoid is circumscribed about a circle, the sum of its opposite sides must be equal. Let the lateral sides be c. Then, a + b = c + c, which gives 2 + 18 = 2c, so 2c = 20 and c = 10 cm. \n\nTo find the height h of the trapezoid, we can drop altitudes from the endpoints of the top base to the bottom base. This creates two",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a single defensible solution using the tangential quadrilateral property and trapezoid height. The item is concise, appropriately multi-step for level B, and the Kazakh wording is clear. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and requires 4 logical steps (tangential polygon property → leg length → height via Pythagorean theorem → radius). The correct answer C (3 cm) is verified independently. Distractors A (5), B (6), D (4) are plausible: B=6 is the height (forgetting to halve), A=5 could come from misapplying the formula, D=4 is a plausible arithmetic error. | [google/gemini-3.1-pro-preview] The question is perfectly structured, mathematically correct, and accurately aligned with the requested difficulty level B. The distractors represent common student errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$3$ см' expected='$3$ см'",
+      "raw": {
+        "ok": true,
+        "stdout": "$3$ см",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: An isosceles trapezoid is circumscribed about a circle, so it is a tangential quadrilateral. For any tangential quadrilateral, the sums of lengths of opposite sides are equal. Let the bases be 2 cm and 18 cm, and let each equal leg be x. Then x + x = 2 + 18 = 20, so 2x = 20 and x = 10 cm. In an isosceles trapezoid, dropping perpendiculars from the shorter base to the longer base leaves two right t\n\n[anthropic/claude-sonnet-4.6] answered C: We have an isosceles trapezoid circumscribed about a circle (the circle is inscribed in the trapezoid), with bases a = 2 cm and b = 18 cm.\n\nFor a tangential polygon (one circumscribed about a circle), the sum of opposite sides are equal:\na + b = c + d\nwhere a, b are the parallel sides (bases) and c, d are the legs.\n\nSince it's isosceles, c = d (equal legs).\nSo: 2 + 18 = 2c\n20 = 2c\nc = 10 cm\n\nFor a\n\n[google/gemini-3.1-pro-preview] answered C: Let the bases of the isosceles trapezoid be a = 2 cm and b = 18 cm. Since the trapezoid is circumscribed about a circle, the sum of its opposite sides must be equal. Let the lateral sides be c. Then, a + b = c + c, which gives 2 + 18 = 2c, so 2c = 20 and c = 10 cm. \n\nTo find the height h of the trapezoid, we can drop altitudes from the endpoints of the top base to the bottom base. This creates two",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a single defensible solution using the tangential quadrilateral property and trapezoid height. The item is concise, appropriately multi-step for level B, and the Kazakh wording is clear. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and requires 4 logical steps (tangential polygon property → leg length → height via Pythagorean theorem → radius). The correct answer C (3 cm) is verified independently. Distractors A (5), B (6), D (4) are plausible: B=6 is the height (forgetting to halve), A=5 could come from misapplying the formula, D=4 is a plausible arithmetic error. | [google/gemini-3.1-pro-preview] The question is perfectly structured, mathematically correct, and accurately aligned with the requested difficulty level B. The distractors represent common student errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$3$ см' expected='$3$ см'",
+        "raw": {
+          "ok": true,
+          "stdout": "$3$ см",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "An isosceles trapezoid is circumscribed about a circle, so it is a tangential quadrilateral. For any tangential quadrilateral, the sums of lengths of opposite sides are equal. Let the bases be 2 cm and 18 cm, and let each equal leg be x. Then x + x = 2 + 18 = 20, so 2x = 20 and x = 10 cm. In an isosceles trapezoid, dropping perpendiculars from the shorter base to the longer base leaves two right triangles, each with horizontal leg equal to half the difference of the bases: (18 - 2) / 2 = 8 cm. The hypotenuse is the trapezoid leg, 10 cm. Let the height be h. By the Pythagorean theorem: h^2 + 8^2 = 10^2, so h^2 + 64 = 100, h^2 = 36, and h = 6 cm. Since the circle is tangent to both parallel bases, the distance between the bases equals the diameter of the circle. Therefore 2r = h = 6, so r = 3 cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the problem has a single defensible solution using the tangential quadrilateral property and trapezoid height. The item is concise, appropriately multi-step for level B, and the Kazakh wording is clear.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$3$ см' expected='$3$ см'",
+            "raw": {
+              "ok": true,
+              "stdout": "$3$ см",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We have an isosceles trapezoid circumscribed about a circle (the circle is inscribed in the trapezoid), with bases a = 2 cm and b = 18 cm.\n\nFor a tangential polygon (one circumscribed about a circle), the sum of opposite sides are equal:\na + b = c + d\nwhere a, b are the parallel sides (bases) and c, d are the legs.\n\nSince it's isosceles, c = d (equal legs).\nSo: 2 + 18 = 2c\n20 = 2c\nc = 10 cm\n\nFor a trapezoid with bases a = 2, b = 18, and legs c = 10:\nThe height h of the trapezoid equals the diameter of the inscribed circle... wait, actually h = 2r.\n\nLet me find the height using the Pythagorean theorem.\nThe difference in bases = 18 - 2 = 16 cm.\nEach side extends by 16/2 = 8 cm beyond the shorter base.\n\nSo the height h satisfies:\nh² + 8² = 10²\nh² = 100 - 64 = 36\nh = 6 cm\n\nThe radius of the inscribed circle r = h/2 = 6/2 = 3 cm.\n\nSo the radius is 3 cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, well-structured, and requires 4 logical steps (tangential polygon property → leg length → height via Pythagorean theorem → radius). The correct answer C (3 cm) is verified independently. Distractors A (5), B (6), D (4) are plausible: B=6 is the height (forgetting to halve), A=5 could come from misapplying the formula, D=4 is a plausible arithmetic error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$3$ см' expected='$3$ см'",
+            "raw": {
+              "ok": true,
+              "stdout": "$3$ см",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the bases of the isosceles trapezoid be a = 2 cm and b = 18 cm. Since the trapezoid is circumscribed about a circle, the sum of its opposite sides must be equal. Let the lateral sides be c. Then, a + b = c + c, which gives 2 + 18 = 2c, so 2c = 20 and c = 10 cm. \n\nTo find the height h of the trapezoid, we can drop altitudes from the endpoints of the top base to the bottom base. This creates two right-angled triangles at the ends. The base of one such right triangle is (b - a) / 2 = (18 - 2) / 2 = 16 / 2 = 8 cm. \n\nUsing the Pythagorean theorem on this right triangle, we have:\nh^2 + 8^2 = 10^2\nh^2 + 64 = 100\nh^2 = 36\nh = 6 cm.\n\nThe height of the trapezoid is equal to the diameter of the inscribed circle. Therefore, the diameter is 6 cm, and the radius r is half of the diameter:\nr = h / 2 = 6 / 2 = 3 cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly structured, mathematically correct, and accurately aligned with the requested difficulty level B. The distractors represent common student errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$3$ см' expected='$3$ см'",
+            "raw": {
+              "ok": true,
+              "stdout": "$3$ см",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:54:50.598592+00:00",
+  "generation_attempts": 1
+}

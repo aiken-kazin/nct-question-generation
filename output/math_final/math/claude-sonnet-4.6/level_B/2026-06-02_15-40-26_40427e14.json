@@ -1,0 +1,208 @@
+{
+  "id": "40427e14-1c2e-4eef-869d-766b70177e33",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "sequences",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Геометриялық прогрессияның бірінші мүшесі $b_1 = 3$, ал үшінші мүшесі $b_3 = 27$. Осы прогрессияның алғашқы бес мүшесінің қосындысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$363$"
+    },
+    {
+      "label": "B",
+      "text": "$120$"
+    },
+    {
+      "label": "C",
+      "text": "$243$"
+    },
+    {
+      "label": "D",
+      "text": "$121$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "**1-қадам: Геометриялық прогрессияның квателін табу.**\n\nГеометриялық прогрессияның $n$-ші мүшесі: $b_n = b_1 \\cdot q^{n-1}$.\n\nБерілген: $b_1 = 3$, $b_3 = 27$.\n\n$b_3 = b_1 \\cdot q^{2} \\Rightarrow 27 = 3 \\cdot q^{2} \\Rightarrow q^{2} = 9 \\Rightarrow q = 3$ (оң прогрессия).\n\n**2-қадам: Алғашқы бес мүшенің қосындысын есептеу.**\n\nГеометриялық прогрессияның алғашқы $n$ мүшесінің қосындысы ($q \\neq 1$):\n$$S_n = b_1 \\cdot \\frac{q^n - 1}{q - 1}$$\n\n$S_5 = 3 \\cdot \\frac{3^5 - 1}{3 - 1} = 3 \\cdot \\frac{243 - 1}{2} = 3 \\cdot \\frac{242}{2} = 3 \\cdot 121 = 363$.\n\n**Жауап: $S_5 = 363$.**",
+  "latex_formulas": [
+    "b_n = b_1 \\cdot q^{n-1}",
+    "S_n = b_1 \\cdot \\frac{q^n - 1}{q - 1}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.833,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: For a geometric progression, b_n = b_1 q^(n-1). Given b_1 = 3 and b_3 = 27. Then b_3 = b_1 q^2, so 27 = 3q^2. Divide by 3: q^2 = 9. Hence q = 3 or q = -3. If the intended common ratio is positive, q = 3, so the first five terms are 3, 9, 27, 81, 243. Their sum is 3 + 9 + 27 + 81 + 243 = 363. This corresponds to option A.\n\n[anthropic/claude-sonnet-4.6] answered A: Given: b1 = 3, b3 = 27. Find the common ratio q.\n\nb3 = b1 * q^2\n27 = 3 * q^2\nq^2 = 9\nq = 3 (taking positive ratio)\n\nThe first five terms are:\nb1 = 3\nb2 = 3 * 3 = 9\nb3 = 9 * 3 = 27\nb4 = 27 * 3 = 81\nb5 = 81 * 3 = 243\n\nSum S5 = 3 + 9 + 27 + 81 + 243 = 363\n\nUsing formula: S5 = b1*(q^5 - 1)/(q - 1) = 3*(243 - 1)/(3 - 1) = 3*242/2 = 3*121 = 363\n\nThe answer is 363.\n\n[google/gemini-3.1-pro-preview] answered A: Given a geometric progression with the first term b_1 = 3 and the third term b_3 = 27. We need to find the sum of the first five terms, S_5.\n\nThe formula for the n-th term of a geometric progression is b_n = b_1 * q^(n-1).\nUsing the given values:\nb_3 = b_1 * q^2\n27 = 3 * q^2\nq^2 = 9\nThis gives two possible values for the common ratio: q = 3 or q = -3.\n\nLet's calculate the sum of the first five ter",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 9.333,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 8.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.833,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically ambiguous: from b1 = 3 and b3 = 27, the common ratio can be q = 3 or q = -3, giving different sums for the first five terms. The keyed answer A is valid only if a positive common ratio is assumed, but that condition is not stated. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-structured. Answer A (363) is unambiguously correct. Distractors include 243 (b5 alone), 121 (S5/3, partial calculation error), and 120 (plausible off-by-one or wrong formula), all reachable by identifiable errors. Language is natural Kazakh with correct mathematical terminology. | [google/gemini-3.1-pro-preview] The question is well-structured and the distractors are excellent, representing common student mistakes. However, the problem text omits the condition that the progression has positive terms, which leaves q = -3 as a mathematically valid possibility (though ruled out by the options).",
+    "improvement_suggestions": "[openai/gpt-5.5] Specify that the common ratio is positive, e.g. 'еселігі оң', or provide enough information such as b2 = 9. Alternatively, include a formulation asking for the sum when q > 0. | [google/gemini-3.1-pro-preview] Add 'мүшелері оң' (positive terms) to the question text to rigorously rule out q = -3. In the explanation, replace the hallucinated word 'квателін' with the correct Kazakh mathematical term 'еселігін'.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='363' expected='363'",
+      "raw": {
+        "ok": true,
+        "stdout": "363",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: For a geometric progression, b_n = b_1 q^(n-1). Given b_1 = 3 and b_3 = 27. Then b_3 = b_1 q^2, so 27 = 3q^2. Divide by 3: q^2 = 9. Hence q = 3 or q = -3. If the intended common ratio is positive, q = 3, so the first five terms are 3, 9, 27, 81, 243. Their sum is 3 + 9 + 27 + 81 + 243 = 363. This corresponds to option A.\n\n[anthropic/claude-sonnet-4.6] answered A: Given: b1 = 3, b3 = 27. Find the common ratio q.\n\nb3 = b1 * q^2\n27 = 3 * q^2\nq^2 = 9\nq = 3 (taking positive ratio)\n\nThe first five terms are:\nb1 = 3\nb2 = 3 * 3 = 9\nb3 = 9 * 3 = 27\nb4 = 27 * 3 = 81\nb5 = 81 * 3 = 243\n\nSum S5 = 3 + 9 + 27 + 81 + 243 = 363\n\nUsing formula: S5 = b1*(q^5 - 1)/(q - 1) = 3*(243 - 1)/(3 - 1) = 3*242/2 = 3*121 = 363\n\nThe answer is 363.\n\n[google/gemini-3.1-pro-preview] answered A: Given a geometric progression with the first term b_1 = 3 and the third term b_3 = 27. We need to find the sum of the first five terms, S_5.\n\nThe formula for the n-th term of a geometric progression is b_n = b_1 * q^(n-1).\nUsing the given values:\nb_3 = b_1 * q^2\n27 = 3 * q^2\nq^2 = 9\nThis gives two possible values for the common ratio: q = 3 or q = -3.\n\nLet's calculate the sum of the first five ter",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 9.333,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.833,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically ambiguous: from b1 = 3 and b3 = 27, the common ratio can be q = 3 or q = -3, giving different sums for the first five terms. The keyed answer A is valid only if a positive common ratio is assumed, but that condition is not stated. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-structured. Answer A (363) is unambiguously correct. Distractors include 243 (b5 alone), 121 (S5/3, partial calculation error), and 120 (plausible off-by-one or wrong formula), all reachable by identifiable errors. Language is natural Kazakh with correct mathematical terminology. | [google/gemini-3.1-pro-preview] The question is well-structured and the distractors are excellent, representing common student mistakes. However, the problem text omits the condition that the progression has positive terms, which leaves q = -3 as a mathematically valid possibility (though ruled out by the options).",
+      "improvement_suggestions": "[openai/gpt-5.5] Specify that the common ratio is positive, e.g. 'еселігі оң', or provide enough information such as b2 = 9. Alternatively, include a formulation asking for the sum when q > 0. | [google/gemini-3.1-pro-preview] Add 'мүшелері оң' (positive terms) to the question text to rigorously rule out q = -3. In the explanation, replace the hallucinated word 'квателін' with the correct Kazakh mathematical term 'еселігін'.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='363' expected='363'",
+        "raw": {
+          "ok": true,
+          "stdout": "363",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For a geometric progression, b_n = b_1 q^(n-1). Given b_1 = 3 and b_3 = 27. Then b_3 = b_1 q^2, so 27 = 3q^2. Divide by 3: q^2 = 9. Hence q = 3 or q = -3. If the intended common ratio is positive, q = 3, so the first five terms are 3, 9, 27, 81, 243. Their sum is 3 + 9 + 27 + 81 + 243 = 363. This corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.3,
+          "pass_fail": true,
+          "comments": "The item is mathematically ambiguous: from b1 = 3 and b3 = 27, the common ratio can be q = 3 or q = -3, giving different sums for the first five terms. The keyed answer A is valid only if a positive common ratio is assumed, but that condition is not stated.",
+          "improvement_suggestions": "Specify that the common ratio is positive, e.g. 'еселігі оң', or provide enough information such as b2 = 9. Alternatively, include a formulation asking for the sum when q > 0.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='363' expected='363'",
+            "raw": {
+              "ok": true,
+              "stdout": "363",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given: b1 = 3, b3 = 27. Find the common ratio q.\n\nb3 = b1 * q^2\n27 = 3 * q^2\nq^2 = 9\nq = 3 (taking positive ratio)\n\nThe first five terms are:\nb1 = 3\nb2 = 3 * 3 = 9\nb3 = 9 * 3 = 27\nb4 = 27 * 3 = 81\nb5 = 81 * 3 = 243\n\nSum S5 = 3 + 9 + 27 + 81 + 243 = 363\n\nUsing formula: S5 = b1*(q^5 - 1)/(q - 1) = 3*(243 - 1)/(3 - 1) = 3*242/2 = 3*121 = 363\n\nThe answer is 363.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-structured. Answer A (363) is unambiguously correct. Distractors include 243 (b5 alone), 121 (S5/3, partial calculation error), and 120 (plausible off-by-one or wrong formula), all reachable by identifiable errors. Language is natural Kazakh with correct mathematical terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='363' expected='363'",
+            "raw": {
+              "ok": true,
+              "stdout": "363",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given a geometric progression with the first term b_1 = 3 and the third term b_3 = 27. We need to find the sum of the first five terms, S_5.\n\nThe formula for the n-th term of a geometric progression is b_n = b_1 * q^(n-1).\nUsing the given values:\nb_3 = b_1 * q^2\n27 = 3 * q^2\nq^2 = 9\nThis gives two possible values for the common ratio: q = 3 or q = -3.\n\nLet's calculate the sum of the first five terms for both cases using the formula S_n = b_1 * (q^n - 1) / (q - 1).\n\nCase 1: q = 3\nS_5 = 3 * (3^5 - 1) / (3 - 1)\nS_5 = 3 * (243 - 1) / 2\nS_5 = 3 * 242 / 2\nS_5 = 3 * 121 = 363.\nAlternatively, summing the terms directly: 3 + 9 + 27 + 81 + 243 = 363.\n\nCase 2: q = -3\nS_5 = 3 * ((-3)^5 - 1) / (-3 - 1)\nS_5 = 3 * (-243 - 1) / (-4)\nS_5 = 3 * (-244) / (-4)\nS_5 = 3 * 61 = 183.\nAlternatively, summing the terms directly: 3 - 9 + 27 - 81 + 243 = 183.\n\nLooking at the given options (A: 363, B: 120, C: 243, D: 121), only 363 is present. Therefore, the intended answer corresponds to q = 3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-structured and the distractors are excellent, representing common student mistakes. However, the problem text omits the condition that the progression has positive terms, which leaves q = -3 as a mathematically valid possibility (though ruled out by the options).",
+          "improvement_suggestions": "Add 'мүшелері оң' (positive terms) to the question text to rigorously rule out q = -3. In the explanation, replace the hallucinated word 'квателін' with the correct Kazakh mathematical term 'еселігін'.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='363' expected='363'",
+            "raw": {
+              "ok": true,
+              "stdout": "363",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:40:26.159607+00:00",
+  "generation_attempts": 1
+}

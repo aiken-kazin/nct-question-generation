@@ -1,0 +1,232 @@
+{
+  "id": "3b0e0374-5447-4507-8af0-4327793e8d10",
+  "subject": "math",
+  "level": "B",
+  "format": "image",
+  "topic": "functions_limits",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Суреттегі $f(x)$ функциясының графигі бойынша $L=\\lim_{x\\to 2} f(x)$ болса, $\\lim_{x\\to 2}\\frac{f(x)-L}{x-2}$ мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$0$"
+    },
+    {
+      "label": "B",
+      "text": "$2$"
+    },
+    {
+      "label": "C",
+      "text": "$1$"
+    },
+    {
+      "label": "D",
+      "text": "Шек жоқ"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Суреттен $x=2$ маңында график бір түзу бойымен өтетінін көреміз. Белгіленген нүктелер арқылы осы түзудің көлбеуін табамыз: $k=\\frac{5-3}{3-1}=\\frac{2}{2}=1$. Сонымен қатар график бойынша $x\\to 2$ кезінде функция мәндері $L=\\lim_{x\\to 2}f(x)=4$ санына ұмтылады. Сондықтан $\\lim_{x\\to 2}\\frac{f(x)-L}{x-2}$ осы түзу графигінің көлбеуіне тең: $\\lim_{x\\to 2}\\frac{f(x)-4}{x-2}=1$. Дұрыс жауап: $1$.",
+  "latex_formulas": [
+    "$L=\\lim_{x\\to 2} f(x)$",
+    "$\\lim_{x\\to 2}\\frac{f(x)-L}{x-2}$",
+    "$k=\\frac{y_2-y_1}{x_2-x_1}$"
+  ],
+  "figure_spec": {
+    "figure_type": "function_graph",
+    "parameters": {
+      "function_str": "(x*x - 4)/(x - 2)",
+      "x_range": [
+        -1,
+        5
+      ],
+      "y_range": [
+        0,
+        6
+      ],
+      "shade_area": null,
+      "mark_points": [
+        1,
+        3
+      ],
+      "tangent_at_x": null,
+      "second_function_str": null,
+      "function_label": "f(x)",
+      "caption": "$f(x)$ функциясының графигі"
+    },
+    "caption": "$f(x)$ функциясының графигі"
+  },
+  "figure_path": "output/math_final/figures/function_graph_57523.png",
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: From the graph, f(x) is a straight line passing through the points (1, 3) and (3, 5). Its slope is (5 - 3)/(3 - 1) = 2/2 = 1. Therefore the line has equation f(x) = x + 2, since at x = 1, f(1) = 3. First, L = lim_{x -> 2} f(x) = 2 + 2 = 4. Now compute the required limit: lim_{x -> 2} (f(x) - L)/(x - 2) = lim_{x -> 2} ((x + 2) - 4)/(x - 2) = lim_{x -> 2} (x - 2)/(x - 2) = lim_{x -> 2} 1 = 1. Thus t\n\n[anthropic/claude-sonnet-4.6] answered C: From the graph, f(x) is a linear function passing through points (1, 3) and (3, 5). The slope is (5-3)/(3-1) = 2/2 = 1. So f(x) = x + 2.\n\nStep 1: Find L = lim_{x→2} f(x). Since f(x) = x + 2 is continuous, L = f(2) = 2 + 2 = 4.\n\nStep 2: Compute lim_{x→2} [f(x) - L] / (x - 2) = lim_{x→2} [(x + 2) - 4] / (x - 2) = lim_{x→2} (x - 2) / (x - 2) = lim_{x→2} 1 = 1.\n\nThis limit equals 1, which corresponds \n\n[google/gemini-3.1-pro-preview] answered C: 1. First, we determine the equation of the function $f(x)$ from its graph. The graph is a straight line passing through the points $(1, 3)$ and $(3, 5)$.\n2. We calculate the slope (derivative) of this line: $m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{5 - 3}{3 - 1} = \\frac{2}{2} = 1$.\n3. Using the point-slope form, the equation of the line is $y - 3 = 1(x - 1)$, which simplifies to $f(x) = x + 2$.\n4. ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 9.667,
+      "figure_relevance": 9.667
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined from the graph: the required limit equals the slope of the line near x=2, which is 1. The item is clear and the figure is relevant, though the task is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the graph clearly shows a linear function through (1,3) and (3,5), the limit L=4 is correctly identified, and the derivative interpretation yields slope=1 as the answer. All distractors are reachable via plausible errors (e.g., D for thinking the limit DNE, B for computing slope incorrectly, A for thinking f(x)-L→0 implies the ratio→0). The figure is essential and accurate. | [google/gemini-3.1-pro-preview] The question is excellent. It elegantly tests the understanding of the limit definition of a derivative (or the ability to derive a linear function from a graph and evaluate a limit) using a clear and essential figure.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='1' expected='1'",
+      "raw": {
+        "ok": true,
+        "stdout": "1",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: From the graph, f(x) is a straight line passing through the points (1, 3) and (3, 5). Its slope is (5 - 3)/(3 - 1) = 2/2 = 1. Therefore the line has equation f(x) = x + 2, since at x = 1, f(1) = 3. First, L = lim_{x -> 2} f(x) = 2 + 2 = 4. Now compute the required limit: lim_{x -> 2} (f(x) - L)/(x - 2) = lim_{x -> 2} ((x + 2) - 4)/(x - 2) = lim_{x -> 2} (x - 2)/(x - 2) = lim_{x -> 2} 1 = 1. Thus t\n\n[anthropic/claude-sonnet-4.6] answered C: From the graph, f(x) is a linear function passing through points (1, 3) and (3, 5). The slope is (5-3)/(3-1) = 2/2 = 1. So f(x) = x + 2.\n\nStep 1: Find L = lim_{x→2} f(x). Since f(x) = x + 2 is continuous, L = f(2) = 2 + 2 = 4.\n\nStep 2: Compute lim_{x→2} [f(x) - L] / (x - 2) = lim_{x→2} [(x + 2) - 4] / (x - 2) = lim_{x→2} (x - 2) / (x - 2) = lim_{x→2} 1 = 1.\n\nThis limit equals 1, which corresponds \n\n[google/gemini-3.1-pro-preview] answered C: 1. First, we determine the equation of the function $f(x)$ from its graph. The graph is a straight line passing through the points $(1, 3)$ and $(3, 5)$.\n2. We calculate the slope (derivative) of this line: $m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{5 - 3}{3 - 1} = \\frac{2}{2} = 1$.\n3. Using the point-slope form, the equation of the line is $y - 3 = 1(x - 1)$, which simplifies to $f(x) = x + 2$.\n4. ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 9.667,
+        "figure_relevance": 9.667
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined from the graph: the required limit equals the slope of the line near x=2, which is 1. The item is clear and the figure is relevant, though the task is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the graph clearly shows a linear function through (1,3) and (3,5), the limit L=4 is correctly identified, and the derivative interpretation yields slope=1 as the answer. All distractors are reachable via plausible errors (e.g., D for thinking the limit DNE, B for computing slope incorrectly, A for thinking f(x)-L→0 implies the ratio→0). The figure is essential and accurate. | [google/gemini-3.1-pro-preview] The question is excellent. It elegantly tests the understanding of the limit definition of a derivative (or the ability to derive a linear function from a graph and evaluate a limit) using a clear and essential figure.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='1' expected='1'",
+        "raw": {
+          "ok": true,
+          "stdout": "1",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the graph, f(x) is a straight line passing through the points (1, 3) and (3, 5). Its slope is (5 - 3)/(3 - 1) = 2/2 = 1. Therefore the line has equation f(x) = x + 2, since at x = 1, f(1) = 3. First, L = lim_{x -> 2} f(x) = 2 + 2 = 4. Now compute the required limit: lim_{x -> 2} (f(x) - L)/(x - 2) = lim_{x -> 2} ((x + 2) - 4)/(x - 2) = lim_{x -> 2} (x - 2)/(x - 2) = lim_{x -> 2} 1 = 1. Thus the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely determined from the graph: the required limit equals the slope of the line near x=2, which is 1. The item is clear and the figure is relevant, though the task is on the easier side of level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='1' expected='1'",
+            "raw": {
+              "ok": true,
+              "stdout": "1",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the graph, f(x) is a linear function passing through points (1, 3) and (3, 5). The slope is (5-3)/(3-1) = 2/2 = 1. So f(x) = x + 2.\n\nStep 1: Find L = lim_{x→2} f(x). Since f(x) = x + 2 is continuous, L = f(2) = 2 + 2 = 4.\n\nStep 2: Compute lim_{x→2} [f(x) - L] / (x - 2) = lim_{x→2} [(x + 2) - 4] / (x - 2) = lim_{x→2} (x - 2) / (x - 2) = lim_{x→2} 1 = 1.\n\nThis limit equals 1, which corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 9.0,
+            "figure_relevance": 9.0
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the graph clearly shows a linear function through (1,3) and (3,5), the limit L=4 is correctly identified, and the derivative interpretation yields slope=1 as the answer. All distractors are reachable via plausible errors (e.g., D for thinking the limit DNE, B for computing slope incorrectly, A for thinking f(x)-L→0 implies the ratio→0). The figure is essential and accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='1' expected='1'",
+            "raw": {
+              "ok": true,
+              "stdout": "1",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "1. First, we determine the equation of the function $f(x)$ from its graph. The graph is a straight line passing through the points $(1, 3)$ and $(3, 5)$.\n2. We calculate the slope (derivative) of this line: $m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{5 - 3}{3 - 1} = \\frac{2}{2} = 1$.\n3. Using the point-slope form, the equation of the line is $y - 3 = 1(x - 1)$, which simplifies to $f(x) = x + 2$.\n4. Next, we find the value of $L$. The problem states $L = \\lim_{x\\to 2} f(x)$. Since $f(x) = x + 2$ is a continuous function, $L = f(2) = 2 + 2 = 4$.\n5. Now we evaluate the required limit: $\\lim_{x\\to 2} \\frac{f(x) - L}{x - 2}$.\n6. Substituting $f(x) = x + 2$ and $L = 4$ into the expression, we get: $\\lim_{x\\to 2} \\frac{(x + 2) - 4}{x - 2} = \\lim_{x\\to 2} \\frac{x - 2}{x - 2}$.\n7. For $x \\neq 2$, the fraction simplifies to 1. Therefore, the limit is $\\lim_{x\\to 2} 1 = 1$.\n8. Alternatively, we can recognize that the expression $\\lim_{x\\to 2} \\frac{f(x) - f(2)}{x - 2}$ is the formal definition of the derivative of $f(x)$ at $x = 2$, denoted as $f'(2)$. Since the graph is a straight line, its derivative is constant and equal to its slope, which we found to be 1. Thus, $f'(2) = 1$.\n9. The value is 1, which corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It elegantly tests the understanding of the limit definition of a derivative (or the ability to derive a linear function from a graph and evaluate a limit) using a clear and essential figure.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='1' expected='1'",
+            "raw": {
+              "ok": true,
+              "stdout": "1",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:13:41.732266+00:00",
+  "generation_attempts": 1
+}

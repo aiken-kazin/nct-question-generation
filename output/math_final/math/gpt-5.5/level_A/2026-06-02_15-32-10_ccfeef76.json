@@ -1,0 +1,208 @@
+{
+  "id": "ccfeef76-9880-4ece-a863-e67dbdb6f08b",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "triangles",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Үшбұрыштың табаны $8\\ \\text{см}$, осы табанға түсірілген биіктігі $5\\ \\text{см}$. Үшбұрыштың ауданын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$40\\ \\text{см}^2$"
+    },
+    {
+      "label": "B",
+      "text": "$13\\ \\text{см}^2$"
+    },
+    {
+      "label": "C",
+      "text": "$10\\ \\text{см}^2$"
+    },
+    {
+      "label": "D",
+      "text": "$20\\ \\text{см}^2$"
+    }
+  ],
+  "correct_answer": "D",
+  "explanation": "Үшбұрыштың ауданы табан мен осы табанға түсірілген биіктіктің көбейтіндісінің жартысына тең: $S=\\frac{1}{2}ah$. Мұнда $a=8\\ \\text{см}$, $h=5\\ \\text{см}$. Сондықтан $S=\\frac{1}{2}\\cdot 8\\cdot 5=20\\ \\text{см}^2$.",
+  "latex_formulas": [
+    "$S=\\frac{1}{2}ah$",
+    "$S=\\frac{1}{2}\\cdot 8\\cdot 5=20$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered D: The area of a triangle is calculated by the formula A = (1/2) × base × height. The given base is 8 cm and the height to this base is 5 cm. Substitute the values: A = (1/2) × 8 × 5. First, (1/2) × 8 = 4. Then 4 × 5 = 20. Therefore, the area of the triangle is 20 cm^2.\n\n[anthropic/claude-sonnet-4.6] answered D: The area of a triangle is given by the formula: Area = (1/2) × base × height. Here, base = 8 cm and height = 5 cm. Area = (1/2) × 8 × 5 = (1/2) × 40 = 20 cm².\n\n[google/gemini-3.1-pro-preview] answered D: To find the area of a triangle, we use the formula A = (1/2) * base * height. The problem states that the base is 8 cm and the height drawn to this base is 5 cm. Plugging these values into the formula gives A = (1/2) * 8 * 5 = 4 * 5 = 20 cm^2. This matches option D.",
+    "critic_answer": "D",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has exactly one correct answer, and directly tests the standard triangle area formula at the requested basic level. The Kazakh wording and LaTeX formatting are clear and appropriate. | [anthropic/claude-sonnet-4.6] The question is a clean, direct application of the triangle area formula at Level A. The correct answer D=20 cm² is unambiguous, and the Kazakh phrasing is natural and accurate. Distractor A (40) catches students who forget the ½ factor, B (13) catches those who add base and height, and D is correct; however, distractor C (10) is less clearly motivated (could be ½×base or ½×height×something), making it slightly weaker. | [google/gemini-3.1-pro-preview] Excellent basic level question. Distractors are well-chosen based on common errors (e.g., forgetting to divide by 2, or adding instead of multiplying).",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$20\\ \\text{см}^2$' expected='$20\\ \\text{см}^2$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$20\\ \\text{см}^2$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered D: The area of a triangle is calculated by the formula A = (1/2) × base × height. The given base is 8 cm and the height to this base is 5 cm. Substitute the values: A = (1/2) × 8 × 5. First, (1/2) × 8 = 4. Then 4 × 5 = 20. Therefore, the area of the triangle is 20 cm^2.\n\n[anthropic/claude-sonnet-4.6] answered D: The area of a triangle is given by the formula: Area = (1/2) × base × height. Here, base = 8 cm and height = 5 cm. Area = (1/2) × 8 × 5 = (1/2) × 40 = 20 cm².\n\n[google/gemini-3.1-pro-preview] answered D: To find the area of a triangle, we use the formula A = (1/2) * base * height. The problem states that the base is 8 cm and the height drawn to this base is 5 cm. Plugging these values into the formula gives A = (1/2) * 8 * 5 = 4 * 5 = 20 cm^2. This matches option D.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has exactly one correct answer, and directly tests the standard triangle area formula at the requested basic level. The Kazakh wording and LaTeX formatting are clear and appropriate. | [anthropic/claude-sonnet-4.6] The question is a clean, direct application of the triangle area formula at Level A. The correct answer D=20 cm² is unambiguous, and the Kazakh phrasing is natural and accurate. Distractor A (40) catches students who forget the ½ factor, B (13) catches those who add base and height, and D is correct; however, distractor C (10) is less clearly motivated (could be ½×base or ½×height×something), making it slightly weaker. | [google/gemini-3.1-pro-preview] Excellent basic level question. Distractors are well-chosen based on common errors (e.g., forgetting to divide by 2, or adding instead of multiplying).",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$20\\ \\text{см}^2$' expected='$20\\ \\text{см}^2$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$20\\ \\text{см}^2$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The area of a triangle is calculated by the formula A = (1/2) × base × height. The given base is 8 cm and the height to this base is 5 cm. Substitute the values: A = (1/2) × 8 × 5. First, (1/2) × 8 = 4. Then 4 × 5 = 20. Therefore, the area of the triangle is 20 cm^2.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has exactly one correct answer, and directly tests the standard triangle area formula at the requested basic level. The Kazakh wording and LaTeX formatting are clear and appropriate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$20\\ \\text{см}^2$' expected='$20\\ \\text{см}^2$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$20\\ \\text{см}^2$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The area of a triangle is given by the formula: Area = (1/2) × base × height. Here, base = 8 cm and height = 5 cm. Area = (1/2) × 8 × 5 = (1/2) × 40 = 20 cm².",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is a clean, direct application of the triangle area formula at Level A. The correct answer D=20 cm² is unambiguous, and the Kazakh phrasing is natural and accurate. Distractor A (40) catches students who forget the ½ factor, B (13) catches those who add base and height, and D is correct; however, distractor C (10) is less clearly motivated (could be ½×base or ½×height×something), making it slightly weaker.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$20\\ \\text{см}^2$' expected='$20\\ \\text{см}^2$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$20\\ \\text{см}^2$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the area of a triangle, we use the formula A = (1/2) * base * height. The problem states that the base is 8 cm and the height drawn to this base is 5 cm. Plugging these values into the formula gives A = (1/2) * 8 * 5 = 4 * 5 = 20 cm^2. This matches option D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent basic level question. Distractors are well-chosen based on common errors (e.g., forgetting to divide by 2, or adding instead of multiplying).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$20\\ \\text{см}^2$' expected='$20\\ \\text{см}^2$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$20\\ \\text{см}^2$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:32:10.009321+00:00",
+  "generation_attempts": 1
+}

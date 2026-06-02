@@ -1,0 +1,207 @@
+{
+  "id": "b724c493-e27d-4855-96a0-e42b74a0397c",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "coordinate_3d",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$A(1, -2, 3)$ және $B(5, 2, -1)$ нүктелері берілген. $AB$ кесіндісін $1:3$ қатынасында бөлетін $C$ нүктесінің координаталарын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$C(2, -1, 2)$"
+    },
+    {
+      "label": "B",
+      "text": "$C(3, 0, 1)$"
+    },
+    {
+      "label": "C",
+      "text": "$C(4, 1, 0)$"
+    },
+    {
+      "label": "D",
+      "text": "$C(2, -2, 1)$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Кесіндіні $\\lambda : \\mu = 1 : 3$ қатынасында бөлетін нүктенің координаталарын табу үшін бөлу формуласын қолданамыз:\n\n$C = \\left(\\frac{\\lambda x_2 + \\mu x_1}{\\lambda + \\mu},\\ \\frac{\\lambda y_2 + \\mu y_1}{\\lambda + \\mu},\\ \\frac{\\lambda z_2 + \\mu z_1}{\\lambda + \\mu}\\right)$\n\nМұнда $A(1, -2, 3)$, $B(5, 2, -1)$, $\\lambda = 1$, $\\mu = 3$.\n\n$x_C = \\frac{1 \\cdot 5 + 3 \\cdot 1}{1 + 3} = \\frac{5 + 3}{4} = \\frac{8}{4} = 2$\n\n$y_C = \\frac{1 \\cdot 2 + 3 \\cdot (-2)}{1 + 3} = \\frac{2 - 6}{4} = \\frac{-4}{4} = -1$\n\n$z_C = \\frac{1 \\cdot (-1) + 3 \\cdot 3}{1 + 3} = \\frac{-1 + 9}{4} = \\frac{8}{4} = 2$\n\nДемек, $C(2, -1, 2)$.",
+  "latex_formulas": [
+    "C = \\left(\\frac{\\lambda x_2 + \\mu x_1}{\\lambda + \\mu},\\ \\frac{\\lambda y_2 + \\mu y_1}{\\lambda + \\mu},\\ \\frac{\\lambda z_2 + \\mu z_1}{\\lambda + \\mu}\\right)"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.0,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: For a point C dividing segment AB in the ratio AC:CB = 1:3, use the internal section formula. If A(x1,y1,z1) = (1,-2,3), B(x2,y2,z2) = (5,2,-1), and AC:CB = m:n = 1:3, then C = ((n*x1 + m*x2)/(m+n), (n*y1 + m*y2)/(m+n), (n*z1 + m*z2)/(m+n)). Substituting m=1 and n=3: x = (3*1 + 1*5)/(1+3) = (3+5)/4 = 8/4 = 2. y = (3*(-2) + 1*2)/4 = (-6+2)/4 = -4/4 = -1. z = (3*3 + 1*(-1))/4 = (9-1)/4 = 8/4 = 2. Th\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find point C that divides segment AB in ratio 1:3 (from A to B).\n\nUsing the section formula: if C divides AB in ratio m:n, then\nC = (m·B + n·A) / (m + n)\n\nHere m = 1, n = 3, A(1, -2, 3), B(5, 2, -1)\n\nx_C = (1·5 + 3·1) / (1+3) = (5 + 3) / 4 = 8/4 = 2\ny_C = (1·2 + 3·(-2)) / (1+3) = (2 - 6) / 4 = -4/4 = -1\nz_C = (1·(-1) + 3·3) / (1+3) = (-1 + 9) / 4 = 8/4 = 2\n\nSo C = (2, -1, 2), which matc\n\n[google/gemini-3.1-pro-preview] answered A: To find the coordinates of point C that divides the line segment AB in the ratio m:n = 1:3, we use the section formula:\n\nx = (m*x2 + n*x1) / (m + n)\ny = (m*y2 + n*y1) / (m + n)\nz = (m*z2 + n*z1) / (m + n)\n\nGiven A(1, -2, 3) and B(5, 2, -1), we have:\nx1 = 1, y1 = -2, z1 = 3\nx2 = 5, y2 = 2, z2 = -1\nm = 1, n = 3\n\nNow, substitute these values into the formula:\nx = (1*5 + 3*1) / (1 + 3) = (5 + 3) / 4 =",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 7.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.0,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct under the standard interpretation AC:CB = 1:3, and the options include plausible common errors such as midpoint and reversed ratio. However, the item is quite routine and feels closer to an easier level than a true medium B-level teacher-certification question. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-formed. The section formula is applied correctly, the answer is verified symbolically, and the Kazakh phrasing is natural. Distractors are plausible but could be more systematically tied to specific errors; the difficulty is slightly below B-level as the calculation is fairly routine once the formula is recalled. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are well-thought-out, representing common errors such as finding the midpoint or reversing the ratio.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='(2, -1, 2)' expected='(2, -1, 2)'",
+      "raw": {
+        "ok": true,
+        "stdout": "(2, -1, 2)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: For a point C dividing segment AB in the ratio AC:CB = 1:3, use the internal section formula. If A(x1,y1,z1) = (1,-2,3), B(x2,y2,z2) = (5,2,-1), and AC:CB = m:n = 1:3, then C = ((n*x1 + m*x2)/(m+n), (n*y1 + m*y2)/(m+n), (n*z1 + m*z2)/(m+n)). Substituting m=1 and n=3: x = (3*1 + 1*5)/(1+3) = (3+5)/4 = 8/4 = 2. y = (3*(-2) + 1*2)/4 = (-6+2)/4 = -4/4 = -1. z = (3*3 + 1*(-1))/4 = (9-1)/4 = 8/4 = 2. Th\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find point C that divides segment AB in ratio 1:3 (from A to B).\n\nUsing the section formula: if C divides AB in ratio m:n, then\nC = (m·B + n·A) / (m + n)\n\nHere m = 1, n = 3, A(1, -2, 3), B(5, 2, -1)\n\nx_C = (1·5 + 3·1) / (1+3) = (5 + 3) / 4 = 8/4 = 2\ny_C = (1·2 + 3·(-2)) / (1+3) = (2 - 6) / 4 = -4/4 = -1\nz_C = (1·(-1) + 3·3) / (1+3) = (-1 + 9) / 4 = 8/4 = 2\n\nSo C = (2, -1, 2), which matc\n\n[google/gemini-3.1-pro-preview] answered A: To find the coordinates of point C that divides the line segment AB in the ratio m:n = 1:3, we use the section formula:\n\nx = (m*x2 + n*x1) / (m + n)\ny = (m*y2 + n*y1) / (m + n)\nz = (m*z2 + n*z1) / (m + n)\n\nGiven A(1, -2, 3) and B(5, 2, -1), we have:\nx1 = 1, y1 = -2, z1 = 3\nx2 = 5, y2 = 2, z2 = -1\nm = 1, n = 3\n\nNow, substitute these values into the formula:\nx = (1*5 + 3*1) / (1 + 3) = (5 + 3) / 4 =",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 7.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.0,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct under the standard interpretation AC:CB = 1:3, and the options include plausible common errors such as midpoint and reversed ratio. However, the item is quite routine and feels closer to an easier level than a true medium B-level teacher-certification question. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-formed. The section formula is applied correctly, the answer is verified symbolically, and the Kazakh phrasing is natural. Distractors are plausible but could be more systematically tied to specific errors; the difficulty is slightly below B-level as the calculation is fairly routine once the formula is recalled. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are well-thought-out, representing common errors such as finding the midpoint or reversing the ratio.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='(2, -1, 2)' expected='(2, -1, 2)'",
+        "raw": {
+          "ok": true,
+          "stdout": "(2, -1, 2)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For a point C dividing segment AB in the ratio AC:CB = 1:3, use the internal section formula. If A(x1,y1,z1) = (1,-2,3), B(x2,y2,z2) = (5,2,-1), and AC:CB = m:n = 1:3, then C = ((n*x1 + m*x2)/(m+n), (n*y1 + m*y2)/(m+n), (n*z1 + m*z2)/(m+n)). Substituting m=1 and n=3: x = (3*1 + 1*5)/(1+3) = (3+5)/4 = 8/4 = 2. y = (3*(-2) + 1*2)/4 = (-6+2)/4 = -4/4 = -1. z = (3*3 + 1*(-1))/4 = (9-1)/4 = 8/4 = 2. Therefore C = (2, -1, 2), which matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct under the standard interpretation AC:CB = 1:3, and the options include plausible common errors such as midpoint and reversed ratio. However, the item is quite routine and feels closer to an easier level than a true medium B-level teacher-certification question.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(2, -1, 2)' expected='(2, -1, 2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(2, -1, 2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find point C that divides segment AB in ratio 1:3 (from A to B).\n\nUsing the section formula: if C divides AB in ratio m:n, then\nC = (m·B + n·A) / (m + n)\n\nHere m = 1, n = 3, A(1, -2, 3), B(5, 2, -1)\n\nx_C = (1·5 + 3·1) / (1+3) = (5 + 3) / 4 = 8/4 = 2\ny_C = (1·2 + 3·(-2)) / (1+3) = (2 - 6) / 4 = -4/4 = -1\nz_C = (1·(-1) + 3·3) / (1+3) = (-1 + 9) / 4 = 8/4 = 2\n\nSo C = (2, -1, 2), which matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-formed. The section formula is applied correctly, the answer is verified symbolically, and the Kazakh phrasing is natural. Distractors are plausible but could be more systematically tied to specific errors; the difficulty is slightly below B-level as the calculation is fairly routine once the formula is recalled.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(2, -1, 2)' expected='(2, -1, 2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(2, -1, 2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the coordinates of point C that divides the line segment AB in the ratio m:n = 1:3, we use the section formula:\n\nx = (m*x2 + n*x1) / (m + n)\ny = (m*y2 + n*y1) / (m + n)\nz = (m*z2 + n*z1) / (m + n)\n\nGiven A(1, -2, 3) and B(5, 2, -1), we have:\nx1 = 1, y1 = -2, z1 = 3\nx2 = 5, y2 = 2, z2 = -1\nm = 1, n = 3\n\nNow, substitute these values into the formula:\nx = (1*5 + 3*1) / (1 + 3) = (5 + 3) / 4 = 8 / 4 = 2\ny = (1*2 + 3*(-2)) / (1 + 3) = (2 - 6) / 4 = -4 / 4 = -1\nz = (1*(-1) + 3*3) / (1 + 3) = (-1 + 9) / 4 = 8 / 4 = 2\n\nThus, the coordinates of point C are (2, -1, 2). This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors are well-thought-out, representing common errors such as finding the midpoint or reversing the ratio.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(2, -1, 2)' expected='(2, -1, 2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(2, -1, 2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:51:36.676455+00:00",
+  "generation_attempts": 1
+}

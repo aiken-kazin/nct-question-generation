@@ -1,0 +1,209 @@
+{
+  "id": "b7b1bd93-037c-478b-b744-6456964f4c6a",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "solids_of_revolution",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Қиық конустың жасаушысы $13\\ {см}$, биіктігі $12\\ {см}$, ал бүйір бетінің ауданы $195\\pi\\ {см}^{2}$-ге тең. Қиық конустың көлемін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$500\\pi\\ {см}^{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$700\\pi\\ {см}^{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$900\\pi\\ {см}^{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{2275\\pi}{3}\\ {см}^{3}$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Қиық конустың үлкен табан радиусын $R$, кіші табан радиусын $r$ деп алайық. Жасаушысы, биіктігі және радиустар айырмасы үшін $l^{2}=h^{2}+(R-r)^{2}$ формуласы орындалады. Сондықтан $13^{2}=12^{2}+(R-r)^{2}$, бұдан $(R-r)^{2}=25$, яғни $R-r=5$. Бүйір бетінің ауданы $S_{б}=\\pi(R+r)l$ болғандықтан, $195\\pi=\\pi(R+r)\\cdot 13$. Демек, $R+r=15$. Екі теңдеуді шешсек, $R=10$, $r=5$. Қиық конустың көлемі $V=\\frac{1}{3}\\pi h(R^{2}+Rr+r^{2})$. Олай болса, $V=\\frac{1}{3}\\pi\\cdot 12\\cdot(10^{2}+10\\cdot 5+5^{2})=4\\pi\\cdot 175=700\\pi\\ {см}^{3}$.",
+  "latex_formulas": [
+    "$l^{2}=h^{2}+(R-r)^{2}$",
+    "$S_{б}=\\pi(R+r)l$",
+    "$V=\\frac{1}{3}\\pi h(R^{2}+Rr+r^{2})$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: For a conical frustum, the lateral surface area is S_lateral = pi(R + r)l, where R and r are the radii and l is the slant height. Given S_lateral = 195pi and l = 13, we get pi(R + r)13 = 195pi. Dividing by 13pi gives R + r = 15. The slant height, height, and difference of radii satisfy l^2 = h^2 + (R - r)^2. Thus 13^2 = 12^2 + (R - r)^2, so 169 = 144 + (R - r)^2, hence (R - r)^2 = 25 and R - r = 5\n\n[anthropic/claude-sonnet-4.6] answered B: Given: slant height l = 13 cm, height h = 12 cm, lateral surface area S_lateral = 195π cm².\n\nFor a frustum (truncated cone):\n- Lateral surface area: S = π(R + r)l, where R and r are the radii of the two bases.\n- So: π(R + r)(13) = 195π → R + r = 15\n\nAlso, the relationship between slant height, height, and radii:\nl² = h² + (R - r)²\n13² = 12² + (R - r)²\n169 = 144 + (R - r)²\n(R - r)² = 25\nR - r = 5\n\n\n\n[google/gemini-3.1-pro-preview] answered B: Let the radii of the bases of the frustum of the cone be $R$ and $r$ (with $R > r$).\n\nThe formula for the lateral surface area of a frustum of a cone is:\n$S_{lat} = \\pi (R + r) l$\nGiven $S_{lat} = 195\\pi$ and slant height $l = 13$, we can find the sum of the radii:\n$\\pi (R + r) \\times 13 = 195\\pi$\n$R + r = \\frac{195}{13} = 15$\n\nWe also know the relationship between the slant height $l$, the height",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 9.667,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the data determine R+r and R-r, leading uniquely to 700π. The item fits medium difficulty well and uses standard terminology; distractors are mostly plausible common formula/step errors. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and requires exactly the multi-step reasoning expected at level B. The correct answer is unambiguously B=700π, verified both analytically and by the sandbox. Kazakh terminology is standard and natural. Distractors A and C are plausible (e.g., arithmetic errors in the volume formula), while D uses the exact fractional form which is slightly less natural given the clean integer answer, but still reachable via a computational error. | [google/gemini-3.1-pro-preview] Excellent question. The distractors are perfectly designed to catch common student errors (e.g., forgetting the Rr term, using (R+r)^2, or using slant height instead of height for volume). The language and LaTeX are flawless.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='700*pi' expected='700*pi'",
+      "raw": {
+        "ok": true,
+        "stdout": "700*pi",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: For a conical frustum, the lateral surface area is S_lateral = pi(R + r)l, where R and r are the radii and l is the slant height. Given S_lateral = 195pi and l = 13, we get pi(R + r)13 = 195pi. Dividing by 13pi gives R + r = 15. The slant height, height, and difference of radii satisfy l^2 = h^2 + (R - r)^2. Thus 13^2 = 12^2 + (R - r)^2, so 169 = 144 + (R - r)^2, hence (R - r)^2 = 25 and R - r = 5\n\n[anthropic/claude-sonnet-4.6] answered B: Given: slant height l = 13 cm, height h = 12 cm, lateral surface area S_lateral = 195π cm².\n\nFor a frustum (truncated cone):\n- Lateral surface area: S = π(R + r)l, where R and r are the radii of the two bases.\n- So: π(R + r)(13) = 195π → R + r = 15\n\nAlso, the relationship between slant height, height, and radii:\nl² = h² + (R - r)²\n13² = 12² + (R - r)²\n169 = 144 + (R - r)²\n(R - r)² = 25\nR - r = 5\n\n\n\n[google/gemini-3.1-pro-preview] answered B: Let the radii of the bases of the frustum of the cone be $R$ and $r$ (with $R > r$).\n\nThe formula for the lateral surface area of a frustum of a cone is:\n$S_{lat} = \\pi (R + r) l$\nGiven $S_{lat} = 195\\pi$ and slant height $l = 13$, we can find the sum of the radii:\n$\\pi (R + r) \\times 13 = 195\\pi$\n$R + r = \\frac{195}{13} = 15$\n\nWe also know the relationship between the slant height $l$, the height",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the data determine R+r and R-r, leading uniquely to 700π. The item fits medium difficulty well and uses standard terminology; distractors are mostly plausible common formula/step errors. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and requires exactly the multi-step reasoning expected at level B. The correct answer is unambiguously B=700π, verified both analytically and by the sandbox. Kazakh terminology is standard and natural. Distractors A and C are plausible (e.g., arithmetic errors in the volume formula), while D uses the exact fractional form which is slightly less natural given the clean integer answer, but still reachable via a computational error. | [google/gemini-3.1-pro-preview] Excellent question. The distractors are perfectly designed to catch common student errors (e.g., forgetting the Rr term, using (R+r)^2, or using slant height instead of height for volume). The language and LaTeX are flawless.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='700*pi' expected='700*pi'",
+        "raw": {
+          "ok": true,
+          "stdout": "700*pi",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For a conical frustum, the lateral surface area is S_lateral = pi(R + r)l, where R and r are the radii and l is the slant height. Given S_lateral = 195pi and l = 13, we get pi(R + r)13 = 195pi. Dividing by 13pi gives R + r = 15. The slant height, height, and difference of radii satisfy l^2 = h^2 + (R - r)^2. Thus 13^2 = 12^2 + (R - r)^2, so 169 = 144 + (R - r)^2, hence (R - r)^2 = 25 and R - r = 5. Solving the system R + r = 15 and R - r = 5 gives R = 10 and r = 5. The volume of a conical frustum is V = (1/3)pi h(R^2 + Rr + r^2). Therefore V = (1/3)pi * 12 * (10^2 + 10*5 + 5^2) = 4pi * (100 + 50 + 25) = 4pi * 175 = 700pi cm^3. So the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 9.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous: the data determine R+r and R-r, leading uniquely to 700π. The item fits medium difficulty well and uses standard terminology; distractors are mostly plausible common formula/step errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='700*pi' expected='700*pi'",
+            "raw": {
+              "ok": true,
+              "stdout": "700*pi",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given: slant height l = 13 cm, height h = 12 cm, lateral surface area S_lateral = 195π cm².\n\nFor a frustum (truncated cone):\n- Lateral surface area: S = π(R + r)l, where R and r are the radii of the two bases.\n- So: π(R + r)(13) = 195π → R + r = 15\n\nAlso, the relationship between slant height, height, and radii:\nl² = h² + (R - r)²\n13² = 12² + (R - r)²\n169 = 144 + (R - r)²\n(R - r)² = 25\nR - r = 5\n\nFrom R + r = 15 and R - r = 5:\nR = 10, r = 5\n\nVolume of frustum: V = (πh/3)(R² + Rr + r²)\nV = (π·12/3)(100 + 50 + 25)\nV = 4π(175)\nV = 700π cm³\n\nThe answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically sound, and requires exactly the multi-step reasoning expected at level B. The correct answer is unambiguously B=700π, verified both analytically and by the sandbox. Kazakh terminology is standard and natural. Distractors A and C are plausible (e.g., arithmetic errors in the volume formula), while D uses the exact fractional form which is slightly less natural given the clean integer answer, but still reachable via a computational error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='700*pi' expected='700*pi'",
+            "raw": {
+              "ok": true,
+              "stdout": "700*pi",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the radii of the bases of the frustum of the cone be $R$ and $r$ (with $R > r$).\n\nThe formula for the lateral surface area of a frustum of a cone is:\n$S_{lat} = \\pi (R + r) l$\nGiven $S_{lat} = 195\\pi$ and slant height $l = 13$, we can find the sum of the radii:\n$\\pi (R + r) \\times 13 = 195\\pi$\n$R + r = \\frac{195}{13} = 15$\n\nWe also know the relationship between the slant height $l$, the height $h$, and the radii $R$ and $r$:\n$l^2 = h^2 + (R - r)^2$\nGiven $l = 13$ and $h = 12$:\n$13^2 = 12^2 + (R - r)^2$\n$169 = 144 + (R - r)^2$\n$(R - r)^2 = 25$\nSince $R > r$, we have $R - r = 5$.\n\nNow we have a system of linear equations:\n1) $R + r = 15$\n2) $R - r = 5$\n\nAdding the two equations gives:\n$2R = 20 \\implies R = 10$ cm.\nSubtracting the second equation from the first gives:\n$2r = 10 \\implies r = 5$ cm.\n\nThe volume of a frustum of a cone is given by the formula:\n$V = \\frac{1}{3} \\pi h (R^2 + Rr + r^2)$\n\nSubstitute the known values into the volume formula:\n$V = \\frac{1}{3} \\pi (12) (10^2 + 10 \\times 5 + 5^2)$\n$V = 4\\pi (100 + 50 + 25)$\n$V = 4\\pi (175)$\n$V = 700\\pi \\text{ cm}^3$.\n\nComparing this result to the given options, the correct choice is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent question. The distractors are perfectly designed to catch common student errors (e.g., forgetting the Rr term, using (R+r)^2, or using slant height instead of height for volume). The language and LaTeX are flawless.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='700*pi' expected='700*pi'",
+            "raw": {
+              "ok": true,
+              "stdout": "700*pi",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:40:26.029780+00:00",
+  "generation_attempts": 1
+}

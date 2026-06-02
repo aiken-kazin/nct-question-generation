@@ -1,0 +1,60 @@
+{
+  "subject": "math",
+  "model_id": "openai/gpt-5.5",
+  "model_slug": "gpt-5.5",
+  "intended_count": 3,
+  "saved_count": 3,
+  "rejected_count": 1,
+  "per_level_intended": {
+    "A": 1,
+    "B": 2,
+    "C": 0
+  },
+  "format": "image",
+  "seed": 0,
+  "finished_at": "2026-06-02T18:14:52.637181+00:00",
+  "attempts": [
+    {
+      "topic": "integrals",
+      "level": "A",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "85f933e4-2ca8-46d8-a4ba-6963c16b72fc",
+      "overall_score": 9.4,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "coordinate_3d",
+      "level": "B",
+      "format": "image",
+      "attempts": 4,
+      "saved": false,
+      "reason": "failed critic: overall=6.6 correctness=9.0",
+      "overall_score": 6.607
+    },
+    {
+      "topic": "functions_limits",
+      "level": "B",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "3b0e0374-5447-4507-8af0-4327793e8d10",
+      "overall_score": 9.233,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "exponential_log_equations",
+      "level": "B",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "01830fe9-dd3c-48a6-a573-67ccff7fe5cc",
+      "overall_score": 9.3,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    }
+  ]
+}

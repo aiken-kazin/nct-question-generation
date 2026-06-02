@@ -1,0 +1,208 @@
+{
+  "id": "a4fab5ec-7299-418d-9b3f-9e8a8974b9a9",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "sequences",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Үш сан өспелі арифметикалық прогрессияны құрайды. Олардың қосындысы 15-ке тең. Егер осы сандарға сәйкесінше 1, 4 және 19 сандарын қоссақ, онда шыққан сандар геометриялық прогрессияны құрайды. Бастапқы үш санды табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-16; 5; 26$"
+    },
+    {
+      "label": "B",
+      "text": "$2; 5; 8$"
+    },
+    {
+      "label": "C",
+      "text": "$26; 5; -16$"
+    },
+    {
+      "label": "D",
+      "text": "$3; 5; 7$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "1) Бастапқы үш санды арифметикалық прогрессияның мүшелері ретінде $a-d$, $a$, $a+d$ деп белгілейміз, мұндағы $d > 0$ (өспелі прогрессия).\n2) Олардың қосындысы: $(a-d) + a + (a+d) = 3a = 15 \\implies a = 5$.\nДемек, бастапқы сандар: $5-d$, $5$, $5+d$.\n3) Бұл сандарға сәйкесінше $1$, $4$ және $19$ сандарын қоссақ, жаңа сандар шығады:\n$(5-d) + 1 = 6-d$\n$5 + 4 = 9$\n$(5+d) + 19 = 24+d$\n4) Шыққан сандар геометриялық прогрессия құрайтындықтан, геометриялық прогрессияның қасиеті бойынша ортаңғы мүшесінің квадраты шеткі мүшелерінің көбейтіндісіне тең:\n$9^2 = (6-d)(24+d)$\n$81 = 144 + 6d - 24d - d^2$\n$d^2 + 18d - 63 = 0$\n5) Квадрат теңдеуді шешеміз:\n$D = 18^2 - 4 \\cdot 1 \\cdot (-63) = 324 + 252 = 576 = 24^2$\n$d_{1,2} = \\frac{-18 \\pm 24}{2}$\n$d_1 = 3$, $d_2 = -21$.\n6) Прогрессия өспелі болғандықтан, $d > 0$ шарты орындалуы керек, яғни $d = 3$.\n7) Бастапқы сандар: $5-3 = 2$; $5$; $5+3 = 8$.",
+  "latex_formulas": [
+    "a_2 = \\frac{a_1 + a_3}{2}",
+    "b_2^2 = b_1 \\cdot b_3"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Let the three initial numbers be an increasing arithmetic progression: 5 - d, 5, 5 + d with d > 0. Their sum is (5 - d) + 5 + (5 + d) = 15, so the middle term is indeed 5. After adding 1, 4, and 19 respectively, the new numbers are (5 - d) + 1 = 6 - d, 5 + 4 = 9, and (5 + d) + 19 = 24 + d. For these to form a geometric progression, the square of the middle term must equal the product of the outer \n\n[anthropic/claude-sonnet-4.6] answered B: Let the three numbers in arithmetic progression be (a-d), a, (a+d) where d > 0 (increasing AP).\n\nCondition 1: Sum = 15\n(a-d) + a + (a+d) = 15\n3a = 15\na = 5\n\nSo the three numbers are (5-d), 5, (5+d).\n\nCondition 2: Adding 1, 4, 19 respectively gives a geometric progression:\n(5-d+1), (5+4), (5+d+19)\n= (6-d), 9, (24+d)\n\nFor GP, the middle term squared equals the product of the outer terms:\n9² = (6-d)(\n\n[google/gemini-3.1-pro-preview] answered B: Let the three numbers forming the increasing arithmetic progression be a - d, a, and a + d, where d > 0. \nTheir sum is (a - d) + a + (a + d) = 3a = 15, which gives a = 5.\nThe three numbers are 5 - d, 5, and 5 + d.\n\nIf we add 1, 4, and 19 to these numbers respectively, we get:\n1st number: 5 - d + 1 = 6 - d\n2nd number: 5 + 4 = 9\n3rd number: 5 + d + 19 = 24 + d\n\nThese new numbers form a geometric pro",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible solution using standard AP and GP properties. The task fits medium difficulty well; distractors are mostly plausible, though one option is trivially excluded by the stated increasing order. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a unique correct answer (B) verified both algebraically and computationally. Distractors are plausible: A and C represent the same numbers in different orders (including the d=-21 solution reversed), and D is a simple AP with d=2 that satisfies the sum condition but not the GP condition. The Kazakh is natural and uses correct mathematical terminology. The difficulty level appropriately requires 4+ logical steps involving both AP and GP properties. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors are excellent, particularly option C which corresponds to the second root of the quadratic equation (the decreasing progression), effectively testing if the candidate paid attention to the 'increasing' condition.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$2; 5; 8$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Let the three initial numbers be an increasing arithmetic progression: 5 - d, 5, 5 + d with d > 0. Their sum is (5 - d) + 5 + (5 + d) = 15, so the middle term is indeed 5. After adding 1, 4, and 19 respectively, the new numbers are (5 - d) + 1 = 6 - d, 5 + 4 = 9, and (5 + d) + 19 = 24 + d. For these to form a geometric progression, the square of the middle term must equal the product of the outer \n\n[anthropic/claude-sonnet-4.6] answered B: Let the three numbers in arithmetic progression be (a-d), a, (a+d) where d > 0 (increasing AP).\n\nCondition 1: Sum = 15\n(a-d) + a + (a+d) = 15\n3a = 15\na = 5\n\nSo the three numbers are (5-d), 5, (5+d).\n\nCondition 2: Adding 1, 4, 19 respectively gives a geometric progression:\n(5-d+1), (5+4), (5+d+19)\n= (6-d), 9, (24+d)\n\nFor GP, the middle term squared equals the product of the outer terms:\n9² = (6-d)(\n\n[google/gemini-3.1-pro-preview] answered B: Let the three numbers forming the increasing arithmetic progression be a - d, a, and a + d, where d > 0. \nTheir sum is (a - d) + a + (a + d) = 3a = 15, which gives a = 5.\nThe three numbers are 5 - d, 5, and 5 + d.\n\nIf we add 1, 4, and 19 to these numbers respectively, we get:\n1st number: 5 - d + 1 = 6 - d\n2nd number: 5 + 4 = 9\n3rd number: 5 + d + 19 = 24 + d\n\nThese new numbers form a geometric pro",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible solution using standard AP and GP properties. The task fits medium difficulty well; distractors are mostly plausible, though one option is trivially excluded by the stated increasing order. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a unique correct answer (B) verified both algebraically and computationally. Distractors are plausible: A and C represent the same numbers in different orders (including the d=-21 solution reversed), and D is a simple AP with d=2 that satisfies the sum condition but not the GP condition. The Kazakh is natural and uses correct mathematical terminology. The difficulty level appropriately requires 4+ logical steps involving both AP and GP properties. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors are excellent, particularly option C which corresponds to the second root of the quadratic equation (the decreasing progression), effectively testing if the candidate paid attention to the 'increasing' condition.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$2; 5; 8$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the three initial numbers be an increasing arithmetic progression: 5 - d, 5, 5 + d with d > 0. Their sum is (5 - d) + 5 + (5 + d) = 15, so the middle term is indeed 5. After adding 1, 4, and 19 respectively, the new numbers are (5 - d) + 1 = 6 - d, 5 + 4 = 9, and (5 + d) + 19 = 24 + d. For these to form a geometric progression, the square of the middle term must equal the product of the outer terms: 9^2 = (6 - d)(24 + d). Thus 81 = 144 + 6d - 24d - d^2 = 144 - 18d - d^2. Rearranging gives d^2 + 18d - 63 = 0. The discriminant is 18^2 - 4(1)(-63) = 324 + 252 = 576, so d = (-18 ± 24)/2. Hence d = 3 or d = -21. Since the arithmetic progression is increasing, d > 0, so d = 3. Therefore the initial numbers are 5 - 3 = 2, 5, 5 + 3 = 8.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single defensible solution using standard AP and GP properties. The task fits medium difficulty well; distractors are mostly plausible, though one option is trivially excluded by the stated increasing order.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$2; 5; 8$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the three numbers in arithmetic progression be (a-d), a, (a+d) where d > 0 (increasing AP).\n\nCondition 1: Sum = 15\n(a-d) + a + (a+d) = 15\n3a = 15\na = 5\n\nSo the three numbers are (5-d), 5, (5+d).\n\nCondition 2: Adding 1, 4, 19 respectively gives a geometric progression:\n(5-d+1), (5+4), (5+d+19)\n= (6-d), 9, (24+d)\n\nFor GP, the middle term squared equals the product of the outer terms:\n9² = (6-d)(24+d)\n81 = 144 + 6d - 24d - d²\n81 = 144 - 18d - d²\nd² + 18d + 81 - 144 = 0\nd² + 18d - 63 = 0\n\nUsing quadratic formula:\nd = (-18 ± √(324 + 252)) / 2\nd = (-18 ± √576) / 2\nd = (-18 ± 24) / 2\n\nd = (-18 + 24)/2 = 6/2 = 3, or d = (-18 - 24)/2 = -42/2 = -21\n\nSince the AP is increasing (өспелі = increasing), d > 0, so d = 3.\n\nThe three numbers are: 5-3=2, 5, 5+3=8 → 2, 5, 8.\n\nVerification: Adding 1, 4, 19: 3, 9, 27 — this is a GP with ratio 3. ✓\n\nFor d = -21: numbers would be 26, 5, -16 (decreasing, not increasing).\n\nAnswer: B) 2; 5; 8",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a unique correct answer (B) verified both algebraically and computationally. Distractors are plausible: A and C represent the same numbers in different orders (including the d=-21 solution reversed), and D is a simple AP with d=2 that satisfies the sum condition but not the GP condition. The Kazakh is natural and uses correct mathematical terminology. The difficulty level appropriately requires 4+ logical steps involving both AP and GP properties.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$2; 5; 8$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the three numbers forming the increasing arithmetic progression be a - d, a, and a + d, where d > 0. \nTheir sum is (a - d) + a + (a + d) = 3a = 15, which gives a = 5.\nThe three numbers are 5 - d, 5, and 5 + d.\n\nIf we add 1, 4, and 19 to these numbers respectively, we get:\n1st number: 5 - d + 1 = 6 - d\n2nd number: 5 + 4 = 9\n3rd number: 5 + d + 19 = 24 + d\n\nThese new numbers form a geometric progression, so the square of the middle term equals the product of the first and third terms:\n9^2 = (6 - d)(24 + d)\n81 = 144 + 6d - 24d - d^2\n81 = 144 - 18d - d^2\nd^2 + 18d - 63 = 0\n\nSolving this quadratic equation for d:\nd = (-18 ± √(18^2 - 4*1*(-63))) / 2\nd = (-18 ± √(324 + 252)) / 2\nd = (-18 ± √576) / 2\nd = (-18 ± 24) / 2\n\nThis gives two possible values for d:\nd_1 = (-18 + 24) / 2 = 3\nd_2 = (-18 - 24) / 2 = -21\n\nSince the problem states the arithmetic progression is increasing ('өспелі'), the common difference d must be positive. Therefore, d = 3.\n\nThe original three numbers are:\n5 - 3 = 2\n5\n5 + 3 = 8\n\nThe numbers are 2, 5, and 8. Checking the conditions: 2+5+8 = 15. Adding 1, 4, 19 gives 3, 9, 27, which is a geometric progression (ratio 3). This matches Option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly designed. The distractors are excellent, particularly option C which corresponds to the second root of the quadratic equation (the decreasing progression), effectively testing if the candidate paid attention to the 'increasing' condition.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$2; 5; 8$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:01:52.534924+00:00",
+  "generation_attempts": 1
+}

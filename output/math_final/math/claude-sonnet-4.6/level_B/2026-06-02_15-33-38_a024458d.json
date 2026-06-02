@@ -1,0 +1,208 @@
+{
+  "id": "a024458d-273f-435c-aebb-3d3cc754931f",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polygons_circles",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Шеңберге сыртынан $A$ нүктесінен екі жанама жүргізілген. Жанамалардың ұзындықтары $12$ см, ал шеңбердің радиусы $5$ см болса, $A$ нүктесінен шеңбер орталығына дейінгі қашықтық қанша?",
+  "options": [
+    {
+      "label": "A",
+      "text": "$13$ см"
+    },
+    {
+      "label": "B",
+      "text": "$17$ см"
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{119}$ см"
+    },
+    {
+      "label": "D",
+      "text": "$7$ см"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілгені: жанаманың ұзындығы $t = 12$ см, радиус $r = 5$ см. Жанама нүктесі мен орталықты қосатын радиус жанамаға перпендикуляр болады. Сондықтан $A$ нүктесі, жанама нүктесі және орталық тік бұрышты үшбұрыш түзеді. Пифагор теоремасы бойынша: $AO^2 = t^2 + r^2 = 12^2 + 5^2 = 144 + 25 = 169$. Демек, $AO = \\sqrt{169} = 13$ см.",
+  "latex_formulas": [
+    "AO^2 = t^2 + r^2",
+    "AO = \\sqrt{t^2 + r^2} = \\sqrt{144 + 25} = 13"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.7,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Let O be the center of the circle and T be a point of tangency from external point A. A radius to a tangent point is perpendicular to the tangent, so OT ⟂ AT. Thus triangle AOT is right-angled at T. Given AT = 12 cm and OT = 5 cm. By the Pythagorean theorem: AO^2 = AT^2 + OT^2 = 12^2 + 5^2 = 144 + 25 = 169. Therefore AO = sqrt(169) = 13 cm. This corresponds to option A.\n\n[anthropic/claude-sonnet-4.6] answered A: When two tangents are drawn from an external point A to a circle, the tangent line is perpendicular to the radius at the point of tangency. This forms a right triangle where: the hypotenuse is the distance from A to the center O, one leg is the radius r = 5 cm, and the other leg is the tangent length = 12 cm. By the Pythagorean theorem: AO² = r² + tangent² = 5² + 12² = 25 + 144 = 169. Therefore AO\n\n[google/gemini-3.1-pro-preview] answered A: Let the center of the circle be O, and the point of tangency for one of the tangents be T. The radius OT is perpendicular to the tangent AT at the point of tangency, making triangle ATO a right-angled triangle with the right angle at T. We are given the length of the tangent AT = 12 cm and the radius OT = 5 cm. We need to find the distance from point A to the center O, which is the hypotenuse AO o",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 6.667,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.7,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution using the tangent-radius perpendicularity and Pythagorean theorem. The task is somewhat direct for level B, and the Kazakh wording is understandable but slightly awkward. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-formed; the 5-12-13 Pythagorean triple makes the answer immediately recognizable to any teacher familiar with standard triples, slightly reducing difficulty. Distractors B (17=12+5, additive error) and D (7=12-5, subtractive error) represent plausible misconceptions, while C (√119) is less natural but could arise from subtracting instead of adding squares. | [google/gemini-3.1-pro-preview] The math is perfectly correct and the distractors are well-designed based on common student errors. However, the difficulty is slightly on the easier side for level B, and there are minor terminology issues in Kazakh.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, use non-standard Pythagorean values (e.g., r=6, t=10) so the answer isn't immediately recognizable as a classic triple. Consider adding a step requiring the student to first determine the tangent length from other given information to increase cognitive demand. | [google/gemini-3.1-pro-preview] Change 'шеңбер орталығына' to the standard geometric term 'шеңбер центріне'. Also, 'Шеңберге сыртынан A нүктесінен' would be more accurately phrased as 'Шеңберден тыс жатқан A нүктесінен'.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='13' expected='13'",
+      "raw": {
+        "ok": true,
+        "stdout": "13",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Let O be the center of the circle and T be a point of tangency from external point A. A radius to a tangent point is perpendicular to the tangent, so OT ⟂ AT. Thus triangle AOT is right-angled at T. Given AT = 12 cm and OT = 5 cm. By the Pythagorean theorem: AO^2 = AT^2 + OT^2 = 12^2 + 5^2 = 144 + 25 = 169. Therefore AO = sqrt(169) = 13 cm. This corresponds to option A.\n\n[anthropic/claude-sonnet-4.6] answered A: When two tangents are drawn from an external point A to a circle, the tangent line is perpendicular to the radius at the point of tangency. This forms a right triangle where: the hypotenuse is the distance from A to the center O, one leg is the radius r = 5 cm, and the other leg is the tangent length = 12 cm. By the Pythagorean theorem: AO² = r² + tangent² = 5² + 12² = 25 + 144 = 169. Therefore AO\n\n[google/gemini-3.1-pro-preview] answered A: Let the center of the circle be O, and the point of tangency for one of the tangents be T. The radius OT is perpendicular to the tangent AT at the point of tangency, making triangle ATO a right-angled triangle with the right angle at T. We are given the length of the tangent AT = 12 cm and the radius OT = 5 cm. We need to find the distance from point A to the center O, which is the hypotenuse AO o",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 6.667,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.7,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution using the tangent-radius perpendicularity and Pythagorean theorem. The task is somewhat direct for level B, and the Kazakh wording is understandable but slightly awkward. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-formed; the 5-12-13 Pythagorean triple makes the answer immediately recognizable to any teacher familiar with standard triples, slightly reducing difficulty. Distractors B (17=12+5, additive error) and D (7=12-5, subtractive error) represent plausible misconceptions, while C (√119) is less natural but could arise from subtracting instead of adding squares. | [google/gemini-3.1-pro-preview] The math is perfectly correct and the distractors are well-designed based on common student errors. However, the difficulty is slightly on the easier side for level B, and there are minor terminology issues in Kazakh.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, use non-standard Pythagorean values (e.g., r=6, t=10) so the answer isn't immediately recognizable as a classic triple. Consider adding a step requiring the student to first determine the tangent length from other given information to increase cognitive demand. | [google/gemini-3.1-pro-preview] Change 'шеңбер орталығына' to the standard geometric term 'шеңбер центріне'. Also, 'Шеңберге сыртынан A нүктесінен' would be more accurately phrased as 'Шеңберден тыс жатқан A нүктесінен'.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='13' expected='13'",
+        "raw": {
+          "ok": true,
+          "stdout": "13",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let O be the center of the circle and T be a point of tangency from external point A. A radius to a tangent point is perpendicular to the tangent, so OT ⟂ AT. Thus triangle AOT is right-angled at T. Given AT = 12 cm and OT = 5 cm. By the Pythagorean theorem: AO^2 = AT^2 + OT^2 = 12^2 + 5^2 = 144 + 25 = 169. Therefore AO = sqrt(169) = 13 cm. This corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single unambiguous solution using the tangent-radius perpendicularity and Pythagorean theorem. The task is somewhat direct for level B, and the Kazakh wording is understandable but slightly awkward.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='13' expected='13'",
+            "raw": {
+              "ok": true,
+              "stdout": "13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "When two tangents are drawn from an external point A to a circle, the tangent line is perpendicular to the radius at the point of tangency. This forms a right triangle where: the hypotenuse is the distance from A to the center O, one leg is the radius r = 5 cm, and the other leg is the tangent length = 12 cm. By the Pythagorean theorem: AO² = r² + tangent² = 5² + 12² = 25 + 144 = 169. Therefore AO = √169 = 13 cm.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 6.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-formed; the 5-12-13 Pythagorean triple makes the answer immediately recognizable to any teacher familiar with standard triples, slightly reducing difficulty. Distractors B (17=12+5, additive error) and D (7=12-5, subtractive error) represent plausible misconceptions, while C (√119) is less natural but could arise from subtracting instead of adding squares.",
+          "improvement_suggestions": "To better align with level B difficulty, use non-standard Pythagorean values (e.g., r=6, t=10) so the answer isn't immediately recognizable as a classic triple. Consider adding a step requiring the student to first determine the tangent length from other given information to increase cognitive demand.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='13' expected='13'",
+            "raw": {
+              "ok": true,
+              "stdout": "13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the center of the circle be O, and the point of tangency for one of the tangents be T. The radius OT is perpendicular to the tangent AT at the point of tangency, making triangle ATO a right-angled triangle with the right angle at T. We are given the length of the tangent AT = 12 cm and the radius OT = 5 cm. We need to find the distance from point A to the center O, which is the hypotenuse AO of triangle ATO. Using the Pythagorean theorem: AO^2 = AT^2 + OT^2 = 12^2 + 5^2 = 144 + 25 = 169. Taking the square root, we get AO = 13 cm.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 7.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The math is perfectly correct and the distractors are well-designed based on common student errors. However, the difficulty is slightly on the easier side for level B, and there are minor terminology issues in Kazakh.",
+          "improvement_suggestions": "Change 'шеңбер орталығына' to the standard geometric term 'шеңбер центріне'. Also, 'Шеңберге сыртынан A нүктесінен' would be more accurately phrased as 'Шеңберден тыс жатқан A нүктесінен'.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='13' expected='13'",
+            "raw": {
+              "ok": true,
+              "stdout": "13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:33:38.105834+00:00",
+  "generation_attempts": 1
+}

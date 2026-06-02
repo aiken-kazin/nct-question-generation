@@ -1,0 +1,246 @@
+{
+  "id": "20bb0f4a-abc5-46c5-96fa-1ddb2a37cc11",
+  "subject": "math",
+  "level": "B",
+  "format": "image",
+  "topic": "vectors",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген суреттегі $ABC$ үшбұрышы үшін $M$ нүктесі $BC$ қабырғасының ортасы болып табылады. $\\vec{AM}$ және $\\vec{BC}$ векторларының скаляр көбейтіндісін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-6$"
+    },
+    {
+      "label": "B",
+      "text": "$6$"
+    },
+    {
+      "label": "C",
+      "text": "$18$"
+    },
+    {
+      "label": "D",
+      "text": "$-4$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "$1$) $M$ нүктесі $BC$ кесіндісінің ортасы болғандықтан, оның координаталарын табамыз:\n$x_M = \\frac{2+6}{2} = 4$, $y_M = \\frac{1+3}{2} = 2$, яғни $M(4; 2)$.\n\n$2$) $\\vec{AM}$ және $\\vec{BC}$ векторларының координаталарын табамыз:\n$\\vec{AM} = (4 - 1; 2 - 5) = (3; -3)$\n$\\vec{BC} = (6 - 2; 3 - 1) = (4; 2)$\n\n$3$) Екі вектордың скаляр көбейтіндісін есептейміз:\n$\\vec{AM} \\cdot \\vec{BC} = 3 \\cdot 4 + (-3) \\cdot 2 = 12 - 6 = 6$.",
+  "latex_formulas": [
+    "x_M = \\frac{x_1 + x_2}{2}, \\quad y_M = \\frac{y_1 + y_2}{2}",
+    "\\vec{a} \\cdot \\vec{b} = x_1 x_2 + y_1 y_2"
+  ],
+  "figure_spec": {
+    "figure_type": "coordinate_plane",
+    "parameters": {
+      "points": [
+        {
+          "label": "A(1; 5)",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "label": "B(2; 1)",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "label": "C(6; 3)",
+          "x": 6,
+          "y": 3
+        }
+      ],
+      "segments": [],
+      "polygon": [
+        "A(1; 5)",
+        "B(2; 1)",
+        "C(6; 3)"
+      ],
+      "segment_labels": null,
+      "x_range": [
+        0,
+        8
+      ],
+      "y_range": [
+        0,
+        7
+      ],
+      "caption": "Координаталық жазықтықтағы $ABC$ үшбұрышы"
+    },
+    "caption": "Координаталық жазықтықтағы $ABC$ үшбұрышы"
+  },
+  "figure_path": "output/math_final/figures/coordinate_plane_01771.png",
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: From the diagram, the coordinates are A(1, 5), B(2, 1), and C(6, 3). Since M is the midpoint of BC, M = ((2 + 6)/2, (1 + 3)/2) = (4, 2). Then vector AM = M - A = (4 - 1, 2 - 5) = (3, -3). Vector BC = C - B = (6 - 2, 3 - 1) = (4, 2). The scalar product is AM · BC = 3*4 + (-3)*2 = 12 - 6 = 6. Therefore the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: From the figure: A(1,5), B(2,1), C(6,3).\n\nM is the midpoint of BC:\nM = ((2+6)/2, (1+3)/2) = (4, 2)\n\nVector AM = M - A = (4-1, 2-5) = (3, -3)\n\nVector BC = C - B = (6-2, 3-1) = (4, 2)\n\nDot product AM · BC = (3)(4) + (-3)(2) = 12 - 6 = 6\n\n[google/gemini-3.1-pro-preview] answered B: Step 1: Identify the coordinates of the vertices of triangle ABC from the given image.\nA(1; 5), B(2; 1), C(6; 3).\n\nStep 2: Find the coordinates of point M, which is the midpoint of side BC.\nThe midpoint formula is M = ((x_B + x_C) / 2, (y_B + y_C) / 2).\nx_M = (2 + 6) / 2 = 8 / 2 = 4.\ny_M = (1 + 3) / 2 = 4 / 2 = 2.\nSo, the coordinates of M are (4; 2).\n\nStep 3: Find the components of the vector AM.\n",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 9.667,
+      "figure_relevance": 10.0
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a single defensible solution from the diagram. The item is clear and appropriately multi-step, though it is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and requires 3 clear steps (midpoint calculation, vector extraction, dot product). The figure is essential and accurately labeled. Distractors are plausible: -6 from sign error, 18 from adding instead of dot product logic, -4 from a different arithmetic mistake. | [google/gemini-3.1-pro-preview] The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors are based on common student errors (e.g., calculating the dot product of AB and BC yields -4, and MA and BC yields -6). The figure is essential and clear.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='6' expected='6'",
+      "raw": {
+        "ok": true,
+        "stdout": "6",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: From the diagram, the coordinates are A(1, 5), B(2, 1), and C(6, 3). Since M is the midpoint of BC, M = ((2 + 6)/2, (1 + 3)/2) = (4, 2). Then vector AM = M - A = (4 - 1, 2 - 5) = (3, -3). Vector BC = C - B = (6 - 2, 3 - 1) = (4, 2). The scalar product is AM · BC = 3*4 + (-3)*2 = 12 - 6 = 6. Therefore the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: From the figure: A(1,5), B(2,1), C(6,3).\n\nM is the midpoint of BC:\nM = ((2+6)/2, (1+3)/2) = (4, 2)\n\nVector AM = M - A = (4-1, 2-5) = (3, -3)\n\nVector BC = C - B = (6-2, 3-1) = (4, 2)\n\nDot product AM · BC = (3)(4) + (-3)(2) = 12 - 6 = 6\n\n[google/gemini-3.1-pro-preview] answered B: Step 1: Identify the coordinates of the vertices of triangle ABC from the given image.\nA(1; 5), B(2; 1), C(6; 3).\n\nStep 2: Find the coordinates of point M, which is the midpoint of side BC.\nThe midpoint formula is M = ((x_B + x_C) / 2, (y_B + y_C) / 2).\nx_M = (2 + 6) / 2 = 8 / 2 = 4.\ny_M = (1 + 3) / 2 = 4 / 2 = 2.\nSo, the coordinates of M are (4; 2).\n\nStep 3: Find the components of the vector AM.\n",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 9.667,
+        "figure_relevance": 10.0
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a single defensible solution from the diagram. The item is clear and appropriately multi-step, though it is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and requires 3 clear steps (midpoint calculation, vector extraction, dot product). The figure is essential and accurately labeled. Distractors are plausible: -6 from sign error, 18 from adding instead of dot product logic, -4 from a different arithmetic mistake. | [google/gemini-3.1-pro-preview] The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors are based on common student errors (e.g., calculating the dot product of AB and BC yields -4, and MA and BC yields -6). The figure is essential and clear.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='6' expected='6'",
+        "raw": {
+          "ok": true,
+          "stdout": "6",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the diagram, the coordinates are A(1, 5), B(2, 1), and C(6, 3). Since M is the midpoint of BC, M = ((2 + 6)/2, (1 + 3)/2) = (4, 2). Then vector AM = M - A = (4 - 1, 2 - 5) = (3, -3). Vector BC = C - B = (6 - 2, 3 - 1) = (4, 2). The scalar product is AM · BC = 3*4 + (-3)*2 = 12 - 6 = 6. Therefore the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the problem has a single defensible solution from the diagram. The item is clear and appropriately multi-step, though it is on the easier side of level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the figure: A(1,5), B(2,1), C(6,3).\n\nM is the midpoint of BC:\nM = ((2+6)/2, (1+3)/2) = (4, 2)\n\nVector AM = M - A = (4-1, 2-5) = (3, -3)\n\nVector BC = C - B = (6-2, 3-1) = (4, 2)\n\nDot product AM · BC = (3)(4) + (-3)(2) = 12 - 6 = 6",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 9.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct, well-structured, and requires 3 clear steps (midpoint calculation, vector extraction, dot product). The figure is essential and accurately labeled. Distractors are plausible: -6 from sign error, 18 from adding instead of dot product logic, -4 from a different arithmetic mistake.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Identify the coordinates of the vertices of triangle ABC from the given image.\nA(1; 5), B(2; 1), C(6; 3).\n\nStep 2: Find the coordinates of point M, which is the midpoint of side BC.\nThe midpoint formula is M = ((x_B + x_C) / 2, (y_B + y_C) / 2).\nx_M = (2 + 6) / 2 = 8 / 2 = 4.\ny_M = (1 + 3) / 2 = 4 / 2 = 2.\nSo, the coordinates of M are (4; 2).\n\nStep 3: Find the components of the vector AM.\nVector AM = (x_M - x_A; y_M - y_A) = (4 - 1; 2 - 5) = (3; -3).\n\nStep 4: Find the components of the vector BC.\nVector BC = (x_C - x_B; y_C - y_B) = (6 - 2; 3 - 1) = (4; 2).\n\nStep 5: Calculate the scalar (dot) product of vectors AM and BC.\nAM · BC = (x_AM * x_BC) + (y_AM * y_BC) = (3 * 4) + (-3 * 2) = 12 - 6 = 6.\n\nAlternatively, using the property of the median: AM = 1/2 * (AB + AC) and BC = AC - AB.\nAM · BC = 1/2 * (AC + AB) · (AC - AB) = 1/2 * (|AC|^2 - |AB|^2).\n|AC|^2 = (6-1)^2 + (3-5)^2 = 5^2 + (-2)^2 = 25 + 4 = 29.\n|AB|^2 = (2-1)^2 + (1-5)^2 = 1^2 + (-4)^2 = 1 + 16 = 17.\nAM · BC = 1/2 * (29 - 17) = 1/2 * 12 = 6.\nBoth methods yield 6.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors are based on common student errors (e.g., calculating the dot product of AB and BC yields -4, and MA and BC yields -6). The figure is essential and clear.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:19:51.286911+00:00",
+  "generation_attempts": 1
+}

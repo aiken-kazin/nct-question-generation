@@ -1,0 +1,210 @@
+{
+  "id": "c7243326-d1e2-4a8d-8993-eef48904ef46",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "exponential_log_equations",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Жүйені шешіңіз және $x^2 + y^2$ мәнін табыңыз: $\\begin{cases} 2^x \\cdot 3^y = 72 \\\\ \\log_2(x + y) + \\log_2(x - y) = \\log_2 5 \\end{cases}$",
+  "options": [
+    {
+      "label": "A",
+      "text": "$x^2 + y^2 = 13$"
+    },
+    {
+      "label": "B",
+      "text": "$x^2 + y^2 = 10$"
+    },
+    {
+      "label": "C",
+      "text": "$x^2 + y^2 = 17$"
+    },
+    {
+      "label": "D",
+      "text": "$x^2 + y^2 = 8$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "**1-қадам: Екінші теңдеуді жеңілдету.**\n\nЛогарифмдердің қасиетін қолданамыз: $\\log_2(x+y) + \\log_2(x-y) = \\log_2[(x+y)(x-y)] = \\log_2(x^2 - y^2)$.\n\nДемек: $\\log_2(x^2 - y^2) = \\log_2 5$, яғни $x^2 - y^2 = 5$.\n\n**2-қадам: Бірінші теңдеуді талдау.**\n\n$2^x \\cdot 3^y = 72 = 8 \\cdot 9 = 2^3 \\cdot 3^2$.\n\nМұнда $x$ және $y$ натурал сандар болуы тиіс: $x = 3$, $y = 2$ деп тексереміз.\n\n**3-қадам: Екінші теңдеуде тексеру.**\n\n$x^2 - y^2 = 9 - 4 = 5$ ✓.\n\nЛогарифм аргументтері оң болуы тиіс: $x + y = 5 > 0$ ✓, $x - y = 1 > 0$ ✓.\n\n**4-қадам: Жауапты есептеу.**\n\n$x^2 + y^2 = 9 + 4 = 13$.\n\n**Жауап:** $x^2 + y^2 = 13$.",
+  "latex_formulas": [
+    "2^x \\cdot 3^y = 72",
+    "\\log_2(x+y) + \\log_2(x-y) = \\log_2 5",
+    "x^2 - y^2 = 5",
+    "x = 3,\\; y = 2,\\; x^2 + y^2 = 13"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: From the logarithmic equation, the domain requires x + y > 0 and x - y > 0. Combining logarithms gives log2((x + y)(x - y)) = log2 5, so (x + y)(x - y) = 5, hence x^2 - y^2 = 5. The exponential equation is 2^x * 3^y = 72. Since 72 = 8 * 9 = 2^3 * 3^2, the natural candidate is x = 3 and y = 2. Check the logarithmic condition: x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5, and x + y = 5 > 0, x - y = 1 > 0, so i\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve the system:\n1) 2^x · 3^y = 72\n2) log₂(x + y) + log₂(x - y) = log₂5\n\nFrom equation 2:\nlog₂[(x + y)(x - y)] = log₂5\n(x + y)(x - y) = 5\nx² - y² = 5\n\nFrom equation 1:\n72 = 8 · 9 = 2³ · 3²\nSo 2^x · 3^y = 2³ · 3²\nThis gives x = 3, y = 2\n\nVerify with equation 2:\nx + y = 5, x - y = 1\nlog₂(5) + log₂(1) = log₂5 + 0 = log₂5 ✓\n\nVerify x² - y² = 9 - 4 = 5 ✓\n\nTherefore x² + y² = 9 + 4 = 13\n\n[google/gemini-3.1-pro-preview] answered A: Let's solve the given system of equations step by step.\n\nThe system is:\n1) $2^x \\cdot 3^y = 72$\n2) $\\log_2(x + y) + \\log_2(x - y) = \\log_2 5$\n\nFirst, we simplify the second equation. Using the property of logarithms $\\log_a(b) + \\log_a(c) = \\log_a(b \\cdot c)$, we get:\n$\\log_2((x + y)(x - y)) = \\log_2 5$\n\nThis implies:\n$(x + y)(x - y) = 5$\n$x^2 - y^2 = 5$\n\nNote the domain of the logarithms requires",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 9.0,
+      "distractor_quality": 7.333,
+      "difficulty_alignment": 7.167,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the system has the stated solution, but the provided explanation unjustifiably assumes x and y are natural numbers and does not prove uniqueness over the real domain. The item is mostly procedural and is not well aligned with the requested hard Level C difficulty. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (x=3, y=2) verified through both equations. The solution requires combining logarithm properties with exponential factoring, which is appropriate for teacher certification. However, the difficulty is slightly below Level C since the exponential equation essentially reduces to pattern-matching (72=2³·3²) rather than requiring deeper algebraic manipulation. | [google/gemini-3.1-pro-preview] The question is mathematically sound, correctly formatted, and perfectly aligns with the requested difficulty level. The distractors are plausible and the language is natural.",
+    "improvement_suggestions": "[openai/gpt-5.5] Either explicitly state that x and y are natural integers, or provide a rigorous real-variable solution showing no other domain-valid solution exists. To fit Level C, add a non-routine constraint or require a more substantive analysis rather than direct logarithm and exponent matching. | [anthropic/claude-sonnet-4.6] To better align with Level C difficulty, consider making the exponential equation less immediately obvious (e.g., not a clean integer factorization), or add a constraint that requires solving a genuine system rather than inspection. Distractors could be improved by making them reachable via more specific errors: e.g., D=8 could represent x²+y² if someone used x=2,y=2; B=10 if someone computed (x+y)²/something; C=17 if someone made a sign error in x²-y²=5 and tried x²+y²=x²-y²+2y².",
+    "verification": {
+      "applicable": true,
+      "ran": false,
+      "passed": false,
+      "contradicted": false,
+      "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear,",
+      "raw": {
+        "ok": false,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear, solution = _solve_system(f, symbols, **flags)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1994, in _solve_system\n    raise NotImplementedError('could not solve %s' % eq2)\nNotImplementedError: could not solve -72 + 3**y/2**(sqrt(y**2 + 5))",
+        "timed_out": false,
+        "exit_code": 1
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: From the logarithmic equation, the domain requires x + y > 0 and x - y > 0. Combining logarithms gives log2((x + y)(x - y)) = log2 5, so (x + y)(x - y) = 5, hence x^2 - y^2 = 5. The exponential equation is 2^x * 3^y = 72. Since 72 = 8 * 9 = 2^3 * 3^2, the natural candidate is x = 3 and y = 2. Check the logarithmic condition: x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5, and x + y = 5 > 0, x - y = 1 > 0, so i\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve the system:\n1) 2^x · 3^y = 72\n2) log₂(x + y) + log₂(x - y) = log₂5\n\nFrom equation 2:\nlog₂[(x + y)(x - y)] = log₂5\n(x + y)(x - y) = 5\nx² - y² = 5\n\nFrom equation 1:\n72 = 8 · 9 = 2³ · 3²\nSo 2^x · 3^y = 2³ · 3²\nThis gives x = 3, y = 2\n\nVerify with equation 2:\nx + y = 5, x - y = 1\nlog₂(5) + log₂(1) = log₂5 + 0 = log₂5 ✓\n\nVerify x² - y² = 9 - 4 = 5 ✓\n\nTherefore x² + y² = 9 + 4 = 13\n\n[google/gemini-3.1-pro-preview] answered A: Let's solve the given system of equations step by step.\n\nThe system is:\n1) $2^x \\cdot 3^y = 72$\n2) $\\log_2(x + y) + \\log_2(x - y) = \\log_2 5$\n\nFirst, we simplify the second equation. Using the property of logarithms $\\log_a(b) + \\log_a(c) = \\log_a(b \\cdot c)$, we get:\n$\\log_2((x + y)(x - y)) = \\log_2 5$\n\nThis implies:\n$(x + y)(x - y) = 5$\n$x^2 - y^2 = 5$\n\nNote the domain of the logarithms requires",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 7.333,
+        "difficulty_alignment": 7.167,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the system has the stated solution, but the provided explanation unjustifiably assumes x and y are natural numbers and does not prove uniqueness over the real domain. The item is mostly procedural and is not well aligned with the requested hard Level C difficulty. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (x=3, y=2) verified through both equations. The solution requires combining logarithm properties with exponential factoring, which is appropriate for teacher certification. However, the difficulty is slightly below Level C since the exponential equation essentially reduces to pattern-matching (72=2³·3²) rather than requiring deeper algebraic manipulation. | [google/gemini-3.1-pro-preview] The question is mathematically sound, correctly formatted, and perfectly aligns with the requested difficulty level. The distractors are plausible and the language is natural.",
+      "improvement_suggestions": "[openai/gpt-5.5] Either explicitly state that x and y are natural integers, or provide a rigorous real-variable solution showing no other domain-valid solution exists. To fit Level C, add a non-routine constraint or require a more substantive analysis rather than direct logarithm and exponent matching. | [anthropic/claude-sonnet-4.6] To better align with Level C difficulty, consider making the exponential equation less immediately obvious (e.g., not a clean integer factorization), or add a constraint that requires solving a genuine system rather than inspection. Distractors could be improved by making them reachable via more specific errors: e.g., D=8 could represent x²+y² if someone used x=2,y=2; B=10 if someone computed (x+y)²/something; C=17 if someone made a sign error in x²-y²=5 and tried x²+y²=x²-y²+2y².",
+      "verification": {
+        "applicable": true,
+        "ran": false,
+        "passed": false,
+        "contradicted": false,
+        "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear,",
+        "raw": {
+          "ok": false,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear, solution = _solve_system(f, symbols, **flags)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1994, in _solve_system\n    raise NotImplementedError('could not solve %s' % eq2)\nNotImplementedError: could not solve -72 + 3**y/2**(sqrt(y**2 + 5))",
+          "timed_out": false,
+          "exit_code": 1
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the logarithmic equation, the domain requires x + y > 0 and x - y > 0. Combining logarithms gives log2((x + y)(x - y)) = log2 5, so (x + y)(x - y) = 5, hence x^2 - y^2 = 5. The exponential equation is 2^x * 3^y = 72. Since 72 = 8 * 9 = 2^3 * 3^2, the natural candidate is x = 3 and y = 2. Check the logarithmic condition: x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5, and x + y = 5 > 0, x - y = 1 > 0, so it satisfies the system. Therefore x^2 + y^2 = 3^2 + 2^2 = 9 + 4 = 13.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 7.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 4.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the system has the stated solution, but the provided explanation unjustifiably assumes x and y are natural numbers and does not prove uniqueness over the real domain. The item is mostly procedural and is not well aligned with the requested hard Level C difficulty.",
+          "improvement_suggestions": "Either explicitly state that x and y are natural integers, or provide a rigorous real-variable solution showing no other domain-valid solution exists. To fit Level C, add a non-routine constraint or require a more substantive analysis rather than direct logarithm and exponent matching.",
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear,",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear, solution = _solve_system(f, symbols, **flags)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1994, in _solve_system\n    raise NotImplementedError('could not solve %s' % eq2)\nNotImplementedError: could not solve -72 + 3**y/2**(sqrt(y**2 + 5))",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve the system:\n1) 2^x · 3^y = 72\n2) log₂(x + y) + log₂(x - y) = log₂5\n\nFrom equation 2:\nlog₂[(x + y)(x - y)] = log₂5\n(x + y)(x - y) = 5\nx² - y² = 5\n\nFrom equation 1:\n72 = 8 · 9 = 2³ · 3²\nSo 2^x · 3^y = 2³ · 3²\nThis gives x = 3, y = 2\n\nVerify with equation 2:\nx + y = 5, x - y = 1\nlog₂(5) + log₂(1) = log₂5 + 0 = log₂5 ✓\n\nVerify x² - y² = 9 - 4 = 5 ✓\n\nTherefore x² + y² = 9 + 4 = 13",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a unique correct answer (x=3, y=2) verified through both equations. The solution requires combining logarithm properties with exponential factoring, which is appropriate for teacher certification. However, the difficulty is slightly below Level C since the exponential equation essentially reduces to pattern-matching (72=2³·3²) rather than requiring deeper algebraic manipulation.",
+          "improvement_suggestions": "To better align with Level C difficulty, consider making the exponential equation less immediately obvious (e.g., not a clean integer factorization), or add a constraint that requires solving a genuine system rather than inspection. Distractors could be improved by making them reachable via more specific errors: e.g., D=8 could represent x²+y² if someone used x=2,y=2; B=10 if someone computed (x+y)²/something; C=17 if someone made a sign error in x²-y²=5 and tried x²+y²=x²-y²+2y².",
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear,",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear, solution = _solve_system(f, symbols, **flags)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1994, in _solve_system\n    raise NotImplementedError('could not solve %s' % eq2)\nNotImplementedError: could not solve 2**(sqrt(y**2 + 5))*3**y - 72",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's solve the given system of equations step by step.\n\nThe system is:\n1) $2^x \\cdot 3^y = 72$\n2) $\\log_2(x + y) + \\log_2(x - y) = \\log_2 5$\n\nFirst, we simplify the second equation. Using the property of logarithms $\\log_a(b) + \\log_a(c) = \\log_a(b \\cdot c)$, we get:\n$\\log_2((x + y)(x - y)) = \\log_2 5$\n\nThis implies:\n$(x + y)(x - y) = 5$\n$x^2 - y^2 = 5$\n\nNote the domain of the logarithms requires $x + y > 0$ and $x - y > 0$, which means $x > |y|$.\n\nNow, let's look at the first equation:\n$2^x \\cdot 3^y = 72$\n\nWe can prime factorize 72:\n$72 = 8 \\cdot 9 = 2^3 \\cdot 3^2$\n\nBy comparing the exponents, we can guess a solution where $x = 3$ and $y = 2$. Let's verify if this satisfies the second equation:\n$x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5$\n\nThis perfectly matches $x^2 - y^2 = 5$. Also, the domain conditions $3 + 2 = 5 > 0$ and $3 - 2 = 1 > 0$ are satisfied.\n\nTo ensure this is the unique solution, we can express $x$ from the second equation as $x = \\sqrt{y^2 + 5}$ (since $x > 0$) and substitute it into the first equation:\n$2^{\\sqrt{y^2 + 5}} \\cdot 3^y = 72$\n\nLet $f(y) = 2^{\\sqrt{y^2 + 5}} \\cdot 3^y$. The derivative of this function is always positive because both components are strictly increasing for $y > 0$, and even for $y < 0$, the rate of decrease of the first term is overpowered by the increase of the second term (since $\\ln 3 > \\ln 2$). Thus, $f(y)$ is a strictly increasing function for all real $y$, meaning $y = 2$ is the unique real solution. Consequently, $x = 3$ is also unique.\n\nFinally, we need to find the value of $x^2 + y^2$:\n$x^2 + y^2 = 3^2 + 2^2 = 9 + 4 = 13$\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly formatted, and perfectly aligns with the requested difficulty level. The distractors are plausible and the language is natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear,",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 84, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1170, in solve\n    linear, solution = _solve_system(f, symbols, **flags)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/solvers.py\", line 1994, in _solve_system\n    raise NotImplementedError('could not solve %s' % eq2)\nNotImplementedError: could not solve 2**(sqrt(y**2 + 5))*3**y - 72",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:49:15.521078+00:00",
+  "generation_attempts": 2
+}

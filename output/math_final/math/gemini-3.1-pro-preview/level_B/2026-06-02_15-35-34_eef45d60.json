@@ -1,0 +1,208 @@
+{
+  "id": "eef45d60-35b3-44e9-a860-885450d05cbf",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "integrals",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$y = 4 - x^2$ және $y = 2 - x$ сызықтарымен шектелген фигураның ауданын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$5,5$"
+    },
+    {
+      "label": "B",
+      "text": "$9$"
+    },
+    {
+      "label": "C",
+      "text": "$4,5$"
+    },
+    {
+      "label": "D",
+      "text": "$6$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Қиылысу нүктелерін табу үшін функциялардың теңдеулерін теңестіреміз:\n$4 - x^2 = 2 - x$\n$x^2 - x - 2 = 0$\nВиет теоремасы бойынша бұл теңдеудің түбірлері: $x_1 = -1$, $x_2 = 2$.\n\nБұл нүктелер анықталған интегралдың шектері болады: $a = -1$, $b = 2$. $[-1; 2]$ кесіндісінде парабола түзуден жоғары орналасқандықтан ($4 - x^2 \\ge 2 - x$), фигураның ауданын келесі формуламен есептейміз:\n$S = \\int_{-1}^{2} \\left( (4 - x^2) - (2 - x) \\right) dx = \\int_{-1}^{2} (2 + x - x^2) dx$\n\nАлғашқы функцияны табамыз:\n$F(x) = 2x + \\frac{x^2}{2} - \\frac{x^3}{3}$\n\nНьютон-Лейбниц формуласын қолданып, интегралдың жоғарғы және төменгі шектеріндегі мәндерін есептейміз:\n$F(2) = 2(2) + \\frac{2^2}{2} - \\frac{2^3}{3} = 4 + 2 - \\frac{8}{3} = 6 - \\frac{8}{3} = \\frac{10}{3}$\n$F(-1) = 2(-1) + \\frac{(-1)^2}{2} - \\frac{(-1)^3}{3} = -2 + \\frac{1}{2} + \\frac{1}{3} = \\frac{-12 + 3 + 2}{6} = -\\frac{7}{6}$\n\nАуданды табамыз:\n$S = F(2) - F(-1) = \\frac{10}{3} - \\left(-\\frac{7}{6}\\right) = \\frac{20}{6} + \\frac{7}{6} = \\frac{27}{6} = 4,5$",
+  "latex_formulas": [
+    "S = \\int_{a}^{b} (f(x) - g(x)) dx",
+    "\\int_{a}^{b} f(x) dx = F(b) - F(a)"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Find intersection points by solving 4 - x^2 = 2 - x. Move all terms to one side: 4 - x^2 - 2 + x = 0, so 2 + x - x^2 = 0. Equivalently x^2 - x - 2 = 0. Factor: (x - 2)(x + 1) = 0, hence x = -1 and x = 2. On the interval [-1, 2], test x = 0: the parabola gives y = 4 and the line gives y = 2, so the parabola y = 4 - x^2 is above the line y = 2 - x. The area is integral from -1 to 2 of [(4 - x^2) - (\n\n[anthropic/claude-sonnet-4.6] answered C: Find the area between y = 4 - x² and y = 2 - x.\n\nStep 1: Find intersection points.\n4 - x² = 2 - x\n4 - x² - 2 + x = 0\n2 + x - x² = 0\nx² - x - 2 = 0\n(x - 2)(x + 1) = 0\nx = -1 or x = 2\n\nStep 2: Determine which curve is on top.\nAt x = 0: y = 4 - 0 = 4 (parabola) vs y = 2 - 0 = 2 (line). Parabola is on top.\n\nStep 3: Compute the integral.\nArea = ∫from -1 to 2 [(4 - x²) - (2 - x)] dx\n= ∫from -1 to 2 [2 +\n\n[google/gemini-3.1-pro-preview] answered C: To find the area of the figure bounded by the curves $y = 4 - x^2$ and $y = 2 - x$, we first need to determine their points of intersection. We set the equations equal to each other:\n\n$4 - x^2 = 2 - x$\n$x^2 - x - 2 = 0$\n\nFactoring the quadratic equation, we get:\n$(x - 2)(x + 1) = 0$\n\nSo, the points of intersection are $x = -1$ and $x = 2$.\n\nNext, we determine which curve is the upper bound and whi",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound with a single defensible option. The task fits level B well as it requires finding intersections, determining the upper curve, and evaluating a definite integral. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (C = 4.5), and requires 3-4 meaningful steps: finding intersection points, setting up the integral, computing the antiderivative, and applying Newton-Leibniz. Distractors are plausible — 9 could arise from forgetting to subtract (integrating both separately), 6 from a sign error, and 5.5 from a computational slip — though none are perfectly traceable to a single canonical error. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are highly plausible and correspond to specific, common student errors (e.g., finding only the area under the parabola, or making a sign error during evaluation).",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$4,5$' expected='$4,5$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$4,5$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Find intersection points by solving 4 - x^2 = 2 - x. Move all terms to one side: 4 - x^2 - 2 + x = 0, so 2 + x - x^2 = 0. Equivalently x^2 - x - 2 = 0. Factor: (x - 2)(x + 1) = 0, hence x = -1 and x = 2. On the interval [-1, 2], test x = 0: the parabola gives y = 4 and the line gives y = 2, so the parabola y = 4 - x^2 is above the line y = 2 - x. The area is integral from -1 to 2 of [(4 - x^2) - (\n\n[anthropic/claude-sonnet-4.6] answered C: Find the area between y = 4 - x² and y = 2 - x.\n\nStep 1: Find intersection points.\n4 - x² = 2 - x\n4 - x² - 2 + x = 0\n2 + x - x² = 0\nx² - x - 2 = 0\n(x - 2)(x + 1) = 0\nx = -1 or x = 2\n\nStep 2: Determine which curve is on top.\nAt x = 0: y = 4 - 0 = 4 (parabola) vs y = 2 - 0 = 2 (line). Parabola is on top.\n\nStep 3: Compute the integral.\nArea = ∫from -1 to 2 [(4 - x²) - (2 - x)] dx\n= ∫from -1 to 2 [2 +\n\n[google/gemini-3.1-pro-preview] answered C: To find the area of the figure bounded by the curves $y = 4 - x^2$ and $y = 2 - x$, we first need to determine their points of intersection. We set the equations equal to each other:\n\n$4 - x^2 = 2 - x$\n$x^2 - x - 2 = 0$\n\nFactoring the quadratic equation, we get:\n$(x - 2)(x + 1) = 0$\n\nSo, the points of intersection are $x = -1$ and $x = 2$.\n\nNext, we determine which curve is the upper bound and whi",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound with a single defensible option. The task fits level B well as it requires finding intersections, determining the upper curve, and evaluating a definite integral. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (C = 4.5), and requires 3-4 meaningful steps: finding intersection points, setting up the integral, computing the antiderivative, and applying Newton-Leibniz. Distractors are plausible — 9 could arise from forgetting to subtract (integrating both separately), 6 from a sign error, and 5.5 from a computational slip — though none are perfectly traceable to a single canonical error. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are highly plausible and correspond to specific, common student errors (e.g., finding only the area under the parabola, or making a sign error during evaluation).",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$4,5$' expected='$4,5$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$4,5$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find intersection points by solving 4 - x^2 = 2 - x. Move all terms to one side: 4 - x^2 - 2 + x = 0, so 2 + x - x^2 = 0. Equivalently x^2 - x - 2 = 0. Factor: (x - 2)(x + 1) = 0, hence x = -1 and x = 2. On the interval [-1, 2], test x = 0: the parabola gives y = 4 and the line gives y = 2, so the parabola y = 4 - x^2 is above the line y = 2 - x. The area is integral from -1 to 2 of [(4 - x^2) - (2 - x)] dx = integral from -1 to 2 of (2 + x - x^2) dx. An antiderivative is 2x + x^2/2 - x^3/3. Evaluate at x = 2: 2(2) + 2^2/2 - 2^3/3 = 4 + 2 - 8/3 = 10/3. Evaluate at x = -1: 2(-1) + (-1)^2/2 - (-1)^3/3 = -2 + 1/2 + 1/3 = -7/6. Difference: 10/3 - (-7/6) = 20/6 + 7/6 = 27/6 = 9/2 = 4.5. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is mathematically sound with a single defensible option. The task fits level B well as it requires finding intersections, determining the upper curve, and evaluating a definite integral.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$4,5$' expected='$4,5$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$4,5$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find the area between y = 4 - x² and y = 2 - x.\n\nStep 1: Find intersection points.\n4 - x² = 2 - x\n4 - x² - 2 + x = 0\n2 + x - x² = 0\nx² - x - 2 = 0\n(x - 2)(x + 1) = 0\nx = -1 or x = 2\n\nStep 2: Determine which curve is on top.\nAt x = 0: y = 4 - 0 = 4 (parabola) vs y = 2 - 0 = 2 (line). Parabola is on top.\n\nStep 3: Compute the integral.\nArea = ∫from -1 to 2 [(4 - x²) - (2 - x)] dx\n= ∫from -1 to 2 [2 + x - x²] dx\n\nAntiderivative: 2x + x²/2 - x³/3\n\nAt x = 2: 2(2) + 4/2 - 8/3 = 4 + 2 - 8/3 = 6 - 8/3 = 18/3 - 8/3 = 10/3\nAt x = -1: 2(-1) + 1/2 - (-1)/3 = -2 + 1/2 + 1/3 = -2 + 3/6 + 2/6 = -2 + 5/6 = -12/6 + 5/6 = -7/6\n\nArea = 10/3 - (-7/6) = 10/3 + 7/6 = 20/6 + 7/6 = 27/6 = 9/2 = 4.5\n\nThe area is 4.5, which corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed (C = 4.5), and requires 3-4 meaningful steps: finding intersection points, setting up the integral, computing the antiderivative, and applying Newton-Leibniz. Distractors are plausible — 9 could arise from forgetting to subtract (integrating both separately), 6 from a sign error, and 5.5 from a computational slip — though none are perfectly traceable to a single canonical error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$4,5$' expected='$4,5$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$4,5$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the area of the figure bounded by the curves $y = 4 - x^2$ and $y = 2 - x$, we first need to determine their points of intersection. We set the equations equal to each other:\n\n$4 - x^2 = 2 - x$\n$x^2 - x - 2 = 0$\n\nFactoring the quadratic equation, we get:\n$(x - 2)(x + 1) = 0$\n\nSo, the points of intersection are $x = -1$ and $x = 2$.\n\nNext, we determine which curve is the upper bound and which is the lower bound on the interval $[-1, 2]$. We can test a point in this interval, for example, $x = 0$:\n$y_1 = 4 - 0^2 = 4$\n$y_2 = 2 - 0 = 2$\nSince $4 > 2$, the parabola $y = 4 - x^2$ is the upper curve.\n\nThe area $A$ is given by the definite integral of the upper curve minus the lower curve from $x = -1$ to $x = 2$:\n$A = \\int_{-1}^{2} [(4 - x^2) - (2 - x)] dx$\n$A = \\int_{-1}^{2} (2 + x - x^2) dx$\n\nNow, we find the antiderivative and evaluate it at the limits of integration:\n$\\int (2 + x - x^2) dx = 2x + \\frac{x^2}{2} - \\frac{x^3}{3}$\n\nEvaluating at the upper limit $x = 2$:\n$2(2) + \\frac{2^2}{2} - \\frac{2^3}{3} = 4 + 2 - \\frac{8}{3} = 6 - \\frac{8}{3} = \\frac{18}{3} - \\frac{8}{3} = \\frac{10}{3}$\n\nEvaluating at the lower limit $x = -1$:\n$2(-1) + \\frac{(-1)^2}{2} - \\frac{(-1)^3}{3} = -2 + \\frac{1}{2} + \\frac{1}{3} = -2 + \\frac{5}{6} = -\\frac{12}{6} + \\frac{5}{6} = -\\frac{7}{6}$\n\nSubtracting the lower limit value from the upper limit value:\n$A = \\frac{10}{3} - \\left(-\\frac{7}{6}\\right) = \\frac{20}{6} + \\frac{7}{6} = \\frac{27}{6}$\n\nSimplifying the fraction:\n$A = \\frac{9}{2} = 4.5$\n\nThe area of the figure is 4.5, which corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors are highly plausible and correspond to specific, common student errors (e.g., finding only the area under the parabola, or making a sign error during evaluation).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$4,5$' expected='$4,5$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$4,5$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:35:34.991240+00:00",
+  "generation_attempts": 1
+}

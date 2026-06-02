@@ -1,0 +1,209 @@
+{
+  "id": "faad3b7f-17b3-465c-a627-965e53c59c1d",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "powers_roots",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Өрнектің мәнін табыңыз: $\\left(\\frac{8}{27}\\right)^{\\frac{2}{3}} \\cdot \\left(\\frac{9}{4}\\right)^{\\frac{1}{2}}$",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{3}{2}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{2}{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{4}{9}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{9}{4}$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Берілген өрнекті есептейік: $\\left(\\frac{8}{27}\\right)^{\\frac{2}{3}} \\cdot \\left(\\frac{9}{4}\\right)^{\\frac{1}{2}}$.\n\n**1-қадам:** Бірінші көбейткішті есептейік.\n$\\left(\\frac{8}{27}\\right)^{\\frac{2}{3}} = \\left(\\frac{2^3}{3^3}\\right)^{\\frac{2}{3}} = \\frac{2^{3 \\cdot \\frac{2}{3}}}{3^{3 \\cdot \\frac{2}{3}}} = \\frac{2^2}{3^2} = \\frac{4}{9}$\n\n**2-қадам:** Екінші көбейткішті есептейік.\n$\\left(\\frac{9}{4}\\right)^{\\frac{1}{2}} = \\sqrt{\\frac{9}{4}} = \\frac{\\sqrt{9}}{\\sqrt{4}} = \\frac{3}{2}$\n\n**3-қадам:** Екі нәтижені көбейтейік.\n$\\frac{4}{9} \\cdot \\frac{3}{2} = \\frac{4 \\cdot 3}{9 \\cdot 2} = \\frac{12}{18} = \\frac{2}{3}$\n\nДемек, өрнектің мәні $\\frac{2}{3}$.",
+  "latex_formulas": [
+    "\\left(\\frac{8}{27}\\right)^{\\frac{2}{3}} = \\frac{4}{9}",
+    "\\left(\\frac{9}{4}\\right)^{\\frac{1}{2}} = \\frac{3}{2}",
+    "\\frac{4}{9} \\cdot \\frac{3}{2} = \\frac{2}{3}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Compute each factor using powers and roots. Since 8/27 = (2/3)^3, we have (8/27)^(2/3) = ((2/3)^3)^(2/3) = (2/3)^2 = 4/9. Also, (9/4)^(1/2) = sqrt(9/4) = 3/2. Therefore the product is (4/9) * (3/2) = 12/18 = 2/3. The matching option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: We need to evaluate (8/27)^(2/3) · (9/4)^(1/2).\n\nStep 1: Compute (8/27)^(2/3).\n8 = 2³, so 8^(1/3) = 2, and 8^(2/3) = 2² = 4.\n27 = 3³, so 27^(1/3) = 3, and 27^(2/3) = 3² = 9.\nTherefore (8/27)^(2/3) = 4/9.\n\nStep 2: Compute (9/4)^(1/2).\n9^(1/2) = 3, 4^(1/2) = 2.\nTherefore (9/4)^(1/2) = 3/2.\n\nStep 3: Multiply the results.\n(4/9) · (3/2) = 12/18 = 2/3.\n\nThe answer is 2/3.\n\n[google/gemini-3.1-pro-preview] answered B: Step 1: Evaluate the first term, (8/27)^(2/3). We can rewrite 8 as 2^3 and 27 as 3^3, so 8/27 = (2/3)^3. Applying the exponent, we get ((2/3)^3)^(2/3) = (2/3)^(3 * 2/3) = (2/3)^2 = 4/9.\n\nStep 2: Evaluate the second term, (9/4)^(1/2). We can rewrite 9 as 3^2 and 4 as 2^2, so 9/4 = (3/2)^2. Applying the exponent, we get ((3/2)^2)^(1/2) = (3/2)^(2 * 1/2) = (3/2)^1 = 3/2.\n\nStep 3: Multiply the two res",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the expression has a single unambiguous value. The item is clean and concise, though it is on the easier side of level B for practicing teachers. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and appropriately targets level B with 3 clear computational steps. Distractors are well-chosen: A (3/2) is the second factor alone, C (4/9) is the first factor alone, and D (9/4) is the reciprocal of the second factor — all reachable by specific partial-computation errors. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is mathematically sound, perfectly aligned with the requested difficulty level, and features excellent distractors based on partial calculation results.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='2/3' expected='2/3'",
+      "raw": {
+        "ok": true,
+        "stdout": "2/3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Compute each factor using powers and roots. Since 8/27 = (2/3)^3, we have (8/27)^(2/3) = ((2/3)^3)^(2/3) = (2/3)^2 = 4/9. Also, (9/4)^(1/2) = sqrt(9/4) = 3/2. Therefore the product is (4/9) * (3/2) = 12/18 = 2/3. The matching option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: We need to evaluate (8/27)^(2/3) · (9/4)^(1/2).\n\nStep 1: Compute (8/27)^(2/3).\n8 = 2³, so 8^(1/3) = 2, and 8^(2/3) = 2² = 4.\n27 = 3³, so 27^(1/3) = 3, and 27^(2/3) = 3² = 9.\nTherefore (8/27)^(2/3) = 4/9.\n\nStep 2: Compute (9/4)^(1/2).\n9^(1/2) = 3, 4^(1/2) = 2.\nTherefore (9/4)^(1/2) = 3/2.\n\nStep 3: Multiply the results.\n(4/9) · (3/2) = 12/18 = 2/3.\n\nThe answer is 2/3.\n\n[google/gemini-3.1-pro-preview] answered B: Step 1: Evaluate the first term, (8/27)^(2/3). We can rewrite 8 as 2^3 and 27 as 3^3, so 8/27 = (2/3)^3. Applying the exponent, we get ((2/3)^3)^(2/3) = (2/3)^(3 * 2/3) = (2/3)^2 = 4/9.\n\nStep 2: Evaluate the second term, (9/4)^(1/2). We can rewrite 9 as 3^2 and 4 as 2^2, so 9/4 = (3/2)^2. Applying the exponent, we get ((3/2)^2)^(1/2) = (3/2)^(2 * 1/2) = (3/2)^1 = 3/2.\n\nStep 3: Multiply the two res",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the expression has a single unambiguous value. The item is clean and concise, though it is on the easier side of level B for practicing teachers. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and appropriately targets level B with 3 clear computational steps. Distractors are well-chosen: A (3/2) is the second factor alone, C (4/9) is the first factor alone, and D (9/4) is the reciprocal of the second factor — all reachable by specific partial-computation errors. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is mathematically sound, perfectly aligned with the requested difficulty level, and features excellent distractors based on partial calculation results.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='2/3' expected='2/3'",
+        "raw": {
+          "ok": true,
+          "stdout": "2/3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Compute each factor using powers and roots. Since 8/27 = (2/3)^3, we have (8/27)^(2/3) = ((2/3)^3)^(2/3) = (2/3)^2 = 4/9. Also, (9/4)^(1/2) = sqrt(9/4) = 3/2. Therefore the product is (4/9) * (3/2) = 12/18 = 2/3. The matching option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the expression has a single unambiguous value. The item is clean and concise, though it is on the easier side of level B for practicing teachers.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2/3' expected='2/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "2/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to evaluate (8/27)^(2/3) · (9/4)^(1/2).\n\nStep 1: Compute (8/27)^(2/3).\n8 = 2³, so 8^(1/3) = 2, and 8^(2/3) = 2² = 4.\n27 = 3³, so 27^(1/3) = 3, and 27^(2/3) = 3² = 9.\nTherefore (8/27)^(2/3) = 4/9.\n\nStep 2: Compute (9/4)^(1/2).\n9^(1/2) = 3, 4^(1/2) = 2.\nTherefore (9/4)^(1/2) = 3/2.\n\nStep 3: Multiply the results.\n(4/9) · (3/2) = 12/18 = 2/3.\n\nThe answer is 2/3.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct, well-structured, and appropriately targets level B with 3 clear computational steps. Distractors are well-chosen: A (3/2) is the second factor alone, C (4/9) is the first factor alone, and D (9/4) is the reciprocal of the second factor — all reachable by specific partial-computation errors. Kazakh phrasing is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2/3' expected='2/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "2/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Evaluate the first term, (8/27)^(2/3). We can rewrite 8 as 2^3 and 27 as 3^3, so 8/27 = (2/3)^3. Applying the exponent, we get ((2/3)^3)^(2/3) = (2/3)^(3 * 2/3) = (2/3)^2 = 4/9.\n\nStep 2: Evaluate the second term, (9/4)^(1/2). We can rewrite 9 as 3^2 and 4 as 2^2, so 9/4 = (3/2)^2. Applying the exponent, we get ((3/2)^2)^(1/2) = (3/2)^(2 * 1/2) = (3/2)^1 = 3/2.\n\nStep 3: Multiply the two results together. (4/9) * (3/2) = (4 * 3) / (9 * 2) = 12 / 18. Simplifying the fraction by dividing the numerator and denominator by 6, we get 2/3.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, perfectly aligned with the requested difficulty level, and features excellent distractors based on partial calculation results.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2/3' expected='2/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "2/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:43:34.990946+00:00",
+  "generation_attempts": 2
+}

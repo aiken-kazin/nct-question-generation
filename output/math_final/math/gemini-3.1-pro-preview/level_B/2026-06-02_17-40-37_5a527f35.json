@@ -1,0 +1,208 @@
+{
+  "id": "5a527f35-58cd-4a1b-a800-e708753bec8b",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "functions_limits",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x^2 - 16}$ шегінің мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{1}{4}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{1}{16}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{1}{32}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{1}{8}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген бөлшектің алымы мен бөліміне $x = 4$ мәнін қойғанда $\\frac{0}{0}$ түріндегі анықталмағандық шығады.\nАнықталмағандықты ашу үшін бөлшектің алымын да, бөлімін де түрлендіреміз.\nБөлімін қысқаша көбейту формуласы бойынша жіктейміз:\n$x^2 - 16 = (x - 4)(x + 4)$\nАл $x - 4$ өрнегін квадраттар айырмасы ретінде қарастырып, оны да жіктеуге болады:\n$x - 4 = (\\sqrt{x} - 2)(\\sqrt{x} + 2)$\nСонда шек келесі түрге келеді:\n$\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{(\\sqrt{x} - 2)(\\sqrt{x} + 2)(x + 4)}$\nОртақ көбейткіш $(\\sqrt{x} - 2)$ қысқартылғаннан кейін:\n$\\lim_{x \\to 4} \\frac{1}{(\\sqrt{x} + 2)(x + 4)}$\nЕнді $x = 4$ мәнін қоямыз:\n$\\frac{1}{(\\sqrt{4} + 2)(4 + 4)} = \\frac{1}{(2 + 2) \\cdot 8} = \\frac{1}{4 \\cdot 8} = \\frac{1}{32}$",
+  "latex_formulas": [
+    "\\lim_{x \\to a} f(x)",
+    "a^2 - b^2 = (a - b)(a + b)"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Compute the limit as x approaches 4. Direct substitution gives (sqrt(4) - 2)/(4^2 - 16) = 0/0, so simplify. Rationalize the numerator: sqrt(x) - 2 = (x - 4)/(sqrt(x) + 2). Also factor the denominator: x^2 - 16 = (x - 4)(x + 4). Therefore, for x != 4, (sqrt(x) - 2)/(x^2 - 16) = [(x - 4)/(sqrt(x) + 2)] / [(x - 4)(x + 4)] = 1/[(sqrt(x) + 2)(x + 4)]. Now substitute x = 4: 1/[(sqrt(4) + 2)(4 + 4)] = 1/\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find lim_{x→4} [√x - 2] / [x² - 16].\n\nFirst, factor the denominator: x² - 16 = (x-4)(x+4).\n\nAlso, rationalize the numerator: √x - 2 = (√x - 2)(√x + 2)/(√x + 2) = (x - 4)/(√x + 2).\n\nSo the expression becomes:\n[√x - 2] / [(x-4)(x+4)] = (x-4)/[(√x + 2)(x-4)(x+4)] = 1/[(√x + 2)(x+4)].\n\nNow take the limit as x → 4:\n1/[(√4 + 2)(4 + 4)] = 1/[(2 + 2)(8)] = 1/[4 × 8] = 1/32.\n\nThe answer is 1/32.\n\n[google/gemini-3.1-pro-preview] answered C: To find the limit $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x^2 - 16}$, we first substitute $x = 4$ into the expression. This gives $\\frac{\\sqrt{4} - 2}{4^2 - 16} = \\frac{2 - 2}{16 - 16} = \\frac{0}{0}$, which is an indeterminate form.\n\nWe can resolve this by factoring and rationalizing. Multiply the numerator and the denominator by the conjugate of the numerator, $\\sqrt{x} + 2$:\n$\\frac{\\sqrt{x} - 2}{x^2",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the limit has a single defensible value. The item is clear and well formatted; distractors are plausible simple-error outcomes, though the task is a fairly standard algebraic limit. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, the correct answer 1/32 is verified independently and matches the provided key. Distractors correspond to plausible errors: 1/4 (forgetting the denominator factor), 1/16 (simple substitution error), 1/8 (partial factoring error). Kazakh phrasing is natural and terminology is appropriate. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The limit requires multiple steps to resolve the indeterminate form, fitting the Level B difficulty. Distractors represent common student errors, and the Kazakh terminology is accurate.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$\\frac{1}{32}$' expected='$\\frac{1}{32}$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$\\frac{1}{32}$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Compute the limit as x approaches 4. Direct substitution gives (sqrt(4) - 2)/(4^2 - 16) = 0/0, so simplify. Rationalize the numerator: sqrt(x) - 2 = (x - 4)/(sqrt(x) + 2). Also factor the denominator: x^2 - 16 = (x - 4)(x + 4). Therefore, for x != 4, (sqrt(x) - 2)/(x^2 - 16) = [(x - 4)/(sqrt(x) + 2)] / [(x - 4)(x + 4)] = 1/[(sqrt(x) + 2)(x + 4)]. Now substitute x = 4: 1/[(sqrt(4) + 2)(4 + 4)] = 1/\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find lim_{x→4} [√x - 2] / [x² - 16].\n\nFirst, factor the denominator: x² - 16 = (x-4)(x+4).\n\nAlso, rationalize the numerator: √x - 2 = (√x - 2)(√x + 2)/(√x + 2) = (x - 4)/(√x + 2).\n\nSo the expression becomes:\n[√x - 2] / [(x-4)(x+4)] = (x-4)/[(√x + 2)(x-4)(x+4)] = 1/[(√x + 2)(x+4)].\n\nNow take the limit as x → 4:\n1/[(√4 + 2)(4 + 4)] = 1/[(2 + 2)(8)] = 1/[4 × 8] = 1/32.\n\nThe answer is 1/32.\n\n[google/gemini-3.1-pro-preview] answered C: To find the limit $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x^2 - 16}$, we first substitute $x = 4$ into the expression. This gives $\\frac{\\sqrt{4} - 2}{4^2 - 16} = \\frac{2 - 2}{16 - 16} = \\frac{0}{0}$, which is an indeterminate form.\n\nWe can resolve this by factoring and rationalizing. Multiply the numerator and the denominator by the conjugate of the numerator, $\\sqrt{x} + 2$:\n$\\frac{\\sqrt{x} - 2}{x^2",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the limit has a single defensible value. The item is clear and well formatted; distractors are plausible simple-error outcomes, though the task is a fairly standard algebraic limit. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, the correct answer 1/32 is verified independently and matches the provided key. Distractors correspond to plausible errors: 1/4 (forgetting the denominator factor), 1/16 (simple substitution error), 1/8 (partial factoring error). Kazakh phrasing is natural and terminology is appropriate. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The limit requires multiple steps to resolve the indeterminate form, fitting the Level B difficulty. Distractors represent common student errors, and the Kazakh terminology is accurate.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$\\frac{1}{32}$' expected='$\\frac{1}{32}$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$\\frac{1}{32}$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Compute the limit as x approaches 4. Direct substitution gives (sqrt(4) - 2)/(4^2 - 16) = 0/0, so simplify. Rationalize the numerator: sqrt(x) - 2 = (x - 4)/(sqrt(x) + 2). Also factor the denominator: x^2 - 16 = (x - 4)(x + 4). Therefore, for x != 4, (sqrt(x) - 2)/(x^2 - 16) = [(x - 4)/(sqrt(x) + 2)] / [(x - 4)(x + 4)] = 1/[(sqrt(x) + 2)(x + 4)]. Now substitute x = 4: 1/[(sqrt(4) + 2)(4 + 4)] = 1/[(2 + 2)(8)] = 1/32. Thus the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the limit has a single defensible value. The item is clear and well formatted; distractors are plausible simple-error outcomes, though the task is a fairly standard algebraic limit.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$\\frac{1}{32}$' expected='$\\frac{1}{32}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$\\frac{1}{32}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find lim_{x→4} [√x - 2] / [x² - 16].\n\nFirst, factor the denominator: x² - 16 = (x-4)(x+4).\n\nAlso, rationalize the numerator: √x - 2 = (√x - 2)(√x + 2)/(√x + 2) = (x - 4)/(√x + 2).\n\nSo the expression becomes:\n[√x - 2] / [(x-4)(x+4)] = (x-4)/[(√x + 2)(x-4)(x+4)] = 1/[(√x + 2)(x+4)].\n\nNow take the limit as x → 4:\n1/[(√4 + 2)(4 + 4)] = 1/[(2 + 2)(8)] = 1/[4 × 8] = 1/32.\n\nThe answer is 1/32.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, the correct answer 1/32 is verified independently and matches the provided key. Distractors correspond to plausible errors: 1/4 (forgetting the denominator factor), 1/16 (simple substitution error), 1/8 (partial factoring error). Kazakh phrasing is natural and terminology is appropriate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$\\frac{1}{32}$' expected='$\\frac{1}{32}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$\\frac{1}{32}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the limit $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x^2 - 16}$, we first substitute $x = 4$ into the expression. This gives $\\frac{\\sqrt{4} - 2}{4^2 - 16} = \\frac{2 - 2}{16 - 16} = \\frac{0}{0}$, which is an indeterminate form.\n\nWe can resolve this by factoring and rationalizing. Multiply the numerator and the denominator by the conjugate of the numerator, $\\sqrt{x} + 2$:\n$\\frac{\\sqrt{x} - 2}{x^2 - 16} \\cdot \\frac{\\sqrt{x} + 2}{\\sqrt{x} + 2} = \\frac{x - 4}{(x^2 - 16)(\\sqrt{x} + 2)}$\n\nNext, factor the term $x^2 - 16$ as a difference of squares: $x^2 - 16 = (x - 4)(x + 4)$.\nSubstitute this back into the denominator:\n$\\frac{x - 4}{(x - 4)(x + 4)(\\sqrt{x} + 2)}$\n\nCancel the common factor $(x - 4)$:\n$\\frac{1}{(x + 4)(\\sqrt{x} + 2)}$\n\nNow, evaluate the limit by substituting $x = 4$:\n$\\frac{1}{(4 + 4)(\\sqrt{4} + 2)} = \\frac{1}{(8)(2 + 2)} = \\frac{1}{8 \\times 4} = \\frac{1}{32}$.\n\nAlternatively, using L'Hôpital's Rule:\n$\\lim_{x \\to 4} \\frac{\\frac{d}{dx}(\\sqrt{x} - 2)}{\\frac{d}{dx}(x^2 - 16)} = \\lim_{x \\to 4} \\frac{\\frac{1}{2\\sqrt{x}}}{2x} = \\frac{\\frac{1}{2(2)}}{2(4)} = \\frac{\\frac{1}{4}}{8} = \\frac{1}{32}$.\n\nBoth methods yield $\\frac{1}{32}$. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly designed. The limit requires multiple steps to resolve the indeterminate form, fitting the Level B difficulty. Distractors represent common student errors, and the Kazakh terminology is accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$\\frac{1}{32}$' expected='$\\frac{1}{32}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$\\frac{1}{32}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:40:37.782119+00:00",
+  "generation_attempts": 1
+}

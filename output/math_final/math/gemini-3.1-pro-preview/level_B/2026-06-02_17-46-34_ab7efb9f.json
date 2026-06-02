@@ -1,0 +1,208 @@
+{
+  "id": "ab7efb9f-e7e3-4138-96d8-cb0692f4354f",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "coordinate_3d",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Кеңістікте $A(1; 0; 0)$, $B(0; 2; 0)$ және $C(0; 0; 3)$ нүктелері арқылы өтетін жазықтық берілген. $M(2; 4; 5)$ нүктесінен осы жазықтыққа дейінгі қашықтықты табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{34}{7}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{4}{7}$"
+    },
+    {
+      "label": "C",
+      "text": "$4$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{40}{7}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1-қадам. Берілген нүктелер координата осьтерінде жатқандықтан, жазықтықтың кесінділердегі теңдеуін құрамыз:\n$\\frac{x}{1} + \\frac{y}{2} + \\frac{z}{3} = 1$\n\n2-қадам. Бөлшектерден құтылып, жазықтықтың жалпы теңдеуін аламыз. Ол үшін теңдеудің екі жағын да 6-ға (ортақ бөлімге) көбейтеміз:\n$6x + 3y + 2z = 6 \\implies 6x + 3y + 2z - 6 = 0$\nМұнан жазықтық теңдеуінің коэффициенттерін анықтаймыз: $A=6$, $B=3$, $C=2$, $D=-6$.\n\n3-қадам. $M(x_0; y_0; z_0)$ нүктесінен $Ax + By + Cz + D = 0$ жазықтығына дейінгі қашықтықты табу формуласын қолданамыз:\n$d = \\frac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$\n\n4-қадам. $M(2; 4; 5)$ нүктесінің координаталарын формулаға қойып, есептейміз:\n$d = \\frac{|6 \\cdot 2 + 3 \\cdot 4 + 2 \\cdot 5 - 6|}{\\sqrt{6^2 + 3^2 + 2^2}} = \\frac{|12 + 12 + 10 - 6|}{\\sqrt{36 + 9 + 4}} = \\frac{28}{\\sqrt{49}} = \\frac{28}{7} = 4$\n\nДемек, $M$ нүктесінен жазықтыққа дейінгі қашықтық $4$-ке тең.",
+  "latex_formulas": [
+    "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
+    "d = \\frac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The plane passes through A(1,0,0), B(0,2,0), and C(0,0,3). Since these are intercepts on the x-, y-, and z-axes, the plane equation is x/1 + y/2 + z/3 = 1. Multiplying by 6 gives 6x + 3y + 2z = 6, or 6x + 3y + 2z - 6 = 0. The distance from point M(2,4,5) to the plane ax + by + cz + d = 0 is |ax0 + by0 + cz0 + d| / sqrt(a^2 + b^2 + c^2). Here a = 6, b = 3, c = 2, d = -6. Substitute M(2,4,5): |6*2 +\n\n[anthropic/claude-sonnet-4.6] answered C: Step 1: Find the equation of the plane through A(1,0,0), B(0,2,0), C(0,0,3).\n\nThe intercept form of a plane is: x/a + y/b + z/c = 1\nWith a=1, b=2, c=3: x/1 + y/2 + z/3 = 1\nMultiply through by 6: 6x + 3y + 2z = 6\n\nSo the plane equation is: 6x + 3y + 2z - 6 = 0\n\nStep 2: Find the distance from M(2,4,5) to this plane.\n\nDistance formula: d = |6(2) + 3(4) + 2(5) - 6| / sqrt(6² + 3² + 2²)\n\nNumerator: |12\n\n[google/gemini-3.1-pro-preview] answered C: First, we find the equation of the plane passing through the points A(1; 0; 0), B(0; 2; 0), and C(0; 0; 3). Since these points are the x, y, and z intercepts of the plane, we can use the intercept form of the plane equation: x/a + y/b + z/c = 1. Substituting a=1, b=2, and c=3, we get x/1 + y/2 + z/3 = 1. Multiplying the entire equation by 6 to clear the denominators gives 6x + 3y + 2z = 6, or 6x +",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound with a unique defensible answer. The item fits level B as it requires forming a plane equation and applying the point-to-plane distance formula; distractors are mostly plausible arithmetic or sign-error outcomes. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. The solution requires 4 clear steps (intercept form → general form → distance formula → computation), perfectly matching level B difficulty. Kazakh terminology is natural and accurate. | [google/gemini-3.1-pro-preview] The question is excellent. It perfectly matches the requested difficulty level, requiring multiple logical steps (finding the plane equation using intercepts, then applying the distance formula). The distractors are well-designed and correspond to common calculation errors.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor A (34/7) and D (40/7) are plausible error-based distractors, but B (4/7) is less convincing as a realistic student error — consider replacing it with something like 28/√49 miscomputed or a sign-error variant to make all distractors equally plausible.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='4' expected='4'",
+      "raw": {
+        "ok": true,
+        "stdout": "4",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The plane passes through A(1,0,0), B(0,2,0), and C(0,0,3). Since these are intercepts on the x-, y-, and z-axes, the plane equation is x/1 + y/2 + z/3 = 1. Multiplying by 6 gives 6x + 3y + 2z = 6, or 6x + 3y + 2z - 6 = 0. The distance from point M(2,4,5) to the plane ax + by + cz + d = 0 is |ax0 + by0 + cz0 + d| / sqrt(a^2 + b^2 + c^2). Here a = 6, b = 3, c = 2, d = -6. Substitute M(2,4,5): |6*2 +\n\n[anthropic/claude-sonnet-4.6] answered C: Step 1: Find the equation of the plane through A(1,0,0), B(0,2,0), C(0,0,3).\n\nThe intercept form of a plane is: x/a + y/b + z/c = 1\nWith a=1, b=2, c=3: x/1 + y/2 + z/3 = 1\nMultiply through by 6: 6x + 3y + 2z = 6\n\nSo the plane equation is: 6x + 3y + 2z - 6 = 0\n\nStep 2: Find the distance from M(2,4,5) to this plane.\n\nDistance formula: d = |6(2) + 3(4) + 2(5) - 6| / sqrt(6² + 3² + 2²)\n\nNumerator: |12\n\n[google/gemini-3.1-pro-preview] answered C: First, we find the equation of the plane passing through the points A(1; 0; 0), B(0; 2; 0), and C(0; 0; 3). Since these points are the x, y, and z intercepts of the plane, we can use the intercept form of the plane equation: x/a + y/b + z/c = 1. Substituting a=1, b=2, and c=3, we get x/1 + y/2 + z/3 = 1. Multiplying the entire equation by 6 to clear the denominators gives 6x + 3y + 2z = 6, or 6x +",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound with a unique defensible answer. The item fits level B as it requires forming a plane equation and applying the point-to-plane distance formula; distractors are mostly plausible arithmetic or sign-error outcomes. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. The solution requires 4 clear steps (intercept form → general form → distance formula → computation), perfectly matching level B difficulty. Kazakh terminology is natural and accurate. | [google/gemini-3.1-pro-preview] The question is excellent. It perfectly matches the requested difficulty level, requiring multiple logical steps (finding the plane equation using intercepts, then applying the distance formula). The distractors are well-designed and correspond to common calculation errors.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor A (34/7) and D (40/7) are plausible error-based distractors, but B (4/7) is less convincing as a realistic student error — consider replacing it with something like 28/√49 miscomputed or a sign-error variant to make all distractors equally plausible.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='4' expected='4'",
+        "raw": {
+          "ok": true,
+          "stdout": "4",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The plane passes through A(1,0,0), B(0,2,0), and C(0,0,3). Since these are intercepts on the x-, y-, and z-axes, the plane equation is x/1 + y/2 + z/3 = 1. Multiplying by 6 gives 6x + 3y + 2z = 6, or 6x + 3y + 2z - 6 = 0. The distance from point M(2,4,5) to the plane ax + by + cz + d = 0 is |ax0 + by0 + cz0 + d| / sqrt(a^2 + b^2 + c^2). Here a = 6, b = 3, c = 2, d = -6. Substitute M(2,4,5): |6*2 + 3*4 + 2*5 - 6| / sqrt(6^2 + 3^2 + 2^2) = |12 + 12 + 10 - 6| / sqrt(36 + 9 + 4) = |28| / sqrt(49) = 28/7 = 4. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is mathematically sound with a unique defensible answer. The item fits level B as it requires forming a plane equation and applying the point-to-plane distance formula; distractors are mostly plausible arithmetic or sign-error outcomes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='4' expected='4'",
+            "raw": {
+              "ok": true,
+              "stdout": "4",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Find the equation of the plane through A(1,0,0), B(0,2,0), C(0,0,3).\n\nThe intercept form of a plane is: x/a + y/b + z/c = 1\nWith a=1, b=2, c=3: x/1 + y/2 + z/3 = 1\nMultiply through by 6: 6x + 3y + 2z = 6\n\nSo the plane equation is: 6x + 3y + 2z - 6 = 0\n\nStep 2: Find the distance from M(2,4,5) to this plane.\n\nDistance formula: d = |6(2) + 3(4) + 2(5) - 6| / sqrt(6² + 3² + 2²)\n\nNumerator: |12 + 12 + 10 - 6| = |28| = 28\n\nDenominator: sqrt(36 + 9 + 4) = sqrt(49) = 7\n\nDistance = 28/7 = 4\n\nThe answer is 4.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, well-structured, and correctly keyed. The solution requires 4 clear steps (intercept form → general form → distance formula → computation), perfectly matching level B difficulty. Kazakh terminology is natural and accurate.",
+          "improvement_suggestions": "Distractor A (34/7) and D (40/7) are plausible error-based distractors, but B (4/7) is less convincing as a realistic student error — consider replacing it with something like 28/√49 miscomputed or a sign-error variant to make all distractors equally plausible.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='4' expected='4'",
+            "raw": {
+              "ok": true,
+              "stdout": "4",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "First, we find the equation of the plane passing through the points A(1; 0; 0), B(0; 2; 0), and C(0; 0; 3). Since these points are the x, y, and z intercepts of the plane, we can use the intercept form of the plane equation: x/a + y/b + z/c = 1. Substituting a=1, b=2, and c=3, we get x/1 + y/2 + z/3 = 1. Multiplying the entire equation by 6 to clear the denominators gives 6x + 3y + 2z = 6, or 6x + 3y + 2z - 6 = 0.\n\nNext, we use the formula for the distance from a point M(x_0, y_0, z_0) to a plane Ax + By + Cz + D = 0, which is d = |Ax_0 + By_0 + Cz_0 + D| / sqrt(A^2 + B^2 + C^2).\n\nPlugging in the coordinates of M(2; 4; 5) and the coefficients of the plane (A=6, B=3, C=2, D=-6):\nNumerator: |6(2) + 3(4) + 2(5) - 6| = |12 + 12 + 10 - 6| = |28| = 28.\nDenominator: sqrt(6^2 + 3^2 + 2^2) = sqrt(36 + 9 + 4) = sqrt(49) = 7.\n\nFinally, the distance is d = 28 / 7 = 4.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It perfectly matches the requested difficulty level, requiring multiple logical steps (finding the plane equation using intercepts, then applying the distance formula). The distractors are well-designed and correspond to common calculation errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='4' expected='4'",
+            "raw": {
+              "ok": true,
+              "stdout": "4",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:46:34.369931+00:00",
+  "generation_attempts": 1
+}

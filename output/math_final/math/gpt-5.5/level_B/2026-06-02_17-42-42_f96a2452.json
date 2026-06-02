@@ -1,0 +1,210 @@
+{
+  "id": "f96a2452-dfa7-42d3-924e-f1700b6d1145",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "vectors",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Кеңістікте $\\vec{a}\\{2;-1;2\\}$ және $\\vec{b}\\{1;3;-2\\}$ векторлары берілген. $\\vec{c}=\\vec{a}+2\\vec{b}$ векторының $\\vec{d}=2\\vec{a}-\\vec{b}$ бағытына проекциясының ұзындығын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{5}{14}$"
+    },
+    {
+      "label": "B",
+      "text": "$-\\frac{5\\sqrt{70}}{14}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{5\\sqrt{70}}{14}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{5\\sqrt{5}}{3}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Алдымен берілген векторлар арқылы $\\vec{c}$ және $\\vec{d}$ векторларының координаталарын табамыз: $\\vec{c}=\\vec{a}+2\\vec{b}=\\{2;-1;2\\}+2\\{1;3;-2\\}=\\{4;5;-2\\}$. Сонымен қатар $\\vec{d}=2\\vec{a}-\\vec{b}=2\\{2;-1;2\\}-\\{1;3;-2\\}=\\{3;-5;6\\}$. Проекция ұзындығы формуласы: $l=\\frac{|\\vec{c}\\cdot\\vec{d}|}{|\\vec{d}|}$. Скаляр көбейтінді: $\\vec{c}\\cdot\\vec{d}=4\\cdot3+5\\cdot(-5)+(-2)\\cdot6=12-25-12=-25$. $\\vec{d}$ векторының ұзындығы: $|\\vec{d}|=\\sqrt{3^2+(-5)^2+6^2}=\\sqrt{70}$. Сондықтан $l=\\frac{|-25|}{\\sqrt{70}}=\\frac{25}{\\sqrt{70}}=\\frac{5\\sqrt{70}}{14}$.",
+  "latex_formulas": [
+    "$\\vec{c}=\\vec{a}+2\\vec{b}$",
+    "$\\vec{d}=2\\vec{a}-\\vec{b}$",
+    "$l=\\frac{|\\vec{c}\\cdot\\vec{d}|}{|\\vec{d}|}$",
+    "$\\vec{x}\\cdot\\vec{y}=x_1y_1+x_2y_2+x_3y_3$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Given a = (2, -1, 2) and b = (1, 3, -2). First compute c = a + 2b = (2, -1, 2) + 2(1, 3, -2) = (2, -1, 2) + (2, 6, -4) = (4, 5, -2). Next compute d = 2a - b = 2(2, -1, 2) - (1, 3, -2) = (4, -2, 4) - (1, 3, -2) = (3, -5, 6). The scalar projection of c onto the direction of d is (c · d) / |d|. Compute the dot product: c · d = 4·3 + 5·(-5) + (-2)·6 = 12 - 25 - 12 = -25. Compute |d| = sqrt(3^2 + (-5)^\n\n[anthropic/claude-sonnet-4.6] answered C: Step 1: Compute vector c = a + 2b.\na = {2, -1, 2}, b = {1, 3, -2}\n2b = {2, 6, -4}\nc = a + 2b = {2+2, -1+6, 2-4} = {4, 5, -2}\n\nStep 2: Compute vector d = 2a - b.\n2a = {4, -2, 4}\nd = 2a - b = {4-1, -2-3, 4-(-2)} = {3, -5, 6}\n\nStep 3: The projection of c onto the direction of d is:\nproj = (c · d) / |d|\n\nStep 4: Compute dot product c · d.\nc · d = (4)(3) + (5)(-5) + (-2)(6) = 12 - 25 - 12 = -25\n\nStep 5\n\n[google/gemini-3.1-pro-preview] answered C: First, we find the components of vectors $\\vec{c}$ and $\\vec{d}$.\nGiven $\\vec{a} = \\{2; -1; 2\\}$ and $\\vec{b} = \\{1; 3; -2\\}$.\n$\\vec{c} = \\vec{a} + 2\\vec{b} = \\{2 + 2(1); -1 + 2(3); 2 + 2(-2)\\} = \\{4; 5; -2\\}$.\n$\\vec{d} = 2\\vec{a} - \\vec{b} = \\{2(2) - 1; 2(-1) - 3; 2(2) - (-2)\\} = \\{3; -5; 6\\}$.\n\nThe scalar projection of vector $\\vec{c}$ onto the direction of vector $\\vec{d}$ is given by the formu",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 9.833,
+      "figure_relevance": null
+    },
+    "overall_score": 9.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: the projection length requires the absolute scalar projection of c onto d. The item is appropriately medium-level and mostly well written; one distractor is less clearly tied to a common error, but the set is acceptable. | [anthropic/claude-sonnet-4.6] Well-constructed question with clear multi-step calculation. The use of 'ұзындығы' (length) correctly signals absolute value, making C the unambiguous answer. Distractor B (signed projection) is particularly effective at catching a common student error. | [google/gemini-3.1-pro-preview] The question is excellent. The calculations are correct, the difficulty perfectly matches Level B, and the distractors are exceptionally well-designed (e.g., one is the scalar projection without absolute value, another is the projection onto the other vector).",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='5*sqrt(70)/14' expected='5*sqrt(70)/14'",
+      "raw": {
+        "ok": true,
+        "stdout": "5*sqrt(70)/14",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Given a = (2, -1, 2) and b = (1, 3, -2). First compute c = a + 2b = (2, -1, 2) + 2(1, 3, -2) = (2, -1, 2) + (2, 6, -4) = (4, 5, -2). Next compute d = 2a - b = 2(2, -1, 2) - (1, 3, -2) = (4, -2, 4) - (1, 3, -2) = (3, -5, 6). The scalar projection of c onto the direction of d is (c · d) / |d|. Compute the dot product: c · d = 4·3 + 5·(-5) + (-2)·6 = 12 - 25 - 12 = -25. Compute |d| = sqrt(3^2 + (-5)^\n\n[anthropic/claude-sonnet-4.6] answered C: Step 1: Compute vector c = a + 2b.\na = {2, -1, 2}, b = {1, 3, -2}\n2b = {2, 6, -4}\nc = a + 2b = {2+2, -1+6, 2-4} = {4, 5, -2}\n\nStep 2: Compute vector d = 2a - b.\n2a = {4, -2, 4}\nd = 2a - b = {4-1, -2-3, 4-(-2)} = {3, -5, 6}\n\nStep 3: The projection of c onto the direction of d is:\nproj = (c · d) / |d|\n\nStep 4: Compute dot product c · d.\nc · d = (4)(3) + (5)(-5) + (-2)(6) = 12 - 25 - 12 = -25\n\nStep 5\n\n[google/gemini-3.1-pro-preview] answered C: First, we find the components of vectors $\\vec{c}$ and $\\vec{d}$.\nGiven $\\vec{a} = \\{2; -1; 2\\}$ and $\\vec{b} = \\{1; 3; -2\\}$.\n$\\vec{c} = \\vec{a} + 2\\vec{b} = \\{2 + 2(1); -1 + 2(3); 2 + 2(-2)\\} = \\{4; 5; -2\\}$.\n$\\vec{d} = 2\\vec{a} - \\vec{b} = \\{2(2) - 1; 2(-1) - 3; 2(2) - (-2)\\} = \\{3; -5; 6\\}$.\n\nThe scalar projection of vector $\\vec{c}$ onto the direction of vector $\\vec{d}$ is given by the formu",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 9.833,
+        "figure_relevance": null
+      },
+      "overall_score": 9.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: the projection length requires the absolute scalar projection of c onto d. The item is appropriately medium-level and mostly well written; one distractor is less clearly tied to a common error, but the set is acceptable. | [anthropic/claude-sonnet-4.6] Well-constructed question with clear multi-step calculation. The use of 'ұзындығы' (length) correctly signals absolute value, making C the unambiguous answer. Distractor B (signed projection) is particularly effective at catching a common student error. | [google/gemini-3.1-pro-preview] The question is excellent. The calculations are correct, the difficulty perfectly matches Level B, and the distractors are exceptionally well-designed (e.g., one is the scalar projection without absolute value, another is the projection onto the other vector).",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='5*sqrt(70)/14' expected='5*sqrt(70)/14'",
+        "raw": {
+          "ok": true,
+          "stdout": "5*sqrt(70)/14",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given a = (2, -1, 2) and b = (1, 3, -2). First compute c = a + 2b = (2, -1, 2) + 2(1, 3, -2) = (2, -1, 2) + (2, 6, -4) = (4, 5, -2). Next compute d = 2a - b = 2(2, -1, 2) - (1, 3, -2) = (4, -2, 4) - (1, 3, -2) = (3, -5, 6). The scalar projection of c onto the direction of d is (c · d) / |d|. Compute the dot product: c · d = 4·3 + 5·(-5) + (-2)·6 = 12 - 25 - 12 = -25. Compute |d| = sqrt(3^2 + (-5)^2 + 6^2) = sqrt(9 + 25 + 36) = sqrt(70). The signed scalar projection is -25/sqrt(70) = -25sqrt(70)/70 = -5sqrt(70)/14. Since the question asks for the length of the projection, take the absolute value: 25/sqrt(70) = 5sqrt(70)/14. Therefore the matching option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: the projection length requires the absolute scalar projection of c onto d. The item is appropriately medium-level and mostly well written; one distractor is less clearly tied to a common error, but the set is acceptable.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='5*sqrt(70)/14' expected='5*sqrt(70)/14'",
+            "raw": {
+              "ok": true,
+              "stdout": "5*sqrt(70)/14",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Compute vector c = a + 2b.\na = {2, -1, 2}, b = {1, 3, -2}\n2b = {2, 6, -4}\nc = a + 2b = {2+2, -1+6, 2-4} = {4, 5, -2}\n\nStep 2: Compute vector d = 2a - b.\n2a = {4, -2, 4}\nd = 2a - b = {4-1, -2-3, 4-(-2)} = {3, -5, 6}\n\nStep 3: The projection of c onto the direction of d is:\nproj = (c · d) / |d|\n\nStep 4: Compute dot product c · d.\nc · d = (4)(3) + (5)(-5) + (-2)(6) = 12 - 25 - 12 = -25\n\nStep 5: Compute |d|.\n|d| = sqrt(3² + (-5)² + 6²) = sqrt(9 + 25 + 36) = sqrt(70)\n\nStep 6: Projection = -25 / sqrt(70) = -25/sqrt(70) = -25*sqrt(70)/70 = -5*sqrt(70)/14\n\nThis matches option B: -5√70/14.\n\nNote: The question asks for 'проекциясының ұзындығы' which means 'length of projection'. In Kazakh math terminology, 'проекция' (scalar projection) can be negative if the angle is obtuse. However, 'ұзындық' (length) typically means the absolute value. But option B is negative and option C is positive. Let me check if the question truly asks for length (magnitude) or scalar projection.\n\nThe phrase 'проекциясының ұзындығы' literally means 'length of the projection', which should be non-negative. That would give |−25/√70| = 25/√70 = 5√70/14, which is option C.\n\nHowever, in many Kazakh textbooks, 'проекция' is used as scalar projection (which can be negative), and 'ұзындығы' might just be emphasizing the scalar value. Given that option B is negative and option C is positive, and the question says 'ұзындығы' (length), the answer should be C = 5√70/14.\n\nBut wait - let me reconsider. In standard Kazakh math education, the 'projection of vector c onto direction d' (скалярлық проекция) is the scalar value c·d/|d|, which can be negative. The word 'ұзындығы' here might just mean the scalar value of the projection. Both B and C are plausible depending on interpretation.\n\nGiven that option B includes the negative sign and option C is positive, and the question says 'ұзындығы' (length), I'll go with C = 5√70/14 as the length (absolute value) of the projection.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 9.5,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "Well-constructed question with clear multi-step calculation. The use of 'ұзындығы' (length) correctly signals absolute value, making C the unambiguous answer. Distractor B (signed projection) is particularly effective at catching a common student error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='5*sqrt(70)/14' expected='5*sqrt(70)/14'",
+            "raw": {
+              "ok": true,
+              "stdout": "5*sqrt(70)/14",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "First, we find the components of vectors $\\vec{c}$ and $\\vec{d}$.\nGiven $\\vec{a} = \\{2; -1; 2\\}$ and $\\vec{b} = \\{1; 3; -2\\}$.\n$\\vec{c} = \\vec{a} + 2\\vec{b} = \\{2 + 2(1); -1 + 2(3); 2 + 2(-2)\\} = \\{4; 5; -2\\}$.\n$\\vec{d} = 2\\vec{a} - \\vec{b} = \\{2(2) - 1; 2(-1) - 3; 2(2) - (-2)\\} = \\{3; -5; 6\\}$.\n\nThe scalar projection of vector $\\vec{c}$ onto the direction of vector $\\vec{d}$ is given by the formula:\n$Pr_{\\vec{d}} \\vec{c} = \\frac{\\vec{c} \\cdot \\vec{d}}{|\\vec{d}|}$\n\nLet's calculate the dot product $\\vec{c} \\cdot \\vec{d}$:\n$\\vec{c} \\cdot \\vec{d} = (4)(3) + (5)(-5) + (-2)(6) = 12 - 25 - 12 = -25$.\n\nNow, let's calculate the magnitude of $\\vec{d}$:\n$|\\vec{d}| = \\sqrt{3^2 + (-5)^2 + 6^2} = \\sqrt{9 + 25 + 36} = \\sqrt{70}$.\n\nThe scalar projection is $\\frac{-25}{\\sqrt{70}}$.\nThe question asks for the \"length of the projection\" (проекциясының ұзындығын), which means we must take the absolute value of the scalar projection, as length cannot be negative.\nLength = $\\left| \\frac{-25}{\\sqrt{70}} \\right| = \\frac{25}{\\sqrt{70}}$.\n\nRationalizing the denominator:\n$\\frac{25\\sqrt{70}}{70} = \\frac{5\\sqrt{70}}{14}$.\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. The calculations are correct, the difficulty perfectly matches Level B, and the distractors are exceptionally well-designed (e.g., one is the scalar projection without absolute value, another is the projection onto the other vector).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='5*sqrt(70)/14' expected='5*sqrt(70)/14'",
+            "raw": {
+              "ok": true,
+              "stdout": "5*sqrt(70)/14",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:42:42.937770+00:00",
+  "generation_attempts": 1
+}

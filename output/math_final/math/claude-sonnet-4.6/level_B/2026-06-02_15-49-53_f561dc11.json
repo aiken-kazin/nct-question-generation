@@ -1,0 +1,210 @@
+{
+  "id": "f561dc11-434b-43cc-ad26-e1b2d952e324",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "quadratic_irrational",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$\\sqrt{x + 6} = x$ теңдеуінің түбірлерінің қосындысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$3$"
+    },
+    {
+      "label": "B",
+      "text": "$1$"
+    },
+    {
+      "label": "C",
+      "text": "$-2$"
+    },
+    {
+      "label": "D",
+      "text": "$5$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген теңдеу: $\\sqrt{x + 6} = x$.\n\n**1-қадам: Анықталу облысы.** Теңдеудің оң жағы $x \\geq 0$ болуы керек (өйткені сол жақ — арифметикалық квадрат түбір, ол теріс болмайды), сонымен қатар $x + 6 \\geq 0$, яғни $x \\geq -6$. Демек, $x \\geq 0$.\n\n**2-қадам: Екі жақты квадратқа шығарамыз.** $x + 6 = x^2$, яғни $x^2 - x - 6 = 0$.\n\n**3-қадам: Квадрат теңдеуді шешеміз.** Дискриминант: $D = 1 + 24 = 25$. Түбірлер: $x = \\frac{1 \\pm 5}{2}$, яғни $x_1 = 3$ және $x_2 = -2$.\n\n**4-қадам: Тексеру (бөгде түбірлерді алып тастаймыз).** $x_2 = -2 < 0$ болғандықтан, ол анықталу облысына кірмейді ($x \\geq 0$ шарты орындалмайды). Тексерейік: $x_1 = 3$: $\\sqrt{3 + 6} = \\sqrt{9} = 3$ ✓.\n\n**Қорытынды:** Теңдеудің жалғыз түбірі $x = 3$, сондықтан түбірлерінің қосындысы $= 3$.",
+  "latex_formulas": [
+    "\\sqrt{x + 6} = x",
+    "x^2 - x - 6 = 0",
+    "D = b^2 - 4ac = 1 + 24 = 25",
+    "x = \\frac{1 \\pm 5}{2}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Solve the equation sqrt(x + 6) = x. Since the square root is always nonnegative, the right side must satisfy x >= 0. Square both sides: (sqrt(x + 6))^2 = x^2, so x + 6 = x^2. Rearrange: x^2 - x - 6 = 0. Factor: (x - 3)(x + 2) = 0, so x = 3 or x = -2. Check in the original equation: for x = 3, sqrt(3 + 6) = sqrt(9) = 3, which is valid. For x = -2, sqrt(-2 + 6) = sqrt(4) = 2, but the right side is -\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve √(x + 6) = x.\n\nStep 1: Domain requirement. For the square root to be defined, x + 6 ≥ 0, so x ≥ -6. Also, since √(x+6) ≥ 0, we need x ≥ 0.\n\nStep 2: Square both sides.\nx + 6 = x²\nx² - x - 6 = 0\n\nStep 3: Factor.\n(x - 3)(x + 2) = 0\nSo x = 3 or x = -2.\n\nStep 4: Check solutions against domain x ≥ 0.\n- x = 3: √(3+6) = √9 = 3 ✓\n- x = -2: fails x ≥ 0 (extraneous root)\n\nStep 5: The only va\n\n[google/gemini-3.1-pro-preview] answered A: To solve the equation \\(\\sqrt{x + 6} = x\\), we first square both sides to eliminate the square root. This gives \\(x + 6 = x^2\\). Rearranging this into a standard quadratic equation form, we get \\(x^2 - x - 6 = 0\\). Factoring the quadratic equation yields \\((x - 3)(x + 2) = 0\\), which gives two potential roots: \\(x = 3\\) and \\(x = -2\\).\n\nBecause squaring both sides of an equation can introduce extr",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution requires the standard domain check, squaring, solving the quadratic, and rejecting the extraneous root. The item is clean and unambiguous, though it is a fairly routine example for level B. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a single valid root x=3, making the sum of roots equal to 3. Distractors are reasonably motivated: -2 is the extraneous root, 1 could come from misapplying Vieta's without checking domain, and 5 could come from adding both algebraic roots (3+(-2)=1, not 5 — actually 5 is less clearly motivated). The question is slightly easier than true level B since the domain restriction is a standard taught technique. | [google/gemini-3.1-pro-preview] Excellent question. Asking for the 'sum of the roots' is a classic and effective way to test if candidates remember to check for extraneous roots in irrational equations.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace distractor D (5) with a more plausible error value — for example, the sum of the two algebraic roots before domain checking would be 1 (already option B), so consider replacing 5 with something like 2 (e.g., student forgets to square correctly) or restructure distractors so each maps to a distinct identifiable error. Also consider making the question slightly more complex (e.g., asking for the product of valid roots or using a more involved irrational equation) to better align with level B difficulty.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='3' expected='3'",
+      "raw": {
+        "ok": true,
+        "stdout": "3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Solve the equation sqrt(x + 6) = x. Since the square root is always nonnegative, the right side must satisfy x >= 0. Square both sides: (sqrt(x + 6))^2 = x^2, so x + 6 = x^2. Rearrange: x^2 - x - 6 = 0. Factor: (x - 3)(x + 2) = 0, so x = 3 or x = -2. Check in the original equation: for x = 3, sqrt(3 + 6) = sqrt(9) = 3, which is valid. For x = -2, sqrt(-2 + 6) = sqrt(4) = 2, but the right side is -\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve √(x + 6) = x.\n\nStep 1: Domain requirement. For the square root to be defined, x + 6 ≥ 0, so x ≥ -6. Also, since √(x+6) ≥ 0, we need x ≥ 0.\n\nStep 2: Square both sides.\nx + 6 = x²\nx² - x - 6 = 0\n\nStep 3: Factor.\n(x - 3)(x + 2) = 0\nSo x = 3 or x = -2.\n\nStep 4: Check solutions against domain x ≥ 0.\n- x = 3: √(3+6) = √9 = 3 ✓\n- x = -2: fails x ≥ 0 (extraneous root)\n\nStep 5: The only va\n\n[google/gemini-3.1-pro-preview] answered A: To solve the equation \\(\\sqrt{x + 6} = x\\), we first square both sides to eliminate the square root. This gives \\(x + 6 = x^2\\). Rearranging this into a standard quadratic equation form, we get \\(x^2 - x - 6 = 0\\). Factoring the quadratic equation yields \\((x - 3)(x + 2) = 0\\), which gives two potential roots: \\(x = 3\\) and \\(x = -2\\).\n\nBecause squaring both sides of an equation can introduce extr",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution requires the standard domain check, squaring, solving the quadratic, and rejecting the extraneous root. The item is clean and unambiguous, though it is a fairly routine example for level B. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a single valid root x=3, making the sum of roots equal to 3. Distractors are reasonably motivated: -2 is the extraneous root, 1 could come from misapplying Vieta's without checking domain, and 5 could come from adding both algebraic roots (3+(-2)=1, not 5 — actually 5 is less clearly motivated). The question is slightly easier than true level B since the domain restriction is a standard taught technique. | [google/gemini-3.1-pro-preview] Excellent question. Asking for the 'sum of the roots' is a classic and effective way to test if candidates remember to check for extraneous roots in irrational equations.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace distractor D (5) with a more plausible error value — for example, the sum of the two algebraic roots before domain checking would be 1 (already option B), so consider replacing 5 with something like 2 (e.g., student forgets to square correctly) or restructure distractors so each maps to a distinct identifiable error. Also consider making the question slightly more complex (e.g., asking for the product of valid roots or using a more involved irrational equation) to better align with level B difficulty.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='3' expected='3'",
+        "raw": {
+          "ok": true,
+          "stdout": "3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Solve the equation sqrt(x + 6) = x. Since the square root is always nonnegative, the right side must satisfy x >= 0. Square both sides: (sqrt(x + 6))^2 = x^2, so x + 6 = x^2. Rearrange: x^2 - x - 6 = 0. Factor: (x - 3)(x + 2) = 0, so x = 3 or x = -2. Check in the original equation: for x = 3, sqrt(3 + 6) = sqrt(9) = 3, which is valid. For x = -2, sqrt(-2 + 6) = sqrt(4) = 2, but the right side is -2, so it is not valid. Therefore the only root is 3, and the sum of the roots is 3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution requires the standard domain check, squaring, solving the quadratic, and rejecting the extraneous root. The item is clean and unambiguous, though it is a fairly routine example for level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve √(x + 6) = x.\n\nStep 1: Domain requirement. For the square root to be defined, x + 6 ≥ 0, so x ≥ -6. Also, since √(x+6) ≥ 0, we need x ≥ 0.\n\nStep 2: Square both sides.\nx + 6 = x²\nx² - x - 6 = 0\n\nStep 3: Factor.\n(x - 3)(x + 2) = 0\nSo x = 3 or x = -2.\n\nStep 4: Check solutions against domain x ≥ 0.\n- x = 3: √(3+6) = √9 = 3 ✓\n- x = -2: fails x ≥ 0 (extraneous root)\n\nStep 5: The only valid root is x = 3.\n\nThe sum of roots (only one valid root) = 3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a single valid root x=3, making the sum of roots equal to 3. Distractors are reasonably motivated: -2 is the extraneous root, 1 could come from misapplying Vieta's without checking domain, and 5 could come from adding both algebraic roots (3+(-2)=1, not 5 — actually 5 is less clearly motivated). The question is slightly easier than true level B since the domain restriction is a standard taught technique.",
+          "improvement_suggestions": "Replace distractor D (5) with a more plausible error value — for example, the sum of the two algebraic roots before domain checking would be 1 (already option B), so consider replacing 5 with something like 2 (e.g., student forgets to square correctly) or restructure distractors so each maps to a distinct identifiable error. Also consider making the question slightly more complex (e.g., asking for the product of valid roots or using a more involved irrational equation) to better align with level B difficulty.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the equation \\(\\sqrt{x + 6} = x\\), we first square both sides to eliminate the square root. This gives \\(x + 6 = x^2\\). Rearranging this into a standard quadratic equation form, we get \\(x^2 - x - 6 = 0\\). Factoring the quadratic equation yields \\((x - 3)(x + 2) = 0\\), which gives two potential roots: \\(x = 3\\) and \\(x = -2\\).\n\nBecause squaring both sides of an equation can introduce extraneous roots, we must check these potential roots in the original equation.\n1) For \\(x = 3\\): \\(\\sqrt{3 + 6} = \\sqrt{9} = 3\\). This matches the right side (\\(x = 3\\)), so \\(x = 3\\) is a valid root.\n2) For \\(x = -2\\): \\(\\sqrt{-2 + 6} = \\sqrt{4} = 2\\). The right side is \\(-2\\). Since \\(2 \\neq -2\\), \\(x = -2\\) is an extraneous root and must be rejected.\n\nThus, the equation has only one valid root, which is \\(x = 3\\). The question asks for the sum of the roots. Since there is only one root, the sum of the roots is simply the value of that single root, which is 3. (Note: Option B, which is 1, is a distractor for those who forget to eliminate the extraneous root and add 3 and -2).",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent question. Asking for the 'sum of the roots' is a classic and effective way to test if candidates remember to check for extraneous roots in irrational equations.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='3' expected='3'",
+            "raw": {
+              "ok": true,
+              "stdout": "3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:49:53.563834+00:00",
+  "generation_attempts": 2
+}

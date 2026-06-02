@@ -1,0 +1,208 @@
+{
+  "id": "f79371dd-532d-4db7-ae67-61324a2d1697",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polyhedra",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Дұрыс төртбұрышты қиық пирамиданың табандарының қабырғалары $10$ см және $4$ см, ал биіктігі $4$ см. Қиық пирамиданың бүйір бетінің ауданын табыңыз, см$^2$.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$112$"
+    },
+    {
+      "label": "B",
+      "text": "$128$"
+    },
+    {
+      "label": "C",
+      "text": "$140$"
+    },
+    {
+      "label": "D",
+      "text": "$280$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс төртбұрышты қиық пирамиданың бүйір бетінің ауданы $S_{\\text{бүйір}}=\\frac{P_1+P_2}{2}\\cdot l$ формуласымен табылады. Мұндағы $l$ — қиық пирамиданың апофемасы. Табандар квадрат болғандықтан, олардың периметрлері: $P_1=4\\cdot 10=40$, $P_2=4\\cdot 4=16$. Апофеманы табу үшін табан қабырғаларының айырымының жартысын аламыз: $\\frac{10-4}{2}=3$. Сондықтан $l=\\sqrt{4^2+3^2}=\\sqrt{16+9}=5$. Ендеше $S_{\\text{бүйір}}=\\frac{40+16}{2}\\cdot 5=28\\cdot 5=140$. Жауабы: $140$.",
+  "latex_formulas": [
+    "$l=\\sqrt{h^2+\\left(\\frac{a-b}{2}\\right)^2}$",
+    "$S_{\\text{бүйір}}=\\frac{P_1+P_2}{2}\\cdot l$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: A regular square frustum has lateral area L = ((P1 + P2) / 2) * l, where P1 and P2 are the perimeters of the two square bases and l is the slant height of a lateral face. The base side lengths are 10 cm and 4 cm, so P1 = 4 * 10 = 40 cm and P2 = 4 * 4 = 16 cm. The horizontal offset between corresponding sides in a lateral face is half the difference of the base side lengths: (10 - 4) / 2 = 3 cm. Th\n\n[anthropic/claude-sonnet-4.6] answered C: We have a regular quadrilateral frustum (truncated pyramid) with square bases of side lengths a = 10 cm (bottom) and b = 4 cm (top), and height h = 4 cm.\n\nThe lateral surface area of a frustum consists of 4 congruent trapezoids.\n\nFirst, find the slant height of each trapezoidal face.\n\nThe apothem (slant height) l of a lateral face is the distance from the midpoint of a bottom edge to the midpoint \n\n[google/gemini-3.1-pro-preview] answered C: To find the lateral surface area of a regular quadrangular frustum (truncated pyramid), we first need to determine its slant height (apothem), denoted as l. The bases of the frustum are squares with side lengths a = 10 cm and b = 4 cm. The height of the frustum is h = 4 cm.\n\nWe can find the slant height by considering the right-angled triangle formed by the height of the frustum, the slant height,",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the lateral area is found via the frustum slant height and perimeter average. The item fits level B well, though one distractor is less clearly tied to a common error. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. The solution requires 3-4 logical steps (finding apothem offset, slant height, perimeters, then lateral area), fitting level B perfectly. Kazakh terminology is appropriate and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are based on common errors, such as using the height instead of the apothem (112) or forgetting to divide by 2 in the trapezoid area formula (280).",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='140' expected='140'",
+      "raw": {
+        "ok": true,
+        "stdout": "140",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: A regular square frustum has lateral area L = ((P1 + P2) / 2) * l, where P1 and P2 are the perimeters of the two square bases and l is the slant height of a lateral face. The base side lengths are 10 cm and 4 cm, so P1 = 4 * 10 = 40 cm and P2 = 4 * 4 = 16 cm. The horizontal offset between corresponding sides in a lateral face is half the difference of the base side lengths: (10 - 4) / 2 = 3 cm. Th\n\n[anthropic/claude-sonnet-4.6] answered C: We have a regular quadrilateral frustum (truncated pyramid) with square bases of side lengths a = 10 cm (bottom) and b = 4 cm (top), and height h = 4 cm.\n\nThe lateral surface area of a frustum consists of 4 congruent trapezoids.\n\nFirst, find the slant height of each trapezoidal face.\n\nThe apothem (slant height) l of a lateral face is the distance from the midpoint of a bottom edge to the midpoint \n\n[google/gemini-3.1-pro-preview] answered C: To find the lateral surface area of a regular quadrangular frustum (truncated pyramid), we first need to determine its slant height (apothem), denoted as l. The bases of the frustum are squares with side lengths a = 10 cm and b = 4 cm. The height of the frustum is h = 4 cm.\n\nWe can find the slant height by considering the right-angled triangle formed by the height of the frustum, the slant height,",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the lateral area is found via the frustum slant height and perimeter average. The item fits level B well, though one distractor is less clearly tied to a common error. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. The solution requires 3-4 logical steps (finding apothem offset, slant height, perimeters, then lateral area), fitting level B perfectly. Kazakh terminology is appropriate and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are based on common errors, such as using the height instead of the apothem (112) or forgetting to divide by 2 in the trapezoid area formula (280).",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='140' expected='140'",
+        "raw": {
+          "ok": true,
+          "stdout": "140",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A regular square frustum has lateral area L = ((P1 + P2) / 2) * l, where P1 and P2 are the perimeters of the two square bases and l is the slant height of a lateral face. The base side lengths are 10 cm and 4 cm, so P1 = 4 * 10 = 40 cm and P2 = 4 * 4 = 16 cm. The horizontal offset between corresponding sides in a lateral face is half the difference of the base side lengths: (10 - 4) / 2 = 3 cm. The vertical height is 4 cm, so the slant height is l = sqrt(4^2 + 3^2) = sqrt(16 + 9) = sqrt(25) = 5 cm. Therefore, L = ((40 + 16) / 2) * 5 = (56 / 2) * 5 = 28 * 5 = 140 cm^2. The correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous: the lateral area is found via the frustum slant height and perimeter average. The item fits level B well, though one distractor is less clearly tied to a common error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='140' expected='140'",
+            "raw": {
+              "ok": true,
+              "stdout": "140",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We have a regular quadrilateral frustum (truncated pyramid) with square bases of side lengths a = 10 cm (bottom) and b = 4 cm (top), and height h = 4 cm.\n\nThe lateral surface area of a frustum consists of 4 congruent trapezoids.\n\nFirst, find the slant height of each trapezoidal face.\n\nThe apothem (slant height) l of a lateral face is the distance from the midpoint of a bottom edge to the midpoint of the corresponding top edge.\n\nThe horizontal distance from the midpoint of a bottom edge to the midpoint of the corresponding top edge:\nEach base is centered at the same axis. The apothem of the bottom square = a/2 = 5 cm, apothem of top square = b/2 = 2 cm.\nHorizontal offset = 5 - 2 = 3 cm.\n\nSlant height l = √(h² + (offset)²) = √(4² + 3²) = √(16 + 9) = √25 = 5 cm.\n\nLateral surface area = 4 × (area of one trapezoid)\nArea of one trapezoid = (1/2)(a + b) × l = (1/2)(10 + 4) × 5 = (1/2)(14)(5) = 35 cm²\n\nTotal lateral surface area = 4 × 35 = 140 cm²",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, well-structured, and correctly keyed. The solution requires 3-4 logical steps (finding apothem offset, slant height, perimeters, then lateral area), fitting level B perfectly. Kazakh terminology is appropriate and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='140' expected='140'",
+            "raw": {
+              "ok": true,
+              "stdout": "140",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the lateral surface area of a regular quadrangular frustum (truncated pyramid), we first need to determine its slant height (apothem), denoted as l. The bases of the frustum are squares with side lengths a = 10 cm and b = 4 cm. The height of the frustum is h = 4 cm.\n\nWe can find the slant height by considering the right-angled triangle formed by the height of the frustum, the slant height, and the difference between the apothems of the two bases. The apothem of the larger base is a/2 = 10/2 = 5 cm, and the apothem of the smaller base is b/2 = 4/2 = 2 cm. The horizontal leg of our right triangle is the difference between these apothems: 5 - 2 = 3 cm.\n\nUsing the Pythagorean theorem, the slant height l is:\nl = \\sqrt{h^2 + (\\frac{a - b}{2})^2} = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5 cm.\n\nThe lateral surface of a regular quadrangular frustum consists of 4 congruent isosceles trapezoids. The area of one such trapezoid is:\nA_trapezoid = \\frac{a + b}{2} \\times l = \\frac{10 + 4}{2} \\times 5 = 7 \\times 5 = 35 cm^2.\n\nSince there are 4 such trapezoids, the total lateral surface area is:\nS_lateral = 4 \\times 35 = 140 cm^2.\n\nComparing this result to the given options, 140 matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors are based on common errors, such as using the height instead of the apothem (112) or forgetting to divide by 2 in the trapezoid area formula (280).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='140' expected='140'",
+            "raw": {
+              "ok": true,
+              "stdout": "140",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:43:43.846483+00:00",
+  "generation_attempts": 1
+}

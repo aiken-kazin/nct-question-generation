@@ -1,0 +1,208 @@
+{
+  "id": "bf7933ad-8965-4618-b0b0-b125f3cd3e05",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "solids_of_revolution",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Табан радиусы $3\\ см$, биіктігі $5\\ см$ болатын цилиндрдің көлемін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$15\\pi\\ {см}^{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$30\\pi\\ {см}^{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$45\\pi\\ {см}^{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$90\\pi\\ {см}^{3}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Цилиндрдің көлемі $V=\\pi r^{2}h$ формуласымен есептеледі. Берілгені: $r=3\\ см$, $h=5\\ см$. Сондықтан $V=\\pi\\cdot 3^{2}\\cdot 5=\\pi\\cdot 9\\cdot 5=45\\pi\\ {см}^{3}$. Дұрыс жауап: $45\\pi\\ {см}^{3}$.",
+  "latex_formulas": [
+    "$V=\\pi r^{2}h$",
+    "$V=\\pi\\cdot 3^{2}\\cdot 5=45\\pi\\ {см}^{3}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.533,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The volume of a cylinder is V = πr^2h. The base radius is r = 3 cm and the height is h = 5 cm. Substitute the values: V = π · 3^2 · 5 = π · 9 · 5 = 45π cm^3. Therefore, the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The volume of a cylinder is given by V = πr²h, where r is the base radius and h is the height. Here r = 3 cm and h = 5 cm. So V = π × (3)² × 5 = π × 9 × 5 = 45π cm³.\n\n[google/gemini-3.1-pro-preview] answered C: To find the volume of a cylinder, we use the formula V = πr²h, where 'r' is the radius of the base and 'h' is the height of the cylinder. Given that the radius r = 3 cm and the height h = 5 cm, we can substitute these values into the formula: V = π * (3 cm)² * (5 cm) = π * 9 cm² * 5 cm = 45π cm³. This matches option C.",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 9.667,
+      "figure_relevance": null
+    },
+    "overall_score": 9.533,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and directly tests the standard cylinder volume formula at the requested basic level. The Kazakh wording is clear, and the distractors are mostly plausible common-error outcomes. | [anthropic/claude-sonnet-4.6] The question is a clean, direct application of the cylinder volume formula V=πr²h. The correct answer is unambiguous and verified. Distractors A (15π, missing r²), B (30π, possibly using diameter instead of radius or halving), and D (90π, doubling) each correspond to identifiable student errors, though D (90π = 2×45π) is somewhat less natural as a misconception. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level, mathematically correct, and uses standard Kazakh terminology. Distractors represent common student errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='45*pi' expected='45*pi'",
+      "raw": {
+        "ok": true,
+        "stdout": "45*pi",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The volume of a cylinder is V = πr^2h. The base radius is r = 3 cm and the height is h = 5 cm. Substitute the values: V = π · 3^2 · 5 = π · 9 · 5 = 45π cm^3. Therefore, the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The volume of a cylinder is given by V = πr²h, where r is the base radius and h is the height. Here r = 3 cm and h = 5 cm. So V = π × (3)² × 5 = π × 9 × 5 = 45π cm³.\n\n[google/gemini-3.1-pro-preview] answered C: To find the volume of a cylinder, we use the formula V = πr²h, where 'r' is the radius of the base and 'h' is the height of the cylinder. Given that the radius r = 3 cm and the height h = 5 cm, we can substitute these values into the formula: V = π * (3 cm)² * (5 cm) = π * 9 cm² * 5 cm = 45π cm³. This matches option C.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "overall_score": 9.533,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and directly tests the standard cylinder volume formula at the requested basic level. The Kazakh wording is clear, and the distractors are mostly plausible common-error outcomes. | [anthropic/claude-sonnet-4.6] The question is a clean, direct application of the cylinder volume formula V=πr²h. The correct answer is unambiguous and verified. Distractors A (15π, missing r²), B (30π, possibly using diameter instead of radius or halving), and D (90π, doubling) each correspond to identifiable student errors, though D (90π = 2×45π) is somewhat less natural as a misconception. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level, mathematically correct, and uses standard Kazakh terminology. Distractors represent common student errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='45*pi' expected='45*pi'",
+        "raw": {
+          "ok": true,
+          "stdout": "45*pi",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The volume of a cylinder is V = πr^2h. The base radius is r = 3 cm and the height is h = 5 cm. Substitute the values: V = π · 3^2 · 5 = π · 9 · 5 = 45π cm^3. Therefore, the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 9.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a single unambiguous answer, and directly tests the standard cylinder volume formula at the requested basic level. The Kazakh wording is clear, and the distractors are mostly plausible common-error outcomes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='45*pi' expected='45*pi'",
+            "raw": {
+              "ok": true,
+              "stdout": "45*pi",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The volume of a cylinder is given by V = πr²h, where r is the base radius and h is the height. Here r = 3 cm and h = 5 cm. So V = π × (3)² × 5 = π × 9 × 5 = 45π cm³.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is a clean, direct application of the cylinder volume formula V=πr²h. The correct answer is unambiguous and verified. Distractors A (15π, missing r²), B (30π, possibly using diameter instead of radius or halving), and D (90π, doubling) each correspond to identifiable student errors, though D (90π = 2×45π) is somewhat less natural as a misconception.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='45*pi' expected='45*pi'",
+            "raw": {
+              "ok": true,
+              "stdout": "45*pi",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the volume of a cylinder, we use the formula V = πr²h, where 'r' is the radius of the base and 'h' is the height of the cylinder. Given that the radius r = 3 cm and the height h = 5 cm, we can substitute these values into the formula: V = π * (3 cm)² * (5 cm) = π * 9 cm² * 5 cm = 45π cm³. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the requested difficulty level, mathematically correct, and uses standard Kazakh terminology. Distractors represent common student errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='45*pi' expected='45*pi'",
+            "raw": {
+              "ok": true,
+              "stdout": "45*pi",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:31:08.066437+00:00",
+  "generation_attempts": 1
+}

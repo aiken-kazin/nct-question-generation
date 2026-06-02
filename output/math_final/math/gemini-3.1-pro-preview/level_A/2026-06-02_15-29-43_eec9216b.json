@@ -1,0 +1,207 @@
+{
+  "id": "eec9216b-a904-497a-85b5-7101aa1f15ef",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "combinatorics_probability",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Кітапхана сөресіндегі 7 әртүрлі кітаптан 3 кітапты неше тәсілмен таңдап алуға болады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "210"
+    },
+    {
+      "label": "B",
+      "text": "35"
+    },
+    {
+      "label": "C",
+      "text": "840"
+    },
+    {
+      "label": "D",
+      "text": "21"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Бұл есепте таңдап алынған кітаптардың реті маңызды емес, сондықтан қайталанбайтын терулер (комбинация) формуласын қолданамыз:\n$C_n^k = \\frac{n!}{k!(n-k)!}$\nМұндағы $n = 7$ (барлық кітап саны) және $k = 3$ (таңдалатын кітап саны). Формулаға сәйкес мәндерді қоямыз:\n$C_7^3 = \\frac{7!}{3!(7-3)!} = \\frac{7!}{3! \\cdot 4!} = \\frac{4! \\cdot 5 \\cdot 6 \\cdot 7}{1 \\cdot 2 \\cdot 3 \\cdot 4!} = \\frac{5 \\cdot 6 \\cdot 7}{6} = 35$",
+  "latex_formulas": [
+    "C_n^k = \\frac{n!}{k!(n-k)!}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.733,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: We are choosing 3 books from 7 different books. Since the wording says 'choose' and does not mention arranging them, order does not matter. Therefore we use combinations: C(7,3) = 7! / (3!(7-3)!) = 7! / (3!4!) = (7 × 6 × 5) / (3 × 2 × 1) = 210 / 6 = 35. So the correct option is 35.\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the number of ways to choose 3 books from 7 different books, where order does not matter (selection, not arrangement).\n\nThis is a combination problem: C(7,3) = 7! / (3! × 4!)\n\nCalculating:\n7! = 5040\n3! = 6\n4! = 24\n\nC(7,3) = 5040 / (6 × 24) = 5040 / 144 = 35\n\nSo the answer is 35.\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the number of ways to choose 3 books from 7 different books on a shelf. Since the order in which the books are chosen does not matter, this is a combination problem. The formula for combinations is C(n, k) = n! / (k! * (n - k)!), where n is the total number of items and k is the number of items to choose. Here, n = 7 and k = 3. \n\nC(7, 3) = 7! / (3! * (7 - 3)!) \nC(7, 3) = 7! /",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.733,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is correct and unambiguous: choosing 3 books from 7 distinct books requires the combination C(7,3)=35. It matches level A well, and the Kazakh wording is clear and natural. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed combination problem with a single correct answer (C(7,3)=35). All distractors correspond to identifiable errors: 210=P(7,3) (permutation), 840=7×6×5 (ordered selection without dividing), and 21=C(7,2) (wrong k). Kazakh is natural and terminology is appropriate. | [google/gemini-3.1-pro-preview] Excellent question. It perfectly aligns with Level A difficulty, testing a basic combination formula. Distractors are well-chosen based on common errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='35' expected='35'",
+      "raw": {
+        "ok": true,
+        "stdout": "35",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: We are choosing 3 books from 7 different books. Since the wording says 'choose' and does not mention arranging them, order does not matter. Therefore we use combinations: C(7,3) = 7! / (3!(7-3)!) = 7! / (3!4!) = (7 × 6 × 5) / (3 × 2 × 1) = 210 / 6 = 35. So the correct option is 35.\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the number of ways to choose 3 books from 7 different books, where order does not matter (selection, not arrangement).\n\nThis is a combination problem: C(7,3) = 7! / (3! × 4!)\n\nCalculating:\n7! = 5040\n3! = 6\n4! = 24\n\nC(7,3) = 5040 / (6 × 24) = 5040 / 144 = 35\n\nSo the answer is 35.\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the number of ways to choose 3 books from 7 different books on a shelf. Since the order in which the books are chosen does not matter, this is a combination problem. The formula for combinations is C(n, k) = n! / (k! * (n - k)!), where n is the total number of items and k is the number of items to choose. Here, n = 7 and k = 3. \n\nC(7, 3) = 7! / (3! * (7 - 3)!) \nC(7, 3) = 7! /",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.733,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is correct and unambiguous: choosing 3 books from 7 distinct books requires the combination C(7,3)=35. It matches level A well, and the Kazakh wording is clear and natural. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed combination problem with a single correct answer (C(7,3)=35). All distractors correspond to identifiable errors: 210=P(7,3) (permutation), 840=7×6×5 (ordered selection without dividing), and 21=C(7,2) (wrong k). Kazakh is natural and terminology is appropriate. | [google/gemini-3.1-pro-preview] Excellent question. It perfectly aligns with Level A difficulty, testing a basic combination formula. Distractors are well-chosen based on common errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='35' expected='35'",
+        "raw": {
+          "ok": true,
+          "stdout": "35",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We are choosing 3 books from 7 different books. Since the wording says 'choose' and does not mention arranging them, order does not matter. Therefore we use combinations: C(7,3) = 7! / (3!(7-3)!) = 7! / (3!4!) = (7 × 6 × 5) / (3 × 2 × 1) = 210 / 6 = 35. So the correct option is 35.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The item is correct and unambiguous: choosing 3 books from 7 distinct books requires the combination C(7,3)=35. It matches level A well, and the Kazakh wording is clear and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='35' expected='35'",
+            "raw": {
+              "ok": true,
+              "stdout": "35",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the number of ways to choose 3 books from 7 different books, where order does not matter (selection, not arrangement).\n\nThis is a combination problem: C(7,3) = 7! / (3! × 4!)\n\nCalculating:\n7! = 5040\n3! = 6\n4! = 24\n\nC(7,3) = 5040 / (6 × 24) = 5040 / 144 = 35\n\nSo the answer is 35.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is a clean, well-formed combination problem with a single correct answer (C(7,3)=35). All distractors correspond to identifiable errors: 210=P(7,3) (permutation), 840=7×6×5 (ordered selection without dividing), and 21=C(7,2) (wrong k). Kazakh is natural and terminology is appropriate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='35' expected='35'",
+            "raw": {
+              "ok": true,
+              "stdout": "35",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the number of ways to choose 3 books from 7 different books on a shelf. Since the order in which the books are chosen does not matter, this is a combination problem. The formula for combinations is C(n, k) = n! / (k! * (n - k)!), where n is the total number of items and k is the number of items to choose. Here, n = 7 and k = 3. \n\nC(7, 3) = 7! / (3! * (7 - 3)!) \nC(7, 3) = 7! / (3! * 4!) \nC(7, 3) = (7 * 6 * 5 * 4!) / (3 * 2 * 1 * 4!) \nC(7, 3) = (7 * 6 * 5) / 6 \nC(7, 3) = 35.\n\nTherefore, there are 35 ways to choose the books. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent question. It perfectly aligns with Level A difficulty, testing a basic combination formula. Distractors are well-chosen based on common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='35' expected='35'",
+            "raw": {
+              "ok": true,
+              "stdout": "35",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:29:43.390187+00:00",
+  "generation_attempts": 1
+}

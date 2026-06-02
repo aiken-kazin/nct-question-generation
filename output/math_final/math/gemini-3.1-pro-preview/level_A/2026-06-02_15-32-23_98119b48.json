@@ -1,0 +1,207 @@
+{
+  "id": "98119b48-5b09-4ccc-ade2-548293d51508",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "integrals",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\int (3x^2 - 4x + 5) \\, dx$ анықталмаған интегралын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$x^3 + 2x^2 + 5x + C$"
+    },
+    {
+      "label": "B",
+      "text": "$x^3 - 2x^2 + 5x + C$"
+    },
+    {
+      "label": "C",
+      "text": "$3x^3 - 4x^2 + 5x + C$"
+    },
+    {
+      "label": "D",
+      "text": "$6x - 4 + C$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дәрежелік функцияны интегралдау ережесін қолданамыз: $\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C$.\n\nӘрбір қосылғыш үшін интегралды жеке-жеке есептейміз:\n$\\int 3x^2 \\, dx = 3 \\cdot \\frac{x^3}{3} = x^3$\n$\\int 4x \\, dx = 4 \\cdot \\frac{x^2}{2} = 2x^2$\n$\\int 5 \\, dx = 5x$\n\nТабылған мәндерді орнына қойып, тұрақты шама $C$-ны қосамыз:\n$\\int (3x^2 - 4x + 5) \\, dx = x^3 - 2x^2 + 5x + C$.",
+  "latex_formulas": [
+    "\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.7,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Use the power rule for indefinite integrals: ∫ x^n dx = x^(n+1)/(n+1) + C for n ≠ -1. Integrate term by term: ∫(3x^2 - 4x + 5) dx = ∫3x^2 dx - ∫4x dx + ∫5 dx. First term: ∫3x^2 dx = 3 * x^3/3 = x^3. Second term: ∫4x dx = 4 * x^2/2 = 2x^2, so with the negative sign it is -2x^2. Third term: ∫5 dx = 5x. Therefore the indefinite integral is x^3 - 2x^2 + 5x + C. This matches option B.\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the indefinite integral ∫(3x² - 4x + 5) dx.\n\nIntegrate term by term using the power rule ∫x^n dx = x^(n+1)/(n+1) + C:\n\n1) ∫3x² dx = 3 · x³/3 = x³\n2) ∫(-4x) dx = -4 · x²/2 = -2x²\n3) ∫5 dx = 5x\n\nCombining: x³ - 2x² + 5x + C\n\nThis matches option B.\n\n[google/gemini-3.1-pro-preview] answered B: To find the indefinite integral of the polynomial function f(x) = 3x^2 - 4x + 5, we apply the power rule for integration term by term. The power rule states that the integral of x^n with respect to x is (x^{n+1})/(n+1) + C.\n\n1. For the first term, 3x^2: the integral is 3 * (x^3 / 3) = x^3.\n2. For the second term, -4x: the integral is -4 * (x^2 / 2) = -2x^2.\n3. For the third term, 5: the integral i",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.7,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and matches the requested basic integral-rule level. Distractors mostly reflect common errors such as sign mistakes, failing to divide by the new exponent, or confusing integration with differentiation. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A integral problem. The correct answer B is unambiguously verified both symbolically and by hand. Distractors cover common errors: A has wrong sign on the x² term, C forgets to divide by the new exponent, and D is the derivative rather than the integral — all pedagogically meaningful misconceptions. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A difficulty, testing basic integration rules. The distractors are well-designed, representing common errors such as differentiating instead of integrating or forgetting to divide by the new exponent.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='x**3 - 2*x**2 + 5*x' expected='x**3 - 2*x**2 + 5*x'",
+      "raw": {
+        "ok": true,
+        "stdout": "x**3 - 2*x**2 + 5*x",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Use the power rule for indefinite integrals: ∫ x^n dx = x^(n+1)/(n+1) + C for n ≠ -1. Integrate term by term: ∫(3x^2 - 4x + 5) dx = ∫3x^2 dx - ∫4x dx + ∫5 dx. First term: ∫3x^2 dx = 3 * x^3/3 = x^3. Second term: ∫4x dx = 4 * x^2/2 = 2x^2, so with the negative sign it is -2x^2. Third term: ∫5 dx = 5x. Therefore the indefinite integral is x^3 - 2x^2 + 5x + C. This matches option B.\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the indefinite integral ∫(3x² - 4x + 5) dx.\n\nIntegrate term by term using the power rule ∫x^n dx = x^(n+1)/(n+1) + C:\n\n1) ∫3x² dx = 3 · x³/3 = x³\n2) ∫(-4x) dx = -4 · x²/2 = -2x²\n3) ∫5 dx = 5x\n\nCombining: x³ - 2x² + 5x + C\n\nThis matches option B.\n\n[google/gemini-3.1-pro-preview] answered B: To find the indefinite integral of the polynomial function f(x) = 3x^2 - 4x + 5, we apply the power rule for integration term by term. The power rule states that the integral of x^n with respect to x is (x^{n+1})/(n+1) + C.\n\n1. For the first term, 3x^2: the integral is 3 * (x^3 / 3) = x^3.\n2. For the second term, -4x: the integral is -4 * (x^2 / 2) = -2x^2.\n3. For the third term, 5: the integral i",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.7,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and matches the requested basic integral-rule level. Distractors mostly reflect common errors such as sign mistakes, failing to divide by the new exponent, or confusing integration with differentiation. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A integral problem. The correct answer B is unambiguously verified both symbolically and by hand. Distractors cover common errors: A has wrong sign on the x² term, C forgets to divide by the new exponent, and D is the derivative rather than the integral — all pedagogically meaningful misconceptions. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A difficulty, testing basic integration rules. The distractors are well-designed, representing common errors such as differentiating instead of integrating or forgetting to divide by the new exponent.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='x**3 - 2*x**2 + 5*x' expected='x**3 - 2*x**2 + 5*x'",
+        "raw": {
+          "ok": true,
+          "stdout": "x**3 - 2*x**2 + 5*x",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Use the power rule for indefinite integrals: ∫ x^n dx = x^(n+1)/(n+1) + C for n ≠ -1. Integrate term by term: ∫(3x^2 - 4x + 5) dx = ∫3x^2 dx - ∫4x dx + ∫5 dx. First term: ∫3x^2 dx = 3 * x^3/3 = x^3. Second term: ∫4x dx = 4 * x^2/2 = 2x^2, so with the negative sign it is -2x^2. Third term: ∫5 dx = 5x. Therefore the indefinite integral is x^3 - 2x^2 + 5x + C. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.7,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a single unambiguous answer, and matches the requested basic integral-rule level. Distractors mostly reflect common errors such as sign mistakes, failing to divide by the new exponent, or confusing integration with differentiation.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='x**3 - 2*x**2 + 5*x' expected='x**3 - 2*x**2 + 5*x'",
+            "raw": {
+              "ok": true,
+              "stdout": "x**3 - 2*x**2 + 5*x",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the indefinite integral ∫(3x² - 4x + 5) dx.\n\nIntegrate term by term using the power rule ∫x^n dx = x^(n+1)/(n+1) + C:\n\n1) ∫3x² dx = 3 · x³/3 = x³\n2) ∫(-4x) dx = -4 · x²/2 = -2x²\n3) ∫5 dx = 5x\n\nCombining: x³ - 2x² + 5x + C\n\nThis matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is a clean, well-formed Level A integral problem. The correct answer B is unambiguously verified both symbolically and by hand. Distractors cover common errors: A has wrong sign on the x² term, C forgets to divide by the new exponent, and D is the derivative rather than the integral — all pedagogically meaningful misconceptions.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='x**3 - 2*x**2 + 5*x' expected='x**3 - 2*x**2 + 5*x'",
+            "raw": {
+              "ok": true,
+              "stdout": "x**3 - 2*x**2 + 5*x",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the indefinite integral of the polynomial function f(x) = 3x^2 - 4x + 5, we apply the power rule for integration term by term. The power rule states that the integral of x^n with respect to x is (x^{n+1})/(n+1) + C.\n\n1. For the first term, 3x^2: the integral is 3 * (x^3 / 3) = x^3.\n2. For the second term, -4x: the integral is -4 * (x^2 / 2) = -2x^2.\n3. For the third term, 5: the integral is 5x.\n\nAdding the constant of integration C, the complete indefinite integral is x^3 - 2x^2 + 5x + C. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with Level A difficulty, testing basic integration rules. The distractors are well-designed, representing common errors such as differentiating instead of integrating or forgetting to divide by the new exponent.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='x**3 - 2*x**2 + 5*x' expected='x**3 - 2*x**2 + 5*x'",
+            "raw": {
+              "ok": true,
+              "stdout": "x**3 - 2*x**2 + 5*x",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:32:23.601944+00:00",
+  "generation_attempts": 1
+}

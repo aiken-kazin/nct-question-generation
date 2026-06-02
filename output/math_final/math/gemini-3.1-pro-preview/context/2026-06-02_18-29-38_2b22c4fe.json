@@ -1,0 +1,580 @@
+{
+  "id": "2b22c4fef5ea461b828f05fb29c63986",
+  "subject": "math",
+  "level": "C",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T18:29:38.240519+00:00",
+  "passage": "Құрылыс компаниясы ауданы дәл $2000 \\text{ м}^2$ болатын тіктөртбұрыш пішінді қойма салмақшы. Қойманың іші оның еніне ($y$) параллель болатын бір ішкі қабырға арқылы екі бөлмеге бөлінуі тиіс. Қойманың ұзындығын $x$, ал енін $y$ деп белгілейік.\nҚұрылыс материалдары мен жұмыстардың құны келесідей:\n- Сыртқы қабырғалардың (периметрі бойынша) 1 погондық метрінің құны: $40\\ 000$ теңге.\n- Ішкі қабырғаның 1 погондық метрінің құны: $20\\ 000$ теңге.\n- Шатырды жабу құны (ауданы бойынша): $1 \\text{ м}^2$ үшін $15\\ 000$ теңге.\n- Еденге бетон құю құны: $1 \\text{ м}^2$ үшін $10\\ 000$ теңге.\n- Іргетас құюдың тұрақты бағасы (қабырғалар ұзындығына тәуелсіз): $5\\ 000\\ 000$ теңге.\nКомпания қабырғаларды салуға кететін шығынды барынша азайтуды (минимизациялауды) көздеп отыр.",
+  "questions": [
+    {
+      "question_text": "Қойманың барлық қабырғаларын (сыртқы және ішкі) салуға кететін жалпы шығын функциясы $C(x, y)$ қандай өрнекпен анықталады?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$40\\ 000x + 60\\ 000y$"
+        },
+        {
+          "label": "B",
+          "text": "$40\\ 000x + 40\\ 000y + 20\\ 000xy$"
+        },
+        {
+          "label": "C",
+          "text": "$80\\ 000x + 100\\ 000y$"
+        },
+        {
+          "label": "D",
+          "text": "$80\\ 000x + 80\\ 000y$"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Сыртқы қабырғалардың ұзындығы периметрге тең: $2x + 2y$. Оның құны: $40\\ 000(2x + 2y) = 80\\ 000x + 80\\ 000y$. Ішкі қабырға еніне ($y$) параллель, яғни ұзындығы $y$-ке тең, құны $20\\ 000y$. Жалпы шығын: $80\\ 000x + 80\\ 000y + 20\\ 000y = 80\\ 000x + 100\\ 000y$. A нұсқасы сыртқы қабырғаларды екі еселеуді ұмытқанда шығады. B нұсқасы аудан мен ұзындықты шатастырған қателік. D нұсқасы ішкі қабырғаны есепке алмаған.",
+      "critic_score": 7.833,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 3.667,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: We need the cost function only for building all walls, both external and internal. The warehouse is a rectangle with length x and width y. The external wall length is the perimeter: 2x + 2y. External walls cost 40,000 tenge per linear meter, so external wall cost = 40,000(2x + 2y) = 80,000x + 80,000y. The internal wall is parallel to the width y, so its length is y. Internal wall cost = 20,000y. T\n\n[anthropic/claude-sonnet-4.6] answered C: The warehouse is rectangular with length x and width y, area = xy = 2000 m².\n\nThe structure has:\n- Outer walls forming the perimeter: 2x + 2y meters total\n- One inner wall parallel to the width (y-direction), so its length = y meters\n\nCost of outer walls: 40,000 per linear meter × (2x + 2y) = 80,000x + 80,000y\nCost of inner wall: 20,000 per linear meter × y = 20,000y\n\nTotal wall cost C(x, y) = 80,\n\n[google/gemini-3.1-pro-preview] answered C: To find the total cost function for building all the walls, we need to calculate the cost of the external walls and the internal wall separately, and then add them together.\n\n1. External walls: The warehouse is rectangular with length $x$ and width $y$. The perimeter of the warehouse is $2x + 2y$. The cost of the external walls is 40,000 tenge per running meter. \nCost of external walls = $40,000 \\",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 3.667,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.833,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely follows from perimeter plus one internal wall length. However, the item is far below the requested C difficulty: it only asks for a direct cost expression and does not require optimization or non-routine reasoning. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-constructed with good Kazakh language quality. However, the cognitive demand is closer to level B (routine formula setup) rather than level C (multi-step non-routine reasoning or synthesis). The question only asks to identify the cost function, not to optimize it, making it a straightforward formula-reading task. Distractors are well-designed with identifiable error paths. | [google/gemini-3.1-pro-preview] The question is perfectly correct and well-written, but it falls short of the requested Level C difficulty. It sets up an optimization problem but only asks for the objective function, which is a Level B (Application) task.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, ask for the dimensions minimizing wall cost under xy = 2000, possibly followed by the minimum cost, and remove irrelevant roof/floor/foundation costs if they are not used. Improve Kazakh style by replacing Russian-influenced wording such as \"погондық метр\" and the redundant \"минимизациялауды\" with standard terminology. | [anthropic/claude-sonnet-4.6] To reach level C difficulty, the question should ask for the optimal dimensions (x, y) that minimize the wall cost subject to the area constraint xy=2000, requiring calculus or AM-GM inequality application. Alternatively, ask for the minimum total cost including all components (roof, floor, foundation), forcing multi-step synthesis. The current sub-question (just writing C(x,y)) is a prerequisite step, not the full optimization problem. | [google/gemini-3.1-pro-preview] To meet the Level C (Hard) requirement, change the question to ask for the actual minimum cost or the optimal dimensions $x$ and $y$ that minimize the cost, requiring the candidate to use derivatives or the AM-GM inequality.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need the cost function only for building all walls, both external and internal. The warehouse is a rectangle with length x and width y. The external wall length is the perimeter: 2x + 2y. External walls cost 40,000 tenge per linear meter, so external wall cost = 40,000(2x + 2y) = 80,000x + 80,000y. The internal wall is parallel to the width y, so its length is y. Internal wall cost = 20,000y. Total wall cost C(x, y) = 80,000x + 80,000y + 20,000y = 80,000x + 100,000y. This matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 7.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.4,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely follows from perimeter plus one internal wall length. However, the item is far below the requested C difficulty: it only asks for a direct cost expression and does not require optimization or non-routine reasoning.",
+              "improvement_suggestions": "To match level C, ask for the dimensions minimizing wall cost under xy = 2000, possibly followed by the minimum cost, and remove irrelevant roof/floor/foundation costs if they are not used. Improve Kazakh style by replacing Russian-influenced wording such as \"погондық метр\" and the redundant \"минимизациялауды\" with standard terminology.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The warehouse is rectangular with length x and width y, area = xy = 2000 m².\n\nThe structure has:\n- Outer walls forming the perimeter: 2x + 2y meters total\n- One inner wall parallel to the width (y-direction), so its length = y meters\n\nCost of outer walls: 40,000 per linear meter × (2x + 2y) = 80,000x + 80,000y\nCost of inner wall: 20,000 per linear meter × y = 20,000y\n\nTotal wall cost C(x, y) = 80,000x + 80,000y + 20,000y = 80,000x + 100,000y\n\nThis matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-constructed with good Kazakh language quality. However, the cognitive demand is closer to level B (routine formula setup) rather than level C (multi-step non-routine reasoning or synthesis). The question only asks to identify the cost function, not to optimize it, making it a straightforward formula-reading task. Distractors are well-designed with identifiable error paths.",
+              "improvement_suggestions": "To reach level C difficulty, the question should ask for the optimal dimensions (x, y) that minimize the wall cost subject to the area constraint xy=2000, requiring calculus or AM-GM inequality application. Alternatively, ask for the minimum total cost including all components (roof, floor, foundation), forcing multi-step synthesis. The current sub-question (just writing C(x,y)) is a prerequisite step, not the full optimization problem.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the total cost function for building all the walls, we need to calculate the cost of the external walls and the internal wall separately, and then add them together.\n\n1. External walls: The warehouse is rectangular with length $x$ and width $y$. The perimeter of the warehouse is $2x + 2y$. The cost of the external walls is 40,000 tenge per running meter. \nCost of external walls = $40,000 \\times (2x + 2y) = 80,000x + 80,000y$.\n\n2. Internal wall: The warehouse is divided by one internal wall parallel to the width ($y$). Therefore, the length of this internal wall is $y$. The cost of the internal wall is 20,000 tenge per running meter.\nCost of internal wall = $20,000 \\times y = 20,000y$.\n\n3. Total cost of all walls: We sum the costs calculated above.\n$C(x, y) = (80,000x + 80,000y) + 20,000y = 80,000x + 100,000y$.\n\nThis matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is perfectly correct and well-written, but it falls short of the requested Level C difficulty. It sets up an optimization problem but only asks for the objective function, which is a Level B (Application) task.",
+              "improvement_suggestions": "To meet the Level C (Hard) requirement, change the question to ask for the actual minimum cost or the optimal dimensions $x$ and $y$ that minimize the cost, requiring the candidate to use derivatives or the AM-GM inequality.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Қабырғаларды салу шығыны ең аз болуы үшін қойманың $x$ ұзындығы мен $y$ ені қандай болуы керек?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$x = 50 \\text{ м}, y = 40 \\text{ м}$"
+        },
+        {
+          "label": "B",
+          "text": "$x = 40 \\text{ м}, y = 50 \\text{ м}$"
+        },
+        {
+          "label": "C",
+          "text": "$x = 100 \\text{ м}, y = 20 \\text{ м}$"
+        },
+        {
+          "label": "D",
+          "text": "$x = 20 \\text{ м}, y = 100 \\text{ м}$"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Аудан $x \\cdot y = 2000 \\implies y = \\frac{2000}{x}$. Шығын функциясы $C(x) = 80\\ 000x + 100\\ 000 \\left(\\frac{2000}{x}\\right) = 80\\ 000x + \\frac{200\\ 000\\ 000}{x}$. Оптимумды табу үшін туындыны нөлге теңестіреміз: $C'(x) = 80\\ 000 - \\frac{200\\ 000\\ 000}{x^2} = 0$. Бұдан $x^2 = \\frac{200\\ 000\\ 000}{80\\ 000} = 2500 \\implies x = 50$. Олай болса, $y = \\frac{2000}{50} = 40$. B нұсқасын таңдаған оқушы $x$ пен $y$-тің коэффициенттерін шатастырған (бұл жағдайда шығын $8.2$ млн тг болады, ал дұрыс жауапта $8$ млн тг). C және D нұсқалары көбейтіндісі $2000$ болатын кездейсоқ сандар.",
+      "critic_score": 9.067,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The warehouse has rectangular dimensions x by y with fixed area xy = 2000. Only the wall costs need to be minimized, because roof cost, floor cost, and fixed foundation cost do not depend on the choice of x and y when the area is fixed. The exterior wall length is the perimeter: 2x + 2y. Exterior wall cost is 40000(2x + 2y) = 80000x + 80000y. The internal wall is parallel to the width y, so its le\n\n[anthropic/claude-sonnet-4.6] answered A: We need to minimize the cost of walls only (the problem says 'қабырғаларды салуға кететін шығынды барынша азайтуды' — minimize wall construction costs).\n\nConstraint: x * y = 2000 m²\n\nWall costs:\n- Outer walls (perimeter): 2x + 2y meters at 40,000 tenge/m\n- Inner wall (parallel to y, so length = y): y meters at 20,000 tenge/m\n\nTotal wall cost:\nC = 40,000 * (2x + 2y) + 20,000 * y\nC = 80,000x + 80,00\n\n[google/gemini-3.1-pro-preview] answered A: Let $x$ be the length and $y$ be the width of the warehouse. The area is given as $2000 \\text{ m}^2$, so $x \\cdot y = 2000$, which means $y = \\frac{2000}{x}$.\n\nThe warehouse has external walls along its perimeter, which has a total length of $2x + 2y$. The cost of the external walls is $40,000$ tenge per meter.\nThe warehouse also has one internal wall parallel to the width $y$, so its length is $y",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.667,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.067,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and uniquely follows from minimizing exterior plus interior wall cost under the fixed-area constraint. The item is a solid optimization word problem, though two distractors are fairly generic and the declared topic label does not match the mathematical content. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (x=50, y=40). The optimization setup is clear, the constraint is well-defined, and the provided explanation correctly derives the minimum. Distractors B and A are close in value (swapped x/y), making them genuinely confusing, while C and D are less plausible but still satisfy the area constraint. | [google/gemini-3.1-pro-preview] Excellent optimization problem that requires filtering out irrelevant information (costs of roof, floor, and foundation) and correctly setting up the cost function for the walls. The distractors are well-chosen, representing common errors such as swapping the dimensions or picking other factor pairs.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The warehouse has rectangular dimensions x by y with fixed area xy = 2000. Only the wall costs need to be minimized, because roof cost, floor cost, and fixed foundation cost do not depend on the choice of x and y when the area is fixed. The exterior wall length is the perimeter: 2x + 2y. Exterior wall cost is 40000(2x + 2y) = 80000x + 80000y. The internal wall is parallel to the width y, so its length is y. Internal wall cost is 20000y. Total wall cost is C = 80000x + 80000y + 20000y = 80000x + 100000y. Using xy = 2000, we have x = 2000/y. Substitute: C(y) = 80000(2000/y) + 100000y = 160000000/y + 100000y. Differentiate: C'(y) = -160000000/y^2 + 100000. Set equal to zero: -160000000/y^2 + 100000 = 0, so 100000 = 160000000/y^2, hence y^2 = 160000000/100000 = 1600. Since y > 0, y = 40. Then x = 2000/40 = 50. Therefore the minimizing dimensions are x = 50 m and y = 40 m.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The keyed answer is mathematically correct and uniquely follows from minimizing exterior plus interior wall cost under the fixed-area constraint. The item is a solid optimization word problem, though two distractors are fairly generic and the declared topic label does not match the mathematical content.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need to minimize the cost of walls only (the problem says 'қабырғаларды салуға кететін шығынды барынша азайтуды' — minimize wall construction costs).\n\nConstraint: x * y = 2000 m²\n\nWall costs:\n- Outer walls (perimeter): 2x + 2y meters at 40,000 tenge/m\n- Inner wall (parallel to y, so length = y): y meters at 20,000 tenge/m\n\nTotal wall cost:\nC = 40,000 * (2x + 2y) + 20,000 * y\nC = 80,000x + 80,000y + 20,000y\nC = 80,000x + 100,000y\n\nSubstitute x = 2000/y:\nC = 80,000 * (2000/y) + 100,000y\nC = 160,000,000/y + 100,000y\n\nMinimize by taking dC/dy = 0:\ndC/dy = -160,000,000/y² + 100,000 = 0\n100,000 = 160,000,000/y²\ny² = 160,000,000/100,000 = 1600\ny = 40 m\n\nThen x = 2000/40 = 50 m\n\nSo x = 50 m, y = 40 m.\n\nVerify second derivative: d²C/dy² = 320,000,000/y³ > 0, confirming minimum.\n\nThis matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.7,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound with a unique correct answer (x=50, y=40). The optimization setup is clear, the constraint is well-defined, and the provided explanation correctly derives the minimum. Distractors B and A are close in value (swapped x/y), making them genuinely confusing, while C and D are less plausible but still satisfy the area constraint.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let $x$ be the length and $y$ be the width of the warehouse. The area is given as $2000 \\text{ m}^2$, so $x \\cdot y = 2000$, which means $y = \\frac{2000}{x}$.\n\nThe warehouse has external walls along its perimeter, which has a total length of $2x + 2y$. The cost of the external walls is $40,000$ tenge per meter.\nThe warehouse also has one internal wall parallel to the width $y$, so its length is $y$. The cost of the internal wall is $20,000$ tenge per meter.\n\nThe total cost of building the walls, $C(x, y)$, can be expressed as:\n$C(x, y) = 40000(2x + 2y) + 20000(y)$\n$C(x, y) = 80000x + 80000y + 20000y = 80000x + 100000y$\n\nSubstitute $y = \\frac{2000}{x}$ into the cost function to express it in terms of $x$:\n$C(x) = 80000x + 100000\\left(\\frac{2000}{x}\\right)$\n$C(x) = 80000x + \\frac{200000000}{x}$\n\nTo find the minimum cost, we take the derivative of $C(x)$ with respect to $x$ and set it to zero:\n$C'(x) = 80000 - \\frac{200000000}{x^2} = 0$\n$80000 = \\frac{200000000}{x^2}$\n$x^2 = \\frac{200000000}{80000}$\n$x^2 = 2500$\n$x = 50 \\text{ m}$\n\nNow, substitute $x = 50$ back into the area equation to find $y$:\n$y = \\frac{2000}{50} = 40 \\text{ m}$\n\nThus, to minimize the cost of the walls, the length $x$ should be $50 \\text{ m}$ and the width $y$ should be $40 \\text{ m}$. This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "Excellent optimization problem that requires filtering out irrelevant information (costs of roof, floor, and foundation) and correctly setting up the cost function for the walls. The distractors are well-chosen, representing common errors such as swapping the dimensions or picking other factor pairs.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Оңтайлы өлшемдер таңдалған жағдайда, қойма құрылысына кететін (қабырға, шатыр, еден және іргетас) барлық минималды жалпы шығынды табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "$55\\ 000\\ 000$ тг"
+        },
+        {
+          "label": "B",
+          "text": "$63\\ 200\\ 000$ тг"
+        },
+        {
+          "label": "C",
+          "text": "$58\\ 000\\ 000$ тг"
+        },
+        {
+          "label": "D",
+          "text": "$63\\ 000\\ 000$ тг"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Оңтайлы қабырға шығыны: $C(50, 40) = 80\\ 000(50) + 100\\ 000(40) = 4\\ 000\\ 000 + 4\\ 000\\ 000 = 8\\ 000\\ 000$ тг. Шатыр құны: $2000 \\text{ м}^2 \\times 15\\ 000 = 30\\ 000\\ 000$ тг. Еден құны: $2000 \\text{ м}^2 \\times 10\\ 000 = 20\\ 000\\ 000$ тг. Іргетас: $5\\ 000\\ 000$ тг. Жалпы шығын = $8\\ 000\\ 000 + 30\\ 000\\ 000 + 20\\ 000\\ 000 + 5\\ 000\\ 000 = 63\\ 000\\ 000$ тг. A нұсқасы қабырға шығынын қосуды ұмытқан. B нұсқасы оңтайлы емес өлшемді ($40 \\times 50$) қолданғанда шығатын қате нәтиже. C нұсқасы іргетас бағасын есепке алмаған.",
+      "critic_score": 9.05,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: Let the warehouse dimensions be length x and width y, with area xy = 2000. The internal wall is parallel to the width y, so its length is y. Only the wall cost depends on x and y; roof, floor, and fixed foundation costs are constant because the area is fixed. Exterior wall length is the perimeter: 2x + 2y, costing 40000(2x + 2y) = 80000x + 80000y. Interior wall cost is 20000y. Therefore total wall\n\n[anthropic/claude-sonnet-4.6] answered D: Setup: xy = 2000 m². Wall cost = 40,000·2(x+y) + 20,000·y = 80,000x + 100,000y. With x = 2000/y: C_walls = 160,000,000/y + 100,000y. Minimize: dC/dy = -160,000,000/y² + 100,000 = 0 → y² = 1600 → y = 40 m, x = 50 m. Minimum wall cost = 80,000·50 + 100,000·40 = 4,000,000 + 4,000,000 = 8,000,000 tenge. Roof cost = 15,000·2000 = 30,000,000 tenge. Floor cost = 10,000·2000 = 20,000,000 tenge. Foundation",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.05,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The item is mathematically correct, has a unique keyed answer, and the distractors correspond to identifiable common errors. It is a standard applied optimization problem and only moderately hard for math teachers; additionally, the stated topic tag appears mismatched because the item tests optimization/modeling rather than style or text analysis. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and well-constructed. The optimization setup is correct (wall cost minimization with constraint xy=2000), the optimal dimensions y=40, x=50 are verified, and the total cost of 63,000,000 tenge matches answer D. Each distractor corresponds to a specific identifiable error: A omits wall costs, C omits foundation, B uses a non-optimal dimension or calculation error. The Kazakh is clear and professionally written with appropriate mathematical terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let the warehouse dimensions be length x and width y, with area xy = 2000. The internal wall is parallel to the width y, so its length is y. Only the wall cost depends on x and y; roof, floor, and fixed foundation costs are constant because the area is fixed. Exterior wall length is the perimeter: 2x + 2y, costing 40000(2x + 2y) = 80000x + 80000y. Interior wall cost is 20000y. Therefore total wall cost is W = 80000x + 100000y. From xy = 2000, x = 2000/y. Substitute: W(y) = 80000(2000/y) + 100000y = 160000000/y + 100000y. Differentiate: W'(y) = -160000000/y^2 + 100000. Set W'(y)=0: 100000 = 160000000/y^2, so y^2 = 1600, hence y = 40. Then x = 2000/40 = 50. Minimal wall cost: exterior perimeter = 2(50)+2(40)=180 m, exterior cost = 180*40000 = 7200000; interior wall cost = 40*20000 = 800000; total wall cost = 8000000. Roof cost = 2000*15000 = 30000000. Floor cost = 2000*10000 = 20000000. Foundation cost = 5000000. Total minimal construction cost = 8000000 + 30000000 + 20000000 + 5000000 = 63000000 tenge.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The item is mathematically correct, has a unique keyed answer, and the distractors correspond to identifiable common errors. It is a standard applied optimization problem and only moderately hard for math teachers; additionally, the stated topic tag appears mismatched because the item tests optimization/modeling rather than style or text analysis.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Setup: xy = 2000 m². Wall cost = 40,000·2(x+y) + 20,000·y = 80,000x + 100,000y. With x = 2000/y: C_walls = 160,000,000/y + 100,000y. Minimize: dC/dy = -160,000,000/y² + 100,000 = 0 → y² = 1600 → y = 40 m, x = 50 m. Minimum wall cost = 80,000·50 + 100,000·40 = 4,000,000 + 4,000,000 = 8,000,000 tenge. Roof cost = 15,000·2000 = 30,000,000 tenge. Floor cost = 10,000·2000 = 20,000,000 tenge. Foundation = 5,000,000 tenge. Total = 8,000,000 + 30,000,000 + 20,000,000 + 5,000,000 = 63,000,000 tenge.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound and well-constructed. The optimization setup is correct (wall cost minimization with constraint xy=2000), the optimal dimensions y=40, x=50 are verified, and the total cost of 63,000,000 tenge matches answer D. Each distractor corresponds to a specific identifiable error: A omits wall costs, C omits foundation, B uses a non-optimal dimension or calculation error. The Kazakh is clear and professionally written with appropriate mathematical terminology.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": "Invalid \\escape: line 2 column 108 (char 109)",
+            "feedback": null
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 2,
+        "n_critics_failed": 1
+      }
+    },
+    {
+      "question_text": "Оңтайлы жоба бойынша тек қабырғаларды тұрғызуға кеткен шығын жалпы жоба құнының шамамен неше пайызын құрайды? (Ондық үлеске дейін дөңгелектеңіз)",
+      "options": [
+        {
+          "label": "A",
+          "text": "$14.5\\%$"
+        },
+        {
+          "label": "B",
+          "text": "$12.7\\%$"
+        },
+        {
+          "label": "C",
+          "text": "$7.9\\%$"
+        },
+        {
+          "label": "D",
+          "text": "$11.3\\%$"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Қабырғаларды тұрғызу шығыны $8\\ 000\\ 000$ тг. Жалпы шығын $63\\ 000\\ 000$ тг. Пайызбен есептегенде: $\\frac{8\\ 000\\ 000}{63\\ 000\\ 000} \\times 100\\% \\approx 12.698\\% \\approx 12.7\\%$. A нұсқасы қабырға шығынын бөлшектің бөліміне қоспай ($8/55$) есептегенде туындайтын қате. C нұсқасы іргетастың пайызын ($5/63$) есептеген қате.",
+      "critic_score": 8.8,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 7.75,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: Let the warehouse dimensions be length x and width y, with area constraint xy = 2000. The internal wall is parallel to the width y, so its length is y. Exterior wall cost is 40000 times the perimeter: 40000(2x + 2y) = 80000x + 80000y. Internal wall cost is 20000y. Therefore total wall cost is C_w = 80000x + 100000y. Using x = 2000/y, C_w(y) = 80000(2000/y) + 100000y = 160000000/y + 100000y. Differ\n\n[anthropic/claude-sonnet-4.6] answered B: Step 1: Constraint: x·y = 2000, so y = 2000/x.\n\nStep 2: Wall cost function:\n- Outer walls perimeter = 2x + 2y, cost = 40,000(2x + 2y)\n- Inner wall (parallel to y, length = y), cost = 20,000·y\nC_walls = 80,000x + 80,000y + 20,000y = 80,000x + 100,000y\n\nStep 3: Minimize wall cost:\nC_walls = 80,000x + 100,000(2000/x) = 80,000x + 200,000,000/x\ndC/dx = 80,000 - 200,000,000/x² = 0\nx² = 2500, x = 50 m\ny ",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.75,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound with a unique defensible answer. However, the task is a fairly standard single-variable optimization and percentage calculation, so it is somewhat easier than a true level C hard item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, requiring multi-step optimization (calculus/AM-GM), cost aggregation, and percentage calculation — genuinely level C. The correct answer B=12.7% is verified independently. Distractors A (8/55), C (5/63), and D (plausible arithmetic variant) are all reachable by specific identifiable errors. Kazakh language is natural and technically appropriate.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let the warehouse dimensions be length x and width y, with area constraint xy = 2000. The internal wall is parallel to the width y, so its length is y. Exterior wall cost is 40000 times the perimeter: 40000(2x + 2y) = 80000x + 80000y. Internal wall cost is 20000y. Therefore total wall cost is C_w = 80000x + 100000y. Using x = 2000/y, C_w(y) = 80000(2000/y) + 100000y = 160000000/y + 100000y. Differentiate: C_w'(y) = -160000000/y^2 + 100000. Set equal to zero: 100000 = 160000000/y^2, so y^2 = 1600, hence y = 40. Then x = 2000/40 = 50. Minimum wall cost is C_w = 80000(50) + 100000(40) = 4000000 + 4000000 = 8000000 tenge. Other project costs: roof = 2000 * 15000 = 30000000 tenge; floor = 2000 * 10000 = 20000000 tenge; fixed foundation = 5000000 tenge. Total project cost = 8000000 + 30000000 + 20000000 + 5000000 = 63000000 tenge. Percentage for walls = (8000000 / 63000000) * 100 ≈ 12.6984%, rounded to one decimal place = 12.7%.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 6.5,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the solution is mathematically sound with a unique defensible answer. However, the task is a fairly standard single-variable optimization and percentage calculation, so it is somewhat easier than a true level C hard item.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Constraint: x·y = 2000, so y = 2000/x.\n\nStep 2: Wall cost function:\n- Outer walls perimeter = 2x + 2y, cost = 40,000(2x + 2y)\n- Inner wall (parallel to y, length = y), cost = 20,000·y\nC_walls = 80,000x + 80,000y + 20,000y = 80,000x + 100,000y\n\nStep 3: Minimize wall cost:\nC_walls = 80,000x + 100,000(2000/x) = 80,000x + 200,000,000/x\ndC/dx = 80,000 - 200,000,000/x² = 0\nx² = 2500, x = 50 m\ny = 2000/50 = 40 m\n\nStep 4: Wall cost at optimum:\nC_walls = 80,000(50) + 100,000(40) = 4,000,000 + 4,000,000 = 8,000,000 tenge\n\nStep 5: Total project cost:\n- Walls: 8,000,000\n- Roof: 15,000 × 2000 = 30,000,000\n- Floor: 10,000 × 2000 = 20,000,000\n- Foundation: 5,000,000\nTotal = 63,000,000 tenge\n\nStep 6: Percentage = 8,000,000/63,000,000 = 8/63 ≈ 0.12698 ≈ 12.7%",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, requiring multi-step optimization (calculus/AM-GM), cost aggregation, and percentage calculation — genuinely level C. The correct answer B=12.7% is verified independently. Distractors A (8/55), C (5/63), and D (plausible arithmetic variant) are all reachable by specific identifiable errors. Kazakh language is natural and technically appropriate.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": "Invalid \\escape: line 2 column 108 (char 109)",
+            "feedback": null
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 2,
+        "n_critics_failed": 1
+      }
+    },
+    {
+      "question_text": "Егер ішкі қабырғаның 1 погондық метрінің құны сыртқы қабырғамен бірдей болып ($40\\ 000$ тг) қымбаттаса, шығынды барынша азайту үшін жаңа оңтайлы өлшемдер ($x$ және $y$) бастапқы өлшемдермен салыстырғанда қалай өзгереді?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$x$ ұзындығы кемиді, ал $y$ ені артады."
+        },
+        {
+          "label": "B",
+          "text": "Екі өлшем де өзгермейді, өйткені аудан тұрақты."
+        },
+        {
+          "label": "C",
+          "text": "$x$ ұзындығы артады, ал $y$ ені кемиді."
+        },
+        {
+          "label": "D",
+          "text": "$x$ пен $y$ екеуі де артады."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Жаңа жағдайда шығын функциясы $C = 80\\ 000x + 120\\ 000y$ болады. Ішкі қабырға (яғни $y$ бағытындағы) қымбаттағандықтан, жалпы шығынды азайту үшін енін ($y$) азайтып, ұзындығын ($x$) көбейту тиімді. Толық шешуі: $80\\ 000 - \\frac{120\\ 000 \\cdot 2000}{x^2} = 0 \\implies x^2 = 3000 \\implies x \\approx 54.77$ м (бастапқы 50 м-ден көп, яғни артады), сәйкесінше $y \\approx 36.5$ м (кемиді). A нұсқасы логикалық қарама-қайшы. B нұсқасы оптимизацияның бағаға тәуелділігін түсінбеу. D нұсқасы мүмкін емес, себебі екі өлшем бірдей артса, аудан $2000$-нен асып кетеді.",
+      "critic_score": 8.5,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 7.25,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: Only wall costs affect the optimization, because the area is fixed at 2000 m^2, so roof cost, floor cost, and fixed foundation cost do not change with x and y. The area constraint is xy = 2000, so x = 2000/y. The interior wall is parallel to the width y, so its length is y. Initially, external wall cost is 40000 * 2(x + y) = 80000x + 80000y, and interior wall cost is 20000y. Thus initial wall cost\n\n[anthropic/claude-sonnet-4.6] answered C: Original scenario: Wall cost = 40000·2(x+y) + 20000·y = 80000x + 100000y. With xy=2000, x=2000/y: C1 = 160,000,000/y + 100,000y. Setting dC1/dy=0: y²=1600, y=40, x=50.\n\nNew scenario (inner wall at 40,000 tg/m): Wall cost = 40000·2(x+y) + 40000·y = 80000x + 120000y. With x=2000/y: C2 = 160,000,000/y + 120,000y. Setting dC2/dy=0: y²=160,000,000/120,000=4000/3, y=√(4000/3)≈36.51, x=2000/36.51≈54.77.\n",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.25,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and uniquely supported by the optimization calculation. However, the item is a fairly routine constrained optimization problem rather than a genuinely hard Level C task, and one distractor is trivially impossible because both dimensions cannot increase while the area remains fixed. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and well-constructed. The correct answer C is verified by independent calculation (x increases from 50 to ~54.77, y decreases from 40 to ~36.51). The distractors represent plausible misconceptions: B (area constraint means no change), A (reversed logic), D (both increase). The problem genuinely requires multi-step optimization reasoning appropriate for level C.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Only wall costs affect the optimization, because the area is fixed at 2000 m^2, so roof cost, floor cost, and fixed foundation cost do not change with x and y. The area constraint is xy = 2000, so x = 2000/y. The interior wall is parallel to the width y, so its length is y. Initially, external wall cost is 40000 * 2(x + y) = 80000x + 80000y, and interior wall cost is 20000y. Thus initial wall cost is C1 = 80000x + 100000y. Substitute x = 2000/y: C1(y) = 80000 * 2000/y + 100000y = 160000000/y + 100000y. Differentiate: C1'(y) = -160000000/y^2 + 100000. Set equal to zero: 100000 = 160000000/y^2, so y^2 = 1600, hence y = 40. Then x = 2000/40 = 50. After the interior wall cost increases to 40000 per meter, new wall cost is C2 = 80000x + 80000y + 40000y = 80000x + 120000y. Substitute x = 2000/y: C2(y) = 160000000/y + 120000y. Differentiate: C2'(y) = -160000000/y^2 + 120000. Set equal to zero: 120000 = 160000000/y^2, so y^2 = 160000000/120000 = 4000/3, hence y ≈ 36.5. Then x = 2000/y ≈ 54.8. Therefore compared with the initial optimum, x increases and y decreases.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.5,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.1,
+              "pass_fail": true,
+              "comments": "The keyed answer is mathematically correct and uniquely supported by the optimization calculation. However, the item is a fairly routine constrained optimization problem rather than a genuinely hard Level C task, and one distractor is trivially impossible because both dimensions cannot increase while the area remains fixed.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Original scenario: Wall cost = 40000·2(x+y) + 20000·y = 80000x + 100000y. With xy=2000, x=2000/y: C1 = 160,000,000/y + 100,000y. Setting dC1/dy=0: y²=1600, y=40, x=50.\n\nNew scenario (inner wall at 40,000 tg/m): Wall cost = 40000·2(x+y) + 40000·y = 80000x + 120000y. With x=2000/y: C2 = 160,000,000/y + 120,000y. Setting dC2/dy=0: y²=160,000,000/120,000=4000/3, y=√(4000/3)≈36.51, x=2000/36.51≈54.77.\n\nComparison: x increases from 50 to ~54.77, y decreases from 40 to ~36.51. When the inner wall (of length y) becomes more expensive, the optimal solution reduces y and increases x to compensate while maintaining area=2000.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound and well-constructed. The correct answer C is verified by independent calculation (x increases from 50 to ~54.77, y decreases from 40 to ~36.51). The distractors represent plausible misconceptions: B (area constraint means no change), A (reversed logic), D (both increase). The problem genuinely requires multi-step optimization reasoning appropriate for level C.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": "Invalid \\escape: line 2 column 112 (char 113)",
+            "feedback": null
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 2,
+        "n_critics_failed": 1
+      }
+    }
+  ]
+}

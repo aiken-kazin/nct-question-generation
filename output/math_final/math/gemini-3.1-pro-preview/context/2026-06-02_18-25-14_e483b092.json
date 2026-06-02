@@ -1,0 +1,628 @@
+{
+  "id": "e483b09215c744a38a0c19048a1acd23",
+  "subject": "math",
+  "level": "B",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T18:25:14.775456+00:00",
+  "passage": "Фермердің ұзындығы 20 м және ені 8 м болатын тікбұрышты жылыжайы бар. Жылыжайдың ішінде көкөністер өсіруге арналған үш тікбұрышты атыз (төсек) жасалған, ал қалған бөлігін жүруге арналған жолдар алып жатыр.\n\nАтыздардың өлшемдері:\n- 1-атыз (қияр): ұзындығы 8 м, ені 3 м.\n- 2-атыз (қызанақ): ұзындығы 10 м, ені 4 м.\n- 3-атыз (тәтті бұрыш): ұзындығы 6 м, ені 2 м.\n\nФермер әр 1 $\\text{м}^2$ жерден келесідей өнім алады:\n- Қияр: 12 кг\n- Қызанақ: 15 кг\n- Тәтті бұрыш: 8 кг\n\nНарықтағы сату бағалары:\n- 1 кг қияр – 400 тг\n- 1 кг қызанақ – 500 тг\n- 1 кг тәтті бұрыш – 600 тг",
+  "questions": [
+    {
+      "question_text": "Жылыжайдағы жолдардың ауданын табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "76 $\\text{м}^2$"
+        },
+        {
+          "label": "B",
+          "text": "108 $\\text{м}^2$"
+        },
+        {
+          "label": "C",
+          "text": "84 $\\text{м}^2$"
+        },
+        {
+          "label": "D",
+          "text": "160 $\\text{м}^2$"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Жылыжайдың жалпы ауданы: $20 \\times 8 = 160 \\text{ м}^2$. Атыздардың аудандары: қияр ($8 \\times 3 = 24 \\text{ м}^2$), қызанақ ($10 \\times 4 = 40 \\text{ м}^2$), бұрыш ($6 \\times 2 = 12 \\text{ м}^2$). Барлық атыздар ауданы: $24 + 40 + 12 = 76 \\text{ м}^2$. Жолдардың ауданы: $160 - 76 = 84 \\text{ м}^2$. А нұсқасы қате, өйткені ол тек атыздардың ауданы. D нұсқасы қате, себебі бұл жалпы аудан.",
+      "critic_score": 9.2,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 7.833,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: Compute the total area of the rectangular greenhouse: 20 m × 8 m = 160 m^2. Compute the areas of the three rectangular beds: 1st bed = 8 m × 3 m = 24 m^2; 2nd bed = 10 m × 4 m = 40 m^2; 3rd bed = 6 m × 2 m = 12 m^2. Total bed area = 24 + 40 + 12 = 76 m^2. The paths occupy the remaining area: 160 − 76 = 84 m^2. Therefore, the area of the paths is 84 m^2.\n\n[anthropic/claude-sonnet-4.6] answered C: Step 1: Calculate the total area of the greenhouse.\nTotal area = length × width = 20 m × 8 m = 160 m²\n\nStep 2: Calculate the area of each bed (atyz).\n- Bed 1 (cucumber): 8 m × 3 m = 24 m²\n- Bed 2 (tomato): 10 m × 4 m = 40 m²\n- Bed 3 (sweet pepper): 6 m × 2 m = 12 m²\n\nStep 3: Total area of all beds = 24 + 40 + 12 = 76 m²\n\nStep 4: Area of pathways = Total area - Area of beds = 160 - 76 = 84 m²\n\nThe \n\n[google/gemini-3.1-pro-preview] answered C: First, calculate the total area of the rectangular greenhouse. The length is 20 m and the width is 8 m, so the total area is 20 * 8 = 160 m^2.\nNext, calculate the area of each of the three rectangular beds:\n- Bed 1 (cucumbers): 8 m * 3 m = 24 m^2.\n- Bed 2 (tomatoes): 10 m * 4 m = 40 m^2.\n- Bed 3 (sweet peppers): 6 m * 2 m = 12 m^2.\nNow, find the total area occupied by the beds by summing these are",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.833,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by the calculations. However, for teacher certification this is a rather elementary area-subtraction word problem, and the yield/price data are irrelevant to the asked quantity. | [anthropic/claude-sonnet-4.6] The question is mathematically correct with a well-keyed answer (C=84 m²). Distractors are well-motivated: A=76 m² (total bed area, forgetting to subtract), D=160 m² (total greenhouse area), and B=108 m² (plausible arithmetic error). The Kazakh is natural and uses standard terminology. The difficulty is slightly below B-level since the multi-step calculation is straightforward subtraction after simple multiplications, but it does require 3-4 steps. | [google/gemini-3.1-pro-preview] The question is well-structured and perfectly matches the B difficulty level. The inclusion of extra information (yield and prices) excellently tests the candidate's ability to filter relevant data, which is a key skill in mathematical literacy.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with B-level difficulty, consider adding a follow-up calculation requirement (e.g., asking for the ratio of pathway area to total area, or incorporating the yield/price data into the question) to increase cognitive demand. Distractor B (108 m²) could be made more clearly reachable by a specific error — currently it's not obvious which mistake leads to 108.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute the total area of the rectangular greenhouse: 20 m × 8 m = 160 m^2. Compute the areas of the three rectangular beds: 1st bed = 8 m × 3 m = 24 m^2; 2nd bed = 10 m × 4 m = 40 m^2; 3rd bed = 6 m × 2 m = 12 m^2. Total bed area = 24 + 40 + 12 = 76 m^2. The paths occupy the remaining area: 160 − 76 = 84 m^2. Therefore, the area of the paths is 84 m^2.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 6.5,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.7,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely supported by the calculations. However, for teacher certification this is a rather elementary area-subtraction word problem, and the yield/price data are irrelevant to the asked quantity.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Calculate the total area of the greenhouse.\nTotal area = length × width = 20 m × 8 m = 160 m²\n\nStep 2: Calculate the area of each bed (atyz).\n- Bed 1 (cucumber): 8 m × 3 m = 24 m²\n- Bed 2 (tomato): 10 m × 4 m = 40 m²\n- Bed 3 (sweet pepper): 6 m × 2 m = 12 m²\n\nStep 3: Total area of all beds = 24 + 40 + 12 = 76 m²\n\nStep 4: Area of pathways = Total area - Area of beds = 160 - 76 = 84 m²\n\nThe answer is 84 m².",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is mathematically correct with a well-keyed answer (C=84 m²). Distractors are well-motivated: A=76 m² (total bed area, forgetting to subtract), D=160 m² (total greenhouse area), and B=108 m² (plausible arithmetic error). The Kazakh is natural and uses standard terminology. The difficulty is slightly below B-level since the multi-step calculation is straightforward subtraction after simple multiplications, but it does require 3-4 steps.",
+              "improvement_suggestions": "To better align with B-level difficulty, consider adding a follow-up calculation requirement (e.g., asking for the ratio of pathway area to total area, or incorporating the yield/price data into the question) to increase cognitive demand. Distractor B (108 m²) could be made more clearly reachable by a specific error — currently it's not obvious which mistake leads to 108.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "First, calculate the total area of the rectangular greenhouse. The length is 20 m and the width is 8 m, so the total area is 20 * 8 = 160 m^2.\nNext, calculate the area of each of the three rectangular beds:\n- Bed 1 (cucumbers): 8 m * 3 m = 24 m^2.\n- Bed 2 (tomatoes): 10 m * 4 m = 40 m^2.\n- Bed 3 (sweet peppers): 6 m * 2 m = 12 m^2.\nNow, find the total area occupied by the beds by summing these areas: 24 + 40 + 12 = 76 m^2.\nThe rest of the greenhouse is occupied by paths. To find the area of the paths, subtract the total area of the beds from the total area of the greenhouse: 160 m^2 - 76 m^2 = 84 m^2.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured and perfectly matches the B difficulty level. The inclusion of extra information (yield and prices) excellently tests the candidate's ability to filter relevant data, which is a key skill in mathematical literacy.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Фермер қызанақ өнімін толық сатқанда қанша табыс (теңгемен) табады?",
+      "options": [
+        {
+          "label": "A",
+          "text": "300 000 тг"
+        },
+        {
+          "label": "B",
+          "text": "240 000 тг"
+        },
+        {
+          "label": "C",
+          "text": "20 000 тг"
+        },
+        {
+          "label": "D",
+          "text": "7 500 тг"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Қызанақ атызының ауданы: $10 \\times 4 = 40 \\text{ м}^2$. Алынатын өнім: $40 \\times 15 = 600 \\text{ кг}$. Табыс: $600 \\times 500 = 300 000 \\text{ тг}$. C нұсқасы өнімділік мөлшерін ескермей, тек ауданды бағаға көбейткенде шығады ($40 \\times 500$).",
+      "critic_score": 8.933,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The question asks only for the income from selling the full tomato crop. The tomato bed has length 10 m and width 4 m, so its area is 10 × 4 = 40 m². Tomato yield is 15 kg per 1 m², so total tomato mass is 40 × 15 = 600 kg. The selling price is 500 tenge per kg, so total income is 600 × 500 = 300,000 tenge. Therefore the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: Step 1: Find the area of the tomato (қызанақ) bed.\nArea = length × width = 10 m × 4 m = 40 m²\n\nStep 2: Find the total yield of tomatoes.\nYield = 40 m² × 15 kg/m² = 600 kg\n\nStep 3: Calculate the revenue from selling all tomatoes.\nRevenue = 600 kg × 500 tg/kg = 300,000 tg\n\nThe answer is 300,000 tg.\n\n[google/gemini-3.1-pro-preview] answered A: Step 1: Find the area of the tomato bed (2-атыз). The dimensions are given as length 10 m and width 4 m. Area = 10 m * 4 m = 40 m^2.\nStep 2: Calculate the total yield of tomatoes. The yield is 15 kg per 1 m^2. Total yield = 40 m^2 * 15 kg/m^2 = 600 kg.\nStep 3: Calculate the total revenue from selling the tomatoes. The market price is 500 tg per 1 kg. Total revenue = 600 kg * 500 tg/kg = 300,000 tg",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.933,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by a clear three-step calculation. The item is somewhat easy for level B and the stated topic label does not fit the mathematical content, but the distractors are mostly plausible and the language is understandable. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-structured with natural Kazakh language. However, distractors C (20,000 tg) and D (7,500 tg) are implausible and easily eliminated — D especially seems arbitrary and unreachable by any standard error path, weakening distractor quality. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligns with the requested difficulty level. Distractors are carefully crafted to reflect common student errors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace distractor D (7,500 tg) with a value reachable by a specific error, e.g., 200,000 tg (using wrong yield rate or wrong area). Also consider replacing C with 40,000 tg (area × price without yield factor, i.e., 40×500×2 or similar plausible miscalculation). This would make all four options reachable by identifiable errors and raise distractor quality.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks only for the income from selling the full tomato crop. The tomato bed has length 10 m and width 4 m, so its area is 10 × 4 = 40 m². Tomato yield is 15 kg per 1 m², so total tomato mass is 40 × 15 = 600 kg. The selling price is 500 tenge per kg, so total income is 600 × 500 = 300,000 tenge. Therefore the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely supported by a clear three-step calculation. The item is somewhat easy for level B and the stated topic label does not fit the mathematical content, but the distractors are mostly plausible and the language is understandable.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Find the area of the tomato (қызанақ) bed.\nArea = length × width = 10 m × 4 m = 40 m²\n\nStep 2: Find the total yield of tomatoes.\nYield = 40 m² × 15 kg/m² = 600 kg\n\nStep 3: Calculate the revenue from selling all tomatoes.\nRevenue = 600 kg × 500 tg/kg = 300,000 tg\n\nThe answer is 300,000 tg.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.0,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-structured with natural Kazakh language. However, distractors C (20,000 tg) and D (7,500 tg) are implausible and easily eliminated — D especially seems arbitrary and unreachable by any standard error path, weakening distractor quality.",
+              "improvement_suggestions": "Replace distractor D (7,500 tg) with a value reachable by a specific error, e.g., 200,000 tg (using wrong yield rate or wrong area). Also consider replacing C with 40,000 tg (area × price without yield factor, i.e., 40×500×2 or similar plausible miscalculation). This would make all four options reachable by identifiable errors and raise distractor quality.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Find the area of the tomato bed (2-атыз). The dimensions are given as length 10 m and width 4 m. Area = 10 m * 4 m = 40 m^2.\nStep 2: Calculate the total yield of tomatoes. The yield is 15 kg per 1 m^2. Total yield = 40 m^2 * 15 kg/m^2 = 600 kg.\nStep 3: Calculate the total revenue from selling the tomatoes. The market price is 500 tg per 1 kg. Total revenue = 600 kg * 500 tg/kg = 300,000 tg.\nComparing this result to the given options, 300,000 tg matches Option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured, mathematically sound, and perfectly aligns with the requested difficulty level. Distractors are carefully crafted to reflect common student errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Қияр егілген атыз жылыжайдың жалпы ауданының неше пайызын құрайды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24%"
+        },
+        {
+          "label": "B",
+          "text": "31,6%"
+        },
+        {
+          "label": "C",
+          "text": "10%"
+        },
+        {
+          "label": "D",
+          "text": "15%"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Қияр атызының ауданы $24 \\text{ м}^2$, жылыжайдың жалпы ауданы $160 \\text{ м}^2$. Пайызы: $\\frac{24}{160} \\times 100\\% = 15\\%$. А нұсқасы ауданның сандық мәнімен шатастырылған. В нұсқасында жалпы аудан емес, тек атыздардың ауданына (76) бөлінген.",
+      "critic_score": 9.033,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The greenhouse is rectangular with length 20 m and width 8 m, so its total area is 20 × 8 = 160 m². The cucumber bed is rectangular with length 8 m and width 3 m, so its area is 8 × 3 = 24 m². The percentage of the total greenhouse area occupied by the cucumber bed is (24 / 160) × 100% = 0.15 × 100% = 15%. Therefore, the correct option is D.\n\n[anthropic/claude-sonnet-4.6] answered D: Step 1: Calculate the total area of the greenhouse.\nTotal area = length × width = 20 m × 8 m = 160 m²\n\nStep 2: Calculate the area of the cucumber bed (1-атыз).\nCucumber bed area = 8 m × 3 m = 24 m²\n\nStep 3: Calculate what percentage the cucumber bed is of the total greenhouse area.\nPercentage = (24 / 160) × 100 = 15%\n\nSo the cucumber bed constitutes 15% of the total greenhouse area.\n\n[google/gemini-3.1-pro-preview] answered D: First, calculate the total area of the greenhouse. The dimensions are 20 m by 8 m, so the total area is 20 * 8 = 160 square meters.\nNext, calculate the area of the cucumber bed (1-атыз). Its dimensions are 8 m by 3 m, so its area is 8 * 3 = 24 square meters.\nFinally, find what percentage the cucumber bed's area is of the total greenhouse area. \nPercentage = (24 / 160) * 100 = 0.15 * 100 = 15%.\nThi",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.033,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the calculation is unambiguous: 24/160 = 15%. However, the item is somewhat too easy for level B, since it mainly requires extracting two dimensions and computing a basic percentage; the extra yield and price data are irrelevant distractors. | [anthropic/claude-sonnet-4.6] The question is factually correct with a well-keyed answer (D=15%). Distractors are well-motivated: A=24 confuses area value with percentage, B=31.6% uses total bed area as denominator, C=10% is plausible but less clearly motivated. The question is slightly easier than true Level B since it requires only 2 straightforward steps (compute area, divide by total), but the rich text context adds moderate complexity. | [google/gemini-3.1-pro-preview] The question is well-designed for mathematical literacy, requiring the extraction of relevant data from a larger text. The distractors are based on common student errors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with Level B difficulty, consider asking a more complex follow-up (e.g., comparing percentage of area to percentage of revenue contribution), which would require 3-4 steps. Distractor C (10%) could be better motivated by a specific error path — currently it's not obvious what mistake leads to 10%.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The greenhouse is rectangular with length 20 m and width 8 m, so its total area is 20 × 8 = 160 m². The cucumber bed is rectangular with length 8 m and width 3 m, so its area is 8 × 3 = 24 m². The percentage of the total greenhouse area occupied by the cucumber bed is (24 / 160) × 100% = 0.15 × 100% = 15%. Therefore, the correct option is D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.6,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the calculation is unambiguous: 24/160 = 15%. However, the item is somewhat too easy for level B, since it mainly requires extracting two dimensions and computing a basic percentage; the extra yield and price data are irrelevant distractors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Calculate the total area of the greenhouse.\nTotal area = length × width = 20 m × 8 m = 160 m²\n\nStep 2: Calculate the area of the cucumber bed (1-атыз).\nCucumber bed area = 8 m × 3 m = 24 m²\n\nStep 3: Calculate what percentage the cucumber bed is of the total greenhouse area.\nPercentage = (24 / 160) × 100 = 15%\n\nSo the cucumber bed constitutes 15% of the total greenhouse area.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is factually correct with a well-keyed answer (D=15%). Distractors are well-motivated: A=24 confuses area value with percentage, B=31.6% uses total bed area as denominator, C=10% is plausible but less clearly motivated. The question is slightly easier than true Level B since it requires only 2 straightforward steps (compute area, divide by total), but the rich text context adds moderate complexity.",
+              "improvement_suggestions": "To better align with Level B difficulty, consider asking a more complex follow-up (e.g., comparing percentage of area to percentage of revenue contribution), which would require 3-4 steps. Distractor C (10%) could be better motivated by a specific error path — currently it's not obvious what mistake leads to 10%.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "First, calculate the total area of the greenhouse. The dimensions are 20 m by 8 m, so the total area is 20 * 8 = 160 square meters.\nNext, calculate the area of the cucumber bed (1-атыз). Its dimensions are 8 m by 3 m, so its area is 8 * 3 = 24 square meters.\nFinally, find what percentage the cucumber bed's area is of the total greenhouse area. \nPercentage = (24 / 160) * 100 = 0.15 * 100 = 15%.\nThis matches option D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-designed for mathematical literacy, requiring the extraction of relevant data from a larger text. The distractors are based on common student errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Фермер қызанақ егілген атыздың периметрі бойымен тамшылатып суару құбырын жүргізгісі келеді. Ол үшін неше метр құбыр қажет?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14 м"
+        },
+        {
+          "label": "B",
+          "text": "28 м"
+        },
+        {
+          "label": "C",
+          "text": "40 м"
+        },
+        {
+          "label": "D",
+          "text": "20 м"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Қызанақ атызының өлшемдері 10 м және 4 м. Тік төртбұрыштың периметрін табу формуласы бойынша: $P = 2 \\times (10 + 4) = 28 \\text{ м}$. А нұсқасы қате, өйткені 2-ге көбейту ұмытылған. С нұсқасында периметр емес, аудан есептелген.",
+      "critic_score": 8.5,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 5.667,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The question asks for the length of drip irrigation pipe needed along the perimeter of the tomato bed. The tomato bed is rectangular with length 10 m and width 4 m. The perimeter of a rectangle is P = 2(length + width). Substitute the values: P = 2(10 + 4) = 2 · 14 = 28 m. Therefore, the farmer needs 28 meters of pipe.\n\n[anthropic/claude-sonnet-4.6] answered B: The tomato bed (2-атыз) has dimensions: length = 10 m, width = 4 m. The perimeter of a rectangle = 2 × (length + width) = 2 × (10 + 4) = 2 × 14 = 28 m. Therefore, 28 meters of drip irrigation pipe is needed.\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the length of the drip irrigation pipe needed to run along the perimeter of the tomato bed (қызанақ егілген атыз). According to the text, the dimensions of the tomato bed (2-атыз) are 10 m in length and 4 m in width. The perimeter of a rectangle is calculated using the formula P = 2 * (length + width). Substituting the given values, we get P = 2 * (10 + 4) = 2 * 14 = 28 meter",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 5.667,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unique: the tomato bed perimeter is 2(10+4)=28 m. However, the item is much closer to an easy Level A perimeter calculation than a genuine Level B task; much of the surrounding greenhouse/yield/price information is irrelevant. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed (B=28m via standard perimeter formula). However, the cognitive demand is closer to Level A — it requires only one straightforward formula application (P=2(l+w)) with values directly stated in the text, making it too simple for Level B. Distractors are mostly plausible: A=14 (forgot to multiply by 2), C=40 (area instead of perimeter), D=20 (only one pair of sides), though C conflates area with perimeter which is a somewhat different error type. | [google/gemini-3.1-pro-preview] The question is well-structured and correctly tests mathematical literacy by requiring the extraction of relevant data from a distractor-rich text. However, the mathematical operation (perimeter of a rectangle) is slightly too easy for a Level B teacher certification item.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To reach Level B difficulty, add a step requiring the student to derive the bed dimensions from context (e.g., total greenhouse area minus paths), or ask for the total pipe length for all three beds combined with a budget constraint. This would require 3-4 logical steps rather than a single formula lookup. | [google/gemini-3.1-pro-preview] To better align with Level B for teachers, consider asking a multi-step question based on the text, such as calculating the total expected revenue from the tomato bed or finding the area of the walking paths.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the length of drip irrigation pipe needed along the perimeter of the tomato bed. The tomato bed is rectangular with length 10 m and width 4 m. The perimeter of a rectangle is P = 2(length + width). Substitute the values: P = 2(10 + 4) = 2 · 14 = 28 m. Therefore, the farmer needs 28 meters of pipe.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unique: the tomato bed perimeter is 2(10+4)=28 m. However, the item is much closer to an easy Level A perimeter calculation than a genuine Level B task; much of the surrounding greenhouse/yield/price information is irrelevant.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The tomato bed (2-атыз) has dimensions: length = 10 m, width = 4 m. The perimeter of a rectangle = 2 × (length + width) = 2 × (10 + 4) = 2 × 14 = 28 m. Therefore, 28 meters of drip irrigation pipe is needed.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-keyed (B=28m via standard perimeter formula). However, the cognitive demand is closer to Level A — it requires only one straightforward formula application (P=2(l+w)) with values directly stated in the text, making it too simple for Level B. Distractors are mostly plausible: A=14 (forgot to multiply by 2), C=40 (area instead of perimeter), D=20 (only one pair of sides), though C conflates area with perimeter which is a somewhat different error type.",
+              "improvement_suggestions": "To reach Level B difficulty, add a step requiring the student to derive the bed dimensions from context (e.g., total greenhouse area minus paths), or ask for the total pipe length for all three beds combined with a budget constraint. This would require 3-4 logical steps rather than a single formula lookup.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the length of the drip irrigation pipe needed to run along the perimeter of the tomato bed (қызанақ егілген атыз). According to the text, the dimensions of the tomato bed (2-атыз) are 10 m in length and 4 m in width. The perimeter of a rectangle is calculated using the formula P = 2 * (length + width). Substituting the given values, we get P = 2 * (10 + 4) = 2 * 14 = 28 meters. Therefore, 28 meters of pipe are required.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.4,
+              "pass_fail": true,
+              "comments": "The question is well-structured and correctly tests mathematical literacy by requiring the extraction of relevant data from a distractor-rich text. However, the mathematical operation (perimeter of a rectangle) is slightly too easy for a Level B teacher certification item.",
+              "improvement_suggestions": "To better align with Level B for teachers, consider asking a multi-step question based on the text, such as calculating the total expected revenue from the tomato bed or finding the area of the walking paths.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Жылыжайдың жалпы ауданының әр 1 $\\text{м}^2$-нен шаққанда орташа есеппен қанша табыс (теңгемен) күтіледі? (Барлық көкөністерден түсетін жалпы табысты жылыжайдың жалпы ауданына бөлгенде)",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 955 тг"
+        },
+        {
+          "label": "B",
+          "text": "6 221 тг"
+        },
+        {
+          "label": "C",
+          "text": "5 700 тг"
+        },
+        {
+          "label": "D",
+          "text": "4 728 тг"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Барлық табысты есептейміз. Қиярдан: $24 \\text{ м}^2 \\times 12 \\text{ кг} \\times 400 \\text{ тг} = 115 200 \\text{ тг}$. Қызанақтан: $40 \\text{ м}^2 \\times 15 \\text{ кг} \\times 500 \\text{ тг} = 300 000 \\text{ тг}$. Бұрыштан: $12 \\text{ м}^2 \\times 8 \\text{ кг} \\times 600 \\text{ тг} = 57 600 \\text{ тг}$. Жалпы табыс: $115 200 + 300 000 + 57 600 = 472 800 \\text{ тг}$. Орташа табыс 1 $\\text{м}^2$ үшін: $472 800 / 160 = 2 955 \\text{ тг}$. В нұсқасы қате, себебі жалпы табысты тек егіс алаңына (76 $\\text{м}^2$) бөлген. С нұсқасы қате, себебі ол әр көкөністің 1 $\\text{м}^2$-ден беретін табыстарының арифметикалық ортасы.",
+      "critic_score": 9.3,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: Compute the total greenhouse area: 20 m × 8 m = 160 m^2. Compute each bed area and revenue. Cucumber bed area: 8 m × 3 m = 24 m^2. Cucumber yield: 24 × 12 = 288 kg. Cucumber revenue: 288 × 400 = 115200 tenge. Tomato bed area: 10 m × 4 m = 40 m^2. Tomato yield: 40 × 15 = 600 kg. Tomato revenue: 600 × 500 = 300000 tenge. Sweet pepper bed area: 6 m × 2 m = 12 m^2. Sweet pepper yield: 12 × 8 = 96 kg. \n\n[anthropic/claude-sonnet-4.6] answered A: Step 1: Calculate the area of each bed.\n- Bed 1 (cucumber): 8 m × 3 m = 24 m²\n- Bed 2 (tomato): 10 m × 4 m = 40 m²\n- Bed 3 (sweet pepper): 6 m × 2 m = 12 m²\n\nStep 2: Calculate the yield from each bed.\n- Cucumber: 24 m² × 12 kg/m² = 288 kg\n- Tomato: 40 m² × 15 kg/m² = 600 kg\n- Sweet pepper: 12 m² × 8 kg/m² = 96 kg\n\nStep 3: Calculate the revenue from each vegetable.\n- Cucumber: 288 kg × 400 tg/kg = \n\n[google/gemini-3.1-pro-preview] answered A: 1. Calculate the total area of the greenhouse: Length = 20 m, Width = 8 m. Total area = 20 * 8 = 160 m^2.\n2. Calculate the area of each vegetable bed:\n   - Bed 1 (cucumbers): 8 m * 3 m = 24 m^2.\n   - Bed 2 (tomatoes): 10 m * 4 m = 40 m^2.\n   - Bed 3 (sweet peppers): 6 m * 2 m = 12 m^2.\n3. Calculate the income per 1 m^2 for each vegetable:\n   - Cucumbers: 12 kg/m^2 * 400 tg/kg = 4,800 tg/m^2.\n   - ",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: total revenue divided by the whole greenhouse area gives 2955 тг/м². The item is a clear multi-step word problem, though somewhat routine for level B and the Kazakh phrasing has a few awkward expressions. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear real-world context, correct arithmetic, and a properly keyed answer (A = 2,955 tg). Distractors correspond to identifiable errors: B divides by planted area only (76 m²), C takes arithmetic mean of per-m² revenues, and D appears to be 472,800/100 or another plausible slip. Kazakh is natural and terminology is appropriate for the subject. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It requires multi-step calculations, careful reading of the conditions, and the distractors are based on very plausible student errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute the total greenhouse area: 20 m × 8 m = 160 m^2. Compute each bed area and revenue. Cucumber bed area: 8 m × 3 m = 24 m^2. Cucumber yield: 24 × 12 = 288 kg. Cucumber revenue: 288 × 400 = 115200 tenge. Tomato bed area: 10 m × 4 m = 40 m^2. Tomato yield: 40 × 15 = 600 kg. Tomato revenue: 600 × 500 = 300000 tenge. Sweet pepper bed area: 6 m × 2 m = 12 m^2. Sweet pepper yield: 12 × 8 = 96 kg. Sweet pepper revenue: 96 × 600 = 57600 tenge. Total revenue: 115200 + 300000 + 57600 = 472800 tenge. Average revenue per 1 m^2 of the whole greenhouse: 472800 ÷ 160 = 2955 tenge. Therefore, the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the solution is unambiguous: total revenue divided by the whole greenhouse area gives 2955 тг/м². The item is a clear multi-step word problem, though somewhat routine for level B and the Kazakh phrasing has a few awkward expressions.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Calculate the area of each bed.\n- Bed 1 (cucumber): 8 m × 3 m = 24 m²\n- Bed 2 (tomato): 10 m × 4 m = 40 m²\n- Bed 3 (sweet pepper): 6 m × 2 m = 12 m²\n\nStep 2: Calculate the yield from each bed.\n- Cucumber: 24 m² × 12 kg/m² = 288 kg\n- Tomato: 40 m² × 15 kg/m² = 600 kg\n- Sweet pepper: 12 m² × 8 kg/m² = 96 kg\n\nStep 3: Calculate the revenue from each vegetable.\n- Cucumber: 288 kg × 400 tg/kg = 115,200 tg\n- Tomato: 600 kg × 500 tg/kg = 300,000 tg\n- Sweet pepper: 96 kg × 600 tg/kg = 57,600 tg\n\nStep 4: Calculate total revenue.\n- Total = 115,200 + 300,000 + 57,600 = 472,800 tg\n\nStep 5: Calculate the total area of the greenhouse.\n- Total area = 20 m × 8 m = 160 m²\n\nStep 6: Calculate average revenue per 1 m² of total greenhouse area.\n- Average = 472,800 / 160 = 2,955 tg/m²\n\nThe answer is 2,955 tg, which corresponds to option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a clear real-world context, correct arithmetic, and a properly keyed answer (A = 2,955 tg). Distractors correspond to identifiable errors: B divides by planted area only (76 m²), C takes arithmetic mean of per-m² revenues, and D appears to be 472,800/100 or another plausible slip. Kazakh is natural and terminology is appropriate for the subject.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "1. Calculate the total area of the greenhouse: Length = 20 m, Width = 8 m. Total area = 20 * 8 = 160 m^2.\n2. Calculate the area of each vegetable bed:\n   - Bed 1 (cucumbers): 8 m * 3 m = 24 m^2.\n   - Bed 2 (tomatoes): 10 m * 4 m = 40 m^2.\n   - Bed 3 (sweet peppers): 6 m * 2 m = 12 m^2.\n3. Calculate the income per 1 m^2 for each vegetable:\n   - Cucumbers: 12 kg/m^2 * 400 tg/kg = 4,800 tg/m^2.\n   - Tomatoes: 15 kg/m^2 * 500 tg/kg = 7,500 tg/m^2.\n   - Sweet peppers: 8 kg/m^2 * 600 tg/kg = 4,800 tg/m^2.\n4. Calculate the total income from each bed:\n   - Cucumbers: 24 m^2 * 4,800 tg/m^2 = 115,200 tg.\n   - Tomatoes: 40 m^2 * 7,500 tg/m^2 = 300,000 tg.\n   - Sweet peppers: 12 m^2 * 4,800 tg/m^2 = 57,600 tg.\n5. Calculate the total expected income:\n   - Total income = 115,200 + 300,000 + 57,600 = 472,800 tg.\n6. Calculate the average income per 1 m^2 of the total greenhouse area (as explicitly requested in the prompt):\n   - Average income = Total income / Total greenhouse area = 472,800 tg / 160 m^2 = 2,955 tg.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. It requires multi-step calculations, careful reading of the conditions, and the distractors are based on very plausible student errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

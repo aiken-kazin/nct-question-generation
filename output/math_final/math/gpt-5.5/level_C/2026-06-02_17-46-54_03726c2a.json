@@ -1,0 +1,209 @@
+{
+  "id": "03726c2a-f42f-4308-a7bb-4edc8b3a4614",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "inequalities",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$a$ параметрінің қандай мәндерінде $|x-a|+|x+a|\\le x^2+1$ теңсіздігі барлық нақты $x$ үшін орындалады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-1\\le a\\le 1$"
+    },
+    {
+      "label": "B",
+      "text": "$a\\le -\\frac{1}{2}$ немесе $a\\ge \\frac{1}{2}$"
+    },
+    {
+      "label": "C",
+      "text": "$-\\frac{1}{2}\\le a\\le \\frac{1}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$0\\le a\\le \\frac{1}{2}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Теңсіздік барлық нақты $x$ үшін орындалуы керек. Алдымен $x=0$ деп алайық. Онда $|0-a|+|0+a|\\le 0^2+1$, яғни $2|a|\\le 1$. Бұдан $|a|\\le \\frac{1}{2}$, демек $-\\frac{1}{2}\\le a\\le \\frac{1}{2}$ қажетті шарт шығады. Енді осы шарттың жеткілікті екенін дәлелдейік. Кез келген нақты $x$ және $a$ үшін $|x-a|+|x+a|=2\\max(|x|,|a|)$. Егер $|x|\\ge |a|$ болса, онда $|x-a|+|x+a|=2|x|$. Бұл жағдайда $x^2+1-2|x|=(|x|-1)^2\\ge 0$, сондықтан $2|x|\\le x^2+1$. Егер $|x|<|a|$ болса, онда $|x-a|+|x+a|=2|a|$. Ал $|a|\\le \\frac{1}{2}$ болғандықтан, $2|a|\\le 1\\le x^2+1$. Демек, теңсіздік барлық нақты $x$ үшін орындалады. Сондықтан жауап: $-\\frac{1}{2}\\le a\\le \\frac{1}{2}$.",
+  "latex_formulas": [
+    "$|x-a|+|x+a|=2\\max(|x|,|a|)$",
+    "$x^2+1-2|x|=(|x|-1)^2\\ge 0$",
+    "$2|a|\\le 1$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.267,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Use the identity |x-a| + |x+a| = 2 max(|x|, |a|). Let t = |x| >= 0 and b = |a| >= 0. The inequality becomes 2 max(t, b) <= t^2 + 1 for all t >= 0. Consider two cases. If t >= b, then max(t,b)=t, so the inequality is 2t <= t^2 + 1, which is equivalent to 0 <= t^2 - 2t + 1 = (t-1)^2, always true. If 0 <= t <= b, then max(t,b)=b, so the inequality is 2b <= t^2 + 1. Since t^2 + 1 is minimized at t=0 w\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find all values of parameter 'a' such that |x - a| + |x + a| ≤ x² + 1 holds for ALL real x.\n\nStep 1: Analyze the left side.\nBy the triangle inequality: |x - a| + |x + a| ≥ |(x - a) + (x + a)| = |2x| = 2|x|\nAlso: |x - a| + |x + a| ≥ |(x + a) - (x - a)| = |2a| = 2|a|\n\nSo the minimum value of |x - a| + |x + a| over all x is 2|a| (achieved when x is between -a and a, i.e., when x is between\n\n[google/gemini-3.1-pro-preview] answered C: To find the values of the parameter $a$ for which the inequality $|x-a| + |x+a| \\le x^2 + 1$ holds for all real $x$, let's analyze the function $f(x) = |x-a| + |x+a|$.\n\nNotice that the inequality is symmetric with respect to $a$ (replacing $a$ with $-a$ leaves the expression unchanged). Therefore, we can assume $a \\ge 0$ without loss of generality, and then extend our result using symmetry.\n\nFor $",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.267,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is rigorous, with a unique defensible option. The item is a solid parameter inequality problem, though it feels more medium-to-upper-medium than genuinely hard level C, and option D is easily eliminated by symmetry. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. The solution requires the key insight that |x-a|+|x+a| = 2max(|x|,|a|), followed by two-case analysis — genuinely non-routine for a multiple-choice item. Distractors are mostly plausible: option A (|a|≤1) could arise from forgetting the factor of 2, option B from inverting the inequality direction, option D from restricting to non-negative a. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is mathematically rigorous, correctly keyed, and features excellent distractors that anticipate common errors (e.g., forgetting negative values of the parameter). It perfectly aligns with the requested difficulty level C.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='(-1/2 <= a) & (a <= 1/2)' expected='(-1/2 <= a) & (a <= 1/2)'",
+      "raw": {
+        "ok": true,
+        "stdout": "(-1/2 <= a) & (a <= 1/2)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Use the identity |x-a| + |x+a| = 2 max(|x|, |a|). Let t = |x| >= 0 and b = |a| >= 0. The inequality becomes 2 max(t, b) <= t^2 + 1 for all t >= 0. Consider two cases. If t >= b, then max(t,b)=t, so the inequality is 2t <= t^2 + 1, which is equivalent to 0 <= t^2 - 2t + 1 = (t-1)^2, always true. If 0 <= t <= b, then max(t,b)=b, so the inequality is 2b <= t^2 + 1. Since t^2 + 1 is minimized at t=0 w\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find all values of parameter 'a' such that |x - a| + |x + a| ≤ x² + 1 holds for ALL real x.\n\nStep 1: Analyze the left side.\nBy the triangle inequality: |x - a| + |x + a| ≥ |(x - a) + (x + a)| = |2x| = 2|x|\nAlso: |x - a| + |x + a| ≥ |(x + a) - (x - a)| = |2a| = 2|a|\n\nSo the minimum value of |x - a| + |x + a| over all x is 2|a| (achieved when x is between -a and a, i.e., when x is between\n\n[google/gemini-3.1-pro-preview] answered C: To find the values of the parameter $a$ for which the inequality $|x-a| + |x+a| \\le x^2 + 1$ holds for all real $x$, let's analyze the function $f(x) = |x-a| + |x+a|$.\n\nNotice that the inequality is symmetric with respect to $a$ (replacing $a$ with $-a$ leaves the expression unchanged). Therefore, we can assume $a \\ge 0$ without loss of generality, and then extend our result using symmetry.\n\nFor $",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.267,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is rigorous, with a unique defensible option. The item is a solid parameter inequality problem, though it feels more medium-to-upper-medium than genuinely hard level C, and option D is easily eliminated by symmetry. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. The solution requires the key insight that |x-a|+|x+a| = 2max(|x|,|a|), followed by two-case analysis — genuinely non-routine for a multiple-choice item. Distractors are mostly plausible: option A (|a|≤1) could arise from forgetting the factor of 2, option B from inverting the inequality direction, option D from restricting to non-negative a. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is mathematically rigorous, correctly keyed, and features excellent distractors that anticipate common errors (e.g., forgetting negative values of the parameter). It perfectly aligns with the requested difficulty level C.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='(-1/2 <= a) & (a <= 1/2)' expected='(-1/2 <= a) & (a <= 1/2)'",
+        "raw": {
+          "ok": true,
+          "stdout": "(-1/2 <= a) & (a <= 1/2)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Use the identity |x-a| + |x+a| = 2 max(|x|, |a|). Let t = |x| >= 0 and b = |a| >= 0. The inequality becomes 2 max(t, b) <= t^2 + 1 for all t >= 0. Consider two cases. If t >= b, then max(t,b)=t, so the inequality is 2t <= t^2 + 1, which is equivalent to 0 <= t^2 - 2t + 1 = (t-1)^2, always true. If 0 <= t <= b, then max(t,b)=b, so the inequality is 2b <= t^2 + 1. Since t^2 + 1 is minimized at t=0 with value 1, this holds for all 0 <= t <= b exactly when 2b <= 1, i.e. b <= 1/2. Therefore |a| <= 1/2, so -1/2 <= a <= 1/2.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is rigorous, with a unique defensible option. The item is a solid parameter inequality problem, though it feels more medium-to-upper-medium than genuinely hard level C, and option D is easily eliminated by symmetry.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(-1/2 <= a) & (a <= 1/2)' expected='(-1/2 <= a) & (a <= 1/2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(-1/2 <= a) & (a <= 1/2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find all values of parameter 'a' such that |x - a| + |x + a| ≤ x² + 1 holds for ALL real x.\n\nStep 1: Analyze the left side.\nBy the triangle inequality: |x - a| + |x + a| ≥ |(x - a) + (x + a)| = |2x| = 2|x|\nAlso: |x - a| + |x + a| ≥ |(x + a) - (x - a)| = |2a| = 2|a|\n\nSo the minimum value of |x - a| + |x + a| over all x is 2|a| (achieved when x is between -a and a, i.e., when x is between -|a| and |a|).\n\nActually, let me think more carefully. The function f(x) = |x - a| + |x + a| represents the sum of distances from x to a and from x to -a.\n\nFor x ≥ |a|: f(x) = (x - a) + (x + a) = 2x\nFor -|a| ≤ x ≤ |a|: f(x) = 2|a|\nFor x ≤ -|a|: f(x) = -2x\n\nSo f(x) = max(2|x|, 2|a|).\n\nStep 2: The condition |x - a| + |x + a| ≤ x² + 1 for all real x means:\nmax(2|x|, 2|a|) ≤ x² + 1 for all real x.\n\nThis requires both:\n(i) 2|x| ≤ x² + 1 for all x, AND\n(ii) 2|a| ≤ x² + 1 for all x.\n\nCondition (i): 2|x| ≤ x² + 1 ⟺ x² - 2|x| + 1 ≥ 0 ⟺ (|x| - 1)² ≥ 0, which is always true.\n\nCondition (ii): 2|a| ≤ x² + 1 for all real x.\nThe minimum of x² + 1 is 1 (at x = 0).\nSo we need: 2|a| ≤ 1, i.e., |a| ≤ 1/2, i.e., -1/2 ≤ a ≤ 1/2.\n\nStep 3: Verify the condition is sufficient.\nIf |a| ≤ 1/2, then for any x:\n- If |x| ≥ |a|: f(x) = 2|x| ≤ x² + 1 (by condition (i))\n- If |x| < |a|: f(x) = 2|a| ≤ 1 ≤ x² + 1 ✓\n\nSo the answer is -1/2 ≤ a ≤ 1/2, which is option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous and correctly keyed. The solution requires the key insight that |x-a|+|x+a| = 2max(|x|,|a|), followed by two-case analysis — genuinely non-routine for a multiple-choice item. Distractors are mostly plausible: option A (|a|≤1) could arise from forgetting the factor of 2, option B from inverting the inequality direction, option D from restricting to non-negative a. Kazakh phrasing is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(-1/2 <= a) & (a <= 1/2)' expected='(-1/2 <= a) & (a <= 1/2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(-1/2 <= a) & (a <= 1/2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the values of the parameter $a$ for which the inequality $|x-a| + |x+a| \\le x^2 + 1$ holds for all real $x$, let's analyze the function $f(x) = |x-a| + |x+a|$.\n\nNotice that the inequality is symmetric with respect to $a$ (replacing $a$ with $-a$ leaves the expression unchanged). Therefore, we can assume $a \\ge 0$ without loss of generality, and then extend our result using symmetry.\n\nFor $a \\ge 0$, we can evaluate $f(x)$ by considering the intervals defined by the critical points $x = -a$ and $x = a$:\n1. If $x < -a$, $f(x) = -(x-a) - (x+a) = -2x = 2|x|$.\n2. If $-a \\le x \\le a$, $f(x) = -(x-a) + (x+a) = 2a$.\n3. If $x > a$, $f(x) = (x-a) + (x+a) = 2x = 2|x|$.\n\nSo, $f(x) = 2a$ for $|x| \\le a$, and $f(x) = 2|x|$ for $|x| > a$.\n\nWe need $f(x) \\le x^2 + 1$ for all real $x$.\n\nCase 1: $|x| > a$\nThe inequality becomes $2|x| \\le x^2 + 1$. Rearranging this gives $x^2 - 2|x| + 1 \\ge 0$, which factors as $(|x| - 1)^2 \\ge 0$. Since the square of any real number is non-negative, this inequality is always true for all real $x$.\n\nCase 2: $|x| \\le a$\nThe inequality becomes $2a \\le x^2 + 1$. This must hold for all $x$ in the interval $[-a, a]$. To ensure this is true for all such $x$, $2a$ must be less than or equal to the minimum value of $x^2 + 1$ on this interval. \nThe minimum value of $x^2 + 1$ occurs at $x = 0$, which gives $0^2 + 1 = 1$.\nTherefore, we must have $2a \\le 1$, which implies $a \\le \\frac{1}{2}$.\n\nSince we assumed $a \\ge 0$, we have $0 \\le a \\le \\frac{1}{2}$. \nBy symmetry, if $a < 0$, we substitute $-a$ for $a$ to get $0 \\le -a \\le \\frac{1}{2}$, which means $-\\frac{1}{2} \\le a < 0$.\n\nCombining both cases, the inequality holds for all real $x$ if and only if $-\\frac{1}{2} \\le a \\le \\frac{1}{2}$. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous, correctly keyed, and features excellent distractors that anticipate common errors (e.g., forgetting negative values of the parameter). It perfectly aligns with the requested difficulty level C.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(-1/2 <= a) & (a <= 1/2)' expected='(-1/2 <= a) & (a <= 1/2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(-1/2 <= a) & (a <= 1/2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:46:54.436251+00:00",
+  "generation_attempts": 1
+}

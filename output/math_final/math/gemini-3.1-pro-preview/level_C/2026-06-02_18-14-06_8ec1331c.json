@@ -1,0 +1,208 @@
+{
+  "id": "8ec1331c-6d1e-4187-8f7e-eb8f11d13ae9",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "exponential_logarithmic_functions",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$f(x) = \\sqrt{\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) + 1}$ функциясының анықталу облысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$(-1; 0] \\cup [5; +\\infty)$"
+    },
+    {
+      "label": "B",
+      "text": "$[0; 1) \\cup (2; 5]$"
+    },
+    {
+      "label": "C",
+      "text": "$(-\\infty; -1) \\cup [0; 5]$"
+    },
+    {
+      "label": "D",
+      "text": "$(0; 1) \\cup (2; 5)$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Функцияның анықталу облысын табу үшін келесі шарттар жүйесін орындау қажет:\n1) Логарифмнің аргументі оң болуы керек:\n$\\frac{x^2 - 3x + 2}{x + 1} > 0$\n\n2) Түбір астындағы өрнек теріс емес болуы керек:\n$\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) + 1 \\ge 0$\n\nБірінші шартты шешеміз:\n$\\frac{(x - 1)(x - 2)}{x + 1} > 0$\nИнтервалдар әдісімен шешеміз. Түбірлері: $x = -1, x = 1, x = 2$.\nСан осіндегі таңбалары:\n$(-\\infty; -1)$ аралығында «$-$»\n$(-1; 1)$ аралығында «$+$»\n$(1; 2)$ аралығында «$-$»\n$(2; +\\infty)$ аралығында «$+$»\nДемек, бірінші шарттың шешімі: $x \\in (-1; 1) \\cup (2; +\\infty)$.\n\nЕкінші шартты шешеміз:\n$\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) \\ge -1$\nЛогарифмнің негізі $0.5 < 1$ болғандықтан, теңсіздік белгісі қарама-қарсыға өзгереді:\n$\\frac{x^2 - 3x + 2}{x + 1} \\le (0.5)^{-1}$\n$\\frac{x^2 - 3x + 2}{x + 1} \\le 2$\n$\\frac{x^2 - 3x + 2 - 2(x + 1)}{x + 1} \\le 0$\n$\\frac{x^2 - 5x}{x + 1} \\le 0$\n$\\frac{x(x - 5)}{x + 1} \\le 0$\nТүбірлері: $x = -1, x = 0, x = 5$.\nИнтервалдар әдісі бойынша:\n$(-\\infty; -1)$ аралығында «$-$»\n$(-1; 0]$ аралығында «$+$»\n$[0; 5]$ аралығында «$-$»\n$[5; +\\infty)$ аралығында «$+$»\nДемек, екінші шарттың шешімі: $x \\in (-\\infty; -1) \\cup [0; 5]$.\n\nЕнді екі шарттың шешімдерін қиылыстырамыз:\n$\\begin{cases} x \\in (-1; 1) \\cup (2; +\\infty) \\\\ x \\in (-\\infty; -1) \\cup [0; 5] \\end{cases}$\n\nҚиылысу нәтижесі: $x \\in [0; 1) \\cup (2; 5]$.",
+  "latex_formulas": [
+    "\\log_a x \\ge b \\implies x \\le a^b \\text{ (егер } 0 < a < 1 \\text{)}",
+    "\\frac{P(x)}{Q(x)} > 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Let t = (x^2 - 3x + 2)/(x + 1) = ((x - 1)(x - 2))/(x + 1). For the logarithm, we need t > 0. For the square root, we need log_{0.5}(t) + 1 >= 0, so log_{0.5}(t) >= -1. Since the base 0.5 is between 0 and 1, the logarithmic function is decreasing, hence log_{0.5}(t) >= -1 is equivalent to t <= (0.5)^(-1) = 2. Therefore the condition is 0 < t <= 2. First solve t > 0: ((x - 1)(x - 2))/(x + 1) > 0. Cr\n\n[anthropic/claude-sonnet-4.6] answered B: For f(x) = √(log₀.₅((x²-3x+2)/(x+1)) + 1) to be defined:\n\nCondition 1: (x²-3x+2)/(x+1) > 0\nFactor: (x-1)(x-2)/(x+1) > 0\nCritical points: x = -1, 1, 2\nSign analysis gives: x ∈ (-1,1) ∪ (2,+∞)\n\nCondition 2: log₀.₅((x²-3x+2)/(x+1)) + 1 ≥ 0\n⟹ log₀.₅(t) ≥ -1, where t = (x²-3x+2)/(x+1)\nSince base 0.5 < 1 (decreasing), this means t ≤ (0.5)^(-1) = 2\nSo (x²-3x+2)/(x+1) ≤ 2\n⟹ (x²-5x)/(x+1) ≤ 0\n⟹ x(x-5)/(x+1\n\n[google/gemini-3.1-pro-preview] answered B: To find the domain of the function $f(x) = \\sqrt{\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) + 1}$, we must satisfy two conditions:\n\n1. The argument of the logarithm must be strictly positive:\n   $\\frac{x^2 - 3x + 2}{x + 1} > 0$\n   Factoring the numerator, we get $\\frac{(x - 1)(x - 2)}{x + 1} > 0$.\n   The critical points are $x = -1$, $x = 1$, and $x = 2$.\n   Using the method of intervals",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem is mathematically unambiguous with one defensible solution. However, the item is more of a standard procedural domain problem than a genuinely hard level-C task. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. It requires multi-step reasoning combining domain conditions for square roots and logarithms with a decreasing-base logarithm inequality, making it genuinely level-C. Distractors correspond to identifiable errors: A reflects the complement of the correct answer, C is the solution to only the second condition, and D omits the boundary points. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is excellent. It correctly tests multi-step reasoning involving logarithmic and rational inequalities. The distractors are well-crafted and represent common student mistakes.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$[0; 1) \\cup (2; 5]$' expected='$[0; 1) \\cup (2; 5]$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$[0; 1) \\cup (2; 5]$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Let t = (x^2 - 3x + 2)/(x + 1) = ((x - 1)(x - 2))/(x + 1). For the logarithm, we need t > 0. For the square root, we need log_{0.5}(t) + 1 >= 0, so log_{0.5}(t) >= -1. Since the base 0.5 is between 0 and 1, the logarithmic function is decreasing, hence log_{0.5}(t) >= -1 is equivalent to t <= (0.5)^(-1) = 2. Therefore the condition is 0 < t <= 2. First solve t > 0: ((x - 1)(x - 2))/(x + 1) > 0. Cr\n\n[anthropic/claude-sonnet-4.6] answered B: For f(x) = √(log₀.₅((x²-3x+2)/(x+1)) + 1) to be defined:\n\nCondition 1: (x²-3x+2)/(x+1) > 0\nFactor: (x-1)(x-2)/(x+1) > 0\nCritical points: x = -1, 1, 2\nSign analysis gives: x ∈ (-1,1) ∪ (2,+∞)\n\nCondition 2: log₀.₅((x²-3x+2)/(x+1)) + 1 ≥ 0\n⟹ log₀.₅(t) ≥ -1, where t = (x²-3x+2)/(x+1)\nSince base 0.5 < 1 (decreasing), this means t ≤ (0.5)^(-1) = 2\nSo (x²-3x+2)/(x+1) ≤ 2\n⟹ (x²-5x)/(x+1) ≤ 0\n⟹ x(x-5)/(x+1\n\n[google/gemini-3.1-pro-preview] answered B: To find the domain of the function $f(x) = \\sqrt{\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) + 1}$, we must satisfy two conditions:\n\n1. The argument of the logarithm must be strictly positive:\n   $\\frac{x^2 - 3x + 2}{x + 1} > 0$\n   Factoring the numerator, we get $\\frac{(x - 1)(x - 2)}{x + 1} > 0$.\n   The critical points are $x = -1$, $x = 1$, and $x = 2$.\n   Using the method of intervals",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem is mathematically unambiguous with one defensible solution. However, the item is more of a standard procedural domain problem than a genuinely hard level-C task. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. It requires multi-step reasoning combining domain conditions for square roots and logarithms with a decreasing-base logarithm inequality, making it genuinely level-C. Distractors correspond to identifiable errors: A reflects the complement of the correct answer, C is the solution to only the second condition, and D omits the boundary points. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is excellent. It correctly tests multi-step reasoning involving logarithmic and rational inequalities. The distractors are well-crafted and represent common student mistakes.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$[0; 1) \\cup (2; 5]$' expected='$[0; 1) \\cup (2; 5]$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$[0; 1) \\cup (2; 5]$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let t = (x^2 - 3x + 2)/(x + 1) = ((x - 1)(x - 2))/(x + 1). For the logarithm, we need t > 0. For the square root, we need log_{0.5}(t) + 1 >= 0, so log_{0.5}(t) >= -1. Since the base 0.5 is between 0 and 1, the logarithmic function is decreasing, hence log_{0.5}(t) >= -1 is equivalent to t <= (0.5)^(-1) = 2. Therefore the condition is 0 < t <= 2. First solve t > 0: ((x - 1)(x - 2))/(x + 1) > 0. Critical points are x = -1, 1, 2. Sign analysis gives t > 0 on (-1, 1) union (2, +infinity). Next solve t <= 2: (x^2 - 3x + 2)/(x + 1) <= 2. Bring to one side: (x^2 - 3x + 2 - 2x - 2)/(x + 1) <= 0, so (x^2 - 5x)/(x + 1) <= 0, i.e. x(x - 5)/(x + 1) <= 0. Critical points are x = -1, 0, 5. Sign analysis gives (-infinity, -1) union [0, 5]. Intersecting with t > 0: [(-1, 1) union (2, +infinity)] intersection [(-infinity, -1) union [0, 5]] = [0, 1) union (2, 5]. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 6.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the problem is mathematically unambiguous with one defensible solution. However, the item is more of a standard procedural domain problem than a genuinely hard level-C task.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$[0; 1) \\cup (2; 5]$' expected='$[0; 1) \\cup (2; 5]$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$[0; 1) \\cup (2; 5]$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For f(x) = √(log₀.₅((x²-3x+2)/(x+1)) + 1) to be defined:\n\nCondition 1: (x²-3x+2)/(x+1) > 0\nFactor: (x-1)(x-2)/(x+1) > 0\nCritical points: x = -1, 1, 2\nSign analysis gives: x ∈ (-1,1) ∪ (2,+∞)\n\nCondition 2: log₀.₅((x²-3x+2)/(x+1)) + 1 ≥ 0\n⟹ log₀.₅(t) ≥ -1, where t = (x²-3x+2)/(x+1)\nSince base 0.5 < 1 (decreasing), this means t ≤ (0.5)^(-1) = 2\nSo (x²-3x+2)/(x+1) ≤ 2\n⟹ (x²-5x)/(x+1) ≤ 0\n⟹ x(x-5)/(x+1) ≤ 0\nCritical points: x = -1, 0, 5\nSign analysis gives: x ∈ (-∞,-1) ∪ [0,5]\n\nIntersection of conditions 1 and 2:\n(-1,1) ∩ ((-∞,-1) ∪ [0,5]) = [0,1)\n(2,+∞) ∩ ((-∞,-1) ∪ [0,5]) = (2,5]\n\nDomain = [0,1) ∪ (2,5]",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous and correctly keyed. It requires multi-step reasoning combining domain conditions for square roots and logarithms with a decreasing-base logarithm inequality, making it genuinely level-C. Distractors correspond to identifiable errors: A reflects the complement of the correct answer, C is the solution to only the second condition, and D omits the boundary points. Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$[0; 1) \\cup (2; 5]$' expected='$[0; 1) \\cup (2; 5]$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$[0; 1) \\cup (2; 5]$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the domain of the function $f(x) = \\sqrt{\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) + 1}$, we must satisfy two conditions:\n\n1. The argument of the logarithm must be strictly positive:\n   $\\frac{x^2 - 3x + 2}{x + 1} > 0$\n   Factoring the numerator, we get $\\frac{(x - 1)(x - 2)}{x + 1} > 0$.\n   The critical points are $x = -1$, $x = 1$, and $x = 2$.\n   Using the method of intervals, the expression is positive for $x \\in (-1, 1) \\cup (2, +\\infty)$.\n\n2. The expression inside the square root must be non-negative:\n   $\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) + 1 \\ge 0$\n   $\\log_{0.5} \\left( \\frac{x^2 - 3x + 2}{x + 1} \\right) \\ge -1$\n   Since the base of the logarithm is $0.5 < 1$, exponentiating both sides flips the inequality sign:\n   $\\frac{x^2 - 3x + 2}{x + 1} \\le (0.5)^{-1}$\n   $\\frac{x^2 - 3x + 2}{x + 1} \\le 2$\n   Subtracting 2 from both sides:\n   $\\frac{x^2 - 3x + 2 - 2(x + 1)}{x + 1} \\le 0$\n   $\\frac{x^2 - 5x}{x + 1} \\le 0$\n   $\\frac{x(x - 5)}{x + 1} \\le 0$\n   The critical points are $x = -1$, $x = 0$, and $x = 5$.\n   Using the method of intervals, the expression is negative or zero for $x \\in (-\\infty, -1) \\cup [0, 5]$.\n\nFinally, we find the intersection of the two conditions:\nCondition 1: $x \\in (-1, 1) \\cup (2, +\\infty)$\nCondition 2: $x \\in (-\\infty, -1) \\cup [0, 5]$\n\nIntersecting the intervals:\n- $(-1, 1) \\cap ([0, 5] \\cup (-\\infty, -1)) = [0, 1)$\n- $(2, +\\infty) \\cap ([0, 5] \\cup (-\\infty, -1)) = (2, 5]$\n\nThe final domain is the union of these intersections: $[0, 1) \\cup (2, 5]$.\nThis matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It correctly tests multi-step reasoning involving logarithmic and rational inequalities. The distractors are well-crafted and represent common student mistakes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$[0; 1) \\cup (2; 5]$' expected='$[0; 1) \\cup (2; 5]$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$[0; 1) \\cup (2; 5]$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:14:06.395079+00:00",
+  "generation_attempts": 1
+}

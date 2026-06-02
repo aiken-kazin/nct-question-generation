@@ -1,0 +1,208 @@
+{
+  "id": "9fda4870-55f5-48ec-bae7-b9d6310a4823",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "exponential_logarithmic_functions",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\log_{3} \\frac{1}{27}$ өрнегінің мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-3$"
+    },
+    {
+      "label": "B",
+      "text": "$3$"
+    },
+    {
+      "label": "C",
+      "text": "$-9$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{1}{3}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Бөлшекті дәреже түрінде жазамыз: $\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}$.\nЛогарифмнің қасиеті бойынша ($\\log_{a} a^x = x$):\n$\\log_{3} \\frac{1}{27} = \\log_{3} 3^{-3} = -3$.",
+  "latex_formulas": [
+    "\\log_{a} a^x = x",
+    "a^{-n} = \\frac{1}{a^n}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: We need to find the value of log base 3 of 1/27. Rewrite 27 as a power of 3: 27 = 3^3. Therefore, 1/27 = 1/3^3 = 3^(-3). By the definition of logarithm, log_3(3^(-3)) = -3. So the expression equals -3.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find log base 3 of (1/27).\n\n1/27 = 3^(-3)\n\nSo log_3(1/27) = log_3(3^(-3)) = -3\n\nThe answer is -3.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the expression \\(\\log_{3} \\frac{1}{27}\\), we need to express the argument \\(\\frac{1}{27}\\) as a power of the base 3. We know that \\(27 = 3^3\\). Therefore, \\(\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}\\). Substituting this back into the logarithmic expression gives \\(\\log_{3} (3^{-3})\\). Using the logarithm property \\(\\log_b (b^x) = x\\), we find that \\(\\log_{3} (3^{-3}) = -3\\). This ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and matches basic level A well. Distractors are mostly plausible common errors, though C is somewhat less naturally reachable than the others. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-formed, and appropriately tests a single-step logarithm recall at Level A. Distractors are mostly plausible: B (sign error), D (reciprocal confusion), but C (-9) is less naturally reachable by a standard misconception. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level A. It tests basic logarithmic evaluation, has plausible distractors, and uses correct Kazakh terminology and LaTeX formatting.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace distractor C (-9) with a more naturally reachable error, such as -1/3 (confusing log base with reciprocal exponent) or 1/9, to improve distractor quality.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='-3' expected='-3'",
+      "raw": {
+        "ok": true,
+        "stdout": "-3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: We need to find the value of log base 3 of 1/27. Rewrite 27 as a power of 3: 27 = 3^3. Therefore, 1/27 = 1/3^3 = 3^(-3). By the definition of logarithm, log_3(3^(-3)) = -3. So the expression equals -3.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find log base 3 of (1/27).\n\n1/27 = 3^(-3)\n\nSo log_3(1/27) = log_3(3^(-3)) = -3\n\nThe answer is -3.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the expression \\(\\log_{3} \\frac{1}{27}\\), we need to express the argument \\(\\frac{1}{27}\\) as a power of the base 3. We know that \\(27 = 3^3\\). Therefore, \\(\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}\\). Substituting this back into the logarithmic expression gives \\(\\log_{3} (3^{-3})\\). Using the logarithm property \\(\\log_b (b^x) = x\\), we find that \\(\\log_{3} (3^{-3}) = -3\\). This ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and matches basic level A well. Distractors are mostly plausible common errors, though C is somewhat less naturally reachable than the others. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-formed, and appropriately tests a single-step logarithm recall at Level A. Distractors are mostly plausible: B (sign error), D (reciprocal confusion), but C (-9) is less naturally reachable by a standard misconception. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level A. It tests basic logarithmic evaluation, has plausible distractors, and uses correct Kazakh terminology and LaTeX formatting.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace distractor C (-9) with a more naturally reachable error, such as -1/3 (confusing log base with reciprocal exponent) or 1/9, to improve distractor quality.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='-3' expected='-3'",
+        "raw": {
+          "ok": true,
+          "stdout": "-3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the value of log base 3 of 1/27. Rewrite 27 as a power of 3: 27 = 3^3. Therefore, 1/27 = 1/3^3 = 3^(-3). By the definition of logarithm, log_3(3^(-3)) = -3. So the expression equals -3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.7,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a single unambiguous answer, and matches basic level A well. Distractors are mostly plausible common errors, though C is somewhat less naturally reachable than the others.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-3' expected='-3'",
+            "raw": {
+              "ok": true,
+              "stdout": "-3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find log base 3 of (1/27).\n\n1/27 = 3^(-3)\n\nSo log_3(1/27) = log_3(3^(-3)) = -3\n\nThe answer is -3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-formed, and appropriately tests a single-step logarithm recall at Level A. Distractors are mostly plausible: B (sign error), D (reciprocal confusion), but C (-9) is less naturally reachable by a standard misconception.",
+          "improvement_suggestions": "Replace distractor C (-9) with a more naturally reachable error, such as -1/3 (confusing log base with reciprocal exponent) or 1/9, to improve distractor quality.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-3' expected='-3'",
+            "raw": {
+              "ok": true,
+              "stdout": "-3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the value of the expression \\(\\log_{3} \\frac{1}{27}\\), we need to express the argument \\(\\frac{1}{27}\\) as a power of the base 3. We know that \\(27 = 3^3\\). Therefore, \\(\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}\\). Substituting this back into the logarithmic expression gives \\(\\log_{3} (3^{-3})\\). Using the logarithm property \\(\\log_b (b^x) = x\\), we find that \\(\\log_{3} (3^{-3}) = -3\\). This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the requested difficulty level A. It tests basic logarithmic evaluation, has plausible distractors, and uses correct Kazakh terminology and LaTeX formatting.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-3' expected='-3'",
+            "raw": {
+              "ok": true,
+              "stdout": "-3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:27:46.504739+00:00",
+  "generation_attempts": 1
+}

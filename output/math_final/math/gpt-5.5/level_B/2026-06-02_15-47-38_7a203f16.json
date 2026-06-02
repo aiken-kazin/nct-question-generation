@@ -1,0 +1,180 @@
+{
+  "id": "7a203f16-d026-43dd-bc17-710224a808fa",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "perpendicularity_3d",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Табаны $ABCD$ квадраты болатын дұрыс төртбұрышты призма $ABCDA_1B_1C_1D_1$ берілген. Егер $AB=6$ см, $AA_1=8$ см болса, $A_1$ нүктесінен $BD$ түзуіне дейінгі қашықтықты табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$10$ см"
+    },
+    {
+      "label": "B",
+      "text": "$3\\sqrt{10}$ см"
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{82}$ см"
+    },
+    {
+      "label": "D",
+      "text": "$\\sqrt{73}$ см"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "$A_1$ нүктесінің $ABCD$ жазықтығындағы ортогональ проекциясы — $A$ нүктесі. $A$ нүктесінен $BD$ түзуіне түсірілген перпендикулярдың табанын $O$ деп алайық. Үш перпендикуляр теоремасы бойынша $A_1O\\perp BD$, сондықтан ізделінді қашықтық $A_1O$-ға тең. $\\triangle ABD$ — тікбұрышты теңбүйірлі үшбұрыш, мұнда $AB=AD=6$, сондықтан $BD=6\\sqrt{2}$. Тікбұрышты үшбұрыштағы гипотенузаға түсірілген биіктік: $AO=\\frac{AB\\cdot AD}{BD}=\\frac{6\\cdot 6}{6\\sqrt{2}}=3\\sqrt{2}$. Енді $\\triangle A_1AO$ тікбұрышты, себебі $AA_1\\perp ABCD$. Сондықтан $A_1O=\\sqrt{AA_1^2+AO^2}=\\sqrt{8^2+(3\\sqrt{2})^2}=\\sqrt{64+18}=\\sqrt{82}$ см.",
+  "latex_formulas": [
+    "$BD=6\\sqrt{2}$",
+    "$AO=\\frac{AB\\cdot AD}{BD}$",
+    "$A_1O=\\sqrt{AA_1^2+AO^2}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.1,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Let the square base lie in the plane z = 0. Set coordinates: A = (0, 0, 0), B = (6, 0, 0), D = (0, 6, 0), and since AA1 = 8, A1 = (0, 0, 8). The line BD lies in the base plane and has equation x + y = 6, z = 0. The perpendicular distance from A = (0, 0, 0) to the diagonal BD in the base is the distance from (0,0) to x + y - 6 = 0: |0 + 0 - 6| / sqrt(1^2 + 1^2) = 6/sqrt(2) = 3sqrt(2). Since A1 is v\n\n[anthropic/claude-sonnet-4.6] answered C: Set up coordinates. Let A = (0,0,0), B = (6,0,0), C = (6,6,0), D = (0,6,0), and A₁ = (0,0,8).\n\nWe need the distance from point A₁ = (0,0,8) to line BD.\n\nB = (6,0,0), D = (0,6,0).\n\nDirection vector of BD: D - B = (-6,6,0), or simplified: (-1,1,0).\n\nVector from B to A₁: A₁ - B = (0-6, 0-0, 8-0) = (-6, 0, 8).\n\nCross product of (A₁ - B) with direction vector (-1,1,0):\n\n(-6, 0, 8) × (-1, 1, 0) = |i  j ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.5,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.1,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound, with a unique defensible answer. The item fits medium difficulty well, requiring projection/perpendicularity reasoning and a Pythagorean calculation. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer (√82) confirmed by both coordinate geometry and the three-perpendiculars theorem. Distractors A and D are clearly reachable by specific errors; distractor B (3√10) is less obviously motivated but still plausible.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='sqrt(82)' expected='sqrt(82)'",
+      "raw": {
+        "ok": true,
+        "stdout": "sqrt(82)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Let the square base lie in the plane z = 0. Set coordinates: A = (0, 0, 0), B = (6, 0, 0), D = (0, 6, 0), and since AA1 = 8, A1 = (0, 0, 8). The line BD lies in the base plane and has equation x + y = 6, z = 0. The perpendicular distance from A = (0, 0, 0) to the diagonal BD in the base is the distance from (0,0) to x + y - 6 = 0: |0 + 0 - 6| / sqrt(1^2 + 1^2) = 6/sqrt(2) = 3sqrt(2). Since A1 is v\n\n[anthropic/claude-sonnet-4.6] answered C: Set up coordinates. Let A = (0,0,0), B = (6,0,0), C = (6,6,0), D = (0,6,0), and A₁ = (0,0,8).\n\nWe need the distance from point A₁ = (0,0,8) to line BD.\n\nB = (6,0,0), D = (0,6,0).\n\nDirection vector of BD: D - B = (-6,6,0), or simplified: (-1,1,0).\n\nVector from B to A₁: A₁ - B = (0-6, 0-0, 8-0) = (-6, 0, 8).\n\nCross product of (A₁ - B) with direction vector (-1,1,0):\n\n(-6, 0, 8) × (-1, 1, 0) = |i  j ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.1,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound, with a unique defensible answer. The item fits medium difficulty well, requiring projection/perpendicularity reasoning and a Pythagorean calculation. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer (√82) confirmed by both coordinate geometry and the three-perpendiculars theorem. Distractors A and D are clearly reachable by specific errors; distractor B (3√10) is less obviously motivated but still plausible.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='sqrt(82)' expected='sqrt(82)'",
+        "raw": {
+          "ok": true,
+          "stdout": "sqrt(82)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the square base lie in the plane z = 0. Set coordinates: A = (0, 0, 0), B = (6, 0, 0), D = (0, 6, 0), and since AA1 = 8, A1 = (0, 0, 8). The line BD lies in the base plane and has equation x + y = 6, z = 0. The perpendicular distance from A = (0, 0, 0) to the diagonal BD in the base is the distance from (0,0) to x + y - 6 = 0: |0 + 0 - 6| / sqrt(1^2 + 1^2) = 6/sqrt(2) = 3sqrt(2). Since A1 is vertically above A by 8 cm, and the vertical direction is perpendicular to the base plane and hence perpendicular to BD, the squared distance from A1 to BD is 8^2 + (3sqrt(2))^2 = 64 + 18 = 82. Therefore the distance is sqrt(82) cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is mathematically sound, with a unique defensible answer. The item fits medium difficulty well, requiring projection/perpendicularity reasoning and a Pythagorean calculation.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(82)' expected='sqrt(82)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(82)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Set up coordinates. Let A = (0,0,0), B = (6,0,0), C = (6,6,0), D = (0,6,0), and A₁ = (0,0,8).\n\nWe need the distance from point A₁ = (0,0,8) to line BD.\n\nB = (6,0,0), D = (0,6,0).\n\nDirection vector of BD: D - B = (-6,6,0), or simplified: (-1,1,0).\n\nVector from B to A₁: A₁ - B = (0-6, 0-0, 8-0) = (-6, 0, 8).\n\nCross product of (A₁ - B) with direction vector (-1,1,0):\n\n(-6, 0, 8) × (-1, 1, 0) = |i  j  k|\n                              |-6  0  8|\n                              |-1  1  0|\n\ni: (0·0 - 8·1) = -8\nj: -((-6·0) - (8·(-1))) = -(0 + 8) = -8\nk: (-6·1 - 0·(-1)) = -6\n\nCross product = (-8, -8, -6).\n\nMagnitude of cross product: √(64 + 64 + 36) = √164 = 2√41.\n\nMagnitude of direction vector (-1,1,0): √(1+1+0) = √2.\n\nDistance = |cross product| / |direction| = 2√41 / √2 = 2√(41/2) = √(4·41/2) = √82.\n\nSo the distance from A₁ to line BD is √82 cm.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "Well-constructed question with a unique correct answer (√82) confirmed by both coordinate geometry and the three-perpendiculars theorem. Distractors A and D are clearly reachable by specific errors; distractor B (3√10) is less obviously motivated but still plausible.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(82)' expected='sqrt(82)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(82)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": "Invalid \\uXXXX escape: line 2 column 545 (char 546)",
+        "feedback": null
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 2,
+    "n_critics_failed": 1
+  },
+  "timestamp": "2026-06-02T15:47:38.791644+00:00",
+  "generation_attempts": 1
+}
