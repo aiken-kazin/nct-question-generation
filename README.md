@@ -38,8 +38,8 @@ python generate.py --subject math --level C --format image --topic polygons_circ
 
 # Қазақ тілі / әдебиет
 python generate.py --subject kazakh --level A --format text
-python generate.py --subject kazakh --level B --format text --topic syntax
-python generate.py --subject kazakh --level C --format text --topic literature
+python generate.py --subject kazakh --level B --format text --topic syntax_simple_sentence
+python generate.py --subject kazakh --level C --format text --topic style_and_text_analysis
 ```
 
 `--format image` — только для math.
@@ -64,6 +64,27 @@ python scripts/run_batch.py --subject math --count 50 --resume
 ```
 
 Распределение по уровням делается автоматически (26 / 60 / 14).
+
+### 4b. Контекстный блок (with-context, қазақ) — `scripts/generate_context.py`
+
+Генерит один общий текст-стимул + N связанных вопросов (НЦТ-формат «2 контекста × 5 вопросов»), каждый проверяется критиком с показом текста как контекста.
+
+```bash
+# 1 блок (текст + 5 вопросов), ансамбль-критик
+python scripts/generate_context.py --subject kazakh --level B --api claude-sonnet-4.6 --ensemble --n 5
+
+# в отдельную папку
+python scripts/generate_context.py --subject kazakh --level C --api gpt-5.5 --ensemble --output-dir output/kazakh_final
+```
+
+Сохраняется в `output/<subject>/<model>/context/<timestamp>_<id>.json` + `.md`.
+
+### 4c. Собрать всё в один JSON — `scripts/export_kazakh.py`
+
+```bash
+python scripts/export_kazakh.py --root output/kazakh_final
+# → output/kazakh_final/all_kazakh_questions.json  (no_context + with_context)
+```
 
 ### 5. Сменить модель
 
@@ -112,21 +133,20 @@ output/<subject>/<model_slug>/_manifest_<timestamp>.json            # сводк
 | `functions_limits` | Функциялар және шектер |
 | `complex_numbers` | Кешен сандар |
 
-### Kazakh (11)
+### Kazakh (10) — по официальной спецификации ҰТО
 
 | ID | KZ |
 |---|---|
-| `phonetics` | Фонетика |
-| `morphology` | Морфология |
-| `word_formation` | Сөзжасам |
-| `syntax` | Синтаксис |
-| `lexicology` | Лексикология |
-| `orthography` | Орфография |
-| `punctuation` | Пунктуация |
-| `text_analysis` | Мәтін талдау |
-| `literature` | Қазақ әдебиеті |
-| `teaching_methodology` | Қазақ тілін оқыту әдістемесі |
-| `language_history` | Қазақ тілінің тарихы |
+| `phonetics_orthography` | Фонетика және орфография |
+| `lexicology_meaning` | Лексика (сөз мағынасы) |
+| `morphology_nominals` | Морфология (есім сөздер) |
+| `syntax_reported_speech` | Синтаксис (төл сөз бен төлеу сөз) |
+| `lexicology_special` | Лексика (арнаулы лексика, фразеология) |
+| `morphology_verbs_particles` | Морфология (етістік, көмекші сөздер) |
+| `syntax_simple_sentence` | Синтаксис (сөз тіркесі, жай сөйлем) |
+| `syntax_coordinate_clauses` | Синтаксис (салалас құрмалас сөйлем) |
+| `syntax_subordinate_clauses` | Синтаксис (сабақтас құрмалас сөйлем) |
+| `style_and_text_analysis` | Тілдік жүйе, стиль және мәтін талдау |
 
 ## Калибровка критика (по желанию)
 
@@ -135,5 +155,11 @@ output/<subject>/<model_slug>/_manifest_<timestamp>.json            # сводк
 python scripts/calibrate_critic.py --subject math --ensemble
 
 # Пересчитать CDI из CSV без новых API-вызовов
-python scripts/compute_cdi.py output/_critic_validation/math_ensemble_*.csv
+python scripts/compute_cdi.py output/_critic_validation/math_*.csv
+
+# Сравнить модели-критики и выбрать лучшую (по сохранённым summary)
+python scripts/compare_critics.py
+
+# Точечно перепрогнать только упавшие строки (без полного перегона)
+python scripts/patch_failed.py --subject kazakh --api gpt-5.5
 ```
