@@ -1,0 +1,140 @@
+{
+  "id": "d83a1dc1-bff9-4a0d-bcb6-a424a8c6e8aa",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген сөйлемдегі есімдіктердің мағыналық түрлерін (сөйлемде кездесу ретімен) анықтаңыз:\n«Мен өзімнің бұл іске қатысым жоқ екенін ешкімге айтпадым».",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жіктеу, өздік, сілтеу, белгісіздік"
+    },
+    {
+      "label": "B",
+      "text": "Жіктеу, өздік, белгісіздік, болымсыздық"
+    },
+    {
+      "label": "C",
+      "text": "Жіктеу, өздік, сілтеу, болымсыздық"
+    },
+    {
+      "label": "D",
+      "text": "Өздік, сілтеу, белгісіздік, болымсыздық"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Сөйлемде 4 есімдік қолданылған: 1) «Мен» – жіктеу есімдігі (1-жақ). 2) «өзімнің» – өздік есімдігі («өз» түбіріне тәуелдік және ілік септік жалғауы жалғанған). 3) «бұл» – сілтеу есімдігі (нұсқау, меңзеу мағынасында). 4) «ешкімге» – болымсыздық есімдігі («еш» бөлшегі мен «кім» сұрау есімдігінің бірігуінен жасалған). А нұсқасында «ешкімге» сөзі белгісіздік есімдігі деп қате берілген (белгісіздік есімдіктеріне әлдекім, біреу, кейбір т.б. жатады). В нұсқасында «бұл» сөзі белгісіздік деп қате көрсетілген. D нұсқасында алғашқы есімдік «өздік» деп бұрыс басталған. Дұрыс жауап: С.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.533,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Identify only pronouns in the sentence in the order they appear: 1) \"Мен\" is a personal pronoun, in Kazakh terminology \"жіктеу есімдігі\". 2) \"өзімнің\" is formed from \"өз\" and indicates reflexive meaning, so it is \"өздік есімдігі\". 3) \"бұл\" points to a specific matter/work, so it is a demonstrative pronoun, \"сілтеу есімдігі\". 4) \"ешкімге\" is from \"ешкім\" meaning nobody/no one; this is a negative pr\n\n[anthropic/claude-sonnet-4.6] answered C: Let me identify each pronoun in the sentence and classify it by semantic type.\n\nSentence: «Мен өзімнің бұл іске қатысым жоқ екенін ешкімге айтпадым»\n\nPronouns in order of appearance:\n\n1. «Мен» — This is a personal pronoun (жіктеу есімдігі / жіктеу). It refers to the first person singular 'I'.\n\n2. «өзімнің» — This is a reflexive pronoun (өздік есімдігі). 'өз' is the reflexive pronoun root, here in \n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the sentence and identify all the pronouns in the order they appear:\n1. 'Мен' (I) - This is a personal pronoun (жіктеу есімдігі).\n2. 'өзімнің' (my own) - This is a reflexive pronoun (өздік есімдігі).\n3. 'бұл' (this) - This is a demonstrative pronoun (сілтеу есімдігі).\n4. 'ешкімге' (to no one) - This is a negative pronoun (болымсыздық есімдігі).\n\nMatching this sequence with the given ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.533,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies all pronouns in order. The item is clear and well-formed, though the task is somewhat straightforward for level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear sentence containing exactly four pronouns of distinct semantic types. The correct answer C is unambiguous, and each distractor targets a specific identifiable misconception (confusing болымсыздық with белгісіздік, misclassifying сілтеу, or omitting жіктеу). Language and terminology are consistent with official Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the identification of pronoun types in context, and provides plausible distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Identify only pronouns in the sentence in the order they appear: 1) \"Мен\" is a personal pronoun, in Kazakh terminology \"жіктеу есімдігі\". 2) \"өзімнің\" is formed from \"өз\" and indicates reflexive meaning, so it is \"өздік есімдігі\". 3) \"бұл\" points to a specific matter/work, so it is a demonstrative pronoun, \"сілтеу есімдігі\". 4) \"ешкімге\" is from \"ешкім\" meaning nobody/no one; this is a negative pr\n\n[anthropic/claude-sonnet-4.6] answered C: Let me identify each pronoun in the sentence and classify it by semantic type.\n\nSentence: «Мен өзімнің бұл іске қатысым жоқ екенін ешкімге айтпадым»\n\nPronouns in order of appearance:\n\n1. «Мен» — This is a personal pronoun (жіктеу есімдігі / жіктеу). It refers to the first person singular 'I'.\n\n2. «өзімнің» — This is a reflexive pronoun (өздік есімдігі). 'өз' is the reflexive pronoun root, here in \n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the sentence and identify all the pronouns in the order they appear:\n1. 'Мен' (I) - This is a personal pronoun (жіктеу есімдігі).\n2. 'өзімнің' (my own) - This is a reflexive pronoun (өздік есімдігі).\n3. 'бұл' (this) - This is a demonstrative pronoun (сілтеу есімдігі).\n4. 'ешкімге' (to no one) - This is a negative pronoun (болымсыздық есімдігі).\n\nMatching this sequence with the given ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.533,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies all pronouns in order. The item is clear and well-formed, though the task is somewhat straightforward for level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear sentence containing exactly four pronouns of distinct semantic types. The correct answer C is unambiguous, and each distractor targets a specific identifiable misconception (confusing болымсыздық with белгісіздік, misclassifying сілтеу, or omitting жіктеу). Language and terminology are consistent with official Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the identification of pronoun types in context, and provides plausible distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Identify only pronouns in the sentence in the order they appear: 1) \"Мен\" is a personal pronoun, in Kazakh terminology \"жіктеу есімдігі\". 2) \"өзімнің\" is formed from \"өз\" and indicates reflexive meaning, so it is \"өздік есімдігі\". 3) \"бұл\" points to a specific matter/work, so it is a demonstrative pronoun, \"сілтеу есімдігі\". 4) \"ешкімге\" is from \"ешкім\" meaning nobody/no one; this is a negative pronoun, \"болымсыздық есімдігі\". Therefore the sequence is: жіктеу, өздік, сілтеу, болымсыздық.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies all pronouns in order. The item is clear and well-formed, though the task is somewhat straightforward for level B.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let me identify each pronoun in the sentence and classify it by semantic type.\n\nSentence: «Мен өзімнің бұл іске қатысым жоқ екенін ешкімге айтпадым»\n\nPronouns in order of appearance:\n\n1. «Мен» — This is a personal pronoun (жіктеу есімдігі / жіктеу). It refers to the first person singular 'I'.\n\n2. «өзімнің» — This is a reflexive pronoun (өздік есімдігі). 'өз' is the reflexive pronoun root, here in genitive case with first person possessive suffix.\n\n3. «бұл» — This is a demonstrative pronoun (сілтеу есімдігі). 'бұл' means 'this' and points to something nearby.\n\n4. «ешкімге» — This is a negative pronoun (болымсыздық есімдігі). 'ешкім' means 'nobody/no one', which is a negative/indefinite pronoun. In Kazakh grammar, 'ешкім', 'ештеңе', 'еш' etc. are classified as болымсыздық есімдіктері (negative pronouns).\n\nSo the order is: жіктеу (Мен), өздік (өзімнің), сілтеу (бұл), болымсыздық (ешкімге).\n\nThis matches option C: Жіктеу, өздік, сілтеу, болымсыздық.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, with a clear sentence containing exactly four pronouns of distinct semantic types. The correct answer C is unambiguous, and each distractor targets a specific identifiable misconception (confusing болымсыздық with белгісіздік, misclassifying сілтеу, or omitting жіктеу). Language and terminology are consistent with official Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence and identify all the pronouns in the order they appear:\n1. 'Мен' (I) - This is a personal pronoun (жіктеу есімдігі).\n2. 'өзімнің' (my own) - This is a reflexive pronoun (өздік есімдігі).\n3. 'бұл' (this) - This is a demonstrative pronoun (сілтеу есімдігі).\n4. 'ешкімге' (to no one) - This is a negative pronoun (болымсыздық есімдігі).\n\nMatching this sequence with the given options:\n- 'Мен' -> Жіктеу\n- 'өзімнің' -> Өздік\n- 'бұл' -> Сілтеу\n- 'ешкімге' -> Болымсыздық\n\nThe correct sequence is 'Жіктеу, өздік, сілтеу, болымсыздық', which corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurately tests the identification of pronoun types in context, and provides plausible distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:43:39.358102+00:00",
+  "generation_attempts": 1
+}

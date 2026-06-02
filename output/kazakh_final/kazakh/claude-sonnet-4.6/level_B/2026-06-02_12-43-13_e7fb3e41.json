@@ -1,0 +1,140 @@
+{
+  "id": "e7fb3e41-eaeb-437c-8dd8-8d8f7f992d95",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Мұғалім оқушыларға: «Ертең сабаққа дайындалып келіңдер», — деді» деген төл сөзді төлеу сөзге дұрыс айналдырған нұсқаны анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Мұғалім оқушыларға ертең сабаққа дайындалып келулерін айтты."
+    },
+    {
+      "label": "B",
+      "text": "Мұғалім оқушыларға ертең сабаққа дайындалып келетіндерін айтты."
+    },
+    {
+      "label": "C",
+      "text": "Мұғалім оқушыларға ертең сабаққа дайындалып келгендерін айтты."
+    },
+    {
+      "label": "D",
+      "text": "Мұғалім оқушыларға ертең сабаққа дайындалып келетіндіктерін айтты."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Төл сөздегі «келіңдер» — бұйрық райлы (императив) етістік. Бұйрық мағынасындағы төл сөзді төлеу сөзге айналдырғанда, бұйрық рай есімше тұлғасы арқылы беріледі: «келулерін айтты» деген тіркесте «келу» — есімше (зат есім тұлғасындағы етістік), ал «-лерін» — септік жалғауы, сондықтан А нұсқасы дұрыс. Б нұсқасындағы «келетіндерін» — ауыспалы осы шақты білдіреді де, бұйрық мағынасын жеткізбейді. В нұсқасындағы «келгендерін» — өткен шақ есімшесі, уақыт мағынасы бұрмаланады. Г нұсқасындағы «келетіндіктерін» — себеп-салдар мағынасын береді, ал бастапқы сөйлемде бұйрық мағынасы болғандықтан, бұл форма мағынаны дұрыс жеткізбейді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.767,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The direct speech is: “Ертең сабаққа дайындалып келіңдер” — an imperative form addressed to multiple students. In Kazakh, when direct imperative speech is converted into indirect/reported speech, the imperative verb is usually changed into a verbal noun/infinitive construction with a possessive ending, e.g. “келулерін айтты” meaning “told them to come.” The reporting verb “деді” becomes “айтты.” T\n\n[anthropic/claude-sonnet-4.6] answered A: The original direct speech (төл сөз) is: «Ертең сабаққа дайындалып келіңдер» — this is an imperative/command directed at students (plural), meaning 'Prepare and come to class tomorrow.'\n\nWhen converting direct speech (төл сөз) to indirect/reported speech (төлеу сөз) in Kazakh, the key rules are:\n1. The imperative verb form must be converted to an appropriate nominal/verbal noun form that fits the \n\n[google/gemini-3.1-pro-preview] answered A: To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, we must adjust the verb form based on the mood of the original quote. The direct speech here is an imperative sentence: 'Ертең сабаққа дайындалып келіңдер' (Come prepared for the lesson tomorrow). When converting an imperative sentence into indirect speech, the imperative verb ('келіңдер') is transformed into a verbal n",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 8.667,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 8.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.767,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer A is correct and the item has a single defensible answer. However, the provided explanation contains grammatical terminology errors: \"келу\" is not an есімше, and \"-лерін\" is not simply a септік жалғауы. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests the rule for converting imperative direct speech to indirect speech in Kazakh. Each distractor targets a specific grammatical misconception (present participle, past participle, causal nominalization), making them plausible but clearly distinguishable for a knowledgeable teacher. | [google/gemini-3.1-pro-preview] The question is well-constructed and accurately tests the conversion of imperative direct speech to indirect speech. The distractors are plausible and represent common mistakes.",
+    "improvement_suggestions": "[openai/gpt-5.5] Revise the explanation to use accurate terminology: describe \"келулерін\" as a қимыл атауы/тұйық етістік form with plural, possessive, and accusative marking. Also avoid treating B and D as separate strong distractors unless their difference is pedagogically meaningful. | [google/gemini-3.1-pro-preview] In the provided explanation, correct the grammatical term for 'келу' from 'есімше' (participle) to 'тұйық етістік' (infinitive/verbal noun).",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The direct speech is: “Ертең сабаққа дайындалып келіңдер” — an imperative form addressed to multiple students. In Kazakh, when direct imperative speech is converted into indirect/reported speech, the imperative verb is usually changed into a verbal noun/infinitive construction with a possessive ending, e.g. “келулерін айтты” meaning “told them to come.” The reporting verb “деді” becomes “айтты.” T\n\n[anthropic/claude-sonnet-4.6] answered A: The original direct speech (төл сөз) is: «Ертең сабаққа дайындалып келіңдер» — this is an imperative/command directed at students (plural), meaning 'Prepare and come to class tomorrow.'\n\nWhen converting direct speech (төл сөз) to indirect/reported speech (төлеу сөз) in Kazakh, the key rules are:\n1. The imperative verb form must be converted to an appropriate nominal/verbal noun form that fits the \n\n[google/gemini-3.1-pro-preview] answered A: To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, we must adjust the verb form based on the mood of the original quote. The direct speech here is an imperative sentence: 'Ертең сабаққа дайындалып келіңдер' (Come prepared for the lesson tomorrow). When converting an imperative sentence into indirect speech, the imperative verb ('келіңдер') is transformed into a verbal n",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 8.667,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.767,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer A is correct and the item has a single defensible answer. However, the provided explanation contains grammatical terminology errors: \"келу\" is not an есімше, and \"-лерін\" is not simply a септік жалғауы. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests the rule for converting imperative direct speech to indirect speech in Kazakh. Each distractor targets a specific grammatical misconception (present participle, past participle, causal nominalization), making them plausible but clearly distinguishable for a knowledgeable teacher. | [google/gemini-3.1-pro-preview] The question is well-constructed and accurately tests the conversion of imperative direct speech to indirect speech. The distractors are plausible and represent common mistakes.",
+      "improvement_suggestions": "[openai/gpt-5.5] Revise the explanation to use accurate terminology: describe \"келулерін\" as a қимыл атауы/тұйық етістік form with plural, possessive, and accusative marking. Also avoid treating B and D as separate strong distractors unless their difference is pedagogically meaningful. | [google/gemini-3.1-pro-preview] In the provided explanation, correct the grammatical term for 'келу' from 'есімше' (participle) to 'тұйық етістік' (infinitive/verbal noun).",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The direct speech is: “Ертең сабаққа дайындалып келіңдер” — an imperative form addressed to multiple students. In Kazakh, when direct imperative speech is converted into indirect/reported speech, the imperative verb is usually changed into a verbal noun/infinitive construction with a possessive ending, e.g. “келулерін айтты” meaning “told them to come.” The reporting verb “деді” becomes “айтты.” Therefore, the correct indirect form is: “Мұғалім оқушыларға ертең сабаққа дайындалып келулерін айтты.” Options B and D use future-tense forms meaning “that they would come,” not a command. Option C uses a past-tense form meaning “that they had come.” Only option A correctly preserves the imperative/request meaning.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 8.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 7.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.7,
+          "pass_fail": true,
+          "comments": "The keyed answer A is correct and the item has a single defensible answer. However, the provided explanation contains grammatical terminology errors: \"келу\" is not an есімше, and \"-лерін\" is not simply a септік жалғауы.",
+          "improvement_suggestions": "Revise the explanation to use accurate terminology: describe \"келулерін\" as a қимыл атауы/тұйық етістік form with plural, possessive, and accusative marking. Also avoid treating B and D as separate strong distractors unless their difference is pedagogically meaningful.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The original direct speech (төл сөз) is: «Ертең сабаққа дайындалып келіңдер» — this is an imperative/command directed at students (plural), meaning 'Prepare and come to class tomorrow.'\n\nWhen converting direct speech (төл сөз) to indirect/reported speech (төлеу сөз) in Kazakh, the key rules are:\n1. The imperative verb form must be converted to an appropriate nominal/verbal noun form that fits the reporting verb 'айтты' (said/told).\n2. For commands/requests directed at a third person (plural), the verb typically takes the form of a verbal noun with possessive suffix indicating the subject, combined with a case suffix appropriate for the reporting verb.\n\nThe imperative 'келіңдер' (come, plural imperative) needs to be converted. In Kazakh reported speech for commands, the verb is typically nominalized using the suffix -у (verbal noun/infinitive form) + possessive suffix for 3rd person plural + accusative or other case.\n\nLet's analyze each option:\n- A) 'дайындалып келулерін айтты' — 'келу' (verbal noun/infinitive) + -лері (3rd person plural possessive) + -н (accusative). This means 'told them to prepare and come' — this correctly converts the imperative to reported speech using the verbal noun form with possessive and accusative case, which is the standard Kazakh pattern for reporting commands.\n- B) 'дайындалып келетіндерін айтты' — 'келетін' is a present/future participle form, suggesting 'that they will come' — this would be appropriate for reporting a statement about future action, not a command.\n- C) 'дайындалып келгендерін айтты' — 'келген' is a past participle, suggesting 'that they had come' — incorrect tense/meaning.\n- D) 'дайындалып келетіндіктерін айтты' — 'келетіндіктері' uses the -дықтан/-діктен nominalization which typically expresses reason/cause, not a command.\n\nThe correct conversion of an imperative command in Kazakh reported speech uses the verbal noun (-у form) + possessive + accusative: 'келулерін айтты' = 'told [them] to come.' This is option A.\n\nOption A correctly transforms the imperative 'келіңдер' into the reported speech form 'келулерін' (verbal noun + 3rd plural possessive + accusative), which is the standard grammatical rule for converting commands to indirect speech in Kazakh.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately tests the rule for converting imperative direct speech to indirect speech in Kazakh. Each distractor targets a specific grammatical misconception (present participle, past participle, causal nominalization), making them plausible but clearly distinguishable for a knowledgeable teacher.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, we must adjust the verb form based on the mood of the original quote. The direct speech here is an imperative sentence: 'Ертең сабаққа дайындалып келіңдер' (Come prepared for the lesson tomorrow). When converting an imperative sentence into indirect speech, the imperative verb ('келіңдер') is transformed into a verbal noun (тұйық етістік) with the appropriate possessive and case suffixes, typically the accusative case. Thus, 'келіңдер' becomes 'келулерін' (their coming). Options B, C, and D use participle forms ('келетіндерін', 'келгендерін', 'келетіндіктерін'), which would be appropriate if the original quote were a declarative statement (e.g., 'Біз келеміз'). Option A correctly uses 'келулерін', accurately reflecting the command/request nature of the original direct speech.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 8.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and accurately tests the conversion of imperative direct speech to indirect speech. The distractors are plausible and represent common mistakes.",
+          "improvement_suggestions": "In the provided explanation, correct the grammatical term for 'келу' from 'есімше' (participle) to 'тұйық етістік' (infinitive/verbal noun).",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:43:13.355672+00:00",
+  "generation_attempts": 2
+}

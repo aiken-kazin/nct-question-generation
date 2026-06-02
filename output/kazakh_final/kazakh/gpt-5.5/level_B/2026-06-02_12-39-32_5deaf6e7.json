@@ -1,0 +1,140 @@
+{
+  "id": "5deaf6e7-a2ac-42c6-bc6b-110551b9378e",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "style_and_text_analysis",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Мәтіннің стильдік түрін анықтаңыз.\n\n«Күн тұтылуы — Айдың Күн мен Жердің арасына келуінен болатын табиғи құбылыс. Бұл кезде Айдың көлеңкесі Жер бетінің шағын бөлігіне түседі. Ғалымдар мұндай құбылысты алдын ала есептеп, арнайы құралдар арқылы бақылайды».",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ғылыми стиль: күрделі терминдер мен формулаларға негізделіп, тек мамандарға арналған"
+    },
+    {
+      "label": "B",
+      "text": "Ғылыми-көпшілік стиль: ғылыми ұғымдар көпшілікке түсінікті тілмен баяндалған"
+    },
+    {
+      "label": "C",
+      "text": "Публицистикалық стиль: қоғамдық пікір қалыптастыру мақсатында үндеу, бағалау басым"
+    },
+    {
+      "label": "D",
+      "text": "Көркем әдебиет стилі: оқиға кейіпкер әрекеті арқылы бейнелі түрде суреттелген"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап — B. Мәтінде «Күн тұтылуы», «Ай», «Жер», «көлеңке», «ғалымдар» сияқты ғылыми ұғымдар қолданылған, бірақ баяндау жалпы оқырманға түсінікті, қарапайым тілмен берілген. Сондықтан бұл — ғылыми-көпшілік стиль. A нұсқасы толық сәйкес емес, себебі мәтінде күрделі терминдер, формулалар, тар мамандыққа арналған дәлелдеу жүйесі жоқ. C нұсқасында айтылған публицистикалық стильге тән үндеу, қоғамдық бағалау байқалмайды. D нұсқасы да қате, өйткені мәтінде кейіпкер, сюжет, бейнелі суреттеу жоқ.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.267,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The passage explains a natural phenomenon: a solar eclipse occurs when the Moon comes between the Sun and the Earth, the Moon's shadow falls on a small part of Earth's surface, and scientists can calculate and observe it with special instruments. It uses scientific concepts such as 'solar eclipse', 'Moon', 'Sun', 'Earth', 'shadow', and 'scientists', but the explanation is simple, clear, and intend\n\n[anthropic/claude-sonnet-4.6] answered B: The text describes a solar eclipse (күн тұтылуы) in clear, accessible language. Let me analyze its stylistic features:\n\n1. It uses scientific terminology ('күн тұтылуы' - solar eclipse, 'табиғи құбылыс' - natural phenomenon, 'ғалымдар' - scientists, 'арнайы құралдар' - special instruments) but explains them in plain, understandable language.\n\n2. The text does NOT use complex formulas or highly spe\n\n[google/gemini-3.1-pro-preview] answered B: The text explains the scientific phenomenon of a solar eclipse ('Күн тұтылуы'). It describes how the Moon comes between the Sun and the Earth, casting a shadow, and mentions that scientists calculate and observe this. The language used is informative and accurate but highly accessible, lacking complex formulas, highly specialized jargon, or abstract theoretical frameworks that would restrict it to",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.267,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation appropriately distinguishes scientific-popular style from specialist scientific, publicistic, and literary styles. The item is clear, though somewhat easy for level B because several distractors are readily eliminated. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (B) and a text that unambiguously exemplifies popular-science (ғылыми-көпшілік) style. The distractors are plausible but Option A's description ('тек мамандарға арналған' + 'формулалар') makes it slightly too easy to eliminate, and all distractors are somewhat longer/more elaborate than needed, creating a mild cueing effect. Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text clearly represents the popular-science style, and the options are well-structured, parallel, and provide clear rationales for each style type.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Trim the distractor descriptions to be more parallel in length and remove the overly specific 'формулалар' cue in Option A, which makes elimination too straightforward. Consider making Option A describe pure academic scientific style without the formula/specialist-only qualifier to increase plausibility and raise difficulty slightly.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The passage explains a natural phenomenon: a solar eclipse occurs when the Moon comes between the Sun and the Earth, the Moon's shadow falls on a small part of Earth's surface, and scientists can calculate and observe it with special instruments. It uses scientific concepts such as 'solar eclipse', 'Moon', 'Sun', 'Earth', 'shadow', and 'scientists', but the explanation is simple, clear, and intend\n\n[anthropic/claude-sonnet-4.6] answered B: The text describes a solar eclipse (күн тұтылуы) in clear, accessible language. Let me analyze its stylistic features:\n\n1. It uses scientific terminology ('күн тұтылуы' - solar eclipse, 'табиғи құбылыс' - natural phenomenon, 'ғалымдар' - scientists, 'арнайы құралдар' - special instruments) but explains them in plain, understandable language.\n\n2. The text does NOT use complex formulas or highly spe\n\n[google/gemini-3.1-pro-preview] answered B: The text explains the scientific phenomenon of a solar eclipse ('Күн тұтылуы'). It describes how the Moon comes between the Sun and the Earth, casting a shadow, and mentions that scientists calculate and observe this. The language used is informative and accurate but highly accessible, lacking complex formulas, highly specialized jargon, or abstract theoretical frameworks that would restrict it to",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.267,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation appropriately distinguishes scientific-popular style from specialist scientific, publicistic, and literary styles. The item is clear, though somewhat easy for level B because several distractors are readily eliminated. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (B) and a text that unambiguously exemplifies popular-science (ғылыми-көпшілік) style. The distractors are plausible but Option A's description ('тек мамандарға арналған' + 'формулалар') makes it slightly too easy to eliminate, and all distractors are somewhat longer/more elaborate than needed, creating a mild cueing effect. Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text clearly represents the popular-science style, and the options are well-structured, parallel, and provide clear rationales for each style type.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Trim the distractor descriptions to be more parallel in length and remove the overly specific 'формулалар' cue in Option A, which makes elimination too straightforward. Consider making Option A describe pure academic scientific style without the formula/specialist-only qualifier to increase plausibility and raise difficulty slightly.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The passage explains a natural phenomenon: a solar eclipse occurs when the Moon comes between the Sun and the Earth, the Moon's shadow falls on a small part of Earth's surface, and scientists can calculate and observe it with special instruments. It uses scientific concepts such as 'solar eclipse', 'Moon', 'Sun', 'Earth', 'shadow', and 'scientists', but the explanation is simple, clear, and intended for a general audience. There are no complex formulas or highly specialized terms, so it is not a purely specialist scientific style. It does not aim to persuade or shape public opinion, so it is not publicistic style. It does not use imagery, characters, or artistic narration, so it is not literary style. Therefore, the style is scientific-popular style.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation appropriately distinguishes scientific-popular style from specialist scientific, publicistic, and literary styles. The item is clear, though somewhat easy for level B because several distractors are readily eliminated.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The text describes a solar eclipse (күн тұтылуы) in clear, accessible language. Let me analyze its stylistic features:\n\n1. It uses scientific terminology ('күн тұтылуы' - solar eclipse, 'табиғи құбылыс' - natural phenomenon, 'ғалымдар' - scientists, 'арнайы құралдар' - special instruments) but explains them in plain, understandable language.\n\n2. The text does NOT use complex formulas or highly specialized jargon that would be incomprehensible to a general audience — ruling out pure 'Ғылыми стиль' (Option A).\n\n3. The text does NOT contain calls to action, emotional appeals, or opinion-forming rhetoric — ruling out 'Публицистикалық стиль' (Option C).\n\n4. The text does NOT use figurative language, characters, or narrative storytelling — ruling out 'Көркем әдебиет стилі' (Option D).\n\n5. The text presents scientific concepts (the mechanism of a solar eclipse, the shadow falling on Earth, scientists observing it) in language accessible to the general public. This is the defining characteristic of 'Ғылыми-көпшілік стиль' (popular science style) — scientific ideas explained in commonly understandable terms for a broad audience.\n\nTherefore, the correct answer is B: Ғылыми-көпшілік стиль.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear correct answer (B) and a text that unambiguously exemplifies popular-science (ғылыми-көпшілік) style. The distractors are plausible but Option A's description ('тек мамандарға арналған' + 'формулалар') makes it slightly too easy to eliminate, and all distractors are somewhat longer/more elaborate than needed, creating a mild cueing effect. Kazakh is natural and terminologically accurate.",
+          "improvement_suggestions": "Trim the distractor descriptions to be more parallel in length and remove the overly specific 'формулалар' cue in Option A, which makes elimination too straightforward. Consider making Option A describe pure academic scientific style without the formula/specialist-only qualifier to increase plausibility and raise difficulty slightly.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The text explains the scientific phenomenon of a solar eclipse ('Күн тұтылуы'). It describes how the Moon comes between the Sun and the Earth, casting a shadow, and mentions that scientists calculate and observe this. The language used is informative and accurate but highly accessible, lacking complex formulas, highly specialized jargon, or abstract theoretical frameworks that would restrict it to specialists only. This makes it a classic example of the popular science style ('ғылыми-көпшілік стиль'), where scientific concepts are conveyed in a way that the general public can easily understand. Option A is incorrect because there are no complex formulas. Option C is incorrect because there is no publicistic appeal or subjective evaluation. Option D is incorrect because there is no artistic imagery or character-driven narrative. Therefore, Option B is the correct choice.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. The text clearly represents the popular-science style, and the options are well-structured, parallel, and provide clear rationales for each style type.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:39:32.894774+00:00",
+  "generation_attempts": 1
+}

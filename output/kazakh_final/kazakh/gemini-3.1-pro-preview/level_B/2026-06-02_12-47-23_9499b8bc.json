@@ -1,0 +1,140 @@
+{
+  "id": "9499b8bc-56f0-4c2d-97e3-f01d6c0d68e8",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген төл сөзді төлеу сөзге дұрыс айналдырған нұсқаны көрсетіңіз.\nӘлия құрбысына: «Мен сенің кітабыңды ертең міндетті түрде әкеліп беремін», – деді.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Әлия құрбысына өзінің кітабын ертең міндетті түрде әкеліп беретінін айтты."
+    },
+    {
+      "label": "B",
+      "text": "Әлия құрбысына оның кітабын ертең міндетті түрде әкеліп беремін деп айтты."
+    },
+    {
+      "label": "C",
+      "text": "Әлия құрбысына оның кітабын ертең міндетті түрде әкеліп беретінін айтты."
+    },
+    {
+      "label": "D",
+      "text": "Әлия құрбысына менің кітабымды ертең міндетті түрде әкеліп беретінін айтты."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Төл сөзді төлеу сөзге айналдырғанда, сөйлемдегі жақтар (есімдіктер мен етістіктің жіктік жалғаулары) автордың баяндауына сәйкес 3-жаққа өзгеруі тиіс. Төл сөздегі 1-жақ есімдігі («мен») түсіп қалып немесе 3-жаққа ауысса, 2-жақ есімдігі («сенің») 3-жаққа («оның») өзгереді. Сондай-ақ, баяндауыш («әкеліп беремін») есімше тұлғасына еніп, тәуелдік, табыс септік жалғауларын қабылдайды («әкеліп беретінін») және «деді» етістігі мағынасына қарай «айтты» сөзімен алмасады. А нұсқасында «өзінің» есімдігі қолданылғандықтан мағына бұрмаланған (Әлияның өз кітабы емес, құрбысының кітабы). В нұсқасында баяндауыш етістік 1-жақта («беремін») қате қалып қойған. D нұсқасында «менің» деп 1-жақ есімдігі қате қолданылған. Сондықтан дұрыс нұсқа – С.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The direct speech is: Әлия said to her friend: “I will definitely bring your book tomorrow.” In converting төл сөз to төлеу сөз, the first-person pronoun мен must be changed according to the actual speaker, Әлия, and the second-person possessive сенің кітабыңды must be changed to third person referring to the addressee, яғни құрбысының кітабы = оның кітабын. The finite first-person verb әкеліп бер\n\n[anthropic/claude-sonnet-4.6] answered C: We need to convert the direct speech (төл сөз) into indirect speech (төлеу сөз).\n\nOriginal direct speech: Әлия құрбысына: «Мен сенің кітабыңды ертең міндетті түрде әкеліп беремін», – деді.\n\nKey elements to convert:\n1. 'Мен' (I) — the speaker is Әлия, so in indirect speech this becomes a reference to Әлия (third person), so 'мен' disappears as the subject is already Әлия.\n2. 'сенің кітабыңды' (your\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, we must change the pronouns and the verb forms to reflect the perspective of the narrator. \n1. The first-person pronoun 'Мен' (I) refers to Aliya, so it becomes third-person (or is omitted as it is implied by the verb).\n2. The second-person possessive 'сенің кітабыңды' (your book) refers to the friend's book, so it must c",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is defensibly correct and the explanation accurately identifies the required person and verb-form changes. The main weakness is that 'оның кітабын' is slightly ambiguous in isolation; 'құрбысының кітабын' would be more precise. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously correct, and each distractor targets a specific, identifiable error in pronoun or verb form conversion. The Kazakh is natural and uses standard literary norms. The task genuinely requires applying indirect speech rules in context, matching level B. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the conversion of direct to indirect speech, and provides highly plausible distractors based on common student errors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The direct speech is: Әлия said to her friend: “I will definitely bring your book tomorrow.” In converting төл сөз to төлеу сөз, the first-person pronoun мен must be changed according to the actual speaker, Әлия, and the second-person possessive сенің кітабыңды must be changed to third person referring to the addressee, яғни құрбысының кітабы = оның кітабын. The finite first-person verb әкеліп бер\n\n[anthropic/claude-sonnet-4.6] answered C: We need to convert the direct speech (төл сөз) into indirect speech (төлеу сөз).\n\nOriginal direct speech: Әлия құрбысына: «Мен сенің кітабыңды ертең міндетті түрде әкеліп беремін», – деді.\n\nKey elements to convert:\n1. 'Мен' (I) — the speaker is Әлия, so in indirect speech this becomes a reference to Әлия (third person), so 'мен' disappears as the subject is already Әлия.\n2. 'сенің кітабыңды' (your\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, we must change the pronouns and the verb forms to reflect the perspective of the narrator. \n1. The first-person pronoun 'Мен' (I) refers to Aliya, so it becomes third-person (or is omitted as it is implied by the verb).\n2. The second-person possessive 'сенің кітабыңды' (your book) refers to the friend's book, so it must c",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is defensibly correct and the explanation accurately identifies the required person and verb-form changes. The main weakness is that 'оның кітабын' is slightly ambiguous in isolation; 'құрбысының кітабын' would be more precise. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously correct, and each distractor targets a specific, identifiable error in pronoun or verb form conversion. The Kazakh is natural and uses standard literary norms. The task genuinely requires applying indirect speech rules in context, matching level B. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the conversion of direct to indirect speech, and provides highly plausible distractors based on common student errors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The direct speech is: Әлия said to her friend: “I will definitely bring your book tomorrow.” In converting төл сөз to төлеу сөз, the first-person pronoun мен must be changed according to the actual speaker, Әлия, and the second-person possessive сенің кітабыңды must be changed to third person referring to the addressee, яғни құрбысының кітабы = оның кітабын. The finite first-person verb әкеліп беремін should be converted into an indirect reported form: әкеліп беретінін айтты. Option A incorrectly says өзінің кітабын, meaning Aliya’s own book. Option B keeps the first-person verb әкеліп беремін, so it is not the proper төлеу сөз form. Option D incorrectly says менің кітабымды, meaning the narrator’s/my book. Therefore the correct conversion is: Әлия құрбысына оның кітабын ертең міндетті түрде әкеліп беретінін айтты.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The keyed answer C is defensibly correct and the explanation accurately identifies the required person and verb-form changes. The main weakness is that 'оның кітабын' is slightly ambiguous in isolation; 'құрбысының кітабын' would be more precise.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to convert the direct speech (төл сөз) into indirect speech (төлеу сөз).\n\nOriginal direct speech: Әлия құрбысына: «Мен сенің кітабыңды ертең міндетті түрде әкеліп беремін», – деді.\n\nKey elements to convert:\n1. 'Мен' (I) — the speaker is Әлия, so in indirect speech this becomes a reference to Әлия (third person), so 'мен' disappears as the subject is already Әлия.\n2. 'сенің кітабыңды' (your book) — 'сенің' refers to the friend (құрбысы). In indirect speech, 'сенің' becomes 'оның' (her/his), referring to the friend.\n3. The verb 'әкеліп беремін' (I will bring) — in indirect speech with 'деді', the verb takes the reported speech form with -тінін/-тінін suffix: 'әкеліп беретінін'.\n4. The conjunction used should be 'деп' or the verb nominalized with -тінін.\n\nNow let's analyze each option:\n\nA) Әлия құрбысына өзінің кітабын ертең міндетті түрде әкеліп беретінін айтты.\n- 'өзінің кітабын' — 'өзінің' is a reflexive pronoun. But the book belongs to the friend (сенің кітабыңды = your book), not to Әлия herself. So 'өзінің' would incorrectly imply it's Әлия's own book. This is WRONG.\n\nB) Әлия құрбысына оның кітабын ертең міндетті түрде әкеліп беремін деп айтты.\n- 'оның кітабын' — correct, refers to the friend's book.\n- 'әкеліп беремін деп айтты' — using 'беремін деп' keeps the first person form, which is not proper indirect speech conversion. In proper indirect speech, the verb should be nominalized. This is partially incorrect.\n\nC) Әлия құрбысына оның кітабын ертең міндетті түрде әкеліп беретінін айтты.\n- 'оның кітабын' — correct, 'оның' refers to the friend (the addressee, 'сенің' → 'оның').\n- 'әкеліп беретінін айтты' — correct nominalized form for indirect speech.\n- This correctly converts both the pronoun and the verb form. This is CORRECT.\n\nD) Әлия құрбысына менің кітабымды ертең міндетті түрде әкеліп беретінін айтты.\n- 'менің кітабымды' — 'менің' means 'my', but the book belongs to the friend, not to the speaker. This is WRONG.\n\nTherefore, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (C) is unambiguously correct, and each distractor targets a specific, identifiable error in pronoun or verb form conversion. The Kazakh is natural and uses standard literary norms. The task genuinely requires applying indirect speech rules in context, matching level B.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, we must change the pronouns and the verb forms to reflect the perspective of the narrator. \n1. The first-person pronoun 'Мен' (I) refers to Aliya, so it becomes third-person (or is omitted as it is implied by the verb).\n2. The second-person possessive 'сенің кітабыңды' (your book) refers to the friend's book, so it must change to the third-person 'оның кітабын' (her book).\n3. The first-person verb 'әкеліп беремін' (I will bring) changes to a verbal noun/participle with a possessive and accusative ending, becoming 'әкеліп беретінін' (that she will bring).\n4. The reporting verb 'деді' changes to 'айтты'.\n\nEvaluating the options:\n- Option A uses 'өзінің кітабын' (her own book), which incorrectly implies Aliya's book instead of the friend's book.\n- Option B leaves the verb as 'әкеліп беремін деп', which is still in the first person (direct speech style).\n- Option C correctly changes the pronoun to 'оның кітабын' and the verb to 'әкеліп беретінін'.\n- Option D uses 'менің кітабымды' (my book), which is incorrect.\n\nTherefore, Option C is the correct transformation into indirect speech.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurately tests the conversion of direct to indirect speech, and provides highly plausible distractors based on common student errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:47:23.172281+00:00",
+  "generation_attempts": 1
+}

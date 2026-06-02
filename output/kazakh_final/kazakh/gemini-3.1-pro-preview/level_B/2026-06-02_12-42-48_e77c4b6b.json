@@ -1,0 +1,140 @@
+{
+  "id": "e77c4b6b-5b10-47db-9dff-bfb618ff6c51",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "«Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.»\nБерілген сөйлемдегі сабақтас құрмаластың түрін және бағыныңқы сыңарының баяндауышының жасалу жолын анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Қарсылықты бағыныңқы сабақтас; есімше тұлғасына тәуелдік және көмектес септік жалғаулары жалғануы арқылы жасалған."
+    },
+    {
+      "label": "B",
+      "text": "Себеп бағыныңқы сабақтас; есімше тұлғасына тәуелдік жалғауы мен септіктеулік шылау тіркесуі арқылы жасалған."
+    },
+    {
+      "label": "C",
+      "text": "Мезгіл бағыныңқы сабақтас; есімше тұлғасына көмектес септік жалғауы тікелей жалғануы арқылы жасалған."
+    },
+    {
+      "label": "D",
+      "text": "Шартты бағыныңқы сабақтас; етістік негізіне шартты рай жұрнағы мен демеулік шылау қосылуы арқылы жасалған."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген сөйлем – қарсылықты бағыныңқы сабақтас құрмалас сөйлем. Себебі бағыныңқы сөйлемдегі іс-әрекетке (құжаттарды мұқият тексеріп шығуына) қарамастан, басыңқы сөйлемдегі іс-әрекет (күдікті ешнәрсе таба алмауы) оған қарсы мағынада жүзеге асып тұр. Бағыныңқы сөйлемнің баяндауышы («шыққанымен») өткен шақ есімше тұлғасына (-қан) тәуелдік жалғауының 3-жағы (-ы) және көмектес септік жалғауы (-мен) жалғануы арқылы жасалған (шық+қан+ы+мен). Басқа нұсқалар қате, өйткені сөйлем мағынасы жағынан себеп, шартты немесе мезгіл бағыныңқыға жатпайды, сондай-ақ баяндауыштың морфологиялық құрамы (шылаудың тіркесуі немесе көмектес септіктің тікелей жалғануы) бұрыс талданған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: “Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.” The subordinate part is “Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен,” and the main part is “күдікті ешнәрсе таба алмады.” The meaning is concessive: although he carefully checked all the documents, he could not find anything suspicious. Therefore, the type is a concessive/adversative\n\n[anthropic/claude-sonnet-4.6] answered A: Let's analyze the sentence: «Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.»\n\nStep 1: Identify the type of subordinate compound sentence.\nThe sentence has two parts:\n- Subordinate clause: «Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен» (Despite carefully checking all the documents in hand)\n- Main clause: «күдікті ешнәрсе таба алмады» (could not find a\n\n[google/gemini-3.1-pro-preview] answered A: The given sentence is 'Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.' The subordinate clause is 'Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен'. The predicate of this subordinate clause is 'шыққанымен'. Let's break down its morphological structure: 'шық' (verb root) + '-қан' (past participle / есімше) + '-ы' (3rd person possessive suffix / тәуелдік ж",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: the sentence is concessive/adversative, and “шыққанымен” is formed from an есімше plus possessive and instrumental case endings. The item fits medium difficulty, though one distractor contains the nonstandard term “септіктеулік шылау” instead of the official “септеулік шылау.” | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (A) is unambiguously supported by morphological analysis of «шыққанымен» (-қан + -ы + -мен) and the concessive/adversative semantics of the sentence. All three distractors correspond to identifiable misconceptions (confusing concessive with causal, temporal, or conditional clause types), and the morphological descriptions in the distractors are plausibly wrong in specific ways. Language and terminology are consistent with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests both the syntactic classification of the subordinate clause and the morphological breakdown of its predicate, with highly plausible and well-structured distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: “Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.” The subordinate part is “Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен,” and the main part is “күдікті ешнәрсе таба алмады.” The meaning is concessive: although he carefully checked all the documents, he could not find anything suspicious. Therefore, the type is a concessive/adversative\n\n[anthropic/claude-sonnet-4.6] answered A: Let's analyze the sentence: «Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.»\n\nStep 1: Identify the type of subordinate compound sentence.\nThe sentence has two parts:\n- Subordinate clause: «Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен» (Despite carefully checking all the documents in hand)\n- Main clause: «күдікті ешнәрсе таба алмады» (could not find a\n\n[google/gemini-3.1-pro-preview] answered A: The given sentence is 'Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.' The subordinate clause is 'Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен'. The predicate of this subordinate clause is 'шыққанымен'. Let's break down its morphological structure: 'шық' (verb root) + '-қан' (past participle / есімше) + '-ы' (3rd person possessive suffix / тәуелдік ж",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: the sentence is concessive/adversative, and “шыққанымен” is formed from an есімше plus possessive and instrumental case endings. The item fits medium difficulty, though one distractor contains the nonstandard term “септіктеулік шылау” instead of the official “септеулік шылау.” | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (A) is unambiguously supported by morphological analysis of «шыққанымен» (-қан + -ы + -мен) and the concessive/adversative semantics of the sentence. All three distractors correspond to identifiable misconceptions (confusing concessive with causal, temporal, or conditional clause types), and the morphological descriptions in the distractors are plausibly wrong in specific ways. Language and terminology are consistent with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests both the syntactic classification of the subordinate clause and the morphological breakdown of its predicate, with highly plausible and well-structured distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: “Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.” The subordinate part is “Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен,” and the main part is “күдікті ешнәрсе таба алмады.” The meaning is concessive: although he carefully checked all the documents, he could not find anything suspicious. Therefore, the type is a concessive/adversative subordinate compound sentence, in Kazakh grammar called “қарсылықты бағыныңқы сабақтас.” The predicate of the subordinate clause is “тексеріп шыққанымен.” Its final component “шыққанымен” is formed from the participle form “шыққан” (-ған есімше), plus the 3rd person possessive suffix “-ы,” plus the instrumental/comitative case suffix “-мен.” This matches the rule: есімше тұлғасына тәуелдік және көмектес септік жалғаулары жалғануы арқылы жасалады.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: the sentence is concessive/adversative, and “шыққанымен” is formed from an есімше plus possessive and instrumental case endings. The item fits medium difficulty, though one distractor contains the nonstandard term “септіктеулік шылау” instead of the official “септеулік шылау.”",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence: «Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.»\n\nStep 1: Identify the type of subordinate compound sentence.\nThe sentence has two parts:\n- Subordinate clause: «Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен» (Despite carefully checking all the documents in hand)\n- Main clause: «күдікті ешнәрсе таба алмады» (could not find anything suspicious)\n\nThe meaning is concessive/adversative: 'Although/Despite checking all documents carefully, could not find anything suspicious.' This is a contrast/concession relationship — the action in the subordinate clause did not lead to the expected result. In Kazakh grammar, this is called 'қарсылықты бағыныңқы сабақтас' (adversative/concessive subordinate compound sentence).\n\nStep 2: Analyze the predicate form of the subordinate clause.\nThe predicate of the subordinate clause is: «шыққанымен»\n\nBreaking it down:\n- «шық» — verb root (to go out/complete)\n- «қан» — past participle suffix (есімше тұлғасы, specifically -ған/-ген/-қан/-кен)\n- «ы» — possessive/ownership suffix (тәуелдік жалғауы, 3rd person singular)\n- «мен» — instrumental case suffix (көмектес септік жалғауы)\n\nSo the form is: verb root + participle suffix (-қан) + possessive suffix (-ы) + instrumental case (-мен)\n= есімше тұлғасына тәуелдік жалғауы және көмектес септік жалғауы жалғануы арқылы жасалған\n\nThis matches option A: Қарсылықты бағыныңқы сабақтас; есімше тұлғасына тәуелдік және көмектес септік жалғаулары жалғануы арқылы жасалған.\n\nThe -ғанымен / -қанымен form is the classic marker of concessive subordinate clauses in Kazakh, formed by: participle (-ған/-қан) + possessive suffix (-ы/-і) + instrumental case (-мен/-бен/-пен).\n\nConclusion: Option A is correct.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (A) is unambiguously supported by morphological analysis of «шыққанымен» (-қан + -ы + -мен) and the concessive/adversative semantics of the sentence. All three distractors correspond to identifiable misconceptions (confusing concessive with causal, temporal, or conditional clause types), and the morphological descriptions in the distractors are plausibly wrong in specific ways. Language and terminology are consistent with standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given sentence is 'Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен, күдікті ешнәрсе таба алмады.' The subordinate clause is 'Қолындағы барлық құжаттарды мұқият тексеріп шыққанымен'. The predicate of this subordinate clause is 'шыққанымен'. Let's break down its morphological structure: 'шық' (verb root) + '-қан' (past participle / есімше) + '-ы' (3rd person possessive suffix / тәуелдік жалғауы) + '-мен' (instrumental case suffix / көмектес септік жалғауы). The semantic relationship between the subordinate clause ('Even though he carefully checked...') and the main clause ('...he couldn't find anything suspicious') is concessive, meaning the action in the main clause occurs despite the action in the subordinate clause. In Kazakh grammar, this is called 'қарсылықты бағыныңқы сабақтас'. Option A correctly identifies both the type of the subordinate clause (Қарсылықты) and the morphological formation of its predicate (есімше + тәуелдік жалғауы + көмектес септік жалғауы).",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests both the syntactic classification of the subordinate clause and the morphological breakdown of its predicate, with highly plausible and well-structured distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:42:48.601228+00:00",
+  "generation_attempts": 1
+}

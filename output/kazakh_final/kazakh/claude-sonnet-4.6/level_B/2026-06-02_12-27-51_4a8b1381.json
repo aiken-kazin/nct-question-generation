@@ -1,0 +1,140 @@
+{
+  "id": "4a8b1381-3607-4e3e-9d32-9c884afbe23c",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысында фразеологизм эвфемизм қызметін атқарып тұр?\n\n«Ол кісі биыл көз жұмды» дегенде «қайтыс болды» мағынасы берілген.",
+  "options": [
+    {
+      "label": "A",
+      "text": "«Көз жұмды» тіркесі — өлім ұғымын жұмсартып жеткізетін фразеологизм-эвфемизм"
+    },
+    {
+      "label": "B",
+      "text": "«Көз жұмды» тіркесі — кәсіби лексикаға жататын термин"
+    },
+    {
+      "label": "C",
+      "text": "«Көз жұмды» тіркесі — тілде жаңа пайда болған неологизм"
+    },
+    {
+      "label": "D",
+      "text": "«Көз жұмды» тіркесі — аймақтық қолданысқа тән диалектизм"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Эвфемизм — қатаң, ауыр немесе тыйым салынған ұғымды жұмсақ, сыпайы түрде білдіретін сөз немесе тіркес. «Көз жұмды» фразеологизмі «қайтыс болды» деген тікелей мағынаны жеткізбей, оны жұмсартып, эвфемистік мағынада қолданылады. Сондықтан бұл тіркес бір мезгілде фразеологизм де, эвфемизм де болып табылады. \n\nB нұсқасы қате: термин — белгілі бір ғылым, өнер немесе кәсіп саласындағы арнаулы ұғымды білдіретін сөз; «көз жұмды» тіркесі кәсіби лексикаға жатпайды. \n\nC нұсқасы қате: неологизм — тілде жаңа пайда болған сөз немесе тіркес; «көз жұмды» — ертеден келе жатқан орнықты фразеологизм, жаңа сөз емес. \n\nD нұсқасы қате: диалектизм — белгілі бір аймақта ғана қолданылатын сөз; «көз жұмды» тіркесі барлық қазақ тіліне ортақ, аймақтық шектеуі жоқ.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 6.45,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The expression \"көз жұмды\" literally means \"closed (his/her) eyes,\" but as a fixed phraseological unit in Kazakh it means \"died\" / \"passed away.\" Since it softens the direct and harsh meaning of death (\"өлді\") and expresses it more politely, it functions as a euphemism. It is not professional terminology, not a neologism, and not a dialectism.\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks which sentence contains a phraseological unit (фразеологизм) functioning as a euphemism (эвфемизм).\n\nAnalysis:\n- The phrase 'көз жұмды' literally means 'closed eyes' but idiomatically means 'died/passed away.'\n- A euphemism is a mild or indirect expression substituted for one that might be considered too harsh or blunt. Using 'көз жұмды' instead of directly saying 'өлді' (died) s\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the function of the phrase 'көз жұмды' (literally 'closed eyes') in the sentence 'Ол кісі биыл көз жұмды' (That person passed away this year). In Kazakh linguistics, a euphemism (эвфемизм) is a figure of speech used to replace a harsh, unpleasant, or taboo concept (like death) with a milder, more polite expression. The phrase 'көз жұмды' is a well-established phraseol",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 8.167,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 4.333,
+      "kazakh_language_quality": 6.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 6.45,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: “көз жұмды” is a phraseological euphemism for death. However, the item is much too easy for level B because the stem already gives the meaning and the distractors are trivially eliminable for a practicing teacher. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-explained; 'көз жұмды' is indeed a phraseological euphemism. However, the distractors (термин, неологизм, диалектизм) are too easily eliminated — no teacher would confuse a common idiom for a neologism or dialectism — making this closer to level A than B. The question essentially tests recall of definitions rather than analysis in context. | [google/gemini-3.1-pro-preview] The question stem contains a critical logical error: it asks 'In which of the following sentences...' but the options are not sentences, they are metalinguistic descriptions of a single phrase.",
+    "improvement_suggestions": "[openai/gpt-5.5] Revise the stem to ask learners to identify the euphemistic phraseologism within several real sentence options, not to choose a meta-description. Remove the explanatory clue “қайтыс болды мағынасы берілген” and create more plausible distractors involving other phraseologisms, dysphemisms, taboos, or neutral synonyms. | [anthropic/claude-sonnet-4.6] To raise difficulty to genuine B level, replace the obvious distractors with more nuanced alternatives — e.g., 'метафора', 'перифраз', or 'табу сөз' — which require deeper analysis to distinguish from эвфемизм. Also consider embedding the phrase in a more complex sentence or asking the student to identify which of several phrases functions as a euphemism, requiring comparative analysis. | [google/gemini-3.1-pro-preview] Rewrite the stem to match the options, e.g., '«Ол кісі биыл көз жұмды» сөйлеміндегі «көз жұмды» тіркесіне дұрыс берілген сипаттаманы табыңыз.' Additionally, increase the difficulty to match Level B by requiring deeper contextual analysis rather than basic definition recall.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The expression \"көз жұмды\" literally means \"closed (his/her) eyes,\" but as a fixed phraseological unit in Kazakh it means \"died\" / \"passed away.\" Since it softens the direct and harsh meaning of death (\"өлді\") and expresses it more politely, it functions as a euphemism. It is not professional terminology, not a neologism, and not a dialectism.\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks which sentence contains a phraseological unit (фразеологизм) functioning as a euphemism (эвфемизм).\n\nAnalysis:\n- The phrase 'көз жұмды' literally means 'closed eyes' but idiomatically means 'died/passed away.'\n- A euphemism is a mild or indirect expression substituted for one that might be considered too harsh or blunt. Using 'көз жұмды' instead of directly saying 'өлді' (died) s\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the function of the phrase 'көз жұмды' (literally 'closed eyes') in the sentence 'Ол кісі биыл көз жұмды' (That person passed away this year). In Kazakh linguistics, a euphemism (эвфемизм) is a figure of speech used to replace a harsh, unpleasant, or taboo concept (like death) with a milder, more polite expression. The phrase 'көз жұмды' is a well-established phraseol",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 8.167,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 4.333,
+        "kazakh_language_quality": 6.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.45,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: “көз жұмды” is a phraseological euphemism for death. However, the item is much too easy for level B because the stem already gives the meaning and the distractors are trivially eliminable for a practicing teacher. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-explained; 'көз жұмды' is indeed a phraseological euphemism. However, the distractors (термин, неологизм, диалектизм) are too easily eliminated — no teacher would confuse a common idiom for a neologism or dialectism — making this closer to level A than B. The question essentially tests recall of definitions rather than analysis in context. | [google/gemini-3.1-pro-preview] The question stem contains a critical logical error: it asks 'In which of the following sentences...' but the options are not sentences, they are metalinguistic descriptions of a single phrase.",
+      "improvement_suggestions": "[openai/gpt-5.5] Revise the stem to ask learners to identify the euphemistic phraseologism within several real sentence options, not to choose a meta-description. Remove the explanatory clue “қайтыс болды мағынасы берілген” and create more plausible distractors involving other phraseologisms, dysphemisms, taboos, or neutral synonyms. | [anthropic/claude-sonnet-4.6] To raise difficulty to genuine B level, replace the obvious distractors with more nuanced alternatives — e.g., 'метафора', 'перифраз', or 'табу сөз' — which require deeper analysis to distinguish from эвфемизм. Also consider embedding the phrase in a more complex sentence or asking the student to identify which of several phrases functions as a euphemism, requiring comparative analysis. | [google/gemini-3.1-pro-preview] Rewrite the stem to match the options, e.g., '«Ол кісі биыл көз жұмды» сөйлеміндегі «көз жұмды» тіркесіне дұрыс берілген сипаттаманы табыңыз.' Additionally, increase the difficulty to match Level B by requiring deeper contextual analysis rather than basic definition recall.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The expression \"көз жұмды\" literally means \"closed (his/her) eyes,\" but as a fixed phraseological unit in Kazakh it means \"died\" / \"passed away.\" Since it softens the direct and harsh meaning of death (\"өлді\") and expresses it more politely, it functions as a euphemism. It is not professional terminology, not a neologism, and not a dialectism.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.5,
+            "distractor_quality": 4.0,
+            "difficulty_alignment": 3.0,
+            "kazakh_language_quality": 6.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.55,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: “көз жұмды” is a phraseological euphemism for death. However, the item is much too easy for level B because the stem already gives the meaning and the distractors are trivially eliminable for a practicing teacher.",
+          "improvement_suggestions": "Revise the stem to ask learners to identify the euphemistic phraseologism within several real sentence options, not to choose a meta-description. Remove the explanatory clue “қайтыс болды мағынасы берілген” and create more plausible distractors involving other phraseologisms, dysphemisms, taboos, or neutral synonyms.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence contains a phraseological unit (фразеологизм) functioning as a euphemism (эвфемизм).\n\nAnalysis:\n- The phrase 'көз жұмды' literally means 'closed eyes' but idiomatically means 'died/passed away.'\n- A euphemism is a mild or indirect expression substituted for one that might be considered too harsh or blunt. Using 'көз жұмды' instead of directly saying 'өлді' (died) softens the concept of death.\n- This makes 'көз жұмды' a phraseological unit (fixed idiomatic expression) that serves as a euphemism for death.\n\nEvaluating options:\nA) 'Көз жұмды' is a phraseological euphemism that softens the concept of death — CORRECT. This accurately describes the function of the phrase.\nB) Professional/technical terminology — INCORRECT. This is not a professional term.\nC) Neologism (newly coined word) — INCORRECT. This is an established idiom, not a new word.\nD) Dialectism (regional usage) — INCORRECT. This is a standard Kazakh idiom used across the language, not regionally restricted.\n\nTherefore, option A is correct.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.5,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-explained; 'көз жұмды' is indeed a phraseological euphemism. However, the distractors (термин, неологизм, диалектизм) are too easily eliminated — no teacher would confuse a common idiom for a neologism or dialectism — making this closer to level A than B. The question essentially tests recall of definitions rather than analysis in context.",
+          "improvement_suggestions": "To raise difficulty to genuine B level, replace the obvious distractors with more nuanced alternatives — e.g., 'метафора', 'перифраз', or 'табу сөз' — which require deeper analysis to distinguish from эвфемизм. Also consider embedding the phrase in a more complex sentence or asking the student to identify which of several phrases functions as a euphemism, requiring comparative analysis.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the function of the phrase 'көз жұмды' (literally 'closed eyes') in the sentence 'Ол кісі биыл көз жұмды' (That person passed away this year). In Kazakh linguistics, a euphemism (эвфемизм) is a figure of speech used to replace a harsh, unpleasant, or taboo concept (like death) with a milder, more polite expression. The phrase 'көз жұмды' is a well-established phraseologism that serves exactly this purpose, softening the direct meaning of 'өлді' or 'қайтыс болды' (died). Option A correctly identifies 'көз жұмды' as a phraseologism-euphemism used to soften the concept of death. Options B, C, and D incorrectly classify it as a professional term, a neologism, and a dialectism, respectively.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 5.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 4.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 5.3,
+          "pass_fail": false,
+          "comments": "The question stem contains a critical logical error: it asks 'In which of the following sentences...' but the options are not sentences, they are metalinguistic descriptions of a single phrase.",
+          "improvement_suggestions": "Rewrite the stem to match the options, e.g., '«Ол кісі биыл көз жұмды» сөйлеміндегі «көз жұмды» тіркесіне дұрыс берілген сипаттаманы табыңыз.' Additionally, increase the difficulty to match Level B by requiring deeper contextual analysis rather than basic definition recall.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:27:51.961533+00:00",
+  "generation_attempts": 1
+}

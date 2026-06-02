@@ -1,0 +1,628 @@
+{
+  "id": "419836513bf14660ad21d85cde65e568",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T13:06:08.133006+00:00",
+  "passage": "Махамбет Өтемісұлы — қазақ әдебиетінің тарихында ерекше орын алатын ақын-жауынгер. Оның өлеңдері тек сөз өнерінің ғана емес, халықтың азаттық аңсарының да айнасы болып табылады. Махамбет Исатай Тайманұлының қасында жүріп, патша өкіметіне қарсы 1836–1838 жылдардағы көтерілісте белсене қатысты. Ақынның «Соғыс», «Мен», «Тарлан» сияқты туындылары күрес пен ерлікке, бостандыққа деген шексіз құштарлықты суреттейді. Оның лирикасында табиғат бейнелері батырлық рухпен астасып кетеді: дүбірлеген дала, найзағайдай жарқылдаған қылыш, қанатын кере ұшқан қыран — бәрі де ақынның ішкі жан дүниесін, өртенген жүрегін аңғартады. Махамбет өлеңдерінің тілі ерекше қуатты, бейнелі; оның жырлары тыңдаушыны жорыққа шақырғандай серпін береді. Ақын 1846 жылы қаза тапты, бірақ оның жырлары ұрпақтан ұрпаққа жетіп, халықтың жадында мәңгі сақталды.",
+  "questions": [
+    {
+      "question_text": "Мәтіннің негізгі тақырыбы қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Қазақ даласының табиғатын суреттеу"
+        },
+        {
+          "label": "B",
+          "text": "Махамбет Өтемісұлының ақындық ерлігі мен азаттық рухы"
+        },
+        {
+          "label": "C",
+          "text": "1836–1838 жылдардағы көтерілістің тарихи себептері"
+        },
+        {
+          "label": "D",
+          "text": "Исатай Тайманұлының өмірбаяны"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Мәтін Махамбет Өтемісұлының ақындық шығармашылығы мен оның азаттық рухын жырлаған ақын-жауынгер екенін баяндайды. Бұл — негізгі тақырып. А нұсқасы қате, себебі табиғат бейнелері тек ақынның рухын аңғарту үшін қолданылған. С нұсқасы тарихи себептерге ғана тоқталады, ал мәтін оларды толық қарастырмайды. D нұсқасы Исатай туралы емес, Махамбет туралы.",
+      "critic_score": 8.7,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 8.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The text is an informational literary-critical passage about Makhambet Otemisuly. It identifies him as a poet-warrior, says his poems reflect the people's desire for freedom, mentions his participation with Isatay in the 1836–1838 uprising, and emphasizes that works such as “Соғыс”, “Мен”, and “Тарлан” express struggle, heroism, and a strong longing for liberty. Although the text includes nature i\n\n[anthropic/claude-sonnet-4.6] answered B: The text is a literary-biographical passage about Makhambet Utemisov. Let's analyze each option against the text's main theme:\n\nA) 'Describing the nature of the Kazakh steppe' — While nature imagery (thundering steppe, lightning-like sword, soaring eagle) appears in the text, it is used as a literary device to illustrate Makhambet's inner world and heroic spirit, not as the main subject.\n\nB) 'Makh\n\n[google/gemini-3.1-pro-preview] answered B: The text focuses on Makhambet Utemisuly, highlighting his dual role as a poet and a warrior. It discusses how his poetry reflects the people's yearning for freedom, his participation in the 1836-1838 uprising, the heroic and rebellious themes in his works ('Sogys', 'Men', 'Tarlan'), and the powerful, mobilizing language of his verses. Option A is incorrect because nature is only mentioned as a sty",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is clearly correct and uniquely supported by the passage. However, the item is a fairly straightforward main-idea question and is somewhat easy for level B; one distractor is also trivially eliminable. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously B, well-supported by the text and explanation. Distractors are plausible but D (Isatay's biography) is fairly easy to eliminate since Isatay is barely mentioned. The question leans slightly toward level A (main idea identification) rather than true level B analysis, though the nature-imagery distractor (A) does require some analytical discernment. | [google/gemini-3.1-pro-preview] The question is a well-constructed reading comprehension item. The distractors are effectively drawn from details within the text, requiring the reader to distinguish between supporting details and the main theme.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, rephrase the question to require deeper analysis — e.g., ask about the author's rhetorical purpose in using nature imagery, or ask which stylistic feature best characterizes Makhambet's poetic language. This would demand genuine text analysis rather than straightforward main-idea retrieval. Also consider strengthening distractor D by making it more tempting (e.g., referencing a specific biographical detail about Isatay that appears in the text). | [google/gemini-3.1-pro-preview] In the text, correct the grammatical error: change 'көтерілісте белсене қатысты' to 'көтеріліске белсене қатысты' (the verb 'қатысу' requires the dative case).",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is an informational literary-critical passage about Makhambet Otemisuly. It identifies him as a poet-warrior, says his poems reflect the people's desire for freedom, mentions his participation with Isatay in the 1836–1838 uprising, and emphasizes that works such as “Соғыс”, “Мен”, and “Тарлан” express struggle, heroism, and a strong longing for liberty. Although the text includes nature images and a historical reference, these are used to explain Makhambet’s poetic power and freedom-loving spirit, not as the main focus. Therefore the main topic is Makhambet Otemisuly’s poetic heroism and spirit of liberation.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.3,
+              "pass_fail": true,
+              "comments": "The keyed answer is clearly correct and uniquely supported by the passage. However, the item is a fairly straightforward main-idea question and is somewhat easy for level B; one distractor is also trivially eliminable.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is a literary-biographical passage about Makhambet Utemisov. Let's analyze each option against the text's main theme:\n\nA) 'Describing the nature of the Kazakh steppe' — While nature imagery (thundering steppe, lightning-like sword, soaring eagle) appears in the text, it is used as a literary device to illustrate Makhambet's inner world and heroic spirit, not as the main subject.\n\nB) 'Makhambet Utemisov's poetic heroism and spirit of freedom' — The text opens by calling him a 'poet-warrior' (ақын-жауынгер), discusses how his poems reflect the people's longing for freedom (азаттық аңсары), mentions his participation in the 1836–1838 uprising, describes works like 'Soghys', 'Men', 'Tarlan' as depicting struggle and freedom, and notes his powerful, vivid poetic language. The closing sentence emphasizes his poems living on forever. The entire text centers on Makhambet as a poet whose work embodies heroism and the spirit of freedom.\n\nC) 'Historical causes of the 1836–1838 uprising' — The uprising is mentioned only briefly as context for Makhambet's participation; the text does not analyze its historical causes.\n\nD) 'Biography of Isatay Taimanuly' — Isatay is mentioned only once as someone Makhambet fought alongside; the text is not about Isatay's biography.\n\nTherefore, the main theme of the text is clearly option B: Makhambet Utemisov's poetic heroism and spirit of freedom.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously B, well-supported by the text and explanation. Distractors are plausible but D (Isatay's biography) is fairly easy to eliminate since Isatay is barely mentioned. The question leans slightly toward level A (main idea identification) rather than true level B analysis, though the nature-imagery distractor (A) does require some analytical discernment.",
+              "improvement_suggestions": "To better align with level B difficulty, rephrase the question to require deeper analysis — e.g., ask about the author's rhetorical purpose in using nature imagery, or ask which stylistic feature best characterizes Makhambet's poetic language. This would demand genuine text analysis rather than straightforward main-idea retrieval. Also consider strengthening distractor D by making it more tempting (e.g., referencing a specific biographical detail about Isatay that appears in the text).",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text focuses on Makhambet Utemisuly, highlighting his dual role as a poet and a warrior. It discusses how his poetry reflects the people's yearning for freedom, his participation in the 1836-1838 uprising, the heroic and rebellious themes in his works ('Sogys', 'Men', 'Tarlan'), and the powerful, mobilizing language of his verses. Option A is incorrect because nature is only mentioned as a stylistic element in his poetry, not the main topic. Option C is incorrect because the text does not discuss the historical causes of the uprising, only Makhambet's participation in it. Option D is incorrect because Isatay Taymanuly is only briefly mentioned as Makhambet's companion, and the text is not his biography. Option B perfectly captures the central theme: Makhambet Utemisuly's poetic heroism and his spirit of freedom.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.6,
+              "pass_fail": true,
+              "comments": "The question is a well-constructed reading comprehension item. The distractors are effectively drawn from details within the text, requiring the reader to distinguish between supporting details and the main theme.",
+              "improvement_suggestions": "In the text, correct the grammatical error: change 'көтерілісте белсене қатысты' to 'көтеріліске белсене қатысты' (the verb 'қатысу' requires the dative case).",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтінде «найзағайдай жарқылдаған қылыш» деген тіркес қандай көркемдік тәсіл арқылы жасалған?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Метафора"
+        },
+        {
+          "label": "B",
+          "text": "Эпитет"
+        },
+        {
+          "label": "C",
+          "text": "Теңеу"
+        },
+        {
+          "label": "D",
+          "text": "Қайталау"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "'Найзағайдай жарқылдаған қылыш' тіркесінде қылыш найзағайға «дай» жұрнағы арқылы ұқсатылған, яғни бұл теңеу (салыстыру). Метафора болу үшін ұқсату шылауынсыз тікелей алмастыру керек. Эпитет — бейнелі анықтауыш, бірақ мұнда ұқсату бар. Қайталау — сөздің немесе тіркестің қайталануы, бұнда жоқ.",
+      "critic_score": 9.283,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The phrase “найзағайдай жарқылдаған қылыш” means “a sword flashing like lightning.” In Kazakh, the comparative suffix “-дай/-дей” is a typical marker of a simile (теңеу), showing that one object is compared to another. Here the sword is compared to lightning in its brightness/flashing quality. Therefore, the artistic device is a simile, not metaphor, epithet, or repetition.\n\n[anthropic/claude-sonnet-4.6] answered C: The phrase 'найзағайдай жарқылдаған қылыш' (a sword flashing like lightning) uses the Kazakh suffix '-дай' which is the standard comparative/simile marker in Kazakh (equivalent to 'like' or 'as'). This construction explicitly compares the sword to lightning using the simile marker '-дай', making it a 'теңеу' (simile/comparison). \n\nLet's check the other options:\n- Метафора (Metaphor): A metaphor ma\n\n[google/gemini-3.1-pro-preview] answered C: The phrase 'найзағайдай жарқылдаған қылыш' translates to 'a sword flashing like lightning'. The word 'найзағайдай' contains the suffix '-дай', which is the standard morphological marker for a simile (теңеу) in the Kazakh language. A simile explicitly compares one thing to another using words or suffixes equivalent to 'like' or 'as' (such as -дай/-дей, сияқты, секілді). Therefore, the literary devi",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.283,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct: the suffix “-дай” clearly signals a simile. However, the item is quite easy for level B because it only requires recognizing an explicit formal marker in one phrase, not deeper text analysis. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the '-дай' suffix unambiguously marks a simile (теңеу), the correct answer is C, and the explanation is accurate. All distractors represent plausible misconceptions — метафора is a common confusion with теңеу, эпитет could be confused due to the descriptive nature of the phrase, and қайталау is a legitimate literary device students sometimes misapply. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of literary devices in context. The distractors are plausible and the language is excellent.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase “найзағайдай жарқылдаған қылыш” means “a sword flashing like lightning.” In Kazakh, the comparative suffix “-дай/-дей” is a typical marker of a simile (теңеу), showing that one object is compared to another. Here the sword is compared to lightning in its brightness/flashing quality. Therefore, the artistic device is a simile, not metaphor, epithet, or repetition.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.6,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct: the suffix “-дай” clearly signals a simile. However, the item is quite easy for level B because it only requires recognizing an explicit formal marker in one phrase, not deeper text analysis.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase 'найзағайдай жарқылдаған қылыш' (a sword flashing like lightning) uses the Kazakh suffix '-дай' which is the standard comparative/simile marker in Kazakh (equivalent to 'like' or 'as'). This construction explicitly compares the sword to lightning using the simile marker '-дай', making it a 'теңеу' (simile/comparison). \n\nLet's check the other options:\n- Метафора (Metaphor): A metaphor makes an implicit comparison without using a comparative marker. Here the marker '-дай' is explicit, so it's not a metaphor.\n- Эпитет (Epithet): An epithet is a descriptive adjective or phrase expressing a quality. While 'жарқылдаған' could be seen as descriptive, the whole construction with '-дай' is a simile.\n- Теңеу (Simile): The '-дай' suffix explicitly signals a comparison/simile — 'like lightning' (найзағайдай = like lightning). This is the correct identification.\n- Қайталау (Repetition): There is no repetition of words or phrases here.\n\nTherefore, the answer is C) Теңеу (Simile).",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.25,
+              "pass_fail": true,
+              "comments": "The question is well-constructed: the '-дай' suffix unambiguously marks a simile (теңеу), the correct answer is C, and the explanation is accurate. All distractors represent plausible misconceptions — метафора is a common confusion with теңеу, эпитет could be confused due to the descriptive nature of the phrase, and қайталау is a legitimate literary device students sometimes misapply.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase 'найзағайдай жарқылдаған қылыш' translates to 'a sword flashing like lightning'. The word 'найзағайдай' contains the suffix '-дай', which is the standard morphological marker for a simile (теңеу) in the Kazakh language. A simile explicitly compares one thing to another using words or suffixes equivalent to 'like' or 'as' (such as -дай/-дей, сияқты, секілді). Therefore, the literary device used here is 'теңеу' (simile).",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of literary devices in context. The distractors are plausible and the language is excellent.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтін бойынша «азаттық аңсары» деген тіркестің мағынасы қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Жауды жеңуге деген кек"
+        },
+        {
+          "label": "B",
+          "text": "Еркіндікке, бостандыққа деген тілек-ұмтылыс"
+        },
+        {
+          "label": "C",
+          "text": "Туған жерге деген сағыныш"
+        },
+        {
+          "label": "D",
+          "text": "Ақындық шабытқа деген құштарлық"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Мәтінде «халықтың азаттық аңсары» тіркесі «бостандыққа деген шексіз құштарлықпен» қатар қолданылған, бұл азаттық аңсарының еркіндікке ұмтылыс екенін дәлелдейді. А нұсқасы — кек сезімі, бірақ мәтінде бұл мағына берілмеген. С нұсқасы — сағыныш, ал D нұсқасы — шабыт туралы, екеуі де мәнмәтінге сәйкес келмейді.",
+      "critic_score": 8.867,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The text describes Makhambet's poems as reflecting not only literary artistry but also the people's 'azattyq ansary' ('азаттық аңсары'). In Kazakh, 'азаттық' means freedom/liberation, and 'аңсар' means longing, aspiration, or deep desire. The surrounding context also mentions struggle, heroism, and 'бостандыққа деген шексіз құштарлық' (boundless passion for freedom), confirming the meaning. Theref\n\n[anthropic/claude-sonnet-4.6] answered B: The phrase 'азаттық аңсары' consists of two words: 'азаттық' meaning 'freedom/liberty' and 'аңсар' meaning 'longing/yearning/aspiration'. Together, 'азаттық аңсары' literally means 'longing/yearning for freedom/liberty'. The text itself confirms this interpretation by later stating that Makhambet's works depict 'бостандыққа деген шексіз құштарлықты' (boundless aspiration for freedom), which direct\n\n[google/gemini-3.1-pro-preview] answered B: The phrase 'азаттық аңсары' consists of two words: 'азаттық', which means 'freedom' or 'liberty' (synonymous with 'еркіндік' and 'бостандық'), and 'аңсар', which means 'desire', 'yearning', or 'aspiration' (synonymous with 'тілек', 'ұмтылыс', 'аңсау'). In the context of the text, it refers to the people's deep desire and aspiration for freedom. Looking at the given options, Option B ('Еркіндікке, ",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.867,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: the phrase clearly means an aspiration or longing for freedom. However, the item is easier than a true level-B teacher-certification question because it mainly tests direct lexical understanding rather than meaningful text analysis. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously B, well-supported by the text's own parallel phrasing ('бостандыққа деген шексіз құштарлықты'). The Kazakh is natural and idiomatic. However, the question leans slightly toward level A (recall/comprehension) since the answer is nearly explicitly stated in the text, making it easier than a true level-B item. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible and the language is natural and correct.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, rephrase the question to require inference or comparison rather than near-direct retrieval — e.g., ask how 'азаттық аңсары' is manifested in the imagery of the poem, or compare it with another concept in the text. Also consider making distractor A ('кек') slightly more tempting by tying it more explicitly to the uprising context.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Makhambet's poems as reflecting not only literary artistry but also the people's 'azattyq ansary' ('азаттық аңсары'). In Kazakh, 'азаттық' means freedom/liberation, and 'аңсар' means longing, aspiration, or deep desire. The surrounding context also mentions struggle, heroism, and 'бостандыққа деген шексіз құштарлық' (boundless passion for freedom), confirming the meaning. Therefore, the phrase means a wish or aspiration for freedom and liberty.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: the phrase clearly means an aspiration or longing for freedom. However, the item is easier than a true level-B teacher-certification question because it mainly tests direct lexical understanding rather than meaningful text analysis.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase 'азаттық аңсары' consists of two words: 'азаттық' meaning 'freedom/liberty' and 'аңсар' meaning 'longing/yearning/aspiration'. Together, 'азаттық аңсары' literally means 'longing/yearning for freedom/liberty'. The text itself confirms this interpretation by later stating that Makhambet's works depict 'бостандыққа деген шексіз құштарлықты' (boundless aspiration for freedom), which directly parallels the phrase in question. Option B — 'Еркіндікке, бостандыққа деген тілек-ұмтылыс' (wish and striving for freedom/liberty) — matches this meaning exactly. Option A refers to revenge against the enemy, Option C refers to longing for the homeland, and Option D refers to longing for poetic inspiration — none of these capture the meaning of 'азаттық аңсары'.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.4,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously B, well-supported by the text's own parallel phrasing ('бостандыққа деген шексіз құштарлықты'). The Kazakh is natural and idiomatic. However, the question leans slightly toward level A (recall/comprehension) since the answer is nearly explicitly stated in the text, making it easier than a true level-B item.",
+              "improvement_suggestions": "To better align with level B difficulty, rephrase the question to require inference or comparison rather than near-direct retrieval — e.g., ask how 'азаттық аңсары' is manifested in the imagery of the poem, or compare it with another concept in the text. Also consider making distractor A ('кек') slightly more tempting by tying it more explicitly to the uprising context.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase 'азаттық аңсары' consists of two words: 'азаттық', which means 'freedom' or 'liberty' (synonymous with 'еркіндік' and 'бостандық'), and 'аңсар', which means 'desire', 'yearning', or 'aspiration' (synonymous with 'тілек', 'ұмтылыс', 'аңсау'). In the context of the text, it refers to the people's deep desire and aspiration for freedom. Looking at the given options, Option B ('Еркіндікке, бостандыққа деген тілек-ұмтылыс') perfectly captures this meaning, translating to 'desire and aspiration for freedom and liberty'.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible and the language is natural and correct.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтін бойынша Махамбеттің шығармашылығына деген авторлық көзқарас қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ақынның саяси қызметін сынайды"
+        },
+        {
+          "label": "B",
+          "text": "Ақынды тарихи тұлға ретінде ғана сипаттайды"
+        },
+        {
+          "label": "C",
+          "text": "Ақынның жырларын ұлттық рухтың мәңгі мұрасы ретінде бағалайды"
+        },
+        {
+          "label": "D",
+          "text": "Ақынның шығармалары ескірген деп санайды"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтінде «оның жырлары ұрпақтан ұрпаққа жетіп, халықтың жадында мәңгі сақталды» деп жазылған, бұл автордың Махамбет шығармашылығын ұлттық мұра ретінде жоғары бағалайтынын көрсетеді. А нұсқасы қате, мәтінде сын жоқ. В нұсқасы жартылай дұрыс, бірақ автор тек тарихи сипат бермей, эстетикалық баға да береді. D нұсқасы мәтінге қайшы.",
+      "critic_score": 8.567,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.667,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The text presents Makhambet Otemisuly in a strongly positive evaluative tone: he is called a special figure in Kazakh literary history, a poet-warrior, and his poetry is described as a mirror of the people's desire for freedom. His works are said to depict struggle, heroism, and an unlimited longing for liberty. The language of his poems is described as powerful and figurative, giving listeners en\n\n[anthropic/claude-sonnet-4.6] answered C: The text is a laudatory, admiring description of Makhambet Utemisov. Key evidence of the author's attitude:\n1. The text calls him 'ақын-жауынгер' (poet-warrior) who holds a special place in Kazakh literature.\n2. His poems are described as a mirror of the people's longing for freedom.\n3. His language is described as 'ерекше қуатты, бейнелі' (especially powerful and figurative).\n4. The final sentenc\n\n[google/gemini-3.1-pro-preview] answered C: The text describes Makhambet Utemisuly as a poet-warrior who holds a special place in the history of Kazakh literature. The author states that his poems reflect the people's desire for freedom ('халықтың азаттық аңсарының да айнасы') and that his works have been passed down from generation to generation, remaining forever in the memory of the people ('ұрпақтан ұрпаққа жетіп, халықтың жадында мәңгі",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.667,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.567,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is clearly correct and uniquely supported by the text. However, the item is closer to simple reading comprehension than medium-level teacher-certification analysis, and two distractors are very easy to eliminate. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (C) strongly supported by the text's final sentence and overall laudatory tone. Kazakh is natural and idiomatic. The main weakness is that distractors A and D are too easily eliminated (the text contains no criticism and explicitly praises the works as timeless), making the question slightly easier than a true B-level item. | [google/gemini-3.1-pro-preview] The question is a well-constructed reading comprehension item that accurately tests the ability to determine the author's perspective. The distractors are logical and the language is natural.",
+          "improvement_suggestions": "[openai/gpt-5.5] Make the distractors more plausible by tying them to real textual evidence, and raise the cognitive level by asking candidates to justify the authorial attitude through specific stylistic markers or compare evaluative and factual statements. Also verify the accuracy of cited poem titles such as «Соғыс», «Мен», «Тарлан». | [anthropic/claude-sonnet-4.6] To strengthen distractor quality and raise difficulty to a solid B level, revise A and D to be more plausible: e.g., A could suggest the author values Makhambet primarily as a political figure rather than a literary one (a genuine interpretive trap), and D could suggest the author views his works as historically significant but stylistically limited. This would force test-takers to engage more carefully with the text's aesthetic evaluations versus its historical claims.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text presents Makhambet Otemisuly in a strongly positive evaluative tone: he is called a special figure in Kazakh literary history, a poet-warrior, and his poetry is described as a mirror of the people's desire for freedom. His works are said to depict struggle, heroism, and an unlimited longing for liberty. The language of his poems is described as powerful and figurative, giving listeners energy as if calling them to a campaign. The final sentence says his poems have reached generations and are preserved forever in the people's memory. Therefore, the author evaluates Makhambet's poetry as an eternal national spiritual/literary heritage. This matches option C, not A or D, which are negative, and not B, because the text goes beyond merely describing him as a historical figure.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The keyed answer C is clearly correct and uniquely supported by the text. However, the item is closer to simple reading comprehension than medium-level teacher-certification analysis, and two distractors are very easy to eliminate.",
+              "improvement_suggestions": "Make the distractors more plausible by tying them to real textual evidence, and raise the cognitive level by asking candidates to justify the authorial attitude through specific stylistic markers or compare evaluative and factual statements. Also verify the accuracy of cited poem titles such as «Соғыс», «Мен», «Тарлан».",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is a laudatory, admiring description of Makhambet Utemisov. Key evidence of the author's attitude:\n1. The text calls him 'ақын-жауынгер' (poet-warrior) who holds a special place in Kazakh literature.\n2. His poems are described as a mirror of the people's longing for freedom.\n3. His language is described as 'ерекше қуатты, бейнелі' (especially powerful and figurative).\n4. The final sentence states his songs passed from generation to generation and are preserved forever in the people's memory ('халықтың жадында мәңгі сақталды').\n\nAnalyzing the options:\nA) The text does not criticize his political activity — it praises it.\nB) While historical facts are mentioned, the author goes far beyond mere historical description, expressing deep admiration.\nC) The text explicitly states his songs are preserved forever in the people's memory ('мәңгі сақталды'), characterizing them as an eternal heritage of national spirit. This matches perfectly.\nD) The text says the opposite — his works are timeless, not outdated.\n\nThe author's perspective is clearly one of deep admiration, viewing Makhambet's poetry as an eternal national heritage — matching option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a clear correct answer (C) strongly supported by the text's final sentence and overall laudatory tone. Kazakh is natural and idiomatic. The main weakness is that distractors A and D are too easily eliminated (the text contains no criticism and explicitly praises the works as timeless), making the question slightly easier than a true B-level item.",
+              "improvement_suggestions": "To strengthen distractor quality and raise difficulty to a solid B level, revise A and D to be more plausible: e.g., A could suggest the author values Makhambet primarily as a political figure rather than a literary one (a genuine interpretive trap), and D could suggest the author views his works as historically significant but stylistically limited. This would force test-takers to engage more carefully with the text's aesthetic evaluations versus its historical claims.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Makhambet Utemisuly as a poet-warrior who holds a special place in the history of Kazakh literature. The author states that his poems reflect the people's desire for freedom ('халықтың азаттық аңсарының да айнасы') and that his works have been passed down from generation to generation, remaining forever in the memory of the people ('ұрпақтан ұрпаққа жетіп, халықтың жадында мәңгі сақталды'). This clearly shows that the author highly values Makhambet's poetry as an eternal legacy of the national spirit. Option A is incorrect because there is no criticism. Option B is incorrect because he is not described *only* as a historical figure, but extensively as a poet. Option D is incorrect because his works are said to be remembered forever, not outdated. Thus, Option C is the correct answer.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.6,
+              "pass_fail": true,
+              "comments": "The question is a well-constructed reading comprehension item that accurately tests the ability to determine the author's perspective. The distractors are logical and the language is natural.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіннің құрылымдық ерекшелігі қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Мәтін диалог түрінде құрылған"
+        },
+        {
+          "label": "B",
+          "text": "Мәтін ақынның өмірбаяны мен шығармашылық ерекшелігін кезектестіре баяндайды"
+        },
+        {
+          "label": "C",
+          "text": "Мәтін тек хронологиялық оқиғалар тізбегінен тұрады"
+        },
+        {
+          "label": "D",
+          "text": "Мәтін ақынның өлеңдерінен үзінді келтіру арқылы талданады"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Мәтінде Махамбеттің өмірбаяндық деректері (туған жылы, көтеріліске қатысуы, қаза табуы) мен шығармашылық ерекшелігі (жырларының тілі, бейнелілігі, тақырыбы) кезектесіп беріледі. А нұсқасы қате, диалог жоқ. С нұсқасы қате, тек хронология ғана емес, талдау да бар. D нұсқасы қате, мәтінде нақты өлең үзінділері келтірілмеген, тек туынды атаулары аталған.",
+      "critic_score": 8.733,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 7.333,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The text is an expository/analytical biographical passage about Makhambet Өтемісұлы. It first identifies him as a poet-warrior and explains the significance of his poetry. Then it gives a biographical-historical fact: his participation with Isatay Taymanұлы in the 1836–1838 uprising. After that, it discusses his works such as “Соғыс”, “Мен”, “Тарлан” and describes their themes, imagery, and langua\n\n[anthropic/claude-sonnet-4.6] answered B: Let me analyze the structural features of the text about Makhambet Ötemisuly.\n\nThe text contains:\n1. An introduction identifying Makhambet as a poet-warrior with a special place in Kazakh literature (characterization)\n2. A statement about his poems reflecting the people's longing for freedom (thematic/creative feature)\n3. Historical biographical information: his participation alongside Isatai Taim\n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the structure of the provided text about Makhambet Utemisov. The text begins by introducing him as a poet-warrior and mentions the significance of his poetry (creative feature). Then, it states his participation in the 1836-1838 uprising alongside Isatay Taimanov (biographical fact). Following this, it lists some of his works ('Sogys', 'Men', 'Tarlan') and analyzes the themes, imager",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 9.667,
+            "distractor_quality": 7.333,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.733,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer B is defensible and uniquely correct: the passage combines biographical facts with discussion of poetic themes and style. However, several distractors are very easy to eliminate, and the task is closer to straightforward reading comprehension than a robust medium-level text-structure analysis item. | [anthropic/claude-sonnet-4.6] The correct answer B is clearly defensible and well-explained; the text genuinely alternates biographical facts with literary analysis. Kazakh is natural and idiomatic. Distractors A and D are too easily eliminated (no dialogue, no poem excerpts), making C the only real distractor. | [google/gemini-3.1-pro-preview] The question is well-structured, accurately tests text analysis skills, and has clear, unambiguous options.",
+          "improvement_suggestions": "[openai/gpt-5.5] Make distractors more plausible by contrasting specific structural models, such as thematic description, biographical chronology with commentary, or analytical portrait. Also fix the explanation: it mentions a birth year, but the text does not provide one. | [anthropic/claude-sonnet-4.6] Strengthen distractors A and D to be more plausible — for example, replace A with something like 'Мәтін тек ақынның шығармашылығын талдауға арналған' and D with 'Мәтін ақынның өлеңдерін хронологиялық тәртіппен талдайды', so that all four options require careful reading to eliminate. This would raise difficulty alignment closer to a true B level.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is an expository/analytical biographical passage about Makhambet Өтемісұлы. It first identifies him as a poet-warrior and explains the significance of his poetry. Then it gives a biographical-historical fact: his participation with Isatay Taymanұлы in the 1836–1838 uprising. After that, it discusses his works such as “Соғыс”, “Мен”, “Тарлан” and describes their themes, imagery, and language. Finally, it returns to a biographical fact, his death in 1846, and mentions the lasting legacy of his poetry. Therefore, the structure combines and alternates life facts with analysis of creative features. There is no dialogue, it is not only a chronological list, and it does not analyze by quoting excerpts from poems.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 9.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The keyed answer B is defensible and uniquely correct: the passage combines biographical facts with discussion of poetic themes and style. However, several distractors are very easy to eliminate, and the task is closer to straightforward reading comprehension than a robust medium-level text-structure analysis item.",
+              "improvement_suggestions": "Make distractors more plausible by contrasting specific structural models, such as thematic description, biographical chronology with commentary, or analytical portrait. Also fix the explanation: it mentions a birth year, but the text does not provide one.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let me analyze the structural features of the text about Makhambet Ötemisuly.\n\nThe text contains:\n1. An introduction identifying Makhambet as a poet-warrior with a special place in Kazakh literature (characterization)\n2. A statement about his poems reflecting the people's longing for freedom (thematic/creative feature)\n3. Historical biographical information: his participation alongside Isatai Taimanuly in the 1836-1838 uprising against tsarist rule (biographical/historical fact)\n4. Mention of specific works: 'Soghys', 'Men', 'Tarlan' and their themes (creative/literary analysis)\n5. Description of his lyrical style — nature imagery intertwined with heroic spirit (literary analysis)\n6. Commentary on the power and imagery of his language (stylistic analysis)\n7. His death in 1846 and legacy (biographical conclusion)\n\nNow evaluating each option:\nA) 'The text is structured as a dialogue' — Clearly false; there is no dialogue in the text.\nB) 'The text alternates between the poet's biography and creative characteristics' — This accurately describes the structure: biographical facts (participation in uprising, death in 1846) are interwoven with literary/creative analysis (works, themes, style, language).\nC) 'The text consists only of a chronological sequence of events' — Partially true that there is some chronology, but the text also includes extensive literary analysis and stylistic commentary, so 'only' chronological events is incorrect.\nD) 'The text is analyzed by citing excerpts from the poet's poems' — False; no actual poem excerpts are quoted in the text.\n\nOption B is the most accurate description of the structural feature: the text alternates/interweaves biographical information with analysis of creative characteristics.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.3,
+              "pass_fail": true,
+              "comments": "The correct answer B is clearly defensible and well-explained; the text genuinely alternates biographical facts with literary analysis. Kazakh is natural and idiomatic. Distractors A and D are too easily eliminated (no dialogue, no poem excerpts), making C the only real distractor.",
+              "improvement_suggestions": "Strengthen distractors A and D to be more plausible — for example, replace A with something like 'Мәтін тек ақынның шығармашылығын талдауға арналған' and D with 'Мәтін ақынның өлеңдерін хронологиялық тәртіппен талдайды', so that all four options require careful reading to eliminate. This would raise difficulty alignment closer to a true B level.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let's analyze the structure of the provided text about Makhambet Utemisov. The text begins by introducing him as a poet-warrior and mentions the significance of his poetry (creative feature). Then, it states his participation in the 1836-1838 uprising alongside Isatay Taimanov (biographical fact). Following this, it lists some of his works ('Sogys', 'Men', 'Tarlan') and analyzes the themes, imagery, and language of his lyrics (creative features). Finally, it concludes with the year of his death, 1846, and his lasting legacy (biographical fact). \n\nEvaluating the options:\nA) Incorrect. There is no dialogue in the text.\nB) Correct. The text alternates between narrating biographical facts (the uprising, his death) and describing his creative features (themes of his poems, lyrical imagery, language power).\nC) Incorrect. The text does not consist solely of chronological events; it contains significant literary analysis of his works.\nD) Incorrect. The text mentions the titles of his poems and describes their imagery, but it does not provide direct excerpts (quotes) from the poems themselves.\n\nThus, option B accurately describes the structural feature of the text.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured, accurately tests text analysis skills, and has clear, unambiguous options.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

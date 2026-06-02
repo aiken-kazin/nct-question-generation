@@ -1,0 +1,140 @@
+{
+  "id": "e04871b3-36c7-489a-924f-ff7be374c70c",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Төл сөзді төлеу сөзге дұрыс айналдырған нұсқаны анықтаңыз.\nАйгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Айгүл інісіне мен бұл кітапты саған ертең әкеліп беремін деп айтты."
+    },
+    {
+      "label": "B",
+      "text": "Айгүл інісіне өзінің бұл кітапты ертең әкеліп беремін деп айтты."
+    },
+    {
+      "label": "C",
+      "text": "Айгүл інісіне өзінің бұл кітапты ертең әкеліп беретінін айтты."
+    },
+    {
+      "label": "D",
+      "text": "Айгүл інісінен өзінің бұл кітапты ертең әкеліп беретінін сұрады."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Төл сөзді төлеу сөзге айналдырғанда тырнақша мен төл сөзге тән интонация алынып, жіктеу есімдіктері автор сөзіне қарай өзгереді: «мен» сөзі Айгүлге қатысты «өзінің» түрінде беріледі. Баяндауыш та тиянақты тұлғадан есімше негізді құрылымға ауысады: «әкеліп беремін» → «әкеліп беретінін айтты». Сондықтан дұрыс жауап – C. A нұсқасында төл сөздің «мен», «саған», «беремін» тұлғалары өзгеріссіз қалған. B нұсқасында есімдік ішінара өзгергенімен, баяндауыш «беремін» тұлғасында қалып қойған. D нұсқасында хабарлау мәні бұзылып, «деді» сөзі «сұрады» болып қате өзгертілген.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The direct speech is: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді. In converting төл сөз to төлеу сөз, the speaker's first-person pronoun 'мен' must change according to the reporting clause: it becomes 'өзінің' referring to Айгүл. The second-person pronoun 'саған' is no longer kept as direct address; the addressee is expressed by 'інісіне'. The finite first-person verb 'әке\n\n[anthropic/claude-sonnet-4.6] answered C: We need to convert direct speech (төл сөз) to indirect speech (төлеу сөз) correctly in Kazakh.\n\nOriginal direct speech: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді.\n\nRules for converting direct speech to indirect speech in Kazakh:\n1. The first-person pronoun 'мен' (I) should be replaced by 'өзінің' (her own / herself) when the subject of the reporting verb is the same perso\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, several grammatical changes must occur. The original sentence is: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді. \n1. The first-person pronoun 'Мен' changes to the reflexive pronoun 'өзінің' (her own).\n2. The second-person pronoun 'саған' is omitted because the recipient 'інісіне' is already mention",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible; the explanation accurately identifies the required pronoun and predicate changes in reported speech. The item is clear and linguistically sound, though the task is on the easier side of level B and one distractor is very easy to eliminate. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear and unambiguous correct answer (C) that requires proper application of indirect speech rules in Kazakh — pronoun shift, verb nominalization, and appropriate reporting verb. Each distractor targets a specific, identifiable error: A keeps all direct speech forms unchanged, B partially converts but leaves the verb unconverted, and D changes the speech act type entirely. Language is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question perfectly tests the conversion of direct speech to indirect speech in Kazakh. The distractors are well-crafted and represent common student mistakes.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The direct speech is: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді. In converting төл сөз to төлеу сөз, the speaker's first-person pronoun 'мен' must change according to the reporting clause: it becomes 'өзінің' referring to Айгүл. The second-person pronoun 'саған' is no longer kept as direct address; the addressee is expressed by 'інісіне'. The finite first-person verb 'әке\n\n[anthropic/claude-sonnet-4.6] answered C: We need to convert direct speech (төл сөз) to indirect speech (төлеу сөз) correctly in Kazakh.\n\nOriginal direct speech: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді.\n\nRules for converting direct speech to indirect speech in Kazakh:\n1. The first-person pronoun 'мен' (I) should be replaced by 'өзінің' (her own / herself) when the subject of the reporting verb is the same perso\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, several grammatical changes must occur. The original sentence is: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді. \n1. The first-person pronoun 'Мен' changes to the reflexive pronoun 'өзінің' (her own).\n2. The second-person pronoun 'саған' is omitted because the recipient 'інісіне' is already mention",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible; the explanation accurately identifies the required pronoun and predicate changes in reported speech. The item is clear and linguistically sound, though the task is on the easier side of level B and one distractor is very easy to eliminate. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear and unambiguous correct answer (C) that requires proper application of indirect speech rules in Kazakh — pronoun shift, verb nominalization, and appropriate reporting verb. Each distractor targets a specific, identifiable error: A keeps all direct speech forms unchanged, B partially converts but leaves the verb unconverted, and D changes the speech act type entirely. Language is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question perfectly tests the conversion of direct speech to indirect speech in Kazakh. The distractors are well-crafted and represent common student mistakes.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The direct speech is: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді. In converting төл сөз to төлеу сөз, the speaker's first-person pronoun 'мен' must change according to the reporting clause: it becomes 'өзінің' referring to Айгүл. The second-person pronoun 'саған' is no longer kept as direct address; the addressee is expressed by 'інісіне'. The finite first-person verb 'әкеліп беремін' should be changed into an indirect reported form with a participial/nominalized construction: 'әкеліп беретінін айтты' = 'said that she would bring/give'. Option A incorrectly keeps the direct pronouns and finite form. Option B incorrectly combines 'өзінің' with the first-person verb 'беремін'. Option D changes the meaning from 'said' to 'asked' and uses the wrong case 'інісінен'. Therefore the correct indirect speech version is option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and uniquely defensible; the explanation accurately identifies the required pronoun and predicate changes in reported speech. The item is clear and linguistically sound, though the task is on the easier side of level B and one distractor is very easy to eliminate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to convert direct speech (төл сөз) to indirect speech (төлеу сөз) correctly in Kazakh.\n\nOriginal direct speech: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді.\n\nRules for converting direct speech to indirect speech in Kazakh:\n1. The first-person pronoun 'мен' (I) should be replaced by 'өзінің' (her own / herself) when the subject of the reporting verb is the same person.\n2. The second-person pronoun 'саған' (to you) should be replaced by the appropriate third-person form referring to the addressee — in this case, since Aigul is speaking to her younger brother (інісіне), 'саған' becomes implicit or is dropped (the dative 'інісіне' already establishes the addressee).\n3. The verb form in direct speech 'әкеліп беремін' (I will bring) should change to the indirect/reported form 'әкеліп беретінін' (that she will bring) — using the -тін + possessive + case suffix to form the reported clause.\n4. The reporting verb changes from 'деді' to 'айтты' or remains 'деді', but the complement verb must take the nominalized form with accusative case (-тінін).\n\nNow let's analyze each option:\n\nA) Айгүл інісіне мен бұл кітапты саған ертең әкеліп беремін деп айтты.\n- This keeps 'мен' and 'саған' unchanged, which is incorrect for proper indirect speech. The pronouns should be shifted.\n\nB) Айгүл інісіне өзінің бұл кітапты ертең әкеліп беремін деп айтты.\n- 'мен' is replaced by 'өзінің' (correct), 'саған' is dropped (acceptable since the recipient is already indicated by 'інісіне'), but the verb 'әкеліп беремін' is still in first-person present tense form, which is not properly converted to indirect speech form. The verb should be nominalized.\n\nC) Айгүл інісіне өзінің бұл кітапты ертең әкеліп беретінін айтты.\n- 'мен' → 'өзінің' (correct pronoun shift)\n- 'саған' is dropped (acceptable, as the recipient 'інісіне' is already stated)\n- 'әкеліп беремін' → 'әкеліп беретінін' (correct verb nominalization with future/habitual -тін + 3rd person possessive + accusative -ін)\n- 'деді' → 'айтты' (correct reporting verb)\n- This is the properly formed indirect speech.\n\nD) Айгүл інісінен өзінің бұл кітапты ертең әкеліп беретінін сұрады.\n- Changes 'інісіне' to 'інісінен' and 'айтты' to 'сұрады' (asked), which changes the meaning entirely — it implies Aigul asked her brother, not told him. This is incorrect.\n\nTherefore, option C is the correct conversion of direct speech to indirect speech.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, with a clear and unambiguous correct answer (C) that requires proper application of indirect speech rules in Kazakh — pronoun shift, verb nominalization, and appropriate reporting verb. Each distractor targets a specific, identifiable error: A keeps all direct speech forms unchanged, B partially converts but leaves the verb unconverted, and D changes the speech act type entirely. Language is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, several grammatical changes must occur. The original sentence is: Айгүл інісіне: «Мен бұл кітапты саған ертең әкеліп беремін», – деді. \n1. The first-person pronoun 'Мен' changes to the reflexive pronoun 'өзінің' (her own).\n2. The second-person pronoun 'саған' is omitted because the recipient 'інісіне' is already mentioned in the main clause.\n3. The finite verb 'әкеліп беремін' (1st person singular) transforms into a verbal noun/participle with a possessive and accusative ending: 'әкеліп беретінін' (that she will bring).\n4. The reporting verb 'деді' changes to 'айтты'.\nLooking at the options:\nA keeps the 1st person pronouns and verb, which is incorrect.\nB changes the pronoun to 'өзінің' but leaves the verb in the 1st person ('беремін'), which is grammatically mismatched.\nC correctly applies all the transformations: 'Айгүл інісіне өзінің бұл кітапты ертең әкеліп беретінін айтты.'\nD incorrectly changes the reporting verb to 'сұрады' (asked) and the case of the recipient to 'інісінен' (ablative). \nThus, C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question perfectly tests the conversion of direct speech to indirect speech in Kazakh. The distractors are well-crafted and represent common student mistakes.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:27:59.723024+00:00",
+  "generation_attempts": 1
+}

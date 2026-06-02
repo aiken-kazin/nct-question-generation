@@ -1,0 +1,140 @@
+{
+  "id": "b776a615-809b-4b1e-adc8-c7fbff998875",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Орфографиялық норма мен орфоэпиялық айтылымды салыстырып, дыбыс ықпалын ажыратыңыз. Қай нұсқада үш мысалдың да жазылуы әдеби емлеге сай беріліп, жақшадағы айтылымы және ықпал түрі дұрыс көрсетілген?",
+  "options": [
+    {
+      "label": "A",
+      "text": "көзқарас – [көзғарас], кейінді ықпал; ақ жауын – [ағ жауын], ілгерінді ықпал; Досжан – [Дошшан], тоғыспалы ықпал"
+    },
+    {
+      "label": "B",
+      "text": "көзқарас – [көзғарас], ілгерінді ықпал; ақ жауын – [ағ жауын], кейінді ықпал; Досжан – [Дошшан], тоғыспалы ықпал"
+    },
+    {
+      "label": "C",
+      "text": "көзқарас – [көзқарас], ықпал жоқ; ақ жауын – [ағ жауын], кейінді ықпал; Досжан – [Дозжан], ілгерінді ықпал"
+    },
+    {
+      "label": "D",
+      "text": "көзғарас – [көзғарас], ілгерінді ықпал; ағ жауын – [ағ жауын], кейінді ықпал; Дошжан – [Дошшан], тоғыспалы ықпал"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап – B. «Көзқарас» сөзінде алдыңғы ұяң з дыбысының әсерінен кейінгі қ дыбысы айтылымда ғ болып ұяңдайды: [көзғарас]. Бұл – ілгерінді ықпал, өйткені алдыңғы дыбыс кейінгі дыбысқа әсер етіп тұр. «Ақ жауын» тіркесінде кейінгі ж дыбысының әсерінен алдыңғы қ дыбысы ғ болып айтылады: [ағ жауын]. Бұл – кейінді ықпал. «Досжан» сөзінде с пен ж дыбыстары өзара әсерлесіп, айтылымда шш түрінде беріледі: [Дошшан]. Бұл – тоғыспалы ықпал. A нұсқасында алғашқы екі мысалдың ықпал түрлері ауыстырылып берілген. C нұсқасында «көзқарас» сөзіндегі ілгерінді ықпал ескерілмеген, ал «Досжан» сөзінің айтылымы мен ықпал түрі қате көрсетілген. D нұсқасында айтылымдағы өзгеріс орфографиялық жазуға көшірілген: «көзғарас», «ағ жауын», «Дошжан» түрінде жазу әдеби емле нормасына сай емес.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Check each example against Kazakh orthographic spelling and orthoepic assimilation. 1) \"көзқарас\" is the literary spelling of the compound көз + қарас. In pronunciation, the voiced consonant \"з\" influences the following voiceless \"қ\", so \"қ\" is voiced to \"ғ\": [көзғарас]. Since the earlier sound affects the later sound, this is progressive assimilation, Kazakh: ілгерінді ықпал. 2) \"ақ жауын\" is the\n\n[anthropic/claude-sonnet-4.6] answered B: We need to analyze three words/phrases for: (1) correct literary spelling (orthographic norm), (2) correct phonetic transcription (ortoepic pronunciation), and (3) correct type of sound assimilation (ықпал).\n\nThe three examples are:\n1. көзқарас (outlook/view)\n2. ақ жауын (white rain/hail)\n3. Досжан (proper name)\n\n**Example 1: көзқарас**\n- Literary spelling: көзқарас (with қ) — this is the correct \n\n[google/gemini-3.1-pro-preview] answered B: To find the correct option, we need to analyze the spelling, pronunciation, and type of assimilation (дыбыс ықпалы) for each example.\n\n1. 'көзқарас': The correct spelling is 'көзқарас'. In pronunciation, the voiced consonant 'з' influences the following voiceless consonant 'қ', changing it to the voiced 'ғ'. Thus, it is pronounced as [көзғарас]. Since the preceding sound influences the following s",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer B is correct: all three spellings, orthoepic forms, and assimilation types are accurately matched. The item is clear and well-formed, though the cognitive demand is closer to upper-intermediate rule application than a genuinely hard Level C analysis task. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and genuinely tests high-level phonetic analysis. Option B is unambiguously correct, and each distractor targets a specific identifiable error: A swaps the assimilation types for the first two examples, C incorrectly claims no assimilation in 'көзқарас' and gives a wrong transcription for 'Досжан', and D incorrectly transfers phonetic changes into the orthographic spelling. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It effectively tests orthography, orthoepy, and assimilation types simultaneously, which perfectly aligns with the requested C (Hard) difficulty level.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Check each example against Kazakh orthographic spelling and orthoepic assimilation. 1) \"көзқарас\" is the literary spelling of the compound көз + қарас. In pronunciation, the voiced consonant \"з\" influences the following voiceless \"қ\", so \"қ\" is voiced to \"ғ\": [көзғарас]. Since the earlier sound affects the later sound, this is progressive assimilation, Kazakh: ілгерінді ықпал. 2) \"ақ жауын\" is the\n\n[anthropic/claude-sonnet-4.6] answered B: We need to analyze three words/phrases for: (1) correct literary spelling (orthographic norm), (2) correct phonetic transcription (ortoepic pronunciation), and (3) correct type of sound assimilation (ықпал).\n\nThe three examples are:\n1. көзқарас (outlook/view)\n2. ақ жауын (white rain/hail)\n3. Досжан (proper name)\n\n**Example 1: көзқарас**\n- Literary spelling: көзқарас (with қ) — this is the correct \n\n[google/gemini-3.1-pro-preview] answered B: To find the correct option, we need to analyze the spelling, pronunciation, and type of assimilation (дыбыс ықпалы) for each example.\n\n1. 'көзқарас': The correct spelling is 'көзқарас'. In pronunciation, the voiced consonant 'з' influences the following voiceless consonant 'қ', changing it to the voiced 'ғ'. Thus, it is pronounced as [көзғарас]. Since the preceding sound influences the following s",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer B is correct: all three spellings, orthoepic forms, and assimilation types are accurately matched. The item is clear and well-formed, though the cognitive demand is closer to upper-intermediate rule application than a genuinely hard Level C analysis task. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and genuinely tests high-level phonetic analysis. Option B is unambiguously correct, and each distractor targets a specific identifiable error: A swaps the assimilation types for the first two examples, C incorrectly claims no assimilation in 'көзқарас' and gives a wrong transcription for 'Досжан', and D incorrectly transfers phonetic changes into the orthographic spelling. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It effectively tests orthography, orthoepy, and assimilation types simultaneously, which perfectly aligns with the requested C (Hard) difficulty level.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Check each example against Kazakh orthographic spelling and orthoepic assimilation. 1) \"көзқарас\" is the literary spelling of the compound көз + қарас. In pronunciation, the voiced consonant \"з\" influences the following voiceless \"қ\", so \"қ\" is voiced to \"ғ\": [көзғарас]. Since the earlier sound affects the later sound, this is progressive assimilation, Kazakh: ілгерінді ықпал. 2) \"ақ жауын\" is the literary spelling. In pronunciation, the following voiced \"ж\" influences the preceding voiceless \"қ\", so \"қ\" is voiced to \"ғ\": [ағ жауын]. Since the later sound affects the earlier sound, this is regressive assimilation, Kazakh: кейінді ықпал. 3) \"Досжан\" is the literary spelling. At the boundary с + ж, both sounds change in pronunciation: с shifts toward ш and ж is devoiced/assimilated, giving [Дошшан]. Because both adjacent sounds affect each other, this is reciprocal assimilation, Kazakh: тоғыспалы ықпал. Only option B gives all three correct literary spellings, pronunciations, and influence types.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer B is correct: all three spellings, orthoepic forms, and assimilation types are accurately matched. The item is clear and well-formed, though the cognitive demand is closer to upper-intermediate rule application than a genuinely hard Level C analysis task.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to analyze three words/phrases for: (1) correct literary spelling (orthographic norm), (2) correct phonetic transcription (ortoepic pronunciation), and (3) correct type of sound assimilation (ықпал).\n\nThe three examples are:\n1. көзқарас (outlook/view)\n2. ақ жауын (white rain/hail)\n3. Досжан (proper name)\n\n**Example 1: көзқарас**\n- Literary spelling: көзқарас (with қ) — this is the correct orthographic form\n- Pronunciation: The voiced з before voiceless қ — in Kazakh, the voiced consonant з is influenced by the following voiceless қ... Actually, let's think carefully. In Kazakh assimilation:\n  - 'Ілгерінді ықпал' (progressive/forward assimilation): preceding sound influences the following sound\n  - 'Кейінді ықпал' (regressive/backward assimilation): following sound influences the preceding sound\n  - 'Тоғыспалы ықпал' (reciprocal/mutual assimilation): both sounds influence each other\n\n- In көзқарас: з (voiced) + қ (voiceless). The қ causes з to... actually in Kazakh phonetics, the voiceless қ after з: the з becomes voiced influence on қ making it ғ. So [көзғарас]. Here the preceding з (voiced) influences the following қ → ғ. This is 'ілгерінді ықпал' (progressive assimilation — preceding sound affects following).\n\nWait, let me reconsider. In Kazakh:\n- Ілгерінді (progressive): the preceding sound influences the following one\n- Кейінді (regressive): the following sound influences the preceding one\n\nIn көзқарас → [көзғарас]: з is voiced, and it causes қ to become voiced ғ. The preceding sound (з) influences the following sound (қ→ғ). This is ілгерінді ықпал (progressive assimilation).\n\nThe literary spelling is көзқарас (not көзғарас).\n\n**Example 2: ақ жауын**\n- Literary spelling: ақ жауын (two separate words)\n- Pronunciation: ақ + жауын. The қ (voiceless) before ж (voiced): the following voiced ж influences the preceding қ → ғ, giving [ағ жауын]. The following sound (ж, voiced) influences the preceding sound (қ→ғ). This is кейінді ықпал (regressive assimilation).\n\nThe literary spelling is ақ жауын (not ағ жауын).\n\n**Example 3: Досжан**\n- Literary spelling: Досжан\n- Pronunciation: с + ж → both sounds influence each other: с (voiceless dental fricative) + ж (voiced palatal affricate/fricative) → [шш] or [жж]? In Kazakh, с+ж → [шш] through mutual assimilation (тоғыспалы ықпал). So [Дошшан].\n- Тоғыспалы ықпал (reciprocal/mutual assimilation): both с and ж change to ш.\n\nThe literary spelling is Досжан (not Дошжан or Дошшан).\n\n**Now checking the options:**\n\nOption A: \n- көзқарас – [көзғарас], кейінді ықпал ❌ (should be ілгерінді)\n- ақ жауын – [ағ жауын], ілгерінді ықпал ❌ (should be кейінді)\n- Досжан – [Дошшан], тоғыспалы ықпал ✓\nSpellings: көзқарас ✓, ақ жауын ✓, Досжан ✓\nBut ықпал types are wrong for first two.\n\nOption B:\n- көзқарас – [көзғарас], ілгерінді ықпал ✓\n- ақ жауын – [ағ жауын], кейінді ықпал ✓\n- Досжан – [Дошшан], тоғыспалы ықпал ✓\nSpellings: көзқарас ✓, ақ жауын ✓, Досжан ✓\nAll correct!\n\nOption C:\n- көзқарас – [көзқарас], ықпал жоқ ❌ (there IS assimilation)\n- ақ жауын – [ағ жауын], кейінді ықпал ✓\n- Досжан – [Дозжан], ілгерінді ықпал ❌\n\nOption D:\n- көзғарас – spelling is wrong (should be көзқарас) ❌\n- ағ жауын – spelling is wrong (should be ақ жауын) ❌\n- Дошжан – spelling is wrong (should be Досжан) ❌\n\nOption B has all three with correct literary spellings, correct phonetic transcriptions, and correct assimilation types.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and genuinely tests high-level phonetic analysis. Option B is unambiguously correct, and each distractor targets a specific identifiable error: A swaps the assimilation types for the first two examples, C incorrectly claims no assimilation in 'көзқарас' and gives a wrong transcription for 'Досжан', and D incorrectly transfers phonetic changes into the orthographic spelling.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the correct option, we need to analyze the spelling, pronunciation, and type of assimilation (дыбыс ықпалы) for each example.\n\n1. 'көзқарас': The correct spelling is 'көзқарас'. In pronunciation, the voiced consonant 'з' influences the following voiceless consonant 'қ', changing it to the voiced 'ғ'. Thus, it is pronounced as [көзғарас]. Since the preceding sound influences the following sound, this is progressive assimilation (ілгерінді ықпал).\n\n2. 'ақ жауын': The correct spelling is 'ақ жауын'. In pronunciation, the voiced consonant 'ж' influences the preceding voiceless consonant 'қ', changing it to the voiced 'ғ'. Thus, it is pronounced as [ағ жауын]. Since the following sound influences the preceding sound, this is regressive assimilation (кейінді ықпал).\n\n3. 'Досжан': The correct spelling is 'Досжан'. In pronunciation, the adjacent consonants 'с' and 'ж' influence each other, resulting in both being pronounced as 'ш'. Thus, it is pronounced as [Дошшан]. Since both sounds influence each other, this is mutual assimilation (тоғыспалы ықпал).\n\nLooking at the options, Option B correctly identifies the spelling, pronunciation, and assimilation types for all three examples: көзқарас – [көзғарас], ілгерінді ықпал; ақ жауын – [ағ жауын], кейінді ықпал; Досжан – [Дошшан], тоғыспалы ықпал.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It effectively tests orthography, orthoepy, and assimilation types simultaneously, which perfectly aligns with the requested C (Hard) difficulty level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:55:57.555088+00:00",
+  "generation_attempts": 1
+}

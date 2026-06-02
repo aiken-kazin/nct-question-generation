@@ -1,0 +1,140 @@
+{
+  "id": "08345fef-8cae-4698-a46f-085b1c21a41f",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "lexicology_meaning",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Лексикадағы сөз мағынасының ауысу тәсілдерінің бірі – заттар мен құбылыстардың қызметтік (функциялық) ұқсастығына негізделеді. Атаудың осы тәсіл арқылы жаңа мағынаға ие болуын көрсететін қатарды табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Иненің көзі, таудың басы, кітаптың беті"
+    },
+    {
+      "label": "B",
+      "text": "Жүз тұяқ, екі шаңырақ, он бас мал"
+    },
+    {
+      "label": "C",
+      "text": "Оқ, қалам, қалқан"
+    },
+    {
+      "label": "D",
+      "text": "Абайды оқу, үстіне қызыл киді, ауыл көшті"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап: C. Заттардың материалы мен сыртқы пішіні өзгергенімен, олардың атқаратын қызметінің ұқсастығына қарай бір заттың атауының екінші затқа көшуі ауыспалы мағынаның қызметтік (функциялық) ұқсастық тәсілі деп аталады. Мысалы: «оқ» (бұрын садақтың жебесі, қазір мылтықтың оғы), «қалам» (бұрын жазуға қолданылған қамыс не қауырсын, қазіргі автоқалам), «қалқан» (бұрынғы батырлардың қорғаныс қаруы, қазіргі электр не қорғаныс қалқаны). Дистракторларға келсек: A нұсқасындағы сөздер сыртқы пішін мен орналасу ұқсастығына негізделген метафораға жатады. B нұсқасындағы сөздер бөлшегі арқылы бүтінді атайтын синекдохаға мысал болады. D нұсқасындағы сөздер іргелестік байланысқа (авторы арқылы шығармасын, түсі арқылы киімді, мекені арқылы адамдарды атау) негізделген метонимияға жатады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.017,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The question asks for semantic transfer based on functional similarity: a name is transferred to a new object because the new object performs the same function as the old one. Option A contains metaphorical transfers based on shape or spatial similarity: 'иненің көзі' (eye of a needle), 'таудың басы' (head/top of a mountain), 'кітаптың беті' (face/page of a book). Option B contains synecdoche-like\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about one of the methods of semantic transfer (meaning shift) in lexicology — specifically the one based on FUNCTIONAL similarity between objects and phenomena. This is the method called 'functional transfer' or in Kazakh linguistics it is associated with metonymy based on function (қызметтік ұқсастық — functional similarity).\n\nLet me analyze each option:\n\nA) 'Иненің көзі' (eye o\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the row of words where the semantic shift (change of meaning) is based on functional similarity (қызметтік/функциялық ұқсастық). Let's analyze the options:\n\nA) 'Иненің көзі' (eye of a needle), 'таудың басы' (head of a mountain), 'кітаптың беті' (face/page of a book) are examples of metaphor based on shape, appearance, or positional similarity (пішініне, орналасуына қа",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.833,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 7.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.017,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: it reflects semantic transfer by functional similarity, while the other options represent metaphor, synecdoche, and metonymy. The main weakness is difficulty alignment: this is mostly a terminology/application item rather than a genuinely high-level analytical Level C task. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests a nuanced concept in Kazakh lexicology — functional (қызметтік) semantic transfer — which requires distinguishing it from metaphor (shape-based), synecdoche, and contiguity-based metonymy. The correct answer (C) is unambiguous and the explanation is thorough and accurate. Distractors are well-chosen, each representing a distinct and commonly confused semantic transfer type, making elimination non-trivial. | [google/gemini-3.1-pro-preview] The question is highly accurate and well-constructed. The distractors effectively cover other types of semantic shifts (shape-based metaphor, synecdoche, metonymy), making it a rigorous test of lexicological knowledge.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The question asks for semantic transfer based on functional similarity: a name is transferred to a new object because the new object performs the same function as the old one. Option A contains metaphorical transfers based on shape or spatial similarity: 'иненің көзі' (eye of a needle), 'таудың басы' (head/top of a mountain), 'кітаптың беті' (face/page of a book). Option B contains synecdoche-like\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about one of the methods of semantic transfer (meaning shift) in lexicology — specifically the one based on FUNCTIONAL similarity between objects and phenomena. This is the method called 'functional transfer' or in Kazakh linguistics it is associated with metonymy based on function (қызметтік ұқсастық — functional similarity).\n\nLet me analyze each option:\n\nA) 'Иненің көзі' (eye o\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the row of words where the semantic shift (change of meaning) is based on functional similarity (қызметтік/функциялық ұқсастық). Let's analyze the options:\n\nA) 'Иненің көзі' (eye of a needle), 'таудың басы' (head of a mountain), 'кітаптың беті' (face/page of a book) are examples of metaphor based on shape, appearance, or positional similarity (пішініне, орналасуына қа",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.833,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.017,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: it reflects semantic transfer by functional similarity, while the other options represent metaphor, synecdoche, and metonymy. The main weakness is difficulty alignment: this is mostly a terminology/application item rather than a genuinely high-level analytical Level C task. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests a nuanced concept in Kazakh lexicology — functional (қызметтік) semantic transfer — which requires distinguishing it from metaphor (shape-based), synecdoche, and contiguity-based metonymy. The correct answer (C) is unambiguous and the explanation is thorough and accurate. Distractors are well-chosen, each representing a distinct and commonly confused semantic transfer type, making elimination non-trivial. | [google/gemini-3.1-pro-preview] The question is highly accurate and well-constructed. The distractors effectively cover other types of semantic shifts (shape-based metaphor, synecdoche, metonymy), making it a rigorous test of lexicological knowledge.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for semantic transfer based on functional similarity: a name is transferred to a new object because the new object performs the same function as the old one. Option A contains metaphorical transfers based on shape or spatial similarity: 'иненің көзі' (eye of a needle), 'таудың басы' (head/top of a mountain), 'кітаптың беті' (face/page of a book). Option B contains synecdoche-like uses where a part or associated item denotes the whole or a unit: 'тұяқ', 'шаңырақ', 'бас мал'. Option D contains metonymy: 'Абайды оқу' means reading Abai's works, 'ауыл көшті' means the people of the village moved, etc. Option C contains words such as 'оқ', 'қалам', 'қалқан', whose names can extend to newer objects with the same function: for example, 'оқ' from an arrow to a bullet/projectile, 'қалам' from an older writing instrument to a modern pen, and 'қалқан' to protective things. Therefore, the row showing transfer by functional similarity is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.5,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.25,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and uniquely defensible: it reflects semantic transfer by functional similarity, while the other options represent metaphor, synecdoche, and metonymy. The main weakness is difficulty alignment: this is mostly a terminology/application item rather than a genuinely high-level analytical Level C task.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about one of the methods of semantic transfer (meaning shift) in lexicology — specifically the one based on FUNCTIONAL similarity between objects and phenomena. This is the method called 'functional transfer' or in Kazakh linguistics it is associated with metonymy based on function (қызметтік ұқсастық — functional similarity).\n\nLet me analyze each option:\n\nA) 'Иненің көзі' (eye of a needle), 'таудың басы' (head/top of a mountain), 'кітаптың беті' (face/page of a book) — These are examples of metaphor based on SHAPE or POSITIONAL similarity (not functional). 'Көз' (eye) → hole of needle by shape similarity; 'бас' (head) → top of mountain by positional similarity; 'бет' (face) → page of book by positional/surface similarity. These are metaphors based on external/shape resemblance.\n\nB) 'Жүз тұяқ' (hundred hooves = hundred animals), 'екі шаңырақ' (two smoke-holes = two households), 'он бас мал' (ten head of cattle) — These are examples of SYNECDOCHE (part for whole), a type of metonymy. Not functional similarity.\n\nC) 'Оқ' (bullet/arrow), 'қалам' (pen/reed), 'қалқан' (shield) — These words have undergone semantic transfer based on FUNCTIONAL similarity. 'Оқ' originally meant 'arrow' but now also means 'bullet' because both serve the same function (projectile weapon). 'Қалам' originally meant 'reed pen' but now means any writing instrument (pen, pencil) because they share the same function (writing). 'Қалқан' originally meant a traditional shield but now can refer to modern protective devices serving the same function. These are classic examples of functional transfer — new objects receive old names because they perform the same function as the original objects.\n\nD) 'Абайды оқу' (reading Abay = reading Abay's works), 'үстіне қызыл киді' (wore red = wore red clothing), 'ауыл көшті' (the village moved = the people of the village moved) — These are examples of metonymy based on contiguity/association (author for work, color for object, place for people).\n\nTherefore, option C demonstrates semantic transfer based on functional similarity — new objects (bullet, modern pen, modern shield) received names of older objects (arrow, reed pen, traditional shield) because they perform the same function.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and tests a nuanced concept in Kazakh lexicology — functional (қызметтік) semantic transfer — which requires distinguishing it from metaphor (shape-based), synecdoche, and contiguity-based metonymy. The correct answer (C) is unambiguous and the explanation is thorough and accurate. Distractors are well-chosen, each representing a distinct and commonly confused semantic transfer type, making elimination non-trivial.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the row of words where the semantic shift (change of meaning) is based on functional similarity (қызметтік/функциялық ұқсастық). Let's analyze the options:\n\nA) 'Иненің көзі' (eye of a needle), 'таудың басы' (head of a mountain), 'кітаптың беті' (face/page of a book) are examples of metaphor based on shape, appearance, or positional similarity (пішініне, орналасуына қарай ұқсастық).\nB) 'Жүз тұяқ' (a hundred hooves), 'екі шаңырақ' (two shanyraks), 'он бас мал' (ten heads of cattle) are examples of synecdoche (синекдоха), where a part is used to represent the whole.\nD) 'Абайды оқу' (reading Abay [his works]), 'үстіне қызыл киді' (wore red [clothes]), 'ауыл көшті' (the village [people] moved) are examples of metonymy (метонимия), based on logical contiguity or association.\nC) 'Оқ' (originally an arrow, now a bullet - both serve as projectiles), 'қалам' (originally a reed, now a pen - both serve as writing instruments), 'қалқан' (originally a warrior's shield, now any protective barrier/panel - both serve to protect). These words acquired their new meanings because the new objects perform the same function as the old ones. This is the exact definition of semantic shift based on functional similarity (қызметтік ұқсастық).\n\nTherefore, option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is highly accurate and well-constructed. The distractors effectively cover other types of semantic shifts (shape-based metaphor, synecdoche, metonymy), making it a rigorous test of lexicological knowledge.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:11:19.949765+00:00",
+  "generation_attempts": 1
+}

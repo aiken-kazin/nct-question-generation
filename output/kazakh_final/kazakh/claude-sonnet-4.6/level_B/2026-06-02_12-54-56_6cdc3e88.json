@@ -1,0 +1,140 @@
+{
+  "id": "6cdc3e88-e14e-49a1-a82a-39c17ee3e1c0",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдегі сөз тіркестерінің байланысу түрлерін дұрыс анықтаңыз: «Биік таудың етегінде салқын бұлақ ағады».",
+  "options": [
+    {
+      "label": "A",
+      "text": "«биік тау» — қабысу, «таудың етегінде» — матасу, «салқын бұлақ» — қабысу"
+    },
+    {
+      "label": "B",
+      "text": "«биік тау» — меңгеру, «таудың етегінде» — қабысу, «салқын бұлақ» — матасу"
+    },
+    {
+      "label": "C",
+      "text": "«биік тау» — қабысу, «таудың етегінде» — қиысу, «салқын бұлақ» — матасу"
+    },
+    {
+      "label": "D",
+      "text": "«биік тау» — матасу, «таудың етегінде» — меңгеру, «салқын бұлақ» — қабысу"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Сөз тіркесіндегі байланысу түрлерін талдайық: 1) «биік тау» — бағыныңқы сыңар (биік) тәуелдік, септік жалғауларынсыз, тек орын тәртібі мен мағына арқылы байланысқан, яғни қабысу түрі. 2) «таудың етегінде» — «таудың» сөзі ілік септігінде тұрып, «етегінде» деген зат есімге тіркескен; бұл матасу түрінің белгісі — бағыныңқы сыңар ілік септігінде, басыңқы сыңар тәуелдік жалғауында тұрады. Демек, матасу түрі. 3) «салқын бұлақ» — сын есім мен зат есімнің тіркесі, жалғаусыз, тек орын тәртібі арқылы байланысқан — қабысу түрі. Сондықтан А нұсқасы дұрыс. Б нұсқасындағы «биік тау — меңгеру» қате, өйткені меңгеруде бағыныңқы сыңар септік жалғауында тұрады. В нұсқасындағы «таудың етегінде — қиысу» қате, өйткені қиысу тек бастауыш пен баяндауыш арасындағы байланыс түрі. Г нұсқасындағы «биік тау — матасу» қате, себебі матасуда ілік септігі мен тәуелдік жалғауы болуы шарт.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.183,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: In Kazakh syntax, қабысу is an adjoining/juxtaposed phrase without special case agreement, often adjective + noun; матасу is the genitive-possessive construction, where the dependent word is in ілік септік and the head has a possessive suffix; меңгеру is government by a head word requiring a certain case; қиысу is agreement, typically subject-predicate. In the sentence “Биік таудың етегінде салқын\n\n[anthropic/claude-sonnet-4.6] answered A: We need to identify the types of syntactic connections (байланысу түрлері) in the phrases from the sentence 'Биік таудың етегінде салқын бұлақ ағады'.\n\nIn Kazakh syntax, there are three main types of phrase connections:\n1. Қабысу (juxtaposition/adjoining) — when the dependent word connects to the head word without any morphological change, typically adjective + noun (e.g., биік тау — 'биік' is an \n\n[google/gemini-3.1-pro-preview] answered A: To determine the types of syntactic connections (сөз тіркестерінің байланысу түрлері) in the sentence 'Биік таудың етегінде салқын бұлақ ағады', we analyze each phrase:\n\n1. 'биік тау' (high mountain): The dependent word 'биік' (adjective) modifies the principal word 'тау' (noun) directly without any relational suffixes, relying solely on word order. This type of connection is called 'қабысу' (adju",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 9.833,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.183,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation applies the standard Kazakh syntax rules accurately. The item is clear, though slightly easy for level B and some distractors are fairly implausible for certified teachers. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-constructed, and tests genuine syntactic analysis skills at the appropriate B level. All three phrase types (қабысу, матасу, қабысу) are correctly identified in option A, and the distractors represent plausible misconceptions (confusing меңгеру with қабысу, mixing up қиысу, misidentifying матасу). | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the types of syntactic connections in a given context, and provides plausible distractors. It perfectly aligns with the requested difficulty level.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: In Kazakh syntax, қабысу is an adjoining/juxtaposed phrase without special case agreement, often adjective + noun; матасу is the genitive-possessive construction, where the dependent word is in ілік септік and the head has a possessive suffix; меңгеру is government by a head word requiring a certain case; қиысу is agreement, typically subject-predicate. In the sentence “Биік таудың етегінде салқын\n\n[anthropic/claude-sonnet-4.6] answered A: We need to identify the types of syntactic connections (байланысу түрлері) in the phrases from the sentence 'Биік таудың етегінде салқын бұлақ ағады'.\n\nIn Kazakh syntax, there are three main types of phrase connections:\n1. Қабысу (juxtaposition/adjoining) — when the dependent word connects to the head word without any morphological change, typically adjective + noun (e.g., биік тау — 'биік' is an \n\n[google/gemini-3.1-pro-preview] answered A: To determine the types of syntactic connections (сөз тіркестерінің байланысу түрлері) in the sentence 'Биік таудың етегінде салқын бұлақ ағады', we analyze each phrase:\n\n1. 'биік тау' (high mountain): The dependent word 'биік' (adjective) modifies the principal word 'тау' (noun) directly without any relational suffixes, relying solely on word order. This type of connection is called 'қабысу' (adju",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 9.833,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.183,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation applies the standard Kazakh syntax rules accurately. The item is clear, though slightly easy for level B and some distractors are fairly implausible for certified teachers. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-constructed, and tests genuine syntactic analysis skills at the appropriate B level. All three phrase types (қабысу, матасу, қабысу) are correctly identified in option A, and the distractors represent plausible misconceptions (confusing меңгеру with қабысу, mixing up қиысу, misidentifying матасу). | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the types of syntactic connections in a given context, and provides plausible distractors. It perfectly aligns with the requested difficulty level.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, қабысу is an adjoining/juxtaposed phrase without special case agreement, often adjective + noun; матасу is the genitive-possessive construction, where the dependent word is in ілік септік and the head has a possessive suffix; меңгеру is government by a head word requiring a certain case; қиысу is agreement, typically subject-predicate. In the sentence “Биік таудың етегінде салқын бұлақ ағады”: 1) “биік тау” is adjective + noun with no case/possessive agreement between them, so it is қабысу. 2) “таудың етегінде” contains “таудың” in genitive case and “етегі” with a 3rd person possessive suffix, then locative “-нде”; the core relation is genitive + possessive, so it is матасу. 3) “салқын бұлақ” is adjective + noun by adjacency, so it is қабысу. Therefore option A correctly identifies all three.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.5,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.55,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation applies the standard Kazakh syntax rules accurately. The item is clear, though slightly easy for level B and some distractors are fairly implausible for certified teachers.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify the types of syntactic connections (байланысу түрлері) in the phrases from the sentence 'Биік таудың етегінде салқын бұлақ ағады'.\n\nIn Kazakh syntax, there are three main types of phrase connections:\n1. Қабысу (juxtaposition/adjoining) — when the dependent word connects to the head word without any morphological change, typically adjective + noun (e.g., биік тау — 'биік' is an adjective modifying 'тау' with no case ending on the modifier)\n2. Матасу (agreement/coordination) — when the dependent word takes the genitive case (-ның/-нің/-дың/-дің/-тың/-тің) and the head word takes the possessive suffix; e.g., таудың етегінде — 'таудың' (genitive) + 'етегінде' (possessive + locative)\n3. Меңгеру (government/rection) — when the head word governs the dependent word in a specific case (other than genitive-possessive agreement), e.g., verb governing an object in accusative or other cases\n\nNow let's analyze each phrase:\n\n1. 'Биік тау' — 'биік' (tall/high) is an adjective, 'тау' is a noun. The adjective connects to the noun without any morphological marker on the adjective. This is ҚАБЫСУ (adjoining).\n\n2. 'Таудың етегінде' — 'таудың' is in genitive case (-ның), and 'етегінде' has a possessive suffix (-і) plus locative case (-нде). This genitive + possessive construction is МАТАСУ (agreement).\n\n3. 'Салқын бұлақ' — 'салқын' (cool/cold) is an adjective, 'бұлақ' is a noun. Again, adjective + noun without morphological marker on the adjective. This is ҚАБЫСУ (adjoining).\n\nSo the correct identification is:\n- 'биік тау' — қабысу\n- 'таудың етегінде' — матасу\n- 'салқын бұлақ' — қабысу\n\nThis matches Option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-constructed, and tests genuine syntactic analysis skills at the appropriate B level. All three phrase types (қабысу, матасу, қабысу) are correctly identified in option A, and the distractors represent plausible misconceptions (confusing меңгеру with қабысу, mixing up қиысу, misidentifying матасу).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the types of syntactic connections (сөз тіркестерінің байланысу түрлері) in the sentence 'Биік таудың етегінде салқын бұлақ ағады', we analyze each phrase:\n\n1. 'биік тау' (high mountain): The dependent word 'биік' (adjective) modifies the principal word 'тау' (noun) directly without any relational suffixes, relying solely on word order. This type of connection is called 'қабысу' (adjunction).\n\n2. 'таудың етегінде' (at the foot of the mountain): The dependent word 'таудың' is in the genitive case (ілік септігі, -дың), and the principal word 'етегінде' has a possessive suffix (тәуелдік жалғауы, -і). The syntactic connection between a genitive case modifier and a possessively marked head noun is called 'матасу'.\n\n3. 'салқын бұлақ' (cool spring): Similar to the first phrase, the adjective 'салқын' modifies the noun 'бұлақ' directly without any suffixes. This is also 'қабысу'.\n\nMatching this analysis with the given options, Option A correctly identifies all three connections: 'биік тау' — қабысу, 'таудың етегінде' — матасу, 'салқын бұлақ' — қабысу.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurately tests the types of syntactic connections in a given context, and provides plausible distractors. It perfectly aligns with the requested difficulty level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:54:56.555523+00:00",
+  "generation_attempts": 3
+}

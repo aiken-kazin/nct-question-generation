@@ -1,0 +1,140 @@
+{
+  "id": "474e4bf8-d1af-4494-b41d-73cab67f34c7",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Тілдің даму барысында қоғамдық-саяси өзгерістерге байланысты бұрын пассив сөздік қорда болған кейбір көнерген сөздер жаңа мағыналық реңкке ие болып, актив сөздік қорға қайта оралады. Тіл білімінде бұл құбылысты сөздің қайта жаңғыруы деп атайды (олар семантикалық неологизмдер қатарына да жатады).\nБерілген нұсқалардың ішінен тек осы заңдылыққа бағынған, қазіргі таңда қайта жаңғырып, белсенді қолданысқа енген сөздер қатарын анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Болыс, жасауыл, тархан, датқа"
+    },
+    {
+      "label": "B",
+      "text": "Шаһар, уәлаят, аяқ, дария"
+    },
+    {
+      "label": "C",
+      "text": "Әкім, кеден, мәжіліс, құрылтай"
+    },
+    {
+      "label": "D",
+      "text": "Ғаламтор, пернетақта, ғарышкер, бейнебаян"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап: C. «Әкім, кеден, мәжіліс, құрылтай» сөздері – бұрынғы заманда қолданылып, кейін Кеңес үкіметі тұсында пассив қорға өтіп кеткен, ал Тәуелсіздік алғаннан кейін жаңа мағыналық реңкпен (мемлекеттік басқару, заң шығарушы орган, салық мекемесі атаулары ретінде) актив сөздік қорға қайта оралған жаңғырған сөздер.\nA нұсқасындағы сөздер (болыс, жасауыл, тархан, датқа) – тарихи сөздер. Олар атайтын қоғамдық құрылымдар мен лауазымдар қазіргі өмірде жоқ болғандықтан, пассив сөздік қорда қалған.\nB нұсқасындағы сөздер (шаһар, уәлаят, аяқ, дария) – лексикалық архаизмдер. Олардың қазіргі тілімізде белсенді қолданылатын баламалары (қала, облыс, ыдыс, өзен) бар, сондықтан олар қайта жаңғырмаған, көбінесе көркем әдебиетте стильдік мақсатта қолданылады.\nD нұсқасындағы сөздер (ғаламтор, пернетақта, ғарышкер, бейнебаян) – ғылым мен техниканың дамуына байланысты жаңадан жасалған немесе аударылған неологизмдер, олар пассив қордан (тарихи сөздерден) келген жоқ.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.933,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The phenomenon described is lexical revival: words that were formerly archaic or passive, often historical or administrative terms, return to active use because of socio-political change and may acquire a modern institutional meaning. Option A contains mainly historical titles/ranks such as bolys, tarhan, datqa; they remain mostly historical rather than all being active modern administrative vocab\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about words that were previously in the passive vocabulary (archaic/obsolete words) but have returned to active use with new or renewed semantic meaning due to socio-political changes — these are called 'semantic neologisms' or 'revived words' (қайта жаңғырған сөздер) in Kazakh linguistics.\n\nLet's analyze each option:\n\nA) Болыс (bolys), жасауыл (jasauyl), тархан (tarkhan), датқа \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify a group of words that were once considered archaic (passive vocabulary) but have been revived and returned to active use with new semantic shades due to socio-political changes (also known as semantic neologisms or revived words - 'қайта жаңғырған сөздер').\n\nLet's evaluate the options:\n- Option A (Болыс, жасауыл, тархан, датқа): These are historicisms (тарихи сөздер) ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 7.667,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.933,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is defensible and uniquely fits the described phenomenon of revived socio-political vocabulary. However, the task is mostly recognition/classification after the definition is given, so it does not really meet the requested hard Level C cognitive demand. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests a nuanced linguistic concept (қайта жаңғырған сөздер / revived words as semantic neologisms). The correct answer C is clearly defensible, and the explanation is thorough and accurate. Distractors are mostly plausible — A (historicisms that did NOT revive) and D (newly coined neologisms) represent identifiable misconceptions, while B is slightly weaker as a distractor since 'аяқ' is actively used and the group is less coherent. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concept of semantic neologisms (revived words) with well-designed distractors representing other specific lexical categories (historicisms, archaisms, and pure neologisms).",
+    "improvement_suggestions": "[openai/gpt-5.5] To align with Level C, use a short text or historical-language context and require candidates to distinguish revived words from historicisms, archaisms, and new coinages with semantic justification rather than selecting an obvious list. | [anthropic/claude-sonnet-4.6] Option B could be improved by replacing 'аяқ' (which is actively used in modern Kazakh and was never truly archaic) with a clearer lexical archaism to make the distractor more internally consistent. This would strengthen the discriminating power of the item.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The phenomenon described is lexical revival: words that were formerly archaic or passive, often historical or administrative terms, return to active use because of socio-political change and may acquire a modern institutional meaning. Option A contains mainly historical titles/ranks such as bolys, tarhan, datqa; they remain mostly historical rather than all being active modern administrative vocab\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about words that were previously in the passive vocabulary (archaic/obsolete words) but have returned to active use with new or renewed semantic meaning due to socio-political changes — these are called 'semantic neologisms' or 'revived words' (қайта жаңғырған сөздер) in Kazakh linguistics.\n\nLet's analyze each option:\n\nA) Болыс (bolys), жасауыл (jasauyl), тархан (tarkhan), датқа \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify a group of words that were once considered archaic (passive vocabulary) but have been revived and returned to active use with new semantic shades due to socio-political changes (also known as semantic neologisms or revived words - 'қайта жаңғырған сөздер').\n\nLet's evaluate the options:\n- Option A (Болыс, жасауыл, тархан, датқа): These are historicisms (тарихи сөздер) ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 7.667,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.933,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is defensible and uniquely fits the described phenomenon of revived socio-political vocabulary. However, the task is mostly recognition/classification after the definition is given, so it does not really meet the requested hard Level C cognitive demand. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests a nuanced linguistic concept (қайта жаңғырған сөздер / revived words as semantic neologisms). The correct answer C is clearly defensible, and the explanation is thorough and accurate. Distractors are mostly plausible — A (historicisms that did NOT revive) and D (newly coined neologisms) represent identifiable misconceptions, while B is slightly weaker as a distractor since 'аяқ' is actively used and the group is less coherent. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concept of semantic neologisms (revived words) with well-designed distractors representing other specific lexical categories (historicisms, archaisms, and pure neologisms).",
+      "improvement_suggestions": "[openai/gpt-5.5] To align with Level C, use a short text or historical-language context and require candidates to distinguish revived words from historicisms, archaisms, and new coinages with semantic justification rather than selecting an obvious list. | [anthropic/claude-sonnet-4.6] Option B could be improved by replacing 'аяқ' (which is actively used in modern Kazakh and was never truly archaic) with a clearer lexical archaism to make the distractor more internally consistent. This would strengthen the discriminating power of the item.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The phenomenon described is lexical revival: words that were formerly archaic or passive, often historical or administrative terms, return to active use because of socio-political change and may acquire a modern institutional meaning. Option A contains mainly historical titles/ranks such as bolys, tarhan, datqa; they remain mostly historical rather than all being active modern administrative vocabulary. Option B contains archaic/poetic or dialectal words such as shahар, ualayat, daria, and ayaq is not a relevant revived socio-political term. Option D contains newly coined modern neologisms for technology or modern culture, not revived archaic vocabulary. Option C contains әкім, кеден, мәжіліс, құрылтай, which are old Turkic/Arabic-Persian origin administrative-political words that were revived and became active in modern Kazakh usage, especially in state and political contexts. Therefore the correct row is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.9,
+          "pass_fail": true,
+          "comments": "The keyed answer C is defensible and uniquely fits the described phenomenon of revived socio-political vocabulary. However, the task is mostly recognition/classification after the definition is given, so it does not really meet the requested hard Level C cognitive demand.",
+          "improvement_suggestions": "To align with Level C, use a short text or historical-language context and require candidates to distinguish revived words from historicisms, archaisms, and new coinages with semantic justification rather than selecting an obvious list.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about words that were previously in the passive vocabulary (archaic/obsolete words) but have returned to active use with new or renewed semantic meaning due to socio-political changes — these are called 'semantic neologisms' or 'revived words' (қайта жаңғырған сөздер) in Kazakh linguistics.\n\nLet's analyze each option:\n\nA) Болыс (bolys), жасауыл (jasauyl), тархан (tarkhan), датқа (datqa) — These are historical administrative/military titles from the Kazakh Khanate and colonial period. They remain archaic/historical terms and have NOT returned to active modern use. They are still passive vocabulary (historicisms).\n\nB) Шаһар (shahар = city), уәлаят (province), аяқ (cup/bowl — this is actually still in active use), дария (river/sea) — These are mostly Arabic/Persian loanwords. 'Аяқ' is actively used but was never really archaic. 'Шаһар' and 'уәлаят' are somewhat archaic. This group doesn't clearly represent the phenomenon described.\n\nC) Әкім (akim = governor/head of administration), кеден (customs), мәжіліс (parliament/assembly), құрылтай (constituent assembly/congress) — These words were previously archaic/historical terms but have been revived and are now actively used in modern Kazakh socio-political life:\n- Әкім: was an old term for administrator, now the official title for regional governors in Kazakhstan\n- Кеден: customs service — revived in modern administrative use\n- Мәжіліс: the lower house of Kazakhstan's Parliament is officially called 'Мәжіліс'\n- Құрылтай: used for assemblies, congresses (e.g., Қазақ халқының құрылтайы)\n\nAll four words in option C were previously in passive vocabulary but have been revived with active socio-political meaning in independent Kazakhstan.\n\nD) Ғаламтор (internet), пернетақта (keyboard), ғарышкер (cosmonaut), бейнебаян (video) — These are neologisms (new words), but they are newly coined terms (terminological neologisms), not revived archaic words. They were created to name new concepts, not revived from passive vocabulary.\n\nTherefore, option C best represents the phenomenon of words returning from passive to active vocabulary (қайта жаңғырған сөздер / semantic neologisms from archaic words) due to socio-political changes in Kazakhstan.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and tests a nuanced linguistic concept (қайта жаңғырған сөздер / revived words as semantic neologisms). The correct answer C is clearly defensible, and the explanation is thorough and accurate. Distractors are mostly plausible — A (historicisms that did NOT revive) and D (newly coined neologisms) represent identifiable misconceptions, while B is slightly weaker as a distractor since 'аяқ' is actively used and the group is less coherent.",
+          "improvement_suggestions": "Option B could be improved by replacing 'аяқ' (which is actively used in modern Kazakh and was never truly archaic) with a clearer lexical archaism to make the distractor more internally consistent. This would strengthen the discriminating power of the item.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify a group of words that were once considered archaic (passive vocabulary) but have been revived and returned to active use with new semantic shades due to socio-political changes (also known as semantic neologisms or revived words - 'қайта жаңғырған сөздер').\n\nLet's evaluate the options:\n- Option A (Болыс, жасауыл, тархан, датқа): These are historicisms (тарихи сөздер) referring to old administrative or military ranks. They remain in the passive vocabulary and have not been revived for modern active use.\n- Option B (Шаһар, уәлаят, аяқ, дария): These are archaisms (көнерген сөздер) that are mostly used in poetic or historical contexts, not as active modern socio-political terms.\n- Option C (Әкім, кеден, мәжіліс, құрылтай): These words existed in the past (e.g., 'әкім' as a ruler/judge, 'мәжіліс' as a gathering, 'құрылтай' as a traditional assembly, 'кеден' as a toll/tax). After Kazakhstan gained independence, these words were revived to denote modern state and political concepts: 'Әкім' (mayor/governor), 'Кеден' (customs), 'Мәжіліс' (lower house of Parliament), and 'Құрылтай' (national congress/assembly). They perfectly fit the definition of revived words (семантикалық неологизмдер).\n- Option D (Ғаламтор, пернетақта, ғарышкер, бейнебаян): These are newly coined words (pure neologisms) created to translate modern concepts (internet, keyboard, cosmonaut, music video), not revived archaic words.\n\nTherefore, Option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the concept of semantic neologisms (revived words) with well-designed distractors representing other specific lexical categories (historicisms, archaisms, and pure neologisms).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:06:16.919470+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "c20aa877-755b-4599-8e64-ec881d3603fe",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі бағыныңқы сыңардың түрін анықтаңыз.\n\nКүн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Себеп бағыныңқы сабақтас, өйткені бағыныңқы сыңар басыңқыдағы іс-әрекеттің себебін білдіреді."
+    },
+    {
+      "label": "B",
+      "text": "Мезгіл бағыныңқы сабақтас, өйткені бағыныңқы сыңар қимылдың қай кезде болғанын көрсетеді."
+    },
+    {
+      "label": "C",
+      "text": "Мақсат бағыныңқы сабақтас, өйткені бағыныңқы сыңар басыңқыдағы қимылдың мақсатын білдіреді."
+    },
+    {
+      "label": "D",
+      "text": "Шартты бағыныңқы сабақтас, өйткені бағыныңқы сыңар басыңқыдағы іс-әрекеттің шартын білдіреді."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. «Күн райы бұзылып кетпесін деп» деген бағыныңқы сыңар шопандардың малды қораға ертерек қамап қоюдағы мақсатын білдіреді: не мақсатпен қамап қойды? — күн райы бұзылып кетпесін деп. Сондықтан бұл — мақсат бағыныңқы сабақтас. A нұсқасы дұрыс емес: сөйлемде істің себебі емес, алдын ала көзделген мақсат айтылған. B нұсқасы қате, өйткені бағыныңқы сыңар қимылдың мезгілін білдірмейді. D нұсқасы да сәйкес келмейді, себебі мұнда шарт мәні жоқ, бағыныңқы сыңар «егер» мағынасында қолданылмаған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.533,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: \"Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.\" The subordinate component is \"Күн райы бұзылып кетпесін деп\". In Kazakh syntax, clauses formed with structures like \"... деп\" can express purpose when they answer the question \"не мақсатпен?\" or \"қайтпек болып?\" Here, the shepherds put the livestock into the pen earlier with the aim that the weather would \n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.' This translates roughly as: 'So that the weather would not turn bad, the shepherds drove the livestock into the pen earlier.'\n\nThe subordinate clause is: 'Күн райы бұзылып кетпесін деп' — 'so that the weather would not turn bad (lest the weather turn bad).'\n\nThe connective element here is 'деп' (meaning 's\n\n[google/gemini-3.1-pro-preview] answered C: To determine the type of subordinate clause (бағыныңқы сыңар) in the sentence 'Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды', we need to analyze the relationship between the subordinate clause and the main clause.\n\nThe main clause is 'шопандар малды қораға ертерек қамап қойды' (the shepherds locked the cattle in the barn earlier). \nThe subordinate clause is 'Күн райы бұ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.533,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: the subordinate clause with “...кетпесін деп” expresses purpose. The distractors are mostly plausible common confusions, though the item is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the sentence uses the classic '-песін деп' marker of мақсат бағыныңқы, the correct answer is unambiguously C, and the explanation is thorough and accurate. Distractors represent plausible misconceptions (causal, temporal, conditional) that a less-prepared teacher might select. Language is natural and terminology matches standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible and well-formatted.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: \"Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.\" The subordinate component is \"Күн райы бұзылып кетпесін деп\". In Kazakh syntax, clauses formed with structures like \"... деп\" can express purpose when they answer the question \"не мақсатпен?\" or \"қайтпек болып?\" Here, the shepherds put the livestock into the pen earlier with the aim that the weather would \n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.' This translates roughly as: 'So that the weather would not turn bad, the shepherds drove the livestock into the pen earlier.'\n\nThe subordinate clause is: 'Күн райы бұзылып кетпесін деп' — 'so that the weather would not turn bad (lest the weather turn bad).'\n\nThe connective element here is 'деп' (meaning 's\n\n[google/gemini-3.1-pro-preview] answered C: To determine the type of subordinate clause (бағыныңқы сыңар) in the sentence 'Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды', we need to analyze the relationship between the subordinate clause and the main clause.\n\nThe main clause is 'шопандар малды қораға ертерек қамап қойды' (the shepherds locked the cattle in the barn earlier). \nThe subordinate clause is 'Күн райы бұ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.533,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: the subordinate clause with “...кетпесін деп” expresses purpose. The distractors are mostly plausible common confusions, though the item is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the sentence uses the classic '-песін деп' marker of мақсат бағыныңқы, the correct answer is unambiguously C, and the explanation is thorough and accurate. Distractors represent plausible misconceptions (causal, temporal, conditional) that a less-prepared teacher might select. Language is natural and terminology matches standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible and well-formatted.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: \"Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.\" The subordinate component is \"Күн райы бұзылып кетпесін деп\". In Kazakh syntax, clauses formed with structures like \"... деп\" can express purpose when they answer the question \"не мақсатпен?\" or \"қайтпек болып?\" Here, the shepherds put the livestock into the pen earlier with the aim that the weather would not catch them/become bad before the livestock was secured: \"Күн райы бұзылып кетпесін деп\" = \"so that/lest the weather turn bad.\" This expresses the purpose or intended precaution behind the main action \"малды қораға ертерек қамап қойды.\" It is not a time clause, condition clause, or direct cause clause. Therefore, it is a purpose subordinate compound sentence.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unambiguous: the subordinate clause with “...кетпесін деп” expresses purpose. The distractors are mostly plausible common confusions, though the item is on the easier side of level B.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: 'Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды.' This translates roughly as: 'So that the weather would not turn bad, the shepherds drove the livestock into the pen earlier.'\n\nThe subordinate clause is: 'Күн райы бұзылып кетпесін деп' — 'so that the weather would not turn bad (lest the weather turn bad).'\n\nThe connective element here is 'деп' (meaning 'saying/thinking/so that'), which in Kazakh grammar marks a мақсат бағыныңқы (purpose/goal subordinate clause) when combined with a negative optative form (-сын/-сін деп). The subordinate part expresses the PURPOSE or GOAL of the main clause action — the shepherds drove the livestock into the pen EARLIER FOR THE PURPOSE OF preventing the weather from turning bad.\n\nIn Kazakh syntax:\n- Мақсат бағыныңқы сабақтас (purpose subordinate compound sentence): the subordinate clause indicates the goal/purpose of the action in the main clause. Typical connectors include 'деп', 'үшін', and verb forms like '-сын/-сін деп'.\n- Себеп бағыныңқы (causal): would answer 'why did it happen?' with a past cause, typically using 'себебі', 'өйткені', '-ғандықтан' etc.\n- Мезгіл бағыныңқы (temporal): indicates when, using '-ғанда', '-ғанша', etc.\n- Шартты бағыныңқы (conditional): uses '-са/-се' conditional mood.\n\nThe form '-сын/-сін деп' (negative: '-пасын/-песін деп') is a classic marker of мақсат бағыныңқы in Kazakh. The subordinate clause 'Күн райы бұзылып кетпесін деп' expresses the purpose/goal of the main action. Therefore, this is a мақсат бағыныңқы сабақтас сөйлем.\n\nAnswer: C",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the sentence uses the classic '-песін деп' marker of мақсат бағыныңқы, the correct answer is unambiguously C, and the explanation is thorough and accurate. Distractors represent plausible misconceptions (causal, temporal, conditional) that a less-prepared teacher might select. Language is natural and terminology matches standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the type of subordinate clause (бағыныңқы сыңар) in the sentence 'Күн райы бұзылып кетпесін деп, шопандар малды қораға ертерек қамап қойды', we need to analyze the relationship between the subordinate clause and the main clause.\n\nThe main clause is 'шопандар малды қораға ертерек қамап қойды' (the shepherds locked the cattle in the barn earlier). \nThe subordinate clause is 'Күн райы бұзылып кетпесін деп' (so that the weather wouldn't spoil / with the thought 'let the weather not spoil').\n\nThe subordinate clause is formed using the verb in the imperative/optative mood ('кетпесін') followed by the auxiliary verb 'деп'. In Kazakh syntax, the construction '-сын/-сін деп' or '-айын/-ейін деп' is a standard grammatical marker for a purpose subordinate clause (мақсат бағыныңқы сабақтас). It answers the question 'Не мақсатпен?' (For what purpose?). The shepherds locked the cattle early with the specific purpose/intention of avoiding the bad weather.\n\nLooking at the options:\nA) Себеп (Cause) - incorrect, as it doesn't use causal markers like '-ғандықтан'.\nB) Мезгіл (Time) - incorrect, as it doesn't answer 'When?'.\nC) Мақсат (Purpose) - correct, because the subordinate clause expresses the purpose of the action in the main clause.\nD) Шартты (Condition) - incorrect, as it doesn't use conditional markers like '-са/-се'.\n\nThus, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible and well-formatted.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:28:56.225971+00:00",
+  "generation_attempts": 1
+}

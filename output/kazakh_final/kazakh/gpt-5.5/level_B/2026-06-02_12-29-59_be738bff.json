@@ -1,0 +1,140 @@
+{
+  "id": "be738bff-49a7-49a3-b344-e7f0c456f7b7",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі салалас құрмаластың түрін анықтаңыз.\nӘрі жаңбыр толастамады, әрі жол лайсаң болды.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Себеп-салдар салалас: екінші жай сөйлем алдыңғы ойдың салдарын білдіреді"
+    },
+    {
+      "label": "B",
+      "text": "Қарсылықты салалас: екі жай сөйлемдегі ой бір-біріне қарсы қойылған"
+    },
+    {
+      "label": "C",
+      "text": "Ыңғайлас салалас: әрі жалғаулығы арқылы оқиғалар қатар берілген"
+    },
+    {
+      "label": "D",
+      "text": "Кезектес салалас: қимылдардың алма-кезек жүзеге асуы көрсетілген"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. Сөйлемдегі екі жай сөйлем «әрі... әрі» жалғаулығы арқылы байланысып, табиғат құбылыстарының қатар, қабат болғанын білдіреді. Сондықтан бұл — ыңғайлас салалас. A нұсқасы дұрыс емес: жолдың лайсаң болуы жаңбырмен мағыналық жағынан байланысты көрінгенімен, сөйлемде негізгі қатынас себеп-салдар ретінде емес, қатарласу ретінде берілген. B нұсқасында айтылған қарсылық мәні жоқ, өйткені ойлар бір-біріне қарсы қойылмаған. D нұсқасы да сәйкес келмейді: кезектес салаласта «бірде», «біресе», «кейде» сияқты жалғаулықтар арқылы іс-әрекеттің алма-кезек болуы көрсетіледі.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence consists of two coordinate clauses: 1) \"жаңбыр толастамады\" (the rain did not stop) and 2) \"жол лайсаң болды\" (the road became muddy). They are connected by the repeated conjunction \"әрі ... әрі\". In Kazakh syntax, coordinate compound sentences joined by additive conjunctions such as \"және\", \"да/де\", \"әрі\" express compatible or simultaneous/additional events and are classified as \"ыңғ\n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Әрі жаңбыр толастамады, әрі жол лайсаң болды.' (Neither did the rain stop, nor did the road become muddy — or more literally: 'The rain did not stop, and the road became muddy/muddy.')\n\nIn Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлемдер) are classified by the type of conjunction and the semantic relationship between the clauses.\n\nThe conjunction used here\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is 'Әрі жаңбыр толастамады, әрі жол лайсаң болды.' The clauses are connected by the repeating coordinating conjunction 'әрі ..., әрі ...'. In Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлем) are classified based on the relationship between the clauses and the conjunctions used. The conjunctions 'және', 'әрі', 'да/де', 'та/те' are used to form 'ыңғайлас сала",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the repeated conjunction «әрі... әрі» as marking an ыңғайлас салалас. The item is clear, but it is somewhat easy for level B because the correct option directly names the visible conjunction while two distractors are quickly eliminable. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the sentence clearly uses 'әрі...әрі' as a copulative conjunction marking ыңғайлас салалас, the correct answer is unambiguous, and the explanation is thorough. Distractors represent plausible misconceptions (e.g., option A exploits the apparent causal link between rain and muddy road), making them genuinely competitive. Language and terminology are consistent with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the knowledge of coordinate compound sentences, and the distractors are highly plausible, especially option A which plays on the logical (but not syntactic) cause-and-effect relationship.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence consists of two coordinate clauses: 1) \"жаңбыр толастамады\" (the rain did not stop) and 2) \"жол лайсаң болды\" (the road became muddy). They are connected by the repeated conjunction \"әрі ... әрі\". In Kazakh syntax, coordinate compound sentences joined by additive conjunctions such as \"және\", \"да/де\", \"әрі\" express compatible or simultaneous/additional events and are classified as \"ыңғ\n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Әрі жаңбыр толастамады, әрі жол лайсаң болды.' (Neither did the rain stop, nor did the road become muddy — or more literally: 'The rain did not stop, and the road became muddy/muddy.')\n\nIn Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлемдер) are classified by the type of conjunction and the semantic relationship between the clauses.\n\nThe conjunction used here\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is 'Әрі жаңбыр толастамады, әрі жол лайсаң болды.' The clauses are connected by the repeating coordinating conjunction 'әрі ..., әрі ...'. In Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлем) are classified based on the relationship between the clauses and the conjunctions used. The conjunctions 'және', 'әрі', 'да/де', 'та/те' are used to form 'ыңғайлас сала",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the repeated conjunction «әрі... әрі» as marking an ыңғайлас салалас. The item is clear, but it is somewhat easy for level B because the correct option directly names the visible conjunction while two distractors are quickly eliminable. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the sentence clearly uses 'әрі...әрі' as a copulative conjunction marking ыңғайлас салалас, the correct answer is unambiguous, and the explanation is thorough. Distractors represent plausible misconceptions (e.g., option A exploits the apparent causal link between rain and muddy road), making them genuinely competitive. Language and terminology are consistent with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the knowledge of coordinate compound sentences, and the distractors are highly plausible, especially option A which plays on the logical (but not syntactic) cause-and-effect relationship.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence consists of two coordinate clauses: 1) \"жаңбыр толастамады\" (the rain did not stop) and 2) \"жол лайсаң болды\" (the road became muddy). They are connected by the repeated conjunction \"әрі ... әрі\". In Kazakh syntax, coordinate compound sentences joined by additive conjunctions such as \"және\", \"да/де\", \"әрі\" express compatible or simultaneous/additional events and are classified as \"ыңғайлас салалас\". The clauses are not in a cause-effect relation, not contrastive, and not alternating actions. Therefore, the correct type is \"Ыңғайлас салалас: әрі жалғаулығы арқылы оқиғалар қатар берілген\".",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies the repeated conjunction «әрі... әрі» as marking an ыңғайлас салалас. The item is clear, but it is somewhat easy for level B because the correct option directly names the visible conjunction while two distractors are quickly eliminable.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: 'Әрі жаңбыр толастамады, әрі жол лайсаң болды.' (Neither did the rain stop, nor did the road become muddy — or more literally: 'The rain did not stop, and the road became muddy/muddy.')\n\nIn Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлемдер) are classified by the type of conjunction and the semantic relationship between the clauses.\n\nThe conjunction used here is 'әрі...әрі' (both...and / and...and), which is a copulative/additive conjunction in Kazakh. This conjunction connects two clauses that enumerate or list events/states occurring simultaneously or in parallel, without opposition, alternation, or causal relationship.\n\nThe classification:\n- Ыңғайлас салалас (copulative/additive coordinate sentence): clauses are connected by additive conjunctions such as 'және', 'да/де', 'та/те', 'әрі...әрі', 'да...да', expressing events that occur together or in parallel.\n- Қарсылықты салалас (adversative): uses conjunctions like 'бірақ', 'алайда', 'дегенмен' — contrasting ideas.\n- Себеп-салдар салалас (causal-resultative): one clause expresses cause, the other effect.\n- Кезектес салалас (alternating): uses conjunctions like 'не...не', 'я...я', 'немесе' — alternating actions.\n\nSince 'әрі...әрі' is a classic marker of ыңғайлас салалас (copulative coordinate sentence), and the two clauses present parallel, simultaneous events (rain not stopping AND road becoming muddy), the correct answer is C.\n\nOption C states: 'Ыңғайлас салалас: әрі жалғаулығы арқылы оқиғалар қатар берілген' — Copulative coordinate sentence: events are presented in parallel through the conjunction 'әрі'. This matches perfectly.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the sentence clearly uses 'әрі...әрі' as a copulative conjunction marking ыңғайлас салалас, the correct answer is unambiguous, and the explanation is thorough. Distractors represent plausible misconceptions (e.g., option A exploits the apparent causal link between rain and muddy road), making them genuinely competitive. Language and terminology are consistent with standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given sentence is 'Әрі жаңбыр толастамады, әрі жол лайсаң болды.' The clauses are connected by the repeating coordinating conjunction 'әрі ..., әрі ...'. In Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлем) are classified based on the relationship between the clauses and the conjunctions used. The conjunctions 'және', 'әрі', 'да/де', 'та/те' are used to form 'ыңғайлас салалас құрмалас сөйлем' (copulative coordinate compound sentences), where events occur simultaneously or sequentially in a parallel manner. Option C correctly identifies the type as 'Ыңғайлас салалас' and accurately explains that the events are presented together using the conjunction 'әрі'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the knowledge of coordinate compound sentences, and the distractors are highly plausible, especially option A which plays on the logical (but not syntactic) cause-and-effect relationship.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:29:59.461468+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "c2f57ceb-76da-44c6-b206-e4794c24c6a4",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Абай Құнанбайұлының өлең үзіндісіндегі етістіктердің рай түрлерін ретімен көрсетіңіз:\n«Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.»",
+  "options": [
+    {
+      "label": "A",
+      "text": "Бұйрық рай, қалау рай, шартты рай"
+    },
+    {
+      "label": "B",
+      "text": "Ашық рай, қалау рай, бұйрық рай"
+    },
+    {
+      "label": "C",
+      "text": "Ашық рай, шартты рай, бұйрық рай"
+    },
+    {
+      "label": "D",
+      "text": "Шартты рай, бұйрық рай, ашық рай"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Үзіндіде 3 етістік қолданылған: «салар», «сүйсең», «сүй».\n1. «Салар» етістігі түбір (сал) мен болжалды келер шақ жұрнағынан (-ар) жасалған. Шақпен түрленген барлық етістіктер грамматикалық тұрғыдан ашық райға жатады.\n2. «Сүйсең» етістігіндегі «-се» – шартты рай жұрнағы, «-ң» – жіктік жалғауының 2-жағы.\n3. «Сүй» етістігі ешқандай қосымшасыз, негізгі түбір күйінде тұрып, 2-жаққа (сен сүй) бағытталған бұйрық рай мәнін білдіріп тұр.\nСәйкесінше, дұрыс реттілік: ашық рай, шартты рай, бұйрық рай.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The excerpt is from Abai Qunanbaiuly. Identify the verbs in order: 1) “салар” from “салу” in “Көңілге түрлі ой салар” is a finite predicate form with the -ар/-ер future/gnomic form, functioning as indicative mood (ашық рай). 2) “сүйсең” from “сүю” has the conditional suffix -се plus 2nd person ending -ң, so it is conditional mood (шартты рай). 3) “сүй” from “сүю” is the 2nd person imperative form,\n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify the mood (рай) of each verb in the excerpt from Abai Kunanbayuly's poem:\n\n'Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.'\n\nLet's identify the verbs in order:\n\n1. 'салар' - This is the verb 'салу' (to put/place). The form 'салар' ends in '-ар', which is the future tense marker in Kazakh. In Kazakh grammar, the ашық рай (indicative mood) includes present, past, and future tense\n\n[google/gemini-3.1-pro-preview] answered C: Let's identify the verbs in the given excerpt and determine their moods (рай) in order.\n\nThe excerpt is:\n«Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.»\n\n1. The first verb is 'салар'. The root is 'сал', and '-ар' is the suffix for the presumptive future tense (болжалды келер шақ). Verbs that express tense are in the indicative mood (ашық рай).\n2. The second verb is 'сүйсең'. The root is 'сүй', f",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: «салар» is indicative, «сүйсең» is conditional, and «сүй» is imperative. The item is concise, linguistically clean, and appropriate for contextual application, though the task is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests teachers' ability to identify verb moods in a literary context. All three verbs (салар, сүйсең, сүй) are correctly classified as ашық рай, шартты рай, and бұйрық рай respectively, and the distractors represent plausible ordering errors or mood misidentifications. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the morphological analysis of verbs in context, and the distractors are well-constructed.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The excerpt is from Abai Qunanbaiuly. Identify the verbs in order: 1) “салар” from “салу” in “Көңілге түрлі ой салар” is a finite predicate form with the -ар/-ер future/gnomic form, functioning as indicative mood (ашық рай). 2) “сүйсең” from “сүю” has the conditional suffix -се plus 2nd person ending -ң, so it is conditional mood (шартты рай). 3) “сүй” from “сүю” is the 2nd person imperative form,\n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify the mood (рай) of each verb in the excerpt from Abai Kunanbayuly's poem:\n\n'Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.'\n\nLet's identify the verbs in order:\n\n1. 'салар' - This is the verb 'салу' (to put/place). The form 'салар' ends in '-ар', which is the future tense marker in Kazakh. In Kazakh grammar, the ашық рай (indicative mood) includes present, past, and future tense\n\n[google/gemini-3.1-pro-preview] answered C: Let's identify the verbs in the given excerpt and determine their moods (рай) in order.\n\nThe excerpt is:\n«Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.»\n\n1. The first verb is 'салар'. The root is 'сал', and '-ар' is the suffix for the presumptive future tense (болжалды келер шақ). Verbs that express tense are in the indicative mood (ашық рай).\n2. The second verb is 'сүйсең'. The root is 'сүй', f",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: «салар» is indicative, «сүйсең» is conditional, and «сүй» is imperative. The item is concise, linguistically clean, and appropriate for contextual application, though the task is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests teachers' ability to identify verb moods in a literary context. All three verbs (салар, сүйсең, сүй) are correctly classified as ашық рай, шартты рай, and бұйрық рай respectively, and the distractors represent plausible ordering errors or mood misidentifications. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the morphological analysis of verbs in context, and the distractors are well-constructed.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The excerpt is from Abai Qunanbaiuly. Identify the verbs in order: 1) “салар” from “салу” in “Көңілге түрлі ой салар” is a finite predicate form with the -ар/-ер future/gnomic form, functioning as indicative mood (ашық рай). 2) “сүйсең” from “сүю” has the conditional suffix -се plus 2nd person ending -ң, so it is conditional mood (шартты рай). 3) “сүй” from “сүю” is the 2nd person imperative form, so it is imperative mood (бұйрық рай). Therefore the order is: ашық рай, шартты рай, бұйрық рай.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: «салар» is indicative, «сүйсең» is conditional, and «сүй» is imperative. The item is concise, linguistically clean, and appropriate for contextual application, though the task is on the easier side of level B.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify the mood (рай) of each verb in the excerpt from Abai Kunanbayuly's poem:\n\n'Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.'\n\nLet's identify the verbs in order:\n\n1. 'салар' - This is the verb 'салу' (to put/place). The form 'салар' ends in '-ар', which is the future tense marker in Kazakh. In Kazakh grammar, the ашық рай (indicative mood) includes present, past, and future tenses. The form '-ар/-ер/-р' is the future tense of ашық рай (indicative mood). So 'салар' = ашық рай.\n\n2. 'сүйсең' - This is the verb 'сүю' (to love). The form 'сүйсең' ends in '-сең', which is the conditional mood marker '-са/-се' + personal ending '-ң' (2nd person singular). This is шартты рай (conditional mood). So 'сүйсең' = шартты рай.\n\n3. 'сүй' - This is the verb 'сүю' in imperative form (2nd person singular, no ending = bare stem). This is бұйрық рай (imperative mood). So 'сүй' = бұйрық рай.\n\nSo the order is: ашық рай, шартты рай, бұйрық рай.\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately tests teachers' ability to identify verb moods in a literary context. All three verbs (салар, сүйсең, сүй) are correctly classified as ашық рай, шартты рай, and бұйрық рай respectively, and the distractors represent plausible ordering errors or mood misidentifications.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's identify the verbs in the given excerpt and determine their moods (рай) in order.\n\nThe excerpt is:\n«Көңілге түрлі ой салар,\nӘнді сүйсең, менше сүй.»\n\n1. The first verb is 'салар'. The root is 'сал', and '-ар' is the suffix for the presumptive future tense (болжалды келер шақ). Verbs that express tense are in the indicative mood (ашық рай).\n2. The second verb is 'сүйсең'. The root is 'сүй', followed by the suffix '-се' which is the marker for the conditional mood (шартты рай), and '-ң' is the second person singular personal ending.\n3. The third verb is 'сүй'. This is the bare root of the verb used as a command in the second person singular, which makes it the imperative mood (бұйрық рай).\n\nTherefore, the sequence of moods is: Ашық рай, шартты рай, бұйрық рай. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It accurately tests the morphological analysis of verbs in context, and the distractors are well-constructed.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:46:09.775769+00:00",
+  "generation_attempts": 1
+}

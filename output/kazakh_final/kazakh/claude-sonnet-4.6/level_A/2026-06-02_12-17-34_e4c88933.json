@@ -1,0 +1,140 @@
+{
+  "id": "e4c88933-fc2f-4f36-bb5e-dfdbf5cb5c60",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» — деген сөйлемдегі бағыныңқы сыңардың түрін анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Шартты бағыныңқы сабақтас"
+    },
+    {
+      "label": "B",
+      "text": "Мезгіл бағыныңқы сабақтас"
+    },
+    {
+      "label": "C",
+      "text": "Себеп бағыныңқы сабақтас"
+    },
+    {
+      "label": "D",
+      "text": "Мақсат бағыныңқы сабақтас"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген сөйлемде бағыныңқы сыңар «егер» жалғаулығы және баяндауышының –са/-се шартты рай жұрнағы арқылы байланысқан. Бұл шартты бағыныңқы сабақтас сөйлемнің негізгі белгісі. Мезгіл бағыныңқы сабақтас сыңары іс-әрекеттің уақытын білдіріп, –ғанда/-генде, –ғалы/-гелі сияқты жұрнақтар немесе «қашан» сұрағы арқылы байланысады. Себеп бағыныңқы сабақтас сыңары іс-әрекеттің себебін білдіріп, «себебі», «өйткені» жалғаулықтары немесе –ғандықтан/-гендіктен жұрнағы арқылы байланысады. Мақсат бағыныңқы сабақтас сыңары мақсатты білдіріп, –у үшін, –сын/-сін деген тұлғалар арқылы байланысады. Демек, дұрыс жауап — А) Шартты бағыныңқы сабақтас.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.667,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: «Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» (“If it rains tomorrow, we will not go on the trip”). The subordinate clause is «Егер ертең жаңбыр жауса». It is introduced by the conditional conjunction «егер» (“if”), and the predicate «жауса» has the conditional suffix -са. In Kazakh syntax, a subordinate clause expressing the condition under which the main clause happens is a ш\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence is: «Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» — 'If it rains tomorrow, we will not go on the trip.'\n\nIn Kazakh syntax, subordinate compound sentences (сабақтас құрмалас сөйлем) are classified by the semantic relationship between the subordinate clause (бағыныңқы сыңар) and the main clause (басыңқы сыңар).\n\nThe subordinate clause here is: «Егер ертең жаңбыр жауса» — it uses the \n\n[google/gemini-3.1-pro-preview] answered A: The sentence given is 'Егер ертең жаңбыр жауса, біз сапарға шықпаймыз' (If it rains tomorrow, we will not go on the trip). It is a subordinate compound sentence (сабақтас құрмалас сөйлем). The subordinate clause 'Егер ертең жаңбыр жауса' expresses the condition under which the action of the main clause 'біз сапарға шықпаймыз' will occur. The presence of the conditional conjunction 'Егер' (if) and ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.667,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution: the subordinate clause is conditional, marked by 'егер' and '-са'. The item is well aligned with basic-level direct recognition of a subordinate clause type. | [anthropic/claude-sonnet-4.6] The question is well-constructed, unambiguous, and correctly keyed. The sentence clearly uses 'егер...жауса' (conditional conjunction + conditional mood suffix), making option A the only defensible answer. Distractors represent real clause types that teachers must distinguish, making them plausible for a basic-level item. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the basic difficulty level (A), testing direct recognition of a grammatical marker. The distractors are plausible and the terminology is accurate.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: «Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» (“If it rains tomorrow, we will not go on the trip”). The subordinate clause is «Егер ертең жаңбыр жауса». It is introduced by the conditional conjunction «егер» (“if”), and the predicate «жауса» has the conditional suffix -са. In Kazakh syntax, a subordinate clause expressing the condition under which the main clause happens is a ш\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence is: «Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» — 'If it rains tomorrow, we will not go on the trip.'\n\nIn Kazakh syntax, subordinate compound sentences (сабақтас құрмалас сөйлем) are classified by the semantic relationship between the subordinate clause (бағыныңқы сыңар) and the main clause (басыңқы сыңар).\n\nThe subordinate clause here is: «Егер ертең жаңбыр жауса» — it uses the \n\n[google/gemini-3.1-pro-preview] answered A: The sentence given is 'Егер ертең жаңбыр жауса, біз сапарға шықпаймыз' (If it rains tomorrow, we will not go on the trip). It is a subordinate compound sentence (сабақтас құрмалас сөйлем). The subordinate clause 'Егер ертең жаңбыр жауса' expresses the condition under which the action of the main clause 'біз сапарға шықпаймыз' will occur. The presence of the conditional conjunction 'Егер' (if) and ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.667,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution: the subordinate clause is conditional, marked by 'егер' and '-са'. The item is well aligned with basic-level direct recognition of a subordinate clause type. | [anthropic/claude-sonnet-4.6] The question is well-constructed, unambiguous, and correctly keyed. The sentence clearly uses 'егер...жауса' (conditional conjunction + conditional mood suffix), making option A the only defensible answer. Distractors represent real clause types that teachers must distinguish, making them plausible for a basic-level item. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the basic difficulty level (A), testing direct recognition of a grammatical marker. The distractors are plausible and the terminology is accurate.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: «Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» (“If it rains tomorrow, we will not go on the trip”). The subordinate clause is «Егер ертең жаңбыр жауса». It is introduced by the conditional conjunction «егер» (“if”), and the predicate «жауса» has the conditional suffix -са. In Kazakh syntax, a subordinate clause expressing the condition under which the main clause happens is a шартты бағыныңқы сабақтас. Therefore, the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single unambiguous solution: the subordinate clause is conditional, marked by 'егер' and '-са'. The item is well aligned with basic-level direct recognition of a subordinate clause type.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: «Егер ертең жаңбыр жауса, біз сапарға шықпаймыз» — 'If it rains tomorrow, we will not go on the trip.'\n\nIn Kazakh syntax, subordinate compound sentences (сабақтас құрмалас сөйлем) are classified by the semantic relationship between the subordinate clause (бағыныңқы сыңар) and the main clause (басыңқы сыңар).\n\nThe subordinate clause here is: «Егер ертең жаңбыр жауса» — it uses the conjunction 'егер' (if) and the verb form '-са' (conditional mood suffix), which are the hallmark markers of a conditional subordinate clause (шартты бағыныңқы сабақтас).\n\nThe relationship expressed is a condition: the action in the main clause (not going on the trip) depends on the condition stated in the subordinate clause (if it rains tomorrow).\n\n- Шартты бағыныңқы (conditional): uses 'егер...са/се', expresses a condition — THIS MATCHES.\n- Мезгіл бағыныңқы (temporal): expresses time, uses forms like '-ғанда', '-ған кезде', etc. — does NOT match.\n- Себеп бағыныңқы (causal): expresses reason/cause, uses 'өйткені', '-ғандықтан', etc. — does NOT match.\n- Мақсат бағыныңқы (purposive): expresses purpose, uses 'үшін', '-у үшін', etc. — does NOT match.\n\nTherefore, the subordinate clause type is шартты бағыныңқы сабақтас — Answer A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and correctly keyed. The sentence clearly uses 'егер...жауса' (conditional conjunction + conditional mood suffix), making option A the only defensible answer. Distractors represent real clause types that teachers must distinguish, making them plausible for a basic-level item.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence given is 'Егер ертең жаңбыр жауса, біз сапарға шықпаймыз' (If it rains tomorrow, we will not go on the trip). It is a subordinate compound sentence (сабақтас құрмалас сөйлем). The subordinate clause 'Егер ертең жаңбыр жауса' expresses the condition under which the action of the main clause 'біз сапарға шықпаймыз' will occur. The presence of the conditional conjunction 'Егер' (if) and the conditional mood suffix '-са' on the verb 'жауса' are the grammatical markers of a conditional subordinate clause (шартты бағыныңқы сөйлем). Therefore, the correct type is 'Шартты бағыныңқы сабақтас'.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the basic difficulty level (A), testing direct recognition of a grammatical marker. The distractors are plausible and the terminology is accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:17:34.127429+00:00",
+  "generation_attempts": 1
+}

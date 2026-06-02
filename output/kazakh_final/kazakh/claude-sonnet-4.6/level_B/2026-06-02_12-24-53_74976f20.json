@@ -1,0 +1,140 @@
+{
+  "id": "74976f20-76ee-4b54-8e0e-150ac117250b",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысы қарсылықты салалас құрмалас сөйлем болып табылады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Күн жылынды, сондықтан балалар сыртқа шықты."
+    },
+    {
+      "label": "B",
+      "text": "Ол келді, бірақ ешкімді таба алмады."
+    },
+    {
+      "label": "C",
+      "text": "Не ол барады, не мен барамын."
+    },
+    {
+      "label": "D",
+      "text": "Ауа райы суық болды, яғни жаз аяқталды."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Қарсылықты салалас құрмалас сөйлемде екі сыңар бір-біріне қарама-қарсы мәнде келеді және олар «бірақ», «алайда», «дегенмен», «әйтсе де» сияқты қарсылықты жалғаулықтармен байланысады. «Ол келді, бірақ ешкімді таба алмады» сөйлемінде «бірақ» жалғаулығы арқылы бірінші сыңардағы іс-әрекет пен екінші сыңардағы нәтиже бір-біріне қарсы қойылған, сондықтан бұл қарсылықты салалас. А нұсқасы — «сондықтан» жалғаулығы бар себеп-салдар салалас. С нұсқасы — «не...не» жалғаулығы бар талғаулы салалас. D нұсқасы — «яғни» жалғаулығы бар түсіндірмелі салалас. Осылайша, тек В нұсқасы ғана қарсылықты салалас құрмалас сөйлемнің белгілеріне толық сай келеді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: A coordinate compound sentence of the adversative type (қарсылықты салалас құрмалас сөйлем) expresses contrast or opposition between its clauses and is commonly connected by conjunctions such as 'бірақ', 'алайда', 'дегенмен', 'сонда да'. Option A uses 'сондықтан' and expresses cause-result, so it is a себеп-салдар салалас. Option B uses 'бірақ' and expresses contrast: he came, but could not find a\n\n[anthropic/claude-sonnet-4.6] answered B: In Kazakh syntax, compound sentences (салалас құрмалас сөйлем) are classified by the type of conjunction and semantic relationship between clauses:\n\n1. Себеп-салдарлы (causal-resultative) — uses 'сондықтан', 'сол себепті', etc.\n2. Қарсылықты (adversative/contrastive) — uses 'бірақ', 'алайда', 'дегенмен', etc.\n3. Талғаулы (disjunctive/alternative) — uses 'не...не', 'я...я', 'немесе', etc.\n4. Түсінд\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the adversative coordinate compound sentence (қарсылықты салалас құрмалас сөйлем). Let's analyze the conjunctions used in each option:\n\nA) 'сондықтан' (therefore) indicates a cause-and-effect relationship (себеп-салдар салалас).\nB) 'бірақ' (but) is an adversative conjunction, which contrasts the two clauses. This makes it a қарсылықты салалас құрмалас сөйлем.\nC) 'не .",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 7.333,
+      "kazakh_language_quality": 9.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has exactly one defensible answer: option B is the only adversative coordinate compound sentence. However, the task is mostly a direct recognition of conjunctions, so it feels closer to an easier level than the requested B difficulty. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each option represents a distinct type of coordinate compound sentence with a clear identifying conjunction, making distractors highly plausible. The language is natural and terminologically accurate per Kazakh school curriculum standards. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligned with the requested difficulty level. The distractors effectively represent other types of coordinate compound sentences.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: A coordinate compound sentence of the adversative type (қарсылықты салалас құрмалас сөйлем) expresses contrast or opposition between its clauses and is commonly connected by conjunctions such as 'бірақ', 'алайда', 'дегенмен', 'сонда да'. Option A uses 'сондықтан' and expresses cause-result, so it is a себеп-салдар салалас. Option B uses 'бірақ' and expresses contrast: he came, but could not find a\n\n[anthropic/claude-sonnet-4.6] answered B: In Kazakh syntax, compound sentences (салалас құрмалас сөйлем) are classified by the type of conjunction and semantic relationship between clauses:\n\n1. Себеп-салдарлы (causal-resultative) — uses 'сондықтан', 'сол себепті', etc.\n2. Қарсылықты (adversative/contrastive) — uses 'бірақ', 'алайда', 'дегенмен', etc.\n3. Талғаулы (disjunctive/alternative) — uses 'не...не', 'я...я', 'немесе', etc.\n4. Түсінд\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the adversative coordinate compound sentence (қарсылықты салалас құрмалас сөйлем). Let's analyze the conjunctions used in each option:\n\nA) 'сондықтан' (therefore) indicates a cause-and-effect relationship (себеп-салдар салалас).\nB) 'бірақ' (but) is an adversative conjunction, which contrasts the two clauses. This makes it a қарсылықты салалас құрмалас сөйлем.\nC) 'не .",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has exactly one defensible answer: option B is the only adversative coordinate compound sentence. However, the task is mostly a direct recognition of conjunctions, so it feels closer to an easier level than the requested B difficulty. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each option represents a distinct type of coordinate compound sentence with a clear identifying conjunction, making distractors highly plausible. The language is natural and terminologically accurate per Kazakh school curriculum standards. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligned with the requested difficulty level. The distractors effectively represent other types of coordinate compound sentences.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A coordinate compound sentence of the adversative type (қарсылықты салалас құрмалас сөйлем) expresses contrast or opposition between its clauses and is commonly connected by conjunctions such as 'бірақ', 'алайда', 'дегенмен', 'сонда да'. Option A uses 'сондықтан' and expresses cause-result, so it is a себеп-салдар салалас. Option B uses 'бірақ' and expresses contrast: he came, but could not find anyone; this is қарсылықты салалас. Option C uses 'не...не' and expresses alternation/choice, so it is талғаулы салалас. Option D uses 'яғни' and expresses explanation/clarification, so it is түсіндірмелі салалас. Therefore the correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has exactly one defensible answer: option B is the only adversative coordinate compound sentence. However, the task is mostly a direct recognition of conjunctions, so it feels closer to an easier level than the requested B difficulty.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, compound sentences (салалас құрмалас сөйлем) are classified by the type of conjunction and semantic relationship between clauses:\n\n1. Себеп-салдарлы (causal-resultative) — uses 'сондықтан', 'сол себепті', etc.\n2. Қарсылықты (adversative/contrastive) — uses 'бірақ', 'алайда', 'дегенмен', etc.\n3. Талғаулы (disjunctive/alternative) — uses 'не...не', 'я...я', 'немесе', etc.\n4. Түсіндірмелі (explanatory) — uses 'яғни', 'демек', etc.\n\nNow analyzing each option:\n\nA) 'Күн жылынды, сондықтан балалар сыртқа шықты.' — Uses 'сондықтан' (therefore), which is a causal-resultative conjunction. This is a себеп-салдарлы салалас құрмалас сөйлем.\n\nB) 'Ол келді, бірақ ешкімді таба алмады.' — Uses 'бірақ' (but/however), which is an adversative conjunction. This is a қарсылықты салалас құрмалас сөйлем (adversative compound sentence).\n\nC) 'Не ол барады, не мен барамын.' — Uses 'не...не' (either...or), which is a disjunctive conjunction. This is a талғаулы салалас құрмалас сөйлем.\n\nD) 'Ауа райы суық болды, яғни жаз аяқталды.' — Uses 'яғни' (that is/namely), which is an explanatory conjunction. This is a түсіндірмелі салалас құрмалас сөйлем.\n\nTherefore, the adversative compound sentence (қарсылықты салалас құрмалас сөйлем) is option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and unambiguous. Each option represents a distinct type of coordinate compound sentence with a clear identifying conjunction, making distractors highly plausible. The language is natural and terminologically accurate per Kazakh school curriculum standards.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the adversative coordinate compound sentence (қарсылықты салалас құрмалас сөйлем). Let's analyze the conjunctions used in each option:\n\nA) 'сондықтан' (therefore) indicates a cause-and-effect relationship (себеп-салдар салалас).\nB) 'бірақ' (but) is an adversative conjunction, which contrasts the two clauses. This makes it a қарсылықты салалас құрмалас сөйлем.\nC) 'не ..., не ...' (either ..., or ...) is a disjunctive conjunction (талғаулы салалас).\nD) 'яғни' (that is) is an explanatory conjunction (түсіндірмелі салалас).\n\nTherefore, option B is the correct answer.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurate, and perfectly aligned with the requested difficulty level. The distractors effectively represent other types of coordinate compound sentences.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:24:53.228486+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "670a0f5d-4ea1-4e63-a45c-587bcf55d399",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төл сөздің төлеу сөзге дұрыс айналдырылған нұсқасын табыңыз.\n\nЖолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жолаушы қартқа бұл ауылға кеше келдім деп айтты."
+    },
+    {
+      "label": "B",
+      "text": "Жолаушы қартқа өзінің бұл ауылға кеше келгенін айтты."
+    },
+    {
+      "label": "C",
+      "text": "Жолаушы қартқа оның бұл ауылға кеше келгенін айтты."
+    },
+    {
+      "label": "D",
+      "text": "Жолаушы қартқа менің бұл ауылға кеше келгенімді айтты."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Төл сөзді төлеу сөзге айналдырудың негізгі грамматикалық заңдылықтары бар: төл сөз автор сөзінің құрамына еніп, сабақтас құрмалас сөйлемнің бағыныңқы сыңарына (негізінен толықтауышқа) айналады. Бұл кезде төл сөздегі 1, 2-жақ есімдіктері 3-жаққа өзгереді. Берілген сөйлемдегі 1-жақта тұрған «мен» есімдігі автор сөзіндегі бастауышпен (жолаушы) бір адам болғандықтан, өздік есімдігіне («өзінің») ауысады. Баяндауыш есімше тұлғасына еніп, тәуелдік және табыс септігі жалғауын қабылдайды («кел-ген-і-н»), ал «деді» көмекші етістігі мағынасына қарай «айтты» етістігімен алмасады. А нұсқасында баяндауыш 1-жақта (келдім) қалып қойған, сондықтан ол грамматикалық тұрғыдан қате. С нұсқасындағы «оның» есімдігі жолаушыны емес, бөгде үшінші адамды нұсқап, мағынаны бұрмалайды. D нұсқасында «менің» есімдігі сақталып қалғандықтан, іс-әрекетті сөйлемді баяндаушы авторға теліп тұр. Сондықтан дұрыс нұсқа – B.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The direct speech is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді. In Kazakh, when direct speech is converted into indirect/reported speech (төлеу сөз), the first-person pronoun in the quoted sentence must be changed according to the reporting speaker. Here «Мен ... келдім» refers to the traveler (жолаушы), so in reported speech it becomes a reflexive possessive construction: өзінің ... к\n\n[anthropic/claude-sonnet-4.6] answered B: The original direct speech (төл сөз) is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді.\n\nWhen converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) must be replaced by a reflexive/possessive construction referring back to the subject. In Kazakh indirect speech, 'мен' becomes 'өзінің' (his/her own) when t\n\n[google/gemini-3.1-pro-preview] answered B: To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the personal pronouns and verb endings must be adjusted to reflect the perspective of the narrator. The original sentence is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді. (The traveler said to the old man: 'I came to this village yesterday.'). \n\n1. The first-person pronoun 'Мен' (I) refers to the subject 'Жолаушы",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately applies the standard transformation from direct to reported speech, including pronoun and verb-form changes. Distractors target recognizable errors, though the item is somewhat basic for practicing teachers at level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests a genuine grammatical rule (pronoun shift and verb nominalization in indirect speech). The correct answer B is unambiguous, and each distractor targets a specific, identifiable error: A keeps the first-person verb form, C uses a third-person pronoun implying a different referent, and D retains the first-person possessive. Language quality is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It accurately tests the rules for converting direct speech to indirect speech in Kazakh, with highly plausible distractors based on common student errors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The direct speech is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді. In Kazakh, when direct speech is converted into indirect/reported speech (төлеу сөз), the first-person pronoun in the quoted sentence must be changed according to the reporting speaker. Here «Мен ... келдім» refers to the traveler (жолаушы), so in reported speech it becomes a reflexive possessive construction: өзінің ... к\n\n[anthropic/claude-sonnet-4.6] answered B: The original direct speech (төл сөз) is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді.\n\nWhen converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) must be replaced by a reflexive/possessive construction referring back to the subject. In Kazakh indirect speech, 'мен' becomes 'өзінің' (his/her own) when t\n\n[google/gemini-3.1-pro-preview] answered B: To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the personal pronouns and verb endings must be adjusted to reflect the perspective of the narrator. The original sentence is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді. (The traveler said to the old man: 'I came to this village yesterday.'). \n\n1. The first-person pronoun 'Мен' (I) refers to the subject 'Жолаушы",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately applies the standard transformation from direct to reported speech, including pronoun and verb-form changes. Distractors target recognizable errors, though the item is somewhat basic for practicing teachers at level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests a genuine grammatical rule (pronoun shift and verb nominalization in indirect speech). The correct answer B is unambiguous, and each distractor targets a specific, identifiable error: A keeps the first-person verb form, C uses a third-person pronoun implying a different referent, and D retains the first-person possessive. Language quality is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It accurately tests the rules for converting direct speech to indirect speech in Kazakh, with highly plausible distractors based on common student errors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The direct speech is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді. In Kazakh, when direct speech is converted into indirect/reported speech (төлеу сөз), the first-person pronoun in the quoted sentence must be changed according to the reporting speaker. Here «Мен ... келдім» refers to the traveler (жолаушы), so in reported speech it becomes a reflexive possessive construction: өзінің ... келгенін. The finite first-person verb келдім changes into the participial nominalized form келгенін, governed by айтты/деді. Therefore the correct indirect form is: Жолаушы қартқа өзінің бұл ауылға кеше келгенін айтты. Option A incorrectly keeps келдім in first person with деп. Option C uses оның, which suggests another person's coming rather than clearly the traveler's own statement. Option D uses менің, incorrectly preserving the narrator's first person. Thus the correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately applies the standard transformation from direct to reported speech, including pronoun and verb-form changes. Distractors target recognizable errors, though the item is somewhat basic for practicing teachers at level B.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The original direct speech (төл сөз) is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді.\n\nWhen converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) must be replaced by a reflexive/possessive construction referring back to the subject. In Kazakh indirect speech, 'мен' becomes 'өзінің' (his/her own) when the subject of the reporting clause and the speaker are the same person.\n2. The verb in direct speech changes to a nominalized form with appropriate case ending, typically using the verbal noun + possessive + case suffix construction.\n3. The verb 'деді' changes to 'айтты' or similar reporting verb.\n\nAnalyzing each option:\nA) 'бұл ауылға кеше келдім деп айтты' — This keeps the first-person verb form 'келдім' without changing the pronoun, which is incorrect for proper indirect speech conversion.\n\nB) 'Жолаушы қартқа өзінің бұл ауылға кеше келгенін айтты' — Here 'мен' is replaced by 'өзінің' (reflexive possessive, referring to the subject 'жолаушы'), and the verb is nominalized as 'келгенін' (accusative of verbal noun with 3rd person possessive). This correctly follows Kazakh indirect speech rules: the subject's own action is expressed with өзінің...келгенін.\n\nC) 'оның бұл ауылға кеше келгенін айтты' — 'оның' means 'his/her' referring to a third person other than the subject, which would imply the traveler is talking about someone else, not himself. This is incorrect.\n\nD) 'менің бұл ауылға кеше келгенімді айтты' — This keeps 'менің' (my/I), which is the first-person pronoun and should be transformed in indirect speech. This is not the standard conversion.\n\nTherefore, option B correctly converts the direct speech to indirect speech by replacing 'мен' with 'өзінің' and nominalizing the verb appropriately.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and tests a genuine grammatical rule (pronoun shift and verb nominalization in indirect speech). The correct answer B is unambiguous, and each distractor targets a specific, identifiable error: A keeps the first-person verb form, C uses a third-person pronoun implying a different referent, and D retains the first-person possessive. Language quality is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the personal pronouns and verb endings must be adjusted to reflect the perspective of the narrator. The original sentence is: Жолаушы қартқа: «Мен бұл ауылға кеше келдім», – деді. (The traveler said to the old man: 'I came to this village yesterday.'). \n\n1. The first-person pronoun 'Мен' (I) refers to the subject 'Жолаушы' (traveler). In indirect speech, it changes to the reflexive pronoun 'өзінің' (his own / that he himself) to indicate that the subject is referring to their own action.\n2. The finite verb 'келдім' (I came) changes to a verbal noun/participle with a possessive and accusative suffix: 'келгенін' (that he came).\n3. The reporting verb 'деді' is typically replaced by 'айтты' when using this accusative participle structure.\n\nLooking at the options:\nA) Keeps the first-person 'келдім', which fails to convert the perspective.\nB) Uses 'өзінің ... келгенін айтты', which perfectly applies the rules of indirect speech.\nC) Uses 'оның', which would imply a third person (someone else) came, not the traveler himself.\nD) Uses 'менің', which implies the narrator of the sentence came, not the traveler.\n\nThus, option B is the correct transformation.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is of excellent quality. It accurately tests the rules for converting direct speech to indirect speech in Kazakh, with highly plausible distractors based on common student errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:03:03.121980+00:00",
+  "generation_attempts": 1
+}

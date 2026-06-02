@@ -1,0 +1,140 @@
+{
+  "id": "fdd34ec9-4bfd-4124-bf19-1de6cd0efdcd",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Төл сөзді төлеу сөзге дұрыс айналдырған нұсқаны белгілеңіз.\nОқушы: «Мен кітап оқыдым», – деді.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Оқушы: өзінің кітап оқығанын айтты."
+    },
+    {
+      "label": "B",
+      "text": "Оқушы мен кітап оқыдым деп айтты."
+    },
+    {
+      "label": "C",
+      "text": "Оқушы өзінің кітап оқығанын айтты."
+    },
+    {
+      "label": "D",
+      "text": "Оқушы өзінің кітап оқитынын айтты."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап – C. Төл сөзді төлеу сөзге айналдырғанда тырнақша мен қос нүкте қолданылмайды, сөйлеушінің сөзі автор сөзімен грамматикалық байланысқа түседі: «Мен кітап оқыдым» сөзі «өзінің кітап оқығанын» болып өзгереді. A нұсқасында төлеу сөзге тән құрылым берілгенімен, қос нүкте орынсыз қойылған. B нұсқасында төл сөздің бастапқы жақтық тұлғасы сақталып, төлеу сөзге толық айналмаған. D нұсқасында шақ мағынасы өзгерген: «оқыдым» емес, «оқитынын» деп берілген.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The direct speech is: Оқушы: «Мен кітап оқыдым», – деді. In converting төл сөз (direct speech) to төлеу сөз (indirect/reported speech), the first-person pronoun \"мен\" must change according to the speaker, i.e. to \"өзінің\" referring to \"оқушы\". The verb phrase \"кітап оқыдым\" is a completed past action, so in indirect speech it should become the nominalized form \"кітап оқығанын\". The reporting verb \n\n[anthropic/claude-sonnet-4.6] answered C: The original direct speech (төл сөз) is: Оқушы: «Мен кітап оқыдым», – деді. This means 'The student said: \"I read a book.\"'\n\nTo convert to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) changes to 'өзінің' (his/her own) since we are reporting what someone else said.\n2. The verb form changes: the past tense verb 'оқыдым' (I read) must be conv\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) to reported speech (төлеу сөз) in Kazakh, several changes must occur: 1) First-person pronouns (Мен) change to third-person or reflexive pronouns (өзінің/оның). 2) The main verb of the direct speech takes a participle form with possessive and accusative suffixes matching the tense. 'Оқыдым' is in the past tense, so it becomes 'оқыған' + 'ы' + 'н' = 'оқығанын'. 3)",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: it properly changes first person to reflexive reference and preserves the past completed meaning. The item is appropriate for level A, though the original direct-speech punctuation/speaker framing is slightly awkward. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously the proper indirect speech transformation, and each distractor targets a specific, identifiable error — A has a spurious colon, B retains first-person direct speech form, D changes the tense incorrectly. Language is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is well-constructed, tests a fundamental syntax rule, and the distractors are based on common mistakes.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The direct speech is: Оқушы: «Мен кітап оқыдым», – деді. In converting төл сөз (direct speech) to төлеу сөз (indirect/reported speech), the first-person pronoun \"мен\" must change according to the speaker, i.e. to \"өзінің\" referring to \"оқушы\". The verb phrase \"кітап оқыдым\" is a completed past action, so in indirect speech it should become the nominalized form \"кітап оқығанын\". The reporting verb \n\n[anthropic/claude-sonnet-4.6] answered C: The original direct speech (төл сөз) is: Оқушы: «Мен кітап оқыдым», – деді. This means 'The student said: \"I read a book.\"'\n\nTo convert to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) changes to 'өзінің' (his/her own) since we are reporting what someone else said.\n2. The verb form changes: the past tense verb 'оқыдым' (I read) must be conv\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) to reported speech (төлеу сөз) in Kazakh, several changes must occur: 1) First-person pronouns (Мен) change to third-person or reflexive pronouns (өзінің/оның). 2) The main verb of the direct speech takes a participle form with possessive and accusative suffixes matching the tense. 'Оқыдым' is in the past tense, so it becomes 'оқыған' + 'ы' + 'н' = 'оқығанын'. 3)",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: it properly changes first person to reflexive reference and preserves the past completed meaning. The item is appropriate for level A, though the original direct-speech punctuation/speaker framing is slightly awkward. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously the proper indirect speech transformation, and each distractor targets a specific, identifiable error — A has a spurious colon, B retains first-person direct speech form, D changes the tense incorrectly. Language is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is well-constructed, tests a fundamental syntax rule, and the distractors are based on common mistakes.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The direct speech is: Оқушы: «Мен кітап оқыдым», – деді. In converting төл сөз (direct speech) to төлеу сөз (indirect/reported speech), the first-person pronoun \"мен\" must change according to the speaker, i.e. to \"өзінің\" referring to \"оқушы\". The verb phrase \"кітап оқыдым\" is a completed past action, so in indirect speech it should become the nominalized form \"кітап оқығанын\". The reporting verb can be \"айтты\". Therefore the correct indirect form is: \"Оқушы өзінің кітап оқығанын айтты.\" Option A has incorrect punctuation with a colon, as if introducing direct speech. Option B keeps the original first-person direct form. Option D changes the tense/aspect to \"оқитынын\" (reads/will read), which does not match \"оқыдым\". Thus the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and uniquely defensible: it properly changes first person to reflexive reference and preserves the past completed meaning. The item is appropriate for level A, though the original direct-speech punctuation/speaker framing is slightly awkward.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The original direct speech (төл сөз) is: Оқушы: «Мен кітап оқыдым», – деді. This means 'The student said: \"I read a book.\"'\n\nTo convert to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) changes to 'өзінің' (his/her own) since we are reporting what someone else said.\n2. The verb form changes: the past tense verb 'оқыдым' (I read) must be converted to a subordinate clause form. In Kazakh indirect speech, the verb takes the form of a verbal noun/participle with possessive suffix: 'оқығанын' (that he/she read) — using the past participle 'оқыған' + accusative possessive '-ын'.\n3. The reporting verb 'деді' becomes 'айтты' or remains as a verb of saying.\n4. There should be no colon or quotation marks in indirect speech.\n5. The sentence should not retain direct speech punctuation.\n\nNow evaluating options:\n- A) 'Оқушы: өзінің кітап оқығанын айтты.' — This still has a colon after 'Оқушы', which is a direct speech punctuation marker. This is incorrect formatting for indirect speech.\n- B) 'Оқушы мен кітап оқыдым деп айтты.' — This retains 'мен кітап оқыдым' (first person, original verb form) with 'деп', which is more of a semi-direct/quasi-indirect form, not proper indirect speech transformation.\n- C) 'Оқушы өзінің кітап оқығанын айтты.' — No colon, proper pronoun change ('өзінің'), proper verb form ('оқығанын' = past participle + accusative), proper reporting verb ('айтты'). This is the correct indirect speech form.\n- D) 'Оқушы өзінің кітап оқитынын айтты.' — Uses 'оқитынын' which is present/habitual tense participle, not past tense. The original was past tense 'оқыдым', so this tense is wrong.\n\nThe correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (C) is unambiguously the proper indirect speech transformation, and each distractor targets a specific, identifiable error — A has a spurious colon, B retains first-person direct speech form, D changes the tense incorrectly. Language is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) to reported speech (төлеу сөз) in Kazakh, several changes must occur: 1) First-person pronouns (Мен) change to third-person or reflexive pronouns (өзінің/оның). 2) The main verb of the direct speech takes a participle form with possessive and accusative suffixes matching the tense. 'Оқыдым' is in the past tense, so it becomes 'оқыған' + 'ы' + 'н' = 'оқығанын'. 3) The reporting verb 'деді' often changes to 'айтты'. 4) Punctuation marks specific to direct speech (colons, quotation marks, dashes) are removed. \n\nEvaluating the options:\nA) 'Оқушы: өзінің кітап оқығанын айтты.' - Incorrect because it retains the colon.\nB) 'Оқушы мен кітап оқыдым деп айтты.' - Incorrect because it does not change the pronoun 'мен' or the verb 'оқыдым' to the reported speech format.\nC) 'Оқушы өзінің кітап оқығанын айтты.' - Correct. The pronoun changed to 'өзінің', the verb changed to the past participle 'оқығанын', and all punctuation is correct.\nD) 'Оқушы өзінің кітап оқитынын айтты.' - Incorrect because 'оқитынын' implies present/future tense, whereas the original direct speech 'оқыдым' is in the past tense.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, tests a fundamental syntax rule, and the distractors are based on common mistakes.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:14:48.023067+00:00",
+  "generation_attempts": 1
+}

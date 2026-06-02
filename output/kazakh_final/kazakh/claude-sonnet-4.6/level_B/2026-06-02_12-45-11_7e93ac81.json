@@ -1,0 +1,140 @@
+{
+  "id": "7e93ac81-addc-4e9f-8408-e1857dcaff8b",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_meaning",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысында «жүрек» сөзі ауыспалы мағынада қолданылған?\n\n1. Дәрігер науқастың жүрегін тексерді.\n2. Жүрегі тас адаммен дос болма.\n3. Жүректің сол жақ қарыншасы қанды айдайды.\n4. Спортшының жүрегі денсаулықты көрсетеді.",
+  "options": [
+    {
+      "label": "A",
+      "text": "1-сөйлемде"
+    },
+    {
+      "label": "B",
+      "text": "2-сөйлемде"
+    },
+    {
+      "label": "C",
+      "text": "3-сөйлемде"
+    },
+    {
+      "label": "D",
+      "text": "4-сөйлемде"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "«Ауыспалы мағына» дегеніміз — сөздің негізгі (тура) мағынасынан басқа, бейнелі, метафоралық мәнде қолданылуы. «Жүрек» сөзінің тура мағынасы — адам денесіндегі қан айдайтын мүше. 2-сөйлемдегі «жүрегі тас» тіркесінде «жүрек» сөзі адамның мінезін, ішкі дүниесін, мейірімсіздігін білдіріп, ауыспалы мағынада жұмсалған. 1, 3 және 4-сөйлемдерде «жүрек» сөзі анатомиялық мүшені білдіріп, тура мағынасында қолданылған. Сондықтан дұрыс жауап — 2-сөйлем (В).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.9,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh word “жүрек” literally means the anatomical organ “heart.” In sentence 1, “Дәрігер науқастың жүрегін тексерді” means the doctor examined the patient’s heart, so it is literal. In sentence 3, “Жүректің сол жақ қарыншасы қанды айдайды” refers to the left ventricle pumping blood, so it is literal. In sentence 4, “Спортшының жүрегі денсаулықты көрсетеді” refers to the athlete’s heart as an \n\n[anthropic/claude-sonnet-4.6] answered B: The question asks in which sentence the word 'жүрек' (heart) is used in a figurative/transferred meaning (ауыспалы мағына).\n\nLet's analyze each sentence:\n\n1. 'Дәрігер науқастың жүрегін тексерді.' — 'The doctor examined the patient's heart.' Here 'жүрек' refers to the literal anatomical organ. This is direct/literal meaning.\n\n2. 'Жүрегі тас адаммен дос болма.' — 'Don't be friends with a person whos\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence where the word 'жүрек' (heart) is used in a figurative meaning (ауыспалы мағына). Let's analyze the given sentences:\n1. 'Дәрігер науқастың жүрегін тексерді.' (The doctor examined the patient's heart.) - Here, 'жүрек' refers to the physical organ, which is its literal meaning (тура мағына).\n2. 'Жүрегі тас адаммен дос болма.' (Do not be friends with a perso",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.833,
+      "difficulty_alignment": 7.667,
+      "kazakh_language_quality": 8.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.9,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible answer: only sentence 2 uses “жүрек” figuratively. However, the task is closer to basic recognition than medium-level analysis, and sentence 4 is somewhat awkward in Kazakh. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear, unambiguous correct answer (B). Sentence 2 uses 'жүрегі тас' as an obvious metaphor for emotional coldness, while the other three sentences all use 'жүрек' in its literal anatomical sense. Language is natural and terminology is appropriate for Kazakh lexicology instruction. | [google/gemini-3.1-pro-preview] The question is clear, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are well-constructed and the language is natural.",
+    "improvement_suggestions": "[openai/gpt-5.5] To better match level B, use a short contextual passage or include subtler contrasts between тура мағына, ауыспалы мағына, and тұрақты тіркес. Revise sentence 4 to a more natural form, e.g. “Спортшының жүрегі жақсы жұмыс істейді” or “Спортшының жүрек жұмысы денсаулығының көрсеткіші.” | [anthropic/claude-sonnet-4.6] Distractor quality could be improved slightly: sentences 1, 3, and 4 are all straightforwardly literal, making elimination somewhat easy. Consider replacing one distractor with a sentence that uses 'жүрек' in a borderline or idiomatic context (e.g., 'жүрегім сезді' — 'my heart sensed it') to increase cognitive demand and better align with level B analysis requirements.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh word “жүрек” literally means the anatomical organ “heart.” In sentence 1, “Дәрігер науқастың жүрегін тексерді” means the doctor examined the patient’s heart, so it is literal. In sentence 3, “Жүректің сол жақ қарыншасы қанды айдайды” refers to the left ventricle pumping blood, so it is literal. In sentence 4, “Спортшының жүрегі денсаулықты көрсетеді” refers to the athlete’s heart as an \n\n[anthropic/claude-sonnet-4.6] answered B: The question asks in which sentence the word 'жүрек' (heart) is used in a figurative/transferred meaning (ауыспалы мағына).\n\nLet's analyze each sentence:\n\n1. 'Дәрігер науқастың жүрегін тексерді.' — 'The doctor examined the patient's heart.' Here 'жүрек' refers to the literal anatomical organ. This is direct/literal meaning.\n\n2. 'Жүрегі тас адаммен дос болма.' — 'Don't be friends with a person whos\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence where the word 'жүрек' (heart) is used in a figurative meaning (ауыспалы мағына). Let's analyze the given sentences:\n1. 'Дәрігер науқастың жүрегін тексерді.' (The doctor examined the patient's heart.) - Here, 'жүрек' refers to the physical organ, which is its literal meaning (тура мағына).\n2. 'Жүрегі тас адаммен дос болма.' (Do not be friends with a perso",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.833,
+        "difficulty_alignment": 7.667,
+        "kazakh_language_quality": 8.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.9,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible answer: only sentence 2 uses “жүрек” figuratively. However, the task is closer to basic recognition than medium-level analysis, and sentence 4 is somewhat awkward in Kazakh. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear, unambiguous correct answer (B). Sentence 2 uses 'жүрегі тас' as an obvious metaphor for emotional coldness, while the other three sentences all use 'жүрек' in its literal anatomical sense. Language is natural and terminology is appropriate for Kazakh lexicology instruction. | [google/gemini-3.1-pro-preview] The question is clear, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are well-constructed and the language is natural.",
+      "improvement_suggestions": "[openai/gpt-5.5] To better match level B, use a short contextual passage or include subtler contrasts between тура мағына, ауыспалы мағына, and тұрақты тіркес. Revise sentence 4 to a more natural form, e.g. “Спортшының жүрегі жақсы жұмыс істейді” or “Спортшының жүрек жұмысы денсаулығының көрсеткіші.” | [anthropic/claude-sonnet-4.6] Distractor quality could be improved slightly: sentences 1, 3, and 4 are all straightforwardly literal, making elimination somewhat easy. Consider replacing one distractor with a sentence that uses 'жүрек' in a borderline or idiomatic context (e.g., 'жүрегім сезді' — 'my heart sensed it') to increase cognitive demand and better align with level B analysis requirements.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The Kazakh word “жүрек” literally means the anatomical organ “heart.” In sentence 1, “Дәрігер науқастың жүрегін тексерді” means the doctor examined the patient’s heart, so it is literal. In sentence 3, “Жүректің сол жақ қарыншасы қанды айдайды” refers to the left ventricle pumping blood, so it is literal. In sentence 4, “Спортшының жүрегі денсаулықты көрсетеді” refers to the athlete’s heart as an indicator of health, still in the anatomical/medical sense. In sentence 2, “Жүрегі тас адаммен дос болма” literally says “do not be friends with a person whose heart is stone,” which is an idiomatic figurative expression meaning a cruel, hard-hearted person. Therefore, the figurative use is in sentence 2.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.5,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 7.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single defensible answer: only sentence 2 uses “жүрек” figuratively. However, the task is closer to basic recognition than medium-level analysis, and sentence 4 is somewhat awkward in Kazakh.",
+          "improvement_suggestions": "To better match level B, use a short contextual passage or include subtler contrasts between тура мағына, ауыспалы мағына, and тұрақты тіркес. Revise sentence 4 to a more natural form, e.g. “Спортшының жүрегі жақсы жұмыс істейді” or “Спортшының жүрек жұмысы денсаулығының көрсеткіші.”",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks in which sentence the word 'жүрек' (heart) is used in a figurative/transferred meaning (ауыспалы мағына).\n\nLet's analyze each sentence:\n\n1. 'Дәрігер науқастың жүрегін тексерді.' — 'The doctor examined the patient's heart.' Here 'жүрек' refers to the literal anatomical organ. This is direct/literal meaning.\n\n2. 'Жүрегі тас адаммен дос болма.' — 'Don't be friends with a person whose heart is stone (stone-hearted).' Here 'жүрегі тас' means the person is cruel, cold, unfeeling. 'Жүрек' is used figuratively to represent emotions, feelings, character — not the physical organ. This is a figurative/transferred meaning. The expression 'жүрегі тас' (heart of stone) is a metaphorical usage.\n\n3. 'Жүректің сол жақ қарыншасы қанды айдайды.' — 'The left ventricle of the heart pumps blood.' This is clearly a literal, anatomical/medical reference to the heart organ.\n\n4. 'Спортшының жүрегі денсаулықты көрсетеді.' — 'The athlete's heart shows health.' This refers to the literal heart organ as an indicator of physical health. Still literal meaning.\n\nTherefore, sentence 2 uses 'жүрек' in a figurative/transferred meaning (ауыспалы мағына), as it metaphorically represents a person's emotional character rather than the physical organ.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear, unambiguous correct answer (B). Sentence 2 uses 'жүрегі тас' as an obvious metaphor for emotional coldness, while the other three sentences all use 'жүрек' in its literal anatomical sense. Language is natural and terminology is appropriate for Kazakh lexicology instruction.",
+          "improvement_suggestions": "Distractor quality could be improved slightly: sentences 1, 3, and 4 are all straightforwardly literal, making elimination somewhat easy. Consider replacing one distractor with a sentence that uses 'жүрек' in a borderline or idiomatic context (e.g., 'жүрегім сезді' — 'my heart sensed it') to increase cognitive demand and better align with level B analysis requirements.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence where the word 'жүрек' (heart) is used in a figurative meaning (ауыспалы мағына). Let's analyze the given sentences:\n1. 'Дәрігер науқастың жүрегін тексерді.' (The doctor examined the patient's heart.) - Here, 'жүрек' refers to the physical organ, which is its literal meaning (тура мағына).\n2. 'Жүрегі тас адаммен дос болма.' (Do not be friends with a person whose heart is stone.) - Here, 'жүрегі тас' (heart of stone) is a metaphor used to describe a cruel or unfeeling person. The word 'жүрек' represents emotions and empathy, which is a figurative meaning.\n3. 'Жүректің сол жақ қарыншасы қанды айдайды.' (The left ventricle of the heart pumps blood.) - Refers to the anatomical organ (literal meaning).\n4. 'Спортшының жүрегі денсаулықты көрсетеді.' (The athlete's heart shows health.) - Refers to the physical organ (literal meaning).\n\nTherefore, the word 'жүрек' is used figuratively in the 2nd sentence.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is clear, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are well-constructed and the language is natural.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:45:11.520021+00:00",
+  "generation_attempts": 1
+}

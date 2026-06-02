@@ -1,0 +1,140 @@
+{
+  "id": "ebc59097-eab4-4d47-bea0-e35afae98add",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Салалас құрмалас сөйлемнің түрі дұрыс көрсетілген нұсқаны белгілеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Біресе жел басылады, біресе қайтадан үдей түседі — талғаулы салалас."
+    },
+    {
+      "label": "B",
+      "text": "Күн суытты, бірақ қар түсе қойған жоқ — себеп-салдар салалас."
+    },
+    {
+      "label": "C",
+      "text": "Не жиналыс бүгін өтеді, не шешім ертең хабарланады — талғаулы салалас."
+    },
+    {
+      "label": "D",
+      "text": "Жол ұзақ болды, сондықтан жолаушылар кешікті — ыңғайлас салалас."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. Бұл сөйлемде «не... не» талғаулықты жалғаулығы арқылы екі істің бірінің жүзеге асатыны көрсетілген, сондықтан ол талғаулы салаласқа жатады. A нұсқасындағы «біресе... біресе» кезектес салаласты білдіреді. B нұсқасында «бірақ» жалғаулығы қарсылықты мағынаны білдіреді, сондықтан ол себеп-салдар салалас емес. D нұсқасындағы «сондықтан» жалғаулығы салдар мәнін білдіріп, себеп-салдар салалас жасайды, ыңғайлас салалас емес.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Evaluate each option by the conjunction/semantic relation used in the coordinate compound sentence (салалас құрмалас сөйлем). Option A uses the repeated marker “біресе ... біресе”, which expresses alternating actions, so it is a кезектес салалас, not a талғаулы салалас. Option B uses “бірақ” and expresses contrast: the weather got cold, but snow has not fallen yet; this is қарсылықты салалас, not \n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify which option correctly labels the type of coordinate compound sentence (салалас құрмалас сөйлем).\n\nTypes of coordinate compound sentences in Kazakh:\n1. Ыңғайлас салалас (copulative/additive) — clauses joined by conjunctions like 'және', 'да/де', 'та/те', or simply listed together with similar/parallel meaning.\n2. Қарсылықты салалас (adversative) — clauses joined by 'бірақ', 'ал\n\n[google/gemini-3.1-pro-preview] answered C: To find the correctly identified type of coordinate compound sentence (салалас құрмалас сөйлем), let's analyze the conjunctions used in each option:\n\nA) 'Біресе жел басылады, біресе қайтадан үдей түседі' uses the conjunctions 'біресе ... біресе ...', which indicate alternating actions. This is a 'кезектес салалас' (alternating coordinate clause), not 'талғаулы салалас'.\n\nB) 'Күн суытты, бірақ қар ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 8.0,
+      "distractor_quality": 7.833,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes талғаулы, кезектес, қарсылықты, and себеп-салдар салалас. The item is somewhat straightforward for level B because it mainly tests recognition of conjunction markers, but it remains valid and unambiguous. | [anthropic/claude-sonnet-4.6] The question has a critical ambiguity: both option A ('біресе...біресе' → талғаулы) and option C ('не...не' → талғаулы) can be considered correctly labeled depending on the textbook used. Some Kazakh grammar sources classify 'біресе...біресе' under талғаулы салалас, not as a separate кезектес type, making two options simultaneously correct. This violates the single-answer requirement for certification exams. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the classification of coordinate compound sentences. The distractors are plausible and effectively target common misconceptions.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Either (1) change option A's label to 'кезектес салалас' (making it a distractor testing knowledge of the distinction between кезектес and талғаулы), or (2) replace option A entirely with a sentence using a clearly non-талғаулы conjunction mislabeled as талғаулы. The explanation should also cite the specific curriculum/textbook that distinguishes кезектес from талғаулы to justify the answer key.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Evaluate each option by the conjunction/semantic relation used in the coordinate compound sentence (салалас құрмалас сөйлем). Option A uses the repeated marker “біресе ... біресе”, which expresses alternating actions, so it is a кезектес салалас, not a талғаулы салалас. Option B uses “бірақ” and expresses contrast: the weather got cold, but snow has not fallen yet; this is қарсылықты салалас, not \n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify which option correctly labels the type of coordinate compound sentence (салалас құрмалас сөйлем).\n\nTypes of coordinate compound sentences in Kazakh:\n1. Ыңғайлас салалас (copulative/additive) — clauses joined by conjunctions like 'және', 'да/де', 'та/те', or simply listed together with similar/parallel meaning.\n2. Қарсылықты салалас (adversative) — clauses joined by 'бірақ', 'ал\n\n[google/gemini-3.1-pro-preview] answered C: To find the correctly identified type of coordinate compound sentence (салалас құрмалас сөйлем), let's analyze the conjunctions used in each option:\n\nA) 'Біресе жел басылады, біресе қайтадан үдей түседі' uses the conjunctions 'біресе ... біресе ...', which indicate alternating actions. This is a 'кезектес салалас' (alternating coordinate clause), not 'талғаулы салалас'.\n\nB) 'Күн суытты, бірақ қар ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 8.0,
+        "distractor_quality": 7.833,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes талғаулы, кезектес, қарсылықты, and себеп-салдар салалас. The item is somewhat straightforward for level B because it mainly tests recognition of conjunction markers, but it remains valid and unambiguous. | [anthropic/claude-sonnet-4.6] The question has a critical ambiguity: both option A ('біресе...біресе' → талғаулы) and option C ('не...не' → талғаулы) can be considered correctly labeled depending on the textbook used. Some Kazakh grammar sources classify 'біресе...біресе' under талғаулы салалас, not as a separate кезектес type, making two options simultaneously correct. This violates the single-answer requirement for certification exams. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the classification of coordinate compound sentences. The distractors are plausible and effectively target common misconceptions.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Either (1) change option A's label to 'кезектес салалас' (making it a distractor testing knowledge of the distinction between кезектес and талғаулы), or (2) replace option A entirely with a sentence using a clearly non-талғаулы conjunction mislabeled as талғаулы. The explanation should also cite the specific curriculum/textbook that distinguishes кезектес from талғаулы to justify the answer key.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Evaluate each option by the conjunction/semantic relation used in the coordinate compound sentence (салалас құрмалас сөйлем). Option A uses the repeated marker “біресе ... біресе”, which expresses alternating actions, so it is a кезектес салалас, not a талғаулы салалас. Option B uses “бірақ” and expresses contrast: the weather got cold, but snow has not fallen yet; this is қарсылықты салалас, not себеп-салдар салалас. Option C uses “не ... не”, a correlative alternative conjunction meaning “either ... or”; this is correctly classified as талғаулы салалас. Option D uses “сондықтан”, indicating result/consequence; this is себеп-салдар салалас, not ыңғайлас салалас. Therefore the correctly identified type is option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately distinguishes талғаулы, кезектес, қарсылықты, and себеп-салдар салалас. The item is somewhat straightforward for level B because it mainly tests recognition of conjunction markers, but it remains valid and unambiguous.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify which option correctly labels the type of coordinate compound sentence (салалас құрмалас сөйлем).\n\nTypes of coordinate compound sentences in Kazakh:\n1. Ыңғайлас салалас (copulative/additive) — clauses joined by conjunctions like 'және', 'да/де', 'та/те', or simply listed together with similar/parallel meaning.\n2. Қарсылықты салалас (adversative) — clauses joined by 'бірақ', 'алайда', 'дегенмен' (but, however).\n3. Талғаулы салалас (disjunctive/alternative) — clauses joined by 'не...не', 'біресе...біресе', 'я...я', 'немесе' (either...or, now...now).\n4. Себеп-салдар салалас (causal-consecutive) — clauses joined by 'сондықтан', 'сол себепті' (therefore, that is why).\n5. Түсіндірмелі салалас (explanatory) — clauses joined by 'яғни', 'демек'.\n\nNow let's analyze each option:\n\nA) 'Біресе жел басылады, біресе қайтадан үдей түседі' — uses 'біресе...біресе' (now...now / sometimes...sometimes). This conjunction is characteristic of ТАЛҒАУЛЫ салалас (disjunctive). The label given is 'талғаулы салалас' — CORRECT.\n\nB) 'Күн суытты, бірақ қар түсе қойған жоқ' — uses 'бірақ' (but). This is ҚАРСЫЛЫҚТЫ салалас (adversative), NOT себеп-салдар. The label given is 'себеп-салдар салалас' — INCORRECT.\n\nC) 'Не жиналыс бүгін өтеді, не шешім ертең хабарланады' — uses 'не...не'. In Kazakh, 'не...не' typically means 'neither...nor' which would be a negative disjunctive, but it can also function as 'either...or' in some contexts. However, the standard classification: 'не...не' is indeed a талғаулы conjunction. But wait — 'не...не' in Kazakh means 'neither...nor' (both negative), making it still talғauly. The label given is 'талғаулы салалас' — this could also be correct. But let me reconsider: in Kazakh grammar, 'не...не' is listed under талғаулы салалас conjunctions. So this labeling seems correct too.\n\nD) 'Жол ұзақ болды, сондықтан жолаушылар кешікті' — uses 'сондықтан' (therefore). This is СЕБЕП-САЛДАР салалас (causal-consecutive). The label given is 'ыңғайлас салалас' — INCORRECT.\n\nSo options A and C both appear to be correctly labeled as талғаулы салалас. However, looking more carefully:\n\n- 'біресе...біресе' — this conjunction expresses alternation (now...now), which is indeed талғаулы.\n- 'не...не' — in Kazakh, 'не...не' means 'neither...nor', which is also classified as талғаулы салалас.\n\nBoth A and C seem correct. But the question asks for the ONE correct answer. Let me reconsider option C more carefully. 'Не жиналыс бүгін өтеді, не шешім ертең хабарланады' — with 'не...не', this is indeed талғаулы. \n\nHowever, in standard Kazakh grammar textbooks, 'біресе...біресе' is a classic example of талғаулы салалас. Both A and C label their sentences as талғаулы салалас, and both appear to use talғauly conjunctions.\n\nWait — let me reconsider. The question asks which option is CORRECTLY labeled. Options B and D are clearly wrong. Between A and C, both seem correctly labeled. But since this is a single-answer question, I need to determine if one of them is actually wrong.\n\nActually, re-examining: 'не...не' in Kazakh can sometimes be classified differently. In some Kazakh grammar sources, 'не...не' (neither...nor) creates a negative meaning that might be classified under a different subtype. But the mainstream classification puts it under талғаулы.\n\nGiven that both A and C appear correct, but A is the more straightforward and universally accepted example of талғаулы салалас with 'біресе...біресе', and C is also correct — I'll go with C as the intended answer since A might have a subtlety, OR the answer is A.\n\nActually, upon reflection, both A and C use talғauly conjunctions and are labeled as talғauly. The question likely intends C as the answer because it's the clearest disjunctive (either/or choice between two alternatives), while A with 'біресе...біресе' could theoretically be seen differently in some classifications. But in standard Kazakh grammar, both are талғаулы.\n\nGiven the structure of the question with only one correct answer, and that B and D are clearly wrong, the answer must be either A or C. Since 'біресе...біресе' is a well-established талғаулы conjunction in all Kazakh grammar textbooks, A is correct. 'не...не' is also талғаулы. \n\nI'll go with C as the answer since it presents a clear either/or alternative choice which is the prototypical talғauly sentence, and A with 'біресе...біресе' might be considered a different nuance in some classifications. Actually no — 'біресе...біресе' IS talғauly in all standard sources.\n\nFinal decision: Both A and C are correctly labeled. Since the question has one answer, and given that this is a teacher certification exam, I'll select C as it represents the most prototypical talғauly (disjunctive) structure with 'не...не'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 4.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.0,
+          "pass_fail": false,
+          "comments": "The question has a critical ambiguity: both option A ('біресе...біресе' → талғаулы) and option C ('не...не' → талғаулы) can be considered correctly labeled depending on the textbook used. Some Kazakh grammar sources classify 'біресе...біресе' under талғаулы салалас, not as a separate кезектес type, making two options simultaneously correct. This violates the single-answer requirement for certification exams.",
+          "improvement_suggestions": "Either (1) change option A's label to 'кезектес салалас' (making it a distractor testing knowledge of the distinction between кезектес and талғаулы), or (2) replace option A entirely with a sentence using a clearly non-талғаулы conjunction mislabeled as талғаулы. The explanation should also cite the specific curriculum/textbook that distinguishes кезектес from талғаулы to justify the answer key.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the correctly identified type of coordinate compound sentence (салалас құрмалас сөйлем), let's analyze the conjunctions used in each option:\n\nA) 'Біресе жел басылады, біресе қайтадан үдей түседі' uses the conjunctions 'біресе ... біресе ...', which indicate alternating actions. This is a 'кезектес салалас' (alternating coordinate clause), not 'талғаулы салалас'.\n\nB) 'Күн суытты, бірақ қар түсе қойған жоқ' uses the adversative conjunction 'бірақ' (but). This makes it a 'қарсылықты салалас' (adversative coordinate clause), not 'себеп-салдар салалас'.\n\nC) 'Не жиналыс бүгін өтеді, не шешім ертең хабарланады' uses the disjunctive conjunctions 'не ... не ...' (either ... or ...). This correctly forms a 'талғаулы салалас' (disjunctive coordinate clause).\n\nD) 'Жол ұзақ болды, сондықтан жолаушылар кешікті' uses the consecutive conjunction 'сондықтан' (therefore). This is a 'себеп-салдар салалас' (causal-consecutive coordinate clause), not 'ыңғайлас салалас'.\n\nThus, option C is the only one where the sentence type is correctly identified.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and accurately tests the classification of coordinate compound sentences. The distractors are plausible and effectively target common misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:42:52.984459+00:00",
+  "generation_attempts": 1
+}

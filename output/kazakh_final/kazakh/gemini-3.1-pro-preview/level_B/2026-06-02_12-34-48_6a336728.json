@@ -1,0 +1,140 @@
+{
+  "id": "6a336728-619c-4d40-b3c1-dfcda783439d",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_meaning",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төмендегі сөйлемдер жұбының қайсысындағы бірдей дыбысталған сөздер омоним қатарын құрап тұр?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Қолындағы таяғымен судың бетін сабалап тұр. / Кітаптың бірінші беті жыртылып қалыпты."
+    },
+    {
+      "label": "B",
+      "text": "Ауыл шетіндегі бұлақтың көзі бітеліп қалыпты. / Ол иненің көзіне жіпті бірден өткізді."
+    },
+    {
+      "label": "C",
+      "text": "Биылғы жаз өте жауын-шашынды болды. / Тақтадағы ережені дәптеріңе көшіріп жаз."
+    },
+    {
+      "label": "D",
+      "text": "Таудың басына қалың бұлт үйірілді. / Бұл үлкен даудың басы осыдан басталған еді."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап – C. Бұл қатардағы «жаз» (жыл мезгілі, зат есім) және «жаз» (жазу әрекеті, етістік) сөздерінің мағыналары арасында ешқандай байланыс жоқ, шығу тегі басқа, олар тек дыбысталуы жағынан ғана бiрдей. Сондықтан бұл сөздер – таза омонимдер. Ал А, В, D нұсқаларындағы «бет» (судың беті, кітаптың беті), «көз» (бұлақтың көзі, иненің көзі) және «бас» (таудың басы, даудың басы) сөздері – көп мағыналы сөздерге жатады. Олардың ауыспалы мағыналары негізгі түбір мағынасымен (адамның беті, көзі, басы) ұқсастық (метафоралық) негізде тығыз байланысып тұр. Бұл тапсырма омоним мен көп мағыналы сөздердің семантикалық шекарасын мәнмәтін ішінде ажырата алу дағдысын тексереді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: A homonym in Kazakh is a word with the same sound/spelling as another word but with a different, unrelated lexical meaning. Polysemy is one word with several related meanings developed by metaphor/metonymy. In A, 'бет' means 'surface' of water and 'page' of a book; these are related extensions of 'face/front/surface', so this is polysemy, not a clear homonym pair. In B, 'көз' means the source/open\n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify which pair of sentences contains words that are spelled/pronounced identically but have completely different (unrelated) meanings — i.e., true homonyms (омонимдер), not polysemy (көп мағыналы сөздер).\n\nAnalysis of each option:\n\nA) 'бет' in 'судың бетін' (surface/face of water) and 'кітаптың беті' (page of a book). These are polysemous uses of the same word 'бет' — both meanings\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the pair of sentences where identically sounding words form a pair of homonyms (омоним). Homonyms are words that share the same spelling and pronunciation but have completely unrelated meanings. Polysemous words (көпмағыналы сөздер), on the other hand, have multiple related meanings derived from a single core concept.\n\nLet's analyze the options:\n- Option A: 'судың бет",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation accurately distinguishes homonymy from polysemy in context. The distractors are plausible and well targeted, requiring semantic comparison rather than simple recall. | [anthropic/claude-sonnet-4.6] Excellent question that cleanly distinguishes homonymy from polysemy using natural Kazakh sentence contexts. The correct answer (C) is unambiguously a true homonym pair (noun 'жаз' = summer vs. verb 'жаз' = write), while all three distractors represent genuine polysemy cases that a teacher might confuse with homonymy — a classic and pedagogically valid misconception. Language is natural and idiomatic. | [google/gemini-3.1-pro-preview] The question perfectly distinguishes between homonyms and polysemous words, which is a classic lexicology topic. The distractors are highly plausible and target a specific common misconception.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: A homonym in Kazakh is a word with the same sound/spelling as another word but with a different, unrelated lexical meaning. Polysemy is one word with several related meanings developed by metaphor/metonymy. In A, 'бет' means 'surface' of water and 'page' of a book; these are related extensions of 'face/front/surface', so this is polysemy, not a clear homonym pair. In B, 'көз' means the source/open\n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify which pair of sentences contains words that are spelled/pronounced identically but have completely different (unrelated) meanings — i.e., true homonyms (омонимдер), not polysemy (көп мағыналы сөздер).\n\nAnalysis of each option:\n\nA) 'бет' in 'судың бетін' (surface/face of water) and 'кітаптың беті' (page of a book). These are polysemous uses of the same word 'бет' — both meanings\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the pair of sentences where identically sounding words form a pair of homonyms (омоним). Homonyms are words that share the same spelling and pronunciation but have completely unrelated meanings. Polysemous words (көпмағыналы сөздер), on the other hand, have multiple related meanings derived from a single core concept.\n\nLet's analyze the options:\n- Option A: 'судың бет",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation accurately distinguishes homonymy from polysemy in context. The distractors are plausible and well targeted, requiring semantic comparison rather than simple recall. | [anthropic/claude-sonnet-4.6] Excellent question that cleanly distinguishes homonymy from polysemy using natural Kazakh sentence contexts. The correct answer (C) is unambiguously a true homonym pair (noun 'жаз' = summer vs. verb 'жаз' = write), while all three distractors represent genuine polysemy cases that a teacher might confuse with homonymy — a classic and pedagogically valid misconception. Language is natural and idiomatic. | [google/gemini-3.1-pro-preview] The question perfectly distinguishes between homonyms and polysemous words, which is a classic lexicology topic. The distractors are highly plausible and target a specific common misconception.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A homonym in Kazakh is a word with the same sound/spelling as another word but with a different, unrelated lexical meaning. Polysemy is one word with several related meanings developed by metaphor/metonymy. In A, 'бет' means 'surface' of water and 'page' of a book; these are related extensions of 'face/front/surface', so this is polysemy, not a clear homonym pair. In B, 'көз' means the source/opening of a spring and the eye/hole of a needle; both are figurative/metonymic extensions of 'eye/opening/source', so this is polysemy. In C, 'жаз' in 'Биылғы жаз...' is the noun meaning 'summer', while 'жаз' in 'дәптеріңе ... жаз' is the verb meaning 'write'. They sound the same but have unrelated meanings and belong to different lexical categories, so they form a homonym pair. In D, 'бас' means top/head of a mountain and beginning/source of a dispute; these are related extensions of 'head/top/beginning', so this is polysemy. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and the explanation accurately distinguishes homonymy from polysemy in context. The distractors are plausible and well targeted, requiring semantic comparison rather than simple recall.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify which pair of sentences contains words that are spelled/pronounced identically but have completely different (unrelated) meanings — i.e., true homonyms (омонимдер), not polysemy (көп мағыналы сөздер).\n\nAnalysis of each option:\n\nA) 'бет' in 'судың бетін' (surface/face of water) and 'кітаптың беті' (page of a book). These are polysemous uses of the same word 'бет' — both meanings derive from the core meaning of 'surface/face.' This is polysemy, not homonymy.\n\nB) 'көз' in 'бұлақтың көзі' (spring/source of a stream) and 'иненің көзі' (eye of a needle). Both meanings of 'көз' are extensions of the primary meaning 'eye' — the opening/source metaphor. These are polysemous meanings of 'көз,' not true homonyms.\n\nC) 'жаз' in 'биылғы жаз' (this year's summer — noun) and 'дәптеріңе жаз' (write in your notebook — verb, imperative of 'жазу'). These two words sound identical but have completely unrelated meanings: one is a noun meaning 'summer,' the other is a verb meaning 'write.' These are true homonyms (омонимдер) — different parts of speech with unrelated etymologies.\n\nD) 'бас' in 'таудың басы' (top/peak of a mountain) and 'даудың басы' (beginning/origin of a dispute). Both are polysemous uses of 'бас' meaning 'head/top/beginning' — all related to the primary meaning 'head.' This is polysemy.\n\nTherefore, option C contains true homonyms: 'жаз' (summer, noun) and 'жаз' (write, verb imperative) — completely different lexical items that happen to sound the same.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "Excellent question that cleanly distinguishes homonymy from polysemy using natural Kazakh sentence contexts. The correct answer (C) is unambiguously a true homonym pair (noun 'жаз' = summer vs. verb 'жаз' = write), while all three distractors represent genuine polysemy cases that a teacher might confuse with homonymy — a classic and pedagogically valid misconception. Language is natural and idiomatic.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the pair of sentences where identically sounding words form a pair of homonyms (омоним). Homonyms are words that share the same spelling and pronunciation but have completely unrelated meanings. Polysemous words (көпмағыналы сөздер), on the other hand, have multiple related meanings derived from a single core concept.\n\nLet's analyze the options:\n- Option A: 'судың беті' (surface of the water) and 'кітаптың беті' (page of a book). Both use the word 'бет' (face/surface), which is a polysemous word because the meanings are conceptually related.\n- Option B: 'бұлақтың көзі' (source of a spring) and 'иненің көзі' (eye of a needle). Both use 'көз' (eye) metaphorically. This is polysemy.\n- Option C: 'жаз' (summer - noun) and 'жаз' (write - verb). These two words have completely different origins and unrelated meanings. They are true homonyms.\n- Option D: 'таудың басы' (top of the mountain) and 'даудың басы' (beginning of the dispute). Both use 'бас' (head/top/beginning) in related metaphorical senses. This is polysemy.\n\nTherefore, the identically sounding words in Option C form a homonym pair.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question perfectly distinguishes between homonyms and polysemous words, which is a classic lexicology topic. The distractors are highly plausible and target a specific common misconception.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:34:48.163163+00:00",
+  "generation_attempts": 1
+}

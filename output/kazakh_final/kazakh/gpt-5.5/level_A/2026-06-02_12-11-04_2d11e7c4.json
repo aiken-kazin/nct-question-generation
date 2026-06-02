@@ -1,0 +1,140 @@
+{
+  "id": "2d11e7c4-98d9-4440-83da-e91060950c78",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Барыс септігі жалғауы дұрыс жалғанған сөзді белгілеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "кітапға"
+    },
+    {
+      "label": "B",
+      "text": "кітәпқа"
+    },
+    {
+      "label": "C",
+      "text": "кітапқа"
+    },
+    {
+      "label": "D",
+      "text": "кітабқа"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап – «кітапқа». «Кітап» сөзі қатаң дауыссыз п дыбысына аяқталғандықтан, оған қатаң қ дыбысынан басталатын -қа жалғауы жалғанады. «Кітапға» нұсқасында дыбыс үндестігі сақталмаған. «Кітәпқа» сөздің түбірі қате жазылған. «Кітабқа» нұсқасында түбірдегі п дыбысы орынсыз б болып өзгертілген.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.65,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The Kazakh dative case (барыс септік) suffix has variants such as -ға/-ге and -қа/-ке, chosen by vowel harmony and by the final sound of the stem. The word 'кітап' ends in the voiceless consonant 'п'. After a voiceless consonant, the dative suffix takes the voiceless form -қа/-ке. For 'кітап', the correct standard spelling is 'кітапқа'. Option A 'кітапға' incorrectly uses -ға after voiceless 'п'. \n\n[anthropic/claude-sonnet-4.6] answered C: The question asks which word has the dative case suffix (барыс септік жалғауы) correctly attached to the word 'кітап' (book).\n\nIn Kazakh, the dative case suffix follows vowel harmony and consonant harmony rules:\n- After voiceless consonants (қ, к, п, т, с, ш, ч, ф, х, ц), the dative suffix is -қа/-ке\n- After voiced consonants and vowels, the dative suffix is -ға/-ге\n\nThe word 'кітап' ends in 'п', \n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the correct attachment of the dative case suffix (Барыс септігі) to the word 'кітап' (book). In Kazakh, the dative case suffixes are -ға/-ге, -қа/-ке, -на/-не, -а/-е. The choice of suffix depends on the final sound of the root word and the vowels within it (according to the law of vowel harmony and consonant assimilation). The word 'кітап' ends with the voiceless consonant 'п",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.65,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately applies the Kazakh dative suffix rule after a voiceless consonant. The item is clear, single-answer, and well aligned with basic-level phonetics/orthography knowledge. | [anthropic/claude-sonnet-4.6] The question is factually correct, unambiguous, and well-suited for Level A certification. Each distractor targets a specific identifiable error: vowel-consonant harmony violation (A), misspelled root (B), and incorrect root alternation (D). Language is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the basic difficulty level (A). It tests a fundamental rule of Kazakh phonetics and orthography with highly plausible distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The Kazakh dative case (барыс септік) suffix has variants such as -ға/-ге and -қа/-ке, chosen by vowel harmony and by the final sound of the stem. The word 'кітап' ends in the voiceless consonant 'п'. After a voiceless consonant, the dative suffix takes the voiceless form -қа/-ке. For 'кітап', the correct standard spelling is 'кітапқа'. Option A 'кітапға' incorrectly uses -ға after voiceless 'п'. \n\n[anthropic/claude-sonnet-4.6] answered C: The question asks which word has the dative case suffix (барыс септік жалғауы) correctly attached to the word 'кітап' (book).\n\nIn Kazakh, the dative case suffix follows vowel harmony and consonant harmony rules:\n- After voiceless consonants (қ, к, п, т, с, ш, ч, ф, х, ц), the dative suffix is -қа/-ке\n- After voiced consonants and vowels, the dative suffix is -ға/-ге\n\nThe word 'кітап' ends in 'п', \n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the correct attachment of the dative case suffix (Барыс септігі) to the word 'кітап' (book). In Kazakh, the dative case suffixes are -ға/-ге, -қа/-ке, -на/-не, -а/-е. The choice of suffix depends on the final sound of the root word and the vowels within it (according to the law of vowel harmony and consonant assimilation). The word 'кітап' ends with the voiceless consonant 'п",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.65,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately applies the Kazakh dative suffix rule after a voiceless consonant. The item is clear, single-answer, and well aligned with basic-level phonetics/orthography knowledge. | [anthropic/claude-sonnet-4.6] The question is factually correct, unambiguous, and well-suited for Level A certification. Each distractor targets a specific identifiable error: vowel-consonant harmony violation (A), misspelled root (B), and incorrect root alternation (D). Language is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the basic difficulty level (A). It tests a fundamental rule of Kazakh phonetics and orthography with highly plausible distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The Kazakh dative case (барыс септік) suffix has variants such as -ға/-ге and -қа/-ке, chosen by vowel harmony and by the final sound of the stem. The word 'кітап' ends in the voiceless consonant 'п'. After a voiceless consonant, the dative suffix takes the voiceless form -қа/-ке. For 'кітап', the correct standard spelling is 'кітапқа'. Option A 'кітапға' incorrectly uses -ға after voiceless 'п'. Option B 'кітәпқа' misspells the stem. Option D 'кітабқа' incorrectly changes the stem consonant. Therefore the correct form is 'кітапқа'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.55,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately applies the Kazakh dative suffix rule after a voiceless consonant. The item is clear, single-answer, and well aligned with basic-level phonetics/orthography knowledge.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which word has the dative case suffix (барыс септік жалғауы) correctly attached to the word 'кітап' (book).\n\nIn Kazakh, the dative case suffix follows vowel harmony and consonant harmony rules:\n- After voiceless consonants (қ, к, п, т, с, ш, ч, ф, х, ц), the dative suffix is -қа/-ке\n- After voiced consonants and vowels, the dative suffix is -ға/-ге\n\nThe word 'кітап' ends in 'п', which is a voiceless consonant. Therefore, the dative suffix should be -қа (back vowel harmony, since кітап contains back vowels... wait, let me check: кі-тап. The vowels are 'і' and 'а'. In Kazakh vowel harmony, 'і' is a front vowel but 'а' is a back vowel. The last vowel 'а' determines harmony → back vowel → use -қа).\n\nSo the correct form is кітап + қа = кітапқа.\n\nAnalyzing the options:\nA) кітапға — wrong suffix (-ға is for voiced consonants, but п is voiceless)\nB) кітәпқа — wrong spelling of the root (кітәп is incorrect)\nC) кітапқа — correct: кітап (voiceless п) + қа (voiceless suffix, back vowel) = кітапқа ✓\nD) кітабқа — wrong: the root is altered incorrectly (кітаб is not the correct form here)\n\nThe correct answer is C) кітапқа.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is factually correct, unambiguous, and well-suited for Level A certification. Each distractor targets a specific identifiable error: vowel-consonant harmony violation (A), misspelled root (B), and incorrect root alternation (D). Language is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the correct attachment of the dative case suffix (Барыс септігі) to the word 'кітап' (book). In Kazakh, the dative case suffixes are -ға/-ге, -қа/-ке, -на/-не, -а/-е. The choice of suffix depends on the final sound of the root word and the vowels within it (according to the law of vowel harmony and consonant assimilation). The word 'кітап' ends with the voiceless consonant 'п'. According to the rules of assimilation, suffixes added to words ending in voiceless consonants must also begin with a voiceless consonant, which narrows the choices to -қа or -ке. Furthermore, the last syllable of 'кітап' contains the back (hard) vowel 'а', meaning the suffix must also contain a back vowel. Therefore, the correct suffix is '-қа'. Combining the root and the suffix gives 'кітапқа'. Option A ('кітапға') incorrectly uses a voiced consonant 'ғ'. Option B ('кітәпқа') misspells the root word. Option D ('кітабқа') incorrectly changes the final 'п' to 'б' before a consonant. Option C ('кітапқа') is grammatically and orthographically correct.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the basic difficulty level (A). It tests a fundamental rule of Kazakh phonetics and orthography with highly plausible distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:11:04.109249+00:00",
+  "generation_attempts": 1
+}

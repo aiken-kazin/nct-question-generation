@@ -1,0 +1,140 @@
+{
+  "id": "da88b750-ac6d-46a4-a626-972215dd7c78",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төмендегі сөйлемдердегі тырнақшаға алынған сөздердің лексика-семантикалық сипатын (көнерген сөздердің түрлерін) дұрыс ажыратқан қатарды табыңыз.\n1. Кеңес үкіметі орнағанға дейін елді «болыстар» басқарды.\n2. Жолаушылар алыстан көрінген «шаһарға» қарай беттеді.\n3. Ежелгі батырлар жауға шапқанда үстіне «кіреуке» киген.\n4. Қария немересінің нұрлы «дидарына» сүйсіне қарады.",
+  "options": [
+    {
+      "label": "A",
+      "text": "1, 2 – историзм; 3, 4 – архаизм"
+    },
+    {
+      "label": "B",
+      "text": "1, 4 – архаизм; 2, 3 – историзм"
+    },
+    {
+      "label": "C",
+      "text": "1, 3 – историзм; 2, 4 – архаизм"
+    },
+    {
+      "label": "D",
+      "text": "2, 3 – архаизм; 1, 4 – историзм"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Көнерген сөздер лексикалық сипатына қарай историзм (тарихи сөздер) және архаизм болып екіге бөлінеді. Историзмдер – қоғамдағы өзгерістерге байланысты қолданыстан шығып қалған, зат пен құбылыстың өзімен бірге жойылған сөздер. 1-сөйлемдегі «болыс» (ескі әкімшілік лауазым) және 3-сөйлемдегі «кіреуке» (ескі қару-жарақ түрі, батырлар киетін сауыт) – историзмдер. Архаизмдер – зат немесе құбылыс өмірде бар болғанымен, олардың атаулары жаңа сөздермен алмастырылуына байланысты көнерген сөздер. 2-сөйлемдегі «шаһар» сөзі қазір «қала» сөзімен, ал 4-сөйлемдегі «дидар» сөзі «жүз, келбет, түр» сөздерімен алмастырылғандықтан бұл сөздер архаизмдер қатарына жатады. Сондықтан 1 және 3 – историзм, 2 және 4 – архаизм қатары дұрыс болады. Басқа нұсқаларда ұғымдар шатастырылып, ереже толық қолданылмаған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Outdated vocabulary in Kazakh is commonly divided into historisms and archaisms. Historisms name objects, offices, institutions, or phenomena that disappeared from modern life; archaisms name still-existing concepts but use an old or obsolete lexical form replaced by a newer/common word. 1) «болыстар» refers to volost administrators/chiefs before the Soviet period; the social-administrative instit\n\n[anthropic/claude-sonnet-4.6] answered C: We need to classify the quoted words as either 'historism' (историзм) or 'archaism' (архаизм).\n\nKey definitions:\n- Historism (историзм): Words that have fallen out of use because the objects/phenomena they denoted no longer exist in modern life. These words have no modern synonyms because the referent itself is gone.\n- Archaism (архаизм): Words that have fallen out of active use but have been repl\n\n[google/gemini-3.1-pro-preview] answered C: To determine the types of obsolete words (көнерген сөздер), we must distinguish between historicisms (историзмдер) and archaisms (архаизмдер). Historicisms are words for things, concepts, or phenomena that have disappeared from modern life (e.g., old titles, weapons, administrative units). Archaisms are outdated words for things that still exist today and have modern synonyms.\n\nLet's analyze the q",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is defensible and matches the standard school distinction between historisms and archaisms. The item is mostly clear, though words like «дидар» and «шаһар» can still occur in modern literary usage, and «Кеңес үкіметі» is less normatively precise than «Кеңес өкіметі». | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests the distinction between historisms and archaisms at level B. All four examples are clear and unambiguous, and the correct answer (C) is well-supported by standard Kazakh lexicology definitions. Distractors are plausible and reachable through common misconceptions (e.g., misclassifying 'болыс' as archaism or 'кіреуке' as archaism). | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligns with the requested difficulty level. The distractors are logical permutations of the correct answer.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Outdated vocabulary in Kazakh is commonly divided into historisms and archaisms. Historisms name objects, offices, institutions, or phenomena that disappeared from modern life; archaisms name still-existing concepts but use an old or obsolete lexical form replaced by a newer/common word. 1) «болыстар» refers to volost administrators/chiefs before the Soviet period; the social-administrative instit\n\n[anthropic/claude-sonnet-4.6] answered C: We need to classify the quoted words as either 'historism' (историзм) or 'archaism' (архаизм).\n\nKey definitions:\n- Historism (историзм): Words that have fallen out of use because the objects/phenomena they denoted no longer exist in modern life. These words have no modern synonyms because the referent itself is gone.\n- Archaism (архаизм): Words that have fallen out of active use but have been repl\n\n[google/gemini-3.1-pro-preview] answered C: To determine the types of obsolete words (көнерген сөздер), we must distinguish between historicisms (историзмдер) and archaisms (архаизмдер). Historicisms are words for things, concepts, or phenomena that have disappeared from modern life (e.g., old titles, weapons, administrative units). Archaisms are outdated words for things that still exist today and have modern synonyms.\n\nLet's analyze the q",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is defensible and matches the standard school distinction between historisms and archaisms. The item is mostly clear, though words like «дидар» and «шаһар» can still occur in modern literary usage, and «Кеңес үкіметі» is less normatively precise than «Кеңес өкіметі». | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests the distinction between historisms and archaisms at level B. All four examples are clear and unambiguous, and the correct answer (C) is well-supported by standard Kazakh lexicology definitions. Distractors are plausible and reachable through common misconceptions (e.g., misclassifying 'болыс' as archaism or 'кіреуке' as archaism). | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligns with the requested difficulty level. The distractors are logical permutations of the correct answer.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Outdated vocabulary in Kazakh is commonly divided into historisms and archaisms. Historisms name objects, offices, institutions, or phenomena that disappeared from modern life; archaisms name still-existing concepts but use an old or obsolete lexical form replaced by a newer/common word. 1) «болыстар» refers to volost administrators/chiefs before the Soviet period; the social-administrative institution no longer exists, so it is a historism. 2) «шаһар» means city/town; the concept still exists and the common modern word is «қала», so it is an archaism. 3) «кіреуке» is chain mail/armor worn by ancient warriors; the historical military item is no longer part of ordinary modern life, so it is a historism. 4) «дидар» means face/countenance; the concept still exists and is commonly expressed by «бет», «жүз», etc., so it is an archaism. Therefore 1 and 3 are historisms, while 2 and 4 are archaisms.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is defensible and matches the standard school distinction between historisms and archaisms. The item is mostly clear, though words like «дидар» and «шаһар» can still occur in modern literary usage, and «Кеңес үкіметі» is less normatively precise than «Кеңес өкіметі».",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to classify the quoted words as either 'historism' (историзм) or 'archaism' (архаизм).\n\nKey definitions:\n- Historism (историзм): Words that have fallen out of use because the objects/phenomena they denoted no longer exist in modern life. These words have no modern synonyms because the referent itself is gone.\n- Archaism (архаизм): Words that have fallen out of active use but have been replaced by modern synonyms. The concept still exists, but a different word is now used.\n\nNow let's analyze each quoted word:\n\n1. 'болыстар' (bolys/volost leaders) — This refers to a specific administrative position that existed before Soviet rule. The position no longer exists, so there is no modern synonym for this exact role. This is a HISTORISM.\n\n2. 'шаһар' (shahar = city) — This is an old Kazakh/Persian-origin word meaning 'city.' The modern Kazakh word is 'қала.' The concept (city) still exists, but the word has been replaced. This is an ARCHAISM.\n\n3. 'кіреуке' (kireuke = chain mail/armor) — This refers to a type of armor worn by ancient warriors. Chain mail as a military equipment is no longer used in modern warfare. The object itself is obsolete. This is a HISTORISM.\n\n4. 'дидар' (didar = face/countenance) — This is an old word meaning 'face' or 'visage.' The modern equivalent is 'бет' or 'жүз.' The concept still exists, but the word has been replaced. This is an ARCHAISM.\n\nSo:\n- Historisms: 1 (болыстар), 3 (кіреуке)\n- Archaisms: 2 (шаһар), 4 (дидар)\n\nThis matches option C: 1, 3 – историзм; 2, 4 – архаизм.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately tests the distinction between historisms and archaisms at level B. All four examples are clear and unambiguous, and the correct answer (C) is well-supported by standard Kazakh lexicology definitions. Distractors are plausible and reachable through common misconceptions (e.g., misclassifying 'болыс' as archaism or 'кіреуке' as archaism).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the types of obsolete words (көнерген сөздер), we must distinguish between historicisms (историзмдер) and archaisms (архаизмдер). Historicisms are words for things, concepts, or phenomena that have disappeared from modern life (e.g., old titles, weapons, administrative units). Archaisms are outdated words for things that still exist today and have modern synonyms.\n\nLet's analyze the quoted words:\n1. «болыстар» (bolystar - volost heads): This refers to an administrative position that existed before the Soviet era. The position itself no longer exists, making it a historicism (историзм).\n2. «шаһарға» (shaharga - to the city): 'Шаһар' means city. Cities still exist, and the modern Kazakh synonym is 'қала'. Therefore, it is an archaism (архаизм).\n3. «кіреуке» (kireuke - chainmail/armor): This is a type of armor worn by ancient warriors. Since this item is no longer used in everyday life, it is a historicism (историзм).\n4. «дидарына» (didaryna - to the face/countenance): 'Дидар' means face or appearance. The concept still exists, and modern synonyms include 'жүз', 'бет', or 'келбет'. Thus, it is an archaism (архаизм).\n\nConclusion:\n1 and 3 are historicisms (историзм).\n2 and 4 are archaisms (архаизм).\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurate, and perfectly aligns with the requested difficulty level. The distractors are logical permutations of the correct answer.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:54:37.232542+00:00",
+  "generation_attempts": 1
+}

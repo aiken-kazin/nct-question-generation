@@ -1,0 +1,140 @@
+{
+  "id": "7d2a7c57-fb97-408c-aef5-b5eda7bc58c3",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_meaning",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген тіркестердегі «кілт» сөзінің мағыналық сипатын анықтаңыз: «құлыптың кілті», «есептің кілті», «табыстың кілті».",
+  "options": [
+    {
+      "label": "A",
+      "text": "Омоним сөз: үш қолданыстағы «кілт» тұлғасы бірдей болғанымен, мағыналары өзара байланыспайды."
+    },
+    {
+      "label": "B",
+      "text": "Антонимдік қатар: «кілт» әр тіркесте бір-біріне қарама-қарсы ұғымдарды білдіреді."
+    },
+    {
+      "label": "C",
+      "text": "Терминдік мағына: «кілт» сөзінің барлық қолданысы белгілі бір ғылым саласына тән атау."
+    },
+    {
+      "label": "D",
+      "text": "Көп мағыналы сөз: негізгі мағынадан ұқсастық пен қызмет ортақтығы арқылы ауыспалы мағыналар тараған."
+    }
+  ],
+  "correct_answer": "D",
+  "explanation": "Дұрыс жауап — D. «Құлыптың кілті» тіркесінде «кілт» сөзі тура мағынада, яғни құлыпты ашатын құрал дегенді білдіреді. «Есептің кілті», «табыстың кілті» тіркестерінде бұл сөз ауыспалы мағынада қолданылып, «шешу жолы», «нәтижеге жеткізетін амал» деген ұғымды береді. Мағыналардың арасында «ашу, жол табу, шешімге жеткізу» деген ортақ семалық байланыс бар, сондықтан бұл — көп мағыналы сөз. A нұсқасы дұрыс емес, өйткені омонимдерде мағыналық байланыс болмайды. B нұсқасы сәйкес келмейді, себебі мұнда қарама-қарсы мағыналар жоқ. C нұсқасы да қате, өйткені берілген қолданыстардың бәрі бір ғана ғылым саласына тән терминдік мағына емес.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered D: The word “кілт” in “құлыптың кілті” has its primary, concrete meaning: a physical key used to open a lock. In “есептің кілті” it means the method/solution that opens or solves a problem. In “табыстың кілті” it means the main condition or means that leads to success. These later meanings are not unrelated homonyms; they are figurative extensions from the basic meaning based on similarity of functio\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks about the semantic nature of the word 'кілт' (key) in three phrases: 'құлыптың кілті' (key of the lock), 'есептің кілті' (key/solution to the problem), 'табыстың кілті' (key to success).\n\nLet's analyze each option:\n\nA) Омоним (Homonym): Homophones/homonyms have the same form but completely unrelated meanings with no semantic connection. This would mean the three uses of 'кілт' ar\n\n[google/gemini-3.1-pro-preview] answered D: The question asks to identify the semantic nature of the word 'кілт' (key) in three phrases: 'құлыптың кілті' (key to a lock), 'есептің кілті' (key to a problem), and 'табыстың кілті' (key to success). \n\n1. 'Құлыптың кілті' uses the word in its primary, direct meaning (a physical tool used to open a lock).\n2. 'Есептің кілті' and 'табыстың кілті' use the word in a figurative sense (a method or solu",
+    "critic_answer": "D",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.833,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes polysemy from homonymy using contextual meanings. The item is clear, but two distractors, especially antonymy and terminology, are quite easy for a practicing teacher to eliminate. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests polysemy (көп мағыналылық) at level B by requiring analysis of three contextual uses of 'кілт'. The correct answer D is unambiguous, and the explanation is thorough and accurate. Distractors are plausible — option A (homonymy) is a classic near-miss error that many teachers might confuse with polysemy, making it a strong distractor. Options B and C are somewhat easier to eliminate but still serve a pedagogical purpose. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concept of polysemy versus homonymy using clear, contextual examples, and the distractors are well-designed and parallel.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered D: The word “кілт” in “құлыптың кілті” has its primary, concrete meaning: a physical key used to open a lock. In “есептің кілті” it means the method/solution that opens or solves a problem. In “табыстың кілті” it means the main condition or means that leads to success. These later meanings are not unrelated homonyms; they are figurative extensions from the basic meaning based on similarity of functio\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks about the semantic nature of the word 'кілт' (key) in three phrases: 'құлыптың кілті' (key of the lock), 'есептің кілті' (key/solution to the problem), 'табыстың кілті' (key to success).\n\nLet's analyze each option:\n\nA) Омоним (Homonym): Homophones/homonyms have the same form but completely unrelated meanings with no semantic connection. This would mean the three uses of 'кілт' ar\n\n[google/gemini-3.1-pro-preview] answered D: The question asks to identify the semantic nature of the word 'кілт' (key) in three phrases: 'құлыптың кілті' (key to a lock), 'есептің кілті' (key to a problem), and 'табыстың кілті' (key to success). \n\n1. 'Құлыптың кілті' uses the word in its primary, direct meaning (a physical tool used to open a lock).\n2. 'Есептің кілті' and 'табыстың кілті' use the word in a figurative sense (a method or solu",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.833,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes polysemy from homonymy using contextual meanings. The item is clear, but two distractors, especially antonymy and terminology, are quite easy for a practicing teacher to eliminate. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately tests polysemy (көп мағыналылық) at level B by requiring analysis of three contextual uses of 'кілт'. The correct answer D is unambiguous, and the explanation is thorough and accurate. Distractors are plausible — option A (homonymy) is a classic near-miss error that many teachers might confuse with polysemy, making it a strong distractor. Options B and C are somewhat easier to eliminate but still serve a pedagogical purpose. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concept of polysemy versus homonymy using clear, contextual examples, and the distractors are well-designed and parallel.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The word “кілт” in “құлыптың кілті” has its primary, concrete meaning: a physical key used to open a lock. In “есептің кілті” it means the method/solution that opens or solves a problem. In “табыстың кілті” it means the main condition or means that leads to success. These later meanings are not unrelated homonyms; they are figurative extensions from the basic meaning based on similarity of function: a key gives access or opens something. They are not antonyms, and not all are specialized terms of one science. Therefore this is a polysemous word with derived figurative meanings.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.5,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately distinguishes polysemy from homonymy using contextual meanings. The item is clear, but two distractors, especially antonymy and terminology, are quite easy for a practicing teacher to eliminate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about the semantic nature of the word 'кілт' (key) in three phrases: 'құлыптың кілті' (key of the lock), 'есептің кілті' (key/solution to the problem), 'табыстың кілті' (key to success).\n\nLet's analyze each option:\n\nA) Омоним (Homonym): Homophones/homonyms have the same form but completely unrelated meanings with no semantic connection. This would mean the three uses of 'кілт' are etymologically and semantically unrelated. However, all three uses clearly share a conceptual connection — they all relate to 'something that opens/unlocks/solves.' This is NOT homonymy.\n\nB) Антонимдік қатар (Antonymic series): Antonyms are words with opposite meanings. The three uses of 'кілт' do not express opposite concepts to each other. This is clearly incorrect.\n\nC) Терминдік мағына (Terminological meaning): This would mean all uses belong to a specific scientific field. 'Құлыптың кілті' is everyday vocabulary, not a term. This is incorrect.\n\nD) Көп мағыналы сөз (Polysemous word): Polysemy means one word has multiple related meanings that developed from a primary meaning through metaphorical extension (similarity or functional commonality). \n- Primary/direct meaning: 'құлыптың кілті' — a physical key that opens a lock (literal, concrete meaning)\n- Extended meaning via functional similarity: 'есептің кілті' — the solution/method that 'unlocks' a problem (metaphorical transfer based on function)\n- Extended meaning via functional similarity: 'табыстың кілті' — what 'unlocks' success (metaphorical transfer based on function)\n\nAll three meanings are semantically connected through the core concept of 'something that opens/unlocks.' The secondary meanings developed from the primary meaning through functional analogy (қызмет ортақтығы — functional commonality) and similarity (ұқсастық). This is the classic definition of polysemy (көп мағыналылық) in Kazakh lexicology.\n\nTherefore, the correct answer is D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately tests polysemy (көп мағыналылық) at level B by requiring analysis of three contextual uses of 'кілт'. The correct answer D is unambiguous, and the explanation is thorough and accurate. Distractors are plausible — option A (homonymy) is a classic near-miss error that many teachers might confuse with polysemy, making it a strong distractor. Options B and C are somewhat easier to eliminate but still serve a pedagogical purpose.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the semantic nature of the word 'кілт' (key) in three phrases: 'құлыптың кілті' (key to a lock), 'есептің кілті' (key to a problem), and 'табыстың кілті' (key to success). \n\n1. 'Құлыптың кілті' uses the word in its primary, direct meaning (a physical tool used to open a lock).\n2. 'Есептің кілті' and 'табыстың кілті' use the word in a figurative sense (a method or solution to achieve a result).\n\nBecause these figurative meanings are derived from the primary meaning based on a shared function (providing access or solving a barrier), this is a classic example of polysemy (көп мағыналы сөз). \n\nLet's evaluate the options:\nA) Homonyms (Омоним) - Incorrect, because the meanings are semantically related, unlike true homonyms (e.g., 'кілт' as a noun meaning 'key' vs. 'кілт' as an adverb meaning 'suddenly').\nB) Antonyms (Антоним) - Incorrect, they do not express opposite meanings.\nC) Terminology (Термин) - Incorrect, these are not restricted to a specific scientific field.\nD) Polysemous word (Көп мағыналы сөз) - Correct, as the figurative meanings stem from the primary meaning through functional similarity.\n\nTherefore, option D is the correct answer.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the concept of polysemy versus homonymy using clear, contextual examples, and the distractors are well-designed and parallel.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:38:31.603981+00:00",
+  "generation_attempts": 1
+}

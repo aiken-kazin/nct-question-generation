@@ -1,0 +1,140 @@
+{
+  "id": "d2d635fa-44ac-490a-b24d-ef747421ef0f",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Күрделі етістік құрамындағы көмекші етістік негізгі қимылдың кенеттен, шұғыл (тез) орындалғанын білдіріп тұрған сөйлемді анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Оқушылар емтиханның барлық тапсырмасын мұқият орындап шықты."
+    },
+    {
+      "label": "B",
+      "text": "Қария немерелеріне батырлар жырын түгелдей айтып берді."
+    },
+    {
+      "label": "C",
+      "text": "Қатты шошып кеткен бала дауыстап шыңғырып жіберді."
+    },
+    {
+      "label": "D",
+      "text": "Жиналыс аяқталған соң, қызметкерлер үйлеріне қайта бастады."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауабы: С. Қазақ тілінде күрделі етістіктердің құрамындағы көмекші етістіктер негізгі етістікке қосымша мағына (қимылдың өту сипатын) үстейді. «Жіберу» көмекші етістігі (мысалы: шыңғырып жіберу, кесіп жіберу, лақтырып жіберу) қимылдың кенеттен, шұғыл әрі тез орындалғанын білдіреді. Басқа нұсқаларға келсек: А нұсқасындағы «шығу» көмекші етістігі (орындап шықты) қимылдың толық аяқталғанын, нәтижеге жеткенін; В нұсқасындағы «беру» көмекші етістігі (айтып берді) қимылдың басқа адамға (өзгеге) арналып жасалғанын; D нұсқасындағы «бастау» көмекші етістігі (қайта бастады) қимылдың енді ғана басталғанын білдіреді. Сондықтан контекст бойынша шұғыл қимылды білдіретін нұсқа – С.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.067,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We need to identify the auxiliary verb in a compound verb that adds the meaning that the main action happened suddenly, abruptly, or quickly. In Kazakh, the auxiliary verb \"жіберу\" used after a converb form in structures like \"-ып/-іп/-п жіберді\" often expresses a sudden, quick, abrupt performance of the action. Option A has \"орындап шықты\": the auxiliary \"шықты\" indicates completion/exhaustive pe\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to identify the sentence where the auxiliary verb (көмекші етістік) in a compound verb (күрделі етістік) expresses that the main action was performed suddenly/abruptly (кенеттен, шұғыл/тез).\n\nIn Kazakh, certain auxiliary verbs convey aspectual meanings:\n- 'шығу' (шықты) — completion/thoroughness of action\n- 'беру' (берді) — doing something for someone, or completion\n- 'жіберу' (ж\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence where the auxiliary verb in a compound verb indicates that the main action occurred suddenly, abruptly, or quickly ('кенеттен, шұғыл (тез) орындалғанын'). Let's analyze the compound verbs and their auxiliary verbs in each option:\n\n- Option A: 'орындап шықты'. The auxiliary verb 'шығу' indicates the thorough completion of an action from beginning to end.\n-",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 8.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.067,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely identifies the auxiliary verb 'жіберу' expressing sudden or abrupt action. However, option D is grammatically and semantically awkward in Kazakh, which weakens distractor quality and language polish. | [anthropic/claude-sonnet-4.6] The question is well-constructed and unambiguous: 'жіберу' as an auxiliary verb expressing sudden/abrupt action is a standard Kazakh grammar rule, and each distractor represents a different auxiliary verb with a distinct, clearly differentiated meaning (completion, benefactive, inceptive). The Kazakh is natural and uses correct terminology throughout. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the grammatical meaning of auxiliary verbs in compound verbs. The distractors are plausible and well-balanced.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We need to identify the auxiliary verb in a compound verb that adds the meaning that the main action happened suddenly, abruptly, or quickly. In Kazakh, the auxiliary verb \"жіберу\" used after a converb form in structures like \"-ып/-іп/-п жіберді\" often expresses a sudden, quick, abrupt performance of the action. Option A has \"орындап шықты\": the auxiliary \"шықты\" indicates completion/exhaustive pe\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to identify the sentence where the auxiliary verb (көмекші етістік) in a compound verb (күрделі етістік) expresses that the main action was performed suddenly/abruptly (кенеттен, шұғыл/тез).\n\nIn Kazakh, certain auxiliary verbs convey aspectual meanings:\n- 'шығу' (шықты) — completion/thoroughness of action\n- 'беру' (берді) — doing something for someone, or completion\n- 'жіберу' (ж\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence where the auxiliary verb in a compound verb indicates that the main action occurred suddenly, abruptly, or quickly ('кенеттен, шұғыл (тез) орындалғанын'). Let's analyze the compound verbs and their auxiliary verbs in each option:\n\n- Option A: 'орындап шықты'. The auxiliary verb 'шығу' indicates the thorough completion of an action from beginning to end.\n-",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.067,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely identifies the auxiliary verb 'жіберу' expressing sudden or abrupt action. However, option D is grammatically and semantically awkward in Kazakh, which weakens distractor quality and language polish. | [anthropic/claude-sonnet-4.6] The question is well-constructed and unambiguous: 'жіберу' as an auxiliary verb expressing sudden/abrupt action is a standard Kazakh grammar rule, and each distractor represents a different auxiliary verb with a distinct, clearly differentiated meaning (completion, benefactive, inceptive). The Kazakh is natural and uses correct terminology throughout. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the grammatical meaning of auxiliary verbs in compound verbs. The distractors are plausible and well-balanced.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify the auxiliary verb in a compound verb that adds the meaning that the main action happened suddenly, abruptly, or quickly. In Kazakh, the auxiliary verb \"жіберу\" used after a converb form in structures like \"-ып/-іп/-п жіберді\" often expresses a sudden, quick, abrupt performance of the action. Option A has \"орындап шықты\": the auxiliary \"шықты\" indicates completion/exhaustive performance of the task. Option B has \"айтып берді\": the auxiliary \"берді\" expresses doing the action for someone / giving the result to someone. Option C has \"шыңғырып жіберді\": \"жіберді\" indicates the child suddenly screamed. Option D has \"қайта бастады\": \"бастады\" indicates beginning the action again, not suddenness. Therefore the correct sentence is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 7.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.1,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and uniquely identifies the auxiliary verb 'жіберу' expressing sudden or abrupt action. However, option D is grammatically and semantically awkward in Kazakh, which weakens distractor quality and language polish.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence where the auxiliary verb (көмекші етістік) in a compound verb (күрделі етістік) expresses that the main action was performed suddenly/abruptly (кенеттен, шұғыл/тез).\n\nIn Kazakh, certain auxiliary verbs convey aspectual meanings:\n- 'шығу' (шықты) — completion/thoroughness of action\n- 'беру' (берді) — doing something for someone, or completion\n- 'жіберу' (жіберді) — sudden, abrupt, instantaneous completion of action\n- 'бастау' (бастады) — beginning of action\n\nLet's analyze each option:\n\nA) 'орындап шықты' — the auxiliary 'шықты' (from шығу) indicates thorough/complete execution of the action. Does not convey suddenness.\n\nB) 'айтып берді' — the auxiliary 'берді' (from беру) indicates doing something for someone's benefit. Does not convey suddenness.\n\nC) 'шыңғырып жіберді' — the auxiliary 'жіберді' (from жіберу) is the classic auxiliary verb that expresses sudden, abrupt, instantaneous performance of an action. This is a well-established grammatical rule in Kazakh morphology.\n\nD) 'қайта бастады' — the auxiliary 'бастады' (from бастау) indicates the beginning of an action. Does not convey suddenness.\n\nTherefore, sentence C contains the compound verb where the auxiliary verb 'жіберді' expresses that the action was performed suddenly and abruptly.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and unambiguous: 'жіберу' as an auxiliary verb expressing sudden/abrupt action is a standard Kazakh grammar rule, and each distractor represents a different auxiliary verb with a distinct, clearly differentiated meaning (completion, benefactive, inceptive). The Kazakh is natural and uses correct terminology throughout.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence where the auxiliary verb in a compound verb indicates that the main action occurred suddenly, abruptly, or quickly ('кенеттен, шұғыл (тез) орындалғанын'). Let's analyze the compound verbs and their auxiliary verbs in each option:\n\n- Option A: 'орындап шықты'. The auxiliary verb 'шығу' indicates the thorough completion of an action from beginning to end.\n- Option B: 'айтып берді'. The auxiliary verb 'беру' indicates that the action was performed for the benefit of someone else.\n- Option C: 'шыңғырып жіберді'. The auxiliary verb 'жіберу' is used to express that an action happened suddenly, abruptly, or with a quick burst of intensity (e.g., 'күліп жіберді' - suddenly laughed, 'шыңғырып жіберді' - suddenly screamed).\n- Option D: 'қайта бастады'. The auxiliary verb 'бастау' indicates the beginning of an action.\n\nTherefore, the auxiliary verb that gives the meaning of a sudden or quick action is 'жіберді' in Option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and accurately tests the grammatical meaning of auxiliary verbs in compound verbs. The distractors are plausible and well-balanced.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:01:23.087814+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "8eeb76d6-339d-45cf-a326-786a4e5db54c",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысы себеп бағыныңқы сабақтас құрмалас сөйлем болып табылады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жаңбыр жауғандықтан, біз серуенге шыға алмадық."
+    },
+    {
+      "label": "B",
+      "text": "Ол кітап оқып жатқанда, мен үй жұмысын орындадым."
+    },
+    {
+      "label": "C",
+      "text": "Егер ертең ауа райы жақсы болса, біз саяхатқа шығамыз."
+    },
+    {
+      "label": "D",
+      "text": "Ол қанша тырысқанымен, есепті шеше алмады."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Себеп бағыныңқы сабақтас құрмалас сөйлемде бағыныңқы сыңар басыңқы сыңардағы іс-әрекеттің немесе жағдайдың себебін білдіреді. Бағыныңқы сыңар көбінесе -ғандықтан, -гендіктен, -қандықтан, -кендіктен жұрнақтары арқылы жасалады. «Жаңбыр жауғандықтан, біз серуенге шыға алмадық» сөйлемінде бірінші сыңар («жаңбыр жауғандықтан») екінші сыңардың себебін білдіреді, сондықтан бұл себеп бағыныңқы сабақтас сөйлем. Б нұсқасы («оқып жатқанда» тұлғасы бар) — мезгіл бағыныңқы сабақтас, өйткені бағыныңқы сыңар уақытты білдіреді. В нұсқасы («егер... болса» тұлғасы бар) — шартты бағыныңқы сабақтас. Г нұсқасы («қанша тырысқанымен» тұлғасы бар) — қарсылықты бағыныңқы сабақтас сөйлем болып табылады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.133,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: A себеп бағыныңқы сабақтас құрмалас сөйлем expresses the reason/cause of the action in the main clause and typically answers the questions \"неліктен?\", \"не себепті?\", often formed with endings such as -ғандықтан/-гендіктен. Option A: \"Жаңбыр жауғандықтан, біз серуенге шыға алмадық\" means \"Because it rained, we could not go for a walk.\" The subordinate clause \"Жаңбыр жауғандықтан\" gives the cause o\n\n[anthropic/claude-sonnet-4.6] answered A: We need to identify which sentence is a causal subordinate compound sentence (себеп бағыныңқы сабақтас құрмалас сөйлем) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of relationship between the main clause and the subordinate clause:\n- Себеп бағыныңқы (causal): expresses the reason/cause for the main clause action. Typically uses suffixes like -ғандықтан/\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the 'себеп бағыныңқы сабақтас құрмалас сөйлем' (subordinate compound sentence with a clause of reason/cause). Let's analyze the options:\n\nA) 'Жаңбыр жауғандықтан, біз серуенге шыға алмадық.' The subordinate clause is 'Жаңбыр жауғандықтан' (Because it rained). The suffix '-ғандықтан' explicitly denotes reason or cause. This is a себеп бағыныңқы сабақтас.\n\nB) 'Ол кітап ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 7.333,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.133,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the sentence in A is unambiguously a себеп бағыныңқы сабақтас құрмалас сөйлем. However, the item is closer to basic recognition than true medium difficulty because each option contains an obvious textbook marker of its subordinate-clause type. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and uses natural literary Kazakh with accurate grammatical terminology. Each distractor represents a distinct subordinate clause type (-қанда for temporal, егер...болса for conditional, -қанымен for concessive), making them all plausible and pedagogically meaningful. The question is slightly easier than a true B-level item since the morphological markers are highly transparent and directly signal the clause type without requiring deeper contextual analysis. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligned with the requested difficulty level. The distractors are excellent examples of other types of subordinate clauses.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with B-level difficulty, consider using sentences where the subordinate clause type is less immediately obvious from a single suffix — for example, using a sentence where the causal meaning must be inferred from context rather than a single unambiguous morpheme like -ғандықтан. Alternatively, include a distractor that also uses a causal-adjacent form (e.g., -ғаннан кейін, which can be confused with causal) to require finer discrimination.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: A себеп бағыныңқы сабақтас құрмалас сөйлем expresses the reason/cause of the action in the main clause and typically answers the questions \"неліктен?\", \"не себепті?\", often formed with endings such as -ғандықтан/-гендіктен. Option A: \"Жаңбыр жауғандықтан, біз серуенге шыға алмадық\" means \"Because it rained, we could not go for a walk.\" The subordinate clause \"Жаңбыр жауғандықтан\" gives the cause o\n\n[anthropic/claude-sonnet-4.6] answered A: We need to identify which sentence is a causal subordinate compound sentence (себеп бағыныңқы сабақтас құрмалас сөйлем) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of relationship between the main clause and the subordinate clause:\n- Себеп бағыныңқы (causal): expresses the reason/cause for the main clause action. Typically uses suffixes like -ғандықтан/\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the 'себеп бағыныңқы сабақтас құрмалас сөйлем' (subordinate compound sentence with a clause of reason/cause). Let's analyze the options:\n\nA) 'Жаңбыр жауғандықтан, біз серуенге шыға алмадық.' The subordinate clause is 'Жаңбыр жауғандықтан' (Because it rained). The suffix '-ғандықтан' explicitly denotes reason or cause. This is a себеп бағыныңқы сабақтас.\n\nB) 'Ол кітап ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.133,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the sentence in A is unambiguously a себеп бағыныңқы сабақтас құрмалас сөйлем. However, the item is closer to basic recognition than true medium difficulty because each option contains an obvious textbook marker of its subordinate-clause type. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and uses natural literary Kazakh with accurate grammatical terminology. Each distractor represents a distinct subordinate clause type (-қанда for temporal, егер...болса for conditional, -қанымен for concessive), making them all plausible and pedagogically meaningful. The question is slightly easier than a true B-level item since the morphological markers are highly transparent and directly signal the clause type without requiring deeper contextual analysis. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligned with the requested difficulty level. The distractors are excellent examples of other types of subordinate clauses.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with B-level difficulty, consider using sentences where the subordinate clause type is less immediately obvious from a single suffix — for example, using a sentence where the causal meaning must be inferred from context rather than a single unambiguous morpheme like -ғандықтан. Alternatively, include a distractor that also uses a causal-adjacent form (e.g., -ғаннан кейін, which can be confused with causal) to require finer discrimination.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A себеп бағыныңқы сабақтас құрмалас сөйлем expresses the reason/cause of the action in the main clause and typically answers the questions \"неліктен?\", \"не себепті?\", often formed with endings such as -ғандықтан/-гендіктен. Option A: \"Жаңбыр жауғандықтан, біз серуенге шыға алмадық\" means \"Because it rained, we could not go for a walk.\" The subordinate clause \"Жаңбыр жауғандықтан\" gives the cause of the main clause. Option B has \"оқып жатқанда\" and expresses time (мезгіл бағыныңқы). Option C has \"Егер ... болса\" and expresses condition (шартты бағыныңқы). Option D has \"қанша тырысқанымен\" and expresses concession (қарсылықты бағыныңқы). Therefore the cause subordinate complex sentence is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the sentence in A is unambiguously a себеп бағыныңқы сабақтас құрмалас сөйлем. However, the item is closer to basic recognition than true medium difficulty because each option contains an obvious textbook marker of its subordinate-clause type.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify which sentence is a causal subordinate compound sentence (себеп бағыныңқы сабақтас құрмалас сөйлем) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of relationship between the main clause and the subordinate clause:\n- Себеп бағыныңқы (causal): expresses the reason/cause for the main clause action. Typically uses suffixes like -ғандықтан/-гендіктен/-қандықтан (meaning 'because of doing...').\n- Мезгіл бағыныңқы (temporal): expresses time, uses -ғанда/-генде/-қанда (meaning 'when...').\n- Шарт бағыныңқы (conditional): expresses condition, uses -са/-се (meaning 'if...').\n- Қарсылықты бағыныңқы (concessive/adversative): expresses concession, uses -ғанымен/-генімен (meaning 'although/even though...').\n\nAnalyzing each option:\nA) 'Жаңбыр жауғандықтан, біз серуенге шыға алмадық.' — 'Because it rained, we could not go for a walk.' The subordinate clause uses the suffix -ғандықтан, which is the causal suffix. This is a causal subordinate sentence.\n\nB) 'Ол кітап оқып жатқанда, мен үй жұмысын орындадым.' — 'While he was reading a book, I did my homework.' Uses -қанда (temporal suffix). This is a temporal subordinate sentence.\n\nC) 'Егер ертең ауа райы жақсы болса, біз саяхатқа шығамыз.' — 'If the weather is good tomorrow, we will go on a trip.' Uses егер...болса (conditional). This is a conditional subordinate sentence.\n\nD) 'Ол қанша тырысқанымен, есепті шеше алмады.' — 'No matter how hard he tried, he could not solve the problem.' Uses -қанымен (concessive suffix). This is a concessive subordinate sentence.\n\nTherefore, option A is the causal subordinate compound sentence.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-keyed, and uses natural literary Kazakh with accurate grammatical terminology. Each distractor represents a distinct subordinate clause type (-қанда for temporal, егер...болса for conditional, -қанымен for concessive), making them all plausible and pedagogically meaningful. The question is slightly easier than a true B-level item since the morphological markers are highly transparent and directly signal the clause type without requiring deeper contextual analysis.",
+          "improvement_suggestions": "To better align with B-level difficulty, consider using sentences where the subordinate clause type is less immediately obvious from a single suffix — for example, using a sentence where the causal meaning must be inferred from context rather than a single unambiguous morpheme like -ғандықтан. Alternatively, include a distractor that also uses a causal-adjacent form (e.g., -ғаннан кейін, which can be confused with causal) to require finer discrimination.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the 'себеп бағыныңқы сабақтас құрмалас сөйлем' (subordinate compound sentence with a clause of reason/cause). Let's analyze the options:\n\nA) 'Жаңбыр жауғандықтан, біз серуенге шыға алмадық.' The subordinate clause is 'Жаңбыр жауғандықтан' (Because it rained). The suffix '-ғандықтан' explicitly denotes reason or cause. This is a себеп бағыныңқы сабақтас.\n\nB) 'Ол кітап оқып жатқанда, мен үй жұмысын орындадым.' The subordinate clause '...жатқанда' denotes time (мезгіл бағыныңқы).\n\nC) 'Егер ертең ауа райы жақсы болса, біз саяхатқа шығамыз.' The subordinate clause '...болса' denotes condition (шартты бағыныңқы).\n\nD) 'Ол қанша тырысқанымен, есепті шеше алмады.' The subordinate clause '...тырысқанымен' denotes concession (қарсылықты бағыныңқы).\n\nTherefore, option A is the correct answer.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurate, and perfectly aligned with the requested difficulty level. The distractors are excellent examples of other types of subordinate clauses.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:27:07.813006+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "7f7c419a-e1c4-495e-bbd6-1170b8d263b5",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Жақша ішіндегі тілдік бірліктердің лексикалық сипатын ретімен анықтаңыз.\nҚарт балықшының әкесі кеше түнде (дүниеден өтті). Ертең информатика сабағында жаңа (бағдарлама) орнатылатыны айтылды. Кешке балықшылар өзенге (жылым) салуға дайындалды.",
+  "options": [
+    {
+      "label": "A",
+      "text": "фразеологизм – неологизм – диалект сөз"
+    },
+    {
+      "label": "B",
+      "text": "эвфемизм – термин – кәсіби сөз"
+    },
+    {
+      "label": "C",
+      "text": "табу – термин – көнерген сөз"
+    },
+    {
+      "label": "D",
+      "text": "дисфемизм – жалпы қолданыстағы сөз – кәсіби сөз"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап – B. «Дүниеден өтті» тіркесі өлімді тура атамай, сыпайылап жеткізіп тұр, сондықтан эвфемизм болады. «Бағдарлама» сөзі информатика саласында арнайы ұғымды білдіретін термин ретінде қолданылған. «Жылым» – балық аулау кәсібіне қатысты, белгілі бір кәсіп иелері қолданатын кәсіби сөз. A нұсқасында бірінші бірлік тек фразеологизм ретінде ғана көрсетілгенімен, контекстегі негізгі қызметі – эвфемизм; «жылым» диалект емес. C нұсқасындағы табу мен көнерген сөз сипаттары бұл сөйлемге сәйкес келмейді. D нұсқасында «дүниеден өтті» дисфемизм емес, керісінше сыпайы мәнді эвфемизм; «бағдарлама» бұл контексте жалпы сөз емес, терминдік мәнде тұр.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.3,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The three bracketed units must be classified in order. 1) “дүниеден өтті” literally means “passed from the world” and is used instead of the direct word “өлді” (“died”). In Kazakh lexicology, such softened, polite replacement for an unpleasant concept is an euphemism (эвфемизм). 2) “бағдарлама” in the context of informatics, especially “орнату” (“install”), means a computer program/software. This \n\n[anthropic/claude-sonnet-4.6] answered B: Let's analyze each bracketed expression:\n\n1. (дүниеден өтті) - 'passed away/departed from this world' - This is a euphemism (эвфемизм). A euphemism is a mild or indirect word/expression used in place of one that might be considered too harsh or blunt (like 'died'). 'Дүниеден өтті' is a polite, softened way of saying someone died. Note: it could also be considered a phraseologism, but in the contex\n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the lexical characteristics of the words/phrases in parentheses in the given sentences:\n\n1. 'дүниеден өтті' (passed away) is used instead of 'өлді' (died) to soften the harshness of the meaning. In linguistics, this is known as a euphemism (эвфемизм).\n2. 'бағдарлама' (program) is used in the context of an informatics lesson ('информатика сабағында'). Here, it refers to computer softw",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.3,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer B is correct and the explanation is sound: the items are an euphemism, an informatics term, and a fishing-related professional word. A minor caveat is that “дүниеден өтті” can also be described structurally as a phraseological expression, but the full sequence leaves B as the only defensible answer. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear correct answer (B) supported by solid reasoning. Each bracketed expression maps cleanly to its lexical category: euphemism, term, and professional word. Distractors are mostly plausible — option A is reachable by misidentifying 'дүниеден өтті' as merely a phraseologism and 'жылым' as a dialect word; option C by confusing euphemism with taboo; option D by misidentifying the euphemism as dysphemism. The Kazakh is natural and uses standard terminology. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of lexicology in context. The distractors are plausible and use appropriate linguistic terminology.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The three bracketed units must be classified in order. 1) “дүниеден өтті” literally means “passed from the world” and is used instead of the direct word “өлді” (“died”). In Kazakh lexicology, such softened, polite replacement for an unpleasant concept is an euphemism (эвфемизм). 2) “бағдарлама” in the context of informatics, especially “орнату” (“install”), means a computer program/software. This \n\n[anthropic/claude-sonnet-4.6] answered B: Let's analyze each bracketed expression:\n\n1. (дүниеден өтті) - 'passed away/departed from this world' - This is a euphemism (эвфемизм). A euphemism is a mild or indirect word/expression used in place of one that might be considered too harsh or blunt (like 'died'). 'Дүниеден өтті' is a polite, softened way of saying someone died. Note: it could also be considered a phraseologism, but in the contex\n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the lexical characteristics of the words/phrases in parentheses in the given sentences:\n\n1. 'дүниеден өтті' (passed away) is used instead of 'өлді' (died) to soften the harshness of the meaning. In linguistics, this is known as a euphemism (эвфемизм).\n2. 'бағдарлама' (program) is used in the context of an informatics lesson ('информатика сабағында'). Here, it refers to computer softw",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.3,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer B is correct and the explanation is sound: the items are an euphemism, an informatics term, and a fishing-related professional word. A minor caveat is that “дүниеден өтті” can also be described structurally as a phraseological expression, but the full sequence leaves B as the only defensible answer. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear correct answer (B) supported by solid reasoning. Each bracketed expression maps cleanly to its lexical category: euphemism, term, and professional word. Distractors are mostly plausible — option A is reachable by misidentifying 'дүниеден өтті' as merely a phraseologism and 'жылым' as a dialect word; option C by confusing euphemism with taboo; option D by misidentifying the euphemism as dysphemism. The Kazakh is natural and uses standard terminology. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of lexicology in context. The distractors are plausible and use appropriate linguistic terminology.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The three bracketed units must be classified in order. 1) “дүниеден өтті” literally means “passed from the world” and is used instead of the direct word “өлді” (“died”). In Kazakh lexicology, such softened, polite replacement for an unpleasant concept is an euphemism (эвфемизм). 2) “бағдарлама” in the context of informatics, especially “орнату” (“install”), means a computer program/software. This is a subject-field term, so it is a термин. 3) “жылым” in the sentence about fishermen preparing to put it into the river is a fishing-related occupational word used in a specific profession. Therefore it is a кәсіби сөз. The sequence is: эвфемизм – термин – кәсіби сөз.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The keyed answer B is correct and the explanation is sound: the items are an euphemism, an informatics term, and a fishing-related professional word. A minor caveat is that “дүниеден өтті” can also be described structurally as a phraseological expression, but the full sequence leaves B as the only defensible answer.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze each bracketed expression:\n\n1. (дүниеден өтті) - 'passed away/departed from this world' - This is a euphemism (эвфемизм). A euphemism is a mild or indirect word/expression used in place of one that might be considered too harsh or blunt (like 'died'). 'Дүниеден өтті' is a polite, softened way of saying someone died. Note: it could also be considered a phraseologism, but in the context of lexical classification, it functions as a euphemism specifically.\n\n2. (бағдарлама) - 'program' (software) - In the context of an informatics class installing a new program, this is a term (термин) - specifically a computer science/IT term. Terms are special vocabulary used in specific fields of knowledge.\n\n3. (жылым) - This is a type of fishing net/drag net. This is professional vocabulary (кәсіби сөз) - vocabulary specific to a particular profession or trade, in this case fishing. 'Жылым' refers to a specific type of large fishing net used by fishermen, making it professional/occupational vocabulary.\n\nMatching with options:\n- эвфемизм (euphemism) – термин (term) – кәсіби сөз (professional word)\n\nThis matches option B: эвфемизм – термин – кәсіби сөз\n\nLet me verify the other options don't fit better:\n- A) фразеологизм – неологизм – диалект сөз: 'дүниеден өтті' could be a phraseologism, but 'бағдарлама' is not a neologism in modern usage, and 'жылым' is not a dialect word but professional vocabulary.\n- C) табу – термин – көнерген сөз: 'дүниеден өтті' is not a taboo word itself (taboo would be the word being avoided), and 'жылым' is not an archaic word.\n- D) дисфемизм – жалпы қолданыстағы сөз – кәсіби сөз: 'дүниеден өтті' is definitely not a dysphemism (which would be a harsher replacement), and 'бағдарлама' in IT context is a term, not general vocabulary.\n\nOption B is correct.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, with a clear correct answer (B) supported by solid reasoning. Each bracketed expression maps cleanly to its lexical category: euphemism, term, and professional word. Distractors are mostly plausible — option A is reachable by misidentifying 'дүниеден өтті' as merely a phraseologism and 'жылым' as a dialect word; option C by confusing euphemism with taboo; option D by misidentifying the euphemism as dysphemism. The Kazakh is natural and uses standard terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the lexical characteristics of the words/phrases in parentheses in the given sentences:\n\n1. 'дүниеден өтті' (passed away) is used instead of 'өлді' (died) to soften the harshness of the meaning. In linguistics, this is known as a euphemism (эвфемизм).\n2. 'бағдарлама' (program) is used in the context of an informatics lesson ('информатика сабағында'). Here, it refers to computer software, which makes it a specialized term (термин) in the field of IT/computer science.\n3. 'жылым' refers to a large fishing net. It is a word specifically used by people engaged in the fishing trade ('балықшылар'). In Kazakh lexicology, words specific to a particular trade or profession are called professional words (кәсіби сөз).\n\nMatching these findings with the given options, we get: эвфемизм - термин - кәсіби сөз. This corresponds exactly to Option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of lexicology in context. The distractors are plausible and use appropriate linguistic terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:45:37.968012+00:00",
+  "generation_attempts": 1
+}

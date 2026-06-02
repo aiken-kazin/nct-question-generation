@@ -1,0 +1,140 @@
+{
+  "id": "65a32d8b-3008-49a6-9b82-aa9fe8a5363d",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төмендегі мысалдардың ішінен жақсыз сөйлемді анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Бұл мәселені келесі отырыста қайта талқылайтын болды."
+    },
+    {
+      "label": "B",
+      "text": "Ауыл қарияларының батасын алып, жолға шықтық."
+    },
+    {
+      "label": "C",
+      "text": "Ертеңгі жиналысқа міндетті түрде қатысуымыз қажет."
+    },
+    {
+      "label": "D",
+      "text": "Жастардың сапалы білім алуына барлық жағдай жасалған."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "С нұсқасындағы «Ертеңгі жиналысқа міндетті түрде қатысуымыз қажет» – жақсыз сөйлем. Жақсыз сөйлемнің бастауышы болмайды және оны ойдан табу да мүмкін емес. Бастауыш тек атау септігінде тұруы тиіс, ал бұл сөйлемге «біздің» деген ілік септігіндегі сөзді ғана тіркеуге болады. Баяндауышы тұйық етістікке тәуелдік жалғауы жалғанып, «қажет» модаль сөзімен тіркесуі арқылы жасалған. А нұсқасы – белгісіз жақты сөйлем (іс-әрекет иесі көпшілік – «олар»). В нұсқасы – жасырын бастауышты жақты сөйлем (жасырын бастауышы – «біз»). D нұсқасы – толық жақты сөйлем (бастауышы – «жағдай»).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.3,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: A 'жақсыз сөйлем' in Kazakh syntax is an impersonal sentence: it has no grammatical subject, and the action/state is expressed without a nominative subject. Common predicate patterns include an infinitive/verbal noun in -у combined with modal words such as керек, қажет, тиіс, мүмкін. Option A has an omitted but recoverable actor: someone/they decided or was going to discuss the issue; it is not tr\n\n[anthropic/claude-sonnet-4.6] answered A: In Kazakh grammar, a 'жақсыз сөйлем' (impersonal sentence) is a sentence that has no subject (бастауыш) and where the predicate does not indicate a specific person performing the action. The action is presented as occurring without a defined agent.\n\nLet's analyze each option:\n\nA) 'Бұл мәселені келесі отырыста қайта талқылайтын болды.' — 'This issue was to be discussed again at the next meeting.' T\n\n[google/gemini-3.1-pro-preview] answered C: To identify the impersonal sentence (жақсыз сөйлем), we need to find a sentence that lacks a grammatical subject (бастауыш) in the nominative case, and where a subject cannot be simply implied from the predicate. \n\nLet's analyze the options:\nA) 'Бұл мәселені келесі отырыста қайта талқылайтын болды.' The predicate is 'талқылайтын болды' (3rd person). The subject 'олар' (they) is implied. This is a ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 7.333,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.3,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct under standard Kazakh school grammar: the тұйық етістік + тәуелдік жалғауы + қажет construction is treated as a жақсыз сөйлем. The distractors are generally plausible and test contrast with omitted-subject, indefinite-personal, and full two-member sentences. | [anthropic/claude-sonnet-4.6] The provided correct answer (C) is questionable. Option A ('Бұл мәселені келесі отырыста қайта талқылайтын болды') is a stronger candidate for жақсыз сөйлем — it has no subject and the object is in accusative case with no possible nominative subject. The explanation's classification of A as 'белгісіз жақты' is debatable, and the reasoning for C being жақсыз (based on possessive suffix preventing nominative subject) is a subtle point not universally agreed upon in Kazakh grammar pedagogy. This ambiguity makes the question unreliable for certification purposes. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It accurately tests the knowledge of simple sentence types in Kazakh syntax, with well-constructed distractors and a clear, correct explanation.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Revise the question to use a clearer, unambiguous example of жақсыз сөйлем (e.g., weather sentences like 'Сыртта қар жауып тұр' or modal constructions that are unambiguously impersonal). Remove option A or reclassify it clearly, as it competes with the intended answer. The distinction between белгісіз жақты and жақсыз сөйлем should be made more transparent in the distractors. Consider consulting the official Kazakh grammar textbook classification to ensure the keyed answer aligns with the curriculum standard used in teacher certification.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: A 'жақсыз сөйлем' in Kazakh syntax is an impersonal sentence: it has no grammatical subject, and the action/state is expressed without a nominative subject. Common predicate patterns include an infinitive/verbal noun in -у combined with modal words such as керек, қажет, тиіс, мүмкін. Option A has an omitted but recoverable actor: someone/they decided or was going to discuss the issue; it is not tr\n\n[anthropic/claude-sonnet-4.6] answered A: In Kazakh grammar, a 'жақсыз сөйлем' (impersonal sentence) is a sentence that has no subject (бастауыш) and where the predicate does not indicate a specific person performing the action. The action is presented as occurring without a defined agent.\n\nLet's analyze each option:\n\nA) 'Бұл мәселені келесі отырыста қайта талқылайтын болды.' — 'This issue was to be discussed again at the next meeting.' T\n\n[google/gemini-3.1-pro-preview] answered C: To identify the impersonal sentence (жақсыз сөйлем), we need to find a sentence that lacks a grammatical subject (бастауыш) in the nominative case, and where a subject cannot be simply implied from the predicate. \n\nLet's analyze the options:\nA) 'Бұл мәселені келесі отырыста қайта талқылайтын болды.' The predicate is 'талқылайтын болды' (3rd person). The subject 'олар' (they) is implied. This is a ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 7.333,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.3,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct under standard Kazakh school grammar: the тұйық етістік + тәуелдік жалғауы + қажет construction is treated as a жақсыз сөйлем. The distractors are generally plausible and test contrast with omitted-subject, indefinite-personal, and full two-member sentences. | [anthropic/claude-sonnet-4.6] The provided correct answer (C) is questionable. Option A ('Бұл мәселені келесі отырыста қайта талқылайтын болды') is a stronger candidate for жақсыз сөйлем — it has no subject and the object is in accusative case with no possible nominative subject. The explanation's classification of A as 'белгісіз жақты' is debatable, and the reasoning for C being жақсыз (based on possessive suffix preventing nominative subject) is a subtle point not universally agreed upon in Kazakh grammar pedagogy. This ambiguity makes the question unreliable for certification purposes. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It accurately tests the knowledge of simple sentence types in Kazakh syntax, with well-constructed distractors and a clear, correct explanation.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Revise the question to use a clearer, unambiguous example of жақсыз сөйлем (e.g., weather sentences like 'Сыртта қар жауып тұр' or modal constructions that are unambiguously impersonal). Remove option A or reclassify it clearly, as it competes with the intended answer. The distinction between белгісіз жақты and жақсыз сөйлем should be made more transparent in the distractors. Consider consulting the official Kazakh grammar textbook classification to ensure the keyed answer aligns with the curriculum standard used in teacher certification.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A 'жақсыз сөйлем' in Kazakh syntax is an impersonal sentence: it has no grammatical subject, and the action/state is expressed without a nominative subject. Common predicate patterns include an infinitive/verbal noun in -у combined with modal words such as керек, қажет, тиіс, мүмкін. Option A has an omitted but recoverable actor: someone/they decided or was going to discuss the issue; it is not truly impersonal. Option B has the predicate 'шықтық' in 1st person plural, so the omitted subject is 'біз'; it is a definite-personal sentence, not impersonal. Option C, 'Ертеңгі жиналысқа міндетті түрде қатысуымыз қажет', uses the construction verbal noun 'қатысуымыз' + modal word 'қажет' meaning 'it is necessary for us to participate'; there is no nominative grammatical subject, so this is a жақсыз сөйлем. Option D has an explicit subject 'барлық жағдай' and predicate 'жасалған', so it is not impersonal. Therefore the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct under standard Kazakh school grammar: the тұйық етістік + тәуелдік жалғауы + қажет construction is treated as a жақсыз сөйлем. The distractors are generally plausible and test contrast with omitted-subject, indefinite-personal, and full two-member sentences.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh grammar, a 'жақсыз сөйлем' (impersonal sentence) is a sentence that has no subject (бастауыш) and where the predicate does not indicate a specific person performing the action. The action is presented as occurring without a defined agent.\n\nLet's analyze each option:\n\nA) 'Бұл мәселені келесі отырыста қайта талқылайтын болды.' — 'This issue was to be discussed again at the next meeting.' The verb form 'талқылайтын болды' is in a form that doesn't indicate a specific subject. There is no explicit subject. The object 'бұл мәселені' is in accusative case (табыс септік), confirming it's the object, not the subject. This looks like an impersonal/subjectless sentence.\n\nB) 'Ауыл қарияларының батасын алып, жолға шықтық.' — 'Having received the blessing of the village elders, we set out on the road.' The predicate 'шықтық' is in 1st person plural, implying 'we' as the subject. This is a personal sentence (жақты сөйлем) with an implied subject 'біз'.\n\nC) 'Ертеңгі жиналысқа міндетті түрде қатысуымыз қажет.' — 'It is necessary that we attend tomorrow's meeting.' Here 'қатысуымыз' contains the possessive suffix '-ымыз' (our), indicating a specific person (1st person plural). This functions as the subject of the sentence. This is a personal sentence.\n\nD) 'Жастардың сапалы білім алуына барлық жағдай жасалған.' — 'All conditions have been created for young people to receive quality education.' The predicate 'жасалған' is a passive form. The subject would be 'барлық жағдай' (all conditions). This has a subject, so it's not impersonal.\n\nWait, let me reconsider. In Kazakh, 'жақсыз сөйлем' specifically means a sentence without a subject where the predicate is in a form that doesn't point to any person. \n\nOption A: 'Бұл мәселені келесі отырыста қайта талқылайтын болды' — no subject, the object is in accusative case, the predicate doesn't indicate who performs the action. This is a classic impersonal sentence.\n\nOption D: 'барлық жағдай жасалған' — 'барлық жағдай' (all conditions) is the subject in nominative case. This is a passive sentence but has a subject.\n\nSo Option A is the impersonal (жақсыз) sentence — it has no subject, and the predicate form does not indicate a specific person.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 3.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 5.9,
+          "pass_fail": false,
+          "comments": "The provided correct answer (C) is questionable. Option A ('Бұл мәселені келесі отырыста қайта талқылайтын болды') is a stronger candidate for жақсыз сөйлем — it has no subject and the object is in accusative case with no possible nominative subject. The explanation's classification of A as 'белгісіз жақты' is debatable, and the reasoning for C being жақсыз (based on possessive suffix preventing nominative subject) is a subtle point not universally agreed upon in Kazakh grammar pedagogy. This ambiguity makes the question unreliable for certification purposes.",
+          "improvement_suggestions": "Revise the question to use a clearer, unambiguous example of жақсыз сөйлем (e.g., weather sentences like 'Сыртта қар жауып тұр' or modal constructions that are unambiguously impersonal). Remove option A or reclassify it clearly, as it competes with the intended answer. The distinction between белгісіз жақты and жақсыз сөйлем should be made more transparent in the distractors. Consider consulting the official Kazakh grammar textbook classification to ensure the keyed answer aligns with the curriculum standard used in teacher certification.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To identify the impersonal sentence (жақсыз сөйлем), we need to find a sentence that lacks a grammatical subject (бастауыш) in the nominative case, and where a subject cannot be simply implied from the predicate. \n\nLet's analyze the options:\nA) 'Бұл мәселені келесі отырыста қайта талқылайтын болды.' The predicate is 'талқылайтын болды' (3rd person). The subject 'олар' (they) is implied. This is a personal sentence (жақты сөйлем).\nB) 'Ауыл қарияларының батасын алып, жолға шықтық.' The predicate is 'шықтық' (1st person plural). The subject 'біз' (we) is implied. This is also a personal sentence.\nC) 'Ертеңгі жиналысқа міндетті түрде қатысуымыз қажет.' The predicate is 'қатысуымыз қажет'. In Kazakh grammar, predicates formed by a verbal noun (тұйық етістік) with a possessive suffix followed by modal words like 'керек', 'қажет', 'тиіс', or 'мүмкін' form impersonal sentences (жақсыз сөйлем). The logical subject would be 'біздің' (genitive case), not a nominative subject. Therefore, this is a classic example of an impersonal sentence.\nD) 'Жастардың сапалы білім алуына барлық жағдай жасалған.' The predicate is 'жасалған' and the subject is 'жағдай' (conditions). Since it has a clear subject in the nominative case, it is a two-part personal sentence (жақты сөйлем).\n\nThus, option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is of excellent quality. It accurately tests the knowledge of simple sentence types in Kazakh syntax, with well-constructed distractors and a clear, correct explanation.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 0.667,
+    "unanimous": false,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:28:04.027193+00:00",
+  "generation_attempts": 1
+}

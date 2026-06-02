@@ -1,0 +1,140 @@
+{
+  "id": "5803801f-fae7-47e9-a16f-ad9e5e34249e",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "«Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\nБерілген сөйлемдегі бағыныңқы сабақтастың түрін және бағыныңқы сөйлем баяндауышының жасалу жолын анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Шартты бағыныңқы; баяндауышы шартты рай тұлғалы етістікке «да» шылауының тіркесуі арқылы жасалған."
+    },
+    {
+      "label": "B",
+      "text": "Қимыл-сын бағыныңқы; баяндауышы көсемше тұлғалы етістікке «да» демеулігінің тіркесуі арқылы жасалған."
+    },
+    {
+      "label": "C",
+      "text": "Қарсылықты бағыныңқы; баяндауышы шартты рай тұлғалы етістікке «да» демеулігінің тіркесуі арқылы жасалған."
+    },
+    {
+      "label": "D",
+      "text": "Мезгіл бағыныңқы; баяндауышы шартты рай тұлғалы етістікке жалғаулық шылаудың тіркесуі арқылы жасалған."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген сөйлем – қарсылықты бағыныңқы сабақтас құрмалас сөйлем. Бағыныңқы сөйлемдегі іс-әрекет (тоқтау айту) басыңқы сөйлемдегі іске (күдіктің сейілмеуі) қарама-қарсы қойылып тұр. Қарсылықты бағыныңқы сабақтас сөйлемнің баяндауышы көбінесе шартты райлы етістікке (-са/-се) «да/де, та/те» демеулік шылауының тіркесуі арқылы жасалады (айт+са+м да). Егер тек «-са/-се» жұрнағы болса, шартты бағыныңқы болар еді (А нұсқасындағы қателік осыған негізделген), бірақ «да» демеулігі тіркескенде грамматикалық мағына қарсылықты қатынасқа өзгереді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The subordinate clause is “Өзіме-өзім қанша тоқтау айтсам да”. Its predicate is “айтсам да”: the verb “айт-” takes the conditional mood suffix “-са” plus the 1st person ending “-м”, and then the particle “да” is attached. The meaning is concessive: “even though / no matter how much I tell myself to stop, the cloud of doubt does not clear.” Therefore it is a қарсылықты бағыныңқы сабақтас, and the p\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: «Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\nThe subordinate clause is: 'Өзіме-өзім қанша тоқтау айтсам да'\nThe main clause is: 'көңілімдегі күдік бұлты сейілер емес'\n\nStep 1: Identify the predicate of the subordinate clause.\nThe predicate is 'айтсам да' — this is formed from the verb 'айту' (to say).\n\nStep 2: Analyze the morphological for\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is «Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\n1. First, we determine the type of the subordinate clause (бағыныңқы сөйлем). The action in the main clause ('көңілімдегі күдік бұлты сейілер емес' - the cloud of doubt does not clear up) occurs despite the action in the subordinate clause ('қанша тоқтау айтсам да' - no matter how much I tell myself t",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: “айтсам да” forms a concessive/қарсылықты subordinate clause via conditional mood plus the particle “да”. The item is clear and appropriate for teacher certification, with plausible distractors based on common confusion with шартты, мезгіл, and қимыл-сын бағыныңқылар. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests genuine grammatical analysis at the appropriate B level. The correct answer (C) is clearly defensible: 'айтсам да' is a conditional mood form + демеулік 'да' creating a concessive (қарсылықты) subordinate clause. Distractors are plausible and target specific misconceptions — confusing шартты бағыныңқы with қарсылықты (A), misidentifying the verb form as a көсемше (B), and mislabeling 'да' as жалғаулық шылау (D). | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests the candidate's ability to identify the type of subordinate clause and analyze its predicate's morphological structure, which aligns well with the requested Level B difficulty.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The subordinate clause is “Өзіме-өзім қанша тоқтау айтсам да”. Its predicate is “айтсам да”: the verb “айт-” takes the conditional mood suffix “-са” plus the 1st person ending “-м”, and then the particle “да” is attached. The meaning is concessive: “even though / no matter how much I tell myself to stop, the cloud of doubt does not clear.” Therefore it is a қарсылықты бағыныңқы сабақтас, and the p\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: «Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\nThe subordinate clause is: 'Өзіме-өзім қанша тоқтау айтсам да'\nThe main clause is: 'көңілімдегі күдік бұлты сейілер емес'\n\nStep 1: Identify the predicate of the subordinate clause.\nThe predicate is 'айтсам да' — this is formed from the verb 'айту' (to say).\n\nStep 2: Analyze the morphological for\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is «Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\n1. First, we determine the type of the subordinate clause (бағыныңқы сөйлем). The action in the main clause ('көңілімдегі күдік бұлты сейілер емес' - the cloud of doubt does not clear up) occurs despite the action in the subordinate clause ('қанша тоқтау айтсам да' - no matter how much I tell myself t",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: “айтсам да” forms a concessive/қарсылықты subordinate clause via conditional mood plus the particle “да”. The item is clear and appropriate for teacher certification, with plausible distractors based on common confusion with шартты, мезгіл, and қимыл-сын бағыныңқылар. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests genuine grammatical analysis at the appropriate B level. The correct answer (C) is clearly defensible: 'айтсам да' is a conditional mood form + демеулік 'да' creating a concessive (қарсылықты) subordinate clause. Distractors are plausible and target specific misconceptions — confusing шартты бағыныңқы with қарсылықты (A), misidentifying the verb form as a көсемше (B), and mislabeling 'да' as жалғаулық шылау (D). | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests the candidate's ability to identify the type of subordinate clause and analyze its predicate's morphological structure, which aligns well with the requested Level B difficulty.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The subordinate clause is “Өзіме-өзім қанша тоқтау айтсам да”. Its predicate is “айтсам да”: the verb “айт-” takes the conditional mood suffix “-са” plus the 1st person ending “-м”, and then the particle “да” is attached. The meaning is concessive: “even though / no matter how much I tell myself to stop, the cloud of doubt does not clear.” Therefore it is a қарсылықты бағыныңқы сабақтас, and the predicate is formed by a conditional-mood verb with the particle “да”.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: “айтсам да” forms a concessive/қарсылықты subordinate clause via conditional mood plus the particle “да”. The item is clear and appropriate for teacher certification, with plausible distractors based on common confusion with шартты, мезгіл, and қимыл-сын бағыныңқылар.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence: «Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\nThe subordinate clause is: 'Өзіме-өзім қанша тоқтау айтсам да'\nThe main clause is: 'көңілімдегі күдік бұлты сейілер емес'\n\nStep 1: Identify the predicate of the subordinate clause.\nThe predicate is 'айтсам да' — this is formed from the verb 'айту' (to say).\n\nStep 2: Analyze the morphological form of 'айтсам да'.\n- 'айтса' is the conditional mood (шартты рай) form of the verb: айт + са + м = айтсам (conditional mood, 1st person singular)\n- 'да' is attached as a particle/conjunction\n\nStep 3: Determine the type of subordinate clause.\nThe meaning of the sentence is: 'No matter how much I tell myself to stop, the cloud of doubt in my heart won't clear.' This expresses a concessive/adversative relationship — despite the action in the subordinate clause, the result in the main clause is contrary to expectation. This is a 'қарсылықты бағыныңқы' (concessive/adversative subordinate clause).\n\nStep 4: Determine the nature of 'да' in this construction.\nIn Kazakh grammar, 'да/де' used after the conditional mood form (шартты рай) to express concession is classified as a 'демеулік шылау' (particle/modal particle), not a coordinating conjunction (жалғаулық шылау). The construction 'шартты рай + да/де' creates a concessive subordinate clause.\n\nStep 5: Match with options.\n- Option C states: 'Қарсылықты бағыныңқы; баяндауышы шартты рай тұлғалы етістікке «да» демеулігінің тіркесуі арқылы жасалған.'\nThis matches our analysis: concessive subordinate clause, predicate formed by combining conditional mood verb form with the particle 'да'.\n\nNote on Option A: It says 'шартты бағыныңқы' (conditional subordinate) which would mean a true conditional relationship (if...then), but the sentence expresses concession (even though/no matter how much), so it's not a conditional but a concessive clause. Also, Option A calls 'да' a 'шылау' (conjunction) rather than 'демеулік' (particle).\n\nThe correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and tests genuine grammatical analysis at the appropriate B level. The correct answer (C) is clearly defensible: 'айтсам да' is a conditional mood form + демеулік 'да' creating a concessive (қарсылықты) subordinate clause. Distractors are plausible and target specific misconceptions — confusing шартты бағыныңқы with қарсылықты (A), misidentifying the verb form as a көсемше (B), and mislabeling 'да' as жалғаулық шылау (D).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given sentence is «Өзіме-өзім қанша тоқтау айтсам да, көңілімдегі күдік бұлты сейілер емес.»\n\n1. First, we determine the type of the subordinate clause (бағыныңқы сөйлем). The action in the main clause ('көңілімдегі күдік бұлты сейілер емес' - the cloud of doubt does not clear up) occurs despite the action in the subordinate clause ('қанша тоқтау айтсам да' - no matter how much I tell myself to stop). This relationship indicates a concessive subordinate clause (қарсылықты бағыныңқы сабақтас).\n\n2. Next, we analyze the predicate of the subordinate clause (бағыныңқы сөйлемнің баяндауышы), which is 'айтсам да'. \n- 'айт' is the verb root.\n- '-са' is the suffix for the conditional mood (шартты рай).\n- '-м' is the first-person singular personal ending (жіктік жалғау).\n- 'да' is an intensifying particle (күшейткіш демеулік шылау) that, when combined with the conditional mood, creates the concessive meaning.\n\nMatching this with the given options, Option C correctly identifies the clause as 'Қарсылықты бағыныңқы' and accurately describes the predicate's formation as a conditional mood verb (шартты рай тұлғалы етістік) combined with the particle 'да' (демеулік).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. It accurately tests the candidate's ability to identify the type of subordinate clause and analyze its predicate's morphological structure, which aligns well with the requested Level B difficulty.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:55:47.128286+00:00",
+  "generation_attempts": 1
+}

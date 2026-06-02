@@ -1,0 +1,140 @@
+{
+  "id": "97abe8b2-1a5b-4a5c-8510-b2880d68b63c",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төл сөзді төлеу сөзге айналдырудың барлық грамматикалық-стилистикалық заңдылықтары қатаң сақталған нұсқаны табыңыз.\n\nБерілген сөйлем: Әлия құрбысына: «Апыр-ай, сәулем, мына көйлек саған өте жарасады екен, ертеңгі кешке осыны киіп бар!» – деді таңданысын жасыра алмай.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Әлия таңданысын жасыра алмай, құрбысына мына көйлектің саған өте жарасатынын айтып, ертеңгі кешке осыны киіп баратынын жеткізді."
+    },
+    {
+      "label": "B",
+      "text": "Әлия таңданысын жасыра алмай, құрбысына апыр-ай, сәулесіне сол көйлектің өте жарасатынын айтып, ертеңгі кешке соны киіп баруын ұсынды."
+    },
+    {
+      "label": "C",
+      "text": "Әлия таңданысын жасыра алмай, құрбысына сол көйлектің оған өте жарасатынын айтып, ертеңгі кешке соны киіп баруын ұсынды."
+    },
+    {
+      "label": "D",
+      "text": "Әлия таңданысын жасыра алмай, құрбысына сол көйлектің оған өте жарасатынын айтып, ертеңгі кешке соны киіп бар деп кеңес берді."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Төл сөзді төлеу сөзге айналдырудың негізгі ережелері бойынша: 1) Жақ (тұлға) өзгереді: 2-жақтағы сөздер 3-жаққа ауысады («саған» сөзі «оған» болып өзгереді). 2) Сілтеу есімдіктері өзгереді: жақындықты білдіретін «мына», «осы» есімдіктері қашықтықты білдіретін «сол» есімдігіне ауысады. 3) Қаратпа («сәулем») және одағай («апыр-ай») сөздер төлеу сөзде түсіп қалады. 4) Бұйрық райлы етістіктер («киіп бар») тұйық етістікке («киіп баруын») айналып табыс септігінде тұрады. С нұсқасында осы заңдылықтардың барлығы толық сақталған. А нұсқасында есімдіктер («мына», «саған», «осыны») өзгеріссіз қалған. В нұсқасында одағай («апыр-ай») мен қаратпа сөз («сәулесіне» түрінде) артық қалдырылған. D нұсқасында бұйрық райлы етістік («киіп бар деп») төлеу сөзге толық айналмай, жартылай төл сөз күйінде қалған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.217,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: To convert direct speech (төл сөз) into indirect/reported speech (төлеу сөз), the grammatical and stylistic rules require: (1) interjections and forms of address such as “Апыр-ай, сәулем” are normally omitted or semantically absorbed, not kept literally; (2) deictic words are shifted from the speaker's perspective: “мына көйлек” becomes “сол көйлек”, “осыны” becomes “соны”; (3) personal pronouns a\n\n[anthropic/claude-sonnet-4.6] answered C: We need to convert the direct speech (төл сөз) into indirect speech (төлеу сөз) following all grammatical-stylistic rules of Kazakh.\n\nOriginal direct speech: Әлия құрбысына: «Апыр-ай, сәулем, мына көйлек саған өте жарасады екен, ертеңгі кешке осыны киіп бар!» – деді таңданысын жасыра алмай.\n\nKey elements to convert:\n1. 'Апыр-ай' — this is an interjection (emotionally expressive). In indirect speec\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, several grammatical and stylistic rules must be followed:\n1. Interjections and vocatives (одағайлар мен қаратпа сөздер) such as 'Апыр-ай, сәулем' are omitted because they express direct emotion and address.\n2. Pronouns change according to the perspective: first and second person pronouns change to third person ('саған' ->",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.833,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.217,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is defensibly the only fully correct conversion: it shifts person and deixis, removes the interjection/address, and converts the imperative into an indirect construction. The item is solid, though the cognitive demand is closer to upper-medium than genuinely hard, and some distractors are quite visibly malformed. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear correct answer (C) that satisfies all grammatical-stylistic rules for converting direct speech to indirect speech in Kazakh. Each distractor targets a specific, identifiable error: A keeps demonstrative pronouns and person unchanged, B retains the interjection and vocative, D retains the imperative form in a semi-direct construction. The question genuinely requires multi-rule application and analysis, fitting level C difficulty. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It rigorously tests multiple rules of converting direct speech to indirect speech, and the distractors are perfectly designed around common conversion errors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: To convert direct speech (төл сөз) into indirect/reported speech (төлеу сөз), the grammatical and stylistic rules require: (1) interjections and forms of address such as “Апыр-ай, сәулем” are normally omitted or semantically absorbed, not kept literally; (2) deictic words are shifted from the speaker's perspective: “мына көйлек” becomes “сол көйлек”, “осыны” becomes “соны”; (3) personal pronouns a\n\n[anthropic/claude-sonnet-4.6] answered C: We need to convert the direct speech (төл сөз) into indirect speech (төлеу сөз) following all grammatical-stylistic rules of Kazakh.\n\nOriginal direct speech: Әлия құрбысына: «Апыр-ай, сәулем, мына көйлек саған өте жарасады екен, ертеңгі кешке осыны киіп бар!» – деді таңданысын жасыра алмай.\n\nKey elements to convert:\n1. 'Апыр-ай' — this is an interjection (emotionally expressive). In indirect speec\n\n[google/gemini-3.1-pro-preview] answered C: To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, several grammatical and stylistic rules must be followed:\n1. Interjections and vocatives (одағайлар мен қаратпа сөздер) such as 'Апыр-ай, сәулем' are omitted because they express direct emotion and address.\n2. Pronouns change according to the perspective: first and second person pronouns change to third person ('саған' ->",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.833,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.217,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is defensibly the only fully correct conversion: it shifts person and deixis, removes the interjection/address, and converts the imperative into an indirect construction. The item is solid, though the cognitive demand is closer to upper-medium than genuinely hard, and some distractors are quite visibly malformed. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear correct answer (C) that satisfies all grammatical-stylistic rules for converting direct speech to indirect speech in Kazakh. Each distractor targets a specific, identifiable error: A keeps demonstrative pronouns and person unchanged, B retains the interjection and vocative, D retains the imperative form in a semi-direct construction. The question genuinely requires multi-rule application and analysis, fitting level C difficulty. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It rigorously tests multiple rules of converting direct speech to indirect speech, and the distractors are perfectly designed around common conversion errors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) into indirect/reported speech (төлеу сөз), the grammatical and stylistic rules require: (1) interjections and forms of address such as “Апыр-ай, сәулем” are normally omitted or semantically absorbed, not kept literally; (2) deictic words are shifted from the speaker's perspective: “мына көйлек” becomes “сол көйлек”, “осыны” becomes “соны”; (3) personal pronouns are shifted: “саған” becomes “оған” because the friend is now referred to in the third person; (4) the statement “жарасады екен” becomes a subordinate object clause: “жарасатынын айтып”; (5) the imperative “киіп бар!” must be converted into an indirect construction such as “киіп баруын ұсынды/кеңес берді”, not kept as a direct imperative. Option A violates pronoun/deictic shifts (“мына”, “саған”, “осыны”) and changes the imperative into a statement (“баратынын”). Option B incorrectly retains the interjection/address form and has the unnatural “сәулесіне”. Option D keeps the direct imperative form “киіп бар деп”, so it is not fully indirect. Option C correctly changes “мына/осы” to “сол/соны”, “саған” to “оған”, removes the interjection/address, and converts the imperative into “киіп баруын ұсынды”.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.5,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.45,
+          "pass_fail": true,
+          "comments": "The keyed answer C is defensibly the only fully correct conversion: it shifts person and deixis, removes the interjection/address, and converts the imperative into an indirect construction. The item is solid, though the cognitive demand is closer to upper-medium than genuinely hard, and some distractors are quite visibly malformed.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to convert the direct speech (төл сөз) into indirect speech (төлеу сөз) following all grammatical-stylistic rules of Kazakh.\n\nOriginal direct speech: Әлия құрбысына: «Апыр-ай, сәулем, мына көйлек саған өте жарасады екен, ертеңгі кешке осыны киіп бар!» – деді таңданысын жасыра алмай.\n\nKey elements to convert:\n1. 'Апыр-ай' — this is an interjection (emotionally expressive). In indirect speech, interjections are typically dropped (they belong to direct speech style).\n2. 'сәулем' — this is a term of address (vocative). In indirect speech, terms of address are dropped.\n3. 'мына көйлек' (this dress, near the speaker) → in indirect speech, demonstrative pronouns shift: 'мына' → 'сол' (that), since the perspective shifts from the original speaker.\n4. 'саған' (to you, 2nd person) → 'оған' (to her/him, 3rd person), since in indirect speech the addressee becomes 3rd person.\n5. 'жарасады екен' (present tense, evidential) → 'жарасатынын' (nominalized verb in indirect speech).\n6. 'осыны' (this one, near speaker) → 'соны' (that one), perspective shift.\n7. 'киіп бар!' — imperative (command/suggestion) → in indirect speech, imperatives are converted using 'баруын ұсынды' (suggested to go wearing) or 'деп кеңес берді' (advised to).\n\nNow let's analyze each option:\n\nOption A: '...мына көйлектің саған өте жарасатынын айтып, ертеңгі кешке осыны киіп баратынын жеткізді.'\n- 'мына' should become 'сол' — WRONG (мына kept)\n- 'саған' should become 'оған' — WRONG (саған kept)\n- 'осыны' should become 'соны' — WRONG\n- 'киіп баратынын' — the imperative is converted as if it's a statement of future action, not a suggestion — questionable\nMultiple errors. Eliminated.\n\nOption B: '...апыр-ай, сәулесіне сол көйлектің өте жарасатынын айтып, ертеңгі кешке соны киіп баруын ұсынды.'\n- 'апыр-ай' is kept — WRONG (interjections should be dropped in indirect speech)\n- 'сәулесіне' — the vocative is transformed but kept as an object — this is unusual/wrong\n- 'сол көйлектің' — correct shift from 'мына'\n- 'соны' — correct shift from 'осыны'\n- 'баруын ұсынды' — correct for imperative conversion\nBut keeping 'апыр-ай' is a clear violation. Eliminated.\n\nOption C: '...сол көйлектің оған өте жарасатынын айтып, ертеңгі кешке соны киіп баруын ұсынды.'\n- Interjection 'апыр-ай' dropped — CORRECT\n- Vocative 'сәулем' dropped — CORRECT\n- 'мына' → 'сол' — CORRECT\n- 'саған' → 'оған' — CORRECT\n- 'осыны' → 'соны' — CORRECT\n- Imperative 'киіп бар!' → 'киіп баруын ұсынды' — CORRECT (suggestion/recommendation form)\nAll rules followed correctly.\n\nOption D: '...сол көйлектің оған өте жарасатынын айтып, ертеңгі кешке соны киіп бар деп кеңес берді.'\n- 'киіп бар деп' — this keeps the imperative form 'бар' which is a direct speech remnant. In proper indirect speech, the imperative should be nominalized, not kept as 'деп' with imperative. 'деп кеңес берді' is a semi-direct form, not fully converted indirect speech.\nThis is not fully converted — it retains the imperative verb form 'бар' which violates the rule of complete conversion.\n\nTherefore, Option C follows all grammatical-stylistic rules of converting direct speech to indirect speech in Kazakh.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, with a clear correct answer (C) that satisfies all grammatical-stylistic rules for converting direct speech to indirect speech in Kazakh. Each distractor targets a specific, identifiable error: A keeps demonstrative pronouns and person unchanged, B retains the interjection and vocative, D retains the imperative form in a semi-direct construction. The question genuinely requires multi-rule application and analysis, fitting level C difficulty.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, several grammatical and stylistic rules must be followed:\n1. Interjections and vocatives (одағайлар мен қаратпа сөздер) such as 'Апыр-ай, сәулем' are omitted because they express direct emotion and address.\n2. Pronouns change according to the perspective: first and second person pronouns change to third person ('саған' -> 'оған'), and proximal demonstrative pronouns change to distal ones ('мына' -> 'сол', 'осыны' -> 'соны').\n3. The predicate of the direct speech changes its form: indicative verbs often become participles in the accusative case ('жарасады екен' -> 'жарасатынын'), and imperative verbs become verbal nouns (тұйық етістік) with possessive and case endings ('киіп бар' -> 'киіп баруын').\n4. The framing verb 'деді' is often replaced by a more descriptive verb like 'айтты', 'ұсынды', 'сұрады', etc.\n\nEvaluating the options:\n- A) Fails to change the pronouns ('мына', 'саған', 'осыны') and incorrectly translates the imperative.\n- B) Incorrectly retains the interjection and vocative ('апыр-ай, сәулесіне').\n- C) Correctly omits the interjection/vocative, changes 'мына' to 'сол', 'саған' to 'оған', 'осыны' to 'соны', and correctly transforms the verbs ('жарасатынын айтып', 'киіп баруын ұсынды').\n- D) Leaves the imperative verb in direct speech form ('киіп бар деп'), which makes it a mixed/partial indirect speech rather than a fully converted one.\n\nTherefore, option C strictly follows all grammatical and stylistic rules.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is of excellent quality. It rigorously tests multiple rules of converting direct speech to indirect speech, and the distractors are perfectly designed around common conversion errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:09:39.574657+00:00",
+  "generation_attempts": 1
+}

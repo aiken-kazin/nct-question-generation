@@ -1,0 +1,140 @@
+{
+  "id": "2335931c-c08e-47a1-9e25-645954fe9c54",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Үстелдің үстіндегі кітапты ал» деген сөйлемдегі «үстіндегі» сөзінің морфологиялық сипатын дұрыс анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Туынды зат есім; «үсті» негізіне -ндегі жұрнағы жалғанып жасалған, сөйлемде анықтауыш қызметін атқарады"
+    },
+    {
+      "label": "B",
+      "text": "Заттанған сын есім; «үстінде» сөзіне -гі жұрнағы жалғанып жасалған қатыстық сын есім, сөйлемде баяндауыш қызметін атқарады"
+    },
+    {
+      "label": "C",
+      "text": "Қатыстық сын есім; «үсті» негізіне жатыс септік жалғауы мен -гі жұрнағы жалғанып жасалған, сөйлемде анықтауыш қызметін атқарады"
+    },
+    {
+      "label": "D",
+      "text": "Туынды үстеу; «үстінде» тіркесінен -гі жұрнағы арқылы жасалып, мезгіл мәнін білдіреді"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "«Үстіндегі» сөзі «үст» зат есімінің тәуелдік жалғаулы түрі «үстінде» (жатыс септігінде) негізіне -гі жұрнағы жалғану арқылы жасалған қатыстық сын есім. Қазақ тіл білімінде -дағы/-дегі (-ндағы/-ндегі) жұрнағы жатыс септігіндегі зат есімге жалғанып, сын есім тудырады да, сол зат есімнің белгісін, орналасу қатысын білдіреді. Сөйлемде «кітапты» зат есімін анықтап тұрғандықтан, анықтауыш қызметін атқарады. А нұсқасы қате, өйткені сөз зат есім емес, сын есім; «-ндегі» — бірыңғай жұрнақ емес, жатыс септігі мен -гі жұрнағының тіркесі. В нұсқасы қате, өйткені сөз заттанған сын есім емес (заттанса, зат есімнің синтаксистік қызметін атқарар еді), сөйлемде анықтауыш болып тұр. D нұсқасы қате, өйткені бұл сөз үстеу емес, орын мәнін білдіретін қатыстық сын есім.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: In the sentence “Үстелдің үстіндегі кітапты ал” (“Take the book on the table”), the word “үстіндегі” modifies “кітапты” and answers the question “which book?” Therefore, syntactically it functions as an attributive modifier (анықтауыш). Morphologically, it is formed from the nominal base “үсті” (“top/surface”, with possessive form used in the postpositional construction), plus the locative case fo\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the word 'үстіндегі' in the sentence 'Үстелдің үстіндегі кітапты ал' (Take the book that is on top of the table).\n\n1. Base/root analysis: The word comes from 'үст' (top/surface) → 'үсті' (its top, with possessive suffix -і) → 'үстінде' (on top of, with locative case suffix -нде, i.e., жатыс септік жалғауы) → 'үстіндегі' (the one on top of, with the relational adjective suffix -гі).\n\n\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the word 'үстіндегі' in the sentence 'Үстелдің үстіндегі кітапты ал'.\n\n1. Morphological breakdown: The root/stem is 'үсті' (which consists of the noun 'үст' and the 3rd person possessive suffix '-і'). To this stem, the locative case suffix (жатыс септік жалғауы) '-нде' is added, making it 'үстінде'. Finally, the adjective-forming suffix '-гі' is attached, resulting in 'үстіндегі'.\n2.",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct: «үстіндегі» is a relative adjective formed from the locative form with -гі and functions as an attributive modifier. The item is mostly clear, though the correct option slightly simplifies the internal structure by not explicitly mentioning the possessive/buffer -н. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets Level B by requiring morphological analysis in context. The correct answer (C) is unambiguously supported by standard Kazakh grammar rules, and the explanation is thorough. Distractors are plausible and target common misconceptions (confusing word class, syntactic function, or suffix segmentation), though option D (adverb with temporal meaning) is slightly easier to eliminate than the others. | [google/gemini-3.1-pro-preview] The question is well-structured, accurately tests morphological and syntactic analysis in context, and features highly plausible distractors based on common misconceptions.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option D could be made slightly more plausible by specifying a locative/spatial meaning rather than 'мезгіл мәні' (temporal meaning), since 'үстінде' is clearly spatial, making D easier to dismiss. This small tweak would improve distractor quality.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: In the sentence “Үстелдің үстіндегі кітапты ал” (“Take the book on the table”), the word “үстіндегі” modifies “кітапты” and answers the question “which book?” Therefore, syntactically it functions as an attributive modifier (анықтауыш). Morphologically, it is formed from the nominal base “үсті” (“top/surface”, with possessive form used in the postpositional construction), plus the locative case fo\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the word 'үстіндегі' in the sentence 'Үстелдің үстіндегі кітапты ал' (Take the book that is on top of the table).\n\n1. Base/root analysis: The word comes from 'үст' (top/surface) → 'үсті' (its top, with possessive suffix -і) → 'үстінде' (on top of, with locative case suffix -нде, i.e., жатыс септік жалғауы) → 'үстіндегі' (the one on top of, with the relational adjective suffix -гі).\n\n\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the word 'үстіндегі' in the sentence 'Үстелдің үстіндегі кітапты ал'.\n\n1. Morphological breakdown: The root/stem is 'үсті' (which consists of the noun 'үст' and the 3rd person possessive suffix '-і'). To this stem, the locative case suffix (жатыс септік жалғауы) '-нде' is added, making it 'үстінде'. Finally, the adjective-forming suffix '-гі' is attached, resulting in 'үстіндегі'.\n2.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct: «үстіндегі» is a relative adjective formed from the locative form with -гі and functions as an attributive modifier. The item is mostly clear, though the correct option slightly simplifies the internal structure by not explicitly mentioning the possessive/buffer -н. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets Level B by requiring morphological analysis in context. The correct answer (C) is unambiguously supported by standard Kazakh grammar rules, and the explanation is thorough. Distractors are plausible and target common misconceptions (confusing word class, syntactic function, or suffix segmentation), though option D (adverb with temporal meaning) is slightly easier to eliminate than the others. | [google/gemini-3.1-pro-preview] The question is well-structured, accurately tests morphological and syntactic analysis in context, and features highly plausible distractors based on common misconceptions.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option D could be made slightly more plausible by specifying a locative/spatial meaning rather than 'мезгіл мәні' (temporal meaning), since 'үстінде' is clearly spatial, making D easier to dismiss. This small tweak would improve distractor quality.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In the sentence “Үстелдің үстіндегі кітапты ал” (“Take the book on the table”), the word “үстіндегі” modifies “кітапты” and answers the question “which book?” Therefore, syntactically it functions as an attributive modifier (анықтауыш). Morphologically, it is formed from the nominal base “үсті” (“top/surface”, with possessive form used in the postpositional construction), plus the locative case form as in “үстінде” (“on/at the top”), plus the adjectival suffix -гі/-ғы that forms a relative adjective from locative forms: “үстінде” + “-гі” → “үстіндегі” = “the one located on top/on”. Thus it is a relative adjective (қатыстық сын есім) formed with the locative case ending and -гі, functioning as an анықтауыш. Option C states this correctly.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct: «үстіндегі» is a relative adjective formed from the locative form with -гі and functions as an attributive modifier. The item is mostly clear, though the correct option slightly simplifies the internal structure by not explicitly mentioning the possessive/buffer -н.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the word 'үстіндегі' in the sentence 'Үстелдің үстіндегі кітапты ал' (Take the book that is on top of the table).\n\n1. Base/root analysis: The word comes from 'үст' (top/surface) → 'үсті' (its top, with possessive suffix -і) → 'үстінде' (on top of, with locative case suffix -нде, i.e., жатыс септік жалғауы) → 'үстіндегі' (the one on top of, with the relational adjective suffix -гі).\n\n2. Morphological structure: үст + і (possessive) + нде (locative case = жатыс септік) + гі (relational adjective suffix = қатыстық сын есім жұрнағы).\n\n3. The suffix -гі/-кі/-ғы/-қы attached to a locative case form creates a 'қатыстық сын есім' (relational/relative adjective) — this is a standard rule in Kazakh morphology. The word 'үстіндегі' modifies 'кітап' (book), so it functions as an attribute (анықтауыш) in the sentence.\n\n4. Checking options:\n   - A) Says it's a 'туынды зат есім' (derived noun) with suffix -ндегі — incorrect, it's not a noun here, and the suffix breakdown is wrong.\n   - B) Says it's a 'заттанған сын есім' (substantivized adjective) functioning as a predicate — incorrect, it modifies 'кітап' so it's an attribute, not a predicate.\n   - C) Says it's a 'қатыстық сын есім' (relational adjective) formed by adding the locative case suffix and -гі suffix to the base 'үсті', functioning as an attribute (анықтауыш) — this is correct.\n   - D) Says it's a 'туынды үстеу' (derived adverb) with temporal meaning — incorrect.\n\n5. Option C correctly identifies: the word class (қатыстық сын есім), the formation process (үсті + жатыс септік жалғауы + -гі жұрнағы), and the syntactic function (анықтауыш).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately targets Level B by requiring morphological analysis in context. The correct answer (C) is unambiguously supported by standard Kazakh grammar rules, and the explanation is thorough. Distractors are plausible and target common misconceptions (confusing word class, syntactic function, or suffix segmentation), though option D (adverb with temporal meaning) is slightly easier to eliminate than the others.",
+          "improvement_suggestions": "Option D could be made slightly more plausible by specifying a locative/spatial meaning rather than 'мезгіл мәні' (temporal meaning), since 'үстінде' is clearly spatial, making D easier to dismiss. This small tweak would improve distractor quality.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the word 'үстіндегі' in the sentence 'Үстелдің үстіндегі кітапты ал'.\n\n1. Morphological breakdown: The root/stem is 'үсті' (which consists of the noun 'үст' and the 3rd person possessive suffix '-і'). To this stem, the locative case suffix (жатыс септік жалғауы) '-нде' is added, making it 'үстінде'. Finally, the adjective-forming suffix '-гі' is attached, resulting in 'үстіндегі'.\n2. Part of speech: The suffix '-ғы/-гі' (and its variants '-дағы/-дегі', '-ндағы/-ндегі') forms relative adjectives (қатыстық сын есім) from nouns or adverbs. Thus, 'үстіндегі' is a relative adjective.\n3. Syntactic role: In the sentence, 'үстіндегі' answers the question 'қай?' (which?) and modifies the noun 'кітапты' (book). Words that modify nouns and answer 'which?' or 'what kind of?' function as attributes (анықтауыш) in a sentence.\n\nLooking at the given options:\n- A is incorrect because it claims the word is a derived noun.\n- B is incorrect because it claims the word is a substantivized adjective acting as a predicate.\n- C correctly identifies it as a relative adjective (қатыстық сын есім), formed by adding the locative case suffix and the '-гі' suffix to the stem 'үсті', and correctly states its syntactic role as an attribute (анықтауыш).\n- D is incorrect because it claims the word is a derived adverb.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, accurately tests morphological and syntactic analysis in context, and features highly plausible distractors based on common misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:47:33.756393+00:00",
+  "generation_attempts": 2
+}

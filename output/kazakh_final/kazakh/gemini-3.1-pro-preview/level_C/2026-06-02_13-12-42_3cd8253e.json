@@ -1,0 +1,140 @@
+{
+  "id": "3cd8253e-97e9-4866-8c2c-e0de66867afa",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген сөйлемдегі бағыныңқы сыңардың мағыналық түрін және оның жасалу жолын анықтаңыз.\n\n«Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.»",
+  "options": [
+    {
+      "label": "A",
+      "text": "Себеп бағыныңқы сабақтас; бағыныңқы сөйлемнің баяндауышы ашық райлы етістіктен жасалып, «деп» көсемшесінің тіркесуі арқылы байланысқан."
+    },
+    {
+      "label": "B",
+      "text": "Шартты бағыныңқы сабақтас; бағыныңқы сөйлемнің баяндауышы қалау райлы етістіктен жасалып, «деп» көсемшесінің тіркесуі арқылы байланысқан."
+    },
+    {
+      "label": "C",
+      "text": "Мақсат бағыныңқы сабақтас; бағыныңқы сөйлемнің баяндауышы бұйрық райлы етістіктен жасалып, «деп» көсемшесінің тіркесуі арқылы байланысқан."
+    },
+    {
+      "label": "D",
+      "text": "Қимыл-сын бағыныңқы сабақтас; бағыныңқы сөйлем баяндауышының құрамындағы «деп» көсемшесі негізгі қимылдың орындалу амалын білдіріп тұр."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген сөйлем – мақсат бағыныңқы сабақтас құрмалас сөйлем. Бағыныңқы сөйлем бас сөйлемдегі іс-әрекеттің (кітапқа құжаттардың енгізілуі) қандай мақсатпен жасалғанын білдіріп тұр (Сұрағы: Не мақсатпен енгізілді?). Грамматикалық жасалу жолы: Бағыныңқының баяндауышы («білсін») етістіктің бұйрық райында (ІІІ жақ) тұр, оған «деп» көсемшесі тіркесу арқылы мақсаттық қатынас тудырып тұр. Егер бағыныңқының баяндауышы ашық райда тұрып (мысалы, «біледі деп»), «деп» көсемшесі тіркессе, ол себеп бағыныңқы сабақтас болар еді (бұл А нұсқасын жоққа шығарады). Бұл сұрақ мұғалімнің морфологиялық тұлғалардың (рай түрлері) синтаксистік мағына (себеп пен мақсаттың аражігі) тудырудағы қызметін терең талдай білуін талап етеді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.1,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: “Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.” The subordinate part is “Жас ұрпақ өз тарихын тереңірек танып білсін деп”. It answers the question “не мақсатпен?” / “why, for what purpose were the archive documents included?” The main action is “бұл кітапқа көптеген мұрағат құжаттары енгізілді” and the purpose is that the younge\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: 'Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.'\n\nThe subordinate clause is: 'Жас ұрпақ өз тарихын тереңірек танып білсін деп'\nThe main clause is: 'бұл кітапқа көптеген мұрағат құжаттары енгізілді'\n\nStep 1: Identify the semantic type of the subordinate clause.\nThe subordinate clause expresses the PURPOSE (мақсат) for w\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is «Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.» The main clause is «бұл кітапқа көптеген мұрағат құжаттары енгізілді» (many archival documents were included in this book). The subordinate clause is «Жас ұрпақ өз тарихын тереңірек танып білсін деп» (so that the young generation would know their history more deeply). The ques",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 7.833,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.1,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: the clause expresses purpose and is formed with the 3rd-person imperative form “білсін” plus “деп”. The main weakness is difficulty alignment: for practicing Kazakh-language teachers this is a fairly standard morphology-syntax identification item, not a genuinely hard C-level task. | [anthropic/claude-sonnet-4.6] The question is well-constructed and unambiguous: 'білсін' is clearly бұйрық рай (3rd person imperative), and the semantic type is мақсат бағыныңқы, making C the only defensible answer. The distractors are plausible — A targets the common confusion between мақсат and себеп with 'деп', B introduces қалау рай as a near-miss, and D offers an alternative syntactic interpretation — though B is slightly weaker since қалау рай forms differ visibly from бұйрық рай. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the syntactic and morphological features of subordinate clauses in Kazakh, with well-constructed distractors and appropriate difficulty.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option B could be strengthened by using a form that more closely resembles бұйрық рай (e.g., using 'білгісі келсін' or similar) to make the distractor harder to eliminate. This would increase the cognitive demand and reduce the chance of elimination by morphological recognition alone.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: “Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.” The subordinate part is “Жас ұрпақ өз тарихын тереңірек танып білсін деп”. It answers the question “не мақсатпен?” / “why, for what purpose were the archive documents included?” The main action is “бұл кітапқа көптеген мұрағат құжаттары енгізілді” and the purpose is that the younge\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: 'Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.'\n\nThe subordinate clause is: 'Жас ұрпақ өз тарихын тереңірек танып білсін деп'\nThe main clause is: 'бұл кітапқа көптеген мұрағат құжаттары енгізілді'\n\nStep 1: Identify the semantic type of the subordinate clause.\nThe subordinate clause expresses the PURPOSE (мақсат) for w\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is «Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.» The main clause is «бұл кітапқа көптеген мұрағат құжаттары енгізілді» (many archival documents were included in this book). The subordinate clause is «Жас ұрпақ өз тарихын тереңірек танып білсін деп» (so that the young generation would know their history more deeply). The ques",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 7.833,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.1,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: the clause expresses purpose and is formed with the 3rd-person imperative form “білсін” plus “деп”. The main weakness is difficulty alignment: for practicing Kazakh-language teachers this is a fairly standard morphology-syntax identification item, not a genuinely hard C-level task. | [anthropic/claude-sonnet-4.6] The question is well-constructed and unambiguous: 'білсін' is clearly бұйрық рай (3rd person imperative), and the semantic type is мақсат бағыныңқы, making C the only defensible answer. The distractors are plausible — A targets the common confusion between мақсат and себеп with 'деп', B introduces қалау рай as a near-miss, and D offers an alternative syntactic interpretation — though B is slightly weaker since қалау рай forms differ visibly from бұйрық рай. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the syntactic and morphological features of subordinate clauses in Kazakh, with well-constructed distractors and appropriate difficulty.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option B could be strengthened by using a form that more closely resembles бұйрық рай (e.g., using 'білгісі келсін' or similar) to make the distractor harder to eliminate. This would increase the cognitive demand and reduce the chance of elimination by morphological recognition alone.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: “Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.” The subordinate part is “Жас ұрпақ өз тарихын тереңірек танып білсін деп”. It answers the question “не мақсатпен?” / “why, for what purpose were the archive documents included?” The main action is “бұл кітапқа көптеген мұрағат құжаттары енгізілді” and the purpose is that the younger generation should learn its history more deeply. Therefore, semantically it is a purpose subordinate clause: “мақсат бағыныңқы сабақтас.” The predicate of the subordinate clause is “танып білсін”: “білсін” is a 3rd-person imperative mood form, expressing “let them know / may they know.” It is connected to the main clause by “деп,” the converb form of “де.” Thus the correct option is: purpose subordinate clause, formed by an imperative mood predicate plus “деп.”",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: the clause expresses purpose and is formed with the 3rd-person imperative form “білсін” plus “деп”. The main weakness is difficulty alignment: for practicing Kazakh-language teachers this is a fairly standard morphology-syntax identification item, not a genuinely hard C-level task.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence: 'Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.'\n\nThe subordinate clause is: 'Жас ұрпақ өз тарихын тереңірек танып білсін деп'\nThe main clause is: 'бұл кітапқа көптеген мұрағат құжаттары енгізілді'\n\nStep 1: Identify the semantic type of the subordinate clause.\nThe subordinate clause expresses the PURPOSE (мақсат) for which the action in the main clause was performed. The books were compiled WITH THE PURPOSE THAT the younger generation would learn their history more deeply. This is a purpose subordinate clause (мақсат бағыныңқы сабақтас).\n\nStep 2: Identify the predicate form of the subordinate clause.\nThe predicate of the subordinate clause is 'білсін' — this is formed with the suffix -сін, which is the IMPERATIVE/OPTATIVE mood (бұйрық рай) in Kazakh. The form 'білсін' is third-person singular imperative/optative: 'let (them) know/learn.'\n\nStep 3: Identify the connective element.\nThe subordinate clause is connected to the main clause via the converb (көсемше) 'деп', which follows the predicate 'білсін'. This 'деп' functions as a linking element indicating purpose.\n\nStep 4: Match with options.\n- Option A: Себеп (cause) — incorrect semantic type; also says ашық рай (indicative mood) — incorrect.\n- Option B: Шартты (conditional) — incorrect semantic type; says қалау рай (desiderative mood) — 'білсін' is not қалау рай.\n- Option C: Мақсат (purpose) — correct semantic type; says бұйрық рай (imperative mood) — 'білсін' is indeed бұйрық рай (3rd person imperative); connected via 'деп' — correct.\n- Option D: Қимыл-сын (manner of action) — incorrect semantic type.\n\nTherefore, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and unambiguous: 'білсін' is clearly бұйрық рай (3rd person imperative), and the semantic type is мақсат бағыныңқы, making C the only defensible answer. The distractors are plausible — A targets the common confusion between мақсат and себеп with 'деп', B introduces қалау рай as a near-miss, and D offers an alternative syntactic interpretation — though B is slightly weaker since қалау рай forms differ visibly from бұйрық рай.",
+          "improvement_suggestions": "Option B could be strengthened by using a form that more closely resembles бұйрық рай (e.g., using 'білгісі келсін' or similar) to make the distractor harder to eliminate. This would increase the cognitive demand and reduce the chance of elimination by morphological recognition alone.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given sentence is «Жас ұрпақ өз тарихын тереңірек танып білсін деп, бұл кітапқа көптеген мұрағат құжаттары енгізілді.» The main clause is «бұл кітапқа көптеген мұрағат құжаттары енгізілді» (many archival documents were included in this book). The subordinate clause is «Жас ұрпақ өз тарихын тереңірек танып білсін деп» (so that the young generation would know their history more deeply). The question we ask the subordinate clause is 'Не мақсатпен?' (For what purpose?), which indicates it is a 'мақсат бағыныңқы сабақтас' (purpose subordinate clause). Looking at the predicate of the subordinate clause, 'білсін' is a verb in the 3rd person imperative mood (бұйрық рай). It is followed by 'деп', which is a verbal adverb (көсемше). Therefore, the subordinate clause is a purpose clause, and its predicate is formed by an imperative verb combined with the verbal adverb 'деп'. This perfectly matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It accurately tests the syntactic and morphological features of subordinate clauses in Kazakh, with well-constructed distractors and appropriate difficulty.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:12:42.919927+00:00",
+  "generation_attempts": 1
+}

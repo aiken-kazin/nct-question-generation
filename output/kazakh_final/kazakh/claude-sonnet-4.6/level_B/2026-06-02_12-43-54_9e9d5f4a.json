@@ -1,0 +1,140 @@
+{
+  "id": "9e9d5f4a-36c7-4f55-b345-937613bc7daa",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысы себеп бағыныңқы сабақтас құрмалас сөйлем болып табылады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ауа райы суық болғандықтан, балалар үйден шықпады."
+    },
+    {
+      "label": "B",
+      "text": "Ол келсе, мен де барамын."
+    },
+    {
+      "label": "C",
+      "text": "Кітапты оқып болғанша, түн ортасы болды."
+    },
+    {
+      "label": "D",
+      "text": "Жаңбыр жауса да, ойын тоқтатпады."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Себеп бағыныңқы сабақтас құрмалас сөйлемде бағыныңқы сыңар басыңқы сыңардағы іс-әрекеттің себебін білдіреді және негізінен '-ғандықтан / -гендіктен / -қандықтан / -кендіктен' жұрнақтары арқылы жасалады. А нұсқасындағы 'ауа райы суық болғандықтан' бөлігі басыңқы сыңардың ('балалар үйден шықпады') себебін білдіреді, сондықтан бұл себеп бағыныңқы сабақтас. Б нұсқасы — 'келсе' шартты рай тұлғасы арқылы жасалған шартты бағыныңқы сабақтас. В нұсқасы — '-ғанша / -генше' жұрнағы арқылы жасалған мезгіл бағыныңқы сабақтас. Г нұсқасы — 'жауса да' тұлғасы арқылы жасалған қарсылықты бағыныңқы сабақтас.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: A себеп бағыныңқы сабақтас құрмалас сөйлем (causal subordinate complex sentence) expresses the reason/cause of the action in the main clause and typically answers questions such as 'неліктен?' or 'не себепті?'. Option A: 'Ауа райы суық болғандықтан, балалар үйден шықпады' means 'Because the weather was cold, the children did not go outside.' The subordinate part 'Ауа райы суық болғандықтан' uses t\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks which sentence is a 'себеп бағыныңқы сабақтас құрмалас сөйлем' (causal subordinate compound sentence) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of conjunction or connective used in the subordinate clause:\n\n- Себеп бағыныңқы (causal subordinate): expresses reason/cause. Typically uses the suffix '-ғандықтан/-гендіктен/-қандықтан/-кенд\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the 'себеп бағыныңқы сабақтас құрмалас сөйлем' (subordinate compound sentence with a clause of reason/cause). Let's analyze the options:\n\nA) 'Ауа райы суық болғандықтан, балалар үйден шықпады.' The subordinate clause uses the suffix '-ғандықтан' (because), which explicitly indicates the reason for the action in the main clause. This is a себеп бағыныңқы сабақтас.\n\nB) ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is unambiguously correct: option A is a causal subordinate compound sentence, while the other options represent conditional, temporal, and concessive subordination. The item is well formed, though it is somewhat direct and marker-based, making it slightly easier than a typical medium-level teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each option represents a distinct subordinate clause type (causal, conditional, temporal, concessive), making distractors highly plausible and requiring genuine grammatical knowledge to distinguish. The Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are excellent examples of other types of subordinate clauses.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: A себеп бағыныңқы сабақтас құрмалас сөйлем (causal subordinate complex sentence) expresses the reason/cause of the action in the main clause and typically answers questions such as 'неліктен?' or 'не себепті?'. Option A: 'Ауа райы суық болғандықтан, балалар үйден шықпады' means 'Because the weather was cold, the children did not go outside.' The subordinate part 'Ауа райы суық болғандықтан' uses t\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks which sentence is a 'себеп бағыныңқы сабақтас құрмалас сөйлем' (causal subordinate compound sentence) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of conjunction or connective used in the subordinate clause:\n\n- Себеп бағыныңқы (causal subordinate): expresses reason/cause. Typically uses the suffix '-ғандықтан/-гендіктен/-қандықтан/-кенд\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the 'себеп бағыныңқы сабақтас құрмалас сөйлем' (subordinate compound sentence with a clause of reason/cause). Let's analyze the options:\n\nA) 'Ауа райы суық болғандықтан, балалар үйден шықпады.' The subordinate clause uses the suffix '-ғандықтан' (because), which explicitly indicates the reason for the action in the main clause. This is a себеп бағыныңқы сабақтас.\n\nB) ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is unambiguously correct: option A is a causal subordinate compound sentence, while the other options represent conditional, temporal, and concessive subordination. The item is well formed, though it is somewhat direct and marker-based, making it slightly easier than a typical medium-level teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each option represents a distinct subordinate clause type (causal, conditional, temporal, concessive), making distractors highly plausible and requiring genuine grammatical knowledge to distinguish. The Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are excellent examples of other types of subordinate clauses.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A себеп бағыныңқы сабақтас құрмалас сөйлем (causal subordinate complex sentence) expresses the reason/cause of the action in the main clause and typically answers questions such as 'неліктен?' or 'не себепті?'. Option A: 'Ауа райы суық болғандықтан, балалар үйден шықпады' means 'Because the weather was cold, the children did not go outside.' The subordinate part 'Ауа райы суық болғандықтан' uses the causal marker '-ғандықтан' and gives the reason for the main action. Option B with 'келсе' is a conditional clause. Option C with 'болғанша' is a temporal clause. Option D with 'жауса да' is a concessive clause. Therefore the causal subordinate sentence is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is unambiguously correct: option A is a causal subordinate compound sentence, while the other options represent conditional, temporal, and concessive subordination. The item is well formed, though it is somewhat direct and marker-based, making it slightly easier than a typical medium-level teacher-certification item.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence is a 'себеп бағыныңқы сабақтас құрмалас сөйлем' (causal subordinate compound sentence) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of conjunction or connective used in the subordinate clause:\n\n- Себеп бағыныңқы (causal subordinate): expresses reason/cause. Typically uses the suffix '-ғандықтан/-гендіктен/-қандықтан/-кендіктен' (meaning 'because/since').\n- Шартты бағыныңқы (conditional subordinate): uses '-са/-се' (if).\n- Мезгіл бағыныңқы (temporal subordinate): uses '-ғанша/-генше' (until/by the time).\n- Қарсылықты бағыныңқы (concessive/adversative subordinate): uses '-са да/-се де' (even if/although).\n\nAnalyzing each option:\nA) 'Ауа райы суық болғандықтан, балалар үйден шықпады.' — The subordinate clause uses '-ғандықтан' which is the causal suffix meaning 'because the weather was cold.' This is a causal subordinate sentence.\nB) 'Ол келсе, мен де барамын.' — Uses '-са/-се' conditional suffix. This is a conditional subordinate sentence.\nC) 'Кітапты оқып болғанша, түн ортасы болды.' — Uses '-ғанша' temporal suffix. This is a temporal subordinate sentence.\nD) 'Жаңбыр жауса да, ойын тоқтатпады.' — Uses '-са да' concessive suffix. This is a concessive/adversative subordinate sentence.\n\nTherefore, option A is the causal subordinate compound sentence.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and unambiguous. Each option represents a distinct subordinate clause type (causal, conditional, temporal, concessive), making distractors highly plausible and requiring genuine grammatical knowledge to distinguish. The Kazakh is natural and terminologically accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the 'себеп бағыныңқы сабақтас құрмалас сөйлем' (subordinate compound sentence with a clause of reason/cause). Let's analyze the options:\n\nA) 'Ауа райы суық болғандықтан, балалар үйден шықпады.' The subordinate clause uses the suffix '-ғандықтан' (because), which explicitly indicates the reason for the action in the main clause. This is a себеп бағыныңқы сабақтас.\n\nB) 'Ол келсе, мен де барамын.' The subordinate clause uses the conditional suffix '-се' (if), making it a шартты бағыныңқы сабақтас (conditional).\n\nC) 'Кітапты оқып болғанша, түн ортасы болды.' The subordinate clause uses '-ғанша' (until), indicating time, making it a мезгіл бағыныңқы сабақтас (temporal).\n\nD) 'Жаңбыр жауса да, ойын тоқтатпады.' The subordinate clause uses '-са да' (even if/though), indicating concession, making it a қарсылықты бағыныңқы сабақтас (concessive).\n\nTherefore, option A is the correct answer.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are excellent examples of other types of subordinate clauses.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:43:54.663700+00:00",
+  "generation_attempts": 1
+}

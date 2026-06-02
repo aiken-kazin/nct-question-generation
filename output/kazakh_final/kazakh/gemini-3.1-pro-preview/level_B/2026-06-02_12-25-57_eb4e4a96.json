@@ -1,0 +1,140 @@
+{
+  "id": "eb4e4a96-dc50-4f2f-bebf-6e0555d0fd10",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген сөйлемдегі асты сызылған сөзге дұрыс жасалған морфологиялық-синтаксистік талдауды көрсетіңіз:\n*«Жарыста оза шапқан <u>біріншілерді</u> халық зор қошаметпен қарсы алды.»*",
+  "options": [
+    {
+      "label": "A",
+      "text": "Есептік сан есім, көптік және табыс септігінің жалғаулары жалғанып заттанған, сөйлемде тура толықтауыш қызметін атқарып тұр."
+    },
+    {
+      "label": "B",
+      "text": "Реттік сан есім, көптік және ілік септігінің жалғаулары жалғанып заттанған, сөйлемде анықтауыш қызметін атқарып тұр."
+    },
+    {
+      "label": "C",
+      "text": "Реттік сан есім, көптік және табыс септігінің жалғаулары жалғанып заттанған, сөйлемде тура толықтауыш қызметін атқарып тұр."
+    },
+    {
+      "label": "D",
+      "text": "Жинақтық сан есім, көптік және табыс септігінің жалғаулары жалғанып заттанған, сөйлемде жанама толықтауыш қызметін атқарып тұр."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Сөйлемдегі «біріншілерді» сөзі – сан есімнің заттануына (субстантивтенуіне) мысал. 1. Мағыналық түрі: «бір» түбіріне -інші жұрнағы жалғану арқылы жасалған реттік сан есім. 2. Морфологиялық түрленуі: зат есімге тән -лер (көптік жалғауы) және -ді (табыс септігінің жалғауы) жалғанып, заттанған. 3. Синтаксистік қызметі: Халық кімдерді қарсы алды? – біріншілерді. Табыс септігінде тұрып, іс-әрекеттің тікелей объектісін (кімді? нені?) білдіретіндіктен, тура толықтауыш қызметін атқарады. А нұсқасы қате, себебі бұл есептік сан есім емес (есептік түрі – бір). В нұсқасы қате, себебі -ді ілік емес, табыс септігінің жалғауы. D нұсқасы қате, себебі жинақтық сан есім емес (жинақтығы – біреу) және табыс септігіндегі сөз жанама емес, тура толықтауыш болады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The underlined word is \"біріншілерді\". Its base is \"бірінші\", which is an ordinal numeral (реттік сан есім), formed from the cardinal numeral \"бір\" with the ordinal suffix -інші. In the sentence it has the plural suffix -лер and the accusative case suffix -ді: бірінші + лер + ді. Because it takes noun-like plural and case markers and refers to people who came first, it is substantivized (заттанған\n\n[anthropic/claude-sonnet-4.6] answered C: The underlined word is 'біріншілерді'. Let's analyze it morphologically and syntactically.\n\n1. Base word: 'бірінші' — this is an ordinal numeral (реттік сан есім) meaning 'first'. Ordinal numerals in Kazakh are formed with the suffix -інші/-інші/-шы/-ші added to cardinal numerals. 'бір' (one) + 'інші' = 'бірінші' (first). This is clearly a reттік (ordinal) numeral, NOT an есептік (cardinal) numera\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the underlined word 'біріншілерді' morphologically and syntactically:\n1. Root: 'бір' (one) - numeral.\n2. Suffix '-інші': forms an ordinal numeral (реттік сан есім). Thus, 'бірінші' means 'first'.\n3. Suffix '-лер': plural suffix (көптік жалғауы).\n4. Suffix '-ді': accusative case suffix (табыс септігінің жалғауы).\n5. Substantivization: Because the numeral takes plural and case suffixes",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is fully correct and uniquely defensible: “біріншілерді” is a substantivized ordinal numeral with plural and accusative suffixes functioning as a direct object. The item fits medium difficulty well, though the sentence contains a spelling issue: “қошаметпен” should be “қошеметпен”. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (C) that requires multi-step morphological and syntactic analysis. All distractors target specific plausible errors: A confuses ordinal with cardinal numeral, B confuses accusative with genitive case, D confuses ordinal with collective numeral and direct with indirect object. The Kazakh is natural and uses standard terminology. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests morphological and syntactic analysis in context, and the distractors systematically vary specific grammatical features to catch common errors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The underlined word is \"біріншілерді\". Its base is \"бірінші\", which is an ordinal numeral (реттік сан есім), formed from the cardinal numeral \"бір\" with the ordinal suffix -інші. In the sentence it has the plural suffix -лер and the accusative case suffix -ді: бірінші + лер + ді. Because it takes noun-like plural and case markers and refers to people who came first, it is substantivized (заттанған\n\n[anthropic/claude-sonnet-4.6] answered C: The underlined word is 'біріншілерді'. Let's analyze it morphologically and syntactically.\n\n1. Base word: 'бірінші' — this is an ordinal numeral (реттік сан есім) meaning 'first'. Ordinal numerals in Kazakh are formed with the suffix -інші/-інші/-шы/-ші added to cardinal numerals. 'бір' (one) + 'інші' = 'бірінші' (first). This is clearly a reттік (ordinal) numeral, NOT an есептік (cardinal) numera\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the underlined word 'біріншілерді' morphologically and syntactically:\n1. Root: 'бір' (one) - numeral.\n2. Suffix '-інші': forms an ordinal numeral (реттік сан есім). Thus, 'бірінші' means 'first'.\n3. Suffix '-лер': plural suffix (көптік жалғауы).\n4. Suffix '-ді': accusative case suffix (табыс септігінің жалғауы).\n5. Substantivization: Because the numeral takes plural and case suffixes",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is fully correct and uniquely defensible: “біріншілерді” is a substantivized ordinal numeral with plural and accusative suffixes functioning as a direct object. The item fits medium difficulty well, though the sentence contains a spelling issue: “қошаметпен” should be “қошеметпен”. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (C) that requires multi-step morphological and syntactic analysis. All distractors target specific plausible errors: A confuses ordinal with cardinal numeral, B confuses accusative with genitive case, D confuses ordinal with collective numeral and direct with indirect object. The Kazakh is natural and uses standard terminology. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests morphological and syntactic analysis in context, and the distractors systematically vary specific grammatical features to catch common errors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The underlined word is \"біріншілерді\". Its base is \"бірінші\", which is an ordinal numeral (реттік сан есім), formed from the cardinal numeral \"бір\" with the ordinal suffix -інші. In the sentence it has the plural suffix -лер and the accusative case suffix -ді: бірінші + лер + ді. Because it takes noun-like plural and case markers and refers to people who came first, it is substantivized (заттанған). Syntactically, in \"халық ... біріншілерді ... қарсы алды\", it answers the question \"кімдерді?\" and is the direct object (тура толықтауыш) of the predicate \"қарсы алды\". Therefore the correct analysis is: ordinal numeral, with plural and accusative suffixes, substantivized, functioning as direct object.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer is fully correct and uniquely defensible: “біріншілерді” is a substantivized ordinal numeral with plural and accusative suffixes functioning as a direct object. The item fits medium difficulty well, though the sentence contains a spelling issue: “қошаметпен” should be “қошеметпен”.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The underlined word is 'біріншілерді'. Let's analyze it morphologically and syntactically.\n\n1. Base word: 'бірінші' — this is an ordinal numeral (реттік сан есім) meaning 'first'. Ordinal numerals in Kazakh are formed with the suffix -інші/-інші/-шы/-ші added to cardinal numerals. 'бір' (one) + 'інші' = 'бірінші' (first). This is clearly a reттік (ordinal) numeral, NOT an есептік (cardinal) numeral and NOT a жинақтық (collective) numeral.\n\n2. Suffixes added to 'бірінші':\n   - '-лер' = plural suffix (көптік жалғау)\n   - '-ді' = accusative case suffix (табыс септігінің жалғауы)\n   So: бірінші + лер + ді = біріншілерді\n\n3. The word has been substantivized (заттанған) — it functions as a noun (referring to 'the first-place finishers/winners').\n\n4. Syntactic role: 'халық зор қошаметпен қарсы алды' — the subject is 'халық', the verb is 'алды'. The word 'біріншілерді' is in the accusative case (табыс септігі), which marks a direct object (тура толықтауыш) in Kazakh.\n\nTherefore:\n- It is a реттік сан есім (ordinal numeral)\n- With көптік жалғау (-лер) and табыс септігінің жалғауы (-ді)\n- Substantivized (заттанған)\n- Functions as тура толықтауыш (direct object)\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear correct answer (C) that requires multi-step morphological and syntactic analysis. All distractors target specific plausible errors: A confuses ordinal with cardinal numeral, B confuses accusative with genitive case, D confuses ordinal with collective numeral and direct with indirect object. The Kazakh is natural and uses standard terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the underlined word 'біріншілерді' morphologically and syntactically:\n1. Root: 'бір' (one) - numeral.\n2. Suffix '-інші': forms an ordinal numeral (реттік сан есім). Thus, 'бірінші' means 'first'.\n3. Suffix '-лер': plural suffix (көптік жалғауы).\n4. Suffix '-ді': accusative case suffix (табыс септігінің жалғауы).\n5. Substantivization: Because the numeral takes plural and case suffixes typical of nouns and functions as a noun in the sentence, it is substantivized (заттанған).\n6. Syntactic role: The word answers the question 'кімдерді?' (whom?), which is the question for the accusative case. In Kazakh syntax, a word in the accusative case without a postposition acts as a direct object (тура толықтауыш).\n\nComparing this with the given options:\n- Option A says 'Есептік сан есім' (cardinal numeral), which is incorrect.\n- Option B says 'ілік септігі' (genitive case) and 'анықтауыш' (attribute), which are incorrect.\n- Option C correctly identifies it as 'Реттік сан есім' (ordinal numeral), with plural and accusative case suffixes ('көптік және табыс септігінің жалғаулары'), substantivized ('заттанған'), and acting as a direct object ('тура толықтауыш').\n- Option D says 'Жинақтық сан есім' (collective numeral), which is incorrect.\n\nTherefore, Option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests morphological and syntactic analysis in context, and the distractors systematically vary specific grammatical features to catch common errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:25:57.616466+00:00",
+  "generation_attempts": 1
+}

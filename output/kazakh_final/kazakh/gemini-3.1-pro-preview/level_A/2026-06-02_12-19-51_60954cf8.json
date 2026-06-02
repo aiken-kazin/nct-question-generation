@@ -1,0 +1,140 @@
+{
+  "id": "60954cf8-9e45-4ced-b98a-3508008280b8",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "style_and_text_analysis",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Ғылыми стиль мәтіндеріне тән басты ерекшелік:",
+  "options": [
+    {
+      "label": "A",
+      "text": "Сөздердің ауыспалы мағынада жұмсалуы, эмоциялық-экспрессивті бояу"
+    },
+    {
+      "label": "B",
+      "text": "Қоғамдық-саяси тақырып, оқырманға әсер ету, үндеу"
+    },
+    {
+      "label": "C",
+      "text": "Терминдердің жиі қолданылуы, нақтылық пен дәлелділік"
+    },
+    {
+      "label": "D",
+      "text": "Белгілі бір қалыпқа түскен дайын тіркестер, стандарттылық"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Ғылыми стильдің басты мақсаты – ақпаратты дәл, нақты, логикалық жүйемен жеткізу және ғылыми тұжырымдарды дәлелдеу. Сондықтан бұл стильде терминдер жиі қолданылады, нақтылық пен дәлелділік басты орында тұрады (С нұсқасы дұрыс). А нұсқасы көркем әдебиет стиліне (образдылық, ауыспалы мағына), В нұсқасы публицистикалық стильге (қоғамдық-саяси лексика, үндеу), ал D нұсқасы ресми-іскери стильге (стандартты қалып, штамптар) тән ерекшеліктер.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.833,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The question asks for the main characteristic feature of scientific style texts. In Kazakh stylistics, scientific style is characterized by objective presentation, logical consistency, accuracy, proof/argumentation, and frequent use of terms and concepts specific to a field. Option A describes literary/artistic style because it mentions figurative meaning and emotional-expressive coloring. Option \n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about the main characteristic feature of scientific style (ғылыми стиль) texts in Kazakh.\n\nAnalyzing each option:\n\nA) 'Words used in figurative/transferred meanings, emotional-expressive coloring' — This describes artistic/literary style (көркем стиль), not scientific style.\n\nB) 'Social-political topics, influencing the reader, appeal/call to action' — This describes publicistic/\n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the main characteristic of the scientific style (ғылыми стиль). Let's analyze the options:\nOption A describes the use of figurative meanings and emotional-expressive coloring, which is typical for the artistic style (көркем әдебиет стилі).\nOption B mentions socio-political topics, influencing the reader, and appeals, which are features of the publicistic style (публицистикалы",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.5,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.833,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous answer. Distractors are appropriate because each clearly corresponds to another functional style. | [anthropic/claude-sonnet-4.6] Excellent basic-level question with a single unambiguous correct answer (C). Each distractor maps cleanly to a different functional style (literary, publicistic, official-business), making them pedagogically sound and plausible for a teacher who might confuse style characteristics. | [google/gemini-3.1-pro-preview] Excellent question. It perfectly targets the basic level (A) by asking for direct recognition of functional style characteristics. The distractors are well-crafted, each representing a different functional style.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The question asks for the main characteristic feature of scientific style texts. In Kazakh stylistics, scientific style is characterized by objective presentation, logical consistency, accuracy, proof/argumentation, and frequent use of terms and concepts specific to a field. Option A describes literary/artistic style because it mentions figurative meaning and emotional-expressive coloring. Option \n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about the main characteristic feature of scientific style (ғылыми стиль) texts in Kazakh.\n\nAnalyzing each option:\n\nA) 'Words used in figurative/transferred meanings, emotional-expressive coloring' — This describes artistic/literary style (көркем стиль), not scientific style.\n\nB) 'Social-political topics, influencing the reader, appeal/call to action' — This describes publicistic/\n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the main characteristic of the scientific style (ғылыми стиль). Let's analyze the options:\nOption A describes the use of figurative meanings and emotional-expressive coloring, which is typical for the artistic style (көркем әдебиет стилі).\nOption B mentions socio-political topics, influencing the reader, and appeals, which are features of the publicistic style (публицистикалы",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.5,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.833,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous answer. Distractors are appropriate because each clearly corresponds to another functional style. | [anthropic/claude-sonnet-4.6] Excellent basic-level question with a single unambiguous correct answer (C). Each distractor maps cleanly to a different functional style (literary, publicistic, official-business), making them pedagogically sound and plausible for a teacher who might confuse style characteristics. | [google/gemini-3.1-pro-preview] Excellent question. It perfectly targets the basic level (A) by asking for direct recognition of functional style characteristics. The distractors are well-crafted, each representing a different functional style.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the main characteristic feature of scientific style texts. In Kazakh stylistics, scientific style is characterized by objective presentation, logical consistency, accuracy, proof/argumentation, and frequent use of terms and concepts specific to a field. Option A describes literary/artistic style because it mentions figurative meaning and emotional-expressive coloring. Option B describes journalistic/publicistic style because it focuses on socio-political topics, influence on the reader, and appeals. Option D describes official-business style because it uses standardized formulas and fixed expressions. Therefore, the correct feature of scientific style is option C: frequent use of terms, precision, and evidence.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single unambiguous answer. Distractors are appropriate because each clearly corresponds to another functional style.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about the main characteristic feature of scientific style (ғылыми стиль) texts in Kazakh.\n\nAnalyzing each option:\n\nA) 'Words used in figurative/transferred meanings, emotional-expressive coloring' — This describes artistic/literary style (көркем стиль), not scientific style.\n\nB) 'Social-political topics, influencing the reader, appeal/call to action' — This describes publicistic/journalistic style (публицистикалық стиль).\n\nC) 'Frequent use of terminology, precision and argumentation/evidence' — This is the hallmark of scientific style. Scientific texts are characterized by: use of specialized terms (терминдер), logical precision (нақтылық), and evidence-based argumentation (дәлелділік). This is the standard definition in Kazakh linguistics textbooks.\n\nD) 'Ready-made set phrases in a fixed form, standardization' — This describes official/business style (іс қағаздары стилі / ресми-іскери стиль).\n\nTherefore, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "Excellent basic-level question with a single unambiguous correct answer (C). Each distractor maps cleanly to a different functional style (literary, publicistic, official-business), making them pedagogically sound and plausible for a teacher who might confuse style characteristics.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the main characteristic of the scientific style (ғылыми стиль). Let's analyze the options:\nOption A describes the use of figurative meanings and emotional-expressive coloring, which is typical for the artistic style (көркем әдебиет стилі).\nOption B mentions socio-political topics, influencing the reader, and appeals, which are features of the publicistic style (публицистикалық стиль).\nOption C highlights the frequent use of terminology, accuracy, and evidence-based reasoning, which are the defining characteristics of the scientific style (ғылыми стиль).\nOption D refers to standardized, ready-made phrases, which are typical of the official-business style (ресми-іскерлік стиль).\nTherefore, Option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent question. It perfectly targets the basic level (A) by asking for direct recognition of functional style characteristics. The distractors are well-crafted, each representing a different functional style.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:19:51.637225+00:00",
+  "generation_attempts": 1
+}

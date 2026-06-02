@@ -1,0 +1,140 @@
+{
+  "id": "07535c24-685f-4b15-b09d-2719519c558f",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөздердің қайсысында алдыңғы буындағы дыбыстың кейінгі дыбысқа әсер етуі — ілгерінді ықпал байқалады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "анбар → амбар (н → м болып өзгерген)"
+    },
+    {
+      "label": "B",
+      "text": "кітапхана → кітапқана (х → қ болып өзгерген)"
+    },
+    {
+      "label": "C",
+      "text": "жазба → жазба (б дыбысы з-ға ықпал еткен)"
+    },
+    {
+      "label": "D",
+      "text": "тұнба → тұмба (н → м болып өзгерген)"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Ілгерінді ықпал дегеніміз — алдыңғы дыбыстың кейінгі дыбысқа ықпал етіп, оны өзіне ұқсатуы. «Кітапхана» сөзінде алдыңғы «п» дыбысы (қатаң дауыссыз) кейінгі «х» дыбысына ықпал етіп, оны «қ» қатаң дауыссызына айналдырады: кітапхана → кітапқана. Бұл — ілгерінді ықпалдың классикалық үлгісі. А және D нұсқаларындағы «анбар → амбар», «тұнба → тұмба» сөздерінде кейінгі «б» дыбысы (ерін дауыссызы) алдыңғы «н» дыбысына ықпал етіп, оны «м» ерін дауыссызына айналдырады — бұл кейінді ықпалдың мысалы. С нұсқасындағы «жазба» сөзінде «з» мен «б» дыбыстарының арасында тоғыспалы ықпал байқалуы мүмкін, бірақ мұнда дыбыстық өзгеріс анық берілмеген және ілгерінді ықпалға жатпайды.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 7.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: In Kazakh phonetics, ілгерінді ықпал (progressive assimilation) is when a preceding sound influences a following sound. Кейінді ықпал (regressive assimilation) is the opposite: a following sound influences a preceding sound. In A, анбар → амбар: н changes to м because of the following labial б, so this is regressive assimilation, not progressive. In D, тұнба → тұмба is the same pattern: н changes \n\n[anthropic/claude-sonnet-4.6] answered B: The question asks which word demonstrates 'ілгерінді ықпал' (progressive/forward assimilation) — where a sound in a preceding syllable influences a sound in a following syllable.\n\nIn Kazakh phonetics:\n- 'Ілгерінді ықпал' (progressive assimilation) = a preceding sound affects a following sound (forward direction: earlier → later)\n- 'Кейінді ықпал' (regressive assimilation) = a following sound affec\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the example of 'ілгерінді ықпал' (progressive assimilation), which occurs when a preceding sound influences a following sound. Let's evaluate the options:\n\nA) анбар → амбар: The following sound 'б' influences the preceding sound 'н' to become 'м'. This is 'кейінді ықпал' (regressive assimilation).\nB) кітапхана → кітапқана: The preceding voiceless consonant 'п' influen",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.167,
+      "distractor_quality": 4.833,
+      "difficulty_alignment": 6.667,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 7.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer B is defensibly correct: кітапхана → кітапқана illustrates progressive assimilation, while A and D are regressive n→m before b. However, the distractors are weak: A and D test the same pattern, and C is internally inconsistent because no sound change is shown. | [anthropic/claude-sonnet-4.6] The correct answer (B) is well-justified and matches standard Kazakh phonetics textbooks. However, distractor quality is weakened by options A and D both illustrating the same phenomenon (regressive assimilation н→м before б), and option C is poorly constructed since жазба→жазба shows no written change, making it easily eliminable. | [google/gemini-3.1-pro-preview] The question is factually correct, but the parenthetical explanations in the options give away the phonetic changes, making the question too easy for a B-level certification exam.",
+    "improvement_suggestions": "[openai/gpt-5.5] Use three distinct, plausible distractors representing different assimilation types, and avoid doubtful or artificial forms such as анбар. Clarify that the change is in pronunciation if orthographic spelling is not intended. | [anthropic/claude-sonnet-4.6] Replace one of the duplicate regressive-assimilation distractors (A or D) with a different type of assimilation example (e.g., тоғыспалы/reciprocal assimilation). Revise option C to show an actual phonetic change with a clear description, or replace it entirely with a plausible but incorrect example of ілгерінді ықпал to increase discriminability. | [google/gemini-3.1-pro-preview] Remove the parenthetical explanations from the options (e.g., just leave 'кітапхананың кітапқана болып айтылуы'). This will force the candidates to analyze the phonetic changes themselves, properly aligning the question with the B-level cognitive demand.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: In Kazakh phonetics, ілгерінді ықпал (progressive assimilation) is when a preceding sound influences a following sound. Кейінді ықпал (regressive assimilation) is the opposite: a following sound influences a preceding sound. In A, анбар → амбар: н changes to м because of the following labial б, so this is regressive assimilation, not progressive. In D, тұнба → тұмба is the same pattern: н changes \n\n[anthropic/claude-sonnet-4.6] answered B: The question asks which word demonstrates 'ілгерінді ықпал' (progressive/forward assimilation) — where a sound in a preceding syllable influences a sound in a following syllable.\n\nIn Kazakh phonetics:\n- 'Ілгерінді ықпал' (progressive assimilation) = a preceding sound affects a following sound (forward direction: earlier → later)\n- 'Кейінді ықпал' (regressive assimilation) = a following sound affec\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the example of 'ілгерінді ықпал' (progressive assimilation), which occurs when a preceding sound influences a following sound. Let's evaluate the options:\n\nA) анбар → амбар: The following sound 'б' influences the preceding sound 'н' to become 'м'. This is 'кейінді ықпал' (regressive assimilation).\nB) кітапхана → кітапқана: The preceding voiceless consonant 'п' influen",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.167,
+        "distractor_quality": 4.833,
+        "difficulty_alignment": 6.667,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer B is defensibly correct: кітапхана → кітапқана illustrates progressive assimilation, while A and D are regressive n→m before b. However, the distractors are weak: A and D test the same pattern, and C is internally inconsistent because no sound change is shown. | [anthropic/claude-sonnet-4.6] The correct answer (B) is well-justified and matches standard Kazakh phonetics textbooks. However, distractor quality is weakened by options A and D both illustrating the same phenomenon (regressive assimilation н→м before б), and option C is poorly constructed since жазба→жазба shows no written change, making it easily eliminable. | [google/gemini-3.1-pro-preview] The question is factually correct, but the parenthetical explanations in the options give away the phonetic changes, making the question too easy for a B-level certification exam.",
+      "improvement_suggestions": "[openai/gpt-5.5] Use three distinct, plausible distractors representing different assimilation types, and avoid doubtful or artificial forms such as анбар. Clarify that the change is in pronunciation if orthographic spelling is not intended. | [anthropic/claude-sonnet-4.6] Replace one of the duplicate regressive-assimilation distractors (A or D) with a different type of assimilation example (e.g., тоғыспалы/reciprocal assimilation). Revise option C to show an actual phonetic change with a clear description, or replace it entirely with a plausible but incorrect example of ілгерінді ықпал to increase discriminability. | [google/gemini-3.1-pro-preview] Remove the parenthetical explanations from the options (e.g., just leave 'кітапхананың кітапқана болып айтылуы'). This will force the candidates to analyze the phonetic changes themselves, properly aligning the question with the B-level cognitive demand.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh phonetics, ілгерінді ықпал (progressive assimilation) is when a preceding sound influences a following sound. Кейінді ықпал (regressive assimilation) is the opposite: a following sound influences a preceding sound. In A, анбар → амбар: н changes to м because of the following labial б, so this is regressive assimilation, not progressive. In D, тұнба → тұмба is the same pattern: н changes to м under the influence of following б, so it is also regressive. In C, жазба is not a valid example as described: б is after з, so if б influenced з it would be regressive, and no actual sound change is shown. In B, кітапхана → кітапқана: the later х changes to қ under the influence of the preceding sound/syllable, so this matches ілгерінді ықпал.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 5.5,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 7.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.5,
+          "pass_fail": true,
+          "comments": "The keyed answer B is defensibly correct: кітапхана → кітапқана illustrates progressive assimilation, while A and D are regressive n→m before b. However, the distractors are weak: A and D test the same pattern, and C is internally inconsistent because no sound change is shown.",
+          "improvement_suggestions": "Use three distinct, plausible distractors representing different assimilation types, and avoid doubtful or artificial forms such as анбар. Clarify that the change is in pronunciation if orthographic spelling is not intended.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which word demonstrates 'ілгерінді ықпал' (progressive/forward assimilation) — where a sound in a preceding syllable influences a sound in a following syllable.\n\nIn Kazakh phonetics:\n- 'Ілгерінді ықпал' (progressive assimilation) = a preceding sound affects a following sound (forward direction: earlier → later)\n- 'Кейінді ықпал' (regressive assimilation) = a following sound affects a preceding sound (backward direction: later → earlier)\n\nLet's analyze each option:\n\nA) анбар → амбар: The 'н' changes to 'м' before 'б'. Here, the following sound 'б' (bilabial) causes the preceding 'н' to become 'м' (also bilabial). This is REGRESSIVE assimilation (кейінді ықпал) — the later sound affects the earlier one.\n\nB) кітапхана → кітапқана: The 'х' changes to 'қ' after 'п'. Here, the preceding sound 'п' (voiceless stop) influences the following 'х' to become 'қ' (also a back velar stop). The preceding 'п' affects the following 'х'. This is PROGRESSIVE assimilation (ілгерінді ықпал) — the earlier sound affects the later one.\n\nC) жазба → жазба: The description says 'б' affected 'з', but the word doesn't change form as written. This seems to describe regressive assimilation anyway (б affecting з would be backward). This option is unclear/incorrect.\n\nD) тұнба → тұмба: The 'н' changes to 'м' before 'б'. Similar to option A, the following 'б' (bilabial) causes the preceding 'н' to become 'м'. This is REGRESSIVE assimilation.\n\nTherefore, option B demonstrates progressive assimilation (ілгерінді ықпал): the preceding 'п' in 'кітап' influences the following 'х' to become 'қ', because 'п' is a back/uvular-adjacent voiceless consonant that assimilates the following fricative to match its place of articulation more closely. The direction is forward (preceding syllable's sound → following sound).",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 8.5,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.6,
+          "pass_fail": true,
+          "comments": "The correct answer (B) is well-justified and matches standard Kazakh phonetics textbooks. However, distractor quality is weakened by options A and D both illustrating the same phenomenon (regressive assimilation н→м before б), and option C is poorly constructed since жазба→жазба shows no written change, making it easily eliminable.",
+          "improvement_suggestions": "Replace one of the duplicate regressive-assimilation distractors (A or D) with a different type of assimilation example (e.g., тоғыспалы/reciprocal assimilation). Revise option C to show an actual phonetic change with a clear description, or replace it entirely with a plausible but incorrect example of ілгерінді ықпал to increase discriminability.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the example of 'ілгерінді ықпал' (progressive assimilation), which occurs when a preceding sound influences a following sound. Let's evaluate the options:\n\nA) анбар → амбар: The following sound 'б' influences the preceding sound 'н' to become 'м'. This is 'кейінді ықпал' (regressive assimilation).\nB) кітапхана → кітапқана: The preceding voiceless consonant 'п' influences the following sound 'х' to become 'қ'. Since the preceding sound affects the following sound, this is 'ілгерінді ықпал' (progressive assimilation).\nC) жазба: The option explicitly states that 'б' influences 'з'. Since 'б' follows 'з', this would be 'кейінді ықпал' (regressive assimilation).\nD) тұнба → тұмба: The following sound 'б' influences the preceding sound 'н' to become 'м'. This is 'кейінді ықпал' (regressive assimilation).\n\nTherefore, option B is the only correct example of progressive assimilation.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 4.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.6,
+          "pass_fail": true,
+          "comments": "The question is factually correct, but the parenthetical explanations in the options give away the phonetic changes, making the question too easy for a B-level certification exam.",
+          "improvement_suggestions": "Remove the parenthetical explanations from the options (e.g., just leave 'кітапхананың кітапқана болып айтылуы'). This will force the candidates to analyze the phonetic changes themselves, properly aligning the question with the B-level cognitive demand.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:36:23.733933+00:00",
+  "generation_attempts": 2
+}

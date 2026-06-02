@@ -1,0 +1,140 @@
+{
+  "id": "45633631-79b7-4a73-98d3-4f71a1a2328e",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» — осы төл сөзді төлеу сөзге дұрыс айналдырған нұсқаны көрсетіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Мұғалім балаларға ертең сабаққа дайын келуді тапсырды."
+    },
+    {
+      "label": "B",
+      "text": "Мұғалім деді, балалар ертең сабаққа дайын келіңдер."
+    },
+    {
+      "label": "C",
+      "text": "Мұғалім: «Балалар ертең сабаққа дайын келуді тапсырды»."
+    },
+    {
+      "label": "D",
+      "text": "Мұғалім балалар ертең сабаққа дайын келіңдер деп айтты."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Төл сөзді төлеу сөзге айналдырғанда: 1) тырнақша алынып тасталады; 2) бұйрық рай тұлғасы («келіңдер») мазмұнға сай жанама түрге — тұйық етістікке («келуді») ауысады; 3) автор сөзі мен бұрынғы төл сөздің мазмұны бір сөйлемге біріктіріледі. А нұсқасында осы үш шарт толық сақталған: «Мұғалім балаларға ертең сабаққа дайын келуді тапсырды.» — тырнақша жоқ, бұйрық рай тұйық етістікке ауысқан, сөйлем бір тұтас. В нұсқасында тырнақша алынған, бірақ бұйрық рай («келіңдер») сақталып қалған — бұл қате. С нұсқасында тырнақша ішінде автор сөзі мен баяндау араласып кеткен — құрылым бұзылған. Д нұсқасында тырнақша жоқ, «деп айтты» қолданылған, бірақ бұйрық рай («келіңдер») өзгертілмеген — төлеу сөздің нормасы бұзылған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The original sentence is direct speech: «Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» The quoted part is an imperative addressed to children. In Kazakh, when direct imperative speech is converted into reported/indirect speech, the imperative form «келіңдер» is normally changed into a verbal noun/infinitive construction such as «келуді», and the addressee is put in the dative case: «б\n\n[anthropic/claude-sonnet-4.6] answered A: The original direct speech (төл сөз) is: Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді. This is an imperative/command sentence where the teacher tells the children to come prepared for class tomorrow.\n\nTo convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The quotation marks and direct punctuation are removed.\n2. The imperative verb f\n\n[google/gemini-3.1-pro-preview] answered A: To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, several grammatical changes must occur. The direct speech is: «Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» \n1. The vocative word (қаратпа сөз) 'Балалар' becomes the indirect object of the main sentence, taking the dative case: 'балаларға'.\n2. The imperative verb 'келіңдер' (come) is transformed into a ver",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer A is correct and uniquely defensible: it properly converts the imperative direct speech into indirect/reported speech with dative addressee and infinitive construction. The item fits basic level well, though some distractors are quite obviously malformed by punctuation or structure. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and clearly tests the basic rule of converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh. Option A is unambiguously correct, and the explanation is thorough and accurate. Distractors B and D are plausible for students who partially apply the rules (e.g., removing quotation marks but keeping the imperative), while C is a structural error distractor. | [google/gemini-3.1-pro-preview] The question perfectly tests the basic rules of converting direct speech to indirect speech in Kazakh. The distractors are well-constructed and represent common errors.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor C (still using quotation marks with mixed content) is somewhat obviously wrong and may be too easy to eliminate. Consider replacing it with a more subtle error, such as using 'деп бұйырды' but with an incorrect verb form or case marking, to make all four distractors more equally plausible and raise the discriminating power of the item.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The original sentence is direct speech: «Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» The quoted part is an imperative addressed to children. In Kazakh, when direct imperative speech is converted into reported/indirect speech, the imperative form «келіңдер» is normally changed into a verbal noun/infinitive construction such as «келуді», and the addressee is put in the dative case: «б\n\n[anthropic/claude-sonnet-4.6] answered A: The original direct speech (төл сөз) is: Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді. This is an imperative/command sentence where the teacher tells the children to come prepared for class tomorrow.\n\nTo convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The quotation marks and direct punctuation are removed.\n2. The imperative verb f\n\n[google/gemini-3.1-pro-preview] answered A: To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, several grammatical changes must occur. The direct speech is: «Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» \n1. The vocative word (қаратпа сөз) 'Балалар' becomes the indirect object of the main sentence, taking the dative case: 'балаларға'.\n2. The imperative verb 'келіңдер' (come) is transformed into a ver",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer A is correct and uniquely defensible: it properly converts the imperative direct speech into indirect/reported speech with dative addressee and infinitive construction. The item fits basic level well, though some distractors are quite obviously malformed by punctuation or structure. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and clearly tests the basic rule of converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh. Option A is unambiguously correct, and the explanation is thorough and accurate. Distractors B and D are plausible for students who partially apply the rules (e.g., removing quotation marks but keeping the imperative), while C is a structural error distractor. | [google/gemini-3.1-pro-preview] The question perfectly tests the basic rules of converting direct speech to indirect speech in Kazakh. The distractors are well-constructed and represent common errors.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor C (still using quotation marks with mixed content) is somewhat obviously wrong and may be too easy to eliminate. Consider replacing it with a more subtle error, such as using 'деп бұйырды' but with an incorrect verb form or case marking, to make all four distractors more equally plausible and raise the discriminating power of the item.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The original sentence is direct speech: «Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» The quoted part is an imperative addressed to children. In Kazakh, when direct imperative speech is converted into reported/indirect speech, the imperative form «келіңдер» is normally changed into a verbal noun/infinitive construction such as «келуді», and the addressee is put in the dative case: «балаларға». The reporting verb should also express the command/request, e.g. «тапсырды», «бұйырды», «айтты». Option A, «Мұғалім балаларға ертең сабаққа дайын келуді тапсырды», correctly changes the imperative direct speech into indirect speech. Options B and D keep the imperative form «келіңдер», so they are not proper indirect speech. Option C has incorrect punctuation and structure and does not correctly express the reported command.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer A is correct and uniquely defensible: it properly converts the imperative direct speech into indirect/reported speech with dative addressee and infinitive construction. The item fits basic level well, though some distractors are quite obviously malformed by punctuation or structure.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The original direct speech (төл сөз) is: Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді. This is an imperative/command sentence where the teacher tells the children to come prepared for class tomorrow.\n\nTo convert direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The quotation marks and direct punctuation are removed.\n2. The imperative verb form is converted to an infinitive/verbal noun construction appropriate for reported commands.\n3. For commands, the typical construction uses 'деп тапсырды' or 'деп бұйырды' or restructures with a verbal noun + тапсырды.\n4. The pronoun/address shifts accordingly.\n\nLet's analyze each option:\n\nA) Мұғалім балаларға ертең сабаққа дайын келуді тапсырды.\n- This properly converts the imperative command to indirect speech: the imperative 'келіңдер' becomes the verbal noun 'келуді', the addressee 'балалар' becomes 'балаларға' (dative case), and 'деді' becomes 'тапсырды' (assigned/ordered). This is a correct and complete transformation into indirect speech.\n\nB) Мұғалім деді, балалар ертең сабаққа дайын келіңдер.\n- This is not proper indirect speech; it still retains the imperative form and doesn't follow the structural rules of төлеу сөз.\n\nC) Мұғалім: «Балалар ертең сабаққа дайын келуді тапсырды».\n- This still uses quotation marks, so it remains direct speech format, not indirect speech.\n\nD) Мұғалім балалар ертең сабаққа дайын келіңдер деп айтты.\n- This retains the imperative 'келіңдер' and doesn't properly transform the command into indirect speech structure. While 'деп айтты' is used in some indirect speech constructions, keeping the imperative form is not the correct transformation for a command.\n\nTherefore, option A is the correct transformation of the direct speech into proper indirect speech (төлеу сөз).",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and clearly tests the basic rule of converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh. Option A is unambiguously correct, and the explanation is thorough and accurate. Distractors B and D are plausible for students who partially apply the rules (e.g., removing quotation marks but keeping the imperative), while C is a structural error distractor.",
+          "improvement_suggestions": "Distractor C (still using quotation marks with mixed content) is somewhat obviously wrong and may be too easy to eliminate. Consider replacing it with a more subtle error, such as using 'деп бұйырды' but with an incorrect verb form or case marking, to make all four distractors more equally plausible and raise the discriminating power of the item.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) into indirect speech (төлеу сөз) in Kazakh, several grammatical changes must occur. The direct speech is: «Мұғалім: «Балалар, ертең сабаққа дайын келіңдер!» — деді.» \n1. The vocative word (қаратпа сөз) 'Балалар' becomes the indirect object of the main sentence, taking the dative case: 'балаларға'.\n2. The imperative verb 'келіңдер' (come) is transformed into a verbal noun (қимыл атауы) in the accusative case: 'келуді'.\n3. The reporting verb 'деді' (said) is typically changed to a verb that conveys the purpose of the statement, such as 'тапсырды' (instructed/assigned), 'бұйырды' (ordered), or 'сұрады' (asked).\nLooking at the options:\n- Option A: 'Мұғалім балаларға ертең сабаққа дайын келуді тапсырды.' This perfectly follows all the rules of converting to indirect speech.\n- Option B is grammatically incorrect in Kazakh.\n- Option C incorrectly uses quotation marks and alters the meaning.\n- Option D retains the imperative 'келіңдер' and lacks proper indirect speech structure, making it a poorly punctuated direct speech rather than indirect speech.\nTherefore, Option A is the correct answer.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question perfectly tests the basic rules of converting direct speech to indirect speech in Kazakh. The distractors are well-constructed and represent common errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:14:11.481129+00:00",
+  "generation_attempts": 1
+}

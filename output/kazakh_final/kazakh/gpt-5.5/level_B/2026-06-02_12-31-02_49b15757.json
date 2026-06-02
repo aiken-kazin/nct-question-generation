@@ -1,0 +1,140 @@
+{
+  "id": "49b15757-74c2-4fa9-ba07-fb0d6a27ae47",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "«Да/де» тұлғасының шылау болып, емле нормасына сай бөлек жазылған әрі ыңғайластық мәнде қолданылған сөйлемін белгілеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ол кітапты да оқып, пікірін де жазды."
+    },
+    {
+      "label": "B",
+      "text": "Бүгінде ауылда үлкен өзгеріс бар."
+    },
+    {
+      "label": "C",
+      "text": "Сенде ертең сабақтан қалма."
+    },
+    {
+      "label": "D",
+      "text": "Жаңбыр жауса да, жолға шығамыз."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Дұрыс жауап — A. Бұл сөйлемдегі «да», «де» сөздері — шылау: өзінен бұрынғы сөзден бөлек жазылған және «кітапты да оқып, пікірін де жазды» деген ыңғайластық, қосымша қамту мәнін білдіреді. B нұсқасында «бүгінде», «ауылда» құрамындағы «-де/-да» — жатыс септік жалғауы, шылау емес. C нұсқасында «Сенде» түрінде бірге жазылған, мұнда емле нормасы бұзылған: мағынасы «сен де» болса, шылау бөлек жазылуы керек. D нұсқасында «да» шылауы бөлек жазылғанымен, ол ыңғайластық емес, қарсылықты мәнде қолданылған: «жауса да» — «соған қарамастан» деген мағына береді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The form \"да/де\" can be either a suffix/case ending when attached to a word, or a particle/conjunction (шылау) when written separately. The question asks for a sentence where it is: (1) a шылау, (2) written separately according to spelling norms, and (3) used with an additive/coordinating meaning (ыңғайластық мән, like \"also/both ... and\"). Option A: \"Ол кітапты да оқып, пікірін де жазды.\" Here \"д\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks to identify the sentence where 'да/де' is used as a CONJUNCTION (шылау), written SEPARATELY (бөлек) according to spelling norms, and used in a COPULATIVE/ADDITIVE meaning (ыңғайластық мәнде — coordinating conjunction meaning 'and/also').\n\nLet's analyze each option:\n\nA) 'Ол кітапты да оқып, пікірін де жазды.' — Here 'да' and 'де' are written separately after 'кітапты' and 'пікірін\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to find the sentence where 'да/де' is used as a particle (шылау), is written separately according to orthographic rules, and conveys a coordinating/copulative meaning (ыңғайластық мән). Let's evaluate the options:\n\nA) 'Ол кітапты да оқып, пікірін де жазды.' Here, 'да' and 'де' are written separately. They act as coordinating particles (ыңғайластық шылау), meaning 'both... and...'",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer A is correct and uniquely satisfies all three conditions: separate spelling, шылау status, and ыңғайластық/additive meaning. Distractors are mostly functional, though option C is somewhat awkward and visibly erroneous as a sentence. | [anthropic/claude-sonnet-4.6] The question is well-constructed, testing three simultaneous criteria (conjunction status, separate spelling, copulative meaning) for 'да/де'. Each distractor targets a distinct misconception: B tests case suffix vs. conjunction confusion, C tests spelling norm violation, and D tests semantic distinction between copulative and concessive meaning. The correct answer is unambiguous and the explanation is thorough. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It tests multiple aspects of the 'да/де' particle (morphological identification, orthography, and semantics) in context, with highly plausible and well-designed distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The form \"да/де\" can be either a suffix/case ending when attached to a word, or a particle/conjunction (шылау) when written separately. The question asks for a sentence where it is: (1) a шылау, (2) written separately according to spelling norms, and (3) used with an additive/coordinating meaning (ыңғайластық мән, like \"also/both ... and\"). Option A: \"Ол кітапты да оқып, пікірін де жазды.\" Here \"д\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks to identify the sentence where 'да/де' is used as a CONJUNCTION (шылау), written SEPARATELY (бөлек) according to spelling norms, and used in a COPULATIVE/ADDITIVE meaning (ыңғайластық мәнде — coordinating conjunction meaning 'and/also').\n\nLet's analyze each option:\n\nA) 'Ол кітапты да оқып, пікірін де жазды.' — Here 'да' and 'де' are written separately after 'кітапты' and 'пікірін\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to find the sentence where 'да/де' is used as a particle (шылау), is written separately according to orthographic rules, and conveys a coordinating/copulative meaning (ыңғайластық мән). Let's evaluate the options:\n\nA) 'Ол кітапты да оқып, пікірін де жазды.' Here, 'да' and 'де' are written separately. They act as coordinating particles (ыңғайластық шылау), meaning 'both... and...'",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer A is correct and uniquely satisfies all three conditions: separate spelling, шылау status, and ыңғайластық/additive meaning. Distractors are mostly functional, though option C is somewhat awkward and visibly erroneous as a sentence. | [anthropic/claude-sonnet-4.6] The question is well-constructed, testing three simultaneous criteria (conjunction status, separate spelling, copulative meaning) for 'да/де'. Each distractor targets a distinct misconception: B tests case suffix vs. conjunction confusion, C tests spelling norm violation, and D tests semantic distinction between copulative and concessive meaning. The correct answer is unambiguous and the explanation is thorough. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It tests multiple aspects of the 'да/де' particle (morphological identification, orthography, and semantics) in context, with highly plausible and well-designed distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The form \"да/де\" can be either a suffix/case ending when attached to a word, or a particle/conjunction (шылау) when written separately. The question asks for a sentence where it is: (1) a шылау, (2) written separately according to spelling norms, and (3) used with an additive/coordinating meaning (ыңғайластық мән, like \"also/both ... and\"). Option A: \"Ол кітапты да оқып, пікірін де жазды.\" Here \"да\" and \"де\" are written separately and mean \"also/both\": he read the book and wrote his opinion too. This is the additive/coordinating meaning. Option B: \"Бүгінде\" has \"де\" as part of the word, not a separately written шылау. Option C: \"Сенде\" is written together; if the intended meaning were \"you too,\" it should be \"Сен де,\" so this does not meet the spelling requirement. Option D: \"Жаңбыр жауса да\" has separately written \"да,\" but it has a concessive meaning: \"even if/although it rains,\" not an additive/coordinating meaning. Therefore, the correct answer is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer A is correct and uniquely satisfies all three conditions: separate spelling, шылау status, and ыңғайластық/additive meaning. Distractors are mostly functional, though option C is somewhat awkward and visibly erroneous as a sentence.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence where 'да/де' is used as a CONJUNCTION (шылау), written SEPARATELY (бөлек) according to spelling norms, and used in a COPULATIVE/ADDITIVE meaning (ыңғайластық мәнде — coordinating conjunction meaning 'and/also').\n\nLet's analyze each option:\n\nA) 'Ол кітапты да оқып, пікірін де жазды.' — Here 'да' and 'де' are written separately after 'кітапты' and 'пікірін'. These are conjunctions (шылау) used in a copulative/additive sense (ыңғайластық мән), meaning 'both...and' or 'also'. This matches all three criteria: it's a conjunction, written separately, and used in copulative meaning.\n\nB) 'Бүгінде ауылда үлкен өзгеріс бар.' — Here 'де' in 'бүгінде' is written together (attached) as part of the word 'бүгінде' (meaning 'nowadays/even today'). This is written as one word, not separately. Does not meet the 'бөлек жазылған' criterion.\n\nC) 'Сенде ертең сабақтан қалма.' — Here 'де' in 'сенде' is the locative case suffix (-де), not a conjunction. It's written attached to 'сен'. Does not meet the criteria.\n\nD) 'Жаңбыр жауса да, жолға шығамыз.' — Here 'да' is written separately after 'жауса', but it's used in a CONCESSIVE meaning (қарсылықты мән — 'even if/although'), not copulative/additive meaning. This is a concessive conjunction, not ыңғайластық.\n\nTherefore, option A is the correct answer: 'да/де' is a conjunction, written separately, and used in copulative/additive (ыңғайластық) meaning.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, testing three simultaneous criteria (conjunction status, separate spelling, copulative meaning) for 'да/де'. Each distractor targets a distinct misconception: B tests case suffix vs. conjunction confusion, C tests spelling norm violation, and D tests semantic distinction between copulative and concessive meaning. The correct answer is unambiguous and the explanation is thorough.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to find the sentence where 'да/де' is used as a particle (шылау), is written separately according to orthographic rules, and conveys a coordinating/copulative meaning (ыңғайластық мән). Let's evaluate the options:\n\nA) 'Ол кітапты да оқып, пікірін де жазды.' Here, 'да' and 'де' are written separately. They act as coordinating particles (ыңғайластық шылау), meaning 'both... and...' (He both read the book and wrote his opinion). This perfectly matches all criteria.\n\nB) 'Бүгінде ауылда үлкен өзгеріс бар.' The 'де' in 'бүгінде' and 'да' in 'ауылда' are locative case suffixes (жатыс септік жалғауы) and are correctly written together with the word. They are not particles.\n\nC) 'Сенде ертең сабақтан қалма.' The intended meaning is 'You too, do not miss the class tomorrow', which requires the particle 'де' to be written separately ('Сен де'). Since it is written together, it violates the orthographic norm specified in the prompt.\n\nD) 'Жаңбыр жауса да, жолға шығамыз.' Here, 'да' is a particle and is written separately. However, it conveys a concessive meaning (қарсылықты мән - 'even if it rains'), not a coordinating one (ыңғайластық мән).\n\nTherefore, option A is the only correct choice.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It tests multiple aspects of the 'да/де' particle (morphological identification, orthography, and semantics) in context, with highly plausible and well-designed distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:31:02.567003+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "6e7409d3-29e1-4a40-93e7-71aebf902590",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Шартты бағыныңқы сабақтас құрмалас сөйлемді анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Күн батқанда, ауыл үстін салқын самал басты."
+    },
+    {
+      "label": "B",
+      "text": "Жаңбыр жауғандықтан, жол тайғақ болды."
+    },
+    {
+      "label": "C",
+      "text": "Еңбек етсең, мұратыңа жетесің."
+    },
+    {
+      "label": "D",
+      "text": "Кешіксе де, ол жиналысқа қатысты."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. «Еңбек етсең, мұратыңа жетесің» сөйлемінде бағыныңқы сыңар «еңбек етсең» деген шарт мәнін білдіреді, сондықтан бұл — шартты бағыныңқы сабақтас құрмалас сөйлем. A нұсқасында «күн батқанда» мезгіл мәнін білдіреді. B нұсқасында «жаңбыр жауғандықтан» себеп мәнін білдіреді. D нұсқасында «кешіксе де» қарсылық мәнін білдіреді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.85,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We need identify the conditional subordinate compound sentence (шартты бағыныңқы сабақтас құрмалас сөйлем). In Kazakh, a conditional subordinate clause typically uses the conditional mood suffix -са/-се (with person endings), expressing the condition under which the main clause occurs, often translatable as 'if ...'. Option A: 'Күн батқанда, ауыл үстін салқын самал басты' uses -ғанда and means 'Wh\n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify the 'шартты бағыныңқы сабақтас құрмалас сөйлем' (conditional subordinate compound sentence) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of conjunction or verb form used in the subordinate clause:\n\n1. **Шартты бағыныңқы** (conditional subordinate) — the subordinate clause expresses a condition. It is formed using the conditional mood \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the 'Шартты бағыныңқы сабақтас құрмалас сөйлем' (Conditional subordinate compound sentence). Let's analyze the options based on the suffixes of the subordinate clauses:\n\nA) 'Күн батқанда' uses the suffix '-қанда' (when), which makes it a 'мезгіл бағыныңқы' (temporal subordinate clause).\nB) 'Жаңбыр жауғандықтан' uses the suffix '-ғандықтан' (because), which makes it a ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.85,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes conditional, temporal, causal, and concessive subordinate clauses. The item is concise, unambiguous, and well aligned with basic direct-recognition syntax knowledge. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) uses the conditional suffix -са/-се unambiguously, and each distractor represents a distinct, identifiable subordinate clause type (temporal, causal, concessive) — all common misconceptions for this topic. Language is natural and terminology matches official Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the basic difficulty level (A). The distractors are well-chosen, representing other types of subordinate clauses, and the correct answer is unambiguous.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We need identify the conditional subordinate compound sentence (шартты бағыныңқы сабақтас құрмалас сөйлем). In Kazakh, a conditional subordinate clause typically uses the conditional mood suffix -са/-се (with person endings), expressing the condition under which the main clause occurs, often translatable as 'if ...'. Option A: 'Күн батқанда, ауыл үстін салқын самал басты' uses -ғанда and means 'Wh\n\n[anthropic/claude-sonnet-4.6] answered C: We need to identify the 'шартты бағыныңқы сабақтас құрмалас сөйлем' (conditional subordinate compound sentence) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of conjunction or verb form used in the subordinate clause:\n\n1. **Шартты бағыныңқы** (conditional subordinate) — the subordinate clause expresses a condition. It is formed using the conditional mood \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the 'Шартты бағыныңқы сабақтас құрмалас сөйлем' (Conditional subordinate compound sentence). Let's analyze the options based on the suffixes of the subordinate clauses:\n\nA) 'Күн батқанда' uses the suffix '-қанда' (when), which makes it a 'мезгіл бағыныңқы' (temporal subordinate clause).\nB) 'Жаңбыр жауғандықтан' uses the suffix '-ғандықтан' (because), which makes it a ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.85,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes conditional, temporal, causal, and concessive subordinate clauses. The item is concise, unambiguous, and well aligned with basic direct-recognition syntax knowledge. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) uses the conditional suffix -са/-се unambiguously, and each distractor represents a distinct, identifiable subordinate clause type (temporal, causal, concessive) — all common misconceptions for this topic. Language is natural and terminology matches official Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the basic difficulty level (A). The distractors are well-chosen, representing other types of subordinate clauses, and the correct answer is unambiguous.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need identify the conditional subordinate compound sentence (шартты бағыныңқы сабақтас құрмалас сөйлем). In Kazakh, a conditional subordinate clause typically uses the conditional mood suffix -са/-се (with person endings), expressing the condition under which the main clause occurs, often translatable as 'if ...'. Option A: 'Күн батқанда, ауыл үстін салқын самал басты' uses -ғанда and means 'When the sun set...', so it is a temporal subordinate clause (мезгіл бағыныңқы). Option B: 'Жаңбыр жауғандықтан, жол тайғақ болды' uses -ғандықтан and means 'Because it rained...', so it is a causal subordinate clause (себеп бағыныңқы). Option C: 'Еңбек етсең, мұратыңа жетесің' uses the conditional form 'етсең' and means 'If you work, you will reach your goal', so it is a conditional subordinate clause (шартты бағыныңқы). Option D: 'Кешіксе де, ол жиналысқа қатысты' means 'Although he/she was late...' and uses -се де, expressing concession, so it is a concessive subordinate clause (қарсылықты бағыныңқы). Therefore, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately distinguishes conditional, temporal, causal, and concessive subordinate clauses. The item is concise, unambiguous, and well aligned with basic direct-recognition syntax knowledge.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify the 'шартты бағыныңқы сабақтас құрмалас сөйлем' (conditional subordinate compound sentence) in Kazakh.\n\nIn Kazakh grammar, subordinate compound sentences are classified by the type of conjunction or verb form used in the subordinate clause:\n\n1. **Шартты бағыныңқы** (conditional subordinate) — the subordinate clause expresses a condition. It is formed using the conditional mood suffix **-са/-се** (sometimes with -да/-де added). The meaning is 'if...then...'\n\n2. **Мезгілдік бағыныңқы** (temporal subordinate) — uses suffixes like -ғанда/-генде, -қанда/-кенде (when). Option A: 'Күн батқанда' = 'When the sun set' — this is temporal.\n\n3. **Себептік бағыныңқы** (causal subordinate) — uses suffixes like -ғандықтан/-гендіктен (because). Option B: 'Жаңбыр жауғандықтан' = 'Because it rained' — this is causal.\n\n4. **Шартты бағыныңқы** (conditional) — uses -са/-се suffix. Option C: 'Еңбек етсең' = 'If you work hard' (етсең = ет+се+ң, conditional mood + 2nd person singular) — this is conditional. The sentence means 'If you work hard, you will achieve your goal.' This is the conditional subordinate compound sentence.\n\n5. **Қарсылықты бағыныңқы** (concessive/adversative subordinate) — uses -са да/-се де (even though/although). Option D: 'Кешіксе де' = 'Even though he was late' — this is concessive (қарсылықты).\n\nTherefore, Option C uses the conditional suffix -са/-се without the concessive particle 'да/де', making it a pure conditional subordinate clause. The answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.75,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (C) uses the conditional suffix -са/-се unambiguously, and each distractor represents a distinct, identifiable subordinate clause type (temporal, causal, concessive) — all common misconceptions for this topic. Language is natural and terminology matches official Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the 'Шартты бағыныңқы сабақтас құрмалас сөйлем' (Conditional subordinate compound sentence). Let's analyze the options based on the suffixes of the subordinate clauses:\n\nA) 'Күн батқанда' uses the suffix '-қанда' (when), which makes it a 'мезгіл бағыныңқы' (temporal subordinate clause).\nB) 'Жаңбыр жауғандықтан' uses the suffix '-ғандықтан' (because), which makes it a 'себеп бағыныңқы' (causal subordinate clause).\nC) 'Еңбек етсең' uses the conditional suffix '-сең' (if), which makes it a 'шартты бағыныңқы' (conditional subordinate clause). The action in the main clause depends on the condition in the subordinate clause.\nD) 'Кешіксе де' uses the suffix '-се + де' (even though), which makes it a 'қарсылықты бағыныңқы' (concessive subordinate clause).\n\nTherefore, option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the basic difficulty level (A). The distractors are well-chosen, representing other types of subordinate clauses, and the correct answer is unambiguous.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:11:57.974446+00:00",
+  "generation_attempts": 1
+}

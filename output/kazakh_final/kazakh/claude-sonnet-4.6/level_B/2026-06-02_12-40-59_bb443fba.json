@@ -1,0 +1,140 @@
+{
+  "id": "bb443fba-32be-42b3-981e-cf01b25abb8f",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "style_and_text_analysis",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі үзіндіні оқыңыз:\n\n«Фотосинтез — жасыл өсімдіктердің жарық энергиясын пайдалана отырып, көмірқышқыл газы мен судан органикалық заттар түзу процесі. Бұл процесс хлоропластарда жүреді және тіршіліктің негізгі энергия көзі болып табылады.»\n\nОсы мәтіннің қай функционалдық стильге жататынын және оған тән белгілерді дұрыс анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ресми-іскери стиль; себебі мәтінде нақты анықтамалар мен заңдық терминдер қолданылған"
+    },
+    {
+      "label": "B",
+      "text": "Публицистикалық стиль; себебі мәтін оқырман назарын аудару мақсатында эмоционалды тілде жазылған"
+    },
+    {
+      "label": "C",
+      "text": "Ғылыми стиль; себебі мәтінде арнайы терминдер қолданылып, құбылыстың дәл анықтамасы мен ғылыми түсіндірмесі берілген"
+    },
+    {
+      "label": "D",
+      "text": "Көркем әдебиет стилі; себебі мәтінде табиғат суреттері бейнелі тілмен жеткізілген"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген мәтін ғылыми стильге жатады. Оның белгілері: «фотосинтез», «хлоропласт», «органикалық заттар», «көмірқышқыл газы» сияқты арнайы ғылыми терминдердің қолданылуы; құбылысқа нақты, дәл анықтама берілуі; эмоционалды бояудың болмауы; логикалық дәлдік пен объективтілік. \n\nА нұсқасы қате: ресми-іскери стильге заңдық, нормативтік, іскерлік терминдер тән болып, іс қағаздары, заңдар, бұйрықтар секілді құжаттарда қолданылады. \n\nВ нұсқасы қате: публицистикалық стильге эмоционалдылық, оқырманға ықпал ету мақсаты, бейнелі сөздер тән, ал берілген мәтінде мұндай белгілер жоқ. \n\nД нұсқасы қате: көркем әдебиет стилінде бейнелі тіл, троптар, авторлық эмоция алдыңғы орынға шығады, ал бұл мәтін суреттеу емес, ғылыми түсіндіру сипатында жазылған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.833,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The excerpt defines photosynthesis in objective, precise terms: it explains that green plants use light energy to form organic substances from carbon dioxide and water. It contains scientific terminology such as \"photosynthesis,\" \"light energy,\" \"carbon dioxide,\" \"organic substances,\" and \"chloroplasts.\" The text gives a factual definition and a scientific explanation of a natural process, without\n\n[anthropic/claude-sonnet-4.6] answered C: The passage describes photosynthesis: 'Фотосинтез — жасыл өсімдіктердің жарық энергиясын пайдалана отырып, көмірқышқыл газы мен судан органикалық заттар түзу процесі. Бұл процесс хлоропластарда жүреді және тіршіліктің негізгі энергия көзі болып табылады.'\n\nAnalyzing each option:\n\nA) Official-business style (Ресми-іскери стиль) — This style is used for legal documents, official correspondence, decr\n\n[google/gemini-3.1-pro-preview] answered C: The provided text gives a precise, objective definition of 'photosynthesis' and explains the biological process using specific terminology such as 'көмірқышқыл газы' (carbon dioxide), 'органикалық заттар' (organic substances), and 'хлоропластар' (chloroplasts). It lacks emotional language, figurative expressions, or legal/administrative vocabulary. These characteristics—exact definitions, use of s",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.833,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the scientific style through terminology, objectivity, and definition. However, the item is quite easy for level B because the scientific terms and definition format make the answer almost immediately obvious. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed; the scientific style identification is unambiguous given the clear terminology and neutral tone. Distractors are plausible but option A's mention of 'legal terms' makes it easily eliminable, and the question skews slightly toward level A (recall/recognition) rather than true level B analysis. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are parallel and logically sound.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, consider using a less prototypical scientific text (e.g., one that blends features of two styles) to require genuine comparative analysis. Strengthen distractor A by replacing 'заңдық терминдер' with a more plausible official-business feature (e.g., нормативтік тіл, стандартты клишелер) so it is not trivially eliminable.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The excerpt defines photosynthesis in objective, precise terms: it explains that green plants use light energy to form organic substances from carbon dioxide and water. It contains scientific terminology such as \"photosynthesis,\" \"light energy,\" \"carbon dioxide,\" \"organic substances,\" and \"chloroplasts.\" The text gives a factual definition and a scientific explanation of a natural process, without\n\n[anthropic/claude-sonnet-4.6] answered C: The passage describes photosynthesis: 'Фотосинтез — жасыл өсімдіктердің жарық энергиясын пайдалана отырып, көмірқышқыл газы мен судан органикалық заттар түзу процесі. Бұл процесс хлоропластарда жүреді және тіршіліктің негізгі энергия көзі болып табылады.'\n\nAnalyzing each option:\n\nA) Official-business style (Ресми-іскери стиль) — This style is used for legal documents, official correspondence, decr\n\n[google/gemini-3.1-pro-preview] answered C: The provided text gives a precise, objective definition of 'photosynthesis' and explains the biological process using specific terminology such as 'көмірқышқыл газы' (carbon dioxide), 'органикалық заттар' (organic substances), and 'хлоропластар' (chloroplasts). It lacks emotional language, figurative expressions, or legal/administrative vocabulary. These characteristics—exact definitions, use of s",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.833,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the scientific style through terminology, objectivity, and definition. However, the item is quite easy for level B because the scientific terms and definition format make the answer almost immediately obvious. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed; the scientific style identification is unambiguous given the clear terminology and neutral tone. Distractors are plausible but option A's mention of 'legal terms' makes it easily eliminable, and the question skews slightly toward level A (recall/recognition) rather than true level B analysis. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are parallel and logically sound.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, consider using a less prototypical scientific text (e.g., one that blends features of two styles) to require genuine comparative analysis. Strengthen distractor A by replacing 'заңдық терминдер' with a more plausible official-business feature (e.g., нормативтік тіл, стандартты клишелер) so it is not trivially eliminable.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The excerpt defines photosynthesis in objective, precise terms: it explains that green plants use light energy to form organic substances from carbon dioxide and water. It contains scientific terminology such as \"photosynthesis,\" \"light energy,\" \"carbon dioxide,\" \"organic substances,\" and \"chloroplasts.\" The text gives a factual definition and a scientific explanation of a natural process, without emotional appeal, legal wording, or figurative imagery. Therefore, the functional style is scientific style. Option C correctly identifies both the style and its features.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies the scientific style through terminology, objectivity, and definition. However, the item is quite easy for level B because the scientific terms and definition format make the answer almost immediately obvious.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The passage describes photosynthesis: 'Фотосинтез — жасыл өсімдіктердің жарық энергиясын пайдалана отырып, көмірқышқыл газы мен судан органикалық заттар түзу процесі. Бұл процесс хлоропластарда жүреді және тіршіліктің негізгі энергия көзі болып табылады.'\n\nAnalyzing each option:\n\nA) Official-business style (Ресми-іскери стиль) — This style is used for legal documents, official correspondence, decrees, etc. It contains legal/administrative terminology and formal structures. The text does not contain legal terms or administrative language. This is incorrect.\n\nB) Publicistic style (Публицистикалық стиль) — This style is used in journalism, aimed at a broad audience, often emotionally charged to attract attention. The text is neutral, precise, and not emotionally colored. This is incorrect.\n\nC) Scientific style (Ғылыми стиль) — This style is characterized by: use of specialized terminology (фотосинтез, хлоропластар, көмірқышқыл газы, органикалық заттар), precise definitions, logical structure, objective and neutral tone, explanatory/descriptive nature of scientific phenomena. The text clearly defines photosynthesis using scientific terms, explains where the process occurs (хлоропластарда), and states its significance. All hallmarks of scientific style are present. This is correct.\n\nD) Artistic/literary style (Көркем әдебиет стилі) — This style uses figurative language, imagery, metaphors, and emotional descriptions of nature. The text contains no figurative language or imagery. This is incorrect.\n\nConclusion: The text belongs to the scientific functional style (Ғылыми стиль) because it uses specialized scientific terminology and provides a precise definition and scientific explanation of the phenomenon.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 6.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.2,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-keyed; the scientific style identification is unambiguous given the clear terminology and neutral tone. Distractors are plausible but option A's mention of 'legal terms' makes it easily eliminable, and the question skews slightly toward level A (recall/recognition) rather than true level B analysis.",
+          "improvement_suggestions": "To better align with level B difficulty, consider using a less prototypical scientific text (e.g., one that blends features of two styles) to require genuine comparative analysis. Strengthen distractor A by replacing 'заңдық терминдер' with a more plausible official-business feature (e.g., нормативтік тіл, стандартты клишелер) so it is not trivially eliminable.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The provided text gives a precise, objective definition of 'photosynthesis' and explains the biological process using specific terminology such as 'көмірқышқыл газы' (carbon dioxide), 'органикалық заттар' (organic substances), and 'хлоропластар' (chloroplasts). It lacks emotional language, figurative expressions, or legal/administrative vocabulary. These characteristics—exact definitions, use of specialized terms, and objective scientific explanation—are the hallmarks of the scientific style (ғылыми стиль). Therefore, Option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are parallel and logically sound.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:40:59.598774+00:00",
+  "generation_attempts": 1
+}

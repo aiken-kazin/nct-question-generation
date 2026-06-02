@@ -1,0 +1,628 @@
+{
+  "id": "e6a1be267b334ac39154691d93b68395",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T13:09:13.670735+00:00",
+  "passage": "Махамбет Өтемісұлы — қазақ поэзиясының тарихында ерекше орын алатын ақын. Оның өлеңдері тек жыр ғана емес, халықтың азаттық рухының жарқын айнасы. Махамбет шығармашылығының өзегінде Исатай Тайманұлымен бірге бастаған ұлт-азаттық көтерілісі жатыр. Ақын өз жырларында жаудан қорықпайтын батыл жанды, теңсіздікке мойынсұнбайтын еркін рухты суреттеді. «Мен жастан жауға тиістім» деп басталатын жолдары оның бүкіл ғұмырының рәмізіне айналды. Махамбет поэзиясы — дауылды, найзағайлы, кейде жалындай лаулаған образдарға толы. Ол табиғат құбылыстарын адам жан-дүниесімен ұштастыра отырып, оқырманды ішкі толғанысқа шақырады. Ақынның тілі тікелей, айқын, бейнелі: метафора мен теңеудің ұтымды үйлесімі оның стилін қазақ әдебиетінде бірегей етеді. Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.",
+  "questions": [
+    {
+      "question_text": "Мәтіннің негізгі идеясы қайсы тұжырыммен дәл беріледі?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Махамбет өлеңдері тек тарихи оқиғаларды баяндайтын жылнама ретінде бағаланады."
+        },
+        {
+          "label": "B",
+          "text": "Махамбет поэзиясы халықтың азаттық рухын бейнелейтін, романтизмге тән ерекше көркем құбылыс."
+        },
+        {
+          "label": "C",
+          "text": "Махамбет шығармашылығының басты ерекшелігі — табиғат суреттерінің молдығы."
+        },
+        {
+          "label": "D",
+          "text": "Махамбет Исатай Тайманұлының өмірін жырлаумен ғана шектелген ақын."
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Мәтінде Махамбет поэзиясының азаттық рухын бейнелейтіні, романтизм бағытымен байланысы, образдар жүйесі мен стилінің бірегейлігі кешенді түрде айтылады. A қате, өйткені мәтін жылнамалық сипатты емес, рухани-эстетикалық мәнді ерекшелейді. C қате, табиғат суреттері тек бір элемент ретінде аталады. D қате, ақынның шығармашылығы тек Исатаймен шектелмейді деп нақты айтылған.",
+      "critic_score": 8.267,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.833,
+        "difficulty_alignment": 5.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The text presents Makhambet Utemisuly as a poet with a special place in Kazakh poetry. It emphasizes that his poems are not merely songs or historical narration, but a bright mirror of the people's spirit of freedom. The text links his work to the national liberation uprising with Isatay Taimanuly, describes the heroic, fearless, freedom-loving spirit in his poetry, and highlights his vivid imager\n\n[anthropic/claude-sonnet-4.6] answered B: The text discusses Makhambet Ötemisuly as a poet who occupies a special place in Kazakh poetry. Key points from the text: 1) His poems are not just verse but a 'bright mirror of the people's spirit of freedom' (азаттық рухының жарқын айнасы). 2) At the core of his work is the national liberation uprising with Isatay Taimanuly. 3) He depicted a brave soul unafraid of enemies and a free spirit that \n\n[google/gemini-3.1-pro-preview] answered B: The text discusses Makhambet Utemisov's poetry, emphasizing that it is not just a collection of poems but a bright reflection of the people's spirit of liberation ('халықтың азаттық рухының жарқын айнасы'). It also highlights the artistic qualities of his work, mentioning his use of metaphors, similes, and imagery, and concludes by stating that researchers often associate his work with romanticism",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.833,
+            "difficulty_alignment": 5.5,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.267,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer B is clearly correct and uniquely supported by the text. However, the task is a straightforward main-idea question with strongly worded distractors, so it does not meet the requested hard/C-level text-analysis standard. | [anthropic/claude-sonnet-4.6] The correct answer B is clearly and unambiguously supported by the text, and the explanation is thorough. The question is well-constructed with natural Kazakh language. However, the difficulty level is slightly below C — the main idea is fairly accessible through direct reading comprehension without requiring deep synthesis across multiple domains, and distractors A and D are easily eliminated as obviously too narrow/extreme. | [google/gemini-3.1-pro-preview] The question accurately tests reading comprehension and the ability to synthesize the main idea of a literary analysis text. The distractors are well-crafted based on misinterpretations of specific details in the text.",
+          "improvement_suggestions": "[openai/gpt-5.5] To align with level C, require deeper stylistic or literary analysis, such as comparing romantic features, identifying how imagery supports the central idea, or evaluating authorial tone with evidence from multiple parts of the text. Make distractors less obviously false by avoiding absolute cues like 'тек' and 'ғана'. | [anthropic/claude-sonnet-4.6] To better align with level C difficulty, consider adding a distractor that partially captures the main idea (e.g., one that correctly identifies the romanticism connection but mischaracterizes the freedom theme, or vice versa), making elimination harder. Also consider asking for a more analytical judgment — e.g., evaluating which literary device most defines Makhambet's style — rather than identifying the main idea, which is a more B-level skill. | [google/gemini-3.1-pro-preview] To fully align with the 'Hard' (C) difficulty level, the question could ask for a deeper analysis of the stylistic devices mentioned or require the teacher to infer the author's implicit stance rather than just summarizing the main idea.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text presents Makhambet Utemisuly as a poet with a special place in Kazakh poetry. It emphasizes that his poems are not merely songs or historical narration, but a bright mirror of the people's spirit of freedom. The text links his work to the national liberation uprising with Isatay Taimanuly, describes the heroic, fearless, freedom-loving spirit in his poetry, and highlights his vivid imagery, metaphor, simile, and romantic features such as the ideal hero, limitless striving for freedom, and tragic pathos. Option A is incorrect because the text explicitly says the poems are not just historical narration. Option C is too narrow: nature imagery is mentioned, but it is not the main idea. Option D is incorrect because the text says Makhambet's work is broader than only singing about Isatay. Option B accurately summarizes the main idea: Makhambet's poetry is a distinctive artistic phenomenon that reflects the people's freedom-loving spirit and has features of Romanticism.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.5,
+                "difficulty_alignment": 3.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The keyed answer B is clearly correct and uniquely supported by the text. However, the task is a straightforward main-idea question with strongly worded distractors, so it does not meet the requested hard/C-level text-analysis standard.",
+              "improvement_suggestions": "To align with level C, require deeper stylistic or literary analysis, such as comparing romantic features, identifying how imagery supports the central idea, or evaluating authorial tone with evidence from multiple parts of the text. Make distractors less obviously false by avoiding absolute cues like 'тек' and 'ғана'.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text discusses Makhambet Ötemisuly as a poet who occupies a special place in Kazakh poetry. Key points from the text: 1) His poems are not just verse but a 'bright mirror of the people's spirit of freedom' (азаттық рухының жарқын айнасы). 2) At the core of his work is the national liberation uprising with Isatay Taimanuly. 3) He depicted a brave soul unafraid of enemies and a free spirit that does not submit to inequality. 4) His poetry is full of stormy, lightning-like, flame-like images. 5) He connects natural phenomena with the human soul. 6) His language is direct, clear, and figurative — metaphor and simile make his style unique. 7) Researchers associate his work with Romanticism because of the ideal hero image, boundless striving for freedom, and tragic pathos.\n\nNow evaluating each option:\nA) Says his poems are valued only as chronicles narrating historical events — this contradicts the text, which emphasizes artistic imagery, romanticism, and spiritual freedom, not just historical narration.\nB) Says Makhambet's poetry reflects the people's spirit of freedom and is a special artistic phenomenon characteristic of Romanticism — this directly aligns with the main idea of the text, which covers both the freedom/liberation theme and the romantic artistic style.\nC) Says the main feature is the abundance of nature descriptions — while nature imagery is mentioned, it is not the central/main idea of the text.\nD) Says Makhambet was limited only to singing about Isatay Taimanuly's life — this is too narrow and contradicts the text's broader discussion of his poetry's themes and style.\n\nOption B best captures the main idea: Makhambet's poetry embodies the people's spirit of freedom and represents a unique artistic phenomenon associated with Romanticism.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The correct answer B is clearly and unambiguously supported by the text, and the explanation is thorough. The question is well-constructed with natural Kazakh language. However, the difficulty level is slightly below C — the main idea is fairly accessible through direct reading comprehension without requiring deep synthesis across multiple domains, and distractors A and D are easily eliminated as obviously too narrow/extreme.",
+              "improvement_suggestions": "To better align with level C difficulty, consider adding a distractor that partially captures the main idea (e.g., one that correctly identifies the romanticism connection but mischaracterizes the freedom theme, or vice versa), making elimination harder. Also consider asking for a more analytical judgment — e.g., evaluating which literary device most defines Makhambet's style — rather than identifying the main idea, which is a more B-level skill.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text discusses Makhambet Utemisov's poetry, emphasizing that it is not just a collection of poems but a bright reflection of the people's spirit of liberation ('халықтың азаттық рухының жарқын айнасы'). It also highlights the artistic qualities of his work, mentioning his use of metaphors, similes, and imagery, and concludes by stating that researchers often associate his work with romanticism ('романтизм бағытымен жиі байланыстырады') due to the ideal hero's image, the boundless striving for freedom, and tragic pathos. Option B perfectly encapsulates these two main points: the reflection of the liberation spirit and its unique artistic nature tied to romanticism. Options A, C, and D are either factually incorrect according to the text or focus on minor details rather than the main idea.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question accurately tests reading comprehension and the ability to synthesize the main idea of a literary analysis text. The distractors are well-crafted based on misinterpretations of specific details in the text.",
+              "improvement_suggestions": "To fully align with the 'Hard' (C) difficulty level, the question could ask for a deeper analysis of the stylistic devices mentioned or require the teacher to infer the author's implicit stance rather than just summarizing the main idea.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "«Дауылды, найзағайлы, жалындай лаулаған образдар» деген тіркестер мәтінде қандай мақсатта қолданылған?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Махамбет өмір сүрген дәуірдің нақты табиғат жағдайларын суреттеу үшін."
+        },
+        {
+          "label": "B",
+          "text": "Ақынның шығармаларындағы тілдің тікелей және қарапайым екенін дәлелдеу үшін."
+        },
+        {
+          "label": "C",
+          "text": "Махамбет поэзиясының ішкі қуаты мен эмоционалды күштілігін метафора арқылы жеткізу үшін."
+        },
+        {
+          "label": "D",
+          "text": "Ақынның табиғат лирикасына бейімділігін көрсету үшін."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Бұл тіркестер метафора болып табылады: нақты табиғат емес, поэзияның сипатын бейнелейді. A қате, өйткені бұл табиғат суреттемесі емес, поэтикалық сипаттама. B қате, мәтінде тілдің тікелейлігі бөлек айтылады, бұл образдар басқа мақсатта. D қате, образдар табиғат лирикасына емес, поэзияның жалпы рухына қатысты.",
+      "critic_score": 8.433,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 5.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The phrase in question is: “дауылды, найзағайлы, кейде жалындай лаулаған образдарға толы” (“full of stormy, lightning-like, sometimes flame-blazing images”). In the text, this appears immediately after the statement that Makhambet’s poetry expresses a fearless, freedom-seeking spirit. These words are not literal descriptions of weather or natural conditions in Makhambet’s era. They are figurative \n\n[anthropic/claude-sonnet-4.6] answered C: The text describes Makhambet's poetry using the phrases 'dауылды, найзағайлы, жалындай лаулаған образдар' (stormy, lightning-filled, blazing-like-flame images). These are clearly metaphorical expressions — they do not describe literal weather conditions of the era (ruling out A), they do not demonstrate simplicity or directness of language (ruling out B), and they do not specifically indicate natu\n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the purpose of the phrases 'Дауылды, найзағайлы, жалындай лаулаған образдар' (Stormy, lightning-like, blazing images) in the provided text. Looking at the context, the text states: 'Махамбет поэзиясы — дауылды, найзағайлы, кейде жалындай лаулаған образдарға толы. Ол табиғат құбылыстарын адам жан-дүниесімен ұштастыра отырып, оқырманды ішкі толғанысқа шақырады.' This means Makh",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.667,
+            "difficulty_alignment": 5.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.433,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is clearly correct and the explanation is sound; the item is unambiguous. However, it is far below the requested C difficulty level, as it only requires straightforward recognition of metaphorical/emotional description from the immediate context. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (C) supported by the text. The Kazakh language is natural and literary-norm. However, the difficulty is slightly below true Level C — a careful reader can identify the metaphorical function without deep cross-topic synthesis. Distractor A is somewhat plausible but B and D are relatively easy to eliminate. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and features plausible distractors based on common misinterpretations of stylistic devices. It might be slightly easy for a 'Hard' level for practicing teachers, but it remains a solid text analysis item.",
+          "improvement_suggestions": "[openai/gpt-5.5] To align with level C, require deeper comparative analysis of Makhambet's romantic poetics, imagery, пафос, and stylistic function across several textual details rather than asking for the obvious meaning of one figurative phrase. | [anthropic/claude-sonnet-4.6] To raise difficulty to a genuine Level C, consider adding a distractor that references romanticism (since the text explicitly mentions it) to require deeper analytical discrimination. For example, a distractor could claim these images are used to illustrate the romantic ideal of the hero, which would require the test-taker to distinguish between the function of the specific phrases versus the broader romantic characterization.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase in question is: “дауылды, найзағайлы, кейде жалындай лаулаған образдарға толы” (“full of stormy, lightning-like, sometimes flame-blazing images”). In the text, this appears immediately after the statement that Makhambet’s poetry expresses a fearless, freedom-seeking spirit. These words are not literal descriptions of weather or natural conditions in Makhambet’s era. They are figurative epithets/metaphorical descriptions used to characterize the intensity, energy, and emotional force of his poetic imagery. The next sentence also explains that he connects natural phenomena with human inner experience, which supports the idea of metaphorical emotional expression. Therefore, the purpose is to convey the inner power and emotional strength of Makhambet’s poetry through metaphor.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The keyed answer C is clearly correct and the explanation is sound; the item is unambiguous. However, it is far below the requested C difficulty level, as it only requires straightforward recognition of metaphorical/emotional description from the immediate context.",
+              "improvement_suggestions": "To align with level C, require deeper comparative analysis of Makhambet's romantic poetics, imagery, пафос, and stylistic function across several textual details rather than asking for the obvious meaning of one figurative phrase.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Makhambet's poetry using the phrases 'dауылды, найзағайлы, жалындай лаулаған образдар' (stormy, lightning-filled, blazing-like-flame images). These are clearly metaphorical expressions — they do not describe literal weather conditions of the era (ruling out A), they do not demonstrate simplicity or directness of language (ruling out B), and they do not specifically indicate nature lyricism as a genre preference (ruling out D). Instead, these phrases are metaphors used to convey the inner power, emotional intensity, and passionate energy of Makhambet's poetry. The text itself confirms this by saying he connects natural phenomena with the human soul. This is a classic use of metaphor to express emotional and artistic force — corresponding to option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a clear correct answer (C) supported by the text. The Kazakh language is natural and literary-norm. However, the difficulty is slightly below true Level C — a careful reader can identify the metaphorical function without deep cross-topic synthesis. Distractor A is somewhat plausible but B and D are relatively easy to eliminate.",
+              "improvement_suggestions": "To raise difficulty to a genuine Level C, consider adding a distractor that references romanticism (since the text explicitly mentions it) to require deeper analytical discrimination. For example, a distractor could claim these images are used to illustrate the romantic ideal of the hero, which would require the test-taker to distinguish between the function of the specific phrases versus the broader romantic characterization.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the purpose of the phrases 'Дауылды, найзағайлы, жалындай лаулаған образдар' (Stormy, lightning-like, blazing images) in the provided text. Looking at the context, the text states: 'Махамбет поэзиясы — дауылды, найзағайлы, кейде жалындай лаулаған образдарға толы. Ол табиғат құбылыстарын адам жан-дүниесімен ұштастыра отырып, оқырманды ішкі толғанысқа шақырады.' This means Makhambet uses these intense, nature-based metaphors to reflect the human soul and evoke deep inner emotions, which corresponds to the inner power and emotional intensity of his poetry. Option A is incorrect because the phrases do not describe literal weather. Option B is incorrect because these phrases demonstrate figurative language, not just simple/direct language. Option D is incorrect because his poetry is characterized by a heroic and rebellious spirit (national liberation), not merely nature poetry. Option C perfectly captures the idea that these metaphors are used to convey the inner energy and emotional strength of his works.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.2,
+              "pass_fail": true,
+              "comments": "The question is well-structured, factually correct, and features plausible distractors based on common misinterpretations of stylistic devices. It might be slightly easy for a 'Hard' level for practicing teachers, but it remains a solid text analysis item.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіндегі «рәміз» сөзінің мағынасы қай нұсқада дұрыс берілген?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Дәйексөз, үзінді."
+        },
+        {
+          "label": "B",
+          "text": "Белгі, символ, бейнелі мән беретін нышан."
+        },
+        {
+          "label": "C",
+          "text": "Ескерткіш, мұра."
+        },
+        {
+          "label": "D",
+          "text": "Жыр жолы, шумақ."
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "«Рәміз» — символ, белгі деген мағынаны білдіреді. Мәтінде «бүкіл ғұмырының рәмізіне айналды» деп жазылған, яғни өлең жолы оның өмірінің символына, белгісіне айналды. A, C, D нұсқалары мағына жағынан жақын сезілгенімен, «рәміз» сөзінің нақты лексикалық мағынасына сәйкес келмейді.",
+      "critic_score": 7.033,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.333,
+        "difficulty_alignment": 1.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh word «рәміз» means a symbol, emblem, or sign that represents a broader idea. In the sentence «оның бүкіл ғұмырының рәмізіне айналды», it means the quoted line became a symbolic representation of Mахамбет’s whole life. Among the options, this matches «Белгі, символ, бейнелі мән беретін нышан».\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks about the meaning of the word 'рәміз' as used in the text. In the text, the phrase is: '«Мен жастан жауға тиістім» деп басталатын жолдары оның бүкіл ғұмырының рәмізіне айналды' — meaning the lines became the 'рәміз' of his entire life.\n\nThe Kazakh word 'рәміз' (from Arabic 'ramz') means 'symbol', 'sign', or 'emblem' — a figurative representation or symbolic meaning. It is equival\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the meaning of the word 'рәміз' (rәmiz) in the context of the provided text. In the Kazakh language, 'рәміз' translates to 'symbol', 'sign', or 'emblem' (e.g., 'мемлекеттік рәміздер' means 'state symbols'). Looking at the given options, Option B provides the definition 'Белгі, символ, бейнелі мән беретін нышан', which perfectly matches the meaning of 'рәміз' as a sign, symbol",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.333,
+            "difficulty_alignment": 1.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.033,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: «рәміз» means symbol/sign. However, the task is a simple vocabulary-in-context question and is far below the requested C-level hard text-analysis standard. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously B — 'рәміз' means symbol/sign, and the explanation is accurate. However, the question is essentially a vocabulary lookup task (find the meaning of one word), which aligns more with level A/B than the requested level C (complex text analysis, synthesis, reasoning). Distractors are plausible but not equally challenging — D ('жыр жолы, шумақ') is somewhat reachable given the context of poetry, but A and C are fairly easy to eliminate. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but it completely fails to meet the requested Level C (Hard) difficulty. Asking for the definition of a common word like 'рәміз' is a Level A (knowledge/comprehension) task that any literate speaker can answer.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, ask for deeper stylistic analysis, such as identifying how romantic pathos is constructed through imagery, linking lexical choices to the text’s argument, or comparing multiple stylistic features with justification. | [anthropic/claude-sonnet-4.6] To raise difficulty to level C, reframe the question to require deeper analytical reasoning — e.g., ask how the use of 'рәміз' contributes to the romantic style of Mahambет's poetry, or ask the student to identify which literary device is exemplified by the phrase 'бүкіл ғұмырының рәмізіне айналды' and justify their answer with reference to the text. This would require synthesis of vocabulary knowledge, stylistic analysis, and literary theory rather than simple definition recall. | [google/gemini-3.1-pro-preview] To reach Level C, the question should require deep text analysis, such as identifying the author's underlying tone, analyzing the function of specific stylistic devices (e.g., how the romanticism elements serve the text's purpose), or synthesizing information to draw complex conclusions. Also, make all options similar in length and structure to avoid cueing the correct answer.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The Kazakh word «рәміз» means a symbol, emblem, or sign that represents a broader idea. In the sentence «оның бүкіл ғұмырының рәмізіне айналды», it means the quoted line became a symbolic representation of Mахамбет’s whole life. Among the options, this matches «Белгі, символ, бейнелі мән беретін нышан».",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.0,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: «рәміз» means symbol/sign. However, the task is a simple vocabulary-in-context question and is far below the requested C-level hard text-analysis standard.",
+              "improvement_suggestions": "To match level C, ask for deeper stylistic analysis, such as identifying how romantic pathos is constructed through imagery, linking lexical choices to the text’s argument, or comparing multiple stylistic features with justification.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks about the meaning of the word 'рәміз' as used in the text. In the text, the phrase is: '«Мен жастан жауға тиістім» деп басталатын жолдары оның бүкіл ғұмырының рәмізіне айналды' — meaning the lines became the 'рәміз' of his entire life.\n\nThe Kazakh word 'рәміз' (from Arabic 'ramz') means 'symbol', 'sign', or 'emblem' — a figurative representation or symbolic meaning. It is equivalent to the Russian 'символ' or 'знак'.\n\nAnalyzing the options:\nA) 'Дәйексөз, үзінді' = quotation, excerpt — this does not match\nB) 'Белгі, символ, бейнелі мән беретін нышан' = sign, symbol, a mark that gives figurative meaning — this correctly defines 'рәміз'\nC) 'Ескерткіш, мұра' = monument, heritage — this does not match\nD) 'Жыр жолы, шумақ' = line of verse, stanza — this does not match\n\nThe correct answer is B, as 'рәміз' means symbol/sign in Kazakh.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.3,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously B — 'рәміз' means symbol/sign, and the explanation is accurate. However, the question is essentially a vocabulary lookup task (find the meaning of one word), which aligns more with level A/B than the requested level C (complex text analysis, synthesis, reasoning). Distractors are plausible but not equally challenging — D ('жыр жолы, шумақ') is somewhat reachable given the context of poetry, but A and C are fairly easy to eliminate.",
+              "improvement_suggestions": "To raise difficulty to level C, reframe the question to require deeper analytical reasoning — e.g., ask how the use of 'рәміз' contributes to the romantic style of Mahambет's poetry, or ask the student to identify which literary device is exemplified by the phrase 'бүкіл ғұмырының рәмізіне айналды' and justify their answer with reference to the text. This would require synthesis of vocabulary knowledge, stylistic analysis, and literary theory rather than simple definition recall.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the meaning of the word 'рәміз' (rәmiz) in the context of the provided text. In the Kazakh language, 'рәміз' translates to 'symbol', 'sign', or 'emblem' (e.g., 'мемлекеттік рәміздер' means 'state symbols'). Looking at the given options, Option B provides the definition 'Белгі, символ, бейнелі мән беретін нышан', which perfectly matches the meaning of 'рәміз' as a sign, symbol, or emblem with a figurative meaning. The other options (quote/excerpt, monument/heritage, poetry line/stanza) do not define this word.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.8,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-written, but it completely fails to meet the requested Level C (Hard) difficulty. Asking for the definition of a common word like 'рәміз' is a Level A (knowledge/comprehension) task that any literate speaker can answer.",
+              "improvement_suggestions": "To reach Level C, the question should require deep text analysis, such as identifying the author's underlying tone, analyzing the function of specific stylistic devices (e.g., how the romanticism elements serve the text's purpose), or synthesizing information to draw complex conclusions. Also, make all options similar in length and structure to avoid cueing the correct answer.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Зерттеушілер Махамбет шығармашылығын романтизммен байланыстыратыны туралы мәтін қандай дәлелдер келтіреді?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ақынның шығармалары шетел тілдеріне аударылған және халықаралық деңгейде танылған."
+        },
+        {
+          "label": "B",
+          "text": "Махамбет өз заманының ірі саяси қайраткері болған."
+        },
+        {
+          "label": "C",
+          "text": "Оның поэзиясында идеал батырдың бейнесі, еркіндікке шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі."
+        },
+        {
+          "label": "D",
+          "text": "Ақын табиғат пен адам арасындағы үйлесімді жырлаған."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтінде тікелей: «идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос» романтизмнің белгілері ретінде аталады. A мәтінде мүлдем айтылмаған. B саяси қызметі туралы жанама айтылса да, романтизмнің дәлелі ретінде берілмеген. D табиғат пен адам үйлесімі мәтінде романтизмнің негізі ретінде емес, тек стильдік тәсіл ретінде аталады.",
+      "critic_score": 7.133,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The question asks which evidence the text gives for researchers connecting Makhambet's work with Romanticism. In the final sentence of the text, it states: 'Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' This means researchers associate his poetry with Romantici\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks what evidence the text provides for researchers associating Makhambet's work with Romanticism. The last sentence of the text explicitly states: 'Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' This translates to: 'Researchers often associate Mak\n\n[google/gemini-3.1-pro-preview] answered C: To answer the question, we need to find the specific sentence in the text that explains why researchers associate Makhambet's work with romanticism. The text states: 'Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' (Researchers often associate Makhambet's work wi",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.133,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is clearly correct and uniquely supported by the final sentence of the text. However, the item is a literal retrieval question with the correct option nearly copied from the passage, so it does not align with the requested hard C-level analytical difficulty. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously supported by a verbatim sentence in the text, making this essentially a reading-comprehension retrieval task rather than a Level C analytical challenge. Distractors A and B are easily eliminated as they are not mentioned in the text at all, reducing the effective choice to C vs D. | [google/gemini-3.1-pro-preview] The question is factually correct and the language is flawless, but it completely fails the difficulty alignment. It is a trivial literal reading comprehension task (Level A) rather than the requested Level C (Hard) text analysis.",
+          "improvement_suggestions": "[openai/gpt-5.5] To reach level C, ask examinees to infer or justify the romantic features across multiple parts of the passage, compare them with another style/period, or identify how specific imagery and pathos function together rather than selecting a directly quoted sentence. | [anthropic/claude-sonnet-4.6] To reach Level C difficulty, rephrase the question to require inference or synthesis — e.g., ask the student to evaluate whether the text's evidence is sufficient to classify Makhambet as a Romantic poet, or to compare the Romantic features described with another literary movement. Strengthen distractors: A and B should be grounded in plausible but incorrect textual interpretations rather than information entirely absent from the text. Distractor D is the best distractor but could be made more tempting by explicitly linking 'nature and human harmony' to a known Romantic trope. | [google/gemini-3.1-pro-preview] To reach Level C difficulty, the question must require deep stylistic, structural, or thematic analysis rather than literal retrieval of a sentence. Avoid making the correct answer a direct copy-paste from the passage, as it allows candidates to answer correctly without any subject-specific knowledge.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks which evidence the text gives for researchers connecting Makhambet's work with Romanticism. In the final sentence of the text, it states: 'Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' This means researchers associate his poetry with Romanticism because it clearly contains the image of an ideal hero, an unlimited striving for freedom, and tragic pathos. Option C repeats this exact idea. Options A and B are not stated as reasons in the text, and option D mentions nature and human harmony, which is present in the text but not given as the reason for Romanticism.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.3,
+              "pass_fail": true,
+              "comments": "The keyed answer is clearly correct and uniquely supported by the final sentence of the text. However, the item is a literal retrieval question with the correct option nearly copied from the passage, so it does not align with the requested hard C-level analytical difficulty.",
+              "improvement_suggestions": "To reach level C, ask examinees to infer or justify the romantic features across multiple parts of the passage, compare them with another style/period, or identify how specific imagery and pathos function together rather than selecting a directly quoted sentence.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks what evidence the text provides for researchers associating Makhambet's work with Romanticism. The last sentence of the text explicitly states: 'Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' This translates to: 'Researchers often associate Makhambet's work with Romanticism because in it the image of an ideal hero, an infinite striving for freedom, and a tragic pathos are clearly felt.' This directly matches option C: 'Оның поэзиясында идеал батырдың бейнесі, еркіндікке шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' Options A, B, and D are not mentioned in the text as reasons for the Romanticism connection.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.3,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously supported by a verbatim sentence in the text, making this essentially a reading-comprehension retrieval task rather than a Level C analytical challenge. Distractors A and B are easily eliminated as they are not mentioned in the text at all, reducing the effective choice to C vs D.",
+              "improvement_suggestions": "To reach Level C difficulty, rephrase the question to require inference or synthesis — e.g., ask the student to evaluate whether the text's evidence is sufficient to classify Makhambet as a Romantic poet, or to compare the Romantic features described with another literary movement. Strengthen distractors: A and B should be grounded in plausible but incorrect textual interpretations rather than information entirely absent from the text. Distractor D is the best distractor but could be made more tempting by explicitly linking 'nature and human harmony' to a known Romantic trope.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To answer the question, we need to find the specific sentence in the text that explains why researchers associate Makhambet's work with romanticism. The text states: 'Зерттеушілер Махамбет шығармашылығын романтизм бағытымен жиі байланыстырады, өйткені онда идеал батырдың бейнесі, еркіндікке деген шексіз ұмтылыс пен трагедиялық пафос айқын сезіледі.' (Researchers often associate Makhambet's work with the romanticism movement, because in it the image of an ideal hero, an endless striving for freedom, and tragic pathos are clearly felt). Option C perfectly matches this explanation.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.8,
+              "pass_fail": true,
+              "comments": "The question is factually correct and the language is flawless, but it completely fails the difficulty alignment. It is a trivial literal reading comprehension task (Level A) rather than the requested Level C (Hard) text analysis.",
+              "improvement_suggestions": "To reach Level C difficulty, the question must require deep stylistic, structural, or thematic analysis rather than literal retrieval of a sentence. Avoid making the correct answer a direct copy-paste from the passage, as it allows candidates to answer correctly without any subject-specific knowledge.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіннің құрылымдық ерекшелігі туралы қай тұжырым дұрыс?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Мәтін хронологиялық принципте құрылған: ақынның балалық шағынан кәрілігіне дейінгі өмірі баяндалады."
+        },
+        {
+          "label": "B",
+          "text": "Мәтін Махамбет пен Исатайдың диалогы түрінде берілген."
+        },
+        {
+          "label": "C",
+          "text": "Мәтін тезистен басталып, дәлелдер мен мысалдар арқылы ақынның шығармашылық бейнесін жан-жақты ашатын талдамалы-сипаттамалы мақала үлгісінде жазылған."
+        },
+        {
+          "label": "D",
+          "text": "Мәтін тек Махамбеттің бір өлеңін талдауға арналған, жалпы шығармашылығы қамтылмаған."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтін ақынның орны туралы тезистен басталып, шығармашылығының тақырыбы, образдар жүйесі, тілдік стилі және әдеби бағыты туралы дәлелдермен жалғасады — бұл талдамалы-сипаттамалы мақала жанрының белгілері. A қате, өмірбаяндық хронология жоқ. B қате, диалог жоқ. D қате, мәтінде жалпы шығармашылық кешенді қарастырылған.",
+      "critic_score": 7.633,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 4.667,
+        "difficulty_alignment": 4.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The text begins with a general thesis: “Makhambet Otemisuly occupies a special place in the history of Kazakh poetry.” It then develops this thesis by giving supporting explanations: his poetry reflects the people’s spirit of freedom, his work is connected with the national-liberation uprising led with Isatay Taimanuly, and his poems portray courage, resistance to inequality, and free spirit. The \n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze the text's structural characteristics:\n\nThe text about Makhambet Ötemisuly:\n1. Opens with a thesis/introduction identifying Makhambet as a special poet in Kazakh poetry history\n2. Discusses his poetry as a mirror of the people's freedom spirit\n3. Mentions the national liberation uprising with Isatai Taimanuly\n4. Describes themes in his poetry (fearless warrior, free spirit against i\n\n[google/gemini-3.1-pro-preview] answered C: The text begins with a clear thesis statement: 'Махамбет Өтемісұлы — қазақ поэзиясының тарихында ерекше орын алатын ақын' (Makhambet Utemisuly is a poet who holds a special place in the history of Kazakh poetry). It then provides arguments and examples to support this thesis, such as the connection of his work to the national liberation uprising, a quote from his poem ('Мен жастан жауға тиістім'),",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 4.667,
+            "difficulty_alignment": 4.667,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.633,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely supported by the text. However, the distractors are mostly trivially false, and the task is much easier than level C because it only requires recognizing a basic expository structure rather than complex literary analysis. | [anthropic/claude-sonnet-4.6] The correct answer C is unambiguously supported by the text, and the explanation is thorough and accurate. However, distractors A, B, and D are too obviously wrong (no chronological life narrative, no dialogue, not limited to one poem), making elimination trivial. The question also falls short of true Level C difficulty — it tests reading comprehension and genre recognition rather than deep analytical synthesis across multiple knowledge domains. | [google/gemini-3.1-pro-preview] The question is factually correct and the language is excellent, but the distractors are too trivial for a Level C (Hard) question and suffer from length cueing.",
+          "improvement_suggestions": "[openai/gpt-5.5] Make distractors more plausible and comparable in length to C, for example by offering competing structural classifications such as problem-solution, comparison-contrast, or biographical-critical essay. To align with level C, ask candidates to justify the structural type using multiple textual indicators or distinguish structure from style, genre, and argumentation. | [anthropic/claude-sonnet-4.6] To raise difficulty to genuine Level C: (1) Replace obviously false distractors (especially B — 'dialogue format') with more plausible structural alternatives, e.g., 'Мәтін дедуктивті принципте: жалпы тұжырымнан жеке мысалдарға қарай өрбиді' vs 'Мәтін индуктивті принципте: жеке мысалдардан жалпы тұжырымға жетеді' — these require finer structural analysis. (2) Add a distractor that partially overlaps with C but misidentifies the genre (e.g., 'очерк' vs 'талдамалы мақала'). (3) Consider asking about a more nuanced structural feature (e.g., the role of the embedded quotation or the transition between thematic blocks) to require genuine text-analytical reasoning. | [google/gemini-3.1-pro-preview] Make the distractors more plausible and similar in length to the correct option. Instead of trivially false statements (like 'dialogue' or 'childhood to old age'), use plausible misinterpretations of the text's genre or structure (e.g., claiming it is a purely factual biographical report or a subjective essay).",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text begins with a general thesis: “Makhambet Otemisuly occupies a special place in the history of Kazakh poetry.” It then develops this thesis by giving supporting explanations: his poetry reflects the people’s spirit of freedom, his work is connected with the national-liberation uprising led with Isatay Taimanuly, and his poems portray courage, resistance to inequality, and free spirit. The text also includes an example/quotation: “Men zhastan zhauga tiistim,” and then analyzes stylistic features such as stormy and lightning-like imagery, metaphor, simile, and romanticism. Therefore, structurally it is an analytical-descriptive article: it starts with a thesis and expands it through arguments, examples, and literary characterization. Option A is incorrect because the text does not narrate his life chronologically from childhood to old age. Option B is incorrect because there is no dialogue between Makhambet and Isatay. Option D is incorrect because the text discusses Makhambet’s overall creative style, not only one poem.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 3.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.2,
+              "pass_fail": true,
+              "comments": "The keyed answer C is correct and uniquely supported by the text. However, the distractors are mostly trivially false, and the task is much easier than level C because it only requires recognizing a basic expository structure rather than complex literary analysis.",
+              "improvement_suggestions": "Make distractors more plausible and comparable in length to C, for example by offering competing structural classifications such as problem-solution, comparison-contrast, or biographical-critical essay. To align with level C, ask candidates to justify the structural type using multiple textual indicators or distinguish structure from style, genre, and argumentation.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let me analyze the text's structural characteristics:\n\nThe text about Makhambet Ötemisuly:\n1. Opens with a thesis/introduction identifying Makhambet as a special poet in Kazakh poetry history\n2. Discusses his poetry as a mirror of the people's freedom spirit\n3. Mentions the national liberation uprising with Isatai Taimanuly\n4. Describes themes in his poetry (fearless warrior, free spirit against inequality)\n5. Quotes a line from his poetry as an example\n6. Analyzes the imagery (stormy, lightning, flame-like images)\n7. Discusses his technique of connecting nature with human inner world\n8. Analyzes his language style (direct, clear, figurative; metaphor and simile)\n9. Concludes by connecting his work to Romanticism as a literary movement\n\nNow evaluating each option:\n\nA) 'The text is structured on a chronological principle: the poet's life from childhood to old age is narrated.' - FALSE. The text does not follow a chronological life narrative. There is no mention of childhood or old age.\n\nB) 'The text is presented as a dialogue between Makhambet and Isatai.' - FALSE. There is no dialogue format in the text.\n\nC) 'The text begins with a thesis, and through arguments and examples reveals the poet's creative image comprehensively in an analytical-descriptive article style.' - TRUE. The text starts with a thesis statement (Makhambet occupies a special place in Kazakh poetry), then provides arguments and examples (his themes, a quoted line, imagery analysis, language analysis, literary movement classification). This matches the analytical-descriptive article format.\n\nD) 'The text is dedicated only to analyzing one poem by Makhambet, his overall creativity is not covered.' - FALSE. The text covers his overall creativity broadly, not just one poem.\n\nThe correct answer is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The correct answer C is unambiguously supported by the text, and the explanation is thorough and accurate. However, distractors A, B, and D are too obviously wrong (no chronological life narrative, no dialogue, not limited to one poem), making elimination trivial. The question also falls short of true Level C difficulty — it tests reading comprehension and genre recognition rather than deep analytical synthesis across multiple knowledge domains.",
+              "improvement_suggestions": "To raise difficulty to genuine Level C: (1) Replace obviously false distractors (especially B — 'dialogue format') with more plausible structural alternatives, e.g., 'Мәтін дедуктивті принципте: жалпы тұжырымнан жеке мысалдарға қарай өрбиді' vs 'Мәтін индуктивті принципте: жеке мысалдардан жалпы тұжырымға жетеді' — these require finer structural analysis. (2) Add a distractor that partially overlaps with C but misidentifies the genre (e.g., 'очерк' vs 'талдамалы мақала'). (3) Consider asking about a more nuanced structural feature (e.g., the role of the embedded quotation or the transition between thematic blocks) to require genuine text-analytical reasoning.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text begins with a clear thesis statement: 'Махамбет Өтемісұлы — қазақ поэзиясының тарихында ерекше орын алатын ақын' (Makhambet Utemisuly is a poet who holds a special place in the history of Kazakh poetry). It then provides arguments and examples to support this thesis, such as the connection of his work to the national liberation uprising, a quote from his poem ('Мен жастан жауға тиістім'), and an analysis of his literary style (metaphors, similes, romanticism). This structure matches an analytical-descriptive article. Option A is incorrect because there is no chronological biography. Option B is incorrect because there is no dialogue. Option D is incorrect because the text discusses his overall creativity, not just a single poem. Therefore, Option C is the only correct statement about the structural feature of the text.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The question is factually correct and the language is excellent, but the distractors are too trivial for a Level C (Hard) question and suffer from length cueing.",
+              "improvement_suggestions": "Make the distractors more plausible and similar in length to the correct option. Instead of trivially false statements (like 'dialogue' or 'childhood to old age'), use plausible misinterpretations of the text's genre or structure (e.g., claiming it is a purely factual biographical report or a subjective essay).",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

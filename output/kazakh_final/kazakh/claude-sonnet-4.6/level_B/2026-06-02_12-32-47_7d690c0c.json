@@ -1,0 +1,140 @@
+{
+  "id": "7d690c0c-1de0-4a47-89ff-1f270fa50d48",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Биылғыдан гөрі өткен жазда жаңбыр мол жауды» деген сөйлемдегі «биылғыдан» сөзіне морфологиялық сипаттама беріңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Сын есім; -ғы жұрнағы арқылы жасалған қатыстық сын есім, сөйлемде заттанып, шығыс септікте тұр"
+    },
+    {
+      "label": "B",
+      "text": "Зат есім; «биыл» үстеуінен -ғы жұрнағы арқылы жасалып, шығыс септігінде тұр"
+    },
+    {
+      "label": "C",
+      "text": "Үстеу; мезгілдік мағынада қолданылып, шығыс септік жалғауын қабылдаған"
+    },
+    {
+      "label": "D",
+      "text": "Есімдік; сілтеу есімдігінен туындаған, шығыс септік тұлғасында тұр"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "«Биылғыдан» сөзі «биыл» мезгіл үстеуіне -ғы қатыстық сын есім тудырушы жұрнағы жалғану арқылы жасалған туынды қатыстық сын есім («биылғы»). Сөйлемде «биылғыдан гөрі» тіркесінде зат есімнің орнында қолданылып (заттанып), шығыс септігінің -дан жалғауын қабылдаған. Демек, бұл сөздің негізгі сөз табы — сын есім, бірақ контексте заттанып тұр. В нұсқасы қате, өйткені -ғы жұрнағы зат есім тудырмайды, сол себепті «биылғы» сөзін зат есім деп сипаттау дұрыс емес. С нұсқасы қате, себебі «биылғыдан» сөзі үстеу емес, сын есімнен заттанған форма; үстеулер септік жалғауын қабылдамайды. D нұсқасы қате, өйткені «биылғы» сілтеу есімдігінен туындамаған және есімдік болып табылмайды.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The word \"биылғыдан\" can be segmented as: \"биыл\" + \"-ғы\" + \"-дан\". \"Биыл\" is a temporal adverb meaning \"this year\". The suffix \"-ғы/-гі, -қы/-кі\" forms a relative adjective from words denoting time or place, so \"биылғы\" means \"this year's / belonging to this year\" and is a қатыстық сын есім (relative adjective). In the sentence \"Биылғыдан гөрі өткен жазда жаңбыр мол жауды\", the adjective is used s\n\n[anthropic/claude-sonnet-4.6] answered A: Let's analyze the word 'биылғыдан' in the sentence 'Биылғыдан гөрі өткен жазда жаңбыр мол жауды'.\n\nStep 1: Break down the word morphologically.\n- Base: 'биыл' (this year) — an adverb of time (мезгіл үстеуі)\n- Suffix '-ғы': this is a relational/attributive suffix (қатыстық жұрнақ) that derives adjectives from various parts of speech, including adverbs. 'Биылғы' means 'of this year' / 'this year's' \n\n[google/gemini-3.1-pro-preview] answered A: Let's analyze the morphological structure of the word 'биылғыдан'. The root is 'биыл', which is an adverb of time (мезгіл үстеуі). The suffix '-ғы' is an adjective-forming suffix that creates relative adjectives (қатыстық сын есім) from adverbs of time or nouns in the locative case. Thus, 'биылғы' is a relative adjective meaning 'of this year'. In the sentence, it takes the ablative case suffix '-",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies биылғыдан as a substantivized relative adjective formed with -ғы and marked by the ablative case. The item fits level B because it requires applying morphology in sentence context, though one distractor is quite obviously wrong. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and requires genuine morphological analysis in context (substantivization of a relational adjective). The correct answer is clearly A, and the explanation is thorough and accurate. Distractors B and C are plausible enough to trap teachers with partial knowledge, though D (pronoun) is relatively easy to eliminate. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the morphological analysis of a substantivized adjective in context, and features plausible distractors based on common misconceptions.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The word \"биылғыдан\" can be segmented as: \"биыл\" + \"-ғы\" + \"-дан\". \"Биыл\" is a temporal adverb meaning \"this year\". The suffix \"-ғы/-гі, -қы/-кі\" forms a relative adjective from words denoting time or place, so \"биылғы\" means \"this year's / belonging to this year\" and is a қатыстық сын есім (relative adjective). In the sentence \"Биылғыдан гөрі өткен жазда жаңбыр мол жауды\", the adjective is used s\n\n[anthropic/claude-sonnet-4.6] answered A: Let's analyze the word 'биылғыдан' in the sentence 'Биылғыдан гөрі өткен жазда жаңбыр мол жауды'.\n\nStep 1: Break down the word morphologically.\n- Base: 'биыл' (this year) — an adverb of time (мезгіл үстеуі)\n- Suffix '-ғы': this is a relational/attributive suffix (қатыстық жұрнақ) that derives adjectives from various parts of speech, including adverbs. 'Биылғы' means 'of this year' / 'this year's' \n\n[google/gemini-3.1-pro-preview] answered A: Let's analyze the morphological structure of the word 'биылғыдан'. The root is 'биыл', which is an adverb of time (мезгіл үстеуі). The suffix '-ғы' is an adjective-forming suffix that creates relative adjectives (қатыстық сын есім) from adverbs of time or nouns in the locative case. Thus, 'биылғы' is a relative adjective meaning 'of this year'. In the sentence, it takes the ablative case suffix '-",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies биылғыдан as a substantivized relative adjective formed with -ғы and marked by the ablative case. The item fits level B because it requires applying morphology in sentence context, though one distractor is quite obviously wrong. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and requires genuine morphological analysis in context (substantivization of a relational adjective). The correct answer is clearly A, and the explanation is thorough and accurate. Distractors B and C are plausible enough to trap teachers with partial knowledge, though D (pronoun) is relatively easy to eliminate. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests the morphological analysis of a substantivized adjective in context, and features plausible distractors based on common misconceptions.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The word \"биылғыдан\" can be segmented as: \"биыл\" + \"-ғы\" + \"-дан\". \"Биыл\" is a temporal adverb meaning \"this year\". The suffix \"-ғы/-гі, -қы/-кі\" forms a relative adjective from words denoting time or place, so \"биылғы\" means \"this year's / belonging to this year\" and is a қатыстық сын есім (relative adjective). In the sentence \"Биылғыдан гөрі өткен жазда жаңбыр мол жауды\", the adjective is used substantively with an omitted noun understood from context, and it takes the ablative case ending \"-дан\" because of the comparative construction \"-дан гөрі\". Therefore the correct morphological description is: adjective; relative adjective made with -ғы; substantivized in the sentence; in the ablative case.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies биылғыдан as a substantivized relative adjective formed with -ғы and marked by the ablative case. The item fits level B because it requires applying morphology in sentence context, though one distractor is quite obviously wrong.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the word 'биылғыдан' in the sentence 'Биылғыдан гөрі өткен жазда жаңбыр мол жауды'.\n\nStep 1: Break down the word morphologically.\n- Base: 'биыл' (this year) — an adverb of time (мезгіл үстеуі)\n- Suffix '-ғы': this is a relational/attributive suffix (қатыстық жұрнақ) that derives adjectives from various parts of speech, including adverbs. 'Биылғы' means 'of this year' / 'this year's' — a relational adjective (қатыстық сын есім).\n- Then '-дан': this is the ablative case suffix (шығыс септік жалғауы).\n\nStep 2: Determine the part of speech.\n'Биылғы' is formed from the adverb 'биыл' using the suffix '-ғы', making it a relational adjective (қатыстық сын есім). When an adjective takes a case ending (like ablative '-дан') without a noun following it, it undergoes substantivization (заттану) — it functions as a noun in the sentence.\n\nSo 'биылғыдан' = биыл + -ғы (relational adjective suffix) + -дан (ablative case ending), where the adjective has been substantivized.\n\nStep 3: Evaluate the options.\n- Option A: 'Сын есім; -ғы жұрнағы арқылы жасалған қатыстық сын есім, сөйлемде заттанып, шығыс септікте тұр' — This says it is an adjective formed by the suffix -ғы (relational adjective), substantivized in the sentence, in ablative case. This is accurate.\n- Option B: 'Зат есім; «биыл» үстеуінен -ғы жұрнағы арқылы жасалып, шығыс септігінде тұр' — This calls it a noun directly, which is not quite right because the primary word class is adjective (сын есім), and it's only functioning as a noun (substantivized) in this context.\n- Option C: Adverb taking ablative case — incorrect, as adverbs typically don't take case endings in standard Kazakh grammar.\n- Option D: Pronoun — clearly incorrect.\n\nThe most precise morphological description is Option A: it is a relational adjective (қатыстық сын есім) formed by the suffix -ғы from the adverb 'биыл', and in this sentence it is substantivized and stands in the ablative case (шығыс септік).",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and requires genuine morphological analysis in context (substantivization of a relational adjective). The correct answer is clearly A, and the explanation is thorough and accurate. Distractors B and C are plausible enough to trap teachers with partial knowledge, though D (pronoun) is relatively easy to eliminate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the morphological structure of the word 'биылғыдан'. The root is 'биыл', which is an adverb of time (мезгіл үстеуі). The suffix '-ғы' is an adjective-forming suffix that creates relative adjectives (қатыстық сын есім) from adverbs of time or nouns in the locative case. Thus, 'биылғы' is a relative adjective meaning 'of this year'. In the sentence, it takes the ablative case suffix '-дан' (шығыс септік жалғауы). Adjectives normally do not take case suffixes unless they are substantivized (заттанған), meaning they function as a noun in the context of the sentence. Therefore, 'биылғыдан' is a relative adjective formed by the suffix '-ғы', which has been substantivized and is in the ablative case. This perfectly matches Option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurately tests the morphological analysis of a substantivized adjective in context, and features plausible distractors based on common misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:32:47.058601+00:00",
+  "generation_attempts": 2
+}

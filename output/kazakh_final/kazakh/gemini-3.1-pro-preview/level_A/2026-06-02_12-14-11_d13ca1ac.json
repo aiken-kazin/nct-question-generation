@@ -1,0 +1,140 @@
+{
+  "id": "d13ca1ac-f01e-4ff2-84e2-6b837f1d3476",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Қалау рай тұлғасында тұрған етістігі бар сөйлемді табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ол ертең ауылға жүрмек."
+    },
+    {
+      "label": "B",
+      "text": "Егер уақытында келсе, жұмыс өнеді."
+    },
+    {
+      "label": "C",
+      "text": "Менің бұл мәселені тезірек шешкім келеді."
+    },
+    {
+      "label": "D",
+      "text": "Тапсырманы міндетті түрде уақытында орындаңдар."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "С нұсқасындағы «шешкім келеді» етістігі қалау рай тұлғасында тұр (етістік түбірі + -қы/-кі жұрнағы + тәуелдік жалғауы + кел көмекші етістігі). Қалау рай іс-әрекеттің жүзеге асуын, орындалуын қалауды, аңсауды білдіреді. А нұсқасындағы «жүрмек» – мақсатты келер шақ (-мақ/-мек), В нұсқасындағы «келсе» – шартты рай (-са/-се), D нұсқасындағы «орындаңдар» – бұйрық рай (ІІ жақ, көпше түрі). Бұл нұсқалар қате, себебі олар басқа грамматикалық формаларға жатады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.767,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The question asks for the sentence containing a verb in the Kazakh desiderative mood (қалау рай). Қалау рай expresses a wish/desire and is commonly formed with the verbal noun suffix -ғы/-гі/-қы/-кі + possessive ending + келеді, e.g., барғым келеді, айтқың келеді. Option A: “жүрмек” is the purposive/intended future form (-мақ/-мек), not қалау рай. Option B: “келсе” has the conditional suffix -се, \n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to find the sentence containing a verb in the 'қалау рай' (optative/desiderative mood) form in Kazakh.\n\nLet's analyze each option:\n\nA) 'Ол ертең ауылға жүрмек.' — The verb 'жүрмек' ends in '-мек', which is the suffix for 'болжалды рай' (inferential/presumptive mood), not қалау рай.\n\nB) 'Егер уақытында келсе, жұмыс өнеді.' — 'келсе' is in the conditional mood (шартты рай), not қал\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence containing a verb in the 'қалау рай' (desiderative/optative mood). Let's analyze the verbs in each option:\n\nA) 'жүрмек' - formed with the suffix -мақ/-мек, which indicates 'мақсатты келер шақ' (intentional future tense).\nB) 'келсе' - formed with the suffix -са/-се, which indicates 'шартты рай' (conditional mood).\nC) 'шешкім келеді' - formed with the verb ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.767,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes desiderative mood from future, conditional, and imperative forms. The item is clear, concise, and well aligned with basic direct recognition of a grammatical form. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) unambiguously exemplifies қалау рай via the '-кім келеді' construction, and each distractor targets a distinct, commonly confused mood (болжалды/мақсатты келер шақ, шартты рай, бұйрық рай). Language is natural and terminology matches standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors effectively test the knowledge of different verb moods.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The question asks for the sentence containing a verb in the Kazakh desiderative mood (қалау рай). Қалау рай expresses a wish/desire and is commonly formed with the verbal noun suffix -ғы/-гі/-қы/-кі + possessive ending + келеді, e.g., барғым келеді, айтқың келеді. Option A: “жүрмек” is the purposive/intended future form (-мақ/-мек), not қалау рай. Option B: “келсе” has the conditional suffix -се, \n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to find the sentence containing a verb in the 'қалау рай' (optative/desiderative mood) form in Kazakh.\n\nLet's analyze each option:\n\nA) 'Ол ертең ауылға жүрмек.' — The verb 'жүрмек' ends in '-мек', which is the suffix for 'болжалды рай' (inferential/presumptive mood), not қалау рай.\n\nB) 'Егер уақытында келсе, жұмыс өнеді.' — 'келсе' is in the conditional mood (шартты рай), not қал\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence containing a verb in the 'қалау рай' (desiderative/optative mood). Let's analyze the verbs in each option:\n\nA) 'жүрмек' - formed with the suffix -мақ/-мек, which indicates 'мақсатты келер шақ' (intentional future tense).\nB) 'келсе' - formed with the suffix -са/-се, which indicates 'шартты рай' (conditional mood).\nC) 'шешкім келеді' - formed with the verb ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.767,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes desiderative mood from future, conditional, and imperative forms. The item is clear, concise, and well aligned with basic direct recognition of a grammatical form. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) unambiguously exemplifies қалау рай via the '-кім келеді' construction, and each distractor targets a distinct, commonly confused mood (болжалды/мақсатты келер шақ, шартты рай, бұйрық рай). Language is natural and terminology matches standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors effectively test the knowledge of different verb moods.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the sentence containing a verb in the Kazakh desiderative mood (қалау рай). Қалау рай expresses a wish/desire and is commonly formed with the verbal noun suffix -ғы/-гі/-қы/-кі + possessive ending + келеді, e.g., барғым келеді, айтқың келеді. Option A: “жүрмек” is the purposive/intended future form (-мақ/-мек), not қалау рай. Option B: “келсе” has the conditional suffix -се, so it is шартты рай. Option C: “шешкім келеді” is formed as шеш- + -кі + -м + келеді, meaning “I want to solve,” which is қалау рай. Option D: “орындаңдар” is an imperative form, бұйрық рай. Therefore, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately distinguishes desiderative mood from future, conditional, and imperative forms. The item is clear, concise, and well aligned with basic direct recognition of a grammatical form.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to find the sentence containing a verb in the 'қалау рай' (optative/desiderative mood) form in Kazakh.\n\nLet's analyze each option:\n\nA) 'Ол ертең ауылға жүрмек.' — The verb 'жүрмек' ends in '-мек', which is the suffix for 'болжалды рай' (inferential/presumptive mood), not қалау рай.\n\nB) 'Егер уақытында келсе, жұмыс өнеді.' — 'келсе' is in the conditional mood (шартты рай), not қалау рай.\n\nC) 'Менің бұл мәселені тезірек шешкім келеді.' — 'шешкім келеді' — here 'шешкім' is formed from the verb 'шешу' with the suffix '-гім/-кім' (possessive form of the verbal noun indicating desire) combined with 'келеді'. The construction '-гім/-кім келеді' is the standard form of қалау рай (optative/desiderative mood) in Kazakh. This expresses the speaker's desire/wish: 'I want to solve this problem faster.'\n\nD) 'Тапсырманы міндетті түрде уақытында орындаңдар.' — 'орындаңдар' is in the imperative mood (бұйрық рай), not қалау рай.\n\nTherefore, the sentence with a verb in қалау рай (desiderative mood) is C, where 'шешкім келеді' expresses the speaker's desire/wish.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (C) unambiguously exemplifies қалау рай via the '-кім келеді' construction, and each distractor targets a distinct, commonly confused mood (болжалды/мақсатты келер шақ, шартты рай, бұйрық рай). Language is natural and terminology matches standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence containing a verb in the 'қалау рай' (desiderative/optative mood). Let's analyze the verbs in each option:\n\nA) 'жүрмек' - formed with the suffix -мақ/-мек, which indicates 'мақсатты келер шақ' (intentional future tense).\nB) 'келсе' - formed with the suffix -са/-се, which indicates 'шартты рай' (conditional mood).\nC) 'шешкім келеді' - formed with the verb stem 'шеш-' + suffix '-кі' + 1st person possessive '-м' + auxiliary verb 'келеді'. This is the standard grammatical structure for 'қалау рай', expressing a wish or desire (I want to solve).\nD) 'орындаңдар' - formed with the 2nd person plural imperative suffix '-ңдар', which indicates 'бұйрық рай' (imperative mood).\n\nTherefore, option C contains the verb in the 'қалау рай' form.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors effectively test the knowledge of different verb moods.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:14:11.201302+00:00",
+  "generation_attempts": 1
+}

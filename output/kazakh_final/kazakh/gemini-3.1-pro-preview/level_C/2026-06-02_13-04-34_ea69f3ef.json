@@ -1,0 +1,140 @@
+{
+  "id": "ea69f3ef-a82c-40e4-9c62-4154e67f6ebb",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген сөйлемнің синтаксистік табиғатына қатысты дұрыс тұжырымды анықтаңыз:\n«Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».",
+  "options": [
+    {
+      "label": "A",
+      "text": "Бірінші сыңары мен қалған сыңарларының арасы түсіндірмелі, ал соңғы екі сыңары өз ішінде талғаулы салалас қатынастағы көп сыңарлы салалас сөйлем."
+    },
+    {
+      "label": "B",
+      "text": "Бірінші сыңары салдар, қалған екі сыңары себеп мәнін білдіретін, ал соңғы екі сыңары өзара ыңғайлас қатынастағы көп сыңарлы салалас сөйлем."
+    },
+    {
+      "label": "C",
+      "text": "Бірінші сыңары мен қалған сыңарларының арасы түсіндірмелі жалғаулықсыз салалас, ал соңғы екі сыңары өз ішінде кезектес салалас қатынастағы көп сыңарлы сөйлем."
+    },
+    {
+      "label": "D",
+      "text": "Алғашқы сыңары басыңқы, ал соңғы екі сыңары оған мағыналық жағынан тәуелді бірыңғай бағыныңқы қызметіндегі сабақтас құрмалас сөйлем."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Бұл – үш жай сөйлемнен (компоненттен) құралған көп сыңарлы салалас құрмалас сөйлем. Сөйлемнің бірінші сыңары («Ел іші даусыз болмайды») жалпы ойды білдіріп, одан кейінгі екі сыңар оның мәнін ашып, нақтылап түсіндіріп тұр. Сондықтан макроқұрылым деңгейіндегі қатынас – түсіндірмелі салалас (қос нүкте қойылу себебі де осында). Ал екінші және үшінші сыңарлар («кейде мал өріске сыймайды», «кейде ағайынның сөзі жараспайды») «кейде» қайталама жалғаулығы арқылы байланысып, іс-әрекеттің, құбылыстың кезектесіп келуін білдіретіндіктен, микроқұрылым деңгейінде өзара кезектес салалас құрайды. «Кейде» шылауы талғаулы емес, кезектес салаластың көрсеткіші болғандықтан А нұсқасы қате. Баяндауыштары тиянақты формада («болмайды», «сыймайды», «жараспайды») тұрғандықтан, бұл сөйлем сабақтас құрмалас (D нұсқасы) бола алмайды.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence has three predicative clauses: 1) \"Ел іші даусыз болмайды\"; 2) \"кейде мал өріске сыймайды\"; 3) \"кейде ағайынның сөзі жараспайды\". The colon after the first clause signals that the following clauses explain or clarify the general statement in the first clause, so the relation between the first clause and the remaining clauses is explanatory asyndetic coordination (түсіндірмелі жалғаулы\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: «Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».\n\nThe sentence has three parts (сыңарлар):\n1. «Ел іші даусыз болмайды» — first clause\n2. «кейде мал өріске сыймайды» — second clause\n3. «кейде ағайынның сөзі жараспайды» — third clause\n\nNow let's analyze the relationships:\n\n**Between clause 1 and clauses 2-3:**\nThe colon (:) after the f\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the syntactic structure of the given sentence: «Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».\n\n1. The sentence consists of three independent clauses (сыңарлар), making it a multi-clause coordinate compound sentence (көп сыңарлы салалас құрмалас сөйлем).\n- Clause 1: Ел іші даусыз болмайды\n- Clause 2: кейде мал өріске сыймайды\n- Clause 3: кейде ағ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the explanatory asyndetic relation plus the internal alternating coordination marked by “кейде ... кейде”. The item is well written and has plausible distractors, though the task is closer to upper-intermediate syntactic classification than a very high-level C item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and genuinely tests advanced syntactic analysis at level C. The correct answer (C) is clearly defensible, and the distractors represent plausible misconceptions — A confuses кезектес with талғаулы, B misidentifies the semantic relationship as cause-effect, and D incorrectly classifies the sentence as сабақтас. Language and terminology are accurate and natural. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It requires a deep understanding of both macro and micro syntactic structures of multi-clause compound sentences, perfectly matching the high difficulty level.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence has three predicative clauses: 1) \"Ел іші даусыз болмайды\"; 2) \"кейде мал өріске сыймайды\"; 3) \"кейде ағайынның сөзі жараспайды\". The colon after the first clause signals that the following clauses explain or clarify the general statement in the first clause, so the relation between the first clause and the remaining clauses is explanatory asyndetic coordination (түсіндірмелі жалғаулы\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: «Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».\n\nThe sentence has three parts (сыңарлар):\n1. «Ел іші даусыз болмайды» — first clause\n2. «кейде мал өріске сыймайды» — second clause\n3. «кейде ағайынның сөзі жараспайды» — third clause\n\nNow let's analyze the relationships:\n\n**Between clause 1 and clauses 2-3:**\nThe colon (:) after the f\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the syntactic structure of the given sentence: «Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».\n\n1. The sentence consists of three independent clauses (сыңарлар), making it a multi-clause coordinate compound sentence (көп сыңарлы салалас құрмалас сөйлем).\n- Clause 1: Ел іші даусыз болмайды\n- Clause 2: кейде мал өріске сыймайды\n- Clause 3: кейде ағ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the explanatory asyndetic relation plus the internal alternating coordination marked by “кейде ... кейде”. The item is well written and has plausible distractors, though the task is closer to upper-intermediate syntactic classification than a very high-level C item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and genuinely tests advanced syntactic analysis at level C. The correct answer (C) is clearly defensible, and the distractors represent plausible misconceptions — A confuses кезектес with талғаулы, B misidentifies the semantic relationship as cause-effect, and D incorrectly classifies the sentence as сабақтас. Language and terminology are accurate and natural. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It requires a deep understanding of both macro and micro syntactic structures of multi-clause compound sentences, perfectly matching the high difficulty level.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence has three predicative clauses: 1) \"Ел іші даусыз болмайды\"; 2) \"кейде мал өріске сыймайды\"; 3) \"кейде ағайынның сөзі жараспайды\". The colon after the first clause signals that the following clauses explain or clarify the general statement in the first clause, so the relation between the first clause and the remaining clauses is explanatory asyndetic coordination (түсіндірмелі жалғаулықсыз салалас). The last two clauses are connected by the repeated word \"кейде ... кейде ...\". In Kazakh syntax, correlatives such as \"бірде ... бірде\", \"біресе ... біресе\", \"кейде ... кейде\" express alternating coordination (кезектес салалас), not disjunctive choice (талғаулы) and not simple additive coordination (ыңғайлас). Therefore the correct description is: a multi-clause compound sentence where the first clause and the following clauses are in an explanatory asyndetic coordinate relation, while the last two clauses are internally in an alternating coordinate relation.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies the explanatory asyndetic relation plus the internal alternating coordination marked by “кейде ... кейде”. The item is well written and has plausible distractors, though the task is closer to upper-intermediate syntactic classification than a very high-level C item.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence: «Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».\n\nThe sentence has three parts (сыңарлар):\n1. «Ел іші даусыз болмайды» — first clause\n2. «кейде мал өріске сыймайды» — second clause\n3. «кейде ағайынның сөзі жараспайды» — third clause\n\nNow let's analyze the relationships:\n\n**Between clause 1 and clauses 2-3:**\nThe colon (:) after the first clause signals that clauses 2 and 3 explain/elaborate on clause 1. This is a 'түсіндірмелі' (explanatory/explicative) relationship — the first clause makes a general statement, and the following clauses explain it. This is a 'жалғаулықсыз салалас' (asyndetic/conjunctionless coordinate) relationship of the explanatory type.\n\n**Between clauses 2 and 3:**\nBoth clauses begin with «кейде» (sometimes... sometimes...). The word «кейде...кейде» is a correlative conjunction indicating alternating/sequential actions — this is 'кезектес салалас' (alternating coordinate) relationship in Kazakh syntax. The кезектес салалас сөйлем uses кейде...кейде, бірде...бірде type conjunctions.\n\nNow let's check the options:\n\n**Option A:** Says the relationship between first and remaining clauses is 'түсіндірмелі' (explanatory), and the last two clauses are in 'талғаулы' (disjunctive/selective) coordinate relationship. — The last two clauses use «кейде...кейде» which is NOT талғаулы (талғаулы uses я...я, не...не, әлде...әлде). So A is incorrect.\n\n**Option B:** Says first clause expresses result (салдар), the other two express cause (себеп), and the last two are in 'ыңғайлас' (copulative) relationship. — The first clause is a general statement, not specifically a result. The relationship is explanatory, not cause-effect. Also «кейде...кейде» is not ыңғайлас. So B is incorrect.\n\n**Option C:** Says the relationship between first clause and the rest is 'түсіндірмелі жалғаулықсыз салалас' (explanatory asyndetic coordinate), and the last two clauses are in 'кезектес салалас' (alternating coordinate) relationship — this is a multi-part (көп сыңарлы) compound sentence. — This matches perfectly: the colon indicates explanatory asyndetic coordination, and «кейде...кейде» indicates кезектес (alternating) coordination. So C is correct.\n\n**Option D:** Says it's a subordinate complex sentence (сабақтас құрмалас сөйлем) with the first clause as the main clause and the last two as homogeneous subordinate clauses. — This is incorrect because the sentence is coordinate (салалас), not subordinate (сабақтас).\n\nTherefore, the correct answer is **C**.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and genuinely tests advanced syntactic analysis at level C. The correct answer (C) is clearly defensible, and the distractors represent plausible misconceptions — A confuses кезектес with талғаулы, B misidentifies the semantic relationship as cause-effect, and D incorrectly classifies the sentence as сабақтас. Language and terminology are accurate and natural.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the syntactic structure of the given sentence: «Ел іші даусыз болмайды: кейде мал өріске сыймайды, кейде ағайынның сөзі жараспайды».\n\n1. The sentence consists of three independent clauses (сыңарлар), making it a multi-clause coordinate compound sentence (көп сыңарлы салалас құрмалас сөйлем).\n- Clause 1: Ел іші даусыз болмайды\n- Clause 2: кейде мал өріске сыймайды\n- Clause 3: кейде ағайынның сөзі жараспайды\n\n2. The relationship between Clause 1 and the subsequent clauses (2 and 3):\nClause 1 makes a general statement, and the following clauses explain or clarify it. This is indicated by the colon (:). Since there are no conjunctions connecting the first clause to the rest, it is an explanatory asyndetic coordinate relationship (түсіндірмелі жалғаулықсыз салалас).\n\n3. The relationship between Clause 2 and Clause 3:\nThese two clauses are connected by the repeating conjunctions «кейде ..., кейде ...» (sometimes ..., sometimes ...). In Kazakh syntax, these conjunctions are the primary markers of alternating coordinate clauses (кезектес салалас құрмалас сөйлем), where actions or events occur alternately.\n\nComparing this analysis with the given options, Option C perfectly describes the syntactic nature of the sentence: the first clause and the rest have an explanatory asyndetic coordinate relationship, while the last two clauses have an alternating coordinate relationship.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It requires a deep understanding of both macro and micro syntactic structures of multi-clause compound sentences, perfectly matching the high difficulty level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:04:34.219551+00:00",
+  "generation_attempts": 1
+}
