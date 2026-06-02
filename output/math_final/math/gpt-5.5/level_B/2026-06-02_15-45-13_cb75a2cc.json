@@ -1,0 +1,209 @@
+{
+  "id": "cb75a2cc-9b8a-4644-83c8-836bd21d2317",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "powers_roots",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$\\sqrt[3]{32^{x-1}}\\cdot\\sqrt{2^{x+2}}=16\\sqrt[6]{2}$ теңдеуінің түбірін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{21}{13}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{25}{13}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{29}{13}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{27}{13}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "$32=2^5$, $16=2^4$ екенін қолданамыз. Сонда $\\sqrt[3]{32^{x-1}}=(2^5)^{\\frac{x-1}{3}}=2^{\\frac{5(x-1)}{3}}$, ал $\\sqrt{2^{x+2}}=2^{\\frac{x+2}{2}}$. Оң жақ бөлік: $16\\sqrt[6]{2}=2^4\\cdot 2^{\\frac{1}{6}}=2^{\\frac{25}{6}}$. Сондықтан $2^{\\frac{5(x-1)}{3}}\\cdot 2^{\\frac{x+2}{2}}=2^{\\frac{25}{6}}$. Негіздері бірдей болғандықтан, дәреже көрсеткіштерін теңестіреміз: $\\frac{5(x-1)}{3}+\\frac{x+2}{2}=\\frac{25}{6}$. Ортақ бөлімге келтірсек: $\\frac{10x-10+3x+6}{6}=\\frac{25}{6}$, яғни $13x-4=25$. Бұдан $13x=29$, $x=\\frac{29}{13}$.",
+  "latex_formulas": [
+    "$\\sqrt[n]{a^m}=a^{\\frac{m}{n}}$",
+    "$a^p\\cdot a^q=a^{p+q}$",
+    "$a^p=a^q\\Rightarrow p=q\\ (a>0,\\ a\\ne 1)$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Rewrite all terms as powers of 2. Since 32 = 2^5, we have cube root of 32^(x-1) = (32^(x-1))^(1/3) = ((2^5)^(x-1))^(1/3) = 2^(5(x-1)/3). Also, sqrt(2^(x+2)) = (2^(x+2))^(1/2) = 2^((x+2)/2). The left side becomes 2^(5(x-1)/3) * 2^((x+2)/2) = 2^(5(x-1)/3 + (x+2)/2). Combine exponents: 5(x-1)/3 + (x+2)/2 = (10(x-1) + 3(x+2))/6 = (10x - 10 + 3x + 6)/6 = (13x - 4)/6. The right side is 16 * sixth root o\n\n[anthropic/claude-sonnet-4.6] answered C: We need to solve: ∛(32^(x-1)) · √(2^(x+2)) = 16·⁶√2\n\nStep 1: Express everything as powers of 2.\n- 32 = 2^5, so 32^(x-1) = 2^(5(x-1))\n- ∛(32^(x-1)) = 2^(5(x-1)/3)\n- √(2^(x+2)) = 2^((x+2)/2)\n- 16 = 2^4\n- ⁶√2 = 2^(1/6)\n\nStep 2: Left side:\n2^(5(x-1)/3) · 2^((x+2)/2) = 2^(5(x-1)/3 + (x+2)/2)\n\nStep 3: Right side:\n2^4 · 2^(1/6) = 2^(4 + 1/6) = 2^(25/6)\n\nStep 4: Set exponents equal:\n5(x-1)/3 + (x+2)/2 = 2\n\n[google/gemini-3.1-pro-preview] answered C: To solve the equation \\(\\sqrt[3]{32^{x-1}} \\cdot \\sqrt{2^{x+2}} = 16\\sqrt[6]{2}\\), we can express all terms as powers of base 2.\n\nFirst, rewrite the terms on the left side:\n1. \\(32 = 2^5\\), so \\(32^{x-1} = (2^5)^{x-1} = 2^{5x-5}\\).\n2. The cube root can be written as a fractional exponent: \\(\\sqrt[3]{32^{x-1}} = (2^{5x-5})^{\\frac{1}{3}} = 2^{\\frac{5x-5}{3}}\\).\n3. The square root can also be written",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous. The item fits medium difficulty reasonably well, requiring conversion to common bases, exponent rules, and solving a linear equation. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer (29/13), plausible distractors reachable by specific arithmetic errors, appropriate difficulty for Level B, and correct Kazakh mathematical terminology throughout. | [google/gemini-3.1-pro-preview] The question is excellent. It perfectly aligns with the requested difficulty level, the distractors are based on common arithmetic errors, and the LaTeX and Kazakh phrasing are flawless.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='29/13' expected='29/13'",
+      "raw": {
+        "ok": true,
+        "stdout": "29/13",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Rewrite all terms as powers of 2. Since 32 = 2^5, we have cube root of 32^(x-1) = (32^(x-1))^(1/3) = ((2^5)^(x-1))^(1/3) = 2^(5(x-1)/3). Also, sqrt(2^(x+2)) = (2^(x+2))^(1/2) = 2^((x+2)/2). The left side becomes 2^(5(x-1)/3) * 2^((x+2)/2) = 2^(5(x-1)/3 + (x+2)/2). Combine exponents: 5(x-1)/3 + (x+2)/2 = (10(x-1) + 3(x+2))/6 = (10x - 10 + 3x + 6)/6 = (13x - 4)/6. The right side is 16 * sixth root o\n\n[anthropic/claude-sonnet-4.6] answered C: We need to solve: ∛(32^(x-1)) · √(2^(x+2)) = 16·⁶√2\n\nStep 1: Express everything as powers of 2.\n- 32 = 2^5, so 32^(x-1) = 2^(5(x-1))\n- ∛(32^(x-1)) = 2^(5(x-1)/3)\n- √(2^(x+2)) = 2^((x+2)/2)\n- 16 = 2^4\n- ⁶√2 = 2^(1/6)\n\nStep 2: Left side:\n2^(5(x-1)/3) · 2^((x+2)/2) = 2^(5(x-1)/3 + (x+2)/2)\n\nStep 3: Right side:\n2^4 · 2^(1/6) = 2^(4 + 1/6) = 2^(25/6)\n\nStep 4: Set exponents equal:\n5(x-1)/3 + (x+2)/2 = 2\n\n[google/gemini-3.1-pro-preview] answered C: To solve the equation \\(\\sqrt[3]{32^{x-1}} \\cdot \\sqrt{2^{x+2}} = 16\\sqrt[6]{2}\\), we can express all terms as powers of base 2.\n\nFirst, rewrite the terms on the left side:\n1. \\(32 = 2^5\\), so \\(32^{x-1} = (2^5)^{x-1} = 2^{5x-5}\\).\n2. The cube root can be written as a fractional exponent: \\(\\sqrt[3]{32^{x-1}} = (2^{5x-5})^{\\frac{1}{3}} = 2^{\\frac{5x-5}{3}}\\).\n3. The square root can also be written",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous. The item fits medium difficulty reasonably well, requiring conversion to common bases, exponent rules, and solving a linear equation. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer (29/13), plausible distractors reachable by specific arithmetic errors, appropriate difficulty for Level B, and correct Kazakh mathematical terminology throughout. | [google/gemini-3.1-pro-preview] The question is excellent. It perfectly aligns with the requested difficulty level, the distractors are based on common arithmetic errors, and the LaTeX and Kazakh phrasing are flawless.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='29/13' expected='29/13'",
+        "raw": {
+          "ok": true,
+          "stdout": "29/13",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Rewrite all terms as powers of 2. Since 32 = 2^5, we have cube root of 32^(x-1) = (32^(x-1))^(1/3) = ((2^5)^(x-1))^(1/3) = 2^(5(x-1)/3). Also, sqrt(2^(x+2)) = (2^(x+2))^(1/2) = 2^((x+2)/2). The left side becomes 2^(5(x-1)/3) * 2^((x+2)/2) = 2^(5(x-1)/3 + (x+2)/2). Combine exponents: 5(x-1)/3 + (x+2)/2 = (10(x-1) + 3(x+2))/6 = (10x - 10 + 3x + 6)/6 = (13x - 4)/6. The right side is 16 * sixth root of 2 = 2^4 * 2^(1/6) = 2^(4 + 1/6) = 2^(25/6). Therefore 2^((13x - 4)/6) = 2^(25/6), so the exponents are equal: (13x - 4)/6 = 25/6. Hence 13x - 4 = 25, so 13x = 29 and x = 29/13. This corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous. The item fits medium difficulty reasonably well, requiring conversion to common bases, exponent rules, and solving a linear equation.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='29/13' expected='29/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "29/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve: ∛(32^(x-1)) · √(2^(x+2)) = 16·⁶√2\n\nStep 1: Express everything as powers of 2.\n- 32 = 2^5, so 32^(x-1) = 2^(5(x-1))\n- ∛(32^(x-1)) = 2^(5(x-1)/3)\n- √(2^(x+2)) = 2^((x+2)/2)\n- 16 = 2^4\n- ⁶√2 = 2^(1/6)\n\nStep 2: Left side:\n2^(5(x-1)/3) · 2^((x+2)/2) = 2^(5(x-1)/3 + (x+2)/2)\n\nStep 3: Right side:\n2^4 · 2^(1/6) = 2^(4 + 1/6) = 2^(25/6)\n\nStep 4: Set exponents equal:\n5(x-1)/3 + (x+2)/2 = 25/6\n\nStep 5: Multiply through by 6:\n6 · 5(x-1)/3 + 6 · (x+2)/2 = 25\n2 · 5(x-1) + 3(x+2) = 25\n10(x-1) + 3(x+2) = 25\n10x - 10 + 3x + 6 = 25\n13x - 4 = 25\n13x = 29\nx = 29/13\n\nThe answer is 29/13.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "Well-constructed question with a unique correct answer (29/13), plausible distractors reachable by specific arithmetic errors, appropriate difficulty for Level B, and correct Kazakh mathematical terminology throughout.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='29/13' expected='29/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "29/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the equation \\(\\sqrt[3]{32^{x-1}} \\cdot \\sqrt{2^{x+2}} = 16\\sqrt[6]{2}\\), we can express all terms as powers of base 2.\n\nFirst, rewrite the terms on the left side:\n1. \\(32 = 2^5\\), so \\(32^{x-1} = (2^5)^{x-1} = 2^{5x-5}\\).\n2. The cube root can be written as a fractional exponent: \\(\\sqrt[3]{32^{x-1}} = (2^{5x-5})^{\\frac{1}{3}} = 2^{\\frac{5x-5}{3}}\\).\n3. The square root can also be written as a fractional exponent: \\(\\sqrt{2^{x+2}} = 2^{\\frac{x+2}{2}}\\).\n\nMultiplying these together, we add the exponents:\nLHS = \\(2^{\\frac{5x-5}{3}} \\cdot 2^{\\frac{x+2}{2}} = 2^{\\frac{5x-5}{3} + \\frac{x+2}{2}}\\).\n\nNow, rewrite the terms on the right side:\n1. \\(16 = 2^4\\).\n2. \\(\\sqrt[6]{2} = 2^{\\frac{1}{6}}\\).\n\nMultiplying these together:\nRHS = \\(2^4 \\cdot 2^{\\frac{1}{6}} = 2^{4 + \\frac{1}{6}} = 2^{\\frac{25}{6}}\\).\n\nSince the bases are equal, we can equate the exponents:\n\\(\\frac{5x-5}{3} + \\frac{x+2}{2} = \\frac{25}{6}\\)\n\nTo clear the denominators, multiply the entire equation by 6:\n\\(2(5x - 5) + 3(x + 2) = 25\\)\n\nExpand the terms:\n\\(10x - 10 + 3x + 6 = 25\\)\n\nCombine like terms:\n\\(13x - 4 = 25\\)\n\nAdd 4 to both sides:\n\\(13x = 29\\)\n\nDivide by 13:\n\\(x = \\frac{29}{13}\\)\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It perfectly aligns with the requested difficulty level, the distractors are based on common arithmetic errors, and the LaTeX and Kazakh phrasing are flawless.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='29/13' expected='29/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "29/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:45:13.047508+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,209 @@
+{
+  "id": "13fe1775-62aa-49c1-8663-114428ce635d",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "derivatives",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$f(x)=\\frac{\\sqrt{2x+3}}{x-1}$ функциясының графигіне $x_0=3$ нүктесінде жүргізілген жанаманың теңдеуін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$y = \\frac{7}{12}x - \\frac{1}{4}$"
+    },
+    {
+      "label": "B",
+      "text": "$y = -\\frac{2}{3}x + \\frac{7}{2}$"
+    },
+    {
+      "label": "C",
+      "text": "$y = - \\frac{7}{12}x + \\frac{13}{4}$"
+    },
+    {
+      "label": "D",
+      "text": "$y = -\\frac{7}{12}x + \\frac{3}{2}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Жанама теңдеуі үшін алдымен функцияның $x_0=3$ нүктесіндегі мәні мен туындысын табамыз. $u=\\sqrt{2x+3}$, $v=x-1$ деп алсақ, $u'=\\frac{1}{\\sqrt{2x+3}}$, $v'=1$. Бөліндінің туындысы бойынша: $f'(x)=\\frac{u'v-uv'}{v^2}=\\frac{\\frac{x-1}{\\sqrt{2x+3}}-\\sqrt{2x+3}}{(x-1)^2}$. Енді $x=3$ болғанда: $f(3)=\\frac{\\sqrt{9}}{2}=\\frac{3}{2}$ және $f'(3)=\\frac{\\frac{2}{3}-3}{4}=\\frac{-\\frac{7}{3}}{4}=-\\frac{7}{12}$. Жанама теңдеуі: $y-\\frac{3}{2}=-\\frac{7}{12}(x-3)$. Оны ықшамдасақ, $y=-\\frac{7}{12}x+\\frac{13}{4}$.",
+  "latex_formulas": [
+    "$\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}$",
+    "$y-y_0=f'(x_0)(x-x_0)$",
+    "$\\left(\\sqrt{2x+3}\\right)'=\\frac{1}{\\sqrt{2x+3}}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Given f(x) = sqrt(2x+3)/(x-1). At x0 = 3, first find the point: f(3) = sqrt(2*3+3)/(3-1) = sqrt(9)/2 = 3/2. Now compute the derivative using the quotient rule. Let u = sqrt(2x+3) = (2x+3)^(1/2), so u' = (1/2)(2x+3)^(-1/2)*2 = 1/sqrt(2x+3). Let v = x-1, so v' = 1. Then f'(x) = (u'v - uv')/v^2 = ((x-1)/sqrt(2x+3) - sqrt(2x+3))/(x-1)^2. At x = 3: f'(3) = (2/3 - 3)/4 = ((2 - 9)/3)/4 = (-7/3)/4 = -7/12\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find the equation of the tangent line to f(x) = √(2x+3)/(x-1) at x₀ = 3.\n\nStep 1: Find f(3).\nf(3) = √(2·3+3)/(3-1) = √9/2 = 3/2\n\nSo the point is (3, 3/2).\n\nStep 2: Find f'(x) using the quotient rule.\nf(x) = √(2x+3)/(x-1)\n\nLet u = √(2x+3) = (2x+3)^(1/2), v = x-1\nu' = (1/2)(2x+3)^(-1/2) · 2 = 1/√(2x+3)\nv' = 1\n\nf'(x) = (u'v - uv')/v² = [1/√(2x+3) · (x-1) - √(2x+3) · 1]/(x-1)²\n\nSimplify num\n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Find the y-coordinate of the point of tangency by evaluating the function at x_0 = 3.\nf(3) = \\frac{\\sqrt{2(3)+3}}{3-1} = \\frac{\\sqrt{9}}{2} = \\frac{3}{2}.\nSo, the point of tangency is (3, 3/2).\n\nStep 2: Find the derivative of the function f(x) using the quotient rule.\nf'(x) = \\frac{(\\sqrt{2x+3})'(x-1) - \\sqrt{2x+3}(x-1)'}{(x-1)^2}\nThe derivative of \\sqrt{2x+3} is \\frac{1}{2\\sqrt{2x+3}} \\cd",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined by standard quotient-rule differentiation and the tangent-line formula. The item is clear, at an appropriate medium level, and the distractors mostly reflect plausible slope/intercept mistakes. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed to option C, and verified both symbolically and independently. The distractors represent plausible errors (sign mistakes, wrong intercept calculations), and the difficulty aligns well with level B requiring 3-4 steps. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are based on common student errors (e.g., sign errors, forgetting the chain rule, or incorrectly applying the point-slope formula), and the difficulty aligns well with Level B.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$y = - \\frac{7}{12}x + \\frac{13}{4}$' expected='$y = - \\frac{7}{12}x + \\frac{13}{4}$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$y = - \\frac{7}{12}x + \\frac{13}{4}$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Given f(x) = sqrt(2x+3)/(x-1). At x0 = 3, first find the point: f(3) = sqrt(2*3+3)/(3-1) = sqrt(9)/2 = 3/2. Now compute the derivative using the quotient rule. Let u = sqrt(2x+3) = (2x+3)^(1/2), so u' = (1/2)(2x+3)^(-1/2)*2 = 1/sqrt(2x+3). Let v = x-1, so v' = 1. Then f'(x) = (u'v - uv')/v^2 = ((x-1)/sqrt(2x+3) - sqrt(2x+3))/(x-1)^2. At x = 3: f'(3) = (2/3 - 3)/4 = ((2 - 9)/3)/4 = (-7/3)/4 = -7/12\n\n[anthropic/claude-sonnet-4.6] answered C: We need to find the equation of the tangent line to f(x) = √(2x+3)/(x-1) at x₀ = 3.\n\nStep 1: Find f(3).\nf(3) = √(2·3+3)/(3-1) = √9/2 = 3/2\n\nSo the point is (3, 3/2).\n\nStep 2: Find f'(x) using the quotient rule.\nf(x) = √(2x+3)/(x-1)\n\nLet u = √(2x+3) = (2x+3)^(1/2), v = x-1\nu' = (1/2)(2x+3)^(-1/2) · 2 = 1/√(2x+3)\nv' = 1\n\nf'(x) = (u'v - uv')/v² = [1/√(2x+3) · (x-1) - √(2x+3) · 1]/(x-1)²\n\nSimplify num\n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Find the y-coordinate of the point of tangency by evaluating the function at x_0 = 3.\nf(3) = \\frac{\\sqrt{2(3)+3}}{3-1} = \\frac{\\sqrt{9}}{2} = \\frac{3}{2}.\nSo, the point of tangency is (3, 3/2).\n\nStep 2: Find the derivative of the function f(x) using the quotient rule.\nf'(x) = \\frac{(\\sqrt{2x+3})'(x-1) - \\sqrt{2x+3}(x-1)'}{(x-1)^2}\nThe derivative of \\sqrt{2x+3} is \\frac{1}{2\\sqrt{2x+3}} \\cd",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined by standard quotient-rule differentiation and the tangent-line formula. The item is clear, at an appropriate medium level, and the distractors mostly reflect plausible slope/intercept mistakes. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed to option C, and verified both symbolically and independently. The distractors represent plausible errors (sign mistakes, wrong intercept calculations), and the difficulty aligns well with level B requiring 3-4 steps. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors are based on common student errors (e.g., sign errors, forgetting the chain rule, or incorrectly applying the point-slope formula), and the difficulty aligns well with Level B.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$y = - \\frac{7}{12}x + \\frac{13}{4}$' expected='$y = - \\frac{7}{12}x + \\frac{13}{4}$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$y = - \\frac{7}{12}x + \\frac{13}{4}$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given f(x) = sqrt(2x+3)/(x-1). At x0 = 3, first find the point: f(3) = sqrt(2*3+3)/(3-1) = sqrt(9)/2 = 3/2. Now compute the derivative using the quotient rule. Let u = sqrt(2x+3) = (2x+3)^(1/2), so u' = (1/2)(2x+3)^(-1/2)*2 = 1/sqrt(2x+3). Let v = x-1, so v' = 1. Then f'(x) = (u'v - uv')/v^2 = ((x-1)/sqrt(2x+3) - sqrt(2x+3))/(x-1)^2. At x = 3: f'(3) = (2/3 - 3)/4 = ((2 - 9)/3)/4 = (-7/3)/4 = -7/12. The tangent line equation is y - f(3) = f'(3)(x - 3), so y - 3/2 = (-7/12)(x - 3). Expanding: y = -7x/12 + 21/12 + 3/2 = -7x/12 + 21/12 + 18/12 = -7x/12 + 39/12 = -7x/12 + 13/4. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely determined by standard quotient-rule differentiation and the tangent-line formula. The item is clear, at an appropriate medium level, and the distractors mostly reflect plausible slope/intercept mistakes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$y = - \\frac{7}{12}x + \\frac{13}{4}$' expected='$y = - \\frac{7}{12}x + \\frac{13}{4}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$y = - \\frac{7}{12}x + \\frac{13}{4}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the equation of the tangent line to f(x) = √(2x+3)/(x-1) at x₀ = 3.\n\nStep 1: Find f(3).\nf(3) = √(2·3+3)/(3-1) = √9/2 = 3/2\n\nSo the point is (3, 3/2).\n\nStep 2: Find f'(x) using the quotient rule.\nf(x) = √(2x+3)/(x-1)\n\nLet u = √(2x+3) = (2x+3)^(1/2), v = x-1\nu' = (1/2)(2x+3)^(-1/2) · 2 = 1/√(2x+3)\nv' = 1\n\nf'(x) = (u'v - uv')/v² = [1/√(2x+3) · (x-1) - √(2x+3) · 1]/(x-1)²\n\nSimplify numerator:\n= [(x-1)/√(2x+3) - √(2x+3)]/(x-1)²\n= [(x-1 - (2x+3))/√(2x+3)]/(x-1)²\n= [(x - 1 - 2x - 3)/√(2x+3)]/(x-1)²\n= [(-x - 4)/√(2x+3)]/(x-1)²\n= -(x+4)/[(x-1)²·√(2x+3)]\n\nStep 3: Find f'(3).\nf'(3) = -(3+4)/[(3-1)²·√(2·3+3)]\n= -7/[4·√9]\n= -7/[4·3]\n= -7/12\n\nStep 4: Write the tangent line equation.\ny - y₀ = f'(x₀)(x - x₀)\ny - 3/2 = -7/12·(x - 3)\ny = -7/12·x + 7/12·3 + 3/2\ny = -7/12·x + 21/12 + 3/2\ny = -7/12·x + 7/4 + 3/2\ny = -7/12·x + 7/4 + 6/4\ny = -7/12·x + 13/4\n\nThis matches option C: y = -7/12·x + 13/4.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed to option C, and verified both symbolically and independently. The distractors represent plausible errors (sign mistakes, wrong intercept calculations), and the difficulty aligns well with level B requiring 3-4 steps.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$y = - \\frac{7}{12}x + \\frac{13}{4}$' expected='$y = - \\frac{7}{12}x + \\frac{13}{4}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$y = - \\frac{7}{12}x + \\frac{13}{4}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Find the y-coordinate of the point of tangency by evaluating the function at x_0 = 3.\nf(3) = \\frac{\\sqrt{2(3)+3}}{3-1} = \\frac{\\sqrt{9}}{2} = \\frac{3}{2}.\nSo, the point of tangency is (3, 3/2).\n\nStep 2: Find the derivative of the function f(x) using the quotient rule.\nf'(x) = \\frac{(\\sqrt{2x+3})'(x-1) - \\sqrt{2x+3}(x-1)'}{(x-1)^2}\nThe derivative of \\sqrt{2x+3} is \\frac{1}{2\\sqrt{2x+3}} \\cdot 2 = \\frac{1}{\\sqrt{2x+3}}.\nSo, f'(x) = \\frac{\\frac{x-1}{\\sqrt{2x+3}} - \\sqrt{2x+3}}{(x-1)^2} = \\frac{x-1 - (2x+3)}{(x-1)^2 \\sqrt{2x+3}} = \\frac{-x-4}{(x-1)^2 \\sqrt{2x+3}}.\n\nStep 3: Evaluate the derivative at x_0 = 3 to find the slope of the tangent line.\nf'(3) = \\frac{-3-4}{(3-1)^2 \\sqrt{2(3)+3}} = \\frac{-7}{2^2 \\cdot 3} = \\frac{-7}{12}.\n\nStep 4: Write the equation of the tangent line using the point-slope form: y - y_0 = m(x - x_0).\ny - \\frac{3}{2} = -\\frac{7}{12}(x - 3)\ny = -\\frac{7}{12}x + \\frac{21}{12} + \\frac{3}{2}\ny = -\\frac{7}{12}x + \\frac{7}{4} + \\frac{6}{4}\ny = -\\frac{7}{12}x + \\frac{13}{4}.\n\nComparing this result with the given options, it matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors are based on common student errors (e.g., sign errors, forgetting the chain rule, or incorrectly applying the point-slope formula), and the difficulty aligns well with Level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$y = - \\frac{7}{12}x + \\frac{13}{4}$' expected='$y = - \\frac{7}{12}x + \\frac{13}{4}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$y = - \\frac{7}{12}x + \\frac{13}{4}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:36:48.216210+00:00",
+  "generation_attempts": 1
+}

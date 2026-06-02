@@ -1,0 +1,208 @@
+{
+  "id": "52881eb9-4f05-418d-b270-32a2fd2d4bfa",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "solids_of_revolution",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Конустың осьтік қимасы тең бүйірлі үшбұрыш болып табылады, оның табанының ұзындығы $12$ см, ал бүйір қабырғасының ұзындығы $10$ см. Конустың толық бетінің ауданы қандай?",
+  "options": [
+    {
+      "label": "A",
+      "text": "$96\\pi\\ {см}^{2}$"
+    },
+    {
+      "label": "B",
+      "text": "$108\\pi\\ {см}^{2}$"
+    },
+    {
+      "label": "C",
+      "text": "$84\\pi\\ {см}^{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$120\\pi\\ {см}^{2}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Конустың осьтік қимасы — табаны $12$ см, бүйір қабырғасы $10$ см болатын тең бүйірлі үшбұрыш.\n\n**1-қадам:** Конустың табан радиусын анықтаймыз.\nОсьтік қиманың табаны — конустың диаметрі, сондықтан:\n$r = \\frac{12}{2} = 6\\ {см}$\n\n**2-қадам:** Конустың жасаушысын анықтаймыз.\nОсьтік қиманың бүйір қабырғасы — конустың жасаушысы:\n$l = 10\\ {см}$\n\n**3-қадам:** Конустың биіктігін тексерейік (қажет болса):\n$h = \\sqrt{l^2 - r^2} = \\sqrt{100 - 36} = \\sqrt{64} = 8\\ {см}$\n\n**4-қадам:** Конустың толық бетінің ауданын есептейміз:\n$S = \\pi r l + \\pi r^2 = \\pi \\cdot 6 \\cdot 10 + \\pi \\cdot 6^2 = 60\\pi + 36\\pi = 96\\pi\\ {см}^{2}$\n\nДемек, жауабы $96\\pi\\ {см}^{2}$.",
+  "latex_formulas": [
+    "S_{\\text{толық}} = \\pi r l + \\pi r^2",
+    "l = 10\\ {см},\\ r = 6\\ {см}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: In a right circular cone, the axial section is an isosceles triangle whose base equals the diameter of the cone's circular base, and whose equal sides equal the cone's slant height. Given axial-section base = 12 cm, we have 2r = 12, so r = 6 cm. Given each lateral side of the axial section = 10 cm, the slant height is l = 10 cm. The total surface area of a cone is S = πrl + πr^2. Substitute r = 6 \n\n[anthropic/claude-sonnet-4.6] answered A: The axial cross-section of a cone is an isosceles triangle with base 12 cm and equal sides 10 cm.\n\nThe base of the axial cross-section equals the diameter of the cone's base, so:\nDiameter = 12 cm → radius r = 6 cm\n\nThe equal sides of the axial cross-section are the slant heights of the cone:\nSlant height l = 10 cm\n\nThe height of the cone can be found using the Pythagorean theorem:\nh = √(l² - r²) =\n\n[google/gemini-3.1-pro-preview] answered A: The axial cross-section of a cone is an isosceles triangle where the base is the diameter of the cone's base and the lateral sides are the slant heights of the cone. Given that the base of this triangle is 12 cm, the diameter of the cone is 12 cm, which means the radius r = 12 / 2 = 6 cm. The lateral side of the triangle is 10 cm, so the slant height of the cone l = 10 cm. The total surface area o",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 9.667,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: the axial section base gives the cone diameter and the equal sides give the slant height. The task is somewhat easy for level B, but still involves applying the axial-section relationship and the total surface area formula. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (96π cm²), and well-structured for level B. Kazakh terminology is accurate and natural. Distractors are plausible but could be more precisely tied to specific student errors. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. Distractors represent common student errors, such as using the height instead of the slant height.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractors could be improved by more explicitly targeting common errors: e.g., 108π from using diameter instead of radius in the base area (π·12²/4 + π·6·10 = 36π+60π... actually same), or forgetting the base (60π only), or using wrong slant height. Consider making each distractor traceable to a single identifiable mistake for stronger pedagogical value. | [google/gemini-3.1-pro-preview] For units in LaTeX, it is generally better to use \\text{ см}^2 instead of \\ {см}^{2} to ensure proper text formatting, though the current version is still acceptable.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='96' expected='96'",
+      "raw": {
+        "ok": true,
+        "stdout": "96",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: In a right circular cone, the axial section is an isosceles triangle whose base equals the diameter of the cone's circular base, and whose equal sides equal the cone's slant height. Given axial-section base = 12 cm, we have 2r = 12, so r = 6 cm. Given each lateral side of the axial section = 10 cm, the slant height is l = 10 cm. The total surface area of a cone is S = πrl + πr^2. Substitute r = 6 \n\n[anthropic/claude-sonnet-4.6] answered A: The axial cross-section of a cone is an isosceles triangle with base 12 cm and equal sides 10 cm.\n\nThe base of the axial cross-section equals the diameter of the cone's base, so:\nDiameter = 12 cm → radius r = 6 cm\n\nThe equal sides of the axial cross-section are the slant heights of the cone:\nSlant height l = 10 cm\n\nThe height of the cone can be found using the Pythagorean theorem:\nh = √(l² - r²) =\n\n[google/gemini-3.1-pro-preview] answered A: The axial cross-section of a cone is an isosceles triangle where the base is the diameter of the cone's base and the lateral sides are the slant heights of the cone. Given that the base of this triangle is 12 cm, the diameter of the cone is 12 cm, which means the radius r = 12 / 2 = 6 cm. The lateral side of the triangle is 10 cm, so the slant height of the cone l = 10 cm. The total surface area o",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: the axial section base gives the cone diameter and the equal sides give the slant height. The task is somewhat easy for level B, but still involves applying the axial-section relationship and the total surface area formula. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (96π cm²), and well-structured for level B. Kazakh terminology is accurate and natural. Distractors are plausible but could be more precisely tied to specific student errors. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. Distractors represent common student errors, such as using the height instead of the slant height.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractors could be improved by more explicitly targeting common errors: e.g., 108π from using diameter instead of radius in the base area (π·12²/4 + π·6·10 = 36π+60π... actually same), or forgetting the base (60π only), or using wrong slant height. Consider making each distractor traceable to a single identifiable mistake for stronger pedagogical value. | [google/gemini-3.1-pro-preview] For units in LaTeX, it is generally better to use \\text{ см}^2 instead of \\ {см}^{2} to ensure proper text formatting, though the current version is still acceptable.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='96' expected='96'",
+        "raw": {
+          "ok": true,
+          "stdout": "96",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In a right circular cone, the axial section is an isosceles triangle whose base equals the diameter of the cone's circular base, and whose equal sides equal the cone's slant height. Given axial-section base = 12 cm, we have 2r = 12, so r = 6 cm. Given each lateral side of the axial section = 10 cm, the slant height is l = 10 cm. The total surface area of a cone is S = πrl + πr^2. Substitute r = 6 and l = 10: S = π·6·10 + π·6^2 = 60π + 36π = 96π cm^2. Therefore the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item is unambiguous: the axial section base gives the cone diameter and the equal sides give the slant height. The task is somewhat easy for level B, but still involves applying the axial-section relationship and the total surface area formula.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The axial cross-section of a cone is an isosceles triangle with base 12 cm and equal sides 10 cm.\n\nThe base of the axial cross-section equals the diameter of the cone's base, so:\nDiameter = 12 cm → radius r = 6 cm\n\nThe equal sides of the axial cross-section are the slant heights of the cone:\nSlant height l = 10 cm\n\nThe height of the cone can be found using the Pythagorean theorem:\nh = √(l² - r²) = √(100 - 36) = √64 = 8 cm\n\nTotal surface area of a cone = lateral area + base area\n= π·r·l + π·r²\n= π·6·10 + π·6²\n= 60π + 36π\n= 96π cm²",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed (96π cm²), and well-structured for level B. Kazakh terminology is accurate and natural. Distractors are plausible but could be more precisely tied to specific student errors.",
+          "improvement_suggestions": "Distractors could be improved by more explicitly targeting common errors: e.g., 108π from using diameter instead of radius in the base area (π·12²/4 + π·6·10 = 36π+60π... actually same), or forgetting the base (60π only), or using wrong slant height. Consider making each distractor traceable to a single identifiable mistake for stronger pedagogical value.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The axial cross-section of a cone is an isosceles triangle where the base is the diameter of the cone's base and the lateral sides are the slant heights of the cone. Given that the base of this triangle is 12 cm, the diameter of the cone is 12 cm, which means the radius r = 12 / 2 = 6 cm. The lateral side of the triangle is 10 cm, so the slant height of the cone l = 10 cm. The total surface area of a cone is calculated using the formula S = πr(r + l). Substituting the values of r and l, we get S = π * 6 * (6 + 10) = π * 6 * 16 = 96π cm².",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 9.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.9,
+          "pass_fail": true,
+          "comments": "The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. Distractors represent common student errors, such as using the height instead of the slant height.",
+          "improvement_suggestions": "For units in LaTeX, it is generally better to use \\text{ см}^2 instead of \\ {см}^{2} to ensure proper text formatting, though the current version is still acceptable.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:46:34.797845+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,192 @@
+{
+  "id": "d9432510-3ba3-4877-88ce-20fcb4ffcf23",
+  "subject": "math",
+  "level": "A",
+  "format": "image",
+  "topic": "trigonometry",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Суреттегі $y = f(x)$ тригонометриялық функциясының графигі бойынша оның амплитудасын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$6$"
+    },
+    {
+      "label": "B",
+      "text": "$2$"
+    },
+    {
+      "label": "C",
+      "text": "$3$"
+    },
+    {
+      "label": "D",
+      "text": "$1$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Тригонометриялық функцияның амплитудасы оның ең үлкен (максимум) және ең кіші (минимум) мәндерінің айырмасының жартысына тең, яғни $A = \\frac{y_{\\max} - y_{\\min}}{2}$. Суреттегі графиктен функцияның ең үлкен мәні $y_{\\max} = 3$, ал ең кіші мәні $y_{\\min} = -3$ екенін көреміз. Сондықтан амплитуда $A = \\frac{3 - (-3)}{2} = \\frac{6}{2} = 3$. (Немесе тепе-теңдік осінен ең жоғарғы нүктесіне дейінгі тік қашықтықты тікелей графиктен көруге болады).",
+  "latex_formulas": [
+    "A = \\frac{y_{\\max} - y_{\\min}}{2}"
+  ],
+  "figure_spec": {
+    "figure_type": "trig_graph",
+    "parameters": {
+      "function": "sin",
+      "amplitude": 3,
+      "frequency_mult": 1,
+      "phase_shift": 0,
+      "vertical_shift": 0,
+      "x_periods": 2,
+      "mark_x_values": [
+        1.5707963
+      ],
+      "caption": "y = f(x) функциясының графигі"
+    },
+    "caption": "y = f(x) функциясының графигі"
+  },
+  "figure_path": "output/math_final/figures/trig_graph_82429.png",
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: From the graph, the maximum value of the trigonometric function is y = 3, and the minimum value is y = -3. The amplitude is half the distance between the maximum and minimum values: amplitude = (maximum - minimum) / 2 = (3 - (-3)) / 2 = 6 / 2 = 3. Therefore, the amplitude is 3.\n\n[anthropic/claude-sonnet-4.6] answered C: From the graph, the maximum value of the function is 3 and the minimum value is -3. The amplitude of a trigonometric function is defined as half the difference between the maximum and minimum values, or equivalently the absolute value of the maximum (when the function is centered at zero). Amplitude = (max - min) / 2 = (3 - (-3)) / 2 = 6 / 2 = 3. The graph shows a sine-like function with peaks at \n\n[google/gemini-3.1-pro-preview] answered C: To find the amplitude of a trigonometric function from its graph, we need to determine the maximum and minimum values of the function. The amplitude is defined as half the distance between the maximum and minimum values: Amplitude = (y_max - y_min) / 2. Looking at the provided graph, the highest point (peak) is at y = 3, so y_max = 3. The lowest point (trough) is at y = -3, so y_min = -3. Plugging",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 9.667,
+      "figure_relevance": 9.667
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: the graph has maximum 3 and minimum -3, so the amplitude is 3. The item is appropriate for level A and the figure clearly supports the task. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the graph clearly shows max=3 and min=-3, making amplitude=3 unambiguous. Distractors are plausible — 6 (full range, forgetting to halve), 2 (possibly misreading the graph), 1 (unit confusion) — though distractor B=2 is slightly less motivated. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level A. It tests a basic concept (amplitude) directly from a clear, well-labeled graph. The distractors represent common student errors, such as confusing amplitude with peak-to-peak distance or the standard amplitude of a sine wave.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": false,
+      "ran": false,
+      "passed": false,
+      "contradicted": false,
+      "note": "generator marked verification not applicable",
+      "raw": null
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: From the graph, the maximum value of the trigonometric function is y = 3, and the minimum value is y = -3. The amplitude is half the distance between the maximum and minimum values: amplitude = (maximum - minimum) / 2 = (3 - (-3)) / 2 = 6 / 2 = 3. Therefore, the amplitude is 3.\n\n[anthropic/claude-sonnet-4.6] answered C: From the graph, the maximum value of the function is 3 and the minimum value is -3. The amplitude of a trigonometric function is defined as half the difference between the maximum and minimum values, or equivalently the absolute value of the maximum (when the function is centered at zero). Amplitude = (max - min) / 2 = (3 - (-3)) / 2 = 6 / 2 = 3. The graph shows a sine-like function with peaks at \n\n[google/gemini-3.1-pro-preview] answered C: To find the amplitude of a trigonometric function from its graph, we need to determine the maximum and minimum values of the function. The amplitude is defined as half the distance between the maximum and minimum values: Amplitude = (y_max - y_min) / 2. Looking at the provided graph, the highest point (peak) is at y = 3, so y_max = 3. The lowest point (trough) is at y = -3, so y_min = -3. Plugging",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 9.667,
+        "figure_relevance": 9.667
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: the graph has maximum 3 and minimum -3, so the amplitude is 3. The item is appropriate for level A and the figure clearly supports the task. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the graph clearly shows max=3 and min=-3, making amplitude=3 unambiguous. Distractors are plausible — 6 (full range, forgetting to halve), 2 (possibly misreading the graph), 1 (unit confusion) — though distractor B=2 is slightly less motivated. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested difficulty level A. It tests a basic concept (amplitude) directly from a clear, well-labeled graph. The distractors represent common student errors, such as confusing amplitude with peak-to-peak distance or the standard amplitude of a sine wave.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": false,
+        "ran": false,
+        "passed": false,
+        "contradicted": false,
+        "note": "generator marked verification not applicable",
+        "raw": null
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the graph, the maximum value of the trigonometric function is y = 3, and the minimum value is y = -3. The amplitude is half the distance between the maximum and minimum values: amplitude = (maximum - minimum) / 2 = (3 - (-3)) / 2 = 6 / 2 = 3. Therefore, the amplitude is 3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": 9.0
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: the graph has maximum 3 and minimum -3, so the amplitude is 3. The item is appropriate for level A and the figure clearly supports the task.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": false,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "generator marked verification not applicable",
+            "raw": null
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the graph, the maximum value of the function is 3 and the minimum value is -3. The amplitude of a trigonometric function is defined as half the difference between the maximum and minimum values, or equivalently the absolute value of the maximum (when the function is centered at zero). Amplitude = (max - min) / 2 = (3 - (-3)) / 2 = 6 / 2 = 3. The graph shows a sine-like function with peaks at y = 3 and troughs at y = -3, confirming the amplitude is 3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 9.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the graph clearly shows max=3 and min=-3, making amplitude=3 unambiguous. Distractors are plausible — 6 (full range, forgetting to halve), 2 (possibly misreading the graph), 1 (unit confusion) — though distractor B=2 is slightly less motivated.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": false,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "generator marked verification not applicable",
+            "raw": null
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the amplitude of a trigonometric function from its graph, we need to determine the maximum and minimum values of the function. The amplitude is defined as half the distance between the maximum and minimum values: Amplitude = (y_max - y_min) / 2. Looking at the provided graph, the highest point (peak) is at y = 3, so y_max = 3. The lowest point (trough) is at y = -3, so y_min = -3. Plugging these values into the formula gives: Amplitude = (3 - (-3)) / 2 = (3 + 3) / 2 = 6 / 2 = 3. Alternatively, since the graph is centered on the x-axis (the midline is y = 0), the amplitude is simply the maximum displacement from the midline, which is clearly 3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the requested difficulty level A. It tests a basic concept (amplitude) directly from a clear, well-labeled graph. The distractors represent common student errors, such as confusing amplitude with peak-to-peak distance or the standard amplitude of a sine wave.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": false,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "generator marked verification not applicable",
+            "raw": null
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:17:59.033173+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,207 @@
+{
+  "id": "24511646-955f-4d8f-816a-8c485c04b988",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "exponential_log_equations",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\log_3 (x - 2) = 2$ теңдеуін шешіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$11$"
+    },
+    {
+      "label": "B",
+      "text": "$8$"
+    },
+    {
+      "label": "C",
+      "text": "$7$"
+    },
+    {
+      "label": "D",
+      "text": "$10$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Логарифмнің анықтамасы бойынша, егер $\\log_a b = c$ болса, онда $a^c = b$ болады (мұндағы $a > 0, a \\neq 1, b > 0$).\nБерілген теңдеудегі негіз $3$-ке, ал мәні $2$-ге тең. Осы ережені қолданамыз:\n$x - 2 = 3^2$\n$x - 2 = 9$\n$x = 9 + 2$\n$x = 11$\nТексеру: $x=11$ болғанда, логарифм ішіндегі өрнек $11 - 2 = 9 > 0$, яғни анықталу облысын қанағаттандырады.\nДемек, теңдеудің түбірі: $11$.",
+  "latex_formulas": [
+    "\\log_a b = c \\iff a^c = b"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: We solve the equation log base 3 of (x - 2) equals 2. The domain condition is x - 2 > 0, so x > 2. By the definition of logarithm, log_3(x - 2) = 2 means x - 2 = 3^2. Since 3^2 = 9, we get x - 2 = 9. Adding 2 to both sides gives x = 11. This satisfies the domain condition x > 2. Therefore, the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve log_3(x - 2) = 2.\n\nBy definition of logarithm: log_3(x - 2) = 2 means 3^2 = x - 2.\n\nSo: 9 = x - 2\n\nTherefore: x = 9 + 2 = 11.\n\nCheck domain: x - 2 = 11 - 2 = 9 > 0 ✓\n\nVerify: log_3(11 - 2) = log_3(9) = log_3(3^2) = 2 ✓\n\nThe answer is x = 11, which corresponds to option A.\n\n[google/gemini-3.1-pro-preview] answered A: To solve the logarithmic equation \\(\\log_3 (x - 2) = 2\\), we first convert it to its corresponding exponential form. The base is 3, the exponent is 2, and the result is \\(x - 2\\). This gives us the equation \\(x - 2 = 3^2\\). Evaluating \\(3^2\\) gives 9, so we have \\(x - 2 = 9\\). Adding 2 to both sides yields \\(x = 11\\). Finally, we check the domain of the original logarithmic function, which require",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and matches the requested basic difficulty level. The Kazakh wording and LaTeX are clear; distractors are acceptable but not all are tied to highly specific common errors. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A item testing direct application of the logarithm definition. The correct answer is unambiguously x=11 (option A), verified both analytically and by the sandbox. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A difficulty, testing the basic definition of a logarithm. The distractors are well-designed to catch common student errors, and the Kazakh phrasing is flawless.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$11$' expected='$11$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$11$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: We solve the equation log base 3 of (x - 2) equals 2. The domain condition is x - 2 > 0, so x > 2. By the definition of logarithm, log_3(x - 2) = 2 means x - 2 = 3^2. Since 3^2 = 9, we get x - 2 = 9. Adding 2 to both sides gives x = 11. This satisfies the domain condition x > 2. Therefore, the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to solve log_3(x - 2) = 2.\n\nBy definition of logarithm: log_3(x - 2) = 2 means 3^2 = x - 2.\n\nSo: 9 = x - 2\n\nTherefore: x = 9 + 2 = 11.\n\nCheck domain: x - 2 = 11 - 2 = 9 > 0 ✓\n\nVerify: log_3(11 - 2) = log_3(9) = log_3(3^2) = 2 ✓\n\nThe answer is x = 11, which corresponds to option A.\n\n[google/gemini-3.1-pro-preview] answered A: To solve the logarithmic equation \\(\\log_3 (x - 2) = 2\\), we first convert it to its corresponding exponential form. The base is 3, the exponent is 2, and the result is \\(x - 2\\). This gives us the equation \\(x - 2 = 3^2\\). Evaluating \\(3^2\\) gives 9, so we have \\(x - 2 = 9\\). Adding 2 to both sides yields \\(x = 11\\). Finally, we check the domain of the original logarithmic function, which require",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and matches the requested basic difficulty level. The Kazakh wording and LaTeX are clear; distractors are acceptable but not all are tied to highly specific common errors. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A item testing direct application of the logarithm definition. The correct answer is unambiguously x=11 (option A), verified both analytically and by the sandbox. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A difficulty, testing the basic definition of a logarithm. The distractors are well-designed to catch common student errors, and the Kazakh phrasing is flawless.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$11$' expected='$11$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$11$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We solve the equation log base 3 of (x - 2) equals 2. The domain condition is x - 2 > 0, so x > 2. By the definition of logarithm, log_3(x - 2) = 2 means x - 2 = 3^2. Since 3^2 = 9, we get x - 2 = 9. Adding 2 to both sides gives x = 11. This satisfies the domain condition x > 2. Therefore, the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a single unambiguous answer, and matches the requested basic difficulty level. The Kazakh wording and LaTeX are clear; distractors are acceptable but not all are tied to highly specific common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$11$' expected='$11$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$11$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve log_3(x - 2) = 2.\n\nBy definition of logarithm: log_3(x - 2) = 2 means 3^2 = x - 2.\n\nSo: 9 = x - 2\n\nTherefore: x = 9 + 2 = 11.\n\nCheck domain: x - 2 = 11 - 2 = 9 > 0 ✓\n\nVerify: log_3(11 - 2) = log_3(9) = log_3(3^2) = 2 ✓\n\nThe answer is x = 11, which corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is a clean, well-formed Level A item testing direct application of the logarithm definition. The correct answer is unambiguously x=11 (option A), verified both analytically and by the sandbox. Kazakh phrasing is natural and terminology is standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$11$' expected='$11$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$11$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the logarithmic equation \\(\\log_3 (x - 2) = 2\\), we first convert it to its corresponding exponential form. The base is 3, the exponent is 2, and the result is \\(x - 2\\). This gives us the equation \\(x - 2 = 3^2\\). Evaluating \\(3^2\\) gives 9, so we have \\(x - 2 = 9\\). Adding 2 to both sides yields \\(x = 11\\). Finally, we check the domain of the original logarithmic function, which requires the argument to be positive: \\(x - 2 > 0 \\implies x > 2\\). Since 11 is greater than 2, it is a valid solution. This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with Level A difficulty, testing the basic definition of a logarithm. The distractors are well-designed to catch common student errors, and the Kazakh phrasing is flawless.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$11$' expected='$11$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$11$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:28:25.812188+00:00",
+  "generation_attempts": 1
+}

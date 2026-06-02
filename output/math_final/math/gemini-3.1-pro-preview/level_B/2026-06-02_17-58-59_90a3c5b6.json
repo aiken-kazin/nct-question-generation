@@ -1,0 +1,208 @@
+{
+  "id": "90a3c5b6-1898-4c83-8127-ccfaafd6f50c",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "integrals",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$y = 6 - x^2$ және $y = x^2 - 2$ функцияларының графиктерімен шектелген фигураның ауданын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{56}{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$16$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{64}{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{32}{3}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1) Функциялардың қиылысу нүктелерін табамыз. Ол үшін теңдеулерді теңестіреміз:\n$6 - x^2 = x^2 - 2$\n$2x^2 = 8$\n$x^2 = 4$\n$x_1 = -2, x_2 = 2$.\nБұл нүктелер интегралдау шектері (интегралдың төменгі және жоғарғы шегі) болады.\n\n2) $[-2; 2]$ аралығында $y = 6 - x^2$ функциясының графигі $y = x^2 - 2$ функциясының графигінен жоғары орналасқанын байқаймыз (мысалы, $x = 0$ нүктесінде $6 > -2$).\n\n3) Екі қисықпен шектелген фигураның ауданын табу формуласын қолданамыз:\n$S = \\int_{a}^{b} (f(x) - g(x)) \\, dx$\n\n$S = \\int_{-2}^{2} ((6 - x^2) - (x^2 - 2)) \\, dx = \\int_{-2}^{2} (8 - 2x^2) \\, dx$\n\n4) Анықталған интегралды Ньютон-Лейбниц формуласы бойынша есептейміз:\n$S = \\left( 8x - \\frac{2x^3}{3} \\right) \\Big|_{-2}^{2} = \\left( 8 \\cdot 2 - \\frac{2 \\cdot 2^3}{3} \\right) - \\left( 8 \\cdot (-2) - \\frac{2 \\cdot (-2)^3}{3} \\right)$\n$S = \\left( 16 - \\frac{16}{3} \\right) - \\left( -16 + \\frac{16}{3} \\right) = 16 - \\frac{16}{3} + 16 - \\frac{16}{3} = 32 - \\frac{32}{3} = \\frac{96 - 32}{3} = \\frac{64}{3}$.\n\nЖауабы: $\\frac{64}{3}$",
+  "latex_formulas": [
+    "S = \\int_{a}^{b} (f(x) - g(x)) \\, dx",
+    "\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Find the intersection points of the curves: 6 - x^2 = x^2 - 2. Move terms: 8 = 2x^2, so x^2 = 4, hence x = -2 and x = 2. On the interval [-2, 2], the upper curve is y = 6 - x^2 and the lower curve is y = x^2 - 2. The area is the integral of upper minus lower: A = ∫ from -2 to 2 [(6 - x^2) - (x^2 - 2)] dx = ∫ from -2 to 2 (8 - 2x^2) dx. Compute the antiderivative: ∫(8 - 2x^2) dx = 8x - (2/3)x^3. Ev\n\n[anthropic/claude-sonnet-4.6] answered C: Find the area between y = 6 - x² and y = x² - 2.\n\nStep 1: Find intersection points.\n6 - x² = x² - 2\n8 = 2x²\nx² = 4\nx = ±2\n\nStep 2: Determine which function is on top.\nAt x = 0: y = 6 (top) vs y = -2 (bottom), so y = 6 - x² is on top.\n\nStep 3: Compute the area.\nA = ∫from -2 to 2 [(6 - x²) - (x² - 2)] dx\n= ∫from -2 to 2 [8 - 2x²] dx\n\nStep 4: Evaluate the integral.\n= [8x - (2x³/3)] from -2 to 2\n\nAt x\n\n[google/gemini-3.1-pro-preview] answered C: To find the area of the figure bounded by the graphs of the functions $y = 6 - x^2$ and $y = x^2 - 2$, we first need to determine their points of intersection by setting the equations equal to each other:\n\n$6 - x^2 = x^2 - 2$\n$8 = 2x^2$\n$x^2 = 4$\n$x = -2$ and $x = 2$.\n\nThese are the limits of integration. Next, we determine which function is the upper curve on the interval $[-2, 2]$. Testing $x = ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: solving intersections and integrating upper minus lower gives 64/3. The task fits medium difficulty, though it is a standard textbook application. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. All four distractors correspond to identifiable errors: D (32/3) from computing only half the interval or forgetting to double, A (56/3) from an arithmetic slip, B (16) from forgetting to divide by 3 in the antiderivative. The Kazakh is natural and uses standard textbook terminology. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors correspond to common student errors, the difficulty aligns well with Level B, and the Kazakh terminology is accurate.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$\\frac{64}{3}$' expected='$\\frac{64}{3}$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$\\frac{64}{3}$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Find the intersection points of the curves: 6 - x^2 = x^2 - 2. Move terms: 8 = 2x^2, so x^2 = 4, hence x = -2 and x = 2. On the interval [-2, 2], the upper curve is y = 6 - x^2 and the lower curve is y = x^2 - 2. The area is the integral of upper minus lower: A = ∫ from -2 to 2 [(6 - x^2) - (x^2 - 2)] dx = ∫ from -2 to 2 (8 - 2x^2) dx. Compute the antiderivative: ∫(8 - 2x^2) dx = 8x - (2/3)x^3. Ev\n\n[anthropic/claude-sonnet-4.6] answered C: Find the area between y = 6 - x² and y = x² - 2.\n\nStep 1: Find intersection points.\n6 - x² = x² - 2\n8 = 2x²\nx² = 4\nx = ±2\n\nStep 2: Determine which function is on top.\nAt x = 0: y = 6 (top) vs y = -2 (bottom), so y = 6 - x² is on top.\n\nStep 3: Compute the area.\nA = ∫from -2 to 2 [(6 - x²) - (x² - 2)] dx\n= ∫from -2 to 2 [8 - 2x²] dx\n\nStep 4: Evaluate the integral.\n= [8x - (2x³/3)] from -2 to 2\n\nAt x\n\n[google/gemini-3.1-pro-preview] answered C: To find the area of the figure bounded by the graphs of the functions $y = 6 - x^2$ and $y = x^2 - 2$, we first need to determine their points of intersection by setting the equations equal to each other:\n\n$6 - x^2 = x^2 - 2$\n$8 = 2x^2$\n$x^2 = 4$\n$x = -2$ and $x = 2$.\n\nThese are the limits of integration. Next, we determine which function is the upper curve on the interval $[-2, 2]$. Testing $x = ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: solving intersections and integrating upper minus lower gives 64/3. The task fits medium difficulty, though it is a standard textbook application. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. All four distractors correspond to identifiable errors: D (32/3) from computing only half the interval or forgetting to double, A (56/3) from an arithmetic slip, B (16) from forgetting to divide by 3 in the antiderivative. The Kazakh is natural and uses standard textbook terminology. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors correspond to common student errors, the difficulty aligns well with Level B, and the Kazakh terminology is accurate.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$\\frac{64}{3}$' expected='$\\frac{64}{3}$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$\\frac{64}{3}$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find the intersection points of the curves: 6 - x^2 = x^2 - 2. Move terms: 8 = 2x^2, so x^2 = 4, hence x = -2 and x = 2. On the interval [-2, 2], the upper curve is y = 6 - x^2 and the lower curve is y = x^2 - 2. The area is the integral of upper minus lower: A = ∫ from -2 to 2 [(6 - x^2) - (x^2 - 2)] dx = ∫ from -2 to 2 (8 - 2x^2) dx. Compute the antiderivative: ∫(8 - 2x^2) dx = 8x - (2/3)x^3. Evaluate from -2 to 2: at x = 2, 8(2) - (2/3)(2^3) = 16 - 16/3 = 32/3. At x = -2, 8(-2) - (2/3)(-2)^3 = -16 + 16/3 = -32/3. Difference: 32/3 - (-32/3) = 64/3. Therefore the area is 64/3.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item is unambiguous: solving intersections and integrating upper minus lower gives 64/3. The task fits medium difficulty, though it is a standard textbook application.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$\\frac{64}{3}$' expected='$\\frac{64}{3}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$\\frac{64}{3}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find the area between y = 6 - x² and y = x² - 2.\n\nStep 1: Find intersection points.\n6 - x² = x² - 2\n8 = 2x²\nx² = 4\nx = ±2\n\nStep 2: Determine which function is on top.\nAt x = 0: y = 6 (top) vs y = -2 (bottom), so y = 6 - x² is on top.\n\nStep 3: Compute the area.\nA = ∫from -2 to 2 [(6 - x²) - (x² - 2)] dx\n= ∫from -2 to 2 [8 - 2x²] dx\n\nStep 4: Evaluate the integral.\n= [8x - (2x³/3)] from -2 to 2\n\nAt x = 2: 8(2) - 2(8)/3 = 16 - 16/3 = 48/3 - 16/3 = 32/3\nAt x = -2: 8(-2) - 2(-8)/3 = -16 + 16/3 = -48/3 + 16/3 = -32/3\n\nA = 32/3 - (-32/3) = 64/3",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, well-structured, and correctly keyed. All four distractors correspond to identifiable errors: D (32/3) from computing only half the interval or forgetting to double, A (56/3) from an arithmetic slip, B (16) from forgetting to divide by 3 in the antiderivative. The Kazakh is natural and uses standard textbook terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$\\frac{64}{3}$' expected='$\\frac{64}{3}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$\\frac{64}{3}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the area of the figure bounded by the graphs of the functions $y = 6 - x^2$ and $y = x^2 - 2$, we first need to determine their points of intersection by setting the equations equal to each other:\n\n$6 - x^2 = x^2 - 2$\n$8 = 2x^2$\n$x^2 = 4$\n$x = -2$ and $x = 2$.\n\nThese are the limits of integration. Next, we determine which function is the upper curve on the interval $[-2, 2]$. Testing $x = 0$, we get $y = 6$ for the first function and $y = -2$ for the second. Thus, $y = 6 - x^2$ is the upper curve.\n\nThe area $A$ is given by the definite integral of the upper curve minus the lower curve from $x = -2$ to $x = 2$:\n$A = \\int_{-2}^{2} [(6 - x^2) - (x^2 - 2)] dx$\n$A = \\int_{-2}^{2} (8 - 2x^2) dx$\n\nSince $8 - 2x^2$ is an even function, we can simplify the calculation:\n$A = 2 \\int_{0}^{2} (8 - 2x^2) dx$\n$A = 2 \\left[ 8x - \\frac{2x^3}{3} \\right]_{0}^{2}$\n$A = 2 \\left( 8(2) - \\frac{2(2)^3}{3} - 0 \\right)$\n$A = 2 \\left( 16 - \\frac{16}{3} \\right)$\n$A = 2 \\left( \\frac{48 - 16}{3} \\right)$\n$A = 2 \\left( \\frac{32}{3} \\right)$\n$A = \\frac{64}{3}$\n\nComparing this result to the given options, the correct choice is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors correspond to common student errors, the difficulty aligns well with Level B, and the Kazakh terminology is accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$\\frac{64}{3}$' expected='$\\frac{64}{3}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$\\frac{64}{3}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:58:59.363383+00:00",
+  "generation_attempts": 1
+}

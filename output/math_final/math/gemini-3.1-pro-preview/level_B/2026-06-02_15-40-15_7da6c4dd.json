@@ -1,0 +1,209 @@
+{
+  "id": "7da6c4dd-373c-4c83-93bc-0da3fd3bf5ae",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "derivatives",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$f(x) = -x^2 + 4x$ функциясының графигіне $(3; 4)$ нүктесі арқылы өтетін горизонталь емес жанаманың теңдеуі",
+  "options": [
+    {
+      "label": "A",
+      "text": "$y = -2x + 10$"
+    },
+    {
+      "label": "B",
+      "text": "$y = -4x + 16$"
+    },
+    {
+      "label": "C",
+      "text": "$y = -2x + 9$"
+    },
+    {
+      "label": "D",
+      "text": "$y = 2x - 2$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "1. Жанаманың теңдеуі жалпы түрде мына формуламен беріледі: $y = f(x_0) + f'(x_0)(x - x_0)$, мұндағы $x_0$ — жанасу нүктесінің абсциссасы.\n2. Берілген функцияның туындысын табамыз: $f'(x) = -2x + 4$.\n3. Жанасу нүктесіндегі функция мен оның туындысының мәндері: $f(x_0) = -x_0^2 + 4x_0$ және $f'(x_0) = -2x_0 + 4$.\n4. Жанама $(3; 4)$ нүктесі арқылы өтетіндіктен, теңдеуге $x = 3$ және $y = 4$ мәндерін қоямыз:\n$4 = -x_0^2 + 4x_0 + (-2x_0 + 4)(3 - x_0)$\n5. Жақшаларды ашып, теңдеуді ықшамдаймыз:\n$4 = -x_0^2 + 4x_0 - 6x_0 + 2x_0^2 + 12 - 4x_0$\n$x_0^2 - 6x_0 + 8 = 0$\n6. Виет теоремасы бойынша квадрат теңдеудің түбірлері: $x_0 = 2$ және $x_0 = 4$.\n7. Егер $x_0 = 2$ болса, $f'(2) = -2(2) + 4 = 0$. Бұл жағдайда жанама горизонталь ($y = 4$) болады. Есептің шарты бойынша горизонталь емес жанама қажет.\n8. Егер $x_0 = 4$ болса, $f(4) = -4^2 + 4(4) = 0$ және $f'(4) = -2(4) + 4 = -4$.\n9. Жанама теңдеуін құрамыз:\n$y = 0 - 4(x - 4) \\Rightarrow y = -4x + 16$.",
+  "latex_formulas": [
+    "y = f(x_0) + f'(x_0)(x - x_0)",
+    "f'(x) = -2x + 4",
+    "x_0^2 - 6x_0 + 8 = 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.3,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Let the tangent touch the graph y = f(x) = -x^2 + 4x at x = a. Then f(a) = -a^2 + 4a and f'(x) = -2x + 4, so the slope at x = a is f'(a) = -2a + 4. The tangent line is y = f(a) + f'(a)(x - a). It passes through the point (3, 4), so 4 = (-a^2 + 4a) + (-2a + 4)(3 - a). Expand: (-2a + 4)(3 - a) = -6a + 2a^2 + 12 - 4a = 2a^2 - 10a + 12. Therefore 4 = -a^2 + 4a + 2a^2 - 10a + 12 = a^2 - 6a + 12. Thus a\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the equation of a non-horizontal tangent to f(x) = -x² + 4x that passes through the point (3, 4).\n\nStep 1: Find f'(x).\nf'(x) = -2x + 4\n\nStep 2: At a point of tangency x = a, the tangent line has slope m = f'(a) = -2a + 4.\n\nStep 3: The tangent line at x = a passes through (a, f(a)) = (a, -a² + 4a).\nEquation of tangent: y - (-a² + 4a) = (-2a + 4)(x - a)\ny = (-2a + 4)x - a(-2a + 4) + \n\n[google/gemini-3.1-pro-preview] answered B: Let the point of tangency on the graph of $f(x) = -x^2 + 4x$ be $(x_0, y_0)$. The derivative of the function is $f'(x) = -2x + 4$. The slope of the tangent line at $x_0$ is $m = f'(x_0) = -2x_0 + 4$.\n\nThe equation of the tangent line at $x_0$ is given by:\n$y - f(x_0) = f'(x_0)(x - x_0)$\n$y - (-x_0^2 + 4x_0) = (-2x_0 + 4)(x - x_0)$\n$y = (-2x_0 + 4)x + 2x_0^2 - 4x_0 - x_0^2 + 4x_0$\n$y = (-2x_0 + 4)x",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 9.667,
+      "figure_relevance": null
+    },
+    "overall_score": 9.3,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unique: the tangent through (3,4) has two possible contact points, with the horizontal one excluded, leaving y = -4x + 16. The item is appropriately medium-level and the distractors are mostly plausible, though a couple are mainly lines through the given point rather than strong derivative-based errors. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and well-constructed. The correct answer B is unambiguously verified. The distractors are plausible: A (y=-2x+10) corresponds to using x₀=2 without checking horizontality, C (y=-2x+9) is a plausible arithmetic slip, and D (y=2x-2) could arise from a sign error in the derivative. The non-horizontal condition adds a nice discriminating twist appropriate for level B. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors anticipate common student errors, such as assuming the given point is the point of tangency or making sign errors in the derivative.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$y = -4x + 16$' expected='$y = -4x + 16$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$y = -4x + 16$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Let the tangent touch the graph y = f(x) = -x^2 + 4x at x = a. Then f(a) = -a^2 + 4a and f'(x) = -2x + 4, so the slope at x = a is f'(a) = -2a + 4. The tangent line is y = f(a) + f'(a)(x - a). It passes through the point (3, 4), so 4 = (-a^2 + 4a) + (-2a + 4)(3 - a). Expand: (-2a + 4)(3 - a) = -6a + 2a^2 + 12 - 4a = 2a^2 - 10a + 12. Therefore 4 = -a^2 + 4a + 2a^2 - 10a + 12 = a^2 - 6a + 12. Thus a\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the equation of a non-horizontal tangent to f(x) = -x² + 4x that passes through the point (3, 4).\n\nStep 1: Find f'(x).\nf'(x) = -2x + 4\n\nStep 2: At a point of tangency x = a, the tangent line has slope m = f'(a) = -2a + 4.\n\nStep 3: The tangent line at x = a passes through (a, f(a)) = (a, -a² + 4a).\nEquation of tangent: y - (-a² + 4a) = (-2a + 4)(x - a)\ny = (-2a + 4)x - a(-2a + 4) + \n\n[google/gemini-3.1-pro-preview] answered B: Let the point of tangency on the graph of $f(x) = -x^2 + 4x$ be $(x_0, y_0)$. The derivative of the function is $f'(x) = -2x + 4$. The slope of the tangent line at $x_0$ is $m = f'(x_0) = -2x_0 + 4$.\n\nThe equation of the tangent line at $x_0$ is given by:\n$y - f(x_0) = f'(x_0)(x - x_0)$\n$y - (-x_0^2 + 4x_0) = (-2x_0 + 4)(x - x_0)$\n$y = (-2x_0 + 4)x + 2x_0^2 - 4x_0 - x_0^2 + 4x_0$\n$y = (-2x_0 + 4)x",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "overall_score": 9.3,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unique: the tangent through (3,4) has two possible contact points, with the horizontal one excluded, leaving y = -4x + 16. The item is appropriately medium-level and the distractors are mostly plausible, though a couple are mainly lines through the given point rather than strong derivative-based errors. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and well-constructed. The correct answer B is unambiguously verified. The distractors are plausible: A (y=-2x+10) corresponds to using x₀=2 without checking horizontality, C (y=-2x+9) is a plausible arithmetic slip, and D (y=2x-2) could arise from a sign error in the derivative. The non-horizontal condition adds a nice discriminating twist appropriate for level B. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors anticipate common student errors, such as assuming the given point is the point of tangency or making sign errors in the derivative.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$y = -4x + 16$' expected='$y = -4x + 16$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$y = -4x + 16$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the tangent touch the graph y = f(x) = -x^2 + 4x at x = a. Then f(a) = -a^2 + 4a and f'(x) = -2x + 4, so the slope at x = a is f'(a) = -2a + 4. The tangent line is y = f(a) + f'(a)(x - a). It passes through the point (3, 4), so 4 = (-a^2 + 4a) + (-2a + 4)(3 - a). Expand: (-2a + 4)(3 - a) = -6a + 2a^2 + 12 - 4a = 2a^2 - 10a + 12. Therefore 4 = -a^2 + 4a + 2a^2 - 10a + 12 = a^2 - 6a + 12. Thus a^2 - 6a + 8 = 0, so (a - 2)(a - 4) = 0. If a = 2, then the slope is -2(2) + 4 = 0, giving a horizontal tangent, which is excluded. If a = 4, then the slope is -2(4) + 4 = -4, and f(4) = -16 + 16 = 0. The tangent is y - 0 = -4(x - 4), so y = -4x + 16. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unique: the tangent through (3,4) has two possible contact points, with the horizontal one excluded, leaving y = -4x + 16. The item is appropriately medium-level and the distractors are mostly plausible, though a couple are mainly lines through the given point rather than strong derivative-based errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$y = -4x + 16$' expected='$y = -4x + 16$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$y = -4x + 16$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find the equation of a non-horizontal tangent to f(x) = -x² + 4x that passes through the point (3, 4).\n\nStep 1: Find f'(x).\nf'(x) = -2x + 4\n\nStep 2: At a point of tangency x = a, the tangent line has slope m = f'(a) = -2a + 4.\n\nStep 3: The tangent line at x = a passes through (a, f(a)) = (a, -a² + 4a).\nEquation of tangent: y - (-a² + 4a) = (-2a + 4)(x - a)\ny = (-2a + 4)x - a(-2a + 4) + (-a² + 4a)\ny = (-2a + 4)x + 2a² - 4a - a² + 4a\ny = (-2a + 4)x + a²\n\nStep 4: This tangent must pass through (3, 4):\n4 = (-2a + 4)(3) + a²\n4 = -6a + 12 + a²\na² - 6a + 12 - 4 = 0\na² - 6a + 8 = 0\n(a - 2)(a - 4) = 0\na = 2 or a = 4\n\nStep 5: For a = 2:\nSlope = -2(2) + 4 = 0 → horizontal tangent (excluded since we need non-horizontal)\n\nFor a = 4:\nSlope = -2(4) + 4 = -4\ny-intercept: a² = 16\nTangent equation: y = -4x + 16\n\nStep 6: Verify: At x = 3: y = -4(3) + 16 = -12 + 16 = 4 ✓\n\nThe answer is y = -4x + 16, which is option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 9.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound and well-constructed. The correct answer B is unambiguously verified. The distractors are plausible: A (y=-2x+10) corresponds to using x₀=2 without checking horizontality, C (y=-2x+9) is a plausible arithmetic slip, and D (y=2x-2) could arise from a sign error in the derivative. The non-horizontal condition adds a nice discriminating twist appropriate for level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$y = -4x + 16$' expected='$y = -4x + 16$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$y = -4x + 16$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the point of tangency on the graph of $f(x) = -x^2 + 4x$ be $(x_0, y_0)$. The derivative of the function is $f'(x) = -2x + 4$. The slope of the tangent line at $x_0$ is $m = f'(x_0) = -2x_0 + 4$.\n\nThe equation of the tangent line at $x_0$ is given by:\n$y - f(x_0) = f'(x_0)(x - x_0)$\n$y - (-x_0^2 + 4x_0) = (-2x_0 + 4)(x - x_0)$\n$y = (-2x_0 + 4)x + 2x_0^2 - 4x_0 - x_0^2 + 4x_0$\n$y = (-2x_0 + 4)x + x_0^2$\n\nWe are given that the tangent line passes through the point $(3, 4)$. Substituting $x = 3$ and $y = 4$ into the tangent line equation:\n$4 = (-2x_0 + 4)(3) + x_0^2$\n$4 = -6x_0 + 12 + x_0^2$\n$x_0^2 - 6x_0 + 8 = 0$\n\nFactoring the quadratic equation, we get:\n$(x_0 - 2)(x_0 - 4) = 0$\nSo, $x_0 = 2$ or $x_0 = 4$.\n\nNow we find the tangent line equations for both points of tangency:\nCase 1: $x_0 = 2$\nThe slope is $m = -2(2) + 4 = 0$. The equation is $y = 0(x) + 2^2 \\Rightarrow y = 4$. This is a horizontal tangent line. The problem specifically asks for the non-horizontal tangent line, so we discard this case.\n\nCase 2: $x_0 = 4$\nThe slope is $m = -2(4) + 4 = -4$. The equation is $y = -4x + 4^2 \\Rightarrow y = -4x + 16$. This is a non-horizontal tangent line.\n\nComparing this result with the given options, we find that it matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly designed. The distractors anticipate common student errors, such as assuming the given point is the point of tangency or making sign errors in the derivative.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$y = -4x + 16$' expected='$y = -4x + 16$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$y = -4x + 16$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:40:15.271805+00:00",
+  "generation_attempts": 1
+}

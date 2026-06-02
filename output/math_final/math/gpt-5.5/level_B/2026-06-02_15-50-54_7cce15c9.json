@@ -1,0 +1,208 @@
+{
+  "id": "7cce15c9-447d-4bc7-b121-e27dc6babd19",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "triangles",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$\\triangle ABC$-да $AB=8$, $AC=10$ және $\\cos A=\\frac{3}{5}$. $A$ төбесінен $BC$ қабырғасына жүргізілген медиананың ұзындығын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$2\\sqrt{17}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\sqrt{61}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{65}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\sqrt{68}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Алдымен косинустар теоремасы бойынша $BC$ қабырғасын табамыз: $BC^2=AB^2+AC^2-2\\cdot AB\\cdot AC\\cdot \\cos A$. Сондықтан $BC^2=8^2+10^2-2\\cdot 8\\cdot 10\\cdot \\frac{3}{5}=64+100-96=68$. Медиана ұзындығының формуласы бойынша $AM^2=\\frac{2AB^2+2AC^2-BC^2}{4}$. Олай болса, $AM^2=\\frac{2\\cdot 64+2\\cdot 100-68}{4}=\\frac{260}{4}=65$. Демек, $AM=\\sqrt{65}$.",
+  "latex_formulas": [
+    "BC^2=AB^2+AC^2-2\\cdot AB\\cdot AC\\cdot \\cos A",
+    "AM^2=\\frac{2AB^2+2AC^2-BC^2}{4}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.9,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Let a = BC, b = AC = 10, and c = AB = 8. The angle A is between sides AB and AC, and cos A = 3/5. First find BC using the Law of Cosines: a^2 = b^2 + c^2 - 2bc cos A = 10^2 + 8^2 - 2(10)(8)(3/5) = 100 + 64 - 160(3/5) = 164 - 96 = 68. Thus BC^2 = 68. The median from A to side BC has length m_a, and by Apollonius' theorem, m_a^2 = (2b^2 + 2c^2 - a^2)/4. Substitute the values: m_a^2 = (2(10^2) + 2(8^\n\n[anthropic/claude-sonnet-4.6] answered C: Given: AB = 8, AC = 10, cos A = 3/5. Find the median from A to BC.\n\nStep 1: Find BC using the Law of Cosines.\nBC² = AB² + AC² - 2·AB·AC·cos A\nBC² = 64 + 100 - 2·8·10·(3/5)\nBC² = 164 - 160·(3/5)\nBC² = 164 - 96\nBC² = 68\nBC = √68 = 2√17\n\nStep 2: Use the median length formula.\nThe median from A to midpoint M of BC:\nm_a² = (2AB² + 2AC² - BC²) / 4\nm_a² = (2·64 + 2·100 - 68) / 4\nm_a² = (128 + 200 - 68) /\n\n[google/gemini-3.1-pro-preview] answered C: To find the length of the median drawn from vertex A to side BC, we first need to find the length of side BC (let's call it a). We are given AB = c = 8, AC = b = 10, and cos(A) = 3/5.\n\nUsing the Law of Cosines to find a^2:\na^2 = b^2 + c^2 - 2bc * cos(A)\na^2 = 10^2 + 8^2 - 2(10)(8)(3/5)\na^2 = 100 + 64 - 160(3/5)\na^2 = 164 - 96\na^2 = 68\n\nNow, we use the formula for the length of the median m_a to si",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 5.333,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.9,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound. However, options A and D are equivalent since 2√17 = √68, creating a duplicate distractor and weakening option quality. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. Distractors are well-chosen: option A (2√17) is BC itself — a classic confusion error; option B (√61) and option D (√68) are plausible near-misses from arithmetic slips. The Kazakh is natural and uses standard textbook terminology. | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-aligned with the requested difficulty. However, there is a significant flaw in the options: A and D are mathematically identical.",
+    "improvement_suggestions": "[google/gemini-3.1-pro-preview] Options A ($2\\sqrt{17}$) and D ($\\sqrt{68}$) are mathematically identical, which allows test-takers to eliminate both immediately. Replace one of them with a different plausible distractor, such as $\\sqrt{82}$ or $2\\sqrt{15}$.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='sqrt(65)' expected='sqrt(65)'",
+      "raw": {
+        "ok": true,
+        "stdout": "sqrt(65)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Let a = BC, b = AC = 10, and c = AB = 8. The angle A is between sides AB and AC, and cos A = 3/5. First find BC using the Law of Cosines: a^2 = b^2 + c^2 - 2bc cos A = 10^2 + 8^2 - 2(10)(8)(3/5) = 100 + 64 - 160(3/5) = 164 - 96 = 68. Thus BC^2 = 68. The median from A to side BC has length m_a, and by Apollonius' theorem, m_a^2 = (2b^2 + 2c^2 - a^2)/4. Substitute the values: m_a^2 = (2(10^2) + 2(8^\n\n[anthropic/claude-sonnet-4.6] answered C: Given: AB = 8, AC = 10, cos A = 3/5. Find the median from A to BC.\n\nStep 1: Find BC using the Law of Cosines.\nBC² = AB² + AC² - 2·AB·AC·cos A\nBC² = 64 + 100 - 2·8·10·(3/5)\nBC² = 164 - 160·(3/5)\nBC² = 164 - 96\nBC² = 68\nBC = √68 = 2√17\n\nStep 2: Use the median length formula.\nThe median from A to midpoint M of BC:\nm_a² = (2AB² + 2AC² - BC²) / 4\nm_a² = (2·64 + 2·100 - 68) / 4\nm_a² = (128 + 200 - 68) /\n\n[google/gemini-3.1-pro-preview] answered C: To find the length of the median drawn from vertex A to side BC, we first need to find the length of side BC (let's call it a). We are given AB = c = 8, AC = b = 10, and cos(A) = 3/5.\n\nUsing the Law of Cosines to find a^2:\na^2 = b^2 + c^2 - 2bc * cos(A)\na^2 = 10^2 + 8^2 - 2(10)(8)(3/5)\na^2 = 100 + 64 - 160(3/5)\na^2 = 164 - 96\na^2 = 68\n\nNow, we use the formula for the length of the median m_a to si",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.333,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.9,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is mathematically sound. However, options A and D are equivalent since 2√17 = √68, creating a duplicate distractor and weakening option quality. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, well-structured, and correctly keyed. Distractors are well-chosen: option A (2√17) is BC itself — a classic confusion error; option B (√61) and option D (√68) are plausible near-misses from arithmetic slips. The Kazakh is natural and uses standard textbook terminology. | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-aligned with the requested difficulty. However, there is a significant flaw in the options: A and D are mathematically identical.",
+      "improvement_suggestions": "[google/gemini-3.1-pro-preview] Options A ($2\\sqrt{17}$) and D ($\\sqrt{68}$) are mathematically identical, which allows test-takers to eliminate both immediately. Replace one of them with a different plausible distractor, such as $\\sqrt{82}$ or $2\\sqrt{15}$.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='sqrt(65)' expected='sqrt(65)'",
+        "raw": {
+          "ok": true,
+          "stdout": "sqrt(65)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let a = BC, b = AC = 10, and c = AB = 8. The angle A is between sides AB and AC, and cos A = 3/5. First find BC using the Law of Cosines: a^2 = b^2 + c^2 - 2bc cos A = 10^2 + 8^2 - 2(10)(8)(3/5) = 100 + 64 - 160(3/5) = 164 - 96 = 68. Thus BC^2 = 68. The median from A to side BC has length m_a, and by Apollonius' theorem, m_a^2 = (2b^2 + 2c^2 - a^2)/4. Substitute the values: m_a^2 = (2(10^2) + 2(8^2) - 68)/4 = (200 + 128 - 68)/4 = 260/4 = 65. Therefore m_a = sqrt(65).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is mathematically sound. However, options A and D are equivalent since 2√17 = √68, creating a duplicate distractor and weakening option quality.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(65)' expected='sqrt(65)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(65)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given: AB = 8, AC = 10, cos A = 3/5. Find the median from A to BC.\n\nStep 1: Find BC using the Law of Cosines.\nBC² = AB² + AC² - 2·AB·AC·cos A\nBC² = 64 + 100 - 2·8·10·(3/5)\nBC² = 164 - 160·(3/5)\nBC² = 164 - 96\nBC² = 68\nBC = √68 = 2√17\n\nStep 2: Use the median length formula.\nThe median from A to midpoint M of BC:\nm_a² = (2AB² + 2AC² - BC²) / 4\nm_a² = (2·64 + 2·100 - 68) / 4\nm_a² = (128 + 200 - 68) / 4\nm_a² = 260 / 4\nm_a² = 65\nm_a = √65\n\nThe answer is √65.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, well-structured, and correctly keyed. Distractors are well-chosen: option A (2√17) is BC itself — a classic confusion error; option B (√61) and option D (√68) are plausible near-misses from arithmetic slips. The Kazakh is natural and uses standard textbook terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(65)' expected='sqrt(65)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(65)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the length of the median drawn from vertex A to side BC, we first need to find the length of side BC (let's call it a). We are given AB = c = 8, AC = b = 10, and cos(A) = 3/5.\n\nUsing the Law of Cosines to find a^2:\na^2 = b^2 + c^2 - 2bc * cos(A)\na^2 = 10^2 + 8^2 - 2(10)(8)(3/5)\na^2 = 100 + 64 - 160(3/5)\na^2 = 164 - 96\na^2 = 68\n\nNow, we use the formula for the length of the median m_a to side a:\nm_a = (1/2) * sqrt(2b^2 + 2c^2 - a^2)\nm_a = (1/2) * sqrt(2(10^2) + 2(8^2) - 68)\nm_a = (1/2) * sqrt(2(100) + 2(64) - 68)\nm_a = (1/2) * sqrt(200 + 128 - 68)\nm_a = (1/2) * sqrt(328 - 68)\nm_a = (1/2) * sqrt(260)\nm_a = (1/2) * 2 * sqrt(65)\nm_a = sqrt(65)\n\nThe length of the median is sqrt(65), which matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 3.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-aligned with the requested difficulty. However, there is a significant flaw in the options: A and D are mathematically identical.",
+          "improvement_suggestions": "Options A ($2\\sqrt{17}$) and D ($\\sqrt{68}$) are mathematically identical, which allows test-takers to eliminate both immediately. Replace one of them with a different plausible distractor, such as $\\sqrt{82}$ or $2\\sqrt{15}$.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(65)' expected='sqrt(65)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(65)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:50:54.707709+00:00",
+  "generation_attempts": 1
+}

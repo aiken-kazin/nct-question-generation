@@ -1,0 +1,209 @@
+{
+  "id": "e074f7e8-6ac8-4916-97ff-96464b66b008",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "derivatives",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$f(x) = x^3 - 3x^2 - 9x + 5$ функциясының жергілікті минимумының мәні қандай?",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-22$"
+    },
+    {
+      "label": "B",
+      "text": "$10$"
+    },
+    {
+      "label": "C",
+      "text": "$-20$"
+    },
+    {
+      "label": "D",
+      "text": "$5$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "1-қадам: Туындыны табамыз: $f'(x) = 3x^2 - 6x - 9$.\n\n2-қадам: Критикалық нүктелерді табу үшін $f'(x) = 0$ теңдеуін шешеміз:\n$3x^2 - 6x - 9 = 0$\n$x^2 - 2x - 3 = 0$\n$(x - 3)(x + 1) = 0$\nДемек, $x = 3$ және $x = -1$.\n\n3-қадам: Екінші туындыны табамыз: $f''(x) = 6x - 6$.\n\n4-қадам: Жергілікті минимумды анықтаймыз:\n- $x = 3$ нүктесінде: $f''(3) = 6 \\cdot 3 - 6 = 12 > 0$ — жергілікті минимум.\n- $x = -1$ нүктесінде: $f''(-1) = 6 \\cdot (-1) - 6 = -12 < 0$ — жергілікті максимум.\n\n5-қадам: Жергілікті минимумның мәнін есептейміз:\n$f(3) = 3^3 - 3 \\cdot 3^2 - 9 \\cdot 3 + 5 = 27 - 27 - 27 + 5 = -22$.\n\nДемек, жергілікті минимумның мәні $-22$.",
+  "latex_formulas": [
+    "f'(x) = 3x^2 - 6x - 9",
+    "f''(x) = 6x - 6",
+    "f(3) = 27 - 27 - 27 + 5 = -22"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Given f(x) = x^3 - 3x^2 - 9x + 5. To find the local minimum value, compute the derivative: f'(x) = 3x^2 - 6x - 9. Factor: f'(x) = 3(x^2 - 2x - 3) = 3(x - 3)(x + 1). Critical points are x = 3 and x = -1. Compute the second derivative: f''(x) = 6x - 6. At x = -1, f''(-1) = -6 - 6 = -12 < 0, so x = -1 is a local maximum. At x = 3, f''(3) = 18 - 6 = 12 > 0, so x = 3 is a local minimum. Now evaluate f(\n\n[anthropic/claude-sonnet-4.6] answered A: Find critical points by setting f'(x) = 0.\n\nf(x) = x³ - 3x² - 9x + 5\nf'(x) = 3x² - 6x - 9 = 3(x² - 2x - 3) = 3(x - 3)(x + 1)\n\nCritical points: x = 3 and x = -1\n\nDetermine which is a local minimum using second derivative:\nf''(x) = 6x - 6\n\nAt x = 3: f''(3) = 18 - 6 = 12 > 0 → local minimum\nAt x = -1: f''(-1) = -6 - 6 = -12 < 0 → local maximum\n\nLocal minimum value at x = 3:\nf(3) = 27 - 27 - 27 + 5 = \n\n[google/gemini-3.1-pro-preview] answered A: To find the local minimum value of the function f(x) = x^3 - 3x^2 - 9x + 5, we first need to find its critical points by taking the first derivative and setting it to zero.\n\nf'(x) = 3x^2 - 6x - 9\n\nSetting f'(x) = 0:\n3x^2 - 6x - 9 = 0\nDivide the entire equation by 3:\nx^2 - 2x - 3 = 0\n\nFactoring the quadratic equation:\n(x - 3)(x + 1) = 0\nThis gives the critical points x = 3 and x = -1.\n\nNext, we use",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible solution via derivative, critical points, second derivative test, and evaluation. The distractors are mostly plausible, especially 10 as the local maximum value. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed, and well-suited for level B certification. The solution requires 4-5 logical steps (differentiate, find critical points, apply second derivative test, evaluate function), matching the requested difficulty. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically correct, and perfectly aligns with the requested difficulty level. Distractors are based on common errors, such as finding the local maximum or the y-intercept.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='-22' expected='-22'",
+      "raw": {
+        "ok": true,
+        "stdout": "-22",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Given f(x) = x^3 - 3x^2 - 9x + 5. To find the local minimum value, compute the derivative: f'(x) = 3x^2 - 6x - 9. Factor: f'(x) = 3(x^2 - 2x - 3) = 3(x - 3)(x + 1). Critical points are x = 3 and x = -1. Compute the second derivative: f''(x) = 6x - 6. At x = -1, f''(-1) = -6 - 6 = -12 < 0, so x = -1 is a local maximum. At x = 3, f''(3) = 18 - 6 = 12 > 0, so x = 3 is a local minimum. Now evaluate f(\n\n[anthropic/claude-sonnet-4.6] answered A: Find critical points by setting f'(x) = 0.\n\nf(x) = x³ - 3x² - 9x + 5\nf'(x) = 3x² - 6x - 9 = 3(x² - 2x - 3) = 3(x - 3)(x + 1)\n\nCritical points: x = 3 and x = -1\n\nDetermine which is a local minimum using second derivative:\nf''(x) = 6x - 6\n\nAt x = 3: f''(3) = 18 - 6 = 12 > 0 → local minimum\nAt x = -1: f''(-1) = -6 - 6 = -12 < 0 → local maximum\n\nLocal minimum value at x = 3:\nf(3) = 27 - 27 - 27 + 5 = \n\n[google/gemini-3.1-pro-preview] answered A: To find the local minimum value of the function f(x) = x^3 - 3x^2 - 9x + 5, we first need to find its critical points by taking the first derivative and setting it to zero.\n\nf'(x) = 3x^2 - 6x - 9\n\nSetting f'(x) = 0:\n3x^2 - 6x - 9 = 0\nDivide the entire equation by 3:\nx^2 - 2x - 3 = 0\n\nFactoring the quadratic equation:\n(x - 3)(x + 1) = 0\nThis gives the critical points x = 3 and x = -1.\n\nNext, we use",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible solution via derivative, critical points, second derivative test, and evaluation. The distractors are mostly plausible, especially 10 as the local maximum value. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed, and well-suited for level B certification. The solution requires 4-5 logical steps (differentiate, find critical points, apply second derivative test, evaluate function), matching the requested difficulty. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically correct, and perfectly aligns with the requested difficulty level. Distractors are based on common errors, such as finding the local maximum or the y-intercept.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='-22' expected='-22'",
+        "raw": {
+          "ok": true,
+          "stdout": "-22",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given f(x) = x^3 - 3x^2 - 9x + 5. To find the local minimum value, compute the derivative: f'(x) = 3x^2 - 6x - 9. Factor: f'(x) = 3(x^2 - 2x - 3) = 3(x - 3)(x + 1). Critical points are x = 3 and x = -1. Compute the second derivative: f''(x) = 6x - 6. At x = -1, f''(-1) = -6 - 6 = -12 < 0, so x = -1 is a local maximum. At x = 3, f''(3) = 18 - 6 = 12 > 0, so x = 3 is a local minimum. Now evaluate f(3): f(3) = 3^3 - 3(3^2) - 9(3) + 5 = 27 - 27 - 27 + 5 = -22. Therefore, the local minimum value is -22.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single defensible solution via derivative, critical points, second derivative test, and evaluation. The distractors are mostly plausible, especially 10 as the local maximum value.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-22' expected='-22'",
+            "raw": {
+              "ok": true,
+              "stdout": "-22",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Find critical points by setting f'(x) = 0.\n\nf(x) = x³ - 3x² - 9x + 5\nf'(x) = 3x² - 6x - 9 = 3(x² - 2x - 3) = 3(x - 3)(x + 1)\n\nCritical points: x = 3 and x = -1\n\nDetermine which is a local minimum using second derivative:\nf''(x) = 6x - 6\n\nAt x = 3: f''(3) = 18 - 6 = 12 > 0 → local minimum\nAt x = -1: f''(-1) = -6 - 6 = -12 < 0 → local maximum\n\nLocal minimum value at x = 3:\nf(3) = 27 - 27 - 27 + 5 = -22\n\nThe local minimum value is -22.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed, and well-suited for level B certification. The solution requires 4-5 logical steps (differentiate, find critical points, apply second derivative test, evaluate function), matching the requested difficulty. Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-22' expected='-22'",
+            "raw": {
+              "ok": true,
+              "stdout": "-22",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the local minimum value of the function f(x) = x^3 - 3x^2 - 9x + 5, we first need to find its critical points by taking the first derivative and setting it to zero.\n\nf'(x) = 3x^2 - 6x - 9\n\nSetting f'(x) = 0:\n3x^2 - 6x - 9 = 0\nDivide the entire equation by 3:\nx^2 - 2x - 3 = 0\n\nFactoring the quadratic equation:\n(x - 3)(x + 1) = 0\nThis gives the critical points x = 3 and x = -1.\n\nNext, we use the second derivative test to determine which critical point corresponds to a local minimum.\nf''(x) = 6x - 6\n\nEvaluating the second derivative at the critical points:\nFor x = -1: f''(-1) = 6(-1) - 6 = -12 (Since f''(-1) < 0, x = -1 is a local maximum)\nFor x = 3: f''(3) = 6(3) - 6 = 12 (Since f''(3) > 0, x = 3 is a local minimum)\n\nNow, we calculate the value of the function at the local minimum x = 3:\nf(3) = (3)^3 - 3(3)^2 - 9(3) + 5\nf(3) = 27 - 27 - 27 + 5\nf(3) = -27 + 5\nf(3) = -22\n\nThe local minimum value of the function is -22, which matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, mathematically correct, and perfectly aligns with the requested difficulty level. Distractors are based on common errors, such as finding the local maximum or the y-intercept.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-22' expected='-22'",
+            "raw": {
+              "ok": true,
+              "stdout": "-22",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:50:53.562822+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,628 @@
+{
+  "id": "04ac66505cdd48d797ed6fce0fccfede",
+  "subject": "math",
+  "level": "B",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "openai/gpt-5.5",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T18:18:34.937360+00:00",
+  "passage": "Жазғы демалыс базасында жаңа тікбұрышты бассейн іске қосылды. Бассейннің ішкі өлшемдері: ұзындығы — 12 м, ені — 5 м, тереңдігі — 1,5 м. Бассейннің түбі мен төрт бүйір қабырғасы плиткамен қапталады. Бір қорап плитка 2,5 м² ауданды жабады және 4500 теңге тұрады. Бассейн су сорғысымен толтырылады, сорғының өнімділігі — 9 м³/сағ. Суды залалсыздандыру үшін 1 хлор таблеткасы 12 м³ суға есептеледі. Бассейнге кіру билеті бір адамға 1200 теңге. Күн сайынғы қызмет көрсету шығыны — 60000 теңге.\n\nАлғашқы төрт күндегі келушілер саны:\nДүйсенбі — 42 адам\nСейсенбі — 55 адам\nСәрсенбі — 48 адам\nБейсенбі — 65 адам",
+  "questions": [
+    {
+      "question_text": "Кесте бойынша бейсенбі күні бассейнге қанша адам келген?",
+      "options": [
+        {
+          "label": "A",
+          "text": "48 адам"
+        },
+        {
+          "label": "B",
+          "text": "55 адам"
+        },
+        {
+          "label": "C",
+          "text": "42 адам"
+        },
+        {
+          "label": "D",
+          "text": "65 адам"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Кестеде бейсенбі күні 65 адам келгені көрсетілген, сондықтан D дұрыс. A — сәрсенбінің мәні, B — сейсенбінің мәні, C — дүйсенбінің мәні.",
+      "critic_score": 6.167,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 4.667,
+        "difficulty_alignment": 0.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The question asks: according to the table, how many people visited the pool on Thursday. The table lists: Monday — 42 people, Tuesday — 55 people, Wednesday — 48 people, Thursday — 65 people. Therefore, the number of visitors on Thursday was 65 people. This corresponds to option D.\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks how many people visited the pool on Thursday (Бейсенбі) according to the table. From the text: Monday (Дүйсенбі) — 42, Tuesday (Сейсенбі) — 55, Wednesday (Сәрсенбі) — 48, Thursday (Бейсенбі) — 65. Therefore, on Thursday, 65 people visited.\n\n[google/gemini-3.1-pro-preview] answered D: The question asks for the number of people who visited the pool on Thursday (Бейсенбі). According to the provided text, the number of visitors for the first four days are: Monday (Дүйсенбі) — 42, Tuesday (Сейсенбі) — 55, Wednesday (Сәрсенбі) — 48, and Thursday (Бейсенбі) — 65. Therefore, 65 people visited the pool on Thursday.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 4.667,
+            "difficulty_alignment": 0.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.167,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: Thursday corresponds to 65 visitors. However, the item is far below the requested B-level difficulty, since it only requires direct extraction of one value from a short list and ignores almost all mathematical context. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously D (65 people on Thursday), and the distractors are the other three days' values — plausible confusions. However, the question is trivially Level A (simple reading comprehension/lookup), not Level B, which requires multi-step reasoning or analysis. A teacher needs only to read one line of the table to answer it. | [google/gemini-3.1-pro-preview] The question completely fails to test mathematical knowledge or the requested Level B difficulty. It is a trivial reading comprehension task that requires zero calculations, ignoring all the rich mathematical data provided in the text.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level B, ask a multi-step question using the given pool dimensions, costs, pump rate, chlorine requirement, and visitor revenue, such as calculating net profit for a day or comparing total setup/service costs with ticket income. | [anthropic/claude-sonnet-4.6] Redesign the question to require multi-step calculation using the table data — for example, ask for total revenue over the four days, or the number of chlorine tablets needed for the total volume of water used across all four days, or the profit/loss for the week. This would genuinely reach Level B difficulty and make use of the rich numerical context provided in the text. | [google/gemini-3.1-pro-preview] Change the question to require multi-step calculations using the provided data to match Level B. For example, ask for the net profit/loss on Thursday, which would require calculating the revenue (65 * 1200) and subtracting the daily expenses (60000), or ask for the total cost of tiling the pool.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks: according to the table, how many people visited the pool on Thursday. The table lists: Monday — 42 people, Tuesday — 55 people, Wednesday — 48 people, Thursday — 65 people. Therefore, the number of visitors on Thursday was 65 people. This corresponds to option D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.0,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: Thursday corresponds to 65 visitors. However, the item is far below the requested B-level difficulty, since it only requires direct extraction of one value from a short list and ignores almost all mathematical context.",
+              "improvement_suggestions": "To match level B, ask a multi-step question using the given pool dimensions, costs, pump rate, chlorine requirement, and visitor revenue, such as calculating net profit for a day or comparing total setup/service costs with ticket income.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks how many people visited the pool on Thursday (Бейсенбі) according to the table. From the text: Monday (Дүйсенбі) — 42, Tuesday (Сейсенбі) — 55, Wednesday (Сәрсенбі) — 48, Thursday (Бейсенбі) — 65. Therefore, on Thursday, 65 people visited.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 1.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.5,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously D (65 people on Thursday), and the distractors are the other three days' values — plausible confusions. However, the question is trivially Level A (simple reading comprehension/lookup), not Level B, which requires multi-step reasoning or analysis. A teacher needs only to read one line of the table to answer it.",
+              "improvement_suggestions": "Redesign the question to require multi-step calculation using the table data — for example, ask for total revenue over the four days, or the number of chlorine tablets needed for the total volume of water used across all four days, or the profit/loss for the week. This would genuinely reach Level B difficulty and make use of the rich numerical context provided in the text.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the number of people who visited the pool on Thursday (Бейсенбі). According to the provided text, the number of visitors for the first four days are: Monday (Дүйсенбі) — 42, Tuesday (Сейсенбі) — 55, Wednesday (Сәрсенбі) — 48, and Thursday (Бейсенбі) — 65. Therefore, 65 people visited the pool on Thursday.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 0.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 5.0,
+              "pass_fail": false,
+              "comments": "The question completely fails to test mathematical knowledge or the requested Level B difficulty. It is a trivial reading comprehension task that requires zero calculations, ignoring all the rich mathematical data provided in the text.",
+              "improvement_suggestions": "Change the question to require multi-step calculations using the provided data to match Level B. For example, ask for the net profit/loss on Thursday, which would require calculating the revenue (65 * 1200) and subtracting the daily expenses (60000), or ask for the total cost of tiling the pool.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Бассейннің түбі мен төрт бүйір қабырғасын қаптау үшін кемінде неше қорап плитка қажет?",
+      "options": [
+        {
+          "label": "A",
+          "text": "44 қорап"
+        },
+        {
+          "label": "B",
+          "text": "45 қорап"
+        },
+        {
+          "label": "C",
+          "text": "24 қорап"
+        },
+        {
+          "label": "D",
+          "text": "50 қорап"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Қапталатын аудан: $S=12\\cdot5+2\\cdot12\\cdot1{,}5+2\\cdot5\\cdot1{,}5=60+36+15=111$ м². Бір қорап 2,5 м² жабады: $111:2{,}5=44{,}4$. Қорап саны бүтін болуы керек, сондықтан 45 қорап қажет. A — 44,4-ті төмен қарай дөңгелектеу қатесі; C — тек түбінің ауданын $60:2{,}5=24$ деп алған; D — артық дөңгелектелген мән.",
+      "critic_score": 9.467,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.167,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: We need the area to be tiled: the bottom plus the four side walls of a rectangular pool. Bottom area = length × width = 12 m × 5 m = 60 m². Two long side walls: each has area 12 m × 1.5 m = 18 m², so together 2 × 18 = 36 m². Two short side walls: each has area 5 m × 1.5 m = 7.5 m², so together 2 × 7.5 = 15 m². Total tiled area = 60 + 36 + 15 = 111 m². One box covers 2.5 m², so number of boxes need\n\n[anthropic/claude-sonnet-4.6] answered B: We need to find the total area of the bottom and four side walls of the pool, then determine how many boxes of tiles are needed.\n\nPool dimensions: length = 12 m, width = 5 m, depth = 1.5 m\n\nBottom area = 12 × 5 = 60 m²\n\nFour side walls:\n- Two long walls: 2 × (12 × 1.5) = 2 × 18 = 36 m²\n- Two short walls: 2 × (5 × 1.5) = 2 × 7.5 = 15 m²\n\nTotal wall area = 36 + 15 = 51 m²\n\nTotal area = 60 + 51 = 111\n\n[google/gemini-3.1-pro-preview] answered B: To find the minimum number of boxes of tiles needed, we first need to calculate the total surface area of the pool's bottom and four side walls.\n\nThe dimensions of the pool are:\nLength (L) = 12 m\nWidth (W) = 5 m\nDepth (H) = 1.5 m\n\n1. Area of the bottom = L * W = 12 * 5 = 60 m²\n2. Area of the two longer side walls = 2 * (L * H) = 2 * (12 * 1.5) = 36 m²\n3. Area of the two shorter side walls = 2 * (W",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.167,
+            "difficulty_alignment": 8.667,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.467,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the tiled area is 111 m², requiring 45 boxes. The item is a solid multi-step word problem, though much of the surrounding text is irrelevant to the asked quantity. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (B=45 boxes). All three distractors correspond to identifiable errors: A=rounding down, C=only counting the floor, D=over-rounding. The Kazakh is natural and terminology is appropriate for a math context. | [google/gemini-3.1-pro-preview] The question is perfectly structured for a mathematical literacy/text analysis context. The distractors are well-designed, capturing common student errors like rounding down instead of up.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need the area to be tiled: the bottom plus the four side walls of a rectangular pool. Bottom area = length × width = 12 m × 5 m = 60 m². Two long side walls: each has area 12 m × 1.5 m = 18 m², so together 2 × 18 = 36 m². Two short side walls: each has area 5 m × 1.5 m = 7.5 m², so together 2 × 7.5 = 15 m². Total tiled area = 60 + 36 + 15 = 111 m². One box covers 2.5 m², so number of boxes needed = 111 ÷ 2.5 = 44.4. Since boxes must be whole and the question asks for at least enough, round up to 45 boxes.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.5,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the solution is unambiguous: the tiled area is 111 m², requiring 45 boxes. The item is a solid multi-step word problem, though much of the surrounding text is irrelevant to the asked quantity.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need to find the total area of the bottom and four side walls of the pool, then determine how many boxes of tiles are needed.\n\nPool dimensions: length = 12 m, width = 5 m, depth = 1.5 m\n\nBottom area = 12 × 5 = 60 m²\n\nFour side walls:\n- Two long walls: 2 × (12 × 1.5) = 2 × 18 = 36 m²\n- Two short walls: 2 × (5 × 1.5) = 2 × 7.5 = 15 m²\n\nTotal wall area = 36 + 15 = 51 m²\n\nTotal area = 60 + 51 = 111 m²\n\nEach box covers 2.5 m²\n\nNumber of boxes = 111 / 2.5 = 44.4\n\nSince we need at least this many boxes, we round up: 45 boxes.\n\nThe answer is B) 45 қорап.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.3,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound with a unique correct answer (B=45 boxes). All three distractors correspond to identifiable errors: A=rounding down, C=only counting the floor, D=over-rounding. The Kazakh is natural and terminology is appropriate for a math context.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the minimum number of boxes of tiles needed, we first need to calculate the total surface area of the pool's bottom and four side walls.\n\nThe dimensions of the pool are:\nLength (L) = 12 m\nWidth (W) = 5 m\nDepth (H) = 1.5 m\n\n1. Area of the bottom = L * W = 12 * 5 = 60 m²\n2. Area of the two longer side walls = 2 * (L * H) = 2 * (12 * 1.5) = 36 m²\n3. Area of the two shorter side walls = 2 * (W * H) = 2 * (5 * 1.5) = 15 m²\n\nTotal area to be tiled = 60 + 36 + 15 = 111 m².\n\nEach box of tiles covers 2.5 m².\nTo find the number of boxes required, we divide the total area by the area covered by one box:\nNumber of boxes = 111 / 2.5 = 44.4\n\nSince you cannot purchase a fraction of a box, you must round up to the next whole number to ensure you have enough tiles. Therefore, 45 boxes are needed.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is perfectly structured for a mathematical literacy/text analysis context. The distractors are well-designed, capturing common student errors like rounding down instead of up.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Сорғы бассейнді толық толтыру үшін қанша уақыт жұмыс істеуі керек?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 сағат"
+        },
+        {
+          "label": "B",
+          "text": "9 сағат"
+        },
+        {
+          "label": "C",
+          "text": "15 сағат"
+        },
+        {
+          "label": "D",
+          "text": "90 сағат"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Бассейн көлемі: $V=12\\cdot5\\cdot1{,}5=90$ м³. Сорғы 1 сағатта 9 м³ су құяды, сондықтан уақыт $90:9=10$ сағат. B — сорғы өнімділігін уақытпен шатастыру; C — $90:6$ сияқты қате бөлу нәтижесі; D — көлемді уақыт деп қабылдау қатесі.",
+      "critic_score": 8.867,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 7.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The pool is a rectangular prism. Its volume is length × width × depth. Given length = 12 m, width = 5 m, depth = 1.5 m. Volume = 12 × 5 × 1.5 = 60 × 1.5 = 90 m^3. The pump capacity is 9 m^3 per hour. Time needed = volume ÷ pump rate = 90 ÷ 9 = 10 hours. Therefore, the correct option is A) 10 сағат.\n\n[anthropic/claude-sonnet-4.6] answered A: Step 1: Calculate the volume of the pool.\nVolume = length × width × depth = 12 m × 5 m × 1.5 m = 90 m³\n\nStep 2: Calculate the time to fill the pool.\nPump productivity = 9 m³/hour\nTime = Volume / Pump rate = 90 m³ ÷ 9 m³/hour = 10 hours\n\nThe answer is 10 hours.\n\n[google/gemini-3.1-pro-preview] answered A: First, we need to calculate the total volume of the rectangular pool. The dimensions given are length = 12 m, width = 5 m, and depth = 1.5 m. The volume V is calculated as V = length * width * depth = 12 * 5 * 1.5 = 90 m³. The pump's capacity is given as 9 m³/hour. To find the time required to completely fill the pool, we divide the total volume by the pump's capacity: Time = 90 m³ / 9 m³/hour = 1",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.667,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.867,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined: compute the pool volume and divide by the pump rate. The item is somewhat easier than a typical level B teacher-certification task, and one distractor is weak, but the wording is clear. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed (V=90 m³, t=10 hours). Distractors B (9 hours — confusing pump rate with time) and D (90 hours — treating volume as time) are plausible misconceptions, while C (15 hours) is somewhat less motivated. The question is slightly below Level B difficulty as it requires only 2 straightforward steps (volume calculation + division) with no real ambiguity or multi-concept analysis. | [google/gemini-3.1-pro-preview] The question is well-structured, tests mathematical literacy effectively by requiring the extraction of relevant data from a larger text, and has plausible distractors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with Level B difficulty, consider adding a small complication such as asking for the number of chlorine tablets needed after filling (requiring an additional step), or asking how many hours the pump must run if it operates only 8 hours per day. Distractor C could be made more plausible by tying it to a specific error (e.g., using depth=1.8 m or dividing by 6 m³/h).",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The pool is a rectangular prism. Its volume is length × width × depth. Given length = 12 m, width = 5 m, depth = 1.5 m. Volume = 12 × 5 × 1.5 = 60 × 1.5 = 90 m^3. The pump capacity is 9 m^3 per hour. Time needed = volume ÷ pump rate = 90 ÷ 9 = 10 hours. Therefore, the correct option is A) 10 сағат.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 6.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely determined: compute the pool volume and divide by the pump rate. The item is somewhat easier than a typical level B teacher-certification task, and one distractor is weak, but the wording is clear.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Calculate the volume of the pool.\nVolume = length × width × depth = 12 m × 5 m × 1.5 m = 90 m³\n\nStep 2: Calculate the time to fill the pool.\nPump productivity = 9 m³/hour\nTime = Volume / Pump rate = 90 m³ ÷ 9 m³/hour = 10 hours\n\nThe answer is 10 hours.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.3,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-keyed (V=90 m³, t=10 hours). Distractors B (9 hours — confusing pump rate with time) and D (90 hours — treating volume as time) are plausible misconceptions, while C (15 hours) is somewhat less motivated. The question is slightly below Level B difficulty as it requires only 2 straightforward steps (volume calculation + division) with no real ambiguity or multi-concept analysis.",
+              "improvement_suggestions": "To better align with Level B difficulty, consider adding a small complication such as asking for the number of chlorine tablets needed after filling (requiring an additional step), or asking how many hours the pump must run if it operates only 8 hours per day. Distractor C could be made more plausible by tying it to a specific error (e.g., using depth=1.8 m or dividing by 6 m³/h).",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "First, we need to calculate the total volume of the rectangular pool. The dimensions given are length = 12 m, width = 5 m, and depth = 1.5 m. The volume V is calculated as V = length * width * depth = 12 * 5 * 1.5 = 90 m³. The pump's capacity is given as 9 m³/hour. To find the time required to completely fill the pool, we divide the total volume by the pump's capacity: Time = 90 m³ / 9 m³/hour = 10 hours. This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.8,
+              "pass_fail": true,
+              "comments": "The question is well-structured, tests mathematical literacy effectively by requiring the extraction of relevant data from a larger text, and has plausible distractors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Сейсенбі күні келушілер саны дүйсенбімен салыстырғанда шамамен қанша пайызға көп болды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13%"
+        },
+        {
+          "label": "B",
+          "text": "23,6%"
+        },
+        {
+          "label": "C",
+          "text": "31%"
+        },
+        {
+          "label": "D",
+          "text": "76,4%"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Дүйсенбіде 42 адам, сейсенбіде 55 адам келген. Айырмасы: $55-42=13$. Дүйсенбімен салыстырғандағы пайыз: $\\frac{13}{42}\\cdot100\\%\\approx30{,}95\\%\\approx31\\%$. C дұрыс. A — тек адам санының айырмасы; B — айырманы сейсенбінің санына бөліп есептеу қатесі: $13:55$; D — $42:55\\cdot100\\%$ мәні, яғни дұрыс емес қатынас.",
+      "critic_score": 9.167,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 7.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The question asks how many percent more visitors there were on Tuesday compared with Monday. Monday visitors = 42. Tuesday visitors = 55. Increase = 55 - 42 = 13 visitors. Percentage increase relative to Monday = (13 / 42) × 100% = 0.309523... × 100% = 30.9523...%, which rounds to approximately 31%. Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks: By approximately what percentage was Tuesday's visitor count greater than Monday's?\n\nMonday (Дүйсенбі): 42 people\nTuesday (Сейсенбі): 55 people\n\nPercentage increase = ((55 - 42) / 42) × 100\n= (13 / 42) × 100\n= 30.95...%\n≈ 31%\n\nThis matches option C.\n\n[google/gemini-3.1-pro-preview] answered C: To find the percentage increase in the number of visitors on Tuesday compared to Monday, we first identify the number of visitors for both days from the text:\nMonday (Дүйсенбі) = 42 visitors\nTuesday (Сейсенбі) = 55 visitors\n\nNext, we calculate the absolute increase in visitors:\nIncrease = Tuesday - Monday = 55 - 42 = 13 visitors.\n\nThen, we find the percentage increase relative to Monday's number o",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.167,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the calculation is unambiguous: the increase is 13 out of 42, about 31%. Distractors are mostly based on identifiable common errors, but the task is somewhat easy for level B because it is a basic percentage-increase calculation with extra irrelevant text. | [anthropic/claude-sonnet-4.6] The question is correctly keyed (C, ≈31%), the math is unambiguous, and the Kazakh is natural. Distractors are well-motivated: A=raw difference (13), B=13/55×100, D=42/55×100. The cognitive demand is slightly low for Level B — it is essentially a single-step percentage-increase calculation embedded in a long text, making it closer to Level A once the relevant numbers are identified. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. The distractors are based on common student errors in percentage calculations.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with Level B difficulty, consider asking a two-step question — e.g., combining the percentage increase with a revenue or cost comparison — so that 2–4 genuine logical steps are required rather than just locating two numbers and applying one formula.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks how many percent more visitors there were on Tuesday compared with Monday. Monday visitors = 42. Tuesday visitors = 55. Increase = 55 - 42 = 13 visitors. Percentage increase relative to Monday = (13 / 42) × 100% = 0.309523... × 100% = 30.9523...%, which rounds to approximately 31%. Therefore the correct option is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 6.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the calculation is unambiguous: the increase is 13 out of 42, about 31%. Distractors are mostly based on identifiable common errors, but the task is somewhat easy for level B because it is a basic percentage-increase calculation with extra irrelevant text.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks: By approximately what percentage was Tuesday's visitor count greater than Monday's?\n\nMonday (Дүйсенбі): 42 people\nTuesday (Сейсенбі): 55 people\n\nPercentage increase = ((55 - 42) / 42) × 100\n= (13 / 42) × 100\n= 30.95...%\n≈ 31%\n\nThis matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is correctly keyed (C, ≈31%), the math is unambiguous, and the Kazakh is natural. Distractors are well-motivated: A=raw difference (13), B=13/55×100, D=42/55×100. The cognitive demand is slightly low for Level B — it is essentially a single-step percentage-increase calculation embedded in a long text, making it closer to Level A once the relevant numbers are identified.",
+              "improvement_suggestions": "To better align with Level B difficulty, consider asking a two-step question — e.g., combining the percentage increase with a revenue or cost comparison — so that 2–4 genuine logical steps are required rather than just locating two numbers and applying one formula.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the percentage increase in the number of visitors on Tuesday compared to Monday, we first identify the number of visitors for both days from the text:\nMonday (Дүйсенбі) = 42 visitors\nTuesday (Сейсенбі) = 55 visitors\n\nNext, we calculate the absolute increase in visitors:\nIncrease = Tuesday - Monday = 55 - 42 = 13 visitors.\n\nThen, we find the percentage increase relative to Monday's number of visitors:\nPercentage increase = (Increase / Monday) * 100%\nPercentage increase = (13 / 42) * 100% ≈ 0.3095238 * 100% ≈ 30.95%.\n\nRounding to the nearest whole number, we get approximately 31%. This matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. The distractors are based on common student errors in percentage calculations.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Күн сайынғы қызмет көрсету шығыны 60000 теңге болса, қай күндері билеттен түскен табыс осы шығыннан артық болды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Тек сейсенбі және бейсенбі"
+        },
+        {
+          "label": "B",
+          "text": "Тек дүйсенбі және сәрсенбі"
+        },
+        {
+          "label": "C",
+          "text": "Барлық төрт күнде"
+        },
+        {
+          "label": "D",
+          "text": "Тек бейсенбі күні"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Бір билет 1200 теңге. Дүйсенбі: $42\\cdot1200=50400$ теңге, шығыннан аз. Сейсенбі: $55\\cdot1200=66000$ теңге, шығыннан көп. Сәрсенбі: $48\\cdot1200=57600$ теңге, шығыннан аз. Бейсенбі: $65\\cdot1200=78000$ теңге, шығыннан көп. Сондықтан тек сейсенбі және бейсенбі күндері табыс шығыннан артық болды. B — шығыннан аз күндерді таңдаған; C — дүйсенбі мен сәрсенбіні қате қосқан; D — сейсенбіні ескермеген.",
+      "critic_score": 9.1,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: Ticket revenue per day equals number of visitors multiplied by 1200 tenge. The daily service cost is 60000 tenge, so we need revenue > 60000. Monday: 42 × 1200 = 50400 tenge, and 50400 < 60000, so not enough. Tuesday: 55 × 1200 = 66000 tenge, and 66000 > 60000, so it exceeds the cost. Wednesday: 48 × 1200 = 57600 tenge, and 57600 < 60000, so not enough. Thursday: 65 × 1200 = 78000 tenge, and 78000\n\n[anthropic/claude-sonnet-4.6] answered A: Each ticket costs 1200 tenge. Daily operating cost is 60,000 tenge. We need to find which days the ticket revenue exceeded 60,000 tenge.\n\nBreak-even number of visitors: 60,000 / 1,200 = 50 visitors needed to exceed costs.\n\nMonday: 42 visitors → 42 × 1200 = 50,400 tenge < 60,000 → Does NOT exceed\nTuesday: 55 visitors → 55 × 1200 = 66,000 tenge > 60,000 → Exceeds\nWednesday: 48 visitors → 48 × 1200 =\n\n[google/gemini-3.1-pro-preview] answered A: To find out which days the ticket revenue exceeded the daily maintenance cost, we first need to determine the threshold number of visitors. The daily maintenance cost is 60,000 tenge, and the ticket price is 1,200 tenge per person. \n\nThreshold number of visitors = 60,000 / 1,200 = 50 people.\n\nThis means that on any day with more than 50 visitors, the revenue will exceed the daily maintenance cost.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation matches the required calculations. However, the item is mathematically quite basic for level B; it mainly tests simple multiplication/comparison with some irrelevant contextual data. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and clearly written in natural Kazakh. The calculation is straightforward (compare daily revenue to fixed cost), which makes it slightly easier than a true Level B item, but the multi-step comparison across four days and the embedded text context provide adequate complexity. Distractors are well-designed with identifiable error paths. | [google/gemini-3.1-pro-preview] The question is well-structured and perfectly tests mathematical literacy by requiring the test-taker to extract relevant information from a text containing multiple distractors. The calculations are straightforward but require careful reading.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Ticket revenue per day equals number of visitors multiplied by 1200 tenge. The daily service cost is 60000 tenge, so we need revenue > 60000. Monday: 42 × 1200 = 50400 tenge, and 50400 < 60000, so not enough. Tuesday: 55 × 1200 = 66000 tenge, and 66000 > 60000, so it exceeds the cost. Wednesday: 48 × 1200 = 57600 tenge, and 57600 < 60000, so not enough. Thursday: 65 × 1200 = 78000 tenge, and 78000 > 60000, so it exceeds the cost. Therefore, only Tuesday and Thursday had ticket revenue greater than the daily service cost.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.4,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the explanation matches the required calculations. However, the item is mathematically quite basic for level B; it mainly tests simple multiplication/comparison with some irrelevant contextual data.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Each ticket costs 1200 tenge. Daily operating cost is 60,000 tenge. We need to find which days the ticket revenue exceeded 60,000 tenge.\n\nBreak-even number of visitors: 60,000 / 1,200 = 50 visitors needed to exceed costs.\n\nMonday: 42 visitors → 42 × 1200 = 50,400 tenge < 60,000 → Does NOT exceed\nTuesday: 55 visitors → 55 × 1200 = 66,000 tenge > 60,000 → Exceeds\nWednesday: 48 visitors → 48 × 1200 = 57,600 tenge < 60,000 → Does NOT exceed\nThursday: 65 visitors → 65 × 1200 = 78,000 tenge > 60,000 → Exceeds\n\nSo only Tuesday (Сейсенбі) and Thursday (Бейсенбі) had revenue exceeding the daily operating cost.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is factually correct, well-keyed, and clearly written in natural Kazakh. The calculation is straightforward (compare daily revenue to fixed cost), which makes it slightly easier than a true Level B item, but the multi-step comparison across four days and the embedded text context provide adequate complexity. Distractors are well-designed with identifiable error paths.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find out which days the ticket revenue exceeded the daily maintenance cost, we first need to determine the threshold number of visitors. The daily maintenance cost is 60,000 tenge, and the ticket price is 1,200 tenge per person. \n\nThreshold number of visitors = 60,000 / 1,200 = 50 people.\n\nThis means that on any day with more than 50 visitors, the revenue will exceed the daily maintenance cost.\n\nLet's check the number of visitors for each day:\n- Monday (Дүйсенбі): 42 people (42 < 50) -> Revenue is 42 * 1200 = 50,400 tenge (Does not exceed)\n- Tuesday (Сейсенбі): 55 people (55 > 50) -> Revenue is 55 * 1200 = 66,000 tenge (Exceeds)\n- Wednesday (Сәрсенбі): 48 people (48 < 50) -> Revenue is 48 * 1200 = 57,600 tenge (Does not exceed)\n- Thursday (Бейсенбі): 65 people (65 > 50) -> Revenue is 65 * 1200 = 78,000 tenge (Exceeds)\n\nThe revenue exceeded the cost only on Tuesday and Thursday (Тек сейсенбі және бейсенбі). This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-structured and perfectly tests mathematical literacy by requiring the test-taker to extract relevant information from a text containing multiple distractors. The calculations are straightforward but require careful reading.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

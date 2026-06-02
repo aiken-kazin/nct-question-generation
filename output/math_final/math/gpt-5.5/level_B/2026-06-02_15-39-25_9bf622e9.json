@@ -1,0 +1,209 @@
+{
+  "id": "9bf622e9-297b-4c06-9c12-92fc641735c2",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "exponential_logarithmic_functions",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$f(x)=\\log_3(9-3^x)$ функциясы берілген. Оның $y$ осімен қиылысу нүктесінің ординатасын және мәндер жиынын анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\log_3 8;\\ (-\\infty;2]$"
+    },
+    {
+      "label": "B",
+      "text": "$2;\\ (-\\infty;\\log_3 8]$"
+    },
+    {
+      "label": "C",
+      "text": "$\\log_3 8;\\ (-\\infty;2)$"
+    },
+    {
+      "label": "D",
+      "text": "$\\log_3 10;\\ (2;+\\infty)$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Алдымен $y$ осімен қиылысу үшін $x=0$ деп аламыз: $f(0)=\\log_3(9-3^0)=\\log_3(9-1)=\\log_3 8$. Енді мәндер жиынын табамыз. Логарифм анықталуы үшін $9-3^x>0$, сондықтан $3^x<9=3^2$, яғни $x<2$. Осы аралықта $3^x>0$, демек $9-3^x<9$. Сонымен қатар $x\\to 2-0$ болғанда $9-3^x\\to 0+$, ал $x\\to -\\infty$ болғанда $9-3^x\\to 9$. Сондықтан логарифм аргументі $(0;9)$ аралығында жатады. $\\log_3 t$ функциясы өспелі болғандықтан, $f(x)\\in(-\\infty;2)$. Жоғарғы шекара $2$ мәніне жетпейді, себебі $9-3^x=9$ болуы мүмкін емес. Дұрыс жауап: $\\log_3 8;\\ (-\\infty;2)$.",
+  "latex_formulas": [
+    "$9-3^x>0$",
+    "$f(0)=\\log_3(9-3^0)=\\log_3 8$",
+    "$E(f)=(-\\infty;2)$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The y-axis intersection occurs at x = 0. Compute f(0) = log_3(9 - 3^0) = log_3(9 - 1) = log_3 8, so the ordinate is log_3 8. For the domain, the logarithm argument must be positive: 9 - 3^x > 0, so 3^x < 9 = 3^2, hence x < 2. For the range, as x ranges over (-infinity, 2), 3^x ranges over (0, 9). Therefore 9 - 3^x ranges over (0, 9). Applying log base 3, the range is log_3((0, 9)) = (-infinity, lo\n\n[anthropic/claude-sonnet-4.6] answered C: We have f(x) = log₃(9 - 3^x).\n\n**Step 1: Find the y-intercept (x = 0)**\nf(0) = log₃(9 - 3^0) = log₃(9 - 1) = log₃(8)\n\nSo the y-intercept ordinate is log₃8.\n\n**Step 2: Find the domain**\nWe need 9 - 3^x > 0\n→ 3^x < 9 = 3²\n→ x < 2\nDomain: (-∞, 2)\n\n**Step 3: Find the range (мәндер жиыны)**\nLet t = 3^x. Since x < 2, we have t ∈ (0, 9).\nThen f = log₃(9 - t).\nAs t → 0⁺, 9 - t → 9, so f → log₃9 = 2.\nAs t \n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Find the y-intercept (the ordinate of the intersection point with the y-axis). This occurs when x = 0.\nSubstitute x = 0 into the function:\nf(0) = \\log_3(9 - 3^0) = \\log_3(9 - 1) = \\log_3(8).\nSo, the y-intercept is \\log_3(8).\n\nStep 2: Find the range of the function.\nFirst, determine the domain of f(x). The argument of the logarithm must be strictly positive:\n9 - 3^x > 0  =>  3^x < 9  =>  x ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is mathematically unambiguous with exactly one defensible option. The task fits medium difficulty reasonably well, requiring evaluation at x=0 plus domain/range analysis. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (C), and requires 3–4 logical steps: computing the y-intercept, finding the domain, and determining the range — well-aligned with level B. Distractors are well-crafted: A uses a closed interval for the range (common error), B confuses the y-intercept with 2 (the domain boundary), D inverts the range direction. Kazakh is natural and uses standard mathematical terminology. | [google/gemini-3.1-pro-preview] The question is mathematically rigorous, perfectly aligned with the requested difficulty level, and features well-designed distractors that test common student misconceptions (e.g., closed vs. open intervals). The Kazakh terminology is accurate.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='log(8)/log(3); (-oo, 2)' expected='log(8)/log(3); (-oo, 2)'",
+      "raw": {
+        "ok": true,
+        "stdout": "log(8)/log(3); (-oo, 2)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The y-axis intersection occurs at x = 0. Compute f(0) = log_3(9 - 3^0) = log_3(9 - 1) = log_3 8, so the ordinate is log_3 8. For the domain, the logarithm argument must be positive: 9 - 3^x > 0, so 3^x < 9 = 3^2, hence x < 2. For the range, as x ranges over (-infinity, 2), 3^x ranges over (0, 9). Therefore 9 - 3^x ranges over (0, 9). Applying log base 3, the range is log_3((0, 9)) = (-infinity, lo\n\n[anthropic/claude-sonnet-4.6] answered C: We have f(x) = log₃(9 - 3^x).\n\n**Step 1: Find the y-intercept (x = 0)**\nf(0) = log₃(9 - 3^0) = log₃(9 - 1) = log₃(8)\n\nSo the y-intercept ordinate is log₃8.\n\n**Step 2: Find the domain**\nWe need 9 - 3^x > 0\n→ 3^x < 9 = 3²\n→ x < 2\nDomain: (-∞, 2)\n\n**Step 3: Find the range (мәндер жиыны)**\nLet t = 3^x. Since x < 2, we have t ∈ (0, 9).\nThen f = log₃(9 - t).\nAs t → 0⁺, 9 - t → 9, so f → log₃9 = 2.\nAs t \n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Find the y-intercept (the ordinate of the intersection point with the y-axis). This occurs when x = 0.\nSubstitute x = 0 into the function:\nf(0) = \\log_3(9 - 3^0) = \\log_3(9 - 1) = \\log_3(8).\nSo, the y-intercept is \\log_3(8).\n\nStep 2: Find the range of the function.\nFirst, determine the domain of f(x). The argument of the logarithm must be strictly positive:\n9 - 3^x > 0  =>  3^x < 9  =>  x ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is mathematically unambiguous with exactly one defensible option. The task fits medium difficulty reasonably well, requiring evaluation at x=0 plus domain/range analysis. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed (C), and requires 3–4 logical steps: computing the y-intercept, finding the domain, and determining the range — well-aligned with level B. Distractors are well-crafted: A uses a closed interval for the range (common error), B confuses the y-intercept with 2 (the domain boundary), D inverts the range direction. Kazakh is natural and uses standard mathematical terminology. | [google/gemini-3.1-pro-preview] The question is mathematically rigorous, perfectly aligned with the requested difficulty level, and features well-designed distractors that test common student misconceptions (e.g., closed vs. open intervals). The Kazakh terminology is accurate.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='log(8)/log(3); (-oo, 2)' expected='log(8)/log(3); (-oo, 2)'",
+        "raw": {
+          "ok": true,
+          "stdout": "log(8)/log(3); (-oo, 2)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The y-axis intersection occurs at x = 0. Compute f(0) = log_3(9 - 3^0) = log_3(9 - 1) = log_3 8, so the ordinate is log_3 8. For the domain, the logarithm argument must be positive: 9 - 3^x > 0, so 3^x < 9 = 3^2, hence x < 2. For the range, as x ranges over (-infinity, 2), 3^x ranges over (0, 9). Therefore 9 - 3^x ranges over (0, 9). Applying log base 3, the range is log_3((0, 9)) = (-infinity, log_3 9) = (-infinity, 2). The value 2 is not included because 9 - 3^x never equals 9. Thus the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item is mathematically unambiguous with exactly one defensible option. The task fits medium difficulty reasonably well, requiring evaluation at x=0 plus domain/range analysis.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='log(8)/log(3); (-oo, 2)' expected='log(8)/log(3); (-oo, 2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "log(8)/log(3); (-oo, 2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We have f(x) = log₃(9 - 3^x).\n\n**Step 1: Find the y-intercept (x = 0)**\nf(0) = log₃(9 - 3^0) = log₃(9 - 1) = log₃(8)\n\nSo the y-intercept ordinate is log₃8.\n\n**Step 2: Find the domain**\nWe need 9 - 3^x > 0\n→ 3^x < 9 = 3²\n→ x < 2\nDomain: (-∞, 2)\n\n**Step 3: Find the range (мәндер жиыны)**\nLet t = 3^x. Since x < 2, we have t ∈ (0, 9).\nThen f = log₃(9 - t).\nAs t → 0⁺, 9 - t → 9, so f → log₃9 = 2.\nAs t → 9⁻, 9 - t → 0⁺, so f → -∞.\n\nSince t = 3^x is strictly increasing and x ranges over (-∞, 2), t takes all values in (0, 9).\nSo 9 - t takes all values in (0, 9), and log₃(9 - t) takes all values in (-∞, log₃9) = (-∞, 2).\n\nBut we need to check: can f = 2 be achieved? That requires 9 - 3^x = 9, i.e., 3^x = 0, which is impossible. So f < 2, meaning the range is (-∞, 2) — open at 2.\n\n**Conclusion:**\n- y-intercept ordinate: log₃8\n- Range: (-∞, 2)\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed (C), and requires 3–4 logical steps: computing the y-intercept, finding the domain, and determining the range — well-aligned with level B. Distractors are well-crafted: A uses a closed interval for the range (common error), B confuses the y-intercept with 2 (the domain boundary), D inverts the range direction. Kazakh is natural and uses standard mathematical terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='log(8)/log(3); (-oo, 2)' expected='log(8)/log(3); (-oo, 2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "log(8)/log(3); (-oo, 2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Find the y-intercept (the ordinate of the intersection point with the y-axis). This occurs when x = 0.\nSubstitute x = 0 into the function:\nf(0) = \\log_3(9 - 3^0) = \\log_3(9 - 1) = \\log_3(8).\nSo, the y-intercept is \\log_3(8).\n\nStep 2: Find the range of the function.\nFirst, determine the domain of f(x). The argument of the logarithm must be strictly positive:\n9 - 3^x > 0  =>  3^x < 9  =>  x < 2.\nFor x in (-infty, 2), the exponential function 3^x takes all values in the interval (0, 9).\nTherefore, the argument of the logarithm, g(x) = 9 - 3^x, takes all values in the interval (0, 9).\nNow, apply the base-3 logarithm to this interval:\nAs g(x) approaches 0 from the right, \\log_3(g(x)) approaches -infty.\nAs g(x) approaches 9 from the left, \\log_3(g(x)) approaches \\log_3(9) = 2.\nSince the argument is strictly less than 9, the function value is strictly less than 2.\nThus, the range of f(x) is (-infty, 2).\n\nStep 3: Match the results with the given options.\nThe y-intercept is \\log_3(8) and the range is (-infty, 2).\nThis corresponds exactly to Option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous, perfectly aligned with the requested difficulty level, and features well-designed distractors that test common student misconceptions (e.g., closed vs. open intervals). The Kazakh terminology is accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='log(8)/log(3); (-oo, 2)' expected='log(8)/log(3); (-oo, 2)'",
+            "raw": {
+              "ok": true,
+              "stdout": "log(8)/log(3); (-oo, 2)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:39:25.766208+00:00",
+  "generation_attempts": 2
+}

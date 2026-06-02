@@ -1,0 +1,208 @@
+{
+  "id": "3969201c-d651-4370-b4e9-c9827e85eb39",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "exponential_logarithmic_functions",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$f(x) = \\log_{x-1}(12 - x - x^2)$ функциясының анықталу облысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$(1; 2) \\cup (2; 3)$"
+    },
+    {
+      "label": "B",
+      "text": "$(1; 3)$"
+    },
+    {
+      "label": "C",
+      "text": "$(-4; 1) \\cup (1; 3)$"
+    },
+    {
+      "label": "D",
+      "text": "$(-4; 2) \\cup (2; 3)$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Логарифмдік функцияның анықталу облысын табу үшін келесі шарттар орындалуы қажет:\n1) Логарифмнің негізі нөлден үлкен және бірге тең емес: $x - 1 > 0$ және $x - 1 \\neq 1$.\n2) Логарифмнің аргументі (логарифм ішіндегі өрнек) нөлден үлкен: $12 - x - x^2 > 0$.\n\nОсы шарттардан теңсіздіктер жүйесін құрамыз:\n$$\n\\begin{cases}\nx - 1 > 0 \\\\\nx - 1 \\neq 1 \\\\\n12 - x - x^2 > 0\n\\end{cases}\n$$\n\nӘр теңсіздікті жеке шешеміз:\n1) $x - 1 > 0 \\implies x > 1$\n2) $x - 1 \\neq 1 \\implies x \\neq 2$\n3) $12 - x - x^2 > 0 \\implies x^2 + x - 12 < 0$\nКвадраттық теңсіздіктің түбірлерін табамыз: $x^2 + x - 12 = 0 \\implies x_1 = -4, x_2 = 3$.\nПарабола тармақтары жоғары бағытталғандықтан, теріс болатын аралығы: $-4 < x < 3$ немесе $x \\in (-4; 3)$.\n\nТабылған аралықтарды ортақ жүйеге біріктіріп, қиылысуын табамыз:\n$$\n\\begin{cases}\nx > 1 \\\\\nx \\neq 2 \\\\\n-4 < x < 3\n\\end{cases}\n$$\n\nБұл шарттардың ортақ қиылысуы $x \\in (1; 2) \\cup (2; 3)$ екенін көрсетеді.",
+  "latex_formulas": [
+    "\\log_{a}(b) \\implies a > 0, a \\neq 1, b > 0",
+    "x^2 + x - 12 < 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.667,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: For a logarithm log_base(argument) to be defined over the real numbers, the base must be positive and not equal to 1, and the argument must be positive. Here the base is x - 1, so x - 1 > 0 gives x > 1, and x - 1 != 1 gives x != 2. The argument is 12 - x - x^2, so require 12 - x - x^2 > 0. Rewrite: -(x^2 + x - 12) > 0, so x^2 + x - 12 < 0. Factor: x^2 + x - 12 = (x + 4)(x - 3), so (x + 4)(x - 3) <\n\n[anthropic/claude-sonnet-4.6] answered A: For f(x) = log_{x-1}(12 - x - x²) to be defined, we need two conditions:\n\n1) The argument must be positive: 12 - x - x² > 0\n   Rearranging: x² + x - 12 < 0\n   Factor: (x + 4)(x - 3) < 0\n   Solution: -4 < x < 3, i.e., x ∈ (-4, 3)\n\n2) The base must be positive and not equal to 1: x - 1 > 0 AND x - 1 ≠ 1\n   x - 1 > 0 → x > 1\n   x - 1 ≠ 1 → x ≠ 2\n   So x ∈ (1, 2) ∪ (2, +∞)\n\nIntersecting both condition\n\n[google/gemini-3.1-pro-preview] answered A: To find the domain of the function f(x) = log_{x-1}(12 - x - x^2), we must satisfy three conditions for logarithms:\n1. The argument must be strictly positive: 12 - x - x^2 > 0.\n2. The base must be strictly positive: x - 1 > 0.\n3. The base cannot equal 1: x - 1 != 1.\n\nLet's solve each condition:\n1) 12 - x - x^2 > 0\nMultiply by -1 (which flips the inequality sign):\nx^2 + x - 12 < 0\nFactor the quadra",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.667,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution applies all necessary logarithm domain conditions: positive argument, positive base, and base not equal to 1. Distractors are plausible and correspond to common omissions such as ignoring the base positivity condition or failing to exclude base 1. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (A). All three conditions for logarithm domain are properly applied, and the solution requires 3-4 logical steps appropriate for level B. Distractors correspond to identifiable errors: B ignores x≠2, C ignores x>1 (base condition), D combines errors from both B and C. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors represent common student errors (forgetting base > 0 or base != 1), and the difficulty aligns well with Level B.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": false,
+      "passed": false,
+      "contradicted": false,
+      "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univari",
+      "raw": {
+        "ok": false,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univariate_inequality\n    e = expr.lhs - expr.rhs\n        ^^^^^^^^\nAttributeError: 'And' object has no attribute 'lhs'",
+        "timed_out": false,
+        "exit_code": 1
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: For a logarithm log_base(argument) to be defined over the real numbers, the base must be positive and not equal to 1, and the argument must be positive. Here the base is x - 1, so x - 1 > 0 gives x > 1, and x - 1 != 1 gives x != 2. The argument is 12 - x - x^2, so require 12 - x - x^2 > 0. Rewrite: -(x^2 + x - 12) > 0, so x^2 + x - 12 < 0. Factor: x^2 + x - 12 = (x + 4)(x - 3), so (x + 4)(x - 3) <\n\n[anthropic/claude-sonnet-4.6] answered A: For f(x) = log_{x-1}(12 - x - x²) to be defined, we need two conditions:\n\n1) The argument must be positive: 12 - x - x² > 0\n   Rearranging: x² + x - 12 < 0\n   Factor: (x + 4)(x - 3) < 0\n   Solution: -4 < x < 3, i.e., x ∈ (-4, 3)\n\n2) The base must be positive and not equal to 1: x - 1 > 0 AND x - 1 ≠ 1\n   x - 1 > 0 → x > 1\n   x - 1 ≠ 1 → x ≠ 2\n   So x ∈ (1, 2) ∪ (2, +∞)\n\nIntersecting both condition\n\n[google/gemini-3.1-pro-preview] answered A: To find the domain of the function f(x) = log_{x-1}(12 - x - x^2), we must satisfy three conditions for logarithms:\n1. The argument must be strictly positive: 12 - x - x^2 > 0.\n2. The base must be strictly positive: x - 1 > 0.\n3. The base cannot equal 1: x - 1 != 1.\n\nLet's solve each condition:\n1) 12 - x - x^2 > 0\nMultiply by -1 (which flips the inequality sign):\nx^2 + x - 12 < 0\nFactor the quadra",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.667,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution applies all necessary logarithm domain conditions: positive argument, positive base, and base not equal to 1. Distractors are plausible and correspond to common omissions such as ignoring the base positivity condition or failing to exclude base 1. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (A). All three conditions for logarithm domain are properly applied, and the solution requires 3-4 logical steps appropriate for level B. Distractors correspond to identifiable errors: B ignores x≠2, C ignores x>1 (base condition), D combines errors from both B and C. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors represent common student errors (forgetting base > 0 or base != 1), and the difficulty aligns well with Level B.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": false,
+        "passed": false,
+        "contradicted": false,
+        "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univari",
+        "raw": {
+          "ok": false,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univariate_inequality\n    e = expr.lhs - expr.rhs\n        ^^^^^^^^\nAttributeError: 'And' object has no attribute 'lhs'",
+          "timed_out": false,
+          "exit_code": 1
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For a logarithm log_base(argument) to be defined over the real numbers, the base must be positive and not equal to 1, and the argument must be positive. Here the base is x - 1, so x - 1 > 0 gives x > 1, and x - 1 != 1 gives x != 2. The argument is 12 - x - x^2, so require 12 - x - x^2 > 0. Rewrite: -(x^2 + x - 12) > 0, so x^2 + x - 12 < 0. Factor: x^2 + x - 12 = (x + 4)(x - 3), so (x + 4)(x - 3) < 0, which gives -4 < x < 3. Intersecting the conditions: x > 1 and -4 < x < 3 gives 1 < x < 3. Excluding x = 2 gives the domain (1, 2) union (2, 3). This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution applies all necessary logarithm domain conditions: positive argument, positive base, and base not equal to 1. Distractors are plausible and correspond to common omissions such as ignoring the base positivity condition or failing to exclude base 1.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univari",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univariate_inequality\n    e = expr.lhs - expr.rhs\n        ^^^^^^^^\nAttributeError: 'And' object has no attribute 'lhs'",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For f(x) = log_{x-1}(12 - x - x²) to be defined, we need two conditions:\n\n1) The argument must be positive: 12 - x - x² > 0\n   Rearranging: x² + x - 12 < 0\n   Factor: (x + 4)(x - 3) < 0\n   Solution: -4 < x < 3, i.e., x ∈ (-4, 3)\n\n2) The base must be positive and not equal to 1: x - 1 > 0 AND x - 1 ≠ 1\n   x - 1 > 0 → x > 1\n   x - 1 ≠ 1 → x ≠ 2\n   So x ∈ (1, 2) ∪ (2, +∞)\n\nIntersecting both conditions:\n(-4, 3) ∩ ((1, 2) ∪ (2, +∞))\n= (1, 2) ∪ (2, 3)\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a unique correct answer (A). All three conditions for logarithm domain are properly applied, and the solution requires 3-4 logical steps appropriate for level B. Distractors correspond to identifiable errors: B ignores x≠2, C ignores x>1 (base condition), D combines errors from both B and C.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univari",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univariate_inequality\n    e = expr.lhs - expr.rhs\n        ^^^^^^^^\nAttributeError: 'And' object has no attribute 'lhs'",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the domain of the function f(x) = log_{x-1}(12 - x - x^2), we must satisfy three conditions for logarithms:\n1. The argument must be strictly positive: 12 - x - x^2 > 0.\n2. The base must be strictly positive: x - 1 > 0.\n3. The base cannot equal 1: x - 1 != 1.\n\nLet's solve each condition:\n1) 12 - x - x^2 > 0\nMultiply by -1 (which flips the inequality sign):\nx^2 + x - 12 < 0\nFactor the quadratic equation:\n(x + 4)(x - 3) < 0\nThe roots are x = -4 and x = 3. The inequality holds for x in the interval (-4, 3).\n\n2) x - 1 > 0\nx > 1\nThis gives the interval (1, +infinity).\n\n3) x - 1 != 1\nx != 2\n\nNow, we find the intersection of all these conditions:\nThe intersection of (-4, 3) and (1, +infinity) is (1, 3).\nExcluding x = 2 from the interval (1, 3) gives the final domain:\nx in (1, 2) U (2, 3).\n\nComparing this result with the given options, it matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors represent common student errors (forgetting base > 0 or base != 1), and the difficulty aligns well with Level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univari",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 83, in <module>\n  File \"/opt/homebrew/lib/python3.11/site-packages/sympy/solvers/inequalities.py\", line 483, in solve_univariate_inequality\n    e = expr.lhs - expr.rhs\n        ^^^^^^^^\nAttributeError: 'And' object has no attribute 'lhs'",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:45:14.697603+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,210 @@
+{
+  "id": "234e4b36-6c93-4e65-a78e-61f7f55cd653",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "polyhedra",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Тікбұрышты параллелепипедтің кеңістік диагоналы $9$-ға, ал толық бетінің ауданы $144$-ке тең. Осы параллелепипед көлемінің ең үлкен мүмкін мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$108$"
+    },
+    {
+      "label": "B",
+      "text": "$112$"
+    },
+    {
+      "label": "C",
+      "text": "$125$"
+    },
+    {
+      "label": "D",
+      "text": "$96$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Параллелепипед қырларын $x$, $y$, $z$ деп алайық. Кеңістік диагональ үшін $x^2+y^2+z^2=9^2=81$. Толық бетінің ауданы $S=2(xy+yz+zx)$ болғандықтан, $xy+yz+zx=72$. Енді $x+y+z$ мәнін табамыз: $(x+y+z)^2=x^2+y^2+z^2+2(xy+yz+zx)=81+144=225$, сондықтан $x+y+z=15$. Көлем $V=xyz$ максимал болсын. Шарттар симметриялы болғандықтан, ішкі экстремумда кемінде екі қыр тең болады. Мұны Лагранж көбейткіштері арқылы да көрсетуге болады: теңдеулерді жұптап азайтқанда, барлық қыр әртүрлі болса, қайшылық шығады. Сондықтан $y=z=a$, $x=b$ деп аламыз. Онда $b+2a=15$ және $a^2+2ab=72$. $b=15-2a$ қойсақ, $a^2+2a(15-2a)=72$, яғни $3a^2-30a+72=0$. Бұдан $a=4$ немесе $a=6$. Егер $a=4$ болса, $b=7$, көлем $V=4 \\cdot 4 \\cdot 7=112$. Егер $a=6$ болса, $b=3$, көлем $V=6 \\cdot 6 \\cdot 3=108$. Демек, ең үлкен көлем $112$.",
+  "latex_formulas": [
+    "$x^2+y^2+z^2=81$",
+    "$2(xy+yz+zx)=144$",
+    "$(x+y+z)^2=x^2+y^2+z^2+2(xy+yz+zx)$",
+    "$V=xyz$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Let the side lengths of the rectangular parallelepiped be a, b, c > 0. The space diagonal is 9, so a^2 + b^2 + c^2 = 9^2 = 81. The total surface area is 144, so 2(ab + bc + ca) = 144, hence ab + bc + ca = 72. Then (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) = 81 + 2·72 = 225, so a + b + c = 15. We need to maximize V = abc subject to a + b + c = 15 and ab + bc + ca = 72. By symmetry/Lagrange \n\n[anthropic/claude-sonnet-4.6] answered B: Let the dimensions be a, b, c. Given: a² + b² + c² = 81 (diagonal = 9) and 2(ab + bc + ca) = 144, so ab + bc + ca = 72. Then (a+b+c)² = 81 + 144 = 225, giving a+b+c = 15. The values a, b, c are roots of t³ - 15t² + 72t - V = 0. For three real positive roots, V must lie between the local min and max of f(t) = t³ - 15t² + 72t. Critical points: f'(t) = 3t² - 30t + 72 = 0 → t = 4 or t = 6. f(4) = 64 -\n\n[google/gemini-3.1-pro-preview] answered B: Let the dimensions of the rectangular parallelepiped be $x$, $y$, and $z$. \nThe space diagonal is given as $d = 9$, so we have the equation:\n$x^2 + y^2 + z^2 = 9^2 = 81$.\n\nThe total surface area is given as $S = 144$, which gives:\n$2(xy + yz + zx) = 144 \\implies xy + yz + zx = 72$.\n\nWe can find the sum of the dimensions $x+y+z$ using the identity:\n$(x+y+z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx)$\n$(",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined; the solution requires combining metric relations for a rectangular parallelepiped with constrained optimization. The distractors are generally plausible, especially 108 and 125, though 96 is less clearly tied to a common error. | [anthropic/claude-sonnet-4.6] Excellent optimization problem requiring multi-step reasoning: deriving a+b+c=15 from the two constraints, then maximizing xyz subject to symmetric conditions. All four answer choices (96, 108, 112, 125) are plausible and reachable via specific errors (e.g., 108 from taking the minimum instead of maximum, 125=5³ from assuming a cube, 96 from a computational slip). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is an excellent Level C problem that requires synthesizing algebraic identities and optimization techniques (such as Vieta's formulas for a cubic equation or Lagrange multipliers). The distractors are very well-chosen, representing the minimum volume and the volume of a cube with the same sum of dimensions.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='112' expected='112'",
+      "raw": {
+        "ok": true,
+        "stdout": "112",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Let the side lengths of the rectangular parallelepiped be a, b, c > 0. The space diagonal is 9, so a^2 + b^2 + c^2 = 9^2 = 81. The total surface area is 144, so 2(ab + bc + ca) = 144, hence ab + bc + ca = 72. Then (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) = 81 + 2·72 = 225, so a + b + c = 15. We need to maximize V = abc subject to a + b + c = 15 and ab + bc + ca = 72. By symmetry/Lagrange \n\n[anthropic/claude-sonnet-4.6] answered B: Let the dimensions be a, b, c. Given: a² + b² + c² = 81 (diagonal = 9) and 2(ab + bc + ca) = 144, so ab + bc + ca = 72. Then (a+b+c)² = 81 + 144 = 225, giving a+b+c = 15. The values a, b, c are roots of t³ - 15t² + 72t - V = 0. For three real positive roots, V must lie between the local min and max of f(t) = t³ - 15t² + 72t. Critical points: f'(t) = 3t² - 30t + 72 = 0 → t = 4 or t = 6. f(4) = 64 -\n\n[google/gemini-3.1-pro-preview] answered B: Let the dimensions of the rectangular parallelepiped be $x$, $y$, and $z$. \nThe space diagonal is given as $d = 9$, so we have the equation:\n$x^2 + y^2 + z^2 = 9^2 = 81$.\n\nThe total surface area is given as $S = 144$, which gives:\n$2(xy + yz + zx) = 144 \\implies xy + yz + zx = 72$.\n\nWe can find the sum of the dimensions $x+y+z$ using the identity:\n$(x+y+z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx)$\n$(",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely determined; the solution requires combining metric relations for a rectangular parallelepiped with constrained optimization. The distractors are generally plausible, especially 108 and 125, though 96 is less clearly tied to a common error. | [anthropic/claude-sonnet-4.6] Excellent optimization problem requiring multi-step reasoning: deriving a+b+c=15 from the two constraints, then maximizing xyz subject to symmetric conditions. All four answer choices (96, 108, 112, 125) are plausible and reachable via specific errors (e.g., 108 from taking the minimum instead of maximum, 125=5³ from assuming a cube, 96 from a computational slip). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is an excellent Level C problem that requires synthesizing algebraic identities and optimization techniques (such as Vieta's formulas for a cubic equation or Lagrange multipliers). The distractors are very well-chosen, representing the minimum volume and the volume of a cube with the same sum of dimensions.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='112' expected='112'",
+        "raw": {
+          "ok": true,
+          "stdout": "112",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the side lengths of the rectangular parallelepiped be a, b, c > 0. The space diagonal is 9, so a^2 + b^2 + c^2 = 9^2 = 81. The total surface area is 144, so 2(ab + bc + ca) = 144, hence ab + bc + ca = 72. Then (a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca) = 81 + 2·72 = 225, so a + b + c = 15. We need to maximize V = abc subject to a + b + c = 15 and ab + bc + ca = 72. By symmetry/Lagrange multipliers, an extremum occurs when two variables are equal. Let b = c = x and a = y. Then y + 2x = 15, so y = 15 - 2x. Also x^2 + 2xy = 72. Substitute y: x^2 + 2x(15 - 2x) = 72, so x^2 + 30x - 4x^2 = 72, hence -3x^2 + 30x - 72 = 0. Dividing by -3 gives x^2 - 10x + 24 = 0, so (x - 4)(x - 6) = 0. If x = 4, then y = 7 and V = 7·4·4 = 112. If x = 6, then y = 3 and V = 3·6·6 = 108. Therefore the greatest possible volume is 112.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely determined; the solution requires combining metric relations for a rectangular parallelepiped with constrained optimization. The distractors are generally plausible, especially 108 and 125, though 96 is less clearly tied to a common error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='112' expected='112'",
+            "raw": {
+              "ok": true,
+              "stdout": "112",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the dimensions be a, b, c. Given: a² + b² + c² = 81 (diagonal = 9) and 2(ab + bc + ca) = 144, so ab + bc + ca = 72. Then (a+b+c)² = 81 + 144 = 225, giving a+b+c = 15. The values a, b, c are roots of t³ - 15t² + 72t - V = 0. For three real positive roots, V must lie between the local min and max of f(t) = t³ - 15t² + 72t. Critical points: f'(t) = 3t² - 30t + 72 = 0 → t = 4 or t = 6. f(4) = 64 - 240 + 288 = 112 (local max), f(6) = 216 - 540 + 432 = 108 (local min). So 108 ≤ V ≤ 112. Maximum volume = 112, achieved when a = b = 4, c = 7 (verify: 4+4+7=15, 16+28+28=72 ✓, √(16+16+49)=√81=9 ✓, V=112).",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "Excellent optimization problem requiring multi-step reasoning: deriving a+b+c=15 from the two constraints, then maximizing xyz subject to symmetric conditions. All four answer choices (96, 108, 112, 125) are plausible and reachable via specific errors (e.g., 108 from taking the minimum instead of maximum, 125=5³ from assuming a cube, 96 from a computational slip). Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='112' expected='112'",
+            "raw": {
+              "ok": true,
+              "stdout": "112",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the dimensions of the rectangular parallelepiped be $x$, $y$, and $z$. \nThe space diagonal is given as $d = 9$, so we have the equation:\n$x^2 + y^2 + z^2 = 9^2 = 81$.\n\nThe total surface area is given as $S = 144$, which gives:\n$2(xy + yz + zx) = 144 \\implies xy + yz + zx = 72$.\n\nWe can find the sum of the dimensions $x+y+z$ using the identity:\n$(x+y+z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx)$\n$(x+y+z)^2 = 81 + 144 = 225$.\nSince the dimensions must be positive, $x+y+z = \\sqrt{225} = 15$.\n\nWe want to maximize the volume $V = xyz$. \nUsing Vieta's formulas, $x$, $y$, and $z$ are the roots of the cubic equation:\n$t^3 - (x+y+z)t^2 + (xy+yz+zx)t - xyz = 0$\n$t^3 - 15t^2 + 72t - V = 0$\n\nFor this cubic equation to have three real roots (since $x, y, z$ are real dimensions), the value of $V$ must lie between the local minimum and local maximum of the function $f(t) = t^3 - 15t^2 + 72t$.\nLet's find the critical points by taking the derivative and setting it to zero:\n$f'(t) = 3t^2 - 30t + 72 = 0$\n$t^2 - 10t + 24 = 0$\n$(t-4)(t-6) = 0$\nThe critical points are $t = 4$ and $t = 6$.\n\nNow, we evaluate $f(t)$ at these critical points to find the range of $V$:\n$f(4) = 4^3 - 15(4^2) + 72(4) = 64 - 240 + 288 = 112$ (Local Maximum)\n$f(6) = 6^3 - 15(6^2) + 72(6) = 216 - 540 + 432 = 108$ (Local Minimum)\n\nFor the cubic equation to have three real roots, $V$ must satisfy:\n$108 \\le V \\le 112$.\n\nThe maximum possible value for the volume $V$ is 112. (This occurs when the dimensions are 4, 4, and 7).",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is an excellent Level C problem that requires synthesizing algebraic identities and optimization techniques (such as Vieta's formulas for a cubic equation or Lagrange multipliers). The distractors are very well-chosen, representing the minimum volume and the volume of a cube with the same sum of dimensions.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='112' expected='112'",
+            "raw": {
+              "ok": true,
+              "stdout": "112",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:55:49.739434+00:00",
+  "generation_attempts": 2
+}

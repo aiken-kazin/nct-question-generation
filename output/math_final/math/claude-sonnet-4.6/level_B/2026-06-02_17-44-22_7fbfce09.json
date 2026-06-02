@@ -1,0 +1,209 @@
+{
+  "id": "7fbfce09-cd22-462b-a717-c979c4b65776",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "vectors",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$\\vec{a} = \\{-3, 1, -2\\}$ және $\\vec{b} = \\{1, 2, 2\\}$ векторлары берілген. $\\vec{a}$ векторының $\\vec{b}$ векторына сандық проекциясын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-\\frac{5}{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{5}{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$-\\frac{7}{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{7}{3}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "$\\vec{a}$ векторының $\\vec{b}$ векторына сандық проекциясы мына формуламен есептеледі:\n$$\\text{пр}_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$$\n\n**1-қадам:** Скалярлық көбейтіндіні есептейміз:\n$$\\vec{a} \\cdot \\vec{b} = (-3)\\cdot 1 + 1\\cdot 2 + (-2)\\cdot 2 = -3 + 2 - 4 = -5$$\n\n**2-қадам:** $\\vec{b}$ векторының модулін табамыз:\n$$|\\vec{b}| = \\sqrt{1^2 + 2^2 + 2^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3$$\n\n**3-қадам:** Сандық проекцияны есептейміз:\n$$\\text{пр}_{\\vec{b}}\\vec{a} = \\frac{-5}{3} = -\\frac{5}{3}$$\n\nДұрыс жауап: $-\\frac{5}{3}$.",
+  "latex_formulas": [
+    "\\text{пр}_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}",
+    "\\vec{a} \\cdot \\vec{b} = a_x b_x + a_y b_y + a_z b_z",
+    "|\\vec{b}| = \\sqrt{b_x^2 + b_y^2 + b_z^2}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The scalar projection of vector a onto vector b is given by comp_b(a) = (a · b) / |b|. Compute the dot product: a · b = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5. Compute the magnitude of b: |b| = sqrt(1^2 + 2^2 + 2^2) = sqrt(1 + 4 + 4) = sqrt(9) = 3. Therefore, the scalar projection is (-5) / 3 = -5/3. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: The scalar projection (numerical projection) of vector a onto vector b is given by: proj = (a · b) / |b|\n\nStep 1: Compute the dot product a · b\na · b = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5\n\nStep 2: Compute the magnitude of b\n|b| = sqrt(1² + 2² + 2²) = sqrt(1 + 4 + 4) = sqrt(9) = 3\n\nStep 3: Compute the scalar projection\nproj = -5 / 3 = -5/3\n\nThe answer is -5/3.\n\n[google/gemini-3.1-pro-preview] answered A: To find the scalar projection of vector $\\vec{a}$ onto vector $\\vec{b}$, we use the formula:\n$proj_{\\vec{b}} \\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$\n\nFirst, we calculate the dot product of $\\vec{a}$ and $\\vec{b}$:\n$\\vec{a} \\cdot \\vec{b} = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5$\n\nNext, we calculate the magnitude (length) of vector $\\vec{b}$:\n$|\\vec{b}| = \\sqrt{1^2 + 2^2 + 2^2} = \\s",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely follows from the scalar projection formula. The item is clear and concise, though it is a fairly routine formula-application task for level B. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and appropriately tests the scalar projection formula in 3D space with a clean 3-step solution. Distractors correspond to plausible errors: sign error (B), wrong numerator from arithmetic mistake (C, D). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed, factually correct, and aligns well with the requested difficulty level B. The distractors represent common arithmetic and sign errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='-5/3' expected='-5/3'",
+      "raw": {
+        "ok": true,
+        "stdout": "-5/3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The scalar projection of vector a onto vector b is given by comp_b(a) = (a · b) / |b|. Compute the dot product: a · b = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5. Compute the magnitude of b: |b| = sqrt(1^2 + 2^2 + 2^2) = sqrt(1 + 4 + 4) = sqrt(9) = 3. Therefore, the scalar projection is (-5) / 3 = -5/3. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: The scalar projection (numerical projection) of vector a onto vector b is given by: proj = (a · b) / |b|\n\nStep 1: Compute the dot product a · b\na · b = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5\n\nStep 2: Compute the magnitude of b\n|b| = sqrt(1² + 2² + 2²) = sqrt(1 + 4 + 4) = sqrt(9) = 3\n\nStep 3: Compute the scalar projection\nproj = -5 / 3 = -5/3\n\nThe answer is -5/3.\n\n[google/gemini-3.1-pro-preview] answered A: To find the scalar projection of vector $\\vec{a}$ onto vector $\\vec{b}$, we use the formula:\n$proj_{\\vec{b}} \\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$\n\nFirst, we calculate the dot product of $\\vec{a}$ and $\\vec{b}$:\n$\\vec{a} \\cdot \\vec{b} = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5$\n\nNext, we calculate the magnitude (length) of vector $\\vec{b}$:\n$|\\vec{b}| = \\sqrt{1^2 + 2^2 + 2^2} = \\s",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely follows from the scalar projection formula. The item is clear and concise, though it is a fairly routine formula-application task for level B. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and appropriately tests the scalar projection formula in 3D space with a clean 3-step solution. Distractors correspond to plausible errors: sign error (B), wrong numerator from arithmetic mistake (C, D). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed, factually correct, and aligns well with the requested difficulty level B. The distractors represent common arithmetic and sign errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='-5/3' expected='-5/3'",
+        "raw": {
+          "ok": true,
+          "stdout": "-5/3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The scalar projection of vector a onto vector b is given by comp_b(a) = (a · b) / |b|. Compute the dot product: a · b = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5. Compute the magnitude of b: |b| = sqrt(1^2 + 2^2 + 2^2) = sqrt(1 + 4 + 4) = sqrt(9) = 3. Therefore, the scalar projection is (-5) / 3 = -5/3. This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely follows from the scalar projection formula. The item is clear and concise, though it is a fairly routine formula-application task for level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-5/3' expected='-5/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "-5/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The scalar projection (numerical projection) of vector a onto vector b is given by: proj = (a · b) / |b|\n\nStep 1: Compute the dot product a · b\na · b = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5\n\nStep 2: Compute the magnitude of b\n|b| = sqrt(1² + 2² + 2²) = sqrt(1 + 4 + 4) = sqrt(9) = 3\n\nStep 3: Compute the scalar projection\nproj = -5 / 3 = -5/3\n\nThe answer is -5/3.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct, well-structured, and appropriately tests the scalar projection formula in 3D space with a clean 3-step solution. Distractors correspond to plausible errors: sign error (B), wrong numerator from arithmetic mistake (C, D). Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-5/3' expected='-5/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "-5/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the scalar projection of vector $\\vec{a}$ onto vector $\\vec{b}$, we use the formula:\n$proj_{\\vec{b}} \\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|}$\n\nFirst, we calculate the dot product of $\\vec{a}$ and $\\vec{b}$:\n$\\vec{a} \\cdot \\vec{b} = (-3)(1) + (1)(2) + (-2)(2) = -3 + 2 - 4 = -5$\n\nNext, we calculate the magnitude (length) of vector $\\vec{b}$:\n$|\\vec{b}| = \\sqrt{1^2 + 2^2 + 2^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3$\n\nFinally, we divide the dot product by the magnitude of $\\vec{b}$ to find the scalar projection:\n$proj_{\\vec{b}} \\vec{a} = \\frac{-5}{3} = -\\frac{5}{3}$\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed, factually correct, and aligns well with the requested difficulty level B. The distractors represent common arithmetic and sign errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-5/3' expected='-5/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "-5/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:44:22.960900+00:00",
+  "generation_attempts": 3
+}

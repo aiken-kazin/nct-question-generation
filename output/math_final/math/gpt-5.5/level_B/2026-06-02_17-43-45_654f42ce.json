@@ -1,0 +1,209 @@
+{
+  "id": "654f42ce-9dd8-4746-b0f0-8c3d9641c6b1",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "combinatorics_probability",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Қорапта $5$ ақ, $4$ көк және $3$ қызыл шар бар. Қораптан кездейсоқ $3$ шар алынды. Алынған $3$ шардың ішінде дәл екі түрлі түсті шар болу ықтималдығын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{3}{11}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{41}{44}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{29}{44}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{7}{11}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Барлық шар саны: $5+4+3=12$. Кездейсоқ $3$ шар алудың жалпы саны: $C_{12}^{3}=220$. Дәл екі түрлі түсті шар алынуы үшін үш шар бір түсті болмауы және үш түстің де әрқайсысынан бір-бірден алынбауы керек. Бір түсті үш шар алу саны: $C_{5}^{3}+C_{4}^{3}+C_{3}^{3}=10+4+1=15$. Үш түрлі түсті шар алу саны: $5\\cdot 4\\cdot 3=60$. Сондықтан қолайлы жағдайлар саны: $220-15-60=145$. Ізделінді ықтималдық: $P=\\frac{145}{220}=\\frac{29}{44}$.",
+  "latex_formulas": [
+    "C_n^k=\\frac{n!}{k!(n-k)!}",
+    "P=\\frac{m}{n}",
+    "C_{12}^{3}-\\left(C_{5}^{3}+C_{4}^{3}+C_{3}^{3}\\right)-5\\cdot4\\cdot3"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: There are 5 white, 4 blue, and 3 red balls, so the total number of balls is 5 + 4 + 3 = 12. The total number of ways to choose 3 balls is C(12,3) = 12*11*10/(3*2*1) = 220. We need exactly two different colors among the 3 balls, so the color-count pattern must be 2 balls of one color and 1 ball of another color. Count favorable cases by color pair. White-blue: C(5,2)C(4,1) + C(4,2)C(5,1) = 10*4 + 6\n\n[anthropic/claude-sonnet-4.6] answered C: Total balls: 5 white + 4 blue + 3 red = 12. Total ways to choose 3: C(12,3) = 220.\n\nExactly 2 colors means the 3 balls come from exactly 2 of the 3 color groups.\n\nDirect enumeration of favorable cases:\n- 2 white + 1 blue: C(5,2)×C(4,1) = 10×4 = 40\n- 2 white + 1 red: C(5,2)×C(3,1) = 10×3 = 30\n- 2 blue + 1 white: C(4,2)×C(5,1) = 6×5 = 30\n- 2 blue + 1 red: C(4,2)×C(3,1) = 6×3 = 18\n- 2 red + 1 white: \n\n[google/gemini-3.1-pro-preview] answered C: To find the probability that exactly two different colors are present among the 3 drawn balls, we first determine the total number of ways to draw 3 balls from the box.\n\nThe box contains 5 white, 4 blue, and 3 red balls, making a total of 5 + 4 + 3 = 12 balls.\nThe total number of ways to draw 3 balls out of 12 is given by the combination formula C(n, k) = n! / (k!(n-k)!):\nC(12, 3) = (12 * 11 * 10)",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous interpretation. The task fits medium difficulty, requiring a structured combinatorial count or complementary counting. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (29/44) verified by both direct enumeration and complement method. The Kazakh phrasing is natural and terminology is appropriate for the subject. Distractors A (3/11) and D (7/11) are plausible near-misses, while B (41/44) is somewhat less natural but could arise from a complement error. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors are highly plausible, representing common errors such as finding the probability of exactly 3 colors or at least 2 colors. The difficulty perfectly aligns with level B.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='29/44' expected='29/44'",
+      "raw": {
+        "ok": true,
+        "stdout": "29/44",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: There are 5 white, 4 blue, and 3 red balls, so the total number of balls is 5 + 4 + 3 = 12. The total number of ways to choose 3 balls is C(12,3) = 12*11*10/(3*2*1) = 220. We need exactly two different colors among the 3 balls, so the color-count pattern must be 2 balls of one color and 1 ball of another color. Count favorable cases by color pair. White-blue: C(5,2)C(4,1) + C(4,2)C(5,1) = 10*4 + 6\n\n[anthropic/claude-sonnet-4.6] answered C: Total balls: 5 white + 4 blue + 3 red = 12. Total ways to choose 3: C(12,3) = 220.\n\nExactly 2 colors means the 3 balls come from exactly 2 of the 3 color groups.\n\nDirect enumeration of favorable cases:\n- 2 white + 1 blue: C(5,2)×C(4,1) = 10×4 = 40\n- 2 white + 1 red: C(5,2)×C(3,1) = 10×3 = 30\n- 2 blue + 1 white: C(4,2)×C(5,1) = 6×5 = 30\n- 2 blue + 1 red: C(4,2)×C(3,1) = 6×3 = 18\n- 2 red + 1 white: \n\n[google/gemini-3.1-pro-preview] answered C: To find the probability that exactly two different colors are present among the 3 drawn balls, we first determine the total number of ways to draw 3 balls from the box.\n\nThe box contains 5 white, 4 blue, and 3 red balls, making a total of 5 + 4 + 3 = 12 balls.\nThe total number of ways to draw 3 balls out of 12 is given by the combination formula C(n, k) = n! / (k!(n-k)!):\nC(12, 3) = (12 * 11 * 10)",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous interpretation. The task fits medium difficulty, requiring a structured combinatorial count or complementary counting. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (29/44) verified by both direct enumeration and complement method. The Kazakh phrasing is natural and terminology is appropriate for the subject. Distractors A (3/11) and D (7/11) are plausible near-misses, while B (41/44) is somewhat less natural but could arise from a complement error. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors are highly plausible, representing common errors such as finding the probability of exactly 3 colors or at least 2 colors. The difficulty perfectly aligns with level B.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='29/44' expected='29/44'",
+        "raw": {
+          "ok": true,
+          "stdout": "29/44",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "There are 5 white, 4 blue, and 3 red balls, so the total number of balls is 5 + 4 + 3 = 12. The total number of ways to choose 3 balls is C(12,3) = 12*11*10/(3*2*1) = 220. We need exactly two different colors among the 3 balls, so the color-count pattern must be 2 balls of one color and 1 ball of another color. Count favorable cases by color pair. White-blue: C(5,2)C(4,1) + C(4,2)C(5,1) = 10*4 + 6*5 = 40 + 30 = 70. White-red: C(5,2)C(3,1) + C(3,2)C(5,1) = 10*3 + 3*5 = 30 + 15 = 45. Blue-red: C(4,2)C(3,1) + C(3,2)C(4,1) = 6*3 + 3*4 = 18 + 12 = 30. Total favorable cases = 70 + 45 + 30 = 145. Therefore the probability is 145/220 = 29/44. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single unambiguous interpretation. The task fits medium difficulty, requiring a structured combinatorial count or complementary counting.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='29/44' expected='29/44'",
+            "raw": {
+              "ok": true,
+              "stdout": "29/44",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Total balls: 5 white + 4 blue + 3 red = 12. Total ways to choose 3: C(12,3) = 220.\n\nExactly 2 colors means the 3 balls come from exactly 2 of the 3 color groups.\n\nDirect enumeration of favorable cases:\n- 2 white + 1 blue: C(5,2)×C(4,1) = 10×4 = 40\n- 2 white + 1 red: C(5,2)×C(3,1) = 10×3 = 30\n- 2 blue + 1 white: C(4,2)×C(5,1) = 6×5 = 30\n- 2 blue + 1 red: C(4,2)×C(3,1) = 6×3 = 18\n- 2 red + 1 white: C(3,2)×C(5,1) = 3×5 = 15\n- 2 red + 1 blue: C(3,2)×C(4,1) = 3×4 = 12\n\nTotal favorable = 40+30+30+18+15+12 = 145\n\nVerification via complement: all same color = C(5,3)+C(4,3)+C(3,3) = 10+4+1 = 15; all 3 colors = 5×4×3 = 60; so exactly 2 colors = 220-15-60 = 145. ✓\n\nProbability = 145/220 = 29/44.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a unique correct answer (29/44) verified by both direct enumeration and complement method. The Kazakh phrasing is natural and terminology is appropriate for the subject. Distractors A (3/11) and D (7/11) are plausible near-misses, while B (41/44) is somewhat less natural but could arise from a complement error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='29/44' expected='29/44'",
+            "raw": {
+              "ok": true,
+              "stdout": "29/44",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the probability that exactly two different colors are present among the 3 drawn balls, we first determine the total number of ways to draw 3 balls from the box.\n\nThe box contains 5 white, 4 blue, and 3 red balls, making a total of 5 + 4 + 3 = 12 balls.\nThe total number of ways to draw 3 balls out of 12 is given by the combination formula C(n, k) = n! / (k!(n-k)!):\nC(12, 3) = (12 * 11 * 10) / (3 * 2 * 1) = 220.\n\nNext, we can find the number of ways to draw exactly two different colors. It is easier to find the complement: the number of ways to draw balls of exactly ONE color, and the number of ways to draw balls of exactly THREE different colors.\n\n1. All 3 balls are the same color:\n- 3 white balls: C(5, 3) = 10 ways\n- 3 blue balls: C(4, 3) = 4 ways\n- 3 red balls: C(3, 3) = 1 way\nTotal ways for 1 color = 10 + 4 + 1 = 15 ways.\n\n2. All 3 balls are different colors (1 white, 1 blue, 1 red):\n- C(5, 1) * C(4, 1) * C(3, 1) = 5 * 4 * 3 = 60 ways.\n\nNow, we subtract these from the total number of ways to find the number of ways to get exactly two colors:\nTotal ways for exactly 2 colors = Total ways - (Ways for 1 color + Ways for 3 colors)\nTotal ways for exactly 2 colors = 220 - (15 + 60) = 220 - 75 = 145 ways.\n\nFinally, the probability is the number of successful outcomes divided by the total number of outcomes:\nP = 145 / 220\n\nTo simplify the fraction, we divide the numerator and the denominator by their greatest common divisor, which is 5:\n145 / 5 = 29\n220 / 5 = 44\n\nSo, the probability is 29/44.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly designed. The distractors are highly plausible, representing common errors such as finding the probability of exactly 3 colors or at least 2 colors. The difficulty perfectly aligns with level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='29/44' expected='29/44'",
+            "raw": {
+              "ok": true,
+              "stdout": "29/44",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:43:45.206900+00:00",
+  "generation_attempts": 1
+}

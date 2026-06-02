@@ -1,0 +1,208 @@
+{
+  "id": "c340d6bd-3a43-41ed-a6a4-372059e82c56",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "perpendicularity_3d",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Тікбұрышты параллелепипедтің $ABCD A_1B_1C_1D_1$ қабырғалары $AB = 3$, $BC = 4$, $AA_1 = 12$ болсын. $B_1$ нүктесінен $BD_1$ диагоналіне дейінгі қашықтықты табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\dfrac{60}{13}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\dfrac{48}{13}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\dfrac{36}{13}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\dfrac{72}{13}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Координаттар жүйесін орнатамыз: $B = (0, 0, 0)$, $A = (3, 0, 0)$, $C = (0, 4, 0)$, $D = (3, 4, 0)$, $D_1 = (3, 4, 12)$.\n\n$BD_1$ бағыттаушы векторы: $\\vec{BD_1} = (3, 4, 12)$, оның ұзындығы $|BD_1| = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$.\n\n$B_1 = (0, 0, 12)$ нүктесі берілген.\n\n$\\vec{BB_1} = (0, 0, 12)$.\n\n$B_1$ нүктесінен $BD_1$ түзуіне дейінгі қашықтық формуласы:\n$d = \\dfrac{|\\vec{BB_1} \\times \\vec{BD_1}|}{|\\vec{BD_1}|}$\n\nКөбейтіндіні есептейміз:\n$\\vec{BB_1} \\times \\vec{BD_1} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 0 & 0 & 12 \\\\ 3 & 4 & 12 \\end{vmatrix}$\n$= \\vec{i}(0 \\cdot 12 - 12 \\cdot 4) - \\vec{j}(0 \\cdot 12 - 12 \\cdot 3) + \\vec{k}(0 \\cdot 4 - 0 \\cdot 3)$\n$= \\vec{i}(-48) - \\vec{j}(-36) + \\vec{k}(0)$\n$= (-48, 36, 0)$\n\n$|\\vec{BB_1} \\times \\vec{BD_1}| = \\sqrt{(-48)^2 + 36^2 + 0^2} = \\sqrt{2304 + 1296} = \\sqrt{3600} = 60$\n\nДемек, $d = \\dfrac{60}{13}$.",
+  "latex_formulas": [
+    "d = \\frac{|\\vec{BB_1} \\times \\vec{BD_1}|}{|\\vec{BD_1}|}",
+    "|\\vec{BD_1}| = \\sqrt{3^2 + 4^2 + 12^2} = 13"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Set up coordinates for the rectangular parallelepiped: A=(0,0,0), B=(3,0,0), C=(3,4,0), D=(0,4,0), A1=(0,0,12), B1=(3,0,12), D1=(0,4,12). The line BD1 has direction vector v = D1 - B = (0-3, 4-0, 12-0) = (-3, 4, 12). The vector from B to B1 is w = B1 - B = (3-3, 0-0, 12-0) = (0, 0, 12). The distance from point B1 to line BD1 is |w x v| / |v|. Compute the cross product: w x v = (0,0,12) x (-3,4,12)\n\n[anthropic/claude-sonnet-4.6] answered A: Set up coordinates: A=(0,0,0), B=(3,0,0), C=(3,4,0), D=(0,4,0), A₁=(0,0,12), B₁=(3,0,12), D₁=(0,4,12). To find distance from B₁ to line BD₁: Direction vector of BD₁ = D₁ - B = (-3, 4, 12). Vector from B to B₁ = (0, 0, 12). Cross product (0,0,12) × (-3,4,12) = (0·12 - 12·4, 12·(-3) - 0·12, 0·4 - 0·(-3)) = (-48, -36, 0). Magnitude = √(2304 + 1296) = √3600 = 60. |BD₁| = √(9+16+144) = √169 = 13. Dista\n\n[google/gemini-3.1-pro-preview] answered A: To find the distance from the point $B_1$ to the diagonal $BD_1$ in the rectangular parallelepiped $ABCDA_1B_1C_1D_1$, we can consider the triangle $\\triangle BB_1D_1$.\n\n1. First, identify the lengths of the sides of this triangle.\n- The segment $BB_1$ is a vertical edge of the parallelepiped, so its length is equal to $AA_1 = 12$.\n- The segment $B_1D_1$ is the diagonal of the top rectangular face",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 8.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a unique defensible interpretation; the perpendicular foot lies on the diagonal segment as well. The item fits medium difficulty, though the distractors are mostly simple same-denominator numerical variants rather than clearly tied to distinct misconceptions. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically correct (verified independently and by sandbox), and appropriately challenging for level B. Distractors correspond to identifiable errors: 48/13 (omitting one component), 36/13 (using only one cross-product component), 72/13 (scaling error). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligned with the requested difficulty level. Distractors are thoughtfully designed based on potential student errors.",
+    "improvement_suggestions": "[google/gemini-3.1-pro-preview] Consider changing 'қабырғалары' to 'қырлары' (edges) for more precise 3D geometry terminology.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='60/13' expected='60/13'",
+      "raw": {
+        "ok": true,
+        "stdout": "60/13",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Set up coordinates for the rectangular parallelepiped: A=(0,0,0), B=(3,0,0), C=(3,4,0), D=(0,4,0), A1=(0,0,12), B1=(3,0,12), D1=(0,4,12). The line BD1 has direction vector v = D1 - B = (0-3, 4-0, 12-0) = (-3, 4, 12). The vector from B to B1 is w = B1 - B = (3-3, 0-0, 12-0) = (0, 0, 12). The distance from point B1 to line BD1 is |w x v| / |v|. Compute the cross product: w x v = (0,0,12) x (-3,4,12)\n\n[anthropic/claude-sonnet-4.6] answered A: Set up coordinates: A=(0,0,0), B=(3,0,0), C=(3,4,0), D=(0,4,0), A₁=(0,0,12), B₁=(3,0,12), D₁=(0,4,12). To find distance from B₁ to line BD₁: Direction vector of BD₁ = D₁ - B = (-3, 4, 12). Vector from B to B₁ = (0, 0, 12). Cross product (0,0,12) × (-3,4,12) = (0·12 - 12·4, 12·(-3) - 0·12, 0·4 - 0·(-3)) = (-48, -36, 0). Magnitude = √(2304 + 1296) = √3600 = 60. |BD₁| = √(9+16+144) = √169 = 13. Dista\n\n[google/gemini-3.1-pro-preview] answered A: To find the distance from the point $B_1$ to the diagonal $BD_1$ in the rectangular parallelepiped $ABCDA_1B_1C_1D_1$, we can consider the triangle $\\triangle BB_1D_1$.\n\n1. First, identify the lengths of the sides of this triangle.\n- The segment $BB_1$ is a vertical edge of the parallelepiped, so its length is equal to $AA_1 = 12$.\n- The segment $B_1D_1$ is the diagonal of the top rectangular face",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 8.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the problem has a unique defensible interpretation; the perpendicular foot lies on the diagonal segment as well. The item fits medium difficulty, though the distractors are mostly simple same-denominator numerical variants rather than clearly tied to distinct misconceptions. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically correct (verified independently and by sandbox), and appropriately challenging for level B. Distractors correspond to identifiable errors: 48/13 (omitting one component), 36/13 (using only one cross-product component), 72/13 (scaling error). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligned with the requested difficulty level. Distractors are thoughtfully designed based on potential student errors.",
+      "improvement_suggestions": "[google/gemini-3.1-pro-preview] Consider changing 'қабырғалары' to 'қырлары' (edges) for more precise 3D geometry terminology.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='60/13' expected='60/13'",
+        "raw": {
+          "ok": true,
+          "stdout": "60/13",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Set up coordinates for the rectangular parallelepiped: A=(0,0,0), B=(3,0,0), C=(3,4,0), D=(0,4,0), A1=(0,0,12), B1=(3,0,12), D1=(0,4,12). The line BD1 has direction vector v = D1 - B = (0-3, 4-0, 12-0) = (-3, 4, 12). The vector from B to B1 is w = B1 - B = (3-3, 0-0, 12-0) = (0, 0, 12). The distance from point B1 to line BD1 is |w x v| / |v|. Compute the cross product: w x v = (0,0,12) x (-3,4,12) = (0*12 - 12*4, 12*(-3) - 0*12, 0*4 - 0*(-3)) = (-48, -36, 0). Its length is sqrt((-48)^2 + (-36)^2 + 0^2) = sqrt(2304 + 1296) = sqrt(3600) = 60. The length of v is sqrt((-3)^2 + 4^2 + 12^2) = sqrt(9+16+144) = sqrt(169) = 13. Therefore the required distance is 60/13, which corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the problem has a unique defensible interpretation; the perpendicular foot lies on the diagonal segment as well. The item fits medium difficulty, though the distractors are mostly simple same-denominator numerical variants rather than clearly tied to distinct misconceptions.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='60/13' expected='60/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "60/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Set up coordinates: A=(0,0,0), B=(3,0,0), C=(3,4,0), D=(0,4,0), A₁=(0,0,12), B₁=(3,0,12), D₁=(0,4,12). To find distance from B₁ to line BD₁: Direction vector of BD₁ = D₁ - B = (-3, 4, 12). Vector from B to B₁ = (0, 0, 12). Cross product (0,0,12) × (-3,4,12) = (0·12 - 12·4, 12·(-3) - 0·12, 0·4 - 0·(-3)) = (-48, -36, 0). Magnitude = √(2304 + 1296) = √3600 = 60. |BD₁| = √(9+16+144) = √169 = 13. Distance = 60/13.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically correct (verified independently and by sandbox), and appropriately challenging for level B. Distractors correspond to identifiable errors: 48/13 (omitting one component), 36/13 (using only one cross-product component), 72/13 (scaling error). Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='60/13' expected='60/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "60/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the distance from the point $B_1$ to the diagonal $BD_1$ in the rectangular parallelepiped $ABCDA_1B_1C_1D_1$, we can consider the triangle $\\triangle BB_1D_1$.\n\n1. First, identify the lengths of the sides of this triangle.\n- The segment $BB_1$ is a vertical edge of the parallelepiped, so its length is equal to $AA_1 = 12$.\n- The segment $B_1D_1$ is the diagonal of the top rectangular face $A_1B_1C_1D_1$. The sides of this face are $A_1B_1 = AB = 3$ and $B_1C_1 = BC = 4$. Using the Pythagorean theorem, $B_1D_1 = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$.\n- The segment $BD_1$ is the main diagonal of the parallelepiped. Its length is $\\sqrt{AB^2 + BC^2 + AA_1^2} = \\sqrt{3^2 + 4^2 + 12^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$.\n\n2. Since the edge $BB_1$ is perpendicular to the top face $A_1B_1C_1D_1$, it is perpendicular to any line lying in that face, including $B_1D_1$. Therefore, $\\triangle BB_1D_1$ is a right-angled triangle with the right angle at $B_1$ ($\\angle BB_1D_1 = 90^\\circ$).\n\n3. The distance from the point $B_1$ to the line $BD_1$ is exactly the altitude $h$ drawn from the right angle $B_1$ to the hypotenuse $BD_1$ in $\\triangle BB_1D_1$.\n\n4. The area of a right-angled triangle can be expressed in two ways:\n- Area = $\\frac{1}{2} \\times \\text{leg}_1 \\times \\text{leg}_2 = \\frac{1}{2} \\times BB_1 \\times B_1D_1 = \\frac{1}{2} \\times 12 \\times 5 = 30$.\n- Area = $\\frac{1}{2} \\times \\text{hypotenuse} \\times \\text{altitude} = \\frac{1}{2} \\times BD_1 \\times h = \\frac{1}{2} \\times 13 \\times h$.\n\n5. Equating the two area expressions:\n$\\frac{1}{2} \\times 13 \\times h = 30$\n$13h = 60$\n$h = \\frac{60}{13}$\n\nThus, the distance from $B_1$ to $BD_1$ is $\\frac{60}{13}$.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is well-structured, mathematically sound, and perfectly aligned with the requested difficulty level. Distractors are thoughtfully designed based on potential student errors.",
+          "improvement_suggestions": "Consider changing 'қабырғалары' to 'қырлары' (edges) for more precise 3D geometry terminology.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='60/13' expected='60/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "60/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:39:02.459975+00:00",
+  "generation_attempts": 2
+}

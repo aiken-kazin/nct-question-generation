@@ -1,0 +1,209 @@
+{
+  "id": "23329ed8-e857-4b49-ade8-6d397cb22148",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "inequalities",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Теңсіздіктер жүйесінің шешімін табыңыз: $\\begin{cases}\\dfrac{x^2-5x+6}{x+1}\\ge 0,\\\\ 2x-1<7.\\end{cases}$",
+  "options": [
+    {
+      "label": "A",
+      "text": "$[-1; 2] \\cup [3; 4)$"
+    },
+    {
+      "label": "B",
+      "text": "$(-1; 2] \\cup [3; 4)$"
+    },
+    {
+      "label": "C",
+      "text": "$(-\\infty; -1) \\cup [2; 3]$"
+    },
+    {
+      "label": "D",
+      "text": "$(-1; 2) \\cup (3; 4)$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Алдымен бірінші теңсіздікті қарастырамыз: $\\dfrac{x^2-5x+6}{x+1}\\ge 0$. Алымын көбейткіштерге жіктейміз: $x^2-5x+6=(x-2)(x-3)$. Сондықтан $\\dfrac{(x-2)(x-3)}{x+1}\\ge 0$, мұнда $x\\ne -1$. Таңба ауысатын нүктелер: $-1$, $2$, $3$. Интервалдар әдісі бойынша шешімі: $(-1;2]\\cup[3;+\\infty)$. Екінші теңсіздік: $2x-1<7$, бұдан $2x<8$, яғни $x<4$. Екі шешімді қиылыстырамыз: $\\left((-1;2]\\cup[3;+\\infty)\\right)\\cap(-\\infty;4)=(-1;2]\\cup[3;4)$. Демек, дұрыс жауап: $(-1; 2] \\cup [3; 4)$.",
+  "latex_formulas": [
+    "$x^2-5x+6=(x-2)(x-3)$",
+    "$\\dfrac{(x-2)(x-3)}{x+1}\\ge 0$",
+    "$\\left((-1;2]\\cup[3;+\\infty)\\right)\\cap(-\\infty;4)=(-1;2]\\cup[3;4)$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.6,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Solve the system by intersecting the solution sets. First inequality: (x^2 - 5x + 6)/(x + 1) >= 0. Factor the numerator: x^2 - 5x + 6 = (x - 2)(x - 3). The inequality becomes ((x - 2)(x - 3))/(x + 1) >= 0, with domain restriction x != -1. Critical points are x = -1, x = 2, x = 3. Check signs on intervals: on (-infinity, -1), for x = -2 the expression is negative, so exclude; on (-1, 2), for x = 0 \n\n[anthropic/claude-sonnet-4.6] answered B: Step 1: Solve 2x-1 < 7 → x < 4, so x ∈ (-∞, 4). Step 2: Factor numerator x²-5x+6 = (x-2)(x-3). Need (x-2)(x-3)/(x+1) ≥ 0. Critical points: x = -1 (excluded), x = 2, x = 3. Sign analysis: x < -1: (-)(-)/ (-) = negative → NO. -1 < x < 2: (-)(-)/(+) = positive → YES. 2 < x < 3: (+)(-)/(+) = negative → NO. x > 3: (+)(+)/(+) = positive → YES. At x=2: equals 0 → included. At x=3: equals 0 → included. At\n\n[google/gemini-3.1-pro-preview] answered B: To solve the system of inequalities, we will solve each inequality separately and then find the intersection of their solution sets.\n\n1) First inequality: \\(\\frac{x^2-5x+6}{x+1} \\ge 0\\)\nFactor the numerator: \\(x^2-5x+6 = (x-2)(x-3)\\).\nThe inequality becomes \\(\\frac{(x-2)(x-3)}{x+1} \\ge 0\\).\nThe critical points are \\(x = 2\\), \\(x = 3\\) (from the numerator, where the expression equals 0) and \\(x = -",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.6,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unique; the solution requires factoring, sign analysis, domain restriction, and intersection with a linear inequality. Distractors are plausible and correspond to common errors such as including the excluded point, reversing the inequality sign, or mishandling equality endpoints. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and correctly keyed. All distractors correspond to identifiable errors: A includes -1 (closed bracket error), C reflects a sign-analysis mistake, and D uses open brackets at x=2 and x=3. The Kazakh is natural and uses standard mathematical terminology. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors effectively target common errors such as including the root of the denominator, confusing strict and non-strict inequalities, and selecting the wrong intervals.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$(-1; 2] \\cup [3; 4)$' expected='$(-1; 2] \\cup [3; 4)$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$(-1; 2] \\cup [3; 4)$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Solve the system by intersecting the solution sets. First inequality: (x^2 - 5x + 6)/(x + 1) >= 0. Factor the numerator: x^2 - 5x + 6 = (x - 2)(x - 3). The inequality becomes ((x - 2)(x - 3))/(x + 1) >= 0, with domain restriction x != -1. Critical points are x = -1, x = 2, x = 3. Check signs on intervals: on (-infinity, -1), for x = -2 the expression is negative, so exclude; on (-1, 2), for x = 0 \n\n[anthropic/claude-sonnet-4.6] answered B: Step 1: Solve 2x-1 < 7 → x < 4, so x ∈ (-∞, 4). Step 2: Factor numerator x²-5x+6 = (x-2)(x-3). Need (x-2)(x-3)/(x+1) ≥ 0. Critical points: x = -1 (excluded), x = 2, x = 3. Sign analysis: x < -1: (-)(-)/ (-) = negative → NO. -1 < x < 2: (-)(-)/(+) = positive → YES. 2 < x < 3: (+)(-)/(+) = negative → NO. x > 3: (+)(+)/(+) = positive → YES. At x=2: equals 0 → included. At x=3: equals 0 → included. At\n\n[google/gemini-3.1-pro-preview] answered B: To solve the system of inequalities, we will solve each inequality separately and then find the intersection of their solution sets.\n\n1) First inequality: \\(\\frac{x^2-5x+6}{x+1} \\ge 0\\)\nFactor the numerator: \\(x^2-5x+6 = (x-2)(x-3)\\).\nThe inequality becomes \\(\\frac{(x-2)(x-3)}{x+1} \\ge 0\\).\nThe critical points are \\(x = 2\\), \\(x = 3\\) (from the numerator, where the expression equals 0) and \\(x = -",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.6,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unique; the solution requires factoring, sign analysis, domain restriction, and intersection with a linear inequality. Distractors are plausible and correspond to common errors such as including the excluded point, reversing the inequality sign, or mishandling equality endpoints. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and correctly keyed. All distractors correspond to identifiable errors: A includes -1 (closed bracket error), C reflects a sign-analysis mistake, and D uses open brackets at x=2 and x=3. The Kazakh is natural and uses standard mathematical terminology. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors effectively target common errors such as including the root of the denominator, confusing strict and non-strict inequalities, and selecting the wrong intervals.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$(-1; 2] \\cup [3; 4)$' expected='$(-1; 2] \\cup [3; 4)$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$(-1; 2] \\cup [3; 4)$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Solve the system by intersecting the solution sets. First inequality: (x^2 - 5x + 6)/(x + 1) >= 0. Factor the numerator: x^2 - 5x + 6 = (x - 2)(x - 3). The inequality becomes ((x - 2)(x - 3))/(x + 1) >= 0, with domain restriction x != -1. Critical points are x = -1, x = 2, x = 3. Check signs on intervals: on (-infinity, -1), for x = -2 the expression is negative, so exclude; on (-1, 2), for x = 0 the expression is positive, so include; at x = 2 the expression equals 0, so include; on (2, 3), for x = 2.5 the expression is negative, so exclude; at x = 3 the expression equals 0, so include; on (3, infinity), the expression is positive, so include. Thus the first inequality gives (-1, 2] union [3, infinity). Second inequality: 2x - 1 < 7, so 2x < 8, hence x < 4. Intersecting gives (-1, 2] union [3, 4). This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unique; the solution requires factoring, sign analysis, domain restriction, and intersection with a linear inequality. Distractors are plausible and correspond to common errors such as including the excluded point, reversing the inequality sign, or mishandling equality endpoints.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-1; 2] \\cup [3; 4)$' expected='$(-1; 2] \\cup [3; 4)$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-1; 2] \\cup [3; 4)$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Solve 2x-1 < 7 → x < 4, so x ∈ (-∞, 4). Step 2: Factor numerator x²-5x+6 = (x-2)(x-3). Need (x-2)(x-3)/(x+1) ≥ 0. Critical points: x = -1 (excluded), x = 2, x = 3. Sign analysis: x < -1: (-)(-)/ (-) = negative → NO. -1 < x < 2: (-)(-)/(+) = positive → YES. 2 < x < 3: (+)(-)/(+) = negative → NO. x > 3: (+)(+)/(+) = positive → YES. At x=2: equals 0 → included. At x=3: equals 0 → included. At x=-1: excluded. Solution to inequality 1: (-1, 2] ∪ [3, +∞). Step 3: Intersect with x < 4: (-1, 2] ∪ [3, 4). This is option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically sound, and correctly keyed. All distractors correspond to identifiable errors: A includes -1 (closed bracket error), C reflects a sign-analysis mistake, and D uses open brackets at x=2 and x=3. The Kazakh is natural and uses standard mathematical terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-1; 2] \\cup [3; 4)$' expected='$(-1; 2] \\cup [3; 4)$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-1; 2] \\cup [3; 4)$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the system of inequalities, we will solve each inequality separately and then find the intersection of their solution sets.\n\n1) First inequality: \\(\\frac{x^2-5x+6}{x+1} \\ge 0\\)\nFactor the numerator: \\(x^2-5x+6 = (x-2)(x-3)\\).\nThe inequality becomes \\(\\frac{(x-2)(x-3)}{x+1} \\ge 0\\).\nThe critical points are \\(x = 2\\), \\(x = 3\\) (from the numerator, where the expression equals 0) and \\(x = -1\\) (from the denominator, where the expression is undefined).\nUsing the method of intervals on the real number line:\n- For \\(x > 3\\), the expression is positive (+).\n- For \\(2 < x < 3\\), the expression is negative (-).\n- For \\(-1 < x < 2\\), the expression is positive (+).\n- For \\(x < -1\\), the expression is negative (-).\nSince the inequality is \\(\\ge 0\\), we take the positive intervals and include the roots of the numerator, but exclude the root of the denominator. \nSolution to the first inequality: \\(x \\in (-1, 2] \\cup [3, \\infty)\\).\n\n2) Second inequality: \\(2x - 1 < 7\\)\nAdd 1 to both sides: \\(2x < 8\\)\nDivide by 2: \\(x < 4\\)\nSolution to the second inequality: \\(x \\in (-\\infty, 4)\\).\n\n3) Intersection of the two solution sets:\nWe need to find the overlap between \\((-1, 2] \\cup [3, \\infty)\\) and \\((-\\infty, 4)\\).\n- The overlap of \\((-1, 2]\\) and \\((-\\infty, 4)\\) is \\((-1, 2]\\).\n- The overlap of \\([3, \\infty)\\) and \\((-\\infty, 4)\\) is \\([3, 4)\\).\nCombining these gives the final solution: \\(x \\in (-1, 2] \\cup [3, 4)\\).\n\nThis matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors effectively target common errors such as including the root of the denominator, confusing strict and non-strict inequalities, and selecting the wrong intervals.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-1; 2] \\cup [3; 4)$' expected='$(-1; 2] \\cup [3; 4)$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-1; 2] \\cup [3; 4)$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:48:38.150213+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,209 @@
+{
+  "id": "f7664eb2-d882-48ab-af81-e24ff4970873",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polyhedra",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Дұрыс алтыбұрышты призманың ең үлкен диагоналі $8$-ге тең және ол табан жазықтығымен $30^\\circ$ бұрыш жасайды. Призманың көлемін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$96\\sqrt{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$24\\sqrt{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$72\\sqrt{3}$"
+    },
+    {
+      "label": "D",
+      "text": "$36\\sqrt{3}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1. Призманың ең үлкен диагоналі ($D=8$), оның табанындағы проекциясы (табанының ең үлкен диагоналі, $d$) және призманың биіктігі ($h$) тікбұрышты үшбұрыш құрайды.\n2. Призманың биіктігін табамыз: $h = D \\cdot \\sin(30^\\circ) = 8 \\cdot \\frac{1}{2} = 4$.\n3. Табанының ең үлкен диагоналін табамыз: $d = D \\cdot \\cos(30^\\circ) = 8 \\cdot \\frac{\\sqrt{3}}{2} = 4\\sqrt{3}$.\n4. Дұрыс алтыбұрыштың ең үлкен диагоналі оның қабырғасынан екі есе үлкен ($d = 2a$). Осыдан алтыбұрыштың қабырғасы: $a = \\frac{d}{2} = \\frac{4\\sqrt{3}}{2} = 2\\sqrt{3}$.\n5. Табанының ауданы (дұрыс алтыбұрыш ауданы): $S_{\\text{таб}} = \\frac{3\\sqrt{3}}{2} a^2 = \\frac{3\\sqrt{3}}{2} (2\\sqrt{3})^2 = \\frac{3\\sqrt{3}}{2} \\cdot 12 = 18\\sqrt{3}$.\n6. Призманың көлемін есептейміз: $V = S_{\\text{таб}} \\cdot h = 18\\sqrt{3} \\cdot 4 = 72\\sqrt{3}$.",
+  "latex_formulas": [
+    "d = 2a",
+    "S = \\frac{3\\sqrt{3}}{2} a^2",
+    "V = S_{\\text{таб}} \\cdot h"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: In a regular hexagonal prism, the largest space diagonal connects two opposite vertices of the two bases. Its projection onto the base plane is the largest diagonal of the regular hexagon, which equals 2a, where a is the side length of the hexagon. Let the space diagonal be d = 8 and the angle with the base plane be 30 degrees. The height of the prism is h = d sin 30 degrees = 8 * 1/2 = 4. The pro\n\n[anthropic/claude-sonnet-4.6] answered C: A regular hexagonal prism has a regular hexagon as its base. Let the side length of the base hexagon be 'a' and the height of the prism be 'h'.\n\nThe largest diagonal of a regular hexagonal prism is the space diagonal that connects two opposite vertices of the hexagon on different bases. In a regular hexagon with side length 'a', the longest diagonal (connecting opposite vertices) has length 2a.\n\nS\n\n[google/gemini-3.1-pro-preview] answered C: Let the regular hexagonal prism have a base side length of $a$ and a height of $h$. The longest diagonal of the prism, denoted as $D$, has a length of 8. The projection of this longest diagonal onto the base plane is the longest diagonal of the regular hexagonal base, which we will denote as $d$. The length of the longest diagonal of a regular hexagon is $d = 2a$.\n\nThe angle between the prism's lo",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the largest space diagonal projects to the longest diagonal of the regular hexagonal base. The item is appropriate for level B, requiring several standard geometric relationships and computations. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and correctly keyed. All four solution steps (finding h, finding 2a, computing base area, computing volume) align perfectly with level B difficulty. Distractors correspond to identifiable errors: A=96√3 (using wrong formula or doubling), B=24√3 (using a=√3 instead of 2√3), D=36√3 (halving the correct answer, e.g., forgetting to multiply by 2 somewhere). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multiple logical steps (trigonometry, properties of a regular hexagon, volume calculation) which perfectly aligns with Level B. The distractors are exceptionally well-designed, anticipating common student errors such as confusing the longest and shortest diagonals of a hexagon or using the pyramid volume formula.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+      "raw": {
+        "ok": true,
+        "stdout": "72*sqrt(3)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: In a regular hexagonal prism, the largest space diagonal connects two opposite vertices of the two bases. Its projection onto the base plane is the largest diagonal of the regular hexagon, which equals 2a, where a is the side length of the hexagon. Let the space diagonal be d = 8 and the angle with the base plane be 30 degrees. The height of the prism is h = d sin 30 degrees = 8 * 1/2 = 4. The pro\n\n[anthropic/claude-sonnet-4.6] answered C: A regular hexagonal prism has a regular hexagon as its base. Let the side length of the base hexagon be 'a' and the height of the prism be 'h'.\n\nThe largest diagonal of a regular hexagonal prism is the space diagonal that connects two opposite vertices of the hexagon on different bases. In a regular hexagon with side length 'a', the longest diagonal (connecting opposite vertices) has length 2a.\n\nS\n\n[google/gemini-3.1-pro-preview] answered C: Let the regular hexagonal prism have a base side length of $a$ and a height of $h$. The longest diagonal of the prism, denoted as $D$, has a length of 8. The projection of this longest diagonal onto the base plane is the longest diagonal of the regular hexagonal base, which we will denote as $d$. The length of the longest diagonal of a regular hexagon is $d = 2a$.\n\nThe angle between the prism's lo",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: the largest space diagonal projects to the longest diagonal of the regular hexagonal base. The item is appropriate for level B, requiring several standard geometric relationships and computations. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and correctly keyed. All four solution steps (finding h, finding 2a, computing base area, computing volume) align perfectly with level B difficulty. Distractors correspond to identifiable errors: A=96√3 (using wrong formula or doubling), B=24√3 (using a=√3 instead of 2√3), D=36√3 (halving the correct answer, e.g., forgetting to multiply by 2 somewhere). Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multiple logical steps (trigonometry, properties of a regular hexagon, volume calculation) which perfectly aligns with Level B. The distractors are exceptionally well-designed, anticipating common student errors such as confusing the longest and shortest diagonals of a hexagon or using the pyramid volume formula.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+        "raw": {
+          "ok": true,
+          "stdout": "72*sqrt(3)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In a regular hexagonal prism, the largest space diagonal connects two opposite vertices of the two bases. Its projection onto the base plane is the largest diagonal of the regular hexagon, which equals 2a, where a is the side length of the hexagon. Let the space diagonal be d = 8 and the angle with the base plane be 30 degrees. The height of the prism is h = d sin 30 degrees = 8 * 1/2 = 4. The projection of the diagonal onto the base is d cos 30 degrees = 8 * (sqrt(3)/2) = 4sqrt(3). Hence 2a = 4sqrt(3), so a = 2sqrt(3). The base area of a regular hexagon is S = (3sqrt(3)/2)a^2. Since a^2 = (2sqrt(3))^2 = 12, S = (3sqrt(3)/2) * 12 = 18sqrt(3). Therefore the prism volume is V = S * h = 18sqrt(3) * 4 = 72sqrt(3).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous: the largest space diagonal projects to the longest diagonal of the regular hexagonal base. The item is appropriate for level B, requiring several standard geometric relationships and computations.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "72*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A regular hexagonal prism has a regular hexagon as its base. Let the side length of the base hexagon be 'a' and the height of the prism be 'h'.\n\nThe largest diagonal of a regular hexagonal prism is the space diagonal that connects two opposite vertices of the hexagon on different bases. In a regular hexagon with side length 'a', the longest diagonal (connecting opposite vertices) has length 2a.\n\nSo the space diagonal d connects a vertex on the bottom base to the opposite vertex on the top base. The horizontal distance between these two vertices is 2a (the long diagonal of the hexagon), and the vertical distance is h.\n\nTherefore: d = sqrt((2a)² + h²) = 8\n\nThe angle this diagonal makes with the base plane is 30°.\n\ntan(30°) = h / (2a)\nSo h = 2a · tan(30°) = 2a · (1/√3) = 2a/√3\n\nAlso, the diagonal length:\nd = sqrt((2a)² + h²) = 8\n\nUsing the angle: the diagonal makes 30° with the base, so:\ncos(30°) = (2a)/d\n2a = d · cos(30°) = 8 · (√3/2) = 4√3\nSo a = 2√3\n\nsin(30°) = h/d\nh = d · sin(30°) = 8 · (1/2) = 4\n\nNow compute the volume:\nArea of regular hexagon with side a = (3√3/2)a²\na = 2√3, so a² = 12\nArea = (3√3/2) · 12 = 18√3\n\nVolume = Area × h = 18√3 × 4 = 72√3",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically sound, and correctly keyed. All four solution steps (finding h, finding 2a, computing base area, computing volume) align perfectly with level B difficulty. Distractors correspond to identifiable errors: A=96√3 (using wrong formula or doubling), B=24√3 (using a=√3 instead of 2√3), D=36√3 (halving the correct answer, e.g., forgetting to multiply by 2 somewhere). Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "72*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the regular hexagonal prism have a base side length of $a$ and a height of $h$. The longest diagonal of the prism, denoted as $D$, has a length of 8. The projection of this longest diagonal onto the base plane is the longest diagonal of the regular hexagonal base, which we will denote as $d$. The length of the longest diagonal of a regular hexagon is $d = 2a$.\n\nThe angle between the prism's longest diagonal and the base plane is given as $30^\\circ$. This forms a right-angled triangle with the prism's longest diagonal $D$ as the hypotenuse, the base's longest diagonal $d$ as the adjacent side, and the height $h$ as the opposite side.\n\nUsing trigonometry:\n1. The height of the prism is $h = D \\sin(30^\\circ) = 8 \\times \\frac{1}{2} = 4$.\n2. The longest diagonal of the base is $d = D \\cos(30^\\circ) = 8 \\times \\frac{\\sqrt{3}}{2} = 4\\sqrt{3}$.\n\nSince $d = 2a$, we can find the side length of the base:\n$2a = 4\\sqrt{3} \\implies a = 2\\sqrt{3}$.\n\nThe area of a regular hexagon is given by the formula $S = \\frac{3\\sqrt{3}}{2} a^2$. Substituting $a = 2\\sqrt{3}$:\n$a^2 = (2\\sqrt{3})^2 = 12$.\n$S = \\frac{3\\sqrt{3}}{2} \\times 12 = 18\\sqrt{3}$.\n\nThe volume of the prism is the product of the base area and the height:\n$V = S \\times h = 18\\sqrt{3} \\times 4 = 72\\sqrt{3}$.\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It requires multiple logical steps (trigonometry, properties of a regular hexagon, volume calculation) which perfectly aligns with Level B. The distractors are exceptionally well-designed, anticipating common student errors such as confusing the longest and shortest diagonals of a hexagon or using the pyramid volume formula.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='72*sqrt(3)' expected='72*sqrt(3)'",
+            "raw": {
+              "ok": true,
+              "stdout": "72*sqrt(3)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:36:54.704192+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,235 @@
+{
+  "id": "85f933e4-2ca8-46d8-a4ba-6963c16b72fc",
+  "subject": "math",
+  "level": "A",
+  "format": "image",
+  "topic": "integrals",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Суреттегі боялған аймақтың ауданын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$4$"
+    },
+    {
+      "label": "B",
+      "text": "$5$"
+    },
+    {
+      "label": "C",
+      "text": "$6$"
+    },
+    {
+      "label": "D",
+      "text": "$8$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Суреттен боялған аймақ $y=2x+1$ графигінің астында, $x=0$ мен $x=2$ аралығында орналасқанын көреміз. Аудан анықталған интеграл арқылы табылады: $S=\\int_{0}^{2}(2x+1)\\,dx$. Алғашқы функциясы: $\\int(2x+1)\\,dx=x^2+x$. Енді Ньютон-Лейбниц формуласы бойынша: $S=(x^2+x)\\big|_{0}^{2}=(2^2+2)-(0^2+0)=6$. Демек, боялған аймақтың ауданы $6$-ға тең.",
+  "latex_formulas": [
+    "$S=\\int_{a}^{b} f(x)\\,dx$",
+    "$\\int (2x+1)\\,dx=x^2+x$",
+    "$\\int_{0}^{2}(2x+1)\\,dx=6$"
+  ],
+  "figure_spec": {
+    "figure_type": "function_graph",
+    "parameters": {
+      "function_str": "2*x + 1",
+      "x_range": [
+        -0.5,
+        2.5
+      ],
+      "y_range": [
+        0,
+        6
+      ],
+      "shade_area": [
+        0,
+        2
+      ],
+      "mark_points": [
+        0,
+        2
+      ],
+      "tangent_at_x": null,
+      "second_function_str": null,
+      "function_label": "$y=2x+1$",
+      "caption": "$y=2x+1$ функциясының графигі"
+    },
+    "caption": "$y=2x+1$ функциясының графигі"
+  },
+  "figure_path": "output/math_final/figures/function_graph_83501.png",
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The shaded region is bounded below by the x-axis, above by the line y = 2x + 1, and vertically between x = 0 and x = 2. Therefore its area is the definite integral of the function from 0 to 2: Area = ∫_0^2 (2x + 1) dx. Compute the antiderivative: ∫(2x + 1) dx = x^2 + x. Evaluate from 0 to 2: (2^2 + 2) - (0^2 + 0) = (4 + 2) - 0 = 6. Thus the shaded area is 6.\n\n[anthropic/claude-sonnet-4.6] answered C: From the figure, the shaded region is bounded by the line y = 2x + 1, the x-axis (y = 0), and the vertical lines x = 0 and x = 2. The shaded area is the area under the curve y = 2x + 1 from x = 0 to x = 2.\n\nArea = ∫₀² (2x + 1) dx\n= [x² + x]₀²\n= (4 + 2) - (0 + 0)\n= 6\n\nSo the area of the shaded region is 6.\n\n[google/gemini-3.1-pro-preview] answered C: The image shows a shaded region bounded by the line $y = 2x + 1$, the x-axis ($y = 0$), the y-axis ($x = 0$), and the vertical line $x = 2$. \n\nTo find the area of this region, we can use a definite integral. The area $A$ is given by the integral of the function from $x = 0$ to $x = 2$:\n$$A = \\int_{0}^{2} (2x + 1) \\, dx$$\n\nFirst, we find the antiderivative of $2x + 1$:\n$$\\int (2x + 1) \\, dx = x^2 +",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": 9.333
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the figure clearly defines the shaded region as the area under y=2x+1 from x=0 to x=2. The item is appropriate for basic integral application, though the distractors are only moderately diagnostic. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-illustrated, and appropriately aligned with Level A difficulty. The figure clearly shows the shaded region under y=2x+1 from x=0 to x=2, and the correct answer of 6 is verified. Distractors (4, 5, 8) are plausible — 4 could come from forgetting the +1 term, 5 from a geometric trapezoid miscalculation, and 8 from doubling an error. | [google/gemini-3.1-pro-preview] The question is perfectly designed for Level A. The figure is clear and essential, the distractors correspond to common student errors (e.g., integrating 2x+1 as x^2+2x gives 8, or calculating only the triangle area gives 4), and the language is accurate.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='6' expected='6'",
+      "raw": {
+        "ok": true,
+        "stdout": "6",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The shaded region is bounded below by the x-axis, above by the line y = 2x + 1, and vertically between x = 0 and x = 2. Therefore its area is the definite integral of the function from 0 to 2: Area = ∫_0^2 (2x + 1) dx. Compute the antiderivative: ∫(2x + 1) dx = x^2 + x. Evaluate from 0 to 2: (2^2 + 2) - (0^2 + 0) = (4 + 2) - 0 = 6. Thus the shaded area is 6.\n\n[anthropic/claude-sonnet-4.6] answered C: From the figure, the shaded region is bounded by the line y = 2x + 1, the x-axis (y = 0), and the vertical lines x = 0 and x = 2. The shaded area is the area under the curve y = 2x + 1 from x = 0 to x = 2.\n\nArea = ∫₀² (2x + 1) dx\n= [x² + x]₀²\n= (4 + 2) - (0 + 0)\n= 6\n\nSo the area of the shaded region is 6.\n\n[google/gemini-3.1-pro-preview] answered C: The image shows a shaded region bounded by the line $y = 2x + 1$, the x-axis ($y = 0$), the y-axis ($x = 0$), and the vertical line $x = 2$. \n\nTo find the area of this region, we can use a definite integral. The area $A$ is given by the integral of the function from $x = 0$ to $x = 2$:\n$$A = \\int_{0}^{2} (2x + 1) \\, dx$$\n\nFirst, we find the antiderivative of $2x + 1$:\n$$\\int (2x + 1) \\, dx = x^2 +",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": 9.333
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the figure clearly defines the shaded region as the area under y=2x+1 from x=0 to x=2. The item is appropriate for basic integral application, though the distractors are only moderately diagnostic. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-illustrated, and appropriately aligned with Level A difficulty. The figure clearly shows the shaded region under y=2x+1 from x=0 to x=2, and the correct answer of 6 is verified. Distractors (4, 5, 8) are plausible — 4 could come from forgetting the +1 term, 5 from a geometric trapezoid miscalculation, and 8 from doubling an error. | [google/gemini-3.1-pro-preview] The question is perfectly designed for Level A. The figure is clear and essential, the distractors correspond to common student errors (e.g., integrating 2x+1 as x^2+2x gives 8, or calculating only the triangle area gives 4), and the language is accurate.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='6' expected='6'",
+        "raw": {
+          "ok": true,
+          "stdout": "6",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The shaded region is bounded below by the x-axis, above by the line y = 2x + 1, and vertically between x = 0 and x = 2. Therefore its area is the definite integral of the function from 0 to 2: Area = ∫_0^2 (2x + 1) dx. Compute the antiderivative: ∫(2x + 1) dx = x^2 + x. Evaluate from 0 to 2: (2^2 + 2) - (0^2 + 0) = (4 + 2) - 0 = 6. Thus the shaded area is 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 9.0
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the figure clearly defines the shaded region as the area under y=2x+1 from x=0 to x=2. The item is appropriate for basic integral application, though the distractors are only moderately diagnostic.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the figure, the shaded region is bounded by the line y = 2x + 1, the x-axis (y = 0), and the vertical lines x = 0 and x = 2. The shaded area is the area under the curve y = 2x + 1 from x = 0 to x = 2.\n\nArea = ∫₀² (2x + 1) dx\n= [x² + x]₀²\n= (4 + 2) - (0 + 0)\n= 6\n\nSo the area of the shaded region is 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 9.0
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct, well-illustrated, and appropriately aligned with Level A difficulty. The figure clearly shows the shaded region under y=2x+1 from x=0 to x=2, and the correct answer of 6 is verified. Distractors (4, 5, 8) are plausible — 4 could come from forgetting the +1 term, 5 from a geometric trapezoid miscalculation, and 8 from doubling an error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The image shows a shaded region bounded by the line $y = 2x + 1$, the x-axis ($y = 0$), the y-axis ($x = 0$), and the vertical line $x = 2$. \n\nTo find the area of this region, we can use a definite integral. The area $A$ is given by the integral of the function from $x = 0$ to $x = 2$:\n$$A = \\int_{0}^{2} (2x + 1) \\, dx$$\n\nFirst, we find the antiderivative of $2x + 1$:\n$$\\int (2x + 1) \\, dx = x^2 + x$$\n\nNext, we evaluate this from $0$ to $2$:\n$$A = [x^2 + x]_{0}^{2} = (2^2 + 2) - (0^2 + 0)$$\n$$A = (4 + 2) - 0 = 6$$\n\nAlternatively, we can recognize the shaded region as a right trapezoid with parallel vertical bases of lengths $1$ (at $x=0$) and $5$ (at $x=2$), and a height of $2$ (the distance along the x-axis). The area of a trapezoid is $A = \\frac{b_1 + b_2}{2} \\cdot h = \\frac{1 + 5}{2} \\cdot 2 = 6$.\n\nBoth methods yield an area of 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly designed for Level A. The figure is clear and essential, the distractors correspond to common student errors (e.g., integrating 2x+1 as x^2+2x gives 8, or calculating only the triangle area gives 4), and the language is accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:56:38.660168+00:00",
+  "generation_attempts": 1
+}

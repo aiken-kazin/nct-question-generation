@@ -1,0 +1,207 @@
+{
+  "id": "ff48d6db-dd0f-49b9-8df4-1434f4d6daeb",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "perpendicularity_3d",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Көпбұрыштың ауданы $40\\ {см}^{2}$. Көпбұрыш жатқан жазықтық пен проекция жазықтығы арасындағы бұрыш $60^\\circ$-қа тең. Көпбұрыштың осы жазықтыққа ортогональ проекциясының ауданы",
+  "options": [
+    {
+      "label": "A",
+      "text": "$40\\ {см}^{2}$"
+    },
+    {
+      "label": "B",
+      "text": "$20\\sqrt{3}\\ {см}^{2}$"
+    },
+    {
+      "label": "C",
+      "text": "$20\\ {см}^{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$20\\sqrt{2}\\ {см}^{2}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Ортогональ проекцияның ауданын табу формуласы:\n$S_{пр} = S \\cdot \\cos\\varphi$\nмұндағы $S$ — көпбұрыш ауданы, $\\varphi$ — көпбұрыш жатқан жазықтық пен проекция жазықтығы арасындағы бұрыш.\nБерілген мәндерді қоямыз:\n$S = 40\\ {см}^{2}$, $\\varphi = 60^\\circ$\n$S_{пр} = 40 \\cdot \\cos 60^\\circ = 40 \\cdot \\frac{1}{2} = 20\\ {см}^{2}$.",
+  "latex_formulas": [
+    "S_{пр} = S \\cdot \\cos\\varphi"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.667,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: For an orthogonal projection of a plane figure from one plane onto another plane, the area of the projection equals the original area multiplied by the cosine of the angle between the two planes: S_projection = S_original * cos(theta). Here S_original = 40 cm^2 and theta = 60 degrees. Therefore S_projection = 40 * cos(60 degrees) = 40 * 1/2 = 20 cm^2. So the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The formula for the area of an orthogonal projection of a plane figure onto another plane is: S' = S · cos(φ), where φ is the dihedral angle between the plane of the figure and the projection plane.\n\nGiven:\n- S = 40 cm²\n- φ = 60°\n\nS' = 40 · cos(60°) = 40 · (1/2) = 20 cm²\n\n[google/gemini-3.1-pro-preview] answered C: To find the area of the orthogonal projection of a polygon, we use the formula: S_{proj} = S \\cdot \\cos(\\alpha), where S is the area of the original polygon and \\alpha is the angle between the plane containing the polygon and the projection plane. Given S = 40 cm^2 and \\alpha = 60^\\circ, we substitute these values into the formula. Since \\cos(60^\\circ) = 1/2, we get S_{proj} = 40 \\cdot (1/2) = 20 ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.667,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct and has a single unambiguous answer using the standard projection area formula. It fits level A well; the distractors are mostly plausible common errors. | [anthropic/claude-sonnet-4.6] The question correctly applies the orthogonal projection area formula S' = S·cos(φ), with answer C = 20 cm² being unambiguously correct. Distractors correspond to identifiable errors: A (no projection effect), B (using sin instead of cos or wrong trig value), D (using cos 45° or √2 factor). | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A difficulty, requiring a simple one-step application of the orthogonal projection area formula. Distractors are well-chosen based on common trigonometric errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$20\\ {см}^{2}$' expected='$20\\ {см}^{2}$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$20\\ {см}^{2}$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: For an orthogonal projection of a plane figure from one plane onto another plane, the area of the projection equals the original area multiplied by the cosine of the angle between the two planes: S_projection = S_original * cos(theta). Here S_original = 40 cm^2 and theta = 60 degrees. Therefore S_projection = 40 * cos(60 degrees) = 40 * 1/2 = 20 cm^2. So the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The formula for the area of an orthogonal projection of a plane figure onto another plane is: S' = S · cos(φ), where φ is the dihedral angle between the plane of the figure and the projection plane.\n\nGiven:\n- S = 40 cm²\n- φ = 60°\n\nS' = 40 · cos(60°) = 40 · (1/2) = 20 cm²\n\n[google/gemini-3.1-pro-preview] answered C: To find the area of the orthogonal projection of a polygon, we use the formula: S_{proj} = S \\cdot \\cos(\\alpha), where S is the area of the original polygon and \\alpha is the angle between the plane containing the polygon and the projection plane. Given S = 40 cm^2 and \\alpha = 60^\\circ, we substitute these values into the formula. Since \\cos(60^\\circ) = 1/2, we get S_{proj} = 40 \\cdot (1/2) = 20 ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.667,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct and has a single unambiguous answer using the standard projection area formula. It fits level A well; the distractors are mostly plausible common errors. | [anthropic/claude-sonnet-4.6] The question correctly applies the orthogonal projection area formula S' = S·cos(φ), with answer C = 20 cm² being unambiguously correct. Distractors correspond to identifiable errors: A (no projection effect), B (using sin instead of cos or wrong trig value), D (using cos 45° or √2 factor). | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A difficulty, requiring a simple one-step application of the orthogonal projection area formula. Distractors are well-chosen based on common trigonometric errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$20\\ {см}^{2}$' expected='$20\\ {см}^{2}$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$20\\ {см}^{2}$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For an orthogonal projection of a plane figure from one plane onto another plane, the area of the projection equals the original area multiplied by the cosine of the angle between the two planes: S_projection = S_original * cos(theta). Here S_original = 40 cm^2 and theta = 60 degrees. Therefore S_projection = 40 * cos(60 degrees) = 40 * 1/2 = 20 cm^2. So the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct and has a single unambiguous answer using the standard projection area formula. It fits level A well; the distractors are mostly plausible common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$20\\ {см}^{2}$' expected='$20\\ {см}^{2}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$20\\ {см}^{2}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The formula for the area of an orthogonal projection of a plane figure onto another plane is: S' = S · cos(φ), where φ is the dihedral angle between the plane of the figure and the projection plane.\n\nGiven:\n- S = 40 cm²\n- φ = 60°\n\nS' = 40 · cos(60°) = 40 · (1/2) = 20 cm²",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question correctly applies the orthogonal projection area formula S' = S·cos(φ), with answer C = 20 cm² being unambiguously correct. Distractors correspond to identifiable errors: A (no projection effect), B (using sin instead of cos or wrong trig value), D (using cos 45° or √2 factor).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$20\\ {см}^{2}$' expected='$20\\ {см}^{2}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$20\\ {см}^{2}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the area of the orthogonal projection of a polygon, we use the formula: S_{proj} = S \\cdot \\cos(\\alpha), where S is the area of the original polygon and \\alpha is the angle between the plane containing the polygon and the projection plane. Given S = 40 cm^2 and \\alpha = 60^\\circ, we substitute these values into the formula. Since \\cos(60^\\circ) = 1/2, we get S_{proj} = 40 \\cdot (1/2) = 20 cm^2. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with Level A difficulty, requiring a simple one-step application of the orthogonal projection area formula. Distractors are well-chosen based on common trigonometric errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$20\\ {см}^{2}$' expected='$20\\ {см}^{2}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$20\\ {см}^{2}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:30:47.453891+00:00",
+  "generation_attempts": 1
+}

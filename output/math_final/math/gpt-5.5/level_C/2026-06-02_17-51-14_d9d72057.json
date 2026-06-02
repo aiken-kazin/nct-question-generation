@@ -1,0 +1,210 @@
+{
+  "id": "d9d72057-2fbc-4bb0-b903-b1f914cc19cb",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "exponential_logarithmic_functions",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "$a$ — оң бүтін сан. $f_a(x)=\\log_2(x-a)+\\log_2(10-x)$ функциясы үшін $f_a(x)\\ge 3$ теңсіздігін қанағаттандыратын $x$ мәндерінің жиынының ұзындығы кемінде $4$ болсын. Осындай барлық $a$ мәндерінің қосындысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$3$"
+    },
+    {
+      "label": "B",
+      "text": "$10$"
+    },
+    {
+      "label": "C",
+      "text": "$6$"
+    },
+    {
+      "label": "D",
+      "text": "$15$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Алдымен анықталу облысын табамыз: $x-a>0$ және $10-x>0$, сондықтан $a<x<10$. Демек, қарастырылатын жағдайларда $a<10$ болуы керек.\n\nТеңсіздікті түрлендірейік:\n$\\log_2(x-a)+\\log_2(10-x)\\ge 3$.\nЛогарифм қасиеті бойынша:\n$\\log_2\\big((x-a)(10-x)\\big)\\ge 3$.\nНегізі $2>1$ болғандықтан, логарифмдік функция өспелі:\n$(x-a)(10-x)\\ge 2^3=8$.\n\n$u=x-a$, ал $L=10-a$ деп белгілейік. Онда $0<u<L$, ал теңсіздік\n$u(L-u)\\ge 8$\nтүріне келеді. Яғни\n$u^2-Lu+8\\le 0$.\n\nБұл квадрат теңсіздіктің шешім аралығының ұзындығы түбірлер айырмасына тең:\n$\\sqrt{D}=\\sqrt{L^2-32}$.\nШарт бойынша осы ұзындық кемінде $4$:\n$\\sqrt{L^2-32}\\ge 4$.\nОсыдан\n$L^2-32\\ge 16$, яғни $L^2\\ge 48$.\n\n$L=10-a$ — оң бүтін сан, сондықтан $L\\ge 7$. Демек,\n$10-a\\ge 7$, сондықтан $a\\le 3$.\n$a$ оң бүтін сан болғандықтан, мүмкін мәндері: $1$, $2$, $3$.\nОлардың қосындысы:\n$1+2+3=6$.",
+  "latex_formulas": [
+    "$\\log_2 A+\\log_2 B=\\log_2(AB)$",
+    "$\\log_2 y\\ge 3\\iff y\\ge 2^3$",
+    "$u^2-Lu+8\\le 0$",
+    "$\\sqrt{L^2-32}\\ge 4$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The domain of the logarithms requires x-a > 0 and 10-x > 0, so a < x < 10. Since a is a positive integer, only a < 10 can give a nonempty domain. Combine the logarithms: f_a(x) = log_2((x-a)(10-x)). The inequality f_a(x) >= 3 is equivalent to log_2((x-a)(10-x)) >= 3. Because base 2 is greater than 1, this is equivalent to (x-a)(10-x) >= 2^3 = 8. Expand: (x-a)(10-x) >= 8 gives -x^2 + (a+10)x - 10a \n\n[anthropic/claude-sonnet-4.6] answered C: We need to find all positive integers a such that the set of x satisfying f_a(x) ≥ 3 has length at least 4.\n\nFirst, find the domain of f_a(x) = log₂(x-a) + log₂(10-x).\nWe need x - a > 0 and 10 - x > 0, so a < x < 10.\n\nf_a(x) = log₂((x-a)(10-x))\n\nThe inequality f_a(x) ≥ 3 becomes:\nlog₂((x-a)(10-x)) ≥ 3\n(x-a)(10-x) ≥ 8\n\nLet me expand: (x-a)(10-x) = 10x - x² - 10a + ax = -x² + (10+a)x - 10a\n\nSo we ne\n\n[google/gemini-3.1-pro-preview] answered C: To find the values of $a$ that satisfy the condition, we first determine the domain of the function $f_a(x) = \\log_2(x-a) + \\log_2(10-x)$. The arguments of the logarithms must be positive, so $x - a > 0$ and $10 - x > 0$, which gives $x \\in (a, 10)$.\n\nThe given inequality is $f_a(x) \\ge 3$. Using the properties of logarithms, we can rewrite this as:\n$\\log_2((x-a)(10-x)) \\ge 3$\n\nSince the base of t",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution set length is derived properly via the discriminant. The item is clear, but it feels more like an upper-medium procedural parameter problem than a genuinely hard level C task. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. It requires multi-step reasoning: finding the domain, transforming the logarithmic inequality, analyzing the quadratic, and checking boundary conditions — genuinely level C. Distractors 3 (sum=6 is correct), and the others (3, 10, 15) are plausible via common errors such as summing only a=1+2=3, including a=4 to get 1+2+3+4=10, or summing 1+2+3+4+5=15. Kazakh is natural and uses correct mathematical terminology. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multi-step reasoning involving logarithmic inequalities, parametric quadratic inequalities, and domain analysis, perfectly aligning with difficulty level C. The distractors are well-designed to catch common errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='6' expected='6'",
+      "raw": {
+        "ok": true,
+        "stdout": "6",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The domain of the logarithms requires x-a > 0 and 10-x > 0, so a < x < 10. Since a is a positive integer, only a < 10 can give a nonempty domain. Combine the logarithms: f_a(x) = log_2((x-a)(10-x)). The inequality f_a(x) >= 3 is equivalent to log_2((x-a)(10-x)) >= 3. Because base 2 is greater than 1, this is equivalent to (x-a)(10-x) >= 2^3 = 8. Expand: (x-a)(10-x) >= 8 gives -x^2 + (a+10)x - 10a \n\n[anthropic/claude-sonnet-4.6] answered C: We need to find all positive integers a such that the set of x satisfying f_a(x) ≥ 3 has length at least 4.\n\nFirst, find the domain of f_a(x) = log₂(x-a) + log₂(10-x).\nWe need x - a > 0 and 10 - x > 0, so a < x < 10.\n\nf_a(x) = log₂((x-a)(10-x))\n\nThe inequality f_a(x) ≥ 3 becomes:\nlog₂((x-a)(10-x)) ≥ 3\n(x-a)(10-x) ≥ 8\n\nLet me expand: (x-a)(10-x) = 10x - x² - 10a + ax = -x² + (10+a)x - 10a\n\nSo we ne\n\n[google/gemini-3.1-pro-preview] answered C: To find the values of $a$ that satisfy the condition, we first determine the domain of the function $f_a(x) = \\log_2(x-a) + \\log_2(10-x)$. The arguments of the logarithms must be positive, so $x - a > 0$ and $10 - x > 0$, which gives $x \\in (a, 10)$.\n\nThe given inequality is $f_a(x) \\ge 3$. Using the properties of logarithms, we can rewrite this as:\n$\\log_2((x-a)(10-x)) \\ge 3$\n\nSince the base of t",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution set length is derived properly via the discriminant. The item is clear, but it feels more like an upper-medium procedural parameter problem than a genuinely hard level C task. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. It requires multi-step reasoning: finding the domain, transforming the logarithmic inequality, analyzing the quadratic, and checking boundary conditions — genuinely level C. Distractors 3 (sum=6 is correct), and the others (3, 10, 15) are plausible via common errors such as summing only a=1+2=3, including a=4 to get 1+2+3+4=10, or summing 1+2+3+4+5=15. Kazakh is natural and uses correct mathematical terminology. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multi-step reasoning involving logarithmic inequalities, parametric quadratic inequalities, and domain analysis, perfectly aligning with difficulty level C. The distractors are well-designed to catch common errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='6' expected='6'",
+        "raw": {
+          "ok": true,
+          "stdout": "6",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The domain of the logarithms requires x-a > 0 and 10-x > 0, so a < x < 10. Since a is a positive integer, only a < 10 can give a nonempty domain. Combine the logarithms: f_a(x) = log_2((x-a)(10-x)). The inequality f_a(x) >= 3 is equivalent to log_2((x-a)(10-x)) >= 3. Because base 2 is greater than 1, this is equivalent to (x-a)(10-x) >= 2^3 = 8. Expand: (x-a)(10-x) >= 8 gives -x^2 + (a+10)x - 10a >= 8, so x^2 - (a+10)x + 10a + 8 <= 0. The solution set is the interval between the roots, and its length is sqrt(D), where D is the discriminant. Compute D = (a+10)^2 - 4(10a+8) = a^2 + 20a + 100 - 40a - 32 = a^2 - 20a + 68 = (a-10)^2 - 32. We need the length to be at least 4, so sqrt(D) >= 4, hence D >= 16. Therefore (a-10)^2 - 32 >= 16, so (a-10)^2 >= 48. Since a is a positive integer and the domain is nonempty only for a = 1,2,...,9, we need 10-a >= sqrt(48) = 4sqrt(3) ≈ 6.928. Thus a <= 3.072, so a = 1, 2, 3. Their sum is 1 + 2 + 3 = 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution set length is derived properly via the discriminant. The item is clear, but it feels more like an upper-medium procedural parameter problem than a genuinely hard level C task.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find all positive integers a such that the set of x satisfying f_a(x) ≥ 3 has length at least 4.\n\nFirst, find the domain of f_a(x) = log₂(x-a) + log₂(10-x).\nWe need x - a > 0 and 10 - x > 0, so a < x < 10.\n\nf_a(x) = log₂((x-a)(10-x))\n\nThe inequality f_a(x) ≥ 3 becomes:\nlog₂((x-a)(10-x)) ≥ 3\n(x-a)(10-x) ≥ 8\n\nLet me expand: (x-a)(10-x) = 10x - x² - 10a + ax = -x² + (10+a)x - 10a\n\nSo we need: -x² + (10+a)x - 10a ≥ 8\n-x² + (10+a)x - 10a - 8 ≥ 0\nx² - (10+a)x + 10a + 8 ≤ 0\n\nFind roots of x² - (10+a)x + 10a + 8 = 0:\nDiscriminant = (10+a)² - 4(10a+8) = 100 + 20a + a² - 40a - 32 = a² - 20a + 68\n\nFor real roots, we need a² - 20a + 68 ≥ 0.\nRoots of a² - 20a + 68 = 0: a = (20 ± √(400-272))/2 = (20 ± √128)/2 = 10 ± 4√2\n4√2 ≈ 5.657\nSo roots are approximately 4.343 and 15.657.\n\nFor a² - 20a + 68 ≥ 0: a ≤ 4.343 or a ≥ 15.657.\nSince a is a positive integer: a ≤ 4 or a ≥ 16.\n\nBut we also need the domain a < x < 10, so a < 10, meaning a ≤ 9.\nAlso a must be positive integer, so a ∈ {1, 2, 3, 4}.\n\nFor a ≥ 16, the domain would be a < x < 10, which is empty since a ≥ 16 > 10. So those don't work.\n\nNow, the solution set of x² - (10+a)x + 10a + 8 ≤ 0 is [x₁, x₂] where:\nx₁ = [(10+a) - √(a²-20a+68)]/2\nx₂ = [(10+a) + √(a²-20a+68)]/2\n\nThe length of this interval is x₂ - x₁ = √(a²-20a+68).\n\nBut we also need to intersect with the domain (a, 10).\n\nWe need the length of the intersection of [x₁, x₂] with (a, 10) to be at least 4.\n\nLet me check if [x₁, x₂] ⊆ (a, 10) for valid cases.\n\nNote that x₁ · x₂ = 10a + 8 and x₁ + x₂ = 10 + a.\n\nCheck if x₁ > a: x₁ = [(10+a) - √D]/2 > a iff 10+a - 2a > √D iff 10-a > √D (assuming 10-a > 0, i.e., a < 10).\n(10-a)² > D = a²-20a+68\n100 - 20a + a² > a² - 20a + 68\n100 > 68 ✓\n\nSo x₁ > a always (when a < 10).\n\nCheck if x₂ < 10: x₂ = [(10+a) + √D]/2 < 10 iff 10+a + √D < 20 iff √D < 10-a.\nSame condition: (10-a)² > D, which we showed is always true.\n\nSo [x₁, x₂] ⊆ (a, 10) for a ∈ {1,2,3,4}.\n\nThe length of the solution set is √(a²-20a+68).\n\nWe need √(a²-20a+68) ≥ 4, so a²-20a+68 ≥ 16, i.e., a²-20a+52 ≥ 0.\n\nRoots: a = (20 ± √(400-208))/2 = (20 ± √192)/2 = 10 ± 4√3\n4√3 ≈ 6.928\nSo roots ≈ 3.072 and 16.928.\n\na²-20a+52 ≥ 0 when a ≤ 3.072 or a ≥ 16.928.\n\nAmong positive integers with a ≤ 4: a ∈ {1, 2, 3}.\n\nCheck a = 4: 16 - 80 + 52 = -12 < 0, so length < 4. Not valid.\nCheck a = 3: 9 - 60 + 52 = 1 > 0, so length = √(9-60+68) = √17 ≈ 4.12 ≥ 4. Valid.\nCheck a = 2: 4 - 40 + 52 = 16 > 0, length = √(4-40+68) = √32 ≈ 5.66 ≥ 4. Valid.\nCheck a = 1: 1 - 20 + 52 = 33 > 0, length = √(1-20+68) = √49 = 7 ≥ 4. Valid.\n\nSo valid values are a ∈ {1, 2, 3}.\n\nSum = 1 + 2 + 3 = 6.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous and correctly keyed. It requires multi-step reasoning: finding the domain, transforming the logarithmic inequality, analyzing the quadratic, and checking boundary conditions — genuinely level C. Distractors 3 (sum=6 is correct), and the others (3, 10, 15) are plausible via common errors such as summing only a=1+2=3, including a=4 to get 1+2+3+4=10, or summing 1+2+3+4+5=15. Kazakh is natural and uses correct mathematical terminology.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the values of $a$ that satisfy the condition, we first determine the domain of the function $f_a(x) = \\log_2(x-a) + \\log_2(10-x)$. The arguments of the logarithms must be positive, so $x - a > 0$ and $10 - x > 0$, which gives $x \\in (a, 10)$.\n\nThe given inequality is $f_a(x) \\ge 3$. Using the properties of logarithms, we can rewrite this as:\n$\\log_2((x-a)(10-x)) \\ge 3$\n\nSince the base of the logarithm is $2 > 1$, this is equivalent to:\n$(x-a)(10-x) \\ge 2^3$\n$10x - x^2 - 10a + ax \\ge 8$\n$x^2 - (10+a)x + 10a + 8 \\le 0$\n\nThis is a quadratic inequality. The solution is the interval $[x_1, x_2]$, where $x_1$ and $x_2$ are the roots of the equation $x^2 - (10+a)x + 10a + 8 = 0$. The length of this interval is $x_2 - x_1$. We are given that this length must be at least 4, so $x_2 - x_1 \\ge 4$.\n\nThe difference between the roots of a quadratic equation $Ax^2 + Bx + C = 0$ is given by $\\frac{\\sqrt{D}}{|A|}$, where $D = B^2 - 4AC$. \nHere, $A = 1$, $B = -(10+a)$, and $C = 10a + 8$. \n$D = (-(10+a))^2 - 4(1)(10a + 8) = 100 + 20a + a^2 - 40a - 32 = a^2 - 20a + 68$.\n\nSo, we have $\\sqrt{a^2 - 20a + 68} \\ge 4$. Squaring both sides yields:\n$a^2 - 20a + 68 \\ge 16$\n$a^2 - 20a + 52 \\ge 0$\n\nNow we find the roots of $a^2 - 20a + 52 = 0$:\n$a = \\frac{20 \\pm \\sqrt{400 - 208}}{2} = \\frac{20 \\pm \\sqrt{192}}{2} = 10 \\pm \\sqrt{48}$.\nSince $\\sqrt{48} \\approx 6.928$, the roots are approximately $a_1 \\approx 3.072$ and $a_2 \\approx 16.928$.\n\nThe inequality $a^2 - 20a + 52 \\ge 0$ is satisfied for $a \\le 3.072$ or $a \\ge 16.928$. \nHowever, for the domain $(a, 10)$ to be valid and contain an interval of length at least 4, we must have $10 - a > 4$, which means $a < 6$. Thus, $a \\ge 16.928$ is extraneous.\n\nWe are left with $a \\le 3.072$. Since $a$ is a positive integer, the possible values for $a$ are 1, 2, and 3.\n\nLet's verify:\n- For $a=1$: $D = 1^2 - 20(1) + 68 = 49$. Length is $\\sqrt{49} = 7 \\ge 4$.\n- For $a=2$: $D = 2^2 - 20(2) + 68 = 32$. Length is $\\sqrt{32} \\approx 5.66 \\ge 4$.\n- For $a=3$: $D = 3^2 - 20(3) + 68 = 17$. Length is $\\sqrt{17} \\approx 4.12 \\ge 4$.\n\nThe sum of all such $a$ values is $1 + 2 + 3 = 6$.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It requires multi-step reasoning involving logarithmic inequalities, parametric quadratic inequalities, and domain analysis, perfectly aligning with difficulty level C. The distractors are well-designed to catch common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:51:14.705910+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,208 @@
+{
+  "id": "484573f5-5cc9-4dc0-9536-108d8d18b335",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "sequences",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Үш сан өспелі арифметикалық прогрессия құрайды. Олардың қосындысы $15$-ке тең. Егер осы сандарға сәйкесінше $1$, $4$ және $19$ сандарын қоссақ, онда шыққан сандар геометриялық прогрессия құрайды. Бастапқы үш санды табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$1; 5; 9$"
+    },
+    {
+      "label": "B",
+      "text": "$-16; 5; 26$"
+    },
+    {
+      "label": "C",
+      "text": "$2; 5; 8$"
+    },
+    {
+      "label": "D",
+      "text": "$3; 5; 7$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1. Арифметикалық прогрессия құрайтын үш санды $a - d$, $a$, $a + d$ деп белгілейміз, мұндағы $d > 0$ (өспелі болғандықтан).\n2. Олардың қосындысы $15$-ке тең: $(a - d) + a + (a + d) = 15 \\Rightarrow 3a = 15 \\Rightarrow a = 5$.\n3. Демек, бастапқы сандар: $5 - d$, $5$, $5 + d$.\n4. Осы сандарға сәйкесінше $1, 4$ және $19$ қосамыз:\nБірінші сан: $(5 - d) + 1 = 6 - d$\nЕкінші сан: $5 + 4 = 9$\nҮшінші сан: $(5 + d) + 19 = 24 + d$\n5. Шыққан $6 - d$, $9$, $24 + d$ сандары геометриялық прогрессия құрайды. Геометриялық прогрессияның қасиеті бойынша ортаңғы мүшесінің квадраты шеткі мүшелерінің көбейтіндісіне тең ($b_n^2 = b_{n-1} \\cdot b_{n+1}$):\n$9^2 = (6 - d)(24 + d)$\n$81 = 144 + 6d - 24d - d^2$\n$81 = 144 - 18d - d^2$\n$d^2 + 18d - 63 = 0$\n6. Квадрат теңдеудің түбірлерін табамыз: $d_1 = 3$, $d_2 = -21$.\n7. Прогрессия өспелі болғандықтан $d > 0$, олай болса $d = 3$.\n8. Бастапқы сандар:\n$5 - 3 = 2$\n$5$\n$5 + 3 = 8$\nЖауабы: $2; 5; 8$.",
+  "latex_formulas": [
+    "b_n^2 = b_{n-1} \\cdot b_{n+1}",
+    "a_n = a_1 + (n-1)d"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Let the three increasing arithmetic progression terms be 5 - d, 5, and 5 + d, because their sum is 15, so the middle term is 15/3 = 5. Since the progression is increasing, d > 0. After adding 1, 4, and 19 respectively, the new numbers are (5 - d) + 1 = 6 - d, 5 + 4 = 9, and (5 + d) + 19 = 24 + d. These must form a geometric progression, so the square of the middle term equals the product of the fi\n\n[anthropic/claude-sonnet-4.6] answered C: Let the three numbers in arithmetic progression be (a-d), a, (a+d).\n\nCondition 1: Their sum equals 15.\n(a-d) + a + (a+d) = 15\n3a = 15\na = 5\n\nSo the three numbers are (5-d), 5, (5+d).\n\nCondition 2: Adding 1, 4, 19 respectively gives a geometric progression.\n(5-d+1), (5+4), (5+d+19) must be in GP.\n(6-d), 9, (24+d) must be in GP.\n\nFor GP: the square of the middle term equals the product of the first \n\n[google/gemini-3.1-pro-preview] answered C: Let the three numbers of the increasing arithmetic progression be a - d, a, and a + d, where d > 0.\nThe sum of these three numbers is 15:\n(a - d) + a + (a + d) = 15\n3a = 15\na = 5\n\nSo the three numbers are 5 - d, 5, and 5 + d.\nWe are told that if we add 1, 4, and 19 to these numbers respectively, they form a geometric progression. Let's find the new numbers:\nFirst number: (5 - d) + 1 = 6 - d\nSecond",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.5,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a unique answer, and the solution follows standard AP/GP properties. It fits the requested medium level well, requiring setup of variables and solving a quadratic equation. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and correctly keyed. The solution requires 4 logical steps (setting up AP, applying sum condition, applying GP condition, solving quadratic), perfectly matching level B difficulty. Kazakh terminology is natural and accurate. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligned with the requested difficulty level. Distractors are plausible and based on common errors (e.g., using the extraneous root of the quadratic equation).",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$2; 5; 8$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Let the three increasing arithmetic progression terms be 5 - d, 5, and 5 + d, because their sum is 15, so the middle term is 15/3 = 5. Since the progression is increasing, d > 0. After adding 1, 4, and 19 respectively, the new numbers are (5 - d) + 1 = 6 - d, 5 + 4 = 9, and (5 + d) + 19 = 24 + d. These must form a geometric progression, so the square of the middle term equals the product of the fi\n\n[anthropic/claude-sonnet-4.6] answered C: Let the three numbers in arithmetic progression be (a-d), a, (a+d).\n\nCondition 1: Their sum equals 15.\n(a-d) + a + (a+d) = 15\n3a = 15\na = 5\n\nSo the three numbers are (5-d), 5, (5+d).\n\nCondition 2: Adding 1, 4, 19 respectively gives a geometric progression.\n(5-d+1), (5+4), (5+d+19) must be in GP.\n(6-d), 9, (24+d) must be in GP.\n\nFor GP: the square of the middle term equals the product of the first \n\n[google/gemini-3.1-pro-preview] answered C: Let the three numbers of the increasing arithmetic progression be a - d, a, and a + d, where d > 0.\nThe sum of these three numbers is 15:\n(a - d) + a + (a + d) = 15\n3a = 15\na = 5\n\nSo the three numbers are 5 - d, 5, and 5 + d.\nWe are told that if we add 1, 4, and 19 to these numbers respectively, they form a geometric progression. Let's find the new numbers:\nFirst number: (5 - d) + 1 = 6 - d\nSecond",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a unique answer, and the solution follows standard AP/GP properties. It fits the requested medium level well, requiring setup of variables and solving a quadratic equation. | [anthropic/claude-sonnet-4.6] The question is well-constructed, mathematically sound, and correctly keyed. The solution requires 4 logical steps (setting up AP, applying sum condition, applying GP condition, solving quadratic), perfectly matching level B difficulty. Kazakh terminology is natural and accurate. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligned with the requested difficulty level. Distractors are plausible and based on common errors (e.g., using the extraneous root of the quadratic equation).",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$2; 5; 8$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the three increasing arithmetic progression terms be 5 - d, 5, and 5 + d, because their sum is 15, so the middle term is 15/3 = 5. Since the progression is increasing, d > 0. After adding 1, 4, and 19 respectively, the new numbers are (5 - d) + 1 = 6 - d, 5 + 4 = 9, and (5 + d) + 19 = 24 + d. These must form a geometric progression, so the square of the middle term equals the product of the first and third terms: 9^2 = (6 - d)(24 + d). Thus 81 = 144 + 6d - 24d - d^2 = 144 - 18d - d^2. Rearranging gives d^2 + 18d - 63 = 0. Solving: d = (-18 ± sqrt(18^2 - 4·1·(-63))) / 2 = (-18 ± sqrt(324 + 252)) / 2 = (-18 ± 24) / 2. So d = 3 or d = -21. Since d > 0, d = 3. Therefore the original numbers are 5 - 3 = 2, 5, and 5 + 3 = 8. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a unique answer, and the solution follows standard AP/GP properties. It fits the requested medium level well, requiring setup of variables and solving a quadratic equation.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$2; 5; 8$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the three numbers in arithmetic progression be (a-d), a, (a+d).\n\nCondition 1: Their sum equals 15.\n(a-d) + a + (a+d) = 15\n3a = 15\na = 5\n\nSo the three numbers are (5-d), 5, (5+d).\n\nCondition 2: Adding 1, 4, 19 respectively gives a geometric progression.\n(5-d+1), (5+4), (5+d+19) must be in GP.\n(6-d), 9, (24+d) must be in GP.\n\nFor GP: the square of the middle term equals the product of the first and third terms.\n9² = (6-d)(24+d)\n81 = 144 + 6d - 24d - d²\n81 = 144 - 18d - d²\nd² + 18d + 81 - 144 = 0\nd² + 18d - 63 = 0\n\nUsing quadratic formula:\nd = (-18 ± √(324 + 252)) / 2\nd = (-18 ± √576) / 2\nd = (-18 ± 24) / 2\n\nd = (-18 + 24)/2 = 6/2 = 3, or d = (-18 - 24)/2 = -42/2 = -21\n\nFor d = 3: numbers are 2, 5, 8. Check GP: 3, 9, 27 — ratio 3. ✓\nFor d = -21: numbers are 26, 5, -16. Check GP: 27, 9, 3 — ratio 1/3. ✓\n\nBoth solutions are valid mathematically. However, the problem states 'өспелі' (increasing) arithmetic progression, so d > 0, meaning d = 3.\n\nThe three numbers are 2, 5, 8.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically sound, and correctly keyed. The solution requires 4 logical steps (setting up AP, applying sum condition, applying GP condition, solving quadratic), perfectly matching level B difficulty. Kazakh terminology is natural and accurate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$2; 5; 8$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the three numbers of the increasing arithmetic progression be a - d, a, and a + d, where d > 0.\nThe sum of these three numbers is 15:\n(a - d) + a + (a + d) = 15\n3a = 15\na = 5\n\nSo the three numbers are 5 - d, 5, and 5 + d.\nWe are told that if we add 1, 4, and 19 to these numbers respectively, they form a geometric progression. Let's find the new numbers:\nFirst number: (5 - d) + 1 = 6 - d\nSecond number: 5 + 4 = 9\nThird number: (5 + d) + 19 = 24 + d\n\nFor these to form a geometric progression, the square of the middle term must equal the product of the first and third terms:\n9^2 = (6 - d)(24 + d)\n81 = 144 + 6d - 24d - d^2\n81 = 144 - 18d - d^2\nd^2 + 18d - 63 = 0\n\nFactoring the quadratic equation:\n(d + 21)(d - 3) = 0\nThis gives d = -21 or d = 3.\nSince the arithmetic progression is increasing, the common difference d must be positive. Therefore, d = 3.\n\nThe original three numbers are:\n5 - 3 = 2\n5\n5 + 3 = 8\n\nThe numbers are 2, 5, and 8. Checking the options, this corresponds to option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, mathematically sound, and perfectly aligned with the requested difficulty level. Distractors are plausible and based on common errors (e.g., using the extraneous root of the quadratic equation).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$2; 5; 8$' expected='$2; 5; 8$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$2; 5; 8$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:38:26.639736+00:00",
+  "generation_attempts": 1
+}

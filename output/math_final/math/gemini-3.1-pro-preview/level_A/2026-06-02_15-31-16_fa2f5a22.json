@@ -1,0 +1,207 @@
+{
+  "id": "fa2f5a22-28f9-4ff7-bc08-a0de79a32c27",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "polygons_circles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Дөңес сегізбұрыштың ішкі бұрыштарының қосындысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$1440^\\circ$"
+    },
+    {
+      "label": "B",
+      "text": "$1080^\\circ$"
+    },
+    {
+      "label": "C",
+      "text": "$900^\\circ$"
+    },
+    {
+      "label": "D",
+      "text": "$1260^\\circ$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дөңес $n$-бұрыштың ішкі бұрыштарының қосындысын табу үшін $S = 180^\\circ(n-2)$ формуласын қолданамыз. Сегізбұрыш болғандықтан қабырғалар саны $n = 8$. Онда ішкі бұрыштарының қосындысы: $S = 180^\\circ(8 - 2) = 180^\\circ \\cdot 6 = 1080^\\circ$.",
+  "latex_formulas": [
+    "S = 180^\\circ(n-2)"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.8,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: For any convex n-gon, the sum of the interior angles is (n - 2) × 180°. For an octagon, n = 8. Substitute: (8 - 2) × 180° = 6 × 180° = 1080°. Therefore, the sum of the interior angles of a convex octagon is 1080°.\n\n[anthropic/claude-sonnet-4.6] answered B: The sum of interior angles of a convex polygon with n sides is given by the formula: S = (n - 2) × 180°. For an octagon (8-sided polygon), n = 8. Therefore: S = (8 - 2) × 180° = 6 × 180° = 1080°.\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the sum of the interior angles of a convex octagon (сегізбұрыш). The formula for the sum of the interior angles of a convex n-gon is given by S = 180^\\circ \\times (n - 2). For an octagon, the number of sides n is 8. Substituting n = 8 into the formula gives S = 180^\\circ \\times (8 - 2) = 180^\\circ \\times 6 = 1080^\\circ. Comparing this result with the given options, 1080^\\circ",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.8,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and directly tests the standard interior-angle sum formula for an octagon at the requested basic level. The Kazakh wording and LaTeX formatting are clear and appropriate. | [anthropic/claude-sonnet-4.6] The question is a clean, direct application of the interior angle sum formula for polygons. The correct answer (1080°) is unambiguous, the formula application is straightforward, and the Kazakh phrasing is natural and accurate. Distractors correspond to plausible errors: 1440° (n=10 or exterior angle confusion), 1260° (n=9), and 900° (n=7 or off-by-one). | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A, testing a basic formula. The distractors are well-chosen, and the language and formatting are flawless.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$1080^\\circ$' expected='$1080^\\circ$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$1080^\\circ$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: For any convex n-gon, the sum of the interior angles is (n - 2) × 180°. For an octagon, n = 8. Substitute: (8 - 2) × 180° = 6 × 180° = 1080°. Therefore, the sum of the interior angles of a convex octagon is 1080°.\n\n[anthropic/claude-sonnet-4.6] answered B: The sum of interior angles of a convex polygon with n sides is given by the formula: S = (n - 2) × 180°. For an octagon (8-sided polygon), n = 8. Therefore: S = (8 - 2) × 180° = 6 × 180° = 1080°.\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the sum of the interior angles of a convex octagon (сегізбұрыш). The formula for the sum of the interior angles of a convex n-gon is given by S = 180^\\circ \\times (n - 2). For an octagon, the number of sides n is 8. Substituting n = 8 into the formula gives S = 180^\\circ \\times (8 - 2) = 180^\\circ \\times 6 = 1080^\\circ. Comparing this result with the given options, 1080^\\circ",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.8,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, has a single unambiguous answer, and directly tests the standard interior-angle sum formula for an octagon at the requested basic level. The Kazakh wording and LaTeX formatting are clear and appropriate. | [anthropic/claude-sonnet-4.6] The question is a clean, direct application of the interior angle sum formula for polygons. The correct answer (1080°) is unambiguous, the formula application is straightforward, and the Kazakh phrasing is natural and accurate. Distractors correspond to plausible errors: 1440° (n=10 or exterior angle confusion), 1260° (n=9), and 900° (n=7 or off-by-one). | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A, testing a basic formula. The distractors are well-chosen, and the language and formatting are flawless.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$1080^\\circ$' expected='$1080^\\circ$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$1080^\\circ$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For any convex n-gon, the sum of the interior angles is (n - 2) × 180°. For an octagon, n = 8. Substitute: (8 - 2) × 180° = 6 × 180° = 1080°. Therefore, the sum of the interior angles of a convex octagon is 1080°.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, has a single unambiguous answer, and directly tests the standard interior-angle sum formula for an octagon at the requested basic level. The Kazakh wording and LaTeX formatting are clear and appropriate.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$1080^\\circ$' expected='$1080^\\circ$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$1080^\\circ$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sum of interior angles of a convex polygon with n sides is given by the formula: S = (n - 2) × 180°. For an octagon (8-sided polygon), n = 8. Therefore: S = (8 - 2) × 180° = 6 × 180° = 1080°.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is a clean, direct application of the interior angle sum formula for polygons. The correct answer (1080°) is unambiguous, the formula application is straightforward, and the Kazakh phrasing is natural and accurate. Distractors correspond to plausible errors: 1440° (n=10 or exterior angle confusion), 1260° (n=9), and 900° (n=7 or off-by-one).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$1080^\\circ$' expected='$1080^\\circ$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$1080^\\circ$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the sum of the interior angles of a convex octagon (сегізбұрыш). The formula for the sum of the interior angles of a convex n-gon is given by S = 180^\\circ \\times (n - 2). For an octagon, the number of sides n is 8. Substituting n = 8 into the formula gives S = 180^\\circ \\times (8 - 2) = 180^\\circ \\times 6 = 1080^\\circ. Comparing this result with the given options, 1080^\\circ corresponds to option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with Level A, testing a basic formula. The distractors are well-chosen, and the language and formatting are flawless.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$1080^\\circ$' expected='$1080^\\circ$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$1080^\\circ$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:31:16.604229+00:00",
+  "generation_attempts": 1
+}

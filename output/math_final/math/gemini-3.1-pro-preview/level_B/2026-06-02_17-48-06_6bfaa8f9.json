@@ -1,0 +1,210 @@
+{
+  "id": "6bfaa8f9-1bc3-478c-ac88-10924fc4ce82",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "inequalities",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\frac{x^2 - x - 2}{x^2 - 4} \\ge 0$ теңсіздігін шешіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$(-\\infty; -2) \\cup [-1; +\\infty)$"
+    },
+    {
+      "label": "B",
+      "text": "$(-2; -1]$"
+    },
+    {
+      "label": "C",
+      "text": "$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$"
+    },
+    {
+      "label": "D",
+      "text": "$(-\\infty; -2] \\cup [-1; +\\infty)$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген теңсіздік: $\\frac{x^2 - x - 2}{x^2 - 4} \\ge 0$.\n\nБөлшектің алымы мен бөлімін көбейткіштерге жіктейміз:\n$x^2 - x - 2 = (x - 2)(x + 1)$\n$x^2 - 4 = (x - 2)(x + 2)$\n\nТеңсіздік мына түрге келеді:\n$\\frac{(x - 2)(x + 1)}{(x - 2)(x + 2)} \\ge 0$\n\nТеңсіздіктің мүмкін мәндер жиынын (ММЖ) табамыз: бөлшектің бөлімі нөлге тең болмауы керек, яғни $x^2 - 4 \\ne 0 \\implies x \\ne 2$, $x \\ne -2$.\n$x \\ne 2$ болғандықтан, бөлшекті $(x - 2)$-ге қысқартуға болады:\n$\\frac{x + 1}{x + 2} \\ge 0$\n\nБұл теңсіздікті интервалдар әдісімен шешеміз.\nТүбірлері:\nАлымы үшін: $x + 1 = 0 \\implies x = -1$ (бұл нүкте боялады, өйткені теңсіздік қатаң емес, $\\ge 0$).\nБөлімі үшін: $x + 2 = 0 \\implies x = -2$ (бұл нүкте ашық болады, өйткені бөлім нөлге тең болмауы тиіс).\n\nСан осіне $-2$ (ашық) және $-1$ (боялған) нүктелерін белгілеп, интервалдардағы таңбаларды анықтаймыз:\n$(-\\infty; -2)$ аралығында таңба $+$,\n$(-2; -1)$ аралығында таңба $-$,\n$(-1; +\\infty)$ аралығында таңба $+$.\n\nБізге $\\ge 0$ болғандықтан, таңбасы $+$ болатын аралықтарды аламыз:\n$(-\\infty; -2) \\cup [-1; +\\infty)$.\n\nАлайда, алдында тапқан анықталу облысына сәйкес, $x \\ne 2$ болуы керек. $x = 2$ нүктесі $[-1; +\\infty)$ аралығында жатқандықтан, оны шешімдер жиынынан міндетті түрде алып тастаймыз.\n\nНәтижесінде дұрыс жауап: $(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$.",
+  "latex_formulas": [
+    "\\frac{x^2 - x - 2}{x^2 - 4} \\ge 0",
+    "x^2 - x - 2 = (x - 2)(x + 1)",
+    "x^2 - 4 = (x - 2)(x + 2)",
+    "\\frac{x + 1}{x + 2} \\ge 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Factor the numerator and denominator: x^2 - x - 2 = (x - 2)(x + 1), and x^2 - 4 = (x - 2)(x + 2). The expression is defined only when x^2 - 4 != 0, so x != -2 and x != 2. Thus the inequality is ((x - 2)(x + 1))/((x - 2)(x + 2)) >= 0, with x != -2, 2. For x != 2, this simplifies to (x + 1)/(x + 2) >= 0, but x = 2 must still be excluded from the solution. Critical points are -2, -1, and 2. On (-infi\n\n[anthropic/claude-sonnet-4.6] answered C: We need to solve (x² - x - 2)/(x² - 4) ≥ 0.\n\nStep 1: Factor numerator and denominator.\nNumerator: x² - x - 2 = (x - 2)(x + 1)\nDenominator: x² - 4 = (x - 2)(x + 2)\n\nStep 2: Simplify where possible.\nFor x ≠ 2: (x - 2)(x + 1) / [(x - 2)(x + 2)] = (x + 1)/(x + 2)\n\nSo the inequality becomes:\n- For x ≠ 2 and x ≠ -2: (x + 1)/(x + 2) ≥ 0\n- x = 2 is excluded (denominator = 0)\n- x = -2 is excluded (denomina\n\n[google/gemini-3.1-pro-preview] answered C: To solve the inequality \\(\\frac{x^2 - x - 2}{x^2 - 4} \\ge 0\\), we first factor both the numerator and the denominator.\n\nNumerator: \\(x^2 - x - 2 = (x - 2)(x + 1)\\)\nDenominator: \\(x^2 - 4 = (x - 2)(x + 2)\\)\n\nThe inequality becomes:\n\\(\\frac{(x - 2)(x + 1)}{(x - 2)(x + 2)} \\ge 0\\)\n\nNext, we determine the domain of the inequality. The denominator cannot be zero, so \\(x - 2 \\neq 0\\) and \\(x + 2 \\neq 0\\",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and the item has a single defensible solution; it properly tests handling of a removable factor and domain restrictions. Distractors are mostly plausible, though the correct option is somewhat cued by being the only one that explicitly excludes x = 2. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. Each distractor corresponds to a specific identifiable error: A omits the exclusion of x=2, B takes only the negative interval, D includes x=-2 as a closed endpoint. The solution requires factoring, simplification, sign analysis, and domain restriction — well-aligned with level B. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors accurately reflect common student mistakes, such as forgetting to exclude the root of the canceled factor or including the root of the denominator.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$' expected='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Factor the numerator and denominator: x^2 - x - 2 = (x - 2)(x + 1), and x^2 - 4 = (x - 2)(x + 2). The expression is defined only when x^2 - 4 != 0, so x != -2 and x != 2. Thus the inequality is ((x - 2)(x + 1))/((x - 2)(x + 2)) >= 0, with x != -2, 2. For x != 2, this simplifies to (x + 1)/(x + 2) >= 0, but x = 2 must still be excluded from the solution. Critical points are -2, -1, and 2. On (-infi\n\n[anthropic/claude-sonnet-4.6] answered C: We need to solve (x² - x - 2)/(x² - 4) ≥ 0.\n\nStep 1: Factor numerator and denominator.\nNumerator: x² - x - 2 = (x - 2)(x + 1)\nDenominator: x² - 4 = (x - 2)(x + 2)\n\nStep 2: Simplify where possible.\nFor x ≠ 2: (x - 2)(x + 1) / [(x - 2)(x + 2)] = (x + 1)/(x + 2)\n\nSo the inequality becomes:\n- For x ≠ 2 and x ≠ -2: (x + 1)/(x + 2) ≥ 0\n- x = 2 is excluded (denominator = 0)\n- x = -2 is excluded (denomina\n\n[google/gemini-3.1-pro-preview] answered C: To solve the inequality \\(\\frac{x^2 - x - 2}{x^2 - 4} \\ge 0\\), we first factor both the numerator and the denominator.\n\nNumerator: \\(x^2 - x - 2 = (x - 2)(x + 1)\\)\nDenominator: \\(x^2 - 4 = (x - 2)(x + 2)\\)\n\nThe inequality becomes:\n\\(\\frac{(x - 2)(x + 1)}{(x - 2)(x + 2)} \\ge 0\\)\n\nNext, we determine the domain of the inequality. The denominator cannot be zero, so \\(x - 2 \\neq 0\\) and \\(x + 2 \\neq 0\\",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and the item has a single defensible solution; it properly tests handling of a removable factor and domain restrictions. Distractors are mostly plausible, though the correct option is somewhat cued by being the only one that explicitly excludes x = 2. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. Each distractor corresponds to a specific identifiable error: A omits the exclusion of x=2, B takes only the negative interval, D includes x=-2 as a closed endpoint. The solution requires factoring, simplification, sign analysis, and domain restriction — well-aligned with level B. | [google/gemini-3.1-pro-preview] The question is perfectly designed. The distractors accurately reflect common student mistakes, such as forgetting to exclude the root of the canceled factor or including the root of the denominator.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$' expected='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Factor the numerator and denominator: x^2 - x - 2 = (x - 2)(x + 1), and x^2 - 4 = (x - 2)(x + 2). The expression is defined only when x^2 - 4 != 0, so x != -2 and x != 2. Thus the inequality is ((x - 2)(x + 1))/((x - 2)(x + 2)) >= 0, with x != -2, 2. For x != 2, this simplifies to (x + 1)/(x + 2) >= 0, but x = 2 must still be excluded from the solution. Critical points are -2, -1, and 2. On (-infinity, -2), both x + 1 and x + 2 are negative, so the quotient is positive; include this interval. At x = -2, the expression is undefined; exclude it. On (-2, -1), x + 1 is negative and x + 2 is positive, so the quotient is negative; exclude this interval. At x = -1, the numerator is zero and the denominator is nonzero, so the value is 0; include x = -1. On (-1, 2), both x + 1 and x + 2 are positive, so the quotient is positive; include this interval. At x = 2, the original expression is undefined; exclude it. On (2, +infinity), the quotient is positive; include this interval. Therefore the solution is (-infinity, -2) union [-1, 2) union (2, +infinity), which matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The keyed answer is mathematically correct and the item has a single defensible solution; it properly tests handling of a removable factor and domain restrictions. Distractors are mostly plausible, though the correct option is somewhat cued by being the only one that explicitly excludes x = 2.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$' expected='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve (x² - x - 2)/(x² - 4) ≥ 0.\n\nStep 1: Factor numerator and denominator.\nNumerator: x² - x - 2 = (x - 2)(x + 1)\nDenominator: x² - 4 = (x - 2)(x + 2)\n\nStep 2: Simplify where possible.\nFor x ≠ 2: (x - 2)(x + 1) / [(x - 2)(x + 2)] = (x + 1)/(x + 2)\n\nSo the inequality becomes:\n- For x ≠ 2 and x ≠ -2: (x + 1)/(x + 2) ≥ 0\n- x = 2 is excluded (denominator = 0)\n- x = -2 is excluded (denominator = 0)\n\nStep 3: Solve (x + 1)/(x + 2) ≥ 0.\nCritical points: x = -1 (numerator = 0), x = -2 (denominator = 0, excluded).\n\nSign analysis:\n- x < -2: (x+1) < 0, (x+2) < 0 → ratio > 0 ✓\n- x = -2: excluded\n- -2 < x < -1: (x+1) < 0, (x+2) > 0 → ratio < 0 ✗\n- x = -1: ratio = 0 ✓\n- x > -1: (x+1) > 0, (x+2) > 0 → ratio > 0 ✓\n\nStep 4: Combine, remembering x ≠ 2.\nSolution from (x+1)/(x+2) ≥ 0: (-∞, -2) ∪ [-1, +∞)\nBut x = 2 must be excluded from [-1, +∞).\n\nSo the full solution is: (-∞, -2) ∪ [-1, 2) ∪ (2, +∞)\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous and correctly keyed. Each distractor corresponds to a specific identifiable error: A omits the exclusion of x=2, B takes only the negative interval, D includes x=-2 as a closed endpoint. The solution requires factoring, simplification, sign analysis, and domain restriction — well-aligned with level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$' expected='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To solve the inequality \\(\\frac{x^2 - x - 2}{x^2 - 4} \\ge 0\\), we first factor both the numerator and the denominator.\n\nNumerator: \\(x^2 - x - 2 = (x - 2)(x + 1)\\)\nDenominator: \\(x^2 - 4 = (x - 2)(x + 2)\\)\n\nThe inequality becomes:\n\\(\\frac{(x - 2)(x + 1)}{(x - 2)(x + 2)} \\ge 0\\)\n\nNext, we determine the domain of the inequality. The denominator cannot be zero, so \\(x - 2 \\neq 0\\) and \\(x + 2 \\neq 0\\), which means \\(x \\neq 2\\) and \\(x \\neq -2\\).\n\nFor \\(x \\neq 2\\), we can cancel the common factor \\((x - 2)\\) from the numerator and the denominator. The inequality simplifies to:\n\\(\\frac{x + 1}{x + 2} \\ge 0\\)\n\nThe critical points for this simplified inequality are \\(x = -1\\) (where the numerator is zero) and \\(x = -2\\) (where the denominator is zero). We test the intervals around these points:\n1. \\(x \\in (-\\infty, -2)\\): Choose \\(x = -3\\). \\(\\frac{-3 + 1}{-3 + 2} = \\frac{-2}{-1} = 2 > 0\\). (True)\n2. \\(x \\in (-2, -1)\\): Choose \\(x = -1.5\\). \\(\\frac{-1.5 + 1}{-1.5 + 2} = \\frac{-0.5}{0.5} = -1 < 0\\). (False)\n3. \\(x \\in (-1, \\infty)\\): Choose \\(x = 0\\). \\(\\frac{0 + 1}{0 + 2} = \\frac{1}{2} > 0\\). (True)\n\nAt \\(x = -1\\), the expression equals 0, which satisfies the \\(\\ge 0\\) condition. At \\(x = -2\\), the expression is undefined.\n\nSo, the solution to the simplified inequality is \\((-\\infty, -2) \\cup [-1, \\infty)\\).\n\nHowever, we must remember the domain restriction \\(x \\neq 2\\). The value \\(x = 2\\) falls within the interval \\([-1, \\infty)\\), so we must exclude it. \n\nThus, the final solution is:\n\\((-\\infty, -2) \\cup [-1, 2) \\cup (2, +\\infty)\\).\n\nThis matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly designed. The distractors accurately reflect common student mistakes, such as forgetting to exclude the root of the canceled factor or including the root of the denominator.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$' expected='$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-\\infty; -2) \\cup [-1; 2) \\cup (2; +\\infty)$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:48:06.841668+00:00",
+  "generation_attempts": 1
+}

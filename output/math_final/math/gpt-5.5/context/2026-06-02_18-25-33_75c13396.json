@@ -1,0 +1,628 @@
+{
+  "id": "75c133968aad40b0900acdb18eb52838",
+  "subject": "math",
+  "level": "C",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "openai/gpt-5.5",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T18:25:33.269179+00:00",
+  "passage": "Мектеп шатырына бірдей күн панельдерін орнату жобасы қарастырылуда. Бір панельдің ауданы — 1,6 м², қуаты — 0,40 кВт, бағасы — 90 000 тг. Орнату жұмысы панельдер құнының 12%-ына тең, ал инвертордың тұрақты құны — 450 000 тг. Панельдерге бөлінген шатыр ауданы 96 м²-ден аспауы керек, жалпы бюджет 6 300 000 тг.\n\nКүн энергиясын есептеу үшін маусымдық деректер берілген:\nКөктем: орташа тәуліктік баламалы күн сағаты — 4,6 сағ, күн саны — 92.\nЖаз: орташа тәуліктік баламалы күн сағаты — 5,8 сағ, күн саны — 92.\nКүз: орташа тәуліктік баламалы күн сағаты — 3,7 сағ, күн саны — 91.\nҚыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.\n\nМаусымдағы өндірілетін электр энергиясы формуламен есептеледі: $E=N\\cdot0.40\\cdot h\\cdot d\\cdot0.82$, мұндағы $N$ — панель саны, $h$ — сол маусымдағы орташа тәуліктік баламалы күн сағаты, $d$ — күн саны, ал 0,82 — жүйенің пайдалы әсер коэффициенті.\n\nӨндірілген энергияның 85%-ы мектепте тікелей қолданылады және әр кВт·сағ үшін 28 тг үнем береді. Қалған 15%-ы желіге әр кВт·сағ үшін 14 тг бағамен сатылады. Қосымша аккумулятор орнатылса, оның құны 800 000 тг болады және тікелей қолданылатын үлес 95%-ға дейін өседі, ал желіге сатылатын үлес 5%-ға дейін азаяды.",
+  "questions": [
+    {
+      "question_text": "Кесте бойынша қыс мезгіліндегі күн саны қанша?",
+      "options": [
+        {
+          "label": "A",
+          "text": "91"
+        },
+        {
+          "label": "B",
+          "text": "92"
+        },
+        {
+          "label": "C",
+          "text": "89"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Қыс үшін кестеде күн саны 90 деп берілген, сондықтан D дұрыс. A — күз мезгілінің күн саны. B — көктем мен жаздың күн саны. C — 90-нан 1-ге кемітіп жіберген қате мән.",
+      "critic_score": 6.467,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.667,
+        "difficulty_alignment": 0.0,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The question asks: “According to the table/text, how many days are in the winter season?” In the seasonal data, the winter line states: “Қыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.” This directly gives the number of days for winter as 90. Among the options, 90 corresponds to option D.\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks: According to the table, how many days are in winter (қыс)? From the text: 'Қыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.' This directly states that the number of days in winter is 90.\n\n[google/gemini-3.1-pro-preview] answered D: Based on the provided text, the data for the winter season is given as: 'Қыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.' The question asks for the number of days in the winter season ('қыс мезгіліндегі күн саны'). According to the text, this value is exactly 90.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.667,
+            "difficulty_alignment": 0.0,
+            "kazakh_language_quality": 9.167,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.467,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely stated in the text: winter has 90 days. However, the item is a direct information-retrieval question and is completely misaligned with the requested hard C-level mathematical reasoning. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously D (90 days in winter), directly stated in the text. However, the question is trivially easy — it requires only reading comprehension, not any mathematical reasoning whatsoever, making it completely misaligned with the requested Level C difficulty. The distractors are plausible (other seasonal day counts from the same table) but the question itself is a simple lookup task. | [google/gemini-3.1-pro-preview] The text provides a fantastic setup for a Level C optimization problem, but the question itself is a trivial reading comprehension task that requires zero mathematical reasoning.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, ask a multi-step optimization or comparison question using the budget, roof-area constraints, seasonal energy formula, and battery scenario rather than asking for a directly quoted number. | [anthropic/claude-sonnet-4.6] Replace this trivial lookup question with one that actually requires multi-step reasoning at Level C. For example: 'Find the optimal number of panels N that maximizes annual energy savings while satisfying both the area constraint and budget constraint, and determine whether installing a battery is economically justified over a 5-year period.' The rich context provided (seasonal data, energy formula, cost structure) is entirely wasted on a question that only asks to read one number from the text. | [google/gemini-3.1-pro-preview] Change the question entirely. Instead of asking to find a number explicitly stated in the text, ask a Level C question that utilizes the rich data provided. For example, ask to calculate the maximum number of panels that can be installed given both the area and budget constraints, or ask for the total annual financial savings if the maximum number of panels is installed.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks: “According to the table/text, how many days are in the winter season?” In the seasonal data, the winter line states: “Қыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.” This directly gives the number of days for winter as 90. Among the options, 90 corresponds to option D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.1,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely stated in the text: winter has 90 days. However, the item is a direct information-retrieval question and is completely misaligned with the requested hard C-level mathematical reasoning.",
+              "improvement_suggestions": "To match level C, ask a multi-step optimization or comparison question using the budget, roof-area constraints, seasonal energy formula, and battery scenario rather than asking for a directly quoted number.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks: According to the table, how many days are in winter (қыс)? From the text: 'Қыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.' This directly states that the number of days in winter is 90.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 5.5,
+              "pass_fail": false,
+              "comments": "The correct answer is unambiguously D (90 days in winter), directly stated in the text. However, the question is trivially easy — it requires only reading comprehension, not any mathematical reasoning whatsoever, making it completely misaligned with the requested Level C difficulty. The distractors are plausible (other seasonal day counts from the same table) but the question itself is a simple lookup task.",
+              "improvement_suggestions": "Replace this trivial lookup question with one that actually requires multi-step reasoning at Level C. For example: 'Find the optimal number of panels N that maximizes annual energy savings while satisfying both the area constraint and budget constraint, and determine whether installing a battery is economically justified over a 5-year period.' The rich context provided (seasonal data, energy formula, cost structure) is entirely wasted on a question that only asks to read one number from the text.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Based on the provided text, the data for the winter season is given as: 'Қыс: орташа тәуліктік баламалы күн сағаты — 2,1 сағ, күн саны — 90.' The question asks for the number of days in the winter season ('қыс мезгіліндегі күн саны'). According to the text, this value is exactly 90.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.8,
+              "pass_fail": true,
+              "comments": "The text provides a fantastic setup for a Level C optimization problem, but the question itself is a trivial reading comprehension task that requires zero mathematical reasoning.",
+              "improvement_suggestions": "Change the question entirely. Instead of asking to find a number explicitly stated in the text, ask a Level C question that utilizes the rich data provided. For example, ask to calculate the maximum number of panels that can be installed given both the area and budget constraints, or ask for the total annual financial savings if the maximum number of panels is installed.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Шатыр ауданы мен жалпы бюджет шектеулерін бірге ескергенде, ең көп қанша панель орнатуға болады?",
+      "options": [
+        {
+          "label": "A",
+          "text": "58"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "62"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Аудан бойынша ең көбі $96:1.6=60$ панель сыяды. Бірақ бюджет бойынша бір панельге байланысты толық шығын $90000\\cdot1.12=100800$ тг, сондықтан $100800N+450000\\le6300000$. Бұдан $N\\le58.03$, демек ең көбі 58 панель. A дұрыс. B — тек аудан шектеуін ескерген қате. C — инвертордың тұрақты құнын ескермей алынған шамамен мән. D — орнату жұмысының 12%-ын ескермей алынған мән.",
+      "critic_score": 9.233,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: We need the maximum integer number of panels N satisfying both the roof-area constraint and the total-budget constraint. Each panel area is 1.6 m², and the allocated roof area must not exceed 96 m², so 1.6N <= 96. Dividing by 1.6 gives N <= 60. Now compute the cost constraint. One panel costs 90,000 тг. Installation is 12% of the panel cost, so installation per panel is 0.12 * 90,000 = 10,800 тг. \n\n[anthropic/claude-sonnet-4.6] answered A: We need to find the maximum number of panels N subject to two constraints:\n\n1) Roof area constraint: Each panel has area 1.6 m², and total roof area ≤ 96 m².\n   N × 1.6 ≤ 96\n   N ≤ 96 / 1.6 = 60\n\n2) Budget constraint: Total budget ≤ 6,300,000 tg.\n   - Cost of panels: N × 90,000\n   - Installation cost: 12% of panel cost = 0.12 × N × 90,000 = N × 10,800\n   - Inverter cost: 450,000 (fixed)\n   Total c\n\n[google/gemini-3.1-pro-preview] answered A: To find the maximum number of solar panels that can be installed, we need to evaluate both the roof area constraint and the total budget constraint.\n\n1. **Roof Area Constraint:**\nThe area of one panel is 1.6 m², and the maximum roof area allocated is 96 m².\nLet N be the number of panels.\n1.6 * N <= 96\nN <= 96 / 1.6\nN <= 60\nSo, based on the area alone, a maximum of 60 panels can be installed.\n\n2. *",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.333,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.233,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the distractors correspond well to identifiable common omissions. However, the item is not genuinely level C: despite a long text with irrelevant seasonal and battery data, the actual task is a routine two-constraint integer maximum calculation. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (58 panels, option A) derived from two simultaneous constraints. Each distractor corresponds to a specific identifiable error: B ignores the budget constraint, C ignores the inverter fixed cost, D ignores the 12% installation surcharge. The Kazakh is natural and terminology is appropriate. The multi-step optimization with two binding constraints aligns well with level C difficulty. | [google/gemini-3.1-pro-preview] The question is excellently designed for text analysis. It provides a rich context with multiple data points, requiring the test-taker to extract only the relevant constraints (area and budget) to solve the problem. Distractors are perfectly mapped to common student errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need the maximum integer number of panels N satisfying both the roof-area constraint and the total-budget constraint. Each panel area is 1.6 m², and the allocated roof area must not exceed 96 m², so 1.6N <= 96. Dividing by 1.6 gives N <= 60. Now compute the cost constraint. One panel costs 90,000 тг. Installation is 12% of the panel cost, so installation per panel is 0.12 * 90,000 = 10,800 тг. Thus variable cost per panel including installation is 90,000 + 10,800 = 100,800 тг. The inverter fixed cost is 450,000 тг. Total cost is 100,800N + 450,000, and the budget is 6,300,000 тг. Therefore 100,800N + 450,000 <= 6,300,000, so 100,800N <= 5,850,000. Dividing gives N <= 5,850,000 / 100,800 ≈ 58.0357. Since N must be an integer, the budget allows at most 58 panels. Combining both constraints: roof allows at most 60 panels, budget allows at most 58 panels, so the maximum possible number is min(60, 58) = 58. The battery information is not needed for this question because the question asks only for the maximum number of panels under roof and budget constraints.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the distractors correspond well to identifiable common omissions. However, the item is not genuinely level C: despite a long text with irrelevant seasonal and battery data, the actual task is a routine two-constraint integer maximum calculation.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need to find the maximum number of panels N subject to two constraints:\n\n1) Roof area constraint: Each panel has area 1.6 m², and total roof area ≤ 96 m².\n   N × 1.6 ≤ 96\n   N ≤ 96 / 1.6 = 60\n\n2) Budget constraint: Total budget ≤ 6,300,000 tg.\n   - Cost of panels: N × 90,000\n   - Installation cost: 12% of panel cost = 0.12 × N × 90,000 = N × 10,800\n   - Inverter cost: 450,000 (fixed)\n   Total cost = N × 90,000 + N × 10,800 + 450,000 = N × 100,800 + 450,000\n\n   Setting total cost ≤ 6,300,000:\n   N × 100,800 + 450,000 ≤ 6,300,000\n   N × 100,800 ≤ 5,850,000\n   N ≤ 5,850,000 / 100,800 = 58.035...\n   N ≤ 58\n\nThe binding constraint is the budget, which limits N to 58.\n\nVerification:\n- At N = 58: Cost = 58 × 100,800 + 450,000 = 5,846,400 + 450,000 = 6,296,400 ≤ 6,300,000 ✓\n- At N = 59: Cost = 59 × 100,800 + 450,000 = 5,947,200 + 450,000 = 6,397,200 > 6,300,000 ✗\n- Area at N = 58: 58 × 1.6 = 92.8 m² ≤ 96 m² ✓\n\nSo the maximum number of panels is 58.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a clear correct answer (58 panels, option A) derived from two simultaneous constraints. Each distractor corresponds to a specific identifiable error: B ignores the budget constraint, C ignores the inverter fixed cost, D ignores the 12% installation surcharge. The Kazakh is natural and terminology is appropriate. The multi-step optimization with two binding constraints aligns well with level C difficulty.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the maximum number of solar panels that can be installed, we need to evaluate both the roof area constraint and the total budget constraint.\n\n1. **Roof Area Constraint:**\nThe area of one panel is 1.6 m², and the maximum roof area allocated is 96 m².\nLet N be the number of panels.\n1.6 * N <= 96\nN <= 96 / 1.6\nN <= 60\nSo, based on the area alone, a maximum of 60 panels can be installed.\n\n2. **Total Budget Constraint:**\nThe price of one panel is 90,000 tg.\nThe installation cost is 12% of the panels' cost: 0.12 * 90,000 * N = 10,800 * N tg.\nThe fixed cost of the inverter is 450,000 tg.\nThe total budget is 6,300,000 tg.\nTotal cost = (Cost of panels) + (Installation cost) + (Inverter cost)\nTotal cost = 90,000 * N + 10,800 * N + 450,000 = 100,800 * N + 450,000\n\nSet up the inequality for the budget:\n100,800 * N + 450,000 <= 6,300,000\n100,800 * N <= 6,300,000 - 450,000\n100,800 * N <= 5,850,000\nN <= 5,850,000 / 100,800\nN <= 58.0357...\n\nSince the number of panels must be a whole number, the maximum number of panels allowed by the budget is 58.\n\n3. **Combining Both Constraints:**\nThe area allows up to 60 panels, but the budget only allows up to 58 panels. To satisfy both constraints simultaneously, the maximum number of panels we can install is the smaller of the two limits, which is 58.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.8,
+              "pass_fail": true,
+              "comments": "The question is excellently designed for text analysis. It provides a rich context with multiple data points, requiring the test-taker to extract only the relevant constraints (area and budget) to solve the problem. Distractors are perfectly mapped to common student errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Орнатылған панель саны қандай болса да, жылдық энергия өндірісінің шамамен неше пайызы жаз мезгілінде өндіріледі?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35,8%"
+        },
+        {
+          "label": "B",
+          "text": "25,2%"
+        },
+        {
+          "label": "C",
+          "text": "36,0%"
+        },
+        {
+          "label": "D",
+          "text": "41,3%"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Панель саны мен 0,82 коэффициенті үлес есептегенде қысқарады. Жаздағы баламалы сағат саны: $5.8\\cdot92=533.6$. Жылдық қосынды: $4.6\\cdot92+5.8\\cdot92+3.7\\cdot91+2.1\\cdot90=1482.5$. Үлес $\\frac{533.6}{1482.5}\\cdot100\\%\\approx36.0\\%$. C дұрыс. A — күн санын ескермей, тек маусымдық орташа сағаттарды салыстырғандағы қате. B — тек жаз күндерінің жыл ішіндегі үлесін алған қате. D — қысқы өндірісті жылдық қосындыдан алып тастап есептеген қате.",
+      "critic_score": 9.033,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 6.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The seasonal energy formula is E = N * 0.40 * h * d * 0.82. For a percentage of annual production, the common factors N, 0.40, and 0.82 cancel, so only h * d matters for each season. Spring: 4.6 * 92 = 423.2. Summer: 5.8 * 92 = 533.6. Autumn: 3.7 * 91 = 336.7. Winter: 2.1 * 90 = 189. Total annual proportional production = 423.2 + 533.6 + 336.7 + 189 = 1482.5. Summer share = 533.6 / 1482.5 * 100% =\n\n[anthropic/claude-sonnet-4.6] answered C: The energy formula is E = N·0.40·h·d·0.82. Since N, 0.40, and 0.82 are constants common to all seasons, the percentage of annual energy produced in summer depends only on the product h·d for each season.\n\nSpring: h·d = 4.6 × 92 = 423.2\nSummer: h·d = 5.8 × 92 = 533.6\nAutumn: h·d = 3.7 × 91 = 336.7\nWinter: h·d = 2.1 × 90 = 189.0\n\nTotal: 423.2 + 533.6 + 336.7 + 189.0 = 1482.5\n\nSummer fraction: 533.6 \n\n[google/gemini-3.1-pro-preview] answered : ",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.333,
+            "difficulty_alignment": 6.667,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.033,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation is mathematically sound; all distractors correspond to clear, plausible calculation errors. However, the item is not truly level C: despite the long context, the actual task is a routine weighted-percentage calculation with cancellation of common factors. | [anthropic/claude-sonnet-4.6] The question is correctly keyed (C ≈ 36.0%), the arithmetic is clean, and each distractor corresponds to a specific identifiable error (ignoring day counts, using only day-count ratio, or subtracting winter). The Kazakh is natural and terminology is appropriate. However, the cognitive demand is closer to level B than C — once a teacher recognizes that N, 0.40, and 0.82 cancel, the remaining calculation is straightforward weighted-average arithmetic with no genuine synthesis or non-routine reasoning required. | [google/gemini-3.1-pro-preview] Excellent question for text analysis. It provides a rich context with many parameters, requiring the test-taker to filter out irrelevant information (costs, areas, battery, usage percentages) and focus solely on the variables affecting seasonal energy production. Distractors are well-crafted based on common calculation errors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To raise difficulty to true level C, consider asking for an optimization (e.g., whether adding a battery is cost-effective given seasonal production profiles) or requiring the teacher to determine the maximum number of panels satisfying both the area and budget constraints simultaneously before computing the energy percentage. This would introduce genuine multi-constraint reasoning.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The seasonal energy formula is E = N * 0.40 * h * d * 0.82. For a percentage of annual production, the common factors N, 0.40, and 0.82 cancel, so only h * d matters for each season. Spring: 4.6 * 92 = 423.2. Summer: 5.8 * 92 = 533.6. Autumn: 3.7 * 91 = 336.7. Winter: 2.1 * 90 = 189. Total annual proportional production = 423.2 + 533.6 + 336.7 + 189 = 1482.5. Summer share = 533.6 / 1482.5 * 100% = 35.993...%, which rounds to 36.0%. Therefore the correct option is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the explanation is mathematically sound; all distractors correspond to clear, plausible calculation errors. However, the item is not truly level C: despite the long context, the actual task is a routine weighted-percentage calculation with cancellation of common factors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The energy formula is E = N·0.40·h·d·0.82. Since N, 0.40, and 0.82 are constants common to all seasons, the percentage of annual energy produced in summer depends only on the product h·d for each season.\n\nSpring: h·d = 4.6 × 92 = 423.2\nSummer: h·d = 5.8 × 92 = 533.6\nAutumn: h·d = 3.7 × 91 = 336.7\nWinter: h·d = 2.1 × 90 = 189.0\n\nTotal: 423.2 + 533.6 + 336.7 + 189.0 = 1482.5\n\nSummer fraction: 533.6 / 1482.5 = 0.35993... ≈ 36.0%\n\nThis matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is correctly keyed (C ≈ 36.0%), the arithmetic is clean, and each distractor corresponds to a specific identifiable error (ignoring day counts, using only day-count ratio, or subtracting winter). The Kazakh is natural and terminology is appropriate. However, the cognitive demand is closer to level B than C — once a teacher recognizes that N, 0.40, and 0.82 cancel, the remaining calculation is straightforward weighted-average arithmetic with no genuine synthesis or non-routine reasoning required.",
+              "improvement_suggestions": "To raise difficulty to true level C, consider asking for an optimization (e.g., whether adding a battery is cost-effective given seasonal production profiles) or requiring the teacher to determine the maximum number of panels satisfying both the area and budget constraints simultaneously before computing the energy percentage. This would introduce genuine multi-constraint reasoning.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "",
+              "critic_answer": "",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.8,
+              "pass_fail": true,
+              "comments": "Excellent question for text analysis. It provides a rich context with many parameters, requiring the test-taker to filter out irrelevant information (costs, areas, battery, usage percentages) and focus solely on the variables affecting seasonal energy production. Distractors are well-crafted based on common calculation errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": false,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Шатыр ауданы мен бюджет шектеулерін сақтап орнатылатын ең көп панель саны үшін жылдық ақшалай әсерді мың теңгеге дейін жуықтап табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "671 000 тг"
+        },
+        {
+          "label": "B",
+          "text": "730 000 тг"
+        },
+        {
+          "label": "C",
+          "text": "790 000 тг"
+        },
+        {
+          "label": "D",
+          "text": "891 000 тг"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Ең көп панель саны — 58. Жылдық баламалы сағат қосындысы $1482.5$. Жылдық энергия: $E=58\\cdot0.40\\cdot1482.5\\cdot0.82=28203.08$ кВт·сағ. Бір кВт·сағ үшін орташа ақшалай әсер $0.85\\cdot28+0.15\\cdot14=25.9$ тг. Сондықтан $28203.08\\cdot25.9\\approx730460$ тг, яғни 730 000 тг. B дұрыс. A — желіге сатылатын 15% энергиядан түсетін табысты қоспаған қате. C — барлық энергияны 28 тг-ден үнемделді деп санаған қате. D — 0,82 пайдалы әсер коэффициентін ескермеген қате.",
+      "critic_score": 9.367,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 8.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: Compute the maximum number of panels under both constraints. Area constraint: each panel is 1.6 m², available roof area is 96 m², so N <= 96 / 1.6 = 60. Budget without the optional battery: panel cost is 90,000N, installation is 12% of panel cost = 10,800N, inverter is 450,000. Total cost = 100,800N + 450,000 <= 6,300,000. Thus 100,800N <= 5,850,000, so N <= 5,850,000 / 100,800 = 58.0357..., hence\n\n[anthropic/claude-sonnet-4.6] answered B: Step 1: Roof area constraint: 96/1.6 = 60 panels max.\nStep 2: Budget constraint: Total cost = 90000N + 0.12×90000×N + 450000 = 100800N + 450000 ≤ 6300000 → 100800N ≤ 5850000 → N ≤ 58.03, so N_max = 58.\nStep 3: Binding constraint is budget: N = 58 panels.\nStep 4: Annual energy by season using E = N×0.40×h×d×0.82:\n- Spring: 58×0.40×4.6×92×0.82 = 8,050.96 kWh\n- Summer: 58×0.40×5.8×92×0.82 = 10,151.21\n\n[google/gemini-3.1-pro-preview] answered B: To find the annual monetary effect, we first need to determine the maximum number of solar panels (N) that can be installed under the given constraints.\n\n1. **Roof Area Constraint**:\n   - Maximum area = 96 m²\n   - Area per panel = 1.6 m²\n   - Maximum panels based on area = 96 / 1.6 = 60 panels.\n\n2. **Budget Constraint**:\n   - Total budget = 6,300,000 tg\n   - Cost per panel = 90,000 tg\n   - Install",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.333,
+            "difficulty_alignment": 8.667,
+            "kazakh_language_quality": 8.833,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.367,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer and explanation are numerically correct, and the distractors correspond well to identifiable calculation errors. The item is multi-step but mostly procedural arithmetic, so it is somewhat below a genuinely hard C-level problem. | [anthropic/claude-sonnet-4.6] The question is well-constructed, multi-step, and requires synthesizing area/budget constraints with seasonal energy calculations and monetary benefit analysis. The correct answer is unambiguously B, confirmed by independent calculation. Distractors correspond to identifiable errors (omitting grid revenue, using uniform 28 tg rate, ignoring efficiency coefficient). Kazakh language is natural and technically appropriate. | [google/gemini-3.1-pro-preview] An exceptionally well-crafted Level C question. It requires multi-step reasoning, optimization under constraints, and careful reading of the text. The distractors are perfectly derived from common calculation errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Compute the maximum number of panels under both constraints. Area constraint: each panel is 1.6 m², available roof area is 96 m², so N <= 96 / 1.6 = 60. Budget without the optional battery: panel cost is 90,000N, installation is 12% of panel cost = 10,800N, inverter is 450,000. Total cost = 100,800N + 450,000 <= 6,300,000. Thus 100,800N <= 5,850,000, so N <= 5,850,000 / 100,800 = 58.0357..., hence the maximum integer number of panels is N = 58. The area used is 58 * 1.6 = 92.8 m², which is within 96 m². Now compute annual energy. Seasonal equivalent sun-hour total is 4.6*92 + 5.8*92 + 3.7*91 + 2.1*90 = 423.2 + 533.6 + 336.7 + 189 = 1482.5. Annual energy per panel is 0.40 * 0.82 * 1482.5 = 0.328 * 1482.5 = 486.26 kWh. For 58 panels: E = 58 * 486.26 = 28203.08 kWh. Without the optional battery, 85% is used directly at 28 tg/kWh and 15% is sold at 14 tg/kWh, so the effective value per kWh is 0.85*28 + 0.15*14 = 23.8 + 2.1 = 25.9 tg/kWh. Annual monetary effect = 28203.08 * 25.9 = 730459.772 tg, which rounds to 730,000 tg.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The keyed answer and explanation are numerically correct, and the distractors correspond well to identifiable calculation errors. The item is multi-step but mostly procedural arithmetic, so it is somewhat below a genuinely hard C-level problem.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Roof area constraint: 96/1.6 = 60 panels max.\nStep 2: Budget constraint: Total cost = 90000N + 0.12×90000×N + 450000 = 100800N + 450000 ≤ 6300000 → 100800N ≤ 5850000 → N ≤ 58.03, so N_max = 58.\nStep 3: Binding constraint is budget: N = 58 panels.\nStep 4: Annual energy by season using E = N×0.40×h×d×0.82:\n- Spring: 58×0.40×4.6×92×0.82 = 8,050.96 kWh\n- Summer: 58×0.40×5.8×92×0.82 = 10,151.21 kWh\n- Autumn: 58×0.40×3.7×91×0.82 = 6,405.38 kWh\n- Winter: 58×0.40×2.1×90×0.82 = 3,595.54 kWh\nTotal = 28,203.09 kWh\nStep 5: Monetary benefit:\n- Direct use (85%): 0.85×28203.09×28 = 671,233.6 tg\n- Grid sale (15%): 0.15×28203.09×14 = 59,226.5 tg\nTotal = 730,460 tg ≈ 730,000 tg",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, multi-step, and requires synthesizing area/budget constraints with seasonal energy calculations and monetary benefit analysis. The correct answer is unambiguously B, confirmed by independent calculation. Distractors correspond to identifiable errors (omitting grid revenue, using uniform 28 tg rate, ignoring efficiency coefficient). Kazakh language is natural and technically appropriate.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the annual monetary effect, we first need to determine the maximum number of solar panels (N) that can be installed under the given constraints.\n\n1. **Roof Area Constraint**:\n   - Maximum area = 96 m²\n   - Area per panel = 1.6 m²\n   - Maximum panels based on area = 96 / 1.6 = 60 panels.\n\n2. **Budget Constraint**:\n   - Total budget = 6,300,000 tg\n   - Cost per panel = 90,000 tg\n   - Installation cost = 12% of the total panel cost = 0.12 * 90,000 = 10,800 tg per panel\n   - Total variable cost per panel = 90,000 + 10,800 = 100,800 tg\n   - Fixed cost (inverter) = 450,000 tg\n   - The battery is optional. Since we want to install the *maximum* number of panels, we should not purchase the optional battery (which would cost 800,000 tg and reduce the budget for panels).\n   - Equation: 100,800 * N + 450,000 <= 6,300,000\n   - 100,800 * N <= 5,850,000\n   - N <= 58.035...\n   - Maximum panels based on budget = 58 panels.\n\nSince 58 <= 60, the budget is the limiting factor, and we can install a maximum of N = 58 panels.\n\n3. **Annual Energy Production (E)**:\n   - Formula: E = N * 0.40 * h * d * 0.82\n   - We calculate the sum of (h * d) for all four seasons:\n     Spring: 4.6 hours * 92 days = 423.2\n     Summer: 5.8 hours * 92 days = 533.6\n     Autumn: 3.7 hours * 91 days = 336.7\n     Winter: 2.1 hours * 90 days = 189.0\n   - Total (h * d) for the year = 423.2 + 533.6 + 336.7 + 189.0 = 1482.5 hours.\n   - E = 58 * 0.40 * 1482.5 * 0.82 = 28,203.08 kWh.\n\n4. **Annual Monetary Effect**:\n   - 85% of the energy is used directly, saving 28 tg/kWh.\n   - 15% of the energy is sold to the grid, earning 14 tg/kWh.\n   - Average monetary value per kWh = (0.85 * 28) + (0.15 * 14) = 23.8 + 2.1 = 25.9 tg/kWh.\n   - Total annual monetary effect = 28,203.08 kWh * 25.9 tg/kWh = 730,459.772 tg.\n\n5. **Rounding**:\n   - Rounding to the nearest thousand tenge gives 730,000 tg.\n   - This matches Option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "An exceptionally well-crafted Level C question. It requires multi-step reasoning, optimization under constraints, and careful reading of the text. The distractors are perfectly derived from common calculation errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Ең көп панель саны орнатылған жағдайда аккумулятордың қарапайым өтелу мерзімі қандай және ол 10 жылдық кезеңде қаржылық тұрғыдан тиімді ме?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$20.3$ жыл; 10 жылда тиімді емес"
+        },
+        {
+          "label": "B",
+          "text": "$10.1$ жыл; 10 жылда тиімді емес"
+        },
+        {
+          "label": "C",
+          "text": "$1.0$ жыл; 10 жылда тиімді"
+        },
+        {
+          "label": "D",
+          "text": "$2.0$ жыл; 10 жылда тиімді"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Аккумулятор тікелей қолданылатын үлесті 85%-дан 95%-ға өсіреді, яғни 10% энергия бұрын 14 тг-ден сатылса, енді 28 тг үнем береді. Қосымша әсер бір кВт·сағ үшін $28-14=14$ тг-дің 10%-ы, яғни $1.4$ тг. Жылдық қосымша табыс $28203.08\\cdot1.4\\approx39484$ тг. Өтелу мерзімі $800000:39484\\approx20.3$ жыл. 10 жылдағы қосымша табыс шамамен 395 000 тг ғана, бұл 800 000 тг-ден аз, сондықтан тиімді емес. A дұрыс. B — 10% энергияны толық 28 тг қосымша үнем деп алып, бұрынғы 14 тг сатылымды ескермеген қате. C — аккумулятордан кейінгі бүкіл жылдық ақшалай әсерді қосымша табыс деп алған қате. D — 10 жылдық қосымша табысты бір жылдық табыс сияқты пайдаланып, өтелу мерзімін қате қысқартқан.",
+      "critic_score": 9.033,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 9.333,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: First find the maximum number of panels under the roof-area and base-budget constraints. Area constraint: 1.6N <= 96, so N <= 60. Base cost without the optional battery is panel cost plus installation plus inverter: 90000N + 0.12*90000N + 450000 = 100800N + 450000. Budget constraint: 100800N + 450000 <= 6300000, so 100800N <= 5850000, hence N <= 58.0357. Therefore the maximum integer number of pan\n\n[anthropic/claude-sonnet-4.6] answered A: Step 1: Maximum panels. Area constraint: 96/1.6 = 60 panels. Budget constraint: total cost = 90000N + 0.12×90000×N + 450000 = 100800N + 450000 ≤ 6300000 → N ≤ 5850000/100800 = 58.03 → N_max = 58.\n\nStep 2: Annual energy with N=58. E = 58×0.40×h×d×0.82.\nSpring: 58×0.40×4.6×92×0.82 = 8051.0 kWh\nSummer: 58×0.40×5.8×92×0.82 = 10151.2 kWh\nAutumn: 58×0.40×3.7×91×0.82 = 6405.4 kWh\nWinter: 58×0.40×2.1×90×0\n\n[google/gemini-3.1-pro-preview] answered A: First, we determine the maximum number of panels (N) that can be installed based on the given constraints.\nArea constraint: The total roof area is 96 m², and one panel is 1.6 m². Max panels by area = 96 / 1.6 = 60 panels.\nBudget constraint: The total budget is 6,300,000 tg. The cost of one panel is 90,000 tg, and installation is 12% of the panel cost (0.12 * 90,000 = 10,800 tg). So, the total cost",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.333,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 8.667,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.033,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer A is numerically correct under the intended interpretation: maximize panels under the non-battery project constraints, then evaluate the battery as an incremental add-on. However, the wording about the total budget could be read as including the optional battery, in which case the maximum panel count would change and no option would match. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. My independent solution confirms answer A (20.3 years, not beneficial in 10 years). The distractors represent plausible calculation errors (ignoring opportunity cost of grid sales, using total revenue instead of incremental, etc.), though distractor C (1.0 year) is somewhat implausible and easily eliminated. The Kazakh is clear and professionally written with appropriate technical terminology. | [google/gemini-3.1-pro-preview] The question is exceptionally well-crafted. It requires multi-step reasoning, optimization under constraints, and financial analysis, perfectly aligning with Level C difficulty. The distractors are meticulously derived from common calculation errors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor C (1.0 year) is too far from the correct answer to be a credible trap — consider replacing it with a value like 4.0 or 5.0 years that corresponds to a more realistic calculation error (e.g., using only the 10% energy shift at 28 tg without subtracting the lost 14 tg grid revenue). This would make all four options more plausible and harder to eliminate by inspection.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "First find the maximum number of panels under the roof-area and base-budget constraints. Area constraint: 1.6N <= 96, so N <= 60. Base cost without the optional battery is panel cost plus installation plus inverter: 90000N + 0.12*90000N + 450000 = 100800N + 450000. Budget constraint: 100800N + 450000 <= 6300000, so 100800N <= 5850000, hence N <= 58.0357. Therefore the maximum integer number of panels is N = 58. Annual equivalent sun-hour total is 4.6*92 + 5.8*92 + 3.7*91 + 2.1*90 = 423.2 + 533.6 + 336.7 + 189 = 1482.5. Annual energy per panel is 0.40*0.82*1482.5 = 486.26 kWh. For 58 panels, annual energy is 58*486.26 = 28203.08 kWh. Without battery, value per kWh is 0.85*28 + 0.15*14 = 23.8 + 2.1 = 25.9 tenge/kWh. With battery, value per kWh is 0.95*28 + 0.05*14 = 26.6 + 0.7 = 27.3 tenge/kWh. Incremental benefit due to the battery is 27.3 - 25.9 = 1.4 tenge/kWh. Annual extra benefit is 28203.08*1.4 = 39484.312 tenge/year. Simple payback period is 800000 / 39484.312 = 20.26 years, approximately 20.3 years. Over 10 years, the extra benefit is only about 394843 tenge, less than the 800000 tenge battery cost, so it is not financially beneficial over 10 years.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 8.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The keyed answer A is numerically correct under the intended interpretation: maximize panels under the non-battery project constraints, then evaluate the battery as an incremental add-on. However, the wording about the total budget could be read as including the optional battery, in which case the maximum panel count would change and no option would match.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Maximum panels. Area constraint: 96/1.6 = 60 panels. Budget constraint: total cost = 90000N + 0.12×90000×N + 450000 = 100800N + 450000 ≤ 6300000 → N ≤ 5850000/100800 = 58.03 → N_max = 58.\n\nStep 2: Annual energy with N=58. E = 58×0.40×h×d×0.82.\nSpring: 58×0.40×4.6×92×0.82 = 8051.0 kWh\nSummer: 58×0.40×5.8×92×0.82 = 10151.2 kWh\nAutumn: 58×0.40×3.7×91×0.82 = 6405.4 kWh\nWinter: 58×0.40×2.1×90×0.82 = 3595.5 kWh\nTotal = 28203.1 kWh/year\n\nStep 3: Annual revenue WITHOUT battery.\n85% direct: 28203.1×0.85×28 = 671,233 tg\n15% grid: 28203.1×0.15×14 = 59,226 tg\nTotal = 730,459 tg/year\n\nStep 4: Annual revenue WITH battery.\n95% direct: 28203.1×0.95×28 = 750,202 tg\n5% grid: 28203.1×0.05×14 = 19,742 tg\nTotal = 769,944 tg/year\n\nStep 5: Additional annual benefit from battery = 769,944 - 730,459 = 39,485 tg/year\n\nStep 6: Payback = 800,000 / 39,485 ≈ 20.3 years\n\nStep 7: Over 10 years, gain = 394,850 tg < 800,000 tg cost → NOT financially beneficial in 10 years.\n\nAnswer: 20.3 years; not beneficial in 10 years → Option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is mathematically rigorous and correctly keyed. My independent solution confirms answer A (20.3 years, not beneficial in 10 years). The distractors represent plausible calculation errors (ignoring opportunity cost of grid sales, using total revenue instead of incremental, etc.), though distractor C (1.0 year) is somewhat implausible and easily eliminated. The Kazakh is clear and professionally written with appropriate technical terminology.",
+              "improvement_suggestions": "Distractor C (1.0 year) is too far from the correct answer to be a credible trap — consider replacing it with a value like 4.0 or 5.0 years that corresponds to a more realistic calculation error (e.g., using only the 10% energy shift at 28 tg without subtracting the lost 14 tg grid revenue). This would make all four options more plausible and harder to eliminate by inspection.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "First, we determine the maximum number of panels (N) that can be installed based on the given constraints.\nArea constraint: The total roof area is 96 m², and one panel is 1.6 m². Max panels by area = 96 / 1.6 = 60 panels.\nBudget constraint: The total budget is 6,300,000 tg. The cost of one panel is 90,000 tg, and installation is 12% of the panel cost (0.12 * 90,000 = 10,800 tg). So, the total cost per panel is 100,800 tg. The inverter costs 450,000 tg.\nTotal cost equation: 100,800 * N + 450,000 <= 6,300,000.\n100,800 * N <= 5,850,000  =>  N <= 58.035.\nThus, the maximum number of panels that can be installed is N = 58.\n\nNext, we calculate the total equivalent sun hours per year:\nSpring: 4.6 hours * 92 days = 423.2 hours\nSummer: 5.8 hours * 92 days = 533.6 hours\nAutumn: 3.7 hours * 91 days = 336.7 hours\nWinter: 2.1 hours * 90 days = 189.0 hours\nTotal hours = 423.2 + 533.6 + 336.7 + 189.0 = 1482.5 hours.\n\nNow, we calculate the total annual energy produced (E):\nE = N * 0.40 * h * d * 0.82\nE = 58 * 0.40 * 1482.5 * 0.82 = 28,203.08 kWh.\n\nWe then find the additional annual savings generated by installing the battery. The battery shifts 10% of the total energy (from 85% to 95%) from being sold to the grid at 14 tg/kWh to being used directly at 28 tg/kWh.\nThe added value per kWh for this 10% is 28 - 14 = 14 tg.\nAdditional annual savings = 28,203.08 kWh * 10% * 14 tg/kWh = 39,484.312 tg/year.\n\nThe cost of the battery is 800,000 tg.\nThe simple payback period = Cost / Annual Savings = 800,000 / 39,484.312 ≈ 20.26 years.\nRounded to one decimal place, this is 20.3 years.\n\nSince the payback period (20.3 years) is much greater than 10 years, the battery is not financially viable over a 10-year period.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is exceptionally well-crafted. It requires multi-step reasoning, optimization under constraints, and financial analysis, perfectly aligning with Level C difficulty. The distractors are meticulously derived from common calculation errors.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

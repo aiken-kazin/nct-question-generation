@@ -1,0 +1,210 @@
+{
+  "id": "06435ea9-db70-4c29-af68-9241344fd42e",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "quadratic_irrational",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$a$-ның қандай мәндерінде $\\sqrt{x-a} = x - 2$ теңдеуінің дәл бір түбірі болады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "$(-\\infty; 2]$"
+    },
+    {
+      "label": "B",
+      "text": "$[2; 2.25]$"
+    },
+    {
+      "label": "C",
+      "text": "$(-\\infty; 2) \\cup \\{2.25\\}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\{2.25\\}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген иррационал теңдеу: $\\sqrt{x-a} = x - 2$.\nАнықталу облысы және теңдеудің оң жағы теріс емес болуы шарт: $x - 2 \\ge 0 \\implies x \\ge 2$.\nТеңдеудің екі жағын квадраттаймыз:\n$x - a = (x - 2)^2$\n$x - a = x^2 - 4x + 4$\n$x^2 - 5x + a + 4 = 0$\nБұл квадрат теңдеудің $x \\ge 2$ шартын қанағаттандыратын дәл бір түбірі болуы керек.\n\nКвадраттық функцияны енгізейік: $f(x) = x^2 - 5x + a + 4$.\nПараболаның төбесі: $x_0 = -\\frac{-5}{2} = 2.5$.\nДискриминант: $D = 25 - 4(a + 4) = 9 - 4a$.\n\nЕкі жағдайды қарастырамыз:\n1-жағдай: Квадрат теңдеудің дәл бір түбірі бар. Бұл $D = 0$ болғанда орындалады:\n$9 - 4a = 0 \\implies a = 2.25$.\nБұл кезде түбір $x = 2.5$ болады. $2.5 \\ge 2$ шарты орындалатындықтан, $a = 2.25$ мәні жауапқа кіреді.\n\n2-жағдай: Квадрат теңдеудің екі әртүрлі түбірі бар ($D > 0 \\implies a < 2.25$), бірақ олардың тек біреуі ғана $x \\ge 2$ шартын қанағаттандырады.\nПарабола төбесі $x_0 = 2.5 > 2$ болғандықтан, екі түбір де 2-ден кіші бола алмайды. Тек бір түбір ғана 2-ден үлкен немесе тең болуы үшін, екінші (кіші) түбір 2-ден қатаң кіші болуы шарт.\nБұл $f(2) < 0$ болғанда ғана орындалады (парабола тармақтары жоғары бағытталғандықтан, 2 саны түбірлердің арасында жатуы керек).\n$f(2) = 2^2 - 5 \\cdot 2 + a + 4 = a - 2$.\n$a - 2 < 0 \\implies a < 2$.\n\nЕгер $a = 2$ болса, $f(2) = 0$. Онда бір түбір $x = 2$, ал екіншісі $x_0$-ге симметриялы $x = 3$. Екі түбір де $x \\ge 2$ шартын қанағаттандырады, бұл бізге сәйкес келмейді (екі түбір болып қалады).\n\nСонымен, $a \\in (-\\infty; 2) \\cup \\{2.25\\}$.",
+  "latex_formulas": [
+    "\\sqrt{x-a} = x - 2",
+    "x^2 - 5x + a + 4 = 0",
+    "D = 9 - 4a",
+    "f(2) < 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We need the number of real solutions x of sqrt(x - a) = x - 2. Since the left side is nonnegative, we must have x - 2 >= 0, so x >= 2. Also x - a >= 0 is required. Squaring the equation gives x - a = (x - 2)^2 = x^2 - 4x + 4. Rearranging: x^2 - 5x + 4 + a = 0. Conversely, any root of this quadratic with x >= 2 satisfies the original equation, because then x - 2 is nonnegative and x - a = (x - 2)^2\n\n[anthropic/claude-sonnet-4.6] answered C: We need √(x-a) = x-2 to have exactly one root. Conditions: x-a ≥ 0 and x-2 ≥ 0 (so x ≥ 2). Squaring: x-a = (x-2)² → x²-5x+(4+a)=0. Roots: x = [5 ± √(9-4a)]/2. Real roots require a ≤ 2.25. x₁=(5+√(9-4a))/2 always ≥ 2. x₂=(5-√(9-4a))/2 ≥ 2 iff a ≥ 2. So: if a < 2, only x₁ is valid → 1 root; if a = 2, both x₁=3 and x₂=2 are valid → 2 roots; if 2 < a < 2.25, both valid → 2 roots; if a = 2.25, double r\n\n[google/gemini-3.1-pro-preview] answered C: To find the values of $a$ for which the equation $\\sqrt{x-a} = x - 2$ has exactly one root, we can analyze the equivalent system of equations. \n\nFirst, since the square root must yield a non-negative result, we require $x - 2 \\ge 0$, which means $x \\ge 2$.\n\nSquaring both sides of the equation gives:\n$x - a = (x - 2)^2$\n$x - a = x^2 - 4x + 4$\n$a = -x^2 + 5x - 4$\n\nLet $g(x) = -x^2 + 5x - 4$. We are ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.167,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and the equation has exactly one solution precisely for the stated parameter set. However, the item is a fairly routine parameter-counting radical equation and feels closer to medium difficulty than true level C. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. All distractors correspond to identifiable errors: A ignores the double-root case, B misses the a<2 region, D only captures the discriminant=0 case. The solution requires multi-step case analysis making it genuinely level C. | [google/gemini-3.1-pro-preview] The question is excellent. It requires a deep understanding of quadratic functions, domain restrictions, and parameter analysis, perfectly matching the Level C difficulty. The distractors are well-chosen based on common student errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='$(-\\infty; 2) \\cup \\{2.25\\}$' expected='$(-\\infty; 2) \\cup \\{2.25\\}$'",
+      "raw": {
+        "ok": true,
+        "stdout": "$(-\\infty; 2) \\cup \\{2.25\\}$",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We need the number of real solutions x of sqrt(x - a) = x - 2. Since the left side is nonnegative, we must have x - 2 >= 0, so x >= 2. Also x - a >= 0 is required. Squaring the equation gives x - a = (x - 2)^2 = x^2 - 4x + 4. Rearranging: x^2 - 5x + 4 + a = 0. Conversely, any root of this quadratic with x >= 2 satisfies the original equation, because then x - 2 is nonnegative and x - a = (x - 2)^2\n\n[anthropic/claude-sonnet-4.6] answered C: We need √(x-a) = x-2 to have exactly one root. Conditions: x-a ≥ 0 and x-2 ≥ 0 (so x ≥ 2). Squaring: x-a = (x-2)² → x²-5x+(4+a)=0. Roots: x = [5 ± √(9-4a)]/2. Real roots require a ≤ 2.25. x₁=(5+√(9-4a))/2 always ≥ 2. x₂=(5-√(9-4a))/2 ≥ 2 iff a ≥ 2. So: if a < 2, only x₁ is valid → 1 root; if a = 2, both x₁=3 and x₂=2 are valid → 2 roots; if 2 < a < 2.25, both valid → 2 roots; if a = 2.25, double r\n\n[google/gemini-3.1-pro-preview] answered C: To find the values of $a$ for which the equation $\\sqrt{x-a} = x - 2$ has exactly one root, we can analyze the equivalent system of equations. \n\nFirst, since the square root must yield a non-negative result, we require $x - 2 \\ge 0$, which means $x \\ge 2$.\n\nSquaring both sides of the equation gives:\n$x - a = (x - 2)^2$\n$x - a = x^2 - 4x + 4$\n$a = -x^2 + 5x - 4$\n\nLet $g(x) = -x^2 + 5x - 4$. We are ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.167,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and the equation has exactly one solution precisely for the stated parameter set. However, the item is a fairly routine parameter-counting radical equation and feels closer to medium difficulty than true level C. | [anthropic/claude-sonnet-4.6] The question is mathematically rigorous and correctly keyed. All distractors correspond to identifiable errors: A ignores the double-root case, B misses the a<2 region, D only captures the discriminant=0 case. The solution requires multi-step case analysis making it genuinely level C. | [google/gemini-3.1-pro-preview] The question is excellent. It requires a deep understanding of quadratic functions, domain restrictions, and parameter analysis, perfectly matching the Level C difficulty. The distractors are well-chosen based on common student errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='$(-\\infty; 2) \\cup \\{2.25\\}$' expected='$(-\\infty; 2) \\cup \\{2.25\\}$'",
+        "raw": {
+          "ok": true,
+          "stdout": "$(-\\infty; 2) \\cup \\{2.25\\}$",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need the number of real solutions x of sqrt(x - a) = x - 2. Since the left side is nonnegative, we must have x - 2 >= 0, so x >= 2. Also x - a >= 0 is required. Squaring the equation gives x - a = (x - 2)^2 = x^2 - 4x + 4. Rearranging: x^2 - 5x + 4 + a = 0. Conversely, any root of this quadratic with x >= 2 satisfies the original equation, because then x - 2 is nonnegative and x - a = (x - 2)^2 >= 0. The discriminant is D = (-5)^2 - 4(1)(4 + a) = 25 - 16 - 4a = 9 - 4a. Real roots exist when a <= 9/4 = 2.25. The roots are x1 = (5 - sqrt(9 - 4a))/2 and x2 = (5 + sqrt(9 - 4a))/2. The root x2 is always at least 2, so it is always valid when real. The root x1 is valid exactly when x1 >= 2, i.e. (5 - sqrt(9 - 4a))/2 >= 2, so sqrt(9 - 4a) <= 1, hence 9 - 4a <= 1, so a >= 2. Therefore: if a < 2, only x2 is valid, so there is exactly one root; if a = 2, both roots x = 2 and x = 3 are valid, so there are two roots; if 2 < a < 2.25, both roots are valid, so there are two roots; if a = 2.25, the two roots coincide into one double root x = 2.5, so there is exactly one distinct root; if a > 2.25, there are no real roots. Thus the parameter values are (-infinity, 2) union {2.25}.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The keyed answer is mathematically correct and the equation has exactly one solution precisely for the stated parameter set. However, the item is a fairly routine parameter-counting radical equation and feels closer to medium difficulty than true level C.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-\\infty; 2) \\cup \\{2.25\\}$' expected='$(-\\infty; 2) \\cup \\{2.25\\}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-\\infty; 2) \\cup \\{2.25\\}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need √(x-a) = x-2 to have exactly one root. Conditions: x-a ≥ 0 and x-2 ≥ 0 (so x ≥ 2). Squaring: x-a = (x-2)² → x²-5x+(4+a)=0. Roots: x = [5 ± √(9-4a)]/2. Real roots require a ≤ 2.25. x₁=(5+√(9-4a))/2 always ≥ 2. x₂=(5-√(9-4a))/2 ≥ 2 iff a ≥ 2. So: if a < 2, only x₁ is valid → 1 root; if a = 2, both x₁=3 and x₂=2 are valid → 2 roots; if 2 < a < 2.25, both valid → 2 roots; if a = 2.25, double root x=2.5 → 1 root; if a > 2.25, no real roots → 0 roots. Exactly one root when a ∈ (-∞,2) ∪ {2.25}, which is option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically rigorous and correctly keyed. All distractors correspond to identifiable errors: A ignores the double-root case, B misses the a<2 region, D only captures the discriminant=0 case. The solution requires multi-step case analysis making it genuinely level C.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-\\infty; 2) \\cup \\{2.25\\}$' expected='$(-\\infty; 2) \\cup \\{2.25\\}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-\\infty; 2) \\cup \\{2.25\\}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the values of $a$ for which the equation $\\sqrt{x-a} = x - 2$ has exactly one root, we can analyze the equivalent system of equations. \n\nFirst, since the square root must yield a non-negative result, we require $x - 2 \\ge 0$, which means $x \\ge 2$.\n\nSquaring both sides of the equation gives:\n$x - a = (x - 2)^2$\n$x - a = x^2 - 4x + 4$\n$a = -x^2 + 5x - 4$\n\nLet $g(x) = -x^2 + 5x - 4$. We are looking for the values of $a$ such that the horizontal line $y = a$ intersects the graph of $g(x)$ exactly once on the interval $x \\ge 2$.\n\nThe graph of $g(x)$ is a downward-opening parabola. Let's find its vertex:\n$x_v = -\\frac{b}{2a} = -\\frac{5}{2(-1)} = 2.5$\nThe maximum value at the vertex is:\n$g(2.5) = -(2.5)^2 + 5(2.5) - 4 = -6.25 + 12.5 - 4 = 2.25$\n\nNow let's find the value of the function at the boundary of our domain, $x = 2$:\n$g(2) = -(2)^2 + 5(2) - 4 = -4 + 10 - 4 = 2$\n\nFor $x \\ge 2$, the function $g(x)$ increases from $g(2) = 2$ to its peak at $g(2.5) = 2.25$, and then strictly decreases towards $-\\infty$ as $x \\to \\infty$.\n\nNow we count the number of intersections of $y = a$ with $g(x)$ for $x \\ge 2$:\n- If $a > 2.25$, there are 0 intersections.\n- If $a = 2.25$, there is exactly 1 intersection (at the vertex $x = 2.5$).\n- If $2 \\le a < 2.25$, there are 2 intersections (one on the interval $[2, 2.5)$ and one on $(2.5, \\infty)$).\n- If $a < 2$, there is exactly 1 intersection (on the interval $(2.5, \\infty)$).\n\nTherefore, the equation has exactly one root when $a < 2$ or $a = 2.25$. In interval notation, this is $(-\\infty; 2) \\cup \\{2.25\\}$.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It requires a deep understanding of quadratic functions, domain restrictions, and parameter analysis, perfectly matching the Level C difficulty. The distractors are well-chosen based on common student errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='$(-\\infty; 2) \\cup \\{2.25\\}$' expected='$(-\\infty; 2) \\cup \\{2.25\\}$'",
+            "raw": {
+              "ok": true,
+              "stdout": "$(-\\infty; 2) \\cup \\{2.25\\}$",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:04:44.818019+00:00",
+  "generation_attempts": 1
+}

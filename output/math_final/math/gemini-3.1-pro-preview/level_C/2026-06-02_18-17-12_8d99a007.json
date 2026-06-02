@@ -1,0 +1,209 @@
+{
+  "id": "8d99a007-0735-43b4-99ea-faab4505c81d",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "complex_numbers",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Егер $z = \\cos\\frac{2\\pi}{7} + i\\sin\\frac{2\\pi}{7}$ болса, онда $z + z^2 + z^4$ өрнегінің мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{1 + i\\sqrt{7}}{2}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{-1 - i\\sqrt{7}}{2}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{-1 + i\\sqrt{7}}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{1 - i\\sqrt{7}}{2}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "$z = \\cos\\frac{2\\pi}{7} + i\\sin\\frac{2\\pi}{7}$ болғандықтан, Муавр формуласы бойынша $z^7 = 1$ және $z \\neq 1$.\nБіз $1 + z + z^2 + z^3 + z^4 + z^5 + z^6 = 0$ теңдігін білеміз.\nІзделінді өрнекті $S = z + z^2 + z^4$ деп белгілейік.\nОнда оның түйіндесі: $\\bar{S} = \\bar{z} + \\bar{z}^2 + \\bar{z}^4$.\n$\\bar{z} = \\frac{1}{z} = z^6$ болғандықтан, $\\bar{S} = z^6 + z^5 + z^3$.\nКомплекс сандардың қосындысы мен көбейтіндісін табайық:\n1) $S + \\bar{S} = (z + z^2 + z^4) + (z^6 + z^5 + z^3) = z + z^2 + z^3 + z^4 + z^5 + z^6$.\nЖоғарыдағы теңдікті қолдансақ, $S + \\bar{S} = -1$.\n2) $S \\cdot \\bar{S} = (z + z^2 + z^4)(z^3 + z^5 + z^6) = z^4 + z^6 + z^7 + z^5 + z^7 + z^8 + z^7 + z^9 + z^{10}$.\n$z^7 = 1$ екенін ескерсек: $z^8 = z$, $z^9 = z^2$, $z^{10} = z^3$.\n$S \\cdot \\bar{S} = z^4 + z^6 + 1 + z^5 + 1 + z + 1 + z^2 + z^3 = 3 + (z + z^2 + z^3 + z^4 + z^5 + z^6) = 3 - 1 = 2$.\nДемек, $S$ және $\\bar{S}$ сандары Виет теоремасына сәйкес келесі квадрат теңдеудің түбірлері болады:\n$x^2 - (S + \\bar{S})x + S \\cdot \\bar{S} = 0 \\implies x^2 + x + 2 = 0$.\nБұл теңдеудің түбірлері: $x = \\frac{-1 \\pm i\\sqrt{7}}{2}$.\nЕнді $S$-тің жорамал бөлігінің таңбасын анықтайық:\n$\\text{Im}(S) = \\sin\\frac{2\\pi}{7} + \\sin\\frac{4\\pi}{7} + \\sin\\frac{8\\pi}{7} = \\sin\\frac{2\\pi}{7} + \\sin\\frac{4\\pi}{7} - \\sin\\frac{\\pi}{7}$.\n$\\sin\\frac{2\\pi}{7} > \\sin\\frac{\\pi}{7}$ және $\\sin\\frac{4\\pi}{7} > 0$ болғандықтан, $\\text{Im}(S) > 0$.\nОлай болса, ізделінді мән: $S = \\frac{-1 + i\\sqrt{7}}{2}$.",
+  "latex_formulas": [
+    "z^n = \\cos(n\\varphi) + i\\sin(n\\varphi)",
+    "1 + z + z^2 + \\dots + z^{n-1} = 0",
+    "x^2 - (x_1+x_2)x + x_1x_2 = 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.667,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Let z = cos(2π/7) + i sin(2π/7) = e^(2πi/7). Then z is a primitive 7th root of unity, so z^7 = 1 and 1 + z + z^2 + z^3 + z^4 + z^5 + z^6 = 0. We need S = z + z^2 + z^4. Let T = z^3 + z^5 + z^6. Then S + T = -1. Now compute S numerically/trigonometrically: z = cos(2π/7) + i sin(2π/7), z^2 = cos(4π/7) + i sin(4π/7), and z^4 = cos(8π/7) + i sin(8π/7). Therefore S = [cos(2π/7) + cos(4π/7) + cos(8π/7)]\n\n[anthropic/claude-sonnet-4.6] answered C: Let z = e^(2πi/7), a primitive 7th root of unity. Then z^7 = 1 and 1 + z + z² + z³ + z⁴ + z⁵ + z⁶ = 0, so z + z² + ... + z⁶ = -1.\n\nLet S = z + z² + z⁴ (quadratic residues mod 7) and T = z³ + z⁵ + z⁶ (non-residues mod 7).\n\nS + T = -1.\n\nCompute S·T = (z + z² + z⁴)(z³ + z⁵ + z⁶):\n= z⁴ + z⁶ + z⁷ + z⁵ + z⁷ + z⁸ + z⁷ + z⁹ + z¹⁰\n= z⁴ + z⁶ + 1 + z⁵ + 1 + z + 1 + z² + z³\n= 3 + (z + z² + z³ + z⁴ + z⁵ + z⁶) \n\n[google/gemini-3.1-pro-preview] answered C: Let $z = \\cos\\frac{2\\pi}{7} + i\\sin\\frac{2\\pi}{7}$. By De Moivre's formula, $z = e^{i\\frac{2\\pi}{7}}$, which means $z^7 = 1$ and $z \\neq 1$. \nBecause $z^7 - 1 = (z - 1)(z^6 + z^5 + z^4 + z^3 + z^2 + z + 1) = 0$ and $z \\neq 1$, we have $z^6 + z^5 + z^4 + z^3 + z^2 + z + 1 = 0$.\n\nLet $S = z + z^2 + z^4$ and $T = z^3 + z^5 + z^6$. \nWe can find the sum and product of $S$ and $T$:\n1) Sum: $S + T = z + ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.667,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a unique defensible solution using primitive 7th roots of unity. The distractors are well matched and mostly correspond to plausible sign or conjugation errors, though the problem is closer to a standard advanced identity than a fully non-routine hard task. | [anthropic/claude-sonnet-4.6] Excellent question on 7th roots of unity requiring multi-step reasoning: identifying quadratic residues mod 7, computing S+T and S·T, solving a quadratic, and determining the sign of the imaginary part. All four distractors correspond to natural sign-error variants. Kazakh is fluent and mathematically precise. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multi-step reasoning involving roots of unity and Vieta's formulas, perfectly matching the requested difficulty level C. The distractors are well-chosen and represent common sign errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='\\frac{-1 + i\\sqrt{7}}{2}' expected='\\frac{-1 + i\\sqrt{7}}{2}'",
+      "raw": {
+        "ok": true,
+        "stdout": "\\frac{-1 + i\\sqrt{7}}{2}",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Let z = cos(2π/7) + i sin(2π/7) = e^(2πi/7). Then z is a primitive 7th root of unity, so z^7 = 1 and 1 + z + z^2 + z^3 + z^4 + z^5 + z^6 = 0. We need S = z + z^2 + z^4. Let T = z^3 + z^5 + z^6. Then S + T = -1. Now compute S numerically/trigonometrically: z = cos(2π/7) + i sin(2π/7), z^2 = cos(4π/7) + i sin(4π/7), and z^4 = cos(8π/7) + i sin(8π/7). Therefore S = [cos(2π/7) + cos(4π/7) + cos(8π/7)]\n\n[anthropic/claude-sonnet-4.6] answered C: Let z = e^(2πi/7), a primitive 7th root of unity. Then z^7 = 1 and 1 + z + z² + z³ + z⁴ + z⁵ + z⁶ = 0, so z + z² + ... + z⁶ = -1.\n\nLet S = z + z² + z⁴ (quadratic residues mod 7) and T = z³ + z⁵ + z⁶ (non-residues mod 7).\n\nS + T = -1.\n\nCompute S·T = (z + z² + z⁴)(z³ + z⁵ + z⁶):\n= z⁴ + z⁶ + z⁷ + z⁵ + z⁷ + z⁸ + z⁷ + z⁹ + z¹⁰\n= z⁴ + z⁶ + 1 + z⁵ + 1 + z + 1 + z² + z³\n= 3 + (z + z² + z³ + z⁴ + z⁵ + z⁶) \n\n[google/gemini-3.1-pro-preview] answered C: Let $z = \\cos\\frac{2\\pi}{7} + i\\sin\\frac{2\\pi}{7}$. By De Moivre's formula, $z = e^{i\\frac{2\\pi}{7}}$, which means $z^7 = 1$ and $z \\neq 1$. \nBecause $z^7 - 1 = (z - 1)(z^6 + z^5 + z^4 + z^3 + z^2 + z + 1) = 0$ and $z \\neq 1$, we have $z^6 + z^5 + z^4 + z^3 + z^2 + z + 1 = 0$.\n\nLet $S = z + z^2 + z^4$ and $T = z^3 + z^5 + z^6$. \nWe can find the sum and product of $S$ and $T$:\n1) Sum: $S + T = z + ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.667,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a unique defensible solution using primitive 7th roots of unity. The distractors are well matched and mostly correspond to plausible sign or conjugation errors, though the problem is closer to a standard advanced identity than a fully non-routine hard task. | [anthropic/claude-sonnet-4.6] Excellent question on 7th roots of unity requiring multi-step reasoning: identifying quadratic residues mod 7, computing S+T and S·T, solving a quadratic, and determining the sign of the imaginary part. All four distractors correspond to natural sign-error variants. Kazakh is fluent and mathematically precise. | [google/gemini-3.1-pro-preview] The question is excellent. It requires multi-step reasoning involving roots of unity and Vieta's formulas, perfectly matching the requested difficulty level C. The distractors are well-chosen and represent common sign errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='\\frac{-1 + i\\sqrt{7}}{2}' expected='\\frac{-1 + i\\sqrt{7}}{2}'",
+        "raw": {
+          "ok": true,
+          "stdout": "\\frac{-1 + i\\sqrt{7}}{2}",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let z = cos(2π/7) + i sin(2π/7) = e^(2πi/7). Then z is a primitive 7th root of unity, so z^7 = 1 and 1 + z + z^2 + z^3 + z^4 + z^5 + z^6 = 0. We need S = z + z^2 + z^4. Let T = z^3 + z^5 + z^6. Then S + T = -1. Now compute S numerically/trigonometrically: z = cos(2π/7) + i sin(2π/7), z^2 = cos(4π/7) + i sin(4π/7), and z^4 = cos(8π/7) + i sin(8π/7). Therefore S = [cos(2π/7) + cos(4π/7) + cos(8π/7)] + i[sin(2π/7) + sin(4π/7) + sin(8π/7)]. A standard identity for 7th roots gives cos(2π/7) + cos(4π/7) + cos(8π/7) = -1/2. Also, sin(2π/7) + sin(4π/7) + sin(8π/7) = √7/2. Hence S = (-1/2) + i(√7/2) = (-1 + i√7)/2. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a unique defensible solution using primitive 7th roots of unity. The distractors are well matched and mostly correspond to plausible sign or conjugation errors, though the problem is closer to a standard advanced identity than a fully non-routine hard task.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='\\frac{-1 + i\\sqrt{7}}{2}' expected='\\frac{-1 + i\\sqrt{7}}{2}'",
+            "raw": {
+              "ok": true,
+              "stdout": "\\frac{-1 + i\\sqrt{7}}{2}",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let z = e^(2πi/7), a primitive 7th root of unity. Then z^7 = 1 and 1 + z + z² + z³ + z⁴ + z⁵ + z⁶ = 0, so z + z² + ... + z⁶ = -1.\n\nLet S = z + z² + z⁴ (quadratic residues mod 7) and T = z³ + z⁵ + z⁶ (non-residues mod 7).\n\nS + T = -1.\n\nCompute S·T = (z + z² + z⁴)(z³ + z⁵ + z⁶):\n= z⁴ + z⁶ + z⁷ + z⁵ + z⁷ + z⁸ + z⁷ + z⁹ + z¹⁰\n= z⁴ + z⁶ + 1 + z⁵ + 1 + z + 1 + z² + z³\n= 3 + (z + z² + z³ + z⁴ + z⁵ + z⁶) = 3 + (-1) = 2.\n\nSo S and T satisfy x² + x + 2 = 0, giving x = (-1 ± i√7)/2.\n\nTo determine which root is S, compute Im(S) = sin(2π/7) + sin(4π/7) + sin(8π/7).\nNumerically: ≈ 0.7818 + 0.9749 - 0.4339 ≈ 1.3228 ≈ +√7/2 > 0.\n\nTherefore S = (-1 + i√7)/2.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "Excellent question on 7th roots of unity requiring multi-step reasoning: identifying quadratic residues mod 7, computing S+T and S·T, solving a quadratic, and determining the sign of the imaginary part. All four distractors correspond to natural sign-error variants. Kazakh is fluent and mathematically precise.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='\\frac{-1 + i\\sqrt{7}}{2}' expected='\\frac{-1 + i\\sqrt{7}}{2}'",
+            "raw": {
+              "ok": true,
+              "stdout": "\\frac{-1 + i\\sqrt{7}}{2}",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let $z = \\cos\\frac{2\\pi}{7} + i\\sin\\frac{2\\pi}{7}$. By De Moivre's formula, $z = e^{i\\frac{2\\pi}{7}}$, which means $z^7 = 1$ and $z \\neq 1$. \nBecause $z^7 - 1 = (z - 1)(z^6 + z^5 + z^4 + z^3 + z^2 + z + 1) = 0$ and $z \\neq 1$, we have $z^6 + z^5 + z^4 + z^3 + z^2 + z + 1 = 0$.\n\nLet $S = z + z^2 + z^4$ and $T = z^3 + z^5 + z^6$. \nWe can find the sum and product of $S$ and $T$:\n1) Sum: $S + T = z + z^2 + z^3 + z^4 + z^5 + z^6 = -1$.\n2) Product: $S \\cdot T = (z + z^2 + z^4)(z^3 + z^5 + z^6)$.\nExpanding this product gives:\n$S \\cdot T = z^4 + z^6 + z^7 + z^5 + z^7 + z^8 + z^7 + z^9 + z^{10}$.\nSince $z^7 = 1$, we can simplify the higher powers: $z^8 = z$, $z^9 = z^2$, and $z^{10} = z^3$.\nSubstituting these back, we get:\n$S \\cdot T = z^4 + z^6 + 1 + z^5 + 1 + z + 1 + z^2 + z^3 = 3 + (z + z^2 + z^3 + z^4 + z^5 + z^6) = 3 + (-1) = 2$.\n\nSince $S + T = -1$ and $S \\cdot T = 2$, $S$ and $T$ are the roots of the quadratic equation $x^2 - (S+T)x + ST = 0$, which is $x^2 + x + 2 = 0$.\nUsing the quadratic formula, the roots are:\n$x = \\frac{-1 \\pm \\sqrt{1^2 - 4(1)(2)}}{2} = \\frac{-1 \\pm \\sqrt{-7}}{2} = \\frac{-1 \\pm i\\sqrt{7}}{2}$.\n\nTo determine which root corresponds to $S$, we look at the imaginary part of $S$:\n$\\text{Im}(S) = \\sin\\frac{2\\pi}{7} + \\sin\\frac{4\\pi}{7} + \\sin\\frac{8\\pi}{7}$.\nNotice that $\\sin\\frac{8\\pi}{7} = \\sin\\left(\\pi + \\frac{\\pi}{7}\\right) = -\\sin\\frac{\\pi}{7}$.\nThus, $\\text{Im}(S) = \\sin\\frac{2\\pi}{7} + \\sin\\frac{4\\pi}{7} - \\sin\\frac{\\pi}{7}$.\nSince $\\sin\\frac{2\\pi}{7} > \\sin\\frac{\\pi}{7}$ and $\\sin\\frac{4\\pi}{7} > 0$, it is clear that $\\text{Im}(S) > 0$.\n\nTherefore, $S$ must be the root with the positive imaginary part, which is $\\frac{-1 + i\\sqrt{7}}{2}$.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It requires multi-step reasoning involving roots of unity and Vieta's formulas, perfectly matching the requested difficulty level C. The distractors are well-chosen and represent common sign errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='\\frac{-1 + i\\sqrt{7}}{2}' expected='\\frac{-1 + i\\sqrt{7}}{2}'",
+            "raw": {
+              "ok": true,
+              "stdout": "\\frac{-1 + i\\sqrt{7}}{2}",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:17:12.374865+00:00",
+  "generation_attempts": 1
+}

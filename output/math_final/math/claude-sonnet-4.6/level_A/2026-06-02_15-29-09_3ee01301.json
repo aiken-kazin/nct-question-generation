@@ -1,0 +1,208 @@
+{
+  "id": "3ee01301-f09e-4653-8aef-dc7e9d953c45",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "polynomials",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$P(x) = x^3 - 4x^2 + 5x - 2$ көпмүшесін $x = 2$ нүктесінде есептеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$0$"
+    },
+    {
+      "label": "B",
+      "text": "$4$"
+    },
+    {
+      "label": "C",
+      "text": "$-2$"
+    },
+    {
+      "label": "D",
+      "text": "$8$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Қалдықтар теоремасы бойынша $P(2)$ мәнін табамыз:\n$P(2) = 2^3 - 4 \\cdot 2^2 + 5 \\cdot 2 - 2$\n$= 8 - 16 + 10 - 2$\n$= 0$\nДемек, $P(2) = 0$. Бұл сонымен қатар $(x - 2)$ көпмүшенің бөлгіші екенін көрсетеді.",
+  "latex_formulas": [
+    "P(a) = r",
+    "P(2) = 2^3 - 4 \\cdot 2^2 + 5 \\cdot 2 - 2 = 0"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.033,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Evaluate the polynomial at x = 2: P(2) = 2^3 - 4(2^2) + 5(2) - 2. Compute each term: 2^3 = 8, 2^2 = 4, so -4(2^2) = -4*4 = -16, and 5(2) = 10. Therefore P(2) = 8 - 16 + 10 - 2 = -8 + 10 - 2 = 2 - 2 = 0. The matching option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: Evaluate P(x) = x³ - 4x² + 5x - 2 at x = 2:\nP(2) = (2)³ - 4(2)² + 5(2) - 2\n= 8 - 4(4) + 10 - 2\n= 8 - 16 + 10 - 2\n= 0\nThe answer is 0.\n\n[google/gemini-3.1-pro-preview] answered A: To evaluate the polynomial P(x) = x^3 - 4x^2 + 5x - 2 at the point x = 2, we substitute x = 2 into the expression:\n\nP(2) = (2)^3 - 4(2)^2 + 5(2) - 2\n\nFirst, calculate the powers:\n(2)^3 = 8\n(2)^2 = 4\n\nNow substitute these back into the equation:\nP(2) = 8 - 4(4) + 10 - 2\n\nPerform the multiplication:\nP(2) = 8 - 16 + 10 - 2\n\nNow, perform the addition and subtraction from left to right:\n8 - 16 = -8\n-8 ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.333,
+      "difficulty_alignment": 9.667,
+      "kazakh_language_quality": 8.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.033,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution by direct substitution. The task matches level A well, though the Kazakh wording is slightly awkward because it should ask for the value of the polynomial. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-formed, and appropriately leveled for a basic recall/application task. Distractors are somewhat plausible (e.g., -2 is the constant term, 8 is 2³, 4 is a partial computation result), though a teacher could eliminate some quickly. | [google/gemini-3.1-pro-preview] The question is mathematically correct and perfectly matches the requested Level A difficulty. The Kazakh phrasing is understandable but could be slightly more natural.",
+    "improvement_suggestions": "[google/gemini-3.1-pro-preview] Instead of 'көпмүшесін ... есептеңіз', it is more natural to write 'көпмүшесінің ... мәнін табыңыз'. In the explanation, mentioning the Remainder Theorem is factually correct but slightly overcomplicates a simple evaluation task.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='0' expected='0'",
+      "raw": {
+        "ok": true,
+        "stdout": "0",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Evaluate the polynomial at x = 2: P(2) = 2^3 - 4(2^2) + 5(2) - 2. Compute each term: 2^3 = 8, 2^2 = 4, so -4(2^2) = -4*4 = -16, and 5(2) = 10. Therefore P(2) = 8 - 16 + 10 - 2 = -8 + 10 - 2 = 2 - 2 = 0. The matching option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: Evaluate P(x) = x³ - 4x² + 5x - 2 at x = 2:\nP(2) = (2)³ - 4(2)² + 5(2) - 2\n= 8 - 4(4) + 10 - 2\n= 8 - 16 + 10 - 2\n= 0\nThe answer is 0.\n\n[google/gemini-3.1-pro-preview] answered A: To evaluate the polynomial P(x) = x^3 - 4x^2 + 5x - 2 at the point x = 2, we substitute x = 2 into the expression:\n\nP(2) = (2)^3 - 4(2)^2 + 5(2) - 2\n\nFirst, calculate the powers:\n(2)^3 = 8\n(2)^2 = 4\n\nNow substitute these back into the equation:\nP(2) = 8 - 4(4) + 10 - 2\n\nPerform the multiplication:\nP(2) = 8 - 16 + 10 - 2\n\nNow, perform the addition and subtraction from left to right:\n8 - 16 = -8\n-8 ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.333,
+        "difficulty_alignment": 9.667,
+        "kazakh_language_quality": 8.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.033,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single unambiguous solution by direct substitution. The task matches level A well, though the Kazakh wording is slightly awkward because it should ask for the value of the polynomial. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-formed, and appropriately leveled for a basic recall/application task. Distractors are somewhat plausible (e.g., -2 is the constant term, 8 is 2³, 4 is a partial computation result), though a teacher could eliminate some quickly. | [google/gemini-3.1-pro-preview] The question is mathematically correct and perfectly matches the requested Level A difficulty. The Kazakh phrasing is understandable but could be slightly more natural.",
+      "improvement_suggestions": "[google/gemini-3.1-pro-preview] Instead of 'көпмүшесін ... есептеңіз', it is more natural to write 'көпмүшесінің ... мәнін табыңыз'. In the explanation, mentioning the Remainder Theorem is factually correct but slightly overcomplicates a simple evaluation task.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='0' expected='0'",
+        "raw": {
+          "ok": true,
+          "stdout": "0",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Evaluate the polynomial at x = 2: P(2) = 2^3 - 4(2^2) + 5(2) - 2. Compute each term: 2^3 = 8, 2^2 = 4, so -4(2^2) = -4*4 = -16, and 5(2) = 10. Therefore P(2) = 8 - 16 + 10 - 2 = -8 + 10 - 2 = 2 - 2 = 0. The matching option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single unambiguous solution by direct substitution. The task matches level A well, though the Kazakh wording is slightly awkward because it should ask for the value of the polynomial.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='0' expected='0'",
+            "raw": {
+              "ok": true,
+              "stdout": "0",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Evaluate P(x) = x³ - 4x² + 5x - 2 at x = 2:\nP(2) = (2)³ - 4(2)² + 5(2) - 2\n= 8 - 4(4) + 10 - 2\n= 8 - 16 + 10 - 2\n= 0\nThe answer is 0.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-formed, and appropriately leveled for a basic recall/application task. Distractors are somewhat plausible (e.g., -2 is the constant term, 8 is 2³, 4 is a partial computation result), though a teacher could eliminate some quickly.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='0' expected='0'",
+            "raw": {
+              "ok": true,
+              "stdout": "0",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To evaluate the polynomial P(x) = x^3 - 4x^2 + 5x - 2 at the point x = 2, we substitute x = 2 into the expression:\n\nP(2) = (2)^3 - 4(2)^2 + 5(2) - 2\n\nFirst, calculate the powers:\n(2)^3 = 8\n(2)^2 = 4\n\nNow substitute these back into the equation:\nP(2) = 8 - 4(4) + 10 - 2\n\nPerform the multiplication:\nP(2) = 8 - 16 + 10 - 2\n\nNow, perform the addition and subtraction from left to right:\n8 - 16 = -8\n-8 + 10 = 2\n2 - 2 = 0\n\nThus, P(2) = 0. This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and perfectly matches the requested Level A difficulty. The Kazakh phrasing is understandable but could be slightly more natural.",
+          "improvement_suggestions": "Instead of 'көпмүшесін ... есептеңіз', it is more natural to write 'көпмүшесінің ... мәнін табыңыз'. In the explanation, mentioning the Remainder Theorem is factually correct but slightly overcomplicates a simple evaluation task.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='0' expected='0'",
+            "raw": {
+              "ok": true,
+              "stdout": "0",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:29:09.677079+00:00",
+  "generation_attempts": 2
+}

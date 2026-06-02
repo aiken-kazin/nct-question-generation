@@ -1,0 +1,208 @@
+{
+  "id": "3d654606-14f3-4f3b-b9b3-4dc292a14dda",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "coordinate_3d",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Кеңістікте берілген $A(1;-2;3)$ және $B(4;2;15)$ нүктелерінің арақашықтығын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\sqrt{109}$"
+    },
+    {
+      "label": "B",
+      "text": "$11$"
+    },
+    {
+      "label": "C",
+      "text": "$13$"
+    },
+    {
+      "label": "D",
+      "text": "$\\sqrt{153}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Кеңістіктегі екі нүктенің арақашықтығы формуласы: $AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$. Берілген нүктелер үшін: $AB=\\sqrt{(4-1)^2+(2-(-2))^2+(15-3)^2}=\\sqrt{3^2+4^2+12^2}=\\sqrt{9+16+144}=\\sqrt{169}=13$. Демек, дұрыс жауап: $13$.",
+  "latex_formulas": [
+    "$AB=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$",
+    "$AB=\\sqrt{3^2+4^2+12^2}$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Use the 3D distance formula between A(x1,y1,z1) and B(x2,y2,z2): d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). For A(1,-2,3) and B(4,2,15): x-difference = 4 - 1 = 3, y-difference = 2 - (-2) = 4, z-difference = 15 - 3 = 12. Then d = sqrt(3^2 + 4^2 + 12^2) = sqrt(9 + 16 + 144) = sqrt(169) = 13. Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The distance between two points A(x1, y1, z1) and B(x2, y2, z2) in 3D space is given by:\nd = sqrt((x2-x1)² + (y2-y1)² + (z2-z1)²)\n\nGiven A(1, -2, 3) and B(4, 2, 15):\n\nΔx = 4 - 1 = 3\nΔy = 2 - (-2) = 4\nΔz = 15 - 3 = 12\n\nd = sqrt(3² + 4² + 12²)\nd = sqrt(9 + 16 + 144)\nd = sqrt(169)\nd = 13\n\nThe answer is 13.\n\n[google/gemini-3.1-pro-preview] answered C: To find the distance between two points A(x1, y1, z1) and B(x2, y2, z2) in 3D space, we use the distance formula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). Given the points A(1, -2, 3) and B(4, 2, 15), we can substitute their coordinates into the formula: d = sqrt((4 - 1)^2 + (2 - (-2))^2 + (15 - 3)^2) = sqrt(3^2 + 4^2 + 12^2) = sqrt(9 + 16 + 144) = sqrt(169) = 13. The distance is 13, whi",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.667,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item cleanly tests direct application of the 3D distance formula at level A. The only weakness is that some distractors are not clearly tied to common, identifiable errors, though they are visually similar to the correct option. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A item testing direct application of the 3D distance formula. The answer is unambiguously C=13, verified both analytically and computationally. Distractors are plausible: √109 (forgetting to square properly or arithmetic slip), 11 (possible arithmetic error), √153 (wrong computation). Kazakh phrasing is natural and standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A, testing the direct application of the 3D distance formula. The distractors are well-chosen, with at least one (sqrt(153)) directly resulting from a common sign error.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='13' expected='13'",
+      "raw": {
+        "ok": true,
+        "stdout": "13",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Use the 3D distance formula between A(x1,y1,z1) and B(x2,y2,z2): d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). For A(1,-2,3) and B(4,2,15): x-difference = 4 - 1 = 3, y-difference = 2 - (-2) = 4, z-difference = 15 - 3 = 12. Then d = sqrt(3^2 + 4^2 + 12^2) = sqrt(9 + 16 + 144) = sqrt(169) = 13. Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: The distance between two points A(x1, y1, z1) and B(x2, y2, z2) in 3D space is given by:\nd = sqrt((x2-x1)² + (y2-y1)² + (z2-z1)²)\n\nGiven A(1, -2, 3) and B(4, 2, 15):\n\nΔx = 4 - 1 = 3\nΔy = 2 - (-2) = 4\nΔz = 15 - 3 = 12\n\nd = sqrt(3² + 4² + 12²)\nd = sqrt(9 + 16 + 144)\nd = sqrt(169)\nd = 13\n\nThe answer is 13.\n\n[google/gemini-3.1-pro-preview] answered C: To find the distance between two points A(x1, y1, z1) and B(x2, y2, z2) in 3D space, we use the distance formula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). Given the points A(1, -2, 3) and B(4, 2, 15), we can substitute their coordinates into the formula: d = sqrt((4 - 1)^2 + (2 - (-2))^2 + (15 - 3)^2) = sqrt(3^2 + 4^2 + 12^2) = sqrt(9 + 16 + 144) = sqrt(169) = 13. The distance is 13, whi",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item cleanly tests direct application of the 3D distance formula at level A. The only weakness is that some distractors are not clearly tied to common, identifiable errors, though they are visually similar to the correct option. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A item testing direct application of the 3D distance formula. The answer is unambiguously C=13, verified both analytically and computationally. Distractors are plausible: √109 (forgetting to square properly or arithmetic slip), 11 (possible arithmetic error), √153 (wrong computation). Kazakh phrasing is natural and standard. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with Level A, testing the direct application of the 3D distance formula. The distractors are well-chosen, with at least one (sqrt(153)) directly resulting from a common sign error.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='13' expected='13'",
+        "raw": {
+          "ok": true,
+          "stdout": "13",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Use the 3D distance formula between A(x1,y1,z1) and B(x2,y2,z2): d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). For A(1,-2,3) and B(4,2,15): x-difference = 4 - 1 = 3, y-difference = 2 - (-2) = 4, z-difference = 15 - 3 = 12. Then d = sqrt(3^2 + 4^2 + 12^2) = sqrt(9 + 16 + 144) = sqrt(169) = 13. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item cleanly tests direct application of the 3D distance formula at level A. The only weakness is that some distractors are not clearly tied to common, identifiable errors, though they are visually similar to the correct option.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='13' expected='13'",
+            "raw": {
+              "ok": true,
+              "stdout": "13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The distance between two points A(x1, y1, z1) and B(x2, y2, z2) in 3D space is given by:\nd = sqrt((x2-x1)² + (y2-y1)² + (z2-z1)²)\n\nGiven A(1, -2, 3) and B(4, 2, 15):\n\nΔx = 4 - 1 = 3\nΔy = 2 - (-2) = 4\nΔz = 15 - 3 = 12\n\nd = sqrt(3² + 4² + 12²)\nd = sqrt(9 + 16 + 144)\nd = sqrt(169)\nd = 13\n\nThe answer is 13.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is a clean, well-formed Level A item testing direct application of the 3D distance formula. The answer is unambiguously C=13, verified both analytically and computationally. Distractors are plausible: √109 (forgetting to square properly or arithmetic slip), 11 (possible arithmetic error), √153 (wrong computation). Kazakh phrasing is natural and standard.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='13' expected='13'",
+            "raw": {
+              "ok": true,
+              "stdout": "13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the distance between two points A(x1, y1, z1) and B(x2, y2, z2) in 3D space, we use the distance formula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2). Given the points A(1, -2, 3) and B(4, 2, 15), we can substitute their coordinates into the formula: d = sqrt((4 - 1)^2 + (2 - (-2))^2 + (15 - 3)^2) = sqrt(3^2 + 4^2 + 12^2) = sqrt(9 + 16 + 144) = sqrt(169) = 13. The distance is 13, which matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with Level A, testing the direct application of the 3D distance formula. The distractors are well-chosen, with at least one (sqrt(153)) directly resulting from a common sign error.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='13' expected='13'",
+            "raw": {
+              "ok": true,
+              "stdout": "13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:27:53.826115+00:00",
+  "generation_attempts": 1
+}

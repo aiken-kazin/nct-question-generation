@@ -22,15 +22,16 @@ from pathlib import Path
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--root", default="output/kazakh_final", help="Run output directory")
-    p.add_argument("--out", default=None, help="Output JSON path (default <root>/all_kazakh_questions.json)")
+    p.add_argument("--subject", default="kazakh", help="Subject subfolder under <root> (kazakh/math)")
+    p.add_argument("--out", default=None, help="Output JSON path (default <root>/all_<subject>_questions.json)")
     return p.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     root = Path(args.root)
-    kz = root / "kazakh"
-    out_path = Path(args.out) if args.out else root / "all_kazakh_questions.json"
+    kz = root / args.subject
+    out_path = Path(args.out) if args.out else root / f"all_{args.subject}_questions.json"
 
     no_context: list[dict] = []
     with_context: list[dict] = []
@@ -75,7 +76,7 @@ def main() -> None:
     n_ctx_q = sum(len(b.get("questions", [])) for b in with_context)
     bundle = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "subject": "kazakh",
+        "subject": args.subject,
         "counts": {
             "no_context_questions": len(no_context),
             "context_blocks": len(with_context),

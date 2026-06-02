@@ -1,0 +1,208 @@
+{
+  "id": "a112e25e-ccfb-4888-a6f5-d6254dedb0a7",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "perpendicularity_3d",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Дұрыс төртбұрышты $SABCD$ пирамидасының табанының қабырғасы $6$-ға, ал биіктігі $4$-ке тең. Пирамиданың $BD$ диагоналі арқылы $SA$ бүйір қырына параллель қима жүргізілген. Осы қима ауданының квадратын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "288"
+    },
+    {
+      "label": "B",
+      "text": "612"
+    },
+    {
+      "label": "C",
+      "text": "153"
+    },
+    {
+      "label": "D",
+      "text": "396"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілгені: $SABCD$ – дұрыс төртбұрышты пирамида. Табаны $ABCD$ – квадрат, $AB = 6$.\nПирамиданың биіктігі $SO = 4$, мұндағы $O$ – табанының диагональдарының қиылысу нүктесі.\nҚима $BD$ диагоналі арқылы өтетіндіктен, ол $SAC$ жазықтығын $O$ нүктесі арқылы өтетін түзу бойымен қияды.\nҚима $SA$ қырына параллель болғандықтан, қиманың $SAC$ жазықтығымен қиылысу сызығы $SA$-ға параллель болады.\nБұл түзу $SC$ қырын $K$ нүктесінде қиып өтсін. Онда $OK \\parallel SA$.\n$\\triangle SAC$ қарастырамыз: $O$ нүктесі $AC$ қабырғасының ортасы, және $OK \\parallel SA$, демек $OK$ кесіндісі $\\triangle SAC$-ның орта сызығы болады, сондықтан $K$ – $SC$ қырының ортасы.\nСонда ізделінді қима – $BKD$ үшбұрышы.\nТабанының диагоналі $BD = \\sqrt{AB^2 + AD^2} = 6\\sqrt{2}$. Сондай-ақ $AC = 6\\sqrt{2}$, сондықтан $AO = 3\\sqrt{2}$.\n$\\triangle SAO$ тікбұрышты үшбұрышынан Пифагор теоремасы бойынша $SA$ қырын табамыз:\n$SA = \\sqrt{SO^2 + AO^2} = \\sqrt{4^2 + (3\\sqrt{2})^2} = \\sqrt{16 + 18} = \\sqrt{34}$.\n$OK$ орта сызық болғандықтан, $OK = \\frac{SA}{2} = \\frac{\\sqrt{34}}{2}$ тең.\nКвадраттың диагональдары перпендикуляр болғандықтан $BD \\perp AC$, сонымен қатар биіктік табанына перпендикуляр болғандықтан $BD \\perp SO$. Бұдан $BD$ түзуі $SAC$ жазықтығына перпендикуляр екені шығады.\n$OK$ кесіндісі $SAC$ жазықтығында жатқандықтан, үш перпендикуляр туралы теоремаға сәйкес (немесе тікелей) $BD \\perp OK$.\nЯғни, $OK$ – $BKD$ үшбұрышының $BD$ қабырғасына түсірілген биіктігі.\nҚима ауданы:\n$S = \\frac{1}{2} \\cdot BD \\cdot OK = \\frac{1}{2} \\cdot 6\\sqrt{2} \\cdot \\frac{\\sqrt{34}}{2} = \\frac{3\\sqrt{68}}{2} = \\frac{6\\sqrt{17}}{2} = 3\\sqrt{17}$.\nҚима ауданының квадраты:\n$S^2 = (3\\sqrt{17})^2 = 9 \\cdot 17 = 153$.",
+  "latex_formulas": [
+    "SA = \\sqrt{SO^2 + AO^2}",
+    "S = \\frac{1}{2} \\cdot BD \\cdot OK"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.167,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Set coordinates for the regular square pyramid. Let the square base lie in the plane z = 0 with center O at the origin: A(3, 3, 0), B(-3, 3, 0), C(-3, -3, 0), D(3, -3, 0). Since the height is 4, the apex is S(0, 0, 4). The section plane passes through diagonal BD and is parallel to lateral edge SA. A direction vector of BD is D - B = (6, -6, 0). A direction vector parallel to SA is A - S = (3, 3, \n\n[anthropic/claude-sonnet-4.6] answered C: Set up coordinates: A=(-3,-3,0), B=(3,-3,0), C=(3,3,0), D=(-3,3,0), S=(0,0,4). The cutting plane passes through BD and is parallel to SA direction vector (-3,-3,-4). Normal = BD×SA_dir = (-1,1,0)×(-3,-3,-4) = (-4,-4,6), simplified (-2,-2,3). Plane equation through B: -2x-2y+3z=0. Check B: -6+6=0 ✓, D: 6-6=0 ✓. Find intersection with edge SC: parametrize (3t,3t,4-4t), substitute: -6t-6t+12-12t=12-2\n\n[google/gemini-3.1-pro-preview] answered C: Let the base of the regular quadrangular pyramid be the square $ABCD$ with side length $a = 6$. The diagonal of the base is $BD = a\\sqrt{2} = 6\\sqrt{2}$.\nLet $O$ be the center of the square base. Since the pyramid is regular, its height $SO$ passes through $O$, and $SO = 4$.\nThe cross-section passes through the diagonal $BD$ and is parallel to the lateral edge $SA$. Since $BD$ passes through $O$, ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 9.833,
+      "figure_relevance": null
+    },
+    "overall_score": 9.167,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the section is uniquely determined; the solution can be verified cleanly by either coordinates or the midline argument. The item is solid, though it is closer to an upper-medium spatial-geometry construction than a truly hard level-C problem. | [anthropic/claude-sonnet-4.6] Well-constructed hard geometry problem requiring multi-step reasoning about cross-sections in 3D, with correct answer verified independently. Distractors are mostly plausible, with option B (612) being particularly clever as it corresponds to forgetting to square the area formula division. | [google/gemini-3.1-pro-preview] Excellent question. The distractors are perfectly designed to catch common student errors (e.g., finding the area of the diagonal section instead, forgetting the 1/2 in the area formula, or using the full diagonal instead of half for the lateral edge calculation). The difficulty is appropriate for Level C.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='153' expected='153'",
+      "raw": {
+        "ok": true,
+        "stdout": "153",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Set coordinates for the regular square pyramid. Let the square base lie in the plane z = 0 with center O at the origin: A(3, 3, 0), B(-3, 3, 0), C(-3, -3, 0), D(3, -3, 0). Since the height is 4, the apex is S(0, 0, 4). The section plane passes through diagonal BD and is parallel to lateral edge SA. A direction vector of BD is D - B = (6, -6, 0). A direction vector parallel to SA is A - S = (3, 3, \n\n[anthropic/claude-sonnet-4.6] answered C: Set up coordinates: A=(-3,-3,0), B=(3,-3,0), C=(3,3,0), D=(-3,3,0), S=(0,0,4). The cutting plane passes through BD and is parallel to SA direction vector (-3,-3,-4). Normal = BD×SA_dir = (-1,1,0)×(-3,-3,-4) = (-4,-4,6), simplified (-2,-2,3). Plane equation through B: -2x-2y+3z=0. Check B: -6+6=0 ✓, D: 6-6=0 ✓. Find intersection with edge SC: parametrize (3t,3t,4-4t), substitute: -6t-6t+12-12t=12-2\n\n[google/gemini-3.1-pro-preview] answered C: Let the base of the regular quadrangular pyramid be the square $ABCD$ with side length $a = 6$. The diagonal of the base is $BD = a\\sqrt{2} = 6\\sqrt{2}$.\nLet $O$ be the center of the square base. Since the pyramid is regular, its height $SO$ passes through $O$, and $SO = 4$.\nThe cross-section passes through the diagonal $BD$ and is parallel to the lateral edge $SA$. Since $BD$ passes through $O$, ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 9.833,
+        "figure_relevance": null
+      },
+      "overall_score": 9.167,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the section is uniquely determined; the solution can be verified cleanly by either coordinates or the midline argument. The item is solid, though it is closer to an upper-medium spatial-geometry construction than a truly hard level-C problem. | [anthropic/claude-sonnet-4.6] Well-constructed hard geometry problem requiring multi-step reasoning about cross-sections in 3D, with correct answer verified independently. Distractors are mostly plausible, with option B (612) being particularly clever as it corresponds to forgetting to square the area formula division. | [google/gemini-3.1-pro-preview] Excellent question. The distractors are perfectly designed to catch common student errors (e.g., finding the area of the diagonal section instead, forgetting the 1/2 in the area formula, or using the full diagonal instead of half for the lateral edge calculation). The difficulty is appropriate for Level C.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='153' expected='153'",
+        "raw": {
+          "ok": true,
+          "stdout": "153",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Set coordinates for the regular square pyramid. Let the square base lie in the plane z = 0 with center O at the origin: A(3, 3, 0), B(-3, 3, 0), C(-3, -3, 0), D(3, -3, 0). Since the height is 4, the apex is S(0, 0, 4). The section plane passes through diagonal BD and is parallel to lateral edge SA. A direction vector of BD is D - B = (6, -6, 0). A direction vector parallel to SA is A - S = (3, 3, -4). The normal vector of the section plane is (6, -6, 0) x (3, 3, -4) = (24, 24, 36), proportional to (2, 2, 3). Since the plane passes through B(-3, 3, 0), its equation is 2(x + 3) + 2(y - 3) + 3z = 0, hence 2x + 2y + 3z = 0. The plane contains B and D and intersects edge SC. Parametrize SC: E = S + t(C - S) = (0, 0, 4) + t(-3, -3, -4) = (-3t, -3t, 4 - 4t). Substitute into the plane equation: 2(-3t) + 2(-3t) + 3(4 - 4t) = 0, so -6t - 6t + 12 - 12t = 0, hence 12 - 24t = 0, so t = 1/2. Therefore E = (-3/2, -3/2, 2). The section is triangle BDE. Compute its area using vectors BD = (6, -6, 0) and BE = E - B = (3/2, -9/2, 2). Their cross product is BD x BE = (-12, -12, -18). Its squared length is 144 + 144 + 324 = 612. Thus the triangle area is (1/2)|BD x BE|, so the square of the area is (1/4) * 612 = 153. Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the section is uniquely determined; the solution can be verified cleanly by either coordinates or the midline argument. The item is solid, though it is closer to an upper-medium spatial-geometry construction than a truly hard level-C problem.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='153' expected='153'",
+            "raw": {
+              "ok": true,
+              "stdout": "153",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Set up coordinates: A=(-3,-3,0), B=(3,-3,0), C=(3,3,0), D=(-3,3,0), S=(0,0,4). The cutting plane passes through BD and is parallel to SA direction vector (-3,-3,-4). Normal = BD×SA_dir = (-1,1,0)×(-3,-3,-4) = (-4,-4,6), simplified (-2,-2,3). Plane equation through B: -2x-2y+3z=0. Check B: -6+6=0 ✓, D: 6-6=0 ✓. Find intersection with edge SC: parametrize (3t,3t,4-4t), substitute: -6t-6t+12-12t=12-24t=0 → t=1/2, giving E=(3/2,3/2,2). Cross-section is triangle BDE. Compute BE=(-3/2,9/2,2), BD=(-6,6,0). BE×BD=(-12,-12,18). |BE×BD|=√(144+144+324)=√612. Area=√612/2. Area²=612/4=153.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 9.5,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "Well-constructed hard geometry problem requiring multi-step reasoning about cross-sections in 3D, with correct answer verified independently. Distractors are mostly plausible, with option B (612) being particularly clever as it corresponds to forgetting to square the area formula division.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='153' expected='153'",
+            "raw": {
+              "ok": true,
+              "stdout": "153",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let the base of the regular quadrangular pyramid be the square $ABCD$ with side length $a = 6$. The diagonal of the base is $BD = a\\sqrt{2} = 6\\sqrt{2}$.\nLet $O$ be the center of the square base. Since the pyramid is regular, its height $SO$ passes through $O$, and $SO = 4$.\nThe cross-section passes through the diagonal $BD$ and is parallel to the lateral edge $SA$. Since $BD$ passes through $O$, the plane of the cross-section intersects the diagonal plane $SAC$ along a line passing through $O$ and parallel to $SA$.\nLet this line intersect the edge $SC$ at point $M$. In $\\triangle SAC$, $O$ is the midpoint of $AC$, and $OM \\parallel SA$. Therefore, $OM$ is the midline of $\\triangle SAC$, which means $M$ is the midpoint of $SC$ and $OM = \\frac{SA}{2}$.\n\nFirst, we find the length of the lateral edge $SA$. In the right-angled $\\triangle SOA$, the leg $OA$ is half of the diagonal $AC$, so $OA = \\frac{6\\sqrt{2}}{2} = 3\\sqrt{2}$.\nUsing the Pythagorean theorem:\n$SA = \\sqrt{SO^2 + OA^2} = \\sqrt{4^2 + (3\\sqrt{2})^2} = \\sqrt{16 + 18} = \\sqrt{34}$.\nThus, the length of the midline $OM$ is:\n$OM = \\frac{\\sqrt{34}}{2}$.\n\nThe cross-section is the triangle $BMD$. We need to find its area. \nSince $ABCD$ is a square, its diagonals are perpendicular, so $BD \\perp AC$. Furthermore, the height $SO$ is perpendicular to the base, so $BD \\perp SO$. Because $BD$ is perpendicular to two intersecting lines ($AC$ and $SO$) in the plane $SAC$, $BD$ is perpendicular to the entire plane $SAC$.\nSince $OM$ lies in the plane $SAC$, it follows that $BD \\perp OM$. This means $OM$ is the altitude of $\\triangle BMD$ corresponding to the base $BD$.\n\nNow, we calculate the area $S$ of the cross-section $\\triangle BMD$:\n$S = \\frac{1}{2} \\times BD \\times OM = \\frac{1}{2} \\times 6\\sqrt{2} \\times \\frac{\\sqrt{34}}{2} = \\frac{3\\sqrt{68}}{2} = \\frac{3 \\times 2\\sqrt{17}}{2} = 3\\sqrt{17}$.\n\nThe problem asks for the square of the area of this cross-section:\n$S^2 = (3\\sqrt{17})^2 = 9 \\times 17 = 153$.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent question. The distractors are perfectly designed to catch common student errors (e.g., finding the area of the diagonal section instead, forgetting the 1/2 in the area formula, or using the full diagonal instead of half for the lateral edge calculation). The difficulty is appropriate for Level C.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='153' expected='153'",
+            "raw": {
+              "ok": true,
+              "stdout": "153",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:09:49.027081+00:00",
+  "generation_attempts": 2
+}

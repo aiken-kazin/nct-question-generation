@@ -1,0 +1,209 @@
+{
+  "id": "e00b7cf4-e2ec-4de1-bac8-5831682f7ab4",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "complex_numbers",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$(1+i)^{8}$ өрнегінің мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$16$"
+    },
+    {
+      "label": "B",
+      "text": "$-16$"
+    },
+    {
+      "label": "C",
+      "text": "$16i$"
+    },
+    {
+      "label": "D",
+      "text": "$-16i$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "$(1+i)^{8}$ мәнін табу үшін алдымен $(1+i)^{2}$ есептейміз:\n\n$(1+i)^{2} = 1 + 2i + i^{2} = 1 + 2i - 1 = 2i$\n\nСодан кейін $(1+i)^{4} = \\left((1+i)^{2}\\right)^{2} = (2i)^{2} = 4i^{2} = 4 \\cdot (-1) = -4$\n\nАқырында $(1+i)^{8} = \\left((1+i)^{4}\\right)^{2} = (-4)^{2} = 16$\n\nДемек, жауабы $16$.",
+  "latex_formulas": [
+    "(1+i)^{2} = 2i",
+    "(1+i)^{4} = -4",
+    "(1+i)^{8} = 16"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Compute powers step by step: (1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i. Then (1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = -4. Then (1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16. Therefore the value is 16.\n\n[anthropic/claude-sonnet-4.6] answered A: Compute (1+i)^8 step by step.\n\nFirst, find (1+i)^2:\n(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i\n\nNext, (1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = 4(-1) = -4\n\nFinally, (1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16\n\nThe answer is 16.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the expression $(1+i)^8$, we can first calculate the square of $(1+i)$. \n\n$(1+i)^2 = 1^2 + 2(1)(i) + i^2$\nSince $i^2 = -1$, this simplifies to:\n$(1+i)^2 = 1 + 2i - 1 = 2i$\n\nNow, we can rewrite $(1+i)^8$ using the result we just found:\n$(1+i)^8 = ((1+i)^2)^4 = (2i)^4$\n\nNext, we evaluate $(2i)^4$:\n$(2i)^4 = 2^4 \\cdot i^4$\nWe know that $2^4 = 16$ and $i^4 = (i^2)^2 = (-1)^2 = 1$.",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 8.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is clear. The item is concise and well formed, though it is somewhat routine for level B and may be closer to a low-medium calculation task. | [anthropic/claude-sonnet-4.6] The question is mathematically correct with a clean 3-step derivation. All four distractors correspond to plausible errors (sign mistakes, premature stopping at i-containing results). Kazakh phrasing is natural and standard. Difficulty is slightly on the easier side of level B since the squaring-twice technique is a well-known shortcut, but it still requires 3 logical steps. | [google/gemini-3.1-pro-preview] The question is well-constructed, mathematically sound, and perfectly aligned with the requested difficulty level. The distractors are plausible and represent common student errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='16' expected='16'",
+      "raw": {
+        "ok": true,
+        "stdout": "16",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Compute powers step by step: (1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i. Then (1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = -4. Then (1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16. Therefore the value is 16.\n\n[anthropic/claude-sonnet-4.6] answered A: Compute (1+i)^8 step by step.\n\nFirst, find (1+i)^2:\n(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i\n\nNext, (1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = 4(-1) = -4\n\nFinally, (1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16\n\nThe answer is 16.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the expression $(1+i)^8$, we can first calculate the square of $(1+i)$. \n\n$(1+i)^2 = 1^2 + 2(1)(i) + i^2$\nSince $i^2 = -1$, this simplifies to:\n$(1+i)^2 = 1 + 2i - 1 = 2i$\n\nNow, we can rewrite $(1+i)^8$ using the result we just found:\n$(1+i)^8 = ((1+i)^2)^4 = (2i)^4$\n\nNext, we evaluate $(2i)^4$:\n$(2i)^4 = 2^4 \\cdot i^4$\nWe know that $2^4 = 16$ and $i^4 = (i^2)^2 = (-1)^2 = 1$.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 8.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is clear. The item is concise and well formed, though it is somewhat routine for level B and may be closer to a low-medium calculation task. | [anthropic/claude-sonnet-4.6] The question is mathematically correct with a clean 3-step derivation. All four distractors correspond to plausible errors (sign mistakes, premature stopping at i-containing results). Kazakh phrasing is natural and standard. Difficulty is slightly on the easier side of level B since the squaring-twice technique is a well-known shortcut, but it still requires 3 logical steps. | [google/gemini-3.1-pro-preview] The question is well-constructed, mathematically sound, and perfectly aligned with the requested difficulty level. The distractors are plausible and represent common student errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='16' expected='16'",
+        "raw": {
+          "ok": true,
+          "stdout": "16",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Compute powers step by step: (1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i. Then (1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = -4. Then (1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16. Therefore the value is 16.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is clear. The item is concise and well formed, though it is somewhat routine for level B and may be closer to a low-medium calculation task.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='16' expected='16'",
+            "raw": {
+              "ok": true,
+              "stdout": "16",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Compute (1+i)^8 step by step.\n\nFirst, find (1+i)^2:\n(1+i)^2 = 1 + 2i + i^2 = 1 + 2i - 1 = 2i\n\nNext, (1+i)^4 = ((1+i)^2)^2 = (2i)^2 = 4i^2 = 4(-1) = -4\n\nFinally, (1+i)^8 = ((1+i)^4)^2 = (-4)^2 = 16\n\nThe answer is 16.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct with a clean 3-step derivation. All four distractors correspond to plausible errors (sign mistakes, premature stopping at i-containing results). Kazakh phrasing is natural and standard. Difficulty is slightly on the easier side of level B since the squaring-twice technique is a well-known shortcut, but it still requires 3 logical steps.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='16' expected='16'",
+            "raw": {
+              "ok": true,
+              "stdout": "16",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the value of the expression $(1+i)^8$, we can first calculate the square of $(1+i)$. \n\n$(1+i)^2 = 1^2 + 2(1)(i) + i^2$\nSince $i^2 = -1$, this simplifies to:\n$(1+i)^2 = 1 + 2i - 1 = 2i$\n\nNow, we can rewrite $(1+i)^8$ using the result we just found:\n$(1+i)^8 = ((1+i)^2)^4 = (2i)^4$\n\nNext, we evaluate $(2i)^4$:\n$(2i)^4 = 2^4 \\cdot i^4$\nWe know that $2^4 = 16$ and $i^4 = (i^2)^2 = (-1)^2 = 1$.\n\nTherefore:\n$16 \\cdot 1 = 16$\n\nAlternatively, using polar form:\n$1+i = \\sqrt{2}(\\cos(\\frac{\\pi}{4}) + i\\sin(\\frac{\\pi}{4}))$\n$(1+i)^8 = (\\sqrt{2})^8 (\\cos(\\frac{8\\pi}{4}) + i\\sin(\\frac{8\\pi}{4})) = 16(\\cos(2\\pi) + i\\sin(2\\pi)) = 16(1 + 0) = 16$.\n\nThe correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, mathematically sound, and perfectly aligned with the requested difficulty level. The distractors are plausible and represent common student errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='16' expected='16'",
+            "raw": {
+              "ok": true,
+              "stdout": "16",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:40:51.105749+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,208 @@
+{
+  "id": "6ee99d6a-d45c-471f-bace-cc131dfaefb9",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "polynomials",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$P(x) = x^3 - 6x^2 + 11x - 6$ көпмүшесін толығымен жіктеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$(x-1)(x-2)(x-3)$"
+    },
+    {
+      "label": "B",
+      "text": "$(x+1)(x+2)(x+3)$"
+    },
+    {
+      "label": "C",
+      "text": "$(x-1)(x-2)(x+3)$"
+    },
+    {
+      "label": "D",
+      "text": "$(x-1)(x+2)(x-3)$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Рационал түбірлер теоремасы бойынша $P(x) = x^3 - 6x^2 + 11x - 6$ көпмүшесінің мүмкін бүтін түбірлері: $\\pm1, \\pm2, \\pm3, \\pm6$.\n\n**1-қадам:** $x = 1$ тексереміз:\n$P(1) = 1 - 6 + 11 - 6 = 0$ ✓\nДемек, $(x - 1)$ — бөлгіш.\n\n**2-қадам:** $P(x)$-ті $(x-1)$-ге бөлеміз (Горнер схемасы):\n$$x^3 - 6x^2 + 11x - 6 = (x-1)(x^2 - 5x + 6)$$\n\n**3-қадам:** $x^2 - 5x + 6$ квадрат үшмүшесін жіктейміз:\n$x^2 - 5x + 6 = (x-2)(x-3)$\n(себебі $2 + 3 = 5$, $2 \\cdot 3 = 6$)\n\n**Қорытынды:**\n$$P(x) = (x-1)(x-2)(x-3)$$",
+  "latex_formulas": [
+    "P(x) = x^3 - 6x^2 + 11x - 6",
+    "P(x) = (x-1)(x^2 - 5x + 6) = (x-1)(x-2)(x-3)"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.733,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: We need factor P(x) = x^3 - 6x^2 + 11x - 6 completely. Test integer roots among factors of 6: ±1, ±2, ±3, ±6. P(1) = 1 - 6 + 11 - 6 = 0, so (x - 1) is a factor. Divide x^3 - 6x^2 + 11x - 6 by (x - 1): the quotient is x^2 - 5x + 6. Now factor the quadratic: x^2 - 5x + 6 = (x - 2)(x - 3), because -2 + -3 = -5 and (-2)(-3) = 6. Therefore P(x) = (x - 1)(x - 2)(x - 3). This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to factor P(x) = x³ - 6x² + 11x - 6.\n\nStep 1: Find rational roots using the Rational Root Theorem. Possible rational roots are ±1, ±2, ±3, ±6.\n\nTest x = 1: P(1) = 1 - 6 + 11 - 6 = 0 ✓\nTest x = 2: P(2) = 8 - 24 + 22 - 6 = 0 ✓\nTest x = 3: P(3) = 27 - 54 + 33 - 6 = 0 ✓\n\nStep 2: Since x = 1, 2, 3 are all roots, the factorization is:\nP(x) = (x - 1)(x - 2)(x - 3)\n\nStep 3: Verify by expanding:\n(x\n\n[google/gemini-3.1-pro-preview] answered A: To factor the polynomial P(x) = x^3 - 6x^2 + 11x - 6, we can first look for its rational roots using the Rational Root Theorem. The possible rational roots are the divisors of the constant term -6, which are ±1, ±2, ±3, ±6.\n\nLet's test x = 1:\nP(1) = 1^3 - 6(1)^2 + 11(1) - 6 = 1 - 6 + 11 - 6 = 0.\nSince P(1) = 0, (x - 1) is a factor of the polynomial.\n\nNext, we divide P(x) by (x - 1) using polynomia",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 7.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.733,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely matches the polynomial. However, the item is too easy for level B because all distractors have the wrong constant term, so the correct option can be selected by a very superficial check without full factorization. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and clearly written in natural Kazakh. Distractors represent plausible sign-error mistakes (e.g., mixing positive and negative roots), though option B with all positive roots is somewhat obviously wrong. The difficulty is slightly below level B since the rational root theorem application to this classic polynomial (1,2,3 roots) is a well-known textbook example that many teachers will recognize immediately. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests the factoring of a cubic polynomial, the distractors represent common sign errors, and the Kazakh terminology is flawless.",
+    "improvement_suggestions": "[openai/gpt-5.5] Use distractors with the same constant term and plausible coefficient patterns, so candidates must actually multiply or factor the polynomial. Also consider a less familiar polynomial if the target difficulty is B. | [anthropic/claude-sonnet-4.6] To better align with level B difficulty, consider using a less iconic polynomial (e.g., one with a leading coefficient ≠ 1, or roots that require more systematic testing). Option B (all positive roots) could be replaced with a more tempting distractor such as (x-1)(x-2)(x-4) to require actual verification rather than pattern recognition.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='(x - 3)*(x - 2)*(x - 1)' expected='(x - 3)*(x - 2)*(x - 1)'",
+      "raw": {
+        "ok": true,
+        "stdout": "(x - 3)*(x - 2)*(x - 1)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: We need factor P(x) = x^3 - 6x^2 + 11x - 6 completely. Test integer roots among factors of 6: ±1, ±2, ±3, ±6. P(1) = 1 - 6 + 11 - 6 = 0, so (x - 1) is a factor. Divide x^3 - 6x^2 + 11x - 6 by (x - 1): the quotient is x^2 - 5x + 6. Now factor the quadratic: x^2 - 5x + 6 = (x - 2)(x - 3), because -2 + -3 = -5 and (-2)(-3) = 6. Therefore P(x) = (x - 1)(x - 2)(x - 3). This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to factor P(x) = x³ - 6x² + 11x - 6.\n\nStep 1: Find rational roots using the Rational Root Theorem. Possible rational roots are ±1, ±2, ±3, ±6.\n\nTest x = 1: P(1) = 1 - 6 + 11 - 6 = 0 ✓\nTest x = 2: P(2) = 8 - 24 + 22 - 6 = 0 ✓\nTest x = 3: P(3) = 27 - 54 + 33 - 6 = 0 ✓\n\nStep 2: Since x = 1, 2, 3 are all roots, the factorization is:\nP(x) = (x - 1)(x - 2)(x - 3)\n\nStep 3: Verify by expanding:\n(x\n\n[google/gemini-3.1-pro-preview] answered A: To factor the polynomial P(x) = x^3 - 6x^2 + 11x - 6, we can first look for its rational roots using the Rational Root Theorem. The possible rational roots are the divisors of the constant term -6, which are ±1, ±2, ±3, ±6.\n\nLet's test x = 1:\nP(1) = 1^3 - 6(1)^2 + 11(1) - 6 = 1 - 6 + 11 - 6 = 0.\nSince P(1) = 0, (x - 1) is a factor of the polynomial.\n\nNext, we divide P(x) by (x - 1) using polynomia",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.733,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely matches the polynomial. However, the item is too easy for level B because all distractors have the wrong constant term, so the correct option can be selected by a very superficial check without full factorization. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and clearly written in natural Kazakh. Distractors represent plausible sign-error mistakes (e.g., mixing positive and negative roots), though option B with all positive roots is somewhat obviously wrong. The difficulty is slightly below level B since the rational root theorem application to this classic polynomial (1,2,3 roots) is a well-known textbook example that many teachers will recognize immediately. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests the factoring of a cubic polynomial, the distractors represent common sign errors, and the Kazakh terminology is flawless.",
+      "improvement_suggestions": "[openai/gpt-5.5] Use distractors with the same constant term and plausible coefficient patterns, so candidates must actually multiply or factor the polynomial. Also consider a less familiar polynomial if the target difficulty is B. | [anthropic/claude-sonnet-4.6] To better align with level B difficulty, consider using a less iconic polynomial (e.g., one with a leading coefficient ≠ 1, or roots that require more systematic testing). Option B (all positive roots) could be replaced with a more tempting distractor such as (x-1)(x-2)(x-4) to require actual verification rather than pattern recognition.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='(x - 3)*(x - 2)*(x - 1)' expected='(x - 3)*(x - 2)*(x - 1)'",
+        "raw": {
+          "ok": true,
+          "stdout": "(x - 3)*(x - 2)*(x - 1)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need factor P(x) = x^3 - 6x^2 + 11x - 6 completely. Test integer roots among factors of 6: ±1, ±2, ±3, ±6. P(1) = 1 - 6 + 11 - 6 = 0, so (x - 1) is a factor. Divide x^3 - 6x^2 + 11x - 6 by (x - 1): the quotient is x^2 - 5x + 6. Now factor the quadratic: x^2 - 5x + 6 = (x - 2)(x - 3), because -2 + -3 = -5 and (-2)(-3) = 6. Therefore P(x) = (x - 1)(x - 2)(x - 3). This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 3.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely matches the polynomial. However, the item is too easy for level B because all distractors have the wrong constant term, so the correct option can be selected by a very superficial check without full factorization.",
+          "improvement_suggestions": "Use distractors with the same constant term and plausible coefficient patterns, so candidates must actually multiply or factor the polynomial. Also consider a less familiar polynomial if the target difficulty is B.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(x - 3)*(x - 2)*(x - 1)' expected='(x - 3)*(x - 2)*(x - 1)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(x - 3)*(x - 2)*(x - 1)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to factor P(x) = x³ - 6x² + 11x - 6.\n\nStep 1: Find rational roots using the Rational Root Theorem. Possible rational roots are ±1, ±2, ±3, ±6.\n\nTest x = 1: P(1) = 1 - 6 + 11 - 6 = 0 ✓\nTest x = 2: P(2) = 8 - 24 + 22 - 6 = 0 ✓\nTest x = 3: P(3) = 27 - 54 + 33 - 6 = 0 ✓\n\nStep 2: Since x = 1, 2, 3 are all roots, the factorization is:\nP(x) = (x - 1)(x - 2)(x - 3)\n\nStep 3: Verify by expanding:\n(x-1)(x-2) = x² - 3x + 2\n(x² - 3x + 2)(x - 3) = x³ - 3x² - 3x² + 9x + 2x - 6 = x³ - 6x² + 11x - 6 ✓\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-keyed, and clearly written in natural Kazakh. Distractors represent plausible sign-error mistakes (e.g., mixing positive and negative roots), though option B with all positive roots is somewhat obviously wrong. The difficulty is slightly below level B since the rational root theorem application to this classic polynomial (1,2,3 roots) is a well-known textbook example that many teachers will recognize immediately.",
+          "improvement_suggestions": "To better align with level B difficulty, consider using a less iconic polynomial (e.g., one with a leading coefficient ≠ 1, or roots that require more systematic testing). Option B (all positive roots) could be replaced with a more tempting distractor such as (x-1)(x-2)(x-4) to require actual verification rather than pattern recognition.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(x - 3)*(x - 2)*(x - 1)' expected='(x - 3)*(x - 2)*(x - 1)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(x - 3)*(x - 2)*(x - 1)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To factor the polynomial P(x) = x^3 - 6x^2 + 11x - 6, we can first look for its rational roots using the Rational Root Theorem. The possible rational roots are the divisors of the constant term -6, which are ±1, ±2, ±3, ±6.\n\nLet's test x = 1:\nP(1) = 1^3 - 6(1)^2 + 11(1) - 6 = 1 - 6 + 11 - 6 = 0.\nSince P(1) = 0, (x - 1) is a factor of the polynomial.\n\nNext, we divide P(x) by (x - 1) using polynomial division or synthetic division:\n(x^3 - 6x^2 + 11x - 6) / (x - 1) = x^2 - 5x + 6.\n\nNow, we factor the resulting quadratic polynomial x^2 - 5x + 6. We need two numbers that multiply to 6 and add up to -5. These numbers are -2 and -3.\nSo, x^2 - 5x + 6 = (x - 2)(x - 3).\n\nPutting it all together, the complete factorization of the polynomial is:\nP(x) = (x - 1)(x - 2)(x - 3).\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. It accurately tests the factoring of a cubic polynomial, the distractors represent common sign errors, and the Kazakh terminology is flawless.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(x - 3)*(x - 2)*(x - 1)' expected='(x - 3)*(x - 2)*(x - 1)'",
+            "raw": {
+              "ok": true,
+              "stdout": "(x - 3)*(x - 2)*(x - 1)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:41:24.621896+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,209 @@
+{
+  "id": "c2f74e75-de33-4d47-b109-f512719f2c61",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "polygons_circles",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Шеңберге сыртынан $A$ нүктесінен екі кесінді жүргізілген: секант $ABC$ ($B$ және $C$ — шеңбермен қиылысу нүктелері) және жанама $AT$ ($T$ — жанасу нүктесі). Егер $AB = 4$ және $BC = 5$ болса, онда $AT = ?$",
+  "options": [
+    {
+      "label": "A",
+      "text": "$AT = 6$"
+    },
+    {
+      "label": "B",
+      "text": "$AT = \\sqrt{20}$"
+    },
+    {
+      "label": "C",
+      "text": "$AT = \\frac{9}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$AT = \\sqrt{45}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Нүктенің дәрежесі теоремасын қолданамыз: сыртқы нүктеден жүргізілген жанаманың квадраты секанттың сыртқы бөлігі мен толық ұзындығының көбейтіндісіне тең.\n\nБерілгені: $AB = 4$ (секанттың сыртқы бөлігі), $BC = 5$ (хорданың ұзындығы), сондықтан секанттың толық ұзындығы $AC = AB + BC = 4 + 5 = 9$.\n\nНүктенің дәрежесі теоремасы бойынша:\n$$AT^2 = AB \\cdot AC$$\n$$AT^2 = 4 \\cdot 9 = 36$$\n$$AT = \\sqrt{36} = 6$$\n\nДұрыс жауап: $AT = 6$.\n\n**Қателер талдауы:**\n- $\\sqrt{20}$: $AT^2 = AB \\cdot BC = 4 \\cdot 5 = 20$ деп қателессе (толық секантты емес тек хорданы алса).\n- $\\frac{9}{2}$: $AT = \\frac{AC}{2} = \\frac{9}{2}$ деп қателессе (секанттың жартысын алса).\n- $\\sqrt{45}$: $AT^2 = BC \\cdot AC = 5 \\cdot 9 = 45$ деп қателессе (сыртқы бөлік орнына хорданы алса).",
+  "latex_formulas": [
+    "AT^2 = AB \\cdot AC",
+    "AT^2 = 4 \\cdot 9 = 36",
+    "AT = 6"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 7.6,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: From external point A, a secant intersects the circle at B and C, with B the nearer intersection and C the farther intersection. Therefore the whole secant length is AC = AB + BC = 4 + 5 = 9. By the tangent-secant theorem (power of a point), AT^2 = AB · AC. Substituting the values: AT^2 = 4 · 9 = 36. Since AT is a length, AT = sqrt(36) = 6. Thus the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: Using the Power of a Point theorem: when a secant and tangent are drawn from an external point A, the relationship is AT² = AB · AC.\n\nGiven: AB = 4, BC = 5, so AC = AB + BC = 4 + 5 = 9.\n\nTherefore: AT² = AB · AC = 4 · 9 = 36\n\nAT = √36 = 6\n\n[google/gemini-3.1-pro-preview] answered A: According to the Tangent-Secant Theorem (also known as the power of a point theorem), if a tangent segment and a secant segment are drawn to a circle from an exterior point, then the square of the length of the tangent segment is equal to the product of the lengths of the external secant segment and the entire secant segment. \n\nIn this problem, the exterior point is A, the tangent segment is AT, t",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.667,
+      "difficulty_alignment": 2.333,
+      "kazakh_language_quality": 6.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 7.6,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the distractors are well tied to common tangent-secant theorem errors. However, the item is a direct one-theorem substitution problem and is far below the requested hard C level. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-constructed with excellent distractor design — each wrong answer corresponds to a specific identifiable error. However, the difficulty level is more B (routine application of a standard theorem) than C (multi-step non-routine reasoning or synthesis), as any teacher who knows the Power of a Point theorem can solve it in one step. | [google/gemini-3.1-pro-preview] The mathematical content is perfectly correct and distractors are well-chosen. However, the question fails to meet the requested 'Hard' (C) difficulty level and contains a major terminology error in Kazakh.",
+    "improvement_suggestions": "[openai/gpt-5.5] Raise the difficulty by requiring construction of an auxiliary relation, unknown segment optimization, comparison of multiple secants/tangents, or a proof/general-case argument rather than direct substitution into the tangent-secant theorem. Also consider replacing the awkward phrase \"Шеңберге сыртынан A нүктесінен\" with \"Шеңберден тыс жатқан A нүктесінен\" and using the standard term \"қиюшы\" for secant if aligned with the target curriculum. | [anthropic/claude-sonnet-4.6] To reach level C difficulty, consider adding complexity: e.g., require finding the radius given additional constraints, combine with inscribed angle theorem, or ask for the length of a chord given two secants with algebraic unknowns. The current problem is a direct single-formula application. | [google/gemini-3.1-pro-preview] 1. Replace the term 'секант' with the correct Kazakh geometric term 'қиюшы'. 2. Improve the phrasing to 'Шеңберден тыс жатқан A нүктесінен...' instead of 'Шеңберге сыртынан A нүктесінен'. 3. The question is a direct, one-step application of a basic theorem (Level A). To reach Level C, the problem must require multi-step reasoning, synthesis with other topics (like trigonometry or coordinate geometry), or a more abstract setup.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='6' expected='6'",
+      "raw": {
+        "ok": true,
+        "stdout": "6",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: From external point A, a secant intersects the circle at B and C, with B the nearer intersection and C the farther intersection. Therefore the whole secant length is AC = AB + BC = 4 + 5 = 9. By the tangent-secant theorem (power of a point), AT^2 = AB · AC. Substituting the values: AT^2 = 4 · 9 = 36. Since AT is a length, AT = sqrt(36) = 6. Thus the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: Using the Power of a Point theorem: when a secant and tangent are drawn from an external point A, the relationship is AT² = AB · AC.\n\nGiven: AB = 4, BC = 5, so AC = AB + BC = 4 + 5 = 9.\n\nTherefore: AT² = AB · AC = 4 · 9 = 36\n\nAT = √36 = 6\n\n[google/gemini-3.1-pro-preview] answered A: According to the Tangent-Secant Theorem (also known as the power of a point theorem), if a tangent segment and a secant segment are drawn to a circle from an exterior point, then the square of the length of the tangent segment is equal to the product of the lengths of the external secant segment and the entire secant segment. \n\nIn this problem, the exterior point is A, the tangent segment is AT, t",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.667,
+        "difficulty_alignment": 2.333,
+        "kazakh_language_quality": 6.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.6,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the distractors are well tied to common tangent-secant theorem errors. However, the item is a direct one-theorem substitution problem and is far below the requested hard C level. | [anthropic/claude-sonnet-4.6] The question is mathematically correct and well-constructed with excellent distractor design — each wrong answer corresponds to a specific identifiable error. However, the difficulty level is more B (routine application of a standard theorem) than C (multi-step non-routine reasoning or synthesis), as any teacher who knows the Power of a Point theorem can solve it in one step. | [google/gemini-3.1-pro-preview] The mathematical content is perfectly correct and distractors are well-chosen. However, the question fails to meet the requested 'Hard' (C) difficulty level and contains a major terminology error in Kazakh.",
+      "improvement_suggestions": "[openai/gpt-5.5] Raise the difficulty by requiring construction of an auxiliary relation, unknown segment optimization, comparison of multiple secants/tangents, or a proof/general-case argument rather than direct substitution into the tangent-secant theorem. Also consider replacing the awkward phrase \"Шеңберге сыртынан A нүктесінен\" with \"Шеңберден тыс жатқан A нүктесінен\" and using the standard term \"қиюшы\" for secant if aligned with the target curriculum. | [anthropic/claude-sonnet-4.6] To reach level C difficulty, consider adding complexity: e.g., require finding the radius given additional constraints, combine with inscribed angle theorem, or ask for the length of a chord given two secants with algebraic unknowns. The current problem is a direct single-formula application. | [google/gemini-3.1-pro-preview] 1. Replace the term 'секант' with the correct Kazakh geometric term 'қиюшы'. 2. Improve the phrasing to 'Шеңберден тыс жатқан A нүктесінен...' instead of 'Шеңберге сыртынан A нүктесінен'. 3. The question is a direct, one-step application of a basic theorem (Level A). To reach Level C, the problem must require multi-step reasoning, synthesis with other topics (like trigonometry or coordinate geometry), or a more abstract setup.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='6' expected='6'",
+        "raw": {
+          "ok": true,
+          "stdout": "6",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From external point A, a secant intersects the circle at B and C, with B the nearer intersection and C the farther intersection. Therefore the whole secant length is AC = AB + BC = 4 + 5 = 9. By the tangent-secant theorem (power of a point), AT^2 = AB · AC. Substituting the values: AT^2 = 4 · 9 = 36. Since AT is a length, AT = sqrt(36) = 6. Thus the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 7.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the distractors are well tied to common tangent-secant theorem errors. However, the item is a direct one-theorem substitution problem and is far below the requested hard C level.",
+          "improvement_suggestions": "Raise the difficulty by requiring construction of an auxiliary relation, unknown segment optimization, comparison of multiple secants/tangents, or a proof/general-case argument rather than direct substitution into the tangent-secant theorem. Also consider replacing the awkward phrase \"Шеңберге сыртынан A нүктесінен\" with \"Шеңберден тыс жатқан A нүктесінен\" and using the standard term \"қиюшы\" for secant if aligned with the target curriculum.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Using the Power of a Point theorem: when a secant and tangent are drawn from an external point A, the relationship is AT² = AB · AC.\n\nGiven: AB = 4, BC = 5, so AC = AB + BC = 4 + 5 = 9.\n\nTherefore: AT² = AB · AC = 4 · 9 = 36\n\nAT = √36 = 6",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.1,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct and well-constructed with excellent distractor design — each wrong answer corresponds to a specific identifiable error. However, the difficulty level is more B (routine application of a standard theorem) than C (multi-step non-routine reasoning or synthesis), as any teacher who knows the Power of a Point theorem can solve it in one step.",
+          "improvement_suggestions": "To reach level C difficulty, consider adding complexity: e.g., require finding the radius given additional constraints, combine with inscribed angle theorem, or ask for the length of a chord given two secants with algebraic unknowns. The current problem is a direct single-formula application.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "According to the Tangent-Secant Theorem (also known as the power of a point theorem), if a tangent segment and a secant segment are drawn to a circle from an exterior point, then the square of the length of the tangent segment is equal to the product of the lengths of the external secant segment and the entire secant segment. \n\nIn this problem, the exterior point is A, the tangent segment is AT, the external secant segment is AB, and the entire secant segment is AC. \n\nThe formula is: AT^2 = AB * AC.\n\nWe are given:\nAB = 4\nBC = 5\n\nThe entire secant segment AC is the sum of the external segment AB and the internal segment BC:\nAC = AB + BC = 4 + 5 = 9.\n\nNow, substitute the values into the theorem's formula:\nAT^2 = 4 * 9\nAT^2 = 36\n\nTaking the square root of both sides gives:\nAT = 6.\n\nComparing this result to the given options, Option A matches perfectly.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 0.0,
+            "kazakh_language_quality": 4.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.8,
+          "pass_fail": true,
+          "comments": "The mathematical content is perfectly correct and distractors are well-chosen. However, the question fails to meet the requested 'Hard' (C) difficulty level and contains a major terminology error in Kazakh.",
+          "improvement_suggestions": "1. Replace the term 'секант' with the correct Kazakh geometric term 'қиюшы'. 2. Improve the phrasing to 'Шеңберден тыс жатқан A нүктесінен...' instead of 'Шеңберге сыртынан A нүктесінен'. 3. The question is a direct, one-step application of a basic theorem (Level A). To reach Level C, the problem must require multi-step reasoning, synthesis with other topics (like trigonometry or coordinate geometry), or a more abstract setup.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='6' expected='6'",
+            "raw": {
+              "ok": true,
+              "stdout": "6",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:39:26.976605+00:00",
+  "generation_attempts": 1
+}

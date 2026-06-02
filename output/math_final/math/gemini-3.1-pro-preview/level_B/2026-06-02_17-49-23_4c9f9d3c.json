@@ -1,0 +1,209 @@
+{
+  "id": "4c9f9d3c-ac45-4856-8da6-d34563f6f7e2",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "trigonometry",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$\\sin 2x = \\sqrt{3} \\cos x$ теңдеуінің $[0; \\pi]$ кесіндісіндегі түбірлерін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{\\pi}{3};\\ \\frac{2\\pi}{3}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\frac{\\pi}{3};\\ \\frac{\\pi}{2};\\ \\frac{2\\pi}{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{\\pi}{3};\\ \\frac{\\pi}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$0;\\ \\frac{\\pi}{6};\\ \\pi$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "1) Теңдеуді түрлендіреміз:\n$\\sin 2x = \\sqrt{3} \\cos x$\n$2 \\sin x \\cos x - \\sqrt{3} \\cos x = 0$\n\n2) Ортақ көбейткішті жақша сыртына шығарамыз:\n$\\cos x (2 \\sin x - \\sqrt{3}) = 0$\n\n3) Әрбір көбейткішті нөлге теңестіреміз:\nа) $\\cos x = 0 \\implies x = \\frac{\\pi}{2} + \\pi k, k \\in \\mathbb{Z}$.\n$[0; \\pi]$ кесіндісіне тиісті түбірі: $k = 0$ болғанда, $x = \\frac{\\pi}{2}$.\n\nб) $2 \\sin x - \\sqrt{3} = 0 \\implies \\sin x = \\frac{\\sqrt{3}}{2} \\implies x = (-1)^n \\frac{\\pi}{3} + \\pi n, n \\in \\mathbb{Z}$.\n$[0; \\pi]$ кесіндісіне тиісті түбірлері:\n$n = 0$ болғанда, $x = \\frac{\\pi}{3}$;\n$n = 1$ болғанда, $x = -\\frac{\\pi}{3} + \\pi = \\frac{2\\pi}{3}$.\n\n4) Барлық табылған түбірлер: $\\frac{\\pi}{3};\\ \\frac{\\pi}{2};\\ \\frac{2\\pi}{3}$.",
+  "latex_formulas": [
+    "\\sin 2\\alpha = 2 \\sin \\alpha \\cos \\alpha",
+    "\\cos x = 0 \\implies x = \\frac{\\pi}{2} + \\pi k",
+    "\\sin x = a \\implies x = (-1)^n \\arcsin a + \\pi n"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Use the identity sin(2x) = 2 sin x cos x. Then the equation becomes 2 sin x cos x = sqrt(3) cos x. Move all terms to one side: 2 sin x cos x - sqrt(3) cos x = 0. Factor cos x: cos x(2 sin x - sqrt(3)) = 0. Therefore either cos x = 0 or 2 sin x - sqrt(3) = 0. On [0, pi], cos x = 0 gives x = pi/2. Also, 2 sin x = sqrt(3) gives sin x = sqrt(3)/2, so on [0, pi] the solutions are x = pi/3 and x = 2pi/3\n\n[anthropic/claude-sonnet-4.6] answered B: We need to solve sin 2x = √3 cos x on [0, π].\n\nStep 1: Use the identity sin 2x = 2 sin x cos x.\nSo: 2 sin x cos x = √3 cos x\n\nStep 2: Rearrange:\n2 sin x cos x - √3 cos x = 0\ncos x (2 sin x - √3) = 0\n\nStep 3: Solve each factor:\nCase 1: cos x = 0\nOn [0, π]: x = π/2\n\nCase 2: 2 sin x - √3 = 0 → sin x = √3/2\nOn [0, π]: x = π/3 or x = 2π/3\n\nStep 4: All solutions in [0, π]: x = π/3, π/2, 2π/3\n\nVerificati\n\n[google/gemini-3.1-pro-preview] answered B: Step 1: Use the double angle identity for sine, which is sin(2x) = 2 sin(x) cos(x).\nStep 2: Substitute this into the given equation: 2 sin(x) cos(x) = \\sqrt{3} cos(x).\nStep 3: Move all terms to one side to factor: 2 sin(x) cos(x) - \\sqrt{3} cos(x) = 0.\nStep 4: Factor out cos(x): cos(x) * (2 sin(x) - \\sqrt{3}) = 0.\nStep 5: Set each factor to zero to find the possible values for x.\nCase 1: cos(x) = ",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the equation has exactly the listed three roots on [0, pi]. The item is clear and concise; distractors mostly reflect plausible omissions or common solving errors, though one option is somewhat less natural. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed, and well-structured. All three solutions are verified. Distractors correspond to identifiable errors: A omits π/2 (forgetting cos x = 0 case), C omits 2π/3 (forgetting the second quadrant solution), and D reflects a completely wrong approach. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. Distractors represent common student mistakes.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='pi/3;pi/2;2*pi/3' expected='pi/3;pi/2;2*pi/3'",
+      "raw": {
+        "ok": true,
+        "stdout": "pi/3;pi/2;2*pi/3",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Use the identity sin(2x) = 2 sin x cos x. Then the equation becomes 2 sin x cos x = sqrt(3) cos x. Move all terms to one side: 2 sin x cos x - sqrt(3) cos x = 0. Factor cos x: cos x(2 sin x - sqrt(3)) = 0. Therefore either cos x = 0 or 2 sin x - sqrt(3) = 0. On [0, pi], cos x = 0 gives x = pi/2. Also, 2 sin x = sqrt(3) gives sin x = sqrt(3)/2, so on [0, pi] the solutions are x = pi/3 and x = 2pi/3\n\n[anthropic/claude-sonnet-4.6] answered B: We need to solve sin 2x = √3 cos x on [0, π].\n\nStep 1: Use the identity sin 2x = 2 sin x cos x.\nSo: 2 sin x cos x = √3 cos x\n\nStep 2: Rearrange:\n2 sin x cos x - √3 cos x = 0\ncos x (2 sin x - √3) = 0\n\nStep 3: Solve each factor:\nCase 1: cos x = 0\nOn [0, π]: x = π/2\n\nCase 2: 2 sin x - √3 = 0 → sin x = √3/2\nOn [0, π]: x = π/3 or x = 2π/3\n\nStep 4: All solutions in [0, π]: x = π/3, π/2, 2π/3\n\nVerificati\n\n[google/gemini-3.1-pro-preview] answered B: Step 1: Use the double angle identity for sine, which is sin(2x) = 2 sin(x) cos(x).\nStep 2: Substitute this into the given equation: 2 sin(x) cos(x) = \\sqrt{3} cos(x).\nStep 3: Move all terms to one side to factor: 2 sin(x) cos(x) - \\sqrt{3} cos(x) = 0.\nStep 4: Factor out cos(x): cos(x) * (2 sin(x) - \\sqrt{3}) = 0.\nStep 5: Set each factor to zero to find the possible values for x.\nCase 1: cos(x) = ",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the equation has exactly the listed three roots on [0, pi]. The item is clear and concise; distractors mostly reflect plausible omissions or common solving errors, though one option is somewhat less natural. | [anthropic/claude-sonnet-4.6] The question is mathematically sound, correctly keyed, and well-structured. All three solutions are verified. Distractors correspond to identifiable errors: A omits π/2 (forgetting cos x = 0 case), C omits 2π/3 (forgetting the second quadrant solution), and D reflects a completely wrong approach. Kazakh terminology is standard and natural. | [google/gemini-3.1-pro-preview] The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. Distractors represent common student mistakes.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='pi/3;pi/2;2*pi/3' expected='pi/3;pi/2;2*pi/3'",
+        "raw": {
+          "ok": true,
+          "stdout": "pi/3;pi/2;2*pi/3",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Use the identity sin(2x) = 2 sin x cos x. Then the equation becomes 2 sin x cos x = sqrt(3) cos x. Move all terms to one side: 2 sin x cos x - sqrt(3) cos x = 0. Factor cos x: cos x(2 sin x - sqrt(3)) = 0. Therefore either cos x = 0 or 2 sin x - sqrt(3) = 0. On [0, pi], cos x = 0 gives x = pi/2. Also, 2 sin x = sqrt(3) gives sin x = sqrt(3)/2, so on [0, pi] the solutions are x = pi/3 and x = 2pi/3. Thus the roots are pi/3, pi/2, 2pi/3.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the equation has exactly the listed three roots on [0, pi]. The item is clear and concise; distractors mostly reflect plausible omissions or common solving errors, though one option is somewhat less natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='pi/3;pi/2;2*pi/3' expected='pi/3;pi/2;2*pi/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "pi/3;pi/2;2*pi/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to solve sin 2x = √3 cos x on [0, π].\n\nStep 1: Use the identity sin 2x = 2 sin x cos x.\nSo: 2 sin x cos x = √3 cos x\n\nStep 2: Rearrange:\n2 sin x cos x - √3 cos x = 0\ncos x (2 sin x - √3) = 0\n\nStep 3: Solve each factor:\nCase 1: cos x = 0\nOn [0, π]: x = π/2\n\nCase 2: 2 sin x - √3 = 0 → sin x = √3/2\nOn [0, π]: x = π/3 or x = 2π/3\n\nStep 4: All solutions in [0, π]: x = π/3, π/2, 2π/3\n\nVerification:\n- x = π/3: sin(2π/3) = √3/2, √3 cos(π/3) = √3·(1/2) = √3/2 ✓\n- x = π/2: sin(π) = 0, √3 cos(π/2) = 0 ✓\n- x = 2π/3: sin(4π/3) = -√3/2, √3 cos(2π/3) = √3·(-1/2) = -√3/2 ✓\n\nAll three values are valid. The answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound, correctly keyed, and well-structured. All three solutions are verified. Distractors correspond to identifiable errors: A omits π/2 (forgetting cos x = 0 case), C omits 2π/3 (forgetting the second quadrant solution), and D reflects a completely wrong approach. Kazakh terminology is standard and natural.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='pi/3;pi/2;2*pi/3' expected='pi/3;pi/2;2*pi/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "pi/3;pi/2;2*pi/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Use the double angle identity for sine, which is sin(2x) = 2 sin(x) cos(x).\nStep 2: Substitute this into the given equation: 2 sin(x) cos(x) = \\sqrt{3} cos(x).\nStep 3: Move all terms to one side to factor: 2 sin(x) cos(x) - \\sqrt{3} cos(x) = 0.\nStep 4: Factor out cos(x): cos(x) * (2 sin(x) - \\sqrt{3}) = 0.\nStep 5: Set each factor to zero to find the possible values for x.\nCase 1: cos(x) = 0. In the given interval [0, \\pi], the only solution is x = \\pi/2.\nCase 2: 2 sin(x) - \\sqrt{3} = 0, which simplifies to sin(x) = \\sqrt{3}/2. In the interval [0, \\pi], the solutions are x = \\pi/3 and x = \\pi - \\pi/3 = 2\\pi/3.\nStep 6: Combine all the solutions found in the interval [0, \\pi]. The roots are \\pi/3, \\pi/2, and 2\\pi/3.\nStep 7: Compare the result with the given options. Option B matches our solutions exactly.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, factually correct, and perfectly aligned with the requested difficulty level. Distractors represent common student mistakes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='pi/3;pi/2;2*pi/3' expected='pi/3;pi/2;2*pi/3'",
+            "raw": {
+              "ok": true,
+              "stdout": "pi/3;pi/2;2*pi/3",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:49:23.902335+00:00",
+  "generation_attempts": 1
+}

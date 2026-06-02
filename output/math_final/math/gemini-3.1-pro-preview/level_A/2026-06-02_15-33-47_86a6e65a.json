@@ -1,0 +1,207 @@
+{
+  "id": "86a6e65a-4b43-400e-a848-06e47a628ebf",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "sequences",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Арифметикалық прогрессияның бірінші мүшесі $a_1 = 3$, ал айырымы $d = 4$ тең. Осы прогрессияның жетінші мүшесін ($a_7$) табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "24"
+    },
+    {
+      "label": "B",
+      "text": "27"
+    },
+    {
+      "label": "C",
+      "text": "28"
+    },
+    {
+      "label": "D",
+      "text": "31"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Арифметикалық прогрессияның $n$-ші мүшесін табу формуласы: $a_n = a_1 + (n - 1)d$.\nБерілген мәндерді формулаға қоямыз:\n$a_7 = 3 + (7 - 1) \\cdot 4 = 3 + 6 \\cdot 4 = 3 + 24 = 27$.",
+  "latex_formulas": [
+    "a_n = a_1 + (n - 1)d"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: For an arithmetic progression, the nth term is given by a_n = a_1 + (n - 1)d. Here a_1 = 3, d = 4, and n = 7. Substitute: a_7 = 3 + (7 - 1) * 4 = 3 + 6 * 4 = 3 + 24 = 27. Therefore, the seventh term is 27.\n\n[anthropic/claude-sonnet-4.6] answered B: For an arithmetic progression, the nth term is given by: a_n = a_1 + (n-1)·d\n\nGiven: a_1 = 3, d = 4, find a_7\n\na_7 = 3 + (7-1)·4\na_7 = 3 + 6·4\na_7 = 3 + 24\na_7 = 27\n\nThe answer is 27.\n\n[google/gemini-3.1-pro-preview] answered B: The problem asks for the 7th term of an arithmetic progression. The formula for the n-th term of an arithmetic progression is a_n = a_1 + (n - 1)d. We are given the first term a_1 = 3 and the common difference d = 4. We need to find a_7. Substituting the given values into the formula: a_7 = 3 + (7 - 1) * 4 = 3 + 6 * 4 = 3 + 24 = 27. This matches option B.",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct, single-answer, and well aligned with basic recall/application of the arithmetic progression formula. The distractors are plausible common errors, though the Kazakh phrasing has a minor grammatical awkwardness in 'айырымы d = 4 тең'. | [anthropic/claude-sonnet-4.6] A well-constructed Level A item with correct answer, natural Kazakh terminology, valid LaTeX, and all distractors traceable to specific student errors (forgetting a_1, using n instead of n-1, etc.). | [google/gemini-3.1-pro-preview] The question is a perfect example of a Level A item for arithmetic progressions. Distractors are well-designed and based on common errors.",
+    "improvement_suggestions": "[google/gemini-3.1-pro-preview] Consider changing 'd = 4 тең' to 'd = 4-ке тең' for better grammatical flow, though the current phrasing is widely understood.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='27' expected='27'",
+      "raw": {
+        "ok": true,
+        "stdout": "27",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: For an arithmetic progression, the nth term is given by a_n = a_1 + (n - 1)d. Here a_1 = 3, d = 4, and n = 7. Substitute: a_7 = 3 + (7 - 1) * 4 = 3 + 6 * 4 = 3 + 24 = 27. Therefore, the seventh term is 27.\n\n[anthropic/claude-sonnet-4.6] answered B: For an arithmetic progression, the nth term is given by: a_n = a_1 + (n-1)·d\n\nGiven: a_1 = 3, d = 4, find a_7\n\na_7 = 3 + (7-1)·4\na_7 = 3 + 6·4\na_7 = 3 + 24\na_7 = 27\n\nThe answer is 27.\n\n[google/gemini-3.1-pro-preview] answered B: The problem asks for the 7th term of an arithmetic progression. The formula for the n-th term of an arithmetic progression is a_n = a_1 + (n - 1)d. We are given the first term a_1 = 3 and the common difference d = 4. We need to find a_7. Substituting the given values into the formula: a_7 = 3 + (7 - 1) * 4 = 3 + 6 * 4 = 3 + 24 = 27. This matches option B.",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct, single-answer, and well aligned with basic recall/application of the arithmetic progression formula. The distractors are plausible common errors, though the Kazakh phrasing has a minor grammatical awkwardness in 'айырымы d = 4 тең'. | [anthropic/claude-sonnet-4.6] A well-constructed Level A item with correct answer, natural Kazakh terminology, valid LaTeX, and all distractors traceable to specific student errors (forgetting a_1, using n instead of n-1, etc.). | [google/gemini-3.1-pro-preview] The question is a perfect example of a Level A item for arithmetic progressions. Distractors are well-designed and based on common errors.",
+      "improvement_suggestions": "[google/gemini-3.1-pro-preview] Consider changing 'd = 4 тең' to 'd = 4-ке тең' for better grammatical flow, though the current phrasing is widely understood.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='27' expected='27'",
+        "raw": {
+          "ok": true,
+          "stdout": "27",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For an arithmetic progression, the nth term is given by a_n = a_1 + (n - 1)d. Here a_1 = 3, d = 4, and n = 7. Substitute: a_7 = 3 + (7 - 1) * 4 = 3 + 6 * 4 = 3 + 24 = 27. Therefore, the seventh term is 27.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct, single-answer, and well aligned with basic recall/application of the arithmetic progression formula. The distractors are plausible common errors, though the Kazakh phrasing has a minor grammatical awkwardness in 'айырымы d = 4 тең'.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='27' expected='27'",
+            "raw": {
+              "ok": true,
+              "stdout": "27",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For an arithmetic progression, the nth term is given by: a_n = a_1 + (n-1)·d\n\nGiven: a_1 = 3, d = 4, find a_7\n\na_7 = 3 + (7-1)·4\na_7 = 3 + 6·4\na_7 = 3 + 24\na_7 = 27\n\nThe answer is 27.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "A well-constructed Level A item with correct answer, natural Kazakh terminology, valid LaTeX, and all distractors traceable to specific student errors (forgetting a_1, using n instead of n-1, etc.).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='27' expected='27'",
+            "raw": {
+              "ok": true,
+              "stdout": "27",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The problem asks for the 7th term of an arithmetic progression. The formula for the n-th term of an arithmetic progression is a_n = a_1 + (n - 1)d. We are given the first term a_1 = 3 and the common difference d = 4. We need to find a_7. Substituting the given values into the formula: a_7 = 3 + (7 - 1) * 4 = 3 + 6 * 4 = 3 + 24 = 27. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is a perfect example of a Level A item for arithmetic progressions. Distractors are well-designed and based on common errors.",
+          "improvement_suggestions": "Consider changing 'd = 4 тең' to 'd = 4-ке тең' for better grammatical flow, though the current phrasing is widely understood.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='27' expected='27'",
+            "raw": {
+              "ok": true,
+              "stdout": "27",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:33:47.456341+00:00",
+  "generation_attempts": 1
+}

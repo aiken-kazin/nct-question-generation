@@ -1,0 +1,208 @@
+{
+  "id": "7f4f84e9-b213-4292-b41b-4faf9fe3ec40",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "integrals",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$\\int_{0}^{1} x \\cdot e^{x^2} \\, dx$ интегралын есептеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{e-1}{2}$"
+    },
+    {
+      "label": "B",
+      "text": "$e - 1$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{e+1}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$2(e-1)$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Берілген интегралды есептеу үшін айнымалыны алмастыру әдісін қолданамыз.\n\n**1-қадам:** $t = x^2$ деп алайық. Онда $dt = 2x \\, dx$, яғни $x \\, dx = \\frac{dt}{2}$.\n\n**2-қадам:** Интегралдың шектерін өзгертеміз:\n- $x = 0$ болғанда $t = 0^2 = 0$\n- $x = 1$ болғанда $t = 1^2 = 1$\n\n**3-қадам:** Интегралды алмастырамыз:\n$$\\int_{0}^{1} x \\cdot e^{x^2} \\, dx = \\int_{0}^{1} e^{t} \\cdot \\frac{dt}{2} = \\frac{1}{2} \\int_{0}^{1} e^{t} \\, dt$$\n\n**4-қадам:** Интегралды есептейміз:\n$$\\frac{1}{2} \\int_{0}^{1} e^{t} \\, dt = \\frac{1}{2} \\left[ e^{t} \\right]_{0}^{1} = \\frac{1}{2} \\left( e^{1} - e^{0} \\right) = \\frac{1}{2}(e - 1) = \\frac{e-1}{2}$$\n\nДемек, жауабы $\\dfrac{e-1}{2}$.",
+  "latex_formulas": [
+    "\\int_{0}^{1} x \\cdot e^{x^2} \\, dx = \\frac{1}{2}\\int_{0}^{1} e^{t} \\, dt",
+    "\\frac{1}{2}\\left[e^t\\right]_0^1 = \\frac{e-1}{2}"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Compute the definite integral I = ∫_0^1 x e^{x^2} dx. Use substitution u = x^2, so du = 2x dx, hence x dx = du/2. When x = 0, u = 0^2 = 0. When x = 1, u = 1^2 = 1. Therefore I = (1/2)∫_0^1 e^u du = (1/2)[e^u]_0^1 = (1/2)(e^1 - e^0) = (1/2)(e - 1) = (e - 1)/2. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to compute the integral ∫₀¹ x·e^(x²) dx.\n\nUse substitution: let u = x², then du = 2x dx, so x dx = du/2.\n\nWhen x = 0: u = 0\nWhen x = 1: u = 1\n\nThe integral becomes:\n∫₀¹ e^u · (du/2) = (1/2) · [e^u]₀¹ = (1/2)(e¹ - e⁰) = (1/2)(e - 1) = (e-1)/2\n\nThis matches option A.\n\n[google/gemini-3.1-pro-preview] answered A: To evaluate the definite integral \\(\\int_{0}^{1} x \\cdot e^{x^2} \\, dx\\), we can use integration by substitution.\n\nLet \\(u = x^2\\).\nThen the differential is \\(du = 2x \\, dx\\), which implies \\(x \\, dx = \\frac{1}{2} du\\).\n\nNext, we change the limits of integration to match the new variable \\(u\\):\n- When \\(x = 0\\), \\(u = 0^2 = 0\\).\n- When \\(x = 1\\), \\(u = 1^2 = 1\\).\n\nNow, substitute these into the in",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 7.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous. However, the item is quite routine for level B and feels closer to an easier substitution-integral question. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and appropriately targets level B via a substitution technique requiring 3-4 clear steps. Distractors are mostly plausible: B (e-1) results from forgetting the 1/2 factor, D (2(e-1)) from inverting the factor, and C ((e+1)/2) is less naturally reachable but still plausible. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors represent common mistakes (forgetting the 1/2 factor, sign errors, multiplying instead of dividing), and the difficulty perfectly aligns with Level B.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Consider replacing distractor C with a more naturally reachable error, such as (e+1)/2 being replaced by e/2 (forgetting the -1 term) or another common substitution mistake, to improve distractor quality.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='-1/2 + E/2' expected='-1/2 + E/2'",
+      "raw": {
+        "ok": true,
+        "stdout": "-1/2 + E/2",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Compute the definite integral I = ∫_0^1 x e^{x^2} dx. Use substitution u = x^2, so du = 2x dx, hence x dx = du/2. When x = 0, u = 0^2 = 0. When x = 1, u = 1^2 = 1. Therefore I = (1/2)∫_0^1 e^u du = (1/2)[e^u]_0^1 = (1/2)(e^1 - e^0) = (1/2)(e - 1) = (e - 1)/2. This matches option A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to compute the integral ∫₀¹ x·e^(x²) dx.\n\nUse substitution: let u = x², then du = 2x dx, so x dx = du/2.\n\nWhen x = 0: u = 0\nWhen x = 1: u = 1\n\nThe integral becomes:\n∫₀¹ e^u · (du/2) = (1/2) · [e^u]₀¹ = (1/2)(e¹ - e⁰) = (1/2)(e - 1) = (e-1)/2\n\nThis matches option A.\n\n[google/gemini-3.1-pro-preview] answered A: To evaluate the definite integral \\(\\int_{0}^{1} x \\cdot e^{x^2} \\, dx\\), we can use integration by substitution.\n\nLet \\(u = x^2\\).\nThen the differential is \\(du = 2x \\, dx\\), which implies \\(x \\, dx = \\frac{1}{2} du\\).\n\nNext, we change the limits of integration to match the new variable \\(u\\):\n- When \\(x = 0\\), \\(u = 0^2 = 0\\).\n- When \\(x = 1\\), \\(u = 1^2 = 1\\).\n\nNow, substitute these into the in",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 7.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous. However, the item is quite routine for level B and feels closer to an easier substitution-integral question. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and appropriately targets level B via a substitution technique requiring 3-4 clear steps. Distractors are mostly plausible: B (e-1) results from forgetting the 1/2 factor, D (2(e-1)) from inverting the factor, and C ((e+1)/2) is less naturally reachable but still plausible. Kazakh phrasing is natural and terminology is standard. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. The distractors represent common mistakes (forgetting the 1/2 factor, sign errors, multiplying instead of dividing), and the difficulty perfectly aligns with Level B.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Consider replacing distractor C with a more naturally reachable error, such as (e+1)/2 being replaced by e/2 (forgetting the -1 term) or another common substitution mistake, to improve distractor quality.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='-1/2 + E/2' expected='-1/2 + E/2'",
+        "raw": {
+          "ok": true,
+          "stdout": "-1/2 + E/2",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Compute the definite integral I = ∫_0^1 x e^{x^2} dx. Use substitution u = x^2, so du = 2x dx, hence x dx = du/2. When x = 0, u = 0^2 = 0. When x = 1, u = 1^2 = 1. Therefore I = (1/2)∫_0^1 e^u du = (1/2)[e^u]_0^1 = (1/2)(e^1 - e^0) = (1/2)(e - 1) = (e - 1)/2. This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous. However, the item is quite routine for level B and feels closer to an easier substitution-integral question.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-1/2 + E/2' expected='-1/2 + E/2'",
+            "raw": {
+              "ok": true,
+              "stdout": "-1/2 + E/2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to compute the integral ∫₀¹ x·e^(x²) dx.\n\nUse substitution: let u = x², then du = 2x dx, so x dx = du/2.\n\nWhen x = 0: u = 0\nWhen x = 1: u = 1\n\nThe integral becomes:\n∫₀¹ e^u · (du/2) = (1/2) · [e^u]₀¹ = (1/2)(e¹ - e⁰) = (1/2)(e - 1) = (e-1)/2\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct, well-structured, and appropriately targets level B via a substitution technique requiring 3-4 clear steps. Distractors are mostly plausible: B (e-1) results from forgetting the 1/2 factor, D (2(e-1)) from inverting the factor, and C ((e+1)/2) is less naturally reachable but still plausible. Kazakh phrasing is natural and terminology is standard.",
+          "improvement_suggestions": "Consider replacing distractor C with a more naturally reachable error, such as (e+1)/2 being replaced by e/2 (forgetting the -1 term) or another common substitution mistake, to improve distractor quality.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-1/2 + E/2' expected='-1/2 + E/2'",
+            "raw": {
+              "ok": true,
+              "stdout": "-1/2 + E/2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To evaluate the definite integral \\(\\int_{0}^{1} x \\cdot e^{x^2} \\, dx\\), we can use integration by substitution.\n\nLet \\(u = x^2\\).\nThen the differential is \\(du = 2x \\, dx\\), which implies \\(x \\, dx = \\frac{1}{2} du\\).\n\nNext, we change the limits of integration to match the new variable \\(u\\):\n- When \\(x = 0\\), \\(u = 0^2 = 0\\).\n- When \\(x = 1\\), \\(u = 1^2 = 1\\).\n\nNow, substitute these into the integral:\n\\(\\int_{0}^{1} x \\cdot e^{x^2} \\, dx = \\int_{0}^{1} e^u \\cdot \\frac{1}{2} \\, du\\)\n\nFactor out the constant \\(\\frac{1}{2}\\):\n\\(= \\frac{1}{2} \\int_{0}^{1} e^u \\, du\\)\n\nThe antiderivative of \\(e^u\\) is \\(e^u\\). Evaluating this from 0 to 1 gives:\n\\(= \\frac{1}{2} \\left[ e^u \\right]_{0}^{1}\\)\n\\(= \\frac{1}{2} (e^1 - e^0)\\)\n\nSince \\(e^1 = e\\) and \\(e^0 = 1\\), we get:\n\\(= \\frac{e - 1}{2}\\)\n\nThis matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. The distractors represent common mistakes (forgetting the 1/2 factor, sign errors, multiplying instead of dividing), and the difficulty perfectly aligns with Level B.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='-1/2 + E/2' expected='-1/2 + E/2'",
+            "raw": {
+              "ok": true,
+              "stdout": "-1/2 + E/2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:34:06.945184+00:00",
+  "generation_attempts": 1
+}

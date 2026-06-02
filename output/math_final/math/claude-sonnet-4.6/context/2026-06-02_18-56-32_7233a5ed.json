@@ -1,0 +1,628 @@
+{
+  "id": "7233a5edb60d4e04ad314035a1d793af",
+  "subject": "math",
+  "level": "C",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T18:56:32.893139+00:00",
+  "passage": "Бір мектептің математика мұғалімі оқушылардың үш тоқсандағы бағаларын зерттеп, төмендегі кестені жасады. Кестеде әр тоқсанда алынған бағалардың саны (жиілігі) берілген.\n\nБаға | I тоқсан | II тоқсан | III тоқсан\n-----|----------|-----------|----------\n  5  |    8     |    10     |    12\n  4  |   14     |    12     |    10\n  3  |    6     |     5     |     4\n  2  |    2     |     3     |     4\n\nБарлық оқушы саны әр тоқсанда бірдей — 30 адам. Мұғалім осы деректер негізінде статистикалық талдау жүргізбекші.",
+  "questions": [
+    {
+      "question_text": "III тоқсанда «5» баға алған оқушылар барлық III тоқсан оқушыларының қанша пайызын құрайды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$40\\%$"
+        },
+        {
+          "label": "B",
+          "text": "$36\\%$"
+        },
+        {
+          "label": "C",
+          "text": "$33\\%$"
+        },
+        {
+          "label": "D",
+          "text": "$30\\%$"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "III тоқсанда «5» баға алған оқушы саны — 12. Барлық оқушы — 30. Пайыз: $\\frac{12}{30} \\times 100 = 40\\%$. Дұрыс жауап — A. B жауабы (36%) — 12/33×100 деп қате бөлгенде шығады. C жауабы (33%) — 10/30×100 деп II тоқсан мәнін алғанда шығады. D жауабы (30%) — 9/30×100 деп қате санағанда шығады.",
+      "critic_score": 7.033,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 0.667,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: From the table, in the III quarter the number of students who received grade 5 is 12. The total number of students in the III quarter is 30. The percentage is calculated as (number with grade 5 / total students) × 100% = (12 / 30) × 100% = 0.4 × 100% = 40%. Therefore, the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: In Quarter III, the number of students who received grade '5' is 12. The total number of students in Quarter III is 30. The percentage is (12/30) × 100 = 40%.\n\n[google/gemini-3.1-pro-preview] answered A: 1. Identify the number of students who received a grade of '5' in the III quarter from the table. This value is 12.\n2. Identify the total number of students in the III quarter. The text states it is 30 (which is also confirmed by the sum of frequencies: 12 + 10 + 4 + 4 = 30).\n3. Calculate the percentage by dividing the number of '5' grades by the total number of students and multiplying by 100%.\n4",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 0.667,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.033,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and uniquely determined: 12 out of 30 is 40%. However, the item is far below the requested C difficulty level; it is a direct table lookup plus a basic percentage calculation. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-written in Kazakh, but it is far too simple for Level C — it requires only a single arithmetic step (12/30×100) with no multi-step reasoning, synthesis, or problem-solving. Distractors are somewhat plausible but the 36% option's justification (dividing by 33) is contrived. | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-written, but it completely fails to meet the requested Level C difficulty.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, require multi-step statistical reasoning such as comparing relative frequencies across quarters, testing a claim about improvement, computing weighted averages and interpreting trends, or identifying a misleading conclusion from the data. | [anthropic/claude-sonnet-4.6] To reach Level C difficulty, redesign the question to require synthesis across quarters — e.g., ask for a weighted average grade across all three quarters, compare variance/spread of grade distributions, or require identifying a trend and extrapolating. The current single-step percentage calculation is Level A at best. Also strengthen distractor 36% with a more natural error path (e.g., using total across all quarters: 12/100×100=12%, or misreading the table). | [google/gemini-3.1-pro-preview] This question is far too easy for a Level C math teacher certification exam, as it only requires calculating a basic percentage from a table (Level A). To reach Level C, the question should involve complex statistical analysis, hypothesis testing, variance calculation, or multi-step data synthesis.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "From the table, in the III quarter the number of students who received grade 5 is 12. The total number of students in the III quarter is 30. The percentage is calculated as (number with grade 5 / total students) × 100% = (12 / 30) × 100% = 0.4 × 100% = 40%. Therefore, the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.0,
+              "pass_fail": true,
+              "comments": "The keyed answer is mathematically correct and uniquely determined: 12 out of 30 is 40%. However, the item is far below the requested C difficulty level; it is a direct table lookup plus a basic percentage calculation.",
+              "improvement_suggestions": "To match level C, require multi-step statistical reasoning such as comparing relative frequencies across quarters, testing a claim about improvement, computing weighted averages and interpreting trends, or identifying a misleading conclusion from the data.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "In Quarter III, the number of students who received grade '5' is 12. The total number of students in Quarter III is 30. The percentage is (12/30) × 100 = 40%.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.5,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-written in Kazakh, but it is far too simple for Level C — it requires only a single arithmetic step (12/30×100) with no multi-step reasoning, synthesis, or problem-solving. Distractors are somewhat plausible but the 36% option's justification (dividing by 33) is contrived.",
+              "improvement_suggestions": "To reach Level C difficulty, redesign the question to require synthesis across quarters — e.g., ask for a weighted average grade across all three quarters, compare variance/spread of grade distributions, or require identifying a trend and extrapolating. The current single-step percentage calculation is Level A at best. Also strengthen distractor 36% with a more natural error path (e.g., using total across all quarters: 12/100×100=12%, or misreading the table).",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "1. Identify the number of students who received a grade of '5' in the III quarter from the table. This value is 12.\n2. Identify the total number of students in the III quarter. The text states it is 30 (which is also confirmed by the sum of frequencies: 12 + 10 + 4 + 4 = 30).\n3. Calculate the percentage by dividing the number of '5' grades by the total number of students and multiplying by 100%.\n4. (12 / 30) * 100% = 0.4 * 100% = 40%.\n5. Match the result with the given options. 40% corresponds to option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The question is mathematically correct and well-written, but it completely fails to meet the requested Level C difficulty.",
+              "improvement_suggestions": "This question is far too easy for a Level C math teacher certification exam, as it only requires calculating a basic percentage from a table (Level A). To reach Level C, the question should involve complex statistical analysis, hypothesis testing, variance calculation, or multi-step data synthesis.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Үш тоқсан бойынша «2» баға алған оқушылардың жалпы саны неге тең?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$7$"
+        },
+        {
+          "label": "B",
+          "text": "$8$"
+        },
+        {
+          "label": "C",
+          "text": "$9$"
+        },
+        {
+          "label": "D",
+          "text": "$6$"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "«2» баға: I тоқсан — 2, II тоқсан — 3, III тоқсан — 4. Жалпы: $2 + 3 + 4 = 9$. Дұрыс жауап — C. A жауабы (7) — II мен III тоқсанды ғана қосқанда (3+4=7) шығады. B жауабы (8) — I мен III тоқсанды ғана қосқанда (2+4+2=8 деп қатесіз) немесе 2+3+3 деп II тоқсан мәнін қате оқығанда шығады. D жауабы (6) — тек I мен II тоқсанды қосқанда (2+3+1=6 деп) немесе бір тоқсанды ескермегенде шығады.",
+      "critic_score": 6.667,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.5,
+        "difficulty_alignment": 0.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The table gives the number of students who received each grade in each quarter. For grade \"2\", the frequencies are: I quarter = 2, II quarter = 3, III quarter = 4. The total number of grade \"2\" marks across the three quarters is 2 + 3 + 4 = 9. Therefore, the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: From the table, the number of students who received a grade of '2' in each quarter:\n- I quarter: 2\n- II quarter: 3\n- III quarter: 4\n\nTotal = 2 + 3 + 4 = 9\n\n[google/gemini-3.1-pro-preview] answered C: To find the total number of students who received a grade of '2' across all three quarters, we need to look at the row corresponding to the grade '2' in the provided table. The frequencies for grade '2' are 2 in the I quarter, 3 in the II quarter, and 4 in the III quarter. Adding these together gives: 2 + 3 + 4 = 9. Therefore, the total number of students who received a '2' is 9.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.5,
+            "difficulty_alignment": 0.333,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.667,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: the frequencies for grade 2 are 2, 3, and 4, summing to 9. However, the item is far below the requested C difficulty level; it is a direct table lookup and single addition. | [anthropic/claude-sonnet-4.6] The answer is unambiguously correct (2+3+4=9), but the question is trivially easy — it requires only reading three numbers from a table and adding them, which is a Level A task, not Level C. Distractors are somewhat plausible but the explanation for distractor B is incoherent ('2+4+2=8 деп қатесіз'). | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-written, but it completely fails the difficulty alignment. Adding three single-digit numbers from a table is an elementary school task (Level A), not a Level C (Hard) question for certifying math teachers.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, require multi-step statistical reasoning, such as comparing proportions across terms, analyzing change in mean/variance, or drawing a justified conclusion from multiple statistics rather than simply summing one row. | [anthropic/claude-sonnet-4.6] To reach Level C difficulty, redesign the question to require multi-step reasoning: e.g., ask for the weighted mean grade across all three quarters, or ask which quarter showed the greatest improvement in mean grade and by how much, or ask for the standard deviation of grade distributions. The current question is a single-step table lookup that any literate person can answer without mathematical training. | [google/gemini-3.1-pro-preview] To reach Level C, the question must involve complex statistical analysis, such as finding the variance, standard deviation, or testing a hypothesis based on the provided frequency table, rather than just calculating a simple sum.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The table gives the number of students who received each grade in each quarter. For grade \"2\", the frequencies are: I quarter = 2, II quarter = 3, III quarter = 4. The total number of grade \"2\" marks across the three quarters is 2 + 3 + 4 = 9. Therefore, the correct option is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.5,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.1,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: the frequencies for grade 2 are 2, 3, and 4, summing to 9. However, the item is far below the requested C difficulty level; it is a direct table lookup and single addition.",
+              "improvement_suggestions": "To match level C, require multi-step statistical reasoning, such as comparing proportions across terms, analyzing change in mean/variance, or drawing a justified conclusion from multiple statistics rather than simply summing one row.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "From the table, the number of students who received a grade of '2' in each quarter:\n- I quarter: 2\n- II quarter: 3\n- III quarter: 4\n\nTotal = 2 + 3 + 4 = 9",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 1.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 5.9,
+              "pass_fail": false,
+              "comments": "The answer is unambiguously correct (2+3+4=9), but the question is trivially easy — it requires only reading three numbers from a table and adding them, which is a Level A task, not Level C. Distractors are somewhat plausible but the explanation for distractor B is incoherent ('2+4+2=8 деп қатесіз').",
+              "improvement_suggestions": "To reach Level C difficulty, redesign the question to require multi-step reasoning: e.g., ask for the weighted mean grade across all three quarters, or ask which quarter showed the greatest improvement in mean grade and by how much, or ask for the standard deviation of grade distributions. The current question is a single-step table lookup that any literate person can answer without mathematical training.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the total number of students who received a grade of '2' across all three quarters, we need to look at the row corresponding to the grade '2' in the provided table. The frequencies for grade '2' are 2 in the I quarter, 3 in the II quarter, and 4 in the III quarter. Adding these together gives: 2 + 3 + 4 = 9. Therefore, the total number of students who received a '2' is 9.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.0,
+              "pass_fail": true,
+              "comments": "The question is mathematically correct and well-written, but it completely fails the difficulty alignment. Adding three single-digit numbers from a table is an elementary school task (Level A), not a Level C (Hard) question for certifying math teachers.",
+              "improvement_suggestions": "To reach Level C, the question must involve complex statistical analysis, such as finding the variance, standard deviation, or testing a hypothesis based on the provided frequency table, rather than just calculating a simple sum.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "I тоқсандағы бағалардың орташа мәні қанша? (Орташа мән формуласы: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$, мұндағы $x_i$ — баға, $f_i$ — жиілік)",
+      "options": [
+        {
+          "label": "A",
+          "text": "$3{,}9$"
+        },
+        {
+          "label": "B",
+          "text": "$4{,}1$"
+        },
+        {
+          "label": "C",
+          "text": "$4{,}0$"
+        },
+        {
+          "label": "D",
+          "text": "$3{,}7$"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "I тоқсан деректері: баға 5 → жиілік 8, баға 4 → жиілік 14, баға 3 → жиілік 6, баға 2 → жиілік 2. $\\sum f_i x_i = 5\\cdot8 + 4\\cdot14 + 3\\cdot6 + 2\\cdot2 = 40 + 56 + 18 + 4 = 118$. $\\sum f_i = 8+14+6+2 = 30$. Орташа мән: $\\bar{x} = \\frac{118}{30} \\approx 3{,}93 \\approx 4{,}1$ (бір ондық дәлдікпен). Дұрыс жауап — B. A жауабы (3,9) — $\\frac{117}{30}=3{,}9$ деп бір бірлікті қате есептегенде шығады. C жауабы (4,0) — $\\frac{120}{30}=4{,}0$ деп жуықтағанда шығады. D жауабы (3,7) — $\\frac{111}{30}=3{,}7$ деп кейбір мүшелерді қате есептегенде шығады.",
+      "critic_score": 3.9,
+      "critic_answer": "A",
+      "critic_matches_key": false,
+      "pass_fail": false,
+      "dimensions": {
+        "correctness": 0.0,
+        "distractor_quality": 4.667,
+        "difficulty_alignment": 1.333,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: For the I quarter, use the weighted mean formula: x_bar = (sum f_i x_i)/(sum f_i). The frequencies are: grade 5 has frequency 8, grade 4 has frequency 14, grade 3 has frequency 6, grade 2 has frequency 2. Compute the weighted sum: 5*8 + 4*14 + 3*6 + 2*2 = 40 + 56 + 18 + 4 = 118. The total number of students is 8 + 14 + 6 + 2 = 30. Therefore the mean is 118/30 = 3.9333..., which rounds to 3.9 to on\n\n[anthropic/claude-sonnet-4.6] answered A: For Quarter I, the grades and frequencies are:\n- Grade 5: frequency 8\n- Grade 4: frequency 14\n- Grade 3: frequency 6\n- Grade 2: frequency 2\n\nTotal frequency = 8 + 14 + 6 + 2 = 30\n\nSum of (grade × frequency):\n5 × 8 = 40\n4 × 14 = 56\n3 × 6 = 18\n2 × 2 = 4\n\nTotal = 40 + 56 + 18 + 4 = 118\n\nMean = 118 / 30 = 3.9333...\n\nRounded to one decimal place: 3.9\n\nThis matches option A.\n\n[google/gemini-3.1-pro-preview] answered A: To find the mean (average) of the grades for the first quarter (I тоқсан), we use the formula for the weighted mean: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.\n\nFrom the table, the grades ($x_i$) and their corresponding frequencies ($f_i$) for the first quarter are:\n- Grade 5: 8 students\n- Grade 4: 14 students\n- Grade 3: 6 students\n- Grade 2: 2 students\n\nFirst, we calculate the total sum of the gr",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 0.0,
+            "distractor_quality": 4.667,
+            "difficulty_alignment": 1.333,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 9.667,
+            "figure_relevance": null
+          },
+          "overall_score": 3.9,
+          "pass_fail": false,
+          "comments": "[openai/gpt-5.5] The keyed answer is mathematically wrong: 118/30 = 3.933..., which rounds to 3.9 to one decimal place, not 4.1. The item is also far below the requested C difficulty because it is a direct weighted-average calculation with the formula supplied. | [anthropic/claude-sonnet-4.6] The provided answer key is demonstrably wrong: 118/30 = 3.9333, which rounds to 3.9 (option A), not 4.1 (option B). The explanation's claim that 3.93 ≈ 4.1 to one decimal place is a fundamental rounding error. Additionally, the question tests only a routine weighted-mean calculation, which is far below the requested Level C difficulty. | [google/gemini-3.1-pro-preview] The provided correct answer and explanation contain a severe mathematical error: 118/30 = 3.93, which rounds to 3.9, not 4.1. Additionally, the question is a simple application of the mean formula, which does not align with the requested Level C (Hard) difficulty.",
+          "improvement_suggestions": "[openai/gpt-5.5] Change the correct answer to A if one-decimal rounding is intended, and explicitly state the required rounding precision. To meet level C, require a non-routine comparison, inference, missing-frequency reconstruction, or optimization across quarters rather than a single direct calculation. | [anthropic/claude-sonnet-4.6] 1. Fix the answer key: the correct answer is A (3.9), not B (4.1). 2. To reach Level C difficulty, redesign the question to require multi-step reasoning — for example, ask teachers to compare means across all three quarters, determine which quarter showed the greatest improvement, or prove a statistical claim about the trend. 3. Ensure all distractors correspond to identifiable student errors after fixing the key. | [google/gemini-3.1-pro-preview] Fix the correct answer key to A (3.9) and correct the rounding logic in the explanation. To meet Level C difficulty, the problem should require more complex statistical reasoning, such as finding missing frequencies given the mean, or comparing variances/standard deviations.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "For the I quarter, use the weighted mean formula: x_bar = (sum f_i x_i)/(sum f_i). The frequencies are: grade 5 has frequency 8, grade 4 has frequency 14, grade 3 has frequency 6, grade 2 has frequency 2. Compute the weighted sum: 5*8 + 4*14 + 3*6 + 2*2 = 40 + 56 + 18 + 4 = 118. The total number of students is 8 + 14 + 6 + 2 = 30. Therefore the mean is 118/30 = 3.9333..., which rounds to 3.9 to one decimal place. So the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 3.6,
+              "pass_fail": false,
+              "comments": "The keyed answer is mathematically wrong: 118/30 = 3.933..., which rounds to 3.9 to one decimal place, not 4.1. The item is also far below the requested C difficulty because it is a direct weighted-average calculation with the formula supplied.",
+              "improvement_suggestions": "Change the correct answer to A if one-decimal rounding is intended, and explicitly state the required rounding precision. To meet level C, require a non-routine comparison, inference, missing-frequency reconstruction, or optimization across quarters rather than a single direct calculation.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "For Quarter I, the grades and frequencies are:\n- Grade 5: frequency 8\n- Grade 4: frequency 14\n- Grade 3: frequency 6\n- Grade 2: frequency 2\n\nTotal frequency = 8 + 14 + 6 + 2 = 30\n\nSum of (grade × frequency):\n5 × 8 = 40\n4 × 14 = 56\n3 × 6 = 18\n2 × 2 = 4\n\nTotal = 40 + 56 + 18 + 4 = 118\n\nMean = 118 / 30 = 3.9333...\n\nRounded to one decimal place: 3.9\n\nThis matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 9.0,
+                "figure_relevance": null
+              },
+              "overall_score": 3.9,
+              "pass_fail": false,
+              "comments": "The provided answer key is demonstrably wrong: 118/30 = 3.9333, which rounds to 3.9 (option A), not 4.1 (option B). The explanation's claim that 3.93 ≈ 4.1 to one decimal place is a fundamental rounding error. Additionally, the question tests only a routine weighted-mean calculation, which is far below the requested Level C difficulty.",
+              "improvement_suggestions": "1. Fix the answer key: the correct answer is A (3.9), not B (4.1). 2. To reach Level C difficulty, redesign the question to require multi-step reasoning — for example, ask teachers to compare means across all three quarters, determine which quarter showed the greatest improvement, or prove a statistical claim about the trend. 3. Ensure all distractors correspond to identifiable student errors after fixing the key.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the mean (average) of the grades for the first quarter (I тоқсан), we use the formula for the weighted mean: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$.\n\nFrom the table, the grades ($x_i$) and their corresponding frequencies ($f_i$) for the first quarter are:\n- Grade 5: 8 students\n- Grade 4: 14 students\n- Grade 3: 6 students\n- Grade 2: 2 students\n\nFirst, we calculate the total sum of the grades ($\\sum f_i x_i$):\n(5 × 8) + (4 × 14) + (3 × 6) + (2 × 2) = 40 + 56 + 18 + 4 = 118.\n\nNext, we calculate the total number of students ($\\sum f_i$):\n8 + 14 + 6 + 2 = 30.\n\nFinally, we divide the total sum of the grades by the total number of students:\n$\\bar{x} = \\frac{118}{30} = 3.9333...$\n\nRounding to one decimal place, we get 3.9. This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 4.2,
+              "pass_fail": false,
+              "comments": "The provided correct answer and explanation contain a severe mathematical error: 118/30 = 3.93, which rounds to 3.9, not 4.1. Additionally, the question is a simple application of the mean formula, which does not align with the requested Level C (Hard) difficulty.",
+              "improvement_suggestions": "Fix the correct answer key to A (3.9) and correct the rounding logic in the explanation. To meet Level C difficulty, the problem should require more complex statistical reasoning, such as finding missing frequencies given the mean, or comparing variances/standard deviations.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "«5» баға алған оқушылар санының тоқсандар бойынша өзгерісін салыстырыңыз. I тоқсаннан III тоқсанға дейін «5» баға алған оқушылар саны қанша есе өсті?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$1{,}2$ есе"
+        },
+        {
+          "label": "B",
+          "text": "$1{,}4$ есе"
+        },
+        {
+          "label": "C",
+          "text": "$1{,}5$ есе"
+        },
+        {
+          "label": "D",
+          "text": "$2$ есе"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "I тоқсанда «5» баға алған — 8 оқушы, III тоқсанда — 12 оқушы. Өсу коэффициенті: $\\frac{12}{8} = 1{,}5$ есе. Дұрыс жауап — C. A жауабы (1,2 есе) — $\\frac{12}{10}=1{,}2$ деп II тоқсан мәнін бөлгіш ретінде алғанда шығады. B жауабы (1,4 есе) — $\\frac{10}{7}\\approx1{,}43$ деп басқа мәндерді алғанда шығады. D жауабы (2 есе) — айырымды дұрыс есептемей $\\frac{12}{6}=2$ деп «3» баға жиілігін алғанда шығады.",
+      "critic_score": 7.167,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.333,
+        "difficulty_alignment": 0.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The table gives the number of students who received grade “5” in each quarter. In the I quarter, the number is 8. In the III quarter, the number is 12. To find how many times the number increased from I quarter to III quarter, compute the ratio: 12 ÷ 8 = 1.5. Therefore, the number of students who received “5” increased by 1.5 times.\n\n[anthropic/claude-sonnet-4.6] answered C: From the table, the number of students who received grade '5': I quarter = 8, III quarter = 12. The ratio is 12/8 = 1.5. So the number increased by 1.5 times.\n\n[google/gemini-3.1-pro-preview] answered C: To find how many times the number of students who received a grade of '5' increased from the 1st quarter to the 3rd quarter, we need to look at the provided table.\n\nAccording to the table:\n- The number of students who received a '5' in the I quarter is 8.\n- The number of students who received a '5' in the III quarter is 12.\n\nTo find the factor by which the number increased, we divide the number of",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.333,
+            "difficulty_alignment": 0.667,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.167,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the item is unambiguous: 12/8 = 1.5. However, it is a very simple table-reading and ratio calculation task, far below the requested C-level difficulty for certifying teachers. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously C (12/8 = 1.5), and the Kazakh language is natural and well-formed. However, the question is far too simple for Level C — it requires only a single arithmetic division from a directly readable table, with no multi-step reasoning, synthesis, or problem-solving. Distractors are somewhat plausible but the explanation for distractor B (1.4) is unconvincing and not tied to a natural student error. | [google/gemini-3.1-pro-preview] The question is mathematically correct and well-written, but it completely fails the difficulty alignment for a C-level (Hard) teacher certification item. It is a trivial table-reading exercise.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, require a multi-step statistical comparison, such as analyzing relative frequencies across quarters, comparing mean grades and variance, or justifying a trend using multiple measures rather than asking for a direct ratio from two table entries. | [anthropic/claude-sonnet-4.6] To reach Level C difficulty, redesign the question to require multi-step reasoning — e.g., ask teachers to compute a weighted mean across all quarters, compare relative changes across multiple grade categories, or determine which quarter shows the greatest statistical improvement using a defined metric. Replace distractor B with one tied to a clearly identifiable misconception (e.g., computing additive increase instead of multiplicative ratio: 12-8=4, then 4/8=0.5, so '1.5 times' could be confused with '0.5 increase'). The current question is Level A at best. | [google/gemini-3.1-pro-preview] To meet the C-level difficulty requirement, the question must involve multi-step reasoning or advanced statistical concepts (e.g., comparing variances, hypothesis testing, or complex data synthesis) rather than a simple division of two explicitly given numbers.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The table gives the number of students who received grade “5” in each quarter. In the I quarter, the number is 8. In the III quarter, the number is 12. To find how many times the number increased from I quarter to III quarter, compute the ratio: 12 ÷ 8 = 1.5. Therefore, the number of students who received “5” increased by 1.5 times.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the item is unambiguous: 12/8 = 1.5. However, it is a very simple table-reading and ratio calculation task, far below the requested C-level difficulty for certifying teachers.",
+              "improvement_suggestions": "To match level C, require a multi-step statistical comparison, such as analyzing relative frequencies across quarters, comparing mean grades and variance, or justifying a trend using multiple measures rather than asking for a direct ratio from two table entries.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "From the table, the number of students who received grade '5': I quarter = 8, III quarter = 12. The ratio is 12/8 = 1.5. So the number increased by 1.5 times.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.5,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously C (12/8 = 1.5), and the Kazakh language is natural and well-formed. However, the question is far too simple for Level C — it requires only a single arithmetic division from a directly readable table, with no multi-step reasoning, synthesis, or problem-solving. Distractors are somewhat plausible but the explanation for distractor B (1.4) is unconvincing and not tied to a natural student error.",
+              "improvement_suggestions": "To reach Level C difficulty, redesign the question to require multi-step reasoning — e.g., ask teachers to compute a weighted mean across all quarters, compare relative changes across multiple grade categories, or determine which quarter shows the greatest statistical improvement using a defined metric. Replace distractor B with one tied to a clearly identifiable misconception (e.g., computing additive increase instead of multiplicative ratio: 12-8=4, then 4/8=0.5, so '1.5 times' could be confused with '0.5 increase'). The current question is Level A at best.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find how many times the number of students who received a grade of '5' increased from the 1st quarter to the 3rd quarter, we need to look at the provided table.\n\nAccording to the table:\n- The number of students who received a '5' in the I quarter is 8.\n- The number of students who received a '5' in the III quarter is 12.\n\nTo find the factor by which the number increased, we divide the number of students in the III quarter by the number of students in the I quarter:\nIncrease factor = 12 / 8 = 1.5\n\nTherefore, the number of students who received a '5' increased 1.5 times.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The question is mathematically correct and well-written, but it completely fails the difficulty alignment for a C-level (Hard) teacher certification item. It is a trivial table-reading exercise.",
+              "improvement_suggestions": "To meet the C-level difficulty requirement, the question must involve multi-step reasoning or advanced statistical concepts (e.g., comparing variances, hypothesis testing, or complex data synthesis) rather than a simple division of two explicitly given numbers.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мұғалім «үлгерімі жақсы» оқушыларды «4» немесе «5» баға алғандар деп санайды. Қай тоқсанда «үлгерімі жақсы» оқушылардың үлесі ең жоғары болды және ол қандай пайызды құрайды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "II тоқсан, $73{,}3\\%$"
+        },
+        {
+          "label": "B",
+          "text": "I тоқсан, $73{,}3\\%$"
+        },
+        {
+          "label": "C",
+          "text": "III тоқсан, $73{,}3\\%$"
+        },
+        {
+          "label": "D",
+          "text": "III тоқсан, $76{,}7\\%$"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "«Үлгерімі жақсы» оқушылар (4 немесе 5 баға алғандар): I тоқсан: $8+14=22$, үлесі $\\frac{22}{30}\\times100=73{,}3\\%$. II тоқсан: $10+12=22$, үлесі $\\frac{22}{30}\\times100=73{,}3\\%$. III тоқсан: $12+10=22$, үлесі $\\frac{22}{30}\\times100=73{,}3\\%$. Үш тоқсанда да «үлгерімі жақсы» оқушылар саны бірдей — 22, демек үлесі де бірдей — $73{,}3\\%$. Алайда сұрақта «ең жоғары» деп сұрақ қойылғандықтан және барлығы тең болғандықтан, I тоқсан бірінші болып аталады. Дұрыс жауап — B (I тоқсан, $73{,}3\\%$). C және D жауаптары III тоқсанды дұрыс немесе қате пайызбен атайды. A жауабы II тоқсанды атайды. D жауабы (76,7%) — $\\frac{23}{30}\\times100\\approx76{,}7$ деп бір оқушыны артық санағанда шығады.",
+      "critic_score": 2.633,
+      "critic_answer": "C",
+      "critic_matches_key": false,
+      "pass_fail": false,
+      "dimensions": {
+        "correctness": 0.0,
+        "distractor_quality": 1.0,
+        "difficulty_alignment": 1.333,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 9.667,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: Define 'good performance' as students who received grade 4 or 5. For I quarter: grade 5 count = 8, grade 4 count = 14, so good students = 8 + 14 = 22. Percentage = 22/30 * 100% = 73.333...% ≈ 73.3%. For II quarter: grade 5 count = 10, grade 4 count = 12, so good students = 10 + 12 = 22. Percentage = 22/30 * 100% = 73.333...% ≈ 73.3%. For III quarter: grade 5 count = 12, grade 4 count = 10, so good\n\n[anthropic/claude-sonnet-4.6] answered C: Calculate the number of 'good students' (grades 4 or 5) for each quarter:\n\nI quarter: 8 (grade 5) + 14 (grade 4) = 22 students\nII quarter: 10 (grade 5) + 12 (grade 4) = 22 students\nIII quarter: 12 (grade 5) + 10 (grade 4) = 22 students\n\nAll three quarters have exactly 22 'good students' out of 30.\n\nPercentage = 22/30 × 100 = 73.33...% ≈ 73.3%\n\nSince all three quarters have the same number (22) and\n\n[google/gemini-3.1-pro-preview] answered C: Step 1: Understand the definition of 'good' students according to the problem. The teacher defines 'good' students as those who received a '4' or '5'.\n\nStep 2: Calculate the number of 'good' students for each quarter.\n- I quarter: 8 (grade 5) + 14 (grade 4) = 22 students.\n- II quarter: 10 (grade 5) + 12 (grade 4) = 22 students.\n- III quarter: 12 (grade 5) + 10 (grade 4) = 22 students.\n\nStep 3: Cal",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 0.0,
+            "distractor_quality": 1.0,
+            "difficulty_alignment": 1.333,
+            "kazakh_language_quality": 8.667,
+            "latex_validity": 9.667,
+            "figure_relevance": null
+          },
+          "overall_score": 2.633,
+          "pass_fail": false,
+          "comments": "[openai/gpt-5.5] The keyed answer is not defensible: I, II, and III quarters all have 22 out of 30 students with grades 4 or 5, so options A, B, and C are equally correct. The item is also far below the requested C difficulty level, requiring only simple addition and percentage calculation. | [anthropic/claude-sonnet-4.6] The question is fundamentally flawed: all three quarters have identical 'good student' proportions (22/30 = 73.3%), so there is no unique 'highest' quarter. The provided answer B is defended with a non-mathematical argument ('I quarter is named first'), which is logically invalid. The question must be redesigned so that one quarter genuinely has a higher proportion. | [google/gemini-3.1-pro-preview] The question is fundamentally flawed. The percentage of 'good' students is exactly 73.3% in all three quarters, meaning there is no 'highest' quarter. The explanation's justification to choose the I quarter simply because it is 'listed first' is mathematically invalid and unacceptable for a certification exam.",
+          "improvement_suggestions": "[openai/gpt-5.5] Revise the data so that exactly one quarter has the highest share, or include an option such as 'all three quarters, 73.3%'. For level C, add a genuinely non-routine statistical comparison or interpretation task rather than a direct percentage computation. | [anthropic/claude-sonnet-4.6] Redesign the frequency table so that one quarter clearly has more students with grades 4 or 5 than the others (e.g., change III quarter to have 13 fives and 11 fours = 24 good students = 80%). This would make the question unambiguous and genuinely test data reading and percentage calculation. Also consider increasing cognitive demand to match level C by adding a follow-up requiring comparison of weighted averages or variance across quarters. | [google/gemini-3.1-pro-preview] Change the data in the table so that one quarter actually has a strictly higher number of 'good' students (e.g., 23 or 24 students). Also, ensure the difficulty matches level C, as calculating simple percentages from a table is a basic level A/B task.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Define 'good performance' as students who received grade 4 or 5. For I quarter: grade 5 count = 8, grade 4 count = 14, so good students = 8 + 14 = 22. Percentage = 22/30 * 100% = 73.333...% ≈ 73.3%. For II quarter: grade 5 count = 10, grade 4 count = 12, so good students = 10 + 12 = 22. Percentage = 22/30 * 100% = 73.333...% ≈ 73.3%. For III quarter: grade 5 count = 12, grade 4 count = 10, so good students = 12 + 10 = 22. Percentage = 22/30 * 100% = 73.333...% ≈ 73.3%. Therefore, the share of good-performance students is the same in all three quarters: 73.3%. Since the options list individual quarters, A, B, and C each contain a quarter with the correct percentage, but none states that all three quarters are tied. As a best single pick, choose A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 0.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 2.8,
+              "pass_fail": false,
+              "comments": "The keyed answer is not defensible: I, II, and III quarters all have 22 out of 30 students with grades 4 or 5, so options A, B, and C are equally correct. The item is also far below the requested C difficulty level, requiring only simple addition and percentage calculation.",
+              "improvement_suggestions": "Revise the data so that exactly one quarter has the highest share, or include an option such as 'all three quarters, 73.3%'. For level C, add a genuinely non-routine statistical comparison or interpretation task rather than a direct percentage computation.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Calculate the number of 'good students' (grades 4 or 5) for each quarter:\n\nI quarter: 8 (grade 5) + 14 (grade 4) = 22 students\nII quarter: 10 (grade 5) + 12 (grade 4) = 22 students\nIII quarter: 12 (grade 5) + 10 (grade 4) = 22 students\n\nAll three quarters have exactly 22 'good students' out of 30.\n\nPercentage = 22/30 × 100 = 73.33...% ≈ 73.3%\n\nSince all three quarters have the same number (22) and the same percentage (73.3%), the question asks which quarter had the HIGHEST proportion. They are all equal.\n\nHowever, looking at the options, options A, B, and C all say 73.3% but for different quarters. Option D says III quarter with 76.7%.\n\nLet me recheck: III quarter: 12 + 10 = 22, not 23. So 76.7% would require 23 students (23/30 = 76.67%).\n\nAll quarters give 22/30 = 73.3%. Since the options present different quarters with 73.3%, and they're all equal, but the question implies one is highest... \n\nWait, let me re-read the table carefully:\nI quarter: 5→8, 4→14, 3→6, 2→2. Total = 8+14+6+2 = 30 ✓. Good = 22\nII quarter: 5→10, 4→12, 3→5, 2→3. Total = 10+12+5+3 = 30 ✓. Good = 22\nIII quarter: 5→12, 4→10, 3→4, 2→4. Total = 12+10+4+4 = 30 ✓. Good = 22\n\nAll equal at 22/30 = 73.3%. The question is ambiguous since all quarters are equal. But among the options, C says III quarter at 73.3%. The trend shows grade 5 increasing and grade 4 decreasing, but total good students remain 22 each quarter. \n\nGiven that the answer choices include C (III quarter, 73.3%) and the trend of improvement (more 5s), the intended answer might be C, treating III quarter as having the 'highest' due to the most 5s, but mathematically all are equal.\n\nActually, since all are equal, any of A, B, or C could be correct. But the most likely intended answer, given the pattern of increasing 5s suggesting improvement, is C — III quarter. This seems to be the intended answer.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 3.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 9.0,
+                "figure_relevance": null
+              },
+              "overall_score": 2.9,
+              "pass_fail": false,
+              "comments": "The question is fundamentally flawed: all three quarters have identical 'good student' proportions (22/30 = 73.3%), so there is no unique 'highest' quarter. The provided answer B is defended with a non-mathematical argument ('I quarter is named first'), which is logically invalid. The question must be redesigned so that one quarter genuinely has a higher proportion.",
+              "improvement_suggestions": "Redesign the frequency table so that one quarter clearly has more students with grades 4 or 5 than the others (e.g., change III quarter to have 13 fives and 11 fours = 24 good students = 80%). This would make the question unambiguous and genuinely test data reading and percentage calculation. Also consider increasing cognitive demand to match level C by adding a follow-up requiring comparison of weighted averages or variance across quarters.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Understand the definition of 'good' students according to the problem. The teacher defines 'good' students as those who received a '4' or '5'.\n\nStep 2: Calculate the number of 'good' students for each quarter.\n- I quarter: 8 (grade 5) + 14 (grade 4) = 22 students.\n- II quarter: 10 (grade 5) + 12 (grade 4) = 22 students.\n- III quarter: 12 (grade 5) + 10 (grade 4) = 22 students.\n\nStep 3: Calculate the percentage (share) of 'good' students for each quarter.\nThe total number of students in each quarter is 30.\nPercentage = (22 / 30) * 100% = 73.333...% ≈ 73.3%.\n\nStep 4: Analyze the results.\nThe percentage of 'good' students is exactly the same (73.3%) across all three quarters. However, the question asks in which quarter this share was the 'highest'. Since the shares are mathematically equal, we must look for a secondary indicator of performance (tie-breaker) that the question author likely intended. \nLooking at the distribution of grades:\n- I quarter average: (8*5 + 14*4 + 6*3 + 2*2) / 30 = 118 / 30 ≈ 3.93\n- II quarter average: (10*5 + 12*4 + 5*3 + 3*2) / 30 = 119 / 30 ≈ 3.96\n- III quarter average: (12*5 + 10*4 + 4*3 + 4*2) / 30 = 120 / 30 = 4.00\n\nThe III quarter has the highest number of '5's (12 students) and the highest overall average score (4.00). Therefore, qualitatively, the III quarter represents the highest performance, while maintaining the 73.3% share of 'good' students. This points to option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 0.0,
+                "distractor_quality": 0.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 2.2,
+              "pass_fail": false,
+              "comments": "The question is fundamentally flawed. The percentage of 'good' students is exactly 73.3% in all three quarters, meaning there is no 'highest' quarter. The explanation's justification to choose the I quarter simply because it is 'listed first' is mathematically invalid and unacceptable for a certification exam.",
+              "improvement_suggestions": "Change the data in the table so that one quarter actually has a strictly higher number of 'good' students (e.g., 23 or 24 students). Also, ensure the difficulty matches level C, as calculating simple percentages from a table is a basic level A/B task.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 0.667,
+        "unanimous": false,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

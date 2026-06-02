@@ -1,0 +1,229 @@
+{
+  "id": "5b03def1-4174-4c8c-b3fc-3b43863939ea",
+  "subject": "math",
+  "level": "B",
+  "format": "image",
+  "topic": "polygons_circles",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Суреттегі мәліметтерді пайдаланып, шеңберге іштей сызылған $ACB$ бұрышының косинусын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\frac{12}{13}$"
+    },
+    {
+      "label": "B",
+      "text": "$-\\frac{5}{13}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{5}{13}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{10}{13}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "1. Синустар теоремасының салдары бойынша, шеңберге іштей сызылған бұрыш пен оған қарсы жатқан хорда үшін $AB = 2R \\sin(\\angle ACB)$ теңдігі орындалады.\n2. Суретте берілген $R = 13$ және $AB = 24$ мәндерін формулаға қоямыз: $24 = 2 \\cdot 13 \\cdot \\sin(\\angle ACB)$.\n3. Бұдан $\\sin(\\angle ACB) = \\frac{24}{26} = \\frac{12}{13}$ екенін табамыз.\n4. Суреттен $C$ төбесі үлкен доғада орналасқанын байқаймыз, яғни $\\angle ACB$ — сүйір бұрыш. Сондықтан оның косинусы оң мәнге ие болады.\n5. Негізгі тригонометриялық тепе-теңдікті қолданамыз: $\\cos(\\angle ACB) = \\sqrt{1 - \\sin^2(\\angle ACB)} = \\sqrt{1 - \\left(\\frac{12}{13}\\right)^2} = \\sqrt{1 - \\frac{144}{169}} = \\sqrt{\\frac{25}{169}} = \\frac{5}{13}$.",
+  "latex_formulas": [
+    "AB = 2R \\sin(\\angle ACB)",
+    "\\cos(\\angle ACB) = \\sqrt{1 - \\sin^2(\\angle ACB)}"
+  ],
+  "figure_spec": {
+    "figure_type": "circle",
+    "parameters": {
+      "radius": 13,
+      "radius_label": "R = 13",
+      "chord_endpoints_deg": [
+        22,
+        157
+      ],
+      "chord_labels": [
+        "A",
+        "B"
+      ],
+      "chord_length_label": "AB = 24",
+      "inscribed_angle_deg": 270,
+      "central_angle_label": null,
+      "tangent_at_deg": null,
+      "tangent_point_label": null,
+      "caption": "O центрлі шеңбер"
+    },
+    "caption": "O центрлі шеңбер"
+  },
+  "figure_path": "output/math_final/figures/circle_13359.png",
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The circle has center O and radius R = 13. The chord length is AB = 24. Let theta = angle AOB be the central angle subtending chord AB, and let alpha = angle ACB be the inscribed angle subtending the same chord AB. For a chord, AB = 2R sin(theta/2). Substituting the given values: 24 = 2*13*sin(theta/2) = 26*sin(theta/2). Therefore sin(theta/2) = 24/26 = 12/13. Since theta/2 is an acute angle in th\n\n[anthropic/claude-sonnet-4.6] answered C: From the figure: circle with center O, radius R = 13, chord AB = 24. Point C is on the circle, and angle ACB is an inscribed angle subtending arc AB.\n\nSince AB = 24 and R = 13, I need to find the inscribed angle ACB.\n\nFirst, find the central angle AOB subtending chord AB.\nUsing the relationship: chord length = 2R·sin(θ/2), where θ is the central angle.\n24 = 2·13·sin(θ/2)\n24 = 26·sin(θ/2)\nsin(θ/2) \n\n[google/gemini-3.1-pro-preview] answered C: 1. Identify the relationship between the inscribed angle and the central angle. The angle $\\angle ACB$ is an inscribed angle that subtends the minor arc $AB$. We know it subtends the minor arc because point $C$ is located on the major arc (the center $O$ is between the chord $AB$ and point $C$, as shown in the diagram).\n2. The measure of an inscribed angle is half the measure of the central angle ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 9.667,
+      "figure_relevance": 9.667
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely follows from the chord-radius relation and the inscribed angle theorem. The item is appropriate for level B, though one distractor is less clearly tied to a common error and the Kazakh phrasing could be slightly more standard by explicitly using ∠ACB. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed. The figure clearly shows R=13, AB=24, and point C on the major arc, making the problem well-defined. All four distractors correspond to identifiable errors: A) confusing sin with cos, B) assuming obtuse angle (negative cosine), D) a plausible but incorrect arithmetic path. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It requires multiple logical steps: applying the extended Law of Sines (or central/inscribed angle properties), calculating the trigonometric values, and crucially, using the visual information from the figure to determine the sign of the cosine (acute vs. obtuse angle). The distractors are highly plausible and target specific common errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='5/13' expected='5/13'",
+      "raw": {
+        "ok": true,
+        "stdout": "5/13",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The circle has center O and radius R = 13. The chord length is AB = 24. Let theta = angle AOB be the central angle subtending chord AB, and let alpha = angle ACB be the inscribed angle subtending the same chord AB. For a chord, AB = 2R sin(theta/2). Substituting the given values: 24 = 2*13*sin(theta/2) = 26*sin(theta/2). Therefore sin(theta/2) = 24/26 = 12/13. Since theta/2 is an acute angle in th\n\n[anthropic/claude-sonnet-4.6] answered C: From the figure: circle with center O, radius R = 13, chord AB = 24. Point C is on the circle, and angle ACB is an inscribed angle subtending arc AB.\n\nSince AB = 24 and R = 13, I need to find the inscribed angle ACB.\n\nFirst, find the central angle AOB subtending chord AB.\nUsing the relationship: chord length = 2R·sin(θ/2), where θ is the central angle.\n24 = 2·13·sin(θ/2)\n24 = 26·sin(θ/2)\nsin(θ/2) \n\n[google/gemini-3.1-pro-preview] answered C: 1. Identify the relationship between the inscribed angle and the central angle. The angle $\\angle ACB$ is an inscribed angle that subtends the minor arc $AB$. We know it subtends the minor arc because point $C$ is located on the major arc (the center $O$ is between the chord $AB$ and point $C$, as shown in the diagram).\n2. The measure of an inscribed angle is half the measure of the central angle ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 9.667,
+        "figure_relevance": 9.667
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely follows from the chord-radius relation and the inscribed angle theorem. The item is appropriate for level B, though one distractor is less clearly tied to a common error and the Kazakh phrasing could be slightly more standard by explicitly using ∠ACB. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed. The figure clearly shows R=13, AB=24, and point C on the major arc, making the problem well-defined. All four distractors correspond to identifiable errors: A) confusing sin with cos, B) assuming obtuse angle (negative cosine), D) a plausible but incorrect arithmetic path. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It requires multiple logical steps: applying the extended Law of Sines (or central/inscribed angle properties), calculating the trigonometric values, and crucially, using the visual information from the figure to determine the sign of the cosine (acute vs. obtuse angle). The distractors are highly plausible and target specific common errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='5/13' expected='5/13'",
+        "raw": {
+          "ok": true,
+          "stdout": "5/13",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The circle has center O and radius R = 13. The chord length is AB = 24. Let theta = angle AOB be the central angle subtending chord AB, and let alpha = angle ACB be the inscribed angle subtending the same chord AB. For a chord, AB = 2R sin(theta/2). Substituting the given values: 24 = 2*13*sin(theta/2) = 26*sin(theta/2). Therefore sin(theta/2) = 24/26 = 12/13. Since theta/2 is an acute angle in the relevant triangle, cos(theta/2) = sqrt(1 - sin^2(theta/2)) = sqrt(1 - (12/13)^2) = sqrt(1 - 144/169) = sqrt(25/169) = 5/13. The inscribed angle theorem gives alpha = theta/2 because angle ACB subtends chord AB. Hence cos(angle ACB) = cos(alpha) = 5/13.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely follows from the chord-radius relation and the inscribed angle theorem. The item is appropriate for level B, though one distractor is less clearly tied to a common error and the Kazakh phrasing could be slightly more standard by explicitly using ∠ACB.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='5/13' expected='5/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "5/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the figure: circle with center O, radius R = 13, chord AB = 24. Point C is on the circle, and angle ACB is an inscribed angle subtending arc AB.\n\nSince AB = 24 and R = 13, I need to find the inscribed angle ACB.\n\nFirst, find the central angle AOB subtending chord AB.\nUsing the relationship: chord length = 2R·sin(θ/2), where θ is the central angle.\n24 = 2·13·sin(θ/2)\n24 = 26·sin(θ/2)\nsin(θ/2) = 24/26 = 12/13\n\nSo sin(∠AOB/2) = 12/13, which means cos(∠AOB/2) = 5/13.\n\nThe inscribed angle ACB = θ/2 (inscribed angle is half the central angle).\n\nWait - from the figure, C is at the bottom of the circle, and AB appears to be near the top. The inscribed angle ACB subtends the arc AB that does NOT contain C.\n\nThe central angle for arc AB (not containing C) = θ where sin(θ/2) = 12/13.\nSo θ/2 has sin = 12/13, cos = 5/13.\nThe inscribed angle ACB = θ/2.\n\nSo cos(ACB) = cos(θ/2) = 5/13.\n\nBut wait - looking at the figure again, C is below AB, and the arc AB not containing C appears to be the minor arc (since AB = 24 < 2R = 26, so AB is less than diameter). The central angle θ satisfies sin(θ/2) = 12/13, so θ/2 is acute (since 12/13 < 1), meaning θ < 180°, so AB subtends a minor arc at center.\n\nThe inscribed angle ACB = θ/2 where sin(θ/2) = 12/13 and cos(θ/2) = 5/13.\n\nSo cos(ACB) = 5/13.\n\nHowever, I should check if C is on the major arc side. From the figure, C is on the major arc (the longer arc below AB), so the inscribed angle ACB subtends the minor arc AB.\n\nInscribed angle = (1/2) × central angle of the intercepted arc = θ/2.\ncos(ACB) = 5/13.\n\nAnswer: C) 5/13.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 9.0,
+            "figure_relevance": 9.0
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound and correctly keyed. The figure clearly shows R=13, AB=24, and point C on the major arc, making the problem well-defined. All four distractors correspond to identifiable errors: A) confusing sin with cos, B) assuming obtuse angle (negative cosine), D) a plausible but incorrect arithmetic path.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='5/13' expected='5/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "5/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "1. Identify the relationship between the inscribed angle and the central angle. The angle $\\angle ACB$ is an inscribed angle that subtends the minor arc $AB$. We know it subtends the minor arc because point $C$ is located on the major arc (the center $O$ is between the chord $AB$ and point $C$, as shown in the diagram).\n2. The measure of an inscribed angle is half the measure of the central angle that subtends the same arc. Let $\\angle AOB$ be the central angle subtending the minor arc $AB$. Then $\\angle ACB = \\frac{1}{2}\\angle AOB$.\n3. Consider the triangle $\\triangle AOB$. It is an isosceles triangle because $OA$ and $OB$ are radii of the circle, so $OA = OB = R = 13$. The base is the chord $AB = 24$.\n4. Draw an altitude from the center $O$ to the chord $AB$, intersecting $AB$ at point $M$. In an isosceles triangle, the altitude to the base also bisects the base and the vertex angle. Therefore, $M$ is the midpoint of $AB$, giving $AM = \\frac{24}{2} = 12$, and $\\angle AOM = \\frac{1}{2}\\angle AOB$.\n5. In the right-angled triangle $\\triangle AOM$, we know the hypotenuse $OA = 13$ and the leg $AM = 12$. We can find the length of the other leg $OM$ using the Pythagorean theorem:\n   $OM = \\sqrt{OA^2 - AM^2} = \\sqrt{13^2 - 12^2} = \\sqrt{169 - 144} = \\sqrt{25} = 5$.\n6. Let $\\alpha = \\angle AOM$. From $\\triangle AOM$, we can find the cosine of $\\alpha$:\n   $\\cos(\\alpha) = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{OM}{OA} = \\frac{5}{13}$.\n7. Since $\\angle ACB = \\frac{1}{2}\\angle AOB = \\angle AOM = \\alpha$, we have:\n   $\\cos(\\angle ACB) = \\cos(\\alpha) = \\frac{5}{13}$.\n8. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It requires multiple logical steps: applying the extended Law of Sines (or central/inscribed angle properties), calculating the trigonometric values, and crucially, using the visual information from the figure to determine the sign of the cosine (acute vs. obtuse angle). The distractors are highly plausible and target specific common errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='5/13' expected='5/13'",
+            "raw": {
+              "ok": true,
+              "stdout": "5/13",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T18:22:08.604930+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,208 @@
+{
+  "id": "00b5fd71-bf1d-4d8f-833f-cbaad0c2f934",
+  "subject": "math",
+  "level": "A",
+  "format": "text",
+  "topic": "quadratic_irrational",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$x^2 - 7x + 12 = 0$ теңдеуінің түбірлерінің қосындысын табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$-7$"
+    },
+    {
+      "label": "B",
+      "text": "$12$"
+    },
+    {
+      "label": "C",
+      "text": "$7$"
+    },
+    {
+      "label": "D",
+      "text": "$-12$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Виет формуласы бойынша, $ax^2 + bx + c = 0$ теңдеуі үшін түбірлердің қосындысы $x_1 + x_2 = -\\frac{b}{a}$ тең болады. Берілген теңдеуде $a = 1$, $b = -7$, $c = 12$. Сондықтан $x_1 + x_2 = -\\frac{-7}{1} = 7$. Тексеру үшін теңдеудің түбірлерін табайық: дискриминант $D = (-7)^2 - 4 \\cdot 1 \\cdot 12 = 49 - 48 = 1$. Түбірлер: $x_1 = \\frac{7 + 1}{2} = 4$, $x_2 = \\frac{7 - 1}{2} = 3$. Қосындысы: $4 + 3 = 7$.",
+  "latex_formulas": [
+    "x_1 + x_2 = -\\frac{b}{a}",
+    "D = b^2 - 4ac"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.8,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: For the quadratic equation x^2 - 7x + 12 = 0, identify coefficients: a = 1, b = -7, c = 12. By Vieta's formula, the sum of the roots is -b/a. Therefore, the sum is -(-7)/1 = 7. So the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: For the quadratic equation x² - 7x + 12 = 0, by Vieta's formulas, the sum of the roots equals -b/a where a=1 and b=-7. Therefore, sum of roots = -(-7)/1 = 7. We can verify by factoring: x² - 7x + 12 = (x-3)(x-4) = 0, giving roots x=3 and x=4, and 3+4=7.\n\n[google/gemini-3.1-pro-preview] answered C: To find the sum of the roots of the quadratic equation x^2 - 7x + 12 = 0, we can use Vieta's formulas. For an equation of the form ax^2 + bx + c = 0, the sum of its roots is given by -b/a. In this equation, a = 1, b = -7, and c = 12. Therefore, the sum of the roots is -(-7) / 1 = 7. Alternatively, we can factor the quadratic equation as (x - 3)(x - 4) = 0, which gives the roots x = 3 and x = 4. Th",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.8,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is correct, unambiguous, and has exactly one defensible answer. It appropriately tests direct application of Vieta's formula at level A, with plausible sign/product-related distractors. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A item testing direct application of Vieta's formulas. The correct answer is unambiguous, verified both algebraically and by factoring. Distractors correspond to identifiable errors: A (-7) confuses the sign in Vieta's formula, B (12) gives the product instead of the sum, D (-12) combines both errors. | [google/gemini-3.1-pro-preview] The question perfectly aligns with the requested difficulty level A, testing a direct application of Vieta's formulas. The distractors are well-chosen based on common student errors (confusing signs or confusing sum with product).",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='7' expected='7'",
+      "raw": {
+        "ok": true,
+        "stdout": "7",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: For the quadratic equation x^2 - 7x + 12 = 0, identify coefficients: a = 1, b = -7, c = 12. By Vieta's formula, the sum of the roots is -b/a. Therefore, the sum is -(-7)/1 = 7. So the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: For the quadratic equation x² - 7x + 12 = 0, by Vieta's formulas, the sum of the roots equals -b/a where a=1 and b=-7. Therefore, sum of roots = -(-7)/1 = 7. We can verify by factoring: x² - 7x + 12 = (x-3)(x-4) = 0, giving roots x=3 and x=4, and 3+4=7.\n\n[google/gemini-3.1-pro-preview] answered C: To find the sum of the roots of the quadratic equation x^2 - 7x + 12 = 0, we can use Vieta's formulas. For an equation of the form ax^2 + bx + c = 0, the sum of its roots is given by -b/a. In this equation, a = 1, b = -7, and c = 12. Therefore, the sum of the roots is -(-7) / 1 = 7. Alternatively, we can factor the quadratic equation as (x - 3)(x - 4) = 0, which gives the roots x = 3 and x = 4. Th",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.8,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is correct, unambiguous, and has exactly one defensible answer. It appropriately tests direct application of Vieta's formula at level A, with plausible sign/product-related distractors. | [anthropic/claude-sonnet-4.6] The question is a clean, well-formed Level A item testing direct application of Vieta's formulas. The correct answer is unambiguous, verified both algebraically and by factoring. Distractors correspond to identifiable errors: A (-7) confuses the sign in Vieta's formula, B (12) gives the product instead of the sum, D (-12) combines both errors. | [google/gemini-3.1-pro-preview] The question perfectly aligns with the requested difficulty level A, testing a direct application of Vieta's formulas. The distractors are well-chosen based on common student errors (confusing signs or confusing sum with product).",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='7' expected='7'",
+        "raw": {
+          "ok": true,
+          "stdout": "7",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For the quadratic equation x^2 - 7x + 12 = 0, identify coefficients: a = 1, b = -7, c = 12. By Vieta's formula, the sum of the roots is -b/a. Therefore, the sum is -(-7)/1 = 7. So the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The item is correct, unambiguous, and has exactly one defensible answer. It appropriately tests direct application of Vieta's formula at level A, with plausible sign/product-related distractors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='7' expected='7'",
+            "raw": {
+              "ok": true,
+              "stdout": "7",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For the quadratic equation x² - 7x + 12 = 0, by Vieta's formulas, the sum of the roots equals -b/a where a=1 and b=-7. Therefore, sum of roots = -(-7)/1 = 7. We can verify by factoring: x² - 7x + 12 = (x-3)(x-4) = 0, giving roots x=3 and x=4, and 3+4=7.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is a clean, well-formed Level A item testing direct application of Vieta's formulas. The correct answer is unambiguous, verified both algebraically and by factoring. Distractors correspond to identifiable errors: A (-7) confuses the sign in Vieta's formula, B (12) gives the product instead of the sum, D (-12) combines both errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='7' expected='7'",
+            "raw": {
+              "ok": true,
+              "stdout": "7",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the sum of the roots of the quadratic equation x^2 - 7x + 12 = 0, we can use Vieta's formulas. For an equation of the form ax^2 + bx + c = 0, the sum of its roots is given by -b/a. In this equation, a = 1, b = -7, and c = 12. Therefore, the sum of the roots is -(-7) / 1 = 7. Alternatively, we can factor the quadratic equation as (x - 3)(x - 4) = 0, which gives the roots x = 3 and x = 4. Their sum is 3 + 4 = 7. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question perfectly aligns with the requested difficulty level A, testing a direct application of Vieta's formulas. The distractors are well-chosen based on common student errors (confusing signs or confusing sum with product).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='7' expected='7'",
+            "raw": {
+              "ok": true,
+              "stdout": "7",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T15:27:47.012792+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,210 @@
+{
+  "id": "24ae4768-83a0-4808-8643-1ceb35594ddf",
+  "subject": "math",
+  "level": "B",
+  "format": "text",
+  "topic": "complex_numbers",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "$z = \\frac{(1-i)^4}{1+i\\sqrt{3}}$ кешен саны берілген. $z^3$ мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$8i$"
+    },
+    {
+      "label": "B",
+      "text": "$8$"
+    },
+    {
+      "label": "C",
+      "text": "$-8$"
+    },
+    {
+      "label": "D",
+      "text": "$-8i$"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "1) Бөлшектің алымын есептейміз:\n$(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i$.\nОнда $(1-i)^4 = ((1-i)^2)^2 = (-2i)^2 = 4i^2 = -4$.\n\n2) Кешен санды алгебралық түрге келтіреміз:\n$z = \\frac{-4}{1+i\\sqrt{3}}$\nБөлшектің алымы мен бөлімін бөлімінің түйіндесіне көбейтеміз:\n$z = \\frac{-4(1-i\\sqrt{3})}{(1+i\\sqrt{3})(1-i\\sqrt{3})} = \\frac{-4(1-i\\sqrt{3})}{1^2 + (\\sqrt{3})^2} = \\frac{-4(1-i\\sqrt{3})}{4} = -1 + i\\sqrt{3}$.\n\n3) $z^3$ мәнін анықтаймыз:\nАлгебралық түрде есептеу:\n$z^2 = (-1 + i\\sqrt{3})^2 = 1 - 2i\\sqrt{3} + (i\\sqrt{3})^2 = 1 - 2i\\sqrt{3} - 3 = -2 - 2i\\sqrt{3}$.\n$z^3 = z^2 \\cdot z = (-2 - 2i\\sqrt{3})(-1 + i\\sqrt{3}) = 2 - 2i\\sqrt{3} + 2i\\sqrt{3} - 2i^2 \\cdot 3 = 2 - (-6) = 8$.\n\n(Немесе Муавр формуласымен: $z$-тің модулі $r=2$, аргументі $\\varphi = \\frac{2\\pi}{3}$, олай болса $z^3 = 2^3 (\\cos(3 \\cdot \\frac{2\\pi}{3}) + i\\sin(3 \\cdot \\frac{2\\pi}{3})) = 8(\\cos 2\\pi + i\\sin 2\\pi) = 8$)",
+  "latex_formulas": [
+    "$(a-b)^2 = a^2 - 2ab + b^2$",
+    "$i^2 = -1$",
+    "$z = \\frac{z_1}{z_2} = \\frac{z_1 \\cdot \\overline{z_2}}{z_2 \\cdot \\overline{z_2}}$",
+    "$z^n = r^n (\\cos(n\\varphi) + i\\sin(n\\varphi))$"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Compute the numerator: (1 - i)^2 = 1 - 2i + i^2 = -2i, so (1 - i)^4 = (-2i)^2 = 4i^2 = -4. Thus z = -4/(1 + i√3). Rationalize the denominator: z = -4(1 - i√3)/((1)^2 + (√3)^2) = -4(1 - i√3)/4 = -1 + i√3. This complex number has modulus 2 and argument 2π/3, so z = 2(cos(2π/3) + i sin(2π/3)). Therefore z^3 = 2^3(cos(2π) + i sin(2π)) = 8. Hence the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: Step 1: Compute (1-i)^4.\n(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i\n(1-i)^4 = (-2i)^2 = 4i^2 = -4\n\nStep 2: Convert 1 + i√3 to polar form.\n|1 + i√3| = √(1 + 3) = 2\narg(1 + i√3) = π/3\nSo 1 + i√3 = 2(cos(π/3) + i·sin(π/3)) = 2e^(iπ/3)\n\nStep 3: Compute z = (1-i)^4 / (1 + i√3) = -4 / (1 + i√3)\nMultiply numerator and denominator by conjugate (1 - i√3):\nz = -4(1 - i√3) / ((1)^2 + (√3)^2) = -4(1 - i√3) / 4\n\n[google/gemini-3.1-pro-preview] answered B: First, let's simplify the numerator of the given complex number $z$. We know that $(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i$. Therefore, $(1-i)^4 = ((1-i)^2)^2 = (-2i)^2 = 4i^2 = -4$. \n\nSo, the complex number $z$ can be written as:\n$z = \\frac{-4}{1+i\\sqrt{3}}$.\n\nWe need to find the value of $z^3$. We can do this by cubing the numerator and the denominator separately:\n$z^3 = \\frac{(-4)^3}{(1+i\\sqr",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.167,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous. The item fits medium difficulty well, requiring simplification of a complex fraction and cubing via algebraic or polar form; distractors are format-consistent and plausible sign/argument-error outcomes. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (B: 8), verified both algebraically and via De Moivre's theorem. All four distractors (8i, 8, -8, -8i) are plausible results from sign or argument errors in polar form computation, making them excellent distractors. The Kazakh phrasing is natural and uses standard mathematical terminology correctly. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligns with the requested difficulty level. The distractors represent common calculation errors.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='8' expected='8'",
+      "raw": {
+        "ok": true,
+        "stdout": "8",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Compute the numerator: (1 - i)^2 = 1 - 2i + i^2 = -2i, so (1 - i)^4 = (-2i)^2 = 4i^2 = -4. Thus z = -4/(1 + i√3). Rationalize the denominator: z = -4(1 - i√3)/((1)^2 + (√3)^2) = -4(1 - i√3)/4 = -1 + i√3. This complex number has modulus 2 and argument 2π/3, so z = 2(cos(2π/3) + i sin(2π/3)). Therefore z^3 = 2^3(cos(2π) + i sin(2π)) = 8. Hence the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: Step 1: Compute (1-i)^4.\n(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i\n(1-i)^4 = (-2i)^2 = 4i^2 = -4\n\nStep 2: Convert 1 + i√3 to polar form.\n|1 + i√3| = √(1 + 3) = 2\narg(1 + i√3) = π/3\nSo 1 + i√3 = 2(cos(π/3) + i·sin(π/3)) = 2e^(iπ/3)\n\nStep 3: Compute z = (1-i)^4 / (1 + i√3) = -4 / (1 + i√3)\nMultiply numerator and denominator by conjugate (1 - i√3):\nz = -4(1 - i√3) / ((1)^2 + (√3)^2) = -4(1 - i√3) / 4\n\n[google/gemini-3.1-pro-preview] answered B: First, let's simplify the numerator of the given complex number $z$. We know that $(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i$. Therefore, $(1-i)^4 = ((1-i)^2)^2 = (-2i)^2 = 4i^2 = -4$. \n\nSo, the complex number $z$ can be written as:\n$z = \\frac{-4}{1+i\\sqrt{3}}$.\n\nWe need to find the value of $z^3$. We can do this by cubing the numerator and the denominator separately:\n$z^3 = \\frac{(-4)^3}{(1+i\\sqr",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.167,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous. The item fits medium difficulty well, requiring simplification of a complex fraction and cubing via algebraic or polar form; distractors are format-consistent and plausible sign/argument-error outcomes. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (B: 8), verified both algebraically and via De Moivre's theorem. All four distractors (8i, 8, -8, -8i) are plausible results from sign or argument errors in polar form computation, making them excellent distractors. The Kazakh phrasing is natural and uses standard mathematical terminology correctly. | [google/gemini-3.1-pro-preview] The question is well-structured, mathematically sound, and perfectly aligns with the requested difficulty level. The distractors represent common calculation errors.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='8' expected='8'",
+        "raw": {
+          "ok": true,
+          "stdout": "8",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Compute the numerator: (1 - i)^2 = 1 - 2i + i^2 = -2i, so (1 - i)^4 = (-2i)^2 = 4i^2 = -4. Thus z = -4/(1 + i√3). Rationalize the denominator: z = -4(1 - i√3)/((1)^2 + (√3)^2) = -4(1 - i√3)/4 = -1 + i√3. This complex number has modulus 2 and argument 2π/3, so z = 2(cos(2π/3) + i sin(2π/3)). Therefore z^3 = 2^3(cos(2π) + i sin(2π)) = 8. Hence the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous. The item fits medium difficulty well, requiring simplification of a complex fraction and cubing via algebraic or polar form; distractors are format-consistent and plausible sign/argument-error outcomes.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='8' expected='8'",
+            "raw": {
+              "ok": true,
+              "stdout": "8",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Step 1: Compute (1-i)^4.\n(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i\n(1-i)^4 = (-2i)^2 = 4i^2 = -4\n\nStep 2: Convert 1 + i√3 to polar form.\n|1 + i√3| = √(1 + 3) = 2\narg(1 + i√3) = π/3\nSo 1 + i√3 = 2(cos(π/3) + i·sin(π/3)) = 2e^(iπ/3)\n\nStep 3: Compute z = (1-i)^4 / (1 + i√3) = -4 / (1 + i√3)\nMultiply numerator and denominator by conjugate (1 - i√3):\nz = -4(1 - i√3) / ((1)^2 + (√3)^2) = -4(1 - i√3) / 4 = -(1 - i√3) = -1 + i√3\n\nStep 4: Convert z = -1 + i√3 to polar form.\n|z| = √(1 + 3) = 2\narg(z): since real part is -1 and imaginary part is √3, the angle is in the second quadrant.\ntan(θ) = √3/(-1), so θ = π - π/3 = 2π/3\nSo z = 2e^(i·2π/3)\n\nStep 5: Compute z^3.\nz^3 = 2^3 · e^(i·3·2π/3) = 8 · e^(i·2π) = 8(cos(2π) + i·sin(2π)) = 8·1 = 8\n\nTherefore z^3 = 8.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound with a unique correct answer (B: 8), verified both algebraically and via De Moivre's theorem. All four distractors (8i, 8, -8, -8i) are plausible results from sign or argument errors in polar form computation, making them excellent distractors. The Kazakh phrasing is natural and uses standard mathematical terminology correctly.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='8' expected='8'",
+            "raw": {
+              "ok": true,
+              "stdout": "8",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "First, let's simplify the numerator of the given complex number $z$. We know that $(1-i)^2 = 1 - 2i + i^2 = 1 - 2i - 1 = -2i$. Therefore, $(1-i)^4 = ((1-i)^2)^2 = (-2i)^2 = 4i^2 = -4$. \n\nSo, the complex number $z$ can be written as:\n$z = \\frac{-4}{1+i\\sqrt{3}}$.\n\nWe need to find the value of $z^3$. We can do this by cubing the numerator and the denominator separately:\n$z^3 = \\frac{(-4)^3}{(1+i\\sqrt{3})^3}$.\n\nThe numerator cubed is $(-4)^3 = -64$.\n\nFor the denominator, we can convert $1+i\\sqrt{3}$ to its polar form or expand it directly. \nUsing polar form: $1+i\\sqrt{3} = 2\\left(\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}\\right) = 2\\left(\\cos\\frac{\\pi}{3} + i\\sin\\frac{\\pi}{3}\\right) = 2e^{i\\pi/3}$.\nCubing this gives: $(2e^{i\\pi/3})^3 = 2^3 e^{i\\pi} = 8(-1) = -8$.\n\nAlternatively, expanding directly: \n$(1+i\\sqrt{3})^3 = 1^3 + 3(1)^2(i\\sqrt{3}) + 3(1)(i\\sqrt{3})^2 + (i\\sqrt{3})^3 = 1 + 3i\\sqrt{3} + 3(-3) + i^3(3\\sqrt{3}) = 1 + 3i\\sqrt{3} - 9 - 3i\\sqrt{3} = -8$.\n\nNow, substitute these back into the expression for $z^3$:\n$z^3 = \\frac{-64}{-8} = 8$.\n\nThus, $z^3 = 8$, which matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-structured, mathematically sound, and perfectly aligns with the requested difficulty level. The distractors represent common calculation errors.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='8' expected='8'",
+            "raw": {
+              "ok": true,
+              "stdout": "8",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T17:42:03.095106+00:00",
+  "generation_attempts": 1
+}
