@@ -1,0 +1,2222 @@
+[
+  {
+    "row": {
+      "idx": 0,
+      "variant": "real",
+      "topic": "«Тәрбиенің қайнар бұлағы»",
+      "level": "A",
+      "overall": 9.3,
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt from 'Менің атым Қожа' (My Name is Koja) by Berdibek Soqpaqbayev contains the phrase: 'Сәйбек кілт тоқтай қалып, шегарадағы сақшыдай қатал үн қатты.' This translates roughly as: 'Saibek suddenly stopped and spoke harshly, like a border guard.'\n\nThe key literary device here is the comparison: Saibek's harsh tone/manner is being compared to a border guard (шегарадағы сақшы). The comparison is made explicit by the use of the suffix '-дай' (meaning 'like' or 'as'), which is the standard marker of a simile (теңеу) in Kazakh.\n\n- Теңеу (simile): a direct comparison using markers like -дай/-дей/-тай/-тей (like/as). Here 'сақшыдай' = 'like a guard' — this is a classic simile.\n- Эпитет (epithet): a descriptive adjective/phrase. While 'қатал' (harsh/stern) could be an epithet, the dominant device in the sentence is the comparison.\n- Метафора (metaphor): an implicit comparison without 'like/as'. Not the case here since '-дай' makes it explicit.\n- Метонимия (metonymy): substitution of a related concept. Not applicable here.\n\nThe presence of '-дай' suffix clearly marks this as a теңеу (simile).",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.3,
+      "pass_fail": true,
+      "comments": "The question correctly identifies 'теңеу' (simile) as the literary device, clearly marked by the '-дай' suffix in 'сақшыдай'. All distractors represent plausible literary terms that a teacher might confuse, and the question is well-suited to Level A recall.",
+      "improvement_suggestions": null,
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 0,
+      "variant": "wrong_key",
+      "topic": "«Тәрбиенің қайнар бұлағы»",
+      "level": "A",
+      "overall": 5.75,
+      "correctness": 2.0,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt from 'Менің атым Қожа' (My Name is Koja) by Berdibek Soqpaqbayev contains the phrase: 'Сәйбек кілт тоқтай қалып, шегарадағы сақшыдай қатал үн қатты.' This translates to: 'Saibek suddenly stopped and spoke harshly like a border guard.'\n\nThe key literary device here is the comparison 'шегарадағы сақшыдай' (like a border guard). In Kazakh literary analysis:\n- Теңеу (simile/comparison) is a figure of speech that directly compares two things using comparative markers such as '-дай/-дей' (like/as).\n- Эпитет (epithet) is a descriptive adjective or phrase that characterizes a noun.\n- Метафора (metaphor) is an implicit comparison without using comparative words.\n- Метонимия (metonymy) is substituting one concept with a related one.\n\nThe phrase uses '-дай' suffix ('сақшыдай' = 'like a guard'), which is the classic marker of a теңеу (simile) in Kazakh. The sentence explicitly compares Saibek's harsh tone to that of a border guard using the comparative suffix '-дай'. This is a direct, explicit comparison — a simile (теңеу).\n\nTherefore, the correct answer is A) теңеу.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.75,
+      "pass_fail": false,
+      "comments": "The provided correct answer is D (метонимия/metonymy), but the sentence 'шегарадағы сақшыдай қатал үн қатты' clearly contains the suffix '-дай' marking an explicit simile (теңеу), making A the defensibly correct answer. Metonymy involves substituting a related concept, which is not present here. The keyed answer is demonstrably wrong.",
+      "improvement_suggestions": "Change the correct answer key from D to A (теңеу). The '-дай' suffix is the canonical Kazakh marker of a simile/теңеу, and this is a textbook example. Alternatively, replace the excerpt with one that genuinely illustrates metonymy if that is the intended device being tested.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 0,
+      "variant": "weak_distractors",
+      "topic": "«Тәрбиенің қайнар бұлағы»",
+      "level": "A",
+      "overall": 6.1,
+      "correctness": 10.0,
+      "distractor_quality": 0.0,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the literary device (суреттеу құралы) used in the excerpt from the story 'Менің атым Қожа' (My Name is Koja): 'Сәйбек кілт тоқтай қалып, шегарадағы сақшыдай қатал үн қатты.' (Säibek suddenly stopped and spoke harshly like a border guard.)\n\nAnalysis: The phrase 'шегарадағы сақшыдай' (like a border guard) uses the Kazakh comparative suffix '-дай' which indicates a simile/comparison. This is a direct comparison between Säibek's harsh tone and that of a border guard. In Kazakh literary terminology, this device is called 'теңеу' (simile/comparison).\n\nA simile (теңеу) is a figure of speech that makes a direct comparison between two unlike things using comparative words or suffixes (like -дай/-дей, -тай/-тей, сияқты, секілді, etc.).\n\nAn epithet (эпитет) would be a descriptive adjective/phrase that characterizes a noun, but here the comparison structure with '-дай' clearly marks it as a simile.\n\nOptions C (100) and D (0) appear to be numerical values, not literary devices, so they are irrelevant.\n\nTherefore, the correct answer is A) теңеу (simile).",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 0.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.1,
+      "pass_fail": true,
+      "comments": "The correct answer (теңеу/simile) is clearly supported by the '-дай' comparative suffix in the excerpt, and the keying is accurate. However, options C (100) and D (0) are numerical values with no connection to literary devices, making them trivially eliminable and completely destroying distractor quality.",
+      "improvement_suggestions": "Replace options C and D with plausible literary device distractors such as 'метафора' (metaphor) and 'кейіптеу' (personification) or 'гипербола' (hyperbole), which are commonly confused with теңеу by teachers. All four options should be literary terms of similar format and length to avoid cueing.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 1,
+      "variant": "real",
+      "topic": "Туған жерім -аялы алтын бесігім",
+      "level": "A",
+      "overall": 8.0,
+      "correctness": 8.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Doспамбет Жырау (Doспамбет жырау, 16th century) was a Kazakh poet-warrior (жырау) known for his tolghau (толғау) poems. His famous poem 'Айналайын Ақжайық' (My beloved Aqzhayiq/White Ural River) is a lyrical lament in which the poet expresses deep longing and nostalgia for his homeland — the Aqzhayiq (Ural) River region — while being away at war or in exile.\n\nThe dominant theme/motif (сарын) in this tolghau is the poet's yearning for his peaceful homeland, the serene landscapes, and the tranquil life he left behind. The poem is filled with images of the beautiful steppe, the river, and the peaceful existence the poet longs to return to. This is characteristic of the 'бейбіт заманды аңсау сарыны' — the motif of longing for peaceful times.\n\nAnalyzing the options:\nA) құлазу сарыны — motif of desolation/emptiness — while there are elements of longing, the primary theme is not desolation\nB) түңілу сарыны — motif of despair/disillusionment — not the primary theme\nC) болашаққа күмәндану сарыны — motif of doubting the future — not characteristic of this poem\nD) бейбіт заманды аңсау сарыны — motif of longing for peaceful times — this matches the poem's central theme of yearning for the peaceful homeland and tranquil life by the Aqzhayiq River\n\nThe poem 'Айналайын Ақжайық' is indeed characterized by the longing for peaceful homeland life, making D the correct answer.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 8.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.0,
+      "pass_fail": true,
+      "comments": "The correct answer D (бейбіт заманды аңсау сарыны) aligns well with the known thematic content of Doспамбет Жырау's 'Айналайын Ақжайық' tolghau, which centers on longing for the peaceful homeland. The question is appropriate for Level A recall. Kazakh terminology is natural and textbook-standard.",
+      "improvement_suggestions": "Distractor A (құлазу сарыны) is somewhat plausible but B and C are relatively easy to eliminate — 'түңілу' (despair) and 'болашаққа күмәндану' (doubting the future) are not closely associated with this poem and can be dismissed without deep knowledge. Consider replacing one weaker distractor with something like 'жерді сағыну сарыны' (motif of homesickness) to increase discriminability and reduce guessability.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 1,
+      "variant": "wrong_key",
+      "topic": "Туған жерім -аялы алтын бесігім",
+      "level": "A",
+      "overall": 5.3,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Doспамбет Жырау (Doспамбет жырау, 16th century) was a warrior-poet (жырау) who participated in battles and wrote tolғaus (philosophical poems). His famous tolғau 'Айналайын Ақжайық' (Oh my dear Ақжайық/White Ural river) is a lyrical lament in which the poet expresses deep longing and nostalgia for his homeland — the Ақжайық (Ural) river region — while being away at war or in exile. The dominant emotional tone (сарын) of this tolғau is one of yearning/longing for the peaceful homeland, the native land, and the tranquil times spent there. The poet mourns being separated from his beloved land and longs for the peaceful, serene life associated with his birthplace. This corresponds to 'бейбіт заманды аңсау сарыны' — the motif of longing for peaceful times. While there are elements of sadness and desolation, the primary thematic strand identified in Kazakh literary scholarship for this particular tolғau is the longing (аңсау) for the native peaceful land. Option A (құлазу — desolation/emptiness) is related but secondary. Option D (бейбіт заманды аңсау — longing for peaceful times) is the standard answer given in Kazakh literature curricula for this work.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.3,
+      "pass_fail": false,
+      "comments": "The provided correct answer C ('болашаққа күмәндану сарыны' — doubting the future) does not match standard Kazakh literary scholarship on Doспамбет Жырау's 'Айналайын Ақжайық,' which consistently identifies the dominant motif as longing/nostalgia for the homeland and peaceful times (аңсау сарыны), corresponding to option D. The question appears to be incorrectly keyed.",
+      "improvement_suggestions": "Re-key the correct answer to D ('бейбіт заманды аңсау сарыны'), which aligns with established Kazakh literature curricula and scholarly consensus on this tolğau. Additionally, consider adding a brief textual excerpt from the tolğau to anchor the question more concretely and reduce ambiguity about which motif is dominant.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 1,
+      "variant": "weak_distractors",
+      "topic": "Туған жерім -аялы алтын бесігім",
+      "level": "A",
+      "overall": 5.3,
+      "correctness": 4.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Doспамбет Жырау (Doспамбет жырау, 16th century) was a Kazakh poet-warrior known for his tolghau (толғау) poems. His famous work 'Айналайын Ақжайық' (Oh my dear Aqzhayiq/Ural River) is a lament/elegy in which the poet expresses deep longing and nostalgia for his homeland — the Aqzhayiq (Ural) river region. The dominant motif (сарын) in this tolghau is the longing for peaceful times and the homeland, combined with a sense of desolation and grief. \n\nAnalyzing the options:\n- A) 'құлазу сарыны' — motif of desolation/loneliness/emptiness. This is indeed present in the poem as the poet mourns the loss of his homeland and peaceful life.\n- D) 'бейбіт заманды аңсау сарыны' — motif of longing for peaceful times. This is also strongly present.\n\nIn Kazakh literary scholarship, Доспамбет жыраудың 'Айналайын Ақжайық' толғауы is primarily characterized by the 'құлазу сарыны' (motif of desolation/longing for the lost homeland) — the poet laments the desolation of his native land, the emptiness left by war and separation. The poem expresses grief over the devastated homeland. \n\nHowever, in many Kazakh literature textbooks and teacher certification materials, the dominant theme identified in this specific tolghau is 'құлазу сарыны' — the sense of desolation, emptiness, and longing for the native land that has been left behind or destroyed. The poem describes the Aqzhayiq river and the surrounding steppe with a sense of loss and desolation.\n\nBoth A and D could be argued, but 'құлазу сарыны' (desolation motif) is the most commonly cited primary motif for this specific tolghau in Kazakh literary analysis, as the poem focuses on the desolate, empty homeland rather than specifically longing for peaceful times (which is more associated with other tolghau works).\n\nThe answer is A) құлазу сарыны.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 4.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.3,
+      "pass_fail": false,
+      "comments": "The provided answer D ('бейбіт заманды аңсау сарыны') conflicts with standard Kazakh literary analysis where 'құлазу сарыны' is the primary motif of this tolghau; additionally, two of the four options (B and C) are non-answers that trivially eliminate themselves, making the question effectively binary.",
+      "improvement_suggestions": "1) Verify the correct motif against authoritative Kazakh literature textbooks — 'құлазу сарыны' may be the better-supported answer. 2) Replace options B ('Анықталмаған') and C ('Дұрыс жауап жоқ') with substantive distractors based on plausible misconceptions, such as 'жорық сарыны' (campaign/battle motif) or 'мұң-зар сарыны' (grief/lament motif), to make all four options pedagogically meaningful.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 2,
+      "variant": "real",
+      "topic": "Абайды оқы, таңырқа!",
+      "level": "B",
+      "overall": 7.75,
+      "correctness": 10.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Abay Kunanbayuly's 'First Word' (Бірінші қарасөз) is the opening prose piece from his collection of philosophical essays known as 'Қара сөздер' (Words of Edification/Black Words). In this first prose piece, Abay reflects on his life and concludes that he has spent his years in vain — pursuing futile goals and wasting time. He then makes a resolution about what to do going forward. The key decision (негізгі шешім) Abay arrives at in the First Word is to take white paper and black ink as his pastime/entertainment (ақ қағаз бен қара сияны ермек қылу) — meaning he will devote himself to writing. He states that since he has found no true friend or companion worth his time, he will make writing his occupation and consolation. This is the famous conclusion of the First Word where Abay decides to write down his thoughts. Option D — 'ақ қағаз бен қара сияны ермек қылу' (to make white paper and black ink his pastime) — directly corresponds to this resolution. Option B (teaching what you know to those who don't know) is a theme in Abay's works but not the specific resolution of the First Word. Options A and C are not the main resolution of the First Word.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.75,
+      "pass_fail": true,
+      "comments": "The correct answer (D) is well-supported by the text of Abay's First Word, and the Kazakh language is natural and accurate. However, the question leans toward recall (Level A) rather than application or analysis (Level B), and distractor A ('өмірді бекерге өткізу') is actually a theme mentioned in the First Word itself, making it a somewhat plausible trap but also potentially confusing.",
+      "improvement_suggestions": "To raise difficulty to Level B, reframe the question to require analysis — e.g., ask why Abay chose writing as his resolution, or compare the resolution in the First Word with a theme from another Қара сөз. Distractor C ('балаларды ел қатарына қосу') is too easily eliminated as it belongs to a different context entirely; replace it with a distractor drawn from another Қара сөз resolution to increase plausibility.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 2,
+      "variant": "wrong_key",
+      "topic": "Абайды оқы, таңырқа!",
+      "level": "B",
+      "overall": 4.1,
+      "correctness": 2.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Abay Kunanbayuly's 'First Word' (Бірінші қарасөз) is the opening prose piece from his collection of philosophical essays known as 'Қара сөздер' (Words of Edification/Black Words). In this first prose piece, Abay reflects on what a person should do with their time and life. He concludes that since he is tired of seeking wealth, status, and the approval of others, and since all worldly pursuits have proven futile, he will take white paper and black ink as his companion/pastime (ермек). He decides to write down his thoughts — to use writing as his occupation and solace. This is the central resolution/decision (негізгі шешім) stated in the First Word: to take white paper and black ink as entertainment/pastime (ақ қағаз бен қара сияны ермек қылу). Option D matches this directly.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.1,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A) is factually wrong. In Abay's First Word, his stated resolution/decision is to take white paper and black ink as his pastime (option D), not to waste life in vain (A), which is what he criticizes others for doing. Additionally, the question tests simple recall rather than the multi-step analysis required for level B.",
+      "improvement_suggestions": "1. Correct the answer key to D ('ақ қағаз бен қара сияны ермек қылу'), which accurately reflects Abay's stated resolution in the First Word. 2. To raise difficulty to level B, rephrase the question to require analysis — e.g., ask why Abay chose this resolution or how it connects to his critique of society, requiring 2-3 logical steps. 3. Replace distractor A with something more plausible that reflects a common misreading of the text.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 2,
+      "variant": "weak_distractors",
+      "topic": "Абайды оқы, таңырқа!",
+      "level": "B",
+      "overall": 5.7,
+      "correctness": 9.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "In Abai Kunanbaiuly's 'First Word' (Бірінші қарасөз), Abai reflects on his life and concludes that he has spent his years in vain — without purpose or meaningful achievement. However, his resolution/decision at the end of the First Word is that since his youth has passed fruitlessly, he will now take up 'ақ қағаз бен қара сияны ермек қылу' — making white paper and black ink his pastime/entertainment. This is his stated resolution: to occupy himself with writing (poetry and prose) as a form of solace and meaningful activity in his remaining years. This is the key decision (негізгі шешім) announced in the First Word. Option D matches this directly.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.7,
+      "pass_fail": false,
+      "comments": "The correct answer (D) is factually accurate — Abai's resolution in the First Word is indeed to take up 'ақ қағаз бен қара сияны ермек қылу'. However, distractors B ('Анықталмаған') and C ('Жоқ') are meta-answers that are nonsensical in a literature test context and trivially eliminable, making the question far too easy. Distractor A is plausible but the overall distractor set is very weak. The difficulty level is closer to A (recall) than B (analysis/application).",
+      "improvement_suggestions": "Replace distractors B and C with substantive, content-based wrong answers — e.g., 'жастарды тәрбиелеу' (educating youth), 'елді басқару' (governing the people), or 'достарымен сырласу' (confiding in friends). This would require the test-taker to actually analyze the text rather than eliminate obviously absurd options. Also rephrase the stem to be a complete question: 'Абай Құнанбайұлының «Бірінші қарасөзінде» ақын өзінің негізгі шешімі ретінде нені атайды?' to improve grammatical completeness.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 3,
+      "variant": "real",
+      "topic": "Мен балаң жарық күнде сәуле қуған\\",
+      "level": "B",
+      "overall": 6.5,
+      "correctness": 7.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question is about the story 'Мен балаң жарық күнде сәуле қуған' (I was a child chasing rays in the bright sun), which is a work by Дулат Исабеков (Dulat Isabеkov). The excerpt describes a character who: lost his parents very early, lived at the doorstep of distant relatives, was meek (wouldn't take grass from a sheep's mouth), had a slight hearing defect, didn't play much as a child, and was timid/fearful.\n\nIn Dulat Isabеkov's prose works, particularly in this story, the character described with these traits — orphaned early, living with distant relatives, timid, with a slight hearing impairment — is Тортай (Tortai). This character is a classic depiction of a vulnerable, marginalized child figure in Kazakhstani literature.\n\nAmong the options given:\nA) Тортай - matches the description of an orphaned, timid child with hearing issues living with distant relatives\nB) Есікбай - different character\nC) Сұлтан - different character  \nD) Сапабек - different character\n\nThe description strongly matches Тортай, who is the central character in this narrative known for his vulnerability and the circumstances described.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.5,
+      "pass_fail": true,
+      "comments": "The correct answer (Тортай) aligns with the character description from Дулат Исабеков's work, and the Kazakh language is generally natural and well-formed. However, the question is essentially a direct recall/recognition task (matching a quoted passage to a character name), which places it closer to level A than the requested level B. The distractors lack clear plausible error paths — a teacher unfamiliar with the text cannot reason toward any distractor through a specific misconception.",
+      "improvement_suggestions": "1) Elevate cognitive demand by asking the teacher to analyze WHY this character's portrayal serves a thematic function, or to compare this character's traits with another character in the same work. 2) Improve distractors by choosing character names that share some surface similarity to Тортай's description (e.g., other orphaned or marginalized characters from Isаbekov's works) so each distractor is reachable via a specific misreading. 3) Consider adding a brief analytical stem rather than pure identification, e.g., asking which character trait most directly reflects the author's social critique.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 3,
+      "variant": "wrong_key",
+      "topic": "Мен балаң жарық күнде сәуле қуған\\",
+      "level": "B",
+      "overall": 5.6,
+      "correctness": 3.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question is from the topic 'Мен балаң жарық күнде сәуле қуған' which is a well-known poem/prose work by Мұхтар Әуезов or another Kazakh author. The excerpt describes a character who: lost both parents very early, lived at the doorstep of distant relatives, was meek (wouldn't take grass from a sheep's mouth), had a slight hearing defect, was timid and didn't play much with other children.\n\nThis description matches the character Тортай from Мұхтар Әуезов's works. In Әуезов's prose, Тортай is described as an orphan child who is timid, meek, and lives with relatives. The physical detail of a slight ear defect and the overall characterization of being a quiet, fearful child who lost parents early strongly points to Тортай.\n\nAlternatively, looking at the topic title 'Мен балаң жарық күнде сәуле қуған' - this appears to be related to Сәбит Мұқанов's or another author's work. However, the character description with the specific traits mentioned (orphan, living with distant relatives, meek, slight hearing impairment, timid) is characteristic of Тортай in Kazakh literature.\n\nThe answer is A) Тортай.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 3.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.6,
+      "pass_fail": false,
+      "comments": "My independent analysis identified Тортай (A) as the character matching the description — an orphan, meek, timid, with a slight hearing defect living with distant relatives — which conflicts with the provided answer of Сапабек (D). Without a provided explanation to verify the keying, the correctness of D cannot be confirmed, and the question fails on the correctness dimension.",
+      "improvement_suggestions": "Provide a clear explanation citing the specific work and page/chapter reference where Сапабек is described with these traits. If the correct answer is indeed Тортай, re-key the answer. Ensure the excerpt is accurately attributed to the correct literary source so teachers can verify the answer independently.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 3,
+      "variant": "weak_distractors",
+      "topic": "Мен балаң жарық күнде сәуле қуған\\",
+      "level": "B",
+      "overall": 3.9,
+      "correctness": 3.0,
+      "distractor_quality": 1.0,
+      "difficulty_alignment": 3.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about a character described in the excerpt from the poem/prose 'Мен балаң жарық күнде сәуле қуған' (I was a child chasing rays in bright daylight). The description given is: 'Lost both parents very early, lived at the doorstep of distant relatives, was meek and wouldn't take grass from a sheep's mouth, had a slight hearing defect, was timid and didn't play much as a child.'\n\nThis work is by Мұхтар Әуезов or more likely it is a poem/prose piece. Actually, 'Мен балаң жарық күнде сәуле қуған' is a well-known autobiographical poem by Мағжан Жұмабаев, but the prose description suggests this might be from a prose work.\n\nActually, looking more carefully, this excerpt with the character description (orphaned early, living at relatives' doorstep, meek, slight hearing defect, timid) matches the character 'Тортай' from Мұхтар Әуезов's works, specifically from 'Қараш-Қараш оқиғасы' or another work.\n\nHowever, the topic title 'Мен балаң жарық күнде сәуле қуған' is a line from Мағжан Жұмабаев's autobiographical poem. In this poem, Мағжан describes his own childhood - he was orphaned early (his mother died when he was young), he was raised by relatives, he was timid and gentle. The character described matches Мағжан's self-portrait in this autobiographical poem.\n\nBut the options include 'Тортай' and 'Сапабек' as named characters. If this is from Мағжан's poem, the lyrical hero/narrator would be Мағжан himself, not a named character.\n\nWait - looking at this again, 'Мен балаң жарық күнде сәуле қуған' could be a prose work or a poem where a character named Тортай or Сапабек appears. \n\nIn Мұхтар Әуезов's story 'Қараш-Қараш оқиғасы', there is a character. But more relevantly, in Сәбит Мұқанов's or other authors' works...\n\nActually, I believe this is from Мағжан Жұмабаев's autobiographical poem 'Мен балаң жарық күнде сәуле қуған' where the lyrical hero describes himself. The character described - orphaned, living with distant relatives, meek, slight hearing defect, timid - matches Мағжан's own description of himself in this poem. Since it's an autobiographical lyrical poem, the 'character' is the lyrical 'I' (Мағжан himself), not a named fictional character like Тортай or Сапабек.\n\nHowever, among the options, if we must choose a named character, 'Тортай' is a character name that appears in Kazakh literature associated with orphaned, timid children. But given the specific details (slight hearing defect - 'құлағының сәл мүкiсi бар'), this is a very specific autobiographical detail from Мағжан's poem about himself.\n\nSince the poem is autobiographical and the narrator is describing himself (Мағжан Жұмабаев), and none of the options say 'Мағжан' or 'лирикалық кейіпкер', the answer might be 'Дұрыс жауап жоқ' (C) - no correct answer among the options.\n\nBut wait - option B is '0' which seems like a placeholder or error. Option C is 'Дұрыс жауап жоқ' (No correct answer).\n\nGiven that this is Мағжан Жұмабаев's autobiographical poem and the character is the lyrical 'I' (Мағжан himself), and none of the named options (Тортай, Сапабек) match, the answer would be C - 'Дұрыс жауап жоқ' (No correct answer).\n\nHowever, I need to reconsider. In some Kazakh literature curricula, this poem's protagonist might be referred to by a specific name. Let me reconsider Тортай - in some works, Тортай is indeed an orphaned child character. But the specific detail of 'slight hearing defect' is very particular to Мағжан's self-description.\n\nMy best answer is A (Тортай) if this is from a prose work where Тортай is the orphaned, timid character, OR C if the lyrical hero is Мағжан himself. Given the exam context and the options provided, I'll go with A (Тортай) as the most likely intended answer for a character matching this description in Kazakh literature curriculum.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 3.0,
+        "distractor_quality": 1.0,
+        "difficulty_alignment": 3.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.9,
+      "pass_fail": false,
+      "comments": "Option B ('0') is clearly a data entry error/placeholder, not a valid distractor. The poem 'Мен балаң жарық күнде сәуле қуған' is Мағжан Жұмабаев's autobiographical poem where the lyrical narrator describes himself — not a character named 'Тортай'; the keyed answer A is therefore highly questionable. The 'Дұрыс жауап жоқ' option is a known cueing flaw per NTC standards.",
+      "improvement_suggestions": "1) Remove the broken Option B ('0') and replace with a plausible named character distractor. 2) Verify the correct answer: if this is truly Мағжан's autobiographical poem, the answer should reference the lyrical 'I' (Мағжан Жұмабаев) or the question should specify a prose work where Тортай actually appears. 3) Remove 'Дұрыс жауап жоқ' as an option — NTC standards prohibit 'none of the above' distractors. 4) Reframe the question to require analysis (Level B) rather than simple character identification (Level A).",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 4,
+      "variant": "real",
+      "topic": "Көнеден жеткен жәдігерлер",
+      "level": "B",
+      "overall": 4.2,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 4.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "B",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the narrative connection/content of the 'large inscription' (үлкен жазу) in the 'Kultegin' epic (орхон-енисей жазбалары).\n\nThe Kultegin monument has two inscriptions: a large (south) face and a small (north) face. The large inscription (үлкен жазу) of the Kultegin monument primarily deals with the history of the Turkic people — it begins with an account of the origins and ancestry of the Turkic people (Türk milletinin tarihi), describing how the Turkic people came to be, their early history, and the deeds of the khagans. The large inscription starts with cosmological/genealogical narrative about the Turkic people's origins and ancestors.\n\nSpecifically, the large inscription of Kultegin begins with the famous lines about the blue sky above and the dark earth below, and then narrates the story of the Turkic people's ancestry and origins — 'Türk bodun' (Türkic people) and their ancestral history.\n\nOption D states: 'a story about the ancestry/origins of the Turkic people' (түркі халқының ата-тегі жайында әңгіме).\n\nThis matches the content of the large inscription of the Kultegin monument, which opens with the genealogy and origins of the Turkic people before proceeding to specific campaigns and events.\n\nOption A (Kultegin's campaigns) is more associated with specific sections but not the primary narrative connection of the large inscription as a whole.\nOption B (Tabgach conquering Turks) is a theme within the text but not the main narrative frame.\nOption C (stories about Kapagan and Bilge khagan) relates more to other parts.\n\nThe large inscription's narrative begins with and is framed around the story of the Turkic people's ancestry/origins, making D the correct answer.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 4.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.2,
+      "pass_fail": false,
+      "comments": "The provided correct answer (B — Tabgach conquering Turks) is questionable; the large inscription of the Kultegin monument more prominently opens with the ancestry/origins of the Turkic people (Option D), making the keying unreliable. Additionally, the question stem 'оқиғаның байланысы' is grammatically incomplete and semantically vague, making the question ambiguous.",
+      "improvement_suggestions": "1) Re-key the answer: scholarly consensus supports D (ancestry of Turkic people) as the primary narrative frame of the large inscription. 2) Rewrite the stem to be grammatically complete and unambiguous, e.g., '«Күлтегін» жырының үлкен жазуының негізгі мазмұны нені баяндайды?' 3) Elevate to B-level by asking about the structural or thematic difference between the large and small inscriptions, requiring comparison. 4) Ensure all distractors are clearly wrong to avoid multiple defensible answers.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 4,
+      "variant": "wrong_key",
+      "topic": "Көнеден жеткен жәдігерлер",
+      "level": "B",
+      "overall": 4.5,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "B",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the narrative connection/content of the 'large inscription' (үлкен жазу) in the Kultegin epic (Orkhon inscription).\n\nThe Kultegin inscription (Köktürk/Orkhon inscription, 8th century) consists of two main parts: the large inscription (үлкен жазу) and the small inscription (кіші жазу).\n\nThe large inscription of Kultegin begins with a narrative about the origins and ancestry of the Turkic people — it starts with cosmological/genealogical content about the Turkic people's ancestors, their history, how they rose and fell, and the circumstances of the Turkic nation. This is the well-known opening that discusses the Turkic people's ancestral history ('Жоғарыда көк тәңірі, төменде қара жер жаратылғанда...' etc.).\n\nThe small inscription deals more specifically with Kultegin's military campaigns and battles.\n\nOption D states: 'a story about the ancestry/origins of the Turkic people' (түркі халқының ата-тегі жайында әңгіме).\n\nThis matches the content of the large inscription, which opens with the ancestral/genealogical narrative of the Turkic people.\n\nOption A (Kultegin's campaigns) relates more to the small inscription or later parts.\nOption B (Tabgach conquering Turks) is a theme within the text but not the primary narrative connection of the large inscription.\nOption C (about Kapagan and Bilge khagan) is content found in other parts.\n\nTherefore, the answer is D.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.5,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A - Kultegin's campaigns) appears to be wrong; the large inscription (үлкен жазу) of the Kultegin monument is known for its narrative about the ancestral origins of the Turkic people (option D), while military campaigns are more associated with the small inscription. The question stem is also incomplete/awkward ('оқиғаның байланысы' is vague). This is a factual keying error.",
+      "improvement_suggestions": "1. Correct the answer key: the large inscription (үлкен жазу) primarily contains the narrative about Turkic ancestral origins — answer D is more defensible. 2. Rewrite the stem more clearly: e.g., '«Күлтегін» жырының үлкен жазуының негізгі мазмұны нені баяндайды?' 3. Verify content against authoritative Kazakh literary history sources before finalizing the key. 4. Ensure all distractors represent plausible but incorrect misconceptions with roughly equal length.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 4,
+      "variant": "weak_distractors",
+      "topic": "Көнеден жеткен жәдігерлер",
+      "level": "B",
+      "overall": 2.3,
+      "correctness": 2.0,
+      "distractor_quality": 0.0,
+      "difficulty_alignment": 1.0,
+      "kazakh_language_quality": 3.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "B",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the connection/sequence of events in the large inscription (үлкен жазу) of the 'Kultegin' epic (орхон жазбалары - Orkhon inscriptions). The Kultegin inscription (Kültigin stele) contains two main texts: the large inscription (үлкен жазу) and the small inscription (кіші жазу). The large inscription of Kultegin primarily narrates the military campaigns (жорықтар) of Kultegin - his battles and conquests that brought glory to the Turkic khaganate. The narrative sequence in the large inscription centers on Kultegin's military expeditions and heroic deeds. Option A 'Күлтегіннің жорықтары' (Kultegin's campaigns/military expeditions) correctly describes the thematic connection of events in the large inscription. Option B about the Tabgach (Chinese) conquering the Turks relates more to the historical background mentioned in the inscriptions but is not the main narrative thread of the large inscription's event sequence. Option C '100' appears to be a numeric value that doesn't make sense as an answer. Option D 'Анықталмаған' means 'Undetermined' which is a default/unknown option. Therefore, the answer is A - Күлтегіннің жорықтары (Kultegin's military campaigns), as the large inscription details the sequence of Kultegin's various military campaigns.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 0.0,
+        "difficulty_alignment": 1.0,
+        "kazakh_language_quality": 3.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 2.3,
+      "pass_fail": false,
+      "comments": "The question is severely flawed: the stem is incomplete/truncated ('байланысы' without a predicate), option C is '100' (a meaningless number), option D is 'Анықталмаған' (Undetermined — a placeholder, not a real distractor), and the provided correct answer B is questionable since the large inscription of Kültigin primarily narrates Kültigin's military campaigns (A), not the Tabgach conquest of Turks. The question appears unfinished and was likely auto-generated with errors.",
+      "improvement_suggestions": "1) Complete the question stem with a proper predicate (e.g., 'Күлтегін жырының үлкен жазуындағы оқиғалар негізінен нені баяндайды?'). 2) Replace option C '100' and option D 'Анықталмаған' with substantive, plausible distractors (e.g., Türk қағанатының құрылуы, Білге қағанның саяси реформалары). 3) Re-verify the correct answer: the large inscription primarily covers Kültigin's military campaigns, making A more defensible than B. 4) Ensure all four options are parallel in grammatical form and length.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 5,
+      "variant": "real",
+      "topic": "Дананың сөзі -- ақылдың көзі",
+      "level": "B",
+      "overall": 5.9,
+      "correctness": 4.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 7.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about Aktamberdі Zhyrau's tolghau (philosophical poem/oration) that conveys his life conclusions (life lessons/wisdom) in a dreaming/aspirational manner.\n\nAktamberdі Sarыұlы (1675-1768) was a famous Kazakh zhyrau (poet-bard). Let's analyze the options:\n\nA) «Балаларыма өсиет» (Testament/Advice to my children) - This is a well-known tolghau by Aktamberdі zhyrau where he summarizes his life wisdom and gives advice/testament to his children. The word 'өсиет' means testament/advice, which fits the description of 'life conclusions' (өмірден түйген тұжырым). However, the question specifies 'армандап жеткізетін' (conveying through dreams/aspirations).\n\nB) «Ақ көгершін, көгершін» (White dove, dove) - This is a lyrical poem, not typically associated with Aktamberdі's philosophical conclusions.\n\nC) «Күлдір-күлдір кісінетіп» (Neighing loudly) - This is one of Aktamberdі's famous tolghau poems about military themes and heroism, describing warriors and horses. This is more of a martial/heroic poem.\n\nD) «Би Темірге бірінші толғауы» (First tolghau to Bi Temir) - This is addressed to a specific person (Bi Temir) and is more of a social/political commentary.\n\nThe question specifically mentions 'өмірден түйген тұжырымын армандап жеткізетін толғауы' - a tolghau that conveys life's conclusions/wisdom through dreaming/longing. \n\n«Күлдір-күлдір кісінетіп» is actually Aktamberdі's famous tolghau where he reflects on his life, expresses longing for the past heroic times, and conveys his life wisdom with a sense of nostalgia and dreaming about the good old days. This poem is characterized by its nostalgic, dreaming tone about past glory.\n\nHowever, «Балаларыма өсиет» is directly about life conclusions given as testament. \n\nIn Kazakh literature curriculum, «Күлдір-күлдір кісінетіп» by Aktamberdі zhyrau is specifically described as a tolghau where he expresses his life philosophy and dreams/longings (армандап), reflecting on the heroic past and conveying his wisdom. The poem begins with descriptions of horses neighing and transitions into philosophical reflections about life, heroism, and his aspirations.\n\nGiven the specific phrase 'армандап жеткізетін' (conveying through dreaming/aspiration), «Күлдір-күлдір кісінетіп» fits best as it is characterized by nostalgic dreaming about heroic times while conveying life wisdom.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 4.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 7.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.9,
+      "pass_fail": false,
+      "comments": "The question is ambiguous — the phrase 'армандап жеткізетін' does not clearly distinguish between «Балаларыма өсиет» (A) and «Күлдір-күлдір кісінетіп» (C), both of which could be argued as conveying life wisdom with aspirational/nostalgic tone. The provided answer A is curriculum-defensible but the question stem lacks precision to unambiguously eliminate C.",
+      "improvement_suggestions": "Revise the question stem to include a more specific distinguishing characteristic of «Балаларыма өсиет» — for example, explicitly referencing that it is addressed to children as a life testament ('балаларына арнап жазған өсиет толғауы') rather than using the vague 'армандап жеткізетін' which could apply to multiple works. This would make the correct answer unambiguous and improve distractor quality.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 5,
+      "variant": "wrong_key",
+      "topic": "Дананың сөзі -- ақылдың көзі",
+      "level": "B",
+      "overall": 4.9,
+      "correctness": 3.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about Aktamberdі Zhyrau's tolghau (philosophical poem/oration) that conveys his life conclusions (life lessons/wisdom) in a dreaming/aspirational manner.\n\nAktamberdі Zhyrau (Актамберді жырау, 1675-1768) was a famous Kazakh zhyrau (poet-singer) of the 18th century. Let's analyze the options:\n\nA) «Балаларыма өсиет» - 'Testament to my children' - This is a well-known tolghau by Aktamberdі Zhyrau where he conveys his life wisdom and conclusions as a testament/advice to his children. The word 'өсиет' means testament/will/advice, which fits the description of conveying life lessons.\n\nB) «Ақ көгершін, көгершін» - 'White dove, dove' - This is a lyrical poem, more of a love/nature theme.\n\nC) «Күлдір-күлдір кісінетіп» - 'Neighing thunderously' - This is a famous tolghau by Aktamberdі Zhyrau, but it is more of a heroic/military poem about horses and warriors, describing battle scenes.\n\nD) «Би Темірге бірінші толғауы» - 'First tolghau to Bi Temir' - This is addressed to a specific person (Bi Temir) and is more of a social/political address.\n\nThe question specifically asks about a tolghau that conveys his 'life conclusions' (өмірден түйген тұжырым) in an 'aspirational/dreaming' (армандап) manner. «Балаларыма өсиет» (Testament to my children) is the most fitting answer as it contains Aktamberdі's life wisdom, philosophical conclusions, and aspirations passed on to his children. This is the classic 'өсиет' (testament) genre where an elder conveys accumulated wisdom.\n\nThe answer is A.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 3.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.9,
+      "pass_fail": false,
+      "comments": "The provided correct answer (C: «Күлдір-күлдір кісінетіп») conflicts with the more defensible answer (A: «Балаларыма өсиет»), which is the classic 'өсиет' (testament) genre where Aktamberdі conveys his life wisdom. The question's key descriptor 'армандап жеткізетін' (conveying through dreaming) is ambiguous and could apply to multiple works. The question lacks sufficient specificity to unambiguously identify one correct answer, and the provided key appears questionable.",
+      "improvement_suggestions": "1) Clarify the distinguishing characteristic more precisely — if «Күлдір-күлдір кісінетіп» is the intended answer, specify a unique feature of that poem (e.g., its nostalgic retrospective on youth and heroic aspirations) that clearly differentiates it from «Балаларыма өсиет». 2) Add a brief excerpt or more specific descriptor to eliminate ambiguity. 3) Verify the correct answer against the official Kazakh literature curriculum/textbook for this grade level, as «Балаларыма өсиет» is more commonly associated with Aktamberdі's life-wisdom tolghau. 4) The distractors B and D are relatively easy to eliminate, weakening the question's discriminatory power.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 5,
+      "variant": "weak_distractors",
+      "topic": "Дананың сөзі -- ақылдың көзі",
+      "level": "B",
+      "overall": 5.0,
+      "correctness": 6.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about Aktamberdі Zhyrau's tolghau (philosophical poem/oration) that conveys his life conclusions (life lessons/wisdom) in a dreaming/aspirational manner.\n\nAktamberdі Zhyrau (Актамберді жырау, 1675-1768) was a famous Kazakh zhyrau (poet-singer) of the 18th century. His works include several tolghau poems.\n\nOption A: «Балаларыма өсиет» (Testament/Advice to my children) — This is indeed one of Aktamberdі Zhyrau's well-known works. It is a testament/advice poem directed to his children, conveying his life wisdom and conclusions. The word 'өсиет' means 'testament' or 'last will/advice,' which fits the description of 'life conclusions' (өмірден түйген тұжырым). However, the question specifically mentions 'армандап жеткізетін' (conveyed through dreaming/aspiration).\n\nOption B: «Ақ көгершін, көгершін» (White dove, dove) — This is a lyrical poem, more of a love/nature poem, not typically associated with Aktamberdі Zhyrau's philosophical life conclusions.\n\nLooking more carefully: Aktamberdі Zhyrau's famous tolghau that expresses his life wisdom and dreams/aspirations is indeed «Балаларыма өсиет» — it is his testament to his children where he shares his life experiences and wisdom. This is the most well-known philosophical tolghau by Aktamberdі Zhyrau that conveys his life conclusions.\n\nThe phrase 'армандап жеткізетін' could refer to how he expresses his hopes and dreams for his children's future while conveying his life wisdom. «Балаларыма өсиет» fits this description best.\n\nOption A appears to be the correct answer.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 6.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.0,
+      "pass_fail": false,
+      "comments": "The question has significant structural problems: options C ('Дұрыс жауап жоқ') and D ('Жоқ') are near-duplicates and serve as 'none of the above' variants, which is a known cueing flaw and reduces the effective distractor pool to just two real options. The attribution of 'армандап жеткізетін толғау' to «Балаларыма өсиет» is plausible but the question phrasing is vague and the connection to 'армандап' (dreaming/aspiring) is not clearly established in standard Kazakh literary scholarship, leaving the correctness somewhat uncertain. The question is also too recall-based for level B difficulty.",
+      "improvement_suggestions": "1) Remove the near-duplicate 'none of the above' options (C and D) and replace them with two substantive distractors — e.g., other known tolghau titles by Aktamberdі Zhyrau or by contemporary zhyraus. 2) Clarify the question stem: specify what 'армандап жеткізетін' means in context or rephrase to avoid ambiguity. 3) To meet level B difficulty, reframe the question to require analysis — e.g., ask teachers to identify the thematic or structural feature that distinguishes this tolghau from others, rather than simple title recall. 4) Verify the factual claim that «Балаларыма өсиет» is specifically characterized as 'армандап жеткізетін' in official Kazakh literature curricula.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 6,
+      "variant": "real",
+      "topic": "Дананың сөзі -- ақылдың көзі",
+      "level": "B",
+      "overall": 8.2,
+      "correctness": 10.0,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt from Aktamberdі zhyrau's 'Balalarыma өsiet' tolghau is:\n'Бірлігіңнен айырылма,\nБірлікте бар қасиет'\n\nWe need to identify the literary/rhetorical device used here.\n\nLet's analyze:\n- Anaphora (анафора): repetition of the same word(s) at the BEGINNING of consecutive lines.\n- Epiphora (эпифора): repetition of the same word(s) at the END of consecutive lines.\n- Simile (теңеу): comparison using 'like' or 'as'.\n- Epithet (эпитет): a descriptive adjective or phrase.\n\nLooking at the two lines:\nLine 1: 'Бірлігіңнен айырылма' — starts with 'Бірлі...'\nLine 2: 'Бірлікте бар қасиет' — starts with 'Бірлік...'\n\nBoth lines begin with the root word 'Бірлік' (unity/togetherness). This is a repetition of the same word/root at the beginning of consecutive lines — this is ANAPHORA (анафора).\n\nThere is no comparison (so not теңеу), no descriptive epithet, and the repetition is at the beginning (not the end, so not эпифора).\n\nTherefore, the answer is D) анафора.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.2,
+      "pass_fail": true,
+      "comments": "The correct answer (D — анафора) is clearly defensible: both lines begin with 'Бірлік', making anaphora the unambiguous choice. Distractors are plausible literary terms a teacher might confuse, though теңеу and эпитет are somewhat easy to eliminate, leaving mainly the анафора/эпифора distinction as the real challenge. The question is slightly easier than a true B-level item since identifying anaphora from a two-line excerpt with an obvious repeated opening word requires only 1-2 steps.",
+      "improvement_suggestions": "To better align with B-level difficulty, consider using a longer excerpt where the rhetorical device is less immediately obvious, or include a distractor such as 'қайталау' (repetition) that more closely overlaps with анафора conceptually, forcing deeper analysis. Also consider adding a brief context note about the tolghau genre to test applied knowledge rather than simple recognition.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 6,
+      "variant": "wrong_key",
+      "topic": "Дананың сөзі -- ақылдың көзі",
+      "level": "B",
+      "overall": 5.8,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt from Aktamberdі zhyrau's 'Balalarыma өsiet' tolghau is:\n'Бірлігіңнен айырылма,\nБірлікте бар қасиет'\n\nWe need to identify the literary/rhetorical device used here.\n\nLet's analyze the options:\n- Теңеу (simile): a comparison using 'like' or 'as' — not present here\n- Эпитет (epithet): a descriptive adjective/phrase — not the primary device here\n- Эпифора (epiphora): repetition of the same word(s) at the END of successive lines — not present here\n- Анафора (anaphora): repetition of the same word(s) at the BEGINNING of successive lines\n\nLooking at the two lines:\nLine 1: 'Бірлігіңнен айырылма' — begins with 'Бірлі...'\nLine 2: 'Бірлікте бар қасиет' — begins with 'Бірлік...'\n\nBoth lines begin with the root word 'Бірлік' (unity/togetherness). This is a repetition of the same word/root at the beginning of consecutive lines, which is the definition of АНАФОРА (anaphora).\n\nTherefore, the answer is D) анафора.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.8,
+      "pass_fail": false,
+      "comments": "The provided correct answer C (эпифора) is demonstrably wrong. Both lines begin with 'Бірлік', making this a clear case of анафора (anaphora, option D), not эпифора (epiphora, which requires repetition at the END of lines). This is a critical keying error that must be corrected.",
+      "improvement_suggestions": "Change the correct answer key from C (эпифора) to D (анафора). The repetition of 'Бірлік' at the beginning of both lines is the defining feature of anaphora. Alternatively, rewrite the excerpt so that the same word appears at the end of both lines if эпифора is the intended answer.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 6,
+      "variant": "weak_distractors",
+      "topic": "Дананың сөзі -- ақылдың көзі",
+      "level": "B",
+      "overall": 6.4,
+      "correctness": 9.0,
+      "distractor_quality": 3.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the literary/rhetorical device used in the lines from Aktamberdі zhyrau's 'Balalarыma өsiet' tolghau: 'Бірлігіңнен айырылма, / Бірлікте бар қасиет' (Don't lose your unity, / In unity there is virtue).\n\nLet's analyze the device:\n- Anaphora (анафора) is the repetition of the same word or phrase at the beginning of consecutive lines or clauses.\n- In these two lines, both lines begin with the root word 'Бірлік' (unity): 'Бірлігіңнен' starts line 1, and 'Бірлікте' starts line 2.\n- This is a classic example of anaphora — the same root/word 'Бірлік' is repeated at the beginning of both consecutive lines.\n- Epithet (эпитет) is a descriptive adjective or phrase expressing a quality of the person or thing mentioned — this does not apply here.\n- The repetition of 'Бірлік-' at the start of both lines clearly identifies this as anaphora (анафора).\n\nTherefore, the correct answer is D) анафора.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 3.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.4,
+      "pass_fail": true,
+      "comments": "The correct answer (анафора) is well-supported — 'Бірлік' root repeats at the start of both lines, making D clearly correct. However, distractor quality is poor: option C ('Жоқ') is essentially a duplicate of A ('Дұрыс жауап жоқ'), and neither is a genuine literary device distractor. The question is also closer to level A (recall/recognition) than level B.",
+      "improvement_suggestions": "Replace options A and C with actual literary devices that could plausibly apply to the excerpt, such as 'қайталау (repetition)' or 'аллитерация' or 'антитеза', so that the student must distinguish between similar rhetorical concepts. Remove the duplicate 'no correct answer' options entirely. To raise difficulty to level B, provide a longer excerpt with multiple devices and ask the student to identify and justify which device is dominant.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 7,
+      "variant": "real",
+      "topic": "Көркем әдебиет және эпикалық сарын",
+      "level": "B",
+      "overall": 7.9,
+      "correctness": 10.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the term for the stage directions/commentary in a drama that describes a character's behavior and actions. In the given excerpt from Dulat Isabekov's play 'Әпке' (Sister), we see text in parentheses describing the character Qamajay's actions: '(көзіне жас алып)' - taking tears to her eyes, '(Келіп оны құшақтап, маңдайынан сүйеді)' - coming and hugging him, kissing his forehead. These parenthetical descriptions of character actions, emotions, and stage directions in a dramatic text are called 'ремарка' (stage directions/remarks) in Kazakh literary terminology. A ремарка (remark/stage direction) is the author's note in a play that describes the characters' actions, movements, facial expressions, and other non-dialogue elements. This is distinct from: A) драма - the genre itself, B) тартыс - conflict/struggle, D) коллизия - collision/conflict situation. The specific term for these parenthetical action descriptions is ремарка (C).",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.9,
+      "pass_fail": true,
+      "comments": "The correct answer (ремарка) is clearly defensible and matches standard Kazakh literary terminology for stage directions in parentheses. However, the question is somewhat easier than level B since any teacher familiar with drama terminology can identify ремарка immediately from the parenthetical descriptions, requiring only 1-2 steps rather than 2-4.",
+      "improvement_suggestions": "To raise difficulty to true level B, consider asking students to compare ремарка with a related concept (e.g., distinguish it from монолог or диалог in function), or provide a more ambiguous excerpt where the distinction between тартыс and ремарка requires deeper analysis. Also, distractor 'драма' is too easily eliminated since the question stem already mentions the genre, making it a weak distractor.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 7,
+      "variant": "wrong_key",
+      "topic": "Көркем әдебиет және эпикалық сарын",
+      "level": "B",
+      "overall": 5.0,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the term for the stage direction/commentary in a drama that describes a character's behavior, actions, and speech context. In the given excerpt from Dulat Isabekov's play 'Әпке' (Sister), the text in parentheses '(көзіне жас алып)' and '(Келіп оны құшақтап, маңдайынан сүйеді)' are instructions describing the character's physical actions and emotional state. These parenthetical notes in a dramatic text that describe characters' actions, movements, emotions, and stage directions are called 'ремарка' (stage directions/remarks) in Kazakh literary terminology. A ремарка is the author's explanatory note in a play that describes the setting, characters' actions, gestures, facial expressions, etc. This is distinct from: A) драма - the genre itself, B) тартыс - conflict/struggle in the plot, D) коллизия - collision/conflict of interests. The correct term for these parenthetical descriptions of character behavior in a drama is 'ремарка' (C).",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.0,
+      "pass_fail": false,
+      "comments": "The provided correct answer D (коллизия) is demonstrably wrong. The parenthetical notes describing character actions and emotions in a drama are called 'ремарка' (C), not 'коллизия' (which means conflict/collision). This is a fundamental literary terminology error that disqualifies the question.",
+      "improvement_suggestions": "Change the correct answer to C (ремарка), which is the standard literary term for author's stage directions/parenthetical notes in a dramatic text. Also consider revising the question stem for clarity — 'кейіпкердің мінез-құлқына түсініктеме беруі' is awkward; a cleaner formulation would be 'Берілген үзіндідегі жақшадағы авторлық ескертпе қалай аталады?' Additionally, replace one of the two conflict-related distractors (тартыс/коллизия) with a more distinct distractor like 'монолог' or 'диалог' to improve distractor quality.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 7,
+      "variant": "weak_distractors",
+      "topic": "Көркем әдебиет және эпикалық сарын",
+      "level": "B",
+      "overall": 5.9,
+      "correctness": 9.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the term for the stage direction/commentary in Dulat Isabekov's drama 'Әпке' (Elder Sister). The excerpt given is: 'Қамажай (көзіне жас алып). Теміржан, қой, мұңайма! (Келіп оны құшақтап, маңдайынан сүйеді). Сені... сені бөтен деп... Тойды жасаймыз, дүрілдетіп тұрып жасаймыз. Ақша деген табылады...'\n\nIn drama/theatrical terminology, the parenthetical notes within a script that describe a character's actions, emotions, or stage movements are called 'ремарка' (stage directions/remarks). In the given text, the parts in parentheses — '(көзіне жас алып)' meaning 'taking tears in her eyes' and '(Келіп оны құшақтап, маңдайынан сүйеді)' meaning 'coming and hugging him, kissing his forehead' — are classic examples of ремарка (stage directions).\n\nA ремарка (from French 'remarque') is a playwright's note in a dramatic text that describes the characters' actions, gestures, facial expressions, movements, or the setting. These are the bracketed/parenthetical instructions to actors and directors.\n\nOption C (ремарка) is the correct answer, as the question asks about the term for these parenthetical character behavior descriptions in a drama.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.9,
+      "pass_fail": false,
+      "comments": "The correct answer (ремарка) is clearly right and well-supported, but the distractors are extremely weak: option A ('Анықталмаған' = 'Undefined') and option D ('0') are nonsensical placeholders that no teacher would seriously consider, making the question trivially easy by elimination. The difficulty level is closer to A (recall) than B (application/analysis).",
+      "improvement_suggestions": "Replace placeholder distractors (A='Анықталмаған', D='0') with plausible literary/dramatic terminology such as 'монолог', 'диалог', or 'авторлық сөз' that a teacher might confuse with ремарка. Also deepen the cognitive demand to B-level by asking the student to analyze the function or effect of the ремарка in context, rather than simply identifying the term.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 8,
+      "variant": "real",
+      "topic": "Тарихи шындық пен көркемдік шешімТарихи шындық пен көркемдік шешім",
+      "level": "B",
+      "overall": 7.5,
+      "correctness": 9.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt is: 'Айнадай таза, кең де таза класс бөлмесі көңілімізді сергітіп жіберді'\n\nLet me analyze the literary devices:\n\n1. 'Айнадай таза' (clean like a mirror) — This is a SIMILE (теңеу) because it compares the classroom's cleanliness to a mirror using the comparative suffix '-дай' (like/as). The '-дай' suffix is the classic marker of simile in Kazakh.\n\n2. 'таза' (clean/pure) used as a descriptive qualifier for the classroom — This functions as an EPITHET (эпитет), as it is a vivid, expressive adjective characterizing the noun.\n\nSo the excerpt contains both a simile (теңеу) — 'айнадай таза' — and an epithet (эпитет) — 'таза' as a descriptive attribute.\n\nOption C states 'теңеу, эпитет' (simile, epithet), which matches the analysis.\n\nOption A (epithet only) is incomplete.\nOption B (metonymy) is not present.\nOption D (metaphor, simile) — there is no metaphor here; 'айнадай' uses the explicit comparison marker '-дай', making it a simile, not a metaphor.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.5,
+      "pass_fail": true,
+      "comments": "The correct answer C (теңеу, эпитет) is well-supported: 'айнадай' uses the -дай suffix marking a simile, and 'таза' functions as an epithet. Distractors A and D are partially plausible but B (метонимия) is easily eliminated, weakening distractor quality. There is also a minor typo in the question stem ('Yзіндідегі' instead of 'Үзіндідегі') and the asterisk formatting is non-standard.",
+      "improvement_suggestions": "1) Fix the typo 'Yзіндідегі' → 'Үзіндідегі' and use proper quotation marks instead of asterisks for the excerpt. 2) Replace метонимия (B) with a more plausible distractor such as 'теңеу, метафора' or 'эпитет, метонимия' to make elimination harder. 3) Consider adding a brief context sentence to make the excerpt feel less isolated and increase authenticity.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 8,
+      "variant": "wrong_key",
+      "topic": "Тарихи шындық пен көркемдік шешімТарихи шындық пен көркемдік шешім",
+      "level": "B",
+      "overall": 4.7,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt is: 'Айнадай таза, кең де таза класс бөлмесі көңілімізді сергітіп жіберді'\n\nLet me analyze the literary devices:\n\n1. 'Айнадай таза' (clean like a mirror) — This is a SIMILE (теңеу) because it compares the cleanliness of the classroom to a mirror using the comparative suffix '-дай' (like/as). The '-дай' suffix is the classic marker of simile in Kazakh.\n\n2. 'таза' (clean/pure) used as a descriptive qualifier for 'класс бөлмесі' — This functions as an EPITHET (эпитет), an artistic qualifier that characterizes the noun.\n\nSo the excerpt contains both a simile (теңеу) — 'айнадай таза' — and an epithet (эпитет) — 'таза' as an artistic description.\n\nOption C states 'теңеу, эпитет' (simile, epithet), which matches the analysis.\n\nOption A (эпитет only) is incomplete.\nOption B (метонимия) is not present.\nOption D (метафора, теңеу) — there is no metaphor here; 'айнадай' uses the explicit comparison marker '-дай', making it a simile, not a metaphor.\n\nTherefore, the correct answer is C.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.7,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A: эпитет only) is demonstrably wrong. 'Айнадай таза' contains the explicit simile marker '-дай', making it a textbook теңеу (simile), so the correct answer should be C (теңеу, эпитет). The question is mis-keyed.",
+      "improvement_suggestions": "Change the correct answer from A to C (теңеу, эпитет). Also fix the typo 'Yзіндідегі' → 'Үзіндідегі' and clean up the repeated topic title. Consider revising distractor B (метонимия) to something more plausible, such as 'эпитет, метафора' to increase distractor quality.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 8,
+      "variant": "weak_distractors",
+      "topic": "Тарихи шындық пен көркемдік шешімТарихи шындық пен көркемдік шешім",
+      "level": "B",
+      "overall": 5.9,
+      "correctness": 8.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt is: 'Айнадай таза, кең де таза класс бөлмесі көңілімізді сергітіп жіберді'\n\nLet me analyze the literary devices:\n\n1. 'Айнадай таза' (clean like a mirror) — This is a SIMILE (теңеу) because it compares the classroom's cleanliness to a mirror using the comparative suffix '-дай' (like/as). The '-дай' suffix is the classic marker of a simile in Kazakh.\n\n2. 'таза' (clean/pure) used as a descriptive modifier — This functions as an EPITHET (эпитет), a descriptive word/phrase that characterizes the noun (класс бөлмесі).\n\nSo the excerpt contains both a simile (теңеу) via 'айнадай' and an epithet (эпитет) via 'таза' as a qualitative descriptor.\n\nOption C states: теңеу, эпитет (simile, epithet) — this matches the analysis.\n\nOption D states: метафора, теңеу — there is no metaphor here; 'айнадай' uses the explicit comparison marker '-дай', making it a simile, not a metaphor.\n\nTherefore, the correct answer is C.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 8.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.9,
+      "pass_fail": false,
+      "comments": "The correct answer C (теңеу, эпитет) is well-supported: 'айнадай' is a classic simile marker (-дай suffix) and 'таза' functions as an epithet. However, options A ('100') and B ('Жоқ') are nonsensical distractors that are trivially eliminable, severely undermining distractor quality. The question also has a formatting/typo issue in the stem ('Yзіндідегі' instead of 'Үзіндідегі').",
+      "improvement_suggestions": "1) Replace options A ('100') and B ('Жоқ') with plausible literary-device pairs such as 'метонимия, эпитет' and 'гипербола, теңеу' to make all distractors reachable by identifiable misconceptions. 2) Fix the typo 'Yзіндідегі' → 'Үзіндідегі'. 3) To raise difficulty to true B-level, use a more ambiguous excerpt where the device identification requires deeper analysis rather than spotting the obvious '-дай' suffix.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 9,
+      "variant": "real",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "B",
+      "overall": 5.3,
+      "correctness": 3.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the genre characteristics of Beksultan Muqay's novel 'Өмірзая' (Omerzaya/Omіrzaya).\n\nBeksultan Muqay (Бексұлтан Мұқай) is a Kazakh writer. His novel 'Өмірзая' is known as an epic work that narrates the lives of people sharing similar fates (тағдырлас адамдар). The novel depicts the lives of ordinary people, their shared destinies, and is considered an epic work in Kazakh literature.\n\nLet's analyze the options:\nA) 'қара сөзбен жазылған саяси-тарихи роман' - a political-historical novel written in prose. While it is written in prose, calling it primarily 'political-historical' may not capture its essence.\nB) 'ұлттық мұрамызды дәріптейтін тарихи роман' - a historical novel glorifying our national heritage. This doesn't specifically match the known characterization of 'Өмірзая'.\nC) 'бірінші жақта баяндалатын күрескерлік роман' - a struggle/fighter novel narrated in first person. This doesn't match the known characteristics.\nD) 'тағдырлас адамдар өмірін баяндайды эпикалық туынды' - an epic work narrating the lives of people sharing the same fate. This matches the known description of 'Өмірзая' as an epic work about people with shared destinies.\n\nThe novel 'Өмірзая' by Beksultan Muqay is characterized as an epic work that portrays the lives of people with shared fates (тағдырлас адамдар). This corresponds to option D.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 3.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.3,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A) is questionable — 'қара сөзбен жазылған' is trivially true for any novel, and option D ('тағдырлас адамдар өмірін баяндайды эпикалық туынды') appears to be a more accurate and commonly cited characterization of 'Өмірзая.' The question also tests recall rather than the multi-step analysis required for level B.",
+      "improvement_suggestions": "1) Verify the correct answer against authoritative Kazakh literary sources — D appears more defensible than A. 2) Remove the trivially true phrase 'қара сөзбен жазылған' from option A, as all novels are written in prose. 3) Redesign the question to require analysis (e.g., comparing genre features across multiple works) to genuinely reach level B difficulty. 4) Provide a source citation in the answer key to resolve ambiguity.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 9,
+      "variant": "wrong_key",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "B",
+      "overall": 4.4,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the genre characteristics of B. Muqay's (Бексұлтан Мұқай) novel 'Өмірзая' (Omerzaya/Omіrzaya).\n\nBeksultan Muqay is a Kazakh writer known for his works that blend legend/myth with artistic prose, reflecting the realities of the era. His novel 'Өмірзая' is considered an epic work that narrates the lives of people sharing similar fates (тағдырлас адамдар). The novel deals with the tragic destinies of people during difficult historical periods, making it an epic work about people with shared fates.\n\nLet's analyze the options:\nA) 'қара сөзбен жазылған саяси-тарихи роман' - a political-historical novel written in prose. While it is written in prose, this description is too narrow and doesn't capture the full genre characteristic.\nB) 'ұлттық мұрамызды дәріптейтін тарихи роман' - a historical novel glorifying our national heritage. This doesn't fully capture the essence of 'Өмірзая'.\nC) 'бірінші жақта баяндалатын күрескерлік роман' - a struggle novel narrated in first person. This is not the primary characteristic of this work.\nD) 'тағдырлас адамдар өмірін баяндайды эпикалық туынды' - an epic work narrating the lives of people sharing the same fate. This best describes 'Өмірзая' as it is an epic novel about people with shared tragic destinies during the Soviet era.\n\nThe novel 'Өмірзая' by Beksultan Muqay is known as an epic work that portrays the lives of people who share similar tragic fates, particularly during the repression era. Option D best captures this genre characteristic.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.4,
+      "pass_fail": false,
+      "comments": "The provided correct answer (C) is questionable — 'Өмірзая' is more commonly characterized as an epic work about people with shared tragic fates (D), not specifically as a first-person struggle novel. The question also tests pure recall rather than the multi-step analysis required for Level B difficulty.",
+      "improvement_suggestions": "1) Verify the correct answer against authoritative Kazakh literary sources — D appears more defensible as the genre characteristic of 'Өмірзая'. 2) Redesign the question to require analysis rather than recall, e.g., asking teachers to identify which textual evidence supports a genre classification. 3) Fix the word order in option D ('эпикалық туынды баяндайды' would be more natural). 4) Ensure all distractors represent plausible misconceptions a teacher might hold.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 9,
+      "variant": "weak_distractors",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "B",
+      "overall": 3.5,
+      "correctness": 5.0,
+      "distractor_quality": 0.0,
+      "difficulty_alignment": 2.0,
+      "kazakh_language_quality": 5.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the genre characteristics of Beksultan Muqay's novel 'Өмірзая' (Omerzaya/Omіrzaya). Beksultan Muqay (Бексұлтан Мұқай) is a Kazakh writer. His novel 'Өмірзая' is known as a work written in prose (қара сөз - prose) that deals with political and historical themes, reflecting the realities of the Soviet era and the struggles of the Kazakh people. The novel is characterized as a political-historical novel written in prose (қара сөз). Option A states 'қара сөзбен жазылған саяси-тарихи роман' (a political-historical novel written in prose), which accurately describes the genre characteristics of this work. Options B (100) and D (0) are clearly numerical values that don't make sense as genre descriptions. Option C describes 'a combat/fighter novel narrated in first person,' which doesn't specifically characterize 'Өмірзая.' The novel 'Өмірзая' by Beksultan Muqay is indeed a prose political-historical novel dealing with the fate of the Kazakh people during difficult historical periods.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 5.0,
+        "distractor_quality": 0.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 5.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.5,
+      "pass_fail": false,
+      "comments": "Options B (100) and D (0) are nonsensical numerical values that have no place in a literary genre question, making the correct answer trivially obvious by elimination. This destroys distractor quality entirely and makes the question far below the requested B-level difficulty. Additionally, the question stem is incomplete (missing a verb/predicate like 'қандай?' or 'анықтаңыз').",
+      "improvement_suggestions": "Replace options B and D with plausible genre descriptions (e.g., 'аңыз-эпостық дастан', 'лирикалық-психологиялық роман', 'тарихи-биографиялық роман') that represent common misconceptions or related genres. Complete the question stem with a proper predicate. Ensure all four options are parallel in structure and length to eliminate cueing artefacts.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 10,
+      "variant": "real",
+      "topic": "«Тәрбиенің қайнар бұлағы»",
+      "level": "A",
+      "overall": 8.3,
+      "correctness": 9.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the characteristic trait of 'Atymtai Zhomart' (Атымтай жомарт), a legendary figure in Kazakh folklore known for extreme generosity. The name 'Atymtai' is synonymous with generosity and charity in Kazakh culture. This figure is celebrated in Kazakh oral tradition for helping the poor and needy — giving away his wealth to those in need. Among the options: A) teaching farming, B) teaching youth to trade, C) helping poor people, D) being ready for war. The defining characteristic of Atymtai Zhomart in Kazakh folklore and the topic 'Тәрбиенің қайнар бұлағы' (The Source of Upbringing) is his generosity toward the poor and needy. Option C — 'кедей адамдарға жәрдем беру' (helping poor people) — directly corresponds to the legendary generosity of Atymtai Zhomart.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.3,
+      "pass_fail": true,
+      "comments": "The correct answer C is well-supported by Kazakh folklore tradition — Atymtai Zhomart is the archetypal generous figure who helps the poor. The question is appropriately basic (Level A) and the Kazakh language is natural and clear.",
+      "improvement_suggestions": "Distractors A and B (teaching farming, teaching youth to trade) are somewhat implausible and easily eliminated, reducing distractor quality. Consider replacing one with a more tempting option, such as 'байларға сый тарту' (giving gifts to the wealthy) or 'батырларды қолдау' (supporting warriors), which would be more plausible misconceptions for a test-taker unfamiliar with the legend.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 10,
+      "variant": "wrong_key",
+      "topic": "«Тәрбиенің қайнар бұлағы»",
+      "level": "A",
+      "overall": 5.4,
+      "correctness": 2.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the characteristic trait of 'Атымтай жомарт' (Hatim Tai / Atymtai Zhomart), a legendary figure famous for his extreme generosity. In Kazakh folklore and educational context, 'Атымтай жомарт' (derived from the Arabic/Persian figure Hatim al-Tai) is the archetypal symbol of generosity and charity. His defining characteristic is helping the poor and needy — giving away his wealth to those in need. Among the options: A) teaching farming, B) teaching youth to trade, C) helping poor people, D) being ready for war. The defining quality of Atymtai Zhomart is his generosity toward the poor and needy, which corresponds to option C.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.4,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A — teaching farming) is demonstrably wrong. Атымтай жомарт is a legendary figure universally known for generosity toward the poor, making option C the correct answer. The answer key is incorrectly keyed.",
+      "improvement_suggestions": "Change the correct answer to C) 'кедей адамдарға жәрдем беру', which accurately reflects the defining characteristic of Атымтай жомарт as a symbol of generosity. Replace option A with a more plausible distractor related to generosity-adjacent concepts (e.g., organizing feasts, building shelters) to improve distractor quality.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 10,
+      "variant": "weak_distractors",
+      "topic": "«Тәрбиенің қайнар бұлағы»",
+      "level": "A",
+      "overall": 6.5,
+      "correctness": 9.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the characteristic trait of 'Атымтай жомарт' (Hatim Tai / Hatim al-Tai), a legendary figure famous for his extreme generosity. The name 'жомарт' itself means 'generous' in Kazakh. Hatim Tai is a well-known historical/legendary Arab figure celebrated in Kazakh oral tradition and literature as the epitome of generosity and charity. His defining characteristic is giving to the poor and needy — helping poor people (кедей адамдарға жәрдем беру). Option C directly describes this trait. Options A and B are nonsensical in context. Option D (being ready for war) is not the defining characteristic associated with Атымтай жомарт.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.5,
+      "pass_fail": true,
+      "comments": "The correct answer (C) is clearly defensible — Атымтай жомарт is the archetypal figure of generosity toward the poor in Kazakh oral tradition. However, distractors A ('Жоқ'/'No') and B ('0') are nonsensical and trivially eliminable, making the question too easy to answer by elimination alone. The Kazakh phrasing is acceptable but slightly terse and lacks a verb in the stem.",
+      "improvement_suggestions": "Replace distractors A and B with plausible character traits (e.g., 'батырлық көрсету', 'елді басқару', 'байлық жинау') that a student might confuse with Атымтай жомарт's defining quality. Also rephrase the stem into a complete sentence: 'Атымтай жомартқа тән негізгі қасиет қандай?' for grammatical completeness.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 11,
+      "variant": "real",
+      "topic": "Туған жерім -аялы алтын бесігім",
+      "level": "A",
+      "overall": 6.2,
+      "correctness": 2.0,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks which Turkic thinker wrote a praise poem (мадақ жыр) about Alp Er Tunga.\n\nAlp Er Tunga (Alp Er Tonga) is a legendary Saka/Scythian hero celebrated in Turkic literature. The elegy/praise poem about Alp Er Tunga appears in Mahmud al-Kashgari's monumental work 'Diwan Lughat al-Turk' (Диуани лұғатит түрк), compiled in the 11th century. Kashgari included ancient Turkic poems, including the famous lament/elegy for Alp Er Tunga, which is considered one of the earliest examples of Turkic poetry.\n\nLet's check the other options:\n- A) Khorezmī wrote 'Muhabbatnama' — a love poem, not related to Alp Er Tunga.\n- B) Ahmad Yasawi wrote 'Divan-i Hikmet' — religious/mystical poems.\n- C) Yusuf Balasaghuni wrote 'Kutadgu Bilig' — a didactic philosophical work.\n- D) Mahmud Kashgari wrote 'Diwan Lughat al-Turk' — this encyclopedic dictionary of Turkic languages contains the Alp Er Tunga elegy/praise poem.\n\nTherefore, the correct answer is D) М.Қашқари — «Диуани лұғатит түрк».",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.2,
+      "pass_fail": false,
+      "comments": "The provided correct answer (C — Ж.Баласағұн, «Құтты білік») is factually wrong. The famous elegy/praise poem about Alp Er Tunga is preserved in Mahmud al-Kashgari's 'Diwan Lughat al-Turk' (option D), not in Balasaghuni's 'Kutadgu Bilig', which is a didactic philosophical work with no connection to Alp Er Tunga.",
+      "improvement_suggestions": "Correct the answer key to D (М.Қашқари — «Диуани лұғатит түрк»). Verify all factual attributions before publishing. Consider also clarifying whether the question refers to a 'мадақ жыр' (praise poem) or 'жоқтау' (lament/elegy), as the Alp Er Tunga poem in Kashgari is typically classified as a lament rather than a praise poem — this distinction should be accurate in the question stem.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 11,
+      "variant": "wrong_key",
+      "topic": "Туған жерім -аялы алтын бесігім",
+      "level": "A",
+      "overall": 4.7,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks which Turkic thinker wrote a praise poem (мадақ жыр) about Alp Er Tunga.\n\nAlp Er Tunga is a legendary Saka/Scythian hero celebrated in Turkic tradition. The elegy (жоқтау) and praise for Alp Er Tunga appears in Mahmud al-Kashgari's monumental work 'Diwan Lughat al-Turk' (Диуани лұғатит түрк), compiled in the 11th century. Kashgari recorded ancient Turkic poems, including the famous lament/elegy for Alp Er Tunga, which is considered one of the earliest examples of Turkic poetry.\n\nLet's check the other options:\n- A) Khorezmi wrote 'Muhabbatnama' — a love poem, not related to Alp Er Tunga.\n- B) Ahmad Yasawi wrote 'Divan-i Hikmet' — religious/mystical poems (hikmet), not about Alp Er Tunga.\n- C) Zhusup Balasaguni wrote 'Kutadgu Bilig' — a didactic philosophical work, not specifically about Alp Er Tunga.\n- D) Mahmud Kashgari wrote 'Diwan Lughat al-Turk' — this work contains the famous Alp Er Tunga poems/elegies.\n\nTherefore, the correct answer is D) М.Қашқари — «Диуани лұғатит түрк».",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.7,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A — Khorezmi, 'Muhabbatnama') is demonstrably wrong. The famous praise/elegy poem about Alp Er Tunga is recorded in Mahmud al-Kashgari's 'Diwan Lughat al-Turk' (option D), which is well-established in Kazakh school curricula and Turkic literary history. Khorezmi's 'Muhabbatnama' is a love poem with no connection to Alp Er Tunga.",
+      "improvement_suggestions": "Correct the answer key to D (М.Қашқари — «Диуани лұғатит түрк»). Also reconsider the term 'мадақ жыр' (praise poem) — the Alp Er Tunga poem in Kashgari's work is traditionally classified as a жоқтау (elegy/lament), not a мадақ жыр. Revise the question stem to accurately describe the genre as 'жоқтау өлеңі' or 'жырын' more generally to avoid factual inaccuracy in the stem itself.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 11,
+      "variant": "weak_distractors",
+      "topic": "Туған жерім -аялы алтын бесігім",
+      "level": "A",
+      "overall": 3.7,
+      "correctness": 4.0,
+      "distractor_quality": 0.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 5.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks which Turkic thinker wrote a praise poem (madak zhyr) about Alp Er Tunga. Alp Er Tunga is a legendary Saka/Scythian hero celebrated in Turkic literature. The elegy (marsiya) for Alp Er Tunga is found in Mahmud Kashgari's 'Divan Lughat al-Turk' (Диуани лұғат ат-түрік), but among the given options we need to identify who wrote a praise poem about him. Yusuf Balasaguni wrote 'Kutadgu Bilig' (Құтты білік), which is a didactic work. Ahmad Yasawi wrote 'Divan-i Hikmet' (Диуани хикмет), which contains spiritual hikmet poems. The elegy/lament for Alp Er Tunga is actually preserved in Kashgari's dictionary, but Kashgari is not among the options. However, looking at the options more carefully: options A and D appear to be numeric values (100 and 0), which seem like errors or placeholders in the question formatting. The real choices are B (Yasawi - Divan-i Hikmet) and C (Balasaguni - Kutadgu Bilig). Yusuf Balasaguni's 'Kutadgu Bilig' (1069-1070) does reference Alp Er Tunga and contains praise for heroic figures. The elegy for Alp Er Tunga is most commonly associated with the Turkic literary tradition preserved by Kashgari, but Balasaguni also references this hero. Actually, the praise poem (жоқтау/мадақ) for Alp Er Tunga is found in Mahmud Kashgari's work. Since Kashgari is not an option, and given that Yusuf Balasaguni wrote Kutadgu Bilig which contains references to Alp Er Tunga as a great ruler, the answer pointing to Balasaguni's Kutadgu Bilig (option C) is the most defensible among the given choices. The 'Kutadgu Bilig' mentions Alp Er Tunga as an example of a great ruler whose wisdom and deeds are praised.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 4.0,
+        "distractor_quality": 0.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 5.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.7,
+      "pass_fail": false,
+      "comments": "The question has a serious factual problem: the elegy/lament for Alp Er Tunga is preserved in Mahmud Kashgari's 'Divan Lughat al-Turk,' not in Yusuf Balasaguni's 'Kutadgu Bilig.' The correct answer is debatable and Kashgari is not even among the options. Additionally, two of the four options (A=100, D=0) are clearly numeric placeholders/errors with no plausible connection to the question, making the question trivially solvable by elimination and indicating corrupted option data.",
+      "improvement_suggestions": "1) Fix the factual attribution: the praise/lament poem for Alp Er Tunga is found in Mahmud Kashgari's 'Divan Lughat al-Turk' — replace the correct answer accordingly and add Kashgari as an option. 2) Replace the nonsensical numeric options (100 and 0) with plausible Turkic thinkers and their works (e.g., Mahmud Kashgari — 'Диуани лұғат ат-түрік', Al-Farabi — 'Музыка туралы үлкен кітап'). 3) Ensure all four options follow the same format (Author — Work title). 4) Verify the exact literary term used: 'мадақ жыр' vs. 'жоқтау' (elegy/lament) to accurately describe the genre of the Alp Er Tunga poem.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 12,
+      "variant": "real",
+      "topic": "Абайды оқы, таңырқа!",
+      "level": "B",
+      "overall": 5.7,
+      "correctness": 7.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 3.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The poem 'Ғылым таппай мақтанба' (Don't boast without finding knowledge) by Abai Qunanbaiuly is one of his famous didactic poems. In this poem, Abai emphasizes the importance of knowledge (ғылым) and reason/intellect (ақыл). The poem calls on youth to seek knowledge and develop their intellect. Among the qualities Abai places highest in this poem, 'ақыл' (reason/intellect/wisdom) is the central virtue he elevates. The poem's message is that without true knowledge and reason, one should not boast. Abai consistently throughout his works (both poetry and the 'Qara Söz' prose) places 'ақыл' (intellect/reason) as the highest human quality. In 'Ғылым таппай мақтанба' specifically, the pursuit of knowledge and the development of reason (ақыл) are the supreme qualities praised. The other options — қуаныш (joy), сағыныш (longing/nostalgia), мейірім (compassion/kindness) — are not the central elevated quality in this particular poem. Therefore, the answer is A) ақыл.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 3.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.7,
+      "pass_fail": false,
+      "comments": "The correct answer (ақыл) is defensible for Abai's works generally, but the question stem is imprecise — 'Ғылым таппай мақтанба' centers on ғылым (knowledge) as much as ақыл, making the keying somewhat ambiguous. More critically, the question is far too easy for Level B: any teacher familiar with Abai can eliminate қуаныш, сағыныш, and мейірім immediately as emotional/sentimental concepts unrelated to this didactic poem, requiring no multi-step reasoning.",
+      "improvement_suggestions": "1) Sharpen the stem to ask specifically what Abai contrasts or what condition he sets (e.g., 'Өлеңде Абай жастарға қандай қасиетті меңгеруді бірінші орынға қояды?') to reduce ambiguity between ғылым and ақыл. 2) Replace emotionally obvious distractors (қуаныш, сағыныш) with conceptually closer alternatives such as ғылым, еңбек, or намыс — qualities Abai also praises — to force genuine textual analysis and meet Level B difficulty. 3) Consider asking about the relationship between ғылым and ақыл in the poem to require multi-step reasoning.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 12,
+      "variant": "wrong_key",
+      "topic": "Абайды оқы, таңырқа!",
+      "level": "B",
+      "overall": 4.0,
+      "correctness": 2.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The poem 'Ғылым таппай мақтанба' (Don't boast without finding knowledge) by Abai Qunanbaiuly is one of his well-known didactic poems. In this poem, Abai emphasizes the importance of knowledge (ғылым) and reason/intellect (ақыл). The poem calls on youth not to boast without acquiring knowledge and wisdom. The central virtue that Abai elevates in this poem is 'ақыл' (reason/intellect/wisdom). The poem's key message revolves around intellectual development and rational thinking as the highest human quality. Among the options given — ақыл (reason/intellect), қуаныш (joy), сағыныш (longing/nostalgia), мейірім (compassion/kindness) — the one that matches Abai's elevated quality in this specific poem is ақыл (reason/intellect), as the poem explicitly discusses the pursuit of knowledge and wisdom as the noblest human trait.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.0,
+      "pass_fail": false,
+      "comments": "The provided correct answer B) қуаныш (joy) is demonstrably wrong. Abai's poem 'Ғылым таппай мақтанба' centers on ақыл (reason/intellect) and knowledge as the highest virtues, not joy. The answer key appears to be incorrectly keyed. Additionally, the question is too straightforward for level B difficulty — it tests simple recall rather than application or analysis.",
+      "improvement_suggestions": "1. Fix the answer key: the correct answer should be A) ақыл, which is the virtue Abai elevates in this poem. 2. To meet level B difficulty, rephrase the question to require analysis, e.g., asking students to compare how Abai treats this virtue across multiple poems or to identify how the poem's structure reinforces the central theme. 3. Replace distractors with more plausible alternatives that reflect concepts present in Abai's broader work (e.g., ерік/will, намыс/honor) rather than clearly unrelated emotions.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 12,
+      "variant": "weak_distractors",
+      "topic": "Абайды оқы, таңырқа!",
+      "level": "B",
+      "overall": 3.9,
+      "correctness": 6.0,
+      "distractor_quality": 0.0,
+      "difficulty_alignment": 2.0,
+      "kazakh_language_quality": 5.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The poem 'Ғылым таппай мақтанба' (Don't boast without finding knowledge) by Abai Qunanbaiuly is one of his famous didactic poems. In this poem, Abai emphasizes the importance of knowledge (ғылым) and reason/intellect (ақыл) as the highest virtues a person should strive for. The poem calls on people not to boast without acquiring knowledge and wisdom. Among the qualities Abai places highest in this poem, 'ақыл' (reason/intellect/wisdom) is the central virtue he elevates. The poem specifically praises intellectual development and rational thinking as the supreme human quality. Option A (ақыл - reason/intellect) is the quality Abai places highest in this poem. Option B (қуаныш - joy/happiness) is not the central theme. Option C (100) makes no sense as an answer. Therefore, the correct answer is A.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 6.0,
+        "distractor_quality": 0.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 5.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.9,
+      "pass_fail": false,
+      "comments": "The correct answer (A: ақыл) is defensible for the poem, but the distractors are catastrophically poor — option C is the number '100' which is nonsensical, and option D is 'no correct answer' which is a known cueing flaw. The question is far too simple for level B (single recall step), and the stem is grammatically incomplete (missing a verb/predicate). Overall quality is very low.",
+      "improvement_suggestions": "1) Replace distractor C ('100') with a plausible Kazakh virtue mentioned in Abai's works (e.g., 'еңбек' or 'адалдық'). 2) Remove the 'Дұрыс жауап жоқ' option entirely. 3) Complete the stem grammatically, e.g., '«Ғылым таппай мақтанба» өлеңінде Абай ең биік қойған қасиет қайсы?' 4) Elevate to level B by asking about the relationship between multiple virtues in the poem or comparing this poem's message to another Abai work, requiring 2-4 reasoning steps.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 13,
+      "variant": "real",
+      "topic": "Мен балаң жарық күнде сәуле қуған\\",
+      "level": "B",
+      "overall": 7.0,
+      "correctness": 7.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question is about the short story 'Жусан иісі' (The Smell of Wormwood) and asks about the scene where the one-armed (шолақ қол) brigade leader Тұржан appears/is seen. In this story by Дулат Исабеков, the character Тұржан (the one-armed brigadier) is notably present and visible during the scene when a fire breaks out on the roof of the horse stable (ат қора). This is a key dramatic moment in the narrative where Тұржан's character is prominently featured. The fire at the horse stable (ат қора) is the episode associated with Тұржан's appearance in the story.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.0,
+      "pass_fail": true,
+      "comments": "The question tests recall of a specific plot detail from 'Жусан иісі' — the fire at the horse stable where Тұржан appears. The correct answer (C) aligns with the story, and my independent answer matches. However, the question is closer to level A (pure recall) than level B (application/analysis), and distractors C vs D (ат қора vs сиыр қора) are very similar, which is a minor cueing issue rather than a meaningful distractor distinction.",
+      "improvement_suggestions": "1. Elevate to true level B by asking about the significance or characterization of Тұржан in that scene, not just identifying which scene he appears in. 2. The near-identical distractors C and D (horse stable vs cow stable) may confuse rather than test meaningful knowledge — ensure each distractor represents a distinct, plausible misconception. 3. Add brief context or a follow-up analytical element to push beyond simple recall.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 13,
+      "variant": "wrong_key",
+      "topic": "Мен балаң жарық күнде сәуле қуған\\",
+      "level": "B",
+      "overall": 4.5,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question is about the short story 'Жусан иісі' (The Smell of Wormwood) and asks about the scene where the one-armed (шолақ қол) brigade leader Тұржан appears/is visible. In this story by Дулат Исабеков, the character Тұржан (the one-armed brigadier) is notably present and visible during the scene when a fire breaks out on the roof of the horse stable (ат қора). This is a key plot moment where his character is revealed. The options mention: A) when a death notice arrives in the village, B) when Ayan's grandmother's seventh-day memorial is held, C) when fire breaks out on the roof of the horse stable (ат қора), D) when fire breaks out on the roof of the cow barn (сиыр қора). Based on the plot of 'Жусан иісі', Тұржан the one-armed brigadier is prominently featured during the fire at the horse stable (ат қора), making option C the correct answer.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.5,
+      "pass_fail": false,
+      "comments": "My independent answer (C — fire at the horse stable) conflicts with the provided correct answer (A — death notice), and I have moderate confidence in my answer based on the plot of Дулат Исабеков's story. Additionally, the question tests simple plot recall rather than the multi-step analysis required for Level B difficulty. Distractors C and D are nearly identical in structure, creating a cueing artifact.",
+      "improvement_suggestions": "1) Verify the correct answer against the primary text — if A is indeed correct, provide a clear explanation citing the specific passage. 2) Redesign the question to require analysis or comparison (e.g., asking about the significance of a scene or comparing character behavior across scenes) to meet Level B cognitive demands. 3) Differentiate distractors C and D more meaningfully, as 'ат қора' vs 'сиыр қора' is a near-duplicate pair that may confuse rather than discriminate.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 13,
+      "variant": "weak_distractors",
+      "topic": "Мен балаң жарық күнде сәуле қуған\\",
+      "level": "B",
+      "overall": 5.9,
+      "correctness": 7.0,
+      "distractor_quality": 3.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "C",
+      "ground_truth_answer": "C",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the story 'Жусан иісі' (The Smell of Wormwood) — a well-known Kazakh prose work. The question specifically asks: in the plot of the story 'Жусан иісі,' in what scene does the one-armed (шолақ қол) brigade leader Тұржан appear?\n\nIn the story 'Жусан иісі' by Дулат Исабеков (a prominent Kazakh writer), the character Тұржан is a one-armed brigade leader. According to the plot of this story, Тұржан appears in the scene when a fire breaks out on the roof of the horse stable (ат қора). This is a key episode in the narrative where his character is revealed.\n\nOption C states: 'ат қораның төбесінен өрт шыққанда' — when a fire broke out on the roof of the horse stable.\nOption D states: 'сиыр қораның төбесінен өрт шыққанда' — when a fire broke out on the roof of the cow barn.\n\nBased on my knowledge of Дулат Исабеков's 'Жусан иісі,' the fire scene involving Тұржан occurs at the horse stable (ат қора), not the cow barn. Therefore, option C is the correct answer.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 3.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.9,
+      "pass_fail": false,
+      "comments": "The correct answer (C) aligns with the known plot of 'Жусан иісі,' but the distractor quality is poor: option A ('0') is nonsensical and immediately eliminable, and option B ('Дұрыс жауап жоқ / No correct answer') is a weak filler that undermines the item. The question tests simple recall rather than the multi-step analysis required for level B.",
+      "improvement_suggestions": "1) Replace option A ('0') with a plausible content-based distractor (e.g., a different scene where Тұржан appears). 2) Remove 'Дұрыс жауап жоқ' — it is a known cueing flaw and lowers item validity. 3) Elevate cognitive demand to level B by asking about the significance or function of the fire scene in character development, rather than simple plot recall. 4) Ensure all four options are parallel in structure and length.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 14,
+      "variant": "real",
+      "topic": "Көнеден жеткен жәдігерлер",
+      "level": "B",
+      "overall": 7.8,
+      "correctness": 9.0,
+      "distractor_quality": 7.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt is: 'Тал шарбаққа мал сақтап, Тас қалаға жан сақтап, Тасқан екен мына хан!'\n\nLet's analyze the literary/rhetorical devices used:\n\n1. **Alliteration (аллитерация)**: Repetition of the same consonant sound at the beginning of words. Looking at the lines:\n   - 'Тал', 'Тас', 'Тасқан' — all begin with the consonant 'Т'\n   - Additionally, 'шарбаққа', 'сақтап' — 'с' sounds repeat\n   - 'мал сақтап', 'жан сақтап' — 'с' repeats\n   This is a clear pattern of alliteration with the 'Т' sound at the start of each line.\n\n2. **Assonance (ассонанс)**: Repetition of vowel sounds. While there are some vowel repetitions, the dominant device here is consonant repetition.\n\n3. **Metaphor (метафора)**: No direct metaphorical substitution is evident.\n\n4. **Simile (теңеу)**: No comparison using 'like' or 'as' (сияқты, тәрізді, секілді) is present.\n\nThe most prominent device is **аллитерация (alliteration)** — the repetition of the initial consonant 'Т' in 'Тал', 'Тас', 'Тасқан' at the beginning of each line. This is a classic example of alliteration in Kazakh poetry.\n\nAnswer: D) аллитерация",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 7.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.8,
+      "pass_fail": true,
+      "comments": "The correct answer (аллитерация) is well-supported by the clear repetition of the initial 'Т' consonant across all three lines. Distractors are plausible literary terms but the alliteration pattern is fairly obvious to a trained teacher, making this closer to level A than B. Minor formatting inconsistency in the question text (mixed Cyrillic 'Y' vs 'Ү' and inconsistent use of italics markers).",
+      "improvement_suggestions": "1) Fix the typo 'Yзіндіде' — should be 'Үзіндіде' (Cyrillic Ү, not Latin Y). 2) To raise difficulty to true level B, ask the teacher to identify ALL rhetorical devices present (e.g., both аллитерация and анафора/параллелизм are present), or ask which device is NOT used, requiring deeper analysis. 3) Consider adding анафора as a distractor since the repeated structure 'сақтап' at line endings could be confused with other devices.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 14,
+      "variant": "wrong_key",
+      "topic": "Көнеден жеткен жәдігерлер",
+      "level": "B",
+      "overall": 3.9,
+      "correctness": 0.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt is: 'Тал шарбаққа мал сақтап, Тас қалаға жан сақтап, Тасқан екен мына хан!' Let's analyze the literary/rhetorical devices used:\n\n1. Alliteration (аллитерация): repetition of the same consonant sound at the beginning of words. Looking at the lines: 'Тал', 'Тас', 'Тасқан' — all three lines begin with the consonant 'Т'. This is a clear case of alliteration (аллитерация), where the initial consonant 'Т' is repeated across consecutive lines.\n\n2. Assonance (ассонанс): repetition of vowel sounds. While there are vowel patterns, the dominant and most prominent device here is the repeated initial 'Т' consonant.\n\n3. Simile (теңеу): a comparison using 'like' or 'as' — not present here.\n\n4. Metaphor (метафора): implied comparison — not the primary device here.\n\nThe repetition of the initial consonant 'Т' in 'Тал', 'Тас', 'Тасқан' across all three lines is a textbook example of alliteration (аллитерация) in Kazakh poetry. This is the dominant stylistic device in this excerpt.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 0.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.9,
+      "pass_fail": false,
+      "comments": "The provided correct answer A (теңеу/simile) is demonstrably wrong — there is no simile in the excerpt. The dominant literary device is clearly аллитерация (alliteration), with the initial consonant 'Т' repeated in 'Тал', 'Тас', and 'Тасқан' across all three lines. This is a critical answer-key error that disqualifies the question.",
+      "improvement_suggestions": "Change the correct answer to D (аллитерация), as the repeated initial consonant 'Т' across all three lines is a textbook example of alliteration. Alternatively, rewrite the excerpt to actually contain a simile if теңеу is the intended answer. Also verify that the explanation aligns with the chosen device.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 14,
+      "variant": "weak_distractors",
+      "topic": "Көнеден жеткен жәдігерлер",
+      "level": "B",
+      "overall": 5.5,
+      "correctness": 9.0,
+      "distractor_quality": 1.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The excerpt is: 'Тал шарбаққа мал сақтап, Тас қалаға жан сақтап, Тасқан екен мына хан!'\n\nLet's analyze the poetic devices used:\n\n1. **Alliteration (аллитерация)**: Repetition of the same consonant sound at the beginning of words. Looking at the lines:\n   - 'Тал', 'Тас', 'Тасқан' — all begin with the consonant 'Т'\n   - Additionally, 'мал сақтап', 'жан сақтап' show repetition of 'с' sounds\n   - The dominant feature is the repetition of the initial consonant 'Т' across all three lines\n\n2. **Assonance (ассонанс)**: Repetition of vowel sounds. While there are some vowel repetitions, the most prominent device here is the consonant repetition.\n\n3. The anaphora-like structure (each line starting with 'Т' words) combined with the repeated 'Т' consonant at the beginning of key words ('Тал', 'Тас', 'Тасқан') is a classic example of **аллитерация** (alliteration) — the repetition of the same consonant sound (here 'Т') at the beginning of successive words/lines.\n\nOptions A (0) and C (100) appear to be numerical values that don't correspond to literary devices, so they are clearly incorrect.\n\nBetween аллитерация (D) and ассонанс (B): Since the repeated sound is a consonant 'Т' (not a vowel), this is alliteration, not assonance.\n\nTherefore, the correct answer is D) аллитерация.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 1.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.5,
+      "pass_fail": false,
+      "comments": "The correct answer (аллитерация) is clearly defensible given the repeated 'Т' consonant at the start of key words across all three lines. However, two of the four options (A: 0 and C: 100) are nonsensical numerical values that have no relation to literary devices, making the question trivially easy by elimination — any literate teacher can discard them instantly. This severely undermines distractor quality and difficulty alignment.",
+      "improvement_suggestions": "Replace options A (0) and C (100) with plausible literary device distractors such as 'анафора' (anaphora) and 'эпифора' (epiphora) or 'метафора' (metaphor), which are real Kazakh literary terms that a teacher might confuse with аллитерация in this context. This would raise both distractor quality and difficulty to the intended B level.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 15,
+      "variant": "real",
+      "topic": "Балалар мен үлкендер",
+      "level": "B",
+      "overall": 6.7,
+      "correctness": 7.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks which zhyraus (epic poets/bards) sang about Bayan's heroism in fighting against the Dzungars (Jungars/Oirats).\n\nBayan-batyr was a Kazakh hero who fought against the Dzungar invaders. The zhyraus who celebrated his heroism in their works are well-known figures in Kazakh literary history.\n\nÜmbetei zhyrau (Үмбетей жырау, 1706-1778) is famous for his elegies and heroic poems about the battles against the Dzungars, including works about Bayan-batyr. He composed a famous elegy (жоқтау) for Bogenbai batyr.\n\nTätiqara zhyrau (Тәтіқара жырау, 18th century) also sang about the heroes of the Dzungar wars, including Bayan-batyr.\n\nShalkiiz (16th century) and Aktamberdі (early 18th century) - Aktamberdі did write about Dzungar wars but is more associated with other themes. Shalkiiz predates the major Dzungar conflicts.\n\nBuqar zhyrau and Sypyra zhyrau - Buqar is associated with Ablai Khan's era, and Sypyra is from an earlier period.\n\nDospambet zhyrau (16th century) predates the Dzungar wars of the 18th century.\n\nThe standard answer in Kazakh literary history for zhyraus who specifically sang about Bayan-batyr's heroism against the Dzungars is Ümbetei and Tätiqara. This is the commonly cited pair in Kazakh school and teacher certification materials.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.7,
+      "pass_fail": true,
+      "comments": "The correct answer (Үмбетей мен Тәтіқара) is well-supported by Kazakh literary history, and my independent answer matches. However, the question is essentially a factual recall item rather than a true B-level analytical task, and some distractors (e.g., Доспамбет пен Үмбетей) could confuse because Үмбетей appears in both option A and D, which is a minor cueing flaw.",
+      "improvement_suggestions": "1) Reframe the question to require analysis or comparison (e.g., ask which zhyrau's work best exemplifies a specific literary feature related to Bayan's heroism) to genuinely reach B-level difficulty. 2) Avoid repeating 'Үмбетей' across multiple options (A and D), as this creates a cueing artefact — replace option D with a fully distinct pair. 3) Add a brief contextual clause to the stem to increase cognitive demand.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 15,
+      "variant": "wrong_key",
+      "topic": "Балалар мен үлкендер",
+      "level": "B",
+      "overall": 4.6,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks which zhyraus (bards/poets) sang about Bayan's heroism in fighting against the Dzungars (Jungars/Oirats).\n\nBayan (Баян батыр) was a Kazakh hero who fought against the Dzungar invaders. The zhyraus who celebrated his heroism are well-known figures in Kazakh oral literature history.\n\nLet me analyze the options:\n- Ümbetei (Үмбетей) was a famous zhyrau of the 18th century who composed elegies and heroic poems about the battles against the Dzungars. He is known for his 'Жоқтау' (elegy) for Bogenbai batyr and other heroes.\n- Tätiqara (Тәтіқара) was also an 18th-century zhyrau who sang about the heroes of the Kazakh-Dzungar wars.\n- Shalkiiz (Шалкиіз) was a 15th-16th century zhyrau — too early for the main Dzungar wars.\n- Aktamberdі (Ақтамберді) was an 18th-century zhyrau who did sing about the Dzungar wars, but is more associated with Bogenbai and other heroes.\n- Buqar (Бұқар) was an 18th-century zhyrau, but more associated with Ablai Khan.\n- Sypyra (Сыпыра) was a much earlier legendary zhyrau.\n- Dospambet (Доспамбет) was a 16th-century zhyrau — too early for the Dzungar period.\n\nSpecifically regarding Bayan batyr: Үмбетей жырау and Тәтіқара жырау are the zhyraus most specifically associated with singing about Bayan batyr's heroism against the Dzungars. This is a standard fact in Kazakh literature curricula.\n\nOption A (Үмбетей мен Тәтіқара) is the correct answer.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.6,
+      "pass_fail": false,
+      "comments": "The provided correct answer D (Доспамбет пен Үмбетей) is almost certainly wrong: Dospambet was a 16th-century zhyrau who predates the Kazakh-Dzungar wars by roughly two centuries and could not have sung about Bayan batyr's heroism. The academically accepted answer is A (Үмбетей мен Тәтіқара), who were 18th-century zhyraus contemporaneous with Bayan batyr. The question also tests pure recall rather than the multi-step analysis required for level B.",
+      "improvement_suggestions": "1. Correct the answer key to A (Үмбетей мен Тәтіқара). 2. To raise difficulty to level B, reframe the question to require analysis — e.g., ask teachers to identify which specific works (жырлар) by these zhyraus describe Bayan's heroism, or compare the thematic differences between two zhyraus' portrayals of the same battle. 3. Verify all historical dates for zhyraus used as distractors to ensure plausibility.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 15,
+      "variant": "weak_distractors",
+      "topic": "Балалар мен үлкендер",
+      "level": "B",
+      "overall": 5.3,
+      "correctness": 7.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "A",
+      "ground_truth_answer": "A",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks which zhyraus (oral poets/bards) sang about Bayan's heroism in fighting against the Dzungars (Jungars/Oirats).\n\nIn Kazakh oral literature history, the battles against the Dzungars (Jungars) in the 18th century inspired many zhyraus. The famous zhyraus associated with the Dzungar wars and the heroes of that period include:\n\n- Ümbetei zhyrau (Үмбетей жырау) - known for his elegies and songs about the Dzungar wars, particularly associated with Bogenbai batyr and other heroes\n- Tätiqara zhyrau (Тәтіқара жырау) - also known for songs about the Dzungar period\n- Buqar zhyrau (Бұқар жырау) - a prominent zhyrau of the 18th century associated with Ablai Khan's era\n\nBayan batyr was a hero who fought against the Dzungars. The zhyraus who specifically sang about Bayan's heroism are Ümbetei and Tätiqara (Үмбетей мен Тәтіқара). This is a well-known fact in Kazakh literary history - Ümbetei zhyrau composed a famous tolghau (philosophical poem) and songs about the Dzungar wars, and Tätiqara also sang about Bayan batyr's exploits.\n\nOption A (Үмбетей мен Тәтіқара) is the correct answer.",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.3,
+      "pass_fail": false,
+      "comments": "The correct answer (A) is defensible and matches established Kazakh literary history, but the distractors are severely flawed: options B ('0') and D ('Анықталмаған') are nonsensical for a factual literature question and are trivially eliminable, making the question far too easy. The difficulty level is closer to A (recall) than B (application/analysis), and the question stem is incomplete — it lacks a verb or question marker making it grammatically a fragment.",
+      "improvement_suggestions": "1) Replace options B and D with plausible zhyrau pairs (e.g., 'Бұқар мен Үмбетей', 'Ақтамберді мен Тәтіқара') so all distractors are reachable by a specific misconception. 2) Complete the question stem grammatically, e.g., 'Баянның жоңғарларға қарсы күрескен ерлігін жырлаған жыраулар кімдер?' 3) To raise difficulty to level B, add a context clue or ask candidates to identify which specific works/tolghau these zhyraus composed about Bayan, requiring multi-step reasoning rather than pure recall.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 16,
+      "variant": "real",
+      "topic": "Балалар мен үлкендер",
+      "level": "B",
+      "overall": 7.6,
+      "correctness": 9.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question is about Mukhtar Auezov's story 'Көксерек' (Koксерек/Grey Wolf). The passage describes a scene where Көксерек (the wolf) bites and tears something, shaking its head, gouging out an eye, and swallowing it while walking away. This is a violent, brutal scene.\n\nIn 'Көксерек' by Mukhtar Auezov, the plot centers on a wolf cub raised by a boy named Құрмаш (Kurмаsh). The wolf eventually turns wild and dangerous. The climactic tragic event in the story is the death of Құрмаш — the boy who raised Көксерек. The wolf, having fully reverted to its wild nature, attacks and kills Құрмаш. The described scene — where Көксерек growls, bites with the tip of its teeth, tears something away, shakes its head, gouges out an eye, and swallows it while walking — corresponds to the brutal killing of Құрмаш by the wolf he once raised.\n\nThis is the central tragic event of the novella: Құрмаш's death at the hands (jaws) of Көксерек, which he had nurtured from a pup. The other options (grandmother's death, Қасен's death, brother's death) are not the main plot event described in this passage.\n\nTherefore, the answer is D) Құрмаштың өлімі (Kurмаsh's death).",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.6,
+      "pass_fail": true,
+      "comments": "The correct answer D (Құрмаштың өлімі) is well-supported by the canonical text of Auezov's 'Көксерек'; the passage clearly describes the wolf's brutal attack. However, the question leans toward recall/recognition rather than true B-level application, and some distractors (e.g., 'ағасының өлімі') are not strongly grounded in the story's plot, making them easily eliminable.",
+      "improvement_suggestions": "1) Strengthen distractors by grounding each in actual events or characters from the novella (e.g., replace vague 'ағасының өлімі' with a named character whose fate could plausibly be confused). 2) To raise difficulty to genuine B-level, consider asking the student to identify the thematic or compositional significance of the passage rather than just matching it to a plot event. 3) Ensure all distractor characters are actually present in the story to avoid trivial elimination.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 16,
+      "variant": "wrong_key",
+      "topic": "Балалар мен үлкендер",
+      "level": "B",
+      "overall": 5.0,
+      "correctness": 2.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 6.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question is about Mukhtar Auezov's story 'Көксерек' (Koксерек/Grey Wolf). The passage describes a scene where Көксерек (the wolf) bites and tears something, shaking its head, and gouges out one eye, then swallows it while walking away. This is a violent attack scene.\n\nIn 'Көксерек', the wolf Көксерек was raised by a boy named Құрмаш (Kurмаsh). The climactic tragic event in the story is when Көксерек, having reverted to wild wolf nature, attacks and kills Құрмаш - the boy who raised him. The described scene - where Көксерек bites, tears, gouges out an eye and swallows it - corresponds to the brutal killing of Құрмаш by the wolf.\n\nThe other options:\n- A) grandmother's death - not described in this manner\n- B) Қасен's death - Қасен is a character but not the one killed in this specific scene\n- C) brother's death - not the main tragic event\n- D) Құрмаш's death - this is the central tragic event of the story, where the wolf kills the boy who raised it\n\nThe passage describes the death of Құрмаш at the jaws of Көксерек, which is the most memorable and tragic scene in the novella.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 6.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.0,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A - grandmother's death) conflicts with the independent analysis which identifies the described brutal attack scene (eye-gouging, swallowing) as the death of Құрмаш, the central tragic event of the novella. The answer key appears to be incorrectly keyed, as the described scene with the wolf gouging out an eye corresponds to the attack on Құрмаш, not the grandmother. This is a factual error in the answer key that would mislead teachers.",
+      "improvement_suggestions": "Verify the correct answer against the primary source text of Auezov's 'Көксерек.' The scene described (eye gouging, swallowing while walking) needs to be matched to the correct character death. If the answer is indeed Құрмаш (D), update the answer key accordingly. Additionally, provide a citation or page reference in the explanation to make the keying verifiable. The question stem could also be clearer by specifying whose death is being asked about.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 16,
+      "variant": "weak_distractors",
+      "topic": "Балалар мен үлкендер",
+      "level": "B",
+      "overall": 5.5,
+      "correctness": 9.0,
+      "distractor_quality": 1.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the plot event in Mukhtar Auezov's story 'Köksörek' (Көксерек) described by the passage: 'Көксерек ырылдап тұрып тісінің ұшымен қағып жұлып алып, басын шайқап өткенде... бір жақ көзін қопарып алып кетті. Жүріп бара жатып қылғып салды...' (Köksörek, growling, knocked it out with the tip of his teeth, shook his head as he passed... gouged out one eye and took it away. Swallowed it as he walked...).\n\nIn Auezov's 'Көксерек,' the wolf Köksörek is raised by a boy named Qurmash (Құрмаш). The climactic tragic event in the story is when Köksörek, having become a wild wolf again, kills Qurmash. The passage describes Köksörek attacking and killing someone — the detail of gouging out an eye and swallowing it as he walked is consistent with the wolf's fatal attack on Qurmash, the young boy who had raised him.\n\nThe options are:\nA) әжесінің өлімі — grandmother's death\nB) 0 — unclear/null\nC) Анықталмаған — Unspecified\nD) Құрмаштың өлімі — Qurmash's death\n\nThe described scene — Köksörek attacking with his teeth, gouging out an eye — corresponds to the death of Qurmash, the central tragic event of the story. This is the key plot point of 'Көксерек': the wolf kills the boy who raised him.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 1.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 5.5,
+      "pass_fail": false,
+      "comments": "The correct answer (D) is well-supported by the text of Auezov's 'Көксерек' — the passage clearly describes Köksörek's fatal attack, which corresponds to Qurmash's death. However, the distractor quality is extremely poor: option B is '0' (meaningless/null) and option C is 'Анықталмаған' (Unspecified), which are not genuine distractors at all and make the correct answer trivially obvious by elimination. The difficulty level is closer to A (recall) than B (application/analysis), as any teacher familiar with the story can immediately identify the scene.",
+      "improvement_suggestions": "1) Replace options B ('0') and C ('Анықталмаған') with plausible literary distractors, e.g., 'Қасқырдың өлімі' (the wolf's death), 'Баланың анасының өлімі' (the boy's mother's death), or 'Малшының өлімі' (the herdsman's death) — events that could plausibly be confused with the climactic scene. 2) To raise difficulty to level B, consider asking the teacher to identify the narrative function or thematic significance of the passage rather than simply naming the event. 3) The question stem could be more clearly formatted — the embedded quotation should be set off more cleanly.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 17,
+      "variant": "real",
+      "topic": "Көркем әдебиет және эпикалық сарын",
+      "level": "B",
+      "overall": 7.9,
+      "correctness": 9.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Murat Mönkeuly (Мұрат Мөңкеұлы, 1843-1906) was a Kazakh poet known for his tolghau (philosophical lyrical poems) that addressed social and political issues of his time. His famous works 'Үш қиян' (Three Distant Lands) and 'Сарыарқа' (Saryarka) are among his most significant compositions.\n\nIn 'Сарыарқа', Murat Mönkeuly laments the loss of the ancestral homeland (ata qonystan) — the beautiful Saryarka steppe — which was being taken over by Russian colonizers (otarshylar). He describes the former glory and beauty of the land and mourns its loss to settlers.\n\nIn 'Үш қиян', he similarly addresses the theme of displacement — Kazakhs being pushed to distant, harsh lands (three remote/difficult places) as a result of colonial land seizure policies. He also mourns the loss of traditional customs and way of life (ata dästür).\n\nThese two tolghau poems are fundamentally about:\n1. The colonizers (Russian settlers) seizing Kazakh ancestral lands\n2. The disappearance of traditional customs and the Kazakh way of life\n\nThis corresponds directly to option D: 'отаршылдардың жерді иемденуі, ата дәстүрдің жоғалып бара жатқаны' (colonizers seizing the land, traditional customs disappearing).\n\nOption C mentions 'glorifying the beauty of the ancestral homeland and social issues' — while there is some element of this, the primary thematic concern is the colonial land seizure and loss of traditions, making D the more precise answer.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.9,
+      "pass_fail": true,
+      "comments": "The correct answer D is well-supported by literary scholarship on Murat Mönkeuly's tolghau poems, which centrally address colonial land seizure and loss of traditional customs. Option C is a plausible distractor but less precise. The question is appropriate for teacher certification at level B.",
+      "improvement_suggestions": "Distractor A ('білім алуға үндеу, жұмысқа орналастыру') is too obviously anachronistic and easily eliminated. Consider replacing it with a more plausible distractor related to 19th-century Kazakh themes, such as praising tribal leaders or describing nomadic life. Also, the question stem could be slightly more specific — e.g., asking what the 'central/main' themes are — to reduce ambiguity with option C.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 17,
+      "variant": "wrong_key",
+      "topic": "Көркем әдебиет және эпикалық сарын",
+      "level": "B",
+      "overall": 4.4,
+      "correctness": 2.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 4.0,
+      "kazakh_language_quality": 8.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Murat Mönkeuly (Мұрат Мөңкеұлы, 1843–1906) was a Kazakh poet known for his tolghau (philosophical lyric poems) that addressed the social and political problems of his era — specifically the colonial period under Russian rule. His famous works 'Үш қиян' (Three Distant Lands) and 'Сарыарқа' (Saryarka) are elegiac-philosophical poems that lament the loss of ancestral lands to Russian colonizers and the disappearance of traditional Kazakh customs and way of life. In 'Сарыарқа,' he mourns the beauty and grandeur of the Kazakh steppe homeland while also addressing the social hardships brought by colonialism. In 'Үш қиян,' he describes the forced displacement of Kazakhs from their native lands. The central themes are: (1) Russian colonizers seizing Kazakh lands (отаршылдардың жерді иемденуі), and (2) the fading of ancestral traditions (ата дәстүрдің жоғалып бара жатқаны). This matches option D precisely. Option C mentions 'glorifying the beauty of the ancestral homeland and social issues' — while there is an element of describing the homeland's beauty, the primary thematic concern is colonial land seizure and loss of traditions, not mere glorification. Option D is the most accurate description of the core subject matter of these two tolghau poems.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 4.0,
+        "kazakh_language_quality": 8.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.4,
+      "pass_fail": false,
+      "comments": "The provided correct answer (C) is likely wrong: Murat Mönkeuly's 'Үш қиян' and 'Сарыарқа' are primarily about colonial land seizure and the disappearance of ancestral traditions (option D), not mere glorification of the homeland. Additionally, distractors A and B are trivially eliminable, and the question tests recall rather than B-level analytical thinking.",
+      "improvement_suggestions": "1. Verify the correct answer — standard Kazakh literary scholarship attributes these tolghau poems primarily to themes of colonial land seizure and loss of traditions (D), not homeland glorification (C). 2. Replace trivially wrong distractors A and B with more plausible options that reflect partial or related themes. 3. Reframe the question to require analysis (e.g., comparing thematic differences between the two poems) to genuinely reach B-level difficulty.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 17,
+      "variant": "weak_distractors",
+      "topic": "Көркем әдебиет және эпикалық сарын",
+      "level": "B",
+      "overall": 6.3,
+      "correctness": 9.0,
+      "distractor_quality": 2.0,
+      "difficulty_alignment": 5.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "Murat Mönkeuly (Мұрат Мөңкеұлы, 1843-1906) was a Kazakh poet known for his tolghau (philosophical lyric-epic poems) that addressed the social and political issues of his time, particularly the consequences of Russian colonial expansion into the Kazakh steppe. His famous works 'Үш қиян' (Three Wildernesses) and 'Сарыарқа' (Saryarka) are elegiac-philosophical poems (толғау) that lament the loss of ancestral lands to Russian colonizers and the erosion of traditional Kazakh customs and way of life. The central themes in these works are: (1) the seizure/appropriation of Kazakh lands by colonizers (отаршылдардың жерді иемденуі), and (2) the disappearance of ancestral traditions (ата дәстүрдің жоғалып бара жатқаны). These themes directly correspond to option D. Option A (calling for education, employment) does not match the content of these specific works. Therefore, the correct answer is D.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 2.0,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.3,
+      "pass_fail": true,
+      "comments": "The correct answer D is well-supported by literary scholarship on Murat Mönkeuly's tolghau works. However, the distractor quality is very poor: options B ('Дұрыс жауап жоқ') and C ('Анықталмаған') are non-answers that trivially reduce the choice to A vs D, making the question too easy to eliminate by process of elimination. The difficulty level is closer to A (recall) than B (application/analysis).",
+      "improvement_suggestions": "Replace options B and C with substantive, plausible distractors based on common misconceptions — e.g., themes from other Kazakh poets of the same era (such as Abai's educational themes or Dulat's laments about different issues). This would raise both distractor quality and difficulty alignment to level B. Also ensure all four options are parallel in grammatical structure and length.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 18,
+      "variant": "real",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "C",
+      "overall": 6.3,
+      "correctness": 8.0,
+      "distractor_quality": 6.0,
+      "difficulty_alignment": 3.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": true,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "This question refers to the story 'Менің мұғалімім' (My Teacher) by Chingiz Aitmatov, specifically the character Duisen (Дүйсен) who is the teacher that inspired and helped Altynai (Алтынай) to pursue education and eventually become an academician. In Aitmatov's story, Duisen is the village teacher who recognizes Altynai's potential and encourages her to study, sacrificing much for her education. He is the key figure responsible for Altynai's academic success and her becoming an academician. The other options (artist, brother/sister-in-law, old man Kartanbay) are not the primary catalyst for her academic achievement in this narrative.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 8.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 3.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 6.3,
+      "pass_fail": true,
+      "comments": "The correct answer (Дүйсен) aligns with Aitmatov's 'Менің мұғалімім' where Duisen is the teacher who enables Altynai's academic career. However, the question is essentially a simple recall item — a teacher familiar with the text can answer immediately without any multi-step reasoning, making it far below the requested Level C difficulty.",
+      "improvement_suggestions": "To reach Level C difficulty, reframe the question to require synthesis or analysis — e.g., ask students to compare the roles of multiple characters in shaping Altynai's fate, or ask which character's actions best exemplify a specific literary theme (e.g., selfless sacrifice vs. social pressure). Also consider improving distractor plausibility: 'суретші' is too easily eliminated as it plays no significant role, and 'Қартаңбай шал' may be unfamiliar to some, making elimination trivial. Strengthen distractors by using characters who do have meaningful but secondary roles in Altynai's life.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 18,
+      "variant": "wrong_key",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "C",
+      "overall": 3.5,
+      "correctness": 2.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 2.0,
+      "kazakh_language_quality": 7.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "This question refers to the story 'Менің мұғалімім' (My Teacher) by Chingiz Aitmatov, specifically the Kazakh literary curriculum context about the character Altynai and who helped her become an academician. In Aitmatov's story, the teacher Duisen (Дүйсен) is the one who recognized Altynai's potential, supported her education, and was instrumental in her becoming an academician. Duisen was a dedicated teacher who sacrificed much to ensure Altynai could study and advance. The story is told retrospectively by Altynai herself, acknowledging Duisen's role in her life. Therefore, the character who caused/enabled Altynai to become an academician is Duisen.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 7.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.5,
+      "pass_fail": false,
+      "comments": "The provided correct answer (C: Қартаңбай шал) appears to be factually wrong. In Aitmatov's 'First Teacher,' it is Duisen (option D) who is unambiguously responsible for Altynai becoming an academician — this is the central theme of the story. Additionally, the question is simple recall, not Level C difficulty.",
+      "improvement_suggestions": "1) Verify the correct answer — literary evidence strongly supports D (Дүйсен), not C (Қартаңбай шал). 2) Redesign the question to Level C difficulty by asking for analysis or synthesis, e.g., comparing narrative techniques or thematic significance across multiple works. 3) If the answer key is corrected to D, restructure distractors to represent plausible misconceptions rather than random characters.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 18,
+      "variant": "weak_distractors",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "C",
+      "overall": 4.3,
+      "correctness": 7.0,
+      "distractor_quality": 1.0,
+      "difficulty_alignment": 2.0,
+      "kazakh_language_quality": 5.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "This question refers to the story 'Менің мұғалімім' (My Teacher) by Chingiz Aitmatov, specifically the character Duisen (Дүйсен) who is the teacher that inspired and helped Altynai in her education. In Aitmatov's story, Duisen is the dedicated teacher who recognized Altynai's potential and encouraged her to pursue education, which ultimately led to her becoming an academician. The story is about the profound influence a teacher (Duisen) had on Altynai's life and academic career. Therefore, the character who was the reason/cause for Altynai becoming an academician is Duisen.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 1.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 5.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.3,
+      "pass_fail": false,
+      "comments": "The correct answer (Дүйсен) is factually defensible based on Aitmatov's story, but the distractors are extremely poor — 'суретші' (artist) is vaguely plausible, while 'Анықталмаған' (Unspecified) and '100' are nonsensical placeholders that make the correct answer trivially obvious by elimination. The question is far too simple for Level C difficulty.",
+      "improvement_suggestions": "1) Replace nonsensical distractors ('Анықталмаған', '100') with plausible character names from the story or related works (e.g., Алтынайдың анасы, мектеп директоры, ауыл ақсақалы). 2) Reframe the question to require synthesis or analysis — e.g., ask about the thematic significance of Дүйсен's role or compare it to another character's influence. 3) Ensure all options are grammatically parallel and contextually meaningful. 4) The question stem should be a complete sentence with a question mark.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 19,
+      "variant": "real",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "C",
+      "overall": 4.1,
+      "correctness": 3.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 2.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "B",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the writing style (жазушы тілі) in the story 'Пәтер іздеп жүр едік' (We Were Looking for an Apartment). This story is by the Kazakh writer Дулат Исабеков (Dulat Isabekov). Isabekov is known for his distinctive prose style characterized by vivid, colorful dramatic elements — what critics describe as 'бояулы драматизм' (colorful dramatism). His language is rich with dramatic tension, vivid imagery, and emotional depth. The term 'бояулы драматизм' (painted/colorful dramatism) is the critical term most associated with Isabekov's narrative style, particularly in his short stories and novellas. The other options — 'ескішілдік стилі' (archaism style), 'әсіре лиризм стилі' (excessive lyricism style), and 'телеграфтық стиль' (telegraphic style) — do not match the characteristic description of Isabekov's language in this work. Therefore, the answer is B.",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 3.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 4.1,
+      "pass_fail": false,
+      "comments": "The provided correct answer (D: 'телеграфтық стиль') conflicts with the independent analysis (B: 'бояулы драматизм'), and no explanation is provided to resolve the ambiguity. Additionally, the question is purely a recall/recognition task about a specific critical label, which does not meet the Level C requirement of multi-step reasoning or synthesis.",
+      "improvement_suggestions": "1) Provide a clear explanation citing the authoritative Kazakh curriculum source that associates 'телеграфтық стиль' with this specific story. 2) Redesign the question to require genuine Level C reasoning — e.g., ask students to analyze a passage and justify which stylistic label applies, citing textual evidence. 3) Fix the missing closing quotation mark in option A. 4) Verify the correct answer against the official Kazakh literature textbook or methodological guide.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 19,
+      "variant": "wrong_key",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "C",
+      "overall": 3.9,
+      "correctness": 2.0,
+      "distractor_quality": 5.0,
+      "difficulty_alignment": 2.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "D",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": true,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the writing style (жазушы тілі) used in the story 'Пәтер іздеп жүр едік' (We Were Looking for an Apartment). This story is by the Kazakh writer Дулат Исабеков (Dulat Isabekov), who is known for his distinctive prose style. Isabekov's language in this particular story is characterized by what literary critics describe as 'телеграфтық стиль' (telegraphic style) — a concise, laconic, economical use of language where sentences are short and clipped, conveying maximum meaning with minimal words, similar to a telegram. This telegraphic style is a hallmark feature noted by Kazakh literary scholars when analyzing Isabekov's narrative technique in this story. The other options — 'ескішілдік стилі' (archaic/old-fashioned style), 'бояулы драматизм' (colorful dramatism), and 'әсіре лиризм стилі' (excessive lyricism style) — do not match the recognized critical characterization of this particular work's language.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 3.9,
+      "pass_fail": false,
+      "comments": "The provided correct answer (A: 'ескішілдік стилі') conflicts with standard Kazakh literary scholarship, which characterizes Дулат Исабеков's language in this story as 'телеграфтық стиль' (D). Additionally, the question is pure factual recall, not Level C difficulty. The closing quotation mark is missing in option A.",
+      "improvement_suggestions": "1) Verify the correct answer against the official Kazakh literature textbook/curriculum — 'телеграфтық стиль' appears to be the accepted characterization for this story. 2) Redesign the question to require Level C reasoning: e.g., ask students to analyze a passage and justify which stylistic label applies, citing textual evidence. 3) Fix the missing closing quotation mark in option A. 4) Ensure all distractors are equally plausible to prevent easy elimination.",
+      "verification": null
+    }
+  },
+  {
+    "row": {
+      "idx": 19,
+      "variant": "weak_distractors",
+      "topic": "Аңызбен өрілген көркем сөз.Заман шындығы",
+      "level": "C",
+      "overall": 2.9,
+      "correctness": 2.0,
+      "distractor_quality": 1.0,
+      "difficulty_alignment": 1.0,
+      "kazakh_language_quality": 6.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null,
+      "pass_fail": false,
+      "critic_answer": "B",
+      "ground_truth_answer": "D",
+      "critic_matches_gt": false,
+      "error": null
+    },
+    "feedback": {
+      "critic_solution": "The question asks about the writer's language style in the story 'Пәтер іздеп жүр едік' (We Were Looking for an Apartment). This story is associated with Kazakh writer Дулат Исабеков (Dulat Isabekov). His prose style is often characterized by critics as 'бояулы драматизм' (colorful/painted dramatism) — a term used to describe his rich, emotionally vivid, dramatically intense narrative language. The 'telegraphic style' (телеграфтық стиль) is more associated with writers like Hemingway or certain other minimalist authors. Isabekov's language in this particular story is noted for its dramatic, colorful quality. Therefore, option B — 'бояулы драматизм' — is the correct characterization of the writer's language in this story.",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 2.0,
+        "distractor_quality": 1.0,
+        "difficulty_alignment": 1.0,
+        "kazakh_language_quality": 6.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 2.9,
+      "pass_fail": false,
+      "comments": "The provided correct answer (D — 'телеграфтық стиль') appears to be miskeyed; Дулат Исабеков's prose style in this story is widely characterized as 'бояулы драматизм' (option B), not telegraphic style. Additionally, option A ('0') is nonsensical, option C is a 'none of the above' flaw, and the question is simple factual recall — far below the required C-level cognitive demand.",
+      "improvement_suggestions": "1) Verify and correct the answer key — 'бояулы драматизм' is the standard critical characterization of Isabeков's language. 2) Replace the nonsensical '0' distractor and the 'Дұрыс жауап жоқ' option with substantive, plausible distractors (e.g., 'ауызекі сөйлеу стилі', 'ғылыми стиль'). 3) Redesign the question to reach C-level difficulty by asking for analysis or synthesis — e.g., asking students to identify which textual evidence supports a given stylistic characterization, or to compare stylistic features across two works.",
+      "verification": null
+    }
+  }
+]

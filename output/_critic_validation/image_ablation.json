@@ -1,0 +1,83 @@
+[
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "idx": 14,
+    "gt": "C",
+    "blind_answer": "C",
+    "blind_correct": true,
+    "vision_answer": "C",
+    "vision_correct": true
+  },
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "idx": 26,
+    "gt": "B",
+    "blind_answer": "C",
+    "blind_correct": false,
+    "vision_answer": "B",
+    "vision_correct": true
+  },
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "idx": 28,
+    "gt": "C",
+    "blind_answer": "C",
+    "blind_correct": true,
+    "vision_answer": "C",
+    "vision_correct": true
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "idx": 14,
+    "gt": "C",
+    "blind_answer": "C",
+    "blind_correct": true,
+    "vision_answer": "C",
+    "vision_correct": true
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "idx": 26,
+    "gt": "B",
+    "blind_answer": "C",
+    "blind_correct": false,
+    "vision_answer": "B",
+    "vision_correct": true
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "idx": 28,
+    "gt": "C",
+    "blind_answer": "A",
+    "blind_correct": false,
+    "vision_answer": "C",
+    "vision_correct": true
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "idx": 14,
+    "gt": "C",
+    "blind_answer": "C",
+    "blind_correct": true,
+    "vision_answer": "C",
+    "vision_correct": true
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "idx": 26,
+    "gt": "B",
+    "blind_answer": "B",
+    "blind_correct": true,
+    "vision_answer": "B",
+    "vision_correct": true
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "idx": 28,
+    "gt": "C",
+    "blind_answer": "C",
+    "blind_correct": true,
+    "vision_answer": "C",
+    "vision_correct": true
+  }
+]

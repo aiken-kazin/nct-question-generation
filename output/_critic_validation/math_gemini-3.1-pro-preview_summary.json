@@ -1,0 +1,189 @@
+{
+  "subject": "math",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "model_slug": "gemini-3.1-pro-preview",
+  "ensemble": false,
+  "ensemble_model_ids": [],
+  "n_real_questions": 40,
+  "degraded_enabled": true,
+  "seed": 42,
+  "summary": {
+    "real": {
+      "n": 40,
+      "n_scored": 39,
+      "pass_rate": 0.923,
+      "critic_answer_accuracy": 0.949,
+      "mean_overall": 8.403,
+      "mean_correctness": 8.744,
+      "mean_distractor_quality": 7.692,
+      "mean_difficulty_alignment": 8.179,
+      "mean_kazakh_language_quality": 8.641,
+      "mean_latex_validity": 9.026
+    },
+    "wrong_key": {
+      "n": 40,
+      "n_scored": 39,
+      "pass_rate": 0.051,
+      "critic_answer_accuracy": 0.949,
+      "mean_overall": 5.3,
+      "mean_correctness": 0.128,
+      "mean_distractor_quality": 6.359,
+      "mean_difficulty_alignment": 7.795,
+      "mean_kazakh_language_quality": 8.282,
+      "mean_latex_validity": 8.974
+    },
+    "weak_distractors": {
+      "n": 40,
+      "n_scored": 40,
+      "pass_rate": 0.7,
+      "critic_answer_accuracy": 0.975,
+      "mean_overall": 7.053,
+      "mean_correctness": 9.075,
+      "mean_distractor_quality": 2.575,
+      "mean_difficulty_alignment": 7.125,
+      "mean_kazakh_language_quality": 7.825,
+      "mean_latex_validity": 8.425
+    }
+  },
+  "cdi": {
+    "summary": {
+      "n_real_items": 40,
+      "n_critic_failures": 1
+    },
+    "wrong_key": {
+      "correctness": {
+        "dimension": "correctness",
+        "variant": "wrong_key",
+        "n_pairs": 38,
+        "mean_real": 8.711,
+        "mean_degraded": 0.132,
+        "sd_real": 2.808,
+        "sd_degraded": 0.811,
+        "cdi_gap": 8.579,
+        "wilcoxon_p": 0.0,
+        "cohens_d": 2.948,
+        "interpretation": "strong discrimination"
+      },
+      "distractor_quality": {
+        "dimension": "distractor_quality",
+        "variant": "wrong_key",
+        "n_pairs": 38,
+        "mean_real": 7.711,
+        "mean_degraded": 6.289,
+        "sd_real": 2.481,
+        "sd_degraded": 1.999,
+        "cdi_gap": 1.421,
+        "wilcoxon_p": 0.0,
+        "cohens_d": 0.766,
+        "interpretation": "unexpected drop"
+      },
+      "difficulty_alignment": {
+        "dimension": "difficulty_alignment",
+        "variant": "wrong_key",
+        "n_pairs": 38,
+        "mean_real": 8.132,
+        "mean_degraded": 7.737,
+        "sd_real": 3.033,
+        "sd_degraded": 2.929,
+        "cdi_gap": 0.395,
+        "wilcoxon_p": 0.0207,
+        "cohens_d": 0.239,
+        "interpretation": "stable (as expected)"
+      },
+      "kazakh_language_quality": {
+        "dimension": "kazakh_language_quality",
+        "variant": "wrong_key",
+        "n_pairs": 38,
+        "mean_real": 8.737,
+        "mean_degraded": 8.263,
+        "sd_real": 1.446,
+        "sd_degraded": 1.75,
+        "cdi_gap": 0.474,
+        "wilcoxon_p": 0.0316,
+        "cohens_d": 0.38,
+        "interpretation": "stable (as expected)"
+      },
+      "latex_validity": {
+        "dimension": "latex_validity",
+        "variant": "wrong_key",
+        "n_pairs": 38,
+        "mean_real": 9.053,
+        "mean_degraded": 9.0,
+        "sd_real": 1.524,
+        "sd_degraded": 1.755,
+        "cdi_gap": 0.053,
+        "wilcoxon_p": 0.658,
+        "cohens_d": 0.051,
+        "interpretation": "stable (as expected)"
+      }
+    },
+    "weak_distractors": {
+      "correctness": {
+        "dimension": "correctness",
+        "variant": "weak_distractors",
+        "n_pairs": 39,
+        "mean_real": 8.744,
+        "mean_degraded": 9.051,
+        "sd_real": 2.779,
+        "sd_degraded": 2.038,
+        "cdi_gap": -0.308,
+        "wilcoxon_p": 0.7655,
+        "cohens_d": -0.116,
+        "interpretation": "FAILED to discriminate"
+      },
+      "distractor_quality": {
+        "dimension": "distractor_quality",
+        "variant": "weak_distractors",
+        "n_pairs": 39,
+        "mean_real": 7.692,
+        "mean_degraded": 2.59,
+        "sd_real": 2.451,
+        "sd_degraded": 2.359,
+        "cdi_gap": 5.103,
+        "wilcoxon_p": 0.0,
+        "cohens_d": 1.497,
+        "interpretation": "strong discrimination"
+      },
+      "difficulty_alignment": {
+        "dimension": "difficulty_alignment",
+        "variant": "weak_distractors",
+        "n_pairs": 39,
+        "mean_real": 8.179,
+        "mean_degraded": 7.051,
+        "sd_real": 3.008,
+        "sd_degraded": 3.554,
+        "cdi_gap": 1.128,
+        "wilcoxon_p": 0.0007,
+        "cohens_d": 0.473,
+        "interpretation": "unexpected drop"
+      },
+      "kazakh_language_quality": {
+        "dimension": "kazakh_language_quality",
+        "variant": "weak_distractors",
+        "n_pairs": 39,
+        "mean_real": 8.641,
+        "mean_degraded": 7.769,
+        "sd_real": 1.547,
+        "sd_degraded": 2.058,
+        "cdi_gap": 0.872,
+        "wilcoxon_p": 0.0002,
+        "cohens_d": 0.641,
+        "interpretation": "unexpected drop"
+      },
+      "latex_validity": {
+        "dimension": "latex_validity",
+        "variant": "weak_distractors",
+        "n_pairs": 39,
+        "mean_real": 9.026,
+        "mean_degraded": 8.513,
+        "sd_real": 1.513,
+        "sd_degraded": 2.372,
+        "cdi_gap": 0.513,
+        "wilcoxon_p": 0.0597,
+        "cohens_d": 0.363,
+        "interpretation": "unexpected drop"
+      }
+    }
+  },
+  "pairwise_kappa": null
+}

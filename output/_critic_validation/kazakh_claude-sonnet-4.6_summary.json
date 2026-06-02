@@ -1,0 +1,189 @@
+{
+  "subject": "kazakh",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "model_slug": "claude-sonnet-4.6",
+  "ensemble": false,
+  "ensemble_model_ids": [],
+  "n_real_questions": 20,
+  "degraded_enabled": true,
+  "seed": 42,
+  "summary": {
+    "real": {
+      "n": 20,
+      "n_scored": 20,
+      "pass_rate": 0.7,
+      "critic_answer_accuracy": 0.75,
+      "mean_overall": 6.908,
+      "mean_correctness": 7.15,
+      "mean_distractor_quality": 5.95,
+      "mean_difficulty_alignment": 5.75,
+      "mean_kazakh_language_quality": 7.625,
+      "mean_latex_validity": 10.0
+    },
+    "wrong_key": {
+      "n": 20,
+      "n_scored": 20,
+      "pass_rate": 0.0,
+      "critic_answer_accuracy": 0.85,
+      "mean_overall": 4.697,
+      "mean_correctness": 2.0,
+      "mean_distractor_quality": 5.0,
+      "mean_difficulty_alignment": 5.35,
+      "mean_kazakh_language_quality": 7.45,
+      "mean_latex_validity": 10.0
+    },
+    "weak_distractors": {
+      "n": 20,
+      "n_scored": 20,
+      "pass_rate": 0.2,
+      "critic_answer_accuracy": 0.85,
+      "mean_overall": 4.99,
+      "mean_correctness": 6.7,
+      "mean_distractor_quality": 1.35,
+      "mean_difficulty_alignment": 4.1,
+      "mean_kazakh_language_quality": 6.1,
+      "mean_latex_validity": 10.0
+    }
+  },
+  "cdi": {
+    "summary": {
+      "n_real_items": 20,
+      "n_critic_failures": 0
+    },
+    "wrong_key": {
+      "correctness": {
+        "dimension": "correctness",
+        "variant": "wrong_key",
+        "n_pairs": 20,
+        "mean_real": 7.15,
+        "mean_degraded": 2.0,
+        "sd_real": 2.796,
+        "sd_degraded": 0.562,
+        "cdi_gap": 5.15,
+        "wilcoxon_p": 0.0001,
+        "cohens_d": 1.729,
+        "interpretation": "strong discrimination"
+      },
+      "distractor_quality": {
+        "dimension": "distractor_quality",
+        "variant": "wrong_key",
+        "n_pairs": 20,
+        "mean_real": 5.95,
+        "mean_degraded": 5.0,
+        "sd_real": 0.887,
+        "sd_degraded": 0.795,
+        "cdi_gap": 0.95,
+        "wilcoxon_p": 0.0009,
+        "cohens_d": 1.071,
+        "interpretation": "unexpected drop"
+      },
+      "difficulty_alignment": {
+        "dimension": "difficulty_alignment",
+        "variant": "wrong_key",
+        "n_pairs": 20,
+        "mean_real": 5.75,
+        "mean_degraded": 5.35,
+        "sd_real": 1.943,
+        "sd_degraded": 1.872,
+        "cdi_gap": 0.4,
+        "wilcoxon_p": 0.1605,
+        "cohens_d": 0.337,
+        "interpretation": "stable (as expected)"
+      },
+      "kazakh_language_quality": {
+        "dimension": "kazakh_language_quality",
+        "variant": "wrong_key",
+        "n_pairs": 20,
+        "mean_real": 7.625,
+        "mean_degraded": 7.45,
+        "sd_real": 1.223,
+        "sd_degraded": 0.999,
+        "cdi_gap": 0.175,
+        "wilcoxon_p": 0.2419,
+        "cohens_d": 0.215,
+        "interpretation": "stable (as expected)"
+      },
+      "latex_validity": {
+        "dimension": "latex_validity",
+        "variant": "wrong_key",
+        "n_pairs": 20,
+        "mean_real": 10.0,
+        "mean_degraded": 10.0,
+        "sd_real": 0.0,
+        "sd_degraded": 0.0,
+        "cdi_gap": 0.0,
+        "wilcoxon_p": null,
+        "cohens_d": null,
+        "interpretation": "stable (as expected)"
+      }
+    },
+    "weak_distractors": {
+      "correctness": {
+        "dimension": "correctness",
+        "variant": "weak_distractors",
+        "n_pairs": 20,
+        "mean_real": 7.15,
+        "mean_degraded": 6.7,
+        "sd_real": 2.796,
+        "sd_degraded": 2.577,
+        "cdi_gap": 0.45,
+        "wilcoxon_p": 0.1734,
+        "cohens_d": 0.286,
+        "interpretation": "weak (not significant)"
+      },
+      "distractor_quality": {
+        "dimension": "distractor_quality",
+        "variant": "weak_distractors",
+        "n_pairs": 20,
+        "mean_real": 5.95,
+        "mean_degraded": 1.35,
+        "sd_real": 0.887,
+        "sd_degraded": 0.988,
+        "cdi_gap": 4.6,
+        "wilcoxon_p": 0.0001,
+        "cohens_d": 3.873,
+        "interpretation": "strong discrimination"
+      },
+      "difficulty_alignment": {
+        "dimension": "difficulty_alignment",
+        "variant": "weak_distractors",
+        "n_pairs": 20,
+        "mean_real": 5.75,
+        "mean_degraded": 4.1,
+        "sd_real": 1.943,
+        "sd_degraded": 1.917,
+        "cdi_gap": 1.65,
+        "wilcoxon_p": 0.0001,
+        "cohens_d": 2.46,
+        "interpretation": "unexpected drop"
+      },
+      "kazakh_language_quality": {
+        "dimension": "kazakh_language_quality",
+        "variant": "weak_distractors",
+        "n_pairs": 20,
+        "mean_real": 7.625,
+        "mean_degraded": 6.1,
+        "sd_real": 1.223,
+        "sd_degraded": 1.119,
+        "cdi_gap": 1.525,
+        "wilcoxon_p": 0.0001,
+        "cohens_d": 1.625,
+        "interpretation": "unexpected drop"
+      },
+      "latex_validity": {
+        "dimension": "latex_validity",
+        "variant": "weak_distractors",
+        "n_pairs": 20,
+        "mean_real": 10.0,
+        "mean_degraded": 10.0,
+        "sd_real": 0.0,
+        "sd_degraded": 0.0,
+        "cdi_gap": 0.0,
+        "wilcoxon_p": null,
+        "cohens_d": null,
+        "interpretation": "stable (as expected)"
+      }
+    }
+  },
+  "pairwise_kappa": null
+}

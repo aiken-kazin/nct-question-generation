@@ -1,0 +1,189 @@
+{
+  "subject": "math",
+  "model_id": "openai/gpt-5.5",
+  "model_slug": "gpt-5.5",
+  "ensemble": false,
+  "ensemble_model_ids": [],
+  "n_real_questions": 40,
+  "degraded_enabled": true,
+  "seed": 42,
+  "summary": {
+    "real": {
+      "n": 40,
+      "n_scored": 40,
+      "pass_rate": 0.9,
+      "critic_answer_accuracy": 1.0,
+      "mean_overall": 7.835,
+      "mean_correctness": 8.875,
+      "mean_distractor_quality": 6.463,
+      "mean_difficulty_alignment": 6.912,
+      "mean_kazakh_language_quality": 7.875,
+      "mean_latex_validity": 9.25
+    },
+    "wrong_key": {
+      "n": 40,
+      "n_scored": 40,
+      "pass_rate": 0.05,
+      "critic_answer_accuracy": 0.975,
+      "mean_overall": 5.149,
+      "mean_correctness": 0.15,
+      "mean_distractor_quality": 5.862,
+      "mean_difficulty_alignment": 7.162,
+      "mean_kazakh_language_quality": 7.912,
+      "mean_latex_validity": 9.162
+    },
+    "weak_distractors": {
+      "n": 40,
+      "n_scored": 40,
+      "pass_rate": 0.85,
+      "critic_answer_accuracy": 0.925,
+      "mean_overall": 7.186,
+      "mean_correctness": 8.938,
+      "mean_distractor_quality": 3.475,
+      "mean_difficulty_alignment": 6.963,
+      "mean_kazakh_language_quality": 7.575,
+      "mean_latex_validity": 8.975
+    }
+  },
+  "cdi": {
+    "summary": {
+      "n_real_items": 40,
+      "n_critic_failures": 0
+    },
+    "wrong_key": {
+      "correctness": {
+        "dimension": "correctness",
+        "variant": "wrong_key",
+        "n_pairs": 40,
+        "mean_real": 8.875,
+        "mean_degraded": 0.15,
+        "sd_real": 3.014,
+        "sd_degraded": 0.533,
+        "cdi_gap": 8.725,
+        "wilcoxon_p": 0.0,
+        "cohens_d": 2.752,
+        "interpretation": "strong discrimination"
+      },
+      "distractor_quality": {
+        "dimension": "distractor_quality",
+        "variant": "wrong_key",
+        "n_pairs": 40,
+        "mean_real": 6.463,
+        "mean_degraded": 5.862,
+        "sd_real": 1.946,
+        "sd_degraded": 1.884,
+        "cdi_gap": 0.6,
+        "wilcoxon_p": 0.0035,
+        "cohens_d": 0.457,
+        "interpretation": "unexpected drop"
+      },
+      "difficulty_alignment": {
+        "dimension": "difficulty_alignment",
+        "variant": "wrong_key",
+        "n_pairs": 40,
+        "mean_real": 6.912,
+        "mean_degraded": 7.162,
+        "sd_real": 2.614,
+        "sd_degraded": 2.448,
+        "cdi_gap": -0.25,
+        "wilcoxon_p": 0.0653,
+        "cohens_d": -0.319,
+        "interpretation": "stable (as expected)"
+      },
+      "kazakh_language_quality": {
+        "dimension": "kazakh_language_quality",
+        "variant": "wrong_key",
+        "n_pairs": 40,
+        "mean_real": 7.875,
+        "mean_degraded": 7.912,
+        "sd_real": 1.244,
+        "sd_degraded": 1.219,
+        "cdi_gap": -0.037,
+        "wilcoxon_p": 0.9506,
+        "cohens_d": -0.07,
+        "interpretation": "stable (as expected)"
+      },
+      "latex_validity": {
+        "dimension": "latex_validity",
+        "variant": "wrong_key",
+        "n_pairs": 40,
+        "mean_real": 9.25,
+        "mean_degraded": 9.162,
+        "sd_real": 1.0,
+        "sd_degraded": 1.015,
+        "cdi_gap": 0.088,
+        "wilcoxon_p": 0.4084,
+        "cohens_d": 0.118,
+        "interpretation": "stable (as expected)"
+      }
+    },
+    "weak_distractors": {
+      "correctness": {
+        "dimension": "correctness",
+        "variant": "weak_distractors",
+        "n_pairs": 40,
+        "mean_real": 8.875,
+        "mean_degraded": 8.938,
+        "sd_real": 3.014,
+        "sd_degraded": 2.507,
+        "cdi_gap": -0.062,
+        "wilcoxon_p": 0.6993,
+        "cohens_d": -0.056,
+        "interpretation": "FAILED to discriminate"
+      },
+      "distractor_quality": {
+        "dimension": "distractor_quality",
+        "variant": "weak_distractors",
+        "n_pairs": 40,
+        "mean_real": 6.463,
+        "mean_degraded": 3.475,
+        "sd_real": 1.946,
+        "sd_degraded": 1.601,
+        "cdi_gap": 2.988,
+        "wilcoxon_p": 0.0,
+        "cohens_d": 1.687,
+        "interpretation": "strong discrimination"
+      },
+      "difficulty_alignment": {
+        "dimension": "difficulty_alignment",
+        "variant": "weak_distractors",
+        "n_pairs": 40,
+        "mean_real": 6.912,
+        "mean_degraded": 6.963,
+        "sd_real": 2.614,
+        "sd_degraded": 2.573,
+        "cdi_gap": -0.05,
+        "wilcoxon_p": 0.5995,
+        "cohens_d": -0.038,
+        "interpretation": "stable (as expected)"
+      },
+      "kazakh_language_quality": {
+        "dimension": "kazakh_language_quality",
+        "variant": "weak_distractors",
+        "n_pairs": 40,
+        "mean_real": 7.875,
+        "mean_degraded": 7.575,
+        "sd_real": 1.244,
+        "sd_degraded": 1.152,
+        "cdi_gap": 0.3,
+        "wilcoxon_p": 0.0033,
+        "cohens_d": 0.581,
+        "interpretation": "stable (as expected)"
+      },
+      "latex_validity": {
+        "dimension": "latex_validity",
+        "variant": "weak_distractors",
+        "n_pairs": 40,
+        "mean_real": 9.25,
+        "mean_degraded": 8.975,
+        "sd_real": 1.0,
+        "sd_degraded": 1.245,
+        "cdi_gap": 0.275,
+        "wilcoxon_p": 0.0413,
+        "cohens_d": 0.444,
+        "interpretation": "stable (as expected)"
+      }
+    }
+  },
+  "pairwise_kappa": null
+}
