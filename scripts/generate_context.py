@@ -92,16 +92,19 @@ def _real_example_block() -> str:
 
 
 def build_prompt(config: Config, subject: str, level: str, n: int) -> str:
-    if subject != "kazakh":
-        raise SystemExit("context generation prompt is implemented for kazakh only")
-    tpl = (_REPO_ROOT / "prompts" / "generator_kazakh_context.md").read_text(encoding="utf-8")
+    tpl_path = _REPO_ROOT / "prompts" / f"generator_{subject}_context.md"
+    if not tpl_path.is_file():
+        raise SystemExit(f"no context prompt for subject={subject} ({tpl_path.name})")
+    tpl = tpl_path.read_text(encoding="utf-8")
     diff = config.difficulty_info(level, subject)
+    # Few-shot real context block only exists for kazakh.
+    example = _real_example_block() if subject == "kazakh" else ""
     return Template(tpl).safe_substitute(
         n_questions=n,
         level=level,
         difficulty_description=diff["description"].strip(),
         distractor_guidance=diff["distractor_guidance"].strip(),
-        example_block=_real_example_block(),
+        example_block=example,
     )
 
 
