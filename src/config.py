@@ -48,6 +48,12 @@ class Config:
         self.fewshot_k: int = int(os.environ.get("FEWSHOT_K", "2"))
 
         self._difficulty: dict = _load_yaml("difficulty.yaml")
+        # Kazakh has its own difficulty descriptions (language/literature skills,
+        # not formulas/geometry). Falls back to the math difficulty if missing.
+        try:
+            self._difficulty_kazakh: dict = _load_yaml("difficulty_kazakh.yaml")
+        except FileNotFoundError:
+            self._difficulty_kazakh = self._difficulty
         self._topics_math: list[dict] = _load_yaml("topics_math.yaml")["topics"]
         self._topics_kazakh: list[dict] = _load_yaml("topics_kazakh.yaml")["topics"]
         self._figures: dict = _load_yaml("figures.yaml")
@@ -76,8 +82,9 @@ class Config:
 
     # ── Difficulty ───────────────────────────────────────────────────────────
 
-    def difficulty_info(self, level: str) -> dict:
-        return self._difficulty[level]
+    def difficulty_info(self, level: str, subject: str = "math") -> dict:
+        source = self._difficulty_kazakh if subject == "kazakh" else self._difficulty
+        return source[level]
 
     # ── Figure schemas ───────────────────────────────────────────────────────
 
@@ -145,7 +152,7 @@ class Config:
         feedback: str | None = None,
     ) -> str:
         topic = self.get_topic_info(subject, topic_id)
-        diff = self.difficulty_info(level)
+        diff = self.difficulty_info(level, subject)
 
         subtopics = "\n".join(f"  - {s}" for s in topic.get("subtopics", []))
         keywords = ", ".join(topic.get("keywords", []))
@@ -240,7 +247,7 @@ class Config:
         critic_answer: str,
     ) -> str:
         topic = self.get_topic_info(subject, topic_id)
-        diff = self.difficulty_info(level)
+        diff = self.difficulty_info(level, subject)
         return Template(self._critic_eval_tpl).safe_substitute(
             subject=subject,
             level=level,

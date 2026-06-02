@@ -1,130 +1,113 @@
+# Kazakh-language topics aligned to the official NTC teacher-certification
+# test specification (files/test_specific/Қазақ-тілі.docx). The standalone
+# 40 items are linguistics-based (phonetics → syntax → style); the final
+# topic also covers the context/literary-text analysis used by the 10
+# context-based items (2 passages × 5 questions).
 topics:
-  - id: phonetics
-    name_en: "Phonetics"
-    name_kz: "Фонетика"
-    keywords: ["vowels", "consonants", "syllable", "stress", "synharmonism", "transcription"]
+  - id: phonetics_orthography
+    name_en: "Phonetics and Orthography"
+    name_kz: "Фонетика және орфография"
+    keywords: ["vowels", "consonants", "vowel harmony", "assimilation", "spelling", "orthographic norm"]
     subtopics:
-      - "Vowel and consonant system of Kazakh"
-      - "Synharmonism (vowel harmony)"
-      - "Syllable structure and division"
-      - "Phonetic transcription"
-      - "Assimilation and other phonetic processes"
-      - "Stress patterns in Kazakh"
+      - "Дауысты және дауыссыз дыбыстардың емлесі"
+      - "Үндестік заңы (дыбыс үндестігі)"
+      - "Ілгерінді, кейінді және тоғыспалы ықпал"
+      - "Орфографиялық нормаға сай жазылуы"
 
-  - id: morphology
-    name_en: "Morphology"
-    name_kz: "Морфология"
-    keywords: ["noun", "verb", "adjective", "case endings", "plural", "tense", "aspect", "particles"]
+  - id: lexicology_meaning
+    name_en: "Lexicology — Word Meaning"
+    name_kz: "Лексика (сөз мағынасы)"
+    keywords: ["meaning", "homonym", "synonym", "antonym", "polysemy", "direct and figurative meaning", "word formation"]
     subtopics:
-      - "Parts of speech: noun, verb, adjective, numeral, pronoun, adverb"
-      - "Noun cases: nominative, genitive, dative, accusative, locative, ablative, instrumental"
-      - "Verb tenses and aspects in Kazakh"
-      - "Verb moods: indicative, imperative, conditional, subjunctive"
-      - "Suffixes and agglutination"
-      - "Particles, conjunctions, postpositions"
+      - "Сөз және оның мағынасы"
+      - "Омоним, синоним, антоним"
+      - "Тура және ауыспалы мағыналы сөздер"
+      - "Көп мағыналы сөздер"
+      - "Сөздердің жасалу жолдары"
 
-  - id: word_formation
-    name_en: "Word Formation"
-    name_kz: "Сөзжасам"
-    keywords: ["derivation", "compound words", "suffixes", "prefixes", "word-formation methods"]
+  - id: morphology_nominals
+    name_en: "Morphology — Nominals"
+    name_kz: "Морфология (есім сөздер)"
+    keywords: ["noun", "numeral", "adjective", "degrees of comparison", "pronoun", "derived words", "nominalization"]
     subtopics:
-      - "Derivational suffixes for nouns, verbs, adjectives"
-      - "Compound word formation"
-      - "Conversion between parts of speech"
-      - "Productive vs. unproductive word-formation models"
-      - "Borrowed words and their adaptation"
+      - "Туынды және күрделі сөздер"
+      - "Зат есім: мағыналық түрлері, түрленуі"
+      - "Сан есім: мағыналық түрлері, заттануы"
+      - "Сын есім: мағыналық түрлері, шырайлары, заттануы"
+      - "Есімдік және оның мағыналық түрлері"
 
-  - id: syntax
-    name_en: "Syntax"
-    name_kz: "Синтаксис"
-    keywords: ["sentence structure", "subject", "predicate", "object", "modifier", "clause", "compound sentence", "complex sentence"]
+  - id: syntax_reported_speech
+    name_en: "Syntax — Reported Speech"
+    name_kz: "Синтаксис (төл сөз бен төлеу сөз)"
+    keywords: ["direct speech", "reported speech", "author's words", "conversion"]
     subtopics:
-      - "Simple sentence structure: subject, predicate, secondary members"
-      - "Types of predicates in Kazakh"
-      - "Compound sentences and conjunctions"
-      - "Complex sentences with subordinate clauses"
-      - "Participial and gerundial phrases"
-      - "Word order and emphasis"
+      - "Төл сөз және автор сөзі"
+      - "Төлеу сөз"
+      - "Төл сөзді төлеу сөзге айналдыру жолдары"
 
-  - id: lexicology
-    name_en: "Lexicology"
-    name_kz: "Лексикология"
-    keywords: ["synonyms", "antonyms", "homonyms", "phraseology", "loanwords", "terminological vocabulary"]
+  - id: lexicology_special
+    name_en: "Lexicology — Special Vocabulary and Phraseology"
+    name_kz: "Лексика (арнаулы лексика, фразеология)"
+    keywords: ["neologism", "term", "dialect", "professional words", "archaism", "euphemism", "dysphemism", "taboo", "phraseology", "proverbs"]
     subtopics:
-      - "Synonyms and their stylistic differences"
-      - "Antonyms: lexical and contextual"
-      - "Homonyms and polysemy"
-      - "Phraseological units (idioms, proverbs)"
-      - "Loanwords: Russian, Arabic, Persian, international"
-      - "Active vs. passive vocabulary"
-      - "Terminological vocabulary by field"
+      - "Неологизм, термин, диалект, кәсіби сөздер"
+      - "Көнерген сөздер"
+      - "Эвфемизм, дисфемизм, табу"
+      - "Фразеологизм, мақал-мәтелдер"
 
-  - id: orthography
-    name_en: "Orthography and Spelling"
-    name_kz: "Орфография"
-    keywords: ["spelling rules", "vowel harmony", "consonant assimilation", "word boundaries", "hyphenation"]
+  - id: morphology_verbs_particles
+    name_en: "Morphology — Verbs and Function Words"
+    name_kz: "Морфология (етістік, көмекші сөздер)"
+    keywords: ["adverb", "particle", "verb tense", "verb mood", "imitative words", "interjection", "isolated words"]
     subtopics:
-      - "Spelling rules for borrowed words"
-      - "Writing of compound and derived words"
-      - "Capital letters: proper nouns, titles"
-      - "Hyphenation rules"
-      - "New Kazakh Latin-based alphabet rules (if applicable)"
+      - "Үстеу және оның мағыналық түрлері"
+      - "Шылаудың емлесі, орфографиялық норма"
+      - "Етістіктің шақ түрлері мен рай түрлері"
+      - "Еліктеуіш және бейнелеуіш сөздер"
+      - "Одағай түрлері; оқшау сөздер"
 
-  - id: punctuation
-    name_en: "Punctuation"
-    name_kz: "Пунктуация"
-    keywords: ["comma", "period", "colon", "semicolon", "dash", "direct speech", "quotation marks"]
+  - id: syntax_simple_sentence
+    name_en: "Syntax — Phrases and Simple Sentence"
+    name_kz: "Синтаксис (сөз тіркесі, жай сөйлем)"
+    keywords: ["word combination", "sentence members", "homogeneous members", "sentence types", "simple sentence"]
     subtopics:
-      - "Comma placement in compound and complex sentences"
-      - "Colon and semicolon usage"
-      - "Direct speech and quotation marks"
-      - "Dash usage"
-      - "Parenthetical expressions"
+      - "Сөз тіркесінің байланысу тәсілдері мен түрлері"
+      - "Есімді және етістікті сөз тіркестері"
+      - "Сөйлем мүшелері (тұрлаулы, тұрлаусыз)"
+      - "Бірыңғай мүшелер, айқындауыш мүшелер"
+      - "Сөйлемнің айтылу мақсатына қарай түрлері; жай сөйлем түрлері"
 
-  - id: text_analysis
-    name_en: "Text Analysis and Comprehension"
-    name_kz: "Мәтін талдау"
-    keywords: ["text structure", "topic", "main idea", "style", "genre", "cohesion", "discourse"]
+  - id: syntax_coordinate_clauses
+    name_en: "Syntax — Coordinate Compound Sentences"
+    name_kz: "Синтаксис (салалас құрмалас сөйлем)"
+    keywords: ["coordinate compound sentence", "connective", "causal", "adversative", "explanatory", "alternative", "sequential"]
     subtopics:
-      - "Text structure: introduction, body, conclusion"
-      - "Topic, main idea, theme identification"
-      - "Functional styles: scientific, official, journalistic, artistic, conversational"
-      - "Text cohesion: reference, substitution, conjunction"
-      - "Inference and implicit meaning"
+      - "Ыңғайлас салалас"
+      - "Себеп-салдар салалас"
+      - "Қарсылықты салалас"
+      - "Түсіндірмелі салалас"
+      - "Талғаулы және кезектес салалас"
 
-  - id: literature
-    name_en: "Kazakh Literature"
-    name_kz: "Қазақ әдебиеті"
-    keywords: ["poetry", "prose", "oral literature", "epic", "authors", "literary devices", "genres"]
+  - id: syntax_subordinate_clauses
+    name_en: "Syntax — Subordinate Compound Sentences"
+    name_kz: "Синтаксис (сабақтас құрмалас сөйлем)"
+    keywords: ["subordinate compound sentence", "conditional", "concessive", "temporal", "causal", "manner", "purpose"]
     subtopics:
-      - "Oral Kazakh literature: epics (жыр), tales (ертегі), proverbs (мақал-мәтел)"
-      - "Classical Kazakh poets: Abai, Shakarim, Akhmet Baitursynov"
-      - "20th century Kazakh literature"
-      - "Literary genres: lyric, epic, dramatic"
-      - "Literary devices: metaphor, simile, alliteration, repetition"
-      - "Analysis of poetic forms in Kazakh"
+      - "Шартты бағыныңқы сабақтас"
+      - "Қарсылықты бағыныңқы сабақтас"
+      - "Мезгіл бағыныңқы сабақтас"
+      - "Себеп бағыныңқы сабақтас"
+      - "Қимыл-сын және мақсат бағыныңқы сабақтас"
 
-  - id: teaching_methodology
-    name_en: "Kazakh Language Teaching Methodology"
-    name_kz: "Қазақ тілін оқыту әдістемесі"
-    keywords: ["teaching methods", "lesson planning", "communicative approach", "assessment", "curriculum", "differentiation"]
+  - id: style_and_text_analysis
+    name_en: "Language Norm, Style and Text Analysis"
+    name_kz: "Тілдік жүйе, стиль және мәтін талдау"
+    keywords: ["style", "scientific style", "language norm", "word usage", "text analysis", "literary work", "theme", "idea", "artistic devices"]
     subtopics:
-      - "Principles of communicative language teaching"
-      - "Lesson structure and planning"
-      - "Teaching vocabulary and grammar"
-      - "Reading and writing skills development"
-      - "Formative and summative assessment"
-      - "Differentiated instruction"
-      - "Using authentic materials"
-
-  - id: language_history
-    name_en: "History of the Kazakh Language"
-    name_kz: "Қазақ тілінің тарихы"
-    keywords: ["Turkic languages", "historical development", "dialects", "writing systems", "standardization"]
-    subtopics:
-      - "Kazakh within the Turkic language family"
-      - "Historical stages of Kazakh language development"
-      - "Old Turkic written monuments"
-      - "Writing systems: Arabic, Latin (1929-1940), Cyrillic, new Latin"
-      - "Dialectal variation in Kazakh"
-      - "Language standardization and Kazakh as state language"
+      - "Сөз қолданысындағы ерекшеліктер және стиль"
+      - "Ғылыми және ғылыми-көпшілік стиль ерекшеліктері"
+      - "Сөзжасамдық және синтаксистік нормаларды сақтау"
+      - "Әртүрлі стильдегі мәтіндерді салыстыра талдау"
+      - "Мәнмәтіндік тапсырмалар: әдеби шығарманың жанры, фабуласы, сюжеті"
+      - "Әдеби шығарманың тақырыбы мен идеясы, образы, кейіпкерлер портреті"
+      - "Шығармадағы көркемдегіш құралдар мен тілдік көріністі талдау"
