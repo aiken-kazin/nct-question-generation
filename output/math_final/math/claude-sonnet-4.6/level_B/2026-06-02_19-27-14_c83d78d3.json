@@ -1,0 +1,230 @@
+{
+  "id": "c83d78d3-ac1d-4b88-97c8-7b818bc1d43f",
+  "subject": "math",
+  "level": "B",
+  "format": "image",
+  "topic": "solids_of_revolution",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Суреттегі конустың бүйір беті мен негізінің ауданының қосындысы неге тең?",
+  "options": [
+    {
+      "label": "A",
+      "text": "$96\\pi$ см²"
+    },
+    {
+      "label": "B",
+      "text": "$80\\pi$ см²"
+    },
+    {
+      "label": "C",
+      "text": "$60\\pi$ см²"
+    },
+    {
+      "label": "D",
+      "text": "$48\\pi$ см²"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Суреттен: конустың негізінің радиусы $r = 6$ см, биіктігі $h = 8$ см.\n\n**1-қадам:** Жасаушының ұзындығын табамыз:\n$$l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10 \\text{ см}$$\n\n**2-қадам:** Бүйір бетінің ауданы:\n$$S_{\\text{бүйір}} = \\pi r l = \\pi \\cdot 6 \\cdot 10 = 60\\pi \\text{ см}^2$$\n\n**3-қадам:** Негізінің ауданы:\n$$S_{\\text{негіз}} = \\pi r^2 = \\pi \\cdot 6^2 = 36\\pi \\text{ см}^2$$\n\n**4-қадам:** Толық беті:\n$$S_{\\text{толық}} = S_{\\text{бүйір}} + S_{\\text{негіз}} = 60\\pi + 36\\pi = 96\\pi \\text{ см}^2$$",
+  "latex_formulas": [
+    "l = \\sqrt{r^2 + h^2}",
+    "S_{\\text{бүйір}} = \\pi r l",
+    "S_{\\text{толық}} = \\pi r l + \\pi r^2"
+  ],
+  "figure_spec": {
+    "figure_type": "solid_3d",
+    "parameters": {
+      "solid_type": "cone",
+      "dimensions": {
+        "base": 6,
+        "height": 8
+      },
+      "dimension_labels": {
+        "base": "r = 6 см",
+        "height": "h = 8 см"
+      },
+      "labels": {
+        "apex": "S",
+        "base_vertices": [
+          "O"
+        ]
+      },
+      "caption": "Конус: r = 6 см, h = 8 см"
+    },
+    "caption": "Конус: r = 6 см, h = 8 см"
+  },
+  "figure_path": "output/math_final/figures/solid_3d_37924.png",
+  "critic_score": 9.133,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: For a right circular cone, the sum of the lateral surface area and the base area is the total surface area: S = pi*r*l + pi*r^2, where r is the radius and l is the slant height. From the figure/text, r = 6 cm and h = 8 cm. The slant height is found by the Pythagorean theorem: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm. Lateral area = pi*r*l = pi*6*10 = 60pi cm^2. Bas\n\n[anthropic/claude-sonnet-4.6] answered A: Given: cone with radius r = 6 cm and height h = 8 cm.\n\nStep 1: Find the slant height (l).\nl = √(r² + h²) = √(36 + 64) = √100 = 10 cm\n\nStep 2: Calculate the lateral surface area.\nLateral surface area = π·r·l = π × 6 × 10 = 60π cm²\n\nStep 3: Calculate the base area.\nBase area = π·r² = π × 36 = 36π cm²\n\nStep 4: Sum of lateral surface area and base area.\nTotal = 60π + 36π = 96π cm²\n\nThe answer is 96π c\n\n[google/gemini-3.1-pro-preview] answered A: The question asks for the sum of the lateral surface area and the base area of the cone, which is its total surface area. From the image, we are given the base radius $r = 6$ cm and the height $h = 8$ cm. First, we need to find the slant height $l$ of the cone using the Pythagorean theorem: $l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. Next, we calculate the late",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 8.5,
+      "latex_validity": 10.0,
+      "figure_relevance": 8.333
+    },
+    "overall_score": 9.133,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: using r = 6 and h = 8 gives slant height 10 and total surface area 96π. The item fits medium difficulty reasonably well, though the figure/caption could label the radius more clearly and some distractors are only moderately plausible. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and requires 4 logical steps (find slant height, lateral area, base area, sum) consistent with level B. Distractors correspond to identifiable errors: C (60π) = lateral surface only, D (48π) = plausible miscalculation, B (80π) = less obvious but reachable. The figure shows the cone with h=8 labeled inside and the caption gives r=6, h=8, making the figure somewhat redundant with the caption text. | [google/gemini-3.1-pro-preview] The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors represent common student errors.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] The figure caption 'Конус: r = 6 см, h = 8 см' already provides all needed data, making the figure partly redundant. Consider labeling r directly on the figure (showing the radius line) to make the figure more essential. Also, distractor B (80π) could be made more pedagogically motivated by tying it to a specific common error. | [google/gemini-3.1-pro-preview] Consider using 'аудандарының қосындысы' instead of 'ауданының қосындысы' for better grammatical precision.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='96' expected='96'",
+      "raw": {
+        "ok": true,
+        "stdout": "96",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: For a right circular cone, the sum of the lateral surface area and the base area is the total surface area: S = pi*r*l + pi*r^2, where r is the radius and l is the slant height. From the figure/text, r = 6 cm and h = 8 cm. The slant height is found by the Pythagorean theorem: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm. Lateral area = pi*r*l = pi*6*10 = 60pi cm^2. Bas\n\n[anthropic/claude-sonnet-4.6] answered A: Given: cone with radius r = 6 cm and height h = 8 cm.\n\nStep 1: Find the slant height (l).\nl = √(r² + h²) = √(36 + 64) = √100 = 10 cm\n\nStep 2: Calculate the lateral surface area.\nLateral surface area = π·r·l = π × 6 × 10 = 60π cm²\n\nStep 3: Calculate the base area.\nBase area = π·r² = π × 36 = 36π cm²\n\nStep 4: Sum of lateral surface area and base area.\nTotal = 60π + 36π = 96π cm²\n\nThe answer is 96π c\n\n[google/gemini-3.1-pro-preview] answered A: The question asks for the sum of the lateral surface area and the base area of the cone, which is its total surface area. From the image, we are given the base radius $r = 6$ cm and the height $h = 8$ cm. First, we need to find the slant height $l$ of the cone using the Pythagorean theorem: $l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. Next, we calculate the late",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 8.5,
+        "latex_validity": 10.0,
+        "figure_relevance": 8.333
+      },
+      "overall_score": 9.133,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: using r = 6 and h = 8 gives slant height 10 and total surface area 96π. The item fits medium difficulty reasonably well, though the figure/caption could label the radius more clearly and some distractors are only moderately plausible. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and requires 4 logical steps (find slant height, lateral area, base area, sum) consistent with level B. Distractors correspond to identifiable errors: C (60π) = lateral surface only, D (48π) = plausible miscalculation, B (80π) = less obvious but reachable. The figure shows the cone with h=8 labeled inside and the caption gives r=6, h=8, making the figure somewhat redundant with the caption text. | [google/gemini-3.1-pro-preview] The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors represent common student errors.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] The figure caption 'Конус: r = 6 см, h = 8 см' already provides all needed data, making the figure partly redundant. Consider labeling r directly on the figure (showing the radius line) to make the figure more essential. Also, distractor B (80π) could be made more pedagogically motivated by tying it to a specific common error. | [google/gemini-3.1-pro-preview] Consider using 'аудандарының қосындысы' instead of 'ауданының қосындысы' for better grammatical precision.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='96' expected='96'",
+        "raw": {
+          "ok": true,
+          "stdout": "96",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "For a right circular cone, the sum of the lateral surface area and the base area is the total surface area: S = pi*r*l + pi*r^2, where r is the radius and l is the slant height. From the figure/text, r = 6 cm and h = 8 cm. The slant height is found by the Pythagorean theorem: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm. Lateral area = pi*r*l = pi*6*10 = 60pi cm^2. Base area = pi*r^2 = pi*6^2 = 36pi cm^2. Sum = 60pi + 36pi = 96pi cm^2. Therefore the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": 8.0
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is unambiguous: using r = 6 and h = 8 gives slant height 10 and total surface area 96π. The item fits medium difficulty reasonably well, though the figure/caption could label the radius more clearly and some distractors are only moderately plausible.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Given: cone with radius r = 6 cm and height h = 8 cm.\n\nStep 1: Find the slant height (l).\nl = √(r² + h²) = √(36 + 64) = √100 = 10 cm\n\nStep 2: Calculate the lateral surface area.\nLateral surface area = π·r·l = π × 6 × 10 = 60π cm²\n\nStep 3: Calculate the base area.\nBase area = π·r² = π × 36 = 36π cm²\n\nStep 4: Sum of lateral surface area and base area.\nTotal = 60π + 36π = 96π cm²\n\nThe answer is 96π cm².",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 7.0
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is mathematically correct, well-structured, and requires 4 logical steps (find slant height, lateral area, base area, sum) consistent with level B. Distractors correspond to identifiable errors: C (60π) = lateral surface only, D (48π) = plausible miscalculation, B (80π) = less obvious but reachable. The figure shows the cone with h=8 labeled inside and the caption gives r=6, h=8, making the figure somewhat redundant with the caption text.",
+          "improvement_suggestions": "The figure caption 'Конус: r = 6 см, h = 8 см' already provides all needed data, making the figure partly redundant. Consider labeling r directly on the figure (showing the radius line) to make the figure more essential. Also, distractor B (80π) could be made more pedagogically motivated by tying it to a specific common error.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the sum of the lateral surface area and the base area of the cone, which is its total surface area. From the image, we are given the base radius $r = 6$ cm and the height $h = 8$ cm. First, we need to find the slant height $l$ of the cone using the Pythagorean theorem: $l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. Next, we calculate the lateral surface area: $S_{lateral} = \\pi r l = \\pi \\cdot 6 \\cdot 10 = 60\\pi$ cm². Then, we calculate the base area: $S_{base} = \\pi r^2 = \\pi \\cdot 6^2 = 36\\pi$ cm². Finally, we find the sum of these two areas: $S_{total} = S_{lateral} + S_{base} = 60\\pi + 36\\pi = 96\\pi$ cm². This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors represent common student errors.",
+          "improvement_suggestions": "Consider using 'аудандарының қосындысы' instead of 'ауданының қосындысы' for better grammatical precision.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T19:27:14.166506+00:00",
+  "generation_attempts": 3
+}

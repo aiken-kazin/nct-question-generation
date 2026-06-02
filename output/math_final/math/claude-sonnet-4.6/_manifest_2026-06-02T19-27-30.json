@@ -1,0 +1,51 @@
+{
+  "subject": "math",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "model_slug": "claude-sonnet-4.6",
+  "intended_count": 37,
+  "saved_count": 35,
+  "rejected_count": 0,
+  "per_level_intended": {
+    "A": 10,
+    "B": 22,
+    "C": 5
+  },
+  "format": "text",
+  "seed": 0,
+  "finished_at": "2026-06-02T19:27:30.783371+00:00",
+  "attempts": [
+    {
+      "topic": "integrals",
+      "level": "C",
+      "format": "text",
+      "attempts": 1,
+      "saved": true,
+      "id": "51b93508-2cca-4368-812c-ab197fb423db",
+      "overall_score": 8.4,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "quadratic_irrational",
+      "level": "C",
+      "format": "text",
+      "attempts": 3,
+      "saved": true,
+      "id": "2ea91438-21e2-49c3-b136-9d061a2b77b1",
+      "overall_score": 8.933,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "exponential_log_equations",
+      "level": "C",
+      "format": "text",
+      "attempts": 3,
+      "saved": true,
+      "id": "2594635a-9236-409b-a8a5-bc93eca25002",
+      "overall_score": 8.0,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    }
+  ]
+}

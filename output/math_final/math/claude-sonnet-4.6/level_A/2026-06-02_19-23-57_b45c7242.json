@@ -1,0 +1,241 @@
+{
+  "id": "b45c7242-5ae9-4a04-841a-c0569eee299f",
+  "subject": "math",
+  "level": "A",
+  "format": "image",
+  "topic": "vectors",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Суреттегі $\\vec{a}$ және $\\vec{b}$ векторларының скалярлық көбейтіндісін $\\vec{a} \\cdot \\vec{b}$ табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$15$"
+    },
+    {
+      "label": "B",
+      "text": "$15\\sqrt{3}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\frac{15\\sqrt{3}}{2}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\frac{15}{2}$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Скалярлық көбейтінді формуласы: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos\\theta$. Суреттен: $|\\vec{a}| = 5$, $|\\vec{b}| = 6$, $\\theta = 60°$. Онда: $\\vec{a} \\cdot \\vec{b} = 5 \\cdot 6 \\cdot \\cos 60° = 30 \\cdot \\frac{1}{2} = 15$.",
+  "latex_formulas": [
+    "\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos\\theta",
+    "\\cos 60° = \\frac{1}{2}"
+  ],
+  "figure_spec": {
+    "figure_type": "vector_diagram",
+    "parameters": {
+      "vectors": [
+        {
+          "name": "\\vec{a}",
+          "start": [
+            0,
+            0
+          ],
+          "end": [
+            5,
+            0
+          ]
+        },
+        {
+          "name": "\\vec{b}",
+          "start": [
+            0,
+            0
+          ],
+          "end": [
+            3,
+            5.196
+          ]
+        }
+      ],
+      "show_angle": true,
+      "angle_label": "60°",
+      "show_sum": false,
+      "caption": "Векторлар арасындағы бұрыш 60°, |\\vec{a}|=5, |\\vec{b}|=6"
+    },
+    "caption": "Векторлар арасындағы бұрыш 60°, $|\\vec{a}|=5$, $|\\vec{b}|=6$"
+  },
+  "figure_path": "output/math_final/figures/vector_diagram_11283.png",
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The scalar product of two vectors is given by a · b = |a||b|cos(theta), where theta is the angle between them. From the figure/text, the angle between the vectors is theta = 60°, |a| = 5, and |b| = 6. Therefore, a · b = 5 · 6 · cos(60°) = 30 · 1/2 = 15. So the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: The dot product formula is: a·b = |a| × |b| × cos(θ), where θ is the angle between the vectors. Given: |a| = 5, |b| = 6, θ = 60°. Therefore: a·b = 5 × 6 × cos(60°) = 30 × (1/2) = 15.\n\n[google/gemini-3.1-pro-preview] answered A: To find the scalar (dot) product of two vectors, we use the formula: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta)$, where $|\\vec{a}|$ and $|\\vec{b}|$ are the magnitudes of the vectors, and $\\theta$ is the angle between them. \n\nFrom the text at the bottom of the image, we are given:\n- The magnitude of vector $\\vec{a}$, $|\\vec{a}| = 5$\n- The magnitude of vector $\\vec{b}$, $|",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 9.667,
+      "figure_relevance": 9.667
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is mathematically correct and has a single clear answer using the standard dot product formula with the given magnitudes and 60° angle. It aligns well with level A; the figure and Kazakh wording are clear. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and perfectly aligned with Level A difficulty. The dot product formula is applied in a single step, the figure clearly shows the angle and magnitudes, and all distractors correspond to identifiable errors (e.g., using sin instead of cos, forgetting the 1/2 factor, or using √3/2 instead of 1/2). | [google/gemini-3.1-pro-preview] The question perfectly aligns with Level A difficulty, requiring a direct application of the scalar product formula. The distractors are exceptionally well-crafted, anticipating common student errors such as confusing the dot product with the cross product magnitude or the triangle area formula.",
+    "improvement_suggestions": null,
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='15' expected='15'",
+      "raw": {
+        "ok": true,
+        "stdout": "15",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The scalar product of two vectors is given by a · b = |a||b|cos(theta), where theta is the angle between them. From the figure/text, the angle between the vectors is theta = 60°, |a| = 5, and |b| = 6. Therefore, a · b = 5 · 6 · cos(60°) = 30 · 1/2 = 15. So the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: The dot product formula is: a·b = |a| × |b| × cos(θ), where θ is the angle between the vectors. Given: |a| = 5, |b| = 6, θ = 60°. Therefore: a·b = 5 × 6 × cos(60°) = 30 × (1/2) = 15.\n\n[google/gemini-3.1-pro-preview] answered A: To find the scalar (dot) product of two vectors, we use the formula: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta)$, where $|\\vec{a}|$ and $|\\vec{b}|$ are the magnitudes of the vectors, and $\\theta$ is the angle between them. \n\nFrom the text at the bottom of the image, we are given:\n- The magnitude of vector $\\vec{a}$, $|\\vec{a}| = 5$\n- The magnitude of vector $\\vec{b}$, $|",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 9.667,
+        "figure_relevance": 9.667
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is mathematically correct and has a single clear answer using the standard dot product formula with the given magnitudes and 60° angle. It aligns well with level A; the figure and Kazakh wording are clear. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and perfectly aligned with Level A difficulty. The dot product formula is applied in a single step, the figure clearly shows the angle and magnitudes, and all distractors correspond to identifiable errors (e.g., using sin instead of cos, forgetting the 1/2 factor, or using √3/2 instead of 1/2). | [google/gemini-3.1-pro-preview] The question perfectly aligns with Level A difficulty, requiring a direct application of the scalar product formula. The distractors are exceptionally well-crafted, anticipating common student errors such as confusing the dot product with the cross product magnitude or the triangle area formula.",
+      "improvement_suggestions": null,
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='15' expected='15'",
+        "raw": {
+          "ok": true,
+          "stdout": "15",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The scalar product of two vectors is given by a · b = |a||b|cos(theta), where theta is the angle between them. From the figure/text, the angle between the vectors is theta = 60°, |a| = 5, and |b| = 6. Therefore, a · b = 5 · 6 · cos(60°) = 30 · 1/2 = 15. So the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The item is mathematically correct and has a single clear answer using the standard dot product formula with the given magnitudes and 60° angle. It aligns well with level A; the figure and Kazakh wording are clear.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='15' expected='15'",
+            "raw": {
+              "ok": true,
+              "stdout": "15",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The dot product formula is: a·b = |a| × |b| × cos(θ), where θ is the angle between the vectors. Given: |a| = 5, |b| = 6, θ = 60°. Therefore: a·b = 5 × 6 × cos(60°) = 30 × (1/2) = 15.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 9.0,
+            "figure_relevance": 9.0
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and perfectly aligned with Level A difficulty. The dot product formula is applied in a single step, the figure clearly shows the angle and magnitudes, and all distractors correspond to identifiable errors (e.g., using sin instead of cos, forgetting the 1/2 factor, or using √3/2 instead of 1/2).",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='15' expected='15'",
+            "raw": {
+              "ok": true,
+              "stdout": "15",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the scalar (dot) product of two vectors, we use the formula: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta)$, where $|\\vec{a}|$ and $|\\vec{b}|$ are the magnitudes of the vectors, and $\\theta$ is the angle between them. \n\nFrom the text at the bottom of the image, we are given:\n- The magnitude of vector $\\vec{a}$, $|\\vec{a}| = 5$\n- The magnitude of vector $\\vec{b}$, $|\\vec{b}| = 6$\n- The angle between the vectors, $\\theta = 60^\\circ$\n\nNow, substitute these values into the formula:\n$\\vec{a} \\cdot \\vec{b} = 5 \\cdot 6 \\cdot \\cos(60^\\circ)$\n\nWe know that $\\cos(60^\\circ) = \\frac{1}{2}$.\n\n$\\vec{a} \\cdot \\vec{b} = 30 \\cdot \\frac{1}{2} = 15$\n\nThe calculated scalar product is 15, which matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question perfectly aligns with Level A difficulty, requiring a direct application of the scalar product formula. The distractors are exceptionally well-crafted, anticipating common student errors such as confusing the dot product with the cross product magnitude or the triangle area formula.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='15' expected='15'",
+            "raw": {
+              "ok": true,
+              "stdout": "15",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T19:23:57.143863+00:00",
+  "generation_attempts": 1
+}
