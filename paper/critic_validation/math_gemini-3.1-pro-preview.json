@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "n_real_items": 40,
+    "n_critic_failures": 0
+  },
+  "wrong_key": {
+    "correctness": {
+      "dimension": "correctness",
+      "variant": "wrong_key",
+      "n_pairs": 40,
+      "mean_real": 9.275,
+      "mean_degraded": 0.125,
+      "sd_real": 1.853,
+      "sd_degraded": 0.791,
+      "cdi_gap": 9.15,
+      "wilcoxon_p": 0.0,
+      "cohens_d": 4.502,
+      "interpretation": "strong discrimination"
+    },
+    "distractor_quality": {
+      "dimension": "distractor_quality",
+      "variant": "wrong_key",
+      "n_pairs": 40,
+      "mean_real": 7.975,
+      "mean_degraded": 6.4,
+      "sd_real": 2.402,
+      "sd_degraded": 2.01,
+      "cdi_gap": 1.575,
+      "wilcoxon_p": 0.0,
+      "cohens_d": 0.815,
+      "interpretation": "unexpected drop"
+    },
+    "difficulty_alignment": {
+      "dimension": "difficulty_alignment",
+      "variant": "wrong_key",
+      "n_pairs": 40,
+      "mean_real": 8.05,
+      "mean_degraded": 7.85,
+      "sd_real": 3.08,
+      "sd_degraded": 2.896,
+      "cdi_gap": 0.2,
+      "wilcoxon_p": 0.0744,
+      "cohens_d": 0.111,
+      "interpretation": "stable (as expected)"
+    },
+    "kazakh_language_quality": {
+      "dimension": "kazakh_language_quality",
+      "variant": "wrong_key",
+      "n_pairs": 40,
+      "mean_real": 8.55,
+      "mean_degraded": 8.175,
+      "sd_real": 1.518,
+      "sd_degraded": 1.838,
+      "cdi_gap": 0.375,
+      "wilcoxon_p": 0.0776,
+      "cohens_d": 0.277,
+      "interpretation": "stable (as expected)"
+    },
+    "latex_validity": {
+      "dimension": "latex_validity",
+      "variant": "wrong_key",
+      "n_pairs": 40,
+      "mean_real": 9.025,
+      "mean_degraded": 8.95,
+      "sd_real": 1.493,
+      "sd_degraded": 1.724,
+      "cdi_gap": 0.075,
+      "wilcoxon_p": 0.8488,
+      "cohens_d": 0.073,
+      "interpretation": "stable (as expected)"
+    }
+  },
+  "weak_distractors": {
+    "correctness": {
+      "dimension": "correctness",
+      "variant": "weak_distractors",
+      "n_pairs": 40,
+      "mean_real": 9.275,
+      "mean_degraded": 9.075,
+      "sd_real": 1.853,
+      "sd_degraded": 2.018,
+      "cdi_gap": 0.2,
+      "wilcoxon_p": 0.8106,
+      "cohens_d": 0.076,
+      "interpretation": "FAILED to discriminate"
+    },
+    "distractor_quality": {
+      "dimension": "distractor_quality",
+      "variant": "weak_distractors",
+      "n_pairs": 40,
+      "mean_real": 7.975,
+      "mean_degraded": 2.575,
+      "sd_real": 2.402,
+      "sd_degraded": 2.33,
+      "cdi_gap": 5.4,
+      "wilcoxon_p": 0.0,
+      "cohens_d": 1.804,
+      "interpretation": "strong discrimination"
+    },
+    "difficulty_alignment": {
+      "dimension": "difficulty_alignment",
+      "variant": "weak_distractors",
+      "n_pairs": 40,
+      "mean_real": 8.05,
+      "mean_degraded": 7.125,
+      "sd_real": 3.08,
+      "sd_degraded": 3.539,
+      "cdi_gap": 0.925,
+      "wilcoxon_p": 0.0026,
+      "cohens_d": 0.345,
+      "interpretation": "unexpected drop"
+    },
+    "kazakh_language_quality": {
+      "dimension": "kazakh_language_quality",
+      "variant": "weak_distractors",
+      "n_pairs": 40,
+      "mean_real": 8.55,
+      "mean_degraded": 7.825,
+      "sd_real": 1.518,
+      "sd_degraded": 2.062,
+      "cdi_gap": 0.725,
+      "wilcoxon_p": 0.0027,
+      "cohens_d": 0.477,
+      "interpretation": "unexpected drop"
+    },
+    "latex_validity": {
+      "dimension": "latex_validity",
+      "variant": "weak_distractors",
+      "n_pairs": 40,
+      "mean_real": 9.025,
+      "mean_degraded": 8.425,
+      "sd_real": 1.493,
+      "sd_degraded": 2.406,
+      "cdi_gap": 0.6,
+      "wilcoxon_p": 0.0371,
+      "cohens_d": 0.4,
+      "interpretation": "unexpected drop"
+    }
+  }
+}

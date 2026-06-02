@@ -1,7 +1,0 @@
-idx,variant,topic,level,overall,correctness,distractor_quality,difficulty_alignment,kazakh_language_quality,latex_validity,figure_relevance,pass_fail,critic_answer,ground_truth_answer,critic_matches_gt,error,ensemble_agreement,ensemble_unanimous
-0,real,triangles,A,9.29,10.0,8.5,9.667,9.0,9.667,,True,A,A,True,,1.0,True
-0,wrong_key,triangles,A,6.07,1.333,6.667,9.333,8.5,9.333,,False,A,A,True,,1.0,True
-0,weak_distractors,triangles,A,8.0,10.0,4.667,8.667,8.0,9.667,,True,A,A,True,,1.0,True
-1,real,triangles,A,8.047,7.333,6.667,9.0,8.667,9.333,,True,D,D,True,,0.667,False
-1,wrong_key,triangles,A,5.3,1.333,5.667,6.333,8.0,9.333,,False,D,D,True,,1.0,True
-1,weak_distractors,triangles,A,6.8,6.667,5.167,6.0,8.333,9.667,,True,D,D,True,,1.0,True

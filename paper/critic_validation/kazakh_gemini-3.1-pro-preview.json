@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "n_real_items": 20,
+    "n_critic_failures": 0
+  },
+  "wrong_key": {
+    "correctness": {
+      "dimension": "correctness",
+      "variant": "wrong_key",
+      "n_pairs": 20,
+      "mean_real": 8.85,
+      "mean_degraded": 0.7,
+      "sd_real": 2.231,
+      "sd_degraded": 2.25,
+      "cdi_gap": 8.15,
+      "wilcoxon_p": 0.0001,
+      "cohens_d": 1.866,
+      "interpretation": "strong discrimination"
+    },
+    "distractor_quality": {
+      "dimension": "distractor_quality",
+      "variant": "wrong_key",
+      "n_pairs": 20,
+      "mean_real": 7.8,
+      "mean_degraded": 5.7,
+      "sd_real": 2.238,
+      "sd_degraded": 2.155,
+      "cdi_gap": 2.1,
+      "wilcoxon_p": 0.0062,
+      "cohens_d": 0.715,
+      "interpretation": "unexpected drop"
+    },
+    "difficulty_alignment": {
+      "dimension": "difficulty_alignment",
+      "variant": "wrong_key",
+      "n_pairs": 20,
+      "mean_real": 6.4,
+      "mean_degraded": 5.6,
+      "sd_real": 3.185,
+      "sd_degraded": 3.033,
+      "cdi_gap": 0.8,
+      "wilcoxon_p": 0.1224,
+      "cohens_d": 0.322,
+      "interpretation": "unexpected drop"
+    },
+    "kazakh_language_quality": {
+      "dimension": "kazakh_language_quality",
+      "variant": "wrong_key",
+      "n_pairs": 20,
+      "mean_real": 7.7,
+      "mean_degraded": 8.3,
+      "sd_real": 2.515,
+      "sd_degraded": 2.273,
+      "cdi_gap": -0.6,
+      "wilcoxon_p": 0.1683,
+      "cohens_d": -0.391,
+      "interpretation": "unexpected gain"
+    },
+    "latex_validity": {
+      "dimension": "latex_validity",
+      "variant": "wrong_key",
+      "n_pairs": 20,
+      "mean_real": 10.0,
+      "mean_degraded": 9.75,
+      "sd_real": 0.0,
+      "sd_degraded": 1.118,
+      "cdi_gap": 0.25,
+      "wilcoxon_p": 0.6767,
+      "cohens_d": 0.224,
+      "interpretation": "stable (as expected)"
+    }
+  },
+  "weak_distractors": {
+    "correctness": {
+      "dimension": "correctness",
+      "variant": "weak_distractors",
+      "n_pairs": 19,
+      "mean_real": 9.105,
+      "mean_degraded": 7.842,
+      "sd_real": 1.969,
+      "sd_degraded": 1.344,
+      "cdi_gap": 1.263,
+      "wilcoxon_p": 0.0151,
+      "cohens_d": 0.554,
+      "interpretation": "strong discrimination"
+    },
+    "distractor_quality": {
+      "dimension": "distractor_quality",
+      "variant": "weak_distractors",
+      "n_pairs": 19,
+      "mean_real": 8.053,
+      "mean_degraded": 0.158,
+      "sd_real": 1.985,
+      "sd_degraded": 0.501,
+      "cdi_gap": 7.895,
+      "wilcoxon_p": 0.0001,
+      "cohens_d": 4.068,
+      "interpretation": "strong discrimination"
+    },
+    "difficulty_alignment": {
+      "dimension": "difficulty_alignment",
+      "variant": "weak_distractors",
+      "n_pairs": 19,
+      "mean_real": 6.737,
+      "mean_degraded": 2.0,
+      "sd_real": 2.884,
+      "sd_degraded": 1.453,
+      "cdi_gap": 4.737,
+      "wilcoxon_p": 0.0001,
+      "cohens_d": 1.885,
+      "interpretation": "unexpected drop"
+    },
+    "kazakh_language_quality": {
+      "dimension": "kazakh_language_quality",
+      "variant": "weak_distractors",
+      "n_pairs": 19,
+      "mean_real": 7.947,
+      "mean_degraded": 6.053,
+      "sd_real": 2.321,
+      "sd_degraded": 2.172,
+      "cdi_gap": 1.895,
+      "wilcoxon_p": 0.0082,
+      "cohens_d": 0.747,
+      "interpretation": "unexpected drop"
+    },
+    "latex_validity": {
+      "dimension": "latex_validity",
+      "variant": "weak_distractors",
+      "n_pairs": 19,
+      "mean_real": 10.0,
+      "mean_degraded": 10.0,
+      "sd_real": 0.0,
+      "sd_degraded": 0.0,
+      "cdi_gap": 0.0,
+      "wilcoxon_p": null,
+      "cohens_d": null,
+      "interpretation": "stable (as expected)"
+    }
+  }
+}

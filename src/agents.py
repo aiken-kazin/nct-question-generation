@@ -32,8 +32,11 @@ VISION_CAPABLE_MODELS: set[str] = {
     "anthropic/claude-3-opus",
     "anthropic/claude-3-haiku",
     "google/gemini-2.5-pro",
+    "google/gemini-3.1-pro-preview",
+    "google/gemini-3.1-pro",
     "google/gemini-pro-1.5",
     "google/gemini-flash-1.5",
+    "openai/gpt-5.5",
     "qwen/qwen-2.5-vl-72b-instruct",
     "qwen/qwen-2.5-vl-7b-instruct",
 }

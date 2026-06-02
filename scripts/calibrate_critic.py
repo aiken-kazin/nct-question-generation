@@ -81,7 +81,7 @@ console = Console()
 # Map subject → dataset path. Skip a subject silently if the file is missing.
 DATASET_FILES = {
     "math": "files/mathematics_questions_kz.json",
-    "kazakh": "files/kazakh_language_questions_kz.json",
+    "kazakh": "files/kazakh_questions_no_context.json",
 }
 
 
@@ -518,6 +518,10 @@ def main() -> None:
         console.print("[red]OPENROUTER_API_KEY not set in environment[/red]")
         sys.exit(1)
     config.model = args.model if args.model else API_CHOICES[args.api]
+    # critic_model is frozen at Config() init (defaults to the generator model).
+    # In single-critic mode the critic reads config.critic_model, so without this
+    # line every --api would silently critique with the default model.
+    config.critic_model = config.model
 
     subjects = ["math", "kazakh"] if args.subject == "both" else [args.subject]
     out_dir = Path(args.output_dir)

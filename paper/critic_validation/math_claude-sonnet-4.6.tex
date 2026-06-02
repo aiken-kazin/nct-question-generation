@@ -1,0 +1,31 @@
+\begin{table*}[t]
+\centering
+\caption{Critic Discrimination Index across degraded variants and dimensions.}
+\label{tab:cdi}
+\vspace{0.5em}
+\textbf{Variant: \texttt{wrong_key}}\\
+\begin{tabular}{lrrrrrrl}
+\hline
+Dimension & $n$ & $\mu_\text{real}$ & $\mu_\text{degraded}$ & CDI gap & Wilcoxon $p$ & Cohen's $d$ & Verdict \\
+\hline
+correctness & 40 & 9.80 & 0.82 & +8.98 & 0.0000 & 7.18 & strong discrimination \\
+distractor\_quality & 40 & 6.88 & 5.60 & +1.28 & 0.0000 & 1.24 & unexpected drop \\
+difficulty\_alignment & 40 & 7.45 & 7.28 & +0.17 & 0.0173 & 0.12 & stable (as expected) \\
+kazakh\_language\_quality & 40 & 7.62 & 7.59 & +0.04 & 0.1278 & 0.04 & stable (as expected) \\
+latex\_validity & 40 & 8.57 & 8.57 & +0.00 & 0.1678 & 0.00 & stable (as expected) \\
+\hline
+\end{tabular}
+\vspace{0.5em}
+\textbf{Variant: \texttt{weak_distractors}}\\
+\begin{tabular}{lrrrrrrl}
+\hline
+Dimension & $n$ & $\mu_\text{real}$ & $\mu_\text{degraded}$ & CDI gap & Wilcoxon $p$ & Cohen's $d$ & Verdict \\
+\hline
+correctness & 40 & 9.80 & 9.30 & +0.50 & 0.0208 & 0.43 & moderate discrimination \\
+distractor\_quality & 40 & 6.88 & 3.92 & +2.95 & 0.0000 & 1.39 & strong discrimination \\
+difficulty\_alignment & 40 & 7.45 & 7.39 & +0.06 & 0.0211 & 0.04 & stable (as expected) \\
+kazakh\_language\_quality & 40 & 7.62 & 7.31 & +0.31 & 0.0157 & 0.26 & stable (as expected) \\
+latex\_validity & 40 & 8.57 & 8.50 & +0.07 & 0.7774 & 0.05 & stable (as expected) \\
+\hline
+\end{tabular}
+\end{table*}

@@ -1,0 +1,101 @@
+[
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "idx": 14,
+    "vision_used": true,
+    "critic_answer": "C",
+    "ground_truth": "C",
+    "correct": true,
+    "overall": 8.1,
+    "correctness": 10.0,
+    "figure_relevance": 8.0
+  },
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "idx": 26,
+    "vision_used": true,
+    "critic_answer": "B",
+    "ground_truth": "B",
+    "correct": true,
+    "overall": 4.6,
+    "correctness": 4.0,
+    "figure_relevance": 5.0
+  },
+  {
+    "model": "anthropic/claude-sonnet-4.6",
+    "idx": 28,
+    "vision_used": true,
+    "critic_answer": "C",
+    "ground_truth": "C",
+    "correct": true,
+    "overall": 8.5,
+    "correctness": 10.0,
+    "figure_relevance": 9.0
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "idx": 14,
+    "vision_used": true,
+    "critic_answer": "C",
+    "ground_truth": "C",
+    "correct": true,
+    "overall": 9.3,
+    "correctness": 10.0,
+    "figure_relevance": 10.0
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "idx": 26,
+    "vision_used": true,
+    "critic_answer": "B",
+    "ground_truth": "B",
+    "correct": true,
+    "overall": 5.0,
+    "correctness": 5.0,
+    "figure_relevance": null
+  },
+  {
+    "model": "google/gemini-3.1-pro-preview",
+    "idx": 28,
+    "vision_used": true,
+    "critic_answer": "C",
+    "ground_truth": "C",
+    "correct": true,
+    "overall": 9.6,
+    "correctness": 10.0,
+    "figure_relevance": 10.0
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "idx": 14,
+    "vision_used": true,
+    "critic_answer": "C",
+    "ground_truth": "C",
+    "correct": true,
+    "overall": 8.09,
+    "correctness": 10.0,
+    "figure_relevance": 10.0
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "idx": 26,
+    "vision_used": true,
+    "critic_answer": "B",
+    "ground_truth": "B",
+    "correct": true,
+    "overall": 5.7,
+    "correctness": 7.0,
+    "figure_relevance": 6.0
+  },
+  {
+    "model": "openai/gpt-5.5",
+    "idx": 28,
+    "vision_used": true,
+    "critic_answer": "C",
+    "ground_truth": "C",
+    "correct": true,
+    "overall": 7.9,
+    "correctness": 8.0,
+    "figure_relevance": 4.0
+  }
+]
