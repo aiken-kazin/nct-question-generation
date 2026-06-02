@@ -1,0 +1,51 @@
+{
+  "subject": "math",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "model_slug": "claude-sonnet-4.6",
+  "intended_count": 3,
+  "saved_count": 3,
+  "rejected_count": 0,
+  "per_level_intended": {
+    "A": 1,
+    "B": 2,
+    "C": 0
+  },
+  "format": "image",
+  "seed": 0,
+  "finished_at": "2026-06-02T19:29:17.138654+00:00",
+  "attempts": [
+    {
+      "topic": "vectors",
+      "level": "A",
+      "format": "image",
+      "attempts": 1,
+      "saved": true,
+      "id": "b45c7242-5ae9-4a04-841a-c0569eee299f",
+      "overall_score": 9.633,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "solids_of_revolution",
+      "level": "B",
+      "format": "image",
+      "attempts": 3,
+      "saved": true,
+      "id": "c83d78d3-ac1d-4b88-97c8-7b818bc1d43f",
+      "overall_score": 9.133,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    },
+    {
+      "topic": "complex_numbers",
+      "level": "B",
+      "format": "image",
+      "attempts": 2,
+      "saved": true,
+      "id": "028a7c66-9b5a-4d37-940e-fa266f93295c",
+      "overall_score": 8.733,
+      "ensemble_agreement": 1.0,
+      "ensemble_unanimous": true
+    }
+  ]
+}

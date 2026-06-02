@@ -1,0 +1,208 @@
+{
+  "id": "51b93508-2cca-4368-812c-ab197fb423db",
+  "subject": "math",
+  "level": "C",
+  "format": "text",
+  "topic": "integrals",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "$f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$ және $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз, егер $f(0) = 1$ және $f(1) = 5$ болса.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$2$"
+    },
+    {
+      "label": "B",
+      "text": "$5$"
+    },
+    {
+      "label": "C",
+      "text": "$-2$"
+    },
+    {
+      "label": "D",
+      "text": "$8$"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Бөлшектеп интегралдау формуласын қолданамыз: $\\int_{0}^{1} x\\,f'(x)\\,dx = \\left[x\\,f(x)\\right]_{0}^{1} - \\int_{0}^{1} f(x)\\,dx$.\n\nМұндағы $u = x$, $dv = f'(x)\\,dx$ деп алсақ, онда $du = dx$, $v = f(x)$.\n\nДемек:\n$\\int_{0}^{1} x\\,f'(x)\\,dx = \\bigl[x\\,f(x)\\bigr]_{0}^{1} - \\int_{0}^{1} f(x)\\,dx$\n$= \\bigl(1\\cdot f(1) - 0\\cdot f(0)\\bigr) - 3$\n$= \\bigl(1\\cdot 5 - 0\\bigr) - 3$\n$= 5 - 3 = 2$.\n\nЖауабы: $2$.",
+  "latex_formulas": [
+    "\\int_{0}^{1} x\\,f'(x)\\,dx = \\left[x\\,f(x)\\right]_{0}^{1} - \\int_{0}^{1} f(x)\\,dx",
+    "\\int u\\,dv = uv - \\int v\\,du"
+  ],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: Use integration by parts on the integral I = ∫_0^1 x f'(x) dx. Let u = x, so du = dx, and let dv = f'(x) dx, so v = f(x). Then ∫_0^1 x f'(x) dx = [x f(x)]_0^1 - ∫_0^1 f(x) dx. Now [x f(x)]_0^1 = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5. Given ∫_0^1 f(x) dx = 3, we get I = 5 - 3 = 2. Therefore the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find ∫₀¹ x·f'(x) dx given that ∫₀¹ f(x) dx = 3, f(0) = 1, f(1) = 5.\n\nUse integration by parts on ∫₀¹ x·f'(x) dx:\nLet u = x, dv = f'(x) dx\nThen du = dx, v = f(x)\n\n∫₀¹ x·f'(x) dx = [x·f(x)]₀¹ - ∫₀¹ f(x) dx\n\nEvaluate the boundary term:\n[x·f(x)]₀¹ = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5\n\nSubtract the integral:\n= 5 - ∫₀¹ f(x) dx = 5 - 3 = 2\n\nThe answer is 2.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the integral \\( \\int_{0}^{1} x f'(x) \\, dx \\), we can use the method of integration by parts. The formula for integration by parts is \\( \\int u \\, dv = uv - \\int v \\, du \\).\n\nLet \\( u = x \\) and \\( dv = f'(x) \\, dx \\).\nThen, taking the derivative of \\( u \\) gives \\( du = dx \\), and integrating \\( dv \\) gives \\( v = f(x) \\).\n\nApplying the integration by parts formula to our def",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 5.667,
+      "kazakh_language_quality": 7.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is a standard integration by parts application. However, the item is far below the requested C difficulty level, since it is a direct one-step procedural exercise. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed; integration by parts is applied cleanly and the answer is unambiguous. Distractors are plausible (B=5 ignores subtraction, C=-2 reverses sign, D=8 adds instead of subtracts), though the method is fairly standard for teachers who know IBP, making it closer to level B than C. | [google/gemini-3.1-pro-preview] The mathematical content is excellent and tests abstract integration by parts well. However, the Kazakh phrasing in the question stem is grammatically awkward and needs restructuring.",
+    "improvement_suggestions": "[openai/gpt-5.5] To match level C, require a non-routine use of integration by parts or combine it with a parameter, inequality, recurrence, or reconstruction argument; also consider removing unused data such as f(0), since it is not needed here and may feel artificial. | [anthropic/claude-sonnet-4.6] To better match level C difficulty, consider adding a twist such as a non-trivial substitution before IBP, or combining with a second integral condition that requires simultaneous reasoning. The current problem is a single-step IBP application that most calculus-trained teachers will solve routinely. | [google/gemini-3.1-pro-preview] Rewrite the question stem to: \"Егер $f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$, $f(0) = 1$ және $f(1) = 5$ болса, $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз.\"",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='2' expected='2'",
+      "raw": {
+        "ok": true,
+        "stdout": "2",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: Use integration by parts on the integral I = ∫_0^1 x f'(x) dx. Let u = x, so du = dx, and let dv = f'(x) dx, so v = f(x). Then ∫_0^1 x f'(x) dx = [x f(x)]_0^1 - ∫_0^1 f(x) dx. Now [x f(x)]_0^1 = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5. Given ∫_0^1 f(x) dx = 3, we get I = 5 - 3 = 2. Therefore the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find ∫₀¹ x·f'(x) dx given that ∫₀¹ f(x) dx = 3, f(0) = 1, f(1) = 5.\n\nUse integration by parts on ∫₀¹ x·f'(x) dx:\nLet u = x, dv = f'(x) dx\nThen du = dx, v = f(x)\n\n∫₀¹ x·f'(x) dx = [x·f(x)]₀¹ - ∫₀¹ f(x) dx\n\nEvaluate the boundary term:\n[x·f(x)]₀¹ = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5\n\nSubtract the integral:\n= 5 - ∫₀¹ f(x) dx = 5 - 3 = 2\n\nThe answer is 2.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the integral \\( \\int_{0}^{1} x f'(x) \\, dx \\), we can use the method of integration by parts. The formula for integration by parts is \\( \\int u \\, dv = uv - \\int v \\, du \\).\n\nLet \\( u = x \\) and \\( dv = f'(x) \\, dx \\).\nThen, taking the derivative of \\( u \\) gives \\( du = dx \\), and integrating \\( dv \\) gives \\( v = f(x) \\).\n\nApplying the integration by parts formula to our def",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 5.667,
+        "kazakh_language_quality": 7.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is a standard integration by parts application. However, the item is far below the requested C difficulty level, since it is a direct one-step procedural exercise. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed; integration by parts is applied cleanly and the answer is unambiguous. Distractors are plausible (B=5 ignores subtraction, C=-2 reverses sign, D=8 adds instead of subtracts), though the method is fairly standard for teachers who know IBP, making it closer to level B than C. | [google/gemini-3.1-pro-preview] The mathematical content is excellent and tests abstract integration by parts well. However, the Kazakh phrasing in the question stem is grammatically awkward and needs restructuring.",
+      "improvement_suggestions": "[openai/gpt-5.5] To match level C, require a non-routine use of integration by parts or combine it with a parameter, inequality, recurrence, or reconstruction argument; also consider removing unused data such as f(0), since it is not needed here and may feel artificial. | [anthropic/claude-sonnet-4.6] To better match level C difficulty, consider adding a twist such as a non-trivial substitution before IBP, or combining with a second integral condition that requires simultaneous reasoning. The current problem is a single-step IBP application that most calculus-trained teachers will solve routinely. | [google/gemini-3.1-pro-preview] Rewrite the question stem to: \"Егер $f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$, $f(0) = 1$ және $f(1) = 5$ болса, $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз.\"",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='2' expected='2'",
+        "raw": {
+          "ok": true,
+          "stdout": "2",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Use integration by parts on the integral I = ∫_0^1 x f'(x) dx. Let u = x, so du = dx, and let dv = f'(x) dx, so v = f(x). Then ∫_0^1 x f'(x) dx = [x f(x)]_0^1 - ∫_0^1 f(x) dx. Now [x f(x)]_0^1 = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5. Given ∫_0^1 f(x) dx = 3, we get I = 5 - 3 = 2. Therefore the correct option is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.9,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the solution is a standard integration by parts application. However, the item is far below the requested C difficulty level, since it is a direct one-step procedural exercise.",
+          "improvement_suggestions": "To match level C, require a non-routine use of integration by parts or combine it with a parameter, inequality, recurrence, or reconstruction argument; also consider removing unused data such as f(0), since it is not needed here and may feel artificial.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2' expected='2'",
+            "raw": {
+              "ok": true,
+              "stdout": "2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find ∫₀¹ x·f'(x) dx given that ∫₀¹ f(x) dx = 3, f(0) = 1, f(1) = 5.\n\nUse integration by parts on ∫₀¹ x·f'(x) dx:\nLet u = x, dv = f'(x) dx\nThen du = dx, v = f(x)\n\n∫₀¹ x·f'(x) dx = [x·f(x)]₀¹ - ∫₀¹ f(x) dx\n\nEvaluate the boundary term:\n[x·f(x)]₀¹ = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5\n\nSubtract the integral:\n= 5 - ∫₀¹ f(x) dx = 5 - 3 = 2\n\nThe answer is 2.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is mathematically sound and correctly keyed; integration by parts is applied cleanly and the answer is unambiguous. Distractors are plausible (B=5 ignores subtraction, C=-2 reverses sign, D=8 adds instead of subtracts), though the method is fairly standard for teachers who know IBP, making it closer to level B than C.",
+          "improvement_suggestions": "To better match level C difficulty, consider adding a twist such as a non-trivial substitution before IBP, or combining with a second integral condition that requires simultaneous reasoning. The current problem is a single-step IBP application that most calculus-trained teachers will solve routinely.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2' expected='2'",
+            "raw": {
+              "ok": true,
+              "stdout": "2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the value of the integral \\( \\int_{0}^{1} x f'(x) \\, dx \\), we can use the method of integration by parts. The formula for integration by parts is \\( \\int u \\, dv = uv - \\int v \\, du \\).\n\nLet \\( u = x \\) and \\( dv = f'(x) \\, dx \\).\nThen, taking the derivative of \\( u \\) gives \\( du = dx \\), and integrating \\( dv \\) gives \\( v = f(x) \\).\n\nApplying the integration by parts formula to our definite integral:\n\\( \\int_{0}^{1} x f'(x) \\, dx = \\left[ x f(x) \\right]_{0}^{1} - \\int_{0}^{1} f(x) \\, dx \\)\n\nFirst, evaluate the boundary term \\( \\left[ x f(x) \\right]_{0}^{1} \\):\n\\( \\left[ x f(x) \\right]_{0}^{1} = (1 \\cdot f(1)) - (0 \\cdot f(0)) \\)\n\nWe are given \\( f(1) = 5 \\) and \\( f(0) = 1 \\). Substituting these values:\n\\( (1 \\cdot 5) - (0 \\cdot 1) = 5 - 0 = 5 \\)\n\nNext, substitute the given value for the integral \\( \\int_{0}^{1} f(x) \\, dx = 3 \\) into our equation:\n\\( \\int_{0}^{1} x f'(x) \\, dx = 5 - 3 = 2 \\)\n\nThe final value is 2, which corresponds to option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 6.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The mathematical content is excellent and tests abstract integration by parts well. However, the Kazakh phrasing in the question stem is grammatically awkward and needs restructuring.",
+          "improvement_suggestions": "Rewrite the question stem to: \"Егер $f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$, $f(0) = 1$ және $f(1) = 5$ болса, $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз.\"",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2' expected='2'",
+            "raw": {
+              "ok": true,
+              "stdout": "2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T19:11:00.916929+00:00",
+  "generation_attempts": 1
+}

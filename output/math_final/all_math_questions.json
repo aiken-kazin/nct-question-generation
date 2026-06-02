@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-02T18:56:38.049783+00:00",
+  "generated_at": "2026-06-02T19:29:25.340731+00:00",
   "subject": "math",
   "counts": {
-    "no_context_questions": 114,
+    "no_context_questions": 120,
     "context_blocks": 6,
     "context_questions": 31,
-    "total_questions": 145
+    "total_questions": 151
   },
   "no_context": [
     {
@@ -1967,6 +1967,205 @@
         "n_critics_failed": 0
       },
       "source_file": "output/math_final/math/claude-sonnet-4.6/level_A/2026-06-02_15-32-36_421b7729.json"
+    },
+    {
+      "type": "no_context",
+      "model": "anthropic/claude-sonnet-4.6",
+      "level": "A",
+      "topic": "vectors",
+      "question_text": "Суреттегі $\\vec{a}$ және $\\vec{b}$ векторларының скалярлық көбейтіндісін $\\vec{a} \\cdot \\vec{b}$ табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "$15$"
+        },
+        {
+          "label": "B",
+          "text": "$15\\sqrt{3}$"
+        },
+        {
+          "label": "C",
+          "text": "$\\frac{15\\sqrt{3}}{2}$"
+        },
+        {
+          "label": "D",
+          "text": "$\\frac{15}{2}$"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Скалярлық көбейтінді формуласы: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos\\theta$. Суреттен: $|\\vec{a}| = 5$, $|\\vec{b}| = 6$, $\\theta = 60°$. Онда: $\\vec{a} \\cdot \\vec{b} = 5 \\cdot 6 \\cdot \\cos 60° = 30 \\cdot \\frac{1}{2} = 15$.",
+      "critic_score": 9.633,
+      "critic_feedback": {
+        "critic_solution": "[openai/gpt-5.5] answered A: The scalar product of two vectors is given by a · b = |a||b|cos(theta), where theta is the angle between them. From the figure/text, the angle between the vectors is theta = 60°, |a| = 5, and |b| = 6. Therefore, a · b = 5 · 6 · cos(60°) = 30 · 1/2 = 15. So the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: The dot product formula is: a·b = |a| × |b| × cos(θ), where θ is the angle between the vectors. Given: |a| = 5, |b| = 6, θ = 60°. Therefore: a·b = 5 × 6 × cos(60°) = 30 × (1/2) = 15.\n\n[google/gemini-3.1-pro-preview] answered A: To find the scalar (dot) product of two vectors, we use the formula: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta)$, where $|\\vec{a}|$ and $|\\vec{b}|$ are the magnitudes of the vectors, and $\\theta$ is the angle between them. \n\nFrom the text at the bottom of the image, we are given:\n- The magnitude of vector $\\vec{a}$, $|\\vec{a}| = 5$\n- The magnitude of vector $\\vec{b}$, $|",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 10.0,
+          "distractor_quality": 8.667,
+          "difficulty_alignment": 10.0,
+          "kazakh_language_quality": 9.667,
+          "latex_validity": 9.667,
+          "figure_relevance": 9.667
+        },
+        "overall_score": 9.633,
+        "pass_fail": true,
+        "comments": "[openai/gpt-5.5] The item is mathematically correct and has a single clear answer using the standard dot product formula with the given magnitudes and 60° angle. It aligns well with level A; the figure and Kazakh wording are clear. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and perfectly aligned with Level A difficulty. The dot product formula is applied in a single step, the figure clearly shows the angle and magnitudes, and all distractors correspond to identifiable errors (e.g., using sin instead of cos, forgetting the 1/2 factor, or using √3/2 instead of 1/2). | [google/gemini-3.1-pro-preview] The question perfectly aligns with Level A difficulty, requiring a direct application of the scalar product formula. The distractors are exceptionally well-crafted, anticipating common student errors such as confusing the dot product with the cross product magnitude or the triangle area formula.",
+        "improvement_suggestions": null,
+        "verification": {
+          "applicable": true,
+          "ran": true,
+          "passed": true,
+          "contradicted": false,
+          "note": "stdout='15' expected='15'",
+          "raw": {
+            "ok": true,
+            "stdout": "15",
+            "stderr": "",
+            "timed_out": false,
+            "exit_code": 0
+          }
+        }
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The scalar product of two vectors is given by a · b = |a||b|cos(theta), where theta is the angle between them. From the figure/text, the angle between the vectors is theta = 60°, |a| = 5, and |b| = 6. Therefore, a · b = 5 · 6 · cos(60°) = 30 · 1/2 = 15. So the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: The dot product formula is: a·b = |a| × |b| × cos(θ), where θ is the angle between the vectors. Given: |a| = 5, |b| = 6, θ = 60°. Therefore: a·b = 5 × 6 × cos(60°) = 30 × (1/2) = 15.\n\n[google/gemini-3.1-pro-preview] answered A: To find the scalar (dot) product of two vectors, we use the formula: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta)$, where $|\\vec{a}|$ and $|\\vec{b}|$ are the magnitudes of the vectors, and $\\theta$ is the angle between them. \n\nFrom the text at the bottom of the image, we are given:\n- The magnitude of vector $\\vec{a}$, $|\\vec{a}| = 5$\n- The magnitude of vector $\\vec{b}$, $|",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.667,
+            "latex_validity": 9.667,
+            "figure_relevance": 9.667
+          },
+          "overall_score": 9.633,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The item is mathematically correct and has a single clear answer using the standard dot product formula with the given magnitudes and 60° angle. It aligns well with level A; the figure and Kazakh wording are clear. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and perfectly aligned with Level A difficulty. The dot product formula is applied in a single step, the figure clearly shows the angle and magnitudes, and all distractors correspond to identifiable errors (e.g., using sin instead of cos, forgetting the 1/2 factor, or using √3/2 instead of 1/2). | [google/gemini-3.1-pro-preview] The question perfectly aligns with Level A difficulty, requiring a direct application of the scalar product formula. The distractors are exceptionally well-crafted, anticipating common student errors such as confusing the dot product with the cross product magnitude or the triangle area formula.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='15' expected='15'",
+            "raw": {
+              "ok": true,
+              "stdout": "15",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The scalar product of two vectors is given by a · b = |a||b|cos(theta), where theta is the angle between them. From the figure/text, the angle between the vectors is theta = 60°, |a| = 5, and |b| = 6. Therefore, a · b = 5 · 6 · cos(60°) = 30 · 1/2 = 15. So the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": 10.0
+              },
+              "overall_score": 9.6,
+              "pass_fail": true,
+              "comments": "The item is mathematically correct and has a single clear answer using the standard dot product formula with the given magnitudes and 60° angle. It aligns well with level A; the figure and Kazakh wording are clear.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='15' expected='15'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "15",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The dot product formula is: a·b = |a| × |b| × cos(θ), where θ is the angle between the vectors. Given: |a| = 5, |b| = 6, θ = 60°. Therefore: a·b = 5 × 6 × cos(60°) = 30 × (1/2) = 15.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 9.0,
+                "figure_relevance": 9.0
+              },
+              "overall_score": 9.3,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, factually correct, and perfectly aligned with Level A difficulty. The dot product formula is applied in a single step, the figure clearly shows the angle and magnitudes, and all distractors correspond to identifiable errors (e.g., using sin instead of cos, forgetting the 1/2 factor, or using √3/2 instead of 1/2).",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='15' expected='15'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "15",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the scalar (dot) product of two vectors, we use the formula: $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta)$, where $|\\vec{a}|$ and $|\\vec{b}|$ are the magnitudes of the vectors, and $\\theta$ is the angle between them. \n\nFrom the text at the bottom of the image, we are given:\n- The magnitude of vector $\\vec{a}$, $|\\vec{a}| = 5$\n- The magnitude of vector $\\vec{b}$, $|\\vec{b}| = 6$\n- The angle between the vectors, $\\theta = 60^\\circ$\n\nNow, substitute these values into the formula:\n$\\vec{a} \\cdot \\vec{b} = 5 \\cdot 6 \\cdot \\cos(60^\\circ)$\n\nWe know that $\\cos(60^\\circ) = \\frac{1}{2}$.\n\n$\\vec{a} \\cdot \\vec{b} = 30 \\cdot \\frac{1}{2} = 15$\n\nThe calculated scalar product is 15, which matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": 10.0
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question perfectly aligns with Level A difficulty, requiring a direct application of the scalar product formula. The distractors are exceptionally well-crafted, anticipating common student errors such as confusing the dot product with the cross product magnitude or the triangle area formula.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='15' expected='15'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "15",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      },
+      "source_file": "output/math_final/math/claude-sonnet-4.6/level_A/2026-06-02_19-23-57_b45c7242.json"
     },
     {
       "type": "no_context",
@@ -6349,6 +6548,404 @@
     {
       "type": "no_context",
       "model": "anthropic/claude-sonnet-4.6",
+      "level": "B",
+      "topic": "solids_of_revolution",
+      "question_text": "Суреттегі конустың бүйір беті мен негізінің ауданының қосындысы неге тең?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$96\\pi$ см²"
+        },
+        {
+          "label": "B",
+          "text": "$80\\pi$ см²"
+        },
+        {
+          "label": "C",
+          "text": "$60\\pi$ см²"
+        },
+        {
+          "label": "D",
+          "text": "$48\\pi$ см²"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Суреттен: конустың негізінің радиусы $r = 6$ см, биіктігі $h = 8$ см.\n\n**1-қадам:** Жасаушының ұзындығын табамыз:\n$$l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10 \\text{ см}$$\n\n**2-қадам:** Бүйір бетінің ауданы:\n$$S_{\\text{бүйір}} = \\pi r l = \\pi \\cdot 6 \\cdot 10 = 60\\pi \\text{ см}^2$$\n\n**3-қадам:** Негізінің ауданы:\n$$S_{\\text{негіз}} = \\pi r^2 = \\pi \\cdot 6^2 = 36\\pi \\text{ см}^2$$\n\n**4-қадам:** Толық беті:\n$$S_{\\text{толық}} = S_{\\text{бүйір}} + S_{\\text{негіз}} = 60\\pi + 36\\pi = 96\\pi \\text{ см}^2$$",
+      "critic_score": 9.133,
+      "critic_feedback": {
+        "critic_solution": "[openai/gpt-5.5] answered A: For a right circular cone, the sum of the lateral surface area and the base area is the total surface area: S = pi*r*l + pi*r^2, where r is the radius and l is the slant height. From the figure/text, r = 6 cm and h = 8 cm. The slant height is found by the Pythagorean theorem: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm. Lateral area = pi*r*l = pi*6*10 = 60pi cm^2. Bas\n\n[anthropic/claude-sonnet-4.6] answered A: Given: cone with radius r = 6 cm and height h = 8 cm.\n\nStep 1: Find the slant height (l).\nl = √(r² + h²) = √(36 + 64) = √100 = 10 cm\n\nStep 2: Calculate the lateral surface area.\nLateral surface area = π·r·l = π × 6 × 10 = 60π cm²\n\nStep 3: Calculate the base area.\nBase area = π·r² = π × 36 = 36π cm²\n\nStep 4: Sum of lateral surface area and base area.\nTotal = 60π + 36π = 96π cm²\n\nThe answer is 96π c\n\n[google/gemini-3.1-pro-preview] answered A: The question asks for the sum of the lateral surface area and the base area of the cone, which is its total surface area. From the image, we are given the base radius $r = 6$ cm and the height $h = 8$ cm. First, we need to find the slant height $l$ of the cone using the Pythagorean theorem: $l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. Next, we calculate the late",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 10.0,
+          "distractor_quality": 8.333,
+          "difficulty_alignment": 8.833,
+          "kazakh_language_quality": 8.5,
+          "latex_validity": 10.0,
+          "figure_relevance": 8.333
+        },
+        "overall_score": 9.133,
+        "pass_fail": true,
+        "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: using r = 6 and h = 8 gives slant height 10 and total surface area 96π. The item fits medium difficulty reasonably well, though the figure/caption could label the radius more clearly and some distractors are only moderately plausible. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and requires 4 logical steps (find slant height, lateral area, base area, sum) consistent with level B. Distractors correspond to identifiable errors: C (60π) = lateral surface only, D (48π) = plausible miscalculation, B (80π) = less obvious but reachable. The figure shows the cone with h=8 labeled inside and the caption gives r=6, h=8, making the figure somewhat redundant with the caption text. | [google/gemini-3.1-pro-preview] The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors represent common student errors.",
+        "improvement_suggestions": "[anthropic/claude-sonnet-4.6] The figure caption 'Конус: r = 6 см, h = 8 см' already provides all needed data, making the figure partly redundant. Consider labeling r directly on the figure (showing the radius line) to make the figure more essential. Also, distractor B (80π) could be made more pedagogically motivated by tying it to a specific common error. | [google/gemini-3.1-pro-preview] Consider using 'аудандарының қосындысы' instead of 'ауданының қосындысы' for better grammatical precision.",
+        "verification": {
+          "applicable": true,
+          "ran": true,
+          "passed": true,
+          "contradicted": false,
+          "note": "stdout='96' expected='96'",
+          "raw": {
+            "ok": true,
+            "stdout": "96",
+            "stderr": "",
+            "timed_out": false,
+            "exit_code": 0
+          }
+        }
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: For a right circular cone, the sum of the lateral surface area and the base area is the total surface area: S = pi*r*l + pi*r^2, where r is the radius and l is the slant height. From the figure/text, r = 6 cm and h = 8 cm. The slant height is found by the Pythagorean theorem: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm. Lateral area = pi*r*l = pi*6*10 = 60pi cm^2. Bas\n\n[anthropic/claude-sonnet-4.6] answered A: Given: cone with radius r = 6 cm and height h = 8 cm.\n\nStep 1: Find the slant height (l).\nl = √(r² + h²) = √(36 + 64) = √100 = 10 cm\n\nStep 2: Calculate the lateral surface area.\nLateral surface area = π·r·l = π × 6 × 10 = 60π cm²\n\nStep 3: Calculate the base area.\nBase area = π·r² = π × 36 = 36π cm²\n\nStep 4: Sum of lateral surface area and base area.\nTotal = 60π + 36π = 96π cm²\n\nThe answer is 96π c\n\n[google/gemini-3.1-pro-preview] answered A: The question asks for the sum of the lateral surface area and the base area of the cone, which is its total surface area. From the image, we are given the base radius $r = 6$ cm and the height $h = 8$ cm. First, we need to find the slant height $l$ of the cone using the Pythagorean theorem: $l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. Next, we calculate the late",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 8.833,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": 8.333
+          },
+          "overall_score": 9.133,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is unambiguous: using r = 6 and h = 8 gives slant height 10 and total surface area 96π. The item fits medium difficulty reasonably well, though the figure/caption could label the radius more clearly and some distractors are only moderately plausible. | [anthropic/claude-sonnet-4.6] The question is mathematically correct, well-structured, and requires 4 logical steps (find slant height, lateral area, base area, sum) consistent with level B. Distractors correspond to identifiable errors: C (60π) = lateral surface only, D (48π) = plausible miscalculation, B (80π) = less obvious but reachable. The figure shows the cone with h=8 labeled inside and the caption gives r=6, h=8, making the figure somewhat redundant with the caption text. | [google/gemini-3.1-pro-preview] The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors represent common student errors.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] The figure caption 'Конус: r = 6 см, h = 8 см' already provides all needed data, making the figure partly redundant. Consider labeling r directly on the figure (showing the radius line) to make the figure more essential. Also, distractor B (80π) could be made more pedagogically motivated by tying it to a specific common error. | [google/gemini-3.1-pro-preview] Consider using 'аудандарының қосындысы' instead of 'ауданының қосындысы' for better grammatical precision.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='96' expected='96'",
+            "raw": {
+              "ok": true,
+              "stdout": "96",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "For a right circular cone, the sum of the lateral surface area and the base area is the total surface area: S = pi*r*l + pi*r^2, where r is the radius and l is the slant height. From the figure/text, r = 6 cm and h = 8 cm. The slant height is found by the Pythagorean theorem: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm. Lateral area = pi*r*l = pi*6*10 = 60pi cm^2. Base area = pi*r^2 = pi*6^2 = 36pi cm^2. Sum = 60pi + 36pi = 96pi cm^2. Therefore the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.5,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": 8.0
+              },
+              "overall_score": 8.7,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the solution is unambiguous: using r = 6 and h = 8 gives slant height 10 and total surface area 96π. The item fits medium difficulty reasonably well, though the figure/caption could label the radius more clearly and some distractors are only moderately plausible.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='96' expected='96'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "96",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Given: cone with radius r = 6 cm and height h = 8 cm.\n\nStep 1: Find the slant height (l).\nl = √(r² + h²) = √(36 + 64) = √100 = 10 cm\n\nStep 2: Calculate the lateral surface area.\nLateral surface area = π·r·l = π × 6 × 10 = 60π cm²\n\nStep 3: Calculate the base area.\nBase area = π·r² = π × 36 = 36π cm²\n\nStep 4: Sum of lateral surface area and base area.\nTotal = 60π + 36π = 96π cm²\n\nThe answer is 96π cm².",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 10.0,
+                "figure_relevance": 7.0
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is mathematically correct, well-structured, and requires 4 logical steps (find slant height, lateral area, base area, sum) consistent with level B. Distractors correspond to identifiable errors: C (60π) = lateral surface only, D (48π) = plausible miscalculation, B (80π) = less obvious but reachable. The figure shows the cone with h=8 labeled inside and the caption gives r=6, h=8, making the figure somewhat redundant with the caption text.",
+              "improvement_suggestions": "The figure caption 'Конус: r = 6 см, h = 8 см' already provides all needed data, making the figure partly redundant. Consider labeling r directly on the figure (showing the radius line) to make the figure more essential. Also, distractor B (80π) could be made more pedagogically motivated by tying it to a specific common error.",
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='96' expected='96'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "96",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the sum of the lateral surface area and the base area of the cone, which is its total surface area. From the image, we are given the base radius $r = 6$ cm and the height $h = 8$ cm. First, we need to find the slant height $l$ of the cone using the Pythagorean theorem: $l = \\sqrt{r^2 + h^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ cm. Next, we calculate the lateral surface area: $S_{lateral} = \\pi r l = \\pi \\cdot 6 \\cdot 10 = 60\\pi$ cm². Then, we calculate the base area: $S_{base} = \\pi r^2 = \\pi \\cdot 6^2 = 36\\pi$ cm². Finally, we find the sum of these two areas: $S_{total} = S_{lateral} + S_{base} = 60\\pi + 36\\pi = 96\\pi$ cm². This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": 10.0
+              },
+              "overall_score": 9.8,
+              "pass_fail": true,
+              "comments": "The question is well-structured, accurate, and perfectly aligns with the requested difficulty level. Distractors represent common student errors.",
+              "improvement_suggestions": "Consider using 'аудандарының қосындысы' instead of 'ауданының қосындысы' for better grammatical precision.",
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='96' expected='96'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "96",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      },
+      "source_file": "output/math_final/math/claude-sonnet-4.6/level_B/2026-06-02_19-27-14_c83d78d3.json"
+    },
+    {
+      "type": "no_context",
+      "model": "anthropic/claude-sonnet-4.6",
+      "level": "B",
+      "topic": "complex_numbers",
+      "question_text": "Суреттегі координаталар жазықтығында $z_1$ және $z_2$ кешен сандары берілген. $|z_1 - z_2|$ мәнін табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "$\\sqrt{53}$"
+        },
+        {
+          "label": "B",
+          "text": "$\\sqrt{45}$"
+        },
+        {
+          "label": "C",
+          "text": "$\\sqrt{61}$"
+        },
+        {
+          "label": "D",
+          "text": "$\\sqrt{29}$"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Суреттен: $z_1 = 3 + 4i$ (яғни нүкте $(3, 4)$) және $z_2 = -2 - 1i$ (яғни нүкте $(-2, -1)$).\n\n$z_1 - z_2 = (3 - (-2)) + (4 - (-1))i = 5 + 5i$\n\nДегенмен, суреттегі нүктелерді дәл оқисақ: $z_1 = 3 + 4i$ және $z_2 = -2 + 1i$.\n\n$z_1 - z_2 = (3-(-2)) + (4-1)i = 5 + 3i$\n\n$|z_1 - z_2| = \\sqrt{5^2 + 3^2} = \\sqrt{25 + 9} = \\sqrt{34}$\n\nСуреттегі нақты мәндерді қолданайық: $z_1 = 4 + 5i$ (нүкте $(4, 5)$) және $z_2 = (-2, -1)$ яғни $z_2 = -2 - i$.\n\n$z_1 - z_2 = (4-(-2)) + (5-(-1))i = 6 + 6i$\n\nСуреттен дұрыс оқу: $z_1 = (2, 5)$ яғни $z_1 = 2 + 5i$ және $z_2 = (-3, -1)$ яғни $z_2 = -3 - i$.\n\n$z_1 - z_2 = (2-(-3)) + (5-(-1))i = 5 + 6i$\n\n$|z_1 - z_2| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$\n\nДемек, жауап: $\\sqrt{61}$.",
+      "critic_score": 8.733,
+      "critic_feedback": {
+        "critic_solution": "[openai/gpt-5.5] answered C: From the diagram, the complex numbers are labeled as z1 = 2 + 5i and z2 = -3 - i. Compute the difference: z1 - z2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = 5 + 6i. The modulus is |5 + 6i| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61). Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: From the image, z1 = 2 + 5i and z2 = -3 - i. To find |z1 - z2|: z1 - z2 = (2 + 5i) - (-3 - i) = (2 - (-3)) + (5 - (-1))i = 5 + 6i. |z1 - z2| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61).\n\n[google/gemini-3.1-pro-preview] answered C: Based on the provided image, we can identify the two complex numbers as $z_1 = 2 + 5i$ and $z_2 = -3 - i$. The question asks for the modulus of their difference, $|z_1 - z_2|$. First, we calculate the difference: $z_1 - z_2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = (2 + 3) + (5 + 1)i = 5 + 6i$. Next, we find the modulus of this resulting complex number: $|5 + 6i| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36}",
+        "critic_answer": "C",
+        "dimensions": {
+          "correctness": 9.333,
+          "distractor_quality": 7.5,
+          "difficulty_alignment": 8.333,
+          "kazakh_language_quality": 9.0,
+          "latex_validity": 9.333,
+          "figure_relevance": 8.333
+        },
+        "overall_score": 8.733,
+        "pass_fail": true,
+        "comments": "[openai/gpt-5.5] The figure unambiguously labels z1 = 2 + 5i and z2 = -3 - i, so the keyed answer sqrt(61) is correct and unique. The task is somewhat easy for level B, and the provided explanation is unnecessarily contradictory even though the final result is correct. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear figure that unambiguously labels both complex numbers. The correct answer C=√61 is verified. The provided explanation is unnecessarily convoluted (tries multiple coordinate readings), but the final answer is correct. Distractors correspond to plausible coordinate misreading errors. | [google/gemini-3.1-pro-preview] The question is well-structured, visually clear, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+        "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Clean up the explanation to present only the correct coordinate reading without the multiple failed attempts. Use proper subscript notation in the figure labels (z₁, z₂) instead of z_1, z_2. Consider adding a brief text statement of the coordinates in the question stem as a fallback if the figure is not rendered.",
+        "verification": {
+          "applicable": true,
+          "ran": true,
+          "passed": true,
+          "contradicted": false,
+          "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+          "raw": {
+            "ok": true,
+            "stdout": "sqrt(61)",
+            "stderr": "",
+            "timed_out": false,
+            "exit_code": 0
+          }
+        }
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: From the diagram, the complex numbers are labeled as z1 = 2 + 5i and z2 = -3 - i. Compute the difference: z1 - z2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = 5 + 6i. The modulus is |5 + 6i| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61). Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: From the image, z1 = 2 + 5i and z2 = -3 - i. To find |z1 - z2|: z1 - z2 = (2 + 5i) - (-3 - i) = (2 - (-3)) + (5 - (-1))i = 5 + 6i. |z1 - z2| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61).\n\n[google/gemini-3.1-pro-preview] answered C: Based on the provided image, we can identify the two complex numbers as $z_1 = 2 + 5i$ and $z_2 = -3 - i$. The question asks for the modulus of their difference, $|z_1 - z_2|$. First, we calculate the difference: $z_1 - z_2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = (2 + 3) + (5 + 1)i = 5 + 6i$. Next, we find the modulus of this resulting complex number: $|5 + 6i| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36}",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.333,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 8.333,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 9.333,
+            "figure_relevance": 8.333
+          },
+          "overall_score": 8.733,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The figure unambiguously labels z1 = 2 + 5i and z2 = -3 - i, so the keyed answer sqrt(61) is correct and unique. The task is somewhat easy for level B, and the provided explanation is unnecessarily contradictory even though the final result is correct. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear figure that unambiguously labels both complex numbers. The correct answer C=√61 is verified. The provided explanation is unnecessarily convoluted (tries multiple coordinate readings), but the final answer is correct. Distractors correspond to plausible coordinate misreading errors. | [google/gemini-3.1-pro-preview] The question is well-structured, visually clear, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Clean up the explanation to present only the correct coordinate reading without the multiple failed attempts. Use proper subscript notation in the figure labels (z₁, z₂) instead of z_1, z_2. Consider adding a brief text statement of the coordinates in the question stem as a fallback if the figure is not rendered.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(61)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "From the diagram, the complex numbers are labeled as z1 = 2 + 5i and z2 = -3 - i. Compute the difference: z1 - z2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = 5 + 6i. The modulus is |5 + 6i| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61). Therefore the correct option is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 9.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": 8.0
+              },
+              "overall_score": 8.4,
+              "pass_fail": true,
+              "comments": "The figure unambiguously labels z1 = 2 + 5i and z2 = -3 - i, so the keyed answer sqrt(61) is correct and unique. The task is somewhat easy for level B, and the provided explanation is unnecessarily contradictory even though the final result is correct.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "sqrt(61)",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "From the image, z1 = 2 + 5i and z2 = -3 - i. To find |z1 - z2|: z1 - z2 = (2 + 5i) - (-3 - i) = (2 - (-3)) + (5 - (-1))i = 5 + 6i. |z1 - z2| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61).",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 9.0,
+                "distractor_quality": 7.5,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 8.0,
+                "latex_validity": 8.0,
+                "figure_relevance": 7.0
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a clear figure that unambiguously labels both complex numbers. The correct answer C=√61 is verified. The provided explanation is unnecessarily convoluted (tries multiple coordinate readings), but the final answer is correct. Distractors correspond to plausible coordinate misreading errors.",
+              "improvement_suggestions": "Clean up the explanation to present only the correct coordinate reading without the multiple failed attempts. Use proper subscript notation in the figure labels (z₁, z₂) instead of z_1, z_2. Consider adding a brief text statement of the coordinates in the question stem as a fallback if the figure is not rendered.",
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "sqrt(61)",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Based on the provided image, we can identify the two complex numbers as $z_1 = 2 + 5i$ and $z_2 = -3 - i$. The question asks for the modulus of their difference, $|z_1 - z_2|$. First, we calculate the difference: $z_1 - z_2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = (2 + 3) + (5 + 1)i = 5 + 6i$. Next, we find the modulus of this resulting complex number: $|5 + 6i| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$. This matches option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": 10.0
+              },
+              "overall_score": 9.6,
+              "pass_fail": true,
+              "comments": "The question is well-structured, visually clear, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "sqrt(61)",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      },
+      "source_file": "output/math_final/math/claude-sonnet-4.6/level_B/2026-06-02_19-29-17_028a7c66.json"
+    },
+    {
+      "type": "no_context",
+      "model": "anthropic/claude-sonnet-4.6",
       "level": "C",
       "topic": "exponential_log_equations",
       "question_text": "Жүйені шешіңіз және $x^2 + y^2$ мәнін табыңыз: $\\begin{cases} 2^x \\cdot 3^y = 72 \\\\ \\log_2(x + y) + \\log_2(x - y) = \\log_2 5 \\end{cases}$",
@@ -6743,6 +7340,603 @@
         "n_critics_failed": 0
       },
       "source_file": "output/math_final/math/claude-sonnet-4.6/level_C/2026-06-02_18-39-26_c2f74e75.json"
+    },
+    {
+      "type": "no_context",
+      "model": "anthropic/claude-sonnet-4.6",
+      "level": "C",
+      "topic": "integrals",
+      "question_text": "$f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$ және $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз, егер $f(0) = 1$ және $f(1) = 5$ болса.",
+      "options": [
+        {
+          "label": "A",
+          "text": "$2$"
+        },
+        {
+          "label": "B",
+          "text": "$5$"
+        },
+        {
+          "label": "C",
+          "text": "$-2$"
+        },
+        {
+          "label": "D",
+          "text": "$8$"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Бөлшектеп интегралдау формуласын қолданамыз: $\\int_{0}^{1} x\\,f'(x)\\,dx = \\left[x\\,f(x)\\right]_{0}^{1} - \\int_{0}^{1} f(x)\\,dx$.\n\nМұндағы $u = x$, $dv = f'(x)\\,dx$ деп алсақ, онда $du = dx$, $v = f(x)$.\n\nДемек:\n$\\int_{0}^{1} x\\,f'(x)\\,dx = \\bigl[x\\,f(x)\\bigr]_{0}^{1} - \\int_{0}^{1} f(x)\\,dx$\n$= \\bigl(1\\cdot f(1) - 0\\cdot f(0)\\bigr) - 3$\n$= \\bigl(1\\cdot 5 - 0\\bigr) - 3$\n$= 5 - 3 = 2$.\n\nЖауабы: $2$.",
+      "critic_score": 8.4,
+      "critic_feedback": {
+        "critic_solution": "[openai/gpt-5.5] answered A: Use integration by parts on the integral I = ∫_0^1 x f'(x) dx. Let u = x, so du = dx, and let dv = f'(x) dx, so v = f(x). Then ∫_0^1 x f'(x) dx = [x f(x)]_0^1 - ∫_0^1 f(x) dx. Now [x f(x)]_0^1 = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5. Given ∫_0^1 f(x) dx = 3, we get I = 5 - 3 = 2. Therefore the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find ∫₀¹ x·f'(x) dx given that ∫₀¹ f(x) dx = 3, f(0) = 1, f(1) = 5.\n\nUse integration by parts on ∫₀¹ x·f'(x) dx:\nLet u = x, dv = f'(x) dx\nThen du = dx, v = f(x)\n\n∫₀¹ x·f'(x) dx = [x·f(x)]₀¹ - ∫₀¹ f(x) dx\n\nEvaluate the boundary term:\n[x·f(x)]₀¹ = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5\n\nSubtract the integral:\n= 5 - ∫₀¹ f(x) dx = 5 - 3 = 2\n\nThe answer is 2.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the integral \\( \\int_{0}^{1} x f'(x) \\, dx \\), we can use the method of integration by parts. The formula for integration by parts is \\( \\int u \\, dv = uv - \\int v \\, du \\).\n\nLet \\( u = x \\) and \\( dv = f'(x) \\, dx \\).\nThen, taking the derivative of \\( u \\) gives \\( du = dx \\), and integrating \\( dv \\) gives \\( v = f(x) \\).\n\nApplying the integration by parts formula to our def",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 10.0,
+          "distractor_quality": 8.667,
+          "difficulty_alignment": 5.667,
+          "kazakh_language_quality": 7.833,
+          "latex_validity": 10.0,
+          "figure_relevance": null
+        },
+        "overall_score": 8.4,
+        "pass_fail": true,
+        "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is a standard integration by parts application. However, the item is far below the requested C difficulty level, since it is a direct one-step procedural exercise. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed; integration by parts is applied cleanly and the answer is unambiguous. Distractors are plausible (B=5 ignores subtraction, C=-2 reverses sign, D=8 adds instead of subtracts), though the method is fairly standard for teachers who know IBP, making it closer to level B than C. | [google/gemini-3.1-pro-preview] The mathematical content is excellent and tests abstract integration by parts well. However, the Kazakh phrasing in the question stem is grammatically awkward and needs restructuring.",
+        "improvement_suggestions": "[openai/gpt-5.5] To match level C, require a non-routine use of integration by parts or combine it with a parameter, inequality, recurrence, or reconstruction argument; also consider removing unused data such as f(0), since it is not needed here and may feel artificial. | [anthropic/claude-sonnet-4.6] To better match level C difficulty, consider adding a twist such as a non-trivial substitution before IBP, or combining with a second integral condition that requires simultaneous reasoning. The current problem is a single-step IBP application that most calculus-trained teachers will solve routinely. | [google/gemini-3.1-pro-preview] Rewrite the question stem to: \"Егер $f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$, $f(0) = 1$ және $f(1) = 5$ болса, $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз.\"",
+        "verification": {
+          "applicable": true,
+          "ran": true,
+          "passed": true,
+          "contradicted": false,
+          "note": "stdout='2' expected='2'",
+          "raw": {
+            "ok": true,
+            "stdout": "2",
+            "stderr": "",
+            "timed_out": false,
+            "exit_code": 0
+          }
+        }
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: Use integration by parts on the integral I = ∫_0^1 x f'(x) dx. Let u = x, so du = dx, and let dv = f'(x) dx, so v = f(x). Then ∫_0^1 x f'(x) dx = [x f(x)]_0^1 - ∫_0^1 f(x) dx. Now [x f(x)]_0^1 = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5. Given ∫_0^1 f(x) dx = 3, we get I = 5 - 3 = 2. Therefore the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: We need to find ∫₀¹ x·f'(x) dx given that ∫₀¹ f(x) dx = 3, f(0) = 1, f(1) = 5.\n\nUse integration by parts on ∫₀¹ x·f'(x) dx:\nLet u = x, dv = f'(x) dx\nThen du = dx, v = f(x)\n\n∫₀¹ x·f'(x) dx = [x·f(x)]₀¹ - ∫₀¹ f(x) dx\n\nEvaluate the boundary term:\n[x·f(x)]₀¹ = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5\n\nSubtract the integral:\n= 5 - ∫₀¹ f(x) dx = 5 - 3 = 2\n\nThe answer is 2.\n\n[google/gemini-3.1-pro-preview] answered A: To find the value of the integral \\( \\int_{0}^{1} x f'(x) \\, dx \\), we can use the method of integration by parts. The formula for integration by parts is \\( \\int u \\, dv = uv - \\int v \\, du \\).\n\nLet \\( u = x \\) and \\( dv = f'(x) \\, dx \\).\nThen, taking the derivative of \\( u \\) gives \\( du = dx \\), and integrating \\( dv \\) gives \\( v = f(x) \\).\n\nApplying the integration by parts formula to our def",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.667,
+            "difficulty_alignment": 5.667,
+            "kazakh_language_quality": 7.833,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and the solution is a standard integration by parts application. However, the item is far below the requested C difficulty level, since it is a direct one-step procedural exercise. | [anthropic/claude-sonnet-4.6] The question is mathematically sound and correctly keyed; integration by parts is applied cleanly and the answer is unambiguous. Distractors are plausible (B=5 ignores subtraction, C=-2 reverses sign, D=8 adds instead of subtracts), though the method is fairly standard for teachers who know IBP, making it closer to level B than C. | [google/gemini-3.1-pro-preview] The mathematical content is excellent and tests abstract integration by parts well. However, the Kazakh phrasing in the question stem is grammatically awkward and needs restructuring.",
+          "improvement_suggestions": "[openai/gpt-5.5] To match level C, require a non-routine use of integration by parts or combine it with a parameter, inequality, recurrence, or reconstruction argument; also consider removing unused data such as f(0), since it is not needed here and may feel artificial. | [anthropic/claude-sonnet-4.6] To better match level C difficulty, consider adding a twist such as a non-trivial substitution before IBP, or combining with a second integral condition that requires simultaneous reasoning. The current problem is a single-step IBP application that most calculus-trained teachers will solve routinely. | [google/gemini-3.1-pro-preview] Rewrite the question stem to: \"Егер $f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$, $f(0) = 1$ және $f(1) = 5$ болса, $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз.\"",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='2' expected='2'",
+            "raw": {
+              "ok": true,
+              "stdout": "2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Use integration by parts on the integral I = ∫_0^1 x f'(x) dx. Let u = x, so du = dx, and let dv = f'(x) dx, so v = f(x). Then ∫_0^1 x f'(x) dx = [x f(x)]_0^1 - ∫_0^1 f(x) dx. Now [x f(x)]_0^1 = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5. Given ∫_0^1 f(x) dx = 3, we get I = 5 - 3 = 2. Therefore the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and the solution is a standard integration by parts application. However, the item is far below the requested C difficulty level, since it is a direct one-step procedural exercise.",
+              "improvement_suggestions": "To match level C, require a non-routine use of integration by parts or combine it with a parameter, inequality, recurrence, or reconstruction argument; also consider removing unused data such as f(0), since it is not needed here and may feel artificial.",
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='2' expected='2'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "2",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "We need to find ∫₀¹ x·f'(x) dx given that ∫₀¹ f(x) dx = 3, f(0) = 1, f(1) = 5.\n\nUse integration by parts on ∫₀¹ x·f'(x) dx:\nLet u = x, dv = f'(x) dx\nThen du = dx, v = f(x)\n\n∫₀¹ x·f'(x) dx = [x·f(x)]₀¹ - ∫₀¹ f(x) dx\n\nEvaluate the boundary term:\n[x·f(x)]₀¹ = 1·f(1) - 0·f(0) = 1·5 - 0·1 = 5\n\nSubtract the integral:\n= 5 - ∫₀¹ f(x) dx = 5 - 3 = 2\n\nThe answer is 2.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound and correctly keyed; integration by parts is applied cleanly and the answer is unambiguous. Distractors are plausible (B=5 ignores subtraction, C=-2 reverses sign, D=8 adds instead of subtracts), though the method is fairly standard for teachers who know IBP, making it closer to level B than C.",
+              "improvement_suggestions": "To better match level C difficulty, consider adding a twist such as a non-trivial substitution before IBP, or combining with a second integral condition that requires simultaneous reasoning. The current problem is a single-step IBP application that most calculus-trained teachers will solve routinely.",
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='2' expected='2'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "2",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the value of the integral \\( \\int_{0}^{1} x f'(x) \\, dx \\), we can use the method of integration by parts. The formula for integration by parts is \\( \\int u \\, dv = uv - \\int v \\, du \\).\n\nLet \\( u = x \\) and \\( dv = f'(x) \\, dx \\).\nThen, taking the derivative of \\( u \\) gives \\( du = dx \\), and integrating \\( dv \\) gives \\( v = f(x) \\).\n\nApplying the integration by parts formula to our definite integral:\n\\( \\int_{0}^{1} x f'(x) \\, dx = \\left[ x f(x) \\right]_{0}^{1} - \\int_{0}^{1} f(x) \\, dx \\)\n\nFirst, evaluate the boundary term \\( \\left[ x f(x) \\right]_{0}^{1} \\):\n\\( \\left[ x f(x) \\right]_{0}^{1} = (1 \\cdot f(1)) - (0 \\cdot f(0)) \\)\n\nWe are given \\( f(1) = 5 \\) and \\( f(0) = 1 \\). Substituting these values:\n\\( (1 \\cdot 5) - (0 \\cdot 1) = 5 - 0 = 5 \\)\n\nNext, substitute the given value for the integral \\( \\int_{0}^{1} f(x) \\, dx = 3 \\) into our equation:\n\\( \\int_{0}^{1} x f'(x) \\, dx = 5 - 3 = 2 \\)\n\nThe final value is 2, which corresponds to option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 6.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The mathematical content is excellent and tests abstract integration by parts well. However, the Kazakh phrasing in the question stem is grammatically awkward and needs restructuring.",
+              "improvement_suggestions": "Rewrite the question stem to: \"Егер $f(x)$ функциясы үшін $\\int_{0}^{1} f(x)\\,dx = 3$, $f(0) = 1$ және $f(1) = 5$ болса, $\\int_{0}^{1} x\\,f'(x)\\,dx$ мәнін табыңыз.\"",
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='2' expected='2'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "2",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      },
+      "source_file": "output/math_final/math/claude-sonnet-4.6/level_C/2026-06-02_19-11-00_51b93508.json"
+    },
+    {
+      "type": "no_context",
+      "model": "anthropic/claude-sonnet-4.6",
+      "level": "C",
+      "topic": "quadratic_irrational",
+      "question_text": "$a$ параметрінің қандай мәндерінде $ax^2 - (a+3)x + 3 = 0$ теңдеуінің екі түрлі оң түбірі болады?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$a > 0$ және $a \\neq 3$"
+        },
+        {
+          "label": "B",
+          "text": "$a > 0$"
+        },
+        {
+          "label": "C",
+          "text": "$a < 0$ немесе $a = 0$"
+        },
+        {
+          "label": "D",
+          "text": "$0 < a < 3$"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Берілген теңдеу: $ax^2 - (a+3)x + 3 = 0$.\n\n**1-жағдай: $a = 0$**\nЕгер $a = 0$ болса, теңдеу $-3x + 3 = 0$ болады, яғни $x = 1$ — бір ғана түбір. Екі түрлі оң түбір жоқ.\n\n**2-жағдай: $a \\neq 0$** — квадрат теңдеу.\n\nЕкі түрлі оң түбір болу үшін үш шарт орындалуы керек:\n\n**Шарт 1:** Дискриминант оң болуы керек: $D > 0$.\n$$D = (a+3)^2 - 4 \\cdot a \\cdot 3 = a^2 + 6a + 9 - 12a = a^2 - 6a + 9 = (a-3)^2$$\n$D > 0$ болу үшін $(a-3)^2 > 0$, яғни $a \\neq 3$.\n\n**Шарт 2:** Түбірлер қосындысы оң болуы керек (Виет формуласы бойынша):\n$$x_1 + x_2 = \\frac{a+3}{a} > 0$$\nБұл $\\frac{a+3}{a} > 0$ дегенді білдіреді, яғни $a > 0$ немесе $a < -3$.\n\n**Шарт 3:** Түбірлер көбейтіндісі оң болуы керек:\n$$x_1 \\cdot x_2 = \\frac{3}{a} > 0$$\nБұл $a > 0$ дегенді білдіреді.\n\n**Барлық шарттардың қиылысуы:**\n- $a \\neq 0$\n- $a \\neq 3$\n- $a > 0$ (2-шарттан) және $a > 0$ (3-шарттан)\n\nНәтижесінде: $a > 0$ және $a \\neq 3$.\n\n**Тексеру:** $a = 3$ болғанда $D = (3-3)^2 = 0$ — бір қос түбір $x = 1$, екі түрлі емес. Сондықтан $a = 3$ алынбайды.\n\nДұрыс жауап: $a > 0$ және $a \\neq 3$.",
+      "critic_score": 8.933,
+      "critic_feedback": {
+        "critic_solution": "[openai/gpt-5.5] answered A: For the equation ax^2 - (a+3)x + 3 = 0 to have two distinct roots, it must be quadratic, so a ≠ 0. By Vieta's formulas, for a ≠ 0 the sum of roots is x1 + x2 = (a+3)/a, and the product is x1x2 = 3/a. For both roots to be positive, we need x1x2 > 0 and x1 + x2 > 0. Since 3/a > 0 implies a > 0, and then (a+3)/a > 0 automatically. Now check distinct real roots: the discriminant is D = (-(a+3))^2 - 4a\n\n[anthropic/claude-sonnet-4.6] answered A: Step 1: Check a = 0. If a = 0, equation becomes -3x + 3 = 0, giving x = 1 (only one root). So a ≠ 0 is required.\n\nStep 2: Factor the quadratic. ax² - (a+3)x + 3 = ax² - ax - 3x + 3 = ax(x-1) - 3(x-1) = (ax - 3)(x - 1) = 0.\n\nSo the two roots are x₁ = 1 and x₂ = 3/a.\n\nStep 3: Conditions for two distinct positive roots.\n- x₁ = 1 > 0: always satisfied.\n- x₂ = 3/a > 0: requires a > 0.\n- x₁ ≠ x₂: requir\n\n[google/gemini-3.1-pro-preview] answered A: To find the values of the parameter 'a' for which the equation ax^2 - (a+3)x + 3 = 0 has two distinct positive roots, we can first find the roots of the equation.\n\nNotice that the sum of the coefficients is a - (a+3) + 3 = 0. This means that x = 1 is always a root of the equation.\nUsing Vieta's formulas, the product of the roots is x_1 * x_2 = c / a = 3 / a. \nSince x_1 = 1, the second root is x_2 ",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 10.0,
+          "distractor_quality": 7.667,
+          "difficulty_alignment": 7.333,
+          "kazakh_language_quality": 9.667,
+          "latex_validity": 10.0,
+          "figure_relevance": null
+        },
+        "overall_score": 8.933,
+        "pass_fail": true,
+        "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and unique. However, the item is a routine discriminant/Vieta parameter problem and does not meet the requested hard C-level standard; some distractors are also quite easy to eliminate. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer (A) supported by both factoring and Vieta's formulas approaches. Distractors are mostly plausible, though D (0<a<3) has a somewhat unclear error pathway. | [google/gemini-3.1-pro-preview] The question is well-constructed, mathematically sound, and accurately tests the properties of parameterized quadratic equations. The distractors effectively catch common errors, such as forgetting the distinctness condition.",
+        "improvement_suggestions": null,
+        "verification": {
+          "applicable": true,
+          "ran": true,
+          "passed": true,
+          "contradicted": false,
+          "note": "stdout='(a - 3)**2' expected='(a - 3)**2'",
+          "raw": {
+            "ok": true,
+            "stdout": "(a - 3)**2",
+            "stderr": "",
+            "timed_out": false,
+            "exit_code": 0
+          }
+        }
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: For the equation ax^2 - (a+3)x + 3 = 0 to have two distinct roots, it must be quadratic, so a ≠ 0. By Vieta's formulas, for a ≠ 0 the sum of roots is x1 + x2 = (a+3)/a, and the product is x1x2 = 3/a. For both roots to be positive, we need x1x2 > 0 and x1 + x2 > 0. Since 3/a > 0 implies a > 0, and then (a+3)/a > 0 automatically. Now check distinct real roots: the discriminant is D = (-(a+3))^2 - 4a\n\n[anthropic/claude-sonnet-4.6] answered A: Step 1: Check a = 0. If a = 0, equation becomes -3x + 3 = 0, giving x = 1 (only one root). So a ≠ 0 is required.\n\nStep 2: Factor the quadratic. ax² - (a+3)x + 3 = ax² - ax - 3x + 3 = ax(x-1) - 3(x-1) = (ax - 3)(x - 1) = 0.\n\nSo the two roots are x₁ = 1 and x₂ = 3/a.\n\nStep 3: Conditions for two distinct positive roots.\n- x₁ = 1 > 0: always satisfied.\n- x₂ = 3/a > 0: requires a > 0.\n- x₁ ≠ x₂: requir\n\n[google/gemini-3.1-pro-preview] answered A: To find the values of the parameter 'a' for which the equation ax^2 - (a+3)x + 3 = 0 has two distinct positive roots, we can first find the roots of the equation.\n\nNotice that the sum of the coefficients is a - (a+3) + 3 = 0. This means that x = 1 is always a root of the equation.\nUsing Vieta's formulas, the product of the roots is x_1 * x_2 = c / a = 3 / a. \nSince x_1 = 1, the second root is x_2 ",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.667,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 9.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.933,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is mathematically correct and unique. However, the item is a routine discriminant/Vieta parameter problem and does not meet the requested hard C-level standard; some distractors are also quite easy to eliminate. | [anthropic/claude-sonnet-4.6] Well-constructed question with a unique correct answer (A) supported by both factoring and Vieta's formulas approaches. Distractors are mostly plausible, though D (0<a<3) has a somewhat unclear error pathway. | [google/gemini-3.1-pro-preview] The question is well-constructed, mathematically sound, and accurately tests the properties of parameterized quadratic equations. The distractors effectively catch common errors, such as forgetting the distinctness condition.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='(a - 3)**2' expected='(a - 3)**2'",
+            "raw": {
+              "ok": true,
+              "stdout": "(a - 3)**2",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "For the equation ax^2 - (a+3)x + 3 = 0 to have two distinct roots, it must be quadratic, so a ≠ 0. By Vieta's formulas, for a ≠ 0 the sum of roots is x1 + x2 = (a+3)/a, and the product is x1x2 = 3/a. For both roots to be positive, we need x1x2 > 0 and x1 + x2 > 0. Since 3/a > 0 implies a > 0, and then (a+3)/a > 0 automatically. Now check distinct real roots: the discriminant is D = (-(a+3))^2 - 4a·3 = (a+3)^2 - 12a = a^2 + 6a + 9 - 12a = a^2 - 6a + 9 = (a-3)^2. For two distinct roots, D > 0, so (a-3)^2 > 0, hence a ≠ 3. Therefore the equation has two distinct positive roots when a > 0 and a ≠ 3.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.5,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.1,
+              "pass_fail": true,
+              "comments": "The keyed answer is mathematically correct and unique. However, the item is a routine discriminant/Vieta parameter problem and does not meet the requested hard C-level standard; some distractors are also quite easy to eliminate.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='(a - 3)**2' expected='(a - 3)**2'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "(a - 3)**2",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Check a = 0. If a = 0, equation becomes -3x + 3 = 0, giving x = 1 (only one root). So a ≠ 0 is required.\n\nStep 2: Factor the quadratic. ax² - (a+3)x + 3 = ax² - ax - 3x + 3 = ax(x-1) - 3(x-1) = (ax - 3)(x - 1) = 0.\n\nSo the two roots are x₁ = 1 and x₂ = 3/a.\n\nStep 3: Conditions for two distinct positive roots.\n- x₁ = 1 > 0: always satisfied.\n- x₂ = 3/a > 0: requires a > 0.\n- x₁ ≠ x₂: requires 3/a ≠ 1, i.e., a ≠ 3.\n\nStep 4: Combined condition: a > 0 and a ≠ 3.\n\nThis matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.5,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "Well-constructed question with a unique correct answer (A) supported by both factoring and Vieta's formulas approaches. Distractors are mostly plausible, though D (0<a<3) has a somewhat unclear error pathway.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='(a - 3)**2' expected='(a - 3)**2'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "(a - 3)**2",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the values of the parameter 'a' for which the equation ax^2 - (a+3)x + 3 = 0 has two distinct positive roots, we can first find the roots of the equation.\n\nNotice that the sum of the coefficients is a - (a+3) + 3 = 0. This means that x = 1 is always a root of the equation.\nUsing Vieta's formulas, the product of the roots is x_1 * x_2 = c / a = 3 / a. \nSince x_1 = 1, the second root is x_2 = 3 / a.\n\nThe problem requires the equation to have two DISTINCT POSITIVE roots.\n1) Both roots must be positive:\nx_1 = 1 > 0 (this is always true).\nx_2 = 3 / a > 0, which implies that a > 0.\n\n2) The roots must be distinct:\nx_1 != x_2\n1 != 3 / a\na != 3.\n\nCombining these conditions, we get a > 0 and a != 3. This matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.8,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, mathematically sound, and accurately tests the properties of parameterized quadratic equations. The distractors effectively catch common errors, such as forgetting the distinctness condition.",
+              "improvement_suggestions": null,
+              "verification": {
+                "applicable": true,
+                "ran": true,
+                "passed": true,
+                "contradicted": false,
+                "note": "stdout='(a - 3)**2' expected='(a - 3)**2'",
+                "raw": {
+                  "ok": true,
+                  "stdout": "(a - 3)**2",
+                  "stderr": "",
+                  "timed_out": false,
+                  "exit_code": 0
+                }
+              }
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      },
+      "source_file": "output/math_final/math/claude-sonnet-4.6/level_C/2026-06-02_19-13-35_2ea91438.json"
+    },
+    {
+      "type": "no_context",
+      "model": "anthropic/claude-sonnet-4.6",
+      "level": "C",
+      "topic": "exponential_log_equations",
+      "question_text": "Жүйені шешіңіз және $x + 2y$ мәнін табыңыз: $\\begin{cases} \\log_2(x+y) + \\log_2(x-y) = \\log_2 5 \\\\ 2^x \\cdot 3^y = 2^3 \\cdot 3^2 \\end{cases}$",
+      "options": [
+        {
+          "label": "A",
+          "text": "$7$"
+        },
+        {
+          "label": "B",
+          "text": "$8$"
+        },
+        {
+          "label": "C",
+          "text": "$5$"
+        },
+        {
+          "label": "D",
+          "text": "$9$"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Бірінші теңдеуді жеңілдетейік: $\\log_2(x+y) + \\log_2(x-y) = \\log_2 5$ логарифмнің қосылу қасиеті бойынша: $\\log_2[(x+y)(x-y)] = \\log_2 5$, яғни $(x+y)(x-y) = 5$, демек $x^2 - y^2 = 5$. Екінші теңдеу: $2^x \\cdot 3^y = 2^3 \\cdot 3^2$. Бұл теңдеуде негіздер тәуелсіз (2 және 3 — жай сандар), сондықтан дәрежелерді салыстырамыз: $x = 3$ және $y = 2$. Тексерейік: $x^2 - y^2 = 9 - 4 = 5$ ✓. Логарифмнің анықталу облысы: $x + y = 5 > 0$ ✓, $x - y = 1 > 0$ ✓. Демек $x + 2y = 3 + 2 \\cdot 2 = 7$.",
+      "critic_score": 8.0,
+      "critic_feedback": {
+        "critic_solution": "[openai/gpt-5.5] answered A: Domain conditions from the logarithms: x + y > 0 and x - y > 0, so x > |y|. From the first equation, log2(x+y) + log2(x-y) = log2((x+y)(x-y)) = log2 5. Therefore (x+y)(x-y) = 5, so x^2 - y^2 = 5. The second equation is 2^x * 3^y = 2^3 * 3^2. The evident matching exponents solution is x = 3 and y = 2. Check in the first equation: x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5, and the logarithm arguments are 3+\n\n[anthropic/claude-sonnet-4.6] answered A: From the system:\n1) log₂(x+y) + log₂(x-y) = log₂5\n   → log₂[(x+y)(x-y)] = log₂5\n   → (x+y)(x-y) = 5\n   → x² - y² = 5\n\n2) 2^x · 3^y = 2³ · 3²\n   → x = 3 and y = 2 (matching bases)\n\nVerify with equation 1:\nx² - y² = 9 - 4 = 5 ✓\n\nAlso check domain: x+y = 5 > 0 ✓, x-y = 1 > 0 ✓\n\nTherefore x + 2y = 3 + 2(2) = 3 + 4 = 7\n\n[google/gemini-3.1-pro-preview] answered A: First, let's find the domain of the logarithmic equation: we must have $x+y > 0$ and $x-y > 0$, which implies $x > y$ and $x > -y$, so $x > |y| \\ge 0$.\n\nUsing the properties of logarithms, the first equation can be rewritten as:\n$\\log_2((x+y)(x-y)) = \\log_2 5$\n$(x+y)(x-y) = 5$\n$x^2 - y^2 = 5$\nSince $x > 0$, we can express $x$ in terms of $y$: $x = \\sqrt{y^2 + 5}$.\n\nNow, let's look at the second eq",
+        "critic_answer": "A",
+        "dimensions": {
+          "correctness": 8.333,
+          "distractor_quality": 6.833,
+          "difficulty_alignment": 6.833,
+          "kazakh_language_quality": 9.0,
+          "latex_validity": 10.0,
+          "figure_relevance": null
+        },
+        "overall_score": 8.0,
+        "pass_fail": true,
+        "comments": "[openai/gpt-5.5] The keyed answer A is correct and the system has a unique valid solution, but the provided explanation uses an invalid step: from 2^x·3^y = 2^3·3^2 one cannot compare exponents unless x and y are specified as integers. The item is also too routine for level C as written. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (x=3, y=2, x+2y=7). The solution requires combining logarithm properties with exponential base-matching, making it genuinely multi-step. However, the second equation 2^x·3^y = 2³·3² essentially gives x=3, y=2 by inspection (base matching is a standard procedure), reducing the difficulty somewhat. Distractors 8, 5, 9 are plausible: 8 could come from x+2y with y=2.5 or arithmetic error; 9 from x+2y=3+6; 5 from x+y. Kazakh is natural and uses correct mathematical terminology. | [google/gemini-3.1-pro-preview] The question is well-constructed and requires non-routine problem-solving, fitting the C difficulty level. The provided explanation has a slight mathematical gap (assuming powers can be equated directly for real numbers without proving uniqueness), but the question itself is solid.",
+        "improvement_suggestions": "[openai/gpt-5.5] Either specify x and y are integers, or replace the explanation with a rigorous real-variable argument proving uniqueness. To match difficulty C, make the system less directly engineered around (3,2), and use distractors tied to clear common errors. | [anthropic/claude-sonnet-4.6] To better align with Level C difficulty, consider making the second equation less directly solvable by base-matching (e.g., use a non-trivial exponential relationship requiring logarithms or substitution). Also, ensure distractors map to more clearly identifiable student errors — for instance, explicitly design one distractor for forgetting the domain check or misapplying the logarithm product rule. | [google/gemini-3.1-pro-preview] In the explanation, replace 'жеңілдетейік' with 'ықшамдайық' and clarify that the unique solution x=3, y=2 is found by substitution and checking monotonicity, rather than just equating powers of independent bases.",
+        "verification": {
+          "applicable": true,
+          "ran": false,
+          "passed": false,
+          "contradicted": false,
+          "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+          "raw": {
+            "ok": false,
+            "stdout": "",
+            "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+            "timed_out": false,
+            "exit_code": 1
+          }
+        }
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: Domain conditions from the logarithms: x + y > 0 and x - y > 0, so x > |y|. From the first equation, log2(x+y) + log2(x-y) = log2((x+y)(x-y)) = log2 5. Therefore (x+y)(x-y) = 5, so x^2 - y^2 = 5. The second equation is 2^x * 3^y = 2^3 * 3^2. The evident matching exponents solution is x = 3 and y = 2. Check in the first equation: x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5, and the logarithm arguments are 3+\n\n[anthropic/claude-sonnet-4.6] answered A: From the system:\n1) log₂(x+y) + log₂(x-y) = log₂5\n   → log₂[(x+y)(x-y)] = log₂5\n   → (x+y)(x-y) = 5\n   → x² - y² = 5\n\n2) 2^x · 3^y = 2³ · 3²\n   → x = 3 and y = 2 (matching bases)\n\nVerify with equation 1:\nx² - y² = 9 - 4 = 5 ✓\n\nAlso check domain: x+y = 5 > 0 ✓, x-y = 1 > 0 ✓\n\nTherefore x + 2y = 3 + 2(2) = 3 + 4 = 7\n\n[google/gemini-3.1-pro-preview] answered A: First, let's find the domain of the logarithmic equation: we must have $x+y > 0$ and $x-y > 0$, which implies $x > y$ and $x > -y$, so $x > |y| \\ge 0$.\n\nUsing the properties of logarithms, the first equation can be rewritten as:\n$\\log_2((x+y)(x-y)) = \\log_2 5$\n$(x+y)(x-y) = 5$\n$x^2 - y^2 = 5$\nSince $x > 0$, we can express $x$ in terms of $y$: $x = \\sqrt{y^2 + 5}$.\n\nNow, let's look at the second eq",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 8.333,
+            "distractor_quality": 6.833,
+            "difficulty_alignment": 6.833,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.0,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer A is correct and the system has a unique valid solution, but the provided explanation uses an invalid step: from 2^x·3^y = 2^3·3^2 one cannot compare exponents unless x and y are specified as integers. The item is also too routine for level C as written. | [anthropic/claude-sonnet-4.6] The question is mathematically sound with a unique correct answer (x=3, y=2, x+2y=7). The solution requires combining logarithm properties with exponential base-matching, making it genuinely multi-step. However, the second equation 2^x·3^y = 2³·3² essentially gives x=3, y=2 by inspection (base matching is a standard procedure), reducing the difficulty somewhat. Distractors 8, 5, 9 are plausible: 8 could come from x+2y with y=2.5 or arithmetic error; 9 from x+2y=3+6; 5 from x+y. Kazakh is natural and uses correct mathematical terminology. | [google/gemini-3.1-pro-preview] The question is well-constructed and requires non-routine problem-solving, fitting the C difficulty level. The provided explanation has a slight mathematical gap (assuming powers can be equated directly for real numbers without proving uniqueness), but the question itself is solid.",
+          "improvement_suggestions": "[openai/gpt-5.5] Either specify x and y are integers, or replace the explanation with a rigorous real-variable argument proving uniqueness. To match difficulty C, make the system less directly engineered around (3,2), and use distractors tied to clear common errors. | [anthropic/claude-sonnet-4.6] To better align with Level C difficulty, consider making the second equation less directly solvable by base-matching (e.g., use a non-trivial exponential relationship requiring logarithms or substitution). Also, ensure distractors map to more clearly identifiable student errors — for instance, explicitly design one distractor for forgetting the domain check or misapplying the logarithm product rule. | [google/gemini-3.1-pro-preview] In the explanation, replace 'жеңілдетейік' with 'ықшамдайық' and clarify that the unique solution x=3, y=2 is found by substitution and checking monotonicity, rather than just equating powers of independent bases.",
+          "verification": {
+            "applicable": true,
+            "ran": false,
+            "passed": false,
+            "contradicted": false,
+            "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+            "raw": {
+              "ok": false,
+              "stdout": "",
+              "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+              "timed_out": false,
+              "exit_code": 1
+            }
+          }
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Domain conditions from the logarithms: x + y > 0 and x - y > 0, so x > |y|. From the first equation, log2(x+y) + log2(x-y) = log2((x+y)(x-y)) = log2 5. Therefore (x+y)(x-y) = 5, so x^2 - y^2 = 5. The second equation is 2^x * 3^y = 2^3 * 3^2. The evident matching exponents solution is x = 3 and y = 2. Check in the first equation: x^2 - y^2 = 3^2 - 2^2 = 9 - 4 = 5, and the logarithm arguments are 3+2=5>0 and 3-2=1>0, so it is valid. Then x + 2y = 3 + 2*2 = 7.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 7.0,
+                "distractor_quality": 5.5,
+                "difficulty_alignment": 4.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.9,
+              "pass_fail": true,
+              "comments": "The keyed answer A is correct and the system has a unique valid solution, but the provided explanation uses an invalid step: from 2^x·3^y = 2^3·3^2 one cannot compare exponents unless x and y are specified as integers. The item is also too routine for level C as written.",
+              "improvement_suggestions": "Either specify x and y are integers, or replace the explanation with a rigorous real-variable argument proving uniqueness. To match difficulty C, make the system less directly engineered around (3,2), and use distractors tied to clear common errors.",
+              "verification": {
+                "applicable": true,
+                "ran": false,
+                "passed": false,
+                "contradicted": false,
+                "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+                "raw": {
+                  "ok": false,
+                  "stdout": "",
+                  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+                  "timed_out": false,
+                  "exit_code": 1
+                }
+              }
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "From the system:\n1) log₂(x+y) + log₂(x-y) = log₂5\n   → log₂[(x+y)(x-y)] = log₂5\n   → (x+y)(x-y) = 5\n   → x² - y² = 5\n\n2) 2^x · 3^y = 2³ · 3²\n   → x = 3 and y = 2 (matching bases)\n\nVerify with equation 1:\nx² - y² = 9 - 4 = 5 ✓\n\nAlso check domain: x+y = 5 > 0 ✓, x-y = 1 > 0 ✓\n\nTherefore x + 2y = 3 + 2(2) = 3 + 4 = 7",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.5,
+              "pass_fail": true,
+              "comments": "The question is mathematically sound with a unique correct answer (x=3, y=2, x+2y=7). The solution requires combining logarithm properties with exponential base-matching, making it genuinely multi-step. However, the second equation 2^x·3^y = 2³·3² essentially gives x=3, y=2 by inspection (base matching is a standard procedure), reducing the difficulty somewhat. Distractors 8, 5, 9 are plausible: 8 could come from x+2y with y=2.5 or arithmetic error; 9 from x+2y=3+6; 5 from x+y. Kazakh is natural and uses correct mathematical terminology.",
+              "improvement_suggestions": "To better align with Level C difficulty, consider making the second equation less directly solvable by base-matching (e.g., use a non-trivial exponential relationship requiring logarithms or substitution). Also, ensure distractors map to more clearly identifiable student errors — for instance, explicitly design one distractor for forgetting the domain check or misapplying the logarithm product rule.",
+              "verification": {
+                "applicable": true,
+                "ran": false,
+                "passed": false,
+                "contradicted": false,
+                "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+                "raw": {
+                  "ok": false,
+                  "stdout": "",
+                  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+                  "timed_out": false,
+                  "exit_code": 1
+                }
+              }
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "First, let's find the domain of the logarithmic equation: we must have $x+y > 0$ and $x-y > 0$, which implies $x > y$ and $x > -y$, so $x > |y| \\ge 0$.\n\nUsing the properties of logarithms, the first equation can be rewritten as:\n$\\log_2((x+y)(x-y)) = \\log_2 5$\n$(x+y)(x-y) = 5$\n$x^2 - y^2 = 5$\nSince $x > 0$, we can express $x$ in terms of $y$: $x = \\sqrt{y^2 + 5}$.\n\nNow, let's look at the second equation:\n$2^x \\cdot 3^y = 2^3 \\cdot 3^2 = 72$\nSubstitute $x = \\sqrt{y^2 + 5}$ into this equation:\n$2^{\\sqrt{y^2 + 5}} \\cdot 3^y = 72$\n\nLet's test integer values. If $y = 2$, then $x = \\sqrt{2^2 + 5} = \\sqrt{9} = 3$. \nSubstituting $x=3$ and $y=2$ into the second equation gives:\n$2^3 \\cdot 3^2 = 8 \\cdot 9 = 72$, which matches perfectly.\n\nTo ensure this is the only solution, consider the function $f(y) = 2^{\\sqrt{y^2 + 5}} \\cdot 3^y$. \nFor $y \\ge 0$, both $\\sqrt{y^2 + 5}$ and $y$ are strictly increasing, meaning $f(y)$ is strictly increasing. Thus, $y=2$ is the unique non-negative solution. For $y < 0$, $f(y) < f(0) = 2^{\\sqrt{5}} \\approx 4.71 < 72$, so there are no negative solutions.\n\nTherefore, the unique solution to the system is $x = 3$ and $y = 2$.\n\nWe need to find the value of $x + 2y$:\n$x + 2y = 3 + 2(2) = 3 + 4 = 7$.\n\nThis matches option A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 8.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.6,
+              "pass_fail": true,
+              "comments": "The question is well-constructed and requires non-routine problem-solving, fitting the C difficulty level. The provided explanation has a slight mathematical gap (assuming powers can be equated directly for real numbers without proving uniqueness), but the question itself is solid.",
+              "improvement_suggestions": "In the explanation, replace 'жеңілдетейік' with 'ықшамдайық' and clarify that the unique solution x=3, y=2 is found by substitution and checking monotonicity, rather than just equating powers of independent bases.",
+              "verification": {
+                "applicable": true,
+                "ran": false,
+                "passed": false,
+                "contradicted": false,
+                "note": "sandbox failed: Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+                "raw": {
+                  "ok": false,
+                  "stdout": "",
+                  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 86, in <module>\nTypeError: list indices must be integers or slices, not Symbol",
+                  "timed_out": false,
+                  "exit_code": 1
+                }
+              }
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      },
+      "source_file": "output/math_final/math/claude-sonnet-4.6/level_C/2026-06-02_19-27-30_2594635a.json"
     },
     {
       "type": "no_context",

@@ -1,0 +1,242 @@
+{
+  "id": "028a7c66-9b5a-4d37-940e-fa266f93295c",
+  "subject": "math",
+  "level": "B",
+  "format": "image",
+  "topic": "complex_numbers",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Суреттегі координаталар жазықтығында $z_1$ және $z_2$ кешен сандары берілген. $|z_1 - z_2|$ мәнін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "$\\sqrt{53}$"
+    },
+    {
+      "label": "B",
+      "text": "$\\sqrt{45}$"
+    },
+    {
+      "label": "C",
+      "text": "$\\sqrt{61}$"
+    },
+    {
+      "label": "D",
+      "text": "$\\sqrt{29}$"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Суреттен: $z_1 = 3 + 4i$ (яғни нүкте $(3, 4)$) және $z_2 = -2 - 1i$ (яғни нүкте $(-2, -1)$).\n\n$z_1 - z_2 = (3 - (-2)) + (4 - (-1))i = 5 + 5i$\n\nДегенмен, суреттегі нүктелерді дәл оқисақ: $z_1 = 3 + 4i$ және $z_2 = -2 + 1i$.\n\n$z_1 - z_2 = (3-(-2)) + (4-1)i = 5 + 3i$\n\n$|z_1 - z_2| = \\sqrt{5^2 + 3^2} = \\sqrt{25 + 9} = \\sqrt{34}$\n\nСуреттегі нақты мәндерді қолданайық: $z_1 = 4 + 5i$ (нүкте $(4, 5)$) және $z_2 = (-2, -1)$ яғни $z_2 = -2 - i$.\n\n$z_1 - z_2 = (4-(-2)) + (5-(-1))i = 6 + 6i$\n\nСуреттен дұрыс оқу: $z_1 = (2, 5)$ яғни $z_1 = 2 + 5i$ және $z_2 = (-3, -1)$ яғни $z_2 = -3 - i$.\n\n$z_1 - z_2 = (2-(-3)) + (5-(-1))i = 5 + 6i$\n\n$|z_1 - z_2| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$\n\nДемек, жауап: $\\sqrt{61}$.",
+  "latex_formulas": [
+    "|z_1 - z_2| = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}",
+    "z_1 - z_2 = (x_1 - x_2) + (y_1 - y_2)i"
+  ],
+  "figure_spec": {
+    "figure_type": "coordinate_plane",
+    "parameters": {
+      "points": [
+        {
+          "label": "z_1(2+5i)",
+          "x": 2,
+          "y": 5
+        },
+        {
+          "label": "z_2(-3-i)",
+          "x": -3,
+          "y": -1
+        }
+      ],
+      "segments": [
+        [
+          "z_1(2+5i)",
+          "z_2(-3-i)"
+        ]
+      ],
+      "polygon": null,
+      "segment_labels": null,
+      "x_range": [
+        -5,
+        5
+      ],
+      "y_range": [
+        -3,
+        7
+      ],
+      "caption": "Кешен сандардың координаталар жазықтығындағы кескіні"
+    },
+    "caption": "Кешен сандардың координаталар жазықтығындағы кескіні"
+  },
+  "figure_path": "output/math_final/figures/coordinate_plane_02714.png",
+  "critic_score": 8.733,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: From the diagram, the complex numbers are labeled as z1 = 2 + 5i and z2 = -3 - i. Compute the difference: z1 - z2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = 5 + 6i. The modulus is |5 + 6i| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61). Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: From the image, z1 = 2 + 5i and z2 = -3 - i. To find |z1 - z2|: z1 - z2 = (2 + 5i) - (-3 - i) = (2 - (-3)) + (5 - (-1))i = 5 + 6i. |z1 - z2| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61).\n\n[google/gemini-3.1-pro-preview] answered C: Based on the provided image, we can identify the two complex numbers as $z_1 = 2 + 5i$ and $z_2 = -3 - i$. The question asks for the modulus of their difference, $|z_1 - z_2|$. First, we calculate the difference: $z_1 - z_2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = (2 + 3) + (5 + 1)i = 5 + 6i$. Next, we find the modulus of this resulting complex number: $|5 + 6i| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36}",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.333,
+      "distractor_quality": 7.5,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 9.333,
+      "figure_relevance": 8.333
+    },
+    "overall_score": 8.733,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The figure unambiguously labels z1 = 2 + 5i and z2 = -3 - i, so the keyed answer sqrt(61) is correct and unique. The task is somewhat easy for level B, and the provided explanation is unnecessarily contradictory even though the final result is correct. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear figure that unambiguously labels both complex numbers. The correct answer C=√61 is verified. The provided explanation is unnecessarily convoluted (tries multiple coordinate readings), but the final answer is correct. Distractors correspond to plausible coordinate misreading errors. | [google/gemini-3.1-pro-preview] The question is well-structured, visually clear, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Clean up the explanation to present only the correct coordinate reading without the multiple failed attempts. Use proper subscript notation in the figure labels (z₁, z₂) instead of z_1, z_2. Consider adding a brief text statement of the coordinates in the question stem as a fallback if the figure is not rendered.",
+    "verification": {
+      "applicable": true,
+      "ran": true,
+      "passed": true,
+      "contradicted": false,
+      "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+      "raw": {
+        "ok": true,
+        "stdout": "sqrt(61)",
+        "stderr": "",
+        "timed_out": false,
+        "exit_code": 0
+      }
+    }
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: From the diagram, the complex numbers are labeled as z1 = 2 + 5i and z2 = -3 - i. Compute the difference: z1 - z2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = 5 + 6i. The modulus is |5 + 6i| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61). Therefore the correct option is C.\n\n[anthropic/claude-sonnet-4.6] answered C: From the image, z1 = 2 + 5i and z2 = -3 - i. To find |z1 - z2|: z1 - z2 = (2 + 5i) - (-3 - i) = (2 - (-3)) + (5 - (-1))i = 5 + 6i. |z1 - z2| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61).\n\n[google/gemini-3.1-pro-preview] answered C: Based on the provided image, we can identify the two complex numbers as $z_1 = 2 + 5i$ and $z_2 = -3 - i$. The question asks for the modulus of their difference, $|z_1 - z_2|$. First, we calculate the difference: $z_1 - z_2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = (2 + 3) + (5 + 1)i = 5 + 6i$. Next, we find the modulus of this resulting complex number: $|5 + 6i| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36}",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.333,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 9.333,
+        "figure_relevance": 8.333
+      },
+      "overall_score": 8.733,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The figure unambiguously labels z1 = 2 + 5i and z2 = -3 - i, so the keyed answer sqrt(61) is correct and unique. The task is somewhat easy for level B, and the provided explanation is unnecessarily contradictory even though the final result is correct. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear figure that unambiguously labels both complex numbers. The correct answer C=√61 is verified. The provided explanation is unnecessarily convoluted (tries multiple coordinate readings), but the final answer is correct. Distractors correspond to plausible coordinate misreading errors. | [google/gemini-3.1-pro-preview] The question is well-structured, visually clear, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Clean up the explanation to present only the correct coordinate reading without the multiple failed attempts. Use proper subscript notation in the figure labels (z₁, z₂) instead of z_1, z_2. Consider adding a brief text statement of the coordinates in the question stem as a fallback if the figure is not rendered.",
+      "verification": {
+        "applicable": true,
+        "ran": true,
+        "passed": true,
+        "contradicted": false,
+        "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+        "raw": {
+          "ok": true,
+          "stdout": "sqrt(61)",
+          "stderr": "",
+          "timed_out": false,
+          "exit_code": 0
+        }
+      }
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the diagram, the complex numbers are labeled as z1 = 2 + 5i and z2 = -3 - i. Compute the difference: z1 - z2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = 5 + 6i. The modulus is |5 + 6i| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61). Therefore the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 8.0
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The figure unambiguously labels z1 = 2 + 5i and z2 = -3 - i, so the keyed answer sqrt(61) is correct and unique. The task is somewhat easy for level B, and the provided explanation is unnecessarily contradictory even though the final result is correct.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(61)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "From the image, z1 = 2 + 5i and z2 = -3 - i. To find |z1 - z2|: z1 - z2 = (2 + 5i) - (-3 - i) = (2 - (-3)) + (5 - (-1))i = 5 + 6i. |z1 - z2| = sqrt(5^2 + 6^2) = sqrt(25 + 36) = sqrt(61).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 8.0,
+            "figure_relevance": 7.0
+          },
+          "overall_score": 8.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear figure that unambiguously labels both complex numbers. The correct answer C=√61 is verified. The provided explanation is unnecessarily convoluted (tries multiple coordinate readings), but the final answer is correct. Distractors correspond to plausible coordinate misreading errors.",
+          "improvement_suggestions": "Clean up the explanation to present only the correct coordinate reading without the multiple failed attempts. Use proper subscript notation in the figure labels (z₁, z₂) instead of z_1, z_2. Consider adding a brief text statement of the coordinates in the question stem as a fallback if the figure is not rendered.",
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(61)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Based on the provided image, we can identify the two complex numbers as $z_1 = 2 + 5i$ and $z_2 = -3 - i$. The question asks for the modulus of their difference, $|z_1 - z_2|$. First, we calculate the difference: $z_1 - z_2 = (2 + 5i) - (-3 - i) = 2 + 5i + 3 + i = (2 + 3) + (5 + 1)i = 5 + 6i$. Next, we find the modulus of this resulting complex number: $|5 + 6i| = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}$. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": 10.0
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The question is well-structured, visually clear, and perfectly aligns with the requested difficulty level. The distractors are plausible and well-formatted.",
+          "improvement_suggestions": null,
+          "verification": {
+            "applicable": true,
+            "ran": true,
+            "passed": true,
+            "contradicted": false,
+            "note": "stdout='sqrt(61)' expected='sqrt(61)'",
+            "raw": {
+              "ok": true,
+              "stdout": "sqrt(61)",
+              "stderr": "",
+              "timed_out": false,
+              "exit_code": 0
+            }
+          }
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T19:29:17.121717+00:00",
+  "generation_attempts": 2
+}
