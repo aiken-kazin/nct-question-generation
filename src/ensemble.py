@@ -221,6 +221,14 @@ class EnsembleCriticAgent:
             improvement_suggestions=_merge_suggestions(per_critic),
         )
 
+        # Symbolic verification (math) is deterministic and identical across
+        # critics; surface it on the aggregated verdict so it is not lost when
+        # the pipeline saves only the aggregated feedback.
+        for p in per_critic:
+            if p.feedback is not None and p.feedback.verification is not None:
+                aggregated.verification = p.feedback.verification
+                break
+
         return EnsembleCriticFeedback(
             aggregated=aggregated,
             per_critic=per_critic,
