@@ -1,0 +1,140 @@
+{
+  "id": "34c26713-abf3-4341-9ea9-7829f9afc92e",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "«Жас зерттеуші көне қолжазбаны мұқият оқыды» сөйлеміндегі «қолжазбаны оқыды» тіркесінің байланысу тәсілі мен сөз тіркесінің түрін анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "қабысу, есімді сөз тіркесі"
+    },
+    {
+      "label": "B",
+      "text": "меңгеру, етістікті сөз тіркесі"
+    },
+    {
+      "label": "C",
+      "text": "жанасу, етістікті сөз тіркесі"
+    },
+    {
+      "label": "D",
+      "text": "матасу, есімді сөз тіркесі"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "«Қолжазбаны оқыды» тіркесінде бағыныңқы сөз табыс септігінде тұрып, басыңқы етістікке бағына байланысқан. Септік жалғаулы сөздің етістікке бағынуы меңгеру тәсіліне жатады. Басыңқы сыңары «оқыды» етістік болғандықтан, бұл — етістікті сөз тіркесі. A нұсқасы қате, себебі қабысуда сөздер жалғаусыз орын тәртібі арқылы байланысады. C нұсқасы қате, өйткені жанасу көбіне үстеу мен етістіктің алшақ не іргелес тұрып байланысуына тән; бұл сөйлемде оған «мұқият оқыды» мысал бола алады. D нұсқасы қате, себебі матасу ілік септік пен тәуелдік жалғауы арқылы жасалады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: In the phrase \"қолжазбаны оқыды\", the dependent word is \"қолжазбаны\" (\"the manuscript\") marked with the accusative case suffix -ны, and the head word is the verb \"оқыды\" (\"read\"). In Kazakh syntax, when a verb governs a noun in a required case form, the connection type is \"меңгеру\" (government). Since the head word of the phrase is a verb, the phrase type is \"етістікті сөз тіркесі\" (verbal phrase)\n\n[anthropic/claude-sonnet-4.6] answered B: We need to analyze the phrase 'қолжазбаны оқыды' (read the manuscript) from the sentence 'Жас зерттеуші көне қолжазбаны мұқият оқыды' (The young researcher carefully read the ancient manuscript).\n\n1. **Type of connection (байланысу тәсілі)**:\n   - 'қолжазбаны' is a noun in the accusative case (табыс септік, ending -ны)\n   - 'оқыды' is a verb (read, past tense)\n   - When a noun takes a case ending \n\n[google/gemini-3.1-pro-preview] answered B: To determine the connection type (байланысу тәсілі) and the phrase type (сөз тіркесінің түрі) for 'қолжазбаны оқыды', we analyze its components. The head word (басыңқы сыңар) is 'оқыды' (read), which is a verb (етістік). Because the head word is a verb, the phrase is classified as a verbal phrase (етістікті сөз тіркесі). The dependent word (бағыныңқы сыңар) is 'қолжазбаны' (the manuscript), which ",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: accusative-marked dependent plus verb head is меңгеру, and the head is verbal. The item is well written, though the cognitive demand is closer to straightforward rule application than a robust medium-level analysis task. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets level B by requiring analysis of both connection type and phrase type simultaneously. All distractors represent plausible misconceptions (confusing меңгеру with қабысу, жанасу, or матасу), and the explanation is thorough and accurate. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of Kazakh syntax using standard terminology.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: In the phrase \"қолжазбаны оқыды\", the dependent word is \"қолжазбаны\" (\"the manuscript\") marked with the accusative case suffix -ны, and the head word is the verb \"оқыды\" (\"read\"). In Kazakh syntax, when a verb governs a noun in a required case form, the connection type is \"меңгеру\" (government). Since the head word of the phrase is a verb, the phrase type is \"етістікті сөз тіркесі\" (verbal phrase)\n\n[anthropic/claude-sonnet-4.6] answered B: We need to analyze the phrase 'қолжазбаны оқыды' (read the manuscript) from the sentence 'Жас зерттеуші көне қолжазбаны мұқият оқыды' (The young researcher carefully read the ancient manuscript).\n\n1. **Type of connection (байланысу тәсілі)**:\n   - 'қолжазбаны' is a noun in the accusative case (табыс септік, ending -ны)\n   - 'оқыды' is a verb (read, past tense)\n   - When a noun takes a case ending \n\n[google/gemini-3.1-pro-preview] answered B: To determine the connection type (байланысу тәсілі) and the phrase type (сөз тіркесінің түрі) for 'қолжазбаны оқыды', we analyze its components. The head word (басыңқы сыңар) is 'оқыды' (read), which is a verb (етістік). Because the head word is a verb, the phrase is classified as a verbal phrase (етістікті сөз тіркесі). The dependent word (бағыныңқы сыңар) is 'қолжазбаны' (the manuscript), which ",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: accusative-marked dependent plus verb head is меңгеру, and the head is verbal. The item is well written, though the cognitive demand is closer to straightforward rule application than a robust medium-level analysis task. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets level B by requiring analysis of both connection type and phrase type simultaneously. All distractors represent plausible misconceptions (confusing меңгеру with қабысу, жанасу, or матасу), and the explanation is thorough and accurate. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of Kazakh syntax using standard terminology.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In the phrase \"қолжазбаны оқыды\", the dependent word is \"қолжазбаны\" (\"the manuscript\") marked with the accusative case suffix -ны, and the head word is the verb \"оқыды\" (\"read\"). In Kazakh syntax, when a verb governs a noun in a required case form, the connection type is \"меңгеру\" (government). Since the head word of the phrase is a verb, the phrase type is \"етістікті сөз тіркесі\" (verbal phrase). Therefore, the correct option is: меңгеру, етістікті сөз тіркесі.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unambiguous: accusative-marked dependent plus verb head is меңгеру, and the head is verbal. The item is well written, though the cognitive demand is closer to straightforward rule application than a robust medium-level analysis task.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to analyze the phrase 'қолжазбаны оқыды' (read the manuscript) from the sentence 'Жас зерттеуші көне қолжазбаны мұқият оқыды' (The young researcher carefully read the ancient manuscript).\n\n1. **Type of connection (байланысу тәсілі)**:\n   - 'қолжазбаны' is a noun in the accusative case (табыс септік, ending -ны)\n   - 'оқыды' is a verb (read, past tense)\n   - When a noun takes a case ending to connect with a verb, this is called 'меңгеру' (government/rection) — the verb governs the noun by requiring a specific case form. This is distinct from 'қабысу' (adjunction, where words connect without morphological change) and 'матасу' (coordination/agreement). 'Жанасу' is sometimes used for adverbial connections but is not standard in Kazakh grammar for this type.\n   - The accusative case marker on 'қолжазбаны' shows that the verb 'оқыды' governs (меңгеру) the noun, requiring it to appear in the accusative case.\n\n2. **Type of phrase (сөз тіркесінің түрі)**:\n   - Since the head word (басыңқы сыңар) is a verb 'оқыды', this is an 'етістікті сөз тіркесі' (verbal phrase).\n   - 'Есімді сөз тіркесі' would have a noun/adjective as the head word.\n\n3. **Conclusion**: The connection method is 'меңгеру' (government) and the type is 'етістікті сөз тіркесі' (verbal phrase), which corresponds to option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately targets level B by requiring analysis of both connection type and phrase type simultaneously. All distractors represent plausible misconceptions (confusing меңгеру with қабысу, жанасу, or матасу), and the explanation is thorough and accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the connection type (байланысу тәсілі) and the phrase type (сөз тіркесінің түрі) for 'қолжазбаны оқыды', we analyze its components. The head word (басыңқы сыңар) is 'оқыды' (read), which is a verb (етістік). Because the head word is a verb, the phrase is classified as a verbal phrase (етістікті сөз тіркесі). The dependent word (бағыныңқы сыңар) is 'қолжазбаны' (the manuscript), which is in the accusative case (табыс септігі). In Kazakh syntax, when a dependent word connects to a head word via oblique case endings (such as dative, accusative, locative, ablative, or instrumental) dictated by the head word, the connection type is called 'меңгеру' (government). Therefore, the phrase 'қолжазбаны оқыды' is an example of 'меңгеру' and is an 'етістікті сөз тіркесі'. This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and accurately tests the candidate's knowledge of Kazakh syntax using standard terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:36:57.975174+00:00",
+  "generation_attempts": 1
+}

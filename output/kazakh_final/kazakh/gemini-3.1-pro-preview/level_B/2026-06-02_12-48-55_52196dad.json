@@ -1,0 +1,140 @@
+{
+  "id": "52196dad-451f-45ac-b6f5-0a2aa82189dd",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Түсіндірмелі салалас құрмалас сөйлемді табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жолаушылар ат басын іркуге мәжбүр болды: күн райы күрт бұзылып, боран басталған еді."
+    },
+    {
+      "label": "B",
+      "text": "Менің көзімнің жеткені мынау: бұл өңірдің адамдары еңбекке өте төзімді келеді."
+    },
+    {
+      "label": "C",
+      "text": "Аспанды тұтас қара бұлт торлады, бірақ көп ұзамай қайтадан ашылып кетті."
+    },
+    {
+      "label": "D",
+      "text": "Бірде қатты үскірік жел соғады, бірде күн жарқырап шыға келеді."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап: B. Түсіндірмелі салалас құрмалас сөйлемнің алдыңғы сыңарында «мынау, мынадай, сонша» сияқты сілтеу немесе жалпылау есімдіктері қолданылып, екінші сыңары сол сөздің мағынасын ашып, түсіндіріп тұрады. Бұл сөйлемде бірінші жай сөйлемдегі «мынау» есімдігінің мәнін екінші жай сөйлем түсіндіріп тұр. А нұсқасы – жалғаулықсыз себеп-салдар салалас құрмалас сөйлем (алдымен салдары, соңынан себебі айтылғандықтан қос нүкте қойылған, бұл үстірт талдау жасайтындар үшін жиі кездесетін тұзақ). С нұсқасы – қарсылықты салалас («бірақ» жалғаулығы). D нұсқасы – кезектес салалас («бірде..., бірде...» жалғаулықтары).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Identify the type of each coordinate compound sentence. A түсіндірмелі салалас (explanatory coordinate compound) has a first clause that points forward, often with a demonstrative/cataphoric word such as “мынау”, “сол”, “былай”, and the second clause explains or раскрывает its content; it is often separated by a colon. Option B: “Менің көзімнің жеткені мынау: бұл өңірдің адамдары еңбекке өте төзім\n\n[anthropic/claude-sonnet-4.6] answered B: We need to identify the 'түсіндірмелі салалас құрмалас сөйлем' (explanatory compound sentence) in Kazakh.\n\nIn Kazakh syntax, a 'түсіндірмелі салалас құрмалас сөйлем' (explanatory/clarifying compound sentence) is one where the second clause explains or clarifies the content of the first clause. It is typically connected by a colon (:) or the conjunction 'яғни' (that is), 'мынау' (namely), etc. The \n\n[google/gemini-3.1-pro-preview] answered B: To identify the 'түсіндірмелі салалас құрмалас сөйлем' (explanatory compound sentence), we need to look for its defining characteristics. In Kazakh grammar, an explanatory compound sentence is one where the first clause contains a demonstrative pronoun (such as 'мынау', 'осы', 'сол', 'мынаған') or a word with a generalized meaning, and the second clause explains or clarifies the content of that wo",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: option B is a clear түсіндірмелі салалас with 'мынау' explained by the second clause. The distractors represent other салалас types well, though C and D are relatively easy to eliminate by overt conjunctions. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (B) featuring the classic 'мынау:' explanatory structure. All distractors represent distinct, named compound sentence types (causal, adversative, alternating), making them pedagogically sound and reachable by specific misconceptions. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and features excellent distractors, particularly option A which tests deep understanding over superficial punctuation cues.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Identify the type of each coordinate compound sentence. A түсіндірмелі салалас (explanatory coordinate compound) has a first clause that points forward, often with a demonstrative/cataphoric word such as “мынау”, “сол”, “былай”, and the second clause explains or раскрывает its content; it is often separated by a colon. Option B: “Менің көзімнің жеткені мынау: бұл өңірдің адамдары еңбекке өте төзім\n\n[anthropic/claude-sonnet-4.6] answered B: We need to identify the 'түсіндірмелі салалас құрмалас сөйлем' (explanatory compound sentence) in Kazakh.\n\nIn Kazakh syntax, a 'түсіндірмелі салалас құрмалас сөйлем' (explanatory/clarifying compound sentence) is one where the second clause explains or clarifies the content of the first clause. It is typically connected by a colon (:) or the conjunction 'яғни' (that is), 'мынау' (namely), etc. The \n\n[google/gemini-3.1-pro-preview] answered B: To identify the 'түсіндірмелі салалас құрмалас сөйлем' (explanatory compound sentence), we need to look for its defining characteristics. In Kazakh grammar, an explanatory compound sentence is one where the first clause contains a demonstrative pronoun (such as 'мынау', 'осы', 'сол', 'мынаған') or a word with a generalized meaning, and the second clause explains or clarifies the content of that wo",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: option B is a clear түсіндірмелі салалас with 'мынау' explained by the second clause. The distractors represent other салалас types well, though C and D are relatively easy to eliminate by overt conjunctions. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (B) featuring the classic 'мынау:' explanatory structure. All distractors represent distinct, named compound sentence types (causal, adversative, alternating), making them pedagogically sound and reachable by specific misconceptions. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and features excellent distractors, particularly option A which tests deep understanding over superficial punctuation cues.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Identify the type of each coordinate compound sentence. A түсіндірмелі салалас (explanatory coordinate compound) has a first clause that points forward, often with a demonstrative/cataphoric word such as “мынау”, “сол”, “былай”, and the second clause explains or раскрывает its content; it is often separated by a colon. Option B: “Менің көзімнің жеткені мынау: бұл өңірдің адамдары еңбекке өте төзімді келеді.” The word “мынау” in the first clause points forward, and the second clause explains exactly what the speaker has realized. Therefore this is түсіндірмелі салалас. Option A gives a reason/cause for why the passengers had to stop, so it is closer to себеп-салдар салалас. Option C has “бірақ”, so it is қарсылықты салалас. Option D has “бірде... бірде”, so it is кезектес салалас.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: option B is a clear түсіндірмелі салалас with 'мынау' explained by the second clause. The distractors represent other салалас types well, though C and D are relatively easy to eliminate by overt conjunctions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify the 'түсіндірмелі салалас құрмалас сөйлем' (explanatory compound sentence) in Kazakh.\n\nIn Kazakh syntax, a 'түсіндірмелі салалас құрмалас сөйлем' (explanatory/clarifying compound sentence) is one where the second clause explains or clarifies the content of the first clause. It is typically connected by a colon (:) or the conjunction 'яғни' (that is), 'мынау' (namely), etc. The key feature is that the second part explains what was stated in the first part.\n\nLet's analyze each option:\n\nA) 'Жолаушылар ат басын іркуге мәжбүр болды: күн райы күрт бұзылып, боран басталған еді.' — The first clause states travelers were forced to stop, and the second clause gives the REASON (the weather worsened, a blizzard started). This is a 'себеп-салдар' (cause-effect) or 'себептік' relationship, not purely explanatory. Actually, this could be considered explanatory as the second part explains WHY they stopped. However, this is more of a causal compound sentence (себептес салалас).\n\nB) 'Менің көзімнің жеткені мынау: бұл өңірдің адамдары еңбекке өте төзімді келеді.' — The first clause says 'what I am convinced of is this:' and the second clause directly explains/clarifies what 'мынау' (this) refers to. The word 'мынау' (this/namely) in the first clause signals that the second clause will explain it. This is the classic structure of a түсіндірмелі салалас — the second part explains/clarifies the pronoun or demonstrative in the first part.\n\nC) 'Аспанды тұтас қара бұлт торлады, бірақ көп ұзамай қайтадан ашылып кетті.' — Uses 'бірақ' (but), making this a 'қарсылықты салалас' (adversative compound sentence).\n\nD) 'Бірде қатты үскірік жел соғады, бірде күн жарқырап шыға келеді.' — Uses 'бірде...бірде' (sometimes...sometimes), making this a 'кезектес салалас' (alternating compound sentence).\n\nThe correct answer is B, as it uses 'мынау:' followed by an explanation — the classic marker of a түсіндірмелі салалас құрмалас сөйлем. The structure 'X мынау: [explanation]' is the textbook example of an explanatory compound sentence in Kazakh.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear correct answer (B) featuring the classic 'мынау:' explanatory structure. All distractors represent distinct, named compound sentence types (causal, adversative, alternating), making them pedagogically sound and reachable by specific misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To identify the 'түсіндірмелі салалас құрмалас сөйлем' (explanatory compound sentence), we need to look for its defining characteristics. In Kazakh grammar, an explanatory compound sentence is one where the first clause contains a demonstrative pronoun (such as 'мынау', 'осы', 'сол', 'мынаған') or a word with a generalized meaning, and the second clause explains or clarifies the content of that word.\n\nLet's analyze the given options:\n- Option A: 'Жолаушылар ат басын іркуге мәжбүр болды: күн райы күрт бұзылып, боран басталған еді.' The second clause explains the reason for the action in the first clause. This is a 'себеп-салдар салалас құрмалас сөйлем' (cause-effect compound sentence).\n- Option B: 'Менің көзімнің жеткені мынау: бұл өңірдің адамдары еңбекке өте төзімді келеді.' The first clause contains the demonstrative pronoun 'мынау' (this), and the second clause explicitly explains what 'this' refers to. This perfectly matches the rule for a 'түсіндірмелі салалас құрмалас сөйлем'.\n- Option C: 'Аспанды тұтас қара бұлт торлады, бірақ көп ұзамай қайтадан ашылып кетті.' This sentence uses the adversative conjunction 'бірақ' (but), making it a 'қарсылықты салалас құрмалас сөйлем' (adversative compound sentence).\n- Option D: 'Бірде қатты үскірік жел соғады, бірде күн жарқырап шыға келеді.' This sentence uses the alternating conjunctions 'бірде ..., бірде ...' (sometimes ..., sometimes ...), making it a 'кезектес салалас құрмалас сөйлем' (alternating compound sentence).\n\nTherefore, the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurate, and features excellent distractors, particularly option A which tests deep understanding over superficial punctuation cues.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:48:55.933622+00:00",
+  "generation_attempts": 1
+}

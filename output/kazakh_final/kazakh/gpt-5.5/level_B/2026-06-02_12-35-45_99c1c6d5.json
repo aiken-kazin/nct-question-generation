@@ -1,0 +1,140 @@
+{
+  "id": "99c1c6d5-4287-4578-8567-2919830808b7",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "«Екеуі биылғы жарыста үздіктердің қатарына қосылды» сөйлеміндегі есім сөздерге қатысты дұрыс талдауды белгілеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Екеуі — жіктеу есімдігі, атау септікте тұр; биылғы — сапалық сын есім; үздіктердің — деректі жалпы есім, көптік тұлғада."
+    },
+    {
+      "label": "B",
+      "text": "Екеуі — есептік сан есім, септеліп тұр; биылғы — негізгі сын есім; үздіктердің — күшейтпелі шырайдағы сын есім."
+    },
+    {
+      "label": "C",
+      "text": "Екеуі — жинақтық сан есім, тәуелденіп заттанған; биылғы — -ғы жұрнағы арқылы жасалған туынды қатыстық сын есім; үздіктердің — заттанған сын есім, көптік және ілік септік тұлғасында."
+    },
+    {
+      "label": "D",
+      "text": "Екеуі — белгісіздік есімдігі, тәуелдік жалғауын қабылдаған; биылғы — күрделі сын есім; үздіктердің — реттік сан есімнен заттанған сөз."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. «Екеуі» сөзі «екі» есептік сан есімінен -еу жұрнағы арқылы жасалған жинақтық сан есім, оған III жақ тәуелдік жалғауы жалғанып, сөйлемде зат есімнің қызметін атқарып тұр. «Биылғы» сөзі «биыл» сөзіне -ғы жұрнағы жалғану арқылы жасалған туынды қатыстық сын есім. «Үздіктердің» сөзі бұл сөйлемде адамдарды білдіріп, заттанып тұр; көптік жалғауы (-тер) мен ілік септік жалғауын (-дің) қабылдаған. A нұсқасында «екеуі» жіктеу есімдігі емес, ал «биылғы» сапалық сын есім емес. B нұсқасында «екеуі» есептік сан есім емес, «биылғы» негізгі сын есім емес, «үздіктердің» шырай тұлғасында тұрған жоқ. D нұсқасында «екеуі» белгісіздік есімдігі емес, «биылғы» күрделі сын есім емес, «үздіктердің» реттік сан есімнен жасалмаған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.267,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: In the sentence «Екеуі биылғы жарыста үздіктердің қатарына қосылды», the relevant nominal words are analyzed as follows. «Екеуі» is formed from «екі» + collective numeral suffix «-еу» = «екеу», then takes the 3rd-person possessive suffix «-і», meaning “the two of them”; therefore it is a collective numeral that has taken possessive marking and functions substantively. «Биылғы» is formed from «биыл\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze each word in the sentence 'Екеуі биылғы жарыста үздіктердің қатарына қосылды' (Both of them joined the ranks of the best in this year's competition).\n\n1. **Екеуі** — This word comes from 'екі' (two) + collective/group numeral suffix '-еу' + possessive suffix '-і'. 'Екеу' is a collective (жинақтық) numeral, and '-і' is the 3rd person singular possessive (тәуелдік жалғау). The word fu\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the nominals (есім сөздер) in the sentence «Екеуі биылғы жарыста үздіктердің қатарына қосылды» step by step:\n\n1. 'Екеуі': The root is 'екі' (two), which takes the collective suffix '-еу' to form 'екеу' (collective numeral / жинақтық сан есім). The suffix '-і' is the 3rd person possessive suffix (тәуелдік жалғауы). By taking this suffix and acting as the subject of the sentence, the n",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.267,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation is morphologically sound; the item has a single defensible answer. The task fits a medium morphology-analysis level, though several distractors contain multiple very obvious errors for a certified teacher. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually accurate, and the correct answer (C) is unambiguously supported by standard Kazakh morphological analysis. Distractors contain plausible but identifiable errors targeting common misconceptions (e.g., confusing жинақтық with есептік сан есім, or жіктеу есімдігі with сан есім). The question genuinely requires multi-word morphological analysis in context, fitting level B well. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests morphological analysis of nominals in context, and the distractors are plausible and well-structured.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: In the sentence «Екеуі биылғы жарыста үздіктердің қатарына қосылды», the relevant nominal words are analyzed as follows. «Екеуі» is formed from «екі» + collective numeral suffix «-еу» = «екеу», then takes the 3rd-person possessive suffix «-і», meaning “the two of them”; therefore it is a collective numeral that has taken possessive marking and functions substantively. «Биылғы» is formed from «биыл\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze each word in the sentence 'Екеуі биылғы жарыста үздіктердің қатарына қосылды' (Both of them joined the ranks of the best in this year's competition).\n\n1. **Екеуі** — This word comes from 'екі' (two) + collective/group numeral suffix '-еу' + possessive suffix '-і'. 'Екеу' is a collective (жинақтық) numeral, and '-і' is the 3rd person singular possessive (тәуелдік жалғау). The word fu\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the nominals (есім сөздер) in the sentence «Екеуі биылғы жарыста үздіктердің қатарына қосылды» step by step:\n\n1. 'Екеуі': The root is 'екі' (two), which takes the collective suffix '-еу' to form 'екеу' (collective numeral / жинақтық сан есім). The suffix '-і' is the 3rd person possessive suffix (тәуелдік жалғауы). By taking this suffix and acting as the subject of the sentence, the n",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.267,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation is morphologically sound; the item has a single defensible answer. The task fits a medium morphology-analysis level, though several distractors contain multiple very obvious errors for a certified teacher. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually accurate, and the correct answer (C) is unambiguously supported by standard Kazakh morphological analysis. Distractors contain plausible but identifiable errors targeting common misconceptions (e.g., confusing жинақтық with есептік сан есім, or жіктеу есімдігі with сан есім). The question genuinely requires multi-word morphological analysis in context, fitting level B well. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests morphological analysis of nominals in context, and the distractors are plausible and well-structured.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In the sentence «Екеуі биылғы жарыста үздіктердің қатарына қосылды», the relevant nominal words are analyzed as follows. «Екеуі» is formed from «екі» + collective numeral suffix «-еу» = «екеу», then takes the 3rd-person possessive suffix «-і», meaning “the two of them”; therefore it is a collective numeral that has taken possessive marking and functions substantively. «Биылғы» is formed from «биыл» + the adjectival suffix «-ғы», so it is a derived relative adjective, not a basic or qualitative adjective. «Үздіктердің» comes from «үздік» used substantively as “the best ones”, with plural suffix «-тер» and genitive case suffix «-дің»; therefore it is a substantivized adjective in plural and genitive case. This matches option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and the explanation is morphologically sound; the item has a single defensible answer. The task fits a medium morphology-analysis level, though several distractors contain multiple very obvious errors for a certified teacher.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let me analyze each word in the sentence 'Екеуі биылғы жарыста үздіктердің қатарына қосылды' (Both of them joined the ranks of the best in this year's competition).\n\n1. **Екеуі** — This word comes from 'екі' (two) + collective/group numeral suffix '-еу' + possessive suffix '-і'. 'Екеу' is a collective (жинақтық) numeral, and '-і' is the 3rd person singular possessive (тәуелдік жалғау). The word functions as a substantivized form (заттанған). So it is a жинақтық сан есім (collective numeral) that has taken a possessive suffix (тәуелденіп заттанған).\n\n2. **Биылғы** — 'Биыл' means 'this year' (an adverb/noun of time), and '-ғы' is a derivational suffix that forms relative adjectives (қатыстық сын есім) from time/place words. So 'биылғы' is a туынды қатыстық сын есім (derived relative adjective) formed with the suffix '-ғы'.\n\n3. **Үздіктердің** — 'Үздік' is originally a superlative/excellent adjective (from 'үзу'), but here it is substantivized (заттанған сын есім — adjective used as a noun meaning 'the best ones'). It has the plural suffix '-тер' (көптік жалғау) and the genitive case suffix '-дің' (ілік септік). So it is a заттанған сын есім in plural and genitive case.\n\nNow checking the options:\n- Option A: Says 'Екеуі' is a жіктеу есімдігі (personal pronoun) — WRONG. Says 'биылғы' is сапалық сын есім (qualitative adjective) — WRONG, it's қатыстық. Says 'үздіктердің' is деректі жалпы есім — WRONG.\n- Option B: Says 'Екеуі' is есептік сан есім (cardinal numeral) — WRONG, it's жинақтық. Says 'биылғы' is негізгі сын есім — WRONG. Says 'үздіктердің' is күшейтпелі шырайдағы сын есім — WRONG.\n- Option C: Says 'Екеуі' is жинақтық сан есім, тәуелденіп заттанған — CORRECT. Says 'биылғы' is -ғы жұрнағы арқылы жасалған туынды қатыстық сын есім — CORRECT. Says 'үздіктердің' is заттанған сын есім, көптік және ілік септік тұлғасында — CORRECT.\n- Option D: Says 'Екеуі' is белгісіздік есімдігі — WRONG. Says 'биылғы' is күрделі сын есім — WRONG. Says 'үздіктердің' is реттік сан есімнен заттанған — WRONG.\n\nOption C is clearly the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually accurate, and the correct answer (C) is unambiguously supported by standard Kazakh morphological analysis. Distractors contain plausible but identifiable errors targeting common misconceptions (e.g., confusing жинақтық with есептік сан есім, or жіктеу есімдігі with сан есім). The question genuinely requires multi-word morphological analysis in context, fitting level B well.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the nominals (есім сөздер) in the sentence «Екеуі биылғы жарыста үздіктердің қатарына қосылды» step by step:\n\n1. 'Екеуі': The root is 'екі' (two), which takes the collective suffix '-еу' to form 'екеу' (collective numeral / жинақтық сан есім). The suffix '-і' is the 3rd person possessive suffix (тәуелдік жалғауы). By taking this suffix and acting as the subject of the sentence, the numeral is substantivized (заттанған).\n2. 'биылғы': The root is 'биыл' (this year), which takes the suffix '-ғы' to form an adjective. This makes it a derived relative adjective (туынды қатыстық сын есім).\n3. 'үздіктердің': The root is 'үздік' (excellent/best), which is originally an adjective (сын есім). Here, it takes the plural suffix '-тер' and the genitive case suffix '-дің' (ілік септік). Because it takes noun suffixes and acts as a noun, it is a substantivized adjective (заттанған сын есім).\n\nComparing this analysis to the given options, Option C perfectly matches all the morphological descriptions.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. It accurately tests morphological analysis of nominals in context, and the distractors are plausible and well-structured.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:35:45.862547+00:00",
+  "generation_attempts": 1
+}

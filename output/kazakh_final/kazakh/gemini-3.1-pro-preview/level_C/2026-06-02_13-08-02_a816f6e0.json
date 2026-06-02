@@ -1,0 +1,140 @@
+{
+  "id": "a816f6e0-a08a-41e6-9e40-e296a1e21b14",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "«Сөзшең» сөзінің орфоэпиялық нормасына тән фонетикалық құбылыстарды (дыбыстық өзгерістерді) толық әрі дұрыс сипаттайтын қатарды көрсетіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Тек дауыссыздар арасындағы толық кейінді ықпал байқалып, дауыстылардың езулік үндестігі сақталған."
+    },
+    {
+      "label": "B",
+      "text": "Дауыссыздар арасындағы ілгерінді ықпал мен дауыстылардың еріндік үндестігі қатар көрініс тапқан."
+    },
+    {
+      "label": "C",
+      "text": "Дауыссыздар арасындағы кейінді ықпал мен дауыстылар арасындағы ілгерінді ықпал (еріндік үндестік) қатар жүзеге асқан."
+    },
+    {
+      "label": "D",
+      "text": "Сөз түбірі мен қосымша жігіндегі тоғыспалы ықпал нәтижесінде екі дыбыс та өзара өзгеріске ұшыраған."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "«Сөзшең» сөзінің айтылу нормасы (транскрипциясы) – [сөшшөң]. Бұл сөзде екі түрлі фонетикалық заңдылық қатар көрініс табады: 1) Дауыссыздардың үндесуі: түбірдің соңындағы ұяң «з» дыбысы қосымшаның басындағы қатаң «ш» дыбысының әсерінен қатаң «ш»-ға айналып айтылады («з» -> «ш»). Бұл – кейінгі дыбыстың алдыңғы дыбысқа әсер етуі, яғни толық кейінді ықпал. 2) Дауыстылардың үндесуі: түбірдегі еріндік «ө» дауыстысының ықпалымен қосымшадағы езулік «е» дыбысы еріндік «ө»-ге айналып айтылады («е» -> «ө»). Бұл – алдыңғы дыбыстың кейінгі дыбысқа әсер етуі, яғни ілгерінді ықпал (еріндік үндестік). Басқа нұсқаларда ықпал бағыттары (ілгерінді/кейінді) немесе үндестік түрі қате көрсетілген, сондықтан С нұсқасы – жалғыз дұрыс әрі толық жауап.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.167,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The word is built as сөз + -шең. At the consonant boundary з + ш, the following voiceless postalveolar ш influences the preceding з: in orthoepy з is assimilated to ш, giving сөзшең -> сөшшең at that boundary. Since the later sound affects the earlier sound, this is кейінді ықпал (regressive assimilation), not ілгерінді ықпал. In the vowels, the first syllable has the rounded front vowel ө. In Kaz\n\n[anthropic/claude-sonnet-4.6] answered C: We need to analyze the word 'сөзшең' and its orthographic/phonetic phenomena when pronounced according to orthoepic norms.\n\nThe word 'сөзшең' consists of:\n- Root: 'сөз' (word)\n- Suffix: '-шең' (talkative/loquacious suffix)\n\nLet's analyze the phonetic phenomena:\n\n1. **Vowel harmony (дауысты үндестік)**:\n   - The root 'сөз' contains 'ө' — a front, rounded (labial) vowel\n   - The suffix '-шең' contai\n\n[google/gemini-3.1-pro-preview] answered C: To determine the correct phonetic phenomena for the orthoepic (pronunciation) norm of the word «сөзшең», we need to analyze its sounds.\n\n1. The word consists of the root «сөз» and the suffix «-шең».\n2. Consonant assimilation: When the consonant 'з' is followed by 'ш', the 'ш' influences the preceding 'з', causing it to be pronounced as 'ш' (сөзшең -> [сөшшең]). Since the following sound influences",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.167,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct: the word involves regressive consonant assimilation at з+ш and progressive labial vowel harmony. The item is linguistically sound and has plausible distractors, but it feels more like an upper-medium phonetics item than a genuinely hard level-C task. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests genuine phonetic analysis at a high cognitive level. The correct answer (C) is defensible: regressive consonant assimilation (з→ш before ш) and progressive labial vowel harmony (ө influencing е→ө in pronunciation) are both present in the orthoepic norm [сөшшөң]. Distractors are plausible but option A is somewhat eliminable because 'ө' is not an езулік vowel, making that distractor easier to reject for a knowledgeable teacher. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the teacher's knowledge of Kazakh orthoepic norms, specifically requiring the simultaneous analysis of both consonant and vowel assimilation directions.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option D (тоғыспалы ықпал) could be made slightly more tempting by specifying which sounds are involved, to prevent easy elimination. Also, the explanation could clarify that the labial harmony in the suffix is a phonetic (spoken) phenomenon even though orthography retains 'е', to preempt any challenge to the keyed answer.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The word is built as сөз + -шең. At the consonant boundary з + ш, the following voiceless postalveolar ш influences the preceding з: in orthoepy з is assimilated to ш, giving сөзшең -> сөшшең at that boundary. Since the later sound affects the earlier sound, this is кейінді ықпал (regressive assimilation), not ілгерінді ықпал. In the vowels, the first syllable has the rounded front vowel ө. In Kaz\n\n[anthropic/claude-sonnet-4.6] answered C: We need to analyze the word 'сөзшең' and its orthographic/phonetic phenomena when pronounced according to orthoepic norms.\n\nThe word 'сөзшең' consists of:\n- Root: 'сөз' (word)\n- Suffix: '-шең' (talkative/loquacious suffix)\n\nLet's analyze the phonetic phenomena:\n\n1. **Vowel harmony (дауысты үндестік)**:\n   - The root 'сөз' contains 'ө' — a front, rounded (labial) vowel\n   - The suffix '-шең' contai\n\n[google/gemini-3.1-pro-preview] answered C: To determine the correct phonetic phenomena for the orthoepic (pronunciation) norm of the word «сөзшең», we need to analyze its sounds.\n\n1. The word consists of the root «сөз» and the suffix «-шең».\n2. Consonant assimilation: When the consonant 'з' is followed by 'ш', the 'ш' influences the preceding 'з', causing it to be pronounced as 'ш' (сөзшең -> [сөшшең]). Since the following sound influences",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.167,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct: the word involves regressive consonant assimilation at з+ш and progressive labial vowel harmony. The item is linguistically sound and has plausible distractors, but it feels more like an upper-medium phonetics item than a genuinely hard level-C task. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests genuine phonetic analysis at a high cognitive level. The correct answer (C) is defensible: regressive consonant assimilation (з→ш before ш) and progressive labial vowel harmony (ө influencing е→ө in pronunciation) are both present in the orthoepic norm [сөшшөң]. Distractors are plausible but option A is somewhat eliminable because 'ө' is not an езулік vowel, making that distractor easier to reject for a knowledgeable teacher. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the teacher's knowledge of Kazakh orthoepic norms, specifically requiring the simultaneous analysis of both consonant and vowel assimilation directions.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option D (тоғыспалы ықпал) could be made slightly more tempting by specifying which sounds are involved, to prevent easy elimination. Also, the explanation could clarify that the labial harmony in the suffix is a phonetic (spoken) phenomenon even though orthography retains 'е', to preempt any challenge to the keyed answer.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The word is built as сөз + -шең. At the consonant boundary з + ш, the following voiceless postalveolar ш influences the preceding з: in orthoepy з is assimilated to ш, giving сөзшең -> сөшшең at that boundary. Since the later sound affects the earlier sound, this is кейінді ықпал (regressive assimilation), not ілгерінді ықпал. In the vowels, the first syllable has the rounded front vowel ө. In Kazakh orthoepy, labial harmony can affect the following syllable vowel: е is pronounced closer to ө in this environment, so сөзшең is pronounced approximately сөшшөң. This is дауыстылар арасындағы ілгерінді ықпал, specifically еріндік үндестік, because the earlier rounded vowel affects the later vowel. Therefore the option that names both regressive consonant assimilation and progressive vowel labial harmony is correct.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct: the word involves regressive consonant assimilation at з+ш and progressive labial vowel harmony. The item is linguistically sound and has plausible distractors, but it feels more like an upper-medium phonetics item than a genuinely hard level-C task.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to analyze the word 'сөзшең' and its orthographic/phonetic phenomena when pronounced according to orthoepic norms.\n\nThe word 'сөзшең' consists of:\n- Root: 'сөз' (word)\n- Suffix: '-шең' (talkative/loquacious suffix)\n\nLet's analyze the phonetic phenomena:\n\n1. **Vowel harmony (дауысты үндестік)**:\n   - The root 'сөз' contains 'ө' — a front, rounded (labial) vowel\n   - The suffix '-шең' contains 'е' — a front, unrounded (spread/езулік) vowel\n   - Wait, let me reconsider. 'ө' is a front rounded vowel (еріндік), and 'е' in '-шең' is a front unrounded vowel (езулік)\n   - Actually, in Kazakh, the suffix '-шең' after 'сөз' — the vowel 'е' in the suffix is a front vowel matching the front vowel in the root (palatal harmony is maintained)\n   - But regarding labial (еріндік) harmony: 'ө' is labial, but 'е' is not labial. So labial harmony is NOT fully maintained here.\n   - The vowels 'ө' and 'е' are both front vowels, so езулік (spread) harmony... but 'ө' is actually еріндік (rounded), not езулік.\n\n2. **Consonant assimilation between з and ш**:\n   - At the junction of 'сөз' + 'шең', we have з+ш\n   - 'з' is a voiced fricative, 'ш' is a voiceless fricative\n   - In pronunciation, 'з' before 'ш' undergoes regressive assimilation (кейінді ықпал): з→с (voiced becomes voiceless before voiceless)\n   - So 'сөзшең' is pronounced as [сөсшең] or [сөшшең]\n   - This is кейінді ықпал (regressive assimilation) among consonants\n\n3. **Vowel harmony analysis**:\n   - Root vowel: 'ө' (front, rounded/labial)\n   - Suffix vowel: 'е' (front, unrounded/spread)\n   - The suffix vowel 'е' follows the front vowel of the root (palatal harmony maintained)\n   - But 'е' is езулік (spread), not еріндік (rounded)\n   - In Kazakh, labial harmony (еріндік үндестік) would require the suffix vowel to also be rounded after a rounded root vowel\n   - However, the suffix '-шең' uses 'е' not 'ө', so labial harmony is NOT present here\n   - What IS present is езулік (spread) harmony in the sense that both vowels are front... but 'ө' is rounded\n\nWait, let me reconsider the vowel harmony:\n- 'ө' is a front rounded vowel\n- 'е' is a front unrounded vowel\n- In standard Kazakh grammar, the suffix '-шең/-шаң' follows palatal harmony (front/back), not necessarily labial harmony\n- The vowel 'е' in the suffix is a front vowel matching the front root — this is езулік үндестік (spread vowel harmony) in the sense that the suffix takes the front unrounded variant\n\nActually, in Kazakh phonology:\n- Езулік үндестік = harmony where spread (unrounded) vowels spread to suffixes\n- Еріндік үндестік = harmony where rounded (labial) vowels spread to suffixes\n\nFor 'сөзшең':\n- The root has 'ө' (rounded/labial front vowel)\n- The suffix has 'е' (unrounded/spread front vowel)\n- This means labial harmony (еріндік үндестік) is NOT maintained — the suffix vowel is not rounded\n- But езулік үндестік is present in the sense that 'е' is a spread vowel\n\nHmm, but actually in some analyses, when the root has 'ө' and the suffix has 'е', this represents that the labial harmony does NOT extend to the suffix (which is normal for many suffixes in Kazakh). The vowel harmony that IS present is the front/back (жіңішке/жуан) harmony — both vowels are front.\n\nNow let me reconsider option C:\n- \"Дауыссыздар арасындағы кейінді ықпал\" = regressive assimilation among consonants ✓ (з→с before ш)\n- \"дауыстылар арасындағы ілгерінді ықпал (еріндік үндестік)\" = progressive assimilation among vowels (labial harmony)\n\nFor labial harmony: 'ө' (rounded) → does it influence 'е' in the suffix? In standard pronunciation, 'е' in '-шең' might be pronounced with some rounding influence from 'ө', making it closer to 'ө' sound. This would be ілгерінді ықпал (progressive assimilation) — the preceding rounded vowel influences the following vowel.\n\nBut wait — if the suffix vowel is 'е' (not 'ө'), then labial harmony is NOT fully present. Unless we're talking about the orthoepic norm where 'е' after 'ө' gets some labial coloring.\n\nLet me reconsider option A:\n- \"Тек дауыссыздар арасындағы толық кейінді ықпал\" = only complete regressive assimilation among consonants\n- \"дауыстылардың езулік үндестігі сақталған\" = spread vowel harmony maintained\n\nFor 'сөзшең': the vowels are 'ө' and 'е'. 'ө' is NOT an езулік vowel — it's еріндік. So saying езулік үндестік is maintained seems incorrect.\n\nOption C seems more accurate:\n- Consonant regressive assimilation (з→с/ш before ш): кейінді ықпал ✓\n- Vowel progressive assimilation (labial harmony, еріндік үндестік): ілгерінді ықпал — 'ө' influences following vowels\n\nBut the suffix vowel is 'е', not 'ө'... Unless in orthoepic pronunciation, the 'е' in '-шең' is pronounced as a rounded vowel due to the influence of 'ө' in the root.\n\nIn Kazakh orthoepic norms, after rounded vowels like 'ө', 'о', 'ү', 'ұ', the following vowels in suffixes can be pronounced with labial coloring. This is the еріндік үндестік (labial harmony) as a phonetic phenomenon in speech, even if orthographically the suffix is written with 'е'.\n\nSo in 'сөзшең':\n1. з+ш junction: regressive assimilation (кейінді ықпал) — з becomes devoiced before ш\n2. ө→е: progressive labial influence (ілгерінді ықпал, еріндік үндестік) — 'е' gets rounded coloring from 'ө'\n\nThis matches option C: \"Дауыссыздар арасындағы кейінді ықпал мен дауыстылар арасындағы ілгерінді ықпал (еріндік үндестік) қатар жүзеге асқан.\"\n\nTherefore, the answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and tests genuine phonetic analysis at a high cognitive level. The correct answer (C) is defensible: regressive consonant assimilation (з→ш before ш) and progressive labial vowel harmony (ө influencing е→ө in pronunciation) are both present in the orthoepic norm [сөшшөң]. Distractors are plausible but option A is somewhat eliminable because 'ө' is not an езулік vowel, making that distractor easier to reject for a knowledgeable teacher.",
+          "improvement_suggestions": "Option D (тоғыспалы ықпал) could be made slightly more tempting by specifying which sounds are involved, to prevent easy elimination. Also, the explanation could clarify that the labial harmony in the suffix is a phonetic (spoken) phenomenon even though orthography retains 'е', to preempt any challenge to the keyed answer.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the correct phonetic phenomena for the orthoepic (pronunciation) norm of the word «сөзшең», we need to analyze its sounds.\n\n1. The word consists of the root «сөз» and the suffix «-шең».\n2. Consonant assimilation: When the consonant 'з' is followed by 'ш', the 'ш' influences the preceding 'з', causing it to be pronounced as 'ш' (сөзшең -> [сөшшең]). Since the following sound influences the preceding one, this is regressive assimilation (кейінді ықпал).\n3. Vowel assimilation (Labial harmony): The root contains the rounded vowel 'ө'. According to Kazakh orthoepic rules (еріндік үндестік), a rounded vowel in the first syllable causes the unrounded vowel 'е' in the following syllable to be pronounced as the rounded vowel 'ө' (сөзшең -> [сөшшөң]). Since the preceding sound influences the following one, this is progressive assimilation (ілгерінді ықпал).\n\nLooking at the options, Option C correctly identifies both phenomena: regressive assimilation between consonants (дауыссыздар арасындағы кейінді ықпал) and progressive assimilation between vowels, specifically labial harmony (дауыстылар арасындағы ілгерінді ықпал / еріндік үндестік).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It accurately tests the teacher's knowledge of Kazakh orthoepic norms, specifically requiring the simultaneous analysis of both consonant and vowel assimilation directions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:08:02.555373+00:00",
+  "generation_attempts": 1
+}

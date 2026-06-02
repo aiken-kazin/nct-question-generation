@@ -1,0 +1,140 @@
+{
+  "id": "6c0152c9-bdba-482d-99ab-1c471fb31a78",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысында етістіктің бұйрық рай формасы эмоционалды-экспрессивті мағынада (яғни тілек, армандау мәнінде) қолданылған?\n\nI. Кел, достым, бірге отырып кеңесейік.\nII. Жаңбыр жауса екен, егін өссе екен.\nIII. Ендеше, сен де бар, мен де барайын.\nIV. Кетсін ол жақтан, бізге керегі жоқ.",
+  "options": [
+    {
+      "label": "A",
+      "text": "I сөйлемде — өйткені «кел» формасы тыңдаушыға тікелей бұйрық беру мәнін білдіреді, бұл бұйрық райдың негізгі қызметі"
+    },
+    {
+      "label": "B",
+      "text": "II сөйлемде — өйткені «жауса екен», «өссе екен» формалары шартты райдың тілек мәнінде жұмсалуын, яғни арман-тілек реңкін береді"
+    },
+    {
+      "label": "C",
+      "text": "III сөйлемде — өйткені «бар» және «барайын» формалары бұйрық райдың ынталандыру мәнінде қолданылып, жалпылама нұсқауды білдіреді"
+    },
+    {
+      "label": "D",
+      "text": "IV сөйлемде — өйткені «кетсін» формасы үшінші жаққа қатысты бұйрық беруден гөрі сөйлеушінің тілек-ниетін, яғни армандауын білдіреді"
+    }
+  ],
+  "correct_answer": "D",
+  "explanation": "Бұйрық рай (императив) негізгі қызметінде бұйрық, өтініш, нұсқау мәнін білдіреді. Алайда бұйрық райдың үшінші жақ формалары (кетсін, барсын, алсын т.б.) кейде бұйрық мәнінен ауытқып, сөйлеушінің тілегін, ниетін, арманын білдіретін экспрессивті-эмоционалды мағынада жұмсалады. «Кетсін ол жақтан» сөйлемінде сөйлеуші нақты бір адамға бұйрық беріп отырған жоқ; «кетсін» формасы арқылы өзінің тілегін, ниетін ашық білдіруде — яғни бұйрық рай тілек мәнінде қолданылған. Сондықтан дұрыс жауап — D.\n\nА нұсқасы дұрыс емес: «Кел» формасы бұйрық райдың тікелей, негізгі қызметінде (2-жаққа бұйрық/шақыру) жұмсалған, эмоционалды-тілек мәні жоқ.\n\nB нұсқасы дұрыс емес: «жауса екен», «өссе екен» формалары морфологиялық тұрғыдан шартты рай + «екен» көмекші сөзінің тіркесі болып табылады, бұл бұйрық рай емес — шартты/қалау мәніндегі арнайы форма.\n\nС нұсқасы дұрыс емес: «бар» (2-жақ бұйрық) және «барайын» (1-жақ бұйрық/ниет) формалары бұйрық рай болғанымен, бұл жерде эмоционалды тілек-арман мәні емес, ынталандыру/өзара уәде мәні бар — бұл бұйрық райдың стандартты модальдік қызметі.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 7.333,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered D: The key condition in the stem is not only the meaning of wish/desire, but specifically that an imperative mood form (бұйрық рай формасы) is used with an emotional-expressive/wish meaning. I: \"Кел\" is a 2nd-person imperative, but it is used as a direct invitation/request, the basic imperative function, not a dream/wish meaning. II: \"жауса екен\", \"өссе екен\" express a strong wish, but morphologicall\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks which sentence uses the imperative mood (бұйрық рай) of a verb in an emotionally-expressive meaning — specifically in the sense of a wish or dream (тілек, армандау мәні).\n\nLet's analyze each option:\n\nI. 'Кел, достым, бірге отырып кеңесейік.' — 'Кел' is imperative 2nd person singular, used as a direct invitation/command. This is the basic/primary function of the imperative mood. O\n\n[google/gemini-3.1-pro-preview] answered D: The question asks to identify the sentence where the imperative mood (бұйрық рай) of a verb is used in an emotional-expressive meaning, specifically expressing a wish or desire (тілек, армандау мәнінде). \n\nLet's analyze the options:\n- Option A discusses Sentence I ('кел'), but correctly identifies it as having a direct command meaning (негізгі қызметі), which does not fit the 'wish/desire' require",
+    "critic_answer": "D",
+    "dimensions": {
+      "correctness": 9.0,
+      "distractor_quality": 4.0,
+      "difficulty_alignment": 4.833,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 7.333,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer D is defensible because it is the only imperative-form option that can be read as speaker wish/volition rather than direct command, while B expresses wish through conditional mood. However, the example 'Кетсін ол жақтан, бізге керегі жоқ' is more dismissive/jussive than true 'арман-тілек', and several distractors are self-eliminating because their explanations explicitly identify non-target functions. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests a nuanced grammatical concept — the emotionally-expressive (wish/desire) use of the 3rd-person imperative in Kazakh. The correct answer (D) is defensible and matches standard Kazakh grammar pedagogy. Distractors are plausible and each targets a specific misconception (direct command vs. expressive use, confusion with conditional mood, confusion with standard imperative functions). The Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is factually correct, but the distractors are fundamentally flawed because they contain explanations that self-eliminate. A test-taker can find the correct answer purely by reading the options, as A, B, and C explicitly state that they do not match the condition asked in the prompt.",
+    "improvement_suggestions": "[openai/gpt-5.5] Use a clearer imperative-form wish example, e.g. a third-person optative/jussive with unmistakable тілек мәні, and avoid option explanations that directly reveal why they are wrong. To match level C, require deeper analysis of several mood forms in a short contextual passage rather than simple sentence-by-sentence recognition. | [google/gemini-3.1-pro-preview] Remove the 'өйткені...' explanations from the options. The options should simply be: A) I сөйлемде; B) II сөйлемде; C) III сөйлемде; D) IV сөйлемде. The detailed explanations belong only in the correct answer rationale, not in the test items themselves.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered D: The key condition in the stem is not only the meaning of wish/desire, but specifically that an imperative mood form (бұйрық рай формасы) is used with an emotional-expressive/wish meaning. I: \"Кел\" is a 2nd-person imperative, but it is used as a direct invitation/request, the basic imperative function, not a dream/wish meaning. II: \"жауса екен\", \"өссе екен\" express a strong wish, but morphologicall\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks which sentence uses the imperative mood (бұйрық рай) of a verb in an emotionally-expressive meaning — specifically in the sense of a wish or dream (тілек, армандау мәні).\n\nLet's analyze each option:\n\nI. 'Кел, достым, бірге отырып кеңесейік.' — 'Кел' is imperative 2nd person singular, used as a direct invitation/command. This is the basic/primary function of the imperative mood. O\n\n[google/gemini-3.1-pro-preview] answered D: The question asks to identify the sentence where the imperative mood (бұйрық рай) of a verb is used in an emotional-expressive meaning, specifically expressing a wish or desire (тілек, армандау мәнінде). \n\nLet's analyze the options:\n- Option A discusses Sentence I ('кел'), but correctly identifies it as having a direct command meaning (негізгі қызметі), which does not fit the 'wish/desire' require",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 9.0,
+        "distractor_quality": 4.0,
+        "difficulty_alignment": 4.833,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.333,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer D is defensible because it is the only imperative-form option that can be read as speaker wish/volition rather than direct command, while B expresses wish through conditional mood. However, the example 'Кетсін ол жақтан, бізге керегі жоқ' is more dismissive/jussive than true 'арман-тілек', and several distractors are self-eliminating because their explanations explicitly identify non-target functions. | [anthropic/claude-sonnet-4.6] The question is well-constructed and tests a nuanced grammatical concept — the emotionally-expressive (wish/desire) use of the 3rd-person imperative in Kazakh. The correct answer (D) is defensible and matches standard Kazakh grammar pedagogy. Distractors are plausible and each targets a specific misconception (direct command vs. expressive use, confusion with conditional mood, confusion with standard imperative functions). The Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is factually correct, but the distractors are fundamentally flawed because they contain explanations that self-eliminate. A test-taker can find the correct answer purely by reading the options, as A, B, and C explicitly state that they do not match the condition asked in the prompt.",
+      "improvement_suggestions": "[openai/gpt-5.5] Use a clearer imperative-form wish example, e.g. a third-person optative/jussive with unmistakable тілек мәні, and avoid option explanations that directly reveal why they are wrong. To match level C, require deeper analysis of several mood forms in a short contextual passage rather than simple sentence-by-sentence recognition. | [google/gemini-3.1-pro-preview] Remove the 'өйткені...' explanations from the options. The options should simply be: A) I сөйлемде; B) II сөйлемде; C) III сөйлемде; D) IV сөйлемде. The detailed explanations belong only in the correct answer rationale, not in the test items themselves.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The key condition in the stem is not only the meaning of wish/desire, but specifically that an imperative mood form (бұйрық рай формасы) is used with an emotional-expressive/wish meaning. I: \"Кел\" is a 2nd-person imperative, but it is used as a direct invitation/request, the basic imperative function, not a dream/wish meaning. II: \"жауса екен\", \"өссе екен\" express a strong wish, but morphologically they are conditional mood forms with \"екен\" (-са екен), not imperative mood forms. So this sentence has the desired semantics but not the required imperative form. III: \"бар\" is a 2nd-person imperative and \"барайын\" is a 1st-person imperative/jussive form, but the meaning is instruction/encouragement or permission, not emotional dreaming/wishing. IV: \"кетсін\" is a 3rd-person imperative/jussive form (-сын/-сін). Since the addressee is not directly commanded, the form can convey the speaker's will, wish, or emotional attitude: 'let him leave / may he leave'. Therefore this best matches an imperative mood form used with a wish-like emotional-expressive meaning.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 8.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 5.5,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.2,
+          "pass_fail": true,
+          "comments": "The keyed answer D is defensible because it is the only imperative-form option that can be read as speaker wish/volition rather than direct command, while B expresses wish through conditional mood. However, the example 'Кетсін ол жақтан, бізге керегі жоқ' is more dismissive/jussive than true 'арман-тілек', and several distractors are self-eliminating because their explanations explicitly identify non-target functions.",
+          "improvement_suggestions": "Use a clearer imperative-form wish example, e.g. a third-person optative/jussive with unmistakable тілек мәні, and avoid option explanations that directly reveal why they are wrong. To match level C, require deeper analysis of several mood forms in a short contextual passage rather than simple sentence-by-sentence recognition.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence uses the imperative mood (бұйрық рай) of a verb in an emotionally-expressive meaning — specifically in the sense of a wish or dream (тілек, армандау мәні).\n\nLet's analyze each option:\n\nI. 'Кел, достым, бірге отырып кеңесейік.' — 'Кел' is imperative 2nd person singular, used as a direct invitation/command. This is the basic/primary function of the imperative mood. Option A correctly identifies this as a direct command, which is the standard use, not the emotional-expressive wish meaning.\n\nII. 'Жаңбыр жауса екен, егін өссе екен.' — 'Жауса екен' and 'өссе екен' are formed with the conditional mood suffix -са/-се plus 'екен', which expresses a wish/desire. However, these are NOT imperative mood forms — they are conditional mood (шартты рай) forms used in a wish meaning. So this sentence uses шартты рай, not бұйрық рай.\n\nIII. 'Ендеше, сен де бар, мен де барайын.' — 'Бар' is imperative 2nd person singular, 'барайын' is 1st person singular imperative/volitional. These are standard imperative forms used for encouragement/suggestion. Option C says this is imperative used in an encouraging/general instruction sense — this is still a standard imperative function.\n\nIV. 'Кетсін ол жақтан, бізге керегі жоқ.' — 'Кетсін' is the 3rd person imperative form. In Kazakh, the 3rd person imperative (-сын/-сін) can express not just a command directed at a third party, but also the speaker's wish or desire regarding a third party — essentially 'let him go away' or 'I wish he would leave.' This is the emotionally-expressive wish/desire meaning of the imperative mood. When the speaker says 'кетсін ол жақтан' combined with 'бізге керегі жоқ,' it expresses the speaker's wish/desire rather than a direct command to the third person.\n\nIn Kazakh grammar, the imperative mood (бұйрық рай) used in the 3rd person (-сын/-сін) is specifically noted as being able to carry emotional-expressive meaning — expressing the speaker's wish, desire, or longing regarding a third party. This is a well-documented grammatical phenomenon in Kazakh morphology.\n\nTherefore, the correct answer is D — sentence IV uses the imperative form 'кетсін' in an emotionally-expressive wish/desire meaning rather than a direct command.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and tests a nuanced grammatical concept — the emotionally-expressive (wish/desire) use of the 3rd-person imperative in Kazakh. The correct answer (D) is defensible and matches standard Kazakh grammar pedagogy. Distractors are plausible and each targets a specific misconception (direct command vs. expressive use, confusion with conditional mood, confusion with standard imperative functions). The Kazakh is natural and terminologically accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence where the imperative mood (бұйрық рай) of a verb is used in an emotional-expressive meaning, specifically expressing a wish or desire (тілек, армандау мәнінде). \n\nLet's analyze the options:\n- Option A discusses Sentence I ('кел'), but correctly identifies it as having a direct command meaning (негізгі қызметі), which does not fit the 'wish/desire' requirement of the question.\n- Option B discusses Sentence II ('жауса екен', 'өссе екен'). While these forms do express a wish or dream, they are in the conditional mood (шартты рай), not the imperative mood (бұйрық рай) as requested by the prompt.\n- Option C discusses Sentence III ('бар', 'барайын'), identifying them as motivational or general instructions, which again does not fit the emotional-expressive 'wish' meaning.\n- Option D discusses Sentence IV ('кетсін'). The verb 'кетсін' is in the 3rd person imperative mood (бұйрық рай). In this context ('Кетсін ол жақтан, бізге керегі жоқ'), it does not function as a direct command to a third party, but rather expresses the speaker's strong internal wish, desire, or intention (тілек-ниет, армандау). \n\nOption D perfectly aligns with both the grammatical requirement (imperative mood) and the semantic requirement (expressing a wish/desire) of the question.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 0.0,
+            "difficulty_alignment": 0.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.0,
+          "pass_fail": true,
+          "comments": "The question is factually correct, but the distractors are fundamentally flawed because they contain explanations that self-eliminate. A test-taker can find the correct answer purely by reading the options, as A, B, and C explicitly state that they do not match the condition asked in the prompt.",
+          "improvement_suggestions": "Remove the 'өйткені...' explanations from the options. The options should simply be: A) I сөйлемде; B) II сөйлемде; C) III сөйлемде; D) IV сөйлемде. The detailed explanations belong only in the correct answer rationale, not in the test items themselves.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:57:56.068311+00:00",
+  "generation_attempts": 1
+}

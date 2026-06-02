@@ -1,0 +1,140 @@
+{
+  "id": "c72b757f-d7c3-4df1-be0b-648c1a0b4fdd",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "lexicology_meaning",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысында «жел» сөзі тура мағынасында емес, ауыспалы мағынада қолданылған?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Далада қатты жел соғып, шаңды аспанға көтерді."
+    },
+    {
+      "label": "B",
+      "text": "Оның жүрегіне үміт желі есті."
+    },
+    {
+      "label": "C",
+      "text": "Жел тұрғанда диірмен тартады."
+    },
+    {
+      "label": "D",
+      "text": "Солтүстіктен суық жел келіп, ауа райы өзгерді."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "«Жел» сөзінің тура мағынасы — ауаның қозғалысы, яғни табиғат құбылысы. А, В, Г нұсқаларында «жел» сөзі осы тура мағынасында қолданылған: далада соғатын нақты жел туралы айтылады. Ал «Оның жүрегіне үміт желі есті» деген сөйлемде «жел» сөзі ауыспалы мағынада — үміттің, шабыттың символы ретінде — адам сезіміне байланысты метафоралық тұрғыда қолданылған. Бұл сөйлемде «жел» — табиғат құбылысы емес, ішкі рухани қозғалыстың бейнесі. Демек, дұрыс жауап — Б нұсқасы. Тексерушілерді шатастыратын жай: «диірмен тартады» тіркесі де бейнелі болып көрінуі мүмкін, алайда онда «жел» сөзінің өзі тура мағынасында — механизмді қозғаушы нақты ауа ағыны ретінде — жұмсалған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 7.217,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh word \"жел\" primarily means the natural movement of air, i.e., \"wind.\" In option A, \"қатты жел соғып\" describes actual wind blowing and lifting dust, so it is literal. In option C, \"Жел тұрғанда диірмен тартады\" refers to wind powering a mill; even if proverbial, the word \"жел\" itself keeps its direct meaning. In option D, \"Солтүстіктен суық жел келіп\" describes a cold wind coming from t\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks which sentence uses the word 'жел' (wind) in a figurative (transferred/metaphorical) meaning rather than its literal meaning.\n\nAnalysis of each option:\n\nA) 'Далада қатты жел соғып, шаңды аспанға көтерді.' — 'A strong wind blew in the steppe, lifting dust into the sky.' Here 'жел' refers to actual wind, a physical phenomenon. This is the LITERAL meaning.\n\nB) 'Оның жүрегіне үміт же\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence where the word 'жел' (wind) is used in a figurative (ауыспалы) meaning rather than its literal (тура) meaning. Let's analyze the options:\n\nA) 'Далада қатты жел соғып, шаңды аспанға көтерді.' (A strong wind blew outside, raising dust into the sky.) - Here, 'жел' refers to the actual physical wind. This is a literal meaning.\nB) 'Оның жүрегіне үміт желі есті",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.5,
+      "distractor_quality": 5.667,
+      "difficulty_alignment": 2.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 7.217,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer B is correct and the intended distinction between literal and figurative meaning is clear. However, the item is far too easy for level C, and option C as a proverb can introduce some sentence-level figurative ambiguity even though the word itself is arguably literal. | [anthropic/claude-sonnet-4.6] The correct answer (B) is unambiguous and well-explained — 'үміт желі есті' is clearly a metaphor. However, the question is too easy for Level C: identifying a single obvious metaphor in a short sentence requires only basic recognition, not the complex analysis, synthesis, or multi-topic reasoning demanded by the hard level descriptor. Distractors A and D are nearly identical in structure (both describe literal wind affecting weather/environment), reducing effective distractor count. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but it is far too easy for a Level C (Hard) teacher certification exam. Identifying a basic metaphor like 'үміт желі' is a primary/middle school level task.",
+    "improvement_suggestions": "[openai/gpt-5.5] For level C, use a short literary or journalistic passage requiring analysis of several contextual meanings of the same word, and make distractors closer by including polysemy, metaphor, metonymy, and phraseological usage. Avoid proverb options unless the task explicitly distinguishes word-level meaning from whole-sentence figurative meaning. | [anthropic/claude-sonnet-4.6] 1) To reach Level C difficulty, embed 'жел' in a longer literary passage where figurative vs. literal usage is contextually ambiguous or requires analysis of the author's stylistic intent. 2) Replace one of the near-duplicate literal-wind distractors (A or D) with a sentence where 'жел' appears in a fixed idiom or proverb that could be mistaken for figurative use (e.g., 'Желге айтқан сөз' type constructions). 3) Consider asking teachers to identify AND justify the semantic shift, or to classify multiple instances, to raise cognitive demand to true Level C. | [google/gemini-3.1-pro-preview] To align with Level C (Hard), the question should require more complex cognitive operations. Instead of a simple metaphor, ask candidates to distinguish between subtle types of semantic shifts (e.g., metonymy vs. synecdoche), analyze polysemy in complex literary excerpts, or identify historical changes in word meanings.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh word \"жел\" primarily means the natural movement of air, i.e., \"wind.\" In option A, \"қатты жел соғып\" describes actual wind blowing and lifting dust, so it is literal. In option C, \"Жел тұрғанда диірмен тартады\" refers to wind powering a mill; even if proverbial, the word \"жел\" itself keeps its direct meaning. In option D, \"Солтүстіктен суық жел келіп\" describes a cold wind coming from t\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks which sentence uses the word 'жел' (wind) in a figurative (transferred/metaphorical) meaning rather than its literal meaning.\n\nAnalysis of each option:\n\nA) 'Далада қатты жел соғып, шаңды аспанға көтерді.' — 'A strong wind blew in the steppe, lifting dust into the sky.' Here 'жел' refers to actual wind, a physical phenomenon. This is the LITERAL meaning.\n\nB) 'Оның жүрегіне үміт же\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence where the word 'жел' (wind) is used in a figurative (ауыспалы) meaning rather than its literal (тура) meaning. Let's analyze the options:\n\nA) 'Далада қатты жел соғып, шаңды аспанға көтерді.' (A strong wind blew outside, raising dust into the sky.) - Here, 'жел' refers to the actual physical wind. This is a literal meaning.\nB) 'Оның жүрегіне үміт желі есті",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.5,
+        "distractor_quality": 5.667,
+        "difficulty_alignment": 2.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 7.217,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer B is correct and the intended distinction between literal and figurative meaning is clear. However, the item is far too easy for level C, and option C as a proverb can introduce some sentence-level figurative ambiguity even though the word itself is arguably literal. | [anthropic/claude-sonnet-4.6] The correct answer (B) is unambiguous and well-explained — 'үміт желі есті' is clearly a metaphor. However, the question is too easy for Level C: identifying a single obvious metaphor in a short sentence requires only basic recognition, not the complex analysis, synthesis, or multi-topic reasoning demanded by the hard level descriptor. Distractors A and D are nearly identical in structure (both describe literal wind affecting weather/environment), reducing effective distractor count. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but it is far too easy for a Level C (Hard) teacher certification exam. Identifying a basic metaphor like 'үміт желі' is a primary/middle school level task.",
+      "improvement_suggestions": "[openai/gpt-5.5] For level C, use a short literary or journalistic passage requiring analysis of several contextual meanings of the same word, and make distractors closer by including polysemy, metaphor, metonymy, and phraseological usage. Avoid proverb options unless the task explicitly distinguishes word-level meaning from whole-sentence figurative meaning. | [anthropic/claude-sonnet-4.6] 1) To reach Level C difficulty, embed 'жел' in a longer literary passage where figurative vs. literal usage is contextually ambiguous or requires analysis of the author's stylistic intent. 2) Replace one of the near-duplicate literal-wind distractors (A or D) with a sentence where 'жел' appears in a fixed idiom or proverb that could be mistaken for figurative use (e.g., 'Желге айтқан сөз' type constructions). 3) Consider asking teachers to identify AND justify the semantic shift, or to classify multiple instances, to raise cognitive demand to true Level C. | [google/gemini-3.1-pro-preview] To align with Level C (Hard), the question should require more complex cognitive operations. Instead of a simple metaphor, ask candidates to distinguish between subtle types of semantic shifts (e.g., metonymy vs. synecdoche), analyze polysemy in complex literary excerpts, or identify historical changes in word meanings.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The Kazakh word \"жел\" primarily means the natural movement of air, i.e., \"wind.\" In option A, \"қатты жел соғып\" describes actual wind blowing and lifting dust, so it is literal. In option C, \"Жел тұрғанда диірмен тартады\" refers to wind powering a mill; even if proverbial, the word \"жел\" itself keeps its direct meaning. In option D, \"Солтүстіктен суық жел келіп\" describes a cold wind coming from the north, so it is literal. In option B, \"Оның жүрегіне үміт желі есті\" literally means \"a wind of hope blew into his heart,\" where \"жел\" does not mean physical air movement but a figurative feeling or impulse of hope. Therefore, the figurative usage is in option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 8.5,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.75,
+          "pass_fail": true,
+          "comments": "The keyed answer B is correct and the intended distinction between literal and figurative meaning is clear. However, the item is far too easy for level C, and option C as a proverb can introduce some sentence-level figurative ambiguity even though the word itself is arguably literal.",
+          "improvement_suggestions": "For level C, use a short literary or journalistic passage requiring analysis of several contextual meanings of the same word, and make distractors closer by including polysemy, metaphor, metonymy, and phraseological usage. Avoid proverb options unless the task explicitly distinguishes word-level meaning from whole-sentence figurative meaning.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence uses the word 'жел' (wind) in a figurative (transferred/metaphorical) meaning rather than its literal meaning.\n\nAnalysis of each option:\n\nA) 'Далада қатты жел соғып, шаңды аспанға көтерді.' — 'A strong wind blew in the steppe, lifting dust into the sky.' Here 'жел' refers to actual wind, a physical phenomenon. This is the LITERAL meaning.\n\nB) 'Оның жүрегіне үміт желі есті.' — 'A wind of hope blew into his heart.' Here 'жел' is used metaphorically — 'үміт желі' (wind of hope) describes an emotional/abstract feeling, not actual wind. This is the FIGURATIVE (ауыспалы) meaning.\n\nC) 'Жел тұрғанда диірмен тартады.' — 'When the wind blows, the mill grinds.' Here 'жел' refers to actual wind that powers a windmill. This is the LITERAL meaning.\n\nD) 'Солтүстіктен суық жел келіп, ауа райы өзгерді.' — 'A cold wind came from the north and the weather changed.' Here 'жел' refers to actual wind, a meteorological phenomenon. This is the LITERAL meaning.\n\nTherefore, option B uses 'жел' in a figurative/metaphorical sense, as it describes hope entering someone's heart using the metaphor of wind.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 4.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.5,
+          "pass_fail": true,
+          "comments": "The correct answer (B) is unambiguous and well-explained — 'үміт желі есті' is clearly a metaphor. However, the question is too easy for Level C: identifying a single obvious metaphor in a short sentence requires only basic recognition, not the complex analysis, synthesis, or multi-topic reasoning demanded by the hard level descriptor. Distractors A and D are nearly identical in structure (both describe literal wind affecting weather/environment), reducing effective distractor count.",
+          "improvement_suggestions": "1) To reach Level C difficulty, embed 'жел' in a longer literary passage where figurative vs. literal usage is contextually ambiguous or requires analysis of the author's stylistic intent. 2) Replace one of the near-duplicate literal-wind distractors (A or D) with a sentence where 'жел' appears in a fixed idiom or proverb that could be mistaken for figurative use (e.g., 'Желге айтқан сөз' type constructions). 3) Consider asking teachers to identify AND justify the semantic shift, or to classify multiple instances, to raise cognitive demand to true Level C.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence where the word 'жел' (wind) is used in a figurative (ауыспалы) meaning rather than its literal (тура) meaning. Let's analyze the options:\n\nA) 'Далада қатты жел соғып, шаңды аспанға көтерді.' (A strong wind blew outside, raising dust into the sky.) - Here, 'жел' refers to the actual physical wind. This is a literal meaning.\nB) 'Оның жүрегіне үміт желі есті.' (The wind of hope blew into his heart.) - Here, 'жел' is used in the phrase 'үміт желі' (wind of hope), which is a metaphor. This is a figurative meaning.\nC) 'Жел тұрғанда диірмен тартады.' (When the wind blows, the mill grinds.) - Refers to the physical wind turning a windmill. Literal meaning.\nD) 'Солтүстіктен суық жел келіп, ауа райы өзгерді.' (A cold wind came from the north, and the weather changed.) - Refers to the physical wind. Literal meaning.\n\nThus, the correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.4,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-written, but it is far too easy for a Level C (Hard) teacher certification exam. Identifying a basic metaphor like 'үміт желі' is a primary/middle school level task.",
+          "improvement_suggestions": "To align with Level C (Hard), the question should require more complex cognitive operations. Instead of a simple metaphor, ask candidates to distinguish between subtle types of semantic shifts (e.g., metonymy vs. synecdoche), analyze polysemy in complex literary excerpts, or identify historical changes in word meanings.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:03:12.040354+00:00",
+  "generation_attempts": 1
+}

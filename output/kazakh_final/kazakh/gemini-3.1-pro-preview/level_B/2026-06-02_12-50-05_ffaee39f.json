@@ -1,0 +1,140 @@
+{
+  "id": "ffaee39f-4b12-4773-a9c5-0db05807d16a",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "style_and_text_analysis",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төменде берілген сөйлемдердің ішінен ғылыми стильдің лексикалық және синтаксистік нормаларына толық сай келетінін көрсетіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Заттардың химиялық қасиеттері әртүрлі болатынын және олардың күнделікті тұрмыста қалай құбылатынын бәріміз жақсы білеміз ғой."
+    },
+    {
+      "label": "B",
+      "text": "Осы бір ғажап физикалық реакцияны байқаған сәтте, зертханадағы ғалымдардың өздері де қатты таңғалды деседі."
+    },
+    {
+      "label": "C",
+      "text": "Металдардың жоғары электр өткізгіштігі олардың кристалдық торындағы еркін электрондардың бағытталған қозғалысымен түсіндіріледі."
+    },
+    {
+      "label": "D",
+      "text": "Бұл құбылыстың сырына тереңірек үңілетін болсақ, табиғат-ананың тылсым күшіне еріксіз бас иесің."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Ғылыми стильдің басты ерекшеліктері – дәлдік, логикалық жүйелілік, объективтілік және терминдердің қатаң қолданылуы. Эмоциялық-экспрессивті сөздер мен бейнелі тіркестер бұл стильге тән емес. С нұсқасындағы сөйлемде нақты ғылыми терминдер («электр өткізгіштік», «кристалдық тор», «еркін электрондар») қолданылған, ой объективті түрде баяндалған. А нұсқасында ауызекі сөйлеу стилінің элементтері («білеміз ғой», «қалай құбылатынын»), В нұсқасында эмоциялық және көркемдеуіш сөздер («ғажап», «таңғалды», «деседі»), ал D нұсқасында көркем әдеби немесе публицистикалық стильге тән тіркестер («сырына үңілетін болсақ», «табиғат-ана», «тылсым күш») кездеседі. Сондықтан олар таза ғылыми стильдің нормаларына жауап бермейді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.233,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Scientific style in Kazakh requires terminological precision, objectivity, emotional neutrality, and syntactic forms such as explanatory/passive constructions. Option A contains colloquial and subjective wording: “бәріміз жақсы білеміз ғой” is conversational and not scientific. Option B contains expressive/evaluative vocabulary and hearsay: “ғажап,” “қатты таңғалды,” “деседі,” which belong more to\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks which sentence fully conforms to the lexical and syntactic norms of scientific style (ғылыми стиль) in Kazakh.\n\nScientific style characteristics:\n1. Objective, impersonal tone (no first-person plural 'бәріміз', no emotional exclamations)\n2. Precise, specialized terminology\n3. Logical, structured syntax\n4. No colloquialisms, no emotional/figurative language\n5. No modal particles e\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence that fully complies with the lexical and syntactic norms of the scientific style (ғылыми стиль). Let's analyze the options:\n\nOption A contains conversational elements like 'бәріміз жақсы білеміз ғой' (we all know well, don't we), which violates the objective and impersonal tone required in scientific writing.\n\nOption B includes emotional and expressive wo",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.233,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: only C consistently uses objective terminology and a scientific explanatory construction. The distractors are valid but somewhat cue-heavy because their colloquial or figurative markers make elimination fairly easy for teacher-level examinees. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear, unambiguous correct answer (C) that exemplifies scientific style through precise terminology and impersonal passive construction. Each distractor represents a distinct stylistic violation — colloquial (A), hearsay/emotional (B), and literary/metaphorical (D) — making them pedagogically meaningful. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It effectively tests the candidate's ability to distinguish scientific style from others by embedding non-scientific stylistic elements into sentences about scientific topics.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Scientific style in Kazakh requires terminological precision, objectivity, emotional neutrality, and syntactic forms such as explanatory/passive constructions. Option A contains colloquial and subjective wording: “бәріміз жақсы білеміз ғой” is conversational and not scientific. Option B contains expressive/evaluative vocabulary and hearsay: “ғажап,” “қатты таңғалды,” “деседі,” which belong more to\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks which sentence fully conforms to the lexical and syntactic norms of scientific style (ғылыми стиль) in Kazakh.\n\nScientific style characteristics:\n1. Objective, impersonal tone (no first-person plural 'бәріміз', no emotional exclamations)\n2. Precise, specialized terminology\n3. Logical, structured syntax\n4. No colloquialisms, no emotional/figurative language\n5. No modal particles e\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence that fully complies with the lexical and syntactic norms of the scientific style (ғылыми стиль). Let's analyze the options:\n\nOption A contains conversational elements like 'бәріміз жақсы білеміз ғой' (we all know well, don't we), which violates the objective and impersonal tone required in scientific writing.\n\nOption B includes emotional and expressive wo",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.233,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: only C consistently uses objective terminology and a scientific explanatory construction. The distractors are valid but somewhat cue-heavy because their colloquial or figurative markers make elimination fairly easy for teacher-level examinees. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear, unambiguous correct answer (C) that exemplifies scientific style through precise terminology and impersonal passive construction. Each distractor represents a distinct stylistic violation — colloquial (A), hearsay/emotional (B), and literary/metaphorical (D) — making them pedagogically meaningful. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It effectively tests the candidate's ability to distinguish scientific style from others by embedding non-scientific stylistic elements into sentences about scientific topics.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Scientific style in Kazakh requires terminological precision, objectivity, emotional neutrality, and syntactic forms such as explanatory/passive constructions. Option A contains colloquial and subjective wording: “бәріміз жақсы білеміз ғой” is conversational and not scientific. Option B contains expressive/evaluative vocabulary and hearsay: “ғажап,” “қатты таңғалды,” “деседі,” which belong more to publicistic or narrative style. Option C uses scientific terminology (“металдар,” “электр өткізгіштігі,” “кристалдық тор,” “еркін электрондар,” “бағытталған қозғалыс”) and an objective passive explanatory construction (“түсіндіріледі”), fully matching scientific lexical and syntactic norms. Option D is figurative and emotional: “сырына үңілу,” “табиғат-ана,” “тылсым күш,” “еріксіз бас иесің,” which are not scientific style. Therefore the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: only C consistently uses objective terminology and a scientific explanatory construction. The distractors are valid but somewhat cue-heavy because their colloquial or figurative markers make elimination fairly easy for teacher-level examinees.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence fully conforms to the lexical and syntactic norms of scientific style (ғылыми стиль) in Kazakh.\n\nScientific style characteristics:\n1. Objective, impersonal tone (no first-person plural 'бәріміз', no emotional exclamations)\n2. Precise, specialized terminology\n3. Logical, structured syntax\n4. No colloquialisms, no emotional/figurative language\n5. No modal particles expressing surprise or hearsay (деседі, ғой)\n6. No metaphors or poetic imagery\n\nAnalysis of each option:\n\nA) 'Заттардың химиялық қасиеттері әртүрлі болатынын және олардың күнделікті тұрмыста қалай құбылатынын бәріміз жақсы білеміз ғой.'\n- 'бәріміз' (we all) — first-person plural, informal\n- 'ғой' — modal particle expressing familiarity/colloquialism\n- 'күнделікті тұрмыста' — everyday life context, not scientific\n- Violates scientific style norms. REJECTED.\n\nB) 'Осы бір ғажап физикалық реакцияны байқаған сәтте, зертханадағы ғалымдардың өздері де қатты таңғалды деседі.'\n- 'ғажап' (wonderful/amazing) — emotional/evaluative word, not scientific\n- 'деседі' — hearsay/reported speech marker, informal\n- 'қатты таңғалды' — emotional reaction description\n- Violates scientific style norms. REJECTED.\n\nC) 'Металдардың жоғары электр өткізгіштігі олардың кристалдық торындағы еркін электрондардың бағытталған қозғалысымен түсіндіріледі.'\n- Uses precise scientific terminology: электр өткізгіштігі (electrical conductivity), кристалдық тор (crystal lattice), еркін электрондар (free electrons), бағытталған қозғалыс (directed movement)\n- Passive construction 'түсіндіріледі' (is explained) — typical of scientific style, impersonal\n- No emotional language, no colloquialisms\n- Logical, structured sentence\n- Fully conforms to scientific style. ACCEPTED.\n\nD) 'Бұл құбылыстың сырына тереңірек үңілетін болсақ, табиғат-ананың тылсым күшіне еріксіз бас иесің.'\n- 'табиғат-ана' (Mother Nature) — poetic/metaphorical expression\n- 'тылсым күш' (mysterious force) — figurative, non-scientific\n- 'бас иесің' — second-person singular, informal/literary\n- Clearly literary/artistic style, not scientific. REJECTED.\n\nConclusion: Option C is the only sentence that fully meets the lexical and syntactic norms of scientific style.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear, unambiguous correct answer (C) that exemplifies scientific style through precise terminology and impersonal passive construction. Each distractor represents a distinct stylistic violation — colloquial (A), hearsay/emotional (B), and literary/metaphorical (D) — making them pedagogically meaningful.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence that fully complies with the lexical and syntactic norms of the scientific style (ғылыми стиль). Let's analyze the options:\n\nOption A contains conversational elements like 'бәріміз жақсы білеміз ғой' (we all know well, don't we), which violates the objective and impersonal tone required in scientific writing.\n\nOption B includes emotional and expressive words such as 'ғажап' (wonderful) and 'қатты таңғалды деседі' (they say they were very surprised). Scientific style must be unemotional and objective.\n\nOption C ('Металдардың жоғары электр өткізгіштігі олардың кристалдық торындағы еркін электрондардың бағытталған қозғалысымен түсіндіріледі') uses precise scientific terminology ('электр өткізгіштігі', 'кристалдық тор', 'еркін электрондар') and a passive, impersonal construction ('түсіндіріледі'). It is completely objective, logical, and devoid of emotion, perfectly matching the scientific style.\n\nOption D contains literary and artistic metaphors like 'табиғат-ананың тылсым күшіне еріксіз бас иесің' (you involuntarily bow to the mysterious power of mother nature), which belongs to the artistic or publicistic style.\n\nTherefore, Option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It effectively tests the candidate's ability to distinguish scientific style from others by embedding non-scientific stylistic elements into sentences about scientific topics.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:50:05.004108+00:00",
+  "generation_attempts": 1
+}

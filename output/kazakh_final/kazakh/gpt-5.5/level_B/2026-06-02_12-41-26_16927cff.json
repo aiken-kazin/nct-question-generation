@@ -1,0 +1,140 @@
+{
+  "id": "16927cff-383d-4647-a4f1-12537a67f94e",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі бағыныңқы сыңардың мағыналық түрін анықтаңыз.\n«Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды».",
+  "options": [
+    {
+      "label": "A",
+      "text": "Шартты бағыныңқы сабақтас"
+    },
+    {
+      "label": "B",
+      "text": "Себеп бағыныңқы сабақтас"
+    },
+    {
+      "label": "C",
+      "text": "Қарсылықты бағыныңқы сабақтас"
+    },
+    {
+      "label": "D",
+      "text": "Мақсат бағыныңқы сабақтас"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. Сөйлемдегі «Жол алыс болса да» бағыныңқы сыңары басыңқыдағы «жас зерттеушілер экспедицияны жалғастырды» деген әрекетке қарсы мәнде жұмсалған: жолдың алыстығы экспедицияны жалғастыруға кедергі болуы мүмкін еді, бірақ әрекет соған қарамастан орындалған. «-са да» тұлғасы қарсылықты бағыныңқы сабақтасқа тән. A нұсқасы дұрыс емес, өйткені «-са» шарт мәнін білдіре алғанымен, бұл сөйлемде «да» шылауымен тіркесіп, қарсылық мәнін жасаған. B нұсқасы дұрыс емес: бағыныңқы сыңар басыңқы әрекеттің себебін емес, оған қарама-қарсы жағдайды білдіреді. D нұсқасы дұрыс емес, себебі мақсат бағыныңқыда «үшін», «деп», «мақсатымен» сияқты мақсат мәнді тұлғалар қолданылады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: “Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.” The subordinate clause is “Жол алыс болса да” (“although the road was far/long”). Its predicate form “болса да” is a concessive construction in Kazakh: it expresses an obstacle or contrary condition that does not prevent the action of the main clause. The main clause is “жас зерттеушілер экспедицияны жалғастырды” (“th\n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.' (Even though the road was far/long, the young researchers continued the expedition.)\n\nThe subordinate clause is 'Жол алыс болса да' — it uses the conjunction 'болса да' (even though/although), which is a concessive conjunction in Kazakh.\n\nIn Kazakh syntax, subordinate compound sentences (сабақтас құрмалас сөйлемдер) a\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is 'Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.' (Even though the road was long, the young researchers continued the expedition.) The subordinate clause is 'Жол алыс болса да'. Its predicate is formed with the conditional suffix '-са' followed by the particle 'да'. In Kazakh syntax, the combination of '-са/-се' + 'да/-де' is the primary grammatical marker for a",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 8.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies “болса да” as a concessive/adversative subordinate construction. The item is clear and linguistically sound, though it is somewhat easy for level B because the form strongly cues the answer. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the sentence clearly uses 'болса да' (concessive marker), the correct answer C is unambiguous, and the explanation is thorough. Distractors are plausible — option A (шартты) is a particularly good distractor since 'болса' alone is a conditional marker, requiring teachers to recognize that 'да' shifts the meaning to concessive. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible, especially option A, which tests the candidate's ability to distinguish between conditional and concessive clauses.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: “Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.” The subordinate clause is “Жол алыс болса да” (“although the road was far/long”). Its predicate form “болса да” is a concessive construction in Kazakh: it expresses an obstacle or contrary condition that does not prevent the action of the main clause. The main clause is “жас зерттеушілер экспедицияны жалғастырды” (“th\n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.' (Even though the road was far/long, the young researchers continued the expedition.)\n\nThe subordinate clause is 'Жол алыс болса да' — it uses the conjunction 'болса да' (even though/although), which is a concessive conjunction in Kazakh.\n\nIn Kazakh syntax, subordinate compound sentences (сабақтас құрмалас сөйлемдер) a\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is 'Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.' (Even though the road was long, the young researchers continued the expedition.) The subordinate clause is 'Жол алыс болса да'. Its predicate is formed with the conditional suffix '-са' followed by the particle 'да'. In Kazakh syntax, the combination of '-са/-се' + 'да/-де' is the primary grammatical marker for a",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 8.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies “болса да” as a concessive/adversative subordinate construction. The item is clear and linguistically sound, though it is somewhat easy for level B because the form strongly cues the answer. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the sentence clearly uses 'болса да' (concessive marker), the correct answer C is unambiguous, and the explanation is thorough. Distractors are plausible — option A (шартты) is a particularly good distractor since 'болса' alone is a conditional marker, requiring teachers to recognize that 'да' shifts the meaning to concessive. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible, especially option A, which tests the candidate's ability to distinguish between conditional and concessive clauses.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: “Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.” The subordinate clause is “Жол алыс болса да” (“although the road was far/long”). Its predicate form “болса да” is a concessive construction in Kazakh: it expresses an obstacle or contrary condition that does not prevent the action of the main clause. The main clause is “жас зерттеушілер экспедицияны жалғастырды” (“the young researchers continued the expedition”). Since the meaning is ‘although/despite the road being far, they continued,’ the subordinate clause is a concessive/adversative subordinate clause, in Kazakh “қарсылықты бағыныңқы сабақтас.”",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies “болса да” as a concessive/adversative subordinate construction. The item is clear and linguistically sound, though it is somewhat easy for level B because the form strongly cues the answer.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: 'Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.' (Even though the road was far/long, the young researchers continued the expedition.)\n\nThe subordinate clause is 'Жол алыс болса да' — it uses the conjunction 'болса да' (even though/although), which is a concessive conjunction in Kazakh.\n\nIn Kazakh syntax, subordinate compound sentences (сабақтас құрмалас сөйлемдер) are classified by meaning:\n- Шартты бағыныңқы (conditional): uses 'болса', 'егер...болса' — expresses a condition\n- Себеп бағыныңқы (causal): uses 'себебі', 'өйткені' — expresses reason/cause\n- Қарсылықты бағыныңқы (concessive/adversative): uses 'болса да', 'дегенмен', 'қайта' — expresses contrast/concession (despite the fact that...)\n- Мақсат бағыныңқы (purposive): uses 'үшін', 'деп' — expresses purpose\n\nThe conjunction 'болса да' (even if / although / despite) marks a concessive relationship — the main clause action happens DESPITE the condition in the subordinate clause. This is the defining feature of қарсылықты бағыныңқы (concessive subordinate clause).\n\nTherefore, the answer is C — Қарсылықты бағыныңқы сабақтас.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the sentence clearly uses 'болса да' (concessive marker), the correct answer C is unambiguous, and the explanation is thorough. Distractors are plausible — option A (шартты) is a particularly good distractor since 'болса' alone is a conditional marker, requiring teachers to recognize that 'да' shifts the meaning to concessive.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given sentence is 'Жол алыс болса да, жас зерттеушілер экспедицияны жалғастырды.' (Even though the road was long, the young researchers continued the expedition.) The subordinate clause is 'Жол алыс болса да'. Its predicate is formed with the conditional suffix '-са' followed by the particle 'да'. In Kazakh syntax, the combination of '-са/-се' + 'да/-де' is the primary grammatical marker for a concessive subordinate clause (Қарсылықты бағыныңқы сабақтас). It indicates that the action in the main clause happens despite the condition stated in the subordinate clause. Therefore, the correct type is 'Қарсылықты бағыныңқы сабақтас'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible, especially option A, which tests the candidate's ability to distinguish between conditional and concessive clauses.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:41:26.744952+00:00",
+  "generation_attempts": 1
+}

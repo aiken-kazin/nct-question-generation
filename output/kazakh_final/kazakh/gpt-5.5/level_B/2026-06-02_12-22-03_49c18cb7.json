@@ -1,0 +1,140 @@
+{
+  "id": "49c18cb7-d2fb-4c59-b200-0bcbb9194330",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөздерге III жақ тәуелдік жалғауын жалғағанда орфографиялық нормаға сай жазылған қатарды анықтаңыз.\n\nКітап, күрек, қасық, қап",
+  "options": [
+    {
+      "label": "A",
+      "text": "кітапы, күрекі, қасықы, қапы"
+    },
+    {
+      "label": "B",
+      "text": "кітабы, күрегі, қасығы, қабы"
+    },
+    {
+      "label": "C",
+      "text": "кітабы, күрегі, қасықы, қапы"
+    },
+    {
+      "label": "D",
+      "text": "кітапы, күрегі, қасығы, қабы"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап — B. Қазақ тілінде қ, к, п дыбыстарына аяқталған сөздерге дауыстыдан басталатын қосымша жалғанғанда, соңғы қ, к, п дыбыстары ұяңданып ғ, г, б болып жазылады: кітап + ы → кітабы, күрек + і → күрегі, қасық + ы → қасығы, қап + ы → қабы. A нұсқасында ұяңдану мүлде ескерілмеген. C нұсқасында «қасықы», «қапы» сөздері қате жазылған. D нұсқасында «кітапы» сөзі қате, өйткені п дыбысы б болып өзгеруі керек.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: To add the III person possessive suffix in Kazakh, a noun ending in a consonant takes -ы/-і according to vowel harmony. When the suffix begins with a vowel, final voiceless consonants қ, к, п often undergo voicing in orthography: қ -> ғ, к -> г, п -> б. Applying this rule: кітап + ы = кітабы (п -> б); күрек + і = күрегі (к -> г); қасық + ы = қасығы (қ -> ғ); қап + ы = қабы (п -> б). This matches o\n\n[anthropic/claude-sonnet-4.6] answered B: We need to attach the 3rd person possessive suffix (III жақ тәуелдік жалғауы) to each word: кітап, күрек, қасық, қап.\n\nIn Kazakh, the 3rd person possessive suffix is -ы/-і (after vowels) or -ы/-і (after consonants, but with voicing assimilation rules).\n\nKey phonetic rule: When a word ends in a voiceless stop consonant (п, к, қ), and a vowel-initial suffix is added, the final consonant undergoes vo\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the correct orthographic spelling of the words 'Кітап', 'күрек', 'қасық', and 'қап' when the 3rd person possessive suffix (-ы/-і) is added. According to Kazakh phonetic rules (specifically, consonant assimilation/mutation), when a suffix starting with a vowel is added to a word ending in the voiceless consonants 'п', 'к', or 'қ', these consonants change to their voiced counte",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 8.333,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: all four words require the expected қ/к/п voicing before the III person possessive vowel suffix. The item is well-written, but it is closer to straightforward rule application than a fully medium-level contextual analysis task. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests a specific orthographic rule (voicing of final stops before vowel-initial suffixes) with all four distractors representing identifiable student errors. The correct answer B is unambiguous and matches the standard Kazakh orthographic norm. | [google/gemini-3.1-pro-preview] The question is well-constructed, factually correct, and perfectly aligned with the requested difficulty level. The distractors are plausible and test common errors in applying the consonant mutation rule.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: To add the III person possessive suffix in Kazakh, a noun ending in a consonant takes -ы/-і according to vowel harmony. When the suffix begins with a vowel, final voiceless consonants қ, к, п often undergo voicing in orthography: қ -> ғ, к -> г, п -> б. Applying this rule: кітап + ы = кітабы (п -> б); күрек + і = күрегі (к -> г); қасық + ы = қасығы (қ -> ғ); қап + ы = қабы (п -> б). This matches o\n\n[anthropic/claude-sonnet-4.6] answered B: We need to attach the 3rd person possessive suffix (III жақ тәуелдік жалғауы) to each word: кітап, күрек, қасық, қап.\n\nIn Kazakh, the 3rd person possessive suffix is -ы/-і (after vowels) or -ы/-і (after consonants, but with voicing assimilation rules).\n\nKey phonetic rule: When a word ends in a voiceless stop consonant (п, к, қ), and a vowel-initial suffix is added, the final consonant undergoes vo\n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the correct orthographic spelling of the words 'Кітап', 'күрек', 'қасық', and 'қап' when the 3rd person possessive suffix (-ы/-і) is added. According to Kazakh phonetic rules (specifically, consonant assimilation/mutation), when a suffix starting with a vowel is added to a word ending in the voiceless consonants 'п', 'к', or 'қ', these consonants change to their voiced counte",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: all four words require the expected қ/к/п voicing before the III person possessive vowel suffix. The item is well-written, but it is closer to straightforward rule application than a fully medium-level contextual analysis task. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests a specific orthographic rule (voicing of final stops before vowel-initial suffixes) with all four distractors representing identifiable student errors. The correct answer B is unambiguous and matches the standard Kazakh orthographic norm. | [google/gemini-3.1-pro-preview] The question is well-constructed, factually correct, and perfectly aligned with the requested difficulty level. The distractors are plausible and test common errors in applying the consonant mutation rule.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To add the III person possessive suffix in Kazakh, a noun ending in a consonant takes -ы/-і according to vowel harmony. When the suffix begins with a vowel, final voiceless consonants қ, к, п often undergo voicing in orthography: қ -> ғ, к -> г, п -> б. Applying this rule: кітап + ы = кітабы (п -> б); күрек + і = күрегі (к -> г); қасық + ы = қасығы (қ -> ғ); қап + ы = қабы (п -> б). This matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: all four words require the expected қ/к/п voicing before the III person possessive vowel suffix. The item is well-written, but it is closer to straightforward rule application than a fully medium-level contextual analysis task.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to attach the 3rd person possessive suffix (III жақ тәуелдік жалғауы) to each word: кітап, күрек, қасық, қап.\n\nIn Kazakh, the 3rd person possessive suffix is -ы/-і (after vowels) or -ы/-і (after consonants, but with voicing assimilation rules).\n\nKey phonetic rule: When a word ends in a voiceless stop consonant (п, к, қ), and a vowel-initial suffix is added, the final consonant undergoes voicing (lenition/sonorization):\n- п → б\n- к → г\n- қ → ғ\n\nLet's apply this to each word:\n\n1. кітап (ends in п) + possessive suffix:\n   - п → б before vowel suffix\n   - кітап + ы → кітабы ✓\n\n2. күрек (ends in к) + possessive suffix:\n   - к → г before vowel suffix\n   - күрек + і → күрегі ✓\n\n3. қасық (ends in қ) + possessive suffix:\n   - қ → ғ before vowel suffix\n   - қасық + ы → қасығы ✓\n\n4. қап (ends in п) + possessive suffix:\n   - п → б before vowel suffix\n   - қап + ы → қабы ✓\n\nSo the correct forms are: кітабы, күрегі, қасығы, қабы\n\nLooking at the options:\nA) кітапы, күрекі, қасықы, қапы — no voicing, incorrect\nB) кітабы, күрегі, қасығы, қабы — all voiced correctly ✓\nC) кітабы, күрегі, қасықы, қапы — қасық not voiced, қап not voiced, incorrect\nD) кітапы, күрегі, қасығы, қабы — кітап not voiced, incorrect\n\nThe correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and tests a specific orthographic rule (voicing of final stops before vowel-initial suffixes) with all four distractors representing identifiable student errors. The correct answer B is unambiguous and matches the standard Kazakh orthographic norm.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the correct orthographic spelling of the words 'Кітап', 'күрек', 'қасық', and 'қап' when the 3rd person possessive suffix (-ы/-і) is added. According to Kazakh phonetic rules (specifically, consonant assimilation/mutation), when a suffix starting with a vowel is added to a word ending in the voiceless consonants 'п', 'к', or 'қ', these consonants change to their voiced counterparts 'б', 'г', and 'ғ', respectively. \n\nApplying this rule:\n1. Кітап + ы = кітабы ('п' changes to 'б')\n2. Күрек + і = күрегі ('к' changes to 'г')\n3. Қасық + ы = қасығы ('қ' changes to 'ғ')\n4. Қап + ы = қабы ('п' changes to 'б')\n\nLooking at the given options, Option B ('кітабы, күрегі, қасығы, қабы') correctly reflects all these phonetic changes.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and perfectly aligned with the requested difficulty level. The distractors are plausible and test common errors in applying the consonant mutation rule.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:22:03.691287+00:00",
+  "generation_attempts": 1
+}

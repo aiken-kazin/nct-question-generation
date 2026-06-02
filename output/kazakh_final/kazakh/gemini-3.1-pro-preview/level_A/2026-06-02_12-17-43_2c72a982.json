@@ -1,0 +1,140 @@
+{
+  "id": "2c72a982-a45a-4fa8-bb53-fe62f6d6f325",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Заттанған сын есімі бар сөйлемді табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жылы-жылы сөйлесең, жылан інінен шығады."
+    },
+    {
+      "label": "B",
+      "text": "Жақсылық ешқашан жерде қалмайды."
+    },
+    {
+      "label": "C",
+      "text": "Жақсыдан үйрен, жаманнан жирен."
+    },
+    {
+      "label": "D",
+      "text": "Екеуі бүгін ертемен жолға шықты."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап: C. «Жақсыдан», «жаманнан» сөздері – негізгі түбірі сын есім болғанымен, бұл сөйлемде зат есімнің сұрағына (кімнен?) жауап беріп, шығыс септігінің жалғауын (-дан, -нан) қабылдап, сөйлемде толықтауыш қызметінде заттанып тұр. \nҚате нұсқалардың себебі: \nA нұсқасында: «Жылы-жылы» – қайталама сын есім, бірақ мұнда етістіктің алдында келіп, қимылдың амалын білдіріп тұр (үстеуленген).\nB нұсқасында: «Жақсылық» – сын есім түбіріне зат есім тудырушы -лық жұрнағы жалғану арқылы жасалған туынды зат есім. Бұл заттану құбылысына жатпайды.\nD нұсқасында: «Екеуі» – тәуелдік жалғауын қабылдап тұрған жинақтық сан есім, яғни бұл жерде сын есім емес, заттанған сан есім берілген.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.667,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: A substantivized adjective (заттанған сын есім) is an adjective used in the function of a noun; it can take nominal case endings and stand for a person or thing, e.g., жақсыдан = 'from the good (person/thing)', жаманнан = 'from the bad (person/thing)'. Option A: 'Жылы-жылы' describes the manner of speaking and functions adverbially, not as a noun. Option B: 'Жақсылық' is a derived noun formed with\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to find the sentence containing a 'substantivized adjective' (заттанған сын есім) — an adjective that has taken on the function/meaning of a noun.\n\nLet's analyze each option:\n\nA) 'Жылы-жылы сөйлесең, жылан інінен шығады.' — 'жылы-жылы' is a reduplicated adjective modifying the manner of speaking (adverbial use), not substantivized. It functions as an adverb here.\n\nB) 'Жақсылық еш\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence containing a substantivized adjective (заттанған сын есім). Substantivization occurs when an adjective takes on noun affixes (such as case, plural, or possessive endings) and functions as a noun in the sentence. Let's analyze the options:\n\nA) 'Жылы-жылы сөйлесең...' - 'Жылы-жылы' acts as an adverb modifying the verb 'сөйлесең'.\nB) 'Жақсылық ешқашан жерде ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.667,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: option C contains adjectives substantivized through case marking and nominal syntactic function. The distractors are purposeful and test common confusions such as derived nouns, adverbial use of adjectives, and substantivized numerals. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear, unambiguous correct answer (C). Each distractor represents a distinct and plausible error: A tests adverbialized adjective confusion, B tests derived noun vs. substantivized adjective confusion, and D tests substantivized numeral confusion — all common misconceptions at this level. The Kazakh is natural and uses standard literary-norm terminology. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the concept of substantivized adjectives, and the distractors are very well-crafted to catch common misconceptions (such as confusing derivation with substantivization or confusing substantivized numerals with adjectives).",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: A substantivized adjective (заттанған сын есім) is an adjective used in the function of a noun; it can take nominal case endings and stand for a person or thing, e.g., жақсыдан = 'from the good (person/thing)', жаманнан = 'from the bad (person/thing)'. Option A: 'Жылы-жылы' describes the manner of speaking and functions adverbially, not as a noun. Option B: 'Жақсылық' is a derived noun formed with\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to find the sentence containing a 'substantivized adjective' (заттанған сын есім) — an adjective that has taken on the function/meaning of a noun.\n\nLet's analyze each option:\n\nA) 'Жылы-жылы сөйлесең, жылан інінен шығады.' — 'жылы-жылы' is a reduplicated adjective modifying the manner of speaking (adverbial use), not substantivized. It functions as an adverb here.\n\nB) 'Жақсылық еш\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence containing a substantivized adjective (заттанған сын есім). Substantivization occurs when an adjective takes on noun affixes (such as case, plural, or possessive endings) and functions as a noun in the sentence. Let's analyze the options:\n\nA) 'Жылы-жылы сөйлесең...' - 'Жылы-жылы' acts as an adverb modifying the verb 'сөйлесең'.\nB) 'Жақсылық ешқашан жерде ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.667,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: option C contains adjectives substantivized through case marking and nominal syntactic function. The distractors are purposeful and test common confusions such as derived nouns, adverbial use of adjectives, and substantivized numerals. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear, unambiguous correct answer (C). Each distractor represents a distinct and plausible error: A tests adverbialized adjective confusion, B tests derived noun vs. substantivized adjective confusion, and D tests substantivized numeral confusion — all common misconceptions at this level. The Kazakh is natural and uses standard literary-norm terminology. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the concept of substantivized adjectives, and the distractors are very well-crafted to catch common misconceptions (such as confusing derivation with substantivization or confusing substantivized numerals with adjectives).",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A substantivized adjective (заттанған сын есім) is an adjective used in the function of a noun; it can take nominal case endings and stand for a person or thing, e.g., жақсыдан = 'from the good (person/thing)', жаманнан = 'from the bad (person/thing)'. Option A: 'Жылы-жылы' describes the manner of speaking and functions adverbially, not as a noun. Option B: 'Жақсылық' is a derived noun formed with the suffix -лық, not an adjective directly substantivized in the sentence. Option C: 'Жақсыдан үйрен, жаманнан жирен' contains 'жақсыдан' and 'жаманнан': adjectives жақсы and жаман take the ablative case suffix -дан/-нан and function as nouns. Option D: 'Екеуі' is a numeral/pronoun-like nominal form, not a substantivized adjective. Therefore, the sentence with substantivized adjectives is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: option C contains adjectives substantivized through case marking and nominal syntactic function. The distractors are purposeful and test common confusions such as derived nouns, adverbial use of adjectives, and substantivized numerals.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to find the sentence containing a 'substantivized adjective' (заттанған сын есім) — an adjective that has taken on the function/meaning of a noun.\n\nLet's analyze each option:\n\nA) 'Жылы-жылы сөйлесең, жылан інінен шығады.' — 'жылы-жылы' is a reduplicated adjective modifying the manner of speaking (adverbial use), not substantivized. It functions as an adverb here.\n\nB) 'Жақсылық ешқашан жерде қалмайды.' — 'Жақсылық' is derived from the adjective 'жақсы' + suffix '-лық', making it an abstract noun (not a substantivized adjective per se, but a derived noun). However, this is a noun by derivation, not substantivization.\n\nC) 'Жақсыдан үйрен, жаманнан жирен.' — Here 'жақсы' (good/good person) and 'жаман' (bad/bad person) are used with ablative case suffixes (-дан, -нан), functioning as nouns meaning 'from the good one' and 'from the bad one.' These are adjectives used as nouns (substantivized adjectives — заттанған сын есімдер). This is the classic example of substantivization in Kazakh: adjectives taking nominal case endings and functioning as nouns without any derivational suffix.\n\nD) 'Екеуі бүгін ертемен жолға шықты.' — 'Екеуі' is a numeral (collective numeral), not an adjective.\n\nThe correct answer is C, where 'жақсы' and 'жаман' are substantivized adjectives (заттанған сын есімдер) — they take case suffixes and function as nouns referring to people.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear, unambiguous correct answer (C). Each distractor represents a distinct and plausible error: A tests adverbialized adjective confusion, B tests derived noun vs. substantivized adjective confusion, and D tests substantivized numeral confusion — all common misconceptions at this level. The Kazakh is natural and uses standard literary-norm terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence containing a substantivized adjective (заттанған сын есім). Substantivization occurs when an adjective takes on noun affixes (such as case, plural, or possessive endings) and functions as a noun in the sentence. Let's analyze the options:\n\nA) 'Жылы-жылы сөйлесең...' - 'Жылы-жылы' acts as an adverb modifying the verb 'сөйлесең'.\nB) 'Жақсылық ешқашан жерде қалмайды.' - 'Жақсылық' is a noun formed by adding the noun-forming suffix '-лық' to the adjective 'жақсы'. It is a derived noun, not a substantivized adjective.\nC) 'Жақсыдан үйрен, жаманнан жирен.' - 'Жақсы' (good) and 'жаман' (bad) are adjectives. Here, they take the ablative case endings ('-дан', '-нан') and function as nouns (objects) in the sentence. This is a textbook example of substantivized adjectives.\nD) 'Екеуі бүгін ертемен жолға шықты.' - 'Екеуі' is a collective numeral, and there are no substantivized adjectives in this sentence.\n\nThus, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It accurately tests the concept of substantivized adjectives, and the distractors are very well-crafted to catch common misconceptions (such as confusing derivation with substantivization or confusing substantivized numerals with adjectives).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:17:43.092277+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,628 @@
+{
+  "id": "f93109a1e87341dcac75d6feb63f4de1",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T13:18:40.934438+00:00",
+  "passage": "Күн батар алдындағы Ұлы даланың дидары тіпті өзгерек. Көкжиекке қан қызыл нұрын төгіп, маужыраған күн шапағаты бейне бір алып құстың қанатындай бүкіл атырапты аймалап жатқандай. Төбе басында жалғыз тұрған қарттың жанарында осы бір тылсым сәттің мұңы да, сұлулығы да қатар тұнып тұр еді. Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей. Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты. Ол үшін бұл меңіреу дала тілсіз емес, керісінше, өткен күндердің жаңғырығын бойына сіңірген алып кітап секілді. «Уақыт шіркін, тоқтаусыз аққан өзен ғой» деп күрсінді ол ішінен. Даланың төсінде мың құбылған түстер бірте-бірте қоюланып, ымырт үйіріле бастады. Бұл сәт жарық пен түнектің, өмір мен өлімнің мәңгілік алмасу заңдылығын еске салатын. Қарттың көкірегін кернеген сезім – қорқыныш емес, тағдырға деген шексіз ризашылық пен табиғат-анамен етене тұтасу еді.",
+  "questions": [
+    {
+      "question_text": "Мәтіннің негізгі философиялық түйіні қай нұсқада дәл берілген?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Адам мен табиғаттың рухани тұтастығы және өмірлік циклдің заңдылығын қабылдау."
+        },
+        {
+          "label": "B",
+          "text": "Қарт адамның жалғыздығы мен өткен өміріне деген қайғылы өкініші."
+        },
+        {
+          "label": "C",
+          "text": "Ұлы даланың кешкі мезгілдегі әдемі пейзажы мен табиғи сұлулығы."
+        },
+        {
+          "label": "D",
+          "text": "Уақыттың қадірін білмей, босқа өткізген адамның ішкі мұңы."
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "«А» нұсқасы дұрыс, себебі мәтінде қарттың табиғатпен етене тұтасуы, жарық пен түнектің алмасуы арқылы өмір заңдылығын түсінуі (ризашылық сезімі) баяндалады. Қартта өкініш немесе қорқыныш жоқ екені нақты айтылғандықтан B және D нұсқалары қате, ал C нұсқасы мәтіннің сыртқы сипатын ғана беріп, ішкі философиялық астарын ашпайды.",
+      "critic_score": 9.0,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.833,
+        "difficulty_alignment": 7.833,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The passage is not merely describing a landscape; it uses the evening steppe as a symbolic-philosophical setting. Key phrases show this: the old man sees the steppe as an 'immense book' containing echoes of the past, time is compared to a continuously flowing river, and twilight is described as reminding him of the eternal alternation of light and darkness, life and death. The final sentence direc\n\n[anthropic/claude-sonnet-4.6] answered A: Let me analyze the text and each option carefully.\n\nThe text describes an old man standing alone on a hilltop at sunset over the Great Steppe. Key philosophical elements:\n\n1. The old man's face wrinkles are described as 'chronicles of the steppe' — connecting human life to the land.\n2. The smell of wormwood stirs old memories and nostalgia — connection to the past.\n3. The steppe is described not a\n\n[google/gemini-3.1-pro-preview] answered A: The text describes an old man standing in the steppe at sunset. The narrative explicitly states that the moment reminds him of the 'eternal law of the alternation of light and darkness, life and death' (өмір мен өлімнің мәңгілік алмасу заңдылығын еске салатын). Furthermore, the text concludes by describing the old man's feelings not as fear, but as 'boundless gratitude to fate and a deep unity wit",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.833,
+            "difficulty_alignment": 7.833,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer A is clearly correct and uniquely supported by the text, especially the final sentence. However, the item is easier than the requested C level because the philosophical conclusion is stated almost directly, and some distractors are plainly contradicted or unsupported. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text and a clearly defensible single correct answer (A). The philosophical core of man-nature unity and acceptance of life's cyclical law is explicitly supported by the text's final sentence, and the distractors are plausible but eliminable through careful reading. Kazakh is natural and literary-norm throughout. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text is rich in literary devices, and the question accurately tests high-level reading comprehension and philosophical synthesis without ambiguity.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The passage is not merely describing a landscape; it uses the evening steppe as a symbolic-philosophical setting. Key phrases show this: the old man sees the steppe as an 'immense book' containing echoes of the past, time is compared to a continuously flowing river, and twilight is described as reminding him of the eternal alternation of light and darkness, life and death. The final sentence directly states that his feeling is not fear, but boundless gratitude to fate and a close unity with Mother Nature. Therefore the central philosophical idea is the spiritual unity between human and nature and the acceptance of the natural life cycle. Option B overemphasizes loneliness and regret, which the text denies by saying the feeling is not fear but gratitude. Option C is only the surface description, not the philosophical conclusion. Option D claims wasted time and inner sorrow, which is not supported. Thus the best answer is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.0,
+              "pass_fail": true,
+              "comments": "The keyed answer A is clearly correct and uniquely supported by the text, especially the final sentence. However, the item is easier than the requested C level because the philosophical conclusion is stated almost directly, and some distractors are plainly contradicted or unsupported.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let me analyze the text and each option carefully.\n\nThe text describes an old man standing alone on a hilltop at sunset over the Great Steppe. Key philosophical elements:\n\n1. The old man's face wrinkles are described as 'chronicles of the steppe' — connecting human life to the land.\n2. The smell of wormwood stirs old memories and nostalgia — connection to the past.\n3. The steppe is described not as silent/mute but as 'a great book that has absorbed the echoes of past days' — the steppe as a living repository of memory.\n4. 'Time, alas, is a ceaselessly flowing river' — reflection on the passage of time.\n5. Colors deepening, twilight gathering — the cycle of day and night.\n6. This moment reminds of 'the eternal law of alternation of light and darkness, life and death' — explicit philosophical statement about life cycles.\n7. The old man's feeling is NOT fear, but 'infinite gratitude toward fate and intimate unity with Mother Nature' — acceptance and spiritual unity.\n\nNow evaluating options:\n- A) 'Spiritual unity of man and nature, and acceptance of the law of life's cycle' — This captures both the man-nature unity (the old man feeling one with the steppe, gratitude toward nature) AND the life/death cycle (light/darkness, life/death alternation). This is the most comprehensive philosophical summary.\n- B) 'An old man's loneliness and sorrowful regret for his past life' — The text explicitly says his feeling is NOT fear or sorrow but gratitude and unity. Regret/sorrow is not the main theme.\n- C) 'Beautiful evening landscape and natural beauty of the Great Steppe' — This is only the surface description, not the philosophical core.\n- D) 'Inner sorrow of a person who wasted time without appreciating it' — The text does not suggest he wasted time; rather he feels gratitude toward fate.\n\nThe philosophical core of the text is clearly: the spiritual unity between man and nature, and the acceptance/recognition of life's cyclical law (life-death, light-darkness). Option A captures this precisely.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.5,
+                "difficulty_alignment": 8.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text and a clearly defensible single correct answer (A). The philosophical core of man-nature unity and acceptance of life's cyclical law is explicitly supported by the text's final sentence, and the distractors are plausible but eliminable through careful reading. Kazakh is natural and literary-norm throughout.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes an old man standing in the steppe at sunset. The narrative explicitly states that the moment reminds him of the 'eternal law of the alternation of light and darkness, life and death' (өмір мен өлімнің мәңгілік алмасу заңдылығын еске салатын). Furthermore, the text concludes by describing the old man's feelings not as fear, but as 'boundless gratitude to fate and a deep unity with mother nature' (тағдырға деген шексіз ризашылық пен табиғат-анамен етене тұтасу еді). This directly corresponds to option A, which highlights the spiritual unity of man and nature and the acceptance of the life cycle's laws. The other options are incorrect because the text explicitly denies fear or tragic regret (eliminating B and D), and while it does describe the landscape, the question asks for the 'philosophical conclusion', which goes beyond mere physical description (eliminating C).",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. The text is rich in literary devices, and the question accurately tests high-level reading comprehension and philosophical synthesis without ambiguity.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіннің функционалдық стилі мен баяндау типін анықтаңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Публицистикалық стиль, хабарлау мен сипаттау."
+        },
+        {
+          "label": "B",
+          "text": "Ғылыми стиль, дәлелдеу мен талдау."
+        },
+        {
+          "label": "C",
+          "text": "Көркем әдебиет стилі, тек қана суреттеу."
+        },
+        {
+          "label": "D",
+          "text": "Көркем әдебиет стилі, суреттеу мен пайымдау."
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "«D» нұсқасы дұрыс. Мәтінде эпитеттер мен теңеулерге толы көркем тіл қолданылған, сондықтан ол көркем әдебиет стиліне жатады. Баяндау типіне келсек, басында даланың кешкі көрінісі суреттеледі де (суреттеу), соңында өмір мен өлім, уақыт туралы философиялық ой түйінделеді (пайымдау). С нұсқасы пайымдаудың бар екенін ескермегендіктен қате.",
+      "critic_score": 8.9,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 7.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The text uses figurative, emotionally expressive language: metaphors and similes such as “алып құстың қанатындай”, “даланың шежіресіндей”, “алып кітап секілді”, and personification/imagery such as “күн шапағаты ... аймалап жатқандай”. These are typical markers of the literary/artistic functional style (көркем әдебиет стилі), not scientific or journalistic style. For the narration type, much of the\n\n[anthropic/claude-sonnet-4.6] answered D: Step 1: Identify the functional style of the text.\n\nThe text uses rich figurative language: metaphors ('бейне бір алып құстың қанатындай' - like the wing of a giant bird), similes ('алып кітап секілді' - like a giant book, 'тоқтаусыз аққан өзен ғой' - like a flowing river), personification, and emotional-aesthetic descriptions. The vocabulary is literary and poetic, not scientific or journalistic.\n\n[google/gemini-3.1-pro-preview] answered D: To determine the functional style of the text, we look at its linguistic features. The text is rich in imagery, metaphors ('алып құстың қанатындай', 'алып кітап секілді'), epithets ('қан қызыл нұрын', 'тылсым сәттің'), and emotional expressiveness. This clearly indicates the artistic literature style (көркем әдебиет стилі). \n\nNext, we determine the type of text (баяндау типі). The text begins by d",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.667,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer D is correct and uniquely best: the text is clearly literary and combines description with reflective reasoning. However, the task is too straightforward for level C, and several distractors, especially the scientific-style option, are easily eliminated. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text that genuinely requires identifying both functional style and narrative type simultaneously. The correct answer D is unambiguous and the explanation is sound. Distractors are mostly plausible — A (journalistic) and B (scientific) are reachable by style-misidentification errors, and C is a near-miss that requires careful attention to the reasoning/reflection elements, making it the strongest distractor. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text is a beautiful example of literary Kazakh, and the options effectively test the ability to analyze both functional style and narration types.",
+          "improvement_suggestions": "[openai/gpt-5.5] To better match level C, require deeper analysis such as identifying dominant and secondary speech types with textual evidence, explaining imagery and authorial position, or distinguishing lyrical-philosophical description from narration. Improve distractors so they reflect realistic teacher-level confusions rather than obviously wrong functional styles.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text uses figurative, emotionally expressive language: metaphors and similes such as “алып құстың қанатындай”, “даланың шежіресіндей”, “алып кітап секілді”, and personification/imagery such as “күн шапағаты ... аймалап жатқандай”. These are typical markers of the literary/artistic functional style (көркем әдебиет стилі), not scientific or journalistic style. For the narration type, much of the passage describes the steppe at sunset and the old man’s appearance and feelings, so it contains description (суреттеу). However, it also includes reflective/philosophical judgments: “Уақыт шіркін, тоқтаусыз аққан өзен ғой”, “жарық пен түнектің, өмір мен өлімнің мәңгілік алмасу заңдылығы”, and the conclusion about gratitude to fate and unity with nature. These are elements of reasoning/reflection (пайымдау). Therefore the best answer is literary style with description and reasoning.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 4.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The keyed answer D is correct and uniquely best: the text is clearly literary and combines description with reflective reasoning. However, the task is too straightforward for level C, and several distractors, especially the scientific-style option, are easily eliminated.",
+              "improvement_suggestions": "To better match level C, require deeper analysis such as identifying dominant and secondary speech types with textual evidence, explaining imagery and authorial position, or distinguishing lyrical-philosophical description from narration. Improve distractors so they reflect realistic teacher-level confusions rather than obviously wrong functional styles.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Step 1: Identify the functional style of the text.\n\nThe text uses rich figurative language: metaphors ('бейне бір алып құстың қанатындай' - like the wing of a giant bird), similes ('алып кітап секілді' - like a giant book, 'тоқтаусыз аққан өзен ғой' - like a flowing river), personification, and emotional-aesthetic descriptions. The vocabulary is literary and poetic, not scientific or journalistic. There are no statistical data, no calls to action, no scientific terminology. This clearly belongs to the Көркем әдебиет стилі (Artistic/Literary style).\n\nStep 2: Identify the narrative type (баяндау типі).\n\nThe text contains:\n- Суреттеу (description): Detailed visual and sensory descriptions of the steppe at sunset, the old man's appearance, the smell of wormwood, the colors changing — these are descriptive passages painting a picture.\n- Пайымдау (reasoning/reflection): The old man's inner thoughts ('Уақыт шіркін, тоқтаусыз аққан өзен ғой'), the philosophical reflection on the eternal alternation of light and darkness, life and death ('жарық пен түнектің, өмір мен өлімнің мәңгілік алмасу заңдылығын еске салатын'), and the concluding reflection on gratitude and unity with nature — these are reflective/reasoning elements.\n\nOption C says 'тек қана суреттеу' (only description), but the text clearly contains philosophical reflection and reasoning elements as well.\n\nOption D says 'Көркем әдебиет стилі, суреттеу мен пайымдау' (Artistic style, description and reasoning/reflection) — this matches both the style and the combined narrative types present in the text.\n\nTherefore, the correct answer is D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text that genuinely requires identifying both functional style and narrative type simultaneously. The correct answer D is unambiguous and the explanation is sound. Distractors are mostly plausible — A (journalistic) and B (scientific) are reachable by style-misidentification errors, and C is a near-miss that requires careful attention to the reasoning/reflection elements, making it the strongest distractor.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To determine the functional style of the text, we look at its linguistic features. The text is rich in imagery, metaphors ('алып құстың қанатындай', 'алып кітап секілді'), epithets ('қан қызыл нұрын', 'тылсым сәттің'), and emotional expressiveness. This clearly indicates the artistic literature style (көркем әдебиет стилі). \n\nNext, we determine the type of text (баяндау типі). The text begins by describing the landscape of the Great Steppe at sunset and the physical appearance of the old man, which corresponds to description (суреттеу). However, it does not stop at mere description; it delves into the old man's inner thoughts, his philosophical reflections on time ('Уақыт шіркін, тоқтаусыз аққан өзен ғой'), and the eternal laws of life and death ('жарық пен түнектің, өмір мен өлімнің мәңгілік алмасу заңдылығын еске салатын'). These elements of reflection and philosophical thought correspond to reasoning (пайымдау). \n\nTherefore, the text combines both description and reasoning within the artistic literature style. Option D accurately reflects this combination.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. The text is a beautiful example of literary Kazakh, and the options effectively test the ability to analyze both functional style and narration types.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "«...маужыраған күн шапағаты бейне бір алып құстың қанатындай бүкіл атырапты аймалап жатқандай» деген жолдарда қолданылған көркемдегіш тәсілдерді көрсетіңіз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Эпитет пен литота."
+        },
+        {
+          "label": "B",
+          "text": "Теңеу мен кейіптеу."
+        },
+        {
+          "label": "C",
+          "text": "Метафора мен гипербола."
+        },
+        {
+          "label": "D",
+          "text": "Дисфемизм мен метонимия."
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "«B» нұсқасы дұрыс. «Алып құстың қанатындай» деген тіркес – теңеу (күн шапағатын құстың қанатына теңеп тұр), ал күн шапағатының бүкіл атырапты «аймалап жатуы» – адамға немесе жанды иеге тән іс-әрекетті табиғат құбылысына көшіру, яғни кейіптеу. Мәтінде кішірейту (литота) немесе асыра сілтеу (гипербола) жоқ.",
+      "critic_score": 8.417,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 5.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The expression contains the marker of simile: \"бейне бір ... қанатындай\" (like/as the wing of a giant bird), so it is a теңеу. Also, \"күн шапағаты ... бүкіл атырапты аймалап жатқандай\" attributes an animate/human action, 'caressing/embracing' (аймалау), to the sun's rays, which is personification (кейіптеу). Therefore the correct pair of devices is теңеу мен кейіптеу.\n\n[anthropic/claude-sonnet-4.6] answered B: Analyzing the phrase: '...маужыраған күн шапағаты бейне бір алып құстың қанатындай бүкіл атырапты аймалап жатқандай'\n\nLet's identify the literary/rhetorical devices used:\n\n1. 'бейне бір алып құстың қанатындай' — This is a SIMILE (Теңеу). The word 'бейне бір...дай' is a classic simile construction in Kazakh, comparing the sunset glow to the wing of a giant bird. The markers 'бейне бір' and the suff\n\n[google/gemini-3.1-pro-preview] answered B: To determine the literary devices used in the phrase '...маужыраған күн шапағаты бейне бір алып құстың қанатындай бүкіл атырапты аймалап жатқандай', we can break it down into two parts:\n\n1. '...бейне бір алып құстың қанатындай' (like the wings of a giant bird): The use of the word 'бейне бір' and the suffix '-дай' explicitly compares the sun's rays to a bird's wings. This is a clear example of a s",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.417,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: the phrase clearly contains a simile and personification. However, the task is far below level C because it only asks for direct recognition of common devices with an explicit simile marker. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text, the correct answer (B) is unambiguously supported by the explicit simile markers ('бейне бір...дай') and personification ('аймалап жатқандай'), and the Kazakh language is natural and terminologically accurate. Distractors are mostly plausible but option D (дисфемизм мен метонимия) is too easily eliminated, and the difficulty is slightly below true Level C since identifying simile and personification in a clearly marked passage is a standard rather than advanced skill. | [google/gemini-3.1-pro-preview] The question is factually correct and uses excellent literary Kazakh. However, it does not align well with the requested Level C difficulty, as the student only needs to read the quoted sentence to identify the literary devices, making the rest of the provided text redundant.",
+          "improvement_suggestions": "[openai/gpt-5.5] To align with level C, require analysis of how several devices function in the broader text, or ask for a justified interpretation of imagery and style. Make distractors more diagnostically plausible; the current options with litotes, dysphemism, and metonymy are too easily eliminated. | [anthropic/claude-sonnet-4.6] To raise difficulty to true Level C, consider asking about a more ambiguous passage where the boundary between metaphor and simile is less clear (e.g., without explicit comparison markers), or ask the examinee to identify the stylistic function of the devices rather than just naming them. Replace distractor D with a more plausible pair such as 'Метафора мен эпитет' to increase discriminability. | [google/gemini-3.1-pro-preview] To make this a true Level C question, ask a question that requires analyzing the entire text, such as determining the author's underlying message, the overall tone, or how multiple literary devices across the text contribute to its central theme.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The expression contains the marker of simile: \"бейне бір ... қанатындай\" (like/as the wing of a giant bird), so it is a теңеу. Also, \"күн шапағаты ... бүкіл атырапты аймалап жатқандай\" attributes an animate/human action, 'caressing/embracing' (аймалау), to the sun's rays, which is personification (кейіптеу). Therefore the correct pair of devices is теңеу мен кейіптеу.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.5,
+                "difficulty_alignment": 3.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.7,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: the phrase clearly contains a simile and personification. However, the task is far below level C because it only asks for direct recognition of common devices with an explicit simile marker.",
+              "improvement_suggestions": "To align with level C, require analysis of how several devices function in the broader text, or ask for a justified interpretation of imagery and style. Make distractors more diagnostically plausible; the current options with litotes, dysphemism, and metonymy are too easily eliminated.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Analyzing the phrase: '...маужыраған күн шапағаты бейне бір алып құстың қанатындай бүкіл атырапты аймалап жатқандай'\n\nLet's identify the literary/rhetorical devices used:\n\n1. 'бейне бір алып құстың қанатындай' — This is a SIMILE (Теңеу). The word 'бейне бір...дай' is a classic simile construction in Kazakh, comparing the sunset glow to the wing of a giant bird. The markers 'бейне бір' and the suffix '-дай' are explicit comparison markers.\n\n2. 'бүкіл атырапты аймалап жатқандай' — This is PERSONIFICATION (Кейіптеу). The sunset glow is described as 'embracing/caressing' (аймалап жатқандай) the entire surroundings, attributing a human/animate action to an inanimate natural phenomenon (the sun's rays).\n\nChecking other options:\n- A) Epithet and litotes: 'маужыраған' could be an epithet, but litotes (understatement) is not present here — the description is expansive, not understated.\n- C) Metaphor and hyperbole: There is no direct metaphor (no direct identification without comparison markers), and while 'алып' (giant) could suggest hyperbole, the primary devices are simile and personification.\n- D) Dysphemism and metonymy: Neither is present.\n\nThe dominant and clearly identifiable devices in this specific phrase are SIMILE (Теңеу) and PERSONIFICATION (Кейіптеу), making option B correct.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.75,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text, the correct answer (B) is unambiguously supported by the explicit simile markers ('бейне бір...дай') and personification ('аймалап жатқандай'), and the Kazakh language is natural and terminologically accurate. Distractors are mostly plausible but option D (дисфемизм мен метонимия) is too easily eliminated, and the difficulty is slightly below true Level C since identifying simile and personification in a clearly marked passage is a standard rather than advanced skill.",
+              "improvement_suggestions": "To raise difficulty to true Level C, consider asking about a more ambiguous passage where the boundary between metaphor and simile is less clear (e.g., without explicit comparison markers), or ask the examinee to identify the stylistic function of the devices rather than just naming them. Replace distractor D with a more plausible pair such as 'Метафора мен эпитет' to increase discriminability.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To determine the literary devices used in the phrase '...маужыраған күн шапағаты бейне бір алып құстың қанатындай бүкіл атырапты аймалап жатқандай', we can break it down into two parts:\n\n1. '...бейне бір алып құстың қанатындай' (like the wings of a giant bird): The use of the word 'бейне бір' and the suffix '-дай' explicitly compares the sun's rays to a bird's wings. This is a clear example of a simile, which is 'теңеу' in Kazakh.\n2. '...күн шапағаты ... бүкіл атырапты аймалап жатқандай' (the sun's rays caressing the entire surroundings): The action of 'аймалау' (caressing/embracing) is a human or animate characteristic attributed to an inanimate object (the sun's rays). This is personification, known as 'кейіптеу' in Kazakh.\n\nLooking at the given options, Option B ('Теңеу мен кейіптеу') perfectly matches our analysis. There is no litotes, hyperbole, dysphemism, or metonymy in this specific excerpt.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 9.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.8,
+              "pass_fail": true,
+              "comments": "The question is factually correct and uses excellent literary Kazakh. However, it does not align well with the requested Level C difficulty, as the student only needs to read the quoted sentence to identify the literary devices, making the rest of the provided text redundant.",
+              "improvement_suggestions": "To make this a true Level C question, ask a question that requires analyzing the entire text, such as determining the author's underlying message, the overall tone, or how multiple literary devices across the text contribute to its central theme.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіндегі «шежіре» сөзі қандай мағыналық реңкте жұмсалып тұр?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Адамның ата-тегін, жеті атасын тарататын тікелей мағынадағы тарихи дереккөз ретінде."
+        },
+        {
+          "label": "B",
+          "text": "Қарттың жасын білдіретін, өмірден алған физиологиялық белгісі ретінде."
+        },
+        {
+          "label": "C",
+          "text": "Қарттың бетіндегі әжімдердің даланың көп ғасырлық тарихы мен өткенінен сыр шертетін бейнелі мағынасында."
+        },
+        {
+          "label": "D",
+          "text": "Даланың географиялық бедері мен адам бетіндегі сызықтардың сырттай ұқсастығын ғана меңзеу мақсатында."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "«C» нұсқасы дұрыс. Мәтіндегі «әрбір із – осы даланың шежіресіндей» деген жолдар қарттың бетіндегі әжімдерді даланың тарихымен шендестіріп, оның көпті көргенін, тарихпен біте қайнасқанын бейнелі түрде жеткізіп тұр. А нұсқасы сөздің тек тура/тікелей мағынасын берсе, В және D нұсқалары тым үстірт, сөздің көркемдік астарын ашпайтын қате тұжырымдар.",
+      "critic_score": 8.967,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The key sentence is: “Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей.” The word “шежіре” in Kazakh can mean a genealogy or chronicle, but in this context it is not used in its direct literal meaning. The sentence compares the wrinkles on the old man’s face to the chronicle/history of the steppe. This is a figurative, metaphorical use: the wrinkles are presented as signs that seem t\n\n[anthropic/claude-sonnet-4.6] answered C: The text contains the sentence: 'Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей.' This translates to: 'Every trace on his wrinkled face is like the chronicle/genealogy of this steppe.' The word 'шежіре' (chronicle/genealogy) is used here in a figurative/metaphorical sense — the wrinkles on the old man's face are compared to the historical chronicle of the steppe, meaning they carry\n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the contextual meaning of the word 'шежіре' (chronicle/genealogy) in the provided text. The relevant sentence is: 'Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей.' (Every mark on his wrinkled face is like the chronicle of this steppe). Here, the word 'шежіре' is not used in its literal sense of tracing ancestry (Option A), nor does it merely indicate his physi",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.967,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by the metaphorical context. However, the task is mainly a straightforward contextual meaning/metaphor recognition item, so it does not genuinely reach the requested C-level hard text-analysis standard. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text and a clear single correct answer (C) that requires genuine figurative/metaphorical analysis. Distractors are mostly plausible, though D is somewhat eliminable by a careful reader since it reduces the metaphor to mere visual similarity, making it slightly easier to dismiss than ideal. | [google/gemini-3.1-pro-preview] The question is well-crafted, features a beautiful literary text, and effectively tests the ability to analyze figurative language in context. The distractors are plausible and well-designed.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The key sentence is: “Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей.” The word “шежіре” in Kazakh can mean a genealogy or chronicle, but in this context it is not used in its direct literal meaning. The sentence compares the wrinkles on the old man’s face to the chronicle/history of the steppe. This is a figurative, metaphorical use: the wrinkles are presented as signs that seem to tell about long experience, memory, and the past of the Great Steppe. Option A is too literal, because the text is not about genealogy or a direct historical source. Option B reduces the word to a physiological sign of age, but “шежіре” adds historical and symbolic meaning. Option D mentions only external similarity, but the text emphasizes deeper historical and emotional meaning, not just visual resemblance. Therefore, the correct interpretation is the figurative meaning described in option C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely supported by the metaphorical context. However, the task is mainly a straightforward contextual meaning/metaphor recognition item, so it does not genuinely reach the requested C-level hard text-analysis standard.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text contains the sentence: 'Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей.' This translates to: 'Every trace on his wrinkled face is like the chronicle/genealogy of this steppe.' The word 'шежіре' (chronicle/genealogy) is used here in a figurative/metaphorical sense — the wrinkles on the old man's face are compared to the historical chronicle of the steppe, meaning they carry the memory and history of many centuries of life on the steppe. This is a metaphorical usage (бейнелі мағына), not a literal genealogical record. Option A describes the literal meaning of 'шежіре' as a historical genealogical source — this is the direct/primary meaning, not how it is used here. Option B says it refers to the old man's age as a physiological marker — this misses the figurative/historical dimension. Option C states that the wrinkles on the old man's face are used in a figurative sense to reveal the centuries-old history and past of the steppe — this accurately captures the metaphorical usage in context. Option D says it merely hints at an external visual similarity between the steppe's geographical relief and the lines on a human face — this is too superficial and misses the deeper semantic layer of historical memory and narrative embedded in the metaphor. Therefore, the correct answer is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.5,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text and a clear single correct answer (C) that requires genuine figurative/metaphorical analysis. Distractors are mostly plausible, though D is somewhat eliminable by a careful reader since it reduces the metaphor to mere visual similarity, making it slightly easier to dismiss than ideal.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the contextual meaning of the word 'шежіре' (chronicle/genealogy) in the provided text. The relevant sentence is: 'Оның әжім басқан жүзіндегі әрбір із – осы даланың шежіресіндей.' (Every mark on his wrinkled face is like the chronicle of this steppe). Here, the word 'шежіре' is not used in its literal sense of tracing ancestry (Option A), nor does it merely indicate his physiological age (Option B) or a superficial geographical resemblance (Option D). Instead, it is used figuratively to imply that the deep wrinkles on the old man's face reflect the long history, experiences, and past of the steppe itself. This perfectly aligns with Option C, which states that it is used in a figurative sense where the wrinkles tell the story of the steppe's centuries-old history and past.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.8,
+              "pass_fail": true,
+              "comments": "The question is well-crafted, features a beautiful literary text, and effectively tests the ability to analyze figurative language in context. The distractors are plausible and well-designed.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Қарттың көңіліндегі ескі естеліктердің оянуына түрткі болған детальды табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Жел тербеген боз жусанның кермек иісі."
+        },
+        {
+          "label": "B",
+          "text": "Көкжиекке төгілген қан қызыл нұр."
+        },
+        {
+          "label": "C",
+          "text": "Уақыттың тоқтаусыз аққан өзендей өтуі."
+        },
+        {
+          "label": "D",
+          "text": "Жарық пен түнектің алмасу заңдылығы."
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "«A» нұсқасы дұрыс. Мәтінде «Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап...» деп нақты себеп-салдарлық байланыс көрсетілген. Қалған нұсқалардағы детальдар мәтінде кездескенімен, олар естелікті оятуға емес, басқа философиялық ойларға себеп болған немесе жалпы көріністі суреттеуге арналған.",
+      "critic_score": 7.5,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.833,
+        "difficulty_alignment": 1.833,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The question asks which detail caused the old memories in the old man's mind to awaken. In the text, the relevant sentence is: \"Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты.\" This directly states that the bitter smell of wormwood swaying in the wind stirred the old memories. Therefore, the correct option is A.\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks: 'Find the detail that triggered the awakening of old memories in the old man's heart.' Looking at the text: 'Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты.' This sentence explicitly states that 'the bitter smell of grey wormwood swayed by the wind stirred the old memories deep in the old man's heart a\n\n[google/gemini-3.1-pro-preview] answered A: To find the detail that triggered the old man's memories, we need to locate the sentence in the text that mentions the awakening of old memories. The text states: 'Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты.' (The bitter smell of the pale wormwood swaying with the whistling of the wind stirred the old memories in the",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.833,
+            "difficulty_alignment": 1.833,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.5,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is fully correct and unambiguous, with direct textual support. However, the item is a simple literal retrieval question, not a level C hard style/text analysis task. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously supported by a direct cause-effect sentence in the text, making this a straightforward retrieval task rather than a true Level C analytical challenge. Distractors are plausible as they all appear in the text, but the answer is too directly stated to require higher-order reasoning. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but it completely fails the difficulty alignment. It is a simple literal comprehension (Level A) question, whereas Level C requires complex analysis, inference, or synthesis.",
+          "improvement_suggestions": "[openai/gpt-5.5] To align with level C, ask about the artistic function or symbolic meaning of the sensory detail, its role in revealing the character's inner state, or require comparison of several textual devices rather than locating an explicitly stated cause. | [anthropic/claude-sonnet-4.6] To raise difficulty to Level C, rephrase the question to require inference or synthesis — e.g., ask about the symbolic function of the wormwood detail within the broader philosophical theme of the text, or ask which literary device connects the sensory detail to the old man's emotional state. This would demand analysis and reasoning rather than simple text location. | [google/gemini-3.1-pro-preview] To reach Level C, the question should ask about the underlying theme, the author's stylistic devices, the symbolic meaning of the details (e.g., what the wormwood or the sunset represents in the context of the old man's life), or require synthesizing multiple parts of the text rather than finding a directly stated fact.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks which detail caused the old memories in the old man's mind to awaken. In the text, the relevant sentence is: \"Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты.\" This directly states that the bitter smell of wormwood swaying in the wind stirred the old memories. Therefore, the correct option is A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.5,
+                "difficulty_alignment": 0.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is fully correct and unambiguous, with direct textual support. However, the item is a simple literal retrieval question, not a level C hard style/text analysis task.",
+              "improvement_suggestions": "To align with level C, ask about the artistic function or symbolic meaning of the sensory detail, its role in revealing the character's inner state, or require comparison of several textual devices rather than locating an explicitly stated cause.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks: 'Find the detail that triggered the awakening of old memories in the old man's heart.' Looking at the text: 'Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты.' This sentence explicitly states that 'the bitter smell of grey wormwood swayed by the wind stirred the old memories deep in the old man's heart and kindled the fire of longing.' This directly identifies the detail (деталь) that triggered the awakening of old memories as the bitter smell of wormwood (боз жусанның кермек иісі) swayed by the wind — which corresponds to option A: 'Жел тербеген боз жусанның кермек иісі.'",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously supported by a direct cause-effect sentence in the text, making this a straightforward retrieval task rather than a true Level C analytical challenge. Distractors are plausible as they all appear in the text, but the answer is too directly stated to require higher-order reasoning.",
+              "improvement_suggestions": "To raise difficulty to Level C, rephrase the question to require inference or synthesis — e.g., ask about the symbolic function of the wormwood detail within the broader philosophical theme of the text, or ask which literary device connects the sensory detail to the old man's emotional state. This would demand analysis and reasoning rather than simple text location.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "To find the detail that triggered the old man's memories, we need to locate the sentence in the text that mentions the awakening of old memories. The text states: 'Желдің суылымен тербелген боз жусанның кермек иісі қарттың көңіл түкпіріндегі ескі естеліктерді қозғап, сағыныш отын тұтатты.' (The bitter smell of the pale wormwood swaying with the whistling of the wind stirred the old memories in the depths of the old man's heart and ignited the fire of longing). This directly corresponds to option A: 'Жел тербеген боз жусанның кермек иісі'. The other options describe the setting, the old man's philosophical thoughts, or the symbolism of the moment, but not the specific sensory detail that triggered his memories.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.4,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-written, but it completely fails the difficulty alignment. It is a simple literal comprehension (Level A) question, whereas Level C requires complex analysis, inference, or synthesis.",
+              "improvement_suggestions": "To reach Level C, the question should ask about the underlying theme, the author's stylistic devices, the symbolic meaning of the details (e.g., what the wormwood or the sunset represents in the context of the old man's life), or require synthesizing multiple parts of the text rather than finding a directly stated fact.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

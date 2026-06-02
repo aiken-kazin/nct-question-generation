@@ -1,0 +1,140 @@
+{
+  "id": "3690b852-cac6-4492-93f9-5d1a621ec631",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі салаласа байланысу сипатын дәл көрсетіңіз.\n\n«Бірде жел гуілдейді, бірде жаңбыр сіркірейді, алайда көш тоқтаған жоқ, өйткені межелі жерге бүгін жету керек еді».",
+  "options": [
+    {
+      "label": "A",
+      "text": "Алғашқы екі сыңар талғаулы салалас түзеді; үшінші сыңар олармен ыңғайлас қатынаста, ал төртінші сыңар түсіндірмелі мән үстейді."
+    },
+    {
+      "label": "B",
+      "text": "Алғашқы екі сыңар кезектес салалас жасайды; үшінші сыңар себеп-салдарлық қатынасқа құрылады, төртінші сыңар қарсылықты мән білдіреді."
+    },
+    {
+      "label": "C",
+      "text": "Алғашқы екі сыңар кезектес салалас түзеді; үшінші сыңар сол жағдайларға қарсылықты қатынаста, ал төртінші сыңар үшіншінің себебін білдіреді."
+    },
+    {
+      "label": "D",
+      "text": "Алғашқы екі сыңар ыңғайлас салалас жасайды; үшінші сыңар түсіндірмелі қатынасқа негізделеді, төртінші сыңар салдар мәнін білдіреді."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. «Бірде жел гуілдейді, бірде жаңбыр сіркірейді» деген алғашқы екі предикативтік сыңар «бірде... бірде» жалғаулығы арқылы байланысып, кезектес салалас жасайды. «Алайда көш тоқтаған жоқ» сыңары алдыңғы қолайсыз жағдайларға қарама-қарсы мәнде айтылған, сондықтан қарсылықты салалас қатынас бар. «Өйткені межелі жерге бүгін жету керек еді» сыңары көштің тоқтамау себебін білдіреді, бұл — себеп-салдар салаласқа тән белгі. A нұсқасында «бірде... бірде» талғаулық мәнде деп қате көрсетілген: талғаулы салаласта «не, немесе, я, яки» тәрізді таңдау мәнді жалғаулықтар қолданылады. B нұсқасында «алайда» себеп-салдар, «өйткені» қарсылықты мән береді деп орынсыз ауыстырылған. D нұсқасында алғашқы сыңарлар ыңғайлас деп қате танылған, сондай-ақ «алайда» түсіндірмелі емес, қарсылықты қатынасты білдіреді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.3,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence has four coordinate clauses: (1) “Бірде жел гуілдейді” = sometimes the wind howls; (2) “бірде жаңбыр сіркірейді” = sometimes the rain drizzles; (3) “алайда көш тоқтаған жоқ” = however, the caravan did not stop; (4) “өйткені межелі жерге бүгін жету керек еді” = because it was necessary to reach the destination today. The paired conjunction/adverb “бірде..., бірде...” expresses alternat\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze the sentence: «Бірде жел гуілдейді, бірде жаңбыр сіркірейді, алайда көш тоқтаған жоқ, өйткені межелі жерге бүгін жету керек еді».\n\nThis is a compound sentence with four clauses. Let me identify the connectives and relationships:\n\n1. Clause 1: «Бірде жел гуілдейді» (Sometimes the wind howls)\n2. Clause 2: «бірде жаңбыр сіркірейді» (sometimes the rain drizzles)\n3. Clause 3: «алайда көш\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the given compound sentence by breaking it down into its clauses and identifying the conjunctions used to connect them.\n\n1. «Бірде жел гуілдейді» (Sometimes the wind howls)\n2. «бірде жаңбыр сіркірейді» (sometimes the rain drizzles)\n3. «алайда көш тоқтаған жоқ» (however, the caravan did not stop)\n4. «өйткені межелі жерге бүгін жету керек еді» (because they had to reach the destination",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 8.167,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.3,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the alternating, adversative, and causal relations. However, the item is mostly solved by recognizing explicit conjunctions, so it is closer to medium than genuinely hard level C. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear four-clause compound sentence requiring analysis of three distinct coordinate relationships. The correct answer (C) is unambiguously supported by the conjunctions «бірде...бірде», «алайда», and «өйткені», and the distractors each reflect identifiable misconceptions (confusing кезектес with талғаулы or ыңғайлас, swapping the roles of «алайда» and «өйткені»). Language quality is natural and terminologically accurate per Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the syntactic analysis of a multi-clause coordinate compound sentence, with highly plausible distractors and perfect terminology.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence has four coordinate clauses: (1) “Бірде жел гуілдейді” = sometimes the wind howls; (2) “бірде жаңбыр сіркірейді” = sometimes the rain drizzles; (3) “алайда көш тоқтаған жоқ” = however, the caravan did not stop; (4) “өйткені межелі жерге бүгін жету керек еді” = because it was necessary to reach the destination today. The paired conjunction/adverb “бірде..., бірде...” expresses alternat\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze the sentence: «Бірде жел гуілдейді, бірде жаңбыр сіркірейді, алайда көш тоқтаған жоқ, өйткені межелі жерге бүгін жету керек еді».\n\nThis is a compound sentence with four clauses. Let me identify the connectives and relationships:\n\n1. Clause 1: «Бірде жел гуілдейді» (Sometimes the wind howls)\n2. Clause 2: «бірде жаңбыр сіркірейді» (sometimes the rain drizzles)\n3. Clause 3: «алайда көш\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the given compound sentence by breaking it down into its clauses and identifying the conjunctions used to connect them.\n\n1. «Бірде жел гуілдейді» (Sometimes the wind howls)\n2. «бірде жаңбыр сіркірейді» (sometimes the rain drizzles)\n3. «алайда көш тоқтаған жоқ» (however, the caravan did not stop)\n4. «өйткені межелі жерге бүгін жету керек еді» (because they had to reach the destination",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 8.167,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.3,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the alternating, adversative, and causal relations. However, the item is mostly solved by recognizing explicit conjunctions, so it is closer to medium than genuinely hard level C. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear four-clause compound sentence requiring analysis of three distinct coordinate relationships. The correct answer (C) is unambiguously supported by the conjunctions «бірде...бірде», «алайда», and «өйткені», and the distractors each reflect identifiable misconceptions (confusing кезектес with талғаулы or ыңғайлас, swapping the roles of «алайда» and «өйткені»). Language quality is natural and terminologically accurate per Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the syntactic analysis of a multi-clause coordinate compound sentence, with highly plausible distractors and perfect terminology.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence has four coordinate clauses: (1) “Бірде жел гуілдейді” = sometimes the wind howls; (2) “бірде жаңбыр сіркірейді” = sometimes the rain drizzles; (3) “алайда көш тоқтаған жоқ” = however, the caravan did not stop; (4) “өйткені межелі жерге бүгін жету керек еді” = because it was necessary to reach the destination today. The paired conjunction/adverb “бірде..., бірде...” expresses alternation, so the first two clauses form a кезектес салалас, not a талғаулы or ыңғайлас relation. The connector “алайда” marks an adversative/contrastive relation: despite the alternating bad weather conditions, the caravan did not stop. The connector “өйткені” introduces a cause/reason, so the fourth clause gives the reason for the third clause. Therefore option C exactly describes the relationships.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 5.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies the alternating, adversative, and causal relations. However, the item is mostly solved by recognizing explicit conjunctions, so it is closer to medium than genuinely hard level C.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let me analyze the sentence: «Бірде жел гуілдейді, бірде жаңбыр сіркірейді, алайда көш тоқтаған жоқ, өйткені межелі жерге бүгін жету керек еді».\n\nThis is a compound sentence with four clauses. Let me identify the connectives and relationships:\n\n1. Clause 1: «Бірде жел гуілдейді» (Sometimes the wind howls)\n2. Clause 2: «бірде жаңбыр сіркірейді» (sometimes the rain drizzles)\n3. Clause 3: «алайда көш тоқтаған жоқ» (however, the caravan did not stop)\n4. Clause 4: «өйткені межелі жерге бүгін жету керек еді» (because they needed to reach the destination today)\n\nAnalysis of each relationship:\n\n- Clauses 1 & 2: Connected by «бірде...бірде» (sometimes...sometimes). This is a classic marker of КЕЗЕКТЕС САЛАЛАС (alternating/sequential coordinate clause) in Kazakh grammar. «Бірде...бірде» indicates alternating actions.\n\n- Clause 3 vs Clauses 1&2: Connected by «алайда» (however/but). «Алайда» is a conjunction expressing ҚАРСЫЛЫҚТЫ (adversative/contrastive) relationship — the caravan did NOT stop despite the wind and rain.\n\n- Clause 4 vs Clause 3: Connected by «өйткені» (because). «Өйткені» is a conjunction expressing СЕБЕП (cause/reason) — it explains WHY the caravan didn't stop. This is СЕБЕП-САЛДАРЛЫҚ or specifically ТҮСІНДІРМЕЛІ (explanatory/causal) relationship.\n\nNow matching with options:\n\nOption C states: \"The first two clauses form кезектес салалас (alternating); the third clause is in adversative (қарсылықты) relationship to those conditions; and the fourth clause expresses the reason (себебін білдіреді) of the third.\"\n\nThis matches perfectly:\n- «бірде...бірде» = кезектес салалас ✓\n- «алайда» = қарсылықты қатынас ✓\n- «өйткені» = себеп (reason for the third clause) ✓\n\nOption C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, with a clear four-clause compound sentence requiring analysis of three distinct coordinate relationships. The correct answer (C) is unambiguously supported by the conjunctions «бірде...бірде», «алайда», and «өйткені», and the distractors each reflect identifiable misconceptions (confusing кезектес with талғаулы or ыңғайлас, swapping the roles of «алайда» and «өйткені»). Language quality is natural and terminologically accurate per Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the given compound sentence by breaking it down into its clauses and identifying the conjunctions used to connect them.\n\n1. «Бірде жел гуілдейді» (Sometimes the wind howls)\n2. «бірде жаңбыр сіркірейді» (sometimes the rain drizzles)\n3. «алайда көш тоқтаған жоқ» (however, the caravan did not stop)\n4. «өйткені межелі жерге бүгін жету керек еді» (because they had to reach the destination today)\n\nNow, let's determine the syntactic relationships:\n- Clauses 1 and 2 are connected by the repeating conjunctions «бірде ..., бірде ...» (sometimes ..., sometimes ...). In Kazakh syntax, this forms a 'кезектес салалас' (alternating coordinate compound sentence), indicating actions that happen alternately.\n- Clause 3 is introduced by the conjunction «алайда» (however/but). This conjunction expresses an adversative relationship ('қарсылықты қатынас') to the preceding situations (the bad weather did not stop the caravan).\n- Clause 4 is introduced by the conjunction «өйткені» (because). This conjunction introduces the reason ('себебін білдіреді') for the action in the third clause (why the caravan did not stop).\n\nMatching this analysis with the given options:\n- Option A incorrectly identifies the first two as 'талғаулы' (disjunctive).\n- Option B incorrectly swaps the relationships of the third and fourth clauses.\n- Option C perfectly matches our step-by-step analysis: the first two clauses form 'кезектес салалас', the third is in 'қарсылықты қатынас' (adversative) to them, and the fourth expresses the reason ('себебін білдіреді') for the third.\n- Option D incorrectly identifies the first two as 'ыңғайлас' (copulative).\n\nTherefore, Option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the syntactic analysis of a multi-clause coordinate compound sentence, with highly plausible distractors and perfect terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:53:56.644830+00:00",
+  "generation_attempts": 1
+}

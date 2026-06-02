@@ -1,0 +1,628 @@
+{
+  "id": "95531d02c3d94a98a70412f28887f63a",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T13:15:20.252386+00:00",
+  "passage": "Күн батуға тақаған шақта, ұлан-ғайыр даланың үстін қызғылт сары нұр басты. Алыстағы мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай көз тартып, асқақтай түсті. Жол бойы үн-түнсіз келе жатқан Ерасылдың көңілінде бір ерекше толқу бар еді. Оның ойында туған жердің осы бір қайталанбас сұлулығы мен балалық шағының тәтті естеліктері тоғысып жатты. Аттың бірқалыпты жүрісіне тербелген ол сәл-пәл қалғып кеткендей болды, бірақ кенеттен шыққан үкінің үні оны селт еткізді.\nТабиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс осы сәтте тіпті айқындала түсті. Ерасылдың көз алдына әкесінің: «Даланың да жаны бар, балам. Оның тынысын сезе білген адам ғана нағыз ер атанады», – деген сөздері оралды. Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып, ат басын ауылға қарай бұрды. Бұл сапар оның өміріндегі жаңа бір кезеңнің бастамасы іспетті еді.",
+  "questions": [
+    {
+      "question_text": "Мәтіннің негізгі идеясы қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Табиғат құбылыстарын ғылыми тұрғыдан баяндау"
+        },
+        {
+          "label": "B",
+          "text": "Жолсапар кезіндегі кездесетін қиындықтарды суреттеу"
+        },
+        {
+          "label": "C",
+          "text": "Табиғат пен адам арасындағы рухани байланысты көрсету"
+        },
+        {
+          "label": "D",
+          "text": "Әке мен бала арасындағы түсініспеушілікті талдау"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтінде табиғат сұлулығы мен Ерасылдың ішкі толқынысы үндесіп, «Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс» арқылы негізгі идея берілген. Қалған нұсқалар мәтін мазмұнына мүлдем сәйкес келмейді.",
+      "critic_score": 8.233,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.0,
+        "difficulty_alignment": 6.167,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The passage is an artistic/descriptive prose text, not a scientific explanation. It describes the steppe at sunset, Erasyl's emotional response, memories of childhood and homeland, and especially the idea expressed through the father's words: “The steppe also has a soul... only the person who can feel its breath becomes a real man.” The second paragraph directly states that the invisible delicate \n\n[anthropic/claude-sonnet-4.6] answered C: The text describes a young man named Erasyl riding through the steppe at sunset. The main themes are: the beautiful natural scenery (golden light, misty mountain peaks), Erasyl's emotional state connecting to his homeland, a memory of his father's words about the steppe having a soul, and the spiritual connection between nature and humans. The father's quote explicitly states: 'The steppe has a so\n\n[google/gemini-3.1-pro-preview] answered C: The text describes a young man, Yerasyl, riding through the steppe at sunset, deeply moved by the beauty of his homeland. The narrative explicitly highlights the 'invisible delicate connection between nature and man' ('Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс'). Yerasyl recalls his father's words about the steppe having a soul and the importance of feeling its breath, which emp",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 6.167,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.233,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is clearly correct and uniquely supported by the text. However, the item is too easy for level B because the correct idea is almost directly stated in the passage, and the distractors are largely implausible. | [anthropic/claude-sonnet-4.6] The correct answer (C) is unambiguous and well-supported by explicit text evidence ('Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс'). The Kazakh language is natural and literary-norm. However, distractors A and D are too easily eliminated (A contradicts the clearly artistic style; D invents a conflict absent from the text), making the question somewhat easier than intended for level B. The difficulty sits closer to level A since the main idea is stated almost verbatim in the text. | [google/gemini-3.1-pro-preview] The question is a well-written reading comprehension item with a clear main idea. The text is of high literary quality and perfectly illustrates the correct answer.",
+          "improvement_suggestions": "[openai/gpt-5.5] Make the task require inference or comparison of authorial idea rather than direct recognition; revise distractors so they reflect plausible but partial interpretations of the text, not options that are obviously absent. | [anthropic/claude-sonnet-4.6] 1) Replace distractor A with something more plausible, e.g., 'Туған жерге деген сағыныш пен оралу тақырыбын суреттеу' — a theme partially present in the text that requires closer reading to distinguish from the main idea. 2) Replace distractor D with a subtler option such as 'Әке өсиетінің адам тәрбиесіндегі рөлін көрсету' — this is genuinely present in the text but is a secondary, not primary, idea. 3) To raise difficulty to true B-level, avoid placing the main idea as a near-verbatim sentence in the text; instead require synthesis across multiple paragraphs. | [google/gemini-3.1-pro-preview] To make the question more challenging for a teacher certification exam, consider making the distractors more plausible by referencing actual minor details from the text rather than completely absent concepts (like 'scientific description' or 'misunderstanding').",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The passage is an artistic/descriptive prose text, not a scientific explanation. It describes the steppe at sunset, Erasyl's emotional response, memories of childhood and homeland, and especially the idea expressed through the father's words: “The steppe also has a soul... only the person who can feel its breath becomes a real man.” The second paragraph directly states that the invisible delicate connection between nature and human becomes clear. Therefore, the main idea is to show the spiritual connection between nature and a person. Option A is incorrect because the text is not scientific. Option B is incorrect because no travel hardships are emphasized. Option D is incorrect because there is no conflict or misunderstanding between father and son.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 4.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The keyed answer C is clearly correct and uniquely supported by the text. However, the item is too easy for level B because the correct idea is almost directly stated in the passage, and the distractors are largely implausible.",
+              "improvement_suggestions": "Make the task require inference or comparison of authorial idea rather than direct recognition; revise distractors so they reflect plausible but partial interpretations of the text, not options that are obviously absent.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes a young man named Erasyl riding through the steppe at sunset. The main themes are: the beautiful natural scenery (golden light, misty mountain peaks), Erasyl's emotional state connecting to his homeland, a memory of his father's words about the steppe having a soul, and the spiritual connection between nature and humans. The father's quote explicitly states: 'The steppe has a soul, my son. Only a person who can feel its breath can be called a true man.' The text concludes that this journey marks a new chapter in Erasyl's life, having internalized the depth of his father's wisdom. \n\nAnalyzing the options:\nA) Scientific description of natural phenomena — the text is literary/artistic, not scientific. Eliminated.\nB) Describing difficulties encountered during a journey — there are no difficulties described; the journey is peaceful and reflective. Eliminated.\nC) Showing the spiritual connection between nature and humans — this directly matches the central theme. The text explicitly states 'The invisible, delicate connection between nature and humans became even clearer at this moment.' This is the main idea.\nD) Analyzing misunderstanding between father and son — there is no conflict or misunderstanding; the son reflects positively on his father's wisdom. Eliminated.\n\nThe correct answer is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 6.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The correct answer (C) is unambiguous and well-supported by explicit text evidence ('Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс'). The Kazakh language is natural and literary-norm. However, distractors A and D are too easily eliminated (A contradicts the clearly artistic style; D invents a conflict absent from the text), making the question somewhat easier than intended for level B. The difficulty sits closer to level A since the main idea is stated almost verbatim in the text.",
+              "improvement_suggestions": "1) Replace distractor A with something more plausible, e.g., 'Туған жерге деген сағыныш пен оралу тақырыбын суреттеу' — a theme partially present in the text that requires closer reading to distinguish from the main idea. 2) Replace distractor D with a subtler option such as 'Әке өсиетінің адам тәрбиесіндегі рөлін көрсету' — this is genuinely present in the text but is a secondary, not primary, idea. 3) To raise difficulty to true B-level, avoid placing the main idea as a near-verbatim sentence in the text; instead require synthesis across multiple paragraphs.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes a young man, Yerasyl, riding through the steppe at sunset, deeply moved by the beauty of his homeland. The narrative explicitly highlights the 'invisible delicate connection between nature and man' ('Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс'). Yerasyl recalls his father's words about the steppe having a soul and the importance of feeling its breath, which emphasizes a deep, spiritual bond with nature. Evaluating the options: A is incorrect because the text is literary, not scientific. B is incorrect as no travel difficulties are mentioned. D is incorrect because there is no misunderstanding between father and son; rather, the son gains a deeper appreciation of his father's wisdom. Option C perfectly captures the central theme of the spiritual connection between humans and nature.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question is a well-written reading comprehension item with a clear main idea. The text is of high literary quality and perfectly illustrates the correct answer.",
+              "improvement_suggestions": "To make the question more challenging for a teacher certification exam, consider making the distractors more plausible by referencing actual minor details from the text rather than completely absent concepts (like 'scientific description' or 'misunderstanding').",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіндегі «мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай көз тартып» деген жолдарда басым қолданылған көркемдегіш құрал:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Теңеу"
+        },
+        {
+          "label": "B",
+          "text": "Метафора"
+        },
+        {
+          "label": "C",
+          "text": "Эпитет"
+        },
+        {
+          "label": "D",
+          "text": "Кейіптеу"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "«Бейне бір... сарайларындай» тіркесінде тау шыңдарын ертегі сарайларына ұқсату, салыстыру мақсатында теңеу қолданылған. «-дай/-дей» жұрнағы мен «бейне бір» шылауы теңеуді жасап тұр.",
+      "critic_score": 9.1,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 7.333,
+        "kazakh_language_quality": 9.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The phrase compares the distant misty mountain peaks to palaces from a fairy-tale world: “бейне бір ... сарайларындай” (‘as if like ... palaces’). In Kazakh stylistics, a comparison using markers such as “бейне”, “сияқты”, “секілді”, or suffixes “-дай/-дей” is a simile, called “теңеу”. Although “мұнарланған” is an epithet describing the peaks, the dominant artistic device in the quoted line is the\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks about the dominant literary/rhetorical device used in the phrase 'мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай көз тартып' (the hazy mountain peaks, as if the palaces of a fairy-tale world, caught the eye).\n\nLet's analyze the options:\n\nA) Теңеу (Simile) — A simile is a direct comparison using explicit comparison words. In Kazakh, similes are typically marked by\n\n[google/gemini-3.1-pro-preview] answered A: The phrase in question is «мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай көз тартып». The key indicators here are the words «бейне бір» (as if / like) and the suffix «-дай» in «сарайларындай» (like palaces). These are the standard grammatical and lexical markers for a simile (теңеу) in the Kazakh language, which explicitly compares the mountain peaks to fairy-tale palaces. Theref",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 7.333,
+            "kazakh_language_quality": 9.833,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct: the construction “бейне бір ... сарайларындай” is an explicit simile. However, the item is rather easy for level B because the simile markers make the answer highly transparent. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: 'бейне бір...сарайларындай' contains explicit simile markers (бейне бір + -дай suffix), making A (Теңеу) unambiguously correct. The text is rich, natural literary Kazakh, and terminology is standard. Distractors are plausible — метафора is a common confusion with теңеу, эпитет applies to 'мұнарланған', and кейіптеу is a reasonable distractor given the personification-adjacent imagery. Difficulty is slightly on the easier side for a certified teacher (the simile markers are very explicit), but the context-in-text requirement keeps it at B level. | [google/gemini-3.1-pro-preview] The question is well-constructed, uses a high-quality literary text, and accurately tests the identification of literary devices in context. The distractors are plausible and relevant.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To increase difficulty to a firmer B level, consider choosing a phrase where the figurative device is less explicitly marked (e.g., an implied metaphor vs. simile distinction), or ask the teacher to identify the device and explain its stylistic function in the text, requiring a higher-order justification step.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase compares the distant misty mountain peaks to palaces from a fairy-tale world: “бейне бір ... сарайларындай” (‘as if like ... palaces’). In Kazakh stylistics, a comparison using markers such as “бейне”, “сияқты”, “секілді”, or suffixes “-дай/-дей” is a simile, called “теңеу”. Although “мұнарланған” is an epithet describing the peaks, the dominant artistic device in the quoted line is the explicit comparison.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.3,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct: the construction “бейне бір ... сарайларындай” is an explicit simile. However, the item is rather easy for level B because the simile markers make the answer highly transparent.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks about the dominant literary/rhetorical device used in the phrase 'мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай көз тартып' (the hazy mountain peaks, as if the palaces of a fairy-tale world, caught the eye).\n\nLet's analyze the options:\n\nA) Теңеу (Simile) — A simile is a direct comparison using explicit comparison words. In Kazakh, similes are typically marked by words/suffixes like 'бейне', 'сияқты', 'тәрізді', '-дай/-дей', etc.\n\nB) Метафора (Metaphor) — An implicit comparison without explicit comparison markers.\n\nC) Эпитет (Epithet) — A descriptive word or phrase that characterizes a noun.\n\nD) Кейіптеу (Personification) — Attributing human qualities to non-human things.\n\nIn the phrase in question: 'мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай' — the mountain peaks are compared to palaces of a fairy-tale world using the explicit comparison markers 'бейне бір' (as if, like) and the suffix '-дай' (like/as). These are classic simile markers in Kazakh.\n\nThis is clearly a simile (Теңеу) because:\n1. 'бейне бір' = 'as if / like' — explicit comparison word\n2. '-сарайларындай' = '-like palaces' — the -дай suffix marks comparison\n\nThe mountain peaks are being explicitly compared to fairy-tale palaces using comparison markers, which is the definition of a simile, not a metaphor (which would lack these explicit markers).\n\nTherefore, the answer is A) Теңеу (Simile).",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question is factually correct and well-keyed: 'бейне бір...сарайларындай' contains explicit simile markers (бейне бір + -дай suffix), making A (Теңеу) unambiguously correct. The text is rich, natural literary Kazakh, and terminology is standard. Distractors are plausible — метафора is a common confusion with теңеу, эпитет applies to 'мұнарланған', and кейіптеу is a reasonable distractor given the personification-adjacent imagery. Difficulty is slightly on the easier side for a certified teacher (the simile markers are very explicit), but the context-in-text requirement keeps it at B level.",
+              "improvement_suggestions": "To increase difficulty to a firmer B level, consider choosing a phrase where the figurative device is less explicitly marked (e.g., an implied metaphor vs. simile distinction), or ask the teacher to identify the device and explain its stylistic function in the text, requiring a higher-order justification step.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The phrase in question is «мұнарланған тау шыңдары бейне бір ертегі әлемінің сарайларындай көз тартып». The key indicators here are the words «бейне бір» (as if / like) and the suffix «-дай» in «сарайларындай» (like palaces). These are the standard grammatical and lexical markers for a simile (теңеу) in the Kazakh language, which explicitly compares the mountain peaks to fairy-tale palaces. Therefore, the dominant literary device used in these lines is 'теңеу' (simile).",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, uses a high-quality literary text, and accurately tests the identification of literary devices in context. The distractors are plausible and relevant.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Әкесінің «Даланың да жаны бар» деген сөзінің мәнмәтіндегі мағынасы:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Даланың географиялық аумағының шексіз кеңдігі"
+        },
+        {
+          "label": "B",
+          "text": "Далада өмір сүретін жабайы аң-құстардың көптігі"
+        },
+        {
+          "label": "C",
+          "text": "Табиғаттың адамға үнемі қауіп төндіруі мүмкін екендігі"
+        },
+        {
+          "label": "D",
+          "text": "Дала табиғатының тіршілік атаулымен біртұтас, сезімтал екендігі"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "«Даланың да жаны бар» тіркесі метафоралық мағынада табиғаттың тірі организм сияқты екенін, оның тыныс-тіршілігін сезініп, құрметпен қарау керектігін білдіреді. Бұл тура мағынадағы биологиялық немесе географиялық сипаттама емес.",
+      "critic_score": 9.3,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The quoted phrase is: “Dalanyñ da jany bar” (“The steppe also has a soul”). In the text, this phrase is explained by the surrounding context: it says there is an “invisible delicate connection between nature and humans,” and the father adds that only a person who can feel the steppe’s “breath” can become a true man. This is not about geographic size, the number of animals, or danger from nature. I\n\n[anthropic/claude-sonnet-4.6] answered D: The question asks about the contextual meaning of the father's words 'Даланың да жаны бар' (The steppe also has a soul/spirit) within the text.\n\nAnalyzing the text: The passage describes Erasyl riding through the steppe at sunset, feeling a special emotional connection with the landscape of his homeland. The text explicitly states 'Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс осы с\n\n[google/gemini-3.1-pro-preview] answered D: The question asks for the contextual meaning of the father's words 'Даланың да жаны бар' (The steppe also has a soul). In the text, this quote is immediately preceded by the sentence 'Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс осы сәтте тіпті айқындала түсті' (The invisible delicate connection between nature and man became even clearer at this moment). The father also adds, 'Оның",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by the context: the phrase is clearly metaphorical/personifying the steppe as living and spiritually connected with humans. The item is well written, though the inference is fairly straightforward for level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clear correct answer (D) supported by the text's explicit thematic statement about the invisible bond between nature and humans. The Kazakh language is natural and literary-norm throughout. Distractors A and B are plausible surface-level misreadings, though C (nature as threat) is somewhat less grounded in the text and easier to eliminate. | [google/gemini-3.1-pro-preview] The question is well-crafted, with a beautifully written literary text and a clear, unambiguous question about contextual meaning. The distractors are plausible and well-structured.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The quoted phrase is: “Dalanyñ da jany bar” (“The steppe also has a soul”). In the text, this phrase is explained by the surrounding context: it says there is an “invisible delicate connection between nature and humans,” and the father adds that only a person who can feel the steppe’s “breath” can become a true man. This is not about geographic size, the number of animals, or danger from nature. It is a personification/metaphorical idea: the steppe is presented as something alive, sensitive, and spiritually connected with human life. Therefore the correct meaning is that steppe nature is one with living existence and has a sensitive, living essence.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 7.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely supported by the context: the phrase is clearly metaphorical/personifying the steppe as living and spiritually connected with humans. The item is well written, though the inference is fairly straightforward for level B.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks about the contextual meaning of the father's words 'Даланың да жаны бар' (The steppe also has a soul/spirit) within the text.\n\nAnalyzing the text: The passage describes Erasyl riding through the steppe at sunset, feeling a special emotional connection with the landscape of his homeland. The text explicitly states 'Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс осы сәтте тіпті айқындала түсті' (The invisible, delicate connection between nature and man became even clearer at this moment). The father's full quote is: 'Даланың да жаны бар, балам. Оның тынысын сезе білген адам ғана нағыз ер атанады' (The steppe also has a soul, my son. Only a person who can feel its breath becomes a true man).\n\nThe phrase 'жаны бар' (has a soul) combined with 'тынысын сезе білген' (able to feel its breath) indicates that the steppe is being personified as a living, sentient entity. The context emphasizes the spiritual/emotional connection between humans and nature, not geographic size (A), abundance of wildlife (B), or danger (C).\n\nOption D states: 'Dala tabighatynyn tirshilik atalymen birtutас, seziмtal ekendigi' (That the steppe nature is unified with all living things and is sensitive/perceptive). This aligns perfectly with the text's theme of the invisible bond between nature and humans, and the idea that the steppe has a 'soul' — meaning it is alive, interconnected, and responsive to human presence.\n\nTherefore, the correct answer is D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, with a clear correct answer (D) supported by the text's explicit thematic statement about the invisible bond between nature and humans. The Kazakh language is natural and literary-norm throughout. Distractors A and B are plausible surface-level misreadings, though C (nature as threat) is somewhat less grounded in the text and easier to eliminate.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the contextual meaning of the father's words 'Даланың да жаны бар' (The steppe also has a soul). In the text, this quote is immediately preceded by the sentence 'Табиғат пен адам арасындағы көзге көрінбейтін нәзік байланыс осы сәтте тіпті айқындала түсті' (The invisible delicate connection between nature and man became even clearer at this moment). The father also adds, 'Оның тынысын сезе білген адам ғана нағыз ер атанады' (Only a person who can feel its breath will be called a real man). This implies that the steppe is not just an empty geographical space, but a living, breathing entity that is deeply connected to humans and all living things. Option D ('Дала табиғатының тіршілік атаулымен біртұтас, сезімтал екендігі' - The fact that the steppe nature is integral with all living things and sensitive) perfectly captures this meaning of nature being alive and interconnected with humanity.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-crafted, with a beautifully written literary text and a clear, unambiguous question about contextual meaning. The distractors are plausible and well-structured.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Ерасылдың әкесінің сөздерін еске алуы оның бойында қандай ішкі өзгеріс тудырды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Өткен күнге деген өкініш пен қайғы"
+        },
+        {
+          "label": "B",
+          "text": "Әке өсиетін терең түсіну, рухани кемелдену"
+        },
+        {
+          "label": "C",
+          "text": "Түнгі далаға және туған жерге деген қорқыныш"
+        },
+        {
+          "label": "D",
+          "text": "Сапарды әрі қарай жалғастыруға деген құлықсыздық"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Мәтінде «Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып... жаңа бір кезеңнің бастамасы іспетті еді» делінуі оның рухани өскенін, өсиетті терең ұғынып, өмірге жаңа көзқараспен қарай бастағанын көрсетеді.",
+      "critic_score": 8.767,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.667,
+        "difficulty_alignment": 7.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The text says that Eрасыл remembers his father's words: “The steppe also has a soul... Only a person who can feel its breath becomes a real man.” Immediately after this, the narrator states: “Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып...” meaning “The young man seemed to have only now inwardly grasped the depth of his father’s advice.” It also says this journey was like\n\n[anthropic/claude-sonnet-4.6] answered B: The text describes Erasyl riding through the steppe at sunset, feeling a special inner stirring. When he recalls his father's words — 'The steppe has a soul, my son. Only the person who can feel its breath can be called a true man' — the text explicitly states: 'The young man felt as if he had only now penetrated the depth of his father's testament' (Жас жігіт ішінен әке өсиетінің тереңдігіне енді\n\n[google/gemini-3.1-pro-preview] answered B: Based on the text, after Yerasyl remembers his father's words, the narrative states: 'Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып...' which translates to 'The young man felt as if he had only now fathomed the depth of his father's testament...'. Furthermore, the text concludes with 'Бұл сапар оның өміріндегі жаңа бір кезеңнің бастамасы іспетті еді' ('This journey seemed ",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.667,
+            "difficulty_alignment": 7.667,
+            "kazakh_language_quality": 9.333,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.767,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is clearly correct and directly supported by the text. However, the item is closer to straightforward reading comprehension than a medium-level teacher-certification style/text-analysis task, and the distractors are mostly implausible. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary passage; the correct answer B is unambiguously supported by explicit textual evidence ('әке өсиетінің тереңдігіне енді ғана бойлағандай болып' and 'жаңа бір кезеңнің бастамасы'). Distractors A and C are plausible enough to require careful reading, though D (reluctance to continue) is somewhat easily eliminated since the text shows him turning toward the village purposefully. | [google/gemini-3.1-pro-preview] The question is well-written, the text is engaging and uses rich literary Kazakh, and the correct answer is unambiguously supported by the text.",
+          "improvement_suggestions": "[openai/gpt-5.5] Reduce direct lexical cueing from the passage and make distractors reflect plausible alternative interpretations, such as nostalgia, renewed responsibility, or change in attitude toward the journey. To better fit level B, ask about the function of the recalled quotation in revealing character development or the text’s idea. | [anthropic/claude-sonnet-4.6] Distractor D could be made slightly more plausible — e.g., replacing 'құлықсыздық' (reluctance) with something like 'ауылға оралуға деген асығыстық пен мазасыздық' to make elimination harder. The difficulty is solid B-level but leans toward the easier end; adding a subtler distractor would push it firmly into mid-B range.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text says that Eрасыл remembers his father's words: “The steppe also has a soul... Only a person who can feel its breath becomes a real man.” Immediately after this, the narrator states: “Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып...” meaning “The young man seemed to have only now inwardly grasped the depth of his father’s advice.” It also says this journey was like the beginning of a new stage in his life. Therefore, the memory of his father's words causes an inner realization and spiritual maturation, not regret, fear, or unwillingness to continue.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The keyed answer is clearly correct and directly supported by the text. However, the item is closer to straightforward reading comprehension than a medium-level teacher-certification style/text-analysis task, and the distractors are mostly implausible.",
+              "improvement_suggestions": "Reduce direct lexical cueing from the passage and make distractors reflect plausible alternative interpretations, such as nostalgia, renewed responsibility, or change in attitude toward the journey. To better fit level B, ask about the function of the recalled quotation in revealing character development or the text’s idea.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Erasyl riding through the steppe at sunset, feeling a special inner stirring. When he recalls his father's words — 'The steppe has a soul, my son. Only the person who can feel its breath can be called a true man' — the text explicitly states: 'The young man felt as if he had only now penetrated the depth of his father's testament' (Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып). This indicates a moment of deep spiritual understanding and inner maturation/ripening. The passage concludes by calling this journey 'the beginning of a new stage in his life,' reinforcing the idea of spiritual growth and coming of age. Option B — 'Deep understanding of the father's testament, spiritual maturation' — directly matches what the text describes. Options A (regret and grief about the past), C (fear of the night steppe), and D (reluctance to continue the journey) are not supported by the text.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary passage; the correct answer B is unambiguously supported by explicit textual evidence ('әке өсиетінің тереңдігіне енді ғана бойлағандай болып' and 'жаңа бір кезеңнің бастамасы'). Distractors A and C are plausible enough to require careful reading, though D (reluctance to continue) is somewhat easily eliminated since the text shows him turning toward the village purposefully.",
+              "improvement_suggestions": "Distractor D could be made slightly more plausible — e.g., replacing 'құлықсыздық' (reluctance) with something like 'ауылға оралуға деген асығыстық пен мазасыздық' to make elimination harder. The difficulty is solid B-level but leans toward the easier end; adding a subtler distractor would push it firmly into mid-B range.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Based on the text, after Yerasyl remembers his father's words, the narrative states: 'Жас жігіт ішінен әке өсиетінің тереңдігіне енді ғана бойлағандай болып...' which translates to 'The young man felt as if he had only now fathomed the depth of his father's testament...'. Furthermore, the text concludes with 'Бұл сапар оның өміріндегі жаңа бір кезеңнің бастамасы іспетті еді' ('This journey seemed to be the beginning of a new stage in his life'). These sentences clearly indicate a deep understanding of his father's advice and a sense of spiritual maturation or growth. Option B perfectly encapsulates this internal change: 'Әке өсиетін терең түсіну, рухани кемелдену' (Deep understanding of his father's testament, spiritual maturation). The other options (regret, fear, or reluctance) contradict the positive and reflective tone of the passage.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.6,
+              "pass_fail": true,
+              "comments": "The question is well-written, the text is engaging and uses rich literary Kazakh, and the correct answer is unambiguously supported by the text.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіндегі «Аттың бірқалыпты жүрісіне тербелген ол сәл-пәл қалғып кеткендей болды» сөйлеміндегі «сәл-пәл» сөзінің морфологиялық тұлғасы мен қызметі:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Күрделі сын есім, заттың сынын білдіріп тұр"
+        },
+        {
+          "label": "B",
+          "text": "Қос сөз түрлес үстеу, қимылдың мөлшерін білдіріп тұр"
+        },
+        {
+          "label": "C",
+          "text": "Біріккен сөз, қимылдың мезгілін көрсетіп тұр"
+        },
+        {
+          "label": "D",
+          "text": "Қос сөз түрлес есімдік, заттың орнына жұмсалып тұр"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "«Сәл-пәл» сөзі – құрылымына қарай қос сөз, сөз табына қарай мөлшер үстеуі. Ол сөйлемде «қалғып кету» етістігімен тіркесіп, қимылдың дәрежесін, мөлшерін көрсетіп тұр. Сын есім немесе есімдік емес.",
+      "critic_score": 9.033,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 8.333,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: In the sentence “Аттың бірқалыпты жүрісіне тербелген ол сәл-пәл қалғып кеткендей болды,” the word “сәл-пәл” means “a little, slightly.” Morphologically, it is formed by pairing two close/similar elements with a hyphen, so it is a reduplicative/paired form (қос сөз). In terms of part of speech, it functions as an adverb because it modifies the predicate/action “қалғып кеткендей болды” (“seemed to h\n\n[anthropic/claude-sonnet-4.6] answered B: The word 'сәл-пәл' in the sentence 'Аттың бірқалыпты жүрісіне тербелген ол сәл-пәл қалғып кеткендей болды' needs to be analyzed morphologically and functionally.\n\n'Сәл-пәл' is formed by reduplication/pairing of 'сәл' (meaning 'a little/slightly') with its echo word 'пәл'. This makes it a paired/reduplicated word (қос сөз). In Kazakh grammar, such paired words formed from adverbs remain adverbs — s\n\n[google/gemini-3.1-pro-preview] answered B: The word 'сәл-пәл' in the sentence '...сәл-пәл қалғып кеткендей болды' modifies the verb 'қалғып кеткендей болды' (dozed off). Morphologically, it is a reduplicated word (қос сөз) formed by repeating the root 'сәл' with a phonetic variation ('пәл'). As a part of speech, it is an adverb (үстеу) because it describes the action. Specifically, it answers the question 'қаншама?' or 'қаншалықты?' (how m",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 8.333,
+            "kazakh_language_quality": 9.167,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.033,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: «сәл-пәл» is a hyphenated adverbial form indicating the degree/amount of the action. However, several distractors are quite easily eliminated, especially the compound-word and pronoun options, and the task is closer to basic contextual grammar analysis than a strong medium-level item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and the keyed answer B is unambiguously right. 'Сәл-пәл' is indeed a paired-word adverb (қос сөз түрлес үстеу) indicating degree/measure of action. The distractors are mostly plausible but D (pronoun) is somewhat too obviously wrong for a practicing teacher, slightly reducing distractor quality. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests morphological and syntactic analysis in context, and features plausible distractors with consistent formatting.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "In the sentence “Аттың бірқалыпты жүрісіне тербелген ол сәл-пәл қалғып кеткендей болды,” the word “сәл-пәл” means “a little, slightly.” Morphologically, it is formed by pairing two close/similar elements with a hyphen, so it is a reduplicative/paired form (қос сөз). In terms of part of speech, it functions as an adverb because it modifies the predicate/action “қалғып кеткендей болды” (“seemed to have dozed off”). Semantically, it indicates the degree or amount/extent of the action: he dozed off only slightly/a little. Therefore the correct option is “Қос сөз түрлес үстеу, қимылдың мөлшерін білдіріп тұр.”",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.5,
+                "difficulty_alignment": 7.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.2,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: «сәл-пәл» is a hyphenated adverbial form indicating the degree/amount of the action. However, several distractors are quite easily eliminated, especially the compound-word and pronoun options, and the task is closer to basic contextual grammar analysis than a strong medium-level item.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The word 'сәл-пәл' in the sentence 'Аттың бірқалыпты жүрісіне тербелген ол сәл-пәл қалғып кеткендей болды' needs to be analyzed morphologically and functionally.\n\n'Сәл-пәл' is formed by reduplication/pairing of 'сәл' (meaning 'a little/slightly') with its echo word 'пәл'. This makes it a paired/reduplicated word (қос сөз). In Kazakh grammar, such paired words formed from adverbs remain adverbs — specifically, 'сәл' is an adverb of degree/measure, and 'сәл-пәл' as a paired adverb (қос сөз түрлес үстеу) also functions as an adverb.\n\nIn the sentence, 'сәл-пәл қалғып кеткендей болды' — 'сәл-пәл' modifies the verb 'қалғып кеткендей болды' (dozed off), indicating the degree/measure of the action (dozed off just a little). This is the function of an adverb of measure/degree (мөлшер үстеуі), indicating how much or to what extent the action occurred.\n\nOption B states: 'Қос сөз түрлес үстеу, қимылдың мөлшерін білдіріп тұр' — a paired-word type adverb, indicating the measure of the action. This correctly identifies both the morphological form (paired adverb/қос сөз түрлес үстеу) and the syntactic function (indicating measure of action).\n\nOptions A, C, D are incorrect: it is not an adjective, not a compound word indicating time, and not a pronoun.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, factually correct, and the keyed answer B is unambiguously right. 'Сәл-пәл' is indeed a paired-word adverb (қос сөз түрлес үстеу) indicating degree/measure of action. The distractors are mostly plausible but D (pronoun) is somewhat too obviously wrong for a practicing teacher, slightly reducing distractor quality.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The word 'сәл-пәл' in the sentence '...сәл-пәл қалғып кеткендей болды' modifies the verb 'қалғып кеткендей болды' (dozed off). Morphologically, it is a reduplicated word (қос сөз) formed by repeating the root 'сәл' with a phonetic variation ('пәл'). As a part of speech, it is an adverb (үстеу) because it describes the action. Specifically, it answers the question 'қаншама?' or 'қаншалықты?' (how much? / to what extent?), making it an adverb of degree/measure (мөлшер үстеуі). Therefore, its morphological form is a reduplicated adverb (қос сөз түрлес үстеу), and its function is to indicate the degree or amount of the action (қимылдың мөлшерін білдіріп тұр). This matches option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed, accurately tests morphological and syntactic analysis in context, and features plausible distractors with consistent formatting.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

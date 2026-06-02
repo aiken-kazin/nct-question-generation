@@ -1,0 +1,140 @@
+{
+  "id": "b31222a8-0561-496b-bc1c-0e9960444399",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Ол кісі дүниеден өтті» деген сөйлемде қандай лексикалық құбылыс қолданылған және оның мақсаты қандай?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Фразеологизм — тілдің бейнелілігін арттыру үшін қолданылған"
+    },
+    {
+      "label": "B",
+      "text": "Эвфемизм — «өлді» деген тікелей сөздің орнына жұмсартылған баламасы қолданылған"
+    },
+    {
+      "label": "C",
+      "text": "Дисфемизм — сөйлемге дөрекілік реңк беру мақсатында қолданылған"
+    },
+    {
+      "label": "D",
+      "text": "Неологизм — жаңа ұғымды білдіру үшін жасалған жаңа сөз тіркесі"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "«Дүниеден өтті» тіркесі — «өлді» деген тікелей, дөрекі немесе ауыр сезілетін сөздің орнына жұмсақ, ілтипатты баламасын қолданатын эвфемизмнің анық үлгісі. Эвфемизм — адамдардың психологиялық және әлеуметтік ыңғайлылығы үшін табу немесе қатал ұғымдарды жұмсарту мақсатында қолданылатын лексикалық тәсіл. A нұсқасы қате: фразеологизм тіркес ретінде тұрақты мағынаға ие болады, бірақ мұнда негізгі мақсат жұмсарту, бейнелілік емес. C нұсқасы қате: дисфемизм керісінше — ұғымды дөрекілендіру немесе кемсіту мақсатында қолданылады, ал бұл сөйлемде мүлдем кері мақсат бар. D нұсқасы қате: неологизм — тілде жаңа пайда болған сөз немесе тіркес болып табылады, ал «дүниеден өтті» — тілде ертеден қалыптасқан, белгілі тіркес.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.0,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The expression “дүниеден өтті” literally means “passed from this world” and is used instead of the direct word “өлді” (“died”). In Kazakh lexicology, replacing a harsh, unpleasant, or socially sensitive word with a softer, more polite expression is called a euphemism. The purpose here is to soften the meaning and avoid the bluntness of saying “өлді.” Therefore, the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: The sentence 'Ол кісі дүниеден өтті' means 'That person passed away/departed from this world.' The phrase 'дүниеден өтті' (literally 'passed from the world') is used instead of the direct word 'өлді' (died). This is a classic example of a euphemism (эвфемизм) — a softer, more polite expression used to replace a harsh or taboo word. In Kazakh lexicology, euphemisms are words or phrases that substit\n\n[google/gemini-3.1-pro-preview] answered B: The phrase 'дүниеден өтті' (passed away) is used as a polite and softened alternative to the direct and harsh word 'өлді' (died). In lexicology, the substitution of a mild, indirect, or vague term for one considered harsh, blunt, or offensive is called a euphemism (эвфемизм). Option B correctly identifies the phenomenon as an euphemism and accurately describes its purpose.",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.833,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 7.833,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.0,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: «дүниеден өтті» is a euphemistic replacement for the direct word «өлді». The item is clear, but it is rather straightforward for level B, and option A is partly tempting because the expression is also a stable phrase, though its stated purpose is not the best answer. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: 'дүниеден өтті' is a textbook euphemism, and the explanation is thorough. Distractors are plausible (especially A, since the phrase could be considered a phraseologism), though C and D are somewhat easy to eliminate. The question leans slightly toward level A (recall/recognition) rather than full level B analysis, but the two-part demand (identify phenomenon + explain purpose) adds analytical depth. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the concept of euphemisms in context. The distractors are plausible and address common misconceptions.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B, consider adding a more nuanced distractor — e.g., one that correctly identifies the phenomenon as euphemism but gives a wrong purpose, or presents a competing interpretation (e.g., 'фразеологиялық эвфемизм'). This would force deeper analysis rather than simple recognition. Also, distractor C (дисфемизм) is too easily eliminated by any teacher familiar with basic terminology.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The expression “дүниеден өтті” literally means “passed from this world” and is used instead of the direct word “өлді” (“died”). In Kazakh lexicology, replacing a harsh, unpleasant, or socially sensitive word with a softer, more polite expression is called a euphemism. The purpose here is to soften the meaning and avoid the bluntness of saying “өлді.” Therefore, the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: The sentence 'Ол кісі дүниеден өтті' means 'That person passed away/departed from this world.' The phrase 'дүниеден өтті' (literally 'passed from the world') is used instead of the direct word 'өлді' (died). This is a classic example of a euphemism (эвфемизм) — a softer, more polite expression used to replace a harsh or taboo word. In Kazakh lexicology, euphemisms are words or phrases that substit\n\n[google/gemini-3.1-pro-preview] answered B: The phrase 'дүниеден өтті' (passed away) is used as a polite and softened alternative to the direct and harsh word 'өлді' (died). In lexicology, the substitution of a mild, indirect, or vague term for one considered harsh, blunt, or offensive is called a euphemism (эвфемизм). Option B correctly identifies the phenomenon as an euphemism and accurately describes its purpose.",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.833,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 7.833,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.0,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: «дүниеден өтті» is a euphemistic replacement for the direct word «өлді». The item is clear, but it is rather straightforward for level B, and option A is partly tempting because the expression is also a stable phrase, though its stated purpose is not the best answer. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: 'дүниеден өтті' is a textbook euphemism, and the explanation is thorough. Distractors are plausible (especially A, since the phrase could be considered a phraseologism), though C and D are somewhat easy to eliminate. The question leans slightly toward level A (recall/recognition) rather than full level B analysis, but the two-part demand (identify phenomenon + explain purpose) adds analytical depth. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and accurately tests the concept of euphemisms in context. The distractors are plausible and address common misconceptions.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B, consider adding a more nuanced distractor — e.g., one that correctly identifies the phenomenon as euphemism but gives a wrong purpose, or presents a competing interpretation (e.g., 'фразеологиялық эвфемизм'). This would force deeper analysis rather than simple recognition. Also, distractor C (дисфемизм) is too easily eliminated by any teacher familiar with basic terminology.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The expression “дүниеден өтті” literally means “passed from this world” and is used instead of the direct word “өлді” (“died”). In Kazakh lexicology, replacing a harsh, unpleasant, or socially sensitive word with a softer, more polite expression is called a euphemism. The purpose here is to soften the meaning and avoid the bluntness of saying “өлді.” Therefore, the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 9.5,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: «дүниеден өтті» is a euphemistic replacement for the direct word «өлді». The item is clear, but it is rather straightforward for level B, and option A is partly tempting because the expression is also a stable phrase, though its stated purpose is not the best answer.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence 'Ол кісі дүниеден өтті' means 'That person passed away/departed from this world.' The phrase 'дүниеден өтті' (literally 'passed from the world') is used instead of the direct word 'өлді' (died). This is a classic example of a euphemism (эвфемизм) — a softer, more polite expression used to replace a harsh or taboo word. In Kazakh lexicology, euphemisms are words or phrases that substitute direct, blunt, or unpleasant expressions with milder alternatives. Here, 'дүниеден өтті' softens the concept of death. Option A (phraseologism) is incorrect because while the phrase may have idiomatic qualities, the primary lexical phenomenon being tested is euphemism. Option C (dysphemism) is the opposite — it adds rudeness, not softness. Option D (neologism) refers to newly coined words, which does not apply here. Therefore, the correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-keyed: 'дүниеден өтті' is a textbook euphemism, and the explanation is thorough. Distractors are plausible (especially A, since the phrase could be considered a phraseologism), though C and D are somewhat easy to eliminate. The question leans slightly toward level A (recall/recognition) rather than full level B analysis, but the two-part demand (identify phenomenon + explain purpose) adds analytical depth.",
+          "improvement_suggestions": "To better align with level B, consider adding a more nuanced distractor — e.g., one that correctly identifies the phenomenon as euphemism but gives a wrong purpose, or presents a competing interpretation (e.g., 'фразеологиялық эвфемизм'). This would force deeper analysis rather than simple recognition. Also, distractor C (дисфемизм) is too easily eliminated by any teacher familiar with basic terminology.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The phrase 'дүниеден өтті' (passed away) is used as a polite and softened alternative to the direct and harsh word 'өлді' (died). In lexicology, the substitution of a mild, indirect, or vague term for one considered harsh, blunt, or offensive is called a euphemism (эвфемизм). Option B correctly identifies the phenomenon as an euphemism and accurately describes its purpose.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and accurately tests the concept of euphemisms in context. The distractors are plausible and address common misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:44:31.085069+00:00",
+  "generation_attempts": 1
+}

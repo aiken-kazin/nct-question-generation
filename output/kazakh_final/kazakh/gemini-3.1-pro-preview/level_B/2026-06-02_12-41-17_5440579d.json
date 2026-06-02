@@ -1,0 +1,140 @@
+{
+  "id": "5440579d-9933-4297-969d-d4a7bb4ab68a",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Берілген сөйлемдердің ішінен дисфемизм қолданылған қатарды табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ауқаты тасыған бай бір күні кенеттен ауырып, дүние салды."
+    },
+    {
+      "label": "B",
+      "text": "Момын халықты зар жылатқан қатыгез залым ақыры арам қатты."
+    },
+    {
+      "label": "C",
+      "text": "Кешегі дауылдан кейін ауылдың шетінде түз тағысы ұлып тұрды."
+    },
+    {
+      "label": "D",
+      "text": "Жиналыста сөз сөйлеген жігіт қатты қысылып, бетінен оты шықты."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дисфемизм – қандай да бір құбылысты, затты немесе ұғымды әдейі тұрпайы, дөрекі сөздермен атау. Бұл құбылыс эвфемизмге қарама-қарсы мағынада, көбінесе жағымсыз кейіпкерге немесе құбылысқа деген жеккөрушілікті, ызаны білдіру үшін жұмсалады. В нұсқасындағы «арам қатты» тіркесі қатыгез адамға қатысты «өлді» сөзінің орнына дөрекіленіп қолданылып тұр, сондықтан бұл – дисфемизм. А нұсқасындағы «дүние салды» – адам өлімін сыпайылап жеткізетін эвфемизм. С нұсқасындағы «түз тағысы» – қасқырдың атын тура атамау (табу) мақсатында туған эвфемизм. D нұсқасындағы «бетінен оты шықты» – қатты ұялу, қысылу мағынасын беретін тұрақты тіркес (фразеологизм).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.5,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: Dysfemism is the use of a deliberately harsh, rude, degrading, or unpleasant word/expression instead of a neutral or polite one. Option A has “дүние салды” meaning “passed away,” which is a euphemism for death, not a dysfemism. Option B has “арам қатты,” a coarse/insulting expression for dying, especially used contemptuously about a person; this is a dysfemism. Option C has “түз тағысы,” a descrip\n\n[anthropic/claude-sonnet-4.6] answered B: We need to identify which sentence contains a 'dysphemism' (дисфемизм) — a deliberately harsh, crude, or offensive expression used in place of a neutral or polite one (the opposite of euphemism).\n\nLet's analyze each option:\n\nA) 'Ауқаты тасыған бай бір күні кенеттен ауырып, дүние салды.' — 'дүние салды' means 'passed away / died.' This is actually a EUPHEMISM for death — a polite, softened expressi\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence containing a dysphemism (дисфемизм). A dysphemism is a derogatory, harsh, or unpleasant term used instead of a neutral or pleasant one (the opposite of a euphemism). Let's analyze the options:\n\nA) 'дүние салды' (passed away) is used instead of 'өлді' (died). This is a euphemism (эвфемизм).\nB) 'арам қатты' (croaked / died like a dog) is used instead of 'өл",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.5,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: “арам қатты” is a clear dysphemistic expression for death, while the other options represent euphemism/taboo-related naming or a phraseological idiom. The item is concise and mostly well aligned to level B, requiring contextual distinction among related lexical phenomena. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (B) clearly exemplifies dysphemism ('арам қатты'), while the distractors represent related but distinct phenomena — euphemism (A, C) and phraseologism (D) — each reachable by a specific conceptual error. The explanation is thorough and accurate. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concept of dysphemism by providing strong distractors that feature related lexicological concepts like euphemisms and idioms.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: Dysfemism is the use of a deliberately harsh, rude, degrading, or unpleasant word/expression instead of a neutral or polite one. Option A has “дүние салды” meaning “passed away,” which is a euphemism for death, not a dysfemism. Option B has “арам қатты,” a coarse/insulting expression for dying, especially used contemptuously about a person; this is a dysfemism. Option C has “түз тағысы,” a descrip\n\n[anthropic/claude-sonnet-4.6] answered B: We need to identify which sentence contains a 'dysphemism' (дисфемизм) — a deliberately harsh, crude, or offensive expression used in place of a neutral or polite one (the opposite of euphemism).\n\nLet's analyze each option:\n\nA) 'Ауқаты тасыған бай бір күні кенеттен ауырып, дүние салды.' — 'дүние салды' means 'passed away / died.' This is actually a EUPHEMISM for death — a polite, softened expressi\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence containing a dysphemism (дисфемизм). A dysphemism is a derogatory, harsh, or unpleasant term used instead of a neutral or pleasant one (the opposite of a euphemism). Let's analyze the options:\n\nA) 'дүние салды' (passed away) is used instead of 'өлді' (died). This is a euphemism (эвфемизм).\nB) 'арам қатты' (croaked / died like a dog) is used instead of 'өл",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.5,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: “арам қатты” is a clear dysphemistic expression for death, while the other options represent euphemism/taboo-related naming or a phraseological idiom. The item is concise and mostly well aligned to level B, requiring contextual distinction among related lexical phenomena. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (B) clearly exemplifies dysphemism ('арам қатты'), while the distractors represent related but distinct phenomena — euphemism (A, C) and phraseologism (D) — each reachable by a specific conceptual error. The explanation is thorough and accurate. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concept of dysphemism by providing strong distractors that feature related lexicological concepts like euphemisms and idioms.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Dysfemism is the use of a deliberately harsh, rude, degrading, or unpleasant word/expression instead of a neutral or polite one. Option A has “дүние салды” meaning “passed away,” which is a euphemism for death, not a dysfemism. Option B has “арам қатты,” a coarse/insulting expression for dying, especially used contemptuously about a person; this is a dysfemism. Option C has “түз тағысы,” a descriptive/periphrastic expression for a wild animal such as a wolf, not a dysfemism. Option D has “бетінен оты шықты,” an idiom meaning “was embarrassed,” not a dysfemism. Therefore the row with a dysfemism is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: “арам қатты” is a clear dysphemistic expression for death, while the other options represent euphemism/taboo-related naming or a phraseological idiom. The item is concise and mostly well aligned to level B, requiring contextual distinction among related lexical phenomena.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to identify which sentence contains a 'dysphemism' (дисфемизм) — a deliberately harsh, crude, or offensive expression used in place of a neutral or polite one (the opposite of euphemism).\n\nLet's analyze each option:\n\nA) 'Ауқаты тасыған бай бір күні кенеттен ауырып, дүние салды.' — 'дүние салды' means 'passed away / died.' This is actually a EUPHEMISM for death — a polite, softened expression.\n\nB) 'Момын халықты зар жылатқан қатыгез залым ақыры арам қатты.' — 'арам қатты' literally means 'died an unclean/vile death' or 'perished wretchedly.' This is a DYSPHEMISM — it uses a harsh, derogatory expression ('арам қатты' = died like a dog / died a filthy death) instead of a neutral word for dying. It deliberately emphasizes the negative, contemptuous attitude toward the subject (the cruel tyrant). This is the classic dysphemism: using a crude/harsh term where a neutral one could be used.\n\nC) 'Кешегі дауылдан кейін ауылдың шетінде түз тағысы ұлып тұрды.' — 'түз тағысы' means 'wild animal of the steppe' (likely a wolf). This is a neutral descriptive phrase, possibly a periphrasis, but not a dysphemism.\n\nD) 'Жиналыста сөз сөйлеген жігіт қатты қысылып, бетінен оты шықты.' — 'бетінен оты шықты' is a phraseological unit meaning 'he blushed / was embarrassed.' This is a set idiom/phraseologism, not a dysphemism.\n\nTherefore, the sentence with a dysphemism is B, where 'арам қатты' is a harsh, contemptuous expression for dying, used deliberately to show disdain for the cruel oppressor.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (B) clearly exemplifies dysphemism ('арам қатты'), while the distractors represent related but distinct phenomena — euphemism (A, C) and phraseologism (D) — each reachable by a specific conceptual error. The explanation is thorough and accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence containing a dysphemism (дисфемизм). A dysphemism is a derogatory, harsh, or unpleasant term used instead of a neutral or pleasant one (the opposite of a euphemism). Let's analyze the options:\n\nA) 'дүние салды' (passed away) is used instead of 'өлді' (died). This is a euphemism (эвфемизм).\nB) 'арам қатты' (croaked / died like a dog) is used instead of 'өлді' (died) to describe the death of a cruel tyrant. Applying a term usually reserved for the unholy death of an animal to a human is a classic example of a dysphemism.\nC) 'түз тағысы' (wild animal of the steppe) is used instead of 'қасқыр' (wolf). This is a taboo/euphemism.\nD) 'бетінен оты шықты' (blushed deeply / felt ashamed) is a phraseological unit (idiom) describing an emotional state.\n\nTherefore, option B contains the dysphemism.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the concept of dysphemism by providing strong distractors that feature related lexicological concepts like euphemisms and idioms.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:41:17.000563+00:00",
+  "generation_attempts": 1
+}

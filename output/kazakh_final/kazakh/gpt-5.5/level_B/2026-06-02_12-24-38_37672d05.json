@@ -1,0 +1,140 @@
+{
+  "id": "37672d05-03b6-4412-8193-9cc38ddd29a8",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемнен қабыса байланысқан етістікті сөз тіркесін анықтаңыз.\n\nКешкі самал терезенің алдындағы ақ пердені баяу тербетті.",
+  "options": [
+    {
+      "label": "A",
+      "text": "кешкі самал"
+    },
+    {
+      "label": "B",
+      "text": "ақ пердені тербетті"
+    },
+    {
+      "label": "C",
+      "text": "баяу тербетті"
+    },
+    {
+      "label": "D",
+      "text": "терезенің алдындағы"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап – C. «Баяу тербетті» тіркесінде басыңқы сөз – етістік тұлғалы «тербетті», бағыныңқы сөз – үстеу «баяу». Бағыныңқы сөз басыңқы сөзбен жалғаусыз, орын тәртібі арқылы байланысқандықтан, бұл – қабыса байланысқан етістікті сөз тіркесі. A нұсқасындағы «кешкі самал» – қабыса байланысқан есімді сөз тіркесі. B нұсқасындағы «ақ пердені тербетті» – табыс септігі арқылы меңгеріле байланысқан етістікті тіркес. D нұсқасындағы «терезенің алдындағы» тіркесінде ілік септік пен тәуелдік тұлғаның қатысы бар, сондықтан ол қабысуға жатпайды.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.533,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: \"Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.\" A verb phrase (етістікті сөз тіркесі) must have a verb as its head word. A phrase linked by қабысу is formed mainly by word order/adjacency without a dependent case ending required by the head. Option A, \"кешкі самал\", is an adjective + noun phrase; it is nominal, not verbal. Option B, \"ақ пердені тербетті\", has the head \n\n[anthropic/claude-sonnet-4.6] answered C: We need to find a verb phrase (етістікті сөз тіркесі) connected by 'қабысу' (agreement/adjunction) type of connection in the sentence: 'Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.'\n\nIn Kazakh syntax, there are three types of connections between words in phrases:\n1. Қабысу (adjunction/juxtaposition) — words connect without morphological changes; the dependent word is typically an adve\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify a verb phrase (етістікті сөз тіркесі) that is connected by 'қабысу' (қабыса байланысқан) from the sentence: 'Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.'\n\nLet's analyze the options based on the type of phrase and the type of syntactic connection:\n- A) 'кешкі самал': The head word is 'самал' (noun), making it a noun phrase (есімді сөз тіркесі). The connec",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 9.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.533,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: “баяу тербетті” is a verb-headed phrase linked by қабысу. Distractors are mostly plausible and target common confusions between есімді/етістікті тіркес and қабысу/меңгеру/матасу, though the item is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously a қабысу-connected verb phrase (adverb + verb), and each distractor targets a specific misconception — A tests noun vs. verb phrase confusion, B tests меңгеру vs. қабысу confusion, and D tests матасу vs. қабысу confusion. Kazakh terminology and phrasing are accurate and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests the candidate's ability to identify both the type of phrase (verb phrase) and the type of syntactic connection (қабысу) within a given sentence context. The distractors are highly plausible and target specific misconceptions.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence is: \"Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.\" A verb phrase (етістікті сөз тіркесі) must have a verb as its head word. A phrase linked by қабысу is formed mainly by word order/adjacency without a dependent case ending required by the head. Option A, \"кешкі самал\", is an adjective + noun phrase; it is nominal, not verbal. Option B, \"ақ пердені тербетті\", has the head \n\n[anthropic/claude-sonnet-4.6] answered C: We need to find a verb phrase (етістікті сөз тіркесі) connected by 'қабысу' (agreement/adjunction) type of connection in the sentence: 'Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.'\n\nIn Kazakh syntax, there are three types of connections between words in phrases:\n1. Қабысу (adjunction/juxtaposition) — words connect without morphological changes; the dependent word is typically an adve\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify a verb phrase (етістікті сөз тіркесі) that is connected by 'қабысу' (қабыса байланысқан) from the sentence: 'Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.'\n\nLet's analyze the options based on the type of phrase and the type of syntactic connection:\n- A) 'кешкі самал': The head word is 'самал' (noun), making it a noun phrase (есімді сөз тіркесі). The connec",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 9.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.533,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely defensible: “баяу тербетті” is a verb-headed phrase linked by қабысу. Distractors are mostly plausible and target common confusions between есімді/етістікті тіркес and қабысу/меңгеру/матасу, though the item is on the easier side of level B. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously a қабысу-connected verb phrase (adverb + verb), and each distractor targets a specific misconception — A tests noun vs. verb phrase confusion, B tests меңгеру vs. қабысу confusion, and D tests матасу vs. қабысу confusion. Kazakh terminology and phrasing are accurate and natural. | [google/gemini-3.1-pro-preview] The question is perfectly constructed. It accurately tests the candidate's ability to identify both the type of phrase (verb phrase) and the type of syntactic connection (қабысу) within a given sentence context. The distractors are highly plausible and target specific misconceptions.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: \"Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.\" A verb phrase (етістікті сөз тіркесі) must have a verb as its head word. A phrase linked by қабысу is formed mainly by word order/adjacency without a dependent case ending required by the head. Option A, \"кешкі самал\", is an adjective + noun phrase; it is nominal, not verbal. Option B, \"ақ пердені тербетті\", has the head verb \"тербетті\", but \"пердені\" is in the accusative case, so it is меңгеру, not қабысу. Option C, \"баяу тербетті\", has the head verb \"тербетті\" and the dependent adverb \"баяу\" connected by adjacency/word order without a case ending; this is a қабыса байланысқан етістікті сөз тіркесі. Option D, \"терезенің алдындағы\", is not a complete verb-headed phrase. Therefore the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely defensible: “баяу тербетті” is a verb-headed phrase linked by қабысу. Distractors are mostly plausible and target common confusions between есімді/етістікті тіркес and қабысу/меңгеру/матасу, though the item is on the easier side of level B.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to find a verb phrase (етістікті сөз тіркесі) connected by 'қабысу' (agreement/adjunction) type of connection in the sentence: 'Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.'\n\nIn Kazakh syntax, there are three types of connections between words in phrases:\n1. Қабысу (adjunction/juxtaposition) — words connect without morphological changes; the dependent word is typically an adverb, adjective, or other uninflected form modifying the head.\n2. Матасу (agreement) — the dependent word agrees with the head in case.\n3. Меңгеру (government/rection) — the head word governs the case of the dependent word.\n\nNow let's analyze each option:\n\nA) 'кешкі самал' — 'кешкі' is an adjective modifying 'самал' (noun). This is a noun phrase (зат есімді сөз тіркесі), not a verb phrase. Also, the connection type here is қабысу (adjective + noun). But the question asks for an VERB phrase (етістікті сөз тіркесі).\n\nB) 'ақ пердені тербетті' — 'ақ пердені' is the object (noun with accusative case -ні) of 'тербетті' (verb). The connection between 'пердені' and 'тербетті' is меңгеру (government), since the verb governs the accusative case of the noun. This is a verb phrase but connected by меңгеру, not қабысу.\n\nC) 'баяу тербетті' — 'баяу' is an adverb modifying the verb 'тербетті'. The adverb 'баяу' does not change its form to connect with the verb — it simply juxtaposes. This is the қабысу (adjunction) type of connection. This is also an етістікті сөз тіркесі (verb phrase) because the head word is a verb (тербетті). The dependent word (баяу - adverb) connects to the head verb without any morphological marking — this is classic қабысу.\n\nD) 'терезенің алдындағы' — 'терезенің' is a noun in genitive case, and 'алдындағы' is a postpositional form. This is a noun phrase connected by матасу (the genitive case marks agreement). Not a verb phrase.\n\nTherefore, the verb phrase connected by қабысу is C) 'баяу тербетті' — adverb + verb, connected by adjunction (қабысу).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (C) is unambiguously a қабысу-connected verb phrase (adverb + verb), and each distractor targets a specific misconception — A tests noun vs. verb phrase confusion, B tests меңгеру vs. қабысу confusion, and D tests матасу vs. қабысу confusion. Kazakh terminology and phrasing are accurate and natural.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify a verb phrase (етістікті сөз тіркесі) that is connected by 'қабысу' (қабыса байланысқан) from the sentence: 'Кешкі самал терезенің алдындағы ақ пердені баяу тербетті.'\n\nLet's analyze the options based on the type of phrase and the type of syntactic connection:\n- A) 'кешкі самал': The head word is 'самал' (noun), making it a noun phrase (есімді сөз тіркесі). The connection is 'қабысу' (adjective + noun without endings).\n- B) 'ақ пердені тербетті': The head word is 'тербетті' (verb), making it a verb phrase. However, the dependent word 'пердені' is in the accusative case (табыс септік), so the connection is 'меңгеру' (меңгере байланысқан).\n- C) 'баяу тербетті': The head word is 'тербетті' (verb), making it a verb phrase (етістікті сөз тіркесі). The dependent word 'баяу' (adverb) connects to the verb without any case endings, purely by juxtaposition and meaning. This type of connection is 'қабысу' (қабыса байланысқан).\n- D) 'терезенің алдындағы': The head word is 'алдындағы', and the dependent word 'терезенің' is in the genitive case. This is a noun phrase connected by 'матасу'.\n\nOption C is the only verb phrase connected by 'қабысу'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed. It accurately tests the candidate's ability to identify both the type of phrase (verb phrase) and the type of syntactic connection (қабысу) within a given sentence context. The distractors are highly plausible and target specific misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:24:38.901313+00:00",
+  "generation_attempts": 1
+}

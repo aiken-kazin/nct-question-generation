@@ -1,0 +1,140 @@
+{
+  "id": "ef52e003-d146-4cd7-9bb4-0668190de20d",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "lexicology_meaning",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Мағыналары бір-біріне қарама-қарсы сөздер қалай аталады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "синонимдер"
+    },
+    {
+      "label": "B",
+      "text": "антонимдер"
+    },
+    {
+      "label": "C",
+      "text": "омонимдер"
+    },
+    {
+      "label": "D",
+      "text": "көп мағыналы сөздер"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Мағыналары бір-біріне қарама-қарсы сөздер антонимдер деп аталады. Мысалы: ақ – қара, үлкен – кіші, жақсы – жаман. Синонимдер мағынасы жақын сөздер болса, омонимдер дыбысталуы бірдей, мағынасы әртүрлі сөздер. Көп мағыналы сөздер бір сөздің бірнеше өзара байланысты мағынада қолданылуын білдіреді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.85,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: In lexicology, words with meanings that are opposite or contrary to each other are called antonyms. In Kazakh, this term is \"антонимдер\". The other options mean: \"синонимдер\" are synonyms (similar meanings), \"омонимдер\" are homonyms (same form, different meanings), and \"көп мағыналы сөздер\" are polysemantic words (one word with multiple meanings). Therefore the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks: 'What are words with opposite meanings called?' In Kazakh lexicology: synonyms (синонимдер) are words with similar meanings; antonyms (антонимдер) are words with opposite meanings; homonyms (омонимдер) are words that sound the same but have different meanings; polysemous words (көп мағыналы сөздер) are words with multiple meanings. Words with meanings opposite to each other are \n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the linguistic term for words that have opposite meanings ('Мағыналары бір-біріне қарама-қарсы сөздер'). In lexicology, words with opposite meanings are called antonyms ('антонимдер'). Looking at the options: A) синонимдер (synonyms) are words with similar meanings; B) антонимдер (antonyms) are words with opposite meanings; C) омонимдер (homonyms) are words that sound the sam",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.85,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The item is factually correct, unambiguous, and has exactly one correct answer: antonyms are words with opposite meanings. The distractors are relevant basic lexicology terms, though option D is slightly longer in form. | [anthropic/claude-sonnet-4.6] Textbook-perfect basic-level terminology question. The correct answer is unambiguously B (антонимдер), all four distractors represent real lexicological categories that a student might confuse, and the Kazakh is natural and idiomatic. | [google/gemini-3.1-pro-preview] The question is a perfect example of a Level A item for lexicology, directly testing the definition of antonyms with parallel and plausible distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: In lexicology, words with meanings that are opposite or contrary to each other are called antonyms. In Kazakh, this term is \"антонимдер\". The other options mean: \"синонимдер\" are synonyms (similar meanings), \"омонимдер\" are homonyms (same form, different meanings), and \"көп мағыналы сөздер\" are polysemantic words (one word with multiple meanings). Therefore the correct option is B.\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks: 'What are words with opposite meanings called?' In Kazakh lexicology: synonyms (синонимдер) are words with similar meanings; antonyms (антонимдер) are words with opposite meanings; homonyms (омонимдер) are words that sound the same but have different meanings; polysemous words (көп мағыналы сөздер) are words with multiple meanings. Words with meanings opposite to each other are \n\n[google/gemini-3.1-pro-preview] answered B: The question asks for the linguistic term for words that have opposite meanings ('Мағыналары бір-біріне қарама-қарсы сөздер'). In lexicology, words with opposite meanings are called antonyms ('антонимдер'). Looking at the options: A) синонимдер (synonyms) are words with similar meanings; B) антонимдер (antonyms) are words with opposite meanings; C) омонимдер (homonyms) are words that sound the sam",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.85,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The item is factually correct, unambiguous, and has exactly one correct answer: antonyms are words with opposite meanings. The distractors are relevant basic lexicology terms, though option D is slightly longer in form. | [anthropic/claude-sonnet-4.6] Textbook-perfect basic-level terminology question. The correct answer is unambiguously B (антонимдер), all four distractors represent real lexicological categories that a student might confuse, and the Kazakh is natural and idiomatic. | [google/gemini-3.1-pro-preview] The question is a perfect example of a Level A item for lexicology, directly testing the definition of antonyms with parallel and plausible distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In lexicology, words with meanings that are opposite or contrary to each other are called antonyms. In Kazakh, this term is \"антонимдер\". The other options mean: \"синонимдер\" are synonyms (similar meanings), \"омонимдер\" are homonyms (same form, different meanings), and \"көп мағыналы сөздер\" are polysemantic words (one word with multiple meanings). Therefore the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The item is factually correct, unambiguous, and has exactly one correct answer: antonyms are words with opposite meanings. The distractors are relevant basic lexicology terms, though option D is slightly longer in form.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks: 'What are words with opposite meanings called?' In Kazakh lexicology: synonyms (синонимдер) are words with similar meanings; antonyms (антонимдер) are words with opposite meanings; homonyms (омонимдер) are words that sound the same but have different meanings; polysemous words (көп мағыналы сөздер) are words with multiple meanings. Words with meanings opposite to each other are called antonyms — антонимдер.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.75,
+          "pass_fail": true,
+          "comments": "Textbook-perfect basic-level terminology question. The correct answer is unambiguously B (антонимдер), all four distractors represent real lexicological categories that a student might confuse, and the Kazakh is natural and idiomatic.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the linguistic term for words that have opposite meanings ('Мағыналары бір-біріне қарама-қарсы сөздер'). In lexicology, words with opposite meanings are called antonyms ('антонимдер'). Looking at the options: A) синонимдер (synonyms) are words with similar meanings; B) антонимдер (antonyms) are words with opposite meanings; C) омонимдер (homonyms) are words that sound the same but have different meanings; D) көп мағыналы сөздер (polysemous words) are words with multiple meanings. Therefore, the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is a perfect example of a Level A item for lexicology, directly testing the definition of antonyms with parallel and plausible distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:12:20.083426+00:00",
+  "generation_attempts": 1
+}

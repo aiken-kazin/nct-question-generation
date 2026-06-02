@@ -1,0 +1,140 @@
+{
+  "id": "93b2fb81-e697-4a93-9afd-b8e3336e02c7",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Матасу арқылы байланысқан сөз тіркесін анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "биік үй"
+    },
+    {
+      "label": "B",
+      "text": "мектепке бару"
+    },
+    {
+      "label": "C",
+      "text": "оқушының дәптері"
+    },
+    {
+      "label": "D",
+      "text": "тез оқу"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. «Оқушының дәптері» сөз тіркесі матасу арқылы байланысқан: бірінші сыңары ілік септікте, екінші сыңары тәуелдік жалғауында тұр. A нұсқасындағы «биік үй» — қабысу, B нұсқасындағы «мектепке бару» — меңгеру, D нұсқасындағы «тез оқу» — жанасу арқылы байланысқан.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.917,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The rule: In Kazakh syntax, 'матасу' is a possessive-type connection where the dependent word is usually in the genitive case (-ның/-нің/-дың/-дің/-тың/-тің), and the head word takes a possessive ending. Check options: A) 'биік үй' = adjective + noun with no case/possessive agreement, so this is қабысу. B) 'мектепке бару' = dative case noun + verb, governed by the verb, so this is меңгеру. C) 'оқу\n\n[anthropic/claude-sonnet-4.6] answered C: In Kazakh syntax, there are three main types of syntactic connections (байланыс) in word combinations (сөз тіркесі): қиысу (agreement/concord), матасу (government/rection), and меңгеру (also government but with case marking). Let me clarify the standard Kazakh grammar classification:\n\n1. Қиысу (agreement) — the dependent word agrees with the head in person, number, etc. Example: 'биік үй' (tall ho\n\n[google/gemini-3.1-pro-preview] answered C: In Kazakh syntax, 'матасу' (matasu) is a type of syntactic connection in a word phrase where the dependent word takes the genitive case suffix (ілік септік: -ның/-нің, -дың/-дің, -тың/-тің) and the head word takes a possessive suffix (тәуелдік жалғау: -ы/-і, -сы/-сі, etc.). Let's analyze the given options:\n\nA) биік үй (tall house) - The adjective 'биік' modifies the noun 'үй' without any suffixes.",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.667,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.917,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: «оқушының дәптері» is a clear матасу construction with genitive plus possessive marking. The distractors are concise and represent other standard types of syntactic connection, making the item well aligned with basic-level recognition. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and perfectly aligned with level A. Each distractor represents a distinct syntactic connection type (қиысу, меңгеру, жанасу), making them all plausible for a teacher who confuses the four connection types. Terminology and Kazakh language are standard and accurate. | [google/gemini-3.1-pro-preview] Excellent basic-level question. The distractors perfectly cover the other types of syntactic connections, making it a robust test of the candidate's knowledge.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The rule: In Kazakh syntax, 'матасу' is a possessive-type connection where the dependent word is usually in the genitive case (-ның/-нің/-дың/-дің/-тың/-тің), and the head word takes a possessive ending. Check options: A) 'биік үй' = adjective + noun with no case/possessive agreement, so this is қабысу. B) 'мектепке бару' = dative case noun + verb, governed by the verb, so this is меңгеру. C) 'оқу\n\n[anthropic/claude-sonnet-4.6] answered C: In Kazakh syntax, there are three main types of syntactic connections (байланыс) in word combinations (сөз тіркесі): қиысу (agreement/concord), матасу (government/rection), and меңгеру (also government but with case marking). Let me clarify the standard Kazakh grammar classification:\n\n1. Қиысу (agreement) — the dependent word agrees with the head in person, number, etc. Example: 'биік үй' (tall ho\n\n[google/gemini-3.1-pro-preview] answered C: In Kazakh syntax, 'матасу' (matasu) is a type of syntactic connection in a word phrase where the dependent word takes the genitive case suffix (ілік септік: -ның/-нің, -дың/-дің, -тың/-тің) and the head word takes a possessive suffix (тәуелдік жалғау: -ы/-і, -сы/-сі, etc.). Let's analyze the given options:\n\nA) биік үй (tall house) - The adjective 'биік' modifies the noun 'үй' without any suffixes.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.667,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.917,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: «оқушының дәптері» is a clear матасу construction with genitive plus possessive marking. The distractors are concise and represent other standard types of syntactic connection, making the item well aligned with basic-level recognition. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and perfectly aligned with level A. Each distractor represents a distinct syntactic connection type (қиысу, меңгеру, жанасу), making them all plausible for a teacher who confuses the four connection types. Terminology and Kazakh language are standard and accurate. | [google/gemini-3.1-pro-preview] Excellent basic-level question. The distractors perfectly cover the other types of syntactic connections, making it a robust test of the candidate's knowledge.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The rule: In Kazakh syntax, 'матасу' is a possessive-type connection where the dependent word is usually in the genitive case (-ның/-нің/-дың/-дің/-тың/-тің), and the head word takes a possessive ending. Check options: A) 'биік үй' = adjective + noun with no case/possessive agreement, so this is қабысу. B) 'мектепке бару' = dative case noun + verb, governed by the verb, so this is меңгеру. C) 'оқушының дәптері' = 'оқушының' is genitive case, and 'дәптері' has the 3rd-person possessive ending; this is матасу. D) 'тез оқу' = adverb + verb by adjacency, so this is қабысу. Therefore the phrase connected by матасу is option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: «оқушының дәптері» is a clear матасу construction with genitive plus possessive marking. The distractors are concise and represent other standard types of syntactic connection, making the item well aligned with basic-level recognition.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, there are three main types of syntactic connections (байланыс) in word combinations (сөз тіркесі): қиысу (agreement/concord), матасу (government/rection), and меңгеру (also government but with case marking). Let me clarify the standard Kazakh grammar classification:\n\n1. Қиысу (agreement) — the dependent word agrees with the head in person, number, etc. Example: 'биік үй' (tall house) — adjective + noun, this is қиысу.\n\n2. Матасу (genitive-possessive connection) — the dependent word takes the genitive case (-ның/-нің/-дың/-дің/-тың/-тің) and the head takes the possessive suffix. Example: 'оқушының дәптері' (student's notebook) — оқушының (genitive) + дәптері (possessive suffix -і). This is the classic матасу connection.\n\n3. Меңгеру (government) — the head verb/noun governs the dependent word in a specific case. Example: 'мектепке бару' (going to school) — мектепке is in dative case governed by бару.\n\n4. Жанасу (adjunction/contiguity) — connection through proximity without morphological marking. Example: 'тез оқу' (reading fast) — adverb + verb infinitive.\n\nAnalyzing each option:\n- A) 'биік үй' — adjective + noun, қиысу (agreement)\n- B) 'мектепке бару' — dative case + verb, меңгеру (government)\n- C) 'оқушының дәптері' — genitive + possessive, матасу\n- D) 'тез оқу' — adverb + verb, жанасу (adjunction)\n\nTherefore, the word combination connected through матасу is C) оқушының дәптері.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.75,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and perfectly aligned with level A. Each distractor represents a distinct syntactic connection type (қиысу, меңгеру, жанасу), making them all plausible for a teacher who confuses the four connection types. Terminology and Kazakh language are standard and accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, 'матасу' (matasu) is a type of syntactic connection in a word phrase where the dependent word takes the genitive case suffix (ілік септік: -ның/-нің, -дың/-дің, -тың/-тің) and the head word takes a possessive suffix (тәуелдік жалғау: -ы/-і, -сы/-сі, etc.). Let's analyze the given options:\n\nA) биік үй (tall house) - The adjective 'биік' modifies the noun 'үй' without any suffixes. This connection is 'қабысу' (qabysu).\nB) мектепке бару (going to school) - The dependent word 'мектепке' is in the dative case (барыс септік). The head word governs this case, making the connection 'меңгеру' (mengeru).\nC) оқушының дәптері (student's notebook) - The dependent word 'оқушының' has the genitive case suffix (-ның), and the head word 'дәптері' has the third-person possessive suffix (-і). This perfectly matches the definition of 'матасу'.\nD) тез оқу (reading fast) - The adverb 'тез' modifies the verbal noun 'оқу' without suffixes. This connection is 'жанасу' (zhanasu).\n\nTherefore, the phrase connected by 'матасу' is 'оқушының дәптері'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "Excellent basic-level question. The distractors perfectly cover the other types of syntactic connections, making it a robust test of the candidate's knowledge.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:15:51.943040+00:00",
+  "generation_attempts": 1
+}

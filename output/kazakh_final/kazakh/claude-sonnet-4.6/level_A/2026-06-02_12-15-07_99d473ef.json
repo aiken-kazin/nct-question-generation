@@ -1,0 +1,140 @@
+{
+  "id": "99d473ef-0975-4b25-921f-5c0f4e8807ed",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Үндестік заңына сәйкес, қазақ тілінде жуан буынды сөзге жалғанатын көптік жалғауының дұрыс нұсқасын көрсетіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "қала + лар = қалалар"
+    },
+    {
+      "label": "B",
+      "text": "қала + лер = қалалер"
+    },
+    {
+      "label": "C",
+      "text": "қала + дар = қаладар"
+    },
+    {
+      "label": "D",
+      "text": "қала + тар = қалатар"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Қазақ тілінің үндестік заңы (сингармонизм) бойынша жуан буынды сөздерге жуан жалғаулар жалғанады. «Қала» сөзі жуан буынды болғандықтан, оған көптік жалғауының жуан түрі «-лар» жалғанады: қала + лар = қалалар. «-лер» жалғауы жіңішке буынды сөздерге тән (мысалы: үй + лер = үйлер), сондықтан В нұсқасы қате. «-дар» жалғауы дауысты немесе ұяң дыбысқа аяқталған сөздерге жалғанбайды осы нұсқада қолданылуы орынсыз, ал «-тар» жалғауы қатаң дыбысқа аяқталған сөздерге тән болғандықтан С және D нұсқалары қате.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.8,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The Kazakh plural suffix has vowel harmony and consonant assimilation variants: -лар/-лер, -дар/-дер, -тар/-тер. According to vowel harmony (үндестік заңы), words with back vowels (жуан дауыстылар) take the back-vowel suffix variants with 'а': -лар, -дар, -тар, not the front-vowel variants with 'е'. The word 'қала' contains the back vowel 'а' and ends in a vowel, so the correct plural suffix is -л\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks about the correct plural suffix (көптік жалғауы) that attaches to a back-vowel (жуан буынды) word according to the vowel harmony law (үндестік заңы) in Kazakh.\n\nThe word 'қала' (city) contains the vowel 'а', which is a back vowel (жуан дауысты дыбыс). According to Kazakh vowel harmony (сингармонизм/үндестік заңы), suffixes must harmonize with the root vowel — back-vowel words tak\n\n[google/gemini-3.1-pro-preview] answered A: The word 'қала' (city) ends in the vowel 'а', which is a back vowel (жуан дауысты). According to the law of vowel harmony (үндестік заңы) in Kazakh, a word with back vowels must take a suffix with back vowels. Therefore, the plural suffix must be either -лар, -дар, or -тар. Furthermore, according to the rules of consonant assimilation (дыбыс үндестігі), words ending in a vowel take the plural suff",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 8.333,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.8,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unique for the given stem word “қала”: the plural form is “қалалар”. However, the explanation slightly overstates/blurts the rule for -дар, since plural suffix selection also depends on the final sound, and -дар is valid after some voiced/sonorant endings in other words. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and tests a clear phonetic rule (vowel harmony / сингармонизм) at the appropriate basic level. Kazakh terminology and phrasing are natural and accurate. The main weakness is distractor quality: options C (-дар) and D (-тар) are easily eliminated by any teacher who knows that 'қала' ends in a vowel, making the real contest only between A and B, which slightly reduces discriminatory power. | [google/gemini-3.1-pro-preview] The question and options are excellent for a Level A test. However, the provided explanation contains a factual error regarding the '-дар' suffix.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace C and D with more plausible distractors — for example, use suffixes that could plausibly attach to a vowel-final word but with wrong vowel harmony (e.g., қала+лер, қала+дер, қала+тер), so all four options test vowel harmony rather than also testing consonant-environment rules. This would force test-takers to focus solely on the жуан/жіңішке distinction and raise distractor quality. | [google/gemini-3.1-pro-preview] Correct the explanation: the statement '«-дар» жалғауы ұяң дыбысқа аяқталған сөздерге жалғанбайды' is false (e.g., қыз-дар, қағаз-дар). It should simply state that '-дар' is not attached to words ending in vowels.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The Kazakh plural suffix has vowel harmony and consonant assimilation variants: -лар/-лер, -дар/-дер, -тар/-тер. According to vowel harmony (үндестік заңы), words with back vowels (жуан дауыстылар) take the back-vowel suffix variants with 'а': -лар, -дар, -тар, not the front-vowel variants with 'е'. The word 'қала' contains the back vowel 'а' and ends in a vowel, so the correct plural suffix is -л\n\n[anthropic/claude-sonnet-4.6] answered A: The question asks about the correct plural suffix (көптік жалғауы) that attaches to a back-vowel (жуан буынды) word according to the vowel harmony law (үндестік заңы) in Kazakh.\n\nThe word 'қала' (city) contains the vowel 'а', which is a back vowel (жуан дауысты дыбыс). According to Kazakh vowel harmony (сингармонизм/үндестік заңы), suffixes must harmonize with the root vowel — back-vowel words tak\n\n[google/gemini-3.1-pro-preview] answered A: The word 'қала' (city) ends in the vowel 'а', which is a back vowel (жуан дауысты). According to the law of vowel harmony (үндестік заңы) in Kazakh, a word with back vowels must take a suffix with back vowels. Therefore, the plural suffix must be either -лар, -дар, or -тар. Furthermore, according to the rules of consonant assimilation (дыбыс үндестігі), words ending in a vowel take the plural suff",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 8.333,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.8,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unique for the given stem word “қала”: the plural form is “қалалар”. However, the explanation slightly overstates/blurts the rule for -дар, since plural suffix selection also depends on the final sound, and -дар is valid after some voiced/sonorant endings in other words. | [anthropic/claude-sonnet-4.6] The question is factually correct, well-keyed, and tests a clear phonetic rule (vowel harmony / сингармонизм) at the appropriate basic level. Kazakh terminology and phrasing are natural and accurate. The main weakness is distractor quality: options C (-дар) and D (-тар) are easily eliminated by any teacher who knows that 'қала' ends in a vowel, making the real contest only between A and B, which slightly reduces discriminatory power. | [google/gemini-3.1-pro-preview] The question and options are excellent for a Level A test. However, the provided explanation contains a factual error regarding the '-дар' suffix.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Replace C and D with more plausible distractors — for example, use suffixes that could plausibly attach to a vowel-final word but with wrong vowel harmony (e.g., қала+лер, қала+дер, қала+тер), so all four options test vowel harmony rather than also testing consonant-environment rules. This would force test-takers to focus solely on the жуан/жіңішке distinction and raise distractor quality. | [google/gemini-3.1-pro-preview] Correct the explanation: the statement '«-дар» жалғауы ұяң дыбысқа аяқталған сөздерге жалғанбайды' is false (e.g., қыз-дар, қағаз-дар). It should simply state that '-дар' is not attached to words ending in vowels.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The Kazakh plural suffix has vowel harmony and consonant assimilation variants: -лар/-лер, -дар/-дер, -тар/-тер. According to vowel harmony (үндестік заңы), words with back vowels (жуан дауыстылар) take the back-vowel suffix variants with 'а': -лар, -дар, -тар, not the front-vowel variants with 'е'. The word 'қала' contains the back vowel 'а' and ends in a vowel, so the correct plural suffix is -лар. Therefore: қала + лар = қалалар.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 8.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unique for the given stem word “қала”: the plural form is “қалалар”. However, the explanation slightly overstates/blurts the rule for -дар, since plural suffix selection also depends on the final sound, and -дар is valid after some voiced/sonorant endings in other words.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about the correct plural suffix (көптік жалғауы) that attaches to a back-vowel (жуан буынды) word according to the vowel harmony law (үндестік заңы) in Kazakh.\n\nThe word 'қала' (city) contains the vowel 'а', which is a back vowel (жуан дауысты дыбыс). According to Kazakh vowel harmony (сингармонизм/үндестік заңы), suffixes must harmonize with the root vowel — back-vowel words take back-vowel suffixes.\n\nThe plural suffixes in Kazakh are:\n- -лар / -лер (after vowels and sonorants л, м, н, р, й)\n- -дар / -дер (after voiced consonants б, в, г, д, ж, з)\n- -тар / -тер (after voiceless consonants)\n\nFor back-vowel words: -лар, -дар, -тар\nFor front-vowel words: -лер, -дер, -тер\n\nThe word 'қала' ends in the vowel 'а' (a back vowel), so it takes the suffix -лар (after a vowel, use -лар/-лер; since it's back vowel, use -лар).\n\nResult: қала + лар = қалалар ✓\n\nOption A is correct. Options B (-лер is front-vowel suffix), C (-дар is for voiced consonant endings), and D (-тар is for voiceless consonant endings) are all incorrect.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is factually correct, well-keyed, and tests a clear phonetic rule (vowel harmony / сингармонизм) at the appropriate basic level. Kazakh terminology and phrasing are natural and accurate. The main weakness is distractor quality: options C (-дар) and D (-тар) are easily eliminated by any teacher who knows that 'қала' ends in a vowel, making the real contest only between A and B, which slightly reduces discriminatory power.",
+          "improvement_suggestions": "Replace C and D with more plausible distractors — for example, use suffixes that could plausibly attach to a vowel-final word but with wrong vowel harmony (e.g., қала+лер, қала+дер, қала+тер), so all four options test vowel harmony rather than also testing consonant-environment rules. This would force test-takers to focus solely on the жуан/жіңішке distinction and raise distractor quality.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The word 'қала' (city) ends in the vowel 'а', which is a back vowel (жуан дауысты). According to the law of vowel harmony (үндестік заңы) in Kazakh, a word with back vowels must take a suffix with back vowels. Therefore, the plural suffix must be either -лар, -дар, or -тар. Furthermore, according to the rules of consonant assimilation (дыбыс үндестігі), words ending in a vowel take the plural suffix starting with 'л' (-лар/-лер). Combining these two rules, the correct plural suffix for 'қала' is '-лар'. Thus, 'қала + лар = қалалар' is the correct form.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 7.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question and options are excellent for a Level A test. However, the provided explanation contains a factual error regarding the '-дар' suffix.",
+          "improvement_suggestions": "Correct the explanation: the statement '«-дар» жалғауы ұяң дыбысқа аяқталған сөздерге жалғанбайды' is false (e.g., қыз-дар, қағаз-дар). It should simply state that '-дар' is not attached to words ending in vowels.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:15:07.970915+00:00",
+  "generation_attempts": 1
+}

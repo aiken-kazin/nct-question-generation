@@ -1,0 +1,140 @@
+{
+  "id": "0eb4d82c-8e37-4c94-ad02-8585033d2542",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Жасырын ілік септігі арқылы матаса байланысып тұрған сөз тіркесі бар сөйлемді анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жас мамандар өздеріне тапсырылған жұмысты уақытында аяқтады."
+    },
+    {
+      "label": "B",
+      "text": "Биылғы көктем өте салқын әрі жауын-шашынды болды."
+    },
+    {
+      "label": "C",
+      "text": "Қала көшелері мерекеге орай ерекше безендірілген."
+    },
+    {
+      "label": "D",
+      "text": "Абайдың өлеңдері жас ұрпақты адамгершілікке баулиды."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап: C. Қала көшелері мерекеге орай ерекше безендірілген.\nТүсіндірме: Матасу – бағыныңқы сөздің ілік септігінде, басыңқы сөздің тәуелдік жалғауында келіп байланысуы. Кейде ілік септігінің жалғауы (-ның/-нің, -дың/-дің, -тың/-тің) түсіп қалып, жасырын түрде қолданылады. Бұл синтаксисте «жасырын матасу» деп аталады. С нұсқасындағы «қала көшелері» сөз тіркесіндегі бағыныңқы сөз «қала» (мағынасы бойынша: қаланың) ілік септігінің жалғауынсыз, ал басыңқы сөз «көшелері» тәуелдік жалғауында (-і) тұр. \nD нұсқасында «Абайдың өлеңдері» тіркесінде ілік септігінің жалғауы (-дың) анық көрсетіліп, ашық матасу жасалып тұр. А және В нұсқаларында матаса байланысқан сөз тіркестері мүлде жоқ, олардағы «жас мамандар», «биылғы көктем» тіркестері қабыса байланысқан.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The rule: in Kazakh syntax, matasa bailanysu (possessive/genitive agreement) is formed by a possessor in the genitive case plus a possessed word with a possessive suffix. The genitive case can be explicit (ашық ілік септігі), e.g. \"Абайдың өлеңдері\", or hidden/zero-marked (жасырын ілік септігі), e.g. \"қала көшелері\" = \"қаланың көшелері\". Check options: A) \"жас мамандар\" is an adjective+noun attrib\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to identify the sentence containing a word phrase connected through 'hidden/implicit genitive case' (жасырын ілік септігі) — i.e., a noun phrase where the genitive marker (-ның/-нің/-дың/-дің/-тың/-тің) is omitted but implied, yet the possessive suffix on the head noun still indicates the genitive relationship.\n\nIn Kazakh, матасу (agreement/coordination connection) in noun phrase\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to find a sentence containing a word phrase connected by 'матасу' (matasu) with a hidden genitive case (жасырын ілік септігі). 'Матасу' is a syntactic connection where the dependent word is in the genitive case (ілік септігі) and the head word has a possessive suffix (тәуелдік жалғауы). When the genitive suffix (-ның/-нің, -дың/-дің, -тың/-тің) is omitted but implied, it is calle",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.833,
+      "difficulty_alignment": 9.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes hidden genitive matasu from explicit genitive matasu. The item is clear, concise, and appropriate for applying a syntax rule in sentence context. | [anthropic/claude-sonnet-4.6] The question is well-constructed and unambiguous. Option C ('Қала көшелері') is the only sentence containing a hidden genitive (жасырын ілік септігі) matasa connection, while D has an overt genitive, and A/B have қабысу connections — all distractors represent identifiable misconceptions. Language is natural literary Kazakh with correct terminology. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible, especially option D which tests the distinction between open and hidden genitive cases.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The rule: in Kazakh syntax, matasa bailanysu (possessive/genitive agreement) is formed by a possessor in the genitive case plus a possessed word with a possessive suffix. The genitive case can be explicit (ашық ілік септігі), e.g. \"Абайдың өлеңдері\", or hidden/zero-marked (жасырын ілік септігі), e.g. \"қала көшелері\" = \"қаланың көшелері\". Check options: A) \"жас мамандар\" is an adjective+noun attrib\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to identify the sentence containing a word phrase connected through 'hidden/implicit genitive case' (жасырын ілік септігі) — i.e., a noun phrase where the genitive marker (-ның/-нің/-дың/-дің/-тың/-тің) is omitted but implied, yet the possessive suffix on the head noun still indicates the genitive relationship.\n\nIn Kazakh, матасу (agreement/coordination connection) in noun phrase\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to find a sentence containing a word phrase connected by 'матасу' (matasu) with a hidden genitive case (жасырын ілік септігі). 'Матасу' is a syntactic connection where the dependent word is in the genitive case (ілік септігі) and the head word has a possessive suffix (тәуелдік жалғауы). When the genitive suffix (-ның/-нің, -дың/-дің, -тың/-тің) is omitted but implied, it is calle",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.833,
+        "difficulty_alignment": 9.0,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes hidden genitive matasu from explicit genitive matasu. The item is clear, concise, and appropriate for applying a syntax rule in sentence context. | [anthropic/claude-sonnet-4.6] The question is well-constructed and unambiguous. Option C ('Қала көшелері') is the only sentence containing a hidden genitive (жасырын ілік септігі) matasa connection, while D has an overt genitive, and A/B have қабысу connections — all distractors represent identifiable misconceptions. Language is natural literary Kazakh with correct terminology. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible, especially option D which tests the distinction between open and hidden genitive cases.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The rule: in Kazakh syntax, matasa bailanysu (possessive/genitive agreement) is formed by a possessor in the genitive case plus a possessed word with a possessive suffix. The genitive case can be explicit (ашық ілік септігі), e.g. \"Абайдың өлеңдері\", or hidden/zero-marked (жасырын ілік септігі), e.g. \"қала көшелері\" = \"қаланың көшелері\". Check options: A) \"жас мамандар\" is an adjective+noun attributive phrase; \"тапсырылған жұмыс\" is participial attribution, not hidden genitive matasu. B) \"биылғы көктем\" and \"өте салқын\" are not genitive-possessive matasu. C) \"Қала көшелері\" means \"the city's streets\"; \"қала\" is a zero-marked/hidden genitive possessor, and \"көшелері\" has the 3rd person possessive suffix. This is matasa bailanysu through hidden genitive. D) \"Абайдың өлеңдері\" is matasu, but the genitive is explicit with -дың, not hidden. Therefore the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately distinguishes hidden genitive matasu from explicit genitive matasu. The item is clear, concise, and appropriate for applying a syntax rule in sentence context.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence containing a word phrase connected through 'hidden/implicit genitive case' (жасырын ілік септігі) — i.e., a noun phrase where the genitive marker (-ның/-нің/-дың/-дің/-тың/-тің) is omitted but implied, yet the possessive suffix on the head noun still indicates the genitive relationship.\n\nIn Kazakh, матасу (agreement/coordination connection) in noun phrases typically involves the genitive case on the modifier and a possessive suffix on the head noun. When the genitive suffix is dropped but the possessive suffix remains, it is called 'жасырын ілік септігі' (hidden/zero genitive).\n\nLet's analyze each option:\n\nA) 'Жас мамандар өздеріне тапсырылған жұмысты уақытында аяқтады.' — 'жас мамандар' (young specialists), 'тапсырылған жұмысты' — no obvious hidden genitive construction here. 'өздеріне' has a possessive/reflexive form but it's a dative case form.\n\nB) 'Биылғы көктем өте салқын әрі жауын-шашынды болды.' — 'биылғы көктем' uses the adjective form with -ғы suffix, this is a меңгеру or анықтауыш connection, not матасу with hidden genitive.\n\nC) 'Қала көшелері мерекеге орай ерекше безендірілген.' — 'Қала көшелері' — here 'қала' (city) is the modifier and 'көшелері' (its streets) has the possessive suffix -лері (3rd person plural possessive). The genitive marker on 'қала' is absent (it would be 'қаланың көшелері' in full form). This is a classic example of жасырын ілік септігі (hidden genitive): 'қала' should be 'қаланың' but the genitive suffix is dropped, while the possessive suffix on 'көшелері' remains. This is матасу байланысы through hidden genitive.\n\nD) 'Абайдың өлеңдері жас ұрпақты адамгершілікке баулиды.' — 'Абайдың өлеңдері' — here the genitive suffix -ның is explicitly present on 'Абайдың', so this is NOT a hidden genitive; it is an explicit/overt genitive.\n\nTherefore, option C contains the phrase 'Қала көшелері' where the genitive is hidden (жасырын ілік септігі) — 'қала' lacks the genitive suffix but 'көшелері' has the possessive suffix, indicating матасу connection through hidden genitive.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and unambiguous. Option C ('Қала көшелері') is the only sentence containing a hidden genitive (жасырын ілік септігі) matasa connection, while D has an overt genitive, and A/B have қабысу connections — all distractors represent identifiable misconceptions. Language is natural literary Kazakh with correct terminology.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to find a sentence containing a word phrase connected by 'матасу' (matasu) with a hidden genitive case (жасырын ілік септігі). 'Матасу' is a syntactic connection where the dependent word is in the genitive case (ілік септігі) and the head word has a possessive suffix (тәуелдік жалғауы). When the genitive suffix (-ның/-нің, -дың/-дің, -тың/-тің) is omitted but implied, it is called a hidden genitive case (жасырын ілік септігі). Let's analyze the options:\n\nA) 'Жас мамандар', 'тапсырылған жұмысты' - no hidden genitive case.\nB) 'Биылғы көктем' - no hidden genitive case.\nC) 'Қала көшелері' - 'Қала' implies 'Қаланың' (hidden genitive case), and 'көшелері' has the 3rd person possessive suffix (-і). This forms a 'матасу' connection through a hidden genitive case.\nD) 'Абайдың өлеңдері' - 'Абайдың' has an explicit (open) genitive case suffix (-дың), so it is not hidden.\n\nTherefore, option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are plausible, especially option D which tests the distinction between open and hidden genitive cases.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:59:26.815028+00:00",
+  "generation_attempts": 1
+}

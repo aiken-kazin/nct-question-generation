@@ -1,0 +1,140 @@
+{
+  "id": "a30b4a19-926a-4239-95de-482bbdcc2982",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "«Қайтыс болды» деген тіркестің орнына «дүниеден өтті» деп айту лексиканың қай түріне жатады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "дисфемизм"
+    },
+    {
+      "label": "B",
+      "text": "эвфемизм"
+    },
+    {
+      "label": "C",
+      "text": "диалект сөз"
+    },
+    {
+      "label": "D",
+      "text": "кәсіби сөз"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап — B. «Дүниеден өтті» тіркесі «қайтыс болды» мағынасын сыпайылап жеткізеді, сондықтан эвфемизмге жатады. Дисфемизм — мағынаны әдейі дөрекілеу, жағымсыз етіп айту. Диалект сөз белгілі бір аймаққа тән болады. Кәсіби сөз белгілі бір кәсіп, шаруашылық саласында қолданылатын атауды білдіреді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: In Kazakh lexicology, a euphemism (эвфемизм) is a softened, polite, or indirect word/expression used instead of a harsh, unpleasant, or taboo expression. Expressions connected with death are commonly softened: for example, instead of directly saying someone died, Kazakh uses phrases such as «қайтыс болды», «дүниеден өтті», «өмірден өтті». The expression «дүниеден өтті» is a polite/softened substit\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks: Replacing 'қайтыс болды' (died) with 'дүниеден өтті' (passed away/left this world) belongs to which type of vocabulary?\n\nAnalysis:\n- 'Қайтыс болды' means 'died' — a direct, neutral term.\n- 'Дүниеден өтті' means 'passed away' / 'left this world' — a softer, more polite expression for the same concept.\n\nThis is a classic example of EUPHEMISM (эвфемизм) — replacing a harsh, unpleas\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the lexical term for replacing the phrase 'қайтыс болды' (died) with 'дүниеден өтті' (passed away / departed from this world). In linguistics, substituting a direct, harsh, or blunt word with a softer, milder, or more polite expression is known as a euphemism (эвфемизм). 'Дүниеден өтті' is a classic example of a euphemism used to soften the impact of mentioning death.",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: “дүниеден өтті” is a euphemistic expression related to death. The item is appropriate for basic recognition, though the wording is slightly imprecise because “қайтыс болды” is itself already a polite/euphemistic expression. | [anthropic/claude-sonnet-4.6] The question is a clean, unambiguous example of euphemism recognition at the basic (A) level. The correct answer is B (эвфемизм), which is clearly supported by the example given. All distractors represent plausible misconceptions a teacher might have, and the Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested Level A difficulty, testing basic knowledge of lexicology with a classic example of a euphemism. The distractors are well-chosen linguistic terms.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: In Kazakh lexicology, a euphemism (эвфемизм) is a softened, polite, or indirect word/expression used instead of a harsh, unpleasant, or taboo expression. Expressions connected with death are commonly softened: for example, instead of directly saying someone died, Kazakh uses phrases such as «қайтыс болды», «дүниеден өтті», «өмірден өтті». The expression «дүниеден өтті» is a polite/softened substit\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks: Replacing 'қайтыс болды' (died) with 'дүниеден өтті' (passed away/left this world) belongs to which type of vocabulary?\n\nAnalysis:\n- 'Қайтыс болды' means 'died' — a direct, neutral term.\n- 'Дүниеден өтті' means 'passed away' / 'left this world' — a softer, more polite expression for the same concept.\n\nThis is a classic example of EUPHEMISM (эвфемизм) — replacing a harsh, unpleas\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the lexical term for replacing the phrase 'қайтыс болды' (died) with 'дүниеден өтті' (passed away / departed from this world). In linguistics, substituting a direct, harsh, or blunt word with a softer, milder, or more polite expression is known as a euphemism (эвфемизм). 'Дүниеден өтті' is a classic example of a euphemism used to soften the impact of mentioning death.",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: “дүниеден өтті” is a euphemistic expression related to death. The item is appropriate for basic recognition, though the wording is slightly imprecise because “қайтыс болды” is itself already a polite/euphemistic expression. | [anthropic/claude-sonnet-4.6] The question is a clean, unambiguous example of euphemism recognition at the basic (A) level. The correct answer is B (эвфемизм), which is clearly supported by the example given. All distractors represent plausible misconceptions a teacher might have, and the Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is perfectly aligned with the requested Level A difficulty, testing basic knowledge of lexicology with a classic example of a euphemism. The distractors are well-chosen linguistic terms.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh lexicology, a euphemism (эвфемизм) is a softened, polite, or indirect word/expression used instead of a harsh, unpleasant, or taboo expression. Expressions connected with death are commonly softened: for example, instead of directly saying someone died, Kazakh uses phrases such as «қайтыс болды», «дүниеден өтті», «өмірден өтті». The expression «дүниеден өтті» is a polite/softened substitute, so it belongs to euphemism, not dysphemism, dialect word, or professional vocabulary.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.7,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: “дүниеден өтті” is a euphemistic expression related to death. The item is appropriate for basic recognition, though the wording is slightly imprecise because “қайтыс болды” is itself already a polite/euphemistic expression.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks: Replacing 'қайтыс болды' (died) with 'дүниеден өтті' (passed away/left this world) belongs to which type of vocabulary?\n\nAnalysis:\n- 'Қайтыс болды' means 'died' — a direct, neutral term.\n- 'Дүниеден өтті' means 'passed away' / 'left this world' — a softer, more polite expression for the same concept.\n\nThis is a classic example of EUPHEMISM (эвфемизм) — replacing a harsh, unpleasant, or taboo word/phrase with a milder, more socially acceptable one. In Kazakh lexicology, эвфемизм refers to words or expressions used to soften or replace direct references to death, illness, bodily functions, etc.\n\n- Дисфемизм (dysphemism) is the opposite — replacing a neutral word with a harsher one.\n- Диалект сөз (dialect word) refers to regionally specific vocabulary.\n- Кәсіби сөз (professional/occupational word) refers to terminology used in specific professions.\n\nTherefore, the correct answer is B) эвфемизм.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is a clean, unambiguous example of euphemism recognition at the basic (A) level. The correct answer is B (эвфемизм), which is clearly supported by the example given. All distractors represent plausible misconceptions a teacher might have, and the Kazakh is natural and terminologically accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the lexical term for replacing the phrase 'қайтыс болды' (died) with 'дүниеден өтті' (passed away / departed from this world). In linguistics, substituting a direct, harsh, or blunt word with a softer, milder, or more polite expression is known as a euphemism (эвфемизм). 'Дүниеден өтті' is a classic example of a euphemism used to soften the impact of mentioning death. Dysphemism (дисфемизм) is the opposite (making it harsher), while dialect words (диалект сөз) and professional words (кәсіби сөз) refer to regional and occupational vocabulary, respectively. Therefore, the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly aligned with the requested Level A difficulty, testing basic knowledge of lexicology with a classic example of a euphemism. The distractors are well-chosen linguistic terms.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:13:50.948267+00:00",
+  "generation_attempts": 1
+}

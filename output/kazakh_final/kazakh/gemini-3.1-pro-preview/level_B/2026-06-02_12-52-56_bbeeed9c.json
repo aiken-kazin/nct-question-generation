@@ -1,0 +1,140 @@
+{
+  "id": "bbeeed9c-2e83-41a8-9c07-655aad44a908",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Орфоэпиялық норма бойынша айтылуында сөз аралығындағы кейінді ықпал заңдылығы байқалатын сөз тіркестері берілген қатарды табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Сары қыз, қара көк"
+    },
+    {
+      "label": "B",
+      "text": "Қара ала, торы ат"
+    },
+    {
+      "label": "C",
+      "text": "Күз түсті, он бала"
+    },
+    {
+      "label": "D",
+      "text": "Ала келді, ақ ешкі"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Кейінді ықпал – сөз ішіндегі немесе сөз аралығындағы кейінгі дыбыстың алдыңғы дыбысқа әсер етіп, оны өзіне ұқсата өзгертуі. «Күз түсті» тіркесіндегі қатаң «т» дыбысы өзінен бұрын тұрған ұяң «з» дыбысына әсер етіп, оны қатаң «с» дыбысына айналдырады (айтылуы: күс түсті). «Он бала» тіркесіндегі ұяң әрі еріндік «б» дыбысы өзінен бұрын тұрған тіл алды «н» дыбысын еріндік «м» дыбысына айналдырады (айтылуы: ом бала). Екеуі де кейінді ықпалға жатады. Қате нұсқаларға келсек: А нұсқасындағы сөздерде алдыңғы дауысты дыбыс кейінгі қатаң дауыссызды ұяңдатады (сары ғыз, қара гөк), бұл – ілгерінді ықпал. В нұсқасында екі дауысты қатар келіп, біреуі түсіп қалады (қарала, торат), бұл – кірігу (дыбыс түсуі). D нұсқасында «ала келді» – ілгерінді (ала гелді), ал «ақ ешкі» – кейінді (ағ ешкі) ықпал аралас берілген.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The relevant rule is Kazakh regressive assimilation, called 'кейінді ықпал': a following sound influences the preceding sound in pronunciation. Check the options. In C, 'Күз түсті' is pronounced like 'күс түсті': the following voiceless consonant т influences the preceding voiced з, devoicing it to с. This is regressive assimilation. Also, 'он бала' is pronounced like 'ом бала/омбала': the followi\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about 'кейінді ықпал' (regressive assimilation / backward assimilation) at word boundaries in Kazakh orthoepy. Regressive assimilation (кейінді ықпал) means the following sound influences the preceding sound — i.e., the second word's initial sound affects the final sound of the first word.\n\nIn Kazakh phonetics:\n- 'Кейінді ықпал' (regressive assimilation) = the sound of the next w\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the row of word combinations where regressive assimilation (кейінді ықпал) occurs between words according to orthoepic norms. Regressive assimilation is a phonetic process where the following sound influences the preceding sound.\n\nLet's analyze the options:\nA) 'Сары қыз' -> [сарығыз], 'қара көк' -> [қарагөк]. The preceding vowels influence the following voiceless cons",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: both phrases show regressive assimilation across word boundaries. The distractors are generally plausible and test the distinction between кейінді ықпал, ілгерінді ықпал, and vowel elision. | [anthropic/claude-sonnet-4.6] The question is well-constructed and correctly keyed. Option C clearly demonstrates regressive assimilation (кейінді ықпал) at word boundaries in both word combinations: [з]→[с] before voiceless [т] in 'күз түсті', and [н]→[м] before bilabial [б] in 'он бала'. The distractors are plausible and each represents a distinct phonetic phenomenon (progressive assimilation, vowel elision/merger, and mixed assimilation types), making them effective for discriminating teacher knowledge. | [google/gemini-3.1-pro-preview] The question is perfectly constructed, accurately testing the concept of regressive assimilation in Kazakh phonetics. The distractors are plausible and represent other common phonetic phenomena.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The relevant rule is Kazakh regressive assimilation, called 'кейінді ықпал': a following sound influences the preceding sound in pronunciation. Check the options. In C, 'Күз түсті' is pronounced like 'күс түсті': the following voiceless consonant т influences the preceding voiced з, devoicing it to с. This is regressive assimilation. Also, 'он бала' is pronounced like 'ом бала/омбала': the followi\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about 'кейінді ықпал' (regressive assimilation / backward assimilation) at word boundaries in Kazakh orthoepy. Regressive assimilation (кейінді ықпал) means the following sound influences the preceding sound — i.e., the second word's initial sound affects the final sound of the first word.\n\nIn Kazakh phonetics:\n- 'Кейінді ықпал' (regressive assimilation) = the sound of the next w\n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the row of word combinations where regressive assimilation (кейінді ықпал) occurs between words according to orthoepic norms. Regressive assimilation is a phonetic process where the following sound influences the preceding sound.\n\nLet's analyze the options:\nA) 'Сары қыз' -> [сарығыз], 'қара көк' -> [қарагөк]. The preceding vowels influence the following voiceless cons",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: both phrases show regressive assimilation across word boundaries. The distractors are generally plausible and test the distinction between кейінді ықпал, ілгерінді ықпал, and vowel elision. | [anthropic/claude-sonnet-4.6] The question is well-constructed and correctly keyed. Option C clearly demonstrates regressive assimilation (кейінді ықпал) at word boundaries in both word combinations: [з]→[с] before voiceless [т] in 'күз түсті', and [н]→[м] before bilabial [б] in 'он бала'. The distractors are plausible and each represents a distinct phonetic phenomenon (progressive assimilation, vowel elision/merger, and mixed assimilation types), making them effective for discriminating teacher knowledge. | [google/gemini-3.1-pro-preview] The question is perfectly constructed, accurately testing the concept of regressive assimilation in Kazakh phonetics. The distractors are plausible and represent other common phonetic phenomena.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The relevant rule is Kazakh regressive assimilation, called 'кейінді ықпал': a following sound influences the preceding sound in pronunciation. Check the options. In C, 'Күз түсті' is pronounced like 'күс түсті': the following voiceless consonant т influences the preceding voiced з, devoicing it to с. This is regressive assimilation. Also, 'он бала' is pronounced like 'ом бала/омбала': the following labial consonant б influences the preceding н, changing it to м. This is also regressive assimilation. Other options mainly show progressive assimilation or vowel contact effects, not consistently кейінді ықпал in both phrases. Therefore the correct row is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and uniquely defensible: both phrases show regressive assimilation across word boundaries. The distractors are generally plausible and test the distinction between кейінді ықпал, ілгерінді ықпал, and vowel elision.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about 'кейінді ықпал' (regressive assimilation / backward assimilation) at word boundaries in Kazakh orthoepy. Regressive assimilation (кейінді ықпал) means the following sound influences the preceding sound — i.e., the second word's initial sound affects the final sound of the first word.\n\nIn Kazakh phonetics:\n- 'Кейінді ықпал' (regressive assimilation) = the sound of the next word affects the pronunciation of the final sound of the previous word.\n- 'Ілгерінді ықпал' (progressive assimilation) = the sound of the previous word affects the initial sound of the next word.\n\nLet's analyze each option:\n\nA) Сары қыз, қара көк\n- 'Сары қыз': final sound of 'сары' is [ы], next word starts with [қ] (voiceless velar). The [ы] doesn't change due to [қ]. Actually, let's think about consonant assimilation. 'Сары' ends in [ы], 'қыз' starts with [қ]. No obvious regressive assimilation here.\n- 'Қара көк': 'қара' ends in [а], 'көк' starts with [к]. No obvious regressive assimilation.\n\nB) Қара ала, торы ат\n- 'Қара ала': 'қара' ends in [а], 'ала' starts with [а]. Vowel harmony/assimilation possible.\n- 'Торы ат': 'торы' ends in [ы], 'ат' starts with [а]. \n\nC) Күз түсті, он бала\n- 'Күз түсті': 'күз' ends in [з] (voiced), 'түсті' starts with [т] (voiceless). In regressive assimilation, [з] before [т] would be devoiced: [күс түсті]. This is a classic example of regressive assimilation — the voiceless [т] causes the preceding [з] to become voiceless [с].\n- 'Он бала': 'он' ends in [н], 'бала' starts with [б] (voiced bilabial). In regressive assimilation, [н] before [б] could become [м]: [ом бала]. This is also regressive assimilation — the bilabial [б] causes [н] to become bilabial [м].\n\nBoth examples in C show regressive assimilation (кейінді ықпал) at word boundaries.\n\nD) Ала келді, ақ ешкі\n- 'Ала келді': 'ала' ends in [а], 'келді' starts with [к]. \n- 'Ақ ешкі': 'ақ' ends in [қ] (voiceless), 'ешкі' starts with [е] (vowel). The [қ] before a vowel-initial word... In progressive assimilation, [қ] would influence the next sound. But actually 'ақ ешкі' is pronounced [ағ ешкі] — the [қ] becomes voiced [ғ] before the voiced vowel. Wait, that would be progressive assimilation if the vowel voices the consonant... Actually no: if the following vowel (voiced) causes the preceding [қ] to become [ғ], that IS regressive assimilation.\n\nHmm, let me reconsider. Actually in Kazakh:\n- 'Ақ ешкі' → pronounced [ағ ешкі]: the voiced environment of the following vowel causes [қ]→[ғ]. This is regressive assimilation.\n- But 'ала келді': 'ала' ends in vowel [а], 'келді' starts with [к]. The [к] (voiceless) could cause... but [а] is a vowel, not a consonant that would be affected.\n\nActually, let me reconsider option D more carefully:\n- 'Ала келді': progressive assimilation — the final [а] of 'ала' doesn't change [к] of 'келді'. \n- 'Ақ ешкі': [қ] before vowel [е] — the [қ] is voiced to [ғ] due to the following voiced sound. This is regressive assimilation.\n\nBut option D has mixed examples.\n\nFor option C:\n- 'Күз түсті': [з]→[с] before voiceless [т] — regressive assimilation ✓\n- 'Он бала': [н]→[м] before bilabial [б] — regressive assimilation ✓\n\nBoth word combinations in C demonstrate regressive assimilation (кейінді ықпал) at word boundaries. This makes C the correct answer.\n\nOption A: 'Сары қыз' — the final [ы] before [қ]... actually in Kazakh, voiced final consonants before voiceless initial consonants of next word show regressive devoicing. But 'сары' ends in vowel. 'Қара көк' — 'қара' ends in vowel. These don't show clear regressive assimilation.\n\nOption B: 'Қара ала' — both end/start with vowels. 'Торы ат' — 'торы' ends in [ы], 'ат' starts with [а]. No clear consonant assimilation.\n\nConclusion: Option C (Күз түсті, он бала) shows regressive assimilation (кейінді ықпал) at word boundaries — [з] devoiced before [т], and [н] becomes [м] before [б].",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and correctly keyed. Option C clearly demonstrates regressive assimilation (кейінді ықпал) at word boundaries in both word combinations: [з]→[с] before voiceless [т] in 'күз түсті', and [н]→[м] before bilabial [б] in 'он бала'. The distractors are plausible and each represents a distinct phonetic phenomenon (progressive assimilation, vowel elision/merger, and mixed assimilation types), making them effective for discriminating teacher knowledge.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the row of word combinations where regressive assimilation (кейінді ықпал) occurs between words according to orthoepic norms. Regressive assimilation is a phonetic process where the following sound influences the preceding sound.\n\nLet's analyze the options:\nA) 'Сары қыз' -> [сарығыз], 'қара көк' -> [қарагөк]. The preceding vowels influence the following voiceless consonants (қ -> ғ, к -> г) to become voiced. This is progressive assimilation (ілгерінді ықпал).\nB) 'Қара ала' -> [қарала], 'торы ат' -> [торат]. These are examples of vowel elision (дыбыс түсуі), not regressive assimilation.\nC) 'Күз түсті' -> [күстүсті]. The voiceless 'т' influences the preceding voiced 'з', turning it into the voiceless 'с'. This is regressive assimilation (кейінді ықпал).\n'Он бала' -> [омбала]. The bilabial 'б' influences the preceding alveolar 'н', turning it into the bilabial 'м'. This is also regressive assimilation (кейінді ықпал).\nD) 'Ала келді' -> [алагелді] (progressive assimilation). 'Ақ ешкі' -> [ағешкі] (regressive assimilation).\n\nOption C is the only row where both word combinations demonstrate regressive assimilation (кейінді ықпал).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed, accurately testing the concept of regressive assimilation in Kazakh phonetics. The distractors are plausible and represent other common phonetic phenomena.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:52:56.936786+00:00",
+  "generation_attempts": 1
+}

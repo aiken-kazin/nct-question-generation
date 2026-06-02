@@ -1,0 +1,140 @@
+{
+  "id": "6f0172f8-dd42-4450-ba11-ea1ddb50a90e",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Биылғы жазда жастардың ең белсендісінен үміт күтеміз» деген сөйлемде курсивпен берілген «белсендісінен» сөзі қандай морфологиялық құбылысты көрсетеді және қандай септікте тұр?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Сын есімнің заттануы, шығыс септік"
+    },
+    {
+      "label": "B",
+      "text": "Зат есімнің тәуелденуі, шығыс септік"
+    },
+    {
+      "label": "C",
+      "text": "Сын есімнің үстеуленуі, барыс септік"
+    },
+    {
+      "label": "D",
+      "text": "Есімдіктің заттануы, шығыс септік"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "«Белсендісінен» сөзі негізінде «белсенді» сын есімінен жасалған. Сөйлемде ол «жастардың ең белсендісінен» тіркесінде зат есім қызметінде (яғни адамды білдіріп, бастауыш тобының анықталушысы ретінде) қолданылып, заттанған. Заттанған сын есім зат есімдер сияқты септеледі және тәуелденеді: «белсенді + сі (ІІІ жақ тәуелдік жалғауы) + нен (шығыс септік жалғауы)». Демек, бұл сын есімнің заттануы (субстантивация) және шығыс септік. — B дұрыс емес: «белсенді» сөзі зат есім емес, сын есім болып табылады, тек контекстте заттанған. — C дұрыс емес: сөз үстеуленбеген, яғни үстеу қызметін атқармайды; барыс септік те емес (барыс септіктің жалғауы -ға/-ге/-қа/-ке). — D дұрыс емес: «белсенді» есімдік емес, сын есім.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.0,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The word \"белсендісінен\" is built from the adjective \"белсенді\" meaning \"active\". In the phrase \"жастардың ең белсендісінен\", it means \"from the most active one of the youth\"; the adjective is used as a noun, so this is substantivization of an adjective (сын есімнің заттануы). Morphologically, \"белсенді-сі-нен\" contains the nominalized adjective plus the 3rd-person possessive marker \"-сі\" agreeing\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence is: 'Биылғы жазда жастардың ең белсендісінен үміт күтеміз' — 'This summer we expect hope from the most active of the youth.'\n\nThe word in question is 'белсендісінен'.\n\nStep 1: Identify the base word. 'Белсенді' is an adjective (сын есім) meaning 'active'.\n\nStep 2: Identify the morphological phenomenon. In Kazakh, adjectives (and other modifiers) can undergo 'заттану' (substantivizatio\n\n[google/gemini-3.1-pro-preview] answered A: Let's analyze the word 'белсендісінен' step by step.\n1. Root/Base word: 'белсенді' (active). This is an adjective (сын есім).\n2. Morphological phenomenon: In the phrase 'жастардың ең белсендісінен' (from the most active of the youth), the adjective 'белсенді' takes the 3rd person possessive suffix '-сі' and acts as a noun. This process of an adjective taking on noun characteristics (like possessiv",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 7.833,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.0,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: “белсендісінен” is a substantivized adjective with 3rd-person possessive marking and ablative case. The item is clear, but some distractors, especially the pronoun and adverbialization options, are too easily eliminated for a teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets Level B by requiring morphological analysis in context. The correct answer (A) is unambiguous, and the explanation is thorough. Distractors are mostly plausible — B conflates зат есім with сын есім, C introduces a wrong case and wrong phenomenon, D introduces a wrong word class — though D (есімдіктің заттануы) is somewhat easier to eliminate than the others. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests substantivization and case identification in context, and has plausible distractors.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Consider replacing distractor D with something closer to the correct answer, such as 'Сын есімнің заттануы, барыс септік' to make case identification a more challenging discriminator. This would force examinees to carefully analyze the -нен suffix rather than relying on word-class elimination. | [google/gemini-3.1-pro-preview] Remove the phrase 'курсивпен берілген' from the question text, as the target word is already clearly indicated by quotation marks and plain text often loses italics.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The word \"белсендісінен\" is built from the adjective \"белсенді\" meaning \"active\". In the phrase \"жастардың ең белсендісінен\", it means \"from the most active one of the youth\"; the adjective is used as a noun, so this is substantivization of an adjective (сын есімнің заттануы). Morphologically, \"белсенді-сі-нен\" contains the nominalized adjective plus the 3rd-person possessive marker \"-сі\" agreeing\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence is: 'Биылғы жазда жастардың ең белсендісінен үміт күтеміз' — 'This summer we expect hope from the most active of the youth.'\n\nThe word in question is 'белсендісінен'.\n\nStep 1: Identify the base word. 'Белсенді' is an adjective (сын есім) meaning 'active'.\n\nStep 2: Identify the morphological phenomenon. In Kazakh, adjectives (and other modifiers) can undergo 'заттану' (substantivizatio\n\n[google/gemini-3.1-pro-preview] answered A: Let's analyze the word 'белсендісінен' step by step.\n1. Root/Base word: 'белсенді' (active). This is an adjective (сын есім).\n2. Morphological phenomenon: In the phrase 'жастардың ең белсендісінен' (from the most active of the youth), the adjective 'белсенді' takes the 3rd person possessive suffix '-сі' and acts as a noun. This process of an adjective taking on noun characteristics (like possessiv",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 7.833,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.0,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: “белсендісінен” is a substantivized adjective with 3rd-person possessive marking and ablative case. The item is clear, but some distractors, especially the pronoun and adverbialization options, are too easily eliminated for a teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets Level B by requiring morphological analysis in context. The correct answer (A) is unambiguous, and the explanation is thorough. Distractors are mostly plausible — B conflates зат есім with сын есім, C introduces a wrong case and wrong phenomenon, D introduces a wrong word class — though D (есімдіктің заттануы) is somewhat easier to eliminate than the others. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately tests substantivization and case identification in context, and has plausible distractors.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Consider replacing distractor D with something closer to the correct answer, such as 'Сын есімнің заттануы, барыс септік' to make case identification a more challenging discriminator. This would force examinees to carefully analyze the -нен suffix rather than relying on word-class elimination. | [google/gemini-3.1-pro-preview] Remove the phrase 'курсивпен берілген' from the question text, as the target word is already clearly indicated by quotation marks and plain text often loses italics.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The word \"белсендісінен\" is built from the adjective \"белсенді\" meaning \"active\". In the phrase \"жастардың ең белсендісінен\", it means \"from the most active one of the youth\"; the adjective is used as a noun, so this is substantivization of an adjective (сын есімнің заттануы). Morphologically, \"белсенді-сі-нен\" contains the nominalized adjective plus the 3rd-person possessive marker \"-сі\" agreeing with \"жастардың\", and the ending \"-нен\" is the ablative case ending (шығыс септік), answering the question \"кімнен?/неден?\" Therefore the correct description is: adjective substantivization, ablative case.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 6.5,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: “белсендісінен” is a substantivized adjective with 3rd-person possessive marking and ablative case. The item is clear, but some distractors, especially the pronoun and adverbialization options, are too easily eliminated for a teacher-certification item.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: 'Биылғы жазда жастардың ең белсендісінен үміт күтеміз' — 'This summer we expect hope from the most active of the youth.'\n\nThe word in question is 'белсендісінен'.\n\nStep 1: Identify the base word. 'Белсенді' is an adjective (сын есім) meaning 'active'.\n\nStep 2: Identify the morphological phenomenon. In Kazakh, adjectives (and other modifiers) can undergo 'заттану' (substantivization/nominalization) — they take on the grammatical role and morphological features of a noun. Here, 'белсенді' (active) is used as a noun meaning 'the active one/person.' This is confirmed by the superlative 'ең белсендісі' (the most active one) functioning as a noun.\n\nStep 3: Analyze the suffixes on 'белсендісінен':\n- белсенді = adjective stem\n- -сі = possessive/ownership suffix (3rd person singular possessive: -сі after vowel), indicating 'the most active one of them' — this is the тәуелдік жалғауы (possessive suffix)\n- -нен = ablative case suffix (шығыс септік)\n\nSo the word is: белсенді (adjective) + -сі (3rd person possessive) + -нен (ablative/шығыс септік)\n\nStep 4: The morphological phenomenon is 'сын есімнің заттануы' (substantivization of an adjective) — the adjective 'белсенді' is used as a noun.\n\nStep 5: The case is шығыс септік (ablative case), marked by -нен.\n\nTherefore, the answer is A: Сын есімнің заттануы, шығыс септік.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately targets Level B by requiring morphological analysis in context. The correct answer (A) is unambiguous, and the explanation is thorough. Distractors are mostly plausible — B conflates зат есім with сын есім, C introduces a wrong case and wrong phenomenon, D introduces a wrong word class — though D (есімдіктің заттануы) is somewhat easier to eliminate than the others.",
+          "improvement_suggestions": "Consider replacing distractor D with something closer to the correct answer, such as 'Сын есімнің заттануы, барыс септік' to make case identification a more challenging discriminator. This would force examinees to carefully analyze the -нен suffix rather than relying on word-class elimination.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the word 'белсендісінен' step by step.\n1. Root/Base word: 'белсенді' (active). This is an adjective (сын есім).\n2. Morphological phenomenon: In the phrase 'жастардың ең белсендісінен' (from the most active of the youth), the adjective 'белсенді' takes the 3rd person possessive suffix '-сі' and acts as a noun. This process of an adjective taking on noun characteristics (like possessive and case suffixes) and functioning as a noun in a sentence is called substantivization (заттану). Thus, we have 'сын есімнің заттануы'.\n3. Case (септік): The suffix '-нен' is the ending for the ablative case (шығыс септік), which answers the question 'кімнен?' (from whom?) or 'неден?' (from what?).\nCombining these observations, the word demonstrates the substantivization of an adjective (сын есімнің заттануы) and is in the ablative case (шығыс септік). This matches option A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurately tests substantivization and case identification in context, and has plausible distractors.",
+          "improvement_suggestions": "Remove the phrase 'курсивпен берілген' from the question text, as the target word is already clearly indicated by quotation marks and plain text often loses italics.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:20:12.446719+00:00",
+  "generation_attempts": 2
+}

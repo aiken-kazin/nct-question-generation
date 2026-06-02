@@ -1,0 +1,628 @@
+{
+  "id": "2921e08ca35349ee994c6a1e22ae0030",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "openai/gpt-5.5",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T13:01:53.376825+00:00",
+  "passage": "Күздің соңғы аптасында ауылға оралған Нұрлан ескі мектептің алдындағы қарағашты бірден таныды. Бұтақтары сирегенмен, діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр. Бұл ағаштың түбінде бір кезде әдебиет пәнінің мұғалімі Сәуле апай шәкірттеріне Абай өлеңдерін оқытатын. «Адамның жадын жер емес, сөз сақтайды» деуші еді ол. Мектеп жабылып, балалар аудан орталығына қатынайтын болған соң, аула үнсіз қалған: терезелерге шаң қонған, тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді. Нұрлан мұғалім үстелінен сарғайған дәптер тауып алды. Дәптердің соңғы бетінде: «Егер бір оқушы туған жеріне сұрақ қойып қайтса, менің сабағым аяқталмағаны» деп жазылыпты. Сол сәтте ол бос сыныптың тыныштығын өлі тыныштық емес, күтіп тұрған үнсіздік деп ұқты. Сыртта қарағаш жапырағы сыбдырлап, баяғы сабақтың жалғасын бастағандай болды.",
+  "questions": [
+    {
+      "question_text": "Мәтіннің негізгі идеясына ең жақын тұжырымды анықтаңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Мектептің жабылуы ауыл өмірінің толық күйреуін білдіреді."
+        },
+        {
+          "label": "B",
+          "text": "Табиғат құбылыстары адам тағдырын алдын ала белгілейді."
+        },
+        {
+          "label": "C",
+          "text": "Ұстаз сөзі мен туған жер жады адамның рухани оралуына түрткі болады."
+        },
+        {
+          "label": "D",
+          "text": "Нұрлан ауыл мектебін қайта ашуға нақты шешім қабылдайды."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтінде Нұрланның ескі мектепке оралуы, Сәуле апайдың сөзі, дәптердегі жазу арқылы рухани сабақтастық пен жадының оянуы бейнеленеді. A нұсқасы тек сыртқы жағдайды ғана қамтиды; B мәтіндегі табиғат детальдарын тым әсірелеп түсіндіреді; D мәтінде айтылмаған нақты әрекетті қосады.",
+      "critic_score": 9.2,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The text centers on Nurlan returning to his old village school and recognizing the elm tree associated with his former literature teacher, Saule apai. The teacher's remembered saying, \"A person's memory is preserved not by land, but by words,\" and the note in the notebook, \"If even one student returns asking questions of his native land, my lesson has not ended,\" are key semantic markers. The clos\n\n[anthropic/claude-sonnet-4.6] answered C: The text describes Nurlan returning to his village and encountering the old school, the elm tree, and memories of his literature teacher Säule. Key thematic elements: 1) The teacher's words ('Memory is preserved not by place but by word') and her note in the notebook ('If even one student returns to their homeland with a question, my lesson is not over') emphasize the lasting power of a teacher's \n\n[google/gemini-3.1-pro-preview] answered C: The text describes Nurlan returning to his village, visiting his old, closed school, and remembering his literature teacher's words. The teacher's notebook states: 'If even one student returns to ask a question of their native land, my lesson is not finished.' This prompts Nurlan to realize that the silence in the school is not dead, but 'waiting,' and he feels the lesson continuing. Option A is i",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is clearly correct and uniquely supported by the text. However, the item is more of a moderate inference/main-idea task than a genuinely hard level-C literary analysis item, and several distractors are easy overstatements or unsupported additions. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text that genuinely requires synthesis of symbolic details, thematic inference, and close reading — appropriate for Level C teacher certification. The correct answer C is unambiguously supported by the text's central motifs (teacher's words, notebook inscription, spiritual reawakening), and the explanation is thorough and accurate. Distractors are plausible but distinguishable through careful analysis: A overstates the collapse, B misreads the symbolic function of nature, and D introduces an unsupported concrete action. | [google/gemini-3.1-pro-preview] The question is of excellent quality. The literary text is well-written, and the distractors represent common reading comprehension errors such as unwarranted inferences and overgeneralization.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text centers on Nurlan returning to his old village school and recognizing the elm tree associated with his former literature teacher, Saule apai. The teacher's remembered saying, \"A person's memory is preserved not by land, but by words,\" and the note in the notebook, \"If even one student returns asking questions of his native land, my lesson has not ended,\" are key semantic markers. The closed school and quiet classroom are not presented as total destruction; instead, Nurlan reinterprets the silence as \"waiting silence,\" and the rustling tree seems to continue the old lesson. Therefore, the main idea is the continuing spiritual influence of the teacher's words and the memory of the native place, which prompts Nurlan's inner return. Option A is too absolute because the village is not shown as completely ruined. Option B is incorrect because nature does not predetermine fate; it functions symbolically. Option D adds an event not stated in the text: Nurlan does not make a concrete decision to reopen the school. Option C best matches the main idea.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.3,
+              "pass_fail": true,
+              "comments": "The keyed answer C is clearly correct and uniquely supported by the text. However, the item is more of a moderate inference/main-idea task than a genuinely hard level-C literary analysis item, and several distractors are easy overstatements or unsupported additions.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Nurlan returning to his village and encountering the old school, the elm tree, and memories of his literature teacher Säule. Key thematic elements: 1) The teacher's words ('Memory is preserved not by place but by word') and her note in the notebook ('If even one student returns to their homeland with a question, my lesson is not over') emphasize the lasting power of a teacher's words. 2) Nurlan's reinterpretation of the silence — not as dead silence but as 'waiting silence' — signals a spiritual awakening or return. 3) The rustling elm leaf at the end symbolizes the continuation of the lesson, i.e., the connection between homeland and the teacher's legacy prompts Nurlan's inner renewal. Option A is too extreme — the text does not frame the school closure as 'complete collapse' of village life. Option B is not supported — nature is used symbolically but does not 'predetermine human fate' as a main idea. Option D is incorrect — Nurlan makes no concrete decision to reopen the school. Option C — 'The teacher's word and the memory of the homeland serve as an impetus for a person's spiritual return' — directly matches the central theme: the teacher's preserved words (in the notebook and in memory) combined with the native land (the elm, the school) trigger Nurlan's spiritual reawakening. This is the main idea of the text.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.3,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text that genuinely requires synthesis of symbolic details, thematic inference, and close reading — appropriate for Level C teacher certification. The correct answer C is unambiguously supported by the text's central motifs (teacher's words, notebook inscription, spiritual reawakening), and the explanation is thorough and accurate. Distractors are plausible but distinguishable through careful analysis: A overstates the collapse, B misreads the symbolic function of nature, and D introduces an unsupported concrete action.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Nurlan returning to his village, visiting his old, closed school, and remembering his literature teacher's words. The teacher's notebook states: 'If even one student returns to ask a question of their native land, my lesson is not finished.' This prompts Nurlan to realize that the silence in the school is not dead, but 'waiting,' and he feels the lesson continuing. Option A is incorrect because the text emphasizes a 'waiting silence' rather than complete collapse. Option B is irrelevant to the main theme. Option D is incorrect because there is no explicit mention of Nurlan making a concrete decision to reopen the school. Option C perfectly captures the essence of the text: the teacher's words and the memory of the native land serve as a catalyst for the protagonist's spiritual return and connection to his roots.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is of excellent quality. The literary text is well-written, and the distractors represent common reading comprehension errors such as unwarranted inferences and overgeneralization.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "«Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр» деген сөйлемдегі көркемдегіш құралды көрсетіңіз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Теңеу"
+        },
+        {
+          "label": "B",
+          "text": "Метонимия"
+        },
+        {
+          "label": "C",
+          "text": "Гипербола"
+        },
+        {
+          "label": "D",
+          "text": "Аллитерация"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "«Жарадай» сөзі арқылы найзағай ізі жараға ұқсатылып тұр, сондықтан бұл — теңеу. Метонимияда атаулар іргелестік негізінде ауысады; гиперболада әсірелеу басым болады; аллитерация дыбыс қайталауына негізделеді.",
+      "critic_score": 7.3,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 6.333,
+        "difficulty_alignment": 1.333,
+        "kazakh_language_quality": 9.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: “Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр.” The key expression is “жазылмаған жарадай” (“like an unhealed wound”). In Kazakh, a simile (теңеу) is often formed with comparative suffixes such as -дай/-дей, -тай/-тей or words like “сияқты”, “секілді”. Here, “жарадай” uses the suffix -дай to compare the lightning scar on the tree trunk to an unhealed wound. This is no\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence in question is: 'Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр' — 'The lightning scar on its trunk darkens like an unhealed wound.'\n\nLet's analyze the literary device used:\n- The lightning scar on the tree trunk is being compared to an unhealed wound ('жазылмаған жарадай' — 'like an unhealed wound').\n- The suffix '-дай' in Kazakh is a simile marker, meaning 'like' or 'as'.\n\n[google/gemini-3.1-pro-preview] answered A: The sentence in question is 'Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр' (The lightning mark on its trunk stands black like an unhealed wound). The word 'жарадай' contains the suffix '-дай', which is used in Kazakh to compare one thing to another (meaning 'like a wound'). This direct comparison using a comparative suffix is the definition of a simile, which in Kazakh is called 'теңе",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.333,
+            "difficulty_alignment": 1.333,
+            "kazakh_language_quality": 9.833,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.3,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: the suffix '-дай' clearly marks a simile. However, the item is far below level C because it only requires basic recognition of a common stylistic device, and the surrounding text is largely unnecessary. | [anthropic/claude-sonnet-4.6] The correct answer (теңеу/simile) is unambiguous — the '-дай' suffix is a textbook simile marker, and the explanation is accurate. However, the question is too easy for Level C: identifying a simile marked by '-дай' is a basic (Level A/B) skill that any Kazakh language teacher can answer without complex analysis or cross-topic reasoning. The distractors are plausible categories but аллитерация is somewhat trivially eliminable since no sound repetition is present in the cited phrase. | [google/gemini-3.1-pro-preview] The question is factually correct and the text is beautifully written, but it completely fails to meet the requested Level C difficulty. Identifying a simile by the suffix '-дай' is a basic Level A task that does not require reading the provided text at all.",
+          "improvement_suggestions": "[openai/gpt-5.5] To align with level C, ask about the function of the simile within the whole passage, compare multiple imagery devices, or require interpretation of how the image supports the text's theme. Use more plausible distractors tied to specific textual interpretations rather than easily eliminated terminology. | [anthropic/claude-sonnet-4.6] To reach Level C difficulty, reframe the question to require deeper analysis — e.g., ask about the cumulative symbolic function of multiple literary devices across the text, or ask which combination of devices creates the text's elegiac tone, requiring the teacher to synthesize теңеу, метафора, and compositional elements together. Alternatively, replace the straightforward '-дай' simile with a more ambiguous figure (e.g., an implied metaphor or personification) where the device identification requires genuine deliberation. | [google/gemini-3.1-pro-preview] To align with Level C, change the question to require a comprehensive analysis of the text. For example, ask about the underlying theme, the psychological state of the character as reflected by the setting, or how the author uses the setting to convey the passage of time, rather than asking to identify a basic literary device in an isolated sentence.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The sentence is: “Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр.” The key expression is “жазылмаған жарадай” (“like an unhealed wound”). In Kazakh, a simile (теңеу) is often formed with comparative suffixes such as -дай/-дей, -тай/-тей or words like “сияқты”, “секілді”. Here, “жарадай” uses the suffix -дай to compare the lightning scar on the tree trunk to an unhealed wound. This is not metonymy, hyperbole, or alliteration. Therefore, the artistic device is simile.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.7,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: the suffix '-дай' clearly marks a simile. However, the item is far below level C because it only requires basic recognition of a common stylistic device, and the surrounding text is largely unnecessary.",
+              "improvement_suggestions": "To align with level C, ask about the function of the simile within the whole passage, compare multiple imagery devices, or require interpretation of how the image supports the text's theme. Use more plausible distractors tied to specific textual interpretations rather than easily eliminated terminology.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The sentence in question is: 'Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр' — 'The lightning scar on its trunk darkens like an unhealed wound.'\n\nLet's analyze the literary device used:\n- The lightning scar on the tree trunk is being compared to an unhealed wound ('жазылмаған жарадай' — 'like an unhealed wound').\n- The suffix '-дай' in Kazakh is a simile marker, meaning 'like' or 'as'. This is a direct comparison using a comparative suffix.\n- In Kazakh literary terminology, 'теңеу' (simile) is the figure of speech where one thing is explicitly compared to another using comparison markers such as '-дай/-дей', 'сияқты', 'секілді', etc.\n- This is clearly a simile (теңеу), not metonymy (метонимия), hyperbole (гипербола), or alliteration (аллитерация).\n- Metonymy would involve substituting a related concept; hyperbole would be an exaggeration; alliteration would be repetition of consonant sounds.\n- The '-дай' suffix makes this an explicit simile (теңеу).",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The correct answer (теңеу/simile) is unambiguous — the '-дай' suffix is a textbook simile marker, and the explanation is accurate. However, the question is too easy for Level C: identifying a simile marked by '-дай' is a basic (Level A/B) skill that any Kazakh language teacher can answer without complex analysis or cross-topic reasoning. The distractors are plausible categories but аллитерация is somewhat trivially eliminable since no sound repetition is present in the cited phrase.",
+              "improvement_suggestions": "To reach Level C difficulty, reframe the question to require deeper analysis — e.g., ask about the cumulative symbolic function of multiple literary devices across the text, or ask which combination of devices creates the text's elegiac tone, requiring the teacher to synthesize теңеу, метафора, and compositional elements together. Alternatively, replace the straightforward '-дай' simile with a more ambiguous figure (e.g., an implied metaphor or personification) where the device identification requires genuine deliberation.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The sentence in question is 'Діңіндегі найзағай ізі әлі жазылмаған жарадай қарайып тұр' (The lightning mark on its trunk stands black like an unhealed wound). The word 'жарадай' contains the suffix '-дай', which is used in Kazakh to compare one thing to another (meaning 'like a wound'). This direct comparison using a comparative suffix is the definition of a simile, which in Kazakh is called 'теңеу'. Therefore, the literary device used in this sentence is a simile (теңеу).",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.6,
+              "pass_fail": true,
+              "comments": "The question is factually correct and the text is beautifully written, but it completely fails to meet the requested Level C difficulty. Identifying a simile by the suffix '-дай' is a basic Level A task that does not require reading the provided text at all.",
+              "improvement_suggestions": "To align with Level C, change the question to require a comprehensive analysis of the text. For example, ask about the underlying theme, the psychological state of the character as reflected by the setting, or how the author uses the setting to convey the passage of time, rather than asking to identify a basic literary device in an isolated sentence.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіндегі «көмескі» сөзінің контекстегі мағынасын табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Салтанатты, мерекелі"
+        },
+        {
+          "label": "B",
+          "text": "Айқын, анық көрінетін"
+        },
+        {
+          "label": "C",
+          "text": "Қатты, берік"
+        },
+        {
+          "label": "D",
+          "text": "Солғын, бұлдыр, анық емес"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "«Бордың жұрнағы көмескі ай сәулесіндей ғана білінеді» деген тіркесте бор ізі әлсіз, солғын көрінетіні аңғарылады. A, B, C нұсқалары мәтіндегі шаң басқан, үнсіз қалған сынып көрінісіне сәйкес келмейді.",
+      "critic_score": 7.067,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 4.667,
+        "difficulty_alignment": 2.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The word in question is “көмескі” in the sentence: “тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді.” In Kazakh, “көмескі” means dim, faint, vague, indistinct, not clearly visible. The context compares the remaining chalk marks to faint moonlight, which reinforces the meaning “солғын, бұлдыр, анық емес.” Option A means solemn/festive, option B is the opposite meaning (clear, distinct\n\n[anthropic/claude-sonnet-4.6] answered D: The word 'көмескі' in Kazakh means 'dim, faint, vague, unclear, indistinct.' In the text, it is used in the phrase 'тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді' — meaning the chalk remnant on the blackboard is barely visible, like faint moonlight. This confirms the contextual meaning is 'dim, faint, unclear/indistinct' — not bright, not strong, not festive. Among the options: A) \n\n[google/gemini-3.1-pro-preview] answered D: The question asks for the contextual meaning of the word 'көмескі' in the provided text. In the sentence '...тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді', the word 'көмескі' describes the faint, dim, or unclear nature of the moonlight to which the chalk marks are compared. In Kazakh, 'көмескі' means dim, faint, blurry, or not clearly visible. Looking at the given options, Option ",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 4.667,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.067,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: «көмескі» means faint, dim, indistinct in this context. However, the item is far below level C; it tests a straightforward lexical meaning rather than hard text/style analysis. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguously D and the text is well-written literary Kazakh, but the question only tests vocabulary recognition (knowing what 'көмескі' means), which is a level A/B task rather than the complex analytical reasoning required for level C. Distractors A and C are too easily eliminated as they are semantically unrelated to any plausible reading. | [google/gemini-3.1-pro-preview] The question is factually correct and the text is beautifully written in natural Kazakh. However, asking for the definition of a single vocabulary word ('көмескі') is a Level A (Knowledge/Comprehension) task, which completely fails to meet the requested Level C (Hard) difficulty for certifying teachers.",
+          "improvement_suggestions": "[openai/gpt-5.5] Raise the cognitive demand by asking for interpretation of imagery, authorial idea, symbolic function of the қарағаш, or stylistic devices in the passage. Improve distractors so they are contextually plausible interpretations rather than obviously unrelated meanings. | [anthropic/claude-sonnet-4.6] To reach level C difficulty, reframe the question to require deeper textual analysis — e.g., ask about the symbolic function of the 'көмескі ай сәулесі' image within the broader thematic structure of the text, or ask the teacher to identify which stylistic device is used and explain its role in conveying the central idea. Replace distractor C ('Қатты, берік') with something more plausible like 'Жарқын, ашық' (bright, open) to make elimination harder. | [google/gemini-3.1-pro-preview] To reach Level C difficulty, change the question to require deep literary analysis. For example, ask about the symbolic meaning of the 'қарағаш' (elm tree), the philosophical implication of the teacher's note at the end of the notebook, or the overall stylistic and tonal synthesis of the text. The distractors should also be more plausible misinterpretations of the text's deeper meaning rather than trivial vocabulary mismatches.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The word in question is “көмескі” in the sentence: “тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді.” In Kazakh, “көмескі” means dim, faint, vague, indistinct, not clearly visible. The context compares the remaining chalk marks to faint moonlight, which reinforces the meaning “солғын, бұлдыр, анық емес.” Option A means solemn/festive, option B is the opposite meaning (clear, distinct), and option C means hard/firm. Therefore the correct contextual meaning is option D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 0.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 6.7,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and unambiguous: «көмескі» means faint, dim, indistinct in this context. However, the item is far below level C; it tests a straightforward lexical meaning rather than hard text/style analysis.",
+              "improvement_suggestions": "Raise the cognitive demand by asking for interpretation of imagery, authorial idea, symbolic function of the қарағаш, or stylistic devices in the passage. Improve distractors so they are contextually plausible interpretations rather than obviously unrelated meanings.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The word 'көмескі' in Kazakh means 'dim, faint, vague, unclear, indistinct.' In the text, it is used in the phrase 'тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді' — meaning the chalk remnant on the blackboard is barely visible, like faint moonlight. This confirms the contextual meaning is 'dim, faint, unclear/indistinct' — not bright, not strong, not festive. Among the options: A) 'Салтанатты, мерекелі' = festive, celebratory — incorrect; B) 'Айқын, анық көрінетін' = clear, distinctly visible — opposite meaning; C) 'Қатты, берік' = hard, firm — unrelated; D) 'Солғын, бұлдыр, анық емес' = faded, blurry, unclear — this matches the meaning of 'көмескі' perfectly. The correct answer is D.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.3,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguously D and the text is well-written literary Kazakh, but the question only tests vocabulary recognition (knowing what 'көмескі' means), which is a level A/B task rather than the complex analytical reasoning required for level C. Distractors A and C are too easily eliminated as they are semantically unrelated to any plausible reading.",
+              "improvement_suggestions": "To reach level C difficulty, reframe the question to require deeper textual analysis — e.g., ask about the symbolic function of the 'көмескі ай сәулесі' image within the broader thematic structure of the text, or ask the teacher to identify which stylistic device is used and explain its role in conveying the central idea. Replace distractor C ('Қатты, берік') with something more plausible like 'Жарқын, ашық' (bright, open) to make elimination harder.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the contextual meaning of the word 'көмескі' in the provided text. In the sentence '...тақтадағы бордың жұрнағы көмескі ай сәулесіндей ғана білінеді', the word 'көмескі' describes the faint, dim, or unclear nature of the moonlight to which the chalk marks are compared. In Kazakh, 'көмескі' means dim, faint, blurry, or not clearly visible. Looking at the given options, Option D ('Солғын, бұлдыр, анық емес') translates to 'faint, blurry, unclear', which perfectly matches the definition and contextual usage of 'көмескі'.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 2.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.2,
+              "pass_fail": true,
+              "comments": "The question is factually correct and the text is beautifully written in natural Kazakh. However, asking for the definition of a single vocabulary word ('көмескі') is a Level A (Knowledge/Comprehension) task, which completely fails to meet the requested Level C (Hard) difficulty for certifying teachers.",
+              "improvement_suggestions": "To reach Level C difficulty, change the question to require deep literary analysis. For example, ask about the symbolic meaning of the 'қарағаш' (elm tree), the philosophical implication of the teacher's note at the end of the notebook, or the overall stylistic and tonal synthesis of the text. The distractors should also be more plausible misinterpretations of the text's deeper meaning rather than trivial vocabulary mismatches.",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Авторлық баяндаудың Сәуле апайға қатысты астарлы көзқарасы қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Оның сөзін өмірден алшақ, қажетсіз өсиет ретінде бағалайды."
+        },
+        {
+          "label": "B",
+          "text": "Оны шәкірт жадында ізі қалған, сөзі сабақ болып жалғасатын тұлға ретінде құрметтейді."
+        },
+        {
+          "label": "C",
+          "text": "Оны мектептің жабылуына кінәлі адам ретінде көрсетеді."
+        },
+        {
+          "label": "D",
+          "text": "Оның бейнесін тек кездейсоқ естелік ретінде ғана атайды."
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Сәуле апайдың Абай өлеңдерін оқытуы, «сөз сақтайды» деген ойы, дәптердегі жазуы және сабақтың жалғасуы туралы түйін оның рухани ықпалын танытады. A мен C мәтін мазмұнына қарсы; D оның бейнесінің мәтіндегі идеялық қызметін төмендетеді.",
+      "critic_score": 8.967,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 7.833,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The question asks for the implied authorial attitude toward Sәule apai. In the text, Sәule apai is remembered as the literature teacher who read Abai's poems with students under the elm tree. Her saying, \"A person's memory is preserved not by land, but by words,\" is not mocked or rejected; it becomes a thematic key to the passage. Nurlan finds her notebook, where she writes that if even one studen\n\n[anthropic/claude-sonnet-4.6] answered B: The text describes Sәule apay as a literature teacher who taught Abai's poems under the elm tree and said 'It is not the land but the word that preserves human memory.' The narrator then finds a notebook with her final note: 'If even one student returns to their homeland with a question, my lesson is not finished.' The narrative structure shows that Nurlan's return, his recognition of the tree, hi\n\n[google/gemini-3.1-pro-preview] answered B: The text describes Nurlan returning to his old school and remembering his literature teacher, Saule apay. The author highlights her profound words ('A person's memory is preserved not by land, but by words') and the note in her notebook ('If even one student returns to ask a question of their homeland, my lesson has not ended'). Nurlan's realization that the silence is a 'waiting silence' and the ",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 7.833,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.967,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer B is unambiguous and well supported by the text. However, the item is easier than the requested C level because the positive authorial attitude is strongly signposted and most distractors are plainly contradicted or unsupported. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text that genuinely requires inferential and analytical reading to identify the authorial subtext regarding Sәule apay. The correct answer (B) is unambiguously supported by multiple textual signals, and the explanation is thorough. Distractors A, C, and D are plausible enough to require careful reading, though C (blaming her for school closure) is somewhat easier to eliminate than the others. | [google/gemini-3.1-pro-preview] The question is an excellent example of literary text analysis. The text is evocative, and the question accurately tests the ability to infer authorial tone and underlying meaning.",
+          "improvement_suggestions": "[openai/gpt-5.5] To better match level C, make the options distinguish between subtler interpretive positions, such as memory, pedagogical continuity, homeland symbolism, and narrator focalization, rather than using distractors that are simply opposite to the text.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the implied authorial attitude toward Sәule apai. In the text, Sәule apai is remembered as the literature teacher who read Abai's poems with students under the elm tree. Her saying, \"A person's memory is preserved not by land, but by words,\" is not mocked or rejected; it becomes a thematic key to the passage. Nurlan finds her notebook, where she writes that if even one student returns to his homeland with questions, her lesson is not finished. This shows her influence continues after the school has closed. The final images — the empty classroom's silence being understood as \"waiting silence\" rather than dead silence, and the elm leaves seeming to begin the continuation of the old lesson — symbolically present her words and teaching as still alive in the student's memory. Therefore, the authorial narration treats Sәule apai with respect as a figure whose words remain as an ongoing lesson in her pupil's memory.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.9,
+              "pass_fail": true,
+              "comments": "The keyed answer B is unambiguous and well supported by the text. However, the item is easier than the requested C level because the positive authorial attitude is strongly signposted and most distractors are plainly contradicted or unsupported.",
+              "improvement_suggestions": "To better match level C, make the options distinguish between subtler interpretive positions, such as memory, pedagogical continuity, homeland symbolism, and narrator focalization, rather than using distractors that are simply opposite to the text.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Sәule apay as a literature teacher who taught Abai's poems under the elm tree and said 'It is not the land but the word that preserves human memory.' The narrator then finds a notebook with her final note: 'If even one student returns to their homeland with a question, my lesson is not finished.' The narrative structure shows that Nurlan's return, his recognition of the tree, his discovery of the notebook, and his reinterpretation of the classroom's silence as 'waiting silence' rather than 'dead silence' — all are direct results of Sәule apay's teaching. The elm tree rustling at the end symbolizes the continuation of her lesson. The authorial perspective is clearly one of deep respect: Sәule apay is portrayed as a figure whose words live on as lessons in the student's memory and actions. Option A is wrong — her words are shown to be meaningful and alive. Option C is wrong — she is not blamed for the school's closure. Option D is wrong — she is not a mere incidental memory but a central moral figure. Option B correctly identifies the authorial stance: she is honored as a person whose trace remains in the student's memory and whose words continue as a lesson.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.5,
+                "difficulty_alignment": 8.5,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text that genuinely requires inferential and analytical reading to identify the authorial subtext regarding Sәule apay. The correct answer (B) is unambiguously supported by multiple textual signals, and the explanation is thorough. Distractors A, C, and D are plausible enough to require careful reading, though C (blaming her for school closure) is somewhat easier to eliminate than the others.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Nurlan returning to his old school and remembering his literature teacher, Saule apay. The author highlights her profound words ('A person's memory is preserved not by land, but by words') and the note in her notebook ('If even one student returns to ask a question of their homeland, my lesson has not ended'). Nurlan's realization that the silence is a 'waiting silence' and the rustling leaves feeling like the 'continuation of that old lesson' demonstrate that her teachings had a lasting, meaningful impact on her students. The author's underlying attitude is one of deep respect for her as a mentor whose influence endures in the memory of her students. This perfectly matches option B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is an excellent example of literary text analysis. The text is evocative, and the question accurately tests the ability to infer authorial tone and underlying meaning.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіннің құрылымдық-стильдік ерекшелігін дәл сипаттайтын жауапты белгілеңіз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Оқиға тек диалог түрінде беріліп, кейіпкерлер тартысы арқылы шешіледі."
+        },
+        {
+          "label": "B",
+          "text": "Ғылыми пайымдау үлгісімен дәлелдер мен терминдер жүйелі тізбектеледі."
+        },
+        {
+          "label": "C",
+          "text": "Қазіргі шақтағы оралу көрінісі естелікпен астасып, символдық деталь арқылы түйінделеді."
+        },
+        {
+          "label": "D",
+          "text": "Кейіпкердің өмірбаяны туғанынан бастап хронологиялық ретпен толық баяндалады."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтін Нұрланның ауылға оралуынан басталып, Сәуле апай туралы естелікке ауысады, соңында қарағаш пен бос сынып «сабақтың жалғасы» деген символдық мәнге ие болады. A, B, D құрылымдары мәтінде жоқ.",
+      "critic_score": 8.267,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.833,
+        "difficulty_alignment": 6.333,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The text is a literary narrative. It begins with Nurlan returning to the village in the last week of autumn and recognizing the old elm tree in front of the closed school. This present-time return scene is interwoven with memory: under this tree, the literature teacher Saule apai once had students read Abai's poems, and her saying is recalled. The closed school, dusty windows, chalk traces, yellow\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze the text and each option carefully.\n\nThe text describes Nurlan returning to his village in the last week of autumn and recognizing the old elm tree in front of the school. The narrative structure includes:\n1. A present-tense scene (Nurlan's return and observation of the tree and school)\n2. A memory/recollection embedded within (the teacher Saule teaching Abay's poems under the tree,\n\n[google/gemini-3.1-pro-preview] answered C: The text describes Nurlan returning to his village and recognizing an old elm tree near his former school. This present-day scene triggers a memory of his literature teacher, Saule apay, who used to teach Abai's poems under that tree. The narrative then shifts back to the present as he finds a yellowed notebook with a profound message, leading to a symbolic conclusion where the rustling leaves of ",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.833,
+            "difficulty_alignment": 6.333,
+            "kazakh_language_quality": 9.167,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.267,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is clearly correct and uniquely supported by the text: the return scene is interwoven with memory and resolved through symbolic details. However, the distractors are very obviously false, and the task is closer to medium-level recognition than hard, comprehensive literary-text analysis. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text that genuinely requires higher-order analysis. Option C is unambiguously correct and matches both the provided answer and the explanation. The Kazakh is natural and idiomatic throughout. | [google/gemini-3.1-pro-preview] The text is beautifully written and the correct answer is unambiguous. However, the distractors are too easily eliminable for a C-level (Hard) question.",
+          "improvement_suggestions": "[openai/gpt-5.5] To better match level C, make the distractors more interpretively plausible and require deeper analysis, for example by contrasting narrative time, motif, symbol, implied authorial position, and compositional closure rather than offering easily eliminable options such as pure dialogue, scientific style, or full biography. | [google/gemini-3.1-pro-preview] To meet the C-level difficulty, replace the trivially wrong distractors (e.g., 'scientific reasoning', 'only dialogue') with more plausible literary analysis options that partially describe the text but miss the core structural feature (e.g., 'Эссе стилінде жазылып, авторлық шегініс арқылы философиялық ой түйінделеді').",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is a literary narrative. It begins with Nurlan returning to the village in the last week of autumn and recognizing the old elm tree in front of the closed school. This present-time return scene is interwoven with memory: under this tree, the literature teacher Saule apai once had students read Abai's poems, and her saying is recalled. The closed school, dusty windows, chalk traces, yellowed notebook, and the elm tree function as symbolic details. The final idea is not a scientific conclusion or a chronological biography, but a symbolic ending: the silence of the classroom is understood as 'waiting silence,' and the rustling elm leaves seem to continue the old lesson. Option A is incorrect because the story is not given as dialogue and no character conflict is resolved through dialogue. Option B is incorrect because it is not scientific reasoning with terms and evidence. Option D is incorrect because Nurlan's life is not narrated from birth in chronological order. Therefore, the option accurately describing the structural-stylistic feature is C.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.5,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 8.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The keyed answer C is clearly correct and uniquely supported by the text: the return scene is interwoven with memory and resolved through symbolic details. However, the distractors are very obviously false, and the task is closer to medium-level recognition than hard, comprehensive literary-text analysis.",
+              "improvement_suggestions": "To better match level C, make the distractors more interpretively plausible and require deeper analysis, for example by contrasting narrative time, motif, symbol, implied authorial position, and compositional closure rather than offering easily eliminable options such as pure dialogue, scientific style, or full biography.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let me analyze the text and each option carefully.\n\nThe text describes Nurlan returning to his village in the last week of autumn and recognizing the old elm tree in front of the school. The narrative structure includes:\n1. A present-tense scene (Nurlan's return and observation of the tree and school)\n2. A memory/recollection embedded within (the teacher Saule teaching Abay's poems under the tree, her saying 'Words, not places, preserve human memory')\n3. Symbolic details: the lightning scar on the tree trunk, the dusty windows, the chalk remnant on the blackboard, the yellowed notebook with the teacher's inscription\n4. The text concludes with Nurlan reinterpreting the silence of the empty classroom — not as dead silence but as 'waiting silence' — and the rustling elm leaf outside suggesting the continuation of the old lesson.\n\nNow evaluating each option:\n\nA) 'The story is told only through dialogue, and the characters' conflict is resolved through it.' — This is incorrect. There is no dialogue in the text; there are quoted inscriptions/sayings, but no actual dialogue between characters.\n\nB) 'Arguments and terms are systematically listed in the manner of scientific reasoning.' — This is incorrect. The text is clearly literary/artistic prose, not scientific discourse. There are no technical terms or systematic argumentation.\n\nC) 'The scene of return in the present tense interweaves with memory/recollection, and is concluded through a symbolic detail.' — This accurately describes the text's structure: the present-tense return (Nurlan arriving, observing) is interwoven with memories (Saule teaching Abay's poems), and the text is concluded/tied together through symbolic details (the elm tree with its lightning scar, the rustling leaf at the end suggesting the lesson continues). This matches the structural and stylistic features perfectly.\n\nD) 'The character's biography is fully narrated in chronological order from birth.' — This is incorrect. There is no full biographical account from birth; we only see a brief return scene with embedded memories.\n\nOption C is clearly the correct answer, as it precisely describes the structural-stylistic feature: present-tense return scene + embedded memory/recollection + symbolic detail as the concluding element.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 9.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text that genuinely requires higher-order analysis. Option C is unambiguously correct and matches both the provided answer and the explanation. The Kazakh is natural and idiomatic throughout.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Nurlan returning to his village and recognizing an old elm tree near his former school. This present-day scene triggers a memory of his literature teacher, Saule apay, who used to teach Abai's poems under that tree. The narrative then shifts back to the present as he finds a yellowed notebook with a profound message, leading to a symbolic conclusion where the rustling leaves of the elm tree seem to continue the teacher's lesson. \n\nLet's evaluate the options:\nA) Incorrect. There is no dialogue or character conflict in the text.\nB) Incorrect. The text is a literary narrative, not a scientific text with terms and arguments.\nC) Correct. The present-day return ('қазіргі шақтағы оралу көрінісі') intertwines with memories of the past ('естелікпен астасып'), and the story concludes with symbolic details like the notebook's message and the rustling tree ('символдық деталь арқылы түйінделеді').\nD) Incorrect. The text does not narrate the character's entire biography in chronological order from birth.\n\nThus, option C accurately describes the structural and stylistic features of the text.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 5.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.0,
+              "pass_fail": true,
+              "comments": "The text is beautifully written and the correct answer is unambiguous. However, the distractors are too easily eliminable for a C-level (Hard) question.",
+              "improvement_suggestions": "To meet the C-level difficulty, replace the trivially wrong distractors (e.g., 'scientific reasoning', 'only dialogue') with more plausible literary analysis options that partially describe the text but miss the core structural feature (e.g., 'Эссе стилінде жазылып, авторлық шегініс арқылы философиялық ой түйінделеді').",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

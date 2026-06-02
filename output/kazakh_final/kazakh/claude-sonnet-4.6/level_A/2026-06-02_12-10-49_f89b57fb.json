@@ -1,0 +1,140 @@
+{
+  "id": "f89b57fb-a8cd-4a62-a262-ffeda74a3b08",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Егер жауын жауса, далаға шықпаймыз» деген сөйлем қандай бағыныңқы сабақтас сөйлем түріне жатады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Шартты бағыныңқы сабақтас сөйлем"
+    },
+    {
+      "label": "B",
+      "text": "Мезгіл бағыныңқы сабақтас сөйлем"
+    },
+    {
+      "label": "C",
+      "text": "Себеп бағыныңқы сабақтас сөйлем"
+    },
+    {
+      "label": "D",
+      "text": "Қарсылықты бағыныңқы сабақтас сөйлем"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "«Егер жауын жауса, далаға шықпаймыз» деген сөйлемде бағыныңқы бөлік «егер» шылауы және -са/-се шартты рай жалғауы арқылы жасалған. Бұл шартты бағыныңқы сабақтас сөйлемнің негізгі белгісі: бағыныңқы бөлік басыңқы бөліктегі іс-әрекеттің орындалу шартын білдіреді. Мезгіл бағыныңқы сабақтас сөйлемде бағыныңқы бөлік уақытты білдіреді (кезде, соң, бұрын т.б.); себеп бағыныңқысында іс-әрекеттің себебі көрсетіледі (-ғандықтан, себебі т.б.); қарсылықты бағыныңқысында бағыныңқы мен басыңқы бөліктер мазмұны жағынан бір-біріне қарсы қойылады (-са да, -ғанмен т.б.). Сондықтан дұрыс жауап — А) Шартты бағыныңқы сабақтас сөйлем.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: «Егер жауын жауса, далаға шықпаймыз» = “If it rains, we will not go outside.” In Kazakh syntax, a subordinate clause expressing a condition is called a шартты бағыныңқы сабақтас сөйлем. The marker «егер» and the conditional verb form «жауса» with the suffix -са indicate a condition. Therefore, the subordinate clause «Егер жауын жауса» states the condition for the main clause «дала\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence 'Егер жауын жауса, далаға шықпаймыз' translates to 'If it rains, we will not go outside.' The key word here is 'егер' (if), which is a conditional conjunction in Kazakh. The subordinate clause 'Егер жауын жауса' expresses a condition under which the main clause 'далаға шықпаймыз' holds. In Kazakh grammar, subordinate compound sentences (бағыныңқы сабақтас сөйлемдер) are classified by \n\n[google/gemini-3.1-pro-preview] answered A: The sentence «Егер жауын жауса, далаға шықпаймыз» translates to 'If it rains, we will not go outside.' The subordinate clause 'Егер жауын жауса' expresses the condition under which the action of the main clause ('далаға шықпаймыз') will take place. In Kazakh syntax, this is formed using the conditional mood suffix '-са/-се' and often accompanied by the conditional conjunction 'егер'. This type of ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the conditional marker «егер» and the -са form. The item is clear, basic-level, and uses standard Kazakh syntax terminology, though the cue «егер» makes the answer quite obvious. | [anthropic/claude-sonnet-4.6] The question is factually correct, unambiguous, and perfectly calibrated for Level A. The sentence 'Егер жауын жауса' with the conditional conjunction 'егер' and conditional mood suffix -са clearly identifies it as a шартты бағыныңқы сабақтас сөйлем. All distractors represent real grammatical categories that a teacher should distinguish, making them plausible but clearly incorrect for this example. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the basic difficulty level.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: «Егер жауын жауса, далаға шықпаймыз» = “If it rains, we will not go outside.” In Kazakh syntax, a subordinate clause expressing a condition is called a шартты бағыныңқы сабақтас сөйлем. The marker «егер» and the conditional verb form «жауса» with the suffix -са indicate a condition. Therefore, the subordinate clause «Егер жауын жауса» states the condition for the main clause «дала\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence 'Егер жауын жауса, далаға шықпаймыз' translates to 'If it rains, we will not go outside.' The key word here is 'егер' (if), which is a conditional conjunction in Kazakh. The subordinate clause 'Егер жауын жауса' expresses a condition under which the main clause 'далаға шықпаймыз' holds. In Kazakh grammar, subordinate compound sentences (бағыныңқы сабақтас сөйлемдер) are classified by \n\n[google/gemini-3.1-pro-preview] answered A: The sentence «Егер жауын жауса, далаға шықпаймыз» translates to 'If it rains, we will not go outside.' The subordinate clause 'Егер жауын жауса' expresses the condition under which the action of the main clause ('далаға шықпаймыз') will take place. In Kazakh syntax, this is formed using the conditional mood suffix '-са/-се' and often accompanied by the conditional conjunction 'егер'. This type of ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies the conditional marker «егер» and the -са form. The item is clear, basic-level, and uses standard Kazakh syntax terminology, though the cue «егер» makes the answer quite obvious. | [anthropic/claude-sonnet-4.6] The question is factually correct, unambiguous, and perfectly calibrated for Level A. The sentence 'Егер жауын жауса' with the conditional conjunction 'егер' and conditional mood suffix -са clearly identifies it as a шартты бағыныңқы сабақтас сөйлем. All distractors represent real grammatical categories that a teacher should distinguish, making them plausible but clearly incorrect for this example. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the basic difficulty level.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: «Егер жауын жауса, далаға шықпаймыз» = “If it rains, we will not go outside.” In Kazakh syntax, a subordinate clause expressing a condition is called a шартты бағыныңқы сабақтас сөйлем. The marker «егер» and the conditional verb form «жауса» with the suffix -са indicate a condition. Therefore, the subordinate clause «Егер жауын жауса» states the condition for the main clause «далаға шықпаймыз».",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies the conditional marker «егер» and the -са form. The item is clear, basic-level, and uses standard Kazakh syntax terminology, though the cue «егер» makes the answer quite obvious.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence 'Егер жауын жауса, далаға шықпаймыз' translates to 'If it rains, we will not go outside.' The key word here is 'егер' (if), which is a conditional conjunction in Kazakh. The subordinate clause 'Егер жауын жауса' expresses a condition under which the main clause 'далаға шықпаймыз' holds. In Kazakh grammar, subordinate compound sentences (бағыныңқы сабақтас сөйлемдер) are classified by the semantic relationship between the subordinate and main clauses. A conditional subordinate clause (шартты бағыныңқы сабақтас сөйлем) is one where the subordinate clause states a condition for the main clause, typically marked by the conditional mood suffix -са/-се and/or the conjunction 'егер'. This matches exactly. The other options — temporal (мезгіл), causal (себеп), and adversative (қарсылықты) — do not apply here, as there is no time reference, no cause-effect relationship, and no contrast/opposition expressed.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The question is factually correct, unambiguous, and perfectly calibrated for Level A. The sentence 'Егер жауын жауса' with the conditional conjunction 'егер' and conditional mood suffix -са clearly identifies it as a шартты бағыныңқы сабақтас сөйлем. All distractors represent real grammatical categories that a teacher should distinguish, making them plausible but clearly incorrect for this example.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence «Егер жауын жауса, далаға шықпаймыз» translates to 'If it rains, we will not go outside.' The subordinate clause 'Егер жауын жауса' expresses the condition under which the action of the main clause ('далаға шықпаймыз') will take place. In Kazakh syntax, this is formed using the conditional mood suffix '-са/-се' and often accompanied by the conditional conjunction 'егер'. This type of subordinate compound sentence is known as 'шартты бағыныңқы сабақтас сөйлем' (conditional subordinate clause). Therefore, option A is the correct answer.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the basic difficulty level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:10:49.834145+00:00",
+  "generation_attempts": 1
+}

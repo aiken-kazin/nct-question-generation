@@ -1,0 +1,140 @@
+{
+  "id": "b6ef6511-ed35-416d-ad8b-f5496449f83e",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі салалас құрмалас сөйлемнің түрін анықтаңыз: Күн бұлттанды, бірақ жаңбыр жаумады.",
+  "options": [
+    {
+      "label": "A",
+      "text": "ыңғайлас салалас"
+    },
+    {
+      "label": "B",
+      "text": "себеп-салдар салалас"
+    },
+    {
+      "label": "C",
+      "text": "қарсылықты салалас"
+    },
+    {
+      "label": "D",
+      "text": "талғаулы салалас"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. «Күн бұлттанды» және «жаңбыр жаумады» деген жай сөйлемдердің мағыналары бір-біріне қарама-қарсы қойылып тұр, оларды «бірақ» жалғаулығы байланыстырады. Сондықтан бұл — қарсылықты салалас. Ыңғайлас салаласта оқиғалар ыңғайлас, қатар айтылады; себеп-салдар салаласта бір іс екіншісінің себебі не салдары болады; талғаулы салаласта әрекеттің бірін таңдау мәні беріледі.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.633,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The sentence consists of two coordinate clauses: (1) \"Күн бұлттанды\" (The weather/clouds became cloudy) and (2) \"жаңбыр жаумады\" (it did not rain). They are connected by the conjunction \"бірақ\" meaning \"but\". In Kazakh syntax, coordinate compound sentences joined by adversative conjunctions such as \"бірақ\", \"алайда\", \"дегенмен\" express contrast/opposition and are classified as \"қарсылықты салалас\"\n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Күн бұлттанды, бірақ жаңбыр жаумады.' (The sky became cloudy, but it did not rain.) The conjunction used is 'бірақ' which means 'but' in English. In Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлемдер) are classified by the type of conjunction and the semantic relationship between the clauses. The conjunction 'бірақ' (but/however) expresses a contrast or oppo\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is 'Күн бұлттанды, бірақ жаңбыр жаумады.' (The sky clouded over, but it didn't rain). This is a coordinate compound sentence (салалас құрмалас сөйлем). The two independent clauses are connected by the adversative conjunction 'бірақ' (but). In Kazakh syntax, coordinate compound sentences connected by conjunctions such as 'бірақ', 'алайда', 'дегенмен', or 'әйтсе де' express an adv",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.633,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: the conjunction “бірақ” clearly marks a қарсылықты салалас. The item is appropriate for level A and uses standard terminology, though the correct answer is strongly cued by the conjunction. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets basic-level recognition of the adversative coordinate sentence type using the clear conjunction 'бірақ'. All distractors represent genuine categories of coordinate sentences that a teacher might confuse if terminology is not mastered. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligns with the requested difficulty level A. The distractors are standard types of coordinate compound sentences.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The sentence consists of two coordinate clauses: (1) \"Күн бұлттанды\" (The weather/clouds became cloudy) and (2) \"жаңбыр жаумады\" (it did not rain). They are connected by the conjunction \"бірақ\" meaning \"but\". In Kazakh syntax, coordinate compound sentences joined by adversative conjunctions such as \"бірақ\", \"алайда\", \"дегенмен\" express contrast/opposition and are classified as \"қарсылықты салалас\"\n\n[anthropic/claude-sonnet-4.6] answered C: The sentence is: 'Күн бұлттанды, бірақ жаңбыр жаумады.' (The sky became cloudy, but it did not rain.) The conjunction used is 'бірақ' which means 'but' in English. In Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлемдер) are classified by the type of conjunction and the semantic relationship between the clauses. The conjunction 'бірақ' (but/however) expresses a contrast or oppo\n\n[google/gemini-3.1-pro-preview] answered C: The given sentence is 'Күн бұлттанды, бірақ жаңбыр жаумады.' (The sky clouded over, but it didn't rain). This is a coordinate compound sentence (салалас құрмалас сөйлем). The two independent clauses are connected by the adversative conjunction 'бірақ' (but). In Kazakh syntax, coordinate compound sentences connected by conjunctions such as 'бірақ', 'алайда', 'дегенмен', or 'әйтсе де' express an adv",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.633,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: the conjunction “бірақ” clearly marks a қарсылықты салалас. The item is appropriate for level A and uses standard terminology, though the correct answer is strongly cued by the conjunction. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets basic-level recognition of the adversative coordinate sentence type using the clear conjunction 'бірақ'. All distractors represent genuine categories of coordinate sentences that a teacher might confuse if terminology is not mastered. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurate, and perfectly aligns with the requested difficulty level A. The distractors are standard types of coordinate compound sentences.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence consists of two coordinate clauses: (1) \"Күн бұлттанды\" (The weather/clouds became cloudy) and (2) \"жаңбыр жаумады\" (it did not rain). They are connected by the conjunction \"бірақ\" meaning \"but\". In Kazakh syntax, coordinate compound sentences joined by adversative conjunctions such as \"бірақ\", \"алайда\", \"дегенмен\" express contrast/opposition and are classified as \"қарсылықты салалас\". Therefore, the correct type is adversative coordinate compound sentence.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: the conjunction “бірақ” clearly marks a қарсылықты салалас. The item is appropriate for level A and uses standard terminology, though the correct answer is strongly cued by the conjunction.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: 'Күн бұлттанды, бірақ жаңбыр жаумады.' (The sky became cloudy, but it did not rain.) The conjunction used is 'бірақ' which means 'but' in English. In Kazakh syntax, coordinate compound sentences (салалас құрмалас сөйлемдер) are classified by the type of conjunction and the semantic relationship between the clauses. The conjunction 'бірақ' (but/however) expresses a contrast or opposition between two clauses — the first clause states one fact (sky became cloudy) and the second clause contradicts the expected outcome (it did not rain). This type of relationship is called 'қарсылықты салалас' (adversative/contrastive coordinate sentence). Other conjunctions of this type include 'алайда', 'дегенмен', 'бірақ та'. Option A (ыңғайлас салалас) uses conjunctions like 'және', 'да/де', 'та/те' expressing enumeration/addition. Option B (себеп-салдар салалас) expresses cause-effect relationships. Option D (талғаулы салалас) uses conjunctions like 'не...не', 'немесе', 'я...я' expressing choice/alternation. Therefore, the correct answer is C — қарсылықты салалас.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately targets basic-level recognition of the adversative coordinate sentence type using the clear conjunction 'бірақ'. All distractors represent genuine categories of coordinate sentences that a teacher might confuse if terminology is not mastered.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The given sentence is 'Күн бұлттанды, бірақ жаңбыр жаумады.' (The sky clouded over, but it didn't rain). This is a coordinate compound sentence (салалас құрмалас сөйлем). The two independent clauses are connected by the adversative conjunction 'бірақ' (but). In Kazakh syntax, coordinate compound sentences connected by conjunctions such as 'бірақ', 'алайда', 'дегенмен', or 'әйтсе де' express an adversative relationship, where the action or state in the second clause contrasts with or contradicts the first. This type of sentence is called 'қарсылықты салалас құрмалас сөйлем' (adversative coordinate compound sentence). Therefore, the correct option is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurate, and perfectly aligns with the requested difficulty level A. The distractors are standard types of coordinate compound sentences.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:12:48.656888+00:00",
+  "generation_attempts": 1
+}

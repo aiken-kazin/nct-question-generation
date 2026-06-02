@@ -1,0 +1,140 @@
+{
+  "id": "5e6fe2c4-1e01-4faf-95d0-ec417f069b80",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_nominals",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі есім сөздерге қатысты дұрыс тұжырымды анықтаңыз. «Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті».",
+  "options": [
+    {
+      "label": "A",
+      "text": "«Үшеудің» — есептік сан есім, көптік жалғаулы сөз; «үлкені» — салыстырмалы шырайдағы сын есім."
+    },
+    {
+      "label": "B",
+      "text": "«Үлкені» — заттанған сапалық сын есім, III жақ тәуелдік тұлғасында; «жақсыны», «жаманды» — заттанған сын есімдер, табыс септікте."
+    },
+    {
+      "label": "C",
+      "text": "«Жақсыны», «жаманды» — жұрнақ арқылы жасалған туынды зат есімдер; сөйлемде атау септігінде тұр."
+    },
+    {
+      "label": "D",
+      "text": "«Үшеудің» — болжалдық сан есім, шығыс септікте тұрған сөз; «үлкені» — негізгі зат есім, тәуелді тұлғада."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап — B. Сөйлемдегі «үлкені» сөзі бастапқыда сапалық сын есім, бірақ «кім?» мәнінде қолданылып, заттанып тұр; оған III жақ тәуелдік жалғауы (-і) жалғанған. «Жақсыны», «жаманды» сөздері де сын есімнен заттанып, табыс септігінің -ны қосымшасын қабылдаған. A нұсқасы қате, өйткені «үшеу» — есептік емес, жинақтық сан есім, ал «үлкені» салыстырмалы шырай тұлғасында емес. C нұсқасы қате: «жақсыны», «жаманды» жұрнақ арқылы жасалған туынды зат есімдер емес, заттанған сын есімдер және атау септігінде емес, табыс септігінде тұр. D нұсқасы қате, себебі «үшеудің» болжалдық сан есім емес, жинақтық сан есімнің ілік септік тұлғасы; «үлкені» негізгі зат есім емес, заттанған сын есім.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: In the sentence “Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті”, the word “үшеудің” is formed from “үшеу”, a collective numeral (жинақтық сан есім), with the genitive case ending -дің; it is not a cardinal numeral with a plural ending and not an approximate numeral in ablative case. The word “үлкені” comes from the qualitative adjective “үлкен”; here it is substantivized (“the elder/ol\n\n[anthropic/claude-sonnet-4.6] answered B: Let's analyze the sentence: «Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті».\n\nAnalyzing each option:\n\n**Option A:** Claims «Үшеудің» is an ordinal numeral (есептік сан есім) with plural suffix, and «үлкені» is a comparative degree adjective (салыстырмалы шырай).\n- «Үшеу» is actually a collective numeral (жинақтық сан есім), not an ordinal numeral (есептік). Есептік сан есімдер are card\n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the nominals in the given sentence: 'Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті.'\n\n1. 'Үшеудің': 'үшеу' is a collective numeral (жиынтық сан есім), and '-дің' is the genitive case suffix (ілік септік). \n2. 'үлкені': 'үлкен' is a qualitative adjective (сапалық сын есім). In this context, it acts as a noun (substantivized / заттанған) and takes the 3rd person possessive ",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.5,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies substantivized adjectives, possessive marking, and accusative case in context. The item fits medium difficulty, though some distractors are fairly easy to eliminate because they contain multiple obvious morphological errors. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually accurate, and tests genuine morphological analysis skills at the appropriate B level. Option B is unambiguously correct, and each distractor targets a specific, realistic misconception (confusing collective vs. cardinal numerals, misidentifying case forms, or mislabeling substantivized adjectives as derivative nouns). | [google/gemini-3.1-pro-preview] The question is well-designed, accurately tests morphological analysis in context, and has plausible distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: In the sentence “Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті”, the word “үшеудің” is formed from “үшеу”, a collective numeral (жинақтық сан есім), with the genitive case ending -дің; it is not a cardinal numeral with a plural ending and not an approximate numeral in ablative case. The word “үлкені” comes from the qualitative adjective “үлкен”; here it is substantivized (“the elder/ol\n\n[anthropic/claude-sonnet-4.6] answered B: Let's analyze the sentence: «Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті».\n\nAnalyzing each option:\n\n**Option A:** Claims «Үшеудің» is an ordinal numeral (есептік сан есім) with plural suffix, and «үлкені» is a comparative degree adjective (салыстырмалы шырай).\n- «Үшеу» is actually a collective numeral (жинақтық сан есім), not an ordinal numeral (есептік). Есептік сан есімдер are card\n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the nominals in the given sentence: 'Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті.'\n\n1. 'Үшеудің': 'үшеу' is a collective numeral (жиынтық сан есім), and '-дің' is the genitive case suffix (ілік септік). \n2. 'үлкені': 'үлкен' is a qualitative adjective (сапалық сын есім). In this context, it acts as a noun (substantivized / заттанған) and takes the 3rd person possessive ",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately identifies substantivized adjectives, possessive marking, and accusative case in context. The item fits medium difficulty, though some distractors are fairly easy to eliminate because they contain multiple obvious morphological errors. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually accurate, and tests genuine morphological analysis skills at the appropriate B level. Option B is unambiguously correct, and each distractor targets a specific, realistic misconception (confusing collective vs. cardinal numerals, misidentifying case forms, or mislabeling substantivized adjectives as derivative nouns). | [google/gemini-3.1-pro-preview] The question is well-designed, accurately tests morphological analysis in context, and has plausible distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In the sentence “Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті”, the word “үшеудің” is formed from “үшеу”, a collective numeral (жинақтық сан есім), with the genitive case ending -дің; it is not a cardinal numeral with a plural ending and not an approximate numeral in ablative case. The word “үлкені” comes from the qualitative adjective “үлкен”; here it is substantivized (“the elder/older one”) and has the III person possessive suffix -і. It is not a comparative degree form, because comparative degree would require forms such as -рақ/-рек etc. The words “жақсыны” and “жаманды” come from qualitative adjectives “жақсы” and “жаман”; in this sentence they are substantivized and take the accusative case endings -ны/-ды, meaning “the good” and “the bad”. Therefore option B is the correct morphological statement.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately identifies substantivized adjectives, possessive marking, and accusative case in context. The item fits medium difficulty, though some distractors are fairly easy to eliminate because they contain multiple obvious morphological errors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence: «Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті».\n\nAnalyzing each option:\n\n**Option A:** Claims «Үшеудің» is an ordinal numeral (есептік сан есім) with plural suffix, and «үлкені» is a comparative degree adjective (салыстырмалы шырай).\n- «Үшеу» is actually a collective numeral (жинақтық сан есім), not an ordinal numeral (есептік). Есептік сан есімдер are cardinal numerals like үш, төрт, etc. «Үшеу» is formed with the suffix -еу/-ау which makes it collective.\n- «Үлкені» here is a substantivized adjective (заттанған сын есім) in 3rd person possessive form, not a comparative degree adjective. Comparative degree (салыстырмалы шырай) would be formed with suffixes like -рақ/-рек, -лау/-леу.\n- Option A is INCORRECT.\n\n**Option B:** Claims «Үлкені» is a substantivized qualitative adjective in 3rd person possessive form; «жақсыны», «жаманды» are substantivized adjectives in accusative case.\n- «Үлкені»: «үлкен» is a qualitative adjective (сапалық сын есім). In this sentence it functions as a noun (the eldest of the three), so it is substantivized (заттанған). The suffix -і is the 3rd person singular possessive (III жақ тәуелдік жалғауы). This is correct.\n- «Жақсыны»: «жақсы» is a qualitative adjective, here used as a noun (the good things), so it is substantivized. The suffix -ны is the accusative case marker (табыс септік). Correct.\n- «Жаманды»: similarly, «жаман» is a qualitative adjective used as a noun, with -ды being the accusative case marker. Correct.\n- Option B is CORRECT.\n\n**Option C:** Claims «жақсыны», «жаманды» are derivative nouns formed by suffixes and are in nominative case.\n- They are not formed by derivational suffixes to become nouns; they are adjectives used substantively (заттану). Also, they have accusative case markers (-ны, -ды), not nominative. Option C is INCORRECT.\n\n**Option D:** Claims «Үшеудің» is a bolzhaldy (approximate/estimative) numeral in ablative case; «үлкені» is a basic noun in possessive form.\n- «Үшеудің» is in genitive case (ілік септік), not ablative (шығыс септік). The genitive suffix is -дің/-тің/-нің. Ablative would be -дан/-ден/-тан/-тен/-нан/-нен.\n- Also, «үшеу» is a collective numeral, not a bolzhaldy (approximate) numeral.\n- Option D is INCORRECT.\n\nTherefore, Option B is the correct answer.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually accurate, and tests genuine morphological analysis skills at the appropriate B level. Option B is unambiguously correct, and each distractor targets a specific, realistic misconception (confusing collective vs. cardinal numerals, misidentifying case forms, or mislabeling substantivized adjectives as derivative nouns).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the nominals in the given sentence: 'Үшеудің үлкені өмірдегі жақсыны да, жаманды да танып өсті.'\n\n1. 'Үшеудің': 'үшеу' is a collective numeral (жиынтық сан есім), and '-дің' is the genitive case suffix (ілік септік). \n2. 'үлкені': 'үлкен' is a qualitative adjective (сапалық сын есім). In this context, it acts as a noun (substantivized / заттанған) and takes the 3rd person possessive suffix '-і' (III жақ тәуелдік жалғауы).\n3. 'жақсыны' and 'жаманды': 'жақсы' and 'жаман' are qualitative adjectives. Here, they are substantivized (заттанған сын есімдер) because they take noun suffixes and act as direct objects. The suffixes '-ны' and '-ды' are accusative case suffixes (табыс септік).\n\nNow let's evaluate the given options:\n- Option A is incorrect because 'үшеу' is not a cardinal numeral (есептік), and '-дің' is not a plural suffix. 'Үлкені' is not in the comparative degree.\n- Option B is correct. 'Үлкені' is a substantivized qualitative adjective in the 3rd person possessive form. 'Жақсыны' and 'жаманды' are substantivized adjectives in the accusative case.\n- Option C is incorrect because 'жақсыны' and 'жаманды' are not derived nouns (туынды зат есімдер) formed by derivational suffixes, and they are not in the nominative case (атау септік).\n- Option D is incorrect because 'үшеу' is not an approximate numeral (болжалдық), and '-дің' is not the ablative case (шығыс септік). Also, 'үлкен' is not a root noun (негізгі зат есім).",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-designed, accurately tests morphological analysis in context, and has plausible distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:23:14.096045+00:00",
+  "generation_attempts": 1
+}

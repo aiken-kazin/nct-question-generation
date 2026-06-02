@@ -1,0 +1,140 @@
+{
+  "id": "e2ab4231-70f6-40c3-9493-ad535ad8c5df",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Орфоэпиялық нормаға сай айтылуы барысында берілген сөздердің барлығында тұрақты түрде кейінді ықпал заңдылығы байқалатын қатарды белгілеңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Қашқын, баспасөз, жұмысшы"
+    },
+    {
+      "label": "B",
+      "text": "Тас жол, Досжан, көзқарас"
+    },
+    {
+      "label": "C",
+      "text": "Жанболат, сөзшең, ақ бөкен"
+    },
+    {
+      "label": "D",
+      "text": "Сенімді, көктемге, шекара"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Кейінді ықпал – сөз ішіндегі немесе сөз аралығындағы кейінгі дыбыстың өзінен бұрынғы дыбысқа әсер етіп, оны өзіне ұқсата өзгертуі. С қатарындағы сөздердің айтылу нормасы: «Жанболат» – [Жамболат] (кейінгі «б» дыбысының әсерінен бұрынғы «н» дыбысы «м»-ға айналған); «сөзшең» – [сөшшең] (кейінгі «ш» дыбысының әсерінен «з» дыбысы «ш»-ға айналған); «ақ бөкен» – [ағ бөкен] (кейінгі ұяң «б» дыбысының әсерінен қатаң «қ» дыбысы ұяң «ғ»-ға айналған). Үшеуінде де кейінді ықпал заңдылығы толық сақталған. Ал А қатарындағы «қашқын» сөзінде ілгерінді ықпал, В қатарындағы «Досжан» сөзінде тоғыспалы ықпал ([Дошшан]), D қатарындағы «сенімді», «көктемге» сөздерінде ілгерінді ықпал байқалады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.167,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Key rule: кейінді ықпал is regressive assimilation, where a following sound influences and changes the preceding sound in pronunciation. Option C fits this rule in every item. 1) Жанболат is pronounced Жамболат: the following bilabial б changes preceding н to м. 2) сөзшең is pronounced сөшшең: the following ш changes preceding з to ш. 3) ақ бөкен is pronounced ағ бөкен in orthoepic speech: the fol\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks us to identify the row where ALL words consistently demonstrate 'кейінді ықпал' (regressive assimilation/progressive assimilation from right to left — actually in Kazakh linguistics, 'кейінді ықпал' means regressive assimilation, where a following sound influences the preceding sound).\n\nWait, let me clarify Kazakh phonetic terminology:\n- 'Ілгерінді ықпал' (progressive assimilatio\n\n[google/gemini-3.1-pro-preview] answered B: To find the row where all words consistently exhibit regressive assimilation (кейінді ықпал) according to orthoepic norms, we must analyze the pronunciation of each word.\n\nRegressive assimilation (кейінді ықпал) occurs when a following sound influences the preceding sound, causing it to change.\n\nLet's analyze the options:\n\nOption A:\n- Қашқын: pronounced [қашқын]. No consonant assimilation.\n- баспа",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 7.0,
+      "distractor_quality": 8.333,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.167,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is defensible and the explanation correctly identifies regressive assimilation in all three items. The item is appropriate for medium-level analysis, though the wording is slightly imprecise because some options contain word combinations rather than only single words. | [anthropic/claude-sonnet-4.6] The provided correct answer C is defensible, but Option B also appears to contain three words with regressive assimilation (кейінді ықпал). The explanation claims Досжан shows тоғыспалы ықпал [Дошшан], which is a valid nuanced point — both sounds change — but this distinction is subtle and not universally agreed upon in Kazakh phonetics pedagogy, making the question ambiguous between B and C. My independent analysis yielded B, not C. | [google/gemini-3.1-pro-preview] The question is highly accurate and perfectly aligns with the requested difficulty level. The provided correct answer and explanation are flawless, correctly identifying the orthoepic rules of regressive assimilation (кейінді ықпал) in Kazakh.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Clarify why Досжан is тоғыспалы rather than кейінді ықпал in the stem or replace Досжан with an unambiguous example. Also verify that 'ақ бөкен' [ағ бөкен] is standard orfoepic norm — some sources treat this as positional devoicing rather than regressive assimilation. Consider adding a brief note distinguishing тоғыспалы from кейінді ықпал if the distinction is key to the answer.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Key rule: кейінді ықпал is regressive assimilation, where a following sound influences and changes the preceding sound in pronunciation. Option C fits this rule in every item. 1) Жанболат is pronounced Жамболат: the following bilabial б changes preceding н to м. 2) сөзшең is pronounced сөшшең: the following ш changes preceding з to ш. 3) ақ бөкен is pronounced ағ бөкен in orthoepic speech: the fol\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks us to identify the row where ALL words consistently demonstrate 'кейінді ықпал' (regressive assimilation/progressive assimilation from right to left — actually in Kazakh linguistics, 'кейінді ықпал' means regressive assimilation, where a following sound influences the preceding sound).\n\nWait, let me clarify Kazakh phonetic terminology:\n- 'Ілгерінді ықпал' (progressive assimilatio\n\n[google/gemini-3.1-pro-preview] answered B: To find the row where all words consistently exhibit regressive assimilation (кейінді ықпал) according to orthoepic norms, we must analyze the pronunciation of each word.\n\nRegressive assimilation (кейінді ықпал) occurs when a following sound influences the preceding sound, causing it to change.\n\nLet's analyze the options:\n\nOption A:\n- Қашқын: pronounced [қашқын]. No consonant assimilation.\n- баспа",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 7.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.167,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is defensible and the explanation correctly identifies regressive assimilation in all three items. The item is appropriate for medium-level analysis, though the wording is slightly imprecise because some options contain word combinations rather than only single words. | [anthropic/claude-sonnet-4.6] The provided correct answer C is defensible, but Option B also appears to contain three words with regressive assimilation (кейінді ықпал). The explanation claims Досжан shows тоғыспалы ықпал [Дошшан], which is a valid nuanced point — both sounds change — but this distinction is subtle and not universally agreed upon in Kazakh phonetics pedagogy, making the question ambiguous between B and C. My independent analysis yielded B, not C. | [google/gemini-3.1-pro-preview] The question is highly accurate and perfectly aligns with the requested difficulty level. The provided correct answer and explanation are flawless, correctly identifying the orthoepic rules of regressive assimilation (кейінді ықпал) in Kazakh.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Clarify why Досжан is тоғыспалы rather than кейінді ықпал in the stem or replace Досжан with an unambiguous example. Also verify that 'ақ бөкен' [ағ бөкен] is standard orfoepic norm — some sources treat this as positional devoicing rather than regressive assimilation. Consider adding a brief note distinguishing тоғыспалы from кейінді ықпал if the distinction is key to the answer.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Key rule: кейінді ықпал is regressive assimilation, where a following sound influences and changes the preceding sound in pronunciation. Option C fits this rule in every item. 1) Жанболат is pronounced Жамболат: the following bilabial б changes preceding н to м. 2) сөзшең is pronounced сөшшең: the following ш changes preceding з to ш. 3) ақ бөкен is pronounced ағ бөкен in orthoepic speech: the following voiced consonant б voices the preceding қ to ғ. Other options contain words without obligatory regressive assimilation or with progressive assimilation, so they do not satisfy the condition for all words.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer C is defensible and the explanation correctly identifies regressive assimilation in all three items. The item is appropriate for medium-level analysis, though the wording is slightly imprecise because some options contain word combinations rather than only single words.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks us to identify the row where ALL words consistently demonstrate 'кейінді ықпал' (regressive assimilation/progressive assimilation from right to left — actually in Kazakh linguistics, 'кейінді ықпал' means regressive assimilation, where a following sound influences the preceding sound).\n\nWait, let me clarify Kazakh phonetic terminology:\n- 'Ілгерінді ықпал' (progressive assimilation) = a preceding sound influences the following sound (left to right)\n- 'Кейінді ықпал' (regressive assimilation) = a following sound influences the preceding sound (right to left)\n\nSo 'кейінді ықпал' = regressive assimilation, where the sound that comes LATER affects the sound that comes BEFORE it.\n\nLet me analyze each option:\n\n**Option A: Қашқын, баспасөз, жұмысшы**\n- Қашқын: қ-а-ш-қ-ы-н. The 'ш' before 'қ' — does the 'қ' affect 'ш'? Not particularly a regressive assimilation case here. Actually 'қашқын' — the second 'қ' might influence preceding sounds. Hmm.\n- баспасөз: б-а-с-п-а-с-ө-з. The 'п' is voiceless, 'с' before 'п' — 'с' is already voiceless. Not obvious regressive assimilation.\n- жұмысшы: жұмыс+шы. When pronounced, 'сш' → 'шш' (the 'ш' that follows causes the 'с' to become 'ш'). This IS regressive assimilation.\n\nBut not all three words in A show regressive assimilation consistently.\n\n**Option B: Тас жол, Досжан, көзқарас**\n- Тас жол: 'с' before 'ж' — 'ж' is voiced, so 'с' might become voiced 'з'. This is regressive assimilation (following voiced sound affects preceding voiceless).\n- Досжан: 'с' before 'ж' → 'з' (voiced). Regressive assimilation.\n- көзқарас: 'з' before 'қ' — 'қ' is voiceless, so 'з' becomes 'с'. This is regressive assimilation (following voiceless affects preceding voiced).\n\nAll three show regressive assimilation! The following sound affects the preceding sound in each case.\n\n**Option C: Жанболат, сөзшең, ақ бөкен**\n- Жанболат: 'н' before 'б' — 'б' is bilabial, 'н' might become 'м' (place assimilation). This could be regressive assimilation.\n- сөзшең: 'з' before 'ш' — 'ш' is voiceless, so 'з' → 'с' or 'з' → 'ш'. Regressive assimilation.\n- ақ бөкен: 'қ' before 'б' — 'б' is voiced, so 'қ' might become voiced 'ғ'. Regressive assimilation.\n\nThese could all be regressive, but let me reconsider.\n\n**Option D: Сенімді, көктемге, шекара**\n- Сенімді: 'м' before 'д' — not obvious regressive assimilation.\n- көктемге: 'м' before 'г' — 'г' is voiced velar, 'м' stays nasal. 'к' before 'т' — voiceless. Hmm.\n- шекара: no obvious assimilation.\n\nOption D seems less likely.\n\nReturning to Option B: Тас жол, Досжан, көзқарас\n- Тас жол: [тас жол] → [таз жол] — the voiced 'ж' causes preceding 'с' to voice → regressive assimilation ✓\n- Досжан: [дос жан] → [доз жан] — voiced 'ж' causes 'с' to voice → regressive assimilation ✓  \n- көзқарас: [көз қарас] → [көс қарас] — voiceless 'қ' causes 'з' to devoice → regressive assimilation ✓\n\nAll three words in B show regressive assimilation (кейінді ықпал) consistently.\n\nOption B is the answer.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 2.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 5.9,
+          "pass_fail": false,
+          "comments": "The provided correct answer C is defensible, but Option B also appears to contain three words with regressive assimilation (кейінді ықпал). The explanation claims Досжан shows тоғыспалы ықпал [Дошшан], which is a valid nuanced point — both sounds change — but this distinction is subtle and not universally agreed upon in Kazakh phonetics pedagogy, making the question ambiguous between B and C. My independent analysis yielded B, not C.",
+          "improvement_suggestions": "Clarify why Досжан is тоғыспалы rather than кейінді ықпал in the stem or replace Досжан with an unambiguous example. Also verify that 'ақ бөкен' [ағ бөкен] is standard orfoepic norm — some sources treat this as positional devoicing rather than regressive assimilation. Consider adding a brief note distinguishing тоғыспалы from кейінді ықпал if the distinction is key to the answer.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the row where all words consistently exhibit regressive assimilation (кейінді ықпал) according to orthoepic norms, we must analyze the pronunciation of each word.\n\nRegressive assimilation (кейінді ықпал) occurs when a following sound influences the preceding sound, causing it to change.\n\nLet's analyze the options:\n\nOption A:\n- Қашқын: pronounced [қашқын]. No consonant assimilation.\n- баспасөз: pronounced [баспасөз]. No consonant assimilation.\n- жұмысшы: pronounced [жұмұшшы]. 'с' becomes 'ш' due to the following 'ш' (кейінді ықпал).\n\nOption B:\n- Тас жол: pronounced [ташшол]. The preceding 'с' becomes 'ш' under the influence of the following 'ж' (кейінді ықпал), and 'ж' becomes 'ш' (ілгерінді ықпал). The presence of the first change confirms кейінді ықпал.\n- Досжан: pronounced [Дошшан]. Similar to 'Тас жол', 'с' becomes 'ш' due to the following 'ж' (кейінді ықпал).\n- көзқарас: pronounced [көсқарас]. The voiced 'з' becomes the voiceless 'с' under the influence of the following voiceless 'қ' (кейінді ықпал).\nAll three words exhibit regressive assimilation.\n\nOption C:\n- Жанболат: pronounced [Жамболат]. 'н' becomes 'м' due to 'б' (кейінді ықпал).\n- сөзшең: pronounced [сөшшең]. 'з' becomes 'ш' due to 'ш' (кейінді ықпал).\n- ақ бөкен: pronounced [ақпөкен]. The voiceless 'қ' causes the following voiced 'б' to become the voiceless 'п'. This is progressive assimilation (ілгерінді ықпал), not regressive.\n\nOption D:\n- Сенімді: pronounced [сенімді]. No consonant assimilation.\n- көктемге: pronounced [көктемге]. No consonant assimilation.\n- шекара: pronounced [шегара]. 'к' becomes 'г' due to the following vowel 'а' (кейінді ықпал).\n\nOnly in Option B do all the words consistently demonstrate the law of regressive assimilation (кейінді ықпал).",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is highly accurate and perfectly aligns with the requested difficulty level. The provided correct answer and explanation are flawless, correctly identifying the orthoepic rules of regressive assimilation (кейінді ықпал) in Kazakh.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 0.667,
+    "unanimous": false,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:39:36.827309+00:00",
+  "generation_attempts": 1
+}

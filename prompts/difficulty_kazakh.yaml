@@ -1,0 +1,65 @@
+# Difficulty levels for the Kazakh-language teacher-certification test.
+# Descriptions taken from the official NTC test specification
+# (files/test_specific/Қазақ-тілі.docx). Percentages match the spec:
+# A 26%, B 60%, C 14%. Kept separate from difficulty.yaml (math) so the
+# language/literature guidance is not phrased in terms of formulas/geometry.
+A:
+  name: Basic
+  name_kz: "Базалық"
+  percentage: 26
+  bloom_levels: "Remember, Understand"
+  description: >
+    Базалық деңгей: тестіленушінің қарапайым білім мен дағдыларын пайдалануын,
+    ең төменгі дайындық деңгейін бағалайды. Берілген нұсқаулардың көмегімен
+    әрекеттерді орындауды, қарапайым ұғымдар мен дәлелдерді тануды талап етеді —
+    бір ережені, анықтаманы немесе тілдік бірлікті тікелей тану және қолдану.
+  characteristics:
+    - "Direct recall of a definition, term, or grammar/spelling rule"
+    - "Naming a part of speech or grammatical category"
+    - "Applying a single orthographic or morphological rule directly"
+    - "Identifying a synonym/antonym/homonym or a literary device by name"
+  distractor_guidance: >
+    Distractors should reflect common confusions a partially-prepared teacher
+    makes: mixing up close categories (synonym vs antonym, similar suffixes,
+    related parts of speech) or a typical spelling/normative error. Each wrong
+    option must be reachable by one identifiable misconception, not random.
+
+B:
+  name: Medium
+  name_kz: "Орташа"
+  percentage: 60
+  bloom_levels: "Apply, Analyze"
+  description: >
+    Орташа деңгей: негізгі білім мен дағдыларды дұрыс пайдалануды, жаңа
+    жағдайларда қарапайым модельдерді тануды, деректерді талдау мен салыстыруды,
+    жүйелеуді, дәлелдерді қолданып ақпаратты жалпылау мен қорытынды жасауды
+    бағалайды. Ережені мәтін/сөйлем контексінде талдап қолдануды талап етеді.
+  characteristics:
+    - "Applying a rule within a sentence/context that requires analysis"
+    - "Distinguishing related grammatical forms or meanings in context"
+    - "Analyzing sentence structure or word-combination type"
+    - "Comparing stylistic or semantic usage across examples"
+  distractor_guidance: >
+    Distractors should reflect errors in intermediate analysis: mis-identifying a
+    related category, applying the rule only partially, or stopping the analysis
+    one step short. All options must look defensible in the given context.
+
+C:
+  name: Hard
+  name_kz: "Жоғары"
+  percentage: 14
+  bloom_levels: "Evaluate, Synthesize"
+  description: >
+    Жоғары деңгей: неғұрлым күрделі білім мен дағдыларды пайдалануды, күрделі
+    модельдерді тануды, мәселені шешу үшін әртүрлі тақырыптардан білімді
+    біріктіруді, күрделі ақпаратты талдауды, пайымдауды және тұжырымдарды
+    негіздеуді талап етеді (мысалы, көркем мәтінді жан-жақты талдау).
+  characteristics:
+    - "Multi-feature analysis (e.g., complex-sentence type together with meaning)"
+    - "Integrating phonetics/morphology/syntax to resolve one item"
+    - "Analyzing literary text: theme, idea, image, artistic devices"
+    - "Justifying a normative choice in a non-routine usage"
+  distractor_guidance: >
+    Distractors should be plausible answers reachable by a specific subtle
+    analytical error — each wrong option reflects a defensible-but-incorrect
+    interpretation, so the item genuinely discriminates expert from non-expert.

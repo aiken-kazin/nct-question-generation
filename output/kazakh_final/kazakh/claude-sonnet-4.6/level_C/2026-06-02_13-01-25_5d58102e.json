@@ -1,0 +1,140 @@
+{
+  "id": "5d58102e-eef7-4ec0-be79-ccdae6e29791",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдегі сөз тіркестерінің байланысу тәсілін және тіркес түрін дұрыс анықтаған нұсқаны таңдаңыз:\n\n«Ол кеше мектепке асығып барды.»",
+  "options": [
+    {
+      "label": "A",
+      "text": "«асығып барды» — матаса байланысқан етістікті сөз тіркесі; «мектепке барды» — меңгеріле байланысқан есімді сөз тіркесі"
+    },
+    {
+      "label": "B",
+      "text": "«асығып барды» — қабыса байланысқан етістікті сөз тіркесі; «мектепке барды» — меңгеріле байланысқан етістікті сөз тіркесі"
+    },
+    {
+      "label": "C",
+      "text": "«асығып барды» — меңгеріле байланысқан етістікті сөз тіркесі; «мектепке барды» — қабыса байланысқан есімді сөз тіркесі"
+    },
+    {
+      "label": "D",
+      "text": "«асығып барды» — қабыса байланысқан есімді сөз тіркесі; «мектепке барды» — матаса байланысқан етістікті сөз тіркесі"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Сөйлемді талдайық: «Ол кеше мектепке асығып барды.»\n\n1) «асығып барды» тіркесінде «асығып» деген көсемше (етістіктің бір түрі) «барды» деген негізгі етістікке бағынып, морфологиялық тәуелділіксіз, тек орын тәртібі мен мағынасы арқылы байланысады. Бұл — қабыса байланысу тәсілі. Екі сыңары да етістік болғандықтан, бұл — етістікті сөз тіркесі.\n\n2) «мектепке барды» тіркесінде «мектепке» сөзі барыс септік жалғауы арқылы (-ге) «барды» етістігіне бағынады. Тәуелді сыңар септік жалғауын қабылдап, етістікке бағынуы — меңгеріле байланысу тәсілі. Негізгі сыңары етістік болғандықтан, бұл — етістікті сөз тіркесі.\n\nДемек, дұрыс жауап: «асығып барды» — қабыса байланысқан етістікті сөз тіркесі; «мектепке барды» — меңгеріле байланысқан етістікті сөз тіркесі.\n\nА нұсқасы қате, өйткені «асығып барды» матаса байланысқан деп көрсеткен (матаса байланысуда тәуелдік жалғауы қатысады), ал «мектепке барды» есімді сөз тіркесі деп жіктеген — екеуі де қате.\nС нұсқасы қате, өйткені «асығып барды» меңгеріле байланысқан деп, «мектепке барды» есімді деп берген.\nD нұсқасы қате, өйткені «асығып барды» есімді сөз тіркесі деп, «мектепке барды» матаса байланысқан деп берген — екі анықтама да орынсыз.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: In the sentence «Ол кеше мектепке асығып барды», consider the two phrases named in the options. 1) «асығып барды»: the dependent word «асығып» is a converb/adverbial form modifying the verb «барды». It is not marked by a case ending required by the head verb, and there is no possessive-genitive relation. The words are connected by adjacency/juxtaposition, i.e. қабыса байланысу. Since the head word\n\n[anthropic/claude-sonnet-4.6] answered B: We need to analyze two phrases from the sentence 'Ол кеше мектепке асығып барды.'\n\n1. 'асығып барды' (hurrying went / went hurrying):\n- 'асығып' is a converb (көсемше) form of the verb 'асығу'\n- It modifies the main verb 'барды'\n- The connection between a converb and a main verb is 'қабыса байланысу' (adjunction/juxtaposition), because the converb does not change its form based on the main verb — \n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the word phrases in the sentence 'Ол кеше мектепке асығып барды.'\n\n1. 'асығып барды':\n- The dependent word 'асығып' (adverbial participle / көсемше) connects to the head word 'барды' (verb / етістік) without any relational suffixes (жалғаусыз). This type of connection is called 'қабысу' (қабыса байланысқан).\n- The head word 'барды' is a verb, making the entire phrase a verbal phrase ",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.5,
+      "difficulty_alignment": 4.5,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer B is correct and the explanation is essentially sound: «асығып барды» is қабыса байланысқан етістікті тіркес, while «мектепке барды» is меңгеріле байланысқан етістікті тіркес. However, the item is far below the requested hard Level C; it tests a basic textbook classification rather than complex syntactic analysis. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: 'асығып барды' is indeed a қабыса-connected verbal phrase and 'мектепке барды' is a меңгеріле-connected verbal phrase, matching option B. Distractors are plausible and target common confusions (матаса vs қабыса, есімді vs етістікті), though option D is slightly easier to eliminate. The difficulty is moderate-to-hard for a teacher certification context but leans toward B-level pattern recognition rather than full C-level complex analysis of a literary text. | [google/gemini-3.1-pro-preview] The question is factually correct, uses standard terminology, and has well-constructed distractors. However, it aligns more with a medium difficulty level (B) rather than the requested hard level (C), as it tests straightforward application of syntax rules without requiring complex analysis.",
+    "improvement_suggestions": "[openai/gpt-5.5] To align with Level C, use a more complex sentence or short literary excerpt with multiple potentially ambiguous phrases, require distinguishing сөз тіркесі from сөйлем мүшелерінің предикативтік байланысы and күрделі етістік, and make distractors reflect realistic advanced misconceptions rather than obviously wrong labels such as matasu where no genitive-possessive relation exists. | [anthropic/claude-sonnet-4.6] To better align with C-level difficulty, use a more complex sentence (e.g., from a literary text) with less obvious phrase boundaries, or add a third phrase to analyze. Consider replacing option D with a distractor that mixes up only one element (e.g., correct phrase type but wrong connection method) to make elimination harder. | [google/gemini-3.1-pro-preview] To reach a true C-level difficulty, consider using a more complex sentence structure (e.g., with ambiguous syntactic roles, complex participial phrases, or stylistic nuances) that requires deeper analysis and synthesis.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: In the sentence «Ол кеше мектепке асығып барды», consider the two phrases named in the options. 1) «асығып барды»: the dependent word «асығып» is a converb/adverbial form modifying the verb «барды». It is not marked by a case ending required by the head verb, and there is no possessive-genitive relation. The words are connected by adjacency/juxtaposition, i.e. қабыса байланысу. Since the head word\n\n[anthropic/claude-sonnet-4.6] answered B: We need to analyze two phrases from the sentence 'Ол кеше мектепке асығып барды.'\n\n1. 'асығып барды' (hurrying went / went hurrying):\n- 'асығып' is a converb (көсемше) form of the verb 'асығу'\n- It modifies the main verb 'барды'\n- The connection between a converb and a main verb is 'қабыса байланысу' (adjunction/juxtaposition), because the converb does not change its form based on the main verb — \n\n[google/gemini-3.1-pro-preview] answered B: Let's analyze the word phrases in the sentence 'Ол кеше мектепке асығып барды.'\n\n1. 'асығып барды':\n- The dependent word 'асығып' (adverbial participle / көсемше) connects to the head word 'барды' (verb / етістік) without any relational suffixes (жалғаусыз). This type of connection is called 'қабысу' (қабыса байланысқан).\n- The head word 'барды' is a verb, making the entire phrase a verbal phrase ",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 4.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer B is correct and the explanation is essentially sound: «асығып барды» is қабыса байланысқан етістікті тіркес, while «мектепке барды» is меңгеріле байланысқан етістікті тіркес. However, the item is far below the requested hard Level C; it tests a basic textbook classification rather than complex syntactic analysis. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: 'асығып барды' is indeed a қабыса-connected verbal phrase and 'мектепке барды' is a меңгеріле-connected verbal phrase, matching option B. Distractors are plausible and target common confusions (матаса vs қабыса, есімді vs етістікті), though option D is slightly easier to eliminate. The difficulty is moderate-to-hard for a teacher certification context but leans toward B-level pattern recognition rather than full C-level complex analysis of a literary text. | [google/gemini-3.1-pro-preview] The question is factually correct, uses standard terminology, and has well-constructed distractors. However, it aligns more with a medium difficulty level (B) rather than the requested hard level (C), as it tests straightforward application of syntax rules without requiring complex analysis.",
+      "improvement_suggestions": "[openai/gpt-5.5] To align with Level C, use a more complex sentence or short literary excerpt with multiple potentially ambiguous phrases, require distinguishing сөз тіркесі from сөйлем мүшелерінің предикативтік байланысы and күрделі етістік, and make distractors reflect realistic advanced misconceptions rather than obviously wrong labels such as matasu where no genitive-possessive relation exists. | [anthropic/claude-sonnet-4.6] To better align with C-level difficulty, use a more complex sentence (e.g., from a literary text) with less obvious phrase boundaries, or add a third phrase to analyze. Consider replacing option D with a distractor that mixes up only one element (e.g., correct phrase type but wrong connection method) to make elimination harder. | [google/gemini-3.1-pro-preview] To reach a true C-level difficulty, consider using a more complex sentence structure (e.g., with ambiguous syntactic roles, complex participial phrases, or stylistic nuances) that requires deeper analysis and synthesis.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In the sentence «Ол кеше мектепке асығып барды», consider the two phrases named in the options. 1) «асығып барды»: the dependent word «асығып» is a converb/adverbial form modifying the verb «барды». It is not marked by a case ending required by the head verb, and there is no possessive-genitive relation. The words are connected by adjacency/juxtaposition, i.e. қабыса байланысу. Since the head word is the verb «барды», it is an етістікті сөз тіркесі. 2) «мектепке барды»: the dependent noun «мектепке» is in the dative case (-ке), governed by the verb «барды» answering where/to where he went. This is меңгеріле байланысу. Since the head word is again the verb «барды», it is an етістікті сөз тіркесі. Therefore the correct option is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.2,
+          "pass_fail": true,
+          "comments": "The keyed answer B is correct and the explanation is essentially sound: «асығып барды» is қабыса байланысқан етістікті тіркес, while «мектепке барды» is меңгеріле байланысқан етістікті тіркес. However, the item is far below the requested hard Level C; it tests a basic textbook classification rather than complex syntactic analysis.",
+          "improvement_suggestions": "To align with Level C, use a more complex sentence or short literary excerpt with multiple potentially ambiguous phrases, require distinguishing сөз тіркесі from сөйлем мүшелерінің предикативтік байланысы and күрделі етістік, and make distractors reflect realistic advanced misconceptions rather than obviously wrong labels such as matasu where no genitive-possessive relation exists.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need to analyze two phrases from the sentence 'Ол кеше мектепке асығып барды.'\n\n1. 'асығып барды' (hurrying went / went hurrying):\n- 'асығып' is a converb (көсемше) form of the verb 'асығу'\n- It modifies the main verb 'барды'\n- The connection between a converb and a main verb is 'қабыса байланысу' (adjunction/juxtaposition), because the converb does not change its form based on the main verb — there is no case government or possessive agreement\n- The phrase type: since both components are verb-based (converb + finite verb), this is an 'етістікті сөз тіркесі' (verbal phrase)\n\n2. 'мектепке барды' (went to school):\n- 'мектепке' is a noun in the dative case (-ке suffix)\n- The verb 'барды' governs the dative case — this is a case-governed relationship\n- The connection type is 'меңгеріле байланысу' (government/rection), because the verb requires the noun to appear in a specific case (dative)\n- The phrase type: since the head word is a verb ('барды'), this is an 'етістікті сөз тіркесі' (verbal phrase)\n\nSo:\n- 'асығып барды' — қабыса байланысқан етістікті сөз тіркесі\n- 'мектепке барды' — меңгеріле байланысқан етістікті сөз тіркесі\n\nThis matches option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-keyed: 'асығып барды' is indeed a қабыса-connected verbal phrase and 'мектепке барды' is a меңгеріле-connected verbal phrase, matching option B. Distractors are plausible and target common confusions (матаса vs қабыса, есімді vs етістікті), though option D is slightly easier to eliminate. The difficulty is moderate-to-hard for a teacher certification context but leans toward B-level pattern recognition rather than full C-level complex analysis of a literary text.",
+          "improvement_suggestions": "To better align with C-level difficulty, use a more complex sentence (e.g., from a literary text) with less obvious phrase boundaries, or add a third phrase to analyze. Consider replacing option D with a distractor that mixes up only one element (e.g., correct phrase type but wrong connection method) to make elimination harder.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the word phrases in the sentence 'Ол кеше мектепке асығып барды.'\n\n1. 'асығып барды':\n- The dependent word 'асығып' (adverbial participle / көсемше) connects to the head word 'барды' (verb / етістік) without any relational suffixes (жалғаусыз). This type of connection is called 'қабысу' (қабыса байланысқан).\n- The head word 'барды' is a verb, making the entire phrase a verbal phrase ('етістікті сөз тіркесі').\n- Thus, 'асығып барды' is a 'қабыса байланысқан етістікті сөз тіркесі'.\n\n2. 'мектепке барды':\n- The dependent word 'мектепке' takes the dative case suffix (-ке, барыс септік) as governed by the head word 'барды'. This type of connection, where the head word requires a specific oblique case from the dependent word, is called 'меңгеру' (меңгеріле байланысқан).\n- The head word 'барды' is a verb, so this is also a verbal phrase ('етістікті сөз тіркесі').\n- Thus, 'мектепке барды' is a 'меңгеріле байланысқан етістікті сөз тіркесі'.\n\nComparing this analysis with the given options, Option B perfectly matches both descriptions.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is factually correct, uses standard terminology, and has well-constructed distractors. However, it aligns more with a medium difficulty level (B) rather than the requested hard level (C), as it tests straightforward application of syntax rules without requiring complex analysis.",
+          "improvement_suggestions": "To reach a true C-level difficulty, consider using a more complex sentence structure (e.g., with ambiguous syntactic roles, complex participial phrases, or stylistic nuances) that requires deeper analysis and synthesis.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:01:25.296198+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "3140abe3-ad82-4cb1-b0da-1d9e8ec572de",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысы қарсылықты салалас құрмалас сөйлем болып табылады?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жаңбыр жауды, сондықтан көшеде адам аз болды."
+    },
+    {
+      "label": "B",
+      "text": "Күн ашық еді, бірақ жел өте суық соқты."
+    },
+    {
+      "label": "C",
+      "text": "Не ол келеді, не біз өзіміз барамыз."
+    },
+    {
+      "label": "D",
+      "text": "Қыс келді, яғни табиғат ұйқыға кетті."
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Қарсылықты салалас құрмалас сөйлемде екі жай сөйлемнің мазмұны бір-біріне қарама-қарсы қойылады; мұндай сөйлемдер «бірақ», «алайда», «дегенмен», «әйтсе де» сияқты қарсылық жалғаулықтары арқылы байланысады. «Күн ашық еді, бірақ жел өте суық соқты» сөйлемінде «бірақ» жалғаулығы арқылы екі ой бір-біріне қарсы қойылған, сондықтан бұл қарсылықты салалас сөйлем. А нұсқасындағы «сондықтан» жалғаулығы себеп-салдар салалас сөйлемге тән. С нұсқасындағы «не...не» жалғаулығы талғаулы салалас сөйлемнің белгісі. D нұсқасындағы «яғни» жалғаулығы түсіндірмелі салалас сөйлемге жатады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.433,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: A coordinate compound sentence in Kazakh (салалас құрмалас сөйлем) is classified by the semantic relation between its clauses. A қарсылықты салалас expresses contrast or opposition, often with conjunctions such as \"бірақ\", \"алайда\", \"дегенмен\", \"сонда да\". Option A uses \"сондықтан\" and expresses cause-result: it rained, therefore there were few people outside. Option B uses \"бірақ\" and contrasts t\n\n[anthropic/claude-sonnet-4.6] answered B: In Kazakh syntax, compound sentences (салалас құрмалас сөйлем) are classified by the logical relationship between their clauses:\n\n1. Себеп-салдарлы (causal/resultative) — connected by 'сондықтан' (therefore, so)\n2. Қарсылықты (adversative/contrastive) — connected by 'бірақ', 'алайда', 'дегенмен' (but, however, nevertheless)\n3. Талғаулы (disjunctive/alternative) — connected by 'не...не', 'я...я' (e\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the 'қарсылықты салалас құрмалас сөйлем' (adversative coordinate compound sentence). Let's analyze the conjunctions used in each option:\n\nA) 'Жаңбыр жауды, сондықтан көшеде адам аз болды.' - Uses 'сондықтан' (therefore), which indicates a causal-consecutive relationship (себеп-салдар салалас).\nB) 'Күн ашық еді, бірақ жел өте суық соқты.' - Uses 'бірақ' (but), which in",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.333,
+      "difficulty_alignment": 8.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.433,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes қарсылықты салалас from себеп-салдар, талғаулы, and түсіндірмелі салалас. The item is clean and unambiguous, though it is somewhat easy for level B because the conjunctions directly signal the sentence types. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each option uses a distinct conjunction representing a different type of coordinate compound sentence, making distractors highly plausible and educationally meaningful. The language is natural literary Kazakh with correct terminology. The question leans slightly toward level A (recall of conjunction types) rather than full level B analysis, but the sentence-context framing adds sufficient analytical demand. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligns with the requested difficulty level. The distractors are excellent examples of other types of coordinate compound sentences.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: A coordinate compound sentence in Kazakh (салалас құрмалас сөйлем) is classified by the semantic relation between its clauses. A қарсылықты салалас expresses contrast or opposition, often with conjunctions such as \"бірақ\", \"алайда\", \"дегенмен\", \"сонда да\". Option A uses \"сондықтан\" and expresses cause-result: it rained, therefore there were few people outside. Option B uses \"бірақ\" and contrasts t\n\n[anthropic/claude-sonnet-4.6] answered B: In Kazakh syntax, compound sentences (салалас құрмалас сөйлем) are classified by the logical relationship between their clauses:\n\n1. Себеп-салдарлы (causal/resultative) — connected by 'сондықтан' (therefore, so)\n2. Қарсылықты (adversative/contrastive) — connected by 'бірақ', 'алайда', 'дегенмен' (but, however, nevertheless)\n3. Талғаулы (disjunctive/alternative) — connected by 'не...не', 'я...я' (e\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the 'қарсылықты салалас құрмалас сөйлем' (adversative coordinate compound sentence). Let's analyze the conjunctions used in each option:\n\nA) 'Жаңбыр жауды, сондықтан көшеде адам аз болды.' - Uses 'сондықтан' (therefore), which indicates a causal-consecutive relationship (себеп-салдар салалас).\nB) 'Күн ашық еді, бірақ жел өте суық соқты.' - Uses 'бірақ' (but), which in",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.333,
+        "difficulty_alignment": 8.0,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.433,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the explanation accurately distinguishes қарсылықты салалас from себеп-салдар, талғаулы, and түсіндірмелі салалас. The item is clean and unambiguous, though it is somewhat easy for level B because the conjunctions directly signal the sentence types. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each option uses a distinct conjunction representing a different type of coordinate compound sentence, making distractors highly plausible and educationally meaningful. The language is natural literary Kazakh with correct terminology. The question leans slightly toward level A (recall of conjunction types) rather than full level B analysis, but the sentence-context framing adds sufficient analytical demand. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligns with the requested difficulty level. The distractors are excellent examples of other types of coordinate compound sentences.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "A coordinate compound sentence in Kazakh (салалас құрмалас сөйлем) is classified by the semantic relation between its clauses. A қарсылықты салалас expresses contrast or opposition, often with conjunctions such as \"бірақ\", \"алайда\", \"дегенмен\", \"сонда да\". Option A uses \"сондықтан\" and expresses cause-result: it rained, therefore there were few people outside. Option B uses \"бірақ\" and contrasts two facts: the day was clear, but the wind was very cold. This is a қарсылықты салалас. Option C uses \"не...не\" and expresses alternation/choice, a талғаулы салалас. Option D uses \"яғни\" and expresses explanation/clarification, a түсіндірмелі салалас. Therefore the correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the explanation accurately distinguishes қарсылықты салалас from себеп-салдар, талғаулы, and түсіндірмелі салалас. The item is clean and unambiguous, though it is somewhat easy for level B because the conjunctions directly signal the sentence types.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, compound sentences (салалас құрмалас сөйлем) are classified by the logical relationship between their clauses:\n\n1. Себеп-салдарлы (causal/resultative) — connected by 'сондықтан' (therefore, so)\n2. Қарсылықты (adversative/contrastive) — connected by 'бірақ', 'алайда', 'дегенмен' (but, however, nevertheless)\n3. Талғаулы (disjunctive/alternative) — connected by 'не...не', 'я...я' (either...or)\n4. Түсіндірмелі (explanatory) — connected by 'яғни' (that is, i.e.)\n\nNow analyzing each option:\n\nA) 'Жаңбыр жауды, сондықтан көшеде адам аз болды.' — Uses 'сондықтан' (therefore), making this a causal-resultative (себеп-салдарлы) compound sentence.\n\nB) 'Күн ашық еді, бірақ жел өте суық соқты.' — Uses 'бірақ' (but), which is the classic adversative conjunction in Kazakh. This is a қарсылықты (adversative) compound sentence — the first clause states sunny weather, the second contrasts with cold wind.\n\nC) 'Не ол келеді, не біз өзіміз барамыз.' — Uses 'не...не' (either...or), making this a талғаулы (disjunctive) compound sentence.\n\nD) 'Қыс келді, яғни табиғат ұйқыға кетті.' — Uses 'яғни' (that is), making this a түсіндірмелі (explanatory) compound sentence.\n\nTherefore, the adversative (қарсылықты) compound sentence is option B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and unambiguous. Each option uses a distinct conjunction representing a different type of coordinate compound sentence, making distractors highly plausible and educationally meaningful. The language is natural literary Kazakh with correct terminology. The question leans slightly toward level A (recall of conjunction types) rather than full level B analysis, but the sentence-context framing adds sufficient analytical demand.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the 'қарсылықты салалас құрмалас сөйлем' (adversative coordinate compound sentence). Let's analyze the conjunctions used in each option:\n\nA) 'Жаңбыр жауды, сондықтан көшеде адам аз болды.' - Uses 'сондықтан' (therefore), which indicates a causal-consecutive relationship (себеп-салдар салалас).\nB) 'Күн ашық еді, бірақ жел өте суық соқты.' - Uses 'бірақ' (but), which indicates an adversative or contrasting relationship (қарсылықты салалас).\nC) 'Не ол келеді, не біз өзіміз барамыз.' - Uses 'не ..., не ...' (either ..., or ...), which indicates a disjunctive relationship (талғаулы салалас).\nD) 'Қыс келді, яғни табиғат ұйқыға кетті.' - Uses 'яғни' (that is), which indicates an explanatory relationship (түсіндірмелі салалас).\n\nOption B is the correct answer because it contains the adversative conjunction 'бірақ'.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligns with the requested difficulty level. The distractors are excellent examples of other types of coordinate compound sentences.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:55:31.236592+00:00",
+  "generation_attempts": 1
+}

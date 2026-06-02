@@ -1,0 +1,140 @@
+{
+  "id": "f8230e2f-8b52-41b8-be22-aaa9a0aad045",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "«Жасыл шөп басқан кең дала бізді қарсы алды» деген сөйлемдегі «жасыл шөп басқан» сөз тіркесінің байланысу тәсілін дұрыс анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Қиысу — анықтауыш пен анықталатын сөз септік, жіктік, көптік жалғаулары арқылы келісіп тұр"
+    },
+    {
+      "label": "B",
+      "text": "Матасу — бағыныңқы сыңар ілік септігінде тұрып, басыңқы сыңармен тәуелдік жалғауы арқылы байланысқан"
+    },
+    {
+      "label": "C",
+      "text": "Меңгеру — бағыныңқы сыңар белгілі бір септік жалғауын қабылдап, басыңқыға бағынып тұр"
+    },
+    {
+      "label": "D",
+      "text": "Қабысу — бағыныңқы сыңар тұлғасы өзгермей, тек орын тәртібі арқылы басыңқымен байланысқан"
+    }
+  ],
+  "correct_answer": "D",
+  "explanation": "«Жасыл шөп басқан» тіркесінде «жасыл» сөзі ешқандай жалғау қабылдамай, тек орын тәртібі арқылы «шөп» сөзіне байланысқан. Бұл — қабысу байланысу тәсілінің белгісі: бағыныңқы сыңар тұлғалық өзгеріссіз, тек орналасу тәртібі арқылы басыңқы сыңарға бағынады. Қиысу тәсілінде сыңарлар септік, жіктік немесе көптік жалғаулары арқылы бір-біріне келісіп тұрады — бұл белгі берілген тіркесте жоқ. Матасу тәсілінде бағыныңқы сыңар ілік септігінде тұрып, басыңқысы тәуелдік жалғауын қабылдайды — бұл да берілген тіркеске сәйкес келмейді. Меңгеру тәсілінде бағыныңқы сыңар басыңқының талап етуімен белгілі бір септік жалғауын қабылдайды — «жасыл» сөзінде мұндай белгі жоқ. Демек, дұрыс жауап — D (қабысу).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.467,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered D: The phrase in the sentence is \"жасыл шөп басқан\" within \"Жасыл шөп басқан кең дала\". Its components stand before the word they qualify and are not connected by genitive-possessive markers, case government, or subject-predicate agreement. \"Жасыл\" qualifies \"шөп\" without any suffixal agreement, and the participial construction \"жасыл шөп басқан\" functions as an attribute before \"дала\" through word o\n\n[anthropic/claude-sonnet-4.6] answered D: The phrase in question is 'жасыл шөп басқан' (green grass covered/overgrown). Let's analyze the syntactic connection type (байланысу тәсілі) between the components.\n\nIn Kazakh syntax, there are three main types of syntactic connections in phrases:\n1. Қиысу (agreement/concord) — the dependent word agrees with the head word in case, person, and number endings.\n2. Матасу (genitive-possessive connecti\n\n[google/gemini-3.1-pro-preview] answered D: To determine the type of syntactic connection (байланысу тәсілі) in the phrase «жасыл шөп басқан», we need to analyze the morphological markers of the words involved. \n\n1. «Жасыл» (green) is an adjective in its base form.\n2. «Шөп» (grass) is a noun in the nominative case (атау септік), meaning it has no case endings.\n3. «Басқан» (covered) is a participle (есімше) acting as the head of this phrase.",
+    "critic_answer": "D",
+    "dimensions": {
+      "correctness": 8.667,
+      "distractor_quality": 7.667,
+      "difficulty_alignment": 7.833,
+      "kazakh_language_quality": 8.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.467,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer D is defensible, but the highlighted segment is a multiword participial construction, while the explanation only analyzes the internal link between «жасыл» and «шөп». The item is therefore somewhat imprecise for a teacher-certification bank. | [anthropic/claude-sonnet-4.6] The question is well-constructed and correctly keyed: 'жасыл шөп басқан' involves қабысу (adjunction) since 'жасыл' connects to 'шөп' without any morphological change, purely through word order. All four connection types are represented as distractors with accurate definitions, making elimination non-trivial. Language quality is natural and terminologically consistent with Kazakh school grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are excellent as they test both the identification of the syntactic connection and the knowledge of its definition.",
+    "improvement_suggestions": "[openai/gpt-5.5] Make the target link explicit, e.g. ask about «жасыл шөп» or about how «жасыл шөп басқан» connects to «дала». Also revise option A, since its definition of «қиысу» is terminologically inaccurate for Kazakh syntax. | [anthropic/claude-sonnet-4.6] One minor concern: the explanation focuses on 'жасыл'→'шөп' connection, but the phrase 'жасыл шөп басқан' as a whole participial construction also involves 'шөп'→'басқан' (nominative subject of participle, also қабысу). The question stem could be more precise about which pair of words within the phrase is being analyzed, to avoid any ambiguity. Additionally, distractor A (қиысу) is somewhat easier to eliminate since no agreement endings are visible, slightly reducing distractor quality.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered D: The phrase in the sentence is \"жасыл шөп басқан\" within \"Жасыл шөп басқан кең дала\". Its components stand before the word they qualify and are not connected by genitive-possessive markers, case government, or subject-predicate agreement. \"Жасыл\" qualifies \"шөп\" without any suffixal agreement, and the participial construction \"жасыл шөп басқан\" functions as an attribute before \"дала\" through word o\n\n[anthropic/claude-sonnet-4.6] answered D: The phrase in question is 'жасыл шөп басқан' (green grass covered/overgrown). Let's analyze the syntactic connection type (байланысу тәсілі) between the components.\n\nIn Kazakh syntax, there are three main types of syntactic connections in phrases:\n1. Қиысу (agreement/concord) — the dependent word agrees with the head word in case, person, and number endings.\n2. Матасу (genitive-possessive connecti\n\n[google/gemini-3.1-pro-preview] answered D: To determine the type of syntactic connection (байланысу тәсілі) in the phrase «жасыл шөп басқан», we need to analyze the morphological markers of the words involved. \n\n1. «Жасыл» (green) is an adjective in its base form.\n2. «Шөп» (grass) is a noun in the nominative case (атау септік), meaning it has no case endings.\n3. «Басқан» (covered) is a participle (есімше) acting as the head of this phrase.",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 8.667,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 7.833,
+        "kazakh_language_quality": 8.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.467,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer D is defensible, but the highlighted segment is a multiword participial construction, while the explanation only analyzes the internal link between «жасыл» and «шөп». The item is therefore somewhat imprecise for a teacher-certification bank. | [anthropic/claude-sonnet-4.6] The question is well-constructed and correctly keyed: 'жасыл шөп басқан' involves қабысу (adjunction) since 'жасыл' connects to 'шөп' without any morphological change, purely through word order. All four connection types are represented as distractors with accurate definitions, making elimination non-trivial. Language quality is natural and terminologically consistent with Kazakh school grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are excellent as they test both the identification of the syntactic connection and the knowledge of its definition.",
+      "improvement_suggestions": "[openai/gpt-5.5] Make the target link explicit, e.g. ask about «жасыл шөп» or about how «жасыл шөп басқан» connects to «дала». Also revise option A, since its definition of «қиысу» is terminologically inaccurate for Kazakh syntax. | [anthropic/claude-sonnet-4.6] One minor concern: the explanation focuses on 'жасыл'→'шөп' connection, but the phrase 'жасыл шөп басқан' as a whole participial construction also involves 'шөп'→'басқан' (nominative subject of participle, also қабысу). The question stem could be more precise about which pair of words within the phrase is being analyzed, to avoid any ambiguity. Additionally, distractor A (қиысу) is somewhat easier to eliminate since no agreement endings are visible, slightly reducing distractor quality.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The phrase in the sentence is \"жасыл шөп басқан\" within \"Жасыл шөп басқан кең дала\". Its components stand before the word they qualify and are not connected by genitive-possessive markers, case government, or subject-predicate agreement. \"Жасыл\" qualifies \"шөп\" without any suffixal agreement, and the participial construction \"жасыл шөп басқан\" functions as an attribute before \"дала\" through word order. In Kazakh syntax, such a connection by fixed order, with the dependent component remaining unchanged in form, is called \"қабысу\".",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 7.0,
+            "distractor_quality": 6.0,
+            "difficulty_alignment": 5.5,
+            "kazakh_language_quality": 7.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 6.8,
+          "pass_fail": true,
+          "comments": "The keyed answer D is defensible, but the highlighted segment is a multiword participial construction, while the explanation only analyzes the internal link between «жасыл» and «шөп». The item is therefore somewhat imprecise for a teacher-certification bank.",
+          "improvement_suggestions": "Make the target link explicit, e.g. ask about «жасыл шөп» or about how «жасыл шөп басқан» connects to «дала». Also revise option A, since its definition of «қиысу» is terminologically inaccurate for Kazakh syntax.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The phrase in question is 'жасыл шөп басқан' (green grass covered/overgrown). Let's analyze the syntactic connection type (байланысу тәсілі) between the components.\n\nIn Kazakh syntax, there are three main types of syntactic connections in phrases:\n1. Қиысу (agreement/concord) — the dependent word agrees with the head word in case, person, and number endings.\n2. Матасу (genitive-possessive connection) — the dependent word takes the genitive case (-ның/-нің/-дың/-дің/-тың/-тің) and the head word takes a possessive suffix.\n3. Меңгеру (government/rection) — the dependent word takes a specific case ending required by the head word.\n4. Қабысу (adjunction/juxtaposition) — the dependent word does not change its form; connection is through word order only.\n\nNow analyzing 'жасыл шөп басқан':\n- 'жасыл' = green (adjective, no ending change)\n- 'шөп' = grass (noun in nominative, no case ending)\n- 'басқан' = covered/overgrown (participle form of 'басу')\n\nThe phrase 'жасыл шөп басқан' functions as a participial modifier (анықтауыш). The structure is: 'жасыл шөп' (green grass) + 'басқан' (participle). Here 'шөп' is in the nominative case (no case ending), and 'басқан' is a participle. The connection between 'шөп' and 'басқан' is through word order — 'шөп' does not take any case ending to connect to 'басқан'; it simply precedes it. This is characteristic of қабысу (adjunction).\n\nIn қабысу, the dependent component does not change its morphological form — it connects to the head word purely through word order (орын тәртібі). Here 'жасыл шөп' connects to 'басқан' without any case or agreement markers — the noun 'шөп' is in its base (nominative) form acting as the subject of the participle, and the connection is positional.\n\nTherefore, the connection type is қабысу — option D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and correctly keyed: 'жасыл шөп басқан' involves қабысу (adjunction) since 'жасыл' connects to 'шөп' without any morphological change, purely through word order. All four connection types are represented as distractors with accurate definitions, making elimination non-trivial. Language quality is natural and terminologically consistent with Kazakh school grammar textbooks.",
+          "improvement_suggestions": "One minor concern: the explanation focuses on 'жасыл'→'шөп' connection, but the phrase 'жасыл шөп басқан' as a whole participial construction also involves 'шөп'→'басқан' (nominative subject of participle, also қабысу). The question stem could be more precise about which pair of words within the phrase is being analyzed, to avoid any ambiguity. Additionally, distractor A (қиысу) is somewhat easier to eliminate since no agreement endings are visible, slightly reducing distractor quality.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the type of syntactic connection (байланысу тәсілі) in the phrase «жасыл шөп басқан», we need to analyze the morphological markers of the words involved. \n\n1. «Жасыл» (green) is an adjective in its base form.\n2. «Шөп» (grass) is a noun in the nominative case (атау септік), meaning it has no case endings.\n3. «Басқан» (covered) is a participle (есімше) acting as the head of this phrase.\n\nNone of the subordinate components («жасыл», «шөп») take any relational affixes (such as genitive case endings for 'матасу', or oblique case endings for 'меңгеру') to connect to their head words. They are connected purely by their juxtaposition, meaning, and word order (орын тәртібі) without changing their form (тұлғасы өзгермей). \n\nIn Kazakh syntax, when a subordinate word connects to a head word without any grammatical affixes (zero morphology) and relies strictly on word order, this type of connection is called «қабысу» (adjunction).\n\nLet's evaluate the options:\n- A) Қиысу requires agreement (usually between subject and predicate via person/number endings). \n- B) Матасу requires the genitive case (ілік септігі) on the subordinate word and a possessive ending (тәуелдік жалғауы) on the head word.\n- C) Меңгеру requires the subordinate word to take an oblique case ending (барыс, табыс, жатыс, шығыс, көмектес) governed by the head word.\n- D) Қабысу perfectly describes the connection where the subordinate word does not change its form and connects via word order.\n\nTherefore, the correct option is D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, unambiguous, and perfectly aligned with the requested difficulty level. The distractors are excellent as they test both the identification of the syntactic connection and the knowledge of its definition.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:24:20.062446+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "0d103b4e-28f5-4a96-8584-ea3d92a004f1",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысында етістіктің бұйрық райы қолданылған?\n\nА) Ертең мектепке барасың.\nӘ) Кеше дәптерді үйде ұмытып кетіпті.\nБ) Сабаққа уақытында кел.\nВ) Ол кітапты оқыр еді.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ертең мектепке барасың."
+    },
+    {
+      "label": "B",
+      "text": "Кеше дәптерді үйде ұмытып кетіпті."
+    },
+    {
+      "label": "C",
+      "text": "Сабаққа уақытында кел."
+    },
+    {
+      "label": "D",
+      "text": "Ол кітапты оқыр еді."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Бұйрық рай — сөйлеушінің іс-әрекетті орындауды бұйыруын, өтінуін немесе тілек білдіруін көрсететін етістік түрі. «Сабаққа уақытында кел» сөйлемінде «кел» етістігі екінші жақ жекеше бұйрық райда тұр (жұрнақсыз, тазартылған түбір түрінде). Ал «барасың» — ауыспалы осы шақ (нақ осы шақ немесе келер шақтық мән беретін жедел болашақ), «ұмытып кетіпті» — өткен шақтың бұрынғы өткен шақ (жанама өткен шақ) формасы, «оқыр еді» — шартты рай немесе болжалды келер шақтың өткенмен тіркескен формасы. Осылайша, тек «кел» сөзі ғана бұйрық райға жатады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We need identify the sentence containing the imperative mood (бұйрық рай) of a verb. In Kazakh, the imperative mood expresses a command, request, order, or instruction. The 2nd person singular imperative is often the bare verb stem, e.g., кел = 'come!'. Option A: 'Ертең мектепке барасың' uses 'барасың' (2nd person, indicative/future-present form), not imperative. Option B: 'ұмытып кетіпті' is a pa\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks which sentence uses the imperative mood (бұйрық рай) of the verb in Kazakh.\n\nAnalysis of each option:\n\nA) 'Ертең мектепке барасың.' — 'барасың' is the present-future tense (ауыспалы осы шақ / келер шақ), second person singular indicative mood. NOT imperative.\n\nB) 'Кеше дәптерді үйде ұмытып кетіпті.' — 'ұмытып кетіпті' is the past tense with evidential/inferential meaning (жанама \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence that uses the imperative mood of the verb (етістіктің бұйрық райы). Let's analyze the verbs in each option:\n\nA) 'барасың' (you will go) is in the indicative mood (ашық рай), future tense.\nB) 'ұмытып кетіпті' (apparently forgot) is in the indicative mood (ашық рай), past tense.\nC) 'кел' (come) is the bare stem of the verb, which functions as the 2nd person",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 5.667,
+      "kazakh_language_quality": 8.833,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and the item has a single morphologically defensible answer: “кел” is 2nd person singular imperative. However, the task is very basic for a practicing-teacher Level B item, and the explanation contains some imprecise terminology for the other verb forms. | [anthropic/claude-sonnet-4.6] The question is factually correct and unambiguous: 'кел' in option C is clearly the 2nd person singular imperative (бұйрық рай), while the other options represent distinct moods/tenses that serve as effective distractors. Language quality is natural and terminology aligns with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but identifying the bare root 'кел' as the imperative mood is too basic for a practicing teacher certification test (Level A rather than Level B).",
+    "improvement_suggestions": "[openai/gpt-5.5] Raise the cognitive level by using a short contextual text with several imperative and non-imperative directive forms, and revise the explanation: classify “барасың” as ашық рай, contextually future/present-future, and avoid calling “оқыр еді” шартты рай. | [google/gemini-3.1-pro-preview] To align better with Level B difficulty for teachers, use more complex imperative forms (e.g., 1st person plural '-айық/-ейік', 3rd person '-сын/-сін') or sentences where the imperative mood is used in a transferred or nuanced meaning.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We need identify the sentence containing the imperative mood (бұйрық рай) of a verb. In Kazakh, the imperative mood expresses a command, request, order, or instruction. The 2nd person singular imperative is often the bare verb stem, e.g., кел = 'come!'. Option A: 'Ертең мектепке барасың' uses 'барасың' (2nd person, indicative/future-present form), not imperative. Option B: 'ұмытып кетіпті' is a pa\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks which sentence uses the imperative mood (бұйрық рай) of the verb in Kazakh.\n\nAnalysis of each option:\n\nA) 'Ертең мектепке барасың.' — 'барасың' is the present-future tense (ауыспалы осы шақ / келер шақ), second person singular indicative mood. NOT imperative.\n\nB) 'Кеше дәптерді үйде ұмытып кетіпті.' — 'ұмытып кетіпті' is the past tense with evidential/inferential meaning (жанама \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the sentence that uses the imperative mood of the verb (етістіктің бұйрық райы). Let's analyze the verbs in each option:\n\nA) 'барасың' (you will go) is in the indicative mood (ашық рай), future tense.\nB) 'ұмытып кетіпті' (apparently forgot) is in the indicative mood (ашық рай), past tense.\nC) 'кел' (come) is the bare stem of the verb, which functions as the 2nd person",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 5.667,
+        "kazakh_language_quality": 8.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and the item has a single morphologically defensible answer: “кел” is 2nd person singular imperative. However, the task is very basic for a practicing-teacher Level B item, and the explanation contains some imprecise terminology for the other verb forms. | [anthropic/claude-sonnet-4.6] The question is factually correct and unambiguous: 'кел' in option C is clearly the 2nd person singular imperative (бұйрық рай), while the other options represent distinct moods/tenses that serve as effective distractors. Language quality is natural and terminology aligns with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is factually correct and well-written, but identifying the bare root 'кел' as the imperative mood is too basic for a practicing teacher certification test (Level A rather than Level B).",
+      "improvement_suggestions": "[openai/gpt-5.5] Raise the cognitive level by using a short contextual text with several imperative and non-imperative directive forms, and revise the explanation: classify “барасың” as ашық рай, contextually future/present-future, and avoid calling “оқыр еді” шартты рай. | [google/gemini-3.1-pro-preview] To align better with Level B difficulty for teachers, use more complex imperative forms (e.g., 1st person plural '-айық/-ейік', 3rd person '-сын/-сін') or sentences where the imperative mood is used in a transferred or nuanced meaning.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need identify the sentence containing the imperative mood (бұйрық рай) of a verb. In Kazakh, the imperative mood expresses a command, request, order, or instruction. The 2nd person singular imperative is often the bare verb stem, e.g., кел = 'come!'. Option A: 'Ертең мектепке барасың' uses 'барасың' (2nd person, indicative/future-present form), not imperative. Option B: 'ұмытып кетіпті' is a past evidential/reported form, not imperative. Option C: 'Сабаққа уақытында кел' uses 'кел', the bare verb stem functioning as a 2nd person singular imperative: 'Come to class on time.' Option D: 'оқыр еді' is a conditional/desiderative or hypothetical form, not imperative. Therefore the imperative mood is in option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 7.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.7,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and the item has a single morphologically defensible answer: “кел” is 2nd person singular imperative. However, the task is very basic for a practicing-teacher Level B item, and the explanation contains some imprecise terminology for the other verb forms.",
+          "improvement_suggestions": "Raise the cognitive level by using a short contextual text with several imperative and non-imperative directive forms, and revise the explanation: classify “барасың” as ашық рай, contextually future/present-future, and avoid calling “оқыр еді” шартты рай.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence uses the imperative mood (бұйрық рай) of the verb in Kazakh.\n\nAnalysis of each option:\n\nA) 'Ертең мектепке барасың.' — 'барасың' is the present-future tense (ауыспалы осы шақ / келер шақ), second person singular indicative mood. NOT imperative.\n\nB) 'Кеше дәптерді үйде ұмытып кетіпті.' — 'ұмытып кетіпті' is the past tense with evidential/inferential meaning (жанама өткен шақ), indicative mood. NOT imperative.\n\nC) 'Сабаққа уақытында кел.' — 'кел' is the bare verb stem used as a direct command/order to second person singular. In Kazakh, the imperative mood (бұйрық рай) for 2nd person singular is formed by using the bare verb stem (e.g., кел, бар, оқы). This is clearly the imperative mood. CORRECT.\n\nD) 'Ол кітапты оқыр еді.' — 'оқыр еді' is the conditional/habitual past (шартты рай or ауыспалы өткен шақ), NOT imperative.\n\nTherefore, the sentence with the imperative mood is C) 'Сабаққа уақытында кел.'",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The question is factually correct and unambiguous: 'кел' in option C is clearly the 2nd person singular imperative (бұйрық рай), while the other options represent distinct moods/tenses that serve as effective distractors. Language quality is natural and terminology aligns with standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence that uses the imperative mood of the verb (етістіктің бұйрық райы). Let's analyze the verbs in each option:\n\nA) 'барасың' (you will go) is in the indicative mood (ашық рай), future tense.\nB) 'ұмытып кетіпті' (apparently forgot) is in the indicative mood (ашық рай), past tense.\nC) 'кел' (come) is the bare stem of the verb, which functions as the 2nd person singular imperative mood (бұйрық рай).\nD) 'оқыр еді' (would read) is in the conditional/subjunctive mood (қалау рай).\n\nTherefore, the sentence with the imperative mood is 'Сабаққа уақытында кел.'",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-written, but identifying the bare root 'кел' as the imperative mood is too basic for a practicing teacher certification test (Level A rather than Level B).",
+          "improvement_suggestions": "To align better with Level B difficulty for teachers, use more complex imperative forms (e.g., 1st person plural '-айық/-ейік', 3rd person '-сын/-сін') or sentences where the imperative mood is used in a transferred or nuanced meaning.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:20:54.770413+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "9f75f451-a6ee-44b9-af5a-3a08107496f5",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі күрделі сөйлемдерді талдап, бағыныңқы сыңарының мағыналық түрін дұрыс анықтаңыз:\n\n«Ол мұны айтпаса да, бәрі оның ойын түсінді»\n\nОсы сөйлемде бағыныңқы сыңар қандай мағыналық қатынасты білдіреді және оны анықтайтын негізгі морфологиялық көрсеткіш қайсы?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Шартты бағыныңқы; баяндауышы –са да тұлғасымен жасалғандықтан, іс-әрекеттің орындалу шартын білдіреді"
+    },
+    {
+      "label": "B",
+      "text": "Қарсылықты бағыныңқы; баяндауышы –са да тұлғасымен жасалып, негізгі сыңардың іс-әрекетіне қарсы мән үстейді"
+    },
+    {
+      "label": "C",
+      "text": "Мезгіл бағыныңқы; баяндауышы –са да тұлғасымен жасалып, іс-әрекеттің орындалу уақытын көрсетеді"
+    },
+    {
+      "label": "D",
+      "text": "Себеп бағыныңқы; баяндауышы –са да тұлғасымен жасалып, негізгі сыңардағы іс-әрекеттің себебін білдіреді"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "«Ол мұны айтпаса да, бәрі оның ойын түсінді» сөйлемінде бағыныңқы сыңардың баяндауышы –са да тұлғасымен жасалған. –са да тұлғасы қарсылықты бағыныңқы сабақтас сөйлемнің негізгі морфологиялық белгісі болып табылады: бағыныңқы сыңардағы іс-әрекет (айтпаса да) орындалмаса да, негізгі сыңардағы іс-әрекет (бәрі түсінді) іске асады — бұл нақты қарсылық мәнін береді. Сондықтан дұрыс жауап — Б (қарсылықты бағыныңқы).\n\nА нұсқасы қате: –са да тұлғасы шартты мән бермейді; шартты бағыныңқыда баяндауыш таза –са / –се тұлғасымен жасалып, іс-әрекеттің орындалу шартын білдіреді (мысалы: «ол айтса, бәрі түсінеді»). –са да тұлғасы мен –са тұлғасының мағыналық айырмасын ажырата алмау — жиі кездесетін қателік.\n\nВ нұсқасы қате: –са да тұлғасы мезгіл қатынасын білдірмейді; мезгіл бағыныңқыда баяндауыш –ғанда, –ғанша, –ған кезде, –ып тұрғанда тәрізді тұлғалармен жасалады.\n\nГ нұсқасы қате: себеп бағыныңқыда баяндауыш –ғандықтан, –ғаннан кейін (себеп мәнінде), –ып тұлғасы арқылы жасалады; –са да тұлғасы себеп мәнін бермейді.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.65,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The complex sentence is: “Ол мұны айтпаса да, бәрі оның ойын түсінді.” The subordinate clause is “Ол мұны айтпаса да” and the main clause is “бәрі оның ойын түсінді.” The predicate of the subordinate clause is “айтпаса да,” formed from the verb “айт-” with the negative marker “-па,” the conditional suffix “-са,” and the particle “да.” In Kazakh syntax, the form “-са да / -се де” commonly marks a c\n\n[anthropic/claude-sonnet-4.6] answered B: The sentence is: 'Ол мұны айтпаса да, бәрі оның ойын түсінді' — 'Even if he didn't say this, everyone understood his thought.'\n\nThe subordinate clause 'Ол мұны айтпаса да' uses the morphological marker '-са да' (the conditional converb suffix -са/-се combined with the particle да/де). \n\nIn Kazakh grammar, the suffix -са да / -се де forms a concessive (қарсылықты) subordinate clause, not a conditio\n\n[google/gemini-3.1-pro-preview] answered B: The sentence is 'Ол мұны айтпаса да, бәрі оның ойын түсінді' (Even though he didn't say this, everyone understood his thought). The subordinate clause is 'Ол мұны айтпаса да'. Its predicate 'айтпаса да' is formed with the negative suffix '-па', the conditional mood suffix '-са', and the particle 'да'. In Kazakh syntax, the combination of the conditional suffix '-са/-се' with the particle 'да/де' f",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 5.667,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.65,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: -са да marks a concessive/adversative subordinate clause in this sentence. However, the item is much too easy for level C, since it only requires recognizing a standard morphological marker in a single short sentence. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: -са да is the canonical marker of қарсылықты (concessive/adversative) subordinate clauses in Kazakh, clearly distinguishable from the pure conditional -са/-се. Distractors A (conditional) and C/D (temporal/causal) represent real misconceptions teachers might hold, with A being a particularly effective distractor since -са да superficially resembles -са. Language quality is natural and uses standard Kazakh grammatical terminology. The difficulty is moderate-to-hard but leans slightly toward B level since the -са да vs -са distinction is a standard textbook point rather than requiring synthesis across topics. | [google/gemini-3.1-pro-preview] The question is well-structured, unambiguous, and accurately tests the candidate's knowledge of Kazakh syntax and morphological indicators. The distractors are highly plausible and well-formatted.",
+    "improvement_suggestions": "[openai/gpt-5.5] To align with level C, use a longer literary or multi-clause sentence where -са да competes with contextual conditional, temporal, or causal readings, and require justification through both morphology and semantic relation. Also change the plural wording \"күрделі сөйлемдерді\" to singular if only one sentence is analyzed. | [anthropic/claude-sonnet-4.6] To push difficulty firmly to level C, consider using a more ambiguous or complex sentence where the concessive reading competes with another plausible reading, or embed the question in a multi-clause literary text requiring holistic analysis. Alternatively, ask the examinee to identify the clause type AND justify why a competing analysis (e.g., conditional) fails, requiring deeper reasoning. | [google/gemini-3.1-pro-preview] To fully align with Level C (Hard), the question could involve a more complex, multi-clause sentence or require analyzing the semantic nuances of the clause within a larger literary context.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The complex sentence is: “Ол мұны айтпаса да, бәрі оның ойын түсінді.” The subordinate clause is “Ол мұны айтпаса да” and the main clause is “бәрі оның ойын түсінді.” The predicate of the subordinate clause is “айтпаса да,” formed from the verb “айт-” with the negative marker “-па,” the conditional suffix “-са,” and the particle “да.” In Kazakh syntax, the form “-са да / -се де” commonly marks a c\n\n[anthropic/claude-sonnet-4.6] answered B: The sentence is: 'Ол мұны айтпаса да, бәрі оның ойын түсінді' — 'Even if he didn't say this, everyone understood his thought.'\n\nThe subordinate clause 'Ол мұны айтпаса да' uses the morphological marker '-са да' (the conditional converb suffix -са/-се combined with the particle да/де). \n\nIn Kazakh grammar, the suffix -са да / -се де forms a concessive (қарсылықты) subordinate clause, not a conditio\n\n[google/gemini-3.1-pro-preview] answered B: The sentence is 'Ол мұны айтпаса да, бәрі оның ойын түсінді' (Even though he didn't say this, everyone understood his thought). The subordinate clause is 'Ол мұны айтпаса да'. Its predicate 'айтпаса да' is formed with the negative suffix '-па', the conditional mood suffix '-са', and the particle 'да'. In Kazakh syntax, the combination of the conditional suffix '-са/-се' with the particle 'да/де' f",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 5.667,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.65,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: -са да marks a concessive/adversative subordinate clause in this sentence. However, the item is much too easy for level C, since it only requires recognizing a standard morphological marker in a single short sentence. | [anthropic/claude-sonnet-4.6] The question is factually correct and well-keyed: -са да is the canonical marker of қарсылықты (concessive/adversative) subordinate clauses in Kazakh, clearly distinguishable from the pure conditional -са/-се. Distractors A (conditional) and C/D (temporal/causal) represent real misconceptions teachers might hold, with A being a particularly effective distractor since -са да superficially resembles -са. Language quality is natural and uses standard Kazakh grammatical terminology. The difficulty is moderate-to-hard but leans slightly toward B level since the -са да vs -са distinction is a standard textbook point rather than requiring synthesis across topics. | [google/gemini-3.1-pro-preview] The question is well-structured, unambiguous, and accurately tests the candidate's knowledge of Kazakh syntax and morphological indicators. The distractors are highly plausible and well-formatted.",
+      "improvement_suggestions": "[openai/gpt-5.5] To align with level C, use a longer literary or multi-clause sentence where -са да competes with contextual conditional, temporal, or causal readings, and require justification through both morphology and semantic relation. Also change the plural wording \"күрделі сөйлемдерді\" to singular if only one sentence is analyzed. | [anthropic/claude-sonnet-4.6] To push difficulty firmly to level C, consider using a more ambiguous or complex sentence where the concessive reading competes with another plausible reading, or embed the question in a multi-clause literary text requiring holistic analysis. Alternatively, ask the examinee to identify the clause type AND justify why a competing analysis (e.g., conditional) fails, requiring deeper reasoning. | [google/gemini-3.1-pro-preview] To fully align with Level C (Hard), the question could involve a more complex, multi-clause sentence or require analyzing the semantic nuances of the clause within a larger literary context.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The complex sentence is: “Ол мұны айтпаса да, бәрі оның ойын түсінді.” The subordinate clause is “Ол мұны айтпаса да” and the main clause is “бәрі оның ойын түсінді.” The predicate of the subordinate clause is “айтпаса да,” formed from the verb “айт-” with the negative marker “-па,” the conditional suffix “-са,” and the particle “да.” In Kazakh syntax, the form “-са да / -се де” commonly marks a concessive or adversative subordinate clause (қарсылықты бағыныңқы сабақтас), meaning “although/even if.” Here the meaning is: although he did not say it, everyone understood his thought. This expresses a contrast or concession against the action/result in the main clause, not a condition, time, or cause. Therefore the correct classification is a concessive/adversative subordinate clause, with the main morphological indicator being the “-са да” form.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 3.0,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unambiguous: -са да marks a concessive/adversative subordinate clause in this sentence. However, the item is much too easy for level C, since it only requires recognizing a standard morphological marker in a single short sentence.",
+          "improvement_suggestions": "To align with level C, use a longer literary or multi-clause sentence where -са да competes with contextual conditional, temporal, or causal readings, and require justification through both morphology and semantic relation. Also change the plural wording \"күрделі сөйлемдерді\" to singular if only one sentence is analyzed.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is: 'Ол мұны айтпаса да, бәрі оның ойын түсінді' — 'Even if he didn't say this, everyone understood his thought.'\n\nThe subordinate clause 'Ол мұны айтпаса да' uses the morphological marker '-са да' (the conditional converb suffix -са/-се combined with the particle да/де). \n\nIn Kazakh grammar, the suffix -са да / -се де forms a concessive (қарсылықты) subordinate clause, not a conditional one. The key distinction:\n- Pure conditional (-са/-се alone): expresses a condition that must be met for the main clause action to occur.\n- Concessive (-са да / -се де): expresses that despite/regardless of the subordinate action, the main clause action still occurs. This is the 'even though / even if / although' meaning — a concessive/adversative relationship.\n\nIn this sentence: 'Even though he didn't say it, everyone understood his thought.' The main clause action (understanding) happens DESPITE the subordinate clause action (not saying). This is a concessive/adversative (қарсылықты) relationship.\n\nOption A incorrectly labels it as 'шартты бағыныңқы' (conditional subordinate clause) and says it expresses a condition for the action — this is wrong because -са да expresses concession, not condition.\n\nOption B correctly identifies it as 'қарсылықты бағыныңқы' (concessive/adversative subordinate clause), noting that -са да adds an adversative/concessive meaning to the main clause action.\n\nOptions C and D (temporal and causal) are clearly incorrect.\n\nTherefore, the correct answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.75,
+          "pass_fail": true,
+          "comments": "The question is factually correct and well-keyed: -са да is the canonical marker of қарсылықты (concessive/adversative) subordinate clauses in Kazakh, clearly distinguishable from the pure conditional -са/-се. Distractors A (conditional) and C/D (temporal/causal) represent real misconceptions teachers might hold, with A being a particularly effective distractor since -са да superficially resembles -са. Language quality is natural and uses standard Kazakh grammatical terminology. The difficulty is moderate-to-hard but leans slightly toward B level since the -са да vs -са distinction is a standard textbook point rather than requiring synthesis across topics.",
+          "improvement_suggestions": "To push difficulty firmly to level C, consider using a more ambiguous or complex sentence where the concessive reading competes with another plausible reading, or embed the question in a multi-clause literary text requiring holistic analysis. Alternatively, ask the examinee to identify the clause type AND justify why a competing analysis (e.g., conditional) fails, requiring deeper reasoning.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence is 'Ол мұны айтпаса да, бәрі оның ойын түсінді' (Even though he didn't say this, everyone understood his thought). The subordinate clause is 'Ол мұны айтпаса да'. Its predicate 'айтпаса да' is formed with the negative suffix '-па', the conditional mood suffix '-са', and the particle 'да'. In Kazakh syntax, the combination of the conditional suffix '-са/-се' with the particle 'да/де' forms a concessive subordinate clause (қарсылықты бағыныңқы сөйлем). This type of clause expresses an action or condition in spite of which the action in the main clause occurs, creating a contrast (қарсы мән) between the two clauses. Therefore, option B correctly identifies the clause as 'Қарсылықты бағыныңқы' and accurately describes its morphological indicator and semantic function.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question is well-structured, unambiguous, and accurately tests the candidate's knowledge of Kazakh syntax and morphological indicators. The distractors are highly plausible and well-formatted.",
+          "improvement_suggestions": "To fully align with Level C (Hard), the question could involve a more complex, multi-clause sentence or require analyzing the semantic nuances of the clause within a larger literary context.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:58:44.760779+00:00",
+  "generation_attempts": 1
+}

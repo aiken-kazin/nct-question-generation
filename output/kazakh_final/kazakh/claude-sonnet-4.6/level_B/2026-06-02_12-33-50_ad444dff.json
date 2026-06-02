@@ -1,0 +1,140 @@
+{
+  "id": "ad444dff-bec8-4521-a786-c5565e06251a",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі сөйлемдердің қайсысында етістіктің бұйрық рай түрі қолданылған?\n\n1) Ертең мектепке ерте келесің.\n2) Кітапты мұқият оқы!\n3) Ол бүгін үйге қайтқан шығар.\n4) Мен сені күтіп тұрармын.",
+  "options": [
+    {
+      "label": "A",
+      "text": "1-сөйлемде"
+    },
+    {
+      "label": "B",
+      "text": "2-сөйлемде"
+    },
+    {
+      "label": "C",
+      "text": "3-сөйлемде"
+    },
+    {
+      "label": "D",
+      "text": "4-сөйлемде"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Бұйрық рай — іс-әрекетті орындауға бұйыру, өтіну, тілек білдіру мағынасын беретін рай түрі. 2-сөйлемдегі «оқы!» тұлғасы етістіктің бұйрық райының 2-жақ жекеше түрі болып табылады. 1-сөйлемдегі «келесің» — ашық райдың осы шақ (немесе болжалды келер шақ) тұлғасы; 3-сөйлемдегі «қайтқан шығар» — шартты болжам мәнін беретін ашық рай + «шығар» модальды бөлшегінің тіркесі; 4-сөйлемдегі «күтіп тұрармын» — ашық райдың келер шақ тұлғасы. Демек, тек 2-сөйлемде ғана бұйрық рай қолданылған.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.733,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh imperative mood (бұйрық рай) expresses a command, request, or order. In the 2nd person singular, it is often formed with the bare verb stem, e.g., \"оқы\" = \"read!\". Sentence 1, \"Ертең мектепке ерте келесің,\" uses \"келесің,\" a 2nd person finite future/present form, not imperative. Sentence 2, \"Кітапты мұқият оқы!\" uses \"оқы!\", the imperative form of the verb \"оқу\" directed to the 2nd pers\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks which sentence uses the imperative mood (бұйрық рай) of the verb in Kazakh.\n\nAnalysis of each sentence:\n1) 'Ертең мектепке ерте келесің.' - 'келесің' is the present-future tense (ашық рай, 2nd person singular). Not imperative.\n2) 'Кітапты мұқият оқы!' - 'оқы' is the imperative mood (бұйрық рай), 2nd person singular command form of the verb 'оқу' (to read). The exclamation mark re\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence that uses the imperative mood (бұйрық рай) of a verb. Let's analyze the verbs in each sentence:\n1) 'Ертең мектепке ерте келесің.' - The verb 'келесің' is in the indicative mood (ашық рай), future tense, 2nd person singular.\n2) 'Кітапты мұқият оқы!' - The verb 'оқы' is the bare stem of the verb, which functions as the 2nd person singular imperative mood (б",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 7.0,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.733,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible answer: «оқы!» is the 2nd-person singular imperative. However, the item is closer to basic recognition than true level B, and the exclamation mark makes the correct option somewhat cued. | [anthropic/claude-sonnet-4.6] The question is factually correct and unambiguous — 'оқы' is clearly the imperative (бұйрық рай) 2nd person singular form, and the explanation is accurate. Language quality is natural and terminology is standard. However, the question leans slightly toward level A (recall/recognition) rather than true level B analysis, as the imperative form with an exclamation mark is quite transparent. | [google/gemini-3.1-pro-preview] The question accurately tests the identification of the imperative mood in context. The distractors are well-chosen, representing other moods and tenses that might be confused with the imperative.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, consider removing the exclamation mark from sentence 2 (which strongly cues the answer), or use more ambiguous imperative forms (e.g., 3rd person imperative like 'оқысын' embedded in a complex sentence) that require deeper morphological analysis rather than surface recognition. Also, distractor 3 ('қайтқан шығар') is a strong distractor involving a modal particle, which is good; consider making distractor 1 slightly more challenging by using a form closer to imperative (e.g., a polite request form).",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The Kazakh imperative mood (бұйрық рай) expresses a command, request, or order. In the 2nd person singular, it is often formed with the bare verb stem, e.g., \"оқы\" = \"read!\". Sentence 1, \"Ертең мектепке ерте келесің,\" uses \"келесің,\" a 2nd person finite future/present form, not imperative. Sentence 2, \"Кітапты мұқият оқы!\" uses \"оқы!\", the imperative form of the verb \"оқу\" directed to the 2nd pers\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks which sentence uses the imperative mood (бұйрық рай) of the verb in Kazakh.\n\nAnalysis of each sentence:\n1) 'Ертең мектепке ерте келесің.' - 'келесің' is the present-future tense (ашық рай, 2nd person singular). Not imperative.\n2) 'Кітапты мұқият оқы!' - 'оқы' is the imperative mood (бұйрық рай), 2nd person singular command form of the verb 'оқу' (to read). The exclamation mark re\n\n[google/gemini-3.1-pro-preview] answered B: The question asks to identify the sentence that uses the imperative mood (бұйрық рай) of a verb. Let's analyze the verbs in each sentence:\n1) 'Ертең мектепке ерте келесің.' - The verb 'келесің' is in the indicative mood (ашық рай), future tense, 2nd person singular.\n2) 'Кітапты мұқият оқы!' - The verb 'оқы' is the bare stem of the verb, which functions as the 2nd person singular imperative mood (б",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 7.0,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.733,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and the item has a single defensible answer: «оқы!» is the 2nd-person singular imperative. However, the item is closer to basic recognition than true level B, and the exclamation mark makes the correct option somewhat cued. | [anthropic/claude-sonnet-4.6] The question is factually correct and unambiguous — 'оқы' is clearly the imperative (бұйрық рай) 2nd person singular form, and the explanation is accurate. Language quality is natural and terminology is standard. However, the question leans slightly toward level A (recall/recognition) rather than true level B analysis, as the imperative form with an exclamation mark is quite transparent. | [google/gemini-3.1-pro-preview] The question accurately tests the identification of the imperative mood in context. The distractors are well-chosen, representing other moods and tenses that might be confused with the imperative.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To better align with level B difficulty, consider removing the exclamation mark from sentence 2 (which strongly cues the answer), or use more ambiguous imperative forms (e.g., 3rd person imperative like 'оқысын' embedded in a complex sentence) that require deeper morphological analysis rather than surface recognition. Also, distractor 3 ('қайтқан шығар') is a strong distractor involving a modal particle, which is good; consider making distractor 1 slightly more challenging by using a form closer to imperative (e.g., a polite request form).",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The Kazakh imperative mood (бұйрық рай) expresses a command, request, or order. In the 2nd person singular, it is often formed with the bare verb stem, e.g., \"оқы\" = \"read!\". Sentence 1, \"Ертең мектепке ерте келесің,\" uses \"келесің,\" a 2nd person finite future/present form, not imperative. Sentence 2, \"Кітапты мұқият оқы!\" uses \"оқы!\", the imperative form of the verb \"оқу\" directed to the 2nd person singular. Sentence 3, \"Ол бүгін үйге қайтқан шығар,\" uses a presumptive construction with \"шығар,\" not imperative. Sentence 4, \"Мен сені күтіп тұрармын,\" uses a 1st person future/intentional form, not imperative. Therefore, the imperative mood is used in the 2nd sentence.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and the item has a single defensible answer: «оқы!» is the 2nd-person singular imperative. However, the item is closer to basic recognition than true level B, and the exclamation mark makes the correct option somewhat cued.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which sentence uses the imperative mood (бұйрық рай) of the verb in Kazakh.\n\nAnalysis of each sentence:\n1) 'Ертең мектепке ерте келесің.' - 'келесің' is the present-future tense (ашық рай, 2nd person singular). Not imperative.\n2) 'Кітапты мұқият оқы!' - 'оқы' is the imperative mood (бұйрық рай), 2nd person singular command form of the verb 'оқу' (to read). The exclamation mark reinforces this. This IS imperative.\n3) 'Ол бүгін үйге қайтқан шығар.' - 'қайтқан шығар' is a presumptive/inferential form (шартты рай or болжалды рай). Not imperative.\n4) 'Мен сені күтіп тұрармын.' - 'күтіп тұрармын' is the future tense (1st person singular). Not imperative.\n\nTherefore, sentence 2 contains the imperative mood form 'оқы'.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 6.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.2,
+          "pass_fail": true,
+          "comments": "The question is factually correct and unambiguous — 'оқы' is clearly the imperative (бұйрық рай) 2nd person singular form, and the explanation is accurate. Language quality is natural and terminology is standard. However, the question leans slightly toward level A (recall/recognition) rather than true level B analysis, as the imperative form with an exclamation mark is quite transparent.",
+          "improvement_suggestions": "To better align with level B difficulty, consider removing the exclamation mark from sentence 2 (which strongly cues the answer), or use more ambiguous imperative forms (e.g., 3rd person imperative like 'оқысын' embedded in a complex sentence) that require deeper morphological analysis rather than surface recognition. Also, distractor 3 ('қайтқан шығар') is a strong distractor involving a modal particle, which is good; consider making distractor 1 slightly more challenging by using a form closer to imperative (e.g., a polite request form).",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence that uses the imperative mood (бұйрық рай) of a verb. Let's analyze the verbs in each sentence:\n1) 'Ертең мектепке ерте келесің.' - The verb 'келесің' is in the indicative mood (ашық рай), future tense, 2nd person singular.\n2) 'Кітапты мұқият оқы!' - The verb 'оқы' is the bare stem of the verb, which functions as the 2nd person singular imperative mood (бұйрық рай), expressing a direct command ('Read!').\n3) 'Ол бүгін үйге қайтқан шығар.' - The verb 'қайтқан шығар' is in the indicative mood, expressing probability.\n4) 'Мен сені күтіп тұрармын.' - The verb 'тұрармын' is in the indicative mood, future tense (болжалды келер шақ), 1st person singular.\nTherefore, the imperative mood is used in the 2nd sentence.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question accurately tests the identification of the imperative mood in context. The distractors are well-chosen, representing other moods and tenses that might be confused with the imperative.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:33:50.172640+00:00",
+  "generation_attempts": 1
+}

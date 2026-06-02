@@ -1,0 +1,628 @@
+{
+  "id": "f135d54a0ec24375af33fd4a038a884a",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "context",
+  "topic": "style_and_text_analysis",
+  "model_id": "openai/gpt-5.5",
+  "ensemble_critic": true,
+  "timestamp": "2026-06-02T12:58:44.142591+00:00",
+  "passage": "Күздің соңғы айы еді. Ержан қаладағы оқуынан ауылға оралғанда, шеттегі ескі құдықтың аузы қураған қамыспен көміліп қалыпты. Бала күнінде әжесі осы құдық басында оған батырлар жырын айтып, «суы тартылса да, елдің сөзі тартылмасын» дейтін. Енді ауыл адамдары жаңа құбырға үйреніп, құдыққа сирек соғады. Ержан еңкейіп, тас шегеннің арасынан тот басқан қауғаны көрді. Қауға түбіндегі лай су айнадай жылтырап, аспандағы жалғыз бұлтты ұстап тұрғандай. Жігітке құдық ауылдың ұмытылған жады секілді көрінді: қарасаң, тереңінен талай дауыс естіледі, қарамасаң, шөп басып қалады. Ол қамысты аршып, шегенді түзеді де, жанындағы балаларға әжесінен естіген «Ер Тарғынның» бір үзігін баяндап берді. Балалар алғашында күліп тұрған, кейін үнсіз тыңдады. Кешкі самал құдық ернеуін сипап өтіп, әлгі жырды алыстағы үйлерге жеткізгендей болды.",
+  "questions": [
+    {
+      "question_text": "Мәтіннің негізгі идеясына сәйкес келетін тұжырымды анықтаңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ауылға жаңа құбыр тартылуы тұрмысты жеңілдетеді."
+        },
+        {
+          "label": "B",
+          "text": "Қалада оқыған жастар ауыл өміріне бейімделе алмайды."
+        },
+        {
+          "label": "C",
+          "text": "Ұлттық жад пен ауыз әдебиетін ұмытпай, кейінгі ұрпаққа жеткізу қажет."
+        },
+        {
+          "label": "D",
+          "text": "Ескі құдықтарды жөндеу ауылдағы басты мәселе болып табылады."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Мәтінде ескі құдық әже айтқан жырлармен, ауылдың жадымен байланыстырылып, Ержанның балаларға «Ер Тарғынды» баяндауы арқылы дәстүр жалғастығы көрсетіледі. A мен D мәтіндегі жеке детальдарды ғана қамтиды, B мазмұнға қайшы.",
+      "critic_score": 9.367,
+      "critic_answer": "C",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.333,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered C: The text is built around the symbolic image of the old well. Although a new pipe has made the well practically unnecessary, the well is connected with the grandmother's words, heroic epics, and the village's memory. The phrase that the well is like the village's forgotten memory directly indicates the theme of cultural and national memory. Erzhan clears the well and tells children a fragment of th\n\n[anthropic/claude-sonnet-4.6] answered C: The text describes Erzhan returning to his village and finding the old well covered with dried reeds. The central narrative elements are: (1) his grandmother used to tell him epic poetry (batyr zhyry) at this well, saying 'even if the water dries up, let the people's word not dry up'; (2) villagers now rarely visit the well since they have new pipes; (3) Erzhan cleans the well and recites a passag\n\n[google/gemini-3.1-pro-preview] answered C: The text describes Yerzhan returning to his village and finding an old well covered in reeds. The well serves as a metaphor for the village's 'forgotten memory' and oral traditions, as his grandmother used to tell him epic poems there, saying 'even if the water dries up, let the words of the people not dry up.' Yerzhan clears the well and shares an epic poem ('Er Targyn') with the local children, ",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.333,
+            "difficulty_alignment": 8.833,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.367,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer C is clearly correct: the text symbolically links the old well with collective memory, oral epic tradition, and transmission to children. The item is well-written and suitable for medium-level text analysis, though some distractors are fairly easy to eliminate as mere details or contradictions. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text, a clear main idea (C), and a correct key that is fully supported by the text's symbolism and narrative. Kazakh is natural and literary-norm throughout. Distractors A and D are plausible surface-level misreadings, though B is somewhat easily eliminated as it directly contradicts the text. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text is beautifully written with clear metaphors, and the distractors effectively test the reader's ability to distinguish between literal details and the overarching theme.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor B ('Қалада оқыған жастар ауыл өміріне бейімделе алмайды') is too easily eliminated since Erzhan clearly adapts and engages positively. Consider replacing it with a distractor that captures a partial truth — e.g., focusing on the theme of generational gap or nostalgia without the full idea of active transmission — to make elimination harder and better test analytical depth.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is built around the symbolic image of the old well. Although a new pipe has made the well practically unnecessary, the well is connected with the grandmother's words, heroic epics, and the village's memory. The phrase that the well is like the village's forgotten memory directly indicates the theme of cultural and national memory. Erzhan clears the well and tells children a fragment of the oral epic 'Er Targyn'; the children begin to listen silently, showing transmission of oral literature to the next generation. Therefore, the main idea is not simply household improvement, youth adaptation, or well repair, but the need to preserve national memory and oral tradition and pass it on.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.2,
+              "pass_fail": true,
+              "comments": "The keyed answer C is clearly correct: the text symbolically links the old well with collective memory, oral epic tradition, and transmission to children. The item is well-written and suitable for medium-level text analysis, though some distractors are fairly easy to eliminate as mere details or contradictions.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Erzhan returning to his village and finding the old well covered with dried reeds. The central narrative elements are: (1) his grandmother used to tell him epic poetry (batyr zhyry) at this well, saying 'even if the water dries up, let the people's word not dry up'; (2) villagers now rarely visit the well since they have new pipes; (3) Erzhan cleans the well and recites a passage from 'Er Targhyn' (a Kazakh oral epic) to nearby children, who initially laugh but then listen in silence; (4) the evening breeze seems to carry the song to distant homes. The well is used as a metaphor for cultural/national memory — deep, potentially forgotten, but rich with voices if you look. The main idea is about preserving national memory and oral literature (ауыз әдебиеті) and passing it on to the next generation. Option A is about practical convenience of new pipes — a minor detail, not the main idea. Option B claims city-educated youth cannot adapt to village life — this is not supported; Erzhan adapts and actively engages. Option C states that national memory and oral literature must not be forgotten and should be passed on to future generations — this directly matches the grandmother's words, the well-as-memory metaphor, and Erzhan's act of reciting the epic to children. Option D claims repairing old wells is the main village problem — this is a literal misreading; the well is symbolic, not the literal subject. Therefore, C is the correct answer.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text, a clear main idea (C), and a correct key that is fully supported by the text's symbolism and narrative. Kazakh is natural and literary-norm throughout. Distractors A and D are plausible surface-level misreadings, though B is somewhat easily eliminated as it directly contradicts the text.",
+              "improvement_suggestions": "Distractor B ('Қалада оқыған жастар ауыл өміріне бейімделе алмайды') is too easily eliminated since Erzhan clearly adapts and engages positively. Consider replacing it with a distractor that captures a partial truth — e.g., focusing on the theme of generational gap or nostalgia without the full idea of active transmission — to make elimination harder and better test analytical depth.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Yerzhan returning to his village and finding an old well covered in reeds. The well serves as a metaphor for the village's 'forgotten memory' and oral traditions, as his grandmother used to tell him epic poems there, saying 'even if the water dries up, let the words of the people not dry up.' Yerzhan clears the well and shares an epic poem ('Er Targyn') with the local children, passing on the tradition. Option A focuses on a minor literal detail (the new water pipe). Option B is incorrect because Yerzhan connects deeply with his village roots. Option D takes the well literally rather than metaphorically. Option C correctly captures the main idea: the importance of preserving national memory and oral literature and passing them on to the next generation.",
+              "critic_answer": "C",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. The text is beautifully written with clear metaphors, and the distractors effectively test the reader's ability to distinguish between literal details and the overarching theme.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "«Жігітке құдық ауылдың ұмытылған жады секілді көрінді» сөйлеміндегі көркемдік тәсілді табыңыз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Теңеу"
+        },
+        {
+          "label": "B",
+          "text": "Гипербола"
+        },
+        {
+          "label": "C",
+          "text": "Ирония"
+        },
+        {
+          "label": "D",
+          "text": "Антитеза"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Сөйлемде құдық «ауылдың ұмытылған жадына» «секілді» шылауы арқылы ұқсатылған, сондықтан бұл — теңеу. Гиперболада әсірелеу, иронияда астарлы кекесін, антитезада қарама-қарсы ұғымдарды шендестіру басым болар еді.",
+      "critic_score": 9.1,
+      "critic_answer": "A",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 7.667,
+        "kazakh_language_quality": 9.833,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered A: The sentence is: “Жігітке құдық ауылдың ұмытылған жады секілді көрінді” (“To the young man, the well seemed like the village’s forgotten memory”). The key marker is “секілді,” meaning “like/as,” which explicitly compares the well to the village’s forgotten memory. In Kazakh stylistics, a comparison using markers such as “сияқты,” “секілді,” “тәрізді,” “дей,” etc. is a simile (теңеу). It is not hyp\n\n[anthropic/claude-sonnet-4.6] answered A: The sentence in question is: 'Жігітке құдық ауылдың ұмытылған жады секілді көрінді' — 'To the young man, the well seemed like the forgotten memory of the village.'\n\nLet's analyze the literary device used:\n\n1. **Теңеу (Simile/Comparison)**: A simile is a direct comparison between two unlike things using comparative words such as 'секілді' (like/as), 'сияқты' (like), 'тәрізді' (as if), etc. In this \n\n[google/gemini-3.1-pro-preview] answered A: The sentence in question is «Жігітке құдық ауылдың ұмытылған жады секілді көрінді» (To the young man, the well seemed like the forgotten memory of the village). The word 'секілді' (like/as) is a direct comparative postposition used to compare the well ('құдық') to the forgotten memory of the village ('ауылдың ұмытылған жады'). In Kazakh literary terms, a comparison made using words such as 'секілд",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 7.667,
+            "kazakh_language_quality": 9.833,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.1,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is fully correct: the marker «секілді» clearly signals a simile. However, the item is quite easy for the requested B level because it mainly tests direct recognition of an explicit comparison marker rather than deeper contextual style analysis. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the target sentence contains an unambiguous simile marked by 'секілді', making A the only defensible answer. The text is rich, literary, and contextually appropriate for teacher certification. Distractors are plausible literary terms but гипербола is somewhat easy to eliminate, slightly reducing distractor quality. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text is literary and engaging, and the question accurately tests the identification of a literary device (simile/теңеу) in context.",
+          "improvement_suggestions": null,
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The sentence is: “Жігітке құдық ауылдың ұмытылған жады секілді көрінді” (“To the young man, the well seemed like the village’s forgotten memory”). The key marker is “секілді,” meaning “like/as,” which explicitly compares the well to the village’s forgotten memory. In Kazakh stylistics, a comparison using markers such as “сияқты,” “секілді,” “тәрізді,” “дей,” etc. is a simile (теңеу). It is not hyperbole because there is no exaggeration; not irony because there is no hidden opposite meaning; and not antithesis because there is no contrasting pair of ideas. Therefore, the artistic device is simile.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.3,
+              "pass_fail": true,
+              "comments": "The keyed answer is fully correct: the marker «секілді» clearly signals a simile. However, the item is quite easy for the requested B level because it mainly tests direct recognition of an explicit comparison marker rather than deeper contextual style analysis.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The sentence in question is: 'Жігітке құдық ауылдың ұмытылған жады секілді көрінді' — 'To the young man, the well seemed like the forgotten memory of the village.'\n\nLet's analyze the literary device used:\n\n1. **Теңеу (Simile/Comparison)**: A simile is a direct comparison between two unlike things using comparative words such as 'секілді' (like/as), 'сияқты' (like), 'тәрізді' (as if), etc. In this sentence, the well is compared to the forgotten memory of the village using the word 'секілді' (like/as). This is a classic simile construction.\n\n2. **Гипербола (Hyperbole)**: Exaggeration for emphasis. Not present here.\n\n3. **Ирония (Irony)**: Saying the opposite of what is meant. Not present here.\n\n4. **Антитеза (Antithesis)**: Contrasting two opposing ideas. While there is some contrast in the text (old vs. new, remembered vs. forgotten), the specific sentence uses a comparison, not a direct antithesis.\n\nThe key indicator is the word 'секілді' (like/as), which is the standard marker of a simile (теңеу) in Kazakh. The well is explicitly compared to the forgotten memory of the village using this comparative word.\n\nTherefore, the literary device is **Теңеу (Simile)** — Answer A.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "The question is well-constructed: the target sentence contains an unambiguous simile marked by 'секілді', making A the only defensible answer. The text is rich, literary, and contextually appropriate for teacher certification. Distractors are plausible literary terms but гипербола is somewhat easy to eliminate, slightly reducing distractor quality.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The sentence in question is «Жігітке құдық ауылдың ұмытылған жады секілді көрінді» (To the young man, the well seemed like the forgotten memory of the village). The word 'секілді' (like/as) is a direct comparative postposition used to compare the well ('құдық') to the forgotten memory of the village ('ауылдың ұмытылған жады'). In Kazakh literary terms, a comparison made using words such as 'секілді', 'сияқты', 'тәрізді', or suffixes '-дай/-дей' is called 'теңеу' (simile). Therefore, the literary device used here is 'теңеу'.",
+              "critic_answer": "A",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. The text is literary and engaging, and the question accurately tests the identification of a literary device (simile/теңеу) in context.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіндегі «қауға» сөзінің контекстік мағынасы қандай?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Құдықтың таспен өрілген қабырғасы"
+        },
+        {
+          "label": "B",
+          "text": "Қамыстан жасалған қоршау"
+        },
+        {
+          "label": "C",
+          "text": "Жыр айтатын музыкалық аспап"
+        },
+        {
+          "label": "D",
+          "text": "Құдықтан су алуға арналған ыдыс"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Мәтінде «тот басқан қауға» және «қауға түбіндегі лай су» деп беріледі, яғни ол құдықтан су алатын ыдыс мағынасында қолданылған. A — шегенге, B — қамысқа, C — мәтінде жоқ ұғымға қатысты.",
+      "critic_score": 8.567,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 6.5,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The word “қауға” appears in the context of an old well: “шеттегі ескі құдық,” “тас шегеннің арасынан тот басқан қауғаны көрді,” and “Қауға түбіндегі лай су...” In Kazakh, “қауға” means a bucket or vessel used for drawing water from a well. It is not the stone lining of the well, not a reed fence, and not a musical instrument. Therefore the contextual meaning is “a vessel used to draw water from a \n\n[anthropic/claude-sonnet-4.6] answered D: The question asks about the contextual meaning of the word 'қауға' (kawga) in the text. In the text, it says: 'Ержан еңкейіп, тас шегеннің арасынан тот басқан қауғаны көрді' — Erzhan bent down and saw a rust-covered 'қауға' between the stone walls of the well. Then: 'Қауға түбіндегі лай су айнадай жылтырап' — the muddy water at the bottom of the 'қауға' shimmered like a mirror. The word 'қауға' in\n\n[google/gemini-3.1-pro-preview] answered D: The question asks for the contextual meaning of the word 'қауға' (qauğa) in the text. In the text, it says 'тот басқан қауғаны көрді. Қауға түбіндегі лай су...' which translates to 'saw a rusted qauğa. The muddy water at the bottom of the qauğa...'. In the Kazakh language, 'қауға' refers to a bucket or vessel used to draw water from a well. Option D 'Құдықтан су алуға арналған ыдыс' translates to ",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.667,
+            "difficulty_alignment": 6.5,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.567,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by the context: “қауға түбіндегі лай су” clearly indicates a vessel for drawing well water. However, the item is somewhat below true B-level for teacher certification because the inference is very direct and most distractors are easily eliminated from nearby wording. | [anthropic/claude-sonnet-4.6] The correct answer is unambiguous and well-supported by the text; the Kazakh is natural and well-written. However, the question tests direct vocabulary knowledge rather than contextual analysis — 'қауға' is used in its standard literal meaning, so no genuine contextual inference is required, making this more of a Level A (recall) item than Level B. Distractors C ('musical instrument') is implausible and trivially eliminable by any literate teacher. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text is literary and engaging, and the distractors are cleverly tied to other elements present in the text, making it a great test of contextual vocabulary comprehension.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] To raise difficulty to genuine Level B, ask about a figuratively used word or phrase in the text (e.g., 'ауылдың ұмытылған жады' or 'суы тартылса да, елдің сөзі тартылмасын') where the contextual meaning diverges from the literal one and requires analysis. Replace distractor C with something more plausible — e.g., a container used for storing grain or a ladle — to reduce trivial elimination.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The word “қауға” appears in the context of an old well: “шеттегі ескі құдық,” “тас шегеннің арасынан тот басқан қауғаны көрді,” and “Қауға түбіндегі лай су...” In Kazakh, “қауға” means a bucket or vessel used for drawing water from a well. It is not the stone lining of the well, not a reed fence, and not a musical instrument. Therefore the contextual meaning is “a vessel used to draw water from a well.”",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 5.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.4,
+              "pass_fail": true,
+              "comments": "The keyed answer is correct and uniquely supported by the context: “қауға түбіндегі лай су” clearly indicates a vessel for drawing well water. However, the item is somewhat below true B-level for teacher certification because the inference is very direct and most distractors are easily eliminated from nearby wording.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks about the contextual meaning of the word 'қауға' (kawga) in the text. In the text, it says: 'Ержан еңкейіп, тас шегеннің арасынан тот басқан қауғаны көрді' — Erzhan bent down and saw a rust-covered 'қауға' between the stone walls of the well. Then: 'Қауға түбіндегі лай су айнадай жылтырап' — the muddy water at the bottom of the 'қауға' shimmered like a mirror. The word 'қауға' in Kazakh literally means a bucket or vessel used to draw water from a well. This is its direct/standard meaning, and the context confirms it: it is found inside the well (between the stone walls), it is rusty (old, unused), and it has muddy water at its bottom. Option D states 'Құдықтан су алуға арналған ыдыс' — a vessel/container used to draw water from a well — which matches exactly. Options A, B, and C describe other things (stone wall of a well, reed fence, musical instrument) which do not match the word 'қауға' either in standard Kazakh or in this context.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 6.0,
+                "difficulty_alignment": 4.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.3,
+              "pass_fail": true,
+              "comments": "The correct answer is unambiguous and well-supported by the text; the Kazakh is natural and well-written. However, the question tests direct vocabulary knowledge rather than contextual analysis — 'қауға' is used in its standard literal meaning, so no genuine contextual inference is required, making this more of a Level A (recall) item than Level B. Distractors C ('musical instrument') is implausible and trivially eliminable by any literate teacher.",
+              "improvement_suggestions": "To raise difficulty to genuine Level B, ask about a figuratively used word or phrase in the text (e.g., 'ауылдың ұмытылған жады' or 'суы тартылса да, елдің сөзі тартылмасын') where the contextual meaning diverges from the literal one and requires analysis. Replace distractor C with something more plausible — e.g., a container used for storing grain or a ladle — to reduce trivial elimination.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The question asks for the contextual meaning of the word 'қауға' (qauğa) in the text. In the text, it says 'тот басқан қауғаны көрді. Қауға түбіндегі лай су...' which translates to 'saw a rusted qauğa. The muddy water at the bottom of the qauğa...'. In the Kazakh language, 'қауға' refers to a bucket or vessel used to draw water from a well. Option D 'Құдықтан су алуға арналған ыдыс' translates to 'A vessel intended for drawing water from a well', which perfectly matches both the dictionary definition and the context of the text where it is described as being rusted and having muddy water at its bottom.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. The text is literary and engaging, and the distractors are cleverly tied to other elements present in the text, making it a great test of contextual vocabulary comprehension.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Автордың ескі құдық пен батырлар жырына қатынасын қай жауап дәл сипаттайды?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Оларды ауыл тұрмысына қажетсіз ескі қалдық деп бағалайды."
+        },
+        {
+          "label": "B",
+          "text": "Оларға құрметпен қарап, халық жадын сақтайтын рухани белгі ретінде көрсетеді."
+        },
+        {
+          "label": "C",
+          "text": "Оларды тек балалардың көңілін көтеретін ойын ретінде ұсынады."
+        },
+        {
+          "label": "D",
+          "text": "Оларды жаңа құбырға қарсы қойып, техникалық жаңалықты толық жоққа шығарады."
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Құдық «ауылдың ұмытылған жады» ретінде суреттеледі, ал жыр балаларды үнсіз тыңдататын рухани күшке ие. A мен C мәтіндегі құрмет сезімін елемейді, D-де жаңалықты толық жоққа шығару жоқ.",
+      "critic_score": 9.367,
+      "critic_answer": "B",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.5,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered B: The text presents the old well not as useless debris, but as a symbol connected with memory and oral tradition. Key evidence: the grandmother used to tell heroic epics at the well and said, “Even if the water dries up, the people’s word should not dry up,” which directly links the well to preserving speech/tradition. The narrator says the well seemed like “the village’s forgotten memory” and that \n\n[anthropic/claude-sonnet-4.6] answered B: The text describes Erzhan returning to his village and finding the old well covered with dried reeds. The author uses the well as a symbol of the village's forgotten memory ('ауылдың ұмытылған жады секілді'). The grandmother's saying 'even if the water dries up, let the people's word not dry up' connects the well to oral tradition and cultural memory. Erzhan cleans the well and recites an epic poe\n\n[google/gemini-3.1-pro-preview] answered B: The text describes an old, forgotten well and the epic poems (батырлар жыры) associated with the protagonist's grandmother. The grandmother's words, 'even if its water dries up, may the words of the people not dry up,' and the protagonist's reflection that the well is like the 'forgotten memory of the village' (ауылдың ұмытылған жады) strongly indicate a deep respect for cultural heritage. The pro",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.5,
+            "difficulty_alignment": 8.833,
+            "kazakh_language_quality": 9.667,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.367,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer is clearly correct and uniquely supported by explicit textual evidence such as 'ауылдың ұмытылған жады' and the preservation of heroic epic tradition. The item is well written and appropriate, though the distractors are mostly overstatements and somewhat easy to eliminate. | [anthropic/claude-sonnet-4.6] Well-crafted literary analysis question with a rich, culturally resonant text. The correct answer (B) is unambiguously supported by multiple textual cues ('ауылдың ұмытылған жады', the children's silent listening, the evening breeze motif). Distractors are plausible but D is slightly weak since the text never even implies full rejection of technology. | [google/gemini-3.1-pro-preview] The question is excellently crafted. The text is rich and literary, and the options effectively test the candidate's ability to analyze the author's tone and the underlying theme of the passage.",
+          "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Distractor D could be refined to be more tempting — e.g., framing it as 'contrasting the old well with the new pipe to show the superiority of traditional life' rather than 'completely negating technological innovation,' which is too extreme and easily eliminated. This would raise distractor quality closer to 9.",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text presents the old well not as useless debris, but as a symbol connected with memory and oral tradition. Key evidence: the grandmother used to tell heroic epics at the well and said, “Even if the water dries up, the people’s word should not dry up,” which directly links the well to preserving speech/tradition. The narrator says the well seemed like “the village’s forgotten memory” and that if one looks into it, “many voices are heard from its depth.” Erzhan cleans the reeds, fixes the stone lining, and tells children a fragment of “Er Targyn,” a heroic epic. The children become silent and listen, and the evening breeze seems to carry the song to distant homes. These details show respect for the well and the epic as spiritual signs preserving folk memory. Option A is wrong because the author does not treat them as unnecessary old remnants. Option C is wrong because the epic is not merely entertainment for children. Option D is wrong because although a new pipe is mentioned, the text does not completely reject technical progress. Therefore, the best answer is B.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 8.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.1,
+              "pass_fail": true,
+              "comments": "The keyed answer is clearly correct and uniquely supported by explicit textual evidence such as 'ауылдың ұмытылған жады' and the preservation of heroic epic tradition. The item is well written and appropriate, though the distractors are mostly overstatements and somewhat easy to eliminate.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes Erzhan returning to his village and finding the old well covered with dried reeds. The author uses the well as a symbol of the village's forgotten memory ('ауылдың ұмытылған жады секілді'). The grandmother's saying 'even if the water dries up, let the people's word not dry up' connects the well to oral tradition and cultural memory. Erzhan cleans the well and recites an epic poem ('Ер Тарғын') to children, who initially laugh but then listen in silence. The evening breeze carries the song to distant homes. These details show the author treats both the old well and the heroic epics with reverence, presenting them as spiritual symbols that preserve the people's memory. Option A is wrong — the author does not view them as useless remnants. Option C is wrong — the epic is not presented merely as entertainment for children. Option D is wrong — the text does not fully negate technological progress (the new pipe); it simply values the old alongside the new. Option B correctly captures the author's respectful attitude toward the well and the epic as spiritual markers preserving folk memory.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.5,
+                "difficulty_alignment": 8.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 9.0,
+              "pass_fail": true,
+              "comments": "Well-crafted literary analysis question with a rich, culturally resonant text. The correct answer (B) is unambiguously supported by multiple textual cues ('ауылдың ұмытылған жады', the children's silent listening, the evening breeze motif). Distractors are plausible but D is slightly weak since the text never even implies full rejection of technology.",
+              "improvement_suggestions": "Distractor D could be refined to be more tempting — e.g., framing it as 'contrasting the old well with the new pipe to show the superiority of traditional life' rather than 'completely negating technological innovation,' which is too extreme and easily eliminated. This would raise distractor quality closer to 9.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text describes an old, forgotten well and the epic poems (батырлар жыры) associated with the protagonist's grandmother. The grandmother's words, 'even if its water dries up, may the words of the people not dry up,' and the protagonist's reflection that the well is like the 'forgotten memory of the village' (ауылдың ұмытылған жады) strongly indicate a deep respect for cultural heritage. The protagonist cleans the well and shares the epic poem with the younger generation, symbolizing the preservation and transmission of this spiritual and cultural memory. Option B perfectly captures this sentiment, stating that the author treats them with respect and presents them as a spiritual symbol preserving the people's memory. Options A, C, and D contradict the tone and explicit meaning of the text.",
+              "critic_answer": "B",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 10.0,
+                "difficulty_alignment": 10.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 10.0,
+              "pass_fail": true,
+              "comments": "The question is excellently crafted. The text is rich and literary, and the options effectively test the candidate's ability to analyze the author's tone and the underlying theme of the passage.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    },
+    {
+      "question_text": "Мәтіннің құрылымдық ерекшелігін көрсетіңіз.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Мәтін түгелдей диалогке құрылған, оқиға кейіпкерлердің айтысы арқылы ашылады."
+        },
+        {
+          "label": "B",
+          "text": "Алдымен қорытынды беріледі, кейін ғылыми дәлелдер жүйелі түрде талданады."
+        },
+        {
+          "label": "C",
+          "text": "Бір ғана табиғат көрінісі сипатталып, кейіпкер әрекеті мүлде берілмейді."
+        },
+        {
+          "label": "D",
+          "text": "Оқиға кейіпкердің ауылға оралуынан басталып, естелікпен тереңдеп, жырды балаларға жеткізумен түйінделеді."
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Мәтінде Ержанның ауылға келуі, әжесі туралы естелік, құдықты түзеп, балаларға жыр айтуы ретімен өрбиді. A — диалог жоққа жуық, B — ғылыми талдау емес, C — кейіпкер әрекеті нақты берілген.",
+      "critic_score": 8.167,
+      "critic_answer": "D",
+      "critic_matches_key": true,
+      "pass_fail": true,
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 5.0,
+        "difficulty_alignment": 6.167,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "ensemble": {
+        "aggregated": {
+          "critic_solution": "[openai/gpt-5.5] answered D: The text is a narrative with descriptive and reflective elements. It begins with a temporal setting, 'Күздің соңғы айы еді,' and the main event: Erzhan returns from his studies in the city to the village. Then the narrative deepens through memory: he remembers his grandmother telling heroic epics at the well and saying, 'суы тартылса да, елдің сөзі тартылмасын.' The old well becomes a symbol of th\n\n[anthropic/claude-sonnet-4.6] answered D: Analyzing the structural features of the text:\n\nThe text begins with Erzhan returning to his village from the city (structural opening/exposition). Then it deepens through memory/recollection — his grandmother used to tell him heroic epics (batyrlar zhyry) at this well, saying 'even if the water dries up, let the people's word not dry up.' This is the retrospective/memory layer. The narrative then\n\n[google/gemini-3.1-pro-preview] answered D: Let's analyze the text and the given options to determine the structural feature of the text.\n\nThe text begins with the sentence 'Ержан қаладағы оқуынан ауылға оралғанда...' (When Yerzhan returned to the village from his studies in the city...), which establishes the starting point of the narrative: the character's return to the village.\nThen, it transitions into a memory: 'Бала күнінде әжесі осы ",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 5.0,
+            "difficulty_alignment": 6.167,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.167,
+          "pass_fail": true,
+          "comments": "[openai/gpt-5.5] The keyed answer D is clearly correct and uniquely supported by the text. However, the distractors are mostly trivially false, and the correct option is much more detailed, making the item easier than a solid B-level teacher-certification task. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a rich literary text and a clearly correct answer (D) that requires genuine structural analysis. Distractors A, B, C are plausible enough to require careful reading, though B (scientific analysis) is somewhat easily eliminated by any teacher familiar with text genres. | [google/gemini-3.1-pro-preview] The text is beautifully written and the correct answer is unambiguous. However, the distractors are too trivial for a teacher certification exam, making the question feel like an easy (Level A) reading comprehension task rather than a medium (Level B) structural analysis.",
+          "improvement_suggestions": "[openai/gpt-5.5] Make distractors more plausible by offering alternative structural interpretations, such as description-to-reflection-to-action, symbolic imagery followed by narrative resolution, or chronological narration with inserted memory, rather than obviously false claims about dialogue, scientific proof, or absence of action. | [google/gemini-3.1-pro-preview] Revise the distractors to make them plausible structural descriptions of literary texts. Instead of using obviously wrong genres (like scientific text in B) or easily disproven claims (like no character action in C), use other narrative structures (e.g., 'Оқиға желісі хронологиялық тәртіппен беріліп, кейіпкердің ішкі монологымен аяқталады').",
+          "verification": null
+        },
+        "per_critic": [
+          {
+            "model_id": "openai/gpt-5.5",
+            "error": null,
+            "feedback": {
+              "critic_solution": "The text is a narrative with descriptive and reflective elements. It begins with a temporal setting, 'Күздің соңғы айы еді,' and the main event: Erzhan returns from his studies in the city to the village. Then the narrative deepens through memory: he remembers his grandmother telling heroic epics at the well and saying, 'суы тартылса да, елдің сөзі тартылмасын.' The old well becomes a symbol of the village's forgotten memory. The plot then moves to action: Erzhan clears the reeds, repairs the stone lining, and tells the children a fragment of 'Ер Тарғын' that he heard from his grandmother. The ending shows the children listening silently and the evening breeze seemingly carrying the epic to distant houses. Therefore, the structural feature is: the story starts with the character's return to the village, develops through recollection, and concludes with transmitting the epic to children.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 5.5,
+                "kazakh_language_quality": 9.5,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The keyed answer D is clearly correct and uniquely supported by the text. However, the distractors are mostly trivially false, and the correct option is much more detailed, making the item easier than a solid B-level teacher-certification task.",
+              "improvement_suggestions": "Make distractors more plausible by offering alternative structural interpretations, such as description-to-reflection-to-action, symbolic imagery followed by narrative resolution, or chronological narration with inserted memory, rather than obviously false claims about dialogue, scientific proof, or absence of action.",
+              "verification": null
+            }
+          },
+          {
+            "model_id": "anthropic/claude-sonnet-4.6",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Analyzing the structural features of the text:\n\nThe text begins with Erzhan returning to his village from the city (structural opening/exposition). Then it deepens through memory/recollection — his grandmother used to tell him heroic epics (batyrlar zhyry) at this well, saying 'even if the water dries up, let the people's word not dry up.' This is the retrospective/memory layer. The narrative then returns to the present: Erzhan clears the reeds, fixes the well curbing, and tells the children a passage from 'Er Targhyn' (an epic he heard from his grandmother). The children first laugh, then listen in silence. The text concludes with the evening breeze carrying the song to distant homes — a poetic resolution/denouement.\n\nOption A: Incorrect — the text is not built entirely on dialogue.\nOption B: Incorrect — this is not a scientific/analytical text with conclusions first.\nOption C: Incorrect — character actions are clearly present throughout.\nOption D: Correct — the narrative starts with the character's return to the village, deepens through memory (grandmother's stories at the well), and concludes with passing the epic song to the children — a clear three-part structure: arrival → memory/deepening → resolution through transmission of cultural heritage.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 7.0,
+                "difficulty_alignment": 8.0,
+                "kazakh_language_quality": 9.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 8.9,
+              "pass_fail": true,
+              "comments": "The question is well-constructed with a rich literary text and a clearly correct answer (D) that requires genuine structural analysis. Distractors A, B, C are plausible enough to require careful reading, though B (scientific analysis) is somewhat easily eliminated by any teacher familiar with text genres.",
+              "improvement_suggestions": null,
+              "verification": null
+            }
+          },
+          {
+            "model_id": "google/gemini-3.1-pro-preview",
+            "error": null,
+            "feedback": {
+              "critic_solution": "Let's analyze the text and the given options to determine the structural feature of the text.\n\nThe text begins with the sentence 'Ержан қаладағы оқуынан ауылға оралғанда...' (When Yerzhan returned to the village from his studies in the city...), which establishes the starting point of the narrative: the character's return to the village.\nThen, it transitions into a memory: 'Бала күнінде әжесі осы құдық басында оған батырлар жырын айтып...' (In his childhood, his grandmother used to tell him epic poems by this well...), which deepens the narrative through a flashback/memory.\nFinally, the text concludes with Yerzhan's action: '...жанындағы балаларға әжесінен естіген «Ер Тарғынның» бір үзігін баяндап берді.' (...he told the children nearby an excerpt from 'Er Targyn' that he had heard from his grandmother.), which shows him passing the epic poem to the younger generation.\n\nNow let's evaluate the options:\nA) Claims the text is entirely dialogue-based. (False, there is no dialogue).\nB) Claims it starts with a conclusion followed by scientific evidence. (False, it is a literary narrative, not a scientific text).\nC) Claims it only describes nature without character actions. (False, Yerzhan's actions are explicitly described).\nD) States that the event starts with the character's return to the village, deepens with a memory, and concludes with passing the epic poem to the children. (True, this perfectly matches our structural analysis).\n\nTherefore, option D is the correct answer.",
+              "critic_answer": "D",
+              "dimensions": {
+                "correctness": 10.0,
+                "distractor_quality": 4.0,
+                "difficulty_alignment": 5.0,
+                "kazakh_language_quality": 10.0,
+                "latex_validity": 10.0,
+                "figure_relevance": null
+              },
+              "overall_score": 7.8,
+              "pass_fail": true,
+              "comments": "The text is beautifully written and the correct answer is unambiguous. However, the distractors are too trivial for a teacher certification exam, making the question feel like an easy (Level A) reading comprehension task rather than a medium (Level B) structural analysis.",
+              "improvement_suggestions": "Revise the distractors to make them plausible structural descriptions of literary texts. Instead of using obviously wrong genres (like scientific text in B) or easily disproven claims (like no character action in C), use other narrative structures (e.g., 'Оқиға желісі хронологиялық тәртіппен беріліп, кейіпкердің ішкі монологымен аяқталады').",
+              "verification": null
+            }
+          }
+        ],
+        "answer_agreement": 1.0,
+        "unanimous": true,
+        "n_critics_responded": 3,
+        "n_critics_failed": 0
+      }
+    }
+  ]
+}

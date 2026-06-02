@@ -1,0 +1,140 @@
+{
+  "id": "452cc8ad-588e-4379-a79e-43d7fbdfea93",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "«Кешегі жаңбырдан соң ауыл жастары егістік басына ерте келді» сөйлеміндегі сөз тіркестерінің байланысу түрлеріне қатысты дұрыс тұжырымды табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "«Кешегі жаңбыр» – жанаса байланысқан сөз тіркесі"
+    },
+    {
+      "label": "B",
+      "text": "«Ауыл жастары» – қабыса байланысқан сөз тіркесі"
+    },
+    {
+      "label": "C",
+      "text": "«Егістік басына» – меңгеріле байланысқан сөз тіркесі"
+    },
+    {
+      "label": "D",
+      "text": "«Ерте келді» – жанаса байланысқан сөз тіркесі"
+    }
+  ],
+  "correct_answer": "D",
+  "explanation": "Дұрыс жауап – D, себебі «ерте келді» сөз тіркесіндегі бағыныңқы сыңар (мезгіл үстеуі «ерте») басыңқы сыңарға (етістік «келді») ешбір жалғаусыз, іргелес тұрып мағыналық жағынан жанаса байланысып тұр. Қалған нұсқалар қате талданған: «кешегі жаңбыр» – қабысу (қатыстық сын есім мен зат есім қатар тұр), «ауыл жастары» және «егістік басына» – матасу (бағыныңқы сөздер жасырын ілік септігінде, ал басыңқы сөздер тәуелдік жалғауында тұр: ауыл[дың] жастар-ы, егістік[тің] басын-а).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.567,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered D: Analyze each proposed word phrase and its connection type in Kazakh syntax. A) “Кешегі жаңбыр”: “кешегі” is an attributive modifier of “жаңбыр”, standing adjacent without case/government; this is қабысу, not жанасу. So A is false. B) “Ауыл жастары”: this is essentially “ауылдың жастары” with a hidden genitive on the dependent and possessive suffix on the head (“жастары”), so it is матасу, not ordi\n\n[anthropic/claude-sonnet-4.6] answered D: In Kazakh syntax, there are three types of syntactic connections (байланысу түрлері) in word combinations (сөз тіркестері):\n1. Қабысу (agreement/juxtaposition) – the dependent word connects without any morphological change, typically adjectives, numerals, or adverbs modifying a noun or verb. No case ending on the dependent word.\n2. Меңгеру (government/rection) – the head word governs the dependent\n\n[google/gemini-3.1-pro-preview] answered D: To find the correct statement about the types of syntactic connections (сөздердің байланысу түрлері) in the given sentence, let's analyze each option based on the rules of Kazakh syntax:\n\n1. Қиысу: connection between subject and predicate.\n2. Матасу: connection between a dependent word in the genitive case (ілік септік, can be hidden) and a principal word with a possessive suffix (тәуелдік жалғау)",
+    "critic_answer": "D",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.0,
+      "difficulty_alignment": 9.167,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.567,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer D is correct and the explanation accurately distinguishes жанасу from қабысу, матасу, and меңгеру in the given phrases. The distractors are plausible, especially because hidden genitive/possessive constructions can be misclassified. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (D) is unambiguously жанасу (adverb+verb, no morphological marking), and each distractor targets a specific misconception — confusing қабысу/жанасу for A, misidentifying матасу as қабысу for B, and misidentifying матасу as меңгеру for C. The sentence is natural and the terminology aligns with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, tests the specific topic accurately, and has excellent distractors based on common misconceptions in Kazakh syntax.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered D: Analyze each proposed word phrase and its connection type in Kazakh syntax. A) “Кешегі жаңбыр”: “кешегі” is an attributive modifier of “жаңбыр”, standing adjacent without case/government; this is қабысу, not жанасу. So A is false. B) “Ауыл жастары”: this is essentially “ауылдың жастары” with a hidden genitive on the dependent and possessive suffix on the head (“жастары”), so it is матасу, not ordi\n\n[anthropic/claude-sonnet-4.6] answered D: In Kazakh syntax, there are three types of syntactic connections (байланысу түрлері) in word combinations (сөз тіркестері):\n1. Қабысу (agreement/juxtaposition) – the dependent word connects without any morphological change, typically adjectives, numerals, or adverbs modifying a noun or verb. No case ending on the dependent word.\n2. Меңгеру (government/rection) – the head word governs the dependent\n\n[google/gemini-3.1-pro-preview] answered D: To find the correct statement about the types of syntactic connections (сөздердің байланысу түрлері) in the given sentence, let's analyze each option based on the rules of Kazakh syntax:\n\n1. Қиысу: connection between subject and predicate.\n2. Матасу: connection between a dependent word in the genitive case (ілік септік, can be hidden) and a principal word with a possessive suffix (тәуелдік жалғау)",
+      "critic_answer": "D",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.0,
+        "difficulty_alignment": 9.167,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.567,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer D is correct and the explanation accurately distinguishes жанасу from қабысу, матасу, and меңгеру in the given phrases. The distractors are plausible, especially because hidden genitive/possessive constructions can be misclassified. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (D) is unambiguously жанасу (adverb+verb, no morphological marking), and each distractor targets a specific misconception — confusing қабысу/жанасу for A, misidentifying матасу as қабысу for B, and misidentifying матасу as меңгеру for C. The sentence is natural and the terminology aligns with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is well-constructed, tests the specific topic accurately, and has excellent distractors based on common misconceptions in Kazakh syntax.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Analyze each proposed word phrase and its connection type in Kazakh syntax. A) “Кешегі жаңбыр”: “кешегі” is an attributive modifier of “жаңбыр”, standing adjacent without case/government; this is қабысу, not жанасу. So A is false. B) “Ауыл жастары”: this is essentially “ауылдың жастары” with a hidden genitive on the dependent and possessive suffix on the head (“жастары”), so it is матасу, not ordinary қабысу. So B is false. C) “Егістік басына”: this is also a possessive construction equivalent to “егістіктің басына” with hidden genitive + possessive/dative on the head; the internal phrase is матасу, not меңгеру. So C is false. D) “Ерте келді”: “ерте” is an adverb modifying the verb “келді”; adverb + verb connection is жанасу. Therefore D is the correct statement.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.5,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The keyed answer D is correct and the explanation accurately distinguishes жанасу from қабысу, матасу, and меңгеру in the given phrases. The distractors are plausible, especially because hidden genitive/possessive constructions can be misclassified.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, there are three types of syntactic connections (байланысу түрлері) in word combinations (сөз тіркестері):\n1. Қабысу (agreement/juxtaposition) – the dependent word connects without any morphological change, typically adjectives, numerals, or adverbs modifying a noun or verb. No case ending on the dependent word.\n2. Меңгеру (government/rection) – the head word governs the dependent word, requiring it to take a specific case ending.\n3. Матасу (coordination/concord) – the dependent word agrees with the head word in person and number (typically possessive constructions).\n\nNote: In some Kazakh grammar traditions, 'жанасу' (adjacency) is used instead of 'қабысу', and these terms can overlap. Let me analyze each option:\n\nA) «Кешегі жаңбыр» – 'кешегі' is a derived adjective (from 'кеше' + -гі) modifying 'жаңбыр'. The dependent word 'кешегі' has no case ending and simply precedes the noun. This is қабысу (juxtaposition/agreement without morphological change). The option says 'жанаса байланысқан' — in some grammars жанасу = қабысу for adjective+noun. However, in the strict three-way classification, adjective+noun is қабысу, not жанасу. Жанасу typically refers to adverb+verb connections. So this may be incorrect.\n\nB) «Ауыл жастары» – 'ауыл' (village) + 'жастары' (youth-POSS.3PL). Here 'ауыл' is in the base form and 'жастары' has the possessive suffix -лары. This is матасу (possessive construction where the dependent noun is in base form and the head takes possessive suffix). The option says 'қабыса байланысқан' — this is INCORRECT. Ауыл жастары is матасу, not қабысу.\n\nC) «Егістік басына» – 'егістік' (field) + 'басына' (head-DAT, meaning 'to the head/edge of'). Here 'егістік' is in the base form (genitive is zero-marked in colloquial/informal) and 'басына' takes the dative case. This looks like a possessive+dative construction. Actually 'егістік басына' = 'to the edge of the field' — 'егістік' is the possessor (without genitive marker, which is common in Kazakh) and 'басына' is the possessed noun with dative. This is матасу (меңгеру would require the head verb to govern the case, but here it's a noun phrase). Wait — let me reconsider. Within the noun phrase 'егістік басына', the connection between 'егістік' and 'бас' is матасу (the possessor 'егістік' is in base form, 'басы' has possessive). But the option says меңгеріле байланысқан. Actually, in Kazakh grammar, меңгеру occurs when the head word requires the dependent to take a specific case. In 'егістік басына', 'егістік' doesn't take a case — it's the possessor. So this is матасу, not меңгеру. This option seems INCORRECT.\n\nD) «Ерте келді» – 'ерте' (early, adverb) + 'келді' (came, verb). The adverb 'ерте' modifies the verb 'келді' without any morphological change. This is жанасу (adjacency) — adverb+verb connection where the dependent word has no morphological marker. This is the classic example of жанасу байланысу. This option says 'жанаса байланысқан' — this is CORRECT.\n\nSo the correct answer is D: «Ерте келді» is жанаса байланысқан (connected by adjacency/жанасу), because 'ерте' is an adverb that modifies the verb without any case or agreement morphology.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.3,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (D) is unambiguously жанасу (adverb+verb, no morphological marking), and each distractor targets a specific misconception — confusing қабысу/жанасу for A, misidentifying матасу as қабысу for B, and misidentifying матасу as меңгеру for C. The sentence is natural and the terminology aligns with standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To find the correct statement about the types of syntactic connections (сөздердің байланысу түрлері) in the given sentence, let's analyze each option based on the rules of Kazakh syntax:\n\n1. Қиысу: connection between subject and predicate.\n2. Матасу: connection between a dependent word in the genitive case (ілік септік, can be hidden) and a principal word with a possessive suffix (тәуелдік жалғау).\n3. Меңгеру: connection where the principal word requires the dependent word to be in a specific oblique case (барыс, табыс, жатыс, шығыс, көмектес).\n4. Қабысу: connection without affixes where the dependent word is an adjective, numeral, pronoun, or participle, modifying a noun.\n5. Жанасу: connection without affixes where the dependent word is an adverb (үстеу), gerund (көсемше), or imitation word (еліктеу сөз), modifying a verb or adjective.\n\nEvaluating the options:\nA) «Кешегі жаңбыр» – 'кешегі' is an adjective modifying the noun 'жаңбыр' without any affixes. This is 'қабысу', not 'жанасу'. (Incorrect)\nB) «Ауыл жастары» – 'ауыл' is in the hidden genitive case (ауылдың) and 'жастары' has a possessive suffix. This is 'матасу', not 'қабысу'. (Incorrect)\nC) «Егістік басына» – 'егістік' is in the hidden genitive case (егістіктің) and 'басына' has a possessive suffix. This is 'матасу', not 'меңгеру'. (Incorrect)\nD) «Ерте келді» – 'ерте' is an adverb of time (мезгіл үстеуі) modifying the verb 'келді' without any affixes. This perfectly fits the definition of 'жанасу'. (Correct)\n\nTherefore, the correct statement is D.",
+          "critic_answer": "D",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, tests the specific topic accurately, and has excellent distractors based on common misconceptions in Kazakh syntax.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:44:50.517273+00:00",
+  "generation_attempts": 1
+}

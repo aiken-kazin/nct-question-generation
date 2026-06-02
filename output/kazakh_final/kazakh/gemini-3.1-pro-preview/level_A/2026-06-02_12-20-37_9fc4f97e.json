@@ -1,0 +1,140 @@
+{
+  "id": "9fc4f97e-ad59-4fe1-9a59-d262a4627bf2",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_simple_sentence",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Матаса байланысқан сөз тіркесін табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "ертең келу"
+    },
+    {
+      "label": "B",
+      "text": "сабаққа қатысу"
+    },
+    {
+      "label": "C",
+      "text": "ауылдың табиғаты"
+    },
+    {
+      "label": "D",
+      "text": "биік ғимарат"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Матасу – бағыныңқы сыңары ілік септігінде, басыңқы сыңары тәуелдік жалғауында тұрып байланысатын сөз тіркесі. «Ауылдың табиғаты» тіркесіндегі бағыныңқы сөз «ауылдың» ілік септігінде (-дың), басыңқы сөз «табиғаты» тәуелдік жалғауында (-ы) тұр. Қалған нұсқалардағы байланысу тәсілдері: «ертең келу» – жанасу, «сабаққа қатысу» – меңгеру, «биік ғимарат» – қабысу.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.917,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: In Kazakh syntax, a phrase connected by matasu (матасу) is formed by a dependent word in the genitive case (ілік септік) and a head word with a possessive suffix (тәуелдік жалғау), e.g., 'ауылдың табиғаты' = 'the nature of the village'. Here 'ауылдың' has the genitive suffix -дың, and 'табиғаты' has the 3rd-person possessive suffix -ы. Other options are different types: 'ертең келу' is an adverbia\n\n[anthropic/claude-sonnet-4.6] answered C: In Kazakh syntax, there are three types of subordinate word combinations (сөз тіркесі) based on the type of connection (байланыс):\n\n1. **Матасу (agreement/concordance)** — the dependent word agrees with the head word in case; typically involves a genitive-marked dependent and a possessive-marked head. Example: 'ауылдың табиғаты' — 'ауылдың' is in genitive case (-дың), and 'табиғаты' has a possessi\n\n[google/gemini-3.1-pro-preview] answered C: In Kazakh syntax, 'матасу' (matasu) is a type of syntactic connection in a phrase where the dependent word takes the genitive case suffix (ілік септік жалғауы) and the head word takes a possessive suffix (тәуелдік жалғауы). Let's analyze the given options:\n\nA) ертең келу - The dependent word 'ертең' (adverb) modifies the head word 'келу' (verb) without any relational affixes. This is 'қабысу'.\nB) ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 9.667,
+      "difficulty_alignment": 10.0,
+      "kazakh_language_quality": 10.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.917,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: “ауылдың табиғаты” is a clear genitive-plus-possessive matasu construction. The distractors are well-formed examples of other connection types and the item fits basic recognition level. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each distractor represents a distinct syntactic connection type (қабысу, меңгеру, қабысу), making all distractors plausible and pedagogically meaningful. The correct answer C is clearly the only матасу example, matching both the provided answer and explanation perfectly. | [google/gemini-3.1-pro-preview] The question is perfectly constructed, tests a fundamental concept at the correct difficulty level, and provides excellent distractors that cover the other types of syntactic connections.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: In Kazakh syntax, a phrase connected by matasu (матасу) is formed by a dependent word in the genitive case (ілік септік) and a head word with a possessive suffix (тәуелдік жалғау), e.g., 'ауылдың табиғаты' = 'the nature of the village'. Here 'ауылдың' has the genitive suffix -дың, and 'табиғаты' has the 3rd-person possessive suffix -ы. Other options are different types: 'ертең келу' is an adverbia\n\n[anthropic/claude-sonnet-4.6] answered C: In Kazakh syntax, there are three types of subordinate word combinations (сөз тіркесі) based on the type of connection (байланыс):\n\n1. **Матасу (agreement/concordance)** — the dependent word agrees with the head word in case; typically involves a genitive-marked dependent and a possessive-marked head. Example: 'ауылдың табиғаты' — 'ауылдың' is in genitive case (-дың), and 'табиғаты' has a possessi\n\n[google/gemini-3.1-pro-preview] answered C: In Kazakh syntax, 'матасу' (matasu) is a type of syntactic connection in a phrase where the dependent word takes the genitive case suffix (ілік септік жалғауы) and the head word takes a possessive suffix (тәуелдік жалғауы). Let's analyze the given options:\n\nA) ертең келу - The dependent word 'ертең' (adverb) modifies the head word 'келу' (verb) without any relational affixes. This is 'қабысу'.\nB) ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 9.667,
+        "difficulty_alignment": 10.0,
+        "kazakh_language_quality": 10.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.917,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and unambiguous: “ауылдың табиғаты” is a clear genitive-plus-possessive matasu construction. The distractors are well-formed examples of other connection types and the item fits basic recognition level. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and unambiguous. Each distractor represents a distinct syntactic connection type (қабысу, меңгеру, қабысу), making all distractors plausible and pedagogically meaningful. The correct answer C is clearly the only матасу example, matching both the provided answer and explanation perfectly. | [google/gemini-3.1-pro-preview] The question is perfectly constructed, tests a fundamental concept at the correct difficulty level, and provides excellent distractors that cover the other types of syntactic connections.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, a phrase connected by matasu (матасу) is formed by a dependent word in the genitive case (ілік септік) and a head word with a possessive suffix (тәуелдік жалғау), e.g., 'ауылдың табиғаты' = 'the nature of the village'. Here 'ауылдың' has the genitive suffix -дың, and 'табиғаты' has the 3rd-person possessive suffix -ы. Other options are different types: 'ертең келу' is an adverbial connection, 'сабаққа қатысу' is меңгеру because of the dative case governed by the verb, and 'биік ғимарат' is қабысу because the adjective and noun are adjacent without suffixal agreement. Therefore the matasu phrase is option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and unambiguous: “ауылдың табиғаты” is a clear genitive-plus-possessive matasu construction. The distractors are well-formed examples of other connection types and the item fits basic recognition level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, there are three types of subordinate word combinations (сөз тіркесі) based on the type of connection (байланыс):\n\n1. **Матасу (agreement/concordance)** — the dependent word agrees with the head word in case; typically involves a genitive-marked dependent and a possessive-marked head. Example: 'ауылдың табиғаты' — 'ауылдың' is in genitive case (-дың), and 'табиғаты' has a possessive suffix (-ы), showing agreement between the two words. This is the classic матасу (agreement) connection.\n\n2. **Меңгеру (government/rection)** — the head word governs the case of the dependent word. Example: 'сабаққа қатысу' — 'сабаққа' is in dative case, governed by the verbal noun 'қатысу'.\n\n3. **Қабысу (adjacency/juxtaposition)** — the dependent word is connected to the head word without any morphological change; the dependent is typically an adjective, adverb, or uninflected form. Examples: 'ертең келу' (adverb + verbal noun) and 'биік ғимарат' (adjective + noun) — both are қабысу connections.\n\nAnalyzing each option:\n- A) 'ертең келу' — adverb + verbal noun → қабысу\n- B) 'сабаққа қатысу' — dative noun + verbal noun → меңгеру\n- C) 'ауылдың табиғаты' — genitive noun + noun with possessive suffix → матасу ✓\n- D) 'биік ғимарат' — adjective + noun → қабысу\n\nTherefore, the phrase with матасу connection is C) 'ауылдың табиғаты'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.75,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and unambiguous. Each distractor represents a distinct syntactic connection type (қабысу, меңгеру, қабысу), making all distractors plausible and pedagogically meaningful. The correct answer C is clearly the only матасу example, matching both the provided answer and explanation perfectly.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, 'матасу' (matasu) is a type of syntactic connection in a phrase where the dependent word takes the genitive case suffix (ілік септік жалғауы) and the head word takes a possessive suffix (тәуелдік жалғауы). Let's analyze the given options:\n\nA) ертең келу - The dependent word 'ертең' (adverb) modifies the head word 'келу' (verb) without any relational affixes. This is 'қабысу'.\nB) сабаққа қатысу - The dependent word 'сабаққа' is in the dative case (барыс септік), modifying the verb 'қатысу'. This is 'меңгеру'.\nC) ауылдың табиғаты - The dependent word 'ауылдың' has the genitive case suffix (-дың), and the head word 'табиғаты' has the 3rd person possessive suffix (-ы). This perfectly matches the definition of 'матасу'.\nD) биік ғимарат - The dependent word 'биік' (adjective) modifies the head word 'ғимарат' (noun) without any affixes. This is 'қабысу'.\n\nThus, the phrase connected by 'матасу' is 'ауылдың табиғаты'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is perfectly constructed, tests a fundamental concept at the correct difficulty level, and provides excellent distractors that cover the other types of syntactic connections.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:20:37.787549+00:00",
+  "generation_attempts": 1
+}

@@ -1,0 +1,140 @@
+{
+  "id": "0cd02e27-d544-49ec-83be-ae09bb2183c7",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Төл сөзді төлеу сөзге айналдыру барысында болатын негізгі грамматикалық өзгерісті көрсетіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Төл сөз құрамындағы қаратпа сөздер мен одағайлар төлеу сөзде толықтай сақталады."
+    },
+    {
+      "label": "B",
+      "text": "Төлеу сөз бен автор сөзінің арасына әрқашан қос нүкте қойылады."
+    },
+    {
+      "label": "C",
+      "text": "Бірінші, екінші жақтағы есімдіктер мен етістіктер мағынасына қарай үшінші жаққа өзгереді."
+    },
+    {
+      "label": "D",
+      "text": "Төлеу сөздің баяндауышы міндетті түрде бұйрық рай тұлғасында қолданылады."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Төл сөзді төлеу сөзге айналдырғанда сөйлемнің құрылымы өзгеріске ұшырайды. Ең басты заңдылық – бірінші, екінші жақтағы сөздер (есімдіктер, етістіктер) үшінші жаққа немесе мағынасына қарай өздік есімдігіне айналады. Мысалы: Ол: «Мен барамын», – деді (төл сөз) -> Ол өзінің баратынын айтты (төлеу сөз). Қаратпа, одағай сөздер төлеу сөзге айналдырғанда көбінесе түсіп қалады, сондықтан А нұсқасы қате. Қос нүкте төл сөздің тыныс белгісіне жатады, ал төлеу сөз сабақтас құрмалас сөйлем түрінде жасалатындықтан В нұсқасы қате. Төлеу сөздің баяндауышы бұйрық райда тұруы міндетті емес, ол қате тұжырым (D нұсқасы).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.133,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: In Kazakh syntax, when direct speech (төл сөз) is converted into indirect/reported speech (төлеу сөз), the speaker’s original wording is grammatically adapted to the narrator’s perspective. A key change is the shift of person: first-person and second-person pronouns and verb forms in the direct speech are changed according to meaning, often to third person in the reported construction. Option A is\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about the main grammatical change that occurs when converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh.\n\nLet's analyze each option:\n\nA) 'Vocatives (қаратпа сөздер) and interjections (одағайлар) in direct speech are fully preserved in indirect speech.' — This is FALSE. When converting direct speech to indirect speech, vocatives and interjections are typical\n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the main grammatical change when converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh. Let's analyze the options:\n\nA) Vocatives and interjections are fully preserved. (False: they are typically omitted or integrated differently in indirect speech).\nB) A colon is always placed between indirect speech and the author's words. (False: colons are used for di",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.5,
+      "distractor_quality": 7.5,
+      "difficulty_alignment": 9.5,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.133,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is the only defensible choice and matches the standard basic rule for converting direct speech to indirect speech. The item is appropriate for level A, though the correct option slightly overgeneralizes person change and the distractors are made easy by absolute wording such as 'әрқашан' and 'міндетті түрде'. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and clearly tests the core grammatical rule of person-shift when converting direct to indirect speech in Kazakh. The correct answer (C) is unambiguous and matches standard Kazakh grammar instruction. Distractors are plausible but B is somewhat easier to eliminate since it describes a direct-speech punctuation rule rather than an indirect-speech rule, making it slightly transparent. | [google/gemini-3.1-pro-preview] The question is well-constructed, tests a fundamental rule of Kazakh syntax appropriate for Level A, and features plausible distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: In Kazakh syntax, when direct speech (төл сөз) is converted into indirect/reported speech (төлеу сөз), the speaker’s original wording is grammatically adapted to the narrator’s perspective. A key change is the shift of person: first-person and second-person pronouns and verb forms in the direct speech are changed according to meaning, often to third person in the reported construction. Option A is\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks about the main grammatical change that occurs when converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh.\n\nLet's analyze each option:\n\nA) 'Vocatives (қаратпа сөздер) and interjections (одағайлар) in direct speech are fully preserved in indirect speech.' — This is FALSE. When converting direct speech to indirect speech, vocatives and interjections are typical\n\n[google/gemini-3.1-pro-preview] answered C: The question asks for the main grammatical change when converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh. Let's analyze the options:\n\nA) Vocatives and interjections are fully preserved. (False: they are typically omitted or integrated differently in indirect speech).\nB) A colon is always placed between indirect speech and the author's words. (False: colons are used for di",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.5,
+        "distractor_quality": 7.5,
+        "difficulty_alignment": 9.5,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.133,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is the only defensible choice and matches the standard basic rule for converting direct speech to indirect speech. The item is appropriate for level A, though the correct option slightly overgeneralizes person change and the distractors are made easy by absolute wording such as 'әрқашан' and 'міндетті түрде'. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and clearly tests the core grammatical rule of person-shift when converting direct to indirect speech in Kazakh. The correct answer (C) is unambiguous and matches standard Kazakh grammar instruction. Distractors are plausible but B is somewhat easier to eliminate since it describes a direct-speech punctuation rule rather than an indirect-speech rule, making it slightly transparent. | [google/gemini-3.1-pro-preview] The question is well-constructed, tests a fundamental rule of Kazakh syntax appropriate for Level A, and features plausible distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, when direct speech (төл сөз) is converted into indirect/reported speech (төлеу сөз), the speaker’s original wording is grammatically adapted to the narrator’s perspective. A key change is the shift of person: first-person and second-person pronouns and verb forms in the direct speech are changed according to meaning, often to third person in the reported construction. Option A is incorrect because vocatives (қаратпа сөздер) and interjections (одағайлар) are usually omitted or transformed rather than fully preserved. Option B is incorrect because a colon is typical with direct speech after author’s words, not always between indirect speech and author’s words. Option D is incorrect because the predicate of reported speech is not necessarily in the imperative mood. Therefore, the correct main grammatical change is described in option C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 8.5,
+            "distractor_quality": 5.5,
+            "difficulty_alignment": 9.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.4,
+          "pass_fail": true,
+          "comments": "The keyed answer C is the only defensible choice and matches the standard basic rule for converting direct speech to indirect speech. The item is appropriate for level A, though the correct option slightly overgeneralizes person change and the distractors are made easy by absolute wording such as 'әрқашан' and 'міндетті түрде'.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks about the main grammatical change that occurs when converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh.\n\nLet's analyze each option:\n\nA) 'Vocatives (қаратпа сөздер) and interjections (одағайлар) in direct speech are fully preserved in indirect speech.' — This is FALSE. When converting direct speech to indirect speech, vocatives and interjections are typically dropped or omitted, as they are characteristic of direct address and cannot be maintained in reported speech.\n\nB) 'A colon is always placed between indirect speech and the author's words.' — This is FALSE. The colon placement rule applies to direct speech (төл сөз), not indirect speech (төлеу сөз). In indirect speech, the reported content is integrated into the sentence as a subordinate clause, typically connected with conjunctions like 'деп', 'екенін', etc.\n\nC) 'First and second person pronouns and verbs change to third person according to meaning.' — This is TRUE. This is the fundamental grammatical rule when converting direct speech to indirect speech in Kazakh (and in general linguistics). When someone's words are reported indirectly, the first-person references of the original speaker become third person, and second-person references also shift accordingly. For example, 'Мен барамын' (I am going) becomes 'Ол барады деді' (He said he is going). This is the primary grammatical transformation.\n\nD) 'The predicate of indirect speech must obligatorily be in the imperative mood.' — This is FALSE. The predicate in indirect speech is not required to be in the imperative mood; it takes whatever form is grammatically appropriate for the reported content.\n\nTherefore, option C correctly identifies the main grammatical change: first and second person pronouns and verbs shift to third person when converting direct speech to indirect speech.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and clearly tests the core grammatical rule of person-shift when converting direct to indirect speech in Kazakh. The correct answer (C) is unambiguous and matches standard Kazakh grammar instruction. Distractors are plausible but B is somewhat easier to eliminate since it describes a direct-speech punctuation rule rather than an indirect-speech rule, making it slightly transparent.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks for the main grammatical change when converting direct speech (төл сөз) to indirect speech (төлеу сөз) in Kazakh. Let's analyze the options:\n\nA) Vocatives and interjections are fully preserved. (False: they are typically omitted or integrated differently in indirect speech).\nB) A colon is always placed between indirect speech and the author's words. (False: colons are used for direct speech, not indirect speech).\nC) First and second person pronouns and verbs change to the third person depending on the meaning. (True: when converting direct speech like 'I will go' to indirect speech, it becomes 'He said that he would go', shifting the person from 1st/2nd to 3rd).\nD) The predicate of indirect speech must be in the imperative mood. (False: it can be in various moods depending on the original sentence).\n\nThus, the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, tests a fundamental rule of Kazakh syntax appropriate for Level A, and features plausible distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:18:40.926736+00:00",
+  "generation_attempts": 1
+}

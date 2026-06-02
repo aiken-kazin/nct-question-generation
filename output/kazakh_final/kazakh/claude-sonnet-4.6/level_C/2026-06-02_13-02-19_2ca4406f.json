@@ -1,0 +1,140 @@
+{
+  "id": "2ca4406f-d918-4c28-8c9d-d872e28ab4c1",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі күрделі сөйлемдердің қайсысында екі түрлі салалас байланыс (ыңғайлас және қарсылықты) бір мезгілде қолданылған?",
+  "options": [
+    {
+      "label": "A",
+      "text": "Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді."
+    },
+    {
+      "label": "B",
+      "text": "Күн шықты да, дала жылыды да, мал жайылымға шықты."
+    },
+    {
+      "label": "C",
+      "text": "Ол үйге келді, себебі анасы ауырып қалған еді."
+    },
+    {
+      "label": "D",
+      "text": "Не жүр, не тұр — ешбір шешімге келе алмады."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "А нұсқасындағы «Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді» сөйлемінде алғашқы екі жай сөйлем («Жаңбыр жауды, жел соқты») жалғаулықсыз тіркесіп, ыңғайлас салалас байланыс түзеді (оқиғалар бір-біріне ыңғайлас, қатарлас баяндалады); ал үшінші жай сөйлем «бірақ» қарсылықты жалғаулығы арқылы жалғанып, қарсылықты салалас байланыс жасайды. Демек, бір сөйлемде ыңғайлас және қарсылықты деген екі түрлі салалас байланыс қатар қолданылған. — Б нұсқасы: «да...да» жалғаулықтары тізбектеп келіп, тек ыңғайлас салалас байланысты ғана білдіреді, қарсылықты байланыс жоқ. — В нұсқасы: «себебі» жалғаулығы себеп-салдар салалас байланысын білдіреді, ыңғайлас немесе қарсылықты байланыс жоқ. — Г нұсқасы: «не...не» жалғаулықтары талғаулы салалас байланысты білдіреді, ыңғайлас не қарсылықты байланыс жоқ.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.533,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: We need the complex sentence that contains two different types of coordinate compound relations at the same time: ыңғайлас салалас (additive/copulative coordination) and қарсылықты салалас (adversative coordination). Option A has three coordinate clauses: 'Жаңбыр жауды' and 'жел соқты' are joined as parallel/additive events, so this is ыңғайлас байланыс. Then 'бірақ балалар далада ойнай берді' is \n\n[anthropic/claude-sonnet-4.6] answered A: The question asks which complex sentence simultaneously uses two different types of coordinate (салалас) connections: ыңғайлас (copulative/additive) and қарсылықты (adversative).\n\nLet's analyze each option:\n\nA) 'Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді.'\n- 'Жаңбыр жауды, жел соқты' — these two clauses are connected by a comma without a conjunction, which represents ыңғайлас (copul\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the sentence that contains two different types of coordinate connections: copulative (ыңғайлас) and adversative (қарсылықты). Let's analyze the options:\n\nOption A: 'Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді.' \n- The first two clauses ('Жаңбыр жауды', 'жел соқты') are connected without a conjunction (жалғаулықсыз), expressing simultaneous or sequential ",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.667,
+      "difficulty_alignment": 6.167,
+      "kazakh_language_quality": 9.0,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.533,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer A is correct and uniquely identifies a sentence combining ыңғайлас and қарсылықты салалас relations. However, the item is much easier than level C because it is solved mainly by recognizing obvious conjunctions such as «бірақ», «да», «себебі», and «не...не». | [anthropic/claude-sonnet-4.6] The question is well-constructed and correctly keyed: option A clearly combines ыңғайлас (copulative, comma-linked first two clauses) and қарсылықты (adversative, 'бірақ') connections simultaneously. Distractors are plausible but option C ('себебі') is somewhat easy to eliminate as it introduces a subordinate-like causal relation rather than a coordinate one, making it slightly weaker. The difficulty is moderate-hard rather than fully C-level, as the pattern in A is fairly transparent once the student knows the conjunction types. | [google/gemini-3.1-pro-preview] The question accurately tests the identification of multiple coordinate clause types within a single multi-clause sentence. The distractors are well-constructed and represent other types of coordinate clauses.",
+    "improvement_suggestions": "[openai/gpt-5.5] To align with level C, use a longer authentic or literary multi-clause sentence where the candidate must analyze implicit and explicit coordinate relations, justify the hierarchy of clause links, and distinguish mixed салалас types without relying only on obvious conjunction cues. | [anthropic/claude-sonnet-4.6] To raise difficulty to true C-level, consider using sentences where the boundary between connection types is less obvious (e.g., asyndetic clauses that could be interpreted as either ыңғайлас or қарсылықты), or embed the target sentence in a literary excerpt requiring contextual analysis. Replacing option C with a distractor that uses a genuine coordinate conjunction (e.g., себепті салалас with 'өйткені') would make elimination harder and improve distractor quality.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: We need the complex sentence that contains two different types of coordinate compound relations at the same time: ыңғайлас салалас (additive/copulative coordination) and қарсылықты салалас (adversative coordination). Option A has three coordinate clauses: 'Жаңбыр жауды' and 'жел соқты' are joined as parallel/additive events, so this is ыңғайлас байланыс. Then 'бірақ балалар далада ойнай берді' is \n\n[anthropic/claude-sonnet-4.6] answered A: The question asks which complex sentence simultaneously uses two different types of coordinate (салалас) connections: ыңғайлас (copulative/additive) and қарсылықты (adversative).\n\nLet's analyze each option:\n\nA) 'Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді.'\n- 'Жаңбыр жауды, жел соқты' — these two clauses are connected by a comma without a conjunction, which represents ыңғайлас (copul\n\n[google/gemini-3.1-pro-preview] answered A: The question asks to identify the sentence that contains two different types of coordinate connections: copulative (ыңғайлас) and adversative (қарсылықты). Let's analyze the options:\n\nOption A: 'Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді.' \n- The first two clauses ('Жаңбыр жауды', 'жел соқты') are connected without a conjunction (жалғаулықсыз), expressing simultaneous or sequential ",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 6.167,
+        "kazakh_language_quality": 9.0,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.533,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer A is correct and uniquely identifies a sentence combining ыңғайлас and қарсылықты салалас relations. However, the item is much easier than level C because it is solved mainly by recognizing obvious conjunctions such as «бірақ», «да», «себебі», and «не...не». | [anthropic/claude-sonnet-4.6] The question is well-constructed and correctly keyed: option A clearly combines ыңғайлас (copulative, comma-linked first two clauses) and қарсылықты (adversative, 'бірақ') connections simultaneously. Distractors are plausible but option C ('себебі') is somewhat easy to eliminate as it introduces a subordinate-like causal relation rather than a coordinate one, making it slightly weaker. The difficulty is moderate-hard rather than fully C-level, as the pattern in A is fairly transparent once the student knows the conjunction types. | [google/gemini-3.1-pro-preview] The question accurately tests the identification of multiple coordinate clause types within a single multi-clause sentence. The distractors are well-constructed and represent other types of coordinate clauses.",
+      "improvement_suggestions": "[openai/gpt-5.5] To align with level C, use a longer authentic or literary multi-clause sentence where the candidate must analyze implicit and explicit coordinate relations, justify the hierarchy of clause links, and distinguish mixed салалас types without relying only on obvious conjunction cues. | [anthropic/claude-sonnet-4.6] To raise difficulty to true C-level, consider using sentences where the boundary between connection types is less obvious (e.g., asyndetic clauses that could be interpreted as either ыңғайлас or қарсылықты), or embed the target sentence in a literary excerpt requiring contextual analysis. Replacing option C with a distractor that uses a genuine coordinate conjunction (e.g., себепті салалас with 'өйткені') would make elimination harder and improve distractor quality.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need the complex sentence that contains two different types of coordinate compound relations at the same time: ыңғайлас салалас (additive/copulative coordination) and қарсылықты салалас (adversative coordination). Option A has three coordinate clauses: 'Жаңбыр жауды' and 'жел соқты' are joined as parallel/additive events, so this is ыңғайлас байланыс. Then 'бірақ балалар далада ойнай берді' is introduced by the adversative conjunction 'бірақ', showing қарсылықты байланыс between the bad weather and the children's continued playing. Thus A contains both additive and adversative coordination. Option B contains only additive/sequential coordination with repeated 'да'. Option C expresses cause with 'себебі', not the requested pair. Option D uses 'не ... не', which is alternative/disjunctive coordination. Therefore the correct answer is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 3.5,
+            "kazakh_language_quality": 8.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.7,
+          "pass_fail": true,
+          "comments": "The keyed answer A is correct and uniquely identifies a sentence combining ыңғайлас and қарсылықты салалас relations. However, the item is much easier than level C because it is solved mainly by recognizing obvious conjunctions such as «бірақ», «да», «себебі», and «не...не».",
+          "improvement_suggestions": "To align with level C, use a longer authentic or literary multi-clause sentence where the candidate must analyze implicit and explicit coordinate relations, justify the hierarchy of clause links, and distinguish mixed салалас types without relying only on obvious conjunction cues.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks which complex sentence simultaneously uses two different types of coordinate (салалас) connections: ыңғайлас (copulative/additive) and қарсылықты (adversative).\n\nLet's analyze each option:\n\nA) 'Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді.'\n- 'Жаңбыр жауды, жел соқты' — these two clauses are connected by a comma without a conjunction, which represents ыңғайлас (copulative/additive) connection (enumeration of events).\n- 'бірақ балалар далада ойнай берді' — 'бірақ' (but) is a classic қарсылықты (adversative) conjunction.\n- So this sentence contains BOTH ыңғайлас (between the first two clauses) AND қарсылықты (introduced by 'бірақ') connections simultaneously.\n\nB) 'Күн шықты да, дала жылыды да, мал жайылымға шықты.'\n- All clauses are connected with 'да' (and), which is purely ыңғайлас (copulative). Only one type of connection.\n\nC) 'Ол үйге келді, себебі анасы ауырып қалған еді.'\n- 'себебі' (because) indicates a себеп-салдар (causal) connection — this is actually a бағыныңқы (subordinate) type or a specific салалас type (себепті салалас). It does not combine two different types.\n\nD) 'Не жүр, не тұр — ешбір шешімге келе алмады.'\n- 'Не...не' is a талғаулы (disjunctive/alternative) connection. Only one type.\n\nTherefore, option A is the sentence that simultaneously uses both ыңғайлас (copulative, between the first two clauses connected by comma/enumeration) and қарсылықты (adversative, with 'бірақ') connections.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.5,
+          "pass_fail": true,
+          "comments": "The question is well-constructed and correctly keyed: option A clearly combines ыңғайлас (copulative, comma-linked first two clauses) and қарсылықты (adversative, 'бірақ') connections simultaneously. Distractors are plausible but option C ('себебі') is somewhat easy to eliminate as it introduces a subordinate-like causal relation rather than a coordinate one, making it slightly weaker. The difficulty is moderate-hard rather than fully C-level, as the pattern in A is fairly transparent once the student knows the conjunction types.",
+          "improvement_suggestions": "To raise difficulty to true C-level, consider using sentences where the boundary between connection types is less obvious (e.g., asyndetic clauses that could be interpreted as either ыңғайлас or қарсылықты), or embed the target sentence in a literary excerpt requiring contextual analysis. Replacing option C with a distractor that uses a genuine coordinate conjunction (e.g., себепті салалас with 'өйткені') would make elimination harder and improve distractor quality.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the sentence that contains two different types of coordinate connections: copulative (ыңғайлас) and adversative (қарсылықты). Let's analyze the options:\n\nOption A: 'Жаңбыр жауды, жел соқты, бірақ балалар далада ойнай берді.' \n- The first two clauses ('Жаңбыр жауды', 'жел соқты') are connected without a conjunction (жалғаулықсыз), expressing simultaneous or sequential actions, which makes them a copulative coordinate connection (ыңғайлас салалас).\n- The third clause ('бірақ балалар далада ойнай берді') is connected to the previous part by the conjunction 'бірақ' (but), which is an adversative conjunction, making it an adversative coordinate connection (қарсылықты салалас).\nThis sentence perfectly matches the requirement.\n\nOption B: 'Күн шықты да, дала жылыды да, мал жайылымға шықты.' uses only copulative conjunctions ('да'), so it is purely ыңғайлас салалас.\n\nOption C: 'Ол үйге келді, себебі анасы ауырып қалған еді.' uses the causal conjunction 'себебі', making it a causal coordinate sentence (себеп-салдар салалас).\n\nOption D: 'Не жүр, не тұр — ешбір шешімге келе алмады.' uses the disjunctive conjunction 'не..., не...', making it a disjunctive coordinate sentence (талғаулы салалас).\n\nTherefore, Option A is the correct answer.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question accurately tests the identification of multiple coordinate clause types within a single multi-clause sentence. The distractors are well-constructed and represent other types of coordinate clauses.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T13:02:19.420728+00:00",
+  "generation_attempts": 1
+}

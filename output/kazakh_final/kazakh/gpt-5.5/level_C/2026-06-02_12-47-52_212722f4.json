@@ -1,0 +1,140 @@
+{
+  "id": "212722f4-3d57-4b75-8cf9-46f1b13b9fe4",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "style_and_text_analysis",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Екі мәтінді салыстырып, стильдік және тілдік-нормалық талдаудың дұрыс нұсқасын белгілеңіз.\n\nІ мәтін: «Фонема – сөз бен морфеманың мағынасын ажыратуға қызмет ететін ең кіші тілдік бірлік. Қазақ тіліндегі дауысты фонемалар артикуляциялық белгілеріне қарай жуан-жіңішке, ашық-қысаң, еріндік-езулік болып жіктеледі».\n\nІІ мәтін: «Тіл дыбыстарының да өз мінезі бар: бірі жуан естіліп, сөзге салмақ берсе, бірі жіңішке естіліп, әуезін жұмсартады. Осы айырмашылықтарды танысақ, қазақ сөзінің ішкі сазын да тереңірек ұғамыз».",
+  "options": [
+    {
+      "label": "A",
+      "text": "І мәтін ғылыми-көпшілік стильге жатады, себебі терминдер қарапайым түсіндірілген; ІІ мәтін таза ғылыми стильде жазылған, өйткені дыбыстардың жіктелуі бейнелі түрде берілген."
+    },
+    {
+      "label": "B",
+      "text": "Екі мәтін де ғылыми стильге жатады: біріншісінде анықтама бар, екіншісінде де тілдік құбылыс түсіндірілген; «өз мінезі бар» тіркесі ғылыми дәлдікті күшейтіп тұр."
+    },
+    {
+      "label": "C",
+      "text": "І мәтін ғылыми стильге тән: термин, анықтама, жіктеу жүйесі нақты берілген; ІІ мәтін ғылыми-көпшілік сипатта, өйткені бейнелі тіркес арқылы ұғымды көпшілікке жақындатады."
+    },
+    {
+      "label": "D",
+      "text": "І мәтін ресми стильде жазылған, себебі онда қалыптасқан терминдер қолданылған; ІІ мәтін көркем әдеби стильге жатады, өйткені негізгі мақсаты – дыбыстарды кейіптеу арқылы образ жасау."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап – C. І мәтінде «фонема», «артикуляциялық белгілер», «жуан-жіңішке», «ашық-қысаң», «еріндік-езулік» сияқты терминдер қолданылып, ұғымға анықтама берілген және жіктеу жасалған. Бұл – ғылыми стильдің негізгі белгілері. ІІ мәтінде тілдік құбылыс көпшілікке түсінікті, әсерлі түрде баяндалған; «дыбыстарының да өз мінезі бар», «сөздің ішкі сазы» сияқты бейнелі қолданыстар ғылыми-көпшілік стильге тән. A нұсқасында стильдер орынсыз ауыстырылған. B нұсқасындағы «өз мінезі бар» тіркесі таза ғылыми дәлдікті күшейтпейді, керісінше бейнелілік береді. D нұсқасында І мәтінді ресми стиль деу қате, ал ІІ мәтінді толық көркем әдеби стильге жатқызу дәл емес, себебі мәтіннің негізгі мақсаты – көркем образ жасау емес, тілдік құбылысты түсіндіру.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.0,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Text I gives a precise definition: “Фонема – ... ең кіші тілдік бірлік” and then classifies vowel phonemes by articulatory features: “жуан-жіңішке, ашық-қысаң, еріндік-езулік.” These are linguistic terms and a systematic classification, which are typical features of the scientific style. Text II discusses the same linguistic phenomenon but uses figurative expressions: “тіл дыбыстарының да өз мінез\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze both texts and evaluate each option:\n\nText I: 'Фонема – сөз бен морфеманың мағынасын ажыратуға қызмет ететін ең кіші тілдік бірлік. Қазақ тіліндегі дауысты фонемалар артикуляциялық белгілеріне қарай жуан-жіңішке, ашық-қысаң, еріндік-езулік болып жіктеледі.'\n- Contains a formal scientific definition of 'phoneme'\n- Uses specialized terminology: фонема, морфема, артикуляциялық белгілер,\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze both texts to determine their styles.\n\nText I provides a strict definition of a 'phoneme' and classifies vowel phonemes based on articulatory features. It uses precise linguistic terminology ('фонема', 'морфема', 'артикуляциялық белгілер') without any emotional or figurative language. This is a classic example of the pure scientific style (ғылыми стиль).\n\nText II discusses the same l",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 7.833,
+      "difficulty_alignment": 7.667,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.0,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: Text I is scientific, while Text II is scientific-popular due to figurative explanatory language. However, the item is much closer to medium-level style recognition than true level C, and some distractors are weakened by obviously false claims. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (C) that requires genuine stylistic analysis of two contrasting texts. The distractors are mostly plausible — A reverses the styles (a realistic error), B conflates both as scientific (another realistic error), and D misidentifies Text I as official style and overstates Text II as purely literary. The Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It requires deep analysis of text styles and linguistic features, perfectly matching the requested difficulty level.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Text I gives a precise definition: “Фонема – ... ең кіші тілдік бірлік” and then classifies vowel phonemes by articulatory features: “жуан-жіңішке, ашық-қысаң, еріндік-езулік.” These are linguistic terms and a systematic classification, which are typical features of the scientific style. Text II discusses the same linguistic phenomenon but uses figurative expressions: “тіл дыбыстарының да өз мінез\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze both texts and evaluate each option:\n\nText I: 'Фонема – сөз бен морфеманың мағынасын ажыратуға қызмет ететін ең кіші тілдік бірлік. Қазақ тіліндегі дауысты фонемалар артикуляциялық белгілеріне қарай жуан-жіңішке, ашық-қысаң, еріндік-езулік болып жіктеледі.'\n- Contains a formal scientific definition of 'phoneme'\n- Uses specialized terminology: фонема, морфема, артикуляциялық белгілер,\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze both texts to determine their styles.\n\nText I provides a strict definition of a 'phoneme' and classifies vowel phonemes based on articulatory features. It uses precise linguistic terminology ('фонема', 'морфема', 'артикуляциялық белгілер') without any emotional or figurative language. This is a classic example of the pure scientific style (ғылыми стиль).\n\nText II discusses the same l",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 7.833,
+        "difficulty_alignment": 7.667,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.0,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and uniquely defensible: Text I is scientific, while Text II is scientific-popular due to figurative explanatory language. However, the item is much closer to medium-level style recognition than true level C, and some distractors are weakened by obviously false claims. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (C) that requires genuine stylistic analysis of two contrasting texts. The distractors are mostly plausible — A reverses the styles (a realistic error), B conflates both as scientific (another realistic error), and D misidentifies Text I as official style and overstates Text II as purely literary. The Kazakh is natural and terminologically accurate. | [google/gemini-3.1-pro-preview] The question is of excellent quality. It requires deep analysis of text styles and linguistic features, perfectly matching the requested difficulty level.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Text I gives a precise definition: “Фонема – ... ең кіші тілдік бірлік” and then classifies vowel phonemes by articulatory features: “жуан-жіңішке, ашық-қысаң, еріндік-езулік.” These are linguistic terms and a systematic classification, which are typical features of the scientific style. Text II discusses the same linguistic phenomenon but uses figurative expressions: “тіл дыбыстарының да өз мінезі бар,” “сөзге салмақ береді,” “әуезін жұмсартады,” “қазақ сөзінің ішкі сазы.” This makes the explanation more accessible and expressive for a broad audience, so it is scientific-popular rather than purely scientific. Therefore, option C correctly identifies the style and linguistic-normative features.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.5,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.1,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and uniquely defensible: Text I is scientific, while Text II is scientific-popular due to figurative explanatory language. However, the item is much closer to medium-level style recognition than true level C, and some distractors are weakened by obviously false claims.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze both texts and evaluate each option:\n\nText I: 'Фонема – сөз бен морфеманың мағынасын ажыратуға қызмет ететін ең кіші тілдік бірлік. Қазақ тіліндегі дауысты фонемалар артикуляциялық белгілеріне қарай жуан-жіңішке, ашық-қысаң, еріндік-езулік болып жіктеледі.'\n- Contains a formal scientific definition of 'phoneme'\n- Uses specialized terminology: фонема, морфема, артикуляциялық белгілер, дауысты фонемалар, жіктеледі\n- Presents a systematic classification\n- Objective, impersonal, precise language\n- This is characteristic of PURE SCIENTIFIC STYLE (таза ғылыми стиль)\n\nText II: 'Тіл дыбыстарының да өз мінезі бар: бірі жуан естіліп, сөзге салмақ берсе, бірі жіңішке естіліп, әуезін жұмсартады. Осы айырмашылықтарды танысақ, қазақ сөзінің ішкі сазын да тереңірек ұғамыз.'\n- Uses figurative/metaphorical language: 'өз мінезі бар' (have their own character), 'сөзге салмақ берсе' (gives weight to the word), 'әуезін жұмсартады' (softens the melody), 'ішкі сазын' (inner melody)\n- Addresses the reader directly ('танысақ', 'ұғамыз') - inclusive we\n- Explains linguistic phenomena in an accessible, engaging way\n- This is characteristic of POPULAR SCIENCE / SCIENTIFIC-POPULAR STYLE (ғылыми-көпшілік стиль)\n\nNow evaluating options:\n\nA) Says Text I is ғылыми-көпшілік (popular science) and Text II is таза ғылыми (pure scientific). This is REVERSED and incorrect.\n\nB) Says both texts are ғылыми style and that 'өз мінезі бар' strengthens scientific precision. This is incorrect - 'өз мінезі бар' is a figurative expression that actually makes it less formally scientific, not more precise.\n\nC) Says Text I is ғылыми style (with terms, definitions, classification system clearly presented) and Text II is ғылыми-көпшілік (popular science) because figurative expressions bring the concept closer to the general public. This is CORRECT.\n\nD) Says Text I is ресми (official/formal) style and Text II is көркем әдеби (literary/artistic) style. While Text II has some figurative language, its primary purpose is still to explain a linguistic phenomenon to a wider audience (popular science), not to create artistic images. Text I is scientific, not official/formal (ресми). This is incorrect.\n\nThe correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear correct answer (C) that requires genuine stylistic analysis of two contrasting texts. The distractors are mostly plausible — A reverses the styles (a realistic error), B conflates both as scientific (another realistic error), and D misidentifies Text I as official style and overstates Text II as purely literary. The Kazakh is natural and terminologically accurate.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze both texts to determine their styles.\n\nText I provides a strict definition of a 'phoneme' and classifies vowel phonemes based on articulatory features. It uses precise linguistic terminology ('фонема', 'морфема', 'артикуляциялық белгілер') without any emotional or figurative language. This is a classic example of the pure scientific style (ғылыми стиль).\n\nText II discusses the same linguistic topic (vowel sounds being back or front) but uses figurative language and personification, such as 'өз мінезі бар' (have their own character), 'сөзге салмақ берсе' (give weight to the word), and 'ішкі сазын' (inner melody). The purpose of this text is to explain a scientific concept in an accessible, engaging way for a broader audience, which is the hallmark of the popular science style (ғылыми-көпшілік стиль).\n\nEvaluating the options:\n- Option A incorrectly identifies Text I as popular science and Text II as pure scientific.\n- Option B incorrectly claims both are pure scientific and that figurative language ('өз мінезі бар') strengthens scientific accuracy.\n- Option C correctly identifies Text I as scientific (due to terms, definitions, and precise classification) and Text II as popular science (due to the use of figurative phrases to make the concept accessible to the public).\n- Option D incorrectly identifies Text I as official style (ресми стиль).\n\nTherefore, Option C is the correct analysis.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is of excellent quality. It requires deep analysis of text styles and linguistic features, perfectly matching the requested difficulty level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:47:52.285043+00:00",
+  "generation_attempts": 1
+}

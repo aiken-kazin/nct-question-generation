@@ -1,0 +1,140 @@
+{
+  "id": "3e3b745c-6c19-4ba7-b4ef-e8b44023436b",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_subordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "«Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен, даланың аптап ыстығы басыла қоймады» деген сабақтас құрмалас сөйлемнің түрін және бағыныңқы сыңары баяндауышының жасалу жолын анықтаңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Мезгіл бағыныңқы сабақтас: өткен шақ есімшеге тәуелдік және жатыс септік жалғауларының жалғануы арқылы жасалған."
+    },
+    {
+      "label": "B",
+      "text": "Себеп бағыныңқы сабақтас: өткен шақ есімшеге тәуелдік және шығыс септік жалғауларының жалғануы арқылы жасалған."
+    },
+    {
+      "label": "C",
+      "text": "Қарсылықты бағыныңқы сабақтас: өткен шақ есімше формасына тәуелдік және көмектес септік жалғауларының жалғануы арқылы жасалған."
+    },
+    {
+      "label": "D",
+      "text": "Мақсат бағыныңқы сабақтас: тұйық етістікке тәуелдік және барыс септік жалғауларының жалғануы арқылы жасалған."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Берілген сөйлемдегі бағыныңқы сыңар – «Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен». Оның баяндауышы «жасырынғанымен» сөзі. Морфологиялық тұрғыдан бұл сөз: жасырын (етістік түбірі) + ған (өткен шақ есімше жұрнағы) + ы (тәуелдік жалғауының 3-жағы) + мен (көмектес септігінің жалғауы) болып талданады. Синтаксистік мағынасы бойынша бағыныңқы сөйлемдегі іс-әрекет (күннің жасырынуы) басым сөйлемдегі іс-әрекетке (ыстықтың басылмауына) қарама-қарсы қойылып тұр. Күн жасырынғанда ыстық қайтуы тиіс еді, алайда олай болмады. Бұл күтілген нәтижеге қарама-қайшылықты білдіретіндіктен, сөйлем қарсылықты бағыныңқы сабақтасқа жатады. А нұсқасындағы жатыс септігі (-ған+ы+нда) мезгіл бағыныңқыны, ал В нұсқасындағы шығыс септігі (-ған+нан / -ғандықтан) себеп бағыныңқыны жасайтындықтан, олар қате дистракторлар болып табылады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The main clause is “даланың аптап ыстығы басыла қоймады” (“the scorching heat of the steppe did not subside”). The subordinate part is “Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен” (“although the sun appeared once from behind the clouds and hid again”). The meaning is concessive/adversative: despite the event in the subordinate clause, the result in the main clause did not happen. The\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: «Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен, даланың аптап ыстығы басыла қоймады»\n\nThe subordinate clause is: 'Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен'\nThe main clause is: 'даланың аптап ыстығы басыла қоймады'\n\nStep 1: Identify the type of subordinate compound sentence.\nThe conjunction/connective form here is '-ғанымен' (жасырынғанымен). T\n\n[google/gemini-3.1-pro-preview] answered C: To determine the type of the subordinate compound sentence (сабақтас құрмалас сөйлем), we look at the relationship between the subordinate clause and the main clause. The subordinate clause is 'Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен' (Even though the sun appeared from the clouds and hid again), and the main clause is 'даланың аптап ыстығы басыла қоймады' (the intense heat of the ",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: the clause is concessive/adversative and the predicate is formed by past participle + possessive + instrumental case. The item is clear, single-answer, and appropriate for medium-level syntax analysis. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets Level B by requiring both syntactic classification and morphological analysis of the predicate form. The correct answer (C) is unambiguous, and the explanation is thorough and accurate. Distractors are plausible and each corresponds to a specific identifiable error (wrong clause type + wrong case suffix combination). | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests both the semantic identification of the subordinate clause and the morphological analysis of its predicate, with highly plausible and parallel distractors.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The main clause is “даланың аптап ыстығы басыла қоймады” (“the scorching heat of the steppe did not subside”). The subordinate part is “Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен” (“although the sun appeared once from behind the clouds and hid again”). The meaning is concessive/adversative: despite the event in the subordinate clause, the result in the main clause did not happen. The\n\n[anthropic/claude-sonnet-4.6] answered C: Let's analyze the sentence: «Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен, даланың аптап ыстығы басыла қоймады»\n\nThe subordinate clause is: 'Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен'\nThe main clause is: 'даланың аптап ыстығы басыла қоймады'\n\nStep 1: Identify the type of subordinate compound sentence.\nThe conjunction/connective form here is '-ғанымен' (жасырынғанымен). T\n\n[google/gemini-3.1-pro-preview] answered C: To determine the type of the subordinate compound sentence (сабақтас құрмалас сөйлем), we look at the relationship between the subordinate clause and the main clause. The subordinate clause is 'Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен' (Even though the sun appeared from the clouds and hid again), and the main clause is 'даланың аптап ыстығы басыла қоймады' (the intense heat of the ",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: the clause is concessive/adversative and the predicate is formed by past participle + possessive + instrumental case. The item is clear, single-answer, and appropriate for medium-level syntax analysis. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and appropriately targets Level B by requiring both syntactic classification and morphological analysis of the predicate form. The correct answer (C) is unambiguous, and the explanation is thorough and accurate. Distractors are plausible and each corresponds to a specific identifiable error (wrong clause type + wrong case suffix combination). | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests both the semantic identification of the subordinate clause and the morphological analysis of its predicate, with highly plausible and parallel distractors.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The main clause is “даланың аптап ыстығы басыла қоймады” (“the scorching heat of the steppe did not subside”). The subordinate part is “Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен” (“although the sun appeared once from behind the clouds and hid again”). The meaning is concessive/adversative: despite the event in the subordinate clause, the result in the main clause did not happen. Therefore, this is a қарсылықты бағыныңқы сабақтас сөйлем. The predicate of the subordinate clause is “жасырынғанымен”: жасырын- + -ған өткен шақ есімше + -ы тәуелдік жалғауы + -мен көмектес септік жалғауы. This matches the rule for a concessive subordinate clause formed with a past participle plus possessive and instrumental case endings.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: the clause is concessive/adversative and the predicate is formed by past participle + possessive + instrumental case. The item is clear, single-answer, and appropriate for medium-level syntax analysis.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the sentence: «Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен, даланың аптап ыстығы басыла қоймады»\n\nThe subordinate clause is: 'Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен'\nThe main clause is: 'даланың аптап ыстығы басыла қоймады'\n\nStep 1: Identify the type of subordinate compound sentence.\nThe conjunction/connective form here is '-ғанымен' (жасырынғанымен). This form expresses a concessive/adversative meaning — 'even though / despite the fact that'. This is a 'қарсылықты бағыныңқы сабақтас' (concessive/adversative subordinate clause). The meaning is: 'Even though the sun appeared from behind the clouds and hid again, the scorching heat of the steppe did not subside.'\n\nStep 2: Analyze the predicate form of the subordinate clause.\nThe predicate of the subordinate clause is 'жасырынғанымен'.\n- Base verb: жасырын- (to hide)\n- Form: жасырын + ған = жасырынған (past tense participle / өткен шақ есімше)\n- Then: жасырынған + ы (3rd person singular possessive/тәуелдік жалғауы) = жасырынғаны\n- Then: жасырынғаны + мен (көмектес септік жалғауы / instrumental case) = жасырынғанымен\n\nSo the predicate is formed by: past tense participle (өткен шақ есімше) + possessive suffix (тәуелдік жалғауы) + instrumental case suffix (көмектес септік жалғауы).\n\nThis matches option C: 'Қарсылықты бағыныңқы сабақтас: өткен шақ есімше формасына тәуелдік және көмектес септік жалғауларының жалғануы арқылы жасалған.'\n\nConclusion: The answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and appropriately targets Level B by requiring both syntactic classification and morphological analysis of the predicate form. The correct answer (C) is unambiguous, and the explanation is thorough and accurate. Distractors are plausible and each corresponds to a specific identifiable error (wrong clause type + wrong case suffix combination).",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To determine the type of the subordinate compound sentence (сабақтас құрмалас сөйлем), we look at the relationship between the subordinate clause and the main clause. The subordinate clause is 'Күн көзі бұлт арасынан бір көрініп, қайта жасырынғанымен' (Even though the sun appeared from the clouds and hid again), and the main clause is 'даланың аптап ыстығы басыла қоймады' (the intense heat of the steppe did not subside). Because the action in the main clause occurs despite the condition in the subordinate clause, this is a concessive subordinate clause (қарсылықты бағыныңқы сабақтас).\n\nNext, we analyze the predicate of the subordinate clause: 'жасырынғанымен'. \nIts morphological breakdown is:\n1. 'жасырын' - verb stem (hide)\n2. '-ған' - past participle suffix (өткен шақ есімше)\n3. '-ы' - 3rd person possessive suffix (тәуелдік жалғауы)\n4. '-мен' - instrumental case suffix (көмектес септік жалғауы)\n\nLooking at the given options, Option C correctly identifies the sentence as 'Қарсылықты бағыныңқы сабақтас' and accurately describes the formation of the subordinate predicate as 'өткен шақ есімше формасына тәуелдік және көмектес септік жалғауларының жалғануы арқылы жасалған'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests both the semantic identification of the subordinate clause and the morphological analysis of its predicate, with highly plausible and parallel distractors.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:24:41.457295+00:00",
+  "generation_attempts": 1
+}

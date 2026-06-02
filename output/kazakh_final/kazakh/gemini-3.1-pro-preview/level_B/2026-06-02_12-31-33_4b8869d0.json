@@ -1,0 +1,140 @@
+{
+  "id": "4b8869d0-deb2-4cce-b3e6-edc5a9ea92c6",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "syntax_coordinate_clauses",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Сөйлем компоненттерінің арасындағы мағыналық қатынасты талдая отырып, жалғаулықсыз себеп-салдар салалас құрмалас сөйлемді көрсетіңіз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар."
+    },
+    {
+      "label": "B",
+      "text": "Күн ұясына батты, айналаны қоңырқай қараңғылық басты."
+    },
+    {
+      "label": "C",
+      "text": "Тау ішін қалың тұман басты – жолаушылардың алға қарай жүруі қиындады."
+    },
+    {
+      "label": "D",
+      "text": "Ол бұл жарысқа көп дайындалды – күткен нәтижесіне қол жеткізе алмады."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап – C. Себеп-салдар салалас құрмалас сөйлемде жай сөйлемдердің бірі екіншісіндегі іс-әрекеттің себебін, екіншісі оның салдарын (нәтижесін) білдіреді. Жалғаулықсыз жұмсалғандықтан, сөйлемдердің арасына «сондықтан», «сол себепті» жалғаулықтарын қою арқылы мағыналық қатынасын анықтауға болады: «Тау ішін қалың тұман басты, (сондықтан) жолаушылардың алға қарай жүруі қиындады». Сонымен қатар, екінші сөйлем нәтижені білдіргендіктен, ережеге сай араларына сызықша қойылған. А нұсқасы – түсіндірмелі салалас (бірінші сөйлемдегі сілтеу есімдігінің мәнін екінші сөйлем түсіндіріп тұр). В нұсқасы – ыңғайлас салалас (іс-әрекеттер бір-біріне мезгілдес, ыңғайлас мәнде берілген). D нұсқасы – қарсылықты салалас (екінші сөйлемдегі іс-әрекет біріншіге қарсы қойылған, «бірақ», «алайда» жалғаулықтары сұранып тұр).",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.4,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: We need a coordinate compound sentence without a conjunction expressing a cause-effect relation. In Kazakh syntax, a жалғаулықсыз себеп-салдар салалас has two coordinate components where one event is the reason and the other is the consequence, usually connected by intonation/punctuation such as a dash or comma without causal conjunctions. Option A has a colon and the second part explains the cont\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to identify a 'conjunctionless cause-effect coordinate compound sentence' (жалғаулықсыз себеп-салдар салалас құрмалас сөйлем) — i.e., a paratactic (asyndetic/conjunctionless) compound sentence where the relationship between clauses is cause and effect.\n\nLet's analyze each option:\n\nA) 'Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар.' — This uses a colon and is an \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify an asyndetic cause-and-effect coordinate compound sentence (жалғаулықсыз себеп-салдар салалас құрмалас сөйлем). Let's analyze the semantic relationships between the clauses in each option:\n\nA) 'Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар.' - The second clause explains the first clause. This is an explanatory coordinate compound sentence (түсіндірме",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 9.667,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 9.333,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.4,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation properly distinguishes cause-result from explanatory, coordinate, and adversative relations. Minor caution: option B has a natural cause-result reading in ordinary semantics, though it is conventionally classifiable as ыңғайлас here. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously a conjunctionless cause-effect compound sentence, and each distractor represents a distinct, identifiable syntactic relationship (explanatory, sequential/simultaneous, adversative). The explanation is thorough and pedagogically sound. Language quality is natural and terminology aligns with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the ability to identify semantic relationships between clauses in asyndetic coordinate compound sentences, with well-chosen distractors representing other types of coordinate clauses.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: We need a coordinate compound sentence without a conjunction expressing a cause-effect relation. In Kazakh syntax, a жалғаулықсыз себеп-салдар салалас has two coordinate components where one event is the reason and the other is the consequence, usually connected by intonation/punctuation such as a dash or comma without causal conjunctions. Option A has a colon and the second part explains the cont\n\n[anthropic/claude-sonnet-4.6] answered C: The question asks to identify a 'conjunctionless cause-effect coordinate compound sentence' (жалғаулықсыз себеп-салдар салалас құрмалас сөйлем) — i.e., a paratactic (asyndetic/conjunctionless) compound sentence where the relationship between clauses is cause and effect.\n\nLet's analyze each option:\n\nA) 'Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар.' — This uses a colon and is an \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify an asyndetic cause-and-effect coordinate compound sentence (жалғаулықсыз себеп-салдар салалас құрмалас сөйлем). Let's analyze the semantic relationships between the clauses in each option:\n\nA) 'Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар.' - The second clause explains the first clause. This is an explanatory coordinate compound sentence (түсіндірме",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 9.667,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 9.333,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.4,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation properly distinguishes cause-result from explanatory, coordinate, and adversative relations. Minor caution: option B has a natural cause-result reading in ordinary semantics, though it is conventionally classifiable as ыңғайлас here. | [anthropic/claude-sonnet-4.6] The question is well-constructed: the correct answer (C) is unambiguously a conjunctionless cause-effect compound sentence, and each distractor represents a distinct, identifiable syntactic relationship (explanatory, sequential/simultaneous, adversative). The explanation is thorough and pedagogically sound. Language quality is natural and terminology aligns with standard Kazakh grammar textbooks. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the ability to identify semantic relationships between clauses in asyndetic coordinate compound sentences, with well-chosen distractors representing other types of coordinate clauses.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "We need a coordinate compound sentence without a conjunction expressing a cause-effect relation. In Kazakh syntax, a жалғаулықсыз себеп-салдар салалас has two coordinate components where one event is the reason and the other is the consequence, usually connected by intonation/punctuation such as a dash or comma without causal conjunctions. Option A has a colon and the second part explains the content of 'мынау'; this is an explanatory construction, not cause-effect. Option B states two successive/related events: the sun set and darkness covered the surroundings; although there is a natural relation, it is mainly a sequence/parallel description and is not the clearest cause-effect type. Option C: 'Тау ішін қалың тұман басты – жолаушылардың алға қарай жүруі қиындады.' The first component gives the cause: thick fog covered the mountain area. The second component gives the result: the travelers' forward movement became difficult. There is no conjunction, and the dash marks the semantic relation. Option D expresses contrast: he prepared a lot, but did not achieve the expected result; this is adversative, not cause-effect. Therefore the correct answer is C.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 9.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and the explanation properly distinguishes cause-result from explanatory, coordinate, and adversative relations. Minor caution: option B has a natural cause-result reading in ordinary semantics, though it is conventionally classifiable as ыңғайлас here.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify a 'conjunctionless cause-effect coordinate compound sentence' (жалғаулықсыз себеп-салдар салалас құрмалас сөйлем) — i.e., a paratactic (asyndetic/conjunctionless) compound sentence where the relationship between clauses is cause and effect.\n\nLet's analyze each option:\n\nA) 'Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар.' — This uses a colon and is an explanatory (түсіндірмелі) construction. The second part explains/clarifies the first. This is an explanatory relationship, not cause-effect.\n\nB) 'Күн ұясына батты, айналаны қоңырқай қараңғылық басты.' — 'The sun set, darkness covered the surroundings.' This is a conjunctionless compound sentence. The relationship here is sequential/temporal (кезектестік немесе мезгілдес) — one event follows another. The sun setting and darkness coming are sequential events. However, one could argue the sun setting CAUSES darkness. But in Kazakh syntax, this type is typically classified as 'кезектестік' (sequential) or 'мезгілдес' (simultaneous/temporal) rather than cause-effect.\n\nC) 'Тау ішін қалың тұман басты – жолаушылардың алға қарай жүруі қиындады.' — 'Thick fog covered the mountains – it became difficult for travelers to move forward.' Here, the first clause (thick fog) is clearly the CAUSE, and the second clause (difficulty moving forward) is the EFFECT/RESULT. The dash (–) is used as a conjunctionless connector. This is a classic cause-effect (себеп-салдар) relationship without a conjunction.\n\nD) 'Ол бұл жарысқа көп дайындалды – күткен нәтижесіне қол жеткізе алмады.' — 'He prepared a lot for this competition – he couldn't achieve the expected result.' This shows a contrast/adversative (қарсылықты) relationship — despite much preparation, he failed. This is adversative (қарсылықты), not cause-effect.\n\nTherefore, option C is the conjunctionless cause-effect coordinate compound sentence: the fog (cause) → difficulty traveling (effect).",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 8.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.2,
+          "pass_fail": true,
+          "comments": "The question is well-constructed: the correct answer (C) is unambiguously a conjunctionless cause-effect compound sentence, and each distractor represents a distinct, identifiable syntactic relationship (explanatory, sequential/simultaneous, adversative). The explanation is thorough and pedagogically sound. Language quality is natural and terminology aligns with standard Kazakh grammar textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify an asyndetic cause-and-effect coordinate compound sentence (жалғаулықсыз себеп-салдар салалас құрмалас сөйлем). Let's analyze the semantic relationships between the clauses in each option:\n\nA) 'Менің бір байқағаным мынау: биыл қыс өте қатты болатын түрі бар.' - The second clause explains the first clause. This is an explanatory coordinate compound sentence (түсіндірмелі салалас).\n\nB) 'Күн ұясына батты, айналаны қоңырқай қараңғылық басты.' - The events happen sequentially/simultaneously. This is a copulative coordinate compound sentence (ыңғайлас салалас).\n\nC) 'Тау ішін қалың тұман басты – жолаушылардың алға қарай жүруі қиындады.' - The first clause (thick fog covered the mountain) is the cause, and the second clause (it became difficult for travelers to move forward) is the effect. There are no conjunctions used. This perfectly matches the definition of an asyndetic cause-and-effect coordinate compound sentence (жалғаулықсыз себеп-салдар салалас).\n\nD) 'Ол бұл жарысқа көп дайындалды – күткен нәтижесіне қол жеткізе алмады.' - The second clause contrasts with the first (he prepared a lot, but couldn't achieve the result). This is an adversative coordinate compound sentence (қарсылықты салалас).\n\nTherefore, option C is the correct answer.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the ability to identify semantic relationships between clauses in asyndetic coordinate compound sentences, with well-chosen distractors representing other types of coordinate clauses.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:31:33.895488+00:00",
+  "generation_attempts": 1
+}

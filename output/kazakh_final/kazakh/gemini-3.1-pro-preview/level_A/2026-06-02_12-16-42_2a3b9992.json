@@ -1,0 +1,140 @@
+{
+  "id": "2a3b9992-0b8c-45c0-8539-6604eec48cf1",
+  "subject": "kazakh",
+  "level": "A",
+  "format": "text",
+  "topic": "phonetics_orthography",
+  "model_id": "google/gemini-3.1-pro-preview",
+  "question_text": "Айтылуында кейінді ықпал заңдылығы байқалатын біріккен сөзді табыңыз.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Ақбас"
+    },
+    {
+      "label": "B",
+      "text": "Тасбұлақ"
+    },
+    {
+      "label": "C",
+      "text": "Жанпейіс"
+    },
+    {
+      "label": "D",
+      "text": "Сарыағаш"
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "«Жанпейіс» сөзінің орфоэпиялық норма бойынша айтылуы – [жампейіс]. Мұндағы кейінгі «п» (қатаң, ерін-ерін) дыбысының әсерінен алдыңғы «н» (үнді, тіл алды) дыбысы «м» (үнді, ерін-ерін) дыбысына айналып, кейінді ықпал заңдылығына бағынып тұр. Қате нұсқаларға келсек: «Ақбас» сөзінде алдыңғы қатаң «қ» дыбысының әсерінен кейінгі ұяң «б» қатаң «п»-ға айналады (ілгерінді ықпал: [ақпас]). «Тасбұлақ» сөзінде де алдыңғы «с» қатаң дыбысының әсерінен «б» дыбысы «п»-ға өзгереді (ілгерінді ықпал: [таспұлақ]). Ал «Сарыағаш» сөзінде дауысты дыбыстың түсіп қалуы (элизия: [сарағаш]) байқалады.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.367,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: The rule asked for is кейінді ықпал, i.e. regressive assimilation: a later/following sound affects the pronunciation of an earlier/preceding sound. In Kazakh, a common case is that final н changes to м before following bilabial consonants б/п/м, e.g. сенбі is pronounced сембі, Жанболат is pronounced Жамболат. In option C, Жанпейіс is formed from жан + пейіс. In pronunciation, the following п affec\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks to find the compound word (біріккен сөз) in which 'regressive assimilation' (кейінді ықпал — regressive/anticipatory assimilation, where a following sound influences a preceding sound) is observed in pronunciation.\n\nIn Kazakh phonetics:\n- 'Кейінді ықпал' (regressive assimilation) means a subsequent sound affects the preceding sound.\n- 'Ілгерінді ықпал' (progressive assimilation) \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the compound word (біріккен сөз) that exhibits regressive assimilation (кейінді ықпал) in its pronunciation. Regressive assimilation occurs when a following sound influences the preceding sound.\n\nLet's analyze the pronunciation of each option:\nA) Ақбас -> pronounced as [Ақпас]. The voiceless 'қ' influences the following voiced 'б', turning it into the voiceless 'п'. T",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 7.333,
+      "distractor_quality": 8.667,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.667,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.367,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct: Жанпейіс is pronounced Жампейіс due to regressive assimilation of н to м before п. The distractors are relevant compound words showing other phonetic processes, and the item fits the basic recognition/application level. | [anthropic/claude-sonnet-4.6] The provided answer C (Жанпейіс) is actually correct — 'н' assimilates to bilabial 'м' due to following 'п', which is genuine regressive (кейінді) assimilation. However, my independent analysis initially erred by selecting B, reflecting genuine ambiguity in how Kazakh textbooks classify these cases. The question is linguistically sound but the distractor explanations for A and B (claiming both show progressive assimilation) are defensible in standard Kazakh phonetics, making C the unique regressive example. The correctness score is low because my independent answer differed from the provided answer. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the knowledge of regressive assimilation with well-chosen distractors that represent other phonetic phenomena in compound words.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Add a brief phonetic transcription hint in the stem or make the assimilation direction more explicit to reduce ambiguity. Consider replacing Сарыағаш (which involves elision, a completely different phenomenon) with a compound word that shows a more clearly contrasting type of assimilation, improving distractor homogeneity.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: The rule asked for is кейінді ықпал, i.e. regressive assimilation: a later/following sound affects the pronunciation of an earlier/preceding sound. In Kazakh, a common case is that final н changes to м before following bilabial consonants б/п/м, e.g. сенбі is pronounced сембі, Жанболат is pronounced Жамболат. In option C, Жанпейіс is formed from жан + пейіс. In pronunciation, the following п affec\n\n[anthropic/claude-sonnet-4.6] answered B: The question asks to find the compound word (біріккен сөз) in which 'regressive assimilation' (кейінді ықпал — regressive/anticipatory assimilation, where a following sound influences a preceding sound) is observed in pronunciation.\n\nIn Kazakh phonetics:\n- 'Кейінді ықпал' (regressive assimilation) means a subsequent sound affects the preceding sound.\n- 'Ілгерінді ықпал' (progressive assimilation) \n\n[google/gemini-3.1-pro-preview] answered C: The question asks to identify the compound word (біріккен сөз) that exhibits regressive assimilation (кейінді ықпал) in its pronunciation. Regressive assimilation occurs when a following sound influences the preceding sound.\n\nLet's analyze the pronunciation of each option:\nA) Ақбас -> pronounced as [Ақпас]. The voiceless 'қ' influences the following voiced 'б', turning it into the voiceless 'п'. T",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 7.333,
+        "distractor_quality": 8.667,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.667,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.367,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct: Жанпейіс is pronounced Жампейіс due to regressive assimilation of н to м before п. The distractors are relevant compound words showing other phonetic processes, and the item fits the basic recognition/application level. | [anthropic/claude-sonnet-4.6] The provided answer C (Жанпейіс) is actually correct — 'н' assimilates to bilabial 'м' due to following 'п', which is genuine regressive (кейінді) assimilation. However, my independent analysis initially erred by selecting B, reflecting genuine ambiguity in how Kazakh textbooks classify these cases. The question is linguistically sound but the distractor explanations for A and B (claiming both show progressive assimilation) are defensible in standard Kazakh phonetics, making C the unique regressive example. The correctness score is low because my independent answer differed from the provided answer. | [google/gemini-3.1-pro-preview] The question is excellent. It accurately tests the knowledge of regressive assimilation with well-chosen distractors that represent other phonetic phenomena in compound words.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Add a brief phonetic transcription hint in the stem or make the assimilation direction more explicit to reduce ambiguity. Consider replacing Сарыағаш (which involves elision, a completely different phenomenon) with a compound word that shows a more clearly contrasting type of assimilation, improving distractor homogeneity.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The rule asked for is кейінді ықпал, i.e. regressive assimilation: a later/following sound affects the pronunciation of an earlier/preceding sound. In Kazakh, a common case is that final н changes to м before following bilabial consonants б/п/м, e.g. сенбі is pronounced сембі, Жанболат is pronounced Жамболат. In option C, Жанпейіс is formed from жан + пейіс. In pronunciation, the following п affects the preceding н, so Жанпейіс is pronounced Жампейіс. This is exactly кейінді ықпал. The other options either show progressive influence or do not clearly show this regressive assimilation.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.6,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct: Жанпейіс is pronounced Жампейіс due to regressive assimilation of н to м before п. The distractors are relevant compound words showing other phonetic processes, and the item fits the basic recognition/application level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to find the compound word (біріккен сөз) in which 'regressive assimilation' (кейінді ықпал — regressive/anticipatory assimilation, where a following sound influences a preceding sound) is observed in pronunciation.\n\nIn Kazakh phonetics:\n- 'Кейінді ықпал' (regressive assimilation) means a subsequent sound affects the preceding sound.\n- 'Ілгерінді ықпал' (progressive assimilation) means a preceding sound affects the following sound.\n\nLet's analyze each option:\n\nA) Ақбас — [aq] + [bas]. The word-final 'қ' (voiceless uvular stop) meets 'б' (voiced bilabial stop). In pronunciation, the voiced 'б' causes the preceding 'қ' to become voiced → 'ғ' sound. So 'ақбас' is pronounced [ағбас]. Here the following voiced consonant 'б' influences the preceding 'қ' making it voiced. This is REGRESSIVE assimilation (кейінді ықпал) — the following sound affects the preceding one.\n\nB) Тасбұлақ — [tas] + [bulaq]. 'с' (voiceless) meets 'б' (voiced). The 'б' could cause 'с' to become voiced → 'з'. Pronounced [тазбұлақ]. This is also regressive assimilation.\n\nWait, let me reconsider. Both A and B could show regressive assimilation. Let me think more carefully.\n\nActually in Kazakh:\n- Тасбұлақ: 'с' before 'б' — voiced 'б' causes 'с' to become voiced 'з' → [тазбұлақ]. This is regressive (кейінді ықпал).\n- Ақбас: 'қ' before 'б' — voiced 'б' causes 'қ' to become voiced 'ғ' → [ағбас]. This is also regressive.\n\nC) Жанпейіс — [zhan] + [peyis]. 'н' (voiced nasal) meets 'п' (voiceless). The voiceless 'п' could cause 'н' to become voiceless 'м' or devoiced. Actually 'н' before 'п' → 'м' (place assimilation, bilabial). Pronounced [жампейіс]. This could be considered regressive assimilation of place.\n\nD) Сарыағаш — [sary] + [agash]. 'ы' (vowel) meets 'а' (vowel) — vowel harmony or just vowel junction. No clear consonant assimilation here.\n\nNow, the key distinction: in standard Kazakh linguistics textbooks, 'кейінді ықпал' (regressive assimilation) is specifically illustrated with examples where a following consonant affects the preceding one.\n\nFor Тасбұлақ: 'с' + 'б' → 'з' + 'б' (the following 'б' makes preceding 'с' voiced) — regressive.\nFor Ақбас: 'қ' + 'б' → 'ғ' + 'б' — regressive.\n\nHowever, looking at standard Kazakh textbook examples, 'Тасбұлақ' is a classic example given for кейінді ықпал (regressive assimilation) where 'с' becomes 'з' due to following 'б'. \n\nActually, re-examining: Ақбас — 'қ' before 'б': in Kazakh, this is also regressive. But the most textbook-standard example for кейінді ықпал among these options is B) Тасбұлақ, where [тасбұлақ] is pronounced [тазбұлақ].\n\nBut wait — could Ақбас show progressive assimilation instead? 'Ақ' ends in voiceless 'қ', 'бас' starts with voiced 'б'. If 'қ' devoices 'б' → 'п', that would be progressive. But typically in Kazakh, voiced consonants tend to voice preceding voiceless ones (regressive is more common at morpheme boundaries).\n\nIn Kazakh linguistics, the standard answer for кейінді ықпал with compound words: Тасбұлақ (с→з before б) is the classic textbook example. The answer is B.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 2.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 5.5,
+          "pass_fail": false,
+          "comments": "The provided answer C (Жанпейіс) is actually correct — 'н' assimilates to bilabial 'м' due to following 'п', which is genuine regressive (кейінді) assimilation. However, my independent analysis initially erred by selecting B, reflecting genuine ambiguity in how Kazakh textbooks classify these cases. The question is linguistically sound but the distractor explanations for A and B (claiming both show progressive assimilation) are defensible in standard Kazakh phonetics, making C the unique regressive example. The correctness score is low because my independent answer differed from the provided answer.",
+          "improvement_suggestions": "Add a brief phonetic transcription hint in the stem or make the assimilation direction more explicit to reduce ambiguity. Consider replacing Сарыағаш (which involves elision, a completely different phenomenon) with a compound word that shows a more clearly contrasting type of assimilation, improving distractor homogeneity.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The question asks to identify the compound word (біріккен сөз) that exhibits regressive assimilation (кейінді ықпал) in its pronunciation. Regressive assimilation occurs when a following sound influences the preceding sound.\n\nLet's analyze the pronunciation of each option:\nA) Ақбас -> pronounced as [Ақпас]. The voiceless 'қ' influences the following voiced 'б', turning it into the voiceless 'п'. This is progressive assimilation (ілгерінді ықпал).\nB) Тасбұлақ -> pronounced as [Таспұлақ]. The voiceless 'с' influences the following voiced 'б', turning it into 'п'. This is also progressive assimilation (ілгерінді ықпал).\nC) Жанпейіс -> pronounced as [Жампейіс]. The bilabial consonant 'п' influences the preceding alveolar nasal 'н', turning it into the bilabial nasal 'м'. Because the second sound influences the first, this is regressive assimilation (кейінді ықпал).\nD) Сарыағаш -> pronounced as [Сарағаш]. The vowel 'ы' is dropped. This is an example of vowel elision (дыбыс түсуі), not consonant assimilation.\n\nTherefore, the word with regressive assimilation is 'Жанпейіс'.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellent. It accurately tests the knowledge of regressive assimilation with well-chosen distractors that represent other phonetic phenomena in compound words.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 0.667,
+    "unanimous": false,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:16:42.913764+00:00",
+  "generation_attempts": 1
+}

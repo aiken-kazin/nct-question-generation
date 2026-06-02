@@ -1,0 +1,140 @@
+{
+  "id": "92fbe0e6-ec7f-4cde-8ab2-cd391ba14557",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі морфологиялық тұлғаларға қатысты дұрыс тұжырымды белгілеңіз.\n«Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер».",
+  "options": [
+    {
+      "label": "A",
+      "text": "«Ертемен-ақ» — сын-қимыл үстеуі, «-ақ» — күшейткіш демеулік; «дейін» — демеулік шылау; «бара қалсаңдар» — қалау рай тұлғалы етістік; «да» — демеулік шылау."
+    },
+    {
+      "label": "B",
+      "text": "«Пәлі» — жекіру одағайы; «ертең» — мекен үстеуі; «-ақ» — үстеу тудырушы жұрнақ; «ұмытпаңдар» — ашық райдың ауыспалы келер шағы; «кіріңдер» — шартты рай."
+    },
+    {
+      "label": "C",
+      "text": "«Пәлі» — көңіл күй одағайы, оқшау сөз; «ертемен-ақ» — мезгіл үстеуіне «-ақ» демеулігінің дефис арқылы тіркесуі; «дейін» — барыс септікті меңгерген септеулік шылау; «бара қалсаңдар» — шартты рай тұлғалы күрделі етістік; «да» — жалғаулық шылау."
+    },
+    {
+      "label": "D",
+      "text": "«Ертең ертемен-ақ» — тұтасымен мекен үстеуі; «дейін» — көмекші есім; «бара қалсаңдар» — ашық райдың өткен шағы; «ұмытпаңдар да» тіркесіндегі «да» — септеулік шылау."
+    }
+  ],
+  "correct_answer": "C",
+  "explanation": "Дұрыс жауап — C. Сөйлемдегі «Пәлі» таңдану, ризалық реңкін білдіретін көңіл күй одағайы және сөйлем мүшесі болмайтын оқшау сөз. «Ертемен-ақ» сөзінде «ертемен» мезгіл үстеуі, оған «-ақ» демеулік шылауы дефис арқылы тіркескен. «Ауданға дейін» тіркесінде «дейін» барыс септікті сөзді меңгеріп тұрған септеулік шылау. «Бара қалсаңдар» — негізгі етістік пен көмекші етістік арқылы жасалған күрделі етістік, «-са» тұлғасы арқылы шартты райда тұр. «Ұмытпаңдар да, ... кіріңдер» құрылымындағы «да» бірыңғай баяндауыштарды байланыстырып тұрған жалғаулық шылау. A нұсқасында «ертемен-ақ» сын-қимыл үстеуі деп, «дейін» демеулік деп, «бара қалсаңдар» қалау рай деп қате танылған. B нұсқасында «Пәлі», «ертең», «-ақ», «ұмытпаңдар», «кіріңдер» тұлғаларының қызметі дұрыс көрсетілмеген. D нұсқасында «дейін» көмекші есім емес, ал «да» септеулік емес; «бара қалсаңдар» да ашық райдың өткен шағы болмайды.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.2,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered C: Analyze the sentence: «Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер». 1) «Пәлі» is an interjection expressing emotion/surprise/evaluation, so it is a көңіл күй одағайы and functions as an оқшау сөз. It is not primarily a жекіру одағайы here. 2) «ертең» means “tomorrow”, and «ертемен-ақ» means “early in the morning indee\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze each morphological form in the sentence: «Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер».\n\n1. «Пәлі» — This is an interjection (одағай). It expresses an emotional call/address. In Kazakh grammar, «пәлі» is classified as a көңіл күй одағайы (emotional interjection) or жекіру одағайы (reproach interjection).\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the morphological features of the words in the sentence according to the options:\n1. 'Пәлі' is an interjection expressing emotion (көңіл күй одағайы) and functions as an isolated word (оқшау сөз) in the sentence.\n2. 'ертемен-ақ' consists of the adverb of time 'ертемен' (мезгіл үстеуі) and the intensifying particle '-ақ' (күшейткіш демеулік), which is correctly attached with a hyphen.",
+    "critic_answer": "C",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 8.833,
+      "kazakh_language_quality": 9.333,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.2,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation accurately analyzes the interjection, adverb-particle form, postposition, conditional complex verb, and conjunction. However, several distractors contain multiple very obvious errors, so elimination is easier than expected for a hard teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clearly correct answer (C) that requires multi-point morphological analysis across several grammatical categories. All distractors contain identifiable errors targeting common misconceptions (e.g., confusing mood forms, misclassifying particles as suffixes, mislabeling adverb types). The Kazakh terminology is accurate and consistent with standard textbook norms. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately testing multiple morphological concepts within a single sentence. The distractors are plausible and effectively target common misconceptions.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered C: Analyze the sentence: «Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер». 1) «Пәлі» is an interjection expressing emotion/surprise/evaluation, so it is a көңіл күй одағайы and functions as an оқшау сөз. It is not primarily a жекіру одағайы here. 2) «ертең» means “tomorrow”, and «ертемен-ақ» means “early in the morning indee\n\n[anthropic/claude-sonnet-4.6] answered C: Let me analyze each morphological form in the sentence: «Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер».\n\n1. «Пәлі» — This is an interjection (одағай). It expresses an emotional call/address. In Kazakh grammar, «пәлі» is classified as a көңіл күй одағайы (emotional interjection) or жекіру одағайы (reproach interjection).\n\n[google/gemini-3.1-pro-preview] answered C: Let's analyze the morphological features of the words in the sentence according to the options:\n1. 'Пәлі' is an interjection expressing emotion (көңіл күй одағайы) and functions as an isolated word (оқшау сөз) in the sentence.\n2. 'ертемен-ақ' consists of the adverb of time 'ертемен' (мезгіл үстеуі) and the intensifying particle '-ақ' (күшейткіш демеулік), which is correctly attached with a hyphen.",
+      "critic_answer": "C",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 8.833,
+        "kazakh_language_quality": 9.333,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.2,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer C is correct and the explanation accurately analyzes the interjection, adverb-particle form, postposition, conditional complex verb, and conjunction. However, several distractors contain multiple very obvious errors, so elimination is easier than expected for a hard teacher-certification item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, with a clearly correct answer (C) that requires multi-point morphological analysis across several grammatical categories. All distractors contain identifiable errors targeting common misconceptions (e.g., confusing mood forms, misclassifying particles as suffixes, mislabeling adverb types). The Kazakh terminology is accurate and consistent with standard textbook norms. | [google/gemini-3.1-pro-preview] The question is well-constructed, accurately testing multiple morphological concepts within a single sentence. The distractors are plausible and effectively target common misconceptions.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Analyze the sentence: «Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер». 1) «Пәлі» is an interjection expressing emotion/surprise/evaluation, so it is a көңіл күй одағайы and functions as an оқшау сөз. It is not primarily a жекіру одағайы here. 2) «ертең» means “tomorrow”, and «ертемен-ақ» means “early in the morning indeed/just”; this is temporal meaning. The element «-ақ» is an emphatic particle (күшейткіш/нақтылау демеулігі) attached with a hyphen, not a word-forming suffix. 3) «ауданға дейін»: «дейін» is a септеулік шылау/postposition governing the dative case: аудан-ға. It is not a демеулік шылау and not a көмекші есім. 4) «бара қалсаңдар» is a complex verb: бара қал- + -са + -ңдар. The suffix -са marks шартты рай, so it is a шартты рай тұлғалы күрделі етістік. 5) «ұмытпаңдар да, ... кіріңдер»: here «да» connects the imperative predicates/clauses, meaning “and”, so it is a жалғаулық шылау. Therefore option C is the correct full statement.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 6.5,
+            "difficulty_alignment": 7.5,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer C is correct and the explanation accurately analyzes the interjection, adverb-particle form, postposition, conditional complex verb, and conjunction. However, several distractors contain multiple very obvious errors, so elimination is easier than expected for a hard teacher-certification item.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let me analyze each morphological form in the sentence: «Пәлі, жас мұғалімдер, ертең ертемен-ақ ауданға дейін бара қалсаңдар, құжаттарыңды ұмытпаңдар да, алдымен әдіскерге кіріңдер».\n\n1. «Пәлі» — This is an interjection (одағай). It expresses an emotional call/address. In Kazakh grammar, «пәлі» is classified as a көңіл күй одағайы (emotional interjection) or жекіру одағайы (reproach interjection). It functions as an isolated word (оқшау сөз).\n\n2. «Ертемен-ақ» — «Ертемен» is a time adverb (мезгіл үстеуі) meaning 'in the morning/early'. The «-ақ» attached with a hyphen is an emphatic particle (күшейткіш демеулік шылау), not a suffix. So «ертемен-ақ» = time adverb + emphatic particle.\n\n3. «Дейін» — This is a postposition (септеулік шылау) that governs the dative case (барыс септік). «Ауданға дейін» — «ауданға» is in dative case, and «дейін» is a postpositional particle requiring dative case.\n\n4. «Бара қалсаңдар» — «Бара» is a converb form of «бару», and «қалсаңдар» is the conditional mood (шартты рай) form of «қалу» with 2nd person plural suffix. Together «бара қалсаңдар» is a complex verb (күрделі етістік) in conditional mood (шартты рай).\n\n5. «Ұмытпаңдар» — This is imperative mood (бұйрық рай), 2nd person plural negative form.\n\n6. «Да» — After «ұмытпаңдар», «да» is a conjunction (жалғаулық шылау) connecting clauses, meaning 'and'.\n\n7. «Кіріңдер» — This is imperative mood (бұйрық рай), 2nd person plural.\n\nNow let me evaluate each option:\n\nOption A: «Ертемен-ақ» — сын-қимыл үстеуі (manner adverb) — INCORRECT, it's a time adverb; «-ақ» — күшейткіш демеулік — CORRECT; «дейін» — демеулік шылау — partially correct but not specific; «бара қалсаңдар» — қалау рай (optative mood) — INCORRECT, it's шартты рай (conditional mood); «да» — демеулік шылау — INCORRECT, it's жалғаулық шылау.\n\nOption B: «Пәлі» — жекіру одағайы — debatable; «ертең» — мекен үстеуі (place adverb) — INCORRECT, «ертең» is a time adverb (мезгіл үстеуі); «-ақ» — үстеу тудырушы жұрнақ (adverb-forming suffix) — INCORRECT, it's a particle; «ұмытпаңдар» — ашық райдың ауыспалы келер шағы — INCORRECT, it's бұйрық рай; «кіріңдер» — шартты рай — INCORRECT, it's бұйрық рай.\n\nOption C: «Пәлі» — көңіл күй одағайы, оқшау сөз — CORRECT; «ертемен-ақ» — мезгіл үстеуіне «-ақ» демеулігінің дефис арқылы тіркесуі — CORRECT; «дейін» — барыс септікті меңгерген септеулік шылау — CORRECT (governs dative case); «бара қалсаңдар» — шартты рай тұлғалы күрделі етістік — CORRECT; «да» — жалғаулық шылау — CORRECT.\n\nOption D: «Ертең ертемен-ақ» — тұтасымен мекен үстеуі — INCORRECT; «дейін» — көмекші есім — INCORRECT; «бара қалсаңдар» — ашық райдың өткен шағы — INCORRECT; «да» — септеулік шылау — INCORRECT.\n\nOption C is clearly the most accurate across all points.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, with a clearly correct answer (C) that requires multi-point morphological analysis across several grammatical categories. All distractors contain identifiable errors targeting common misconceptions (e.g., confusing mood forms, misclassifying particles as suffixes, mislabeling adverb types). The Kazakh terminology is accurate and consistent with standard textbook norms.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the morphological features of the words in the sentence according to the options:\n1. 'Пәлі' is an interjection expressing emotion (көңіл күй одағайы) and functions as an isolated word (оқшау сөз) in the sentence.\n2. 'ертемен-ақ' consists of the adverb of time 'ертемен' (мезгіл үстеуі) and the intensifying particle '-ақ' (күшейткіш демеулік), which is correctly attached with a hyphen.\n3. 'дейін' is a postposition (септеулік шылау) that governs the dative case (барыс септік), as seen in 'ауданға дейін'.\n4. 'бара қалсаңдар' is a compound verb (күрделі етістік) formed by 'бара' and 'қал'. The suffix '-са' indicates the conditional mood (шартты рай), followed by the 2nd person plural ending '-ңдар'.\n5. 'да' in 'ұмытпаңдар да, ... кіріңдер' acts as a coordinating conjunction (ыңғайлас жалғаулық шылау) connecting two clauses.\n\nLooking at the given options:\n- Option A is incorrect because 'ертемен' is an adverb of time, not manner (сын-қимыл), 'дейін' is a postposition (септеулік), not a particle (демеулік), and 'бара қалсаңдар' is conditional (шартты рай), not desiderative (қалау рай).\n- Option B is incorrect because 'Пәлі' is not a reprimand interjection (жекіру одағайы), 'ертең' is an adverb of time, not place (мекен үстеуі), and 'ұмытпаңдар' is in the imperative mood (бұйрық рай), not indicative (ашық рай).\n- Option C correctly identifies all the morphological and grammatical features of the specified words.\n- Option D is incorrect because 'ертең ертемен-ақ' is not an adverb of place, 'дейін' is not an auxiliary noun (көмекші есім), and 'бара қалсаңдар' is not in the past tense of the indicative mood.",
+          "critic_answer": "C",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, accurately testing multiple morphological concepts within a single sentence. The distractors are plausible and effectively target common misconceptions.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:52:36.570787+00:00",
+  "generation_attempts": 1
+}

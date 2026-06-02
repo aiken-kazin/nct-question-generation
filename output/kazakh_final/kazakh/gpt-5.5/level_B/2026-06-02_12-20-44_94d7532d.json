@@ -1,0 +1,140 @@
+{
+  "id": "94d7532d-30ee-4173-9d25-515f181b16c2",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "lexicology_special",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Сөйлемдегі «ит-құс» және «диагноз» сөздерінің лексикалық сипатын дұрыс көрсетіңіз.\n\n«Көшпелі ортада қасқырды тура атамай, көбіне «ит-құс» деген; ал дәрігер науқасқа нақты «диагноз» қойды».",
+  "options": [
+    {
+      "label": "A",
+      "text": "«ит-құс» – диалект сөз, «диагноз» – кәсіби сөз"
+    },
+    {
+      "label": "B",
+      "text": "«ит-құс» – табуға байланысты туған эвфемизм, «диагноз» – термин"
+    },
+    {
+      "label": "C",
+      "text": "«ит-құс» – көнерген сөз, «диагноз» – неологизм"
+    },
+    {
+      "label": "D",
+      "text": "«ит-құс» – фразеологизм, «диагноз» – жалпыхалықтық сөз"
+    }
+  ],
+  "correct_answer": "B",
+  "explanation": "Дұрыс жауап – B. Қазақтың дәстүрлі танымында қасқырдың атын тура атаудан сақтану болған, сондықтан «ит-құс» сөзі табу негізінде қалыптасқан сыпайы, алмастырма атау ретінде эвфемизмге жатады. «Диагноз» – медицина саласында қолданылатын нақты ғылыми ұғым атауы, яғни термин. A нұсқасы қате: «ит-құс» белгілі бір жергілікті говорға ғана тән диалект сөз емес, ал «диагноз» жай ғана кәсіби сөзден гөрі ғылыми термин. C нұсқасы қате: «ит-құс» көнерген сөз емес, «диагноз» қазіргі тілде орныққан термин, жаңа пайда болған неологизм емес. D нұсқасы қате: «ит-құс» тұрақты тіркес сипатында көрінгенімен, бұл контексте негізгі белгісі – табулық алмастыру; «диагноз» жалпыхалықтық сөз емес, арнаулы сала термині.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.267,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered B: The sentence says that in a nomadic environment people did not name the wolf directly, but instead often said \"ит-құс\". This is a replacement word used because of a naming taboo: dangerous or feared beings are avoided by direct name, and a milder/indirect substitute is used. In Kazakh lexicology this is a euphemism connected with taboo (табуға байланысты туған эвфемизм). The word \"диагноз\" belongs\n\n[anthropic/claude-sonnet-4.6] answered B: Let's analyze each word in the sentence:\n\n1. 'ит-құс' (literally 'dog-bird') — In Kazakh nomadic culture, wolves were considered taboo to name directly (a superstitious avoidance). Instead of saying 'қасқыр' (wolf), people used indirect substitutes. This is a classic example of a TABOO-based EUPHEMISM (табуға байланысты туған эвфемизм). The sentence itself confirms this: 'қасқырды тура атамай, көб\n\n[google/gemini-3.1-pro-preview] answered B: The sentence explicitly states that in the nomadic environment, people avoided naming the wolf directly ('қасқырды тура атамай') and instead used the word 'ит-құс'. The practice of avoiding a direct name due to superstition or fear is called a taboo ('табу'), and the substitute word used in its place is a euphemism ('эвфемизм'). Therefore, 'ит-құс' is a euphemism born from a taboo. The word 'диагн",
+    "critic_answer": "B",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.167,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.5,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.267,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by the context: “ит-құс” is a taboo-based euphemistic substitute for қасқыр, while “диагноз” is a medical term. The item is clear and well written, though the wording gives a strong cue and makes it somewhat easier than a typical level B item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests genuine lexicological knowledge at level B. The correct answer (B) is unambiguously supported by the context and standard Kazakh lexicology theory. Distractors are mostly plausible — option A is the most tempting near-miss (confusing 'кәсіби сөз' with 'термин'), while C and D are somewhat easier to eliminate. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concepts of taboo, euphemism, and terminology within a clear context, and the distractors are highly plausible.",
+    "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option D could be slightly improved — calling 'ит-құс' a phraseologism is a somewhat weak distractor since it's clearly a compound word rather than a fixed idiomatic expression. Consider replacing it with a more tempting misconception, e.g., 'ит-құс – эвфемизм, «диагноз» – кәсіби сөз' to force finer discrimination between 'термин' and 'кәсіби сөз'.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered B: The sentence says that in a nomadic environment people did not name the wolf directly, but instead often said \"ит-құс\". This is a replacement word used because of a naming taboo: dangerous or feared beings are avoided by direct name, and a milder/indirect substitute is used. In Kazakh lexicology this is a euphemism connected with taboo (табуға байланысты туған эвфемизм). The word \"диагноз\" belongs\n\n[anthropic/claude-sonnet-4.6] answered B: Let's analyze each word in the sentence:\n\n1. 'ит-құс' (literally 'dog-bird') — In Kazakh nomadic culture, wolves were considered taboo to name directly (a superstitious avoidance). Instead of saying 'қасқыр' (wolf), people used indirect substitutes. This is a classic example of a TABOO-based EUPHEMISM (табуға байланысты туған эвфемизм). The sentence itself confirms this: 'қасқырды тура атамай, көб\n\n[google/gemini-3.1-pro-preview] answered B: The sentence explicitly states that in the nomadic environment, people avoided naming the wolf directly ('қасқырды тура атамай') and instead used the word 'ит-құс'. The practice of avoiding a direct name due to superstition or fear is called a taboo ('табу'), and the substitute word used in its place is a euphemism ('эвфемизм'). Therefore, 'ит-құс' is a euphemism born from a taboo. The word 'диагн",
+      "critic_answer": "B",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.167,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.5,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.267,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer is correct and uniquely supported by the context: “ит-құс” is a taboo-based euphemistic substitute for қасқыр, while “диагноз” is a medical term. The item is clear and well written, though the wording gives a strong cue and makes it somewhat easier than a typical level B item. | [anthropic/claude-sonnet-4.6] The question is well-constructed, factually correct, and tests genuine lexicological knowledge at level B. The correct answer (B) is unambiguously supported by the context and standard Kazakh lexicology theory. Distractors are mostly plausible — option A is the most tempting near-miss (confusing 'кәсіби сөз' with 'термин'), while C and D are somewhat easier to eliminate. | [google/gemini-3.1-pro-preview] The question is excellently crafted. It accurately tests the concepts of taboo, euphemism, and terminology within a clear context, and the distractors are highly plausible.",
+      "improvement_suggestions": "[anthropic/claude-sonnet-4.6] Option D could be slightly improved — calling 'ит-құс' a phraseologism is a somewhat weak distractor since it's clearly a compound word rather than a fixed idiomatic expression. Consider replacing it with a more tempting misconception, e.g., 'ит-құс – эвфемизм, «диагноз» – кәсіби сөз' to force finer discrimination between 'термин' and 'кәсіби сөз'.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence says that in a nomadic environment people did not name the wolf directly, but instead often said \"ит-құс\". This is a replacement word used because of a naming taboo: dangerous or feared beings are avoided by direct name, and a milder/indirect substitute is used. In Kazakh lexicology this is a euphemism connected with taboo (табуға байланысты туған эвфемизм). The word \"диагноз\" belongs to medicine and denotes a precise scientific/professional concept, so it is a term (термин), not merely a professional colloquial word. Therefore the correct classification is: \"ит-құс\" – taboo-related euphemism, \"диагноз\" – term.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.5,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 9.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.8,
+          "pass_fail": true,
+          "comments": "The keyed answer is correct and uniquely supported by the context: “ит-құс” is a taboo-based euphemistic substitute for қасқыр, while “диагноз” is a medical term. The item is clear and well written, though the wording gives a strong cue and makes it somewhat easier than a typical level B item.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze each word in the sentence:\n\n1. 'ит-құс' (literally 'dog-bird') — In Kazakh nomadic culture, wolves were considered taboo to name directly (a superstitious avoidance). Instead of saying 'қасқыр' (wolf), people used indirect substitutes. This is a classic example of a TABOO-based EUPHEMISM (табуға байланысты туған эвфемизм). The sentence itself confirms this: 'қасқырды тура атамай, көбіне «ит-құс» деген' — meaning they avoided the direct name and used 'ит-құс' as a substitute. This is not a dialect word (dialects are regional variants), not an archaism, and not a phraseological unit in the traditional sense.\n\n2. 'диагноз' (diagnosis) — This is a medical TERM (термин). Terms are special vocabulary belonging to a specific professional/scientific field. 'Диагноз' is a medical term used by doctors. The sentence confirms: 'дәрігер науқасқа нақты «диагноз» қойды' — a doctor making a diagnosis is clearly a professional/medical context. It is not a neologism (it's been in use for a long time), not a general common word, and not a professional jargon word in the narrow sense — it's specifically a TERM.\n\nOption B correctly identifies:\n- 'ит-құс' as a euphemism arising from taboo (табуға байланысты туған эвфемизм)\n- 'диагноз' as a term (термин)\n\nThis matches the lexicological definitions precisely.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 9.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.0,
+          "pass_fail": true,
+          "comments": "The question is well-constructed, factually correct, and tests genuine lexicological knowledge at level B. The correct answer (B) is unambiguously supported by the context and standard Kazakh lexicology theory. Distractors are mostly plausible — option A is the most tempting near-miss (confusing 'кәсіби сөз' with 'термин'), while C and D are somewhat easier to eliminate.",
+          "improvement_suggestions": "Option D could be slightly improved — calling 'ит-құс' a phraseologism is a somewhat weak distractor since it's clearly a compound word rather than a fixed idiomatic expression. Consider replacing it with a more tempting misconception, e.g., 'ит-құс – эвфемизм, «диагноз» – кәсіби сөз' to force finer discrimination between 'термин' and 'кәсіби сөз'.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The sentence explicitly states that in the nomadic environment, people avoided naming the wolf directly ('қасқырды тура атамай') and instead used the word 'ит-құс'. The practice of avoiding a direct name due to superstition or fear is called a taboo ('табу'), and the substitute word used in its place is a euphemism ('эвфемизм'). Therefore, 'ит-құс' is a euphemism born from a taboo. The word 'диагноз' (diagnosis) is a specialized word used in medicine, which classifies it as a term ('термин'). Option B correctly identifies both lexical characteristics.",
+          "critic_answer": "B",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 10.0,
+          "pass_fail": true,
+          "comments": "The question is excellently crafted. It accurately tests the concepts of taboo, euphemism, and terminology within a clear context, and the distractors are highly plausible.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:20:44.988833+00:00",
+  "generation_attempts": 1
+}

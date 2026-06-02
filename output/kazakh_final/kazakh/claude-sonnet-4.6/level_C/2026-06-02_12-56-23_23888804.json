@@ -1,0 +1,140 @@
+{
+  "id": "23888804-aa5b-445c-9115-e24e2a47d461",
+  "subject": "kazakh",
+  "level": "C",
+  "format": "text",
+  "topic": "syntax_reported_speech",
+  "model_id": "anthropic/claude-sonnet-4.6",
+  "question_text": "Төмендегі төл сөзді төлеу сөзге дұрыс айналдырған нұсқаны табыңыз:\n«Мен ертең қалаға кетемін», — деді Асқар.",
+  "options": [
+    {
+      "label": "A",
+      "text": "Асқар ертең қалаға кететінін айтты."
+    },
+    {
+      "label": "B",
+      "text": "Асқар мен ертең қалаға кетемін деді."
+    },
+    {
+      "label": "C",
+      "text": "Асқар өзі ертең қалаға кетемін деп хабарлады."
+    },
+    {
+      "label": "D",
+      "text": "Асқар ертең қалаға кететінім туралы айтты."
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Төл сөзді төлеу сөзге айналдырғанда бірінші жақ есімдіктері («мен») үшінші жаққа ауысады, ал баяндауыш жіктік жалғауы мен шақ формасы сәйкес өзгереді. «Мен ертең қалаға кетемін» деген төл сөздегі «мен» есімдігі алынып тасталып, «кетемін» етістігі «кететінін» деген есімше + септік тұлғасына ауысады. Сондықтан «Асқар ертең қалаға кететінін айтты» — грамматикалық нормаға толық сай дұрыс нұсқа (A). \n\nБ нұсқасы дұрыс емес: «мен» есімдігі сақталып қалған, яғни бұл толыққанды төлеу сөзге айналдырылмаған, жартылай тура сөз тіркесі ретінде қолданылған. \n\nВ нұсқасы дұрыс емес: «өзі» деген сілтеу есімдігі қосылған, ал «кетемін» деген бірінші жақ тұлғасы сақталып тұр — бұл грамматикалық қайшылық туғызады. \n\nГ нұсқасы дұрыс емес: «кететінім» деген бірінші жақ тәуелдік жалғауы қолданылған, бұл Асқардың өз сөзінен тыс бөтен жақтың тілдік тұлғасымен үйлеспейді; «туралы» шылауы да синтаксистік нормаға сай емес осы контексте.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 8.217,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: In Kazakh syntax, when direct speech (төл сөз) is converted into indirect/reported speech (төлеу сөз), the first-person pronoun and first-person verb form are changed according to the reporting subject. Here, the direct speech is: «Мен ертең қалаға кетемін», — деді Асқар. The speaker is Asқар, so 'мен ... кетемін' must become a third-person construction referring to Asқар: 'кететінін айтты' ('said\n\n[anthropic/claude-sonnet-4.6] answered A: The original direct speech (төл сөз) is: «Мен ертең қалаға кетемін», — деді Асқар.\n\nTo convert direct speech to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) is dropped or replaced by the subject (Асқар).\n2. The verb in the direct speech must be nominalized/converted to a dependent clause form. The verb 'кетемін' (I will go) becomes 'кететі\n\n[google/gemini-3.1-pro-preview] answered A: To convert direct speech (төл сөз) to reported speech (төлеу сөз) in Kazakh, the first-person perspective must be changed to the third-person perspective. The direct speech is: «Мен ертең қалаға кетемін», — деді Асқар. (Askar said, 'I will go to the city tomorrow.'). When converting this, the first-person pronoun 'Мен' is dropped or changed, and the verb 'кетемін' (I will go) changes to a verbal n",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 10.0,
+      "distractor_quality": 8.0,
+      "difficulty_alignment": 4.667,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 8.217,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer A is clearly and uniquely correct, and the distractors reflect identifiable errors in converting direct speech to reported speech. However, the item is a very basic transformation task and does not meet the requested C-level hard difficulty for practicing teacher certification. | [anthropic/claude-sonnet-4.6] The correct answer (A) is unambiguously correct and well-explained; all distractors represent identifiable errors (retained pronoun, retained verb form, wrong possessive suffix). However, the task is a straightforward rule-application exercise rather than a genuinely hard Level C item — it tests a single transformation rule rather than complex analysis or synthesis across topics. | [google/gemini-3.1-pro-preview] The question correctly tests the conversion of direct speech to reported speech with well-designed distractors. It is slightly on the easier side for a Level C question but still valid.",
+    "improvement_suggestions": "[openai/gpt-5.5] To align with level C, use a more complex sentence with embedded clauses, pronoun/reference shifts, tense or deictic changes, and punctuation variants, requiring deeper syntactic analysis rather than a simple first-person-to-third-person conversion. | [anthropic/claude-sonnet-4.6] To raise difficulty to Level C, embed the direct speech in a longer literary passage requiring contextual interpretation, or use a more complex sentence with multiple clauses, mixed tenses, or reported questions/commands. Alternatively, ask the test-taker to identify an error in an already-converted indirect speech passage and justify the correction with reference to grammatical norms — this would require analysis and reasoning rather than simple rule recall. | [google/gemini-3.1-pro-preview] To make it a true Level C question, consider using a more complex sentence with multiple clauses, embedded direct speech, or stylistic nuances.",
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: In Kazakh syntax, when direct speech (төл сөз) is converted into indirect/reported speech (төлеу сөз), the first-person pronoun and first-person verb form are changed according to the reporting subject. Here, the direct speech is: «Мен ертең қалаға кетемін», — деді Асқар. The speaker is Asқар, so 'мен ... кетемін' must become a third-person construction referring to Asқар: 'кететінін айтты' ('said\n\n[anthropic/claude-sonnet-4.6] answered A: The original direct speech (төл сөз) is: «Мен ертең қалаға кетемін», — деді Асқар.\n\nTo convert direct speech to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) is dropped or replaced by the subject (Асқар).\n2. The verb in the direct speech must be nominalized/converted to a dependent clause form. The verb 'кетемін' (I will go) becomes 'кететі\n\n[google/gemini-3.1-pro-preview] answered A: To convert direct speech (төл сөз) to reported speech (төлеу сөз) in Kazakh, the first-person perspective must be changed to the third-person perspective. The direct speech is: «Мен ертең қалаға кетемін», — деді Асқар. (Askar said, 'I will go to the city tomorrow.'). When converting this, the first-person pronoun 'Мен' is dropped or changed, and the verb 'кетемін' (I will go) changes to a verbal n",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 10.0,
+        "distractor_quality": 8.0,
+        "difficulty_alignment": 4.667,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 8.217,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer A is clearly and uniquely correct, and the distractors reflect identifiable errors in converting direct speech to reported speech. However, the item is a very basic transformation task and does not meet the requested C-level hard difficulty for practicing teacher certification. | [anthropic/claude-sonnet-4.6] The correct answer (A) is unambiguously correct and well-explained; all distractors represent identifiable errors (retained pronoun, retained verb form, wrong possessive suffix). However, the task is a straightforward rule-application exercise rather than a genuinely hard Level C item — it tests a single transformation rule rather than complex analysis or synthesis across topics. | [google/gemini-3.1-pro-preview] The question correctly tests the conversion of direct speech to reported speech with well-designed distractors. It is slightly on the easier side for a Level C question but still valid.",
+      "improvement_suggestions": "[openai/gpt-5.5] To align with level C, use a more complex sentence with embedded clauses, pronoun/reference shifts, tense or deictic changes, and punctuation variants, requiring deeper syntactic analysis rather than a simple first-person-to-third-person conversion. | [anthropic/claude-sonnet-4.6] To raise difficulty to Level C, embed the direct speech in a longer literary passage requiring contextual interpretation, or use a more complex sentence with multiple clauses, mixed tenses, or reported questions/commands. Alternatively, ask the test-taker to identify an error in an already-converted indirect speech passage and justify the correction with reference to grammatical norms — this would require analysis and reasoning rather than simple rule recall. | [google/gemini-3.1-pro-preview] To make it a true Level C question, consider using a more complex sentence with multiple clauses, embedded direct speech, or stylistic nuances.",
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In Kazakh syntax, when direct speech (төл сөз) is converted into indirect/reported speech (төлеу сөз), the first-person pronoun and first-person verb form are changed according to the reporting subject. Here, the direct speech is: «Мен ертең қалаға кетемін», — деді Асқар. The speaker is Asқар, so 'мен ... кетемін' must become a third-person construction referring to Asқар: 'кететінін айтты' ('said that he would leave'). Option A, 'Асқар ертең қалаға кететінін айтты,' correctly changes the first-person direct form into an indirect speech construction with the participial form + possessive/accusative ending: кететін-і-н. Option B keeps the direct speech form 'мен ... кетемін' and is not properly indirect. Option C mixes 'өзі' with the first-person verb 'кетемін', so it is grammatically inconsistent. Option D uses 'кететінім', a first-person possessive form, which would mean 'that I would leave', not 'that Asқар would leave.' Therefore, the correct answer is A.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 2.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.5,
+          "pass_fail": true,
+          "comments": "The keyed answer A is clearly and uniquely correct, and the distractors reflect identifiable errors in converting direct speech to reported speech. However, the item is a very basic transformation task and does not meet the requested C-level hard difficulty for practicing teacher certification.",
+          "improvement_suggestions": "To align with level C, use a more complex sentence with embedded clauses, pronoun/reference shifts, tense or deictic changes, and punctuation variants, requiring deeper syntactic analysis rather than a simple first-person-to-third-person conversion.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "The original direct speech (төл сөз) is: «Мен ертең қалаға кетемін», — деді Асқар.\n\nTo convert direct speech to indirect speech (төлеу сөз) in Kazakh, the following rules apply:\n1. The first-person pronoun 'мен' (I) is dropped or replaced by the subject (Асқар).\n2. The verb in the direct speech must be nominalized/converted to a dependent clause form. The verb 'кетемін' (I will go) becomes 'кететін' (that [he] will go) with the appropriate case ending.\n3. The indirect speech verb takes the form: verb stem + -етін/-атын + possessive suffix + case ending, followed by 'деді' or 'айтты'.\n4. Specifically, 'кетемін' → 'кететінін' (кет + етін + ін [3rd person possessive accusative]) + айтты.\n\nAnalyzing each option:\n\nA) Асқар ертең қалаға кететінін айтты.\n- 'кететінін' = кет + етін (future/habitual participle) + ін (3rd person singular possessive accusative case)\n- This correctly converts the direct speech: Askar said that he would go to the city tomorrow.\n- The pronoun 'мен' is dropped, the verb is properly nominalized with accusative case, and 'айтты' is used as the reporting verb. This follows the standard rule for indirect speech in Kazakh.\n- CORRECT\n\nB) Асқар мен ертең қалаға кетемін деді.\n- This retains 'мен' and the original verb form 'кетемін' without proper transformation. This is not proper indirect speech — it looks like a mix of direct and indirect speech without quotation marks.\n- INCORRECT\n\nC) Асқар өзі ертең қалаға кетемін деп хабарлады.\n- This retains the original verb 'кетемін' without transformation. Adding 'өзі' and 'деп' without changing the verb form is not proper indirect speech conversion.\n- INCORRECT\n\nD) Асқар ертең қалаға кететінім туралы айтты.\n- 'кететінім' uses the 1st person possessive suffix (-ім), which is incorrect for third-person indirect speech. It should be 3rd person (-ін), not 1st person (-ім). Also 'туралы' (about) is not the standard construction for this type of indirect speech.\n- INCORRECT\n\nTherefore, option A is the correct conversion of direct speech to indirect speech.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 5.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 7.75,
+          "pass_fail": true,
+          "comments": "The correct answer (A) is unambiguously correct and well-explained; all distractors represent identifiable errors (retained pronoun, retained verb form, wrong possessive suffix). However, the task is a straightforward rule-application exercise rather than a genuinely hard Level C item — it tests a single transformation rule rather than complex analysis or synthesis across topics.",
+          "improvement_suggestions": "To raise difficulty to Level C, embed the direct speech in a longer literary passage requiring contextual interpretation, or use a more complex sentence with multiple clauses, mixed tenses, or reported questions/commands. Alternatively, ask the test-taker to identify an error in an already-converted indirect speech passage and justify the correction with reference to grammatical norms — this would require analysis and reasoning rather than simple rule recall.",
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "To convert direct speech (төл сөз) to reported speech (төлеу сөз) in Kazakh, the first-person perspective must be changed to the third-person perspective. The direct speech is: «Мен ертең қалаға кетемін», — деді Асқар. (Askar said, 'I will go to the city tomorrow.'). When converting this, the first-person pronoun 'Мен' is dropped or changed, and the verb 'кетемін' (I will go) changes to a verbal noun/participle with a third-person possessive and accusative case ending: 'кететінін' (that he will go). The reporting verb 'деді' is often replaced by 'айтты'. Looking at the options: Option A ('Асқар ертең қалаға кететінін айтты.') correctly applies these grammatical transformations. Option B keeps the first-person 'мен' and 'кетемін'. Option C keeps the first-person verb 'кетемін'. Option D uses the first-person possessive 'кететінім' (that I will go). Thus, A is the only grammatically correct reported speech.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 10.0,
+            "difficulty_alignment": 7.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.4,
+          "pass_fail": true,
+          "comments": "The question correctly tests the conversion of direct speech to reported speech with well-designed distractors. It is slightly on the easier side for a Level C question but still valid.",
+          "improvement_suggestions": "To make it a true Level C question, consider using a more complex sentence with multiple clauses, embedded direct speech, or stylistic nuances.",
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:56:23.840834+00:00",
+  "generation_attempts": 1
+}

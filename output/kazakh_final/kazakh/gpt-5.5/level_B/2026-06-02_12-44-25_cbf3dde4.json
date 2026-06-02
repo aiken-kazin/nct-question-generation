@@ -1,0 +1,140 @@
+{
+  "id": "cbf3dde4-d6a5-40f0-b9eb-49ef3ef24228",
+  "subject": "kazakh",
+  "level": "B",
+  "format": "text",
+  "topic": "morphology_verbs_particles",
+  "model_id": "openai/gpt-5.5",
+  "question_text": "Берілген сөйлемдегі морфологиялық тұлғаларды дұрыс талдаған қатарды белгілеңіз. «Ертең-ақ осы мәселені талқылайық, әріптестер!»",
+  "options": [
+    {
+      "label": "A",
+      "text": "«ертең-ақ» — мезгіл үстеуі мен демеулік шылаудың тұлғасы, -ақ дефис арқылы жазылған; «талқылайық» — бұйрық рай, I жақ көпше; «әріптестер» — қаратпа сөз"
+    },
+    {
+      "label": "B",
+      "text": "«ертең-ақ» — күрделі үстеу, -ақ бөлек жазылуы тиіс; «талқылайық» — қалау рай; «әріптестер» — қыстырма сөз"
+    },
+    {
+      "label": "C",
+      "text": "«ертең-ақ» — септеулік шылаулы тіркес; «талқылайық» — шартты рай; «әріптестер» — одағай сөз"
+    },
+    {
+      "label": "D",
+      "text": "«ертең-ақ» — жалғаулық шылау арқылы байланысқан сөз; «талқылайық» — ашық райдың келер шағы; «әріптестер» — айқындауыш мүше"
+    }
+  ],
+  "correct_answer": "A",
+  "explanation": "Дұрыс жауап — A. «Ертең» — мезгіл үстеуі, оған жалғанған -ақ — демеулік шылау; күшейту, нақтылау мәнін беріп, өзі қатысты сөзбен дефис арқылы жазылады. «Талқылайық» тұлғасы -айық жұрнағы арқылы жасалып, бұйрық райдың I жақ көпше түрін білдіреді. «Әріптестер» сөзі сөйлеушінің тыңдаушыларға қарата айтқан сөзі болғандықтан, қаратпа сөз. B нұсқасында -ақ шылауының емлесі және етістіктің райы қате көрсетілген. C нұсқасында септеулік шылау, шартты рай, одағай деп тану дұрыс емес. D нұсқасында -ақ жалғаулық шылау емес, ал «талқылайық» ашық райдың келер шағы емес.",
+  "latex_formulas": [],
+  "figure_spec": null,
+  "figure_path": null,
+  "critic_score": 9.1,
+  "critic_feedback": {
+    "critic_solution": "[openai/gpt-5.5] answered A: In the sentence “Ертең-ақ осы мәселені талқылайық, әріптестер!”, the word “ертең-ақ” consists of “ертең” (a time adverb, мезгіл үстеуі) plus the emphatic particle “-ақ” (демеулік шылау). In Kazakh orthography, this particle is written with a hyphen when attached in this way: “ертең-ақ”. The verb “талқылайық” is formed from “талқыла-” with the first-person plural imperative/volitive ending “-йық/-й\n\n[anthropic/claude-sonnet-4.6] answered A: Let me analyze each element in the sentence 'Ертең-ақ осы мәселені талқылайық, әріптестер!'\n\n1. 'ертең-ақ': \n- 'ертең' is a time adverb (мезгіл үстеуі) meaning 'tomorrow'\n- '-ақ' is an emphatic particle (демеулік шылау) that adds emphasis\n- In Kazakh, the particle '-ақ' is written with a hyphen when attached to words, so 'ертең-ақ' is correctly written with a hyphen\n- This is NOT a compound adverb\n\n[google/gemini-3.1-pro-preview] answered A: Let's analyze the morphological features of the given words in the sentence: «Ертең-ақ осы мәселені талқылайық, әріптестер!»\n\n1. «Ертең-ақ»: 'ертең' is an adverb of time (мезгіл үстеуі). '-ақ' is an emphatic particle (күшейткіш демеулік шылау). According to Kazakh orthography rules, the particle '-ақ' is always written with a hyphen. \n2. «талқылайық»: The root is 'талқыла' (to discuss). The suffix",
+    "critic_answer": "A",
+    "dimensions": {
+      "correctness": 9.833,
+      "distractor_quality": 7.667,
+      "difficulty_alignment": 8.667,
+      "kazakh_language_quality": 9.167,
+      "latex_validity": 10.0,
+      "figure_relevance": null
+    },
+    "overall_score": 9.1,
+    "pass_fail": true,
+    "comments": "[openai/gpt-5.5] The keyed answer A is correct and the grammatical explanation is sound. The only notable issue is that the prompt asks for morphological analysis, while identifying «әріптестер» as a қаратпа сөз is syntactic rather than morphological; some distractors are also quite obviously wrong. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (A) that accurately identifies all three morphological features. The distractors contain plausible but identifiable errors targeting common misconceptions (e.g., confusing бұйрық рай with қалау рай, or қаратпа сөз with қыстырма сөз). Kazakh terminology is standard and consistent with official textbooks. | [google/gemini-3.1-pro-preview] The question is highly accurate, tests multiple morphological and syntactic concepts in context, and perfectly aligns with the requested difficulty level.",
+    "improvement_suggestions": null,
+    "verification": null
+  },
+  "ensemble": {
+    "aggregated": {
+      "critic_solution": "[openai/gpt-5.5] answered A: In the sentence “Ертең-ақ осы мәселені талқылайық, әріптестер!”, the word “ертең-ақ” consists of “ертең” (a time adverb, мезгіл үстеуі) plus the emphatic particle “-ақ” (демеулік шылау). In Kazakh orthography, this particle is written with a hyphen when attached in this way: “ертең-ақ”. The verb “талқылайық” is formed from “талқыла-” with the first-person plural imperative/volitive ending “-йық/-й\n\n[anthropic/claude-sonnet-4.6] answered A: Let me analyze each element in the sentence 'Ертең-ақ осы мәселені талқылайық, әріптестер!'\n\n1. 'ертең-ақ': \n- 'ертең' is a time adverb (мезгіл үстеуі) meaning 'tomorrow'\n- '-ақ' is an emphatic particle (демеулік шылау) that adds emphasis\n- In Kazakh, the particle '-ақ' is written with a hyphen when attached to words, so 'ертең-ақ' is correctly written with a hyphen\n- This is NOT a compound adverb\n\n[google/gemini-3.1-pro-preview] answered A: Let's analyze the morphological features of the given words in the sentence: «Ертең-ақ осы мәселені талқылайық, әріптестер!»\n\n1. «Ертең-ақ»: 'ертең' is an adverb of time (мезгіл үстеуі). '-ақ' is an emphatic particle (күшейткіш демеулік шылау). According to Kazakh orthography rules, the particle '-ақ' is always written with a hyphen. \n2. «талқылайық»: The root is 'талқыла' (to discuss). The suffix",
+      "critic_answer": "A",
+      "dimensions": {
+        "correctness": 9.833,
+        "distractor_quality": 7.667,
+        "difficulty_alignment": 8.667,
+        "kazakh_language_quality": 9.167,
+        "latex_validity": 10.0,
+        "figure_relevance": null
+      },
+      "overall_score": 9.1,
+      "pass_fail": true,
+      "comments": "[openai/gpt-5.5] The keyed answer A is correct and the grammatical explanation is sound. The only notable issue is that the prompt asks for morphological analysis, while identifying «әріптестер» as a қаратпа сөз is syntactic rather than morphological; some distractors are also quite obviously wrong. | [anthropic/claude-sonnet-4.6] The question is well-constructed with a clear correct answer (A) that accurately identifies all three morphological features. The distractors contain plausible but identifiable errors targeting common misconceptions (e.g., confusing бұйрық рай with қалау рай, or қаратпа сөз with қыстырма сөз). Kazakh terminology is standard and consistent with official textbooks. | [google/gemini-3.1-pro-preview] The question is highly accurate, tests multiple morphological and syntactic concepts in context, and perfectly aligns with the requested difficulty level.",
+      "improvement_suggestions": null,
+      "verification": null
+    },
+    "per_critic": [
+      {
+        "model_id": "openai/gpt-5.5",
+        "error": null,
+        "feedback": {
+          "critic_solution": "In the sentence “Ертең-ақ осы мәселені талқылайық, әріптестер!”, the word “ертең-ақ” consists of “ертең” (a time adverb, мезгіл үстеуі) plus the emphatic particle “-ақ” (демеулік шылау). In Kazakh orthography, this particle is written with a hyphen when attached in this way: “ертең-ақ”. The verb “талқылайық” is formed from “талқыла-” with the first-person plural imperative/volitive ending “-йық/-йік” meaning “let us discuss”; in school grammar this is бұйрық рай, I жақ көпше. The word “әріптестер” addresses the listeners directly (“colleagues!”), so it is a қаратпа сөз, not an introductory word, interjection, or appositive. Therefore option A correctly analyzes all forms.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 9.5,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 8.5,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.6,
+          "pass_fail": true,
+          "comments": "The keyed answer A is correct and the grammatical explanation is sound. The only notable issue is that the prompt asks for morphological analysis, while identifying «әріптестер» as a қаратпа сөз is syntactic rather than morphological; some distractors are also quite obviously wrong.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "anthropic/claude-sonnet-4.6",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let me analyze each element in the sentence 'Ертең-ақ осы мәселені талқылайық, әріптестер!'\n\n1. 'ертең-ақ': \n- 'ертең' is a time adverb (мезгіл үстеуі) meaning 'tomorrow'\n- '-ақ' is an emphatic particle (демеулік шылау) that adds emphasis\n- In Kazakh, the particle '-ақ' is written with a hyphen when attached to words, so 'ертең-ақ' is correctly written with a hyphen\n- This is NOT a compound adverb (күрделі үстеу), NOT a postpositional phrase (септеулік шылаулы тіркес), and NOT connected by a coordinating conjunction (жалғаулық шылау)\n- Option A correctly identifies it as a time adverb + emphatic particle (демеулік шылау) written with a hyphen\n\n2. 'талқылайық':\n- This is the verb 'талқылау' (to discuss) with the suffix '-айық'\n- The suffix '-айық/-ейік' forms the imperative mood (бұйрық рай) for 1st person plural (I жақ көпше жақ), meaning 'let us discuss'\n- Option A says it's бұйрық рай (imperative mood), I жақ көпше (1st person plural) — this is correct\n- Option B says қалау рай (optative/desiderative mood) — incorrect; қалау рай uses suffixes like -ғай/-гей, -ғайшы etc.\n- Option C says шартты рай (conditional mood) — incorrect\n- Option D says ашық райдың келер шағы (indicative future tense) — incorrect\n\n3. 'әріптестер':\n- This word appears after a comma at the end of the sentence with an exclamation mark, addressing colleagues directly\n- This is a vocative/address word (қаратпа сөз) in Kazakh grammar\n- Option A correctly identifies it as қаратпа сөз\n- Option B says қыстырма сөз (parenthetical word) — incorrect; parenthetical words express the speaker's attitude, not direct address\n- Option C says одағай сөз (interjection) — incorrect\n- Option D says айқындауыш мүше (appositive member) — incorrect\n\nConclusion: Option A correctly analyzes all three morphological forms:\n- 'ертең-ақ' as time adverb + emphatic particle written with hyphen\n- 'талқылайық' as imperative mood, 1st person plural\n- 'әріптестер' as vocative/address word (қаратпа сөз)",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 7.0,
+            "difficulty_alignment": 8.0,
+            "kazakh_language_quality": 9.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 8.9,
+          "pass_fail": true,
+          "comments": "The question is well-constructed with a clear correct answer (A) that accurately identifies all three morphological features. The distractors contain plausible but identifiable errors targeting common misconceptions (e.g., confusing бұйрық рай with қалау рай, or қаратпа сөз with қыстырма сөз). Kazakh terminology is standard and consistent with official textbooks.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      },
+      {
+        "model_id": "google/gemini-3.1-pro-preview",
+        "error": null,
+        "feedback": {
+          "critic_solution": "Let's analyze the morphological features of the given words in the sentence: «Ертең-ақ осы мәселені талқылайық, әріптестер!»\n\n1. «Ертең-ақ»: 'ертең' is an adverb of time (мезгіл үстеуі). '-ақ' is an emphatic particle (күшейткіш демеулік шылау). According to Kazakh orthography rules, the particle '-ақ' is always written with a hyphen. \n2. «талқылайық»: The root is 'талқыла' (to discuss). The suffix '-йық' indicates the 1st person plural of the imperative mood (бұйрық рай, I жақ көпше түр), translating to 'let us discuss'.\n3. «әріптестер»: This word translates to 'colleagues' and is used to address the listeners directly. Therefore, it functions as a vocative word (қаратпа сөз) in the sentence.\n\nLooking at the options, Option A correctly identifies all these morphological and syntactic features. Option B incorrectly states that '-ақ' should be written separately and misidentifies the mood and word type. Option C misidentifies the particle as a postposition, the mood as conditional, and the noun as an interjection. Option D misidentifies the particle as a conjunction, the mood as indicative future, and the noun as an apposition.",
+          "critic_answer": "A",
+          "dimensions": {
+            "correctness": 10.0,
+            "distractor_quality": 9.0,
+            "difficulty_alignment": 10.0,
+            "kazakh_language_quality": 10.0,
+            "latex_validity": 10.0,
+            "figure_relevance": null
+          },
+          "overall_score": 9.8,
+          "pass_fail": true,
+          "comments": "The question is highly accurate, tests multiple morphological and syntactic concepts in context, and perfectly aligns with the requested difficulty level.",
+          "improvement_suggestions": null,
+          "verification": null
+        }
+      }
+    ],
+    "answer_agreement": 1.0,
+    "unanimous": true,
+    "n_critics_responded": 3,
+    "n_critics_failed": 0
+  },
+  "timestamp": "2026-06-02T12:44:25.300474+00:00",
+  "generation_attempts": 1
+}
