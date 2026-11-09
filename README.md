@@ -163,3 +163,17 @@ python scripts/compare_critics.py
 # Точечно перепрогнать только упавшие строки (без полного перегона)
 python scripts/patch_failed.py --subject kazakh --api gpt-5.5
 ```
+
+
+## Citation
+
+If you use this repository in your research, please cite the accompanying manuscript:
+
+```bibtex
+@unpublished{kazin2026kazakh,
+  author = {Aiken Kazin},
+  title = {Evaluating Large Language Models for Automatic Test Item Generation in Kazakh: Evidence from Mathematics and Kazakh Language},
+  year = {2026},
+  note = {Unpublished manuscript}
+}
+```
